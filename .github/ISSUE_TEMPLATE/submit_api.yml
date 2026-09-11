@@ -1,0 +1,82 @@
+﻿name: 🌐 Submit a Free API
+description: Add a free or public API to DevShelf
+title: \"[Submit API]: <API Name>\"
+labels: [\"submission\", \"api\"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for submitting a free API to **DevShelf**!
+        The API must offer a 100% free tier or require no key.
+  - type: input
+    id: name
+    attributes:
+      label: API Name
+      placeholder: e.g. Open-Meteo
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: API Website or Documentation URL
+      placeholder: https://example.com/api
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Weather & Climate
+        - AI & Machine Learning
+        - Development & Testing
+        - Geocoding & IP
+        - Finance & Crypto
+        - Security & Network
+        - Entertainment & Media
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Short Description
+      placeholder: What data or service does this API provide?
+    validations:
+      required: true
+  - type: dropdown
+    id: auth
+    attributes:
+      label: Authentication Required
+      options:
+        - No Key
+        - Free API Key
+        - OAuth
+    validations:
+      required: true
+  - type: dropdown
+    id: cors
+    attributes:
+      label: CORS Support (Usable from Browser)
+      options:
+        - Yes
+        - No
+        - Unknown
+    validations:
+      required: true
+  - type: input
+    id: rate_limit
+    attributes:
+      label: Free Tier Rate Limit
+      placeholder: e.g. 10,000 req/day or Unlimited
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Verification
+      options:
+        - label: This API has a permanent free tier or no-key access (not a 14-day trial).
+          required: true
+        - label: The endpoint is currently live and functional.
+          required: true

@@ -1,0 +1,39 @@
+﻿name: Validate Shelf Data
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    name: Verify Data & Rebuild README
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          run_install: false
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Validate Shelf JSON Integrity
+        run: pnpm run validate
+
+      - name: Test Build README
+        run: pnpm run build
+
+      - name: Check Code Formatting
+        run: pnpm run format:check

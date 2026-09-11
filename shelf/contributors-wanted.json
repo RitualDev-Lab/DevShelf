@@ -1,0 +1,20 @@
+﻿[
+  {
+    "name": "GitWhisper",
+    "repo": "https://github.com/RitualDev-Lab/GitWhisper",
+    "category": "CLI & Extension",
+    "description": "AI-assisted conventional commit generator grounded in staged index plumbing.",
+    "seeking": "JetBrains IDE Plugin, Community Custom LLM Adapters, Documentation",
+    "goodFirstIssues": "https://github.com/RitualDev-Lab/GitWhisper/issues",
+    "language": "TypeScript"
+  },
+  {
+    "name": "AutoHeal-QA",
+    "repo": "https://github.com/RitualDev-Lab/autoheal-qa",
+    "category": "E2E & Testing",
+    "description": "Zero-cloud-cost agentic self-healing E2E test runner for Playwright.",
+    "seeking": "Cypress Adapter, Additional Local Model Adapters, Visual UI Dashboard",
+    "goodFirstIssues": "https://github.com/RitualDev-Lab/autoheal-qa/issues",
+    "language": "TypeScript"
+  }
+]

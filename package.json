@@ -1,0 +1,21 @@
+﻿{
+  "name": "devshelf",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "The open-source community directory for discovering developer tools, free APIs, AI agents, and open-source projects.",
+  "packageManager": "pnpm@9.15.4",
+  "scripts": {
+    "build": "npx tsx scripts/build-readme.ts",
+    "validate": "npx tsx scripts/validate-shelf.ts",
+    "format": "biome format --write .",
+    "format:check": "biome format .",
+    "lint": "biome lint ."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/node": "^22.13.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}

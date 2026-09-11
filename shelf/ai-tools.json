@@ -1,0 +1,38 @@
+﻿[
+  {
+    "name": "Ollama",
+    "repo": "https://github.com/ollama/ollama",
+    "category": "Local AI & Inference",
+    "description": "Get up and running with Llama 3.3, Mistral, Qwen, and other large language models locally with a simple CLI and REST API.",
+    "language": "Go",
+    "license": "MIT",
+    "featured": true
+  },
+  {
+    "name": "Dify",
+    "repo": "https://github.com/langgenius/dify",
+    "category": "AI Agents & Workflows",
+    "description": "An open-source LLM app development platform combining AI workflow, RAG pipeline, agent capabilities, and model management.",
+    "language": "Python / TypeScript",
+    "license": "Apache-2.0",
+    "featured": false
+  },
+  {
+    "name": "vLLM",
+    "repo": "https://github.com/vllm-project/vllm",
+    "category": "High-Throughput Serving",
+    "description": "A high-throughput and memory-efficient inference and serving engine for LLMs with PagedAttention.",
+    "language": "Python / C++",
+    "license": "Apache-2.0",
+    "featured": false
+  },
+  {
+    "name": "Open-WebUI",
+    "repo": "https://github.com/open-webui/open-webui",
+    "category": "Web UI & Chat",
+    "description": "User-friendly AI interface designed for self-hosting with complete Ollama and OpenAI-compatible API support.",
+    "language": "Python / Svelte",
+    "license": "MIT",
+    "featured": false
+  }
+]

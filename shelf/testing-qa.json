@@ -1,0 +1,38 @@
+﻿[
+  {
+    "name": "AutoHeal-QA",
+    "repo": "https://github.com/RitualDev-Lab/autoheal-qa",
+    "category": "E2E & Playwright",
+    "description": "100% Free & Local-first agentic self-healing E2E test runner for Playwright.  cloud cost with AST auto-patching and verification loop.",
+    "language": "TypeScript",
+    "license": "MIT",
+    "featured": true
+  },
+  {
+    "name": "Playwright",
+    "repo": "https://github.com/microsoft/playwright",
+    "category": "E2E Testing",
+    "description": "Fast and reliable end-to-end testing framework for modern web apps across Chromium, Firefox, and WebKit.",
+    "language": "TypeScript",
+    "license": "Apache-2.0",
+    "featured": false
+  },
+  {
+    "name": "Vitest",
+    "repo": "https://github.com/vitest-dev/vitest",
+    "category": "Unit Testing",
+    "description": "Blazing fast Vite-native unit test framework with ESM, TypeScript, and out-of-the-box coverage.",
+    "language": "TypeScript",
+    "license": "MIT",
+    "featured": false
+  },
+  {
+    "name": "k6",
+    "repo": "https://github.com/grafana/k6",
+    "category": "Performance & Load Testing",
+    "description": "Modern load testing tool, using Go and JavaScript, for testing system performance and reliability.",
+    "language": "Go",
+    "license": "AGPL-3.0",
+    "featured": false
+  }
+]

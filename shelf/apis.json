@@ -1,0 +1,72 @@
+﻿[
+  {
+    "name": "Open-Meteo",
+    "url": "https://open-meteo.com",
+    "category": "Weather & Climate",
+    "description": "Free weather forecast API for commercial and non-commercial use with hourly forecasts and historical weather data.",
+    "auth": "No Key",
+    "cors": "Yes",
+    "rateLimit": "10,000 req/day",
+    "https": true
+  },
+  {
+    "name": "GroqCloud Free Tier",
+    "url": "https://console.groq.com",
+    "category": "AI & Machine Learning",
+    "description": "Ultra-low latency open-source LLM inference API (Llama 3.3, DeepSeek, Qwen) with a generous free developer tier.",
+    "auth": "Free API Key",
+    "cors": "Yes",
+    "rateLimit": "30 req/min",
+    "https": true
+  },
+  {
+    "name": "JSONPlaceholder",
+    "url": "https://jsonplaceholder.typicode.com",
+    "category": "Development & Testing",
+    "description": "Free fake REST API for prototyping, mock posts, comments, todos, and users with zero configuration.",
+    "auth": "No Key",
+    "cors": "Yes",
+    "rateLimit": "Unlimited",
+    "https": true
+  },
+  {
+    "name": "Hugging Face Serverless Inference",
+    "url": "https://huggingface.co/inference-api",
+    "category": "AI & Machine Learning",
+    "description": "Instant serverless API access to 100,000+ open-source AI models across NLP, vision, and speech with free monthly quota.",
+    "auth": "Free API Key",
+    "cors": "Yes",
+    "rateLimit": "Free monthly tier",
+    "https": true
+  },
+  {
+    "name": "ipapi.co",
+    "url": "https://ipapi.co",
+    "category": "Geocoding & IP",
+    "description": "Real-time IP geolocation and network threat intelligence API returning JSON country, city, timezone, and ASN data.",
+    "auth": "No Key",
+    "cors": "Yes",
+    "rateLimit": "1,000 req/day",
+    "https": true
+  },
+  {
+    "name": "CoinGecko Free API",
+    "url": "https://www.coingecko.com/api",
+    "category": "Finance & Crypto",
+    "description": "Live cryptocurrency prices, market cap, historical volume, exchange stats, and ticker data.",
+    "auth": "Free API Key",
+    "cors": "Yes",
+    "rateLimit": "30 req/min",
+    "https": true
+  },
+  {
+    "name": "Rest Countries",
+    "url": "https://restcountries.com",
+    "category": "Geocoding & IP",
+    "description": "Get detailed information about world countries (flags, borders, capitals, currencies, languages) via REST.",
+    "auth": "No Key",
+    "cors": "Yes",
+    "rateLimit": "Unlimited",
+    "https": true
+  }
+]

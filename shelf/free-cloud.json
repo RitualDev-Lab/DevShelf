@@ -1,0 +1,37 @@
+﻿[
+  {
+    "name": "Supabase",
+    "url": "https://supabase.com",
+    "category": "Databases & BaaS",
+    "description": "Open source Firebase alternative providing PostgreSQL, Auth, Instant APIs, Realtime subscriptions, and Storage.",
+    "freeTier": "500MB DB, 50k monthly active users, 1GB storage"
+  },
+  {
+    "name": "Neon",
+    "url": "https://neon.tech",
+    "category": "Serverless Postgres",
+    "description": "Serverless Postgres with instant branching, bottomless storage, and autoscaling compute to zero.",
+    "freeTier": "0.5 GB storage, instant branching, scale-to-zero"
+  },
+  {
+    "name": "Cloudflare Workers",
+    "url": "https://workers.cloudflare.com",
+    "category": "Serverless Compute & Edge",
+    "description": "Deploy serverless code instantly across Cloudflare's global edge network with ultra-low latency.",
+    "freeTier": "100,000 requests/day, KV store, D1 SQL database"
+  },
+  {
+    "name": "Clerk",
+    "url": "https://clerk.com",
+    "category": "Authentication & User Management",
+    "description": "Complete user management and authentication suite for React, Next.js, and modern full-stack web applications.",
+    "freeTier": "10,000 monthly active users, social logins, MFA"
+  },
+  {
+    "name": "Resend",
+    "url": "https://resend.com",
+    "category": "Transactional Email",
+    "description": "Developer-first email platform for sending transactional emails using clean React components.",
+    "freeTier": "3,000 emails/month, 100 emails/day, 1 custom domain"
+  }
+]

@@ -1,0 +1,66 @@
+﻿name: 🚀 Submit an Open Source Project / Tool
+description: Add your open source tool, CLI, or library to DevShelf
+title: \"[Submit Project]: <Project Name>\"
+labels: [\"submission\", \"project\"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for submitting your open-source project to **DevShelf**!
+        Please ensure your repository is **public** and has a valid open-source license.
+  - type: input
+    id: name
+    attributes:
+      label: Project Name
+      placeholder: e.g. GitWhisper
+    validations:
+      required: true
+  - type: input
+    id: repo
+    attributes:
+      label: GitHub Repository URL
+      placeholder: https://github.com/your-username/your-repo
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - AI Agents & Local LLMs
+        - CLI & Developer Productivity
+        - Testing & QA Reliability
+        - Dev Utilities & Libraries
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Short Description (1-2 sentences)
+      placeholder: What does it do and why should developers use it?
+    validations:
+      required: true
+  - type: input
+    id: language
+    attributes:
+      label: Primary Language / Stack
+      placeholder: e.g. TypeScript, Rust, Python, Go
+    validations:
+      required: true
+  - type: input
+    id: license
+    attributes:
+      label: Open Source License
+      placeholder: e.g. MIT, Apache-2.0
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Verification
+      options:
+        - label: This repository is 100% open source and public.
+          required: true
+        - label: This is not spam, crypto scam, or affiliate promotion.
+          required: true

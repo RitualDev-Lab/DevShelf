@@ -1,0 +1,47 @@
+﻿[
+  {
+    "name": "GitWhisper",
+    "repo": "https://github.com/RitualDev-Lab/GitWhisper",
+    "category": "Git & Version Control",
+    "description": "Local-first & privacy-hardened AI Git commit intelligence with Conventional Commits, AST secret redaction, atomic hunk splitting, and 1-click VS Code extension.",
+    "language": "TypeScript",
+    "license": "MIT",
+    "featured": true
+  },
+  {
+    "name": "lazygit",
+    "repo": "https://github.com/jesseduffield/lazygit",
+    "category": "Git & Version Control",
+    "description": "Simple, fast terminal UI for git commands with interactive rebasing and visual diff navigation.",
+    "language": "Go",
+    "license": "MIT",
+    "featured": false
+  },
+  {
+    "name": "ripgrep",
+    "repo": "https://github.com/BurntSushi/ripgrep",
+    "category": "Terminal & Search",
+    "description": "Ultra-fast line-oriented search tool that recursively searches directories for a regex pattern while respecting gitignore.",
+    "language": "Rust",
+    "license": "MIT / UNLICENSE",
+    "featured": false
+  },
+  {
+    "name": "eza",
+    "repo": "https://github.com/eza-community/eza",
+    "category": "Terminal & Shell",
+    "description": "A modern, maintained replacement for ls with colors, git status integration, icons, and tree views.",
+    "language": "Rust",
+    "license": "EUPL-1.2",
+    "featured": false
+  },
+  {
+    "name": "fzf",
+    "repo": "https://github.com/junegunn/fzf",
+    "category": "Terminal & Shell",
+    "description": "General-purpose command-line fuzzy finder with blazing speed and interactive shell bindings.",
+    "language": "Go",
+    "license": "MIT",
+    "featured": false
+  }
+]
