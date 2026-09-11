@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevShelf — The Crowdsourced Developer Directory</title>
+  <meta name="description" content="Discover high-quality developer tools, verified free APIs, AI agents, and open-source projects with zero paywalls.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            dark: {
+              900: '#0B0F19',
+              800: '#111827',
+              700: '#1F2937',
+              600: '#374151',
+            },
+            accent: {
+              purple: '#8B5CF6',
+              cyan: '#06B6D4',
+              emerald: '#10B981',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-dark-900 text-slate-100 min-h-screen font-sans selection:bg-purple-600 selection:text-white">
+
+  <!-- Background Gradients -->
+  <div class="fixed inset-0 overflow-hidden pointer-events-none -z-10">
+    <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-gradient-to-tr from-purple-600/20 via-cyan-500/15 to-transparent blur-3xl rounded-full opacity-60"></div>
+  </div>
+
+  <!-- Top Navbar -->
+  <header class="border-b border-slate-800/80 sticky top-0 bg-dark-900/80 backdrop-blur-xl z-30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <span class="text-2xl">📚</span>
+        <a href="#" class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">DevShelf</a>
+        <span class="hidden sm:inline-block px-2.5 py-0.5 text-xs font-semibold rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20">Open Source</span>
+      </div>
+      <div class="flex items-center space-x-3">
+        <a href="https://github.com/RitualDev-Lab/DevShelf/issues/new/choose" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-1.5 px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-gradient-to-r from-purple-600 to-cyan-600 hover:opacity-90 transition shadow-lg shadow-purple-500/20 text-white">
+          <i data-lucide="plus-circle" class="w-4 h-4"></i>
+          <span>Submit Resource</span>
+        </a>
+        <a href="https://github.com/RitualDev-Lab/DevShelf" target="_blank" rel="noreferrer" class="p-2 text-slate-400 hover:text-white transition rounded-lg hover:bg-slate-800">
+          <i data-lucide="github" class="w-5 h-5"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 pt-12 pb-8 text-center">
+    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-4">
+      The Crowdsourced <br class="hidden sm:block" />
+      <span class="bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">Developer Directory</span>
+    </h1>
+    <p class="text-lg text-slate-400 max-w-2xl mx-auto mb-6">
+      Discover curated developer tools, verified free APIs, AI agents, and open-source projects with zero paywalls. Automated weekly uptime monitoring.
+    </p>
+
+    <!-- Metrics Badge Bar -->
+    <div class="flex flex-wrap items-center justify-center gap-3 text-xs font-mono text-slate-300 mb-8" id="stats-bar">
+      <div class="px-3 py-1.5 rounded-full bg-slate-800/80 border border-slate-700/60 flex items-center space-x-1.5">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span id="stat-total">34 Resources Listed</span>
+      </div>
+      <div class="px-3 py-1.5 rounded-full bg-slate-800/80 border border-slate-700/60">
+        <span class="text-cyan-400" id="stat-apis">7</span> Free APIs
+      </div>
+      <div class="px-3 py-1.5 rounded-full bg-slate-800/80 border border-slate-700/60">
+        <span class="text-purple-400" id="stat-tools">17</span> Open Source Tools
+      </div>
+      <div class="px-3 py-1.5 rounded-full bg-slate-800/80 border border-slate-700/60">
+        <span class="text-pink-400" id="stat-perks">7</span> Startup Perks
+      </div>
+    </div>
+
+    <!-- Search Box -->
+    <div class="relative max-w-2xl mx-auto mb-6">
+      <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400">
+        <i data-lucide="search" class="w-5 h-5"></i>
+      </div>
+      <input type="text" id="search-input" placeholder="Search by name, keyword, category, or language... (Press '/' to focus)" class="w-full pl-11 pr-24 py-3.5 bg-dark-800/90 border border-slate-700/80 rounded-xl text-slate-100 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition shadow-xl">
+      <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+        <kbd class="hidden sm:inline-block px-2 py-0.5 text-[10px] font-mono font-semibold text-slate-400 bg-slate-700/60 rounded border border-slate-600/50">/</kbd>
+      </div>
+    </div>
+
+    <!-- Category Filter Tabs -->
+    <div class="flex items-center justify-center flex-wrap gap-2 text-xs font-semibold" id="category-pills">
+      <button data-category="all" class="category-pill active px-3.5 py-1.5 rounded-lg border border-purple-500/40 bg-purple-600/20 text-purple-300 hover:bg-purple-600/30 transition">All Items</button>
+      <button data-category="api" class="category-pill px-3.5 py-1.5 rounded-lg border border-slate-700 bg-slate-800/60 text-slate-300 hover:bg-slate-700/60 transition">🌐 Free APIs</button>
+      <button data-category="ai" class="category-pill px-3.5 py-1.5 rounded-lg border border-slate-700 bg-slate-800/60 text-slate-300 hover:bg-slate-700/60 transition">🤖 AI & LLMs</button>
+      <button data-category="cli" class="category-pill px-3.5 py-1.5 rounded-lg border border-slate-700 bg-slate-800/60 text-slate-300 hover:bg-slate-700/60 transition">⚡ CLI Tools</button>
+      <button data-category="testing" class="category-pill px-3.5 py-1.5 rounded-lg border border-slate-700 bg-slate-800/60 text-slate-300 hover:bg-slate-700/60 transition">🧪 Testing & QA</button>
+      <button data-category="cloud" class="category-pill px-3.5 py-1.5 rounded-lg border border-slate-700 bg-slate-800/60 text-slate-300 hover:bg-slate-700/60 transition">☁️ Free Cloud</button>
+      <button data-category="perks" class="category-pill px-3.5 py-1.5 rounded-lg border border-slate-700 bg-slate-800/60 text-slate-300 hover:bg-slate-700/60 transition">🎁 Perks</button>
+      <button data-category="contributors" class="category-pill px-3.5 py-1.5 rounded-lg border border-slate-700 bg-slate-800/60 text-slate-300 hover:bg-slate-700/60 transition">🤝 Needs Contributors</button>
+    </div>
+  </section>
+
+  <!-- Main Resource Grid -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="flex items-center justify-between mb-4">
+      <div class="text-sm text-slate-400 font-mono" id="results-count">Showing 34 items</div>
+    </div>
+
+    <!-- Cards Container -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" id="cards-grid">
+      <!-- Cards dynamically injected via app.js -->
+    </div>
+
+    <!-- Empty State -->
+    <div id="empty-state" class="hidden text-center py-16">
+      <div class="text-4xl mb-3">🔍</div>
+      <h3 class="text-lg font-bold text-white mb-1">No matching resources found</h3>
+      <p class="text-sm text-slate-400 mb-4">Try adjusting your search terms or filter categories.</p>
+      <button id="reset-filters-btn" class="px-4 py-2 text-xs font-semibold rounded-lg bg-slate-800 hover:bg-slate-700 text-purple-400 border border-purple-500/30 transition">Reset All Filters</button>
+    </div>
+  </main>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="fixed bottom-6 right-6 px-4 py-2.5 rounded-xl bg-slate-800 text-white text-xs font-semibold shadow-2xl border border-slate-700/80 flex items-center space-x-2 translate-y-20 opacity-0 transition-all duration-300 pointer-events-none z-50">
+    <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i>
+    <span id="toast-message">Copied to clipboard!</span>
+  </div>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800/80 mt-16 py-10 bg-dark-900/60 text-center text-xs text-slate-400">
+    <div class="max-w-7xl mx-auto px-4 space-y-3">
+      <p>📚 <b>DevShelf</b> is a 100% free and open-source community directory licensed under MIT.</p>
+      <p>Curated with ❤️ by <a href="https://github.com/RitualDev-Lab" class="text-purple-400 hover:underline">RitualDev-Lab</a> and global contributors.</p>
+      <div class="pt-2 flex items-center justify-center space-x-4">
+        <a href="https://github.com/RitualDev-Lab/DevShelf" class="hover:text-white transition">GitHub Repository</a>
+        <span>•</span>
+        <a href="https://github.com/RitualDev-Lab/DevShelf/issues/new/choose" class="hover:text-white transition">Submit a Project</a>
+        <span>•</span>
+        <a href="https://github.com/RitualDev-Lab/DevShelf/discussions" class="hover:text-white transition">Community Discussions</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

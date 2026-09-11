@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "devshelf",
   "version": "1.0.0",
   "private": true,
@@ -6,7 +6,7 @@
   "description": "The open-source community directory for discovering developer tools, free APIs, AI agents, and open-source projects.",
   "packageManager": "pnpm@9.15.4",
   "scripts": {
-    "build": "npx tsx scripts/build-readme.ts",
+    "build": "npx tsx scripts/build-site.ts && npx tsx scripts/build-readme.ts",
     "validate": "npx tsx scripts/validate-shelf.ts",
     "format": "biome format --write .",
     "format:check": "biome format .",

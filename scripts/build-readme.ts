@@ -1,4 +1,4 @@
-import fs from "node:fs/promises";
+﻿import fs from "node:fs/promises";
 import path from "node:path";
 
 async function build() {
@@ -16,6 +16,7 @@ async function build() {
   const testingQa = await readJson("testing-qa.json");
   const freeCloud = await readJson("free-cloud.json");
   const contributors = await readJson("contributors-wanted.json");
+  const perks = await readJson("perks.json");
 
   const totalItems =
     apis.length +
@@ -23,7 +24,8 @@ async function build() {
     cliTools.length +
     testingQa.length +
     freeCloud.length +
-    contributors.length;
+    contributors.length +
+    perks.length;
 
   let md = `<div align="center">
 
@@ -32,6 +34,7 @@ async function build() {
 ### The Crowdsourced Developer Directory
 **Discover high-quality developer tools, verified free APIs, AI agents, and open-source projects with zero paywalls.**
 
+[![Live Web Directory](https://img.shields.io/badge/Web_Directory-Live_Search_%26_Filters-7928CA?style=for-the-badge&logo=googlechrome&logoColor=white)](https://ritualdev-lab.github.io/DevShelf)
 [![Total Resources](https://img.shields.io/badge/Listed_Resources-${totalItems}+_Curated-blueviolet?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
 [![Free APIs](https://img.shields.io/badge/Free_APIs-${apis.length}_Verified-success?style=for-the-badge)](#-1-free--public-apis)
 [![Open Source](https://img.shields.io/badge/Open_Source-100%25_FOSS-blue?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
@@ -39,12 +42,14 @@ async function build() {
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
 <p align="center">
+  <a href="https://ritualdev-lab.github.io/DevShelf"><b>🌐 Interactive Web App</b></a> •
   <a href="#-1-free--public-apis">Free APIs</a> •
   <a href="#-2-ai-agents--local-llm-tools">AI & LLMs</a> •
   <a href="#-3-cli--productivity-tools">CLI Tools</a> •
   <a href="#-4-testing--qa-reliability">Testing & QA</a> •
   <a href="#-5-free-cloud--developer-tiers">Free Cloud</a> •
   <a href="#-6-contributors-wanted">Contribute</a> •
+  <a href="#-7-developer-discounts--startup-perks">Perks</a> •
   <a href="#-how-to-submit-your-project-or-api"><b>➕ Submit Yours</b></a>
 </p>
 
@@ -60,6 +65,7 @@ Most "Awesome" lists suffer from two major problems:
 
 **DevShelf is different:**
 - 🛡️ **Automated Health Checks**: GitHub Actions continuously ping APIs and repositories to ensure endpoints are active.
+- 🌐 **Interactive Web UI**: Search, filter, and copy API URLs with our zero-cost GitHub Pages web application.
 - 🚀 **1-Click Issue Submissions**: Add your own project or API in 30 seconds via structured GitHub Issue forms.
 - 🌟 **Quality First**: Hand-curated, zero paywalls, clear free tier transparency.
 
@@ -117,7 +123,8 @@ APIs that provide a 100% free tier or require no API key at all.
     md += `\`Category: ${cloud.category}\` • 🎁 **Free Tier**: \`${cloud.freeTier}\` • [Explore ${cloud.name} →](${cloud.url})\n\n`;
   }
 
-  md += `---\n\n## 🤝 6. Contributors Wanted ("Up for Grabs")\n\nActive open-source projects looking for contributors, bug hunters, or co-maintainers.\n\n`;
+  md +=
+    '---\n\n## 🤝 6. Contributors Wanted ("Up for Grabs")\n\nActive open-source projects looking for contributors, bug hunters, or co-maintainers.\n\n';
 
   for (const item of contributors) {
     md += `### [${item.name}](${item.repo})\n`;
@@ -126,7 +133,18 @@ APIs that provide a 100% free tier or require no API key at all.
     md += `\`Language: ${item.language}\` • [Browse Open Issues →](${item.goodFirstIssues}) • [Repo Link →](${item.repo})\n\n`;
   }
 
-  md += `---
+  md +=
+    "---\n\n## 🎁 7. Developer Discounts & Startup Perks\n\nFree cloud credits, software sponsorships, and startup program perks for developers and open-source teams.\n\n";
+
+  md += `| Perk & Provider | Category | Value & Benefits | Eligibility |
+| :--- | :--- | :--- | :--- |
+`;
+
+  for (const perk of perks) {
+    md += `| [**${perk.name}**](${perk.url}) | \`${perk.category}\` | 🎁 **${perk.perkValue}** | ${perk.eligibility} |\n`;
+  }
+
+  md += `\n---
 
 ## 🚀 How to Submit Your Project or API
 

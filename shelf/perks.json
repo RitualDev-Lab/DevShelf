@@ -1,0 +1,58 @@
+﻿[
+  {
+    "name": "JetBrains Free Open Source License",
+    "url": "https://www.jetbrains.com/community/opensource",
+    "category": "Developer Tools & IDEs",
+    "description": "Free All Products Pack subscription (IntelliJ IDEA Ultimate, WebStorm, PyCharm, CLion, GoLand) for open-source maintainers.",
+    "perkValue": "Free 1-Year All Products Pack ($779/yr value)",
+    "eligibility": "Active open-source project (3+ months, non-commercial)"
+  },
+  {
+    "name": "1Password for Open Source",
+    "url": "https://github.com/1Password/op-for-open-source",
+    "category": "Security & Password Management",
+    "description": "Free 1Password Teams subscription to securely manage and share secrets, SSH keys, and tokens with your maintainer team.",
+    "perkValue": "Free 1Password Teams Account",
+    "eligibility": "Public open-source repository on GitHub"
+  },
+  {
+    "name": "GitHub for Startups",
+    "url": "https://github.com/enterprise/startups",
+    "category": "Hosting & Dev Collaboration",
+    "description": "Up to 20 seats of GitHub Enterprise free for 12 months, including GitHub Actions minutes, Advanced Security, and Copilot.",
+    "perkValue": "Up to 20 Free Enterprise Seats ($5,000+ value)",
+    "eligibility": "Series A or earlier startups"
+  },
+  {
+    "name": "AWS Activate Founders",
+    "url": "https://aws.amazon.com/activate",
+    "category": "Cloud Infrastructure",
+    "description": "Free AWS promotional cloud credits, technical support, and architectural guidance for early-stage builders and founders.",
+    "perkValue": "$1,000 - $100,000 AWS Cloud Credits",
+    "eligibility": "Self-funded or early-stage startups"
+  },
+  {
+    "name": "Google Cloud for Startups",
+    "url": "https://cloud.google.com/startup",
+    "category": "Cloud Infrastructure & AI",
+    "description": "Access up to $2,000 in GCP credits in year one, covering Compute Engine, Cloud Run, Vertex AI, and BigQuery.",
+    "perkValue": "$2,000 in GCP Cloud Credits",
+    "eligibility": "Early-stage bootstrap / funded startups"
+  },
+  {
+    "name": "DigitalOcean Open Source Sponsorship",
+    "url": "https://www.digitalocean.com/open-source",
+    "category": "Cloud Hosting & Droplets",
+    "description": "Monthly infrastructure credits to host open-source websites, build runners, test nodes, and documentation servers.",
+    "perkValue": "Recurring Free Droplet / Bandwidth Credits",
+    "eligibility": "Public open-source projects with active community"
+  },
+  {
+    "name": "Postman Open Source Sponsorship",
+    "url": "https://www.postman.com/open-source",
+    "category": "API Development",
+    "description": "Free Postman Team subscription for open-source teams maintaining public APIs and workspaces.",
+    "perkValue": "Free Postman Team Plan",
+    "eligibility": "Public API open-source projects"
+  }
+]

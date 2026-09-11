@@ -1,0 +1,379 @@
+{
+  "updatedAt": "2026-09-11T10:22:00.252Z",
+  "totalCount": 34,
+  "counts": {
+    "apis": 7,
+    "aiTools": 4,
+    "cliTools": 5,
+    "testingQa": 4,
+    "freeCloud": 5,
+    "contributors": 2,
+    "perks": 7
+  },
+  "resources": [
+    {
+      "name": "Open-Meteo",
+      "url": "https://open-meteo.com",
+      "category": "Weather & Climate",
+      "description": "Free weather forecast API for commercial and non-commercial use with hourly forecasts and historical weather data.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "10,000 req/day",
+      "https": true,
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "GroqCloud Free Tier",
+      "url": "https://console.groq.com",
+      "category": "AI & Machine Learning",
+      "description": "Ultra-low latency open-source LLM inference API (Llama 3.3, DeepSeek, Qwen) with a generous free developer tier.",
+      "auth": "Free API Key",
+      "cors": "Yes",
+      "rateLimit": "30 req/min",
+      "https": true,
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "JSONPlaceholder",
+      "url": "https://jsonplaceholder.typicode.com",
+      "category": "Development & Testing",
+      "description": "Free fake REST API for prototyping, mock posts, comments, todos, and users with zero configuration.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Hugging Face Serverless Inference",
+      "url": "https://huggingface.co/inference-api",
+      "category": "AI & Machine Learning",
+      "description": "Instant serverless API access to 100,000+ open-source AI models across NLP, vision, and speech with free monthly quota.",
+      "auth": "Free API Key",
+      "cors": "Yes",
+      "rateLimit": "Free monthly tier",
+      "https": true,
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "ipapi.co",
+      "url": "https://ipapi.co",
+      "category": "Geocoding & IP",
+      "description": "Real-time IP geolocation and network threat intelligence API returning JSON country, city, timezone, and ASN data.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "1,000 req/day",
+      "https": true,
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "CoinGecko Free API",
+      "url": "https://www.coingecko.com/api",
+      "category": "Finance & Crypto",
+      "description": "Live cryptocurrency prices, market cap, historical volume, exchange stats, and ticker data.",
+      "auth": "Free API Key",
+      "cors": "Yes",
+      "rateLimit": "30 req/min",
+      "https": true,
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Rest Countries",
+      "url": "https://restcountries.com",
+      "category": "Geocoding & IP",
+      "description": "Get detailed information about world countries (flags, borders, capitals, currencies, languages) via REST.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Ollama",
+      "repo": "https://github.com/ollama/ollama",
+      "category": "Local AI & Inference",
+      "description": "Get up and running with Llama 3.3, Mistral, Qwen, and other large language models locally with a simple CLI and REST API.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": true,
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Dify",
+      "repo": "https://github.com/langgenius/dify",
+      "category": "AI Agents & Workflows",
+      "description": "An open-source LLM app development platform combining AI workflow, RAG pipeline, agent capabilities, and model management.",
+      "language": "Python / TypeScript",
+      "license": "Apache-2.0",
+      "featured": false,
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "vLLM",
+      "repo": "https://github.com/vllm-project/vllm",
+      "category": "High-Throughput Serving",
+      "description": "A high-throughput and memory-efficient inference and serving engine for LLMs with PagedAttention.",
+      "language": "Python / C++",
+      "license": "Apache-2.0",
+      "featured": false,
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Open-WebUI",
+      "repo": "https://github.com/open-webui/open-webui",
+      "category": "Web UI & Chat",
+      "description": "User-friendly AI interface designed for self-hosting with complete Ollama and OpenAI-compatible API support.",
+      "language": "Python / Svelte",
+      "license": "MIT",
+      "featured": false,
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "GitWhisper",
+      "repo": "https://github.com/RitualDev-Lab/GitWhisper",
+      "category": "Git & Version Control",
+      "description": "Local-first & privacy-hardened AI Git commit intelligence with Conventional Commits, AST secret redaction, atomic hunk splitting, and 1-click VS Code extension.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "featured": true,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "lazygit",
+      "repo": "https://github.com/jesseduffield/lazygit",
+      "category": "Git & Version Control",
+      "description": "Simple, fast terminal UI for git commands with interactive rebasing and visual diff navigation.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "ripgrep",
+      "repo": "https://github.com/BurntSushi/ripgrep",
+      "category": "Terminal & Search",
+      "description": "Ultra-fast line-oriented search tool that recursively searches directories for a regex pattern while respecting gitignore.",
+      "language": "Rust",
+      "license": "MIT / UNLICENSE",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "eza",
+      "repo": "https://github.com/eza-community/eza",
+      "category": "Terminal & Shell",
+      "description": "A modern, maintained replacement for ls with colors, git status integration, icons, and tree views.",
+      "language": "Rust",
+      "license": "EUPL-1.2",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "fzf",
+      "repo": "https://github.com/junegunn/fzf",
+      "category": "Terminal & Shell",
+      "description": "General-purpose command-line fuzzy finder with blazing speed and interactive shell bindings.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "AutoHeal-QA",
+      "repo": "https://github.com/RitualDev-Lab/autoheal-qa",
+      "category": "E2E & Playwright",
+      "description": "100% Free & Local-first agentic self-healing E2E test runner for Playwright.  cloud cost with AST auto-patching and verification loop.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "featured": true,
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "Playwright",
+      "repo": "https://github.com/microsoft/playwright",
+      "category": "E2E Testing",
+      "description": "Fast and reliable end-to-end testing framework for modern web apps across Chromium, Firefox, and WebKit.",
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "featured": false,
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "Vitest",
+      "repo": "https://github.com/vitest-dev/vitest",
+      "category": "Unit Testing",
+      "description": "Blazing fast Vite-native unit test framework with ESM, TypeScript, and out-of-the-box coverage.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "featured": false,
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "k6",
+      "repo": "https://github.com/grafana/k6",
+      "category": "Performance & Load Testing",
+      "description": "Modern load testing tool, using Go and JavaScript, for testing system performance and reliability.",
+      "language": "Go",
+      "license": "AGPL-3.0",
+      "featured": false,
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "Supabase",
+      "url": "https://supabase.com",
+      "category": "Databases & BaaS",
+      "description": "Open source Firebase alternative providing PostgreSQL, Auth, Instant APIs, Realtime subscriptions, and Storage.",
+      "freeTier": "500MB DB, 50k monthly active users, 1GB storage",
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "Neon",
+      "url": "https://neon.tech",
+      "category": "Serverless Postgres",
+      "description": "Serverless Postgres with instant branching, bottomless storage, and autoscaling compute to zero.",
+      "freeTier": "0.5 GB storage, instant branching, scale-to-zero",
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "Cloudflare Workers",
+      "url": "https://workers.cloudflare.com",
+      "category": "Serverless Compute & Edge",
+      "description": "Deploy serverless code instantly across Cloudflare's global edge network with ultra-low latency.",
+      "freeTier": "100,000 requests/day, KV store, D1 SQL database",
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "Clerk",
+      "url": "https://clerk.com",
+      "category": "Authentication & User Management",
+      "description": "Complete user management and authentication suite for React, Next.js, and modern full-stack web applications.",
+      "freeTier": "10,000 monthly active users, social logins, MFA",
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "Resend",
+      "url": "https://resend.com",
+      "category": "Transactional Email",
+      "description": "Developer-first email platform for sending transactional emails using clean React components.",
+      "freeTier": "3,000 emails/month, 100 emails/day, 1 custom domain",
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "GitWhisper",
+      "repo": "https://github.com/RitualDev-Lab/GitWhisper",
+      "category": "CLI & Extension",
+      "description": "AI-assisted conventional commit generator grounded in staged index plumbing.",
+      "seeking": "JetBrains IDE Plugin, Community Custom LLM Adapters, Documentation",
+      "goodFirstIssues": "https://github.com/RitualDev-Lab/GitWhisper/issues",
+      "language": "TypeScript",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "AutoHeal-QA",
+      "repo": "https://github.com/RitualDev-Lab/autoheal-qa",
+      "category": "E2E & Testing",
+      "description": "Zero-cloud-cost agentic self-healing E2E test runner for Playwright.",
+      "seeking": "Cypress Adapter, Additional Local Model Adapters, Visual UI Dashboard",
+      "goodFirstIssues": "https://github.com/RitualDev-Lab/autoheal-qa/issues",
+      "language": "TypeScript",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "JetBrains Free Open Source License",
+      "url": "https://www.jetbrains.com/community/opensource",
+      "category": "Developer Tools & IDEs",
+      "description": "Free All Products Pack subscription (IntelliJ IDEA Ultimate, WebStorm, PyCharm, CLion, GoLand) for open-source maintainers.",
+      "perkValue": "Free 1-Year All Products Pack ($779/yr value)",
+      "eligibility": "Active open-source project (3+ months, non-commercial)",
+      "type": "perks",
+      "section": "Developer Discounts & Startup Perks"
+    },
+    {
+      "name": "1Password for Open Source",
+      "url": "https://github.com/1Password/op-for-open-source",
+      "category": "Security & Password Management",
+      "description": "Free 1Password Teams subscription to securely manage and share secrets, SSH keys, and tokens with your maintainer team.",
+      "perkValue": "Free 1Password Teams Account",
+      "eligibility": "Public open-source repository on GitHub",
+      "type": "perks",
+      "section": "Developer Discounts & Startup Perks"
+    },
+    {
+      "name": "GitHub for Startups",
+      "url": "https://github.com/enterprise/startups",
+      "category": "Hosting & Dev Collaboration",
+      "description": "Up to 20 seats of GitHub Enterprise free for 12 months, including GitHub Actions minutes, Advanced Security, and Copilot.",
+      "perkValue": "Up to 20 Free Enterprise Seats ($5,000+ value)",
+      "eligibility": "Series A or earlier startups",
+      "type": "perks",
+      "section": "Developer Discounts & Startup Perks"
+    },
+    {
+      "name": "AWS Activate Founders",
+      "url": "https://aws.amazon.com/activate",
+      "category": "Cloud Infrastructure",
+      "description": "Free AWS promotional cloud credits, technical support, and architectural guidance for early-stage builders and founders.",
+      "perkValue": "$1,000 - $100,000 AWS Cloud Credits",
+      "eligibility": "Self-funded or early-stage startups",
+      "type": "perks",
+      "section": "Developer Discounts & Startup Perks"
+    },
+    {
+      "name": "Google Cloud for Startups",
+      "url": "https://cloud.google.com/startup",
+      "category": "Cloud Infrastructure & AI",
+      "description": "Access up to $2,000 in GCP credits in year one, covering Compute Engine, Cloud Run, Vertex AI, and BigQuery.",
+      "perkValue": "$2,000 in GCP Cloud Credits",
+      "eligibility": "Early-stage bootstrap / funded startups",
+      "type": "perks",
+      "section": "Developer Discounts & Startup Perks"
+    },
+    {
+      "name": "DigitalOcean Open Source Sponsorship",
+      "url": "https://www.digitalocean.com/open-source",
+      "category": "Cloud Hosting & Droplets",
+      "description": "Monthly infrastructure credits to host open-source websites, build runners, test nodes, and documentation servers.",
+      "perkValue": "Recurring Free Droplet / Bandwidth Credits",
+      "eligibility": "Public open-source projects with active community",
+      "type": "perks",
+      "section": "Developer Discounts & Startup Perks"
+    },
+    {
+      "name": "Postman Open Source Sponsorship",
+      "url": "https://www.postman.com/open-source",
+      "category": "API Development",
+      "description": "Free Postman Team subscription for open-source teams maintaining public APIs and workspaces.",
+      "perkValue": "Free Postman Team Plan",
+      "eligibility": "Public API open-source projects",
+      "type": "perks",
+      "section": "Developer Discounts & Startup Perks"
+    }
+  ]
+}

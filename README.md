@@ -5,19 +5,22 @@
 ### The Crowdsourced Developer Directory
 **Discover high-quality developer tools, verified free APIs, AI agents, and open-source projects with zero paywalls.**
 
-[![Total Resources](https://img.shields.io/badge/Listed_Resources-27+_Curated-blueviolet?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
+[![Live Web Directory](https://img.shields.io/badge/Web_Directory-Live_Search_%26_Filters-7928CA?style=for-the-badge&logo=googlechrome&logoColor=white)](https://ritualdev-lab.github.io/DevShelf)
+[![Total Resources](https://img.shields.io/badge/Listed_Resources-34+_Curated-blueviolet?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
 [![Free APIs](https://img.shields.io/badge/Free_APIs-7_Verified-success?style=for-the-badge)](#-1-free--public-apis)
 [![Open Source](https://img.shields.io/badge/Open_Source-100%25_FOSS-blue?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
 [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen?style=for-the-badge)](#-how-to-submit-your-project-or-api)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
 <p align="center">
+  <a href="https://ritualdev-lab.github.io/DevShelf"><b>🌐 Interactive Web App</b></a> •
   <a href="#-1-free--public-apis">Free APIs</a> •
   <a href="#-2-ai-agents--local-llm-tools">AI & LLMs</a> •
   <a href="#-3-cli--productivity-tools">CLI Tools</a> •
   <a href="#-4-testing--qa-reliability">Testing & QA</a> •
   <a href="#-5-free-cloud--developer-tiers">Free Cloud</a> •
   <a href="#-6-contributors-wanted">Contribute</a> •
+  <a href="#-7-developer-discounts--startup-perks">Perks</a> •
   <a href="#-how-to-submit-your-project-or-api"><b>➕ Submit Yours</b></a>
 </p>
 
@@ -33,6 +36,7 @@ Most "Awesome" lists suffer from two major problems:
 
 **DevShelf is different:**
 - 🛡️ **Automated Health Checks**: GitHub Actions continuously ping APIs and repositories to ensure endpoints are active.
+- 🌐 **Interactive Web UI**: Search, filter, and copy API URLs with our zero-cost GitHub Pages web application.
 - 🚀 **1-Click Issue Submissions**: Add your own project or API in 30 seconds via structured GitHub Issue forms.
 - 🌟 **Quality First**: Hand-curated, zero paywalls, clear free tier transparency.
 
@@ -183,6 +187,22 @@ Active open-source projects looking for contributors, bug hunters, or co-maintai
 
 🎯 **Seeking**: Cypress Adapter, Additional Local Model Adapters, Visual UI Dashboard  
 `Language: TypeScript` • [Browse Open Issues →](https://github.com/RitualDev-Lab/autoheal-qa/issues) • [Repo Link →](https://github.com/RitualDev-Lab/autoheal-qa)
+
+---
+
+## 🎁 7. Developer Discounts & Startup Perks
+
+Free cloud credits, software sponsorships, and startup program perks for developers and open-source teams.
+
+| Perk & Provider | Category | Value & Benefits | Eligibility |
+| :--- | :--- | :--- | :--- |
+| [**JetBrains Free Open Source License**](https://www.jetbrains.com/community/opensource) | `Developer Tools & IDEs` | 🎁 **Free 1-Year All Products Pack ($779/yr value)** | Active open-source project (3+ months, non-commercial) |
+| [**1Password for Open Source**](https://github.com/1Password/op-for-open-source) | `Security & Password Management` | 🎁 **Free 1Password Teams Account** | Public open-source repository on GitHub |
+| [**GitHub for Startups**](https://github.com/enterprise/startups) | `Hosting & Dev Collaboration` | 🎁 **Up to 20 Free Enterprise Seats ($5,000+ value)** | Series A or earlier startups |
+| [**AWS Activate Founders**](https://aws.amazon.com/activate) | `Cloud Infrastructure` | 🎁 **$1,000 - $100,000 AWS Cloud Credits** | Self-funded or early-stage startups |
+| [**Google Cloud for Startups**](https://cloud.google.com/startup) | `Cloud Infrastructure & AI` | 🎁 **$2,000 in GCP Cloud Credits** | Early-stage bootstrap / funded startups |
+| [**DigitalOcean Open Source Sponsorship**](https://www.digitalocean.com/open-source) | `Cloud Hosting & Droplets` | 🎁 **Recurring Free Droplet / Bandwidth Credits** | Public open-source projects with active community |
+| [**Postman Open Source Sponsorship**](https://www.postman.com/open-source) | `API Development` | 🎁 **Free Postman Team Plan** | Public API open-source projects |
 
 ---
 

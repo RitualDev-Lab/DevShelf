@@ -1,0 +1,74 @@
+﻿name: Auto Process Community Submission
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  process-submission:
+    name: Validate and Add to Shelf
+    if: contains(github.event.issue.labels.*.name, 'submission')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          run_install: false
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Process Issue Form Data
+        id: process
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_LABELS: ${{ join(github.event.issue.labels.*.name, ',') }}
+        run: |
+          npx tsx scripts/process-submission.ts
+
+      - name: Rebuild README & Web Directory Data
+        run: |
+          pnpm run build
+          pnpm run format
+
+      - name: Commit and Push to Main
+        run: |
+          git config --global user.name "DevShelf Bot"
+          git config --global user.email "bot@devshelf.local"
+          git add shelf/ README.md site/
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "feat(community): add submission from issue #${{ github.event.issue.number }} [skip ci]"
+            git push origin main
+          fi
+
+      - name: Post Confirmation & Close Issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: `🎉 **Congratulations @${context.payload.issue.user.login}!**\n\nYour submission has been verified and is now live on [DevShelf](https://github.com/RitualDev-Lab/DevShelf) and the [Interactive Web App](https://ritualdev-lab.github.io/DevShelf)!\n\nThank you for contributing to the open-source community! ⭐`
+            });
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              state: 'closed'
+            });
