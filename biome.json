@@ -1,5 +1,8 @@
-﻿{
+{
   "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "files": {
+    "ignore": ["site/data.json"]
+  },
   "formatter": {
     "enabled": true,
     "indentStyle": "space",
@@ -9,7 +12,13 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true
+      "recommended": true,
+      "suspicious": {
+        "noExplicitAny": "off"
+      },
+      "complexity": {
+        "noForEach": "off"
+      }
     }
   }
 }

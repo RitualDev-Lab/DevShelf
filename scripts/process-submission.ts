@@ -89,7 +89,7 @@ async function run() {
   if (isApi) {
     const name = data["api name"];
     const url = data["api website or documentation url"];
-    const category = data["category"] || "Development & Testing";
+    const category = data.category || "Development & Testing";
     const description = data["short description"];
     const auth = data["authentication required"] || "No Key";
     const cors = data["cors support (usable from browser)"] || "Unknown";
@@ -124,13 +124,13 @@ async function run() {
       https: url.startsWith("https://"),
     });
 
-    await fs.writeFile(filePath, JSON.stringify(list, null, 2) + "\n", "utf8");
+    await fs.writeFile(filePath, `${JSON.stringify(list, null, 2)}\n`, "utf8");
     console.log(`✅ Successfully added API: ${name}`);
   } else {
     // Project submission
     const name = data["project name"];
     const repo = data["github repository url"];
-    const category = data["category"] || "CLI & Developer Productivity";
+    const category = data.category || "CLI & Developer Productivity";
     const description = data["short description (1-2 sentences)"];
     const language = data["primary language / stack"] || "TypeScript";
     const license = data["open source license"] || "MIT";
@@ -173,7 +173,7 @@ async function run() {
       featured: false,
     });
 
-    await fs.writeFile(filePath, JSON.stringify(list, null, 2) + "\n", "utf8");
+    await fs.writeFile(filePath, `${JSON.stringify(list, null, 2)}\n`, "utf8");
     console.log(`✅ Successfully added Project: ${name} to ${targetFile}`);
   }
 }

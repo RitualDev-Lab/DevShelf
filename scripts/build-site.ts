@@ -1,4 +1,4 @@
-﻿import fs from "node:fs/promises";
+import fs from "node:fs/promises";
 import path from "node:path";
 
 async function buildSiteData() {
@@ -72,7 +72,11 @@ async function buildSiteData() {
     resources: allResources,
   };
 
-  await fs.writeFile(path.join(siteDir, "data.json"), JSON.stringify(payload, null, 2), "utf8");
+  await fs.writeFile(
+    path.join(siteDir, "data.json"),
+    `${JSON.stringify(payload, null, 2)}\n`,
+    "utf8",
+  );
   console.log(`✅ Built site/data.json with ${allResources.length} total resources.`);
 }
 

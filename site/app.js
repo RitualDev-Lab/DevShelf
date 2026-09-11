@@ -1,4 +1,4 @@
-﻿let allResources = [];
+let allResources = [];
 let activeCategory = "all";
 let searchQuery = "";
 
@@ -39,21 +39,25 @@ function setupListeners() {
   });
 
   // Category pill filter buttons
-  document.querySelectorAll(".category-pill").forEach((btn) => {
+  for (const btn of document.querySelectorAll(".category-pill")) {
     btn.addEventListener("click", () => {
-      document.querySelectorAll(".category-pill").forEach((b) => b.classList.remove("active"));
+      for (const b of document.querySelectorAll(".category-pill")) {
+        b.classList.remove("active");
+      }
       btn.classList.add("active");
       activeCategory = btn.dataset.category;
       render();
     });
-  });
+  }
 
   // Reset filters button
   document.getElementById("reset-filters-btn")?.addEventListener("click", () => {
     searchInput.value = "";
     searchQuery = "";
     activeCategory = "all";
-    document.querySelectorAll(".category-pill").forEach((b) => b.classList.remove("active"));
+    for (const b of document.querySelectorAll(".category-pill")) {
+      b.classList.remove("active");
+    }
     document.querySelector('.category-pill[data-category="all"]')?.classList.add("active");
     render();
   });
@@ -103,7 +107,7 @@ function render() {
   }
 
   // Attach copy listeners
-  document.querySelectorAll(".copy-btn").forEach((btn) => {
+  for (const btn of document.querySelectorAll(".copy-btn")) {
     btn.addEventListener("click", (e) => {
       e.preventDefault();
       e.stopPropagation();
@@ -112,7 +116,7 @@ function render() {
         showToast(`Copied to clipboard: ${url}`);
       });
     });
-  });
+  }
 }
 
 function createCardHtml(item) {
