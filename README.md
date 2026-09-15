@@ -6,7 +6,7 @@
 **Discover high-quality developer tools, verified free APIs, AI agents, and open-source projects with zero paywalls.**
 
 [![Live Web Directory](https://img.shields.io/badge/Web_Directory-Live_Search_%26_Filters-7928CA?style=for-the-badge&logo=googlechrome&logoColor=white)](https://ritualdev-lab.github.io/DevShelf)
-[![Total Resources](https://img.shields.io/badge/Listed_Resources-34+_Curated-blueviolet?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
+[![Total Resources](https://img.shields.io/badge/Listed_Resources-36+_Curated-blueviolet?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
 [![Free APIs](https://img.shields.io/badge/Free_APIs-7_Verified-success?style=for-the-badge)](#-1-free--public-apis)
 [![Open Source](https://img.shields.io/badge/Open_Source-100%25_FOSS-blue?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
 [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen?style=for-the-badge)](#-how-to-submit-your-project-or-api)
@@ -82,6 +82,11 @@ Open-source AI frameworks, local LLM serving, and coding assistants.
 
 `Category: Web UI & Chat` • `Language: Python / Svelte` • `License: MIT` • [View Repo →](https://github.com/open-webui/open-webui)
 
+### [YYLO](https://github.com/yylo-dev/yylo)
+> Command-line orchestrator for AI coding agents: runs Claude Code, Codex CLI, and Gemini CLI in parallel git worktrees with Kanban task state, typed merge flows, and per-agent skills.
+
+`Category: AI Agents & Local LLMs` • `Language: TypeScript` • `License: MIT` • [View Repo →](https://github.com/yylo-dev/yylo)
+
 ---
 
 ## ⚡ 3. CLI & Productivity Tools
@@ -92,6 +97,11 @@ Terminal utilities, git enhancers, and developer workflows that save hours every
 > Local-first & privacy-hardened AI Git commit intelligence with Conventional Commits, AST secret redaction, atomic hunk splitting, and 1-click VS Code extension.
 
 ⭐ **Featured** • `Category: Git & Version Control` • `Language: TypeScript` • `License: MIT` • [View Repo →](https://github.com/RitualDev-Lab/GitWhisper)
+
+### [FlashLane](https://github.com/RitualDev-Lab/FlashLane)
+> Universal, high-speed bootable ISO/IMG USB writer with Rufus parity for Windows, macOS, and Linux. Streaming 4MB chunks, MBR/GPT, BIOS/UEFI, and simulation mode.
+
+⭐ **Featured** • `Category: OS & Hardware Utilities` • `Language: TypeScript / Electron` • `License: MIT` • [View Repo →](https://github.com/RitualDev-Lab/FlashLane)
 
 ### [lazygit](https://github.com/jesseduffield/lazygit)
 > Simple, fast terminal UI for git commands with interactive rebasing and visual diff navigation.

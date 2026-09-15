@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "name": "Ollama",
     "repo": "https://github.com/ollama/ollama",
@@ -32,6 +32,15 @@
     "category": "Web UI & Chat",
     "description": "User-friendly AI interface designed for self-hosting with complete Ollama and OpenAI-compatible API support.",
     "language": "Python / Svelte",
+    "license": "MIT",
+    "featured": false
+  },
+  {
+    "name": "YYLO",
+    "repo": "https://github.com/yylo-dev/yylo",
+    "category": "AI Agents & Local LLMs",
+    "description": "Command-line orchestrator for AI coding agents: runs Claude Code, Codex CLI, and Gemini CLI in parallel git worktrees with Kanban task state, typed merge flows, and per-agent skills.",
+    "language": "TypeScript",
     "license": "MIT",
     "featured": false
   }

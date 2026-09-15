@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-09-11T10:25:42.532Z",
-  "totalCount": 34,
+  "updatedAt": "2026-09-15T09:13:24.367Z",
+  "totalCount": 36,
   "counts": {
     "apis": 7,
-    "aiTools": 4,
-    "cliTools": 5,
+    "aiTools": 5,
+    "cliTools": 6,
     "testingQa": 4,
     "freeCloud": 5,
     "contributors": 2,
@@ -140,11 +140,33 @@
       "section": "AI Agents & Local LLMs"
     },
     {
+      "name": "YYLO",
+      "repo": "https://github.com/yylo-dev/yylo",
+      "category": "AI Agents & Local LLMs",
+      "description": "Command-line orchestrator for AI coding agents: runs Claude Code, Codex CLI, and Gemini CLI in parallel git worktrees with Kanban task state, typed merge flows, and per-agent skills.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "featured": false,
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
       "name": "GitWhisper",
       "repo": "https://github.com/RitualDev-Lab/GitWhisper",
       "category": "Git & Version Control",
       "description": "Local-first & privacy-hardened AI Git commit intelligence with Conventional Commits, AST secret redaction, atomic hunk splitting, and 1-click VS Code extension.",
       "language": "TypeScript",
+      "license": "MIT",
+      "featured": true,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "FlashLane",
+      "repo": "https://github.com/RitualDev-Lab/FlashLane",
+      "category": "OS & Hardware Utilities",
+      "description": "Universal, high-speed bootable ISO/IMG USB writer with Rufus parity for Windows, macOS, and Linux. Streaming 4MB chunks, MBR/GPT, BIOS/UEFI, and simulation mode.",
+      "language": "TypeScript / Electron",
       "license": "MIT",
       "featured": true,
       "type": "cli",
