@@ -1,0 +1,55 @@
+name: ?? Report Inappropriate or Paywalled Content
+description: Report deceptive paywalls, malicious links, spam, or Code of Conduct violations to repository admins
+title: "[Content Report]: <Resource Name>"
+labels: ["content-report", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### ??? Repository Administrator Content Report
+        DevShelf maintainers maintain a zero-tolerance policy against deceptive bait-and-switch tools, hidden credit card requirements, malicious software, and spam.
+        Repository administrators actively review all submitted reports.
+  - type: input
+    id: resource_name
+    attributes:
+      label: Resource Name & URL
+      placeholder: e.g. SuspiciousTool (https://example.com/tool)
+    validations:
+      required: true
+  - type: dropdown
+    id: report_reason
+    attributes:
+      label: Nature of Violation
+      options:
+        - Deceptive Paywall (Requires Credit Card or Paid Subscription)
+        - Malicious Software / Suspicious Binary / Phishing
+        - Crypto / NFT / Affiliate Referral Spam
+        - License Violation / Stolen Intellectual Property
+        - Code of Conduct Violation / Harassment
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: explanation
+    attributes:
+      label: Detailed Explanation & Evidence
+      placeholder: Describe the issue and provide evidence (screenshots, links to pricing pages showing paywalls, etc.).
+    validations:
+      required: true
+  - type: dropdown
+    id: recommended_action
+    attributes:
+      label: Recommended Remediation
+      options:
+        - Delist / Remove immediately from DevShelf
+        - Update description with explicit limitations
+        - Other
+    validations:
+      required: true
+  - type: checkboxes
+    id: acknowledgment
+    attributes:
+      label: Confirmation
+      options:
+        - label: I confirm that this report is submitted in good faith to protect the developer community.
+          required: true
