@@ -18,7 +18,9 @@ interface LinkCheckResult {
   error?: string;
 }
 
-async function pingUrl(urlStr: string): Promise<{ ok: boolean; status: number | string; error?: string }> {
+async function pingUrl(
+  urlStr: string,
+): Promise<{ ok: boolean; status: number | string; error?: string }> {
   try {
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 8000);
@@ -89,7 +91,9 @@ async function checkDeadLinks() {
     }
   }
 
-  console.log(`🔍 [DevShelf Validator] Pinging ${itemsToCheck.length} curated endpoints across ${files.length} shelf files...\n`);
+  console.log(
+    `🔍 [DevShelf Validator] Pinging ${itemsToCheck.length} curated endpoints across ${files.length} shelf files...\n`,
+  );
 
   // Run in chunks of 5 concurrent requests to avoid rate limits
   const concurrency = 5;
