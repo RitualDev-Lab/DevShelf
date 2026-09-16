@@ -14,13 +14,12 @@
 
 <p align="center">
   <a href="https://ritualdev-lab.github.io/DevShelf"><b>🌐 Interactive Web App</b></a> •
+  <a href="https://github.com/RitualDev-Lab/DevShelf/wiki"><b>📖 Project Wiki</b></a> •
   <a href="#-1-free--public-apis">Free APIs</a> •
   <a href="#-2-ai-agents--local-llm-tools">AI & LLMs</a> •
   <a href="#-3-cli--productivity-tools">CLI Tools</a> •
   <a href="#-4-testing--qa-reliability">Testing & QA</a> •
   <a href="#-5-free-cloud--developer-tiers">Free Cloud</a> •
-  <a href="#-6-contributors-wanted">Contribute</a> •
-  <a href="#-7-developer-discounts--startup-perks">Perks</a> •
   <a href="#-how-to-submit-your-project-or-api"><b>➕ Submit Yours</b></a>
 </p>
 

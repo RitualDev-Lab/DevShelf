@@ -8,6 +8,8 @@
   "scripts": {
     "build": "npx tsx scripts/build-site.ts && npx tsx scripts/build-readme.ts",
     "validate": "npx tsx scripts/validate-shelf.ts",
+    "check:links": "npx tsx scripts/check-links.ts",
+    "wiki:sync": "node scripts/sync-wiki.cjs",
     "format": "biome format --write .",
     "format:check": "biome format .",
     "lint": "biome lint ."
