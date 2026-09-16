@@ -1,11 +1,12 @@
 <div align="center">
 
 # 📚 DevShelf
+
 ### The Crowdsourced Developer Directory
 **Discover high-quality developer tools, verified free APIs, AI agents, and open-source projects with zero paywalls.**
 
 [![Live Web Directory](https://img.shields.io/badge/Web_Directory-Live_Search_%26_Filters-7928CA?style=for-the-badge&logo=googlechrome&logoColor=white)](https://ritualdev-lab.github.io/DevShelf)
-[![Total Resources](https://img.shields.io/badge/Listed_Resources-36+_Curated-blueviolet?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
+[![Total Resources](https://img.shields.io/badge/Listed_Resources-37+_Curated-blueviolet?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
 [![Endpoint Health](https://img.shields.io/badge/Endpoint_Health-100%25_Verified-brightgreen?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/RitualDev-Lab/DevShelf/actions)
 [![Open Source](https://img.shields.io/badge/Open_Source-100%25_FOSS-blue?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
 [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen?style=for-the-badge)](#-how-to-submit-your-project-or-api)
@@ -120,6 +121,11 @@ Terminal utilities, git enhancers, and developer workflows that save hours every
 > General-purpose command-line fuzzy finder with blazing speed and interactive shell bindings.
 
 `Category: Terminal & Shell` • `Language: Go` • `License: MIT` • [View Repo →](https://github.com/junegunn/fzf)
+
+### [agent-browser](https://github.com/vercel-labs/agent-browser)
+> Open-source browser automation CLI for AI agents, with a fast Rust core and Node.js fallback for navigation, forms, screenshots, and structured page interaction.
+
+`Category: CLI & Developer Productivity` • `Language: Rust / TypeScript` • `License: Apache-2.0` • [View Repo →](https://github.com/vercel-labs/agent-browser)
 
 ---
 

@@ -52,5 +52,14 @@
     "language": "Go",
     "license": "MIT",
     "featured": false
+  },
+  {
+    "name": "agent-browser",
+    "repo": "https://github.com/vercel-labs/agent-browser",
+    "category": "CLI & Developer Productivity",
+    "description": "Open-source browser automation CLI for AI agents, with a fast Rust core and Node.js fallback for navigation, forms, screenshots, and structured page interaction.",
+    "language": "Rust / TypeScript",
+    "license": "Apache-2.0",
+    "featured": false
   }
 ]

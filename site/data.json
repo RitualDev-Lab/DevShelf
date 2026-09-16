@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-09-16T01:55:58.356Z",
-  "totalCount": 36,
+  "updatedAt": "2026-09-16T22:23:38.925Z",
+  "totalCount": 37,
   "counts": {
     "apis": 7,
     "aiTools": 5,
-    "cliTools": 6,
+    "cliTools": 7,
     "testingQa": 4,
     "freeCloud": 5,
     "contributors": 2,
@@ -212,6 +212,17 @@
       "description": "General-purpose command-line fuzzy finder with blazing speed and interactive shell bindings.",
       "language": "Go",
       "license": "MIT",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "agent-browser",
+      "repo": "https://github.com/vercel-labs/agent-browser",
+      "category": "CLI & Developer Productivity",
+      "description": "Open-source browser automation CLI for AI agents, with a fast Rust core and Node.js fallback for navigation, forms, screenshots, and structured page interaction.",
+      "language": "Rust / TypeScript",
+      "license": "Apache-2.0",
       "featured": false,
       "type": "cli",
       "section": "CLI & Productivity Tools"
