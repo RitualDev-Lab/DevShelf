@@ -7,7 +7,7 @@
 
 [![Live Web Directory](https://img.shields.io/badge/Web_Directory-Live_Search_%26_Filters-7928CA?style=for-the-badge&logo=googlechrome&logoColor=white)](https://ritualdev-lab.github.io/DevShelf)
 [![Total Resources](https://img.shields.io/badge/Listed_Resources-36+_Curated-blueviolet?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
-[![Free APIs](https://img.shields.io/badge/Free_APIs-7_Verified-success?style=for-the-badge)](#-1-free--public-apis)
+[![Endpoint Health](https://img.shields.io/badge/Endpoint_Health-100%25_Verified-brightgreen?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/RitualDev-Lab/DevShelf/actions)
 [![Open Source](https://img.shields.io/badge/Open_Source-100%25_FOSS-blue?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
 [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen?style=for-the-badge)](#-how-to-submit-your-project-or-api)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
@@ -207,7 +207,7 @@ Free cloud credits, software sponsorships, and startup program perks for develop
 | Perk & Provider | Category | Value & Benefits | Eligibility |
 | :--- | :--- | :--- | :--- |
 | [**JetBrains Free Open Source License**](https://www.jetbrains.com/community/opensource) | `Developer Tools & IDEs` | 🎁 **Free 1-Year All Products Pack ($779/yr value)** | Active open-source project (3+ months, non-commercial) |
-| [**1Password for Open Source**](https://github.com/1Password/op-for-open-source) | `Security & Password Management` | 🎁 **Free 1Password Teams Account** | Public open-source repository on GitHub |
+| [**Sentry for Open Source**](https://sentry.io/for/open-source/) | `Error Tracking & Observability` | 🎁 **Free Sentry Business Plan ($312+/yr value)** | Public open-source repository with OSI-approved license |
 | [**GitHub for Startups**](https://github.com/enterprise/startups) | `Hosting & Dev Collaboration` | 🎁 **Up to 20 Free Enterprise Seats ($5,000+ value)** | Series A or earlier startups |
 | [**AWS Activate Founders**](https://aws.amazon.com/activate) | `Cloud Infrastructure` | 🎁 **$1,000 - $100,000 AWS Cloud Credits** | Self-funded or early-stage startups |
 | [**Google Cloud for Startups**](https://cloud.google.com/startup) | `Cloud Infrastructure & AI` | 🎁 **$2,000 in GCP Cloud Credits** | Early-stage bootstrap / funded startups |

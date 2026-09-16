@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "name": "JetBrains Free Open Source License",
     "url": "https://www.jetbrains.com/community/opensource",
@@ -8,12 +8,12 @@
     "eligibility": "Active open-source project (3+ months, non-commercial)"
   },
   {
-    "name": "1Password for Open Source",
-    "url": "https://github.com/1Password/op-for-open-source",
-    "category": "Security & Password Management",
-    "description": "Free 1Password Teams subscription to securely manage and share secrets, SSH keys, and tokens with your maintainer team.",
-    "perkValue": "Free 1Password Teams Account",
-    "eligibility": "Public open-source repository on GitHub"
+    "name": "Sentry for Open Source",
+    "url": "https://sentry.io/for/open-source/",
+    "category": "Error Tracking & Observability",
+    "description": "Free Sentry Business plan for qualifying open-source maintainers to monitor application health, errors, and real-time performance.",
+    "perkValue": "Free Sentry Business Plan ($312+/yr value)",
+    "eligibility": "Public open-source repository with OSI-approved license"
   },
   {
     "name": "GitHub for Startups",

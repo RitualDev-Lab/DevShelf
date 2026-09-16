@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-15T09:13:24.367Z",
+  "updatedAt": "2026-09-16T01:26:32.081Z",
   "totalCount": 36,
   "counts": {
     "apis": 7,
@@ -338,12 +338,12 @@
       "section": "Developer Discounts & Startup Perks"
     },
     {
-      "name": "1Password for Open Source",
-      "url": "https://github.com/1Password/op-for-open-source",
-      "category": "Security & Password Management",
-      "description": "Free 1Password Teams subscription to securely manage and share secrets, SSH keys, and tokens with your maintainer team.",
-      "perkValue": "Free 1Password Teams Account",
-      "eligibility": "Public open-source repository on GitHub",
+      "name": "Sentry for Open Source",
+      "url": "https://sentry.io/for/open-source/",
+      "category": "Error Tracking & Observability",
+      "description": "Free Sentry Business plan for qualifying open-source maintainers to monitor application health, errors, and real-time performance.",
+      "perkValue": "Free Sentry Business Plan ($312+/yr value)",
+      "eligibility": "Public open-source repository with OSI-approved license",
       "type": "perks",
       "section": "Developer Discounts & Startup Perks"
     },
