@@ -1,7 +1,6 @@
 <div align="center">
 
 # 📚 DevShelf
-
 ### The Crowdsourced Developer Directory
 **Discover high-quality developer tools, verified free APIs, AI agents, and open-source projects with zero paywalls.**
 
