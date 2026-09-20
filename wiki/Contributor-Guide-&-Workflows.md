@@ -58,3 +58,31 @@ git commit -m "feat(shelf): add ToolName to cli-tools.json"
 git push origin add-tool-name
 ```
 Open a Pull Request against `main`. Our CI will automatically verify your changes.
+
+---
+
+## 🎖️ Display the "Featured on DevShelf" Badge
+
+If your project is curated on DevShelf, show it off on your README! Pick whichever style fits your project aesthetic:
+
+### Option 1: Modern Electric Violet (Recommended)
+[![Featured on DevShelf](https://img.shields.io/badge/Featured_on-DevShelf-8B5CF6?style=for-the-badge&logo=compass&logoColor=06B6D4&labelColor=0B0F19)](https://ritualdev-lab.github.io/DevShelf/)
+
+```markdown
+[![Featured on DevShelf](https://img.shields.io/badge/Featured_on-DevShelf-8B5CF6?style=for-the-badge&logo=compass&logoColor=06B6D4&labelColor=0B0F19)](https://ritualdev-lab.github.io/DevShelf/)
+```
+
+### Option 2: Terminal Emerald
+[![DevShelf Verified](https://img.shields.io/badge/DevShelf-100%25_Verified_FOSS-10B981?style=for-the-badge&logo=gnubash&logoColor=white&labelColor=111827)](https://ritualdev-lab.github.io/DevShelf/)
+
+```markdown
+[![DevShelf Verified](https://img.shields.io/badge/DevShelf-100%25_Verified_FOSS-10B981?style=for-the-badge&logo=gnubash&logoColor=white&labelColor=111827)](https://ritualdev-lab.github.io/DevShelf/)
+```
+
+### Option 3: Minimal Dark Pill
+[![Featured on DevShelf](https://img.shields.io/badge/📚_Featured_on-DevShelf-6366F1?style=flat&labelColor=1E1E2E&color=A855F7)](https://ritualdev-lab.github.io/DevShelf/)
+
+```markdown
+[![Featured on DevShelf](https://img.shields.io/badge/📚_Featured_on-DevShelf-6366F1?style=flat&labelColor=1E1E2E&color=A855F7)](https://ritualdev-lab.github.io/DevShelf/)
+```
+
