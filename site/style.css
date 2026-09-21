@@ -707,3 +707,159 @@ a {
   color: #ffffff;
   border-color: #34d399;
 }
+
+/* ── Interactive "Playground" Sandbox ───────────── */
+
+.playground-tray {
+  display: none;
+  width: 100%;
+}
+
+.playground-tray.open {
+  display: block;
+  animation: fadeSlideUp 0.25s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.terminal-window {
+  background: #030712;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 12px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.8);
+}
+
+.terminal-header {
+  background: #090d16;
+  padding: 8px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #1e293b;
+  font-size: 11px;
+}
+
+.terminal-dots {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.terminal-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+
+.terminal-prompt {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 11px;
+  color: #38bdf8;
+  padding: 10px 14px;
+  background: #060a12;
+  border-bottom: 1px dashed #1e293b;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.terminal-output {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 11px;
+  line-height: 1.5;
+  color: #a5f3fc;
+  padding: 12px 14px;
+  max-height: 220px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.terminal-output::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.terminal-output::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+
+/* ── Community Vouch & Flag Counter ─────────────── */
+
+.vouch-btn {
+  transition: all 0.15s ease;
+  cursor: pointer;
+}
+
+.vouch-btn:hover {
+  border-color: rgba(52, 211, 153, 0.5);
+  color: #34d399;
+}
+
+.vouch-btn.vouched {
+  background: rgba(16, 185, 129, 0.2) !important;
+  color: #34d399 !important;
+  border-color: rgba(52, 211, 153, 0.5) !important;
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.25);
+}
+
+.flag-btn {
+  transition: all 0.15s ease;
+  cursor: pointer;
+}
+
+.flag-btn:hover {
+  color: #f87171 !important;
+  border-color: rgba(248, 113, 113, 0.4) !important;
+}
+
+/* ── Contributor "Hall of Fame" Marquee ──────────── */
+
+.marquee-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
+  padding: 12px 0;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+  animation: marqueeScroll 38s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.contributor-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  background: #090d16;
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  flex-shrink: 0;
+  min-width: 220px;
+}
+
+.contributor-card:hover {
+  border-color: #8b5cf6;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px -2px rgba(139, 92, 246, 0.35);
+  background: #0d1322;
+}
