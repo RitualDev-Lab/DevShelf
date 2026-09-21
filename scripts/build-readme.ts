@@ -46,7 +46,7 @@ async function build() {
   <a href="https://github.com/RitualDev-Lab/DevShelf/wiki"><b>📖 Project Wiki</b></a> •
   <a href="#-featured-spotlight--tools-of-the-week"><b>🔥 Featured Spotlight</b></a> •
   <a href="#-social-amplification-guarantee"><b>🚀 Social Guarantee</b></a> •
-  <a href="#-top-contributors--community-wall"><b>👥 Contributors</b></a> •
+  <a href="#-team--contributors"><b>👥 Team & Contributors</b></a> •
   <a href="#-how-to-submit-your-project-or-api"><b>➕ Submit Yours</b></a>
 </p>
 
@@ -134,9 +134,39 @@ Are you listed on DevShelf? Display an official badge on your project's \`README
 
 ---
 
-## 👥 Top Contributors & Community Wall
+## 👥 Team & Contributors
 
-DevShelf is built with passion by developers worldwide. Huge thanks to all the amazing contributors who have submitted tools, squashed bugs, and expanded the directory!
+DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDev-Lab) and expanded by the global open-source community.
+
+### 🛡️ Core Team & Maintainers
+
+<table align="center">
+  <tr>
+    <td align="center" width="180">
+      <a href="https://github.com/divyanshujethi">
+        <img src="https://github.com/divyanshujethi.png" width="80" style="border-radius: 50%;" alt="Divyanshu Jethi"/><br />
+        <sub><b>Divyanshu Jethi</b></sub>
+      </a><br />
+      <sub>🚀 Founder & Lead</sub>
+    </td>
+    <td align="center" width="180">
+      <a href="https://github.com/Sakshisharma1616">
+        <img src="https://github.com/Sakshisharma1616.png" width="80" style="border-radius: 50%;" alt="Sakshi Sharma"/><br />
+        <sub><b>Sakshi Sharma</b></sub>
+      </a><br />
+      <sub>🎨 Core Maintainer & Product</sub>
+    </td>
+    <td align="center" width="180">
+      <a href="https://github.com/Ritual-Dev-Git">
+        <img src="https://github.com/Ritual-Dev-Git.png" width="80" style="border-radius: 50%;" alt="RitualDev"/><br />
+        <sub><b>RitualDev</b></sub>
+      </a><br />
+      <sub>⚙️ Core Maintainer & Infra</sub>
+    </td>
+  </tr>
+</table>
+
+### 🌟 Open Source Contributors
 
 <div align="center">
 
