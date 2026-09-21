@@ -5,3 +5,4 @@ dist
 *.tmp
 .pr-validation-report.md
 .sunset-pr-metadata.json
+.ai-pr-optimization.md

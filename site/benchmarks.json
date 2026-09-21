@@ -1,0 +1,49 @@
+{
+  "lastRun": "2026-09-21T20:48:24.044Z",
+  "totalBenchmarked": 3,
+  "sluggishCount": 0,
+  "endpoints": [
+    {
+      "name": "Ollama",
+      "file": "ai-tools.json",
+      "url": "https://github.com/ollama/ollama",
+      "lastChecked": "2026-09-21T20:48:21.717Z",
+      "samples": [
+        2002,
+        81,
+        49
+      ],
+      "avgLatencyMs": 711,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Dify",
+      "file": "ai-tools.json",
+      "url": "https://github.com/langgenius/dify",
+      "lastChecked": "2026-09-21T20:48:22.926Z",
+      "samples": [
+        645,
+        45,
+        44
+      ],
+      "avgLatencyMs": 245,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "vLLM",
+      "file": "ai-tools.json",
+      "url": "https://github.com/vllm-project/vllm",
+      "lastChecked": "2026-09-21T20:48:24.044Z",
+      "samples": [
+        557,
+        44,
+        45
+      ],
+      "avgLatencyMs": 215,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    }
+  ]
+}

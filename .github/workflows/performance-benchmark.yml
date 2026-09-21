@@ -1,0 +1,48 @@
+name: Nightly Performance Benchmarking
+
+on:
+  schedule:
+    - cron: '0 2 * * *' # Every night at 2:00 AM UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  benchmark:
+    name: Measure TTFB Latency & Audit Sluggish APIs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          run_install: false
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run Performance Benchmark
+        run: npx tsx scripts/benchmark-performance.ts
+
+      - name: Commit Updated Latency Benchmarks
+        run: |
+          git config --global user.name "DevShelf Bot"
+          git config --global user.email "bot@devshelf.local"
+          git add shelf/ site/ README.md
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(benchmark): update nightly latency metrics & performance warnings [skip ci]"
+            git push origin main
+          fi

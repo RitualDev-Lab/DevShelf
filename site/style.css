@@ -863,3 +863,10 @@ a {
   box-shadow: 0 6px 20px -2px rgba(139, 92, 246, 0.35);
   background: #0d1322;
 }
+
+.status-badge-latency {
+  background-color: rgba(245, 158, 11, 0.2) !important;
+  color: #fbbf24 !important;
+  border-color: rgba(245, 158, 11, 0.5) !important;
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.2);
+}

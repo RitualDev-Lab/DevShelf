@@ -1,4 +1,4 @@
-name: PR Schema & Duplicate Validator
+name: PR Schema, Duplicate & AI Optimization Validator
 
 on:
   pull_request:
@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   validate-pr:
-    name: Validate Schema & Check Duplicates
+    name: Validate Schema, Duplicates & AI Optimization
     runs-on: ubuntu-latest
     steps:
       - name: Checkout PR Code
@@ -41,11 +41,19 @@ jobs:
           GITHUB_BASE_REF: ${{ github.base_ref }}
         run: npx tsx scripts/validate-pr.ts
 
-      - name: Check Validation Report
+      - name: Run AI-Driven PR Optimization & Tagging
+        id: ai_optimizer
+        continue-on-error: true
+        env:
+          GITHUB_BASE_REF: ${{ github.base_ref }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: npx tsx scripts/ai-optimize-pr.ts
+
+      - name: Check Validation & AI Reports
         id: report
         if: always()
         run: |
-          if [ -f .pr-validation-report.md ]; then
+          if [ -f .pr-validation-report.md ] || [ -f .ai-pr-optimization.md ]; then
             echo "has_report=true" >> "$GITHUB_OUTPUT"
           else
             echo "has_report=false" >> "$GITHUB_OUTPUT"
@@ -57,8 +65,16 @@ jobs:
         with:
           script: |
             const fs = require('node:fs');
-            if (!fs.existsSync('.pr-validation-report.md')) return;
-            const reportContent = fs.readFileSync('.pr-validation-report.md', 'utf8');
+            let combinedReport = "";
+
+            if (fs.existsSync('.pr-validation-report.md')) {
+              combinedReport += fs.readFileSync('.pr-validation-report.md', 'utf8') + "\n\n";
+            }
+            if (fs.existsSync('.ai-pr-optimization.md')) {
+              combinedReport += fs.readFileSync('.ai-pr-optimization.md', 'utf8');
+            }
+
+            if (!combinedReport.trim()) return;
 
             const issueNumber = context.payload.pull_request?.number;
             if (!issueNumber) return;
@@ -78,19 +94,19 @@ jobs:
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 comment_id: botComment.id,
-                body: reportContent,
+                body: combinedReport,
               });
             } else {
               await github.rest.issues.createComment({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: issueNumber,
-                body: reportContent,
+                body: combinedReport,
               });
             }
 
       - name: Enforce Validation Gate
         if: steps.validator.outcome == 'failure'
         run: |
-          echo "❌ PR schema validation or duplicate check failed. See the automated comment above."
+          echo "❌ PR schema validation or duplicate check failed. See the automated review comment above."
           exit 1

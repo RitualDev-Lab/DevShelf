@@ -1,7 +1,13 @@
 {
   "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
   "files": {
-    "ignore": ["site/data.json", "site/data.js", "site/uptime.json", "site/matchmaker.json"]
+    "ignore": [
+      "site/data.json",
+      "site/data.js",
+      "site/uptime.json",
+      "site/matchmaker.json",
+      "site/benchmarks.json"
+    ]
   },
   "formatter": {
     "enabled": true,

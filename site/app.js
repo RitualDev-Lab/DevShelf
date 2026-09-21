@@ -783,6 +783,12 @@ function getStatusTagClass(tag) {
   if (lower.includes("no card") || lower.includes("nocard")) return "status-badge-nocard";
   if (lower.includes("credit card") || lower.includes("verify")) return "status-badge-verify";
   if (lower.includes("self-hostable") || lower.includes("selfhost")) return "status-badge-selfhost";
+  if (
+    lower.includes("latency") ||
+    lower.includes("sluggish") ||
+    lower.includes("performance warning")
+  )
+    return "status-badge-latency";
   return "bg-slate-800 text-slate-300 border-slate-700";
 }
 
