@@ -13,7 +13,7 @@
 <br>
 
 [![Live Web Directory](https://img.shields.io/badge/🌐_Web_Directory-Live_Search_%26_Filters-7928CA?style=for-the-badge&logoColor=white)](https://devshelf.ritualdev.in)
-[![Curated Resources](https://img.shields.io/badge/📦_Resources-90+_Curated-blueviolet?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
+[![Curated Resources](https://img.shields.io/badge/📦_Resources-93+_Curated-blueviolet?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
 [![Endpoint Health](https://img.shields.io/badge/🛡️_Health-100%25_Verified-brightgreen?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf/actions)
 [![Open Source](https://img.shields.io/badge/🔓_License-MIT_FOSS-blue?style=for-the-badge)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/🤝_PRs-Welcome_%26_Amplified-brightgreen?style=for-the-badge)](#-how-to-submit-your-project-or-api)
@@ -28,7 +28,7 @@
 <td align="center"><b>🧪 Testing & QA</b><br><code>11</code></td>
 <td align="center"><b>☁️ Free Cloud</b><br><code>10</code></td>
 <td align="center"><b>🤝 Up for Grabs</b><br><code>9</code></td>
-<td align="center"><b>🎁 Dev Perks</b><br><code>10</code></td>
+<td align="center"><b>🎁 Dev Perks</b><br><code>13</code></td>
 </tr>
 </table>
 
@@ -594,6 +594,9 @@ Free cloud credits, software sponsorships, and startup program perks for develop
 | [**Datadog for Open Source**](https://www.datadoghq.com/partner/open-source/) | `Observability & APM` | 🎁 **Free Datadog Pro Account ($180+/host/yr)** | Non-commercial OSI-approved open source projects |
 | [**BrowserStack Open Source**](https://www.browserstack.com/open-source) | `Cross-Browser & Device Testing` | 🎁 **Free Unlimited Live & Automate Testing ($348+/yr)** | Public open-source repository with active development |
 | [**Docker Open Source Community**](https://www.docker.com/community/open-source/application) | `Container Registries & CI` | 🎁 **Free Docker Hub Team Tier ($108+/yr value)** | Active OSI-compliant open-source projects |
+| [**JetBrains Mono**](https://github.com/JetBrains/JetBrainsMono) | `Developer Fonts & Aesthetics` | 🎁 **Free download (SIL Open Font License 1.1)** | Free for personal and commercial use under OFL 1.1 |
+| [**Fira Code**](https://github.com/tonsky/FiraCode) | `Developer Fonts & Aesthetics` | 🎁 **Free download (SIL Open Font License 1.1)** | Free to use under OFL 1.1 |
+| [**Cascadia Code**](https://github.com/microsoft/cascadia-code) | `Developer Fonts & Aesthetics` | 🎁 **Free download (SIL Open Font License 1.1)** | Free to use under OFL 1.1 |
 
 ---
 

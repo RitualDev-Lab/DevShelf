@@ -78,5 +78,29 @@
     "description": "Free Docker Hub Team account with unlimited image pulls, public repositories, and automated security vulnerability scans.",
     "perkValue": "Free Docker Hub Team Tier ($108+/yr value)",
     "eligibility": "Active OSI-compliant open-source projects"
+  },
+  {
+    "name": "JetBrains Mono",
+    "url": "https://github.com/JetBrains/JetBrainsMono",
+    "category": "Developer Fonts & Aesthetics",
+    "description": "Free monospaced coding font with toggleable OpenType ligatures; a no-ligature variant is also available.",
+    "perkValue": "Free download (SIL Open Font License 1.1)",
+    "eligibility": "Free for personal and commercial use under OFL 1.1"
+  },
+  {
+    "name": "Fira Code",
+    "url": "https://github.com/tonsky/FiraCode",
+    "category": "Developer Fonts & Aesthetics",
+    "description": "Free monospaced font with programming ligatures; the ligatures change how code is rendered, not its underlying characters.",
+    "perkValue": "Free download (SIL Open Font License 1.1)",
+    "eligibility": "Free to use under OFL 1.1"
+  },
+  {
+    "name": "Cascadia Code",
+    "url": "https://github.com/microsoft/cascadia-code",
+    "category": "Developer Fonts & Aesthetics",
+    "description": "Free monospaced coding font with programming ligatures; Cascadia Mono is the variant without ligatures.",
+    "perkValue": "Free download (SIL Open Font License 1.1)",
+    "eligibility": "Free to use under OFL 1.1"
   }
 ]
