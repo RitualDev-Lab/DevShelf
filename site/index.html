@@ -35,7 +35,7 @@
       }
     }
   </script>
-  <link rel="stylesheet" href="style.css?v=2.0">
+  <link rel="stylesheet" href="style.css?v=2.1">
 </head>
 <body class="bg-slate-950 text-slate-100 min-h-screen font-sans selection:bg-purple-600 selection:text-white relative">
 
@@ -63,20 +63,17 @@
         <a href="#spotlight" class="hover:text-purple-300 transition">🔥 Spotlight</a>
         <a href="#directory" class="hover:text-purple-300 transition">📁 Directory</a>
         <a href="#team" class="hover:text-purple-300 transition">👥 Team</a>
-        <button id="open-badge-modal-btn" class="hover:text-cyan-300 transition flex items-center space-x-1.5 text-slate-200 font-bold">
-          <span>🎖️ Get Badge</span>
-        </button>
         <a href="https://github.com/RitualDev-Lab/DevShelf/wiki" target="_blank" rel="noreferrer" class="hover:text-purple-300 transition">📖 Wiki</a>
       </nav>
 
       <div class="flex items-center space-x-2.5">
-        <button id="nav-badge-btn" class="inline-flex items-center space-x-1 px-3 py-1.5 text-xs font-bold rounded-lg bg-purple-900/40 hover:bg-purple-900/70 border border-purple-500/50 text-purple-200 transition">
-          <span>🎖️ Badges</span>
+        <button id="open-badge-modal-btn" class="inline-flex items-center space-x-1 px-3 py-1.5 text-xs font-bold rounded-lg bg-purple-900/40 hover:bg-purple-900/70 border border-purple-500/50 text-purple-200 transition hover:scale-105 active:scale-95" title="Embed Featured Badges">
+          <span>🎖️ Get Badge</span>
         </button>
-        <a href="https://github.com/RitualDev-Lab/DevShelf" target="_blank" rel="noreferrer" class="hidden sm:inline-flex items-center space-x-1 px-3 py-1.5 text-xs font-bold rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 transition">
+        <a href="https://github.com/RitualDev-Lab/DevShelf" target="_blank" rel="noreferrer" class="hidden sm:inline-flex items-center space-x-1 px-3 py-1.5 text-xs font-bold rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 transition hover:scale-105 active:scale-95">
           <span>⭐ Star</span>
         </a>
-        <a href="https://github.com/RitualDev-Lab/DevShelf/issues/new/choose" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-1.5 px-3.5 py-1.5 text-xs font-bold rounded-lg bg-gradient-to-r from-purple-600 via-fuchsia-600 to-cyan-600 hover:opacity-95 transition shadow-lg shadow-purple-500/20 text-white">
+        <a href="https://github.com/RitualDev-Lab/DevShelf/issues/new/choose" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-1.5 px-3.5 py-1.5 text-xs font-bold rounded-lg bg-gradient-to-r from-purple-600 via-fuchsia-600 to-cyan-600 hover:opacity-95 transition shadow-lg shadow-purple-500/20 text-white hover:scale-105 active:scale-95">
           <span>➕ Submit Tool</span>
         </a>
       </div>
@@ -334,7 +331,7 @@
   </section>
 
   <!-- "Featured on DevShelf" Badge Modal -->
-  <div id="badge-modal" class="fixed inset-0 z-50 modal-backdrop items-center justify-center p-4">
+  <div id="badge-modal" class="fixed inset-0 z-50 modal-backdrop items-center justify-center p-4 hidden" style="display: none;">
     <div class="bg-slate-900 border border-slate-700 rounded-2xl max-w-lg w-full p-6 shadow-2xl relative my-auto">
       <div class="flex items-center justify-between pb-3 border-b border-slate-800 mb-4">
         <div class="flex items-center space-x-2">
@@ -424,6 +421,6 @@
   </footer>
 
   <script src="data.js"></script>
-  <script src="app.js?v=4.0"></script>
+  <script src="app.js?v=4.1"></script>
 </body>
 </html>

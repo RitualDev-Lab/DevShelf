@@ -174,6 +174,7 @@ let listenersInitialized = false;
 function setupListeners() {
   if (listenersInitialized) return;
   listenersInitialized = true;
+  closeBadgeModal();
 
   const searchInput = document.getElementById("search-input");
   const clearBtn = document.getElementById("clear-search-btn");
@@ -326,6 +327,7 @@ function setupListeners() {
 function openBadgeModal() {
   const modal = document.getElementById("badge-modal");
   if (modal) {
+    modal.classList.remove("hidden");
     modal.classList.add("show");
     modal.style.display = "flex";
     document.body.classList.add("overflow-hidden");
@@ -336,6 +338,7 @@ function closeBadgeModal() {
   const modal = document.getElementById("badge-modal");
   if (modal) {
     modal.classList.remove("show");
+    modal.classList.add("hidden");
     modal.style.display = "none";
     document.body.classList.remove("overflow-hidden");
   }
