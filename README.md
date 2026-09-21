@@ -13,7 +13,7 @@
 <br>
 
 [![Live Web Directory](https://img.shields.io/badge/🌐_Web_Directory-Live_Search_%26_Filters-7928CA?style=for-the-badge&logoColor=white)](https://devshelf.ritualdev.in)
-[![Curated Resources](https://img.shields.io/badge/📦_Resources-101+_Curated-blueviolet?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
+[![Curated Resources](https://img.shields.io/badge/📦_Resources-103+_Curated-blueviolet?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
 [![Endpoint Health](https://img.shields.io/badge/🛡️_Health-100%25_Verified-brightgreen?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf/actions)
 [![Open Source](https://img.shields.io/badge/🔓_License-MIT_FOSS-blue?style=for-the-badge)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/🤝_PRs-Welcome_%26_Amplified-brightgreen?style=for-the-badge)](#-how-to-submit-your-project-or-api)
@@ -27,7 +27,7 @@
 <td align="center"><b>⚡ CLI Tools</b><br><code>19</code></td>
 <td align="center"><b>🧪 Testing & QA</b><br><code>11</code></td>
 <td align="center"><b>☁️ Free Cloud</b><br><code>10</code></td>
-<td align="center"><b>🤝 Up for Grabs</b><br><code>9</code></td>
+<td align="center"><b>🤝 Up for Grabs</b><br><code>11</code></td>
 <td align="center"><b>🎁 Dev Perks</b><br><code>13</code></td>
 <td align="center"><b>🚀 1-Click Deploys</b><br><code>8</code></td>
 </tr>
@@ -587,6 +587,18 @@ APIs that provide a 100% free tier or require no API key at all.
 
 🎯 **Seeking**: New module additions, shell integrations, localized docs, bug fixes  
 `Language: Rust` • [Browse Open Issues →](https://github.com/starship/starship/issues) • [Repo Link →](https://github.com/starship/starship)
+
+### [Open Source Ideas](https://github.com/open-source-ideas/ideas)
+> Community brainstorming and collaboration hub where developers propose, discuss, and build open-source projects.
+
+🎯 **Seeking**: Project proposals, feature ideation, starter contributors, documentation  
+`Language: Community / Markdown` • [Browse Open Issues →](https://github.com/open-source-ideas/ideas/issues) • [Repo Link →](https://github.com/open-source-ideas/ideas)
+
+### [Up-For-Grabs](https://github.com/up-for-grabs/up-for-grabs.net)
+> Community-curated platform highlighting open-source projects with starter tasks to help new contributors dive in.
+
+🎯 **Seeking**: Site enhancements, new project definitions, triage, Jekyll improvements  
+`Language: Ruby / JavaScript` • [Browse Open Issues →](https://github.com/up-for-grabs/up-for-grabs.net/issues) • [Repo Link →](https://github.com/up-for-grabs/up-for-grabs.net)
 
 </details>
 ---

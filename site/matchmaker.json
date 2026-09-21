@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-09-21T20:26:27.514Z",
-  "totalProjects": 9,
-  "totalOpenIssues": 13,
+  "updatedAt": "2026-09-21T20:33:26.953Z",
+  "totalProjects": 11,
+  "totalOpenIssues": 15,
   "projects": [
     {
       "name": "GitWhisper",
@@ -179,6 +179,38 @@
         {
           "title": "Explore open issues & help wanted in Starship",
           "url": "https://github.com/starship/starship/issues",
+          "labels": ["good first issue", "help wanted"],
+          "difficulty": "Starter Task"
+        }
+      ]
+    },
+    {
+      "name": "Open Source Ideas",
+      "repo": "https://github.com/open-source-ideas/ideas",
+      "category": "Open Source Discovery",
+      "language": "Community / Markdown",
+      "seeking": "Project proposals, feature ideation, starter contributors, documentation",
+      "description": "Community brainstorming and collaboration hub where developers propose, discuss, and build open-source projects.",
+      "issues": [
+        {
+          "title": "Explore open issues & help wanted in Open Source Ideas",
+          "url": "https://github.com/open-source-ideas/ideas/issues",
+          "labels": ["good first issue", "help wanted"],
+          "difficulty": "Starter Task"
+        }
+      ]
+    },
+    {
+      "name": "Up-For-Grabs",
+      "repo": "https://github.com/up-for-grabs/up-for-grabs.net",
+      "category": "Open Source Discovery",
+      "language": "Ruby / JavaScript",
+      "seeking": "Site enhancements, new project definitions, triage, Jekyll improvements",
+      "description": "Community-curated platform highlighting open-source projects with starter tasks to help new contributors dive in.",
+      "issues": [
+        {
+          "title": "Explore open issues & help wanted in Up-For-Grabs",
+          "url": "https://github.com/up-for-grabs/up-for-grabs.net/issues",
           "labels": ["good first issue", "help wanted"],
           "difficulty": "Starter Task"
         }

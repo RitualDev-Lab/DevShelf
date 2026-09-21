@@ -79,5 +79,25 @@
     "seeking": "New module additions, shell integrations, localized docs, bug fixes",
     "goodFirstIssues": "https://github.com/starship/starship/issues",
     "language": "Rust"
+  },
+  {
+    "name": "Open Source Ideas",
+    "repo": "https://github.com/open-source-ideas/ideas",
+    "category": "Open Source Discovery",
+    "description": "Community brainstorming and collaboration hub where developers propose, discuss, and build open-source projects.",
+    "seeking": "Project proposals, feature ideation, starter contributors, documentation",
+    "goodFirstIssues": "https://github.com/open-source-ideas/ideas/issues",
+    "language": "Community / Markdown",
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+  },
+  {
+    "name": "Up-For-Grabs",
+    "repo": "https://github.com/up-for-grabs/up-for-grabs.net",
+    "category": "Open Source Discovery",
+    "description": "Community-curated platform highlighting open-source projects with starter tasks to help new contributors dive in.",
+    "seeking": "Site enhancements, new project definitions, triage, Jekyll improvements",
+    "goodFirstIssues": "https://github.com/up-for-grabs/up-for-grabs.net/issues",
+    "language": "Ruby / JavaScript",
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   }
 ]
