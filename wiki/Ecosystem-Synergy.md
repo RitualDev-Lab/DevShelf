@@ -10,7 +10,7 @@ Each tool in the RitualDev ecosystem solves a common developer bottleneck with *
 
 | Tool | Focus Area | Why Developers Love It |
 |---|---|---|
-| **[DevShelf](https://ritualdev-lab.github.io/DevShelf/)** | Discovery Hub | Crowdsourced directory of free APIs, dev tools, and perks with automated dead-link healthchecks. |
+| **[DevShelf](https://devshelf.ritualdev.in/)** | Discovery Hub | Crowdsourced directory of free APIs, dev tools, and perks with automated dead-link healthchecks. |
 | **[FlashLane](https://github.com/RitualDev-Lab/FlashLane)** | Hardware Flashing | Universal, cross-platform bootable USB creator with full Rufus-grade partition control and safe simulation mode. |
 | **[GitWhisper](https://github.com/RitualDev-Lab/GitWhisper)** | Git Intelligence | Zero-config local AI commit message generator running directly in CLI and native VS Code SCM with AST secret redaction. |
 | **[AutoHeal-QA](https://github.com/RitualDev-Lab/autoheal-qa)** | Automated Testing | Self-healing Playwright test runner pairing fast heuristics with local Ollama models to auto-patch broken locators. |

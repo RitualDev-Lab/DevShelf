@@ -77,7 +77,10 @@ async function buildSiteData() {
     `${JSON.stringify(payload, null, 2)}\n`,
     "utf8",
   );
-  console.log(`✅ Built site/data.json with ${allResources.length} total resources.`);
+  await fs.writeFile(path.join(siteDir, "CNAME"), "devshelf.ritualdev.in\n", "utf8");
+  console.log(
+    `✅ Built site/data.json with ${allResources.length} total resources and wrote CNAME.`,
+  );
 }
 
 buildSiteData().catch((err) => {

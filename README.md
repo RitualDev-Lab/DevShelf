@@ -5,7 +5,7 @@
 ### The Crowdsourced Developer Ecosystem & Zero-Cost Resource Index
 **Discover high-quality developer tools, verified free APIs, AI agents, and open-source projects with zero paywalls.**
 
-[![Live Web Directory](https://img.shields.io/badge/Web_Directory-Live_Search_%26_Filters-7928CA?style=for-the-badge&logo=googlechrome&logoColor=white)](https://ritualdev-lab.github.io/DevShelf)
+[![Live Web Directory](https://img.shields.io/badge/Web_Directory-Live_Search_%26_Filters-7928CA?style=for-the-badge&logo=googlechrome&logoColor=white)](https://devshelf.ritualdev.in)
 [![Curated Resources](https://img.shields.io/badge/Listed_Resources-76+_Curated-blueviolet?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
 [![Endpoint Health](https://img.shields.io/badge/Endpoint_Health-100%25_Verified-brightgreen?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/RitualDev-Lab/DevShelf/actions)
 [![Open Source](https://img.shields.io/badge/Open_Source-100%25_FOSS-blue?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
@@ -13,7 +13,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
 <p align="center">
-  <a href="https://ritualdev-lab.github.io/DevShelf"><b>🌐 Interactive Web App</b></a> •
+  <a href="https://devshelf.ritualdev.in"><b>🌐 Interactive Web App</b></a> •
   <a href="https://github.com/RitualDev-Lab/DevShelf/wiki"><b>📖 Project Wiki</b></a> •
   <a href="#-featured-spotlight--tools-of-the-week"><b>🔥 Featured Spotlight</b></a> •
   <a href="#-social-amplification-guarantee"><b>🚀 Social Guarantee</b></a> •
@@ -44,7 +44,7 @@ Most "Awesome" lists suffer from two major problems:
 
 **DevShelf is built differently:**
 - 🛡️ **Automated Health Checks**: GitHub Actions continuously ping every API, repository, and service to ensure endpoints are 100% active.
-- 🌐 **Interactive Web UI**: Instant search, filter by license/language/auth, and 1-click clipboard copying via our GitHub Pages web application.
+- 🌐 **Interactive Web UI**: Instant search, filter by license/language/auth, and 1-click clipboard copying via our web application ([devshelf.ritualdev.in](https://devshelf.ritualdev.in)).
 - 🚀 **1-Click Submissions**: Add your own project or API in 30 seconds via structured GitHub Issue forms.
 - 📢 **Social Amplification**: Every merged project gets free social promotion across our developer channels.
 - 🌟 **Quality First**: Hand-curated, zero paywalls, clear free tier transparency.
@@ -73,7 +73,7 @@ Every week, we highlight outstanding open-source utilities, developer gems, and 
 > Building great developer tools is hard. Getting discovered is even harder.  
 > **When your tool, API, or project is accepted and merged into DevShelf:**
 > 1. **🌟 Social Media Spotlight**: We publish a dedicated shoutout post about your project on **X (Twitter)** and **LinkedIn** via the RitualDev Lab channels.
-> 2. **🌐 Permanent Web Directory Inclusion**: Your tool is permanently listed in our live search index at [ritualdev-lab.github.io/DevShelf](https://ritualdev-lab.github.io/DevShelf).
+> 2. **🌐 Permanent Web Directory Inclusion**: Your tool is permanently listed in our live search index at [devshelf.ritualdev.in](https://devshelf.ritualdev.in).
 > 3. **🔗 High-Quality Backlink**: Guaranteed direct dofollow backlink to your GitHub repository or documentation.
 
 ---
@@ -83,24 +83,24 @@ Every week, we highlight outstanding open-source utilities, developer gems, and 
 Are you listed on DevShelf? Display an official badge on your project's `README.md` to show off your community verification:
 
 ### Style 1: Modern Purple (Recommended)
-[![Featured on DevShelf](https://img.shields.io/badge/Featured%20on-DevShelf-7928CA?style=for-the-badge&logo=googlechrome&logoColor=white)](https://ritualdev-lab.github.io/DevShelf/)
+[![Featured on DevShelf](https://img.shields.io/badge/Featured%20on-DevShelf-7928CA?style=for-the-badge&logo=googlechrome&logoColor=white)](https://devshelf.ritualdev.in/)
 
 ```markdown
-[![Featured on DevShelf](https://img.shields.io/badge/Featured%20on-DevShelf-7928CA?style=for-the-badge&logo=googlechrome&logoColor=white)](https://ritualdev-lab.github.io/DevShelf/)
+[![Featured on DevShelf](https://img.shields.io/badge/Featured%20on-DevShelf-7928CA?style=for-the-badge&logo=googlechrome&logoColor=white)](https://devshelf.ritualdev.in/)
 ```
 
 ### Style 2: Cyberpunk Neon Cyan
-[![Featured on DevShelf](https://img.shields.io/badge/DevShelf-Curated%20Resource-00E5FF?style=for-the-badge&logo=github&logoColor=black)](https://ritualdev-lab.github.io/DevShelf/)
+[![Featured on DevShelf](https://img.shields.io/badge/DevShelf-Curated%20Resource-00E5FF?style=for-the-badge&logo=github&logoColor=black)](https://devshelf.ritualdev.in/)
 
 ```markdown
-[![Featured on DevShelf](https://img.shields.io/badge/DevShelf-Curated%20Resource-00E5FF?style=for-the-badge&logo=github&logoColor=black)](https://ritualdev-lab.github.io/DevShelf/)
+[![Featured on DevShelf](https://img.shields.io/badge/DevShelf-Curated%20Resource-00E5FF?style=for-the-badge&logo=github&logoColor=black)](https://devshelf.ritualdev.in/)
 ```
 
 ### Style 3: Minimal Flat Square
-[![Featured on DevShelf](https://img.shields.io/badge/Featured%20on-DevShelf-blueviolet?style=flat-square&logo=googlechrome&logoColor=white)](https://ritualdev-lab.github.io/DevShelf/)
+[![Featured on DevShelf](https://img.shields.io/badge/Featured%20on-DevShelf-blueviolet?style=flat-square&logo=googlechrome&logoColor=white)](https://devshelf.ritualdev.in/)
 
 ```markdown
-[![Featured on DevShelf](https://img.shields.io/badge/Featured%20on-DevShelf-blueviolet?style=flat-square&logo=googlechrome&logoColor=white)](https://ritualdev-lab.github.io/DevShelf/)
+[![Featured on DevShelf](https://img.shields.io/badge/Featured%20on-DevShelf-blueviolet?style=flat-square&logo=googlechrome&logoColor=white)](https://devshelf.ritualdev.in/)
 ```
 
 ---

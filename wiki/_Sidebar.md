@@ -9,7 +9,7 @@
 ---
 
 ### ?? Quick Links
-- [?? Live Web Directory](https://ritualdev-lab.github.io/DevShelf/)
+- [?? Live Web Directory](https://devshelf.ritualdev.in/)
 - [?? GitHub Repository](https://github.com/RitualDev-Lab/DevShelf)
 - [? Submit New Tool](https://github.com/RitualDev-Lab/DevShelf/issues/new/choose)
 - [?? Report Content](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=04_content_report.yml)

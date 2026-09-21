@@ -5,7 +5,7 @@
 Unlike static markdown "Awesome" lists that slowly decay into dead links and abandoned URLs over time, DevShelf is built as an **automated, programmatic database** with:
 - Structured JSON schemas in `shelf/*.json`.
 - Automated weekly HTTP link validation ([`scripts/check-links.ts`](Automated-Validation-Pipeline)).
-- An instantaneous, zero-latency [interactive Web Directory](https://ritualdev-lab.github.io/DevShelf/) with category filtering and fuzzy search.
+- An instantaneous, zero-latency [interactive Web Directory](https://devshelf.ritualdev.in/) with category filtering and fuzzy search.
 - Zero-paywall guarantee (only 100% open-source or genuine perpetual free tiers).
 
 ---
