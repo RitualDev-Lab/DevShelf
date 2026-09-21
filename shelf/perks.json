@@ -54,5 +54,29 @@
     "description": "Free Postman Team subscription for open-source teams maintaining public APIs and workspaces.",
     "perkValue": "Free Postman Team Plan",
     "eligibility": "Public API open-source projects"
+  },
+  {
+    "name": "Datadog for Open Source",
+    "url": "https://www.datadoghq.com/partner/open-source/",
+    "category": "Observability & APM",
+    "description": "Free Datadog Pro infrastructure monitoring, log management, and APM for qualifying open-source projects.",
+    "perkValue": "Free Datadog Pro Account ($180+/host/yr)",
+    "eligibility": "Non-commercial OSI-approved open source projects"
+  },
+  {
+    "name": "BrowserStack Open Source",
+    "url": "https://www.browserstack.com/open-source",
+    "category": "Cross-Browser & Device Testing",
+    "description": "Free BrowserStack testing license for open-source maintainers across 3,000+ real desktop and mobile browsers.",
+    "perkValue": "Free Unlimited Live & Automate Testing ($348+/yr)",
+    "eligibility": "Public open-source repository with active development"
+  },
+  {
+    "name": "Docker Open Source Community",
+    "url": "https://www.docker.com/community/open-source/application",
+    "category": "Container Registries & CI",
+    "description": "Free Docker Hub Team account with unlimited image pulls, public repositories, and automated security vulnerability scans.",
+    "perkValue": "Free Docker Hub Team Tier ($108+/yr value)",
+    "eligibility": "Active OSI-compliant open-source projects"
   }
 ]

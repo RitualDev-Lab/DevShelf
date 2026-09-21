@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "name": "Supabase",
     "url": "https://supabase.com",
@@ -33,5 +33,40 @@
     "category": "Transactional Email",
     "description": "Developer-first email platform for sending transactional emails using clean React components.",
     "freeTier": "3,000 emails/month, 100 emails/day, 1 custom domain"
+  },
+  {
+    "name": "PocketBase",
+    "url": "https://pocketbase.io",
+    "category": "Databases & BaaS",
+    "description": "Open source backend in 1 file consisting of embedded SQLite database with real-time subscriptions, built-in auth, and admin dashboard.",
+    "freeTier": "100% Free & Open Source, single binary self-hostable"
+  },
+  {
+    "name": "Appwrite",
+    "url": "https://appwrite.io",
+    "category": "Backend-as-a-Service",
+    "description": "Self-hosted backend-as-a-service platform providing developers with core APIs for authentication, databases, storage, and serverless functions.",
+    "freeTier": "Free Cloud Tier: 2 projects, 75k monthly active users, 2GB storage"
+  },
+  {
+    "name": "Fly.io",
+    "url": "https://fly.io",
+    "category": "Serverless Compute & Global VMs",
+    "description": "Run full-stack apps and databases close to your users globally with lightweight Firecracker microVMs.",
+    "freeTier": "Free allowance: up to 3 shared-cpu-1x VMs, 3GB persistent storage"
+  },
+  {
+    "name": "Render",
+    "url": "https://render.com",
+    "category": "Cloud Hosting & PaaS",
+    "description": "Unified cloud to build and run web applications, APIs, static sites, and background workers with automated Git deploys.",
+    "freeTier": "Free static sites, free web services (750 hrs/mo), free PostgreSQL"
+  },
+  {
+    "name": "Koyeb",
+    "url": "https://www.koyeb.com",
+    "category": "Serverless & Containers",
+    "description": "Serverless platform to deploy full-stack apps and Docker containers globally with built-in CDN, SSL, and private networking.",
+    "freeTier": "Free Eco tier: 1 web service, 512MB RAM, global edge network"
   }
 ]

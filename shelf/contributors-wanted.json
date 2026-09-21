@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "name": "GitWhisper",
     "repo": "https://github.com/RitualDev-Lab/GitWhisper",
@@ -16,5 +16,32 @@
     "seeking": "Cypress Adapter, Additional Local Model Adapters, Visual UI Dashboard",
     "goodFirstIssues": "https://github.com/RitualDev-Lab/autoheal-qa/issues",
     "language": "TypeScript"
+  },
+  {
+    "name": "FlashLane",
+    "repo": "https://github.com/RitualDev-Lab/FlashLane",
+    "category": "OS & Hardware Utilities",
+    "description": "Universal, high-speed bootable ISO/IMG USB writer with Rufus parity for Windows, macOS, and Linux.",
+    "seeking": "macOS diskutil runner, Linux block flashing, E2E ISO tests, Documentation",
+    "goodFirstIssues": "https://github.com/RitualDev-Lab/FlashLane/issues",
+    "language": "TypeScript / Electron"
+  },
+  {
+    "name": "Bruno",
+    "repo": "https://github.com/usebruno/bruno",
+    "category": "API Testing & Tooling",
+    "description": "Fast, git-friendly open-source API client that stores collections in plain text.",
+    "seeking": "Collection runner plugins, translations, UI improvements, good first issues",
+    "goodFirstIssues": "https://github.com/usebruno/bruno/issues",
+    "language": "JavaScript"
+  },
+  {
+    "name": "agent-browser",
+    "repo": "https://github.com/vercel-labs/agent-browser",
+    "category": "AI & Browser Automation",
+    "description": "Open-source browser automation CLI for AI agents with fast Rust core and Node.js fallback.",
+    "seeking": "Cross-platform terminal enhancements, playwright engine bindings, examples",
+    "goodFirstIssues": "https://github.com/vercel-labs/agent-browser/issues",
+    "language": "Rust / TypeScript"
   }
 ]

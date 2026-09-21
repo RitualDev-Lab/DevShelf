@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "name": "AutoHeal-QA",
     "repo": "https://github.com/RitualDev-Lab/autoheal-qa",
@@ -33,6 +33,51 @@
     "description": "Modern load testing tool, using Go and JavaScript, for testing system performance and reliability.",
     "language": "Go",
     "license": "AGPL-3.0",
+    "featured": false
+  },
+  {
+    "name": "Bruno",
+    "repo": "https://github.com/usebruno/bruno",
+    "category": "API Testing & Exploration",
+    "description": "Fast, git-friendly, open-source API client that stores collections directly in your repo via plain text files.",
+    "language": "JavaScript",
+    "license": "MIT",
+    "featured": false
+  },
+  {
+    "name": "Hoppscotch",
+    "repo": "https://github.com/hoppscotch/hoppscotch",
+    "category": "API Testing & Exploration",
+    "description": "Open-source API development ecosystem, lightweight web & desktop app with WebSocket, GraphQL, and SSE support.",
+    "language": "TypeScript / Vue",
+    "license": "MIT",
+    "featured": false
+  },
+  {
+    "name": "Mockoon",
+    "repo": "https://github.com/mockoon/mockoon",
+    "category": "Mock APIs & Sandboxes",
+    "description": "The easiest and quickest way to design and run mock REST APIs locally with custom routes, rules, and proxies.",
+    "language": "TypeScript",
+    "license": "MIT",
+    "featured": false
+  },
+  {
+    "name": "Artillery",
+    "repo": "https://github.com/artilleryio/artillery",
+    "category": "Performance & Load Testing",
+    "description": "Cloud-scale load testing and functional testing platform for HTTP, WebSockets, and gRPC.",
+    "language": "JavaScript",
+    "license": "MPL-2.0",
+    "featured": false
+  },
+  {
+    "name": "Locust",
+    "repo": "https://github.com/locustio/locust",
+    "category": "Performance & Load Testing",
+    "description": "Scalable user load testing tool written in Python with real-time web monitoring UI.",
+    "language": "Python",
+    "license": "MIT",
     "featured": false
   }
 ]

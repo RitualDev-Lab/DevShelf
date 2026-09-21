@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-09-20T21:58:59.361Z",
-  "totalCount": 37,
+  "updatedAt": "2026-09-21T01:40:30.995Z",
+  "totalCount": 76,
   "counts": {
-    "apis": 7,
-    "aiTools": 5,
-    "cliTools": 7,
-    "testingQa": 4,
-    "freeCloud": 5,
-    "contributors": 2,
-    "perks": 7
+    "apis": 15,
+    "aiTools": 12,
+    "cliTools": 15,
+    "testingQa": 9,
+    "freeCloud": 10,
+    "contributors": 5,
+    "perks": 10
   },
   "resources": [
     {
@@ -96,6 +96,102 @@
       "section": "Free & Public APIs"
     },
     {
+      "name": "PokeAPI",
+      "url": "https://pokeapi.co",
+      "category": "Games & Media",
+      "description": "All the Pokémon data you'll ever need in one place, easily accessible through a modern RESTful API.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "100 req/min",
+      "https": true,
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Open Library",
+      "url": "https://openlibrary.org/developers/api",
+      "category": "Books & Literature",
+      "description": "Millions of book records, author bios, covers, and ISBN lookups from the Internet Archive.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "ReqRes",
+      "url": "https://reqres.in",
+      "category": "Development & Testing",
+      "description": "A hosted REST-API ready to respond to your AJAX requests with simulated realistic user and auth data.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "ipify",
+      "url": "https://www.ipify.org",
+      "category": "Geocoding & IP",
+      "description": "A simple public IP address API with guaranteed 99.99% uptime and zero setup.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "DummyJSON",
+      "url": "https://dummyjson.com",
+      "category": "Development & Testing",
+      "description": "Free dummy REST API with products, carts, users, posts, comments, auth, and image placeholder endpoints.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Nominatim OpenStreetMap",
+      "url": "https://nominatim.openstreetmap.org",
+      "category": "Geocoding & IP",
+      "description": "Open-source search engine for OpenStreetMap data, providing forward and reverse geocoding.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "1 req/sec",
+      "https": true,
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "ExchangeRate-API",
+      "url": "https://www.exchangerate-api.com",
+      "category": "Finance & Crypto",
+      "description": "Reliable currency conversion and forex exchange rates for 160+ currencies with a permanent free tier.",
+      "auth": "Free API Key",
+      "cors": "Yes",
+      "rateLimit": "1,500 req/month",
+      "https": true,
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Cat Facts",
+      "url": "https://catfact.ninja",
+      "category": "Animals & Fun",
+      "description": "Public REST API providing random cat facts, breeds, and trivia with zero authentication required.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
       "name": "Ollama",
       "repo": "https://github.com/ollama/ollama",
       "category": "Local AI & Inference",
@@ -145,6 +241,83 @@
       "category": "AI Agents & Local LLMs",
       "description": "Command-line orchestrator for AI coding agents: runs Claude Code, Codex CLI, and Gemini CLI in parallel git worktrees with Kanban task state, typed merge flows, and per-agent skills.",
       "language": "TypeScript",
+      "license": "MIT",
+      "featured": false,
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "LocalAI",
+      "repo": "https://github.com/mudler/LocalAI",
+      "category": "Local AI & Inference",
+      "description": "Local, OpenAI-compatible REST API for running LLMs, audio transcription, image generation, and embeddings on commodity CPU/GPU.",
+      "language": "Go / C++",
+      "license": "MIT",
+      "featured": false,
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "AnythingLLM",
+      "repo": "https://github.com/Mintplex-Labs/anything-llm",
+      "category": "Local AI & RAG",
+      "description": "The all-in-one Desktop & Docker AI application with full RAG pipeline, multi-agent workspaces, and complete privacy.",
+      "language": "JavaScript",
+      "license": "MIT",
+      "featured": false,
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Flowise",
+      "repo": "https://github.com/FlowiseAI/Flowise",
+      "category": "AI Agents & Workflows",
+      "description": "Drag & drop user interface for building customized LLM applications, autonomous agents, and RAG pipelines.",
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "featured": false,
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Langflow",
+      "repo": "https://github.com/langflow-ai/langflow",
+      "category": "AI Agents & Workflows",
+      "description": "Dynamic visual framework for building, testing, and deploying multi-agent AI and RAG applications.",
+      "language": "Python / TypeScript",
+      "license": "MIT",
+      "featured": false,
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Jan",
+      "repo": "https://github.com/janhq/jan",
+      "category": "Local AI & Inference",
+      "description": "Open-source desktop alternative to ChatGPT that runs 100% offline on local hardware with zero data leakage.",
+      "language": "TypeScript / C++",
+      "license": "AGPL-3.0",
+      "featured": false,
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "LibreChat",
+      "repo": "https://github.com/danny-avila/LibreChat",
+      "category": "Web UI & Chat",
+      "description": "Enhanced, self-hostable open-source AI chat platform unifying OpenAI, Anthropic, Gemini, and local LLMs.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "featured": false,
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Fabric",
+      "repo": "https://github.com/danielmiessler/fabric",
+      "category": "AI CLI & Productivity",
+      "description": "Open-source prompt and automation framework for augmenting humans using AI patterns and modular CLI tooling.",
+      "language": "Go",
       "license": "MIT",
       "featured": false,
       "type": "ai",
@@ -228,6 +401,94 @@
       "section": "CLI & Productivity Tools"
     },
     {
+      "name": "bat",
+      "repo": "https://github.com/sharkdp/bat",
+      "category": "Terminal & Shell",
+      "description": "Cat clone with syntax highlighting and Git integration for dozens of programming languages.",
+      "language": "Rust",
+      "license": "MIT / Apache-2.0",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "delta",
+      "repo": "https://github.com/dandavison/delta",
+      "category": "Git & Version Control",
+      "description": "A syntax-highlighting pager for git, diff, and grep output with side-by-side views and line numbers.",
+      "language": "Rust",
+      "license": "MIT",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "hyperfine",
+      "repo": "https://github.com/sharkdp/hyperfine",
+      "category": "Benchmarking & Performance",
+      "description": "Command-line benchmarking tool with statistical analysis, warmup runs, and parametric sweeps.",
+      "language": "Rust",
+      "license": "MIT / Apache-2.0",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "tldr",
+      "repo": "https://github.com/tldr-pages/tldr",
+      "category": "Terminal & Productivity",
+      "description": "Collaborative, simplified community man pages focusing on practical, real-world command examples.",
+      "language": "Markdown",
+      "license": "MIT",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "dust",
+      "repo": "https://github.com/bootandy/dust",
+      "category": "Disk & Storage",
+      "description": "A more intuitive version of du in Rust providing instant visual disk usage breakdown in terminal.",
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "procs",
+      "repo": "https://github.com/dalance/procs",
+      "category": "System & Process Monitoring",
+      "description": "A modern replacement for ps with color highlighting, multi-column search, and process tree view.",
+      "language": "Rust",
+      "license": "MIT",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "bottom",
+      "repo": "https://github.com/ClementTsang/bottom",
+      "category": "System & Process Monitoring",
+      "description": "Cross-platform graphical process and system monitor with customizable terminal charts and widgets.",
+      "language": "Rust",
+      "license": "MIT",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "curlie",
+      "repo": "https://github.com/rs/curlie",
+      "category": "HTTP & Networking",
+      "description": "The power of curl with the ease of use and human-friendly terminal output of HTTPie.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
       "name": "AutoHeal-QA",
       "repo": "https://github.com/RitualDev-Lab/autoheal-qa",
       "category": "E2E & Playwright",
@@ -267,6 +528,61 @@
       "description": "Modern load testing tool, using Go and JavaScript, for testing system performance and reliability.",
       "language": "Go",
       "license": "AGPL-3.0",
+      "featured": false,
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "Bruno",
+      "repo": "https://github.com/usebruno/bruno",
+      "category": "API Testing & Exploration",
+      "description": "Fast, git-friendly, open-source API client that stores collections directly in your repo via plain text files.",
+      "language": "JavaScript",
+      "license": "MIT",
+      "featured": false,
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "Hoppscotch",
+      "repo": "https://github.com/hoppscotch/hoppscotch",
+      "category": "API Testing & Exploration",
+      "description": "Open-source API development ecosystem, lightweight web & desktop app with WebSocket, GraphQL, and SSE support.",
+      "language": "TypeScript / Vue",
+      "license": "MIT",
+      "featured": false,
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "Mockoon",
+      "repo": "https://github.com/mockoon/mockoon",
+      "category": "Mock APIs & Sandboxes",
+      "description": "The easiest and quickest way to design and run mock REST APIs locally with custom routes, rules, and proxies.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "featured": false,
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "Artillery",
+      "repo": "https://github.com/artilleryio/artillery",
+      "category": "Performance & Load Testing",
+      "description": "Cloud-scale load testing and functional testing platform for HTTP, WebSockets, and gRPC.",
+      "language": "JavaScript",
+      "license": "MPL-2.0",
+      "featured": false,
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "Locust",
+      "repo": "https://github.com/locustio/locust",
+      "category": "Performance & Load Testing",
+      "description": "Scalable user load testing tool written in Python with real-time web monitoring UI.",
+      "language": "Python",
+      "license": "MIT",
       "featured": false,
       "type": "testing",
       "section": "Testing & QA Reliability"
@@ -317,6 +633,51 @@
       "section": "Free Cloud & Developer Tiers"
     },
     {
+      "name": "PocketBase",
+      "url": "https://pocketbase.io",
+      "category": "Databases & BaaS",
+      "description": "Open source backend in 1 file consisting of embedded SQLite database with real-time subscriptions, built-in auth, and admin dashboard.",
+      "freeTier": "100% Free & Open Source, single binary self-hostable",
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "Appwrite",
+      "url": "https://appwrite.io",
+      "category": "Backend-as-a-Service",
+      "description": "Self-hosted backend-as-a-service platform providing developers with core APIs for authentication, databases, storage, and serverless functions.",
+      "freeTier": "Free Cloud Tier: 2 projects, 75k monthly active users, 2GB storage",
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "Fly.io",
+      "url": "https://fly.io",
+      "category": "Serverless Compute & Global VMs",
+      "description": "Run full-stack apps and databases close to your users globally with lightweight Firecracker microVMs.",
+      "freeTier": "Free allowance: up to 3 shared-cpu-1x VMs, 3GB persistent storage",
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "Render",
+      "url": "https://render.com",
+      "category": "Cloud Hosting & PaaS",
+      "description": "Unified cloud to build and run web applications, APIs, static sites, and background workers with automated Git deploys.",
+      "freeTier": "Free static sites, free web services (750 hrs/mo), free PostgreSQL",
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "Koyeb",
+      "url": "https://www.koyeb.com",
+      "category": "Serverless & Containers",
+      "description": "Serverless platform to deploy full-stack apps and Docker containers globally with built-in CDN, SSL, and private networking.",
+      "freeTier": "Free Eco tier: 1 web service, 512MB RAM, global edge network",
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
       "name": "GitWhisper",
       "repo": "https://github.com/RitualDev-Lab/GitWhisper",
       "category": "CLI & Extension",
@@ -335,6 +696,39 @@
       "seeking": "Cypress Adapter, Additional Local Model Adapters, Visual UI Dashboard",
       "goodFirstIssues": "https://github.com/RitualDev-Lab/autoheal-qa/issues",
       "language": "TypeScript",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "FlashLane",
+      "repo": "https://github.com/RitualDev-Lab/FlashLane",
+      "category": "OS & Hardware Utilities",
+      "description": "Universal, high-speed bootable ISO/IMG USB writer with Rufus parity for Windows, macOS, and Linux.",
+      "seeking": "macOS diskutil runner, Linux block flashing, E2E ISO tests, Documentation",
+      "goodFirstIssues": "https://github.com/RitualDev-Lab/FlashLane/issues",
+      "language": "TypeScript / Electron",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "Bruno",
+      "repo": "https://github.com/usebruno/bruno",
+      "category": "API Testing & Tooling",
+      "description": "Fast, git-friendly open-source API client that stores collections in plain text.",
+      "seeking": "Collection runner plugins, translations, UI improvements, good first issues",
+      "goodFirstIssues": "https://github.com/usebruno/bruno/issues",
+      "language": "JavaScript",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "agent-browser",
+      "repo": "https://github.com/vercel-labs/agent-browser",
+      "category": "AI & Browser Automation",
+      "description": "Open-source browser automation CLI for AI agents with fast Rust core and Node.js fallback.",
+      "seeking": "Cross-platform terminal enhancements, playwright engine bindings, examples",
+      "goodFirstIssues": "https://github.com/vercel-labs/agent-browser/issues",
+      "language": "Rust / TypeScript",
       "type": "contributors",
       "section": "Contributors Wanted"
     },
@@ -405,6 +799,36 @@
       "description": "Free Postman Team subscription for open-source teams maintaining public APIs and workspaces.",
       "perkValue": "Free Postman Team Plan",
       "eligibility": "Public API open-source projects",
+      "type": "perks",
+      "section": "Developer Discounts & Startup Perks"
+    },
+    {
+      "name": "Datadog for Open Source",
+      "url": "https://www.datadoghq.com/partner/open-source/",
+      "category": "Observability & APM",
+      "description": "Free Datadog Pro infrastructure monitoring, log management, and APM for qualifying open-source projects.",
+      "perkValue": "Free Datadog Pro Account ($180+/host/yr)",
+      "eligibility": "Non-commercial OSI-approved open source projects",
+      "type": "perks",
+      "section": "Developer Discounts & Startup Perks"
+    },
+    {
+      "name": "BrowserStack Open Source",
+      "url": "https://www.browserstack.com/open-source",
+      "category": "Cross-Browser & Device Testing",
+      "description": "Free BrowserStack testing license for open-source maintainers across 3,000+ real desktop and mobile browsers.",
+      "perkValue": "Free Unlimited Live & Automate Testing ($348+/yr)",
+      "eligibility": "Public open-source repository with active development",
+      "type": "perks",
+      "section": "Developer Discounts & Startup Perks"
+    },
+    {
+      "name": "Docker Open Source Community",
+      "url": "https://www.docker.com/community/open-source/application",
+      "category": "Container Registries & CI",
+      "description": "Free Docker Hub Team account with unlimited image pulls, public repositories, and automated security vulnerability scans.",
+      "perkValue": "Free Docker Hub Team Tier ($108+/yr value)",
+      "eligibility": "Active OSI-compliant open-source projects",
       "type": "perks",
       "section": "Developer Discounts & Startup Perks"
     }

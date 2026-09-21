@@ -61,5 +61,77 @@
     "language": "Rust / TypeScript",
     "license": "Apache-2.0",
     "featured": false
+  },
+  {
+    "name": "bat",
+    "repo": "https://github.com/sharkdp/bat",
+    "category": "Terminal & Shell",
+    "description": "Cat clone with syntax highlighting and Git integration for dozens of programming languages.",
+    "language": "Rust",
+    "license": "MIT / Apache-2.0",
+    "featured": false
+  },
+  {
+    "name": "delta",
+    "repo": "https://github.com/dandavison/delta",
+    "category": "Git & Version Control",
+    "description": "A syntax-highlighting pager for git, diff, and grep output with side-by-side views and line numbers.",
+    "language": "Rust",
+    "license": "MIT",
+    "featured": false
+  },
+  {
+    "name": "hyperfine",
+    "repo": "https://github.com/sharkdp/hyperfine",
+    "category": "Benchmarking & Performance",
+    "description": "Command-line benchmarking tool with statistical analysis, warmup runs, and parametric sweeps.",
+    "language": "Rust",
+    "license": "MIT / Apache-2.0",
+    "featured": false
+  },
+  {
+    "name": "tldr",
+    "repo": "https://github.com/tldr-pages/tldr",
+    "category": "Terminal & Productivity",
+    "description": "Collaborative, simplified community man pages focusing on practical, real-world command examples.",
+    "language": "Markdown",
+    "license": "MIT",
+    "featured": false
+  },
+  {
+    "name": "dust",
+    "repo": "https://github.com/bootandy/dust",
+    "category": "Disk & Storage",
+    "description": "A more intuitive version of du in Rust providing instant visual disk usage breakdown in terminal.",
+    "language": "Rust",
+    "license": "Apache-2.0",
+    "featured": false
+  },
+  {
+    "name": "procs",
+    "repo": "https://github.com/dalance/procs",
+    "category": "System & Process Monitoring",
+    "description": "A modern replacement for ps with color highlighting, multi-column search, and process tree view.",
+    "language": "Rust",
+    "license": "MIT",
+    "featured": false
+  },
+  {
+    "name": "bottom",
+    "repo": "https://github.com/ClementTsang/bottom",
+    "category": "System & Process Monitoring",
+    "description": "Cross-platform graphical process and system monitor with customizable terminal charts and widgets.",
+    "language": "Rust",
+    "license": "MIT",
+    "featured": false
+  },
+  {
+    "name": "curlie",
+    "repo": "https://github.com/rs/curlie",
+    "category": "HTTP & Networking",
+    "description": "The power of curl with the ease of use and human-friendly terminal output of HTTPie.",
+    "language": "Go",
+    "license": "MIT",
+    "featured": false
   }
 ]

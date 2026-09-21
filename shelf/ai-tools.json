@@ -43,5 +43,68 @@
     "language": "TypeScript",
     "license": "MIT",
     "featured": false
+  },
+  {
+    "name": "LocalAI",
+    "repo": "https://github.com/mudler/LocalAI",
+    "category": "Local AI & Inference",
+    "description": "Local, OpenAI-compatible REST API for running LLMs, audio transcription, image generation, and embeddings on commodity CPU/GPU.",
+    "language": "Go / C++",
+    "license": "MIT",
+    "featured": false
+  },
+  {
+    "name": "AnythingLLM",
+    "repo": "https://github.com/Mintplex-Labs/anything-llm",
+    "category": "Local AI & RAG",
+    "description": "The all-in-one Desktop & Docker AI application with full RAG pipeline, multi-agent workspaces, and complete privacy.",
+    "language": "JavaScript",
+    "license": "MIT",
+    "featured": false
+  },
+  {
+    "name": "Flowise",
+    "repo": "https://github.com/FlowiseAI/Flowise",
+    "category": "AI Agents & Workflows",
+    "description": "Drag & drop user interface for building customized LLM applications, autonomous agents, and RAG pipelines.",
+    "language": "TypeScript",
+    "license": "Apache-2.0",
+    "featured": false
+  },
+  {
+    "name": "Langflow",
+    "repo": "https://github.com/langflow-ai/langflow",
+    "category": "AI Agents & Workflows",
+    "description": "Dynamic visual framework for building, testing, and deploying multi-agent AI and RAG applications.",
+    "language": "Python / TypeScript",
+    "license": "MIT",
+    "featured": false
+  },
+  {
+    "name": "Jan",
+    "repo": "https://github.com/janhq/jan",
+    "category": "Local AI & Inference",
+    "description": "Open-source desktop alternative to ChatGPT that runs 100% offline on local hardware with zero data leakage.",
+    "language": "TypeScript / C++",
+    "license": "AGPL-3.0",
+    "featured": false
+  },
+  {
+    "name": "LibreChat",
+    "repo": "https://github.com/danny-avila/LibreChat",
+    "category": "Web UI & Chat",
+    "description": "Enhanced, self-hostable open-source AI chat platform unifying OpenAI, Anthropic, Gemini, and local LLMs.",
+    "language": "TypeScript",
+    "license": "MIT",
+    "featured": false
+  },
+  {
+    "name": "Fabric",
+    "repo": "https://github.com/danielmiessler/fabric",
+    "category": "AI CLI & Productivity",
+    "description": "Open-source prompt and automation framework for augmenting humans using AI patterns and modular CLI tooling.",
+    "language": "Go",
+    "license": "MIT",
+    "featured": false
   }
 ]

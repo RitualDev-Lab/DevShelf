@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "name": "Open-Meteo",
     "url": "https://open-meteo.com",
@@ -64,6 +64,86 @@
     "url": "https://restcountries.com",
     "category": "Geocoding & IP",
     "description": "Get detailed information about world countries (flags, borders, capitals, currencies, languages) via REST.",
+    "auth": "No Key",
+    "cors": "Yes",
+    "rateLimit": "Unlimited",
+    "https": true
+  },
+  {
+    "name": "PokeAPI",
+    "url": "https://pokeapi.co",
+    "category": "Games & Media",
+    "description": "All the Pokémon data you'll ever need in one place, easily accessible through a modern RESTful API.",
+    "auth": "No Key",
+    "cors": "Yes",
+    "rateLimit": "100 req/min",
+    "https": true
+  },
+  {
+    "name": "Open Library",
+    "url": "https://openlibrary.org/developers/api",
+    "category": "Books & Literature",
+    "description": "Millions of book records, author bios, covers, and ISBN lookups from the Internet Archive.",
+    "auth": "No Key",
+    "cors": "Yes",
+    "rateLimit": "Unlimited",
+    "https": true
+  },
+  {
+    "name": "ReqRes",
+    "url": "https://reqres.in",
+    "category": "Development & Testing",
+    "description": "A hosted REST-API ready to respond to your AJAX requests with simulated realistic user and auth data.",
+    "auth": "No Key",
+    "cors": "Yes",
+    "rateLimit": "Unlimited",
+    "https": true
+  },
+  {
+    "name": "ipify",
+    "url": "https://www.ipify.org",
+    "category": "Geocoding & IP",
+    "description": "A simple public IP address API with guaranteed 99.99% uptime and zero setup.",
+    "auth": "No Key",
+    "cors": "Yes",
+    "rateLimit": "Unlimited",
+    "https": true
+  },
+  {
+    "name": "DummyJSON",
+    "url": "https://dummyjson.com",
+    "category": "Development & Testing",
+    "description": "Free dummy REST API with products, carts, users, posts, comments, auth, and image placeholder endpoints.",
+    "auth": "No Key",
+    "cors": "Yes",
+    "rateLimit": "Unlimited",
+    "https": true
+  },
+  {
+    "name": "Nominatim OpenStreetMap",
+    "url": "https://nominatim.openstreetmap.org",
+    "category": "Geocoding & IP",
+    "description": "Open-source search engine for OpenStreetMap data, providing forward and reverse geocoding.",
+    "auth": "No Key",
+    "cors": "Yes",
+    "rateLimit": "1 req/sec",
+    "https": true
+  },
+  {
+    "name": "ExchangeRate-API",
+    "url": "https://www.exchangerate-api.com",
+    "category": "Finance & Crypto",
+    "description": "Reliable currency conversion and forex exchange rates for 160+ currencies with a permanent free tier.",
+    "auth": "Free API Key",
+    "cors": "Yes",
+    "rateLimit": "1,500 req/month",
+    "https": true
+  },
+  {
+    "name": "Cat Facts",
+    "url": "https://catfact.ninja",
+    "category": "Animals & Fun",
+    "description": "Public REST API providing random cat facts, breeds, and trivia with zero authentication required.",
     "auth": "No Key",
     "cors": "Yes",
     "rateLimit": "Unlimited",

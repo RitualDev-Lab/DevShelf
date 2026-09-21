@@ -127,12 +127,12 @@ async function checkDeadLinks() {
   const alive = total - deadLinks.length;
   const healthPercent = ((alive / total) * 100).toFixed(1);
 
-  console.log(`\n========================================`);
-  console.log(`📊 DevShelf Healthcheck Summary:`);
+  console.log("\n========================================");
+  console.log("📊 DevShelf Healthcheck Summary:");
   console.log(`   Total Endpoints Checked: ${total}`);
   console.log(`   Active & Reachable:     ${alive} (${healthPercent}%)`);
   console.log(`   Dead / Unreachable:     ${deadLinks.length}`);
-  console.log(`========================================\n`);
+  console.log("========================================\n");
 
   if (deadLinks.length > 0) {
     console.warn(`⚠️ Warning: ${deadLinks.length} dead or unreachable link(s) found:`);
@@ -144,7 +144,7 @@ async function checkDeadLinks() {
       process.exit(1);
     }
   } else {
-    console.log(`🎉 100% of curated DevShelf resources are active and healthy!`);
+    console.log("🎉 100% of curated DevShelf resources are active and healthy!");
   }
 }
 

@@ -2,25 +2,34 @@
 
 # 📚 DevShelf
 
-### The Crowdsourced Developer Directory
+### The Crowdsourced Developer Ecosystem & Zero-Cost Resource Index
 **Discover high-quality developer tools, verified free APIs, AI agents, and open-source projects with zero paywalls.**
 
 [![Live Web Directory](https://img.shields.io/badge/Web_Directory-Live_Search_%26_Filters-7928CA?style=for-the-badge&logo=googlechrome&logoColor=white)](https://ritualdev-lab.github.io/DevShelf)
-[![Total Resources](https://img.shields.io/badge/Listed_Resources-37+_Curated-blueviolet?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
+[![Curated Resources](https://img.shields.io/badge/Listed_Resources-76+_Curated-blueviolet?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
 [![Endpoint Health](https://img.shields.io/badge/Endpoint_Health-100%25_Verified-brightgreen?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/RitualDev-Lab/DevShelf/actions)
 [![Open Source](https://img.shields.io/badge/Open_Source-100%25_FOSS-blue?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
-[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen?style=for-the-badge)](#-how-to-submit-your-project-or-api)
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome_&_Amplified-brightgreen?style=for-the-badge)](#-how-to-submit-your-project-or-api)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
 <p align="center">
   <a href="https://ritualdev-lab.github.io/DevShelf"><b>🌐 Interactive Web App</b></a> •
   <a href="https://github.com/RitualDev-Lab/DevShelf/wiki"><b>📖 Project Wiki</b></a> •
-  <a href="#-1-free--public-apis">Free APIs</a> •
-  <a href="#-2-ai-agents--local-llm-tools">AI & LLMs</a> •
-  <a href="#-3-cli--productivity-tools">CLI Tools</a> •
-  <a href="#-4-testing--qa-reliability">Testing & QA</a> •
-  <a href="#-5-free-cloud--developer-tiers">Free Cloud</a> •
+  <a href="#-featured-spotlight--tools-of-the-week"><b>🔥 Featured Spotlight</b></a> •
+  <a href="#-social-amplification-guarantee"><b>🚀 Social Guarantee</b></a> •
+  <a href="#-top-contributors--community-wall"><b>👥 Contributors</b></a> •
   <a href="#-how-to-submit-your-project-or-api"><b>➕ Submit Yours</b></a>
+</p>
+
+<p align="center">
+  <b>Quick Jump:</b>
+  <a href="#-1-free--public-apis">Free APIs</a> (15) •
+  <a href="#-2-ai-agents--local-llm-tools">AI & LLMs</a> (12) •
+  <a href="#-3-cli--productivity-tools">CLI Tools</a> (15) •
+  <a href="#-4-testing--qa-reliability">Testing & QA</a> (9) •
+  <a href="#-5-free-cloud--developer-tiers">Free Cloud</a> (10) •
+  <a href="#-6-contributors-wanted-up-for-grabs">Up for Grabs</a> (5) •
+  <a href="#-7-developer-discounts--startup-perks">Dev Perks</a> (10)
 </p>
 
 ---
@@ -31,13 +40,82 @@
 
 Most "Awesome" lists suffer from two major problems:
 1. **Link Rot & Dead Endpoints**: Outdated links, broken APIs, and unmaintained repos sit untouched for years.
-2. **High Barriers for Creators**: Indie devs and open-source creators struggle to get their work discovered.
+2. **High Barriers for Indie Creators**: Solo developers and open-source creators struggle to get discovered amidst corporate marketing.
 
-**DevShelf is different:**
-- 🛡️ **Automated Health Checks**: GitHub Actions continuously ping APIs and repositories to ensure endpoints are active.
-- 🌐 **Interactive Web UI**: Search, filter, and copy API URLs with our zero-cost GitHub Pages web application.
-- 🚀 **1-Click Issue Submissions**: Add your own project or API in 30 seconds via structured GitHub Issue forms.
+**DevShelf is built differently:**
+- 🛡️ **Automated Health Checks**: GitHub Actions continuously ping every API, repository, and service to ensure endpoints are 100% active.
+- 🌐 **Interactive Web UI**: Instant search, filter by license/language/auth, and 1-click clipboard copying via our GitHub Pages web application.
+- 🚀 **1-Click Submissions**: Add your own project or API in 30 seconds via structured GitHub Issue forms.
+- 📢 **Social Amplification**: Every merged project gets free social promotion across our developer channels.
 - 🌟 **Quality First**: Hand-curated, zero paywalls, clear free tier transparency.
+
+---
+
+## 🔥 Featured Spotlight & Tools of the Week
+
+Every week, we highlight outstanding open-source utilities, developer gems, and community submissions:
+
+| Project | Category | Highlights | Links |
+| :--- | :--- | :--- | :---: |
+| **GitWhisper** | Git & Version Control | Local-first AI Git commit intelligence with Conventional Commits, AST secret redaction & atomic hunk splitting. | [GitHub](https://github.com/RitualDev-Lab/GitWhisper) |
+| **FlashLane** | OS & Hardware Utilities | Universal high-speed bootable ISO/IMG USB writer with Rufus parity for Windows, macOS, & Linux. | [GitHub](https://github.com/RitualDev-Lab/FlashLane) |
+| **AutoHeal-QA** | E2E Testing & Playwright | 100% Free & Local-first agentic self-healing E2E test runner for Playwright with zero cloud costs. | [GitHub](https://github.com/RitualDev-Lab/autoheal-qa) |
+| **Ollama** | Local AI & Inference | Run Llama 3.3, Mistral, Qwen, and custom models locally with a simple CLI and REST API. | [GitHub](https://github.com/ollama/ollama) |
+| **Bruno** | API Testing & Exploration | Fast, git-friendly open-source API client storing collections directly in your repo in plain text. | [GitHub](https://github.com/usebruno/bruno) |
+| **PocketBase** | Databases & BaaS | Open-source backend in 1 single binary file with embedded SQLite, realtime subscriptions, and auth. | [Website](https://pocketbase.io) |
+
+---
+
+## 🚀 Social Amplification Guarantee
+
+> [!IMPORTANT]
+> ### 📢 We Promote Your Project When You Get Listed!
+> Building great developer tools is hard. Getting discovered is even harder.  
+> **When your tool, API, or project is accepted and merged into DevShelf:**
+> 1. **🌟 Social Media Spotlight**: We publish a dedicated shoutout post about your project on **X (Twitter)** and **LinkedIn** via the RitualDev Lab channels.
+> 2. **🌐 Permanent Web Directory Inclusion**: Your tool is permanently listed in our live search index at [ritualdev-lab.github.io/DevShelf](https://ritualdev-lab.github.io/DevShelf).
+> 3. **🔗 High-Quality Backlink**: Guaranteed direct dofollow backlink to your GitHub repository or documentation.
+
+---
+
+## 🎖️ "Featured on DevShelf" Badges
+
+Are you listed on DevShelf? Display an official badge on your project's `README.md` to show off your community verification:
+
+### Style 1: Modern Purple (Recommended)
+[![Featured on DevShelf](https://img.shields.io/badge/Featured%20on-DevShelf-7928CA?style=for-the-badge&logo=googlechrome&logoColor=white)](https://ritualdev-lab.github.io/DevShelf/)
+
+```markdown
+[![Featured on DevShelf](https://img.shields.io/badge/Featured%20on-DevShelf-7928CA?style=for-the-badge&logo=googlechrome&logoColor=white)](https://ritualdev-lab.github.io/DevShelf/)
+```
+
+### Style 2: Cyberpunk Neon Cyan
+[![Featured on DevShelf](https://img.shields.io/badge/DevShelf-Curated%20Resource-00E5FF?style=for-the-badge&logo=github&logoColor=black)](https://ritualdev-lab.github.io/DevShelf/)
+
+```markdown
+[![Featured on DevShelf](https://img.shields.io/badge/DevShelf-Curated%20Resource-00E5FF?style=for-the-badge&logo=github&logoColor=black)](https://ritualdev-lab.github.io/DevShelf/)
+```
+
+### Style 3: Minimal Flat Square
+[![Featured on DevShelf](https://img.shields.io/badge/Featured%20on-DevShelf-blueviolet?style=flat-square&logo=googlechrome&logoColor=white)](https://ritualdev-lab.github.io/DevShelf/)
+
+```markdown
+[![Featured on DevShelf](https://img.shields.io/badge/Featured%20on-DevShelf-blueviolet?style=flat-square&logo=googlechrome&logoColor=white)](https://ritualdev-lab.github.io/DevShelf/)
+```
+
+---
+
+## 👥 Top Contributors & Community Wall
+
+DevShelf is built with passion by developers worldwide. Huge thanks to all the amazing contributors who have submitted tools, squashed bugs, and expanded the directory!
+
+<div align="center">
+
+[![DevShelf Contributors](https://contrib.rocks/image?repo=RitualDev-Lab/DevShelf)](https://github.com/RitualDev-Lab/DevShelf/graphs/contributors)
+
+*Want your avatar here? Submit a pull request with your favorite developer tool or fix an open issue!*
+
+</div>
 
 ---
 
@@ -54,6 +132,14 @@ APIs that provide a 100% free tier or require no API key at all.
 | [**ipapi.co**](https://ipapi.co) | `Geocoding & IP` | 🟢 No Key | `1,000 req/day` | Real-time IP geolocation and network threat intelligence API returning JSON country, city, timezone, and ASN data. |
 | [**CoinGecko Free API**](https://www.coingecko.com/api) | `Finance & Crypto` | 🔑 Free Key | `30 req/min` | Live cryptocurrency prices, market cap, historical volume, exchange stats, and ticker data. |
 | [**Rest Countries**](https://restcountries.com) | `Geocoding & IP` | 🟢 No Key | `Unlimited` | Get detailed information about world countries (flags, borders, capitals, currencies, languages) via REST. |
+| [**PokeAPI**](https://pokeapi.co) | `Games & Media` | 🟢 No Key | `100 req/min` | All the Pokémon data you'll ever need in one place, easily accessible through a modern RESTful API. |
+| [**Open Library**](https://openlibrary.org/developers/api) | `Books & Literature` | 🟢 No Key | `Unlimited` | Millions of book records, author bios, covers, and ISBN lookups from the Internet Archive. |
+| [**ReqRes**](https://reqres.in) | `Development & Testing` | 🟢 No Key | `Unlimited` | A hosted REST-API ready to respond to your AJAX requests with simulated realistic user and auth data. |
+| [**ipify**](https://www.ipify.org) | `Geocoding & IP` | 🟢 No Key | `Unlimited` | A simple public IP address API with guaranteed 99.99% uptime and zero setup. |
+| [**DummyJSON**](https://dummyjson.com) | `Development & Testing` | 🟢 No Key | `Unlimited` | Free dummy REST API with products, carts, users, posts, comments, auth, and image placeholder endpoints. |
+| [**Nominatim OpenStreetMap**](https://nominatim.openstreetmap.org) | `Geocoding & IP` | 🟢 No Key | `1 req/sec` | Open-source search engine for OpenStreetMap data, providing forward and reverse geocoding. |
+| [**ExchangeRate-API**](https://www.exchangerate-api.com) | `Finance & Crypto` | 🔑 Free Key | `1,500 req/month` | Reliable currency conversion and forex exchange rates for 160+ currencies with a permanent free tier. |
+| [**Cat Facts**](https://catfact.ninja) | `Animals & Fun` | 🟢 No Key | `Unlimited` | Public REST API providing random cat facts, breeds, and trivia with zero authentication required. |
 
 ---
 
@@ -85,6 +171,41 @@ Open-source AI frameworks, local LLM serving, and coding assistants.
 > Command-line orchestrator for AI coding agents: runs Claude Code, Codex CLI, and Gemini CLI in parallel git worktrees with Kanban task state, typed merge flows, and per-agent skills.
 
 `Category: AI Agents & Local LLMs` • `Language: TypeScript` • `License: MIT` • [View Repo →](https://github.com/yylo-dev/yylo)
+
+### [LocalAI](https://github.com/mudler/LocalAI)
+> Local, OpenAI-compatible REST API for running LLMs, audio transcription, image generation, and embeddings on commodity CPU/GPU.
+
+`Category: Local AI & Inference` • `Language: Go / C++` • `License: MIT` • [View Repo →](https://github.com/mudler/LocalAI)
+
+### [AnythingLLM](https://github.com/Mintplex-Labs/anything-llm)
+> The all-in-one Desktop & Docker AI application with full RAG pipeline, multi-agent workspaces, and complete privacy.
+
+`Category: Local AI & RAG` • `Language: JavaScript` • `License: MIT` • [View Repo →](https://github.com/Mintplex-Labs/anything-llm)
+
+### [Flowise](https://github.com/FlowiseAI/Flowise)
+> Drag & drop user interface for building customized LLM applications, autonomous agents, and RAG pipelines.
+
+`Category: AI Agents & Workflows` • `Language: TypeScript` • `License: Apache-2.0` • [View Repo →](https://github.com/FlowiseAI/Flowise)
+
+### [Langflow](https://github.com/langflow-ai/langflow)
+> Dynamic visual framework for building, testing, and deploying multi-agent AI and RAG applications.
+
+`Category: AI Agents & Workflows` • `Language: Python / TypeScript` • `License: MIT` • [View Repo →](https://github.com/langflow-ai/langflow)
+
+### [Jan](https://github.com/janhq/jan)
+> Open-source desktop alternative to ChatGPT that runs 100% offline on local hardware with zero data leakage.
+
+`Category: Local AI & Inference` • `Language: TypeScript / C++` • `License: AGPL-3.0` • [View Repo →](https://github.com/janhq/jan)
+
+### [LibreChat](https://github.com/danny-avila/LibreChat)
+> Enhanced, self-hostable open-source AI chat platform unifying OpenAI, Anthropic, Gemini, and local LLMs.
+
+`Category: Web UI & Chat` • `Language: TypeScript` • `License: MIT` • [View Repo →](https://github.com/danny-avila/LibreChat)
+
+### [Fabric](https://github.com/danielmiessler/fabric)
+> Open-source prompt and automation framework for augmenting humans using AI patterns and modular CLI tooling.
+
+`Category: AI CLI & Productivity` • `Language: Go` • `License: MIT` • [View Repo →](https://github.com/danielmiessler/fabric)
 
 ---
 
@@ -127,6 +248,46 @@ Terminal utilities, git enhancers, and developer workflows that save hours every
 
 `Category: CLI & Developer Productivity` • `Language: Rust / TypeScript` • `License: Apache-2.0` • [View Repo →](https://github.com/vercel-labs/agent-browser)
 
+### [bat](https://github.com/sharkdp/bat)
+> Cat clone with syntax highlighting and Git integration for dozens of programming languages.
+
+`Category: Terminal & Shell` • `Language: Rust` • `License: MIT / Apache-2.0` • [View Repo →](https://github.com/sharkdp/bat)
+
+### [delta](https://github.com/dandavison/delta)
+> A syntax-highlighting pager for git, diff, and grep output with side-by-side views and line numbers.
+
+`Category: Git & Version Control` • `Language: Rust` • `License: MIT` • [View Repo →](https://github.com/dandavison/delta)
+
+### [hyperfine](https://github.com/sharkdp/hyperfine)
+> Command-line benchmarking tool with statistical analysis, warmup runs, and parametric sweeps.
+
+`Category: Benchmarking & Performance` • `Language: Rust` • `License: MIT / Apache-2.0` • [View Repo →](https://github.com/sharkdp/hyperfine)
+
+### [tldr](https://github.com/tldr-pages/tldr)
+> Collaborative, simplified community man pages focusing on practical, real-world command examples.
+
+`Category: Terminal & Productivity` • `Language: Markdown` • `License: MIT` • [View Repo →](https://github.com/tldr-pages/tldr)
+
+### [dust](https://github.com/bootandy/dust)
+> A more intuitive version of du in Rust providing instant visual disk usage breakdown in terminal.
+
+`Category: Disk & Storage` • `Language: Rust` • `License: Apache-2.0` • [View Repo →](https://github.com/bootandy/dust)
+
+### [procs](https://github.com/dalance/procs)
+> A modern replacement for ps with color highlighting, multi-column search, and process tree view.
+
+`Category: System & Process Monitoring` • `Language: Rust` • `License: MIT` • [View Repo →](https://github.com/dalance/procs)
+
+### [bottom](https://github.com/ClementTsang/bottom)
+> Cross-platform graphical process and system monitor with customizable terminal charts and widgets.
+
+`Category: System & Process Monitoring` • `Language: Rust` • `License: MIT` • [View Repo →](https://github.com/ClementTsang/bottom)
+
+### [curlie](https://github.com/rs/curlie)
+> The power of curl with the ease of use and human-friendly terminal output of HTTPie.
+
+`Category: HTTP & Networking` • `Language: Go` • `License: MIT` • [View Repo →](https://github.com/rs/curlie)
+
 ---
 
 ## 🧪 4. Testing & QA Reliability
@@ -152,6 +313,31 @@ End-to-end testing, self-healing frameworks, mock servers, and test automation.
 > Modern load testing tool, using Go and JavaScript, for testing system performance and reliability.
 
 `Category: Performance & Load Testing` • `Language: Go` • `License: AGPL-3.0` • [View Repo →](https://github.com/grafana/k6)
+
+### [Bruno](https://github.com/usebruno/bruno)
+> Fast, git-friendly, open-source API client that stores collections directly in your repo via plain text files.
+
+`Category: API Testing & Exploration` • `Language: JavaScript` • `License: MIT` • [View Repo →](https://github.com/usebruno/bruno)
+
+### [Hoppscotch](https://github.com/hoppscotch/hoppscotch)
+> Open-source API development ecosystem, lightweight web & desktop app with WebSocket, GraphQL, and SSE support.
+
+`Category: API Testing & Exploration` • `Language: TypeScript / Vue` • `License: MIT` • [View Repo →](https://github.com/hoppscotch/hoppscotch)
+
+### [Mockoon](https://github.com/mockoon/mockoon)
+> The easiest and quickest way to design and run mock REST APIs locally with custom routes, rules, and proxies.
+
+`Category: Mock APIs & Sandboxes` • `Language: TypeScript` • `License: MIT` • [View Repo →](https://github.com/mockoon/mockoon)
+
+### [Artillery](https://github.com/artilleryio/artillery)
+> Cloud-scale load testing and functional testing platform for HTTP, WebSockets, and gRPC.
+
+`Category: Performance & Load Testing` • `Language: JavaScript` • `License: MPL-2.0` • [View Repo →](https://github.com/artilleryio/artillery)
+
+### [Locust](https://github.com/locustio/locust)
+> Scalable user load testing tool written in Python with real-time web monitoring UI.
+
+`Category: Performance & Load Testing` • `Language: Python` • `License: MIT` • [View Repo →](https://github.com/locustio/locust)
 
 ---
 
@@ -184,6 +370,31 @@ Generous zero-dollar free tiers for databases, authentication, serverless comput
 
 `Category: Transactional Email` • 🎁 **Free Tier**: `3,000 emails/month, 100 emails/day, 1 custom domain` • [Explore Resend →](https://resend.com)
 
+### [PocketBase](https://pocketbase.io)
+> Open source backend in 1 file consisting of embedded SQLite database with real-time subscriptions, built-in auth, and admin dashboard.
+
+`Category: Databases & BaaS` • 🎁 **Free Tier**: `100% Free & Open Source, single binary self-hostable` • [Explore PocketBase →](https://pocketbase.io)
+
+### [Appwrite](https://appwrite.io)
+> Self-hosted backend-as-a-service platform providing developers with core APIs for authentication, databases, storage, and serverless functions.
+
+`Category: Backend-as-a-Service` • 🎁 **Free Tier**: `Free Cloud Tier: 2 projects, 75k monthly active users, 2GB storage` • [Explore Appwrite →](https://appwrite.io)
+
+### [Fly.io](https://fly.io)
+> Run full-stack apps and databases close to your users globally with lightweight Firecracker microVMs.
+
+`Category: Serverless Compute & Global VMs` • 🎁 **Free Tier**: `Free allowance: up to 3 shared-cpu-1x VMs, 3GB persistent storage` • [Explore Fly.io →](https://fly.io)
+
+### [Render](https://render.com)
+> Unified cloud to build and run web applications, APIs, static sites, and background workers with automated Git deploys.
+
+`Category: Cloud Hosting & PaaS` • 🎁 **Free Tier**: `Free static sites, free web services (750 hrs/mo), free PostgreSQL` • [Explore Render →](https://render.com)
+
+### [Koyeb](https://www.koyeb.com)
+> Serverless platform to deploy full-stack apps and Docker containers globally with built-in CDN, SSL, and private networking.
+
+`Category: Serverless & Containers` • 🎁 **Free Tier**: `Free Eco tier: 1 web service, 512MB RAM, global edge network` • [Explore Koyeb →](https://www.koyeb.com)
+
 ---
 
 ## 🤝 6. Contributors Wanted ("Up for Grabs")
@@ -202,6 +413,24 @@ Active open-source projects looking for contributors, bug hunters, or co-maintai
 🎯 **Seeking**: Cypress Adapter, Additional Local Model Adapters, Visual UI Dashboard  
 `Language: TypeScript` • [Browse Open Issues →](https://github.com/RitualDev-Lab/autoheal-qa/issues) • [Repo Link →](https://github.com/RitualDev-Lab/autoheal-qa)
 
+### [FlashLane](https://github.com/RitualDev-Lab/FlashLane)
+> Universal, high-speed bootable ISO/IMG USB writer with Rufus parity for Windows, macOS, and Linux.
+
+🎯 **Seeking**: macOS diskutil runner, Linux block flashing, E2E ISO tests, Documentation  
+`Language: TypeScript / Electron` • [Browse Open Issues →](https://github.com/RitualDev-Lab/FlashLane/issues) • [Repo Link →](https://github.com/RitualDev-Lab/FlashLane)
+
+### [Bruno](https://github.com/usebruno/bruno)
+> Fast, git-friendly open-source API client that stores collections in plain text.
+
+🎯 **Seeking**: Collection runner plugins, translations, UI improvements, good first issues  
+`Language: JavaScript` • [Browse Open Issues →](https://github.com/usebruno/bruno/issues) • [Repo Link →](https://github.com/usebruno/bruno)
+
+### [agent-browser](https://github.com/vercel-labs/agent-browser)
+> Open-source browser automation CLI for AI agents with fast Rust core and Node.js fallback.
+
+🎯 **Seeking**: Cross-platform terminal enhancements, playwright engine bindings, examples  
+`Language: Rust / TypeScript` • [Browse Open Issues →](https://github.com/vercel-labs/agent-browser/issues) • [Repo Link →](https://github.com/vercel-labs/agent-browser)
+
 ---
 
 ## 🎁 7. Developer Discounts & Startup Perks
@@ -217,6 +446,9 @@ Free cloud credits, software sponsorships, and startup program perks for develop
 | [**Google Cloud for Startups**](https://cloud.google.com/startup) | `Cloud Infrastructure & AI` | 🎁 **$2,000 in GCP Cloud Credits** | Early-stage bootstrap / funded startups |
 | [**DigitalOcean Open Source Sponsorship**](https://www.digitalocean.com/open-source) | `Cloud Hosting & Droplets` | 🎁 **Recurring Free Droplet / Bandwidth Credits** | Public open-source projects with active community |
 | [**Postman Open Source Sponsorship**](https://www.postman.com/open-source) | `API Development` | 🎁 **Free Postman Team Plan** | Public API open-source projects |
+| [**Datadog for Open Source**](https://www.datadoghq.com/partner/open-source/) | `Observability & APM` | 🎁 **Free Datadog Pro Account ($180+/host/yr)** | Non-commercial OSI-approved open source projects |
+| [**BrowserStack Open Source**](https://www.browserstack.com/open-source) | `Cross-Browser & Device Testing` | 🎁 **Free Unlimited Live & Automate Testing ($348+/yr)** | Public open-source repository with active development |
+| [**Docker Open Source Community**](https://www.docker.com/community/open-source/application) | `Container Registries & CI` | 🎁 **Free Docker Hub Team Tier ($108+/yr value)** | Active OSI-compliant open-source projects |
 
 ---
 
