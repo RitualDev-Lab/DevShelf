@@ -1,4 +1,4 @@
-﻿name: 🪞 Mirror Repository to GitLab
+name: 🪞 Mirror Repository to GitLab
 
 on:
   push:
@@ -30,8 +30,10 @@ jobs:
             exit 1
           fi
 
-          # Clean repo URL: remove https://, http://, and trailing .git
-          CLEAN_REPO=$(echo "$GITLAB_REPO" | sed -E 's|^https?://||' -e 's|\.git$||')
+          # Clean repo URL: remove http://, https://, and trailing .git
+          CLEAN_REPO="${GITLAB_REPO#https://}"
+          CLEAN_REPO="${CLEAN_REPO#http://}"
+          CLEAN_REPO="${CLEAN_REPO%.git}"
           TARGET_URL="https://oauth2:${GITLAB_TOKEN}@${CLEAN_REPO}.git"
 
           echo "🚀 Mirroring to https://${CLEAN_REPO}.git..."
