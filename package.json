@@ -9,6 +9,7 @@
     "build": "npx tsx scripts/build-site.ts && npx tsx scripts/build-readme.ts",
     "validate": "npx tsx scripts/validate-shelf.ts",
     "validate:pr": "npx tsx scripts/validate-pr.ts",
+    "validate:links": "node scripts/validate-links.js",
     "ai:optimize": "npx tsx scripts/ai-optimize-pr.ts",
     "check:links": "npx tsx scripts/check-links.ts",
     "benchmark": "npx tsx scripts/benchmark-performance.ts",

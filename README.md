@@ -610,13 +610,13 @@ Free cloud credits, software sponsorships, and startup program perks for develop
 | Perk & Provider | Category | Value & Benefits | Eligibility |
 | :--- | :--- | :--- | :--- |
 | [**JetBrains Free Open Source License**](https://www.jetbrains.com/community/opensource) | `Developer Tools & IDEs` | 🎁 **Free 1-Year All Products Pack ($779/yr value)** | Active open-source project (3+ months, non-commercial) |
-| [**Sentry for Open Source**](https://sentry.io/for/open-source/) | `Error Tracking & Observability` | 🎁 **Free Sentry Business Plan ($312+/yr value)** | Public open-source repository with OSI-approved license |
+| [**Sentry for Open Source**](https://sentry.io/for/open-source) | `Error Tracking & Observability` | 🎁 **Free Sentry Business Plan ($312+/yr value)** | Public open-source repository with OSI-approved license |
 | [**GitHub for Startups**](https://github.com/enterprise/startups) | `Hosting & Dev Collaboration` | 🎁 **Up to 20 Free Enterprise Seats ($5,000+ value)** | Series A or earlier startups |
 | [**AWS Activate Founders**](https://aws.amazon.com/activate) | `Cloud Infrastructure` | 🎁 **$1,000 - $100,000 AWS Cloud Credits** | Self-funded or early-stage startups |
 | [**Google Cloud for Startups**](https://cloud.google.com/startup) | `Cloud Infrastructure & AI` | 🎁 **$2,000 in GCP Cloud Credits** | Early-stage bootstrap / funded startups |
 | [**DigitalOcean Open Source Sponsorship**](https://www.digitalocean.com/open-source) | `Cloud Hosting & Droplets` | 🎁 **Recurring Free Droplet / Bandwidth Credits** | Public open-source projects with active community |
 | [**Postman Open Source Sponsorship**](https://www.postman.com/open-source) | `API Development` | 🎁 **Free Postman Team Plan** | Public API open-source projects |
-| [**Datadog for Open Source**](https://www.datadoghq.com/partner/open-source/) | `Observability & APM` | 🎁 **Free Datadog Pro Account ($180+/host/yr)** | Non-commercial OSI-approved open source projects |
+| [**Datadog for Open Source**](https://www.datadoghq.com/partner/open-source) | `Observability & APM` | 🎁 **Free Datadog Pro Account ($180+/host/yr)** | Non-commercial OSI-approved open source projects |
 | [**BrowserStack Open Source**](https://www.browserstack.com/open-source) | `Cross-Browser & Device Testing` | 🎁 **Free Unlimited Live & Automate Testing ($348+/yr)** | Public open-source repository with active development |
 | [**Docker Open Source Community**](https://www.docker.com/community/open-source/application) | `Container Registries & CI` | 🎁 **Free Docker Hub Team Tier ($108+/yr value)** | Active OSI-compliant open-source projects |
 | [**JetBrains Mono**](https://github.com/JetBrains/JetBrainsMono) | `Developer Fonts & Aesthetics` | 🎁 **Free download (SIL Open Font License 1.1)** | Free for personal and commercial use under OFL 1.1 |

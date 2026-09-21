@@ -1,4 +1,4 @@
-﻿name: Validate Shelf Data
+name: Validate Shelf Data
 
 on:
   push:
@@ -31,6 +31,9 @@ jobs:
 
       - name: Validate Shelf JSON Integrity
         run: pnpm run validate
+
+      - name: Check URL Sanitization & Duplicates
+        run: pnpm run validate:links
 
       - name: Test Build README
         run: pnpm run build

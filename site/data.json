@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21T20:49:36.613Z",
+  "updatedAt": "2026-09-21T20:52:20.357Z",
   "totalCount": 94,
   "counts": {
     "repos": 56,
@@ -1125,7 +1125,7 @@
     },
     {
       "name": "Sentry for Open Source",
-      "url": "https://sentry.io/for/open-source/",
+      "url": "https://sentry.io/for/open-source",
       "category": "Error Tracking & Observability",
       "description": "Free Sentry Business plan for qualifying open-source maintainers to monitor application health, errors, and real-time performance.",
       "perkValue": "Free Sentry Business Plan ($312+/yr value)",
@@ -1185,7 +1185,7 @@
     },
     {
       "name": "Datadog for Open Source",
-      "url": "https://www.datadoghq.com/partner/open-source/",
+      "url": "https://www.datadoghq.com/partner/open-source",
       "category": "Observability & APM",
       "description": "Free Datadog Pro infrastructure monitoring, log management, and APM for qualifying open-source projects.",
       "perkValue": "Free Datadog Pro Account ($180+/host/yr)",

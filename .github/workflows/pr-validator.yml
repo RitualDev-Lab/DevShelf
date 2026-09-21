@@ -41,6 +41,11 @@ jobs:
           GITHUB_BASE_REF: ${{ github.base_ref }}
         run: npx tsx scripts/validate-pr.ts
 
+      - name: Run URL Sanitizer & Duplicate Audit
+        id: link_sanitizer
+        continue-on-error: true
+        run: node scripts/validate-links.js
+
       - name: Run AI-Driven PR Optimization & Tagging
         id: ai_optimizer
         continue-on-error: true
