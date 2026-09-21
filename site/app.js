@@ -162,6 +162,12 @@ function renderSpotlight() {
     `;
     })
     .join("");
+
+  // Stagger spotlight card entrance animations
+  const spotCards = spotlightContainer.children;
+  for (let i = 0; i < spotCards.length; i++) {
+    spotCards[i].style.setProperty("--delay", `${i * 0.08}s`);
+  }
 }
 
 let listenersInitialized = false;
@@ -423,6 +429,12 @@ function render() {
 
   emptyState.classList.add("hidden");
   grid.innerHTML = filtered.map((item) => createCardHtml(item)).join("");
+
+  // Stagger card entrance animations
+  const cards = grid.children;
+  for (let i = 0; i < cards.length; i++) {
+    cards[i].style.setProperty("--delay", `${i * 0.04}s`);
+  }
 }
 
 function createCardHtml(item) {

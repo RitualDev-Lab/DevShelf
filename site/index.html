@@ -39,10 +39,15 @@
 </head>
 <body class="bg-slate-950 text-slate-100 min-h-screen font-sans selection:bg-purple-600 selection:text-white relative">
 
-  <!-- Ambient Background Glows -->
+  <!-- Ambient Background Glows + Floating Particles -->
   <div class="fixed inset-0 overflow-hidden pointer-events-none -z-10">
-    <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-purple-600/20 blur-[100px] rounded-full"></div>
-    <div class="absolute top-[500px] -left-32 w-[400px] h-[400px] bg-cyan-600/15 blur-[100px] rounded-full"></div>
+    <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-purple-600/20 blur-[100px] rounded-full ambient-glow"></div>
+    <div class="absolute top-[500px] -left-32 w-[400px] h-[400px] bg-cyan-600/15 blur-[100px] rounded-full ambient-glow-delayed"></div>
+    <div class="particle particle-1"></div>
+    <div class="particle particle-2"></div>
+    <div class="particle particle-3"></div>
+    <div class="particle particle-4"></div>
+    <div class="particle particle-5"></div>
   </div>
 
   <!-- Top Navigation Bar -->
@@ -82,7 +87,7 @@
   <section class="max-w-6xl mx-auto px-4 sm:px-6 pt-12 pb-6 text-center">
     
     <!-- Custom URL / Uptime Pill -->
-    <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-slate-900 border border-purple-500/50 text-purple-200 text-xs font-semibold mb-6 shadow-md">
+    <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-slate-900 border border-purple-500/50 text-purple-200 text-xs font-semibold mb-6 shadow-md hero-animate hero-animate-delay-1">
       <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
       <span class="font-mono font-bold text-white">devshelf.ritualdev.in</span>
       <span class="text-purple-400">•</span>
@@ -90,19 +95,19 @@
     </div>
 
     <!-- Main Headline -->
-    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-5 leading-tight">
+    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-5 leading-tight hero-animate hero-animate-delay-2">
       The Zero-Paywall Ecosystem <br />
       <span class="bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">Curated for Developers</span>
     </h1>
 
-    <p class="text-base sm:text-lg text-slate-200 max-w-3xl mx-auto mb-6 leading-relaxed font-normal">
+    <p class="text-base sm:text-lg text-slate-200 max-w-3xl mx-auto mb-6 leading-relaxed font-normal hero-animate hero-animate-delay-3">
       Discover hand-curated developer tools, open-source GitHub repositories, verified free public APIs, and startup sponsorships with zero credit-card paywalls. Continuous automated health monitoring.
     </p>
 
     <!-- CTAs -->
-    <div class="flex items-center justify-center flex-wrap gap-3 mb-8 text-xs font-bold">
+    <div class="flex items-center justify-center flex-wrap gap-3 mb-8 text-xs font-bold hero-animate hero-animate-delay-4">
       <a href="#directory" class="inline-flex items-center space-x-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 to-cyan-600 hover:opacity-95 text-white shadow-lg shadow-purple-500/25 transition">
-        <span>Explore 90+ Curated Tools ↓</span>
+        <span>Explore 80+ Curated Tools ↓</span>
       </a>
       <a href="https://github.com/RitualDev-Lab/DevShelf/issues/new/choose" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-2 px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-600 text-white transition">
         <span>➕ Submit Your Tool (Free Social Amplification)</span>
@@ -113,7 +118,7 @@
     </div>
 
     <!-- Live Stat Metric Pills -->
-    <div class="flex flex-wrap items-center justify-center gap-2.5 text-xs font-mono text-slate-200 max-w-4xl mx-auto mb-10" id="stats-bar">
+    <div class="flex flex-wrap items-center justify-center gap-2.5 text-xs font-mono text-slate-200 max-w-4xl mx-auto mb-10 shine-bar rounded-2xl py-2 px-1" id="stats-bar">
       <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700 flex items-center space-x-2 shadow-sm font-semibold">
         <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
         <span id="stat-total" class="font-bold text-white">81 Resources</span>

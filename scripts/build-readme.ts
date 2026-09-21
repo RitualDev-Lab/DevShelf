@@ -29,60 +29,88 @@ async function build() {
 
   let md = `<div align="center">
 
-# 📚 DevShelf
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,19,24,30&height=200&section=header&text=📚%20DevShelf&fontSize=60&fontAlignY=35&desc=The%20Crowdsourced%20Zero-Paywall%20Developer%20Directory&descAlignY=55&descSize=18&fontColor=fff&animation=twinkling">
+  <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,19,24,30&height=200&section=header&text=📚%20DevShelf&fontSize=60&fontAlignY=35&desc=The%20Crowdsourced%20Zero-Paywall%20Developer%20Directory&descAlignY=55&descSize=18&fontColor=fff">
+  <img alt="DevShelf Banner" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,19,24,30&height=200&section=header&text=📚%20DevShelf&fontSize=60&fontAlignY=35&desc=The%20Crowdsourced%20Zero-Paywall%20Developer%20Directory&descAlignY=55&descSize=18&fontColor=fff" width="100%">
+</picture>
 
-### The Crowdsourced Developer Ecosystem & Zero-Cost Resource Index
-**Discover high-quality developer tools, verified free APIs, AI agents, and open-source projects with zero paywalls.**
+<br>
 
-[![Live Web Directory](https://img.shields.io/badge/Web_Directory-Live_Search_%26_Filters-7928CA?style=for-the-badge&logo=googlechrome&logoColor=white)](https://devshelf.ritualdev.in)
-[![Curated Resources](https://img.shields.io/badge/Listed_Resources-${totalItems}+_Curated-blueviolet?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
-[![Endpoint Health](https://img.shields.io/badge/Endpoint_Health-100%25_Verified-brightgreen?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/RitualDev-Lab/DevShelf/actions)
-[![Open Source](https://img.shields.io/badge/Open_Source-100%25_FOSS-blue?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
-[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome_&_Amplified-brightgreen?style=for-the-badge)](#-how-to-submit-your-project-or-api)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
+**Discover high-quality developer tools, verified free APIs, AI agents, and open-source projects — all with zero paywalls.**
 
-<p align="center">
+<br>
+
+[![Live Web Directory](https://img.shields.io/badge/🌐_Web_Directory-Live_Search_%26_Filters-7928CA?style=for-the-badge&logoColor=white)](https://devshelf.ritualdev.in)
+[![Curated Resources](https://img.shields.io/badge/📦_Resources-${totalItems}+_Curated-blueviolet?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
+[![Endpoint Health](https://img.shields.io/badge/🛡️_Health-100%25_Verified-brightgreen?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf/actions)
+[![Open Source](https://img.shields.io/badge/🔓_License-MIT_FOSS-blue?style=for-the-badge)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/🤝_PRs-Welcome_%26_Amplified-brightgreen?style=for-the-badge)](#-how-to-submit-your-project-or-api)
+
+<br>
+
+<table>
+<tr>
+<td align="center"><b>🌐 Free APIs</b><br><code>${apis.length}</code></td>
+<td align="center"><b>🤖 AI & LLMs</b><br><code>${aiTools.length}</code></td>
+<td align="center"><b>⚡ CLI Tools</b><br><code>${cliTools.length}</code></td>
+<td align="center"><b>🧪 Testing & QA</b><br><code>${testingQa.length}</code></td>
+<td align="center"><b>☁️ Free Cloud</b><br><code>${freeCloud.length}</code></td>
+<td align="center"><b>🤝 Up for Grabs</b><br><code>${contributors.length}</code></td>
+<td align="center"><b>🎁 Dev Perks</b><br><code>${perks.length}</code></td>
+</tr>
+</table>
+
+<p>
   <a href="https://devshelf.ritualdev.in"><b>🌐 Interactive Web App</b></a> •
-  <a href="https://github.com/RitualDev-Lab/DevShelf/wiki"><b>📖 Project Wiki</b></a> •
-  <a href="#-featured-spotlight--tools-of-the-week"><b>🔥 Featured Spotlight</b></a> •
+  <a href="#-featured-spotlight--tools-of-the-week"><b>🔥 Spotlight</b></a> •
   <a href="#-social-amplification-guarantee"><b>🚀 Social Guarantee</b></a> •
-  <a href="#-team--contributors"><b>👥 Team & Contributors</b></a> •
+  <a href="#-team--contributors"><b>👥 Team</b></a> •
   <a href="#-how-to-submit-your-project-or-api"><b>➕ Submit Yours</b></a>
 </p>
 
-<p align="center">
-  <b>Quick Jump:</b>
-  <a href="#-1-free--public-apis">Free APIs</a> (${apis.length}) •
-  <a href="#-2-ai-agents--local-llm-tools">AI & LLMs</a> (${aiTools.length}) •
-  <a href="#-3-cli--productivity-tools">CLI Tools</a> (${cliTools.length}) •
-  <a href="#-4-testing--qa-reliability">Testing & QA</a> (${testingQa.length}) •
-  <a href="#-5-free-cloud--developer-tiers">Free Cloud</a> (${freeCloud.length}) •
-  <a href="#-6-contributors-wanted-up-for-grabs">Up for Grabs</a> (${contributors.length}) •
-  <a href="#-7-developer-discounts--startup-perks">Dev Perks</a> (${perks.length})
-</p>
-
----
-
 </div>
+
+<br>
 
 ## 💡 Why DevShelf?
 
-Most "Awesome" lists suffer from two major problems:
-1. **Link Rot & Dead Endpoints**: Outdated links, broken APIs, and unmaintained repos sit untouched for years.
-2. **High Barriers for Indie Creators**: Solo developers and open-source creators struggle to get discovered amidst corporate marketing.
+<table>
+<tr>
+<td width="50%">
 
-**DevShelf is built differently:**
-- 🛡️ **Automated Health Checks**: GitHub Actions continuously ping every API, repository, and service to ensure endpoints are 100% active.
-- 🌐 **Interactive Web UI**: Instant search, filter by license/language/auth, and 1-click clipboard copying via our web application ([devshelf.ritualdev.in](https://devshelf.ritualdev.in)).
-- 🚀 **1-Click Submissions**: Add your own project or API in 30 seconds via structured GitHub Issue forms.
-- 📢 **Social Amplification**: Every merged project gets free social promotion across our developer channels.
-- 🌟 **Quality First**: Hand-curated, zero paywalls, clear free tier transparency.
+### ❌ Traditional "Awesome" Lists
+- 🔴 Links rot — broken APIs sit untouched for years
+- 🔴 No discovery — indie creators buried under corporate tools
+- 🔴 Static lists — no search, no filters, no live status
+- 🔴 No incentive — contributors get nothing in return
+
+</td>
+<td width="50%">
+
+### ✅ DevShelf is Built Different
+- 🟢 **Automated Health Checks** — GitHub Actions pings every endpoint continuously
+- 🟢 **Interactive Web UI** — instant search, filters, 1-click copy at [devshelf.ritualdev.in](https://devshelf.ritualdev.in)
+- 🟢 **1-Click Submissions** — add your project in 30 seconds via GitHub Issue forms
+- 🟢 **Social Amplification** — every merged project gets free promotion
+
+</td>
+</tr>
+</table>
+
+<div align="center">
+
+\`\`\`
+🛡️ 100% Verified Uptime  •  🌟 Quality First  •  🚫 Zero Paywalls  •  📢 Free Social Promotion
+\`\`\`
+
+</div>
 
 ---
 
 ## 🔥 Featured Spotlight & Tools of the Week
 
-Every week, we highlight outstanding open-source utilities, developer gems, and community submissions:
+> Every week, we highlight outstanding open-source utilities, developer gems, and community submissions.
 
 | Project | Category | Highlights | Links |
 | :--- | :--- | :--- | :---: |
@@ -192,7 +220,7 @@ APIs that provide a 100% free tier or require no API key at all.
   }
 
   md +=
-    "\n---\n\n## 🤖 2. AI Agents & Local LLM Tools\n\nOpen-source AI frameworks, local LLM serving, and coding assistants.\n\n";
+    "\n---\n\n<details open>\n<summary><h2>🤖 2. AI Agents & Local LLM Tools</h2></summary>\n\n> Open-source AI frameworks, local LLM serving, and coding assistants.\n\n";
 
   for (const tool of aiTools) {
     const featured = tool.featured ? "⭐ **Featured** • " : "";
@@ -201,8 +229,10 @@ APIs that provide a 100% free tier or require no API key at all.
     md += `${featured}\`Category: ${tool.category}\` • \`Language: ${tool.language}\` • \`License: ${tool.license}\` • [View Repo →](${tool.repo})\n\n`;
   }
 
+  md += "</details>\n";
+
   md +=
-    "---\n\n## ⚡ 3. CLI & Productivity Tools\n\nTerminal utilities, git enhancers, and developer workflows that save hours every week.\n\n";
+    "---\n\n<details open>\n<summary><h2>⚡ 3. CLI & Productivity Tools</h2></summary>\n\n> Terminal utilities, git enhancers, and developer workflows that save hours every week.\n\n";
 
   for (const tool of cliTools) {
     const featured = tool.featured ? "⭐ **Featured** • " : "";
@@ -211,8 +241,10 @@ APIs that provide a 100% free tier or require no API key at all.
     md += `${featured}\`Category: ${tool.category}\` • \`Language: ${tool.language}\` • \`License: ${tool.license}\` • [View Repo →](${tool.repo})\n\n`;
   }
 
+  md += "</details>\n";
+
   md +=
-    "---\n\n## 🧪 4. Testing & QA Reliability\n\nEnd-to-end testing, self-healing frameworks, mock servers, and test automation.\n\n";
+    "\n---\n\n<details open>\n<summary><h2>🧪 4. Testing & QA Reliability</h2></summary>\n\n> End-to-end testing, self-healing frameworks, mock servers, and test automation.\n\n";
 
   for (const tool of testingQa) {
     const featured = tool.featured ? "⭐ **Featured** • " : "";
@@ -221,8 +253,10 @@ APIs that provide a 100% free tier or require no API key at all.
     md += `${featured}\`Category: ${tool.category}\` • \`Language: ${tool.language}\` • \`License: ${tool.license}\` • [View Repo →](${tool.repo})\n\n`;
   }
 
+  md += "</details>\n";
+
   md +=
-    "---\n\n## ☁️ 5. Free Cloud & Developer Tiers\n\nGenerous zero-dollar free tiers for databases, authentication, serverless compute, and email.\n\n";
+    "\n---\n\n<details open>\n<summary><h2>☁️ 5. Free Cloud & Developer Tiers</h2></summary>\n\n> Generous zero-dollar free tiers for databases, authentication, serverless compute, and email.\n\n";
 
   for (const cloud of freeCloud) {
     md += `### [${cloud.name}](${cloud.url})\n`;
@@ -230,8 +264,10 @@ APIs that provide a 100% free tier or require no API key at all.
     md += `\`Category: ${cloud.category}\` • 🎁 **Free Tier**: \`${cloud.freeTier}\` • [Explore ${cloud.name} →](${cloud.url})\n\n`;
   }
 
+  md += "</details>\n";
+
   md +=
-    '---\n\n## 🤝 6. Contributors Wanted ("Up for Grabs")\n\nActive open-source projects looking for contributors, bug hunters, or co-maintainers.\n\n';
+    '\n---\n\n<details open>\n<summary><h2>🤝 6. Contributors Wanted ("Up for Grabs")</h2></summary>\n\n> Active open-source projects looking for contributors, bug hunters, or co-maintainers.\n\n';
 
   for (const item of contributors) {
     md += `### [${item.name}](${item.repo})\n`;
@@ -239,6 +275,8 @@ APIs that provide a 100% free tier or require no API key at all.
     md += `🎯 **Seeking**: ${item.seeking}  \n`;
     md += `\`Language: ${item.language}\` • [Browse Open Issues →](${item.goodFirstIssues}) • [Repo Link →](${item.repo})\n\n`;
   }
+
+  md += "</details>\n";
 
   md +=
     "---\n\n## 🎁 7. Developer Discounts & Startup Perks\n\nFree cloud credits, software sponsorships, and startup program perks for developers and open-source teams.\n\n";
@@ -285,11 +323,35 @@ DevShelf is powered by the open-source community! We provide tailored issue temp
 
 ---
 
+## 🏗️ Built With
+
+<div align="center">
+
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![Biome](https://img.shields.io/badge/Biome-60A5FA?style=flat-square&logo=biome&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-222?style=flat-square&logo=github&logoColor=white)
+![pnpm](https://img.shields.io/badge/pnpm-F69220?style=flat-square&logo=pnpm&logoColor=white)
+
+</div>
+
+---
+
 ## 📜 License
 Distributed under the **MIT License**. See [LICENSE](LICENSE) for more information.
 
 <div align="center">
-  <sub>Curated with ❤️ by <a href="https://github.com/RitualDev-Lab">RitualDev-Lab</a> and the global open-source community.</sub>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,19,24,30&height=100&section=footer">
+  <img alt="" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,19,24,30&height=100&section=footer" width="100%">
+</picture>
+
+<sub>Curated with ❤️ by <a href="https://github.com/RitualDev-Lab">RitualDev-Lab</a> and the global open-source community.</sub>
+
+<sub>⭐ If DevShelf saved you time, consider giving this repo a star — it helps other developers discover these resources!</sub>
+
 </div>
 `;
 

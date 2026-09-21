@@ -1,37 +1,295 @@
-/* Modern High-Contrast DevShelf Styles */
+/* ═══════════════════════════════════════════════════════
+   DevShelf — Premium Dark-Mode Styles + Animations
+   ═══════════════════════════════════════════════════════ */
+
 :root {
   color-scheme: dark;
 }
+
+/* ── Keyframes ─────────────────────────────────────── */
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroTextIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes heroPulse {
+  0%,
+  100% {
+    opacity: 0.18;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.28;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes shine {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes borderRotate {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-18px);
+  }
+}
+
+@keyframes drift {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    transform: translateX(12px) translateY(-8px);
+  }
+  50% {
+    transform: translateX(-6px) translateY(-16px);
+  }
+  75% {
+    transform: translateX(-12px) translateY(-4px);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+@keyframes modalIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92) translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes backdropIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes toastIn {
+  from {
+    transform: translateX(120%) translateY(0);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes glowPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 15px -3px rgba(139, 92, 246, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 25px -2px rgba(139, 92, 246, 0.5);
+  }
+}
+
+/* ── Body & Background ─────────────────────────────── */
 
 body {
   background-color: #07090e;
   background-image: radial-gradient(at 50% 0%, rgba(139, 92, 246, 0.16) 0px, transparent 60%),
     radial-gradient(at 100% 0%, rgba(6, 182, 212, 0.12) 0px, transparent 50%),
-    radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.05) 1px, transparent 0);
+    radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.04) 1px, transparent 0);
   background-size: 100% 100%, 100% 100%, 28px 28px;
   color: #f1f5f9;
 }
 
-/* Glass Card with Solid High-Contrast Base */
+/* ── Floating Particles ────────────────────────────── */
+
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0.15;
+}
+
+.particle-1 {
+  width: 6px;
+  height: 6px;
+  background: #8b5cf6;
+  top: 20%;
+  left: 15%;
+  animation: float 6s ease-in-out infinite, drift 14s ease-in-out infinite;
+}
+
+.particle-2 {
+  width: 4px;
+  height: 4px;
+  background: #06b6d4;
+  top: 40%;
+  right: 20%;
+  animation: float 8s ease-in-out infinite 1s, drift 18s ease-in-out infinite reverse;
+}
+
+.particle-3 {
+  width: 8px;
+  height: 8px;
+  background: #ec4899;
+  top: 65%;
+  left: 70%;
+  animation: float 7s ease-in-out infinite 2s, drift 20s ease-in-out infinite;
+}
+
+.particle-4 {
+  width: 3px;
+  height: 3px;
+  background: #a855f7;
+  top: 30%;
+  left: 55%;
+  animation: float 9s ease-in-out infinite 0.5s, drift 16s ease-in-out infinite reverse;
+}
+
+.particle-5 {
+  width: 5px;
+  height: 5px;
+  background: #22d3ee;
+  top: 75%;
+  left: 30%;
+  animation: float 10s ease-in-out infinite 3s, drift 22s ease-in-out infinite;
+}
+
+/* ── Ambient Glow Pulse ────────────────────────────── */
+
+.ambient-glow {
+  animation: heroPulse 6s ease-in-out infinite;
+}
+
+.ambient-glow-delayed {
+  animation: heroPulse 8s ease-in-out infinite 2s;
+}
+
+/* ── Hero Animation ────────────────────────────────── */
+
+.hero-animate {
+  animation: heroTextIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.hero-animate-delay-1 {
+  animation-delay: 0.1s;
+}
+.hero-animate-delay-2 {
+  animation-delay: 0.25s;
+}
+.hero-animate-delay-3 {
+  animation-delay: 0.4s;
+}
+.hero-animate-delay-4 {
+  animation-delay: 0.55s;
+}
+
+/* ── Stats Bar Shine ───────────────────────────────── */
+
+.shine-bar {
+  background-image: linear-gradient(
+    110deg,
+    transparent 25%,
+    rgba(255, 255, 255, 0.06) 37%,
+    transparent 50%
+  );
+  background-size: 400% 100%;
+  animation: shine 6s linear infinite;
+}
+
+/* ── Glass Card ────────────────────────────────────── */
+
 .glass-card {
   background: #0f172a;
   border: 1px solid #1e293b;
   box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5);
-  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s, box-shadow 0.2s;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.3s
+    ease;
+  animation: fadeSlideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: var(--delay, 0s);
+  position: relative;
+}
+
+.glass-card::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, transparent 40%, rgba(139, 92, 246, 0) 50%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: -1;
 }
 
 .glass-card:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px) scale(1.015);
   border-color: #8b5cf6;
-  box-shadow: 0 16px 30px -8px rgba(139, 92, 246, 0.3), 0 0 0 1px rgba(139, 92, 246, 0.3);
+  box-shadow: 0 20px 40px -10px rgba(139, 92, 246, 0.25), 0 0 0 1px rgba(139, 92, 246, 0.2), inset 0
+    1px 0 rgba(255, 255, 255, 0.05);
 }
 
+.glass-card:hover::after {
+  opacity: 1;
+  background: linear-gradient(
+    135deg,
+    transparent 20%,
+    rgba(139, 92, 246, 0.08) 50%,
+    transparent 80%
+  );
+}
+
+/* ── Spotlight Card ────────────────────────────────── */
+
 .spotlight-card {
-  background: #111827;
+  background: linear-gradient(180deg, #111827 0%, #0d1117 100%);
   border: 1px solid #7c3aed;
   box-shadow: 0 8px 25px -4px rgba(124, 58, 237, 0.25);
   position: relative;
   overflow: hidden;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.3s
+    ease;
+  animation: fadeSlideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: var(--delay, 0s);
 }
 
 .spotlight-card::before {
@@ -41,62 +299,87 @@ body {
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #8b5cf6, #ec4899, #06b6d4);
+  background: linear-gradient(90deg, #8b5cf6, #ec4899, #06b6d4, #8b5cf6);
+  background-size: 200% 100%;
+  animation: shine 3s linear infinite;
 }
 
 .spotlight-card:hover {
+  transform: translateY(-5px) scale(1.02);
   border-color: #a855f7;
-  box-shadow: 0 16px 35px -6px rgba(168, 85, 247, 0.35);
+  box-shadow: 0 24px 50px -10px rgba(168, 85, 247, 0.3), 0 0 40px -8px rgba(139, 92, 246, 0.15);
 }
 
-/* Category Pill Active State */
+/* ── Category Pills ────────────────────────────────── */
+
 .category-pill {
-  transition: all 0.18s ease;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   background: #1e293b;
   color: #cbd5e1;
   border: 1px solid #334155;
+  transform: scale(1);
 }
 
 .category-pill:hover {
   background: #334155;
   color: #ffffff;
+  transform: scale(1.03);
+}
+
+.category-pill:active {
+  transform: scale(0.97);
 }
 
 .category-pill.active {
-  background: #6d28d9;
+  background: linear-gradient(135deg, #6d28d9, #7c3aed);
   border-color: #a78bfa;
   color: #ffffff;
-  box-shadow: 0 0 18px -2px rgba(139, 92, 246, 0.5);
+  box-shadow: 0 0 20px -3px rgba(139, 92, 246, 0.5);
+  animation: glowPulse 3s ease-in-out infinite;
 }
 
-/* Button & Interactive element cursor */
+/* ── Interactive Buttons & Links ───────────────────── */
+
 button,
 a {
   cursor: pointer;
 }
 
 .filter-tag {
-  transition: all 0.18s ease;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   background: #1e293b;
   color: #f1f5f9;
   border: 1px solid #475569;
   cursor: pointer;
+  transform: scale(1);
 }
 
 .filter-tag:hover {
   background: #334155;
   color: #ffffff;
   border-color: #64748b;
+  transform: scale(1.04);
+}
+
+.filter-tag:active {
+  transform: scale(0.96);
 }
 
 .filter-tag.active {
-  background: #0891b2;
+  background: linear-gradient(135deg, #0891b2, #0e7490);
   border-color: #38bdf8;
   color: #ffffff;
-  box-shadow: 0 0 14px -2px rgba(56, 189, 248, 0.5);
+  box-shadow: 0 0 16px -2px rgba(56, 189, 248, 0.5);
 }
 
-/* Modal Behavior */
+/* ── Search Input Focus Glow ───────────────────────── */
+
+#search-input:focus {
+  box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.5), 0 0 20px -4px rgba(139, 92, 246, 0.3);
+}
+
+/* ── Badge Modal ───────────────────────────────────── */
+
 #badge-modal {
   display: none;
   z-index: 9999;
@@ -104,15 +387,41 @@ a {
 
 #badge-modal.show {
   display: flex !important;
+  animation: backdropIn 0.25s ease both;
+}
+
+#badge-modal.show > div {
+  animation: modalIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 .modal-backdrop {
   background-color: rgba(3, 7, 18, 0.88);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 
-/* Custom Scrollbar */
+/* ── Toast Notification ────────────────────────────── */
+
+#toast {
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s ease;
+}
+
+/* ── Copy Button Hover ─────────────────────────────── */
+
+.copy-btn {
+  transition: all 0.2s ease;
+}
+
+.copy-btn:hover {
+  transform: scale(1.1);
+}
+
+.copy-btn:active {
+  transform: scale(0.9);
+}
+
+/* ── Custom Scrollbar ──────────────────────────────── */
+
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -129,4 +438,16 @@ a {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #475569;
+}
+
+/* ── Accessibility: Reduced Motion ─────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
