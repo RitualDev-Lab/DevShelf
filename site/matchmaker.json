@@ -1,0 +1,188 @@
+{
+  "updatedAt": "2026-09-21T20:26:27.514Z",
+  "totalProjects": 9,
+  "totalOpenIssues": 13,
+  "projects": [
+    {
+      "name": "GitWhisper",
+      "repo": "https://github.com/RitualDev-Lab/GitWhisper",
+      "category": "CLI & Extension",
+      "language": "TypeScript",
+      "seeking": "JetBrains IDE Plugin, Community Custom LLM Adapters, Documentation",
+      "description": "AI-assisted conventional commit generator grounded in staged index plumbing.",
+      "issues": [
+        {
+          "title": "Explore open issues & help wanted in GitWhisper",
+          "url": "https://github.com/RitualDev-Lab/GitWhisper/issues",
+          "labels": ["good first issue", "help wanted"],
+          "difficulty": "Starter Task"
+        }
+      ]
+    },
+    {
+      "name": "AutoHeal-QA",
+      "repo": "https://github.com/RitualDev-Lab/autoheal-qa",
+      "category": "E2E & Testing",
+      "language": "TypeScript",
+      "seeking": "Cypress Adapter, Additional Local Model Adapters, Visual UI Dashboard",
+      "description": "Zero-cloud-cost agentic self-healing E2E test runner for Playwright.",
+      "issues": [
+        {
+          "title": "Explore open issues & help wanted in AutoHeal-QA",
+          "url": "https://github.com/RitualDev-Lab/autoheal-qa/issues",
+          "labels": ["good first issue", "help wanted"],
+          "difficulty": "Starter Task"
+        }
+      ]
+    },
+    {
+      "name": "FlashLane",
+      "repo": "https://github.com/RitualDev-Lab/FlashLane",
+      "category": "OS & Hardware Utilities",
+      "language": "TypeScript / Electron",
+      "seeking": "macOS diskutil runner, Linux block flashing, E2E ISO tests, Documentation",
+      "description": "Universal, high-speed bootable ISO/IMG USB writer with Rufus parity for Windows, macOS, and Linux.",
+      "issues": [
+        {
+          "title": "Explore open issues & help wanted in FlashLane",
+          "url": "https://github.com/RitualDev-Lab/FlashLane/issues",
+          "labels": ["good first issue", "help wanted"],
+          "difficulty": "Starter Task"
+        }
+      ]
+    },
+    {
+      "name": "Bruno",
+      "repo": "https://github.com/usebruno/bruno",
+      "category": "API Testing & Tooling",
+      "language": "JavaScript",
+      "seeking": "Collection runner plugins, translations, UI improvements, good first issues",
+      "description": "Fast, git-friendly open-source API client that stores collections in plain text.",
+      "issues": [
+        {
+          "title": "[Monaco Editor] Alt+G / Option+G triggers \"Jump to Line\" instead of typing \"@\" on macOS (German layout)",
+          "url": "https://github.com/usebruno/bruno/issues/9114",
+          "labels": ["bug", "good first issue"],
+          "comments": 4,
+          "difficulty": "Beginner Friendly"
+        },
+        {
+          "title": "Make URLs clickable in console",
+          "url": "https://github.com/usebruno/bruno/issues/6275",
+          "labels": ["enhancement", "good first issue", "module-qol", "module-devtools", "P3"],
+          "comments": 11,
+          "difficulty": "Beginner Friendly"
+        },
+        {
+          "title": "Close multiple collections at once",
+          "url": "https://github.com/usebruno/bruno/issues/5460",
+          "labels": ["enhancement", "good first issue", "help wanted"],
+          "comments": 14,
+          "difficulty": "Beginner Friendly"
+        }
+      ]
+    },
+    {
+      "name": "agent-browser",
+      "repo": "https://github.com/vercel-labs/agent-browser",
+      "category": "AI & Browser Automation",
+      "language": "Rust / TypeScript",
+      "seeking": "Cross-platform terminal enhancements, playwright engine bindings, examples",
+      "description": "Open-source browser automation CLI for AI agents with fast Rust core and Node.js fallback.",
+      "issues": [
+        {
+          "title": "Explore open issues & help wanted in agent-browser",
+          "url": "https://github.com/vercel-labs/agent-browser/issues",
+          "labels": ["good first issue", "help wanted"],
+          "difficulty": "Starter Task"
+        }
+      ]
+    },
+    {
+      "name": "Aider",
+      "repo": "https://github.com/Aider-AI/aider",
+      "category": "AI Coding CLI",
+      "language": "Python",
+      "seeking": "Local model benchmark adapters, terminal UX enhancements, documentation",
+      "description": "Terminal-based AI pair programming tool with git auto-commit integration.",
+      "issues": [
+        {
+          "title": "Explore open issues & help wanted in Aider",
+          "url": "https://github.com/Aider-AI/aider/issues",
+          "labels": ["good first issue", "help wanted"],
+          "difficulty": "Starter Task"
+        }
+      ]
+    },
+    {
+      "name": "OpenHands",
+      "repo": "https://github.com/All-Hands-AI/OpenHands",
+      "category": "Autonomous AI Agent",
+      "language": "Python",
+      "seeking": "Docker sandbox runtime adapters, evaluation benchmarks, docs & translations",
+      "description": "Autonomous software development agent platform for solving GitHub issues.",
+      "issues": [
+        {
+          "title": "[Bug]: File upload does not have an indication of progress",
+          "url": "https://github.com/OpenHands/OpenHands/issues/16430",
+          "labels": [
+            "bug",
+            "good first issue",
+            "frontend",
+            "agent-canvas",
+            "priority:medium",
+            "release-note-required"
+          ],
+          "comments": 5,
+          "difficulty": "Beginner Friendly"
+        },
+        {
+          "title": "Consolidate the duplicate src/context/ and src/contexts/ directories",
+          "url": "https://github.com/OpenHands/OpenHands/issues/15532",
+          "labels": ["enhancement", "good first issue"],
+          "comments": 9,
+          "difficulty": "Beginner Friendly"
+        },
+        {
+          "title": "Workspace file preview returns 401 Unauthorized on non-HTTPS non-loopback hosts",
+          "url": "https://github.com/OpenHands/OpenHands/issues/15567",
+          "labels": ["bug", "good first issue"],
+          "comments": 4,
+          "difficulty": "Beginner Friendly"
+        }
+      ]
+    },
+    {
+      "name": "Continue",
+      "repo": "https://github.com/continuedev/continue",
+      "category": "IDE Assistant",
+      "language": "TypeScript",
+      "seeking": "Provider integrations, prompt context templates, good first issues",
+      "description": "Leading open-source AI code assistant for VS Code and JetBrains.",
+      "issues": [
+        {
+          "title": "Explore open issues & help wanted in Continue",
+          "url": "https://github.com/continuedev/continue/issues",
+          "labels": ["good first issue", "help wanted"],
+          "difficulty": "Starter Task"
+        }
+      ]
+    },
+    {
+      "name": "Starship",
+      "repo": "https://github.com/starship/starship",
+      "category": "Shell & Terminal Prompt",
+      "language": "Rust",
+      "seeking": "New module additions, shell integrations, localized docs, bug fixes",
+      "description": "Fast and customizable cross-shell prompt for any terminal.",
+      "issues": [
+        {
+          "title": "Explore open issues & help wanted in Starship",
+          "url": "https://github.com/starship/starship/issues",
+          "labels": ["good first issue", "help wanted"],
+          "difficulty": "Starter Task"
+        }
+      ]
+    }
+  ]
+}

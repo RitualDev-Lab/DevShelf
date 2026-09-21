@@ -1,15 +1,16 @@
 {
-  "updatedAt": "2026-09-21T19:45:18.884Z",
-  "totalCount": 84,
+  "updatedAt": "2026-09-21T20:31:57.684Z",
+  "totalCount": 92,
   "counts": {
-    "repos": 46,
+    "repos": 54,
     "apis": 15,
     "aiTools": 16,
     "cliTools": 19,
     "testingQa": 11,
     "freeCloud": 10,
     "contributors": 9,
-    "perks": 13
+    "perks": 13,
+    "boilerplates": 8
   },
   "resources": [
     {
@@ -21,6 +22,11 @@
       "license": "MIT",
       "featured": true,
       "goodFirstIssues": "https://github.com/ollama/ollama/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "Self-Hostable",
+        "No Card Required"
+      ],
       "type": "ai",
       "section": "AI Agents & Local LLMs"
     },
@@ -33,6 +39,11 @@
       "license": "Apache-2.0",
       "featured": false,
       "goodFirstIssues": "https://github.com/langgenius/dify/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "Self-Hostable",
+        "No Card Required"
+      ],
       "type": "ai",
       "section": "AI Agents & Local LLMs"
     },
@@ -45,6 +56,11 @@
       "license": "Apache-2.0",
       "featured": false,
       "goodFirstIssues": "https://github.com/vllm-project/vllm/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "Self-Hostable",
+        "No Card Required"
+      ],
       "type": "ai",
       "section": "AI Agents & Local LLMs"
     },
@@ -57,6 +73,11 @@
       "license": "MIT",
       "featured": false,
       "goodFirstIssues": "https://github.com/open-webui/open-webui/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "Self-Hostable",
+        "No Card Required"
+      ],
       "type": "ai",
       "section": "AI Agents & Local LLMs"
     },
@@ -69,6 +90,11 @@
       "license": "MIT",
       "featured": false,
       "goodFirstIssues": "https://github.com/yylo-dev/yylo/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "Self-Hostable",
+        "No Card Required"
+      ],
       "type": "ai",
       "section": "AI Agents & Local LLMs"
     },
@@ -81,6 +107,11 @@
       "license": "MIT",
       "featured": false,
       "goodFirstIssues": "https://github.com/mudler/LocalAI/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "Self-Hostable",
+        "No Card Required"
+      ],
       "type": "ai",
       "section": "AI Agents & Local LLMs"
     },
@@ -93,6 +124,11 @@
       "license": "MIT",
       "featured": false,
       "goodFirstIssues": "https://github.com/Mintplex-Labs/anything-llm/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "Self-Hostable",
+        "No Card Required"
+      ],
       "type": "ai",
       "section": "AI Agents & Local LLMs"
     },
@@ -105,6 +141,11 @@
       "license": "Apache-2.0",
       "featured": false,
       "goodFirstIssues": "https://github.com/FlowiseAI/Flowise/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "Self-Hostable",
+        "No Card Required"
+      ],
       "type": "ai",
       "section": "AI Agents & Local LLMs"
     },
@@ -117,6 +158,11 @@
       "license": "MIT",
       "featured": false,
       "goodFirstIssues": "https://github.com/langflow-ai/langflow/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "Self-Hostable",
+        "No Card Required"
+      ],
       "type": "ai",
       "section": "AI Agents & Local LLMs"
     },
@@ -129,6 +175,11 @@
       "license": "AGPL-3.0",
       "featured": false,
       "goodFirstIssues": "https://github.com/janhq/jan/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "Self-Hostable",
+        "No Card Required"
+      ],
       "type": "ai",
       "section": "AI Agents & Local LLMs"
     },
@@ -141,6 +192,11 @@
       "license": "MIT",
       "featured": false,
       "goodFirstIssues": "https://github.com/danny-avila/LibreChat/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "Self-Hostable",
+        "No Card Required"
+      ],
       "type": "ai",
       "section": "AI Agents & Local LLMs"
     },
@@ -153,6 +209,11 @@
       "license": "MIT",
       "featured": false,
       "goodFirstIssues": "https://github.com/danielmiessler/fabric/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "Self-Hostable",
+        "No Card Required"
+      ],
       "type": "ai",
       "section": "AI Agents & Local LLMs"
     },
@@ -165,6 +226,11 @@
       "license": "Apache-2.0",
       "featured": false,
       "goodFirstIssues": "https://github.com/Aider-AI/aider/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "Self-Hostable",
+        "No Card Required"
+      ],
       "type": "ai",
       "section": "AI Agents & Local LLMs",
       "seeking": "Local model benchmark adapters, terminal UX enhancements, documentation",
@@ -179,6 +245,11 @@
       "license": "MIT",
       "featured": false,
       "goodFirstIssues": "https://github.com/All-Hands-AI/OpenHands/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "Self-Hostable",
+        "No Card Required"
+      ],
       "type": "ai",
       "section": "AI Agents & Local LLMs",
       "seeking": "Docker sandbox runtime adapters, evaluation benchmarks, docs & translations",
@@ -193,6 +264,11 @@
       "license": "Apache-2.0",
       "featured": false,
       "goodFirstIssues": "https://github.com/continuedev/continue/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "Self-Hostable",
+        "No Card Required"
+      ],
       "type": "ai",
       "section": "AI Agents & Local LLMs",
       "seeking": "Provider integrations, prompt context templates, good first issues",
@@ -207,6 +283,11 @@
       "license": "MIT",
       "featured": false,
       "goodFirstIssues": "https://github.com/ggerganov/llama.cpp/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "Self-Hostable",
+        "No Card Required"
+      ],
       "type": "ai",
       "section": "AI Agents & Local LLMs"
     },
@@ -219,6 +300,10 @@
       "license": "MIT",
       "featured": true,
       "goodFirstIssues": "https://github.com/RitualDev-Lab/GitWhisper/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
       "type": "cli",
       "section": "CLI & Productivity Tools",
       "seeking": "JetBrains IDE Plugin, Community Custom LLM Adapters, Documentation",
@@ -233,6 +318,10 @@
       "license": "MIT",
       "featured": true,
       "goodFirstIssues": "https://github.com/RitualDev-Lab/FlashLane/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
       "type": "cli",
       "section": "CLI & Productivity Tools",
       "seeking": "macOS diskutil runner, Linux block flashing, E2E ISO tests, Documentation",
@@ -247,6 +336,10 @@
       "license": "MIT",
       "featured": false,
       "goodFirstIssues": "https://github.com/jesseduffield/lazygit/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
       "type": "cli",
       "section": "CLI & Productivity Tools"
     },
@@ -259,6 +352,10 @@
       "license": "MIT / UNLICENSE",
       "featured": false,
       "goodFirstIssues": "https://github.com/BurntSushi/ripgrep/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
       "type": "cli",
       "section": "CLI & Productivity Tools"
     },
@@ -271,6 +368,10 @@
       "license": "EUPL-1.2",
       "featured": false,
       "goodFirstIssues": "https://github.com/eza-community/eza/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
       "type": "cli",
       "section": "CLI & Productivity Tools"
     },
@@ -283,6 +384,10 @@
       "license": "MIT",
       "featured": false,
       "goodFirstIssues": "https://github.com/junegunn/fzf/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
       "type": "cli",
       "section": "CLI & Productivity Tools"
     },
@@ -295,6 +400,10 @@
       "license": "Apache-2.0",
       "featured": false,
       "goodFirstIssues": "https://github.com/vercel-labs/agent-browser/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
       "type": "cli",
       "section": "CLI & Productivity Tools",
       "seeking": "Cross-platform terminal enhancements, playwright engine bindings, examples",
@@ -309,6 +418,10 @@
       "license": "MIT / Apache-2.0",
       "featured": false,
       "goodFirstIssues": "https://github.com/sharkdp/bat/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
       "type": "cli",
       "section": "CLI & Productivity Tools"
     },
@@ -321,6 +434,10 @@
       "license": "MIT",
       "featured": false,
       "goodFirstIssues": "https://github.com/dandavison/delta/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
       "type": "cli",
       "section": "CLI & Productivity Tools"
     },
@@ -333,6 +450,10 @@
       "license": "MIT / Apache-2.0",
       "featured": false,
       "goodFirstIssues": "https://github.com/sharkdp/hyperfine/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
       "type": "cli",
       "section": "CLI & Productivity Tools"
     },
@@ -345,6 +466,10 @@
       "license": "MIT",
       "featured": false,
       "goodFirstIssues": "https://github.com/tldr-pages/tldr/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
       "type": "cli",
       "section": "CLI & Productivity Tools"
     },
@@ -357,6 +482,10 @@
       "license": "Apache-2.0",
       "featured": false,
       "goodFirstIssues": "https://github.com/bootandy/dust/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
       "type": "cli",
       "section": "CLI & Productivity Tools"
     },
@@ -369,6 +498,10 @@
       "license": "MIT",
       "featured": false,
       "goodFirstIssues": "https://github.com/dalance/procs/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
       "type": "cli",
       "section": "CLI & Productivity Tools"
     },
@@ -381,6 +514,10 @@
       "license": "MIT",
       "featured": false,
       "goodFirstIssues": "https://github.com/ClementTsang/bottom/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
       "type": "cli",
       "section": "CLI & Productivity Tools"
     },
@@ -393,6 +530,10 @@
       "license": "MIT",
       "featured": false,
       "goodFirstIssues": "https://github.com/rs/curlie/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
       "type": "cli",
       "section": "CLI & Productivity Tools"
     },
@@ -405,6 +546,10 @@
       "license": "ISC",
       "featured": false,
       "goodFirstIssues": "https://github.com/starship/starship/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
       "type": "cli",
       "section": "CLI & Productivity Tools",
       "seeking": "New module additions, shell integrations, localized docs, bug fixes",
@@ -419,6 +564,10 @@
       "license": "MIT",
       "featured": false,
       "goodFirstIssues": "https://github.com/ajeetdsouza/zoxide/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
       "type": "cli",
       "section": "CLI & Productivity Tools"
     },
@@ -431,6 +580,10 @@
       "license": "MIT",
       "featured": false,
       "goodFirstIssues": "https://github.com/dlvhdr/gh-dash/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
       "type": "cli",
       "section": "CLI & Productivity Tools"
     },
@@ -443,6 +596,10 @@
       "license": "BSD-3-Clause",
       "featured": false,
       "goodFirstIssues": "https://github.com/httpie/cli/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
       "type": "cli",
       "section": "CLI & Productivity Tools"
     },
@@ -591,6 +748,11 @@
       "cors": "Yes",
       "rateLimit": "10,000 req/day",
       "https": true,
+      "statusTags": [
+        "Rate-Limited",
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -603,6 +765,10 @@
       "cors": "Yes",
       "rateLimit": "30 req/min",
       "https": true,
+      "statusTags": [
+        "Rate-Limited",
+        "Active Uptime 100%"
+      ],
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -615,6 +781,10 @@
       "cors": "Yes",
       "rateLimit": "Unlimited",
       "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -627,6 +797,10 @@
       "cors": "Yes",
       "rateLimit": "Free monthly tier",
       "https": true,
+      "statusTags": [
+        "Rate-Limited",
+        "Active Uptime 100%"
+      ],
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -639,6 +813,11 @@
       "cors": "Yes",
       "rateLimit": "1,000 req/day",
       "https": true,
+      "statusTags": [
+        "Rate-Limited",
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -651,6 +830,10 @@
       "cors": "Yes",
       "rateLimit": "30 req/min",
       "https": true,
+      "statusTags": [
+        "Rate-Limited",
+        "Active Uptime 100%"
+      ],
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -663,6 +846,10 @@
       "cors": "Yes",
       "rateLimit": "Unlimited",
       "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -675,6 +862,11 @@
       "cors": "Yes",
       "rateLimit": "100 req/min",
       "https": true,
+      "statusTags": [
+        "Rate-Limited",
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -687,6 +879,10 @@
       "cors": "Yes",
       "rateLimit": "Unlimited",
       "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -699,6 +895,10 @@
       "cors": "Yes",
       "rateLimit": "Unlimited",
       "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -711,6 +911,10 @@
       "cors": "Yes",
       "rateLimit": "Unlimited",
       "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -723,6 +927,10 @@
       "cors": "Yes",
       "rateLimit": "Unlimited",
       "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -735,6 +943,11 @@
       "cors": "Yes",
       "rateLimit": "1 req/sec",
       "https": true,
+      "statusTags": [
+        "Rate-Limited",
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -747,6 +960,10 @@
       "cors": "Yes",
       "rateLimit": "1,500 req/month",
       "https": true,
+      "statusTags": [
+        "Rate-Limited",
+        "Active Uptime 100%"
+      ],
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -759,6 +976,10 @@
       "cors": "Yes",
       "rateLimit": "Unlimited",
       "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -768,6 +989,10 @@
       "category": "Databases & BaaS",
       "description": "Open source Firebase alternative providing PostgreSQL, Auth, Instant APIs, Realtime subscriptions, and Storage.",
       "freeTier": "500MB DB, 50k monthly active users, 1GB storage",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
     },
@@ -777,6 +1002,10 @@
       "category": "Serverless Postgres",
       "description": "Serverless Postgres with instant branching, bottomless storage, and autoscaling compute to zero.",
       "freeTier": "0.5 GB storage, instant branching, scale-to-zero",
+      "statusTags": [
+        "Requires Credit Card to Verify",
+        "Active Uptime 100%"
+      ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
     },
@@ -786,6 +1015,10 @@
       "category": "Serverless Compute & Edge",
       "description": "Deploy serverless code instantly across Cloudflare's global edge network with ultra-low latency.",
       "freeTier": "100,000 requests/day, KV store, D1 SQL database",
+      "statusTags": [
+        "Requires Credit Card to Verify",
+        "Active Uptime 100%"
+      ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
     },
@@ -795,6 +1028,10 @@
       "category": "Authentication & User Management",
       "description": "Complete user management and authentication suite for React, Next.js, and modern full-stack web applications.",
       "freeTier": "10,000 monthly active users, social logins, MFA",
+      "statusTags": [
+        "Requires Credit Card to Verify",
+        "Active Uptime 100%"
+      ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
     },
@@ -804,6 +1041,10 @@
       "category": "Transactional Email",
       "description": "Developer-first email platform for sending transactional emails using clean React components.",
       "freeTier": "3,000 emails/month, 100 emails/day, 1 custom domain",
+      "statusTags": [
+        "Requires Credit Card to Verify",
+        "Active Uptime 100%"
+      ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
     },
@@ -813,6 +1054,10 @@
       "category": "Databases & BaaS",
       "description": "Open source backend in 1 file consisting of embedded SQLite database with real-time subscriptions, built-in auth, and admin dashboard.",
       "freeTier": "100% Free & Open Source, single binary self-hostable",
+      "statusTags": [
+        "Requires Credit Card to Verify",
+        "Active Uptime 100%"
+      ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
     },
@@ -822,6 +1067,10 @@
       "category": "Backend-as-a-Service",
       "description": "Self-hosted backend-as-a-service platform providing developers with core APIs for authentication, databases, storage, and serverless functions.",
       "freeTier": "Free Cloud Tier: 2 projects, 75k monthly active users, 2GB storage",
+      "statusTags": [
+        "Requires Credit Card to Verify",
+        "Active Uptime 100%"
+      ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
     },
@@ -831,6 +1080,10 @@
       "category": "Serverless Compute & Global VMs",
       "description": "Run full-stack apps and databases close to your users globally with lightweight Firecracker microVMs.",
       "freeTier": "Free allowance: up to 3 shared-cpu-1x VMs, 3GB persistent storage",
+      "statusTags": [
+        "Requires Credit Card to Verify",
+        "Active Uptime 100%"
+      ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
     },
@@ -840,6 +1093,10 @@
       "category": "Cloud Hosting & PaaS",
       "description": "Unified cloud to build and run web applications, APIs, static sites, and background workers with automated Git deploys.",
       "freeTier": "Free static sites, free web services (750 hrs/mo), free PostgreSQL",
+      "statusTags": [
+        "Requires Credit Card to Verify",
+        "Active Uptime 100%"
+      ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
     },
@@ -849,6 +1106,10 @@
       "category": "Serverless & Containers",
       "description": "Serverless platform to deploy full-stack apps and Docker containers globally with built-in CDN, SSL, and private networking.",
       "freeTier": "Free Eco tier: 1 web service, 512MB RAM, global edge network",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
     },
@@ -981,6 +1242,148 @@
       "eligibility": "Free to use under OFL 1.1",
       "type": "perks",
       "section": "Developer Discounts & Startup Perks"
+    },
+    {
+      "name": "Mockoon Cloudless API Server",
+      "repo": "https://github.com/mockoon/mockoon",
+      "category": "API Mocks & Microservices",
+      "description": "Deploy a lightweight, zero-dependency mock REST/GraphQL API server based on Mockoon JSON environments with 1 click.",
+      "language": "TypeScript / Node.js",
+      "license": "MIT",
+      "platform": "Render",
+      "deployUrl": "https://render.com/deploy?repo=https://github.com/mockoon/mock-samples",
+      "freeTierCost": "$0/month (Render Free Web Service)",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "Self-Hostable",
+        "No Card Required"
+      ],
+      "type": "boilerplate",
+      "section": "One-Click Deployment Boilerplates"
+    },
+    {
+      "name": "PocketBase 1-Click Backend",
+      "repo": "https://github.com/pocketbase/pocketbase",
+      "category": "BaaS & Databases",
+      "description": "Instant open-source backend in 1 binary file with embedded SQLite database, real-time subscriptions, and auth rules.",
+      "language": "Go",
+      "license": "MIT",
+      "platform": "Fly.io",
+      "deployUrl": "https://fly.io/launch?template=https://github.com/pocketbase/pocketbase",
+      "freeTierCost": "$0/month (Fly.io Free Allowance)",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "Self-Hostable",
+        "No Card Required"
+      ],
+      "type": "boilerplate",
+      "section": "One-Click Deployment Boilerplates"
+    },
+    {
+      "name": "AutoHeal-QA Playwright Runner",
+      "repo": "https://github.com/RitualDev-Lab/autoheal-qa",
+      "category": "Testing & QA Reliability",
+      "description": "Deploy agentic self-healing E2E Playwright test automation with local LLM test fixing directly into GitHub Actions.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "platform": "GitHub Actions",
+      "deployUrl": "https://github.com/RitualDev-Lab/autoheal-qa/fork",
+      "freeTierCost": "$0/month (GitHub Actions 2,000 free min/mo)",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "Self-Hostable",
+        "Active Uptime 100%"
+      ],
+      "type": "boilerplate",
+      "section": "One-Click Deployment Boilerplates"
+    },
+    {
+      "name": "Stirling-PDF Ultimate Toolbox",
+      "repo": "https://github.com/Stirling-Tools/Stirling-PDF",
+      "category": "Dev Utilities & Productivity",
+      "description": "Full-featured, privacy-first PDF manipulation suite to merge, split, OCR, redact, and sign PDFs with zero cloud tracking.",
+      "language": "Java / Docker",
+      "license": "GPL-3.0",
+      "platform": "Render",
+      "deployUrl": "https://render.com/deploy?repo=https://github.com/Stirling-Tools/Stirling-PDF",
+      "freeTierCost": "$0/month (Render Free Tier)",
+      "statusTags": [
+        "Self-Hostable",
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "boilerplate",
+      "section": "One-Click Deployment Boilerplates"
+    },
+    {
+      "name": "Open-WebUI for Local AI",
+      "repo": "https://github.com/open-webui/open-webui",
+      "category": "AI Agents & Local LLMs",
+      "description": "Feature-rich, self-hosted web chat UI for Ollama and OpenAI-compatible local endpoints with RAG and pipeline support.",
+      "language": "Python / Svelte",
+      "license": "MIT",
+      "platform": "Render",
+      "deployUrl": "https://render.com/deploy?repo=https://github.com/open-webui/open-webui",
+      "freeTierCost": "$0/month (Render Free Tier)",
+      "statusTags": [
+        "Self-Hostable",
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "boilerplate",
+      "section": "One-Click Deployment Boilerplates"
+    },
+    {
+      "name": "Directus Instant Data Engine",
+      "repo": "https://github.com/directus/directus",
+      "category": "BaaS & Databases",
+      "description": "Turn any SQL database into an instant real-time REST and GraphQL API engine with an intuitive no-code admin panel.",
+      "language": "TypeScript / Node.js",
+      "license": "BSL-1.1 / Free Tier",
+      "platform": "Railway",
+      "deployUrl": "https://railway.app/template/directus",
+      "freeTierCost": "$0/month (Railway Free Starter Tier)",
+      "statusTags": [
+        "Self-Hostable",
+        "Active Uptime 100%"
+      ],
+      "type": "boilerplate",
+      "section": "One-Click Deployment Boilerplates"
+    },
+    {
+      "name": "Hoppscotch API Development Hub",
+      "repo": "https://github.com/hoppscotch/hoppscotch",
+      "category": "Testing & QA Reliability",
+      "description": "Lightweight, fast, web-based API testing client supporting REST, WebSocket, GraphQL, and SSE testing.",
+      "language": "TypeScript / Vue",
+      "license": "MIT",
+      "platform": "Render",
+      "deployUrl": "https://render.com/deploy?repo=https://github.com/hoppscotch/hoppscotch",
+      "freeTierCost": "$0/month (Render Web Service)",
+      "statusTags": [
+        "Self-Hostable",
+        "No Card Required",
+        "100% Offline-Friendly"
+      ],
+      "type": "boilerplate",
+      "section": "One-Click Deployment Boilerplates"
+    },
+    {
+      "name": "Dify LLM Application Platform",
+      "repo": "https://github.com/langgenius/dify",
+      "category": "AI Agents & Local LLMs",
+      "description": "Visual orchestration platform for LLM workflows, agent coordination, RAG pipelines, and model deployment.",
+      "language": "Python / TypeScript",
+      "license": "Apache-2.0",
+      "platform": "Render",
+      "deployUrl": "https://render.com/deploy?repo=https://github.com/langgenius/dify",
+      "freeTierCost": "$0/month (Render Community Tier)",
+      "statusTags": [
+        "Self-Hostable",
+        "No Card Required"
+      ],
+      "type": "boilerplate",
+      "section": "One-Click Deployment Boilerplates"
     }
   ]
 }

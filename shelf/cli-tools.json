@@ -7,7 +7,8 @@
     "language": "TypeScript",
     "license": "MIT",
     "featured": true,
-    "goodFirstIssues": "https://github.com/RitualDev-Lab/GitWhisper/issues"
+    "goodFirstIssues": "https://github.com/RitualDev-Lab/GitWhisper/issues",
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "FlashLane",
@@ -17,7 +18,8 @@
     "language": "TypeScript / Electron",
     "license": "MIT",
     "featured": true,
-    "goodFirstIssues": "https://github.com/RitualDev-Lab/FlashLane/issues"
+    "goodFirstIssues": "https://github.com/RitualDev-Lab/FlashLane/issues",
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "lazygit",
@@ -27,7 +29,8 @@
     "language": "Go",
     "license": "MIT",
     "featured": false,
-    "goodFirstIssues": "https://github.com/jesseduffield/lazygit/issues"
+    "goodFirstIssues": "https://github.com/jesseduffield/lazygit/issues",
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "ripgrep",
@@ -37,7 +40,8 @@
     "language": "Rust",
     "license": "MIT / UNLICENSE",
     "featured": false,
-    "goodFirstIssues": "https://github.com/BurntSushi/ripgrep/issues"
+    "goodFirstIssues": "https://github.com/BurntSushi/ripgrep/issues",
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "eza",
@@ -47,7 +51,8 @@
     "language": "Rust",
     "license": "EUPL-1.2",
     "featured": false,
-    "goodFirstIssues": "https://github.com/eza-community/eza/issues"
+    "goodFirstIssues": "https://github.com/eza-community/eza/issues",
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "fzf",
@@ -57,7 +62,8 @@
     "language": "Go",
     "license": "MIT",
     "featured": false,
-    "goodFirstIssues": "https://github.com/junegunn/fzf/issues"
+    "goodFirstIssues": "https://github.com/junegunn/fzf/issues",
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "agent-browser",
@@ -67,7 +73,8 @@
     "language": "Rust / TypeScript",
     "license": "Apache-2.0",
     "featured": false,
-    "goodFirstIssues": "https://github.com/vercel-labs/agent-browser/issues"
+    "goodFirstIssues": "https://github.com/vercel-labs/agent-browser/issues",
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "bat",
@@ -77,7 +84,8 @@
     "language": "Rust",
     "license": "MIT / Apache-2.0",
     "featured": false,
-    "goodFirstIssues": "https://github.com/sharkdp/bat/issues"
+    "goodFirstIssues": "https://github.com/sharkdp/bat/issues",
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "delta",
@@ -87,7 +95,8 @@
     "language": "Rust",
     "license": "MIT",
     "featured": false,
-    "goodFirstIssues": "https://github.com/dandavison/delta/issues"
+    "goodFirstIssues": "https://github.com/dandavison/delta/issues",
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "hyperfine",
@@ -97,7 +106,8 @@
     "language": "Rust",
     "license": "MIT / Apache-2.0",
     "featured": false,
-    "goodFirstIssues": "https://github.com/sharkdp/hyperfine/issues"
+    "goodFirstIssues": "https://github.com/sharkdp/hyperfine/issues",
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "tldr",
@@ -107,7 +117,8 @@
     "language": "Markdown",
     "license": "MIT",
     "featured": false,
-    "goodFirstIssues": "https://github.com/tldr-pages/tldr/issues"
+    "goodFirstIssues": "https://github.com/tldr-pages/tldr/issues",
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "dust",
@@ -117,7 +128,8 @@
     "language": "Rust",
     "license": "Apache-2.0",
     "featured": false,
-    "goodFirstIssues": "https://github.com/bootandy/dust/issues"
+    "goodFirstIssues": "https://github.com/bootandy/dust/issues",
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "procs",
@@ -127,7 +139,8 @@
     "language": "Rust",
     "license": "MIT",
     "featured": false,
-    "goodFirstIssues": "https://github.com/dalance/procs/issues"
+    "goodFirstIssues": "https://github.com/dalance/procs/issues",
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "bottom",
@@ -137,7 +150,8 @@
     "language": "Rust",
     "license": "MIT",
     "featured": false,
-    "goodFirstIssues": "https://github.com/ClementTsang/bottom/issues"
+    "goodFirstIssues": "https://github.com/ClementTsang/bottom/issues",
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "curlie",
@@ -147,7 +161,8 @@
     "language": "Go",
     "license": "MIT",
     "featured": false,
-    "goodFirstIssues": "https://github.com/rs/curlie/issues"
+    "goodFirstIssues": "https://github.com/rs/curlie/issues",
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "Starship",
@@ -157,7 +172,8 @@
     "language": "Rust",
     "license": "ISC",
     "featured": false,
-    "goodFirstIssues": "https://github.com/starship/starship/issues"
+    "goodFirstIssues": "https://github.com/starship/starship/issues",
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "zoxide",
@@ -167,7 +183,8 @@
     "language": "Rust",
     "license": "MIT",
     "featured": false,
-    "goodFirstIssues": "https://github.com/ajeetdsouza/zoxide/issues"
+    "goodFirstIssues": "https://github.com/ajeetdsouza/zoxide/issues",
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "gh-dash",
@@ -177,7 +194,8 @@
     "language": "Go",
     "license": "MIT",
     "featured": false,
-    "goodFirstIssues": "https://github.com/dlvhdr/gh-dash/issues"
+    "goodFirstIssues": "https://github.com/dlvhdr/gh-dash/issues",
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "HTTPie",
@@ -187,6 +205,7 @@
     "language": "Python",
     "license": "BSD-3-Clause",
     "featured": false,
-    "goodFirstIssues": "https://github.com/httpie/cli/issues"
+    "goodFirstIssues": "https://github.com/httpie/cli/issues",
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   }
 ]

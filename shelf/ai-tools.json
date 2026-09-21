@@ -7,7 +7,8 @@
     "language": "Go",
     "license": "MIT",
     "featured": true,
-    "goodFirstIssues": "https://github.com/ollama/ollama/issues"
+    "goodFirstIssues": "https://github.com/ollama/ollama/issues",
+    "statusTags": ["100% Offline-Friendly", "Self-Hostable", "No Card Required"]
   },
   {
     "name": "Dify",
@@ -17,7 +18,8 @@
     "language": "Python / TypeScript",
     "license": "Apache-2.0",
     "featured": false,
-    "goodFirstIssues": "https://github.com/langgenius/dify/issues"
+    "goodFirstIssues": "https://github.com/langgenius/dify/issues",
+    "statusTags": ["100% Offline-Friendly", "Self-Hostable", "No Card Required"]
   },
   {
     "name": "vLLM",
@@ -27,7 +29,8 @@
     "language": "Python / C++",
     "license": "Apache-2.0",
     "featured": false,
-    "goodFirstIssues": "https://github.com/vllm-project/vllm/issues"
+    "goodFirstIssues": "https://github.com/vllm-project/vllm/issues",
+    "statusTags": ["100% Offline-Friendly", "Self-Hostable", "No Card Required"]
   },
   {
     "name": "Open-WebUI",
@@ -37,7 +40,8 @@
     "language": "Python / Svelte",
     "license": "MIT",
     "featured": false,
-    "goodFirstIssues": "https://github.com/open-webui/open-webui/issues"
+    "goodFirstIssues": "https://github.com/open-webui/open-webui/issues",
+    "statusTags": ["100% Offline-Friendly", "Self-Hostable", "No Card Required"]
   },
   {
     "name": "YYLO",
@@ -47,7 +51,8 @@
     "language": "TypeScript",
     "license": "MIT",
     "featured": false,
-    "goodFirstIssues": "https://github.com/yylo-dev/yylo/issues"
+    "goodFirstIssues": "https://github.com/yylo-dev/yylo/issues",
+    "statusTags": ["100% Offline-Friendly", "Self-Hostable", "No Card Required"]
   },
   {
     "name": "LocalAI",
@@ -57,7 +62,8 @@
     "language": "Go / C++",
     "license": "MIT",
     "featured": false,
-    "goodFirstIssues": "https://github.com/mudler/LocalAI/issues"
+    "goodFirstIssues": "https://github.com/mudler/LocalAI/issues",
+    "statusTags": ["100% Offline-Friendly", "Self-Hostable", "No Card Required"]
   },
   {
     "name": "AnythingLLM",
@@ -67,7 +73,8 @@
     "language": "JavaScript",
     "license": "MIT",
     "featured": false,
-    "goodFirstIssues": "https://github.com/Mintplex-Labs/anything-llm/issues"
+    "goodFirstIssues": "https://github.com/Mintplex-Labs/anything-llm/issues",
+    "statusTags": ["100% Offline-Friendly", "Self-Hostable", "No Card Required"]
   },
   {
     "name": "Flowise",
@@ -77,7 +84,8 @@
     "language": "TypeScript",
     "license": "Apache-2.0",
     "featured": false,
-    "goodFirstIssues": "https://github.com/FlowiseAI/Flowise/issues"
+    "goodFirstIssues": "https://github.com/FlowiseAI/Flowise/issues",
+    "statusTags": ["100% Offline-Friendly", "Self-Hostable", "No Card Required"]
   },
   {
     "name": "Langflow",
@@ -87,7 +95,8 @@
     "language": "Python / TypeScript",
     "license": "MIT",
     "featured": false,
-    "goodFirstIssues": "https://github.com/langflow-ai/langflow/issues"
+    "goodFirstIssues": "https://github.com/langflow-ai/langflow/issues",
+    "statusTags": ["100% Offline-Friendly", "Self-Hostable", "No Card Required"]
   },
   {
     "name": "Jan",
@@ -97,7 +106,8 @@
     "language": "TypeScript / C++",
     "license": "AGPL-3.0",
     "featured": false,
-    "goodFirstIssues": "https://github.com/janhq/jan/issues"
+    "goodFirstIssues": "https://github.com/janhq/jan/issues",
+    "statusTags": ["100% Offline-Friendly", "Self-Hostable", "No Card Required"]
   },
   {
     "name": "LibreChat",
@@ -107,7 +117,8 @@
     "language": "TypeScript",
     "license": "MIT",
     "featured": false,
-    "goodFirstIssues": "https://github.com/danny-avila/LibreChat/issues"
+    "goodFirstIssues": "https://github.com/danny-avila/LibreChat/issues",
+    "statusTags": ["100% Offline-Friendly", "Self-Hostable", "No Card Required"]
   },
   {
     "name": "Fabric",
@@ -117,7 +128,8 @@
     "language": "Go",
     "license": "MIT",
     "featured": false,
-    "goodFirstIssues": "https://github.com/danielmiessler/fabric/issues"
+    "goodFirstIssues": "https://github.com/danielmiessler/fabric/issues",
+    "statusTags": ["100% Offline-Friendly", "Self-Hostable", "No Card Required"]
   },
   {
     "name": "Aider",
@@ -127,7 +139,8 @@
     "language": "Python",
     "license": "Apache-2.0",
     "featured": false,
-    "goodFirstIssues": "https://github.com/Aider-AI/aider/issues"
+    "goodFirstIssues": "https://github.com/Aider-AI/aider/issues",
+    "statusTags": ["100% Offline-Friendly", "Self-Hostable", "No Card Required"]
   },
   {
     "name": "OpenHands",
@@ -137,7 +150,8 @@
     "language": "Python",
     "license": "MIT",
     "featured": false,
-    "goodFirstIssues": "https://github.com/All-Hands-AI/OpenHands/issues"
+    "goodFirstIssues": "https://github.com/All-Hands-AI/OpenHands/issues",
+    "statusTags": ["100% Offline-Friendly", "Self-Hostable", "No Card Required"]
   },
   {
     "name": "Continue",
@@ -147,7 +161,8 @@
     "language": "TypeScript",
     "license": "Apache-2.0",
     "featured": false,
-    "goodFirstIssues": "https://github.com/continuedev/continue/issues"
+    "goodFirstIssues": "https://github.com/continuedev/continue/issues",
+    "statusTags": ["100% Offline-Friendly", "Self-Hostable", "No Card Required"]
   },
   {
     "name": "llama.cpp",
@@ -157,6 +172,7 @@
     "language": "C / C++",
     "license": "MIT",
     "featured": false,
-    "goodFirstIssues": "https://github.com/ggerganov/llama.cpp/issues"
+    "goodFirstIssues": "https://github.com/ggerganov/llama.cpp/issues",
+    "statusTags": ["100% Offline-Friendly", "Self-Hostable", "No Card Required"]
   }
 ]

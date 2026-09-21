@@ -46,6 +46,11 @@ async function buildSiteData() {
     type: "perks",
     section: "Developer Discounts & Startup Perks",
   }));
+  const boilerplates = (await readJson("boilerplates.json")).map((item: any) => ({
+    ...item,
+    type: "boilerplate",
+    section: "One-Click Deployment Boilerplates",
+  }));
 
   // Merge contributor metadata into matching tools so tools aren't duplicated in "All Items",
   // but remain filterable under "contributors" / Up for Grabs!
@@ -82,7 +87,7 @@ async function buildSiteData() {
     (c: any) => !knownNames.has(c.name.toLowerCase()),
   );
 
-  // Primary curated list: Open source & developer tools first, then APIs, cloud, perks
+  // Primary curated list: Open source & developer tools first, then APIs, cloud, perks, boilerplates
   const allResources = [
     ...taggedAi,
     ...taggedCli,
@@ -90,6 +95,7 @@ async function buildSiteData() {
     ...apis,
     ...freeCloud,
     ...perks,
+    ...boilerplates,
     ...standaloneContributors,
   ];
 
@@ -110,6 +116,7 @@ async function buildSiteData() {
       freeCloud: freeCloud.length,
       contributors: contributorsWantedCount,
       perks: perks.length,
+      boilerplates: boilerplates.length,
     },
     resources: allResources,
   };

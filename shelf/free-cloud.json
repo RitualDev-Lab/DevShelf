@@ -4,69 +4,79 @@
     "url": "https://supabase.com",
     "category": "Databases & BaaS",
     "description": "Open source Firebase alternative providing PostgreSQL, Auth, Instant APIs, Realtime subscriptions, and Storage.",
-    "freeTier": "500MB DB, 50k monthly active users, 1GB storage"
+    "freeTier": "500MB DB, 50k monthly active users, 1GB storage",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
   },
   {
     "name": "Neon",
     "url": "https://neon.tech",
     "category": "Serverless Postgres",
     "description": "Serverless Postgres with instant branching, bottomless storage, and autoscaling compute to zero.",
-    "freeTier": "0.5 GB storage, instant branching, scale-to-zero"
+    "freeTier": "0.5 GB storage, instant branching, scale-to-zero",
+    "statusTags": ["Requires Credit Card to Verify", "Active Uptime 100%"]
   },
   {
     "name": "Cloudflare Workers",
     "url": "https://workers.cloudflare.com",
     "category": "Serverless Compute & Edge",
     "description": "Deploy serverless code instantly across Cloudflare's global edge network with ultra-low latency.",
-    "freeTier": "100,000 requests/day, KV store, D1 SQL database"
+    "freeTier": "100,000 requests/day, KV store, D1 SQL database",
+    "statusTags": ["Requires Credit Card to Verify", "Active Uptime 100%"]
   },
   {
     "name": "Clerk",
     "url": "https://clerk.com",
     "category": "Authentication & User Management",
     "description": "Complete user management and authentication suite for React, Next.js, and modern full-stack web applications.",
-    "freeTier": "10,000 monthly active users, social logins, MFA"
+    "freeTier": "10,000 monthly active users, social logins, MFA",
+    "statusTags": ["Requires Credit Card to Verify", "Active Uptime 100%"]
   },
   {
     "name": "Resend",
     "url": "https://resend.com",
     "category": "Transactional Email",
     "description": "Developer-first email platform for sending transactional emails using clean React components.",
-    "freeTier": "3,000 emails/month, 100 emails/day, 1 custom domain"
+    "freeTier": "3,000 emails/month, 100 emails/day, 1 custom domain",
+    "statusTags": ["Requires Credit Card to Verify", "Active Uptime 100%"]
   },
   {
     "name": "PocketBase",
     "url": "https://pocketbase.io",
     "category": "Databases & BaaS",
     "description": "Open source backend in 1 file consisting of embedded SQLite database with real-time subscriptions, built-in auth, and admin dashboard.",
-    "freeTier": "100% Free & Open Source, single binary self-hostable"
+    "freeTier": "100% Free & Open Source, single binary self-hostable",
+    "statusTags": ["Requires Credit Card to Verify", "Active Uptime 100%"]
   },
   {
     "name": "Appwrite",
     "url": "https://appwrite.io",
     "category": "Backend-as-a-Service",
     "description": "Self-hosted backend-as-a-service platform providing developers with core APIs for authentication, databases, storage, and serverless functions.",
-    "freeTier": "Free Cloud Tier: 2 projects, 75k monthly active users, 2GB storage"
+    "freeTier": "Free Cloud Tier: 2 projects, 75k monthly active users, 2GB storage",
+    "statusTags": ["Requires Credit Card to Verify", "Active Uptime 100%"]
   },
   {
     "name": "Fly.io",
     "url": "https://fly.io",
     "category": "Serverless Compute & Global VMs",
     "description": "Run full-stack apps and databases close to your users globally with lightweight Firecracker microVMs.",
-    "freeTier": "Free allowance: up to 3 shared-cpu-1x VMs, 3GB persistent storage"
+    "freeTier": "Free allowance: up to 3 shared-cpu-1x VMs, 3GB persistent storage",
+    "statusTags": ["Requires Credit Card to Verify", "Active Uptime 100%"]
   },
   {
     "name": "Render",
     "url": "https://render.com",
     "category": "Cloud Hosting & PaaS",
     "description": "Unified cloud to build and run web applications, APIs, static sites, and background workers with automated Git deploys.",
-    "freeTier": "Free static sites, free web services (750 hrs/mo), free PostgreSQL"
+    "freeTier": "Free static sites, free web services (750 hrs/mo), free PostgreSQL",
+    "statusTags": ["Requires Credit Card to Verify", "Active Uptime 100%"]
   },
   {
     "name": "Koyeb",
     "url": "https://www.koyeb.com",
     "category": "Serverless & Containers",
     "description": "Serverless platform to deploy full-stack apps and Docker containers globally with built-in CDN, SSL, and private networking.",
-    "freeTier": "Free Eco tier: 1 web service, 512MB RAM, global edge network"
+    "freeTier": "Free Eco tier: 1 web service, 512MB RAM, global edge network",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
   }
 ]

@@ -62,6 +62,9 @@
       <nav class="hidden lg:flex items-center space-x-6 text-xs font-bold text-slate-200">
         <a href="#spotlight" class="hover:text-purple-300 transition">🔥 Spotlight</a>
         <a href="#directory" class="hover:text-purple-300 transition">📁 Directory</a>
+        <button id="nav-matchmaker-btn" class="hover:text-emerald-300 transition flex items-center space-x-1.5 text-slate-200 font-bold">
+          <span>🤝 Matchmaker</span>
+        </button>
         <a href="#team" class="hover:text-purple-300 transition">👥 Team</a>
         <a href="https://github.com/RitualDev-Lab/DevShelf/wiki" target="_blank" rel="noreferrer" class="hover:text-purple-300 transition">📖 Wiki</a>
       </nav>
@@ -98,30 +101,36 @@
     </h1>
 
     <p class="text-base sm:text-lg text-slate-200 max-w-3xl mx-auto mb-6 leading-relaxed font-normal hero-animate hero-animate-delay-3">
-      Discover hand-curated developer tools, open-source GitHub repositories, verified free public APIs, and startup sponsorships with zero credit-card paywalls. Continuous automated health monitoring.
+      Discover hand-curated developer tools, open-source GitHub repositories, verified free public APIs, 1-click cloud boilerplates, and startup sponsorships with zero credit-card paywalls. Continuous automated health monitoring.
     </p>
 
     <!-- CTAs -->
     <div class="flex items-center justify-center flex-wrap gap-3 mb-8 text-xs font-bold hero-animate hero-animate-delay-4">
       <a href="#directory" class="inline-flex items-center space-x-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 to-cyan-600 hover:opacity-95 text-white shadow-lg shadow-purple-500/25 transition">
-        <span>Explore 80+ Curated Tools ↓</span>
+        <span>Explore 90+ Curated Tools ↓</span>
       </a>
+      <button id="hero-matchmaker-btn" class="inline-flex items-center space-x-2 px-4 py-2.5 rounded-xl bg-emerald-950/80 hover:bg-emerald-900 border border-emerald-500/60 text-emerald-200 font-bold transition shadow-md shadow-emerald-500/20">
+        <span>🤝 Contributor Matchmaker</span>
+      </button>
       <a href="https://github.com/RitualDev-Lab/DevShelf/issues/new/choose" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-2 px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-600 text-white transition">
-        <span>➕ Submit Your Tool (Free Social Amplification)</span>
+        <span>➕ Submit Tool</span>
       </a>
       <button id="hero-badge-btn" class="inline-flex items-center space-x-1.5 px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-purple-500/60 text-purple-200 font-bold transition">
-        <span>🎖️ Get DevShelf Badge</span>
+        <span>🎖️ Get Badge</span>
       </button>
     </div>
 
     <!-- Live Stat Metric Pills -->
-    <div class="flex flex-wrap items-center justify-center gap-2.5 text-xs font-mono text-slate-200 max-w-4xl mx-auto mb-10 shine-bar rounded-2xl py-2 px-1" id="stats-bar">
+    <div class="flex flex-wrap items-center justify-center gap-2.5 text-xs font-mono text-slate-200 max-w-5xl mx-auto mb-10 shine-bar rounded-2xl py-2 px-1" id="stats-bar">
       <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700 flex items-center space-x-2 shadow-sm font-semibold">
         <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-        <span id="stat-total" class="font-bold text-white">84 Resources</span>
+        <span id="stat-total" class="font-bold text-white">92 Resources</span>
       </div>
       <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700">
-        <span class="text-purple-300 font-bold" id="stat-repos">46</span> GitHub Repos
+        <span class="text-purple-300 font-bold" id="stat-repos">54</span> GitHub Repos
+      </div>
+      <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700">
+        <span class="text-orange-300 font-bold" id="stat-boilerplates">8</span> 1-Click Deploys
       </div>
       <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700">
         <span class="text-cyan-300 font-bold" id="stat-apis">15</span> Free APIs
@@ -217,11 +226,15 @@
     <div class="flex items-center flex-wrap gap-2 text-xs font-bold mb-3" id="category-pills">
       <button data-category="all" class="category-pill active px-3.5 py-2 rounded-xl transition flex items-center space-x-1.5">
         <span>All Items</span>
-        <span class="px-1.5 py-0.5 rounded-full text-[10px] bg-purple-900 text-purple-200 font-mono" id="pill-count-all">84</span>
+        <span class="px-1.5 py-0.5 rounded-full text-[10px] bg-purple-900 text-purple-200 font-mono" id="pill-count-all">92</span>
       </button>
       <button data-category="repo" class="category-pill px-3.5 py-2 rounded-xl transition flex items-center space-x-1.5">
         <span>🐙 GitHub Repos</span>
-        <span class="px-1.5 py-0.5 rounded-full text-[10px] bg-slate-800 text-slate-300 font-mono" id="pill-count-repo">46</span>
+        <span class="px-1.5 py-0.5 rounded-full text-[10px] bg-slate-800 text-slate-300 font-mono" id="pill-count-repo">54</span>
+      </button>
+      <button data-category="boilerplate" class="category-pill px-3.5 py-2 rounded-xl transition flex items-center space-x-1.5">
+        <span>🚀 1-Click Deploys</span>
+        <span class="px-1.5 py-0.5 rounded-full text-[10px] bg-slate-800 text-slate-300 font-mono" id="pill-count-boilerplates">8</span>
       </button>
       <button data-category="api" class="category-pill px-3.5 py-2 rounded-xl transition flex items-center space-x-1.5">
         <span>🌐 Free APIs</span>
@@ -264,6 +277,9 @@
     <div class="flex items-center flex-wrap gap-1.5 text-xs font-mono text-slate-300 mb-6">
       <span class="text-slate-400 font-sans mr-1 font-semibold">Quick filters:</span>
       <button data-tag="repo-only" class="filter-tag px-3 py-1 rounded-lg transition font-bold text-cyan-300">🐙 Has GitHub Repo</button>
+      <button data-tag="offline" class="filter-tag px-3 py-1 rounded-lg transition font-bold text-emerald-300">⚡ Offline-Friendly</button>
+      <button data-tag="selfhost" class="filter-tag px-3 py-1 rounded-lg transition font-bold text-sky-300">🏠 Self-Hostable</button>
+      <button data-tag="nocreditcard" class="filter-tag px-3 py-1 rounded-lg transition font-bold text-purple-300">💳 No Card Needed</button>
       <button data-tag="featured" class="filter-tag px-3 py-1 rounded-lg transition font-bold text-amber-300">⭐ Featured Only</button>
       <button data-tag="no-key" class="filter-tag px-3 py-1 rounded-lg transition font-bold text-emerald-300">🟢 No Key Required</button>
       <button data-tag="typescript" class="filter-tag px-3 py-1 rounded-lg transition">TypeScript</button>
@@ -276,7 +292,7 @@
   <!-- Main Resource Grid -->
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
     <div class="flex items-center justify-between mb-4">
-      <div class="text-xs text-slate-300 font-mono font-semibold" id="results-count">Showing 84 curated resources</div>
+      <div class="text-xs text-slate-300 font-mono font-semibold" id="results-count">Showing 92 curated resources</div>
     </div>
 
     <!-- Cards Container -->
@@ -406,6 +422,43 @@
           <img src="https://img.shields.io/badge/Featured%20on-DevShelf-blueviolet?style=flat-square&logo=googlechrome&logoColor=white" alt="Featured on DevShelf" class="h-5">
         </div>
         <input type="text" readonly value="[![Featured on DevShelf](https://img.shields.io/badge/Featured%20on-DevShelf-blueviolet?style=flat-square&logo=googlechrome&logoColor=white)](https://devshelf.ritualdev.in/)" class="w-full text-xs font-mono bg-slate-900 px-3 py-2 rounded text-emerald-300 border border-slate-700 select-all font-semibold">
+      </div>
+    </div>
+  </div>
+
+  <!-- "Looking for Contributors" Matchmaker Modal -->
+  <div id="matchmaker-modal" class="fixed inset-0 z-50 modal-backdrop items-center justify-center p-4 hidden" style="display: none;">
+    <div class="bg-slate-900 border border-slate-700 rounded-2xl max-w-2xl w-full p-6 shadow-2xl relative my-auto max-h-[85vh] flex flex-col">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-800 mb-4">
+        <div class="flex items-center space-x-2">
+          <span class="text-xl">🤝</span>
+          <div>
+            <h3 class="text-base font-bold text-white">Contributor Matchmaker</h3>
+            <p class="text-[11px] text-slate-400">Claim live beginner-friendly Good First Issues from verified open source projects</p>
+          </div>
+        </div>
+        <button id="close-matchmaker-modal-btn" class="text-slate-300 hover:text-white p-1 rounded-lg hover:bg-slate-800 transition text-sm font-bold">
+          ✕
+        </button>
+      </div>
+
+      <!-- Language Filter Pills inside Matchmaker -->
+      <div class="flex items-center flex-wrap gap-1.5 mb-4 text-xs font-mono" id="matchmaker-lang-filters">
+        <span class="text-slate-400 font-sans text-xs">Filter:</span>
+        <button data-matchlang="all" class="match-lang-btn px-2.5 py-1 rounded-lg bg-purple-600 text-white font-bold transition">All</button>
+        <button data-matchlang="typescript" class="match-lang-btn px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 transition">TypeScript</button>
+        <button data-matchlang="go" class="match-lang-btn px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 transition">Go</button>
+        <button data-tag="rust" data-matchlang="rust" class="match-lang-btn px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 transition">Rust</button>
+        <button data-matchlang="python" class="match-lang-btn px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 transition">Python</button>
+      </div>
+
+      <!-- Matchmaker Issue Cards Scrollable List -->
+      <div class="overflow-y-auto space-y-3 pr-1 flex-1" id="matchmaker-list">
+        <!-- Injected via app.js -->
+      </div>
+      
+      <div class="pt-3 border-t border-slate-800 mt-3 text-center text-xs text-slate-400">
+        Are you an open-source maintainer? <a href="https://github.com/RitualDev-Lab/DevShelf/issues/new?template=04_good_first_issue.yml" target="_blank" rel="noreferrer" class="text-purple-400 hover:underline font-bold">Submit your project's starter tasks →</a>
       </div>
     </div>
   </div>

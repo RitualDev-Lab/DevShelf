@@ -17,6 +17,7 @@ async function build() {
   const freeCloud = await readJson("free-cloud.json");
   const contributors = await readJson("contributors-wanted.json");
   const perks = await readJson("perks.json");
+  const boilerplates = await readJson("boilerplates.json");
 
   const totalItems =
     apis.length +
@@ -25,7 +26,8 @@ async function build() {
     testingQa.length +
     freeCloud.length +
     contributors.length +
-    perks.length;
+    perks.length +
+    boilerplates.length;
 
   let md = `<div align="center">
 
@@ -58,6 +60,7 @@ async function build() {
 <td align="center"><b>☁️ Free Cloud</b><br><code>${freeCloud.length}</code></td>
 <td align="center"><b>🤝 Up for Grabs</b><br><code>${contributors.length}</code></td>
 <td align="center"><b>🎁 Dev Perks</b><br><code>${perks.length}</code></td>
+<td align="center"><b>🚀 1-Click Deploys</b><br><code>${boilerplates.length}</code></td>
 </tr>
 </table>
 
@@ -300,6 +303,21 @@ APIs that provide a 100% free tier or require no API key at all.
   for (const perk of perks) {
     md += `| [**${perk.name}**](${perk.url}) | \`${perk.category}\` | 🎁 **${perk.perkValue}** | ${perk.eligibility} |\n`;
   }
+
+  md += "</details>\n\n";
+
+  md +=
+    "---\n\n<details open>\n<summary><h2>🚀 8. One-Click Deployment Boilerplates</h2></summary>\n\n> Zero-cost templates and server configurations deployable in 1 click to free cloud tiers.\n\n";
+
+  md += `| Template & Repository | Category | Target Platform | 1-Click Deploy | Free Tier Cost |
+| :--- | :--- | :---: | :---: | :--- |
+`;
+
+  for (const b of boilerplates) {
+    md += `| [**${b.name}**](${b.repo}) | \`${b.category}\` | **${b.platform}** | [🚀 **Deploy to ${b.platform}**](${b.deployUrl}) | \`${b.freeTierCost}\` |\n`;
+  }
+
+  md += "</details>\n";
 
   md += `\n---
 

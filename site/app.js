@@ -3,6 +3,8 @@ let activeCategory = "all";
 let activeTag = "";
 let searchQuery = "";
 let currentSort = "featured";
+let matchmakerData = null;
+let activeMatchLang = "all";
 
 const BADGE_MARKDOWNS = {
   purple:
@@ -56,6 +58,8 @@ function applyData(data) {
 function updateStatsAndPills(data) {
   const total = data.totalCount || allResources.length;
   const reposCount = data.counts?.repos || allResources.filter((r) => Boolean(r.repo)).length;
+  const boilerplatesCount =
+    data.counts?.boilerplates || allResources.filter((r) => r.type === "boilerplate").length;
   const apisCount = data.counts?.apis || 0;
   const aiCount = data.counts?.aiTools || 0;
   const cliCount = data.counts?.cliTools || 0;
@@ -70,6 +74,7 @@ function updateStatsAndPills(data) {
   // Stats bar
   setElText("stat-total", `${total} Resources`);
   setElText("stat-repos", reposCount);
+  setElText("stat-boilerplates", boilerplatesCount);
   setElText("stat-apis", apisCount);
   setElText("stat-ai", aiCount);
   setElText("stat-cli", cliCount);
@@ -80,6 +85,7 @@ function updateStatsAndPills(data) {
   // Category pill counts
   setElText("pill-count-all", total);
   setElText("pill-count-repo", reposCount);
+  setElText("pill-count-boilerplates", boilerplatesCount);
   setElText("pill-count-api", apisCount);
   setElText("pill-count-ai", aiCount);
   setElText("pill-count-cli", cliCount);
@@ -175,6 +181,7 @@ function setupListeners() {
   if (listenersInitialized) return;
   listenersInitialized = true;
   closeBadgeModal();
+  closeMatchmakerModal();
 
   const searchInput = document.getElementById("search-input");
   const clearBtn = document.getElementById("clear-search-btn");
@@ -207,7 +214,38 @@ function setupListeners() {
       return;
     }
 
-    // 3. Copy Badge Markdown inside modal
+    // 3. Open Matchmaker Modal
+    if (e.target.closest("#open-matchmaker-btn, #nav-matchmaker-btn, #hero-matchmaker-btn")) {
+      e.preventDefault();
+      openMatchmakerModal();
+      return;
+    }
+
+    // 4. Close Matchmaker Modal
+    if (e.target.closest("#close-matchmaker-modal-btn") || e.target.id === "matchmaker-modal") {
+      e.preventDefault();
+      closeMatchmakerModal();
+      return;
+    }
+
+    // 5. Matchmaker Language Filter Pills
+    const matchLangBtn = e.target.closest(".match-lang-btn");
+    if (matchLangBtn) {
+      e.preventDefault();
+      activeMatchLang = matchLangBtn.dataset.matchlang || "all";
+      for (const b of document.querySelectorAll(".match-lang-btn")) {
+        b.classList.remove("bg-purple-600", "text-white");
+        b.classList.add("bg-slate-800", "text-slate-200");
+      }
+      matchLangBtn.classList.remove("bg-slate-800", "text-slate-200");
+      matchLangBtn.classList.add("bg-purple-600", "text-white");
+      if (matchmakerData) {
+        renderMatchmakerList(matchmakerData);
+      }
+      return;
+    }
+
+    // 6. Copy Badge Markdown inside modal
     const copyBadgeBtn = e.target.closest(".copy-badge-btn");
     if (copyBadgeBtn) {
       e.preventDefault();
@@ -313,6 +351,7 @@ function setupListeners() {
     }
     if (e.key === "Escape") {
       closeBadgeModal();
+      closeMatchmakerModal();
       if (document.activeElement === searchInput) {
         searchInput.value = "";
         searchQuery = "";
@@ -344,6 +383,137 @@ function closeBadgeModal() {
   }
 }
 
+async function loadMatchmaker() {
+  if (matchmakerData) return matchmakerData;
+  try {
+    const res = await fetch("matchmaker.json");
+    if (res.ok) {
+      matchmakerData = await res.json();
+    }
+  } catch (err) {
+    console.warn("Could not load matchmaker.json", err);
+  }
+  return matchmakerData;
+}
+
+async function openMatchmakerModal() {
+  const modal = document.getElementById("matchmaker-modal");
+  if (modal) {
+    modal.classList.remove("hidden");
+    modal.classList.add("show");
+    modal.style.display = "flex";
+    document.body.classList.add("overflow-hidden");
+  }
+  const data = await loadMatchmaker();
+  renderMatchmakerList(data);
+}
+
+function closeMatchmakerModal() {
+  const modal = document.getElementById("matchmaker-modal");
+  if (modal) {
+    modal.classList.remove("show");
+    modal.classList.add("hidden");
+    modal.style.display = "none";
+    document.body.classList.remove("overflow-hidden");
+  }
+}
+
+function renderMatchmakerList(data) {
+  const list = document.getElementById("matchmaker-list");
+  if (!list) return;
+
+  if (!data || !Array.isArray(data.projects) || data.projects.length === 0) {
+    list.innerHTML = `
+      <div class="text-center py-10 text-slate-400 text-xs">
+        <p class="font-bold text-slate-300 mb-1">No matchmaker projects available yet</p>
+        <p>Run the GitHub Action sync or submit good first issues via DevShelf.</p>
+      </div>
+    `;
+    return;
+  }
+
+  const filtered = data.projects.filter((p) => {
+    if (activeMatchLang === "all") return true;
+    return (p.language || "").toLowerCase().includes(activeMatchLang.toLowerCase());
+  });
+
+  if (filtered.length === 0) {
+    list.innerHTML = `
+      <div class="text-center py-8 text-slate-400 text-xs">
+        No projects currently seeking contributions for <b>${escapeHtml(activeMatchLang)}</b>.
+      </div>
+    `;
+    return;
+  }
+
+  list.innerHTML = filtered
+    .map((p) => {
+      const issuesHtml = (p.issues || [])
+        .map(
+          (issue) => `
+        <div class="flex items-center justify-between gap-3 p-2.5 rounded-lg bg-slate-950/80 border border-slate-800 text-xs">
+          <div class="flex-1 min-w-0">
+            <div class="font-semibold text-slate-200 hover:text-purple-300 truncate">
+              <a href="${issue.url}" target="_blank" rel="noreferrer">${escapeHtml(issue.title)}</a>
+            </div>
+            <div class="flex items-center gap-1.5 mt-1 flex-wrap">
+              <span class="px-1.5 py-0.5 text-[10px] font-mono rounded bg-purple-900/60 text-purple-200 border border-purple-500/30 font-bold">${escapeHtml(issue.difficulty || "Starter Task")}</span>
+              ${(issue.labels || [])
+                .slice(0, 2)
+                .map(
+                  (l) =>
+                    `<span class="px-1.5 py-0.5 text-[10px] font-mono rounded bg-slate-800 text-slate-400">${escapeHtml(l)}</span>`,
+                )
+                .join("")}
+            </div>
+          </div>
+          <a href="${issue.url}" target="_blank" rel="noreferrer" class="shrink-0 px-2.5 py-1.5 text-xs font-bold rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white transition flex items-center space-x-1 shadow-sm shadow-emerald-600/30">
+            <span>Claim Issue →</span>
+          </a>
+        </div>
+      `,
+        )
+        .join("");
+
+      return `
+      <div class="p-3.5 rounded-xl bg-slate-800/60 border border-slate-700/80 flex flex-col gap-2.5">
+        <div class="flex items-start justify-between gap-2">
+          <div>
+            <div class="flex items-center space-x-2">
+              <span class="font-bold text-white text-sm">${escapeHtml(p.name)}</span>
+              <span class="px-2 py-0.5 text-[10px] font-mono rounded bg-purple-950 text-purple-300 border border-purple-500/40">${escapeHtml(p.language || "Open Source")}</span>
+            </div>
+            <p class="text-xs text-slate-300 mt-0.5">${escapeHtml(p.description || "")}</p>
+          </div>
+          <a href="${p.repo}" target="_blank" rel="noreferrer" class="shrink-0 text-xs text-purple-400 hover:text-purple-300 font-mono">
+            🐙 Repo
+          </a>
+        </div>
+        ${
+          p.seeking
+            ? `<div class="text-[11px] text-amber-200/90 font-mono bg-amber-950/40 border border-amber-500/30 rounded px-2 py-1"><span class="font-bold text-amber-300">🎯 Seeking:</span> ${escapeHtml(p.seeking)}</div>`
+            : ""
+        }
+        <div class="space-y-1.5 mt-1">
+          ${issuesHtml}
+        </div>
+      </div>
+    `;
+    })
+    .join("");
+}
+
+function getStatusTagClass(tag) {
+  const lower = tag.toLowerCase();
+  if (lower.includes("offline")) return "status-badge-offline";
+  if (lower.includes("rate-limited") || lower.includes("ratelimit"))
+    return "status-badge-ratelimit";
+  if (lower.includes("no card") || lower.includes("nocard")) return "status-badge-nocard";
+  if (lower.includes("credit card") || lower.includes("verify")) return "status-badge-verify";
+  if (lower.includes("self-hostable") || lower.includes("selfhost")) return "status-badge-selfhost";
+  return "bg-slate-800 text-slate-300 border-slate-700";
+}
+
 function render() {
   const grid = document.getElementById("cards-grid");
   const emptyState = document.getElementById("empty-state");
@@ -357,6 +527,8 @@ function render() {
       matchesCategory = true;
     } else if (activeCategory === "repo") {
       matchesCategory = Boolean(item.repo);
+    } else if (activeCategory === "boilerplate") {
+      matchesCategory = item.type === "boilerplate";
     } else if (activeCategory === "contributors") {
       matchesCategory = Boolean(
         item.contributorsWanted || item.seeking || item.type === "contributors",
@@ -370,6 +542,25 @@ function render() {
     // Quick tag check
     if (activeTag) {
       if (activeTag === "repo-only" && !item.repo) return false;
+      if (activeTag === "offline") {
+        const hasOffline = (item.statusTags || []).some((t) => t.toLowerCase().includes("offline"));
+        if (!hasOffline) return false;
+      }
+      if (activeTag === "selfhost") {
+        const hasSelfhost = (item.statusTags || []).some(
+          (t) => t.toLowerCase().includes("self-hostable") || t.toLowerCase().includes("selfhost"),
+        );
+        if (!hasSelfhost) return false;
+      }
+      if (activeTag === "nocreditcard") {
+        const hasNoCard =
+          (item.statusTags || []).some(
+            (t) => t.toLowerCase().includes("no card") || t.toLowerCase().includes("nocard"),
+          ) ||
+          item.auth === "No Key" ||
+          item.freeTier?.toLowerCase().includes("no credit card");
+        if (!hasNoCard) return false;
+      }
       if (activeTag === "featured" && !item.featured) return false;
       if (activeTag === "no-key" && item.auth !== "No Key") return false;
       if (activeTag === "typescript" && !item.language?.toLowerCase().includes("typescript"))
@@ -388,6 +579,8 @@ function render() {
       item.category,
       item.section,
       item.language,
+      item.platform,
+      item.freeTierCost,
       item.perkValue,
       item.seeking,
       item.auth,
@@ -395,6 +588,7 @@ function render() {
       item.license,
       item.repo,
       item.url,
+      ...(item.statusTags || []),
     ]
       .filter(Boolean)
       .join(" ")
@@ -408,9 +602,9 @@ function render() {
     if (currentSort === "featured") {
       if (a.featured && !b.featured) return -1;
       if (!a.featured && b.featured) return 1;
-      // Put items with repos before non-repos
-      if (a.repo && !b.repo) return -1;
-      if (!a.repo && b.repo) return 1;
+      // Put items with repos or 1-click deploys before generic links
+      if ((a.repo || a.deployUrl) && !(b.repo || b.deployUrl)) return -1;
+      if (!(a.repo || a.deployUrl) && (b.repo || b.deployUrl)) return 1;
       return a.name.localeCompare(b.name);
     }
     if (currentSort === "name-asc") {
@@ -442,7 +636,8 @@ function render() {
 
 function createCardHtml(item) {
   const isRepo = Boolean(item.repo);
-  const targetUrl = item.repo || item.url || "#";
+  const isBoilerplate = item.type === "boilerplate";
+  const targetUrl = item.deployUrl || item.repo || item.url || "#";
   const displayRepoSlug = item.repo ? item.repo.replace(/^https?:\/\/github\.com\//, "") : "";
   const displayUrl = targetUrl.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "");
 
@@ -464,6 +659,8 @@ function createCardHtml(item) {
   if (item.type === "testing")
     categoryBadgeColor = "text-rose-200 bg-rose-950/80 border-rose-500/40";
   if (item.type === "perks") categoryBadgeColor = "text-pink-200 bg-pink-950/80 border-pink-500/40";
+  if (item.type === "boilerplate")
+    categoryBadgeColor = "text-orange-200 bg-orange-950/80 border-orange-500/40";
 
   let metaBadges = "";
   if (item.type === "api") {
@@ -483,6 +680,11 @@ function createCardHtml(item) {
     metaBadges = `
       <span class="px-2 py-0.5 text-xs font-mono rounded border border-sky-500/40 bg-sky-950/90 text-sky-200 font-bold">☁️ ${escapeHtml(item.freeTier || "Generous Free Tier")}</span>
     `;
+  } else if (item.type === "boilerplate") {
+    metaBadges = `
+      <span class="px-2 py-0.5 text-xs font-mono rounded border border-orange-500/40 bg-orange-950/90 text-orange-200 font-bold">🚀 ${escapeHtml(item.platform || "1-Click")}</span>
+      <span class="px-2 py-0.5 text-xs font-mono rounded border border-slate-700 bg-slate-800 text-slate-200">${escapeHtml(item.freeTierCost || "$0/month")}</span>
+    `;
   } else {
     metaBadges = `
       ${item.language ? `<span class="px-2 py-0.5 text-xs font-mono font-semibold rounded border border-slate-700 bg-slate-800 text-slate-200">${escapeHtml(item.language)}</span>` : ""}
@@ -499,7 +701,20 @@ function createCardHtml(item) {
 
   // Action buttons
   let actionButtons = "";
-  if (isRepo) {
+  if (isBoilerplate) {
+    actionButtons = `
+      <a href="${item.deployUrl}" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 text-white transition shadow-md shadow-orange-600/25">
+        <span>🚀 Deploy to ${escapeHtml(item.platform || "Cloud")} →</span>
+      </a>
+    `;
+    if (item.repo) {
+      actionButtons += `
+        <a href="${item.repo}" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-1 px-2.5 py-1.5 rounded-lg text-xs font-bold bg-slate-800 hover:bg-slate-700 text-slate-200 transition border border-slate-700" title="Source Code">
+          <span>🐙 Repo</span>
+        </a>
+      `;
+    }
+  } else if (isRepo) {
     actionButtons = `
       <a href="${item.repo}" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-1 px-3 py-1.5 rounded-lg text-xs font-bold bg-purple-600 hover:bg-purple-500 text-white transition shadow-md shadow-purple-600/25">
         <span>🐙 GitHub Repo →</span>
@@ -519,6 +734,18 @@ function createCardHtml(item) {
       </a>
     `;
   }
+
+  const statusTagsHtml =
+    Array.isArray(item.statusTags) && item.statusTags.length > 0
+      ? `<div class="flex items-center flex-wrap gap-1.5 my-2">
+          ${item.statusTags
+            .map(
+              (tag) =>
+                `<span class="px-2 py-0.5 text-[10px] font-mono font-bold rounded-md border ${getStatusTagClass(tag)}">${escapeHtml(tag)}</span>`,
+            )
+            .join("")}
+        </div>`
+      : "";
 
   return `
     <div class="glass-card rounded-2xl p-5 flex flex-col justify-between relative group">
@@ -550,9 +777,10 @@ function createCardHtml(item) {
           </button>
         </div>
 
-        <div class="inline-block px-2.5 py-0.5 text-xs font-mono font-bold rounded-full border my-2.5 ${categoryBadgeColor}">
+        <div class="inline-block px-2.5 py-0.5 text-xs font-mono font-bold rounded-full border my-2 ${categoryBadgeColor}">
           ${escapeHtml(item.category || item.section)}
         </div>
+        ${statusTagsHtml}
         
         <p class="text-xs sm:text-sm text-slate-200 leading-relaxed line-clamp-3 mb-3 font-normal">${escapeHtml(item.description)}</p>
         ${seekingBox}

@@ -7,7 +7,8 @@
     "auth": "No Key",
     "cors": "Yes",
     "rateLimit": "10,000 req/day",
-    "https": true
+    "https": true,
+    "statusTags": ["Rate-Limited", "No Card Required", "Active Uptime 100%"]
   },
   {
     "name": "GroqCloud Free Tier",
@@ -17,7 +18,8 @@
     "auth": "Free API Key",
     "cors": "Yes",
     "rateLimit": "30 req/min",
-    "https": true
+    "https": true,
+    "statusTags": ["Rate-Limited", "Active Uptime 100%"]
   },
   {
     "name": "JSONPlaceholder",
@@ -27,7 +29,8 @@
     "auth": "No Key",
     "cors": "Yes",
     "rateLimit": "Unlimited",
-    "https": true
+    "https": true,
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
   },
   {
     "name": "Hugging Face Serverless Inference",
@@ -37,7 +40,8 @@
     "auth": "Free API Key",
     "cors": "Yes",
     "rateLimit": "Free monthly tier",
-    "https": true
+    "https": true,
+    "statusTags": ["Rate-Limited", "Active Uptime 100%"]
   },
   {
     "name": "ipapi.co",
@@ -47,7 +51,8 @@
     "auth": "No Key",
     "cors": "Yes",
     "rateLimit": "1,000 req/day",
-    "https": true
+    "https": true,
+    "statusTags": ["Rate-Limited", "No Card Required", "Active Uptime 100%"]
   },
   {
     "name": "CoinGecko Free API",
@@ -57,7 +62,8 @@
     "auth": "Free API Key",
     "cors": "Yes",
     "rateLimit": "30 req/min",
-    "https": true
+    "https": true,
+    "statusTags": ["Rate-Limited", "Active Uptime 100%"]
   },
   {
     "name": "Rest Countries",
@@ -67,7 +73,8 @@
     "auth": "No Key",
     "cors": "Yes",
     "rateLimit": "Unlimited",
-    "https": true
+    "https": true,
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
   },
   {
     "name": "PokeAPI",
@@ -77,7 +84,8 @@
     "auth": "No Key",
     "cors": "Yes",
     "rateLimit": "100 req/min",
-    "https": true
+    "https": true,
+    "statusTags": ["Rate-Limited", "No Card Required", "Active Uptime 100%"]
   },
   {
     "name": "Open Library",
@@ -87,7 +95,8 @@
     "auth": "No Key",
     "cors": "Yes",
     "rateLimit": "Unlimited",
-    "https": true
+    "https": true,
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
   },
   {
     "name": "ReqRes",
@@ -97,7 +106,8 @@
     "auth": "No Key",
     "cors": "Yes",
     "rateLimit": "Unlimited",
-    "https": true
+    "https": true,
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
   },
   {
     "name": "ipify",
@@ -107,7 +117,8 @@
     "auth": "No Key",
     "cors": "Yes",
     "rateLimit": "Unlimited",
-    "https": true
+    "https": true,
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
   },
   {
     "name": "DummyJSON",
@@ -117,7 +128,8 @@
     "auth": "No Key",
     "cors": "Yes",
     "rateLimit": "Unlimited",
-    "https": true
+    "https": true,
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
   },
   {
     "name": "Nominatim OpenStreetMap",
@@ -127,7 +139,8 @@
     "auth": "No Key",
     "cors": "Yes",
     "rateLimit": "1 req/sec",
-    "https": true
+    "https": true,
+    "statusTags": ["Rate-Limited", "No Card Required", "Active Uptime 100%"]
   },
   {
     "name": "ExchangeRate-API",
@@ -137,7 +150,8 @@
     "auth": "Free API Key",
     "cors": "Yes",
     "rateLimit": "1,500 req/month",
-    "https": true
+    "https": true,
+    "statusTags": ["Rate-Limited", "Active Uptime 100%"]
   },
   {
     "name": "Cat Facts",
@@ -147,6 +161,7 @@
     "auth": "No Key",
     "cors": "Yes",
     "rateLimit": "Unlimited",
-    "https": true
+    "https": true,
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
   }
 ]

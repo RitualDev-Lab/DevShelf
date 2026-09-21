@@ -134,6 +134,30 @@ async function checkDeadLinks() {
   console.log(`   Dead / Unreachable:     ${deadLinks.length}`);
   console.log("========================================\n");
 
+  const uptimeReport = {
+    lastChecked: new Date().toISOString(),
+    totalChecked: total,
+    activeReachable: alive,
+    deadUnreachable: deadLinks.length,
+    healthPercent: Number(healthPercent),
+    status: deadLinks.length === 0 ? "100% Operational" : "Degraded",
+    endpoints: results.map((r) => ({
+      name: r.name,
+      file: r.file,
+      url: r.url,
+      status: r.status,
+      ok: r.ok,
+    })),
+  };
+
+  const siteDir = path.join(root, "site");
+  await fs.writeFile(
+    path.join(siteDir, "uptime.json"),
+    `${JSON.stringify(uptimeReport, null, 2)}\n`,
+    "utf8",
+  );
+  console.log("📁 Exported uptime history telemetry to site/uptime.json");
+
   if (deadLinks.length > 0) {
     console.warn(`⚠️ Warning: ${deadLinks.length} dead or unreachable link(s) found:`);
     for (const dead of deadLinks) {

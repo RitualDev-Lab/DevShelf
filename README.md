@@ -13,7 +13,7 @@
 <br>
 
 [![Live Web Directory](https://img.shields.io/badge/🌐_Web_Directory-Live_Search_%26_Filters-7928CA?style=for-the-badge&logoColor=white)](https://devshelf.ritualdev.in)
-[![Curated Resources](https://img.shields.io/badge/📦_Resources-93+_Curated-blueviolet?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
+[![Curated Resources](https://img.shields.io/badge/📦_Resources-101+_Curated-blueviolet?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
 [![Endpoint Health](https://img.shields.io/badge/🛡️_Health-100%25_Verified-brightgreen?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf/actions)
 [![Open Source](https://img.shields.io/badge/🔓_License-MIT_FOSS-blue?style=for-the-badge)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/🤝_PRs-Welcome_%26_Amplified-brightgreen?style=for-the-badge)](#-how-to-submit-your-project-or-api)
@@ -29,6 +29,7 @@
 <td align="center"><b>☁️ Free Cloud</b><br><code>10</code></td>
 <td align="center"><b>🤝 Up for Grabs</b><br><code>9</code></td>
 <td align="center"><b>🎁 Dev Perks</b><br><code>13</code></td>
+<td align="center"><b>🚀 1-Click Deploys</b><br><code>8</code></td>
 </tr>
 </table>
 
@@ -609,6 +610,26 @@ Free cloud credits, software sponsorships, and startup program perks for develop
 | [**JetBrains Mono**](https://github.com/JetBrains/JetBrainsMono) | `Developer Fonts & Aesthetics` | 🎁 **Free download (SIL Open Font License 1.1)** | Free for personal and commercial use under OFL 1.1 |
 | [**Fira Code**](https://github.com/tonsky/FiraCode) | `Developer Fonts & Aesthetics` | 🎁 **Free download (SIL Open Font License 1.1)** | Free to use under OFL 1.1 |
 | [**Cascadia Code**](https://github.com/microsoft/cascadia-code) | `Developer Fonts & Aesthetics` | 🎁 **Free download (SIL Open Font License 1.1)** | Free to use under OFL 1.1 |
+</details>
+
+---
+
+<details open>
+<summary><h2>🚀 8. One-Click Deployment Boilerplates</h2></summary>
+
+> Zero-cost templates and server configurations deployable in 1 click to free cloud tiers.
+
+| Template & Repository | Category | Target Platform | 1-Click Deploy | Free Tier Cost |
+| :--- | :--- | :---: | :---: | :--- |
+| [**Mockoon Cloudless API Server**](https://github.com/mockoon/mockoon) | `API Mocks & Microservices` | **Render** | [🚀 **Deploy to Render**](https://render.com/deploy?repo=https://github.com/mockoon/mock-samples) | `$0/month (Render Free Web Service)` |
+| [**PocketBase 1-Click Backend**](https://github.com/pocketbase/pocketbase) | `BaaS & Databases` | **Fly.io** | [🚀 **Deploy to Fly.io**](https://fly.io/launch?template=https://github.com/pocketbase/pocketbase) | `$0/month (Fly.io Free Allowance)` |
+| [**AutoHeal-QA Playwright Runner**](https://github.com/RitualDev-Lab/autoheal-qa) | `Testing & QA Reliability` | **GitHub Actions** | [🚀 **Deploy to GitHub Actions**](https://github.com/RitualDev-Lab/autoheal-qa/fork) | `$0/month (GitHub Actions 2,000 free min/mo)` |
+| [**Stirling-PDF Ultimate Toolbox**](https://github.com/Stirling-Tools/Stirling-PDF) | `Dev Utilities & Productivity` | **Render** | [🚀 **Deploy to Render**](https://render.com/deploy?repo=https://github.com/Stirling-Tools/Stirling-PDF) | `$0/month (Render Free Tier)` |
+| [**Open-WebUI for Local AI**](https://github.com/open-webui/open-webui) | `AI Agents & Local LLMs` | **Render** | [🚀 **Deploy to Render**](https://render.com/deploy?repo=https://github.com/open-webui/open-webui) | `$0/month (Render Free Tier)` |
+| [**Directus Instant Data Engine**](https://github.com/directus/directus) | `BaaS & Databases` | **Railway** | [🚀 **Deploy to Railway**](https://railway.app/template/directus) | `$0/month (Railway Free Starter Tier)` |
+| [**Hoppscotch API Development Hub**](https://github.com/hoppscotch/hoppscotch) | `Testing & QA Reliability` | **Render** | [🚀 **Deploy to Render**](https://render.com/deploy?repo=https://github.com/hoppscotch/hoppscotch) | `$0/month (Render Web Service)` |
+| [**Dify LLM Application Platform**](https://github.com/langgenius/dify) | `AI Agents & Local LLMs` | **Render** | [🚀 **Deploy to Render**](https://render.com/deploy?repo=https://github.com/langgenius/dify) | `$0/month (Render Community Tier)` |
+</details>
 
 ---
 

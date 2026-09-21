@@ -1,0 +1,51 @@
+﻿name: 🤝 Sync Contributor Matchmaker Issues
+
+on:
+  schedule:
+    - cron: '0 6 * * 1' # Every Monday at 6:00 AM UTC
+  workflow_dispatch:
+
+concurrency:
+  group: sync-matchmaker
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    name: Sync Live Good First Issues
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          run_install: false
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run Matchmaker Sync
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx tsx scripts/sync-good-first-issues.ts
+
+      - name: Commit & Push Updated Matchmaker Data
+        run: |
+          git config --global user.name "DevShelf Bot"
+          git config --global user.email "bot@devshelf.local"
+          git add site/matchmaker.json
+          if ! git diff-index --quiet HEAD; then
+            git commit -m "chore(matchmaker): sync live good first issues [skip ci]"
+            git push origin main
+          else
+            echo "No changes in matchmaker issues."
+          fi

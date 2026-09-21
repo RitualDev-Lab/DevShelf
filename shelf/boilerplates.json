@@ -1,0 +1,98 @@
+﻿[
+  {
+    "name": "Mockoon Cloudless API Server",
+    "repo": "https://github.com/mockoon/mockoon",
+    "category": "API Mocks & Microservices",
+    "description": "Deploy a lightweight, zero-dependency mock REST/GraphQL API server based on Mockoon JSON environments with 1 click.",
+    "language": "TypeScript / Node.js",
+    "license": "MIT",
+    "platform": "Render",
+    "deployUrl": "https://render.com/deploy?repo=https://github.com/mockoon/mock-samples",
+    "freeTierCost": "$0/month (Render Free Web Service)",
+    "statusTags": ["100% Offline-Friendly", "Self-Hostable", "No Card Required"]
+  },
+  {
+    "name": "PocketBase 1-Click Backend",
+    "repo": "https://github.com/pocketbase/pocketbase",
+    "category": "BaaS & Databases",
+    "description": "Instant open-source backend in 1 binary file with embedded SQLite database, real-time subscriptions, and auth rules.",
+    "language": "Go",
+    "license": "MIT",
+    "platform": "Fly.io",
+    "deployUrl": "https://fly.io/launch?template=https://github.com/pocketbase/pocketbase",
+    "freeTierCost": "$0/month (Fly.io Free Allowance)",
+    "statusTags": ["100% Offline-Friendly", "Self-Hostable", "No Card Required"]
+  },
+  {
+    "name": "AutoHeal-QA Playwright Runner",
+    "repo": "https://github.com/RitualDev-Lab/autoheal-qa",
+    "category": "Testing & QA Reliability",
+    "description": "Deploy agentic self-healing E2E Playwright test automation with local LLM test fixing directly into GitHub Actions.",
+    "language": "TypeScript",
+    "license": "MIT",
+    "platform": "GitHub Actions",
+    "deployUrl": "https://github.com/RitualDev-Lab/autoheal-qa/fork",
+    "freeTierCost": "$0/month (GitHub Actions 2,000 free min/mo)",
+    "statusTags": ["100% Offline-Friendly", "Self-Hostable", "Active Uptime 100%"]
+  },
+  {
+    "name": "Stirling-PDF Ultimate Toolbox",
+    "repo": "https://github.com/Stirling-Tools/Stirling-PDF",
+    "category": "Dev Utilities & Productivity",
+    "description": "Full-featured, privacy-first PDF manipulation suite to merge, split, OCR, redact, and sign PDFs with zero cloud tracking.",
+    "language": "Java / Docker",
+    "license": "GPL-3.0",
+    "platform": "Render",
+    "deployUrl": "https://render.com/deploy?repo=https://github.com/Stirling-Tools/Stirling-PDF",
+    "freeTierCost": "$0/month (Render Free Tier)",
+    "statusTags": ["Self-Hostable", "100% Offline-Friendly", "No Card Required"]
+  },
+  {
+    "name": "Open-WebUI for Local AI",
+    "repo": "https://github.com/open-webui/open-webui",
+    "category": "AI Agents & Local LLMs",
+    "description": "Feature-rich, self-hosted web chat UI for Ollama and OpenAI-compatible local endpoints with RAG and pipeline support.",
+    "language": "Python / Svelte",
+    "license": "MIT",
+    "platform": "Render",
+    "deployUrl": "https://render.com/deploy?repo=https://github.com/open-webui/open-webui",
+    "freeTierCost": "$0/month (Render Free Tier)",
+    "statusTags": ["Self-Hostable", "100% Offline-Friendly", "No Card Required"]
+  },
+  {
+    "name": "Directus Instant Data Engine",
+    "repo": "https://github.com/directus/directus",
+    "category": "BaaS & Databases",
+    "description": "Turn any SQL database into an instant real-time REST and GraphQL API engine with an intuitive no-code admin panel.",
+    "language": "TypeScript / Node.js",
+    "license": "BSL-1.1 / Free Tier",
+    "platform": "Railway",
+    "deployUrl": "https://railway.app/template/directus",
+    "freeTierCost": "$0/month (Railway Free Starter Tier)",
+    "statusTags": ["Self-Hostable", "Active Uptime 100%"]
+  },
+  {
+    "name": "Hoppscotch API Development Hub",
+    "repo": "https://github.com/hoppscotch/hoppscotch",
+    "category": "Testing & QA Reliability",
+    "description": "Lightweight, fast, web-based API testing client supporting REST, WebSocket, GraphQL, and SSE testing.",
+    "language": "TypeScript / Vue",
+    "license": "MIT",
+    "platform": "Render",
+    "deployUrl": "https://render.com/deploy?repo=https://github.com/hoppscotch/hoppscotch",
+    "freeTierCost": "$0/month (Render Web Service)",
+    "statusTags": ["Self-Hostable", "No Card Required", "100% Offline-Friendly"]
+  },
+  {
+    "name": "Dify LLM Application Platform",
+    "repo": "https://github.com/langgenius/dify",
+    "category": "AI Agents & Local LLMs",
+    "description": "Visual orchestration platform for LLM workflows, agent coordination, RAG pipelines, and model deployment.",
+    "language": "Python / TypeScript",
+    "license": "Apache-2.0",
+    "platform": "Render",
+    "deployUrl": "https://render.com/deploy?repo=https://github.com/langgenius/dify",
+    "freeTierCost": "$0/month (Render Community Tier)",
+    "statusTags": ["Self-Hostable", "No Card Required"]
+  }
+]
