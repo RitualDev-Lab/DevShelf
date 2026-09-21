@@ -1,0 +1,39 @@
+﻿name: 🪞 Mirror Repository to GitLab
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: gitlab-mirror
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    name: Push Mirror to GitLab
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository (full history)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Push to GitLab
+        env:
+          GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
+          GITLAB_REPO: ${{ secrets.GITLAB_REPO_URL || vars.GITLAB_REPO_URL || 'gitlab.com/divyanshujethi/DevShelf.git' }}
+        run: |
+          if [ -z "$GITLAB_TOKEN" ]; then
+            echo "::error::GITLAB_TOKEN secret is missing in GitHub repository secrets!"
+            exit 1
+          fi
+
+          # Clean repo URL: remove https://, http://, and trailing .git
+          CLEAN_REPO=$(echo "$GITLAB_REPO" | sed -E 's|^https?://||' -e 's|\.git$||')
+          TARGET_URL="https://oauth2:${GITLAB_TOKEN}@${CLEAN_REPO}.git"
+
+          echo "🚀 Mirroring to https://${CLEAN_REPO}.git..."
+          git push --prune "$TARGET_URL" "+refs/heads/*:refs/heads/*" "+refs/tags/*:refs/tags/*"
+          echo "✅ Successfully synced all branches and tags to GitLab!"
