@@ -378,22 +378,25 @@ a {
   box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.5), 0 0 20px -4px rgba(139, 92, 246, 0.3);
 }
 
-/* ── Badge & Matchmaker Modals ────────────────────── */
+/* ── Badge, Matchmaker & Wizard Modals ─────────────── */
 
 #badge-modal,
-#matchmaker-modal {
+#matchmaker-modal,
+#wizard-modal {
   display: none;
   z-index: 9999;
 }
 
 #badge-modal.show,
-#matchmaker-modal.show {
+#matchmaker-modal.show,
+#wizard-modal.show {
   display: flex !important;
   animation: backdropIn 0.25s ease both;
 }
 
 #badge-modal.show > div,
-#matchmaker-modal.show > div {
+#matchmaker-modal.show > div,
+#wizard-modal.show > div {
   animation: modalIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
@@ -485,4 +488,222 @@ a {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+/* ── Dynamic Quick-Filter Matrix ─────────────────── */
+
+.matrix-container {
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.85) 0%, rgba(10, 15, 30, 0.95) 100%);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.matrix-btn {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  user-select: none;
+}
+
+.matrix-btn:hover {
+  transform: translateY(-1px);
+}
+
+.matrix-btn.active {
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.9) 0%, rgba(6, 182, 212, 0.9) 100%);
+  color: #ffffff !important;
+  border-color: rgba(168, 85, 247, 0.8) !important;
+  box-shadow: 0 0 16px -2px rgba(139, 92, 246, 0.6);
+}
+
+.matrix-btn.active .matrix-count {
+  background: rgba(0, 0, 0, 0.35);
+  color: #f8fafc;
+}
+
+/* ── 7-Day Health Status Bars ────────────────────── */
+
+.health-bars {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px 6px;
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(51, 65, 85, 0.6);
+  border-radius: 6px;
+  position: relative;
+  cursor: help;
+}
+
+.health-segment {
+  width: 4px;
+  height: 12px;
+  border-radius: 2px;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.health-bars:hover .health-segment {
+  transform: scaleY(1.15);
+}
+
+.health-segment-up {
+  background-color: #10b981;
+}
+
+.health-segment-degraded {
+  background-color: #f59e0b;
+}
+
+.health-segment-down {
+  background-color: #ef4444;
+}
+
+.health-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  background: #020617;
+  color: #f1f5f9;
+  font-size: 10px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  padding: 5px 8px;
+  border-radius: 6px;
+  border: 1px solid #334155;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.8);
+  z-index: 50;
+}
+
+.health-bars:hover .health-tooltip {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* ── Snippet Slide-Out Drawer ────────────────────── */
+
+#snippet-drawer {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: none;
+}
+
+#snippet-drawer.open {
+  display: flex !important;
+}
+
+.drawer-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(2, 6, 23, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  animation: backdropIn 0.2s ease forwards;
+}
+
+.drawer-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 520px;
+  background: #090d16;
+  border-left: 1px solid #1e293b;
+  box-shadow: -8px 0 32px rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  animation: drawerSlideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  z-index: 10;
+}
+
+@keyframes drawerSlideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.drawer-tab {
+  padding: 8px 14px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 8px;
+  transition: all 0.15s ease;
+  color: #94a3b8;
+}
+
+.drawer-tab:hover {
+  color: #ffffff;
+  background: rgba(51, 65, 85, 0.4);
+}
+
+.drawer-tab.active {
+  color: #ffffff;
+  background: #7c3aed;
+  box-shadow: 0 0 12px rgba(124, 58, 237, 0.4);
+}
+
+.code-snippet-box {
+  background: #030712;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #38bdf8;
+  overflow-x: auto;
+  padding: 16px;
+  white-space: pre;
+}
+
+/* ── Contribution Wizard ─────────────────────────── */
+
+.wizard-progress-bar {
+  height: 4px;
+  background: #1e293b;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.wizard-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #7c3aed, #06b6d4);
+  transition: width 0.3s ease;
+}
+
+.wizard-step-dot {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: bold;
+  background: #1e293b;
+  color: #94a3b8;
+  border: 1px solid #334155;
+  transition: all 0.2s ease;
+}
+
+.wizard-step-dot.active {
+  background: #7c3aed;
+  color: #ffffff;
+  border-color: #a855f7;
+  box-shadow: 0 0 10px rgba(124, 58, 237, 0.6);
+}
+
+.wizard-step-dot.completed {
+  background: #10b981;
+  color: #ffffff;
+  border-color: #34d399;
 }

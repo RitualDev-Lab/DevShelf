@@ -76,9 +76,9 @@
         <a href="https://github.com/RitualDev-Lab/DevShelf" target="_blank" rel="noreferrer" class="hidden sm:inline-flex items-center space-x-1 px-3 py-1.5 text-xs font-bold rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 transition hover:scale-105 active:scale-95">
           <span>⭐ Star</span>
         </a>
-        <a href="https://github.com/RitualDev-Lab/DevShelf/issues/new/choose" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-1.5 px-3.5 py-1.5 text-xs font-bold rounded-lg bg-gradient-to-r from-purple-600 via-fuchsia-600 to-cyan-600 hover:opacity-95 transition shadow-lg shadow-purple-500/20 text-white hover:scale-105 active:scale-95">
+        <button id="nav-wizard-btn" class="inline-flex items-center space-x-1.5 px-3.5 py-1.5 text-xs font-bold rounded-lg bg-gradient-to-r from-purple-600 via-fuchsia-600 to-cyan-600 hover:opacity-95 transition shadow-lg shadow-purple-500/20 text-white hover:scale-105 active:scale-95">
           <span>➕ Submit Tool</span>
-        </a>
+        </button>
       </div>
     </div>
   </header>
@@ -112,9 +112,9 @@
       <button id="hero-matchmaker-btn" class="inline-flex items-center space-x-2 px-4 py-2.5 rounded-xl bg-emerald-950/80 hover:bg-emerald-900 border border-emerald-500/60 text-emerald-200 font-bold transition shadow-md shadow-emerald-500/20">
         <span>🤝 Contributor Matchmaker</span>
       </button>
-      <a href="https://github.com/RitualDev-Lab/DevShelf/issues/new/choose" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-2 px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-600 text-white transition">
-        <span>➕ Submit Tool</span>
-      </a>
+      <button id="hero-wizard-btn" class="inline-flex items-center space-x-2 px-4 py-2.5 rounded-xl bg-purple-950/80 hover:bg-purple-900 border border-purple-500/60 text-purple-200 font-bold transition shadow-md shadow-purple-500/20">
+        <span>✨ Contribution Wizard</span>
+      </button>
       <button id="hero-badge-btn" class="inline-flex items-center space-x-1.5 px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-purple-500/60 text-purple-200 font-bold transition">
         <span>🎖️ Get Badge</span>
       </button>
@@ -219,6 +219,41 @@
           <option value="name-asc">🔤 Name (A → Z)</option>
           <option value="category">📁 By Category</option>
         </select>
+      </div>
+    </div>
+
+    <!-- Dynamic Quick-Filter Matrix -->
+    <div class="matrix-container p-4 rounded-2xl mb-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-3 border border-slate-700/80 shadow-xl">
+      <div class="flex items-center space-x-2.5">
+        <span class="p-2 rounded-xl bg-purple-900/50 border border-purple-500/40 text-purple-300 text-sm">⚡</span>
+        <div>
+          <h3 class="text-xs font-extrabold uppercase tracking-wider text-purple-200 font-mono flex items-center space-x-1.5">
+            <span>Quick-Filter Matrix</span>
+            <span class="text-[10px] px-1.5 py-0.2 rounded bg-purple-950 text-purple-300 border border-purple-500/30 font-bold">Multi-Select</span>
+          </h3>
+          <p class="text-[11px] text-slate-400">Toggle instant zero-friction structural criteria</p>
+        </div>
+      </div>
+      <div class="flex items-center flex-wrap gap-2 text-xs font-mono font-bold" id="matrix-toggles">
+        <button data-matrixtag="noauth" class="matrix-btn px-3 py-1.5 rounded-xl bg-slate-900/90 border border-slate-700 text-slate-200 hover:border-emerald-500/50 flex items-center space-x-1.5 transition">
+          <span>🟢 [No Auth Required]</span>
+          <span class="matrix-count px-1.5 py-0.5 rounded-md text-[10px] bg-slate-800 text-slate-300 font-mono" id="matrix-count-noauth">0</span>
+        </button>
+        <button data-matrixtag="selfhost" class="matrix-btn px-3 py-1.5 rounded-xl bg-slate-900/90 border border-slate-700 text-slate-200 hover:border-sky-500/50 flex items-center space-x-1.5 transition">
+          <span>🏠 [Self-Hostable]</span>
+          <span class="matrix-count px-1.5 py-0.5 rounded-md text-[10px] bg-slate-800 text-slate-300 font-mono" id="matrix-count-selfhost">0</span>
+        </button>
+        <button data-matrixtag="freetier" class="matrix-btn px-3 py-1.5 rounded-xl bg-slate-900/90 border border-slate-700 text-slate-200 hover:border-purple-500/50 flex items-center space-x-1.5 transition">
+          <span>💎 [100% Free Tier]</span>
+          <span class="matrix-count px-1.5 py-0.5 rounded-md text-[10px] bg-slate-800 text-slate-300 font-mono" id="matrix-count-freetier">0</span>
+        </button>
+        <button data-matrixtag="offline" class="matrix-btn px-3 py-1.5 rounded-xl bg-slate-900/90 border border-slate-700 text-slate-200 hover:border-emerald-500/50 flex items-center space-x-1.5 transition">
+          <span>⚡ [Offline-Friendly]</span>
+          <span class="matrix-count px-1.5 py-0.5 rounded-md text-[10px] bg-slate-800 text-slate-300 font-mono" id="matrix-count-offline">0</span>
+        </button>
+        <button id="clear-matrix-btn" class="hidden px-2.5 py-1.5 rounded-xl bg-rose-950/80 hover:bg-rose-900 border border-rose-500/50 text-rose-200 text-xs font-bold transition">
+          ✕ Clear Matrix
+        </button>
       </div>
     </div>
 
@@ -460,6 +495,207 @@
       <div class="pt-3 border-t border-slate-800 mt-3 text-center text-xs text-slate-400">
         Are you an open-source maintainer? <a href="https://github.com/RitualDev-Lab/DevShelf/issues/new?template=04_good_first_issue.yml" target="_blank" rel="noreferrer" class="text-purple-400 hover:underline font-bold">Submit your project's starter tasks →</a>
       </div>
+    </div>
+  </div>
+
+  <!-- JSON-Schema Contribution Wizard Modal -->
+  <div id="wizard-modal" class="fixed inset-0 z-50 modal-backdrop items-center justify-center p-4 hidden" style="display: none;">
+    <div class="bg-slate-900 border border-slate-700 rounded-2xl max-w-2xl w-full p-6 shadow-2xl relative my-auto max-h-[90vh] flex flex-col">
+      
+      <!-- Wizard Modal Header -->
+      <div class="flex items-center justify-between pb-3 border-b border-slate-800 mb-4">
+        <div class="flex items-center space-x-2.5">
+          <span class="p-2 rounded-xl bg-purple-900/50 border border-purple-500/40 text-purple-300 text-lg">✨</span>
+          <div>
+            <h3 class="text-base font-bold text-white">JSON-Schema Contribution Wizard</h3>
+            <p class="text-[11px] text-slate-400">Zero syntax errors: generate verified shelf JSON and open a pre-filled PR in 1 click</p>
+          </div>
+        </div>
+        <button id="close-wizard-modal-btn" class="text-slate-300 hover:text-white p-1.5 rounded-lg hover:bg-slate-800 transition text-sm font-bold">
+          ✕
+        </button>
+      </div>
+
+      <!-- Stepper Progress Bar -->
+      <div class="mb-5">
+        <div class="flex items-center justify-between text-xs font-mono font-bold mb-2">
+          <span class="text-purple-300" id="wizard-step-label">Step 1 of 4: Resource Basics</span>
+          <span class="text-slate-400" id="wizard-step-percent">25%</span>
+        </div>
+        <div class="wizard-progress-bar">
+          <div class="wizard-progress-fill" id="wizard-progress-fill" style="width: 25%;"></div>
+        </div>
+        <div class="flex items-center justify-between mt-3 px-1">
+          <div class="flex items-center space-x-1.5"><span class="wizard-step-dot active" id="wizard-dot-1">1</span><span class="text-[11px] font-semibold text-slate-300 hidden sm:inline">Basics</span></div>
+          <div class="flex items-center space-x-1.5"><span class="wizard-step-dot" id="wizard-dot-2">2</span><span class="text-[11px] font-semibold text-slate-400 hidden sm:inline">Free Tier</span></div>
+          <div class="flex items-center space-x-1.5"><span class="wizard-step-dot" id="wizard-dot-3">3</span><span class="text-[11px] font-semibold text-slate-400 hidden sm:inline">Tags</span></div>
+          <div class="flex items-center space-x-1.5"><span class="wizard-step-dot" id="wizard-dot-4">4</span><span class="text-[11px] font-semibold text-slate-400 hidden sm:inline">Export</span></div>
+        </div>
+      </div>
+
+      <!-- Step Content Container -->
+      <div class="overflow-y-auto flex-1 pr-1 space-y-4" id="wizard-steps-container">
+        
+        <!-- Step 1: Resource Basics -->
+        <div id="wizard-step-1" class="space-y-3.5">
+          <div>
+            <label class="block text-xs font-bold text-slate-300 mb-1">Tool / Resource Name *</label>
+            <input type="text" id="wz-name" placeholder="e.g. PocketBase, Bruno, Hoppscotch" class="w-full px-3.5 py-2.5 bg-slate-950 border border-slate-700 rounded-xl text-xs text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-purple-500 font-medium">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-300 mb-1">Target Shelf / Category *</label>
+            <select id="wz-shelf" class="w-full px-3.5 py-2.5 bg-slate-950 border border-slate-700 rounded-xl text-xs text-slate-200 focus:outline-none focus:ring-2 focus:ring-purple-500 font-medium">
+              <option value="apis">Free & Public APIs (apis.json)</option>
+              <option value="ai-tools">AI Agents & Local LLMs (ai-tools.json)</option>
+              <option value="cli-tools">CLI & Productivity Tools (cli-tools.json)</option>
+              <option value="testing-qa">Testing & QA Reliability (testing-qa.json)</option>
+              <option value="free-cloud">Free Cloud & Developer Tiers (free-cloud.json)</option>
+              <option value="boilerplates">1-Click Cloud Boilerplates (boilerplates.json)</option>
+              <option value="perks">Developer Discounts & Startup Perks (perks.json)</option>
+              <option value="contributors-wanted">Contributors Wanted / Open Source (contributors-wanted.json)</option>
+            </select>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label class="block text-xs font-bold text-slate-300 mb-1">Website URL *</label>
+              <input type="url" id="wz-url" placeholder="https://example.com" class="w-full px-3.5 py-2.5 bg-slate-950 border border-slate-700 rounded-xl text-xs text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-purple-500 font-mono">
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-300 mb-1">GitHub Repo URL (Optional)</label>
+              <input type="url" id="wz-repo" placeholder="https://github.com/owner/repo" class="w-full px-3.5 py-2.5 bg-slate-950 border border-slate-700 rounded-xl text-xs text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-purple-500 font-mono">
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2: Verification Details -->
+        <div id="wizard-step-2" class="space-y-3.5 hidden">
+          <div>
+            <label class="block text-xs font-bold text-slate-300 mb-1">Short Description (Max 160 chars) *</label>
+            <textarea id="wz-desc" rows="2" placeholder="Explain what the developer tool does and why developers love it..." class="w-full px-3.5 py-2.5 bg-slate-950 border border-slate-700 rounded-xl text-xs text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label class="block text-xs font-bold text-slate-300 mb-1">Language / Core Tech</label>
+              <input type="text" id="wz-lang" placeholder="e.g. TypeScript, Rust, Python, Go" class="w-full px-3.5 py-2.5 bg-slate-950 border border-slate-700 rounded-xl text-xs text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-purple-500 font-mono">
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-300 mb-1">License</label>
+              <input type="text" id="wz-license" placeholder="e.g. MIT, Apache-2.0, AGPL-3.0" class="w-full px-3.5 py-2.5 bg-slate-950 border border-slate-700 rounded-xl text-xs text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-purple-500 font-mono">
+            </div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label class="block text-xs font-bold text-slate-300 mb-1">Auth Requirement</label>
+              <select id="wz-auth" class="w-full px-3.5 py-2.5 bg-slate-950 border border-slate-700 rounded-xl text-xs text-slate-200 focus:outline-none focus:ring-2 focus:ring-purple-500 font-mono">
+                <option value="No Key">No Key Required</option>
+                <option value="Free API Key">Free API Key</option>
+                <option value="OAuth2">OAuth2</option>
+                <option value="CLI Token">CLI Token</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-300 mb-1">Free Tier Allowance / Quota *</label>
+              <input type="text" id="wz-freetier" placeholder="e.g. 100% Free Forever (No Card Required)" class="w-full px-3.5 py-2.5 bg-slate-950 border border-slate-700 rounded-xl text-xs text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-purple-500 font-mono">
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3: Structural Tags -->
+        <div id="wizard-step-3" class="space-y-3.5 hidden">
+          <p class="text-xs text-slate-300">Select all structural tags that truthfully describe this resource. (Honesty builds community trust):</p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs font-mono">
+            <label class="p-3 rounded-xl bg-slate-950 border border-slate-800 flex items-center space-x-3 cursor-pointer hover:border-emerald-500/50 transition">
+              <input type="checkbox" id="wz-tag-offline" class="rounded bg-slate-900 border-slate-700 text-purple-600 focus:ring-purple-500">
+              <span class="text-emerald-300 font-bold">⚡ [100% Offline-Friendly]</span>
+            </label>
+            <label class="p-3 rounded-xl bg-slate-950 border border-slate-800 flex items-center space-x-3 cursor-pointer hover:border-sky-500/50 transition">
+              <input type="checkbox" id="wz-tag-selfhost" class="rounded bg-slate-900 border-slate-700 text-purple-600 focus:ring-purple-500">
+              <span class="text-sky-300 font-bold">🏠 [Self-Hostable]</span>
+            </label>
+            <label class="p-3 rounded-xl bg-slate-950 border border-slate-800 flex items-center space-x-3 cursor-pointer hover:border-purple-500/50 transition">
+              <input type="checkbox" id="wz-tag-nocard" class="rounded bg-slate-900 border-slate-700 text-purple-600 focus:ring-purple-500" checked>
+              <span class="text-purple-300 font-bold">💳 [No Card Required]</span>
+            </label>
+            <label class="p-3 rounded-xl bg-slate-950 border border-slate-800 flex items-center space-x-3 cursor-pointer hover:border-amber-500/50 transition">
+              <input type="checkbox" id="wz-tag-ratelimit" class="rounded bg-slate-900 border-slate-700 text-purple-600 focus:ring-purple-500">
+              <span class="text-amber-300 font-bold">⚠️ [Rate-Limited]</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Step 4: Export & Submit -->
+        <div id="wizard-step-4" class="space-y-3.5 hidden">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold text-slate-300">Generated JSON Schema Block:</span>
+            <span class="text-[10px] font-mono text-emerald-400 bg-emerald-950/70 border border-emerald-500/30 px-2 py-0.5 rounded font-bold">✓ Valid Schema</span>
+          </div>
+          <pre id="wizard-json-output" class="code-snippet-box text-xs max-h-52"></pre>
+          <div class="flex items-center gap-2 pt-2">
+            <button id="wizard-copy-btn" class="flex-1 px-4 py-2.5 text-xs font-bold rounded-xl bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 transition flex items-center justify-center space-x-1.5 shadow">
+              <span>📋 Copy JSON Block</span>
+            </button>
+            <button id="wizard-submit-btn" class="flex-1 px-4 py-2.5 text-xs font-bold rounded-xl bg-gradient-to-r from-purple-600 to-cyan-600 hover:opacity-95 text-white transition flex items-center justify-center space-x-1.5 shadow-lg shadow-purple-500/25">
+              <span>🚀 Open Pre-filled GitHub Issue →</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Footer Controls -->
+      <div class="pt-4 border-t border-slate-800 mt-4 flex items-center justify-between">
+        <button id="wizard-prev-btn" class="px-4 py-2 text-xs font-bold rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 transition disabled:opacity-40 disabled:cursor-not-allowed" disabled>
+          ← Previous
+        </button>
+        <button id="wizard-next-btn" class="px-5 py-2 text-xs font-bold rounded-xl bg-purple-600 hover:bg-purple-500 text-white transition flex items-center space-x-1 shadow-md shadow-purple-600/30">
+          <span>Next Step →</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- "Copy-Paste-Go" Snippet Drawer -->
+  <div id="snippet-drawer" class="fixed inset-0 z-50 items-center justify-end hidden">
+    <div class="drawer-overlay" id="close-drawer-overlay"></div>
+    <div class="drawer-content p-6">
+      
+      <!-- Drawer Header -->
+      <div class="flex items-start justify-between pb-3 border-b border-slate-800 mb-4">
+        <div>
+          <div class="flex items-center space-x-2">
+            <h3 class="text-base font-extrabold text-white" id="drawer-tool-name">Resource Name</h3>
+            <span class="px-2 py-0.5 text-[10px] font-mono font-bold rounded-md bg-purple-900/60 text-purple-200 border border-purple-500/40" id="drawer-tool-badge">API</span>
+          </div>
+          <p class="text-[11px] text-slate-400 mt-0.5">Instant Copy-Paste-Go test snippet</p>
+        </div>
+        <button id="close-drawer-btn" class="text-slate-300 hover:text-white p-1.5 rounded-lg hover:bg-slate-800 transition text-sm font-bold">
+          ✕
+        </button>
+      </div>
+
+      <!-- Language Selector Tabs -->
+      <div class="flex items-center space-x-1.5 p-1 bg-slate-950 rounded-xl border border-slate-800 mb-4 text-xs font-mono">
+        <button data-snippettab="curl" class="drawer-tab active flex-1 text-center">cURL</button>
+        <button data-snippettab="fetch" class="drawer-tab flex-1 text-center">Fetch (JS)</button>
+        <button data-snippettab="python" class="drawer-tab flex-1 text-center">Python</button>
+        <button data-snippettab="cli" class="drawer-tab flex-1 text-center">CLI / Docker</button>
+      </div>
+
+      <!-- Code Snippet Box -->
+      <div class="flex-1 overflow-y-auto mb-4">
+        <pre class="code-snippet-box h-full" id="drawer-code-content">// Snippet loading...</pre>
+      </div>
+
+      <!-- Actions -->
+      <div class="flex items-center gap-2 pt-2 border-t border-slate-800">
+        <button id="drawer-copy-btn" class="flex-1 px-4 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold transition flex items-center justify-center space-x-1.5 shadow-lg shadow-purple-600/30">
+          <span>📋 Copy Snippet</span>
+        </button>
+        <a id="drawer-endpoint-link" href="#" target="_blank" rel="noreferrer" class="px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold transition border border-slate-700 flex items-center justify-center space-x-1">
+          <span>🌐 Visit</span>
+        </a>
+      </div>
+
     </div>
   </div>
 

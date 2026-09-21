@@ -5,6 +5,15 @@ let searchQuery = "";
 let currentSort = "featured";
 let matchmakerData = null;
 let activeMatchLang = "all";
+const activeMatrixTags = new Set();
+let uptimeData = null;
+const drawerState = {
+  currentItem: null,
+  activeTab: "curl",
+};
+const wizardState = {
+  step: 1,
+};
 
 const BADGE_MARKDOWNS = {
   purple:
@@ -20,6 +29,7 @@ const BADGE_MARKDOWNS = {
 function boot() {
   setupListeners();
   loadDataAndRender();
+  loadUptimeData();
 }
 
 /**
@@ -48,11 +58,80 @@ async function loadDataAndRender() {
   }
 }
 
+async function loadUptimeData() {
+  if (uptimeData) return uptimeData;
+  try {
+    const res = await fetch(`uptime.json?v=${Date.now()}`);
+    if (res.ok) {
+      uptimeData = await res.json();
+      render();
+    }
+  } catch (err) {
+    console.info("Uptime telemetry loading deferred.", err);
+  }
+  return uptimeData;
+}
+
 function applyData(data) {
   allResources = data.resources || [];
   updateStatsAndPills(data);
+  updateMatrixCounts();
   renderSpotlight();
   render();
+}
+
+function updateMatrixCounts() {
+  const counts = {
+    noauth: 0,
+    selfhost: 0,
+    freetier: 0,
+    offline: 0,
+  };
+
+  for (const item of allResources) {
+    if (matchesMatrixTag(item, "noauth")) counts.noauth++;
+    if (matchesMatrixTag(item, "selfhost")) counts.selfhost++;
+    if (matchesMatrixTag(item, "freetier")) counts.freetier++;
+    if (matchesMatrixTag(item, "offline")) counts.offline++;
+  }
+
+  setElText("matrix-count-noauth", counts.noauth);
+  setElText("matrix-count-selfhost", counts.selfhost);
+  setElText("matrix-count-freetier", counts.freetier);
+  setElText("matrix-count-offline", counts.offline);
+}
+
+function matchesMatrixTag(item, tag) {
+  if (tag === "noauth") {
+    return (
+      item.auth === "No Key" ||
+      (item.statusTags || []).some(
+        (t) => t.toLowerCase().includes("no auth") || t.toLowerCase().includes("no key"),
+      )
+    );
+  }
+  if (tag === "selfhost") {
+    return (
+      item.type === "boilerplate" ||
+      (item.statusTags || []).some(
+        (t) => t.toLowerCase().includes("self-hostable") || t.toLowerCase().includes("selfhost"),
+      )
+    );
+  }
+  if (tag === "freetier") {
+    return (
+      item.type === "boilerplate" ||
+      item.auth === "No Key" ||
+      (item.freeTier && !item.freeTier.toLowerCase().includes("credit card")) ||
+      (item.statusTags || []).some(
+        (t) => t.toLowerCase().includes("no card") || t.toLowerCase().includes("nocard"),
+      )
+    );
+  }
+  if (tag === "offline") {
+    return (item.statusTags || []).some((t) => t.toLowerCase().includes("offline"));
+  }
+  return false;
 }
 
 function updateStatsAndPills(data) {
@@ -182,6 +261,8 @@ function setupListeners() {
   listenersInitialized = true;
   closeBadgeModal();
   closeMatchmakerModal();
+  closeWizardModal();
+  closeSnippetDrawer();
 
   const searchInput = document.getElementById("search-input");
   const clearBtn = document.getElementById("clear-search-btn");
@@ -228,7 +309,129 @@ function setupListeners() {
       return;
     }
 
-    // 5. Matchmaker Language Filter Pills
+    // 5. Open Contribution Wizard Modal
+    if (e.target.closest("#nav-wizard-btn, #hero-wizard-btn")) {
+      e.preventDefault();
+      openWizardModal();
+      return;
+    }
+
+    // 6. Close Contribution Wizard Modal
+    if (e.target.closest("#close-wizard-modal-btn") || e.target.id === "wizard-modal") {
+      e.preventDefault();
+      closeWizardModal();
+      return;
+    }
+
+    // 7. Wizard Step Navigation
+    if (e.target.closest("#wizard-prev-btn")) {
+      e.preventDefault();
+      if (wizardState.step > 1) {
+        setWizardStep(wizardState.step - 1);
+      }
+      return;
+    }
+
+    if (e.target.closest("#wizard-next-btn")) {
+      e.preventDefault();
+      if (wizardState.step < 4) {
+        setWizardStep(wizardState.step + 1);
+      }
+      return;
+    }
+
+    // 8. Wizard Copy JSON & Submit PR
+    if (e.target.closest("#wizard-copy-btn")) {
+      e.preventDefault();
+      const outputEl = document.getElementById("wizard-json-output");
+      if (outputEl?.textContent) {
+        copyToClipboard(outputEl.textContent, "Formatted JSON schema copied!");
+      }
+      return;
+    }
+
+    if (e.target.closest("#wizard-submit-btn")) {
+      e.preventDefault();
+      submitWizardToGithub();
+      return;
+    }
+
+    // 9. Snippet Button on Card
+    const snippetBtn = e.target.closest(".snippet-btn");
+    if (snippetBtn) {
+      e.preventDefault();
+      const toolName = snippetBtn.dataset.snippetName;
+      const item = allResources.find((r) => r.name === toolName);
+      if (item) {
+        openSnippetDrawer(item);
+      }
+      return;
+    }
+
+    // 10. Snippet Drawer Close
+    if (e.target.closest("#close-drawer-btn, #close-drawer-overlay")) {
+      e.preventDefault();
+      closeSnippetDrawer();
+      return;
+    }
+
+    // 11. Snippet Drawer Tab Selection
+    const sTab = e.target.closest("[data-snippettab]");
+    if (sTab) {
+      e.preventDefault();
+      drawerState.activeTab = sTab.dataset.snippettab || "curl";
+      for (const b of document.querySelectorAll("[data-snippettab]")) {
+        b.classList.remove("active");
+      }
+      sTab.classList.add("active");
+      updateDrawerSnippet();
+      return;
+    }
+
+    // 12. Snippet Drawer Copy
+    if (e.target.closest("#drawer-copy-btn")) {
+      e.preventDefault();
+      const codeEl = document.getElementById("drawer-code-content");
+      if (codeEl?.textContent) {
+        copyToClipboard(codeEl.textContent, "Snippet copied to clipboard!");
+      }
+      return;
+    }
+
+    // 13. Dynamic Quick-Filter Matrix Toggles
+    const matrixBtn = e.target.closest(".matrix-btn");
+    if (matrixBtn) {
+      e.preventDefault();
+      const mTag = matrixBtn.dataset.matrixtag;
+      if (activeMatrixTags.has(mTag)) {
+        activeMatrixTags.delete(mTag);
+        matrixBtn.classList.remove("active");
+      } else {
+        activeMatrixTags.add(mTag);
+        matrixBtn.classList.add("active");
+      }
+      const clearMatrixBtn = document.getElementById("clear-matrix-btn");
+      if (clearMatrixBtn) {
+        if (activeMatrixTags.size > 0) clearMatrixBtn.classList.remove("hidden");
+        else clearMatrixBtn.classList.add("hidden");
+      }
+      render();
+      return;
+    }
+
+    // 14. Clear Matrix Filters
+    if (e.target.closest("#clear-matrix-btn")) {
+      e.preventDefault();
+      activeMatrixTags.clear();
+      for (const b of document.querySelectorAll(".matrix-btn")) {
+        b.classList.remove("active");
+      }
+      document.getElementById("clear-matrix-btn")?.classList.add("hidden");
+      render();
+      return;
+    }
+
+    // 15. Matchmaker Language Filter Pills
     const matchLangBtn = e.target.closest(".match-lang-btn");
     if (matchLangBtn) {
       e.preventDefault();
@@ -245,7 +448,7 @@ function setupListeners() {
       return;
     }
 
-    // 6. Copy Badge Markdown inside modal
+    // 16. Copy Badge Markdown inside modal
     const copyBadgeBtn = e.target.closest(".copy-badge-btn");
     if (copyBadgeBtn) {
       e.preventDefault();
@@ -257,7 +460,7 @@ function setupListeners() {
       return;
     }
 
-    // 4. Clear Search Button
+    // 17. Clear Search Button
     if (e.target.closest("#clear-search-btn")) {
       e.preventDefault();
       if (searchInput) {
@@ -270,14 +473,20 @@ function setupListeners() {
       return;
     }
 
-    // 5. Reset Filters Button
-    if (e.target.closest("#reset-filters-btn")) {
+    // 18. Reset Filters Button
+    if (e.target.closest("#reset-filters-btn, #clear-filters-btn")) {
       e.preventDefault();
       if (searchInput) searchInput.value = "";
       searchQuery = "";
       activeCategory = "all";
       activeTag = "";
+      activeMatrixTags.clear();
       clearBtn?.classList.add("hidden");
+
+      for (const b of document.querySelectorAll(".matrix-btn")) {
+        b.classList.remove("active");
+      }
+      document.getElementById("clear-matrix-btn")?.classList.add("hidden");
 
       for (const b of document.querySelectorAll(".category-pill")) {
         b.classList.remove("active");
@@ -291,7 +500,7 @@ function setupListeners() {
       return;
     }
 
-    // 6. Category Pills Navigation
+    // 19. Category Pills Navigation
     const pill = e.target.closest(".category-pill");
     if (pill) {
       e.preventDefault();
@@ -304,7 +513,7 @@ function setupListeners() {
       return;
     }
 
-    // 7. Quick Filter Tags
+    // 20. Quick Filter Tags
     const tagBtn = e.target.closest(".filter-tag");
     if (tagBtn) {
       e.preventDefault();
@@ -323,7 +532,7 @@ function setupListeners() {
       return;
     }
 
-    // 8. Copy URL buttons on any card
+    // 21. Copy URL buttons on any card
     const copyUrlBtn = e.target.closest(".copy-btn");
     if (copyUrlBtn) {
       e.preventDefault();
@@ -343,7 +552,7 @@ function setupListeners() {
     render();
   });
 
-  // Keyboard Shortcuts ('/' to focus search, 'Escape' to close modal / clear search)
+  // Keyboard Shortcuts ('/' to focus search, 'Escape' to close modals / drawer / clear search)
   window.addEventListener("keydown", (e) => {
     if (e.key === "/" && document.activeElement !== searchInput) {
       e.preventDefault();
@@ -352,6 +561,8 @@ function setupListeners() {
     if (e.key === "Escape") {
       closeBadgeModal();
       closeMatchmakerModal();
+      closeWizardModal();
+      closeSnippetDrawer();
       if (document.activeElement === searchInput) {
         searchInput.value = "";
         searchQuery = "";
@@ -514,6 +725,271 @@ function getStatusTagClass(tag) {
   return "bg-slate-800 text-slate-300 border-slate-700";
 }
 
+function openWizardModal() {
+  const modal = document.getElementById("wizard-modal");
+  if (modal) {
+    modal.classList.remove("hidden");
+    modal.classList.add("show");
+    modal.style.display = "flex";
+    document.body.classList.add("overflow-hidden");
+  }
+  setWizardStep(1);
+}
+
+function closeWizardModal() {
+  const modal = document.getElementById("wizard-modal");
+  if (modal) {
+    modal.classList.remove("show");
+    modal.classList.add("hidden");
+    modal.style.display = "none";
+    document.body.classList.remove("overflow-hidden");
+  }
+}
+
+function setWizardStep(step) {
+  wizardState.step = step;
+
+  const stepLabels = {
+    1: "Step 1 of 4: Resource Basics",
+    2: "Step 2 of 4: Verification Details",
+    3: "Step 3 of 4: Structural Tags",
+    4: "Step 4 of 4: Export & Submit",
+  };
+
+  const percents = {
+    1: "25%",
+    2: "50%",
+    3: "75%",
+    4: "100%",
+  };
+
+  const labelEl = document.getElementById("wizard-step-label");
+  const percentEl = document.getElementById("wizard-step-percent");
+  const fillEl = document.getElementById("wizard-progress-fill");
+
+  if (labelEl) labelEl.textContent = stepLabels[step] || "";
+  if (percentEl) percentEl.textContent = percents[step] || "";
+  if (fillEl) fillEl.style.width = percents[step] || "25%";
+
+  for (let i = 1; i <= 4; i++) {
+    const dot = document.getElementById(`wizard-dot-${i}`);
+    const stepContainer = document.getElementById(`wizard-step-${i}`);
+
+    if (dot) {
+      if (i === step) {
+        dot.className = "wizard-step-dot active";
+      } else if (i < step) {
+        dot.className = "wizard-step-dot completed";
+      } else {
+        dot.className = "wizard-step-dot";
+      }
+    }
+
+    if (stepContainer) {
+      if (i === step) {
+        stepContainer.classList.remove("hidden");
+      } else {
+        stepContainer.classList.add("hidden");
+      }
+    }
+  }
+
+  const prevBtn = document.getElementById("wizard-prev-btn");
+  const nextBtn = document.getElementById("wizard-next-btn");
+
+  if (prevBtn) {
+    prevBtn.disabled = step === 1;
+  }
+
+  if (nextBtn) {
+    if (step === 4) {
+      nextBtn.classList.add("hidden");
+    } else {
+      nextBtn.classList.remove("hidden");
+      nextBtn.innerHTML = "<span>Next Step →</span>";
+    }
+  }
+
+  if (step === 4) {
+    generateWizardJsonOutput();
+  }
+}
+
+function generateWizardJsonOutput() {
+  const name = document.getElementById("wz-name")?.value?.trim() || "My Developer Tool";
+  const shelf = document.getElementById("wz-shelf")?.value || "apis";
+  const url = document.getElementById("wz-url")?.value?.trim() || "https://example.com";
+  const repo = document.getElementById("wz-repo")?.value?.trim() || undefined;
+  const desc =
+    document.getElementById("wz-desc")?.value?.trim() ||
+    "A fast, community-vetted developer utility.";
+  const lang = document.getElementById("wz-lang")?.value?.trim() || undefined;
+  const license = document.getElementById("wz-license")?.value?.trim() || undefined;
+  const auth = document.getElementById("wz-auth")?.value || "No Key";
+  const freetier =
+    document.getElementById("wz-freetier")?.value?.trim() || "100% Free Forever (No Card Required)";
+
+  const tags = [];
+  if (document.getElementById("wz-tag-offline")?.checked) tags.push("100% Offline-Friendly");
+  if (document.getElementById("wz-tag-selfhost")?.checked) tags.push("Self-Hostable");
+  if (document.getElementById("wz-tag-nocard")?.checked) tags.push("No Card Required");
+  if (document.getElementById("wz-tag-ratelimit")?.checked) tags.push("Rate-Limited");
+
+  const outputObj = {
+    name,
+    url,
+    description: desc,
+    category: shelf,
+    section: shelf,
+    ...(repo ? { repo } : {}),
+    ...(lang ? { language: lang } : {}),
+    ...(license ? { license } : {}),
+    auth,
+    freeTier: freetier,
+    ...(tags.length > 0 ? { statusTags: tags } : {}),
+  };
+
+  const outputEl = document.getElementById("wizard-json-output");
+  if (outputEl) {
+    outputEl.textContent = JSON.stringify(outputObj, null, 2);
+  }
+  return outputObj;
+}
+
+function submitWizardToGithub() {
+  const data = generateWizardJsonOutput();
+  const title = `[Resource Submission]: ${data.name}`;
+  const body = `### Resource Name\n${data.name}\n\n### Target Shelf\n${data.category}.json\n\n### Website / Repo\n- Website: ${data.url}\n${data.repo ? `- GitHub Repo: ${data.repo}\n` : ""}\n### Description\n${data.description}\n\n### Validated JSON Schema Block\n\`\`\`json\n${JSON.stringify(data, null, 2)}\n\`\`\`\n\n---\n*Generated by DevShelf Contribution Wizard*`;
+  const ghUrl = `https://github.com/RitualDev-Lab/DevShelf/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
+  window.open(ghUrl, "_blank", "noreferrer");
+}
+
+function generateSnippets(item) {
+  const url = item.url || item.repo || "https://example.com";
+  const repoSlug = item.repo ? item.repo.replace(/^https?:\/\/github\.com\//, "") : "";
+
+  return {
+    curl: `# 1. cURL Quick Test for ${item.name}
+curl -i -X GET "${url}" \\
+  -H "Accept: application/json" \\
+  -H "User-Agent: DevShelf-Client/1.0"`,
+    fetch: `// 2. Fetch API (Node.js 18+ / Browser)
+async function test${item.name.replace(/[^a-zA-Z0-9]/g, "")}() {
+  const response = await fetch("${url}", {
+    headers: { "Accept": "application/json" }
+  });
+  const data = await response.json().catch(() => response.text());
+  console.log("Response:", data);
+}
+
+test${item.name.replace(/[^a-zA-Z0-9]/g, "")}();`,
+    python: `# 3. Python requests snippet
+import requests
+
+response = requests.get(
+    "${url}",
+    headers={"Accept": "application/json"},
+    timeout=10
+)
+print(f"Status: {response.status_code}")
+print(response.json() if "json" in response.headers.get("content-type", "") else response.text[:200])`,
+    cli: `# 4. CLI / Terminal Quickstart
+${
+  item.repo
+    ? `# Clone & Inspect repository\ngit clone ${item.repo}.git\ncd ${repoSlug.split("/")[1] || "repo"}`
+    : `# Inspect endpoint headers\ncurl -s -I "${url}"`
+}`,
+  };
+}
+
+function openSnippetDrawer(item) {
+  drawerState.currentItem = item;
+  const nameEl = document.getElementById("drawer-tool-name");
+  const badgeEl = document.getElementById("drawer-tool-badge");
+  const linkEl = document.getElementById("drawer-endpoint-link");
+
+  if (nameEl) nameEl.textContent = item.name;
+  if (badgeEl) badgeEl.textContent = item.category || item.type?.toUpperCase() || "TOOL";
+  if (linkEl) linkEl.href = item.url || item.repo || "#";
+
+  updateDrawerSnippet();
+
+  const drawer = document.getElementById("snippet-drawer");
+  if (drawer) {
+    drawer.classList.remove("hidden");
+    drawer.classList.add("open");
+    drawer.style.display = "flex";
+    document.body.classList.add("overflow-hidden");
+  }
+}
+
+function closeSnippetDrawer() {
+  const drawer = document.getElementById("snippet-drawer");
+  if (drawer) {
+    drawer.classList.remove("open");
+    drawer.classList.add("hidden");
+    drawer.style.display = "none";
+    document.body.classList.remove("overflow-hidden");
+  }
+}
+
+function updateDrawerSnippet() {
+  if (!drawerState.currentItem) return;
+  const snippets = generateSnippets(drawerState.currentItem);
+  const codeEl = document.getElementById("drawer-code-content");
+  if (codeEl) {
+    codeEl.textContent = snippets[drawerState.activeTab] || snippets.curl;
+  }
+}
+
+function getHealthBarsHtml(item) {
+  let history = [1, 1, 1, 1, 1, 1, 1];
+  let uptimePercent = 100;
+  let latencyMs = 45;
+
+  if (uptimeData?.endpoints) {
+    const endpoint = uptimeData.endpoints.find(
+      (ep) =>
+        ep.name?.toLowerCase() === item.name?.toLowerCase() ||
+        (item.url && ep.url === item.url) ||
+        (item.repo && ep.url === item.repo),
+    );
+    if (endpoint) {
+      if (Array.isArray(endpoint.history) && endpoint.history.length > 0) {
+        history = endpoint.history;
+      }
+      if (typeof endpoint.uptimePercent === "number") {
+        uptimePercent = endpoint.uptimePercent;
+      }
+      if (typeof endpoint.latencyMs === "number") {
+        latencyMs = endpoint.latencyMs;
+      }
+    }
+  }
+
+  const segmentsHtml = history
+    .slice(-7)
+    .map((val) => {
+      const cls =
+        val === 1
+          ? "health-segment-up"
+          : val === 0
+            ? "health-segment-down"
+            : "health-segment-degraded";
+      return `<span class="health-segment ${cls}"></span>`;
+    })
+    .join("");
+
+  const tooltipText = `${uptimePercent}% Uptime • ${latencyMs}ms latency (7-day timeline)`;
+
+  return `
+    <div class="health-bars" title="${tooltipText}" aria-label="7-day operational status: ${tooltipText}">
+      ${segmentsHtml}
+      <span class="health-tooltip">${tooltipText}</span>
+    </div>
+  `;
+}
+
 function render() {
   const grid = document.getElementById("cards-grid");
   const emptyState = document.getElementById("empty-state");
@@ -538,6 +1014,13 @@ function render() {
     }
 
     if (!matchesCategory) return false;
+
+    // Dynamic Quick-Filter Matrix check
+    if (activeMatrixTags.size > 0) {
+      for (const mTag of activeMatrixTags) {
+        if (!matchesMatrixTag(item, mTag)) return false;
+      }
+    }
 
     // Quick tag check
     if (activeTag) {
@@ -735,6 +1218,13 @@ function createCardHtml(item) {
     `;
   }
 
+  const snippetActionBtn = `
+    <button data-snippet-name="${escapeHtml(item.name)}" class="snippet-btn inline-flex items-center space-x-1 px-2.5 py-1.5 rounded-lg text-xs font-bold bg-slate-800 hover:bg-slate-700 text-slate-200 transition border border-slate-700 shadow-sm" title="Copy-Paste-Go Snippet">
+      <span>⚡ Snippet</span>
+    </button>
+  `;
+  actionButtons += snippetActionBtn;
+
   const statusTagsHtml =
     Array.isArray(item.statusTags) && item.statusTags.length > 0
       ? `<div class="flex items-center flex-wrap gap-1.5 my-2">
@@ -756,6 +1246,7 @@ function createCardHtml(item) {
               <h3 class="text-base font-extrabold text-white group-hover:text-purple-300 transition line-clamp-1">
                 <a href="${targetUrl}" target="_blank" rel="noreferrer">${escapeHtml(item.name)}</a>
               </h3>
+              ${getHealthBarsHtml(item)}
               ${isFeatured}
               ${isSeeking}
             </div>

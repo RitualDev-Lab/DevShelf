@@ -1,0 +1,1608 @@
+{
+  "lastChecked": "2026-09-21T20:35:11.392Z",
+  "totalChecked": 94,
+  "activeReachable": 94,
+  "deadUnreachable": 0,
+  "healthPercent": 100,
+  "status": "100% Operational",
+  "endpoints": [
+    {
+      "name": "Ollama",
+      "url": "https://github.com/ollama/ollama",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 101,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Dify",
+      "url": "https://github.com/langgenius/dify",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 100,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "vLLM",
+      "url": "https://github.com/vllm-project/vllm",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 67,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Open-WebUI",
+      "url": "https://github.com/open-webui/open-webui",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 90,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "YYLO",
+      "url": "https://github.com/yylo-dev/yylo",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 88,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LocalAI",
+      "url": "https://github.com/mudler/LocalAI",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 61,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "AnythingLLM",
+      "url": "https://github.com/Mintplex-Labs/anything-llm",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 64,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Flowise",
+      "url": "https://github.com/FlowiseAI/Flowise",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 104,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Langflow",
+      "url": "https://github.com/langflow-ai/langflow",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 128,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Jan",
+      "url": "https://github.com/janhq/jan",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 116,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LibreChat",
+      "url": "https://github.com/danny-avila/LibreChat",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 92,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Fabric",
+      "url": "https://github.com/danielmiessler/fabric",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 80,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Aider",
+      "url": "https://github.com/Aider-AI/aider",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 78,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "OpenHands",
+      "url": "https://github.com/All-Hands-AI/OpenHands",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 110,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Continue",
+      "url": "https://github.com/continuedev/continue",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 80,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "llama.cpp",
+      "url": "https://github.com/ggerganov/llama.cpp",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 85,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "GitWhisper",
+      "url": "https://github.com/RitualDev-Lab/GitWhisper",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 74,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "FlashLane",
+      "url": "https://github.com/RitualDev-Lab/FlashLane",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 90,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "lazygit",
+      "url": "https://github.com/jesseduffield/lazygit",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 128,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "ripgrep",
+      "url": "https://github.com/BurntSushi/ripgrep",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 61,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "eza",
+      "url": "https://github.com/eza-community/eza",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 76,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "fzf",
+      "url": "https://github.com/junegunn/fzf",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 110,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "agent-browser",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 88,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "bat",
+      "url": "https://github.com/sharkdp/bat",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 137,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "delta",
+      "url": "https://github.com/dandavison/delta",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 82,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "hyperfine",
+      "url": "https://github.com/sharkdp/hyperfine",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 110,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "tldr",
+      "url": "https://github.com/tldr-pages/tldr",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 68,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "dust",
+      "url": "https://github.com/bootandy/dust",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 105,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "procs",
+      "url": "https://github.com/dalance/procs",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 118,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "bottom",
+      "url": "https://github.com/ClementTsang/bottom",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 75,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "curlie",
+      "url": "https://github.com/rs/curlie",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 126,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Starship",
+      "url": "https://github.com/starship/starship",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 83,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "zoxide",
+      "url": "https://github.com/ajeetdsouza/zoxide",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 135,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "gh-dash",
+      "url": "https://github.com/dlvhdr/gh-dash",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 124,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "HTTPie",
+      "url": "https://github.com/httpie/cli",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 103,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "AutoHeal-QA",
+      "url": "https://github.com/RitualDev-Lab/autoheal-qa",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 137,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Playwright",
+      "url": "https://github.com/microsoft/playwright",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 93,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Vitest",
+      "url": "https://github.com/vitest-dev/vitest",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 76,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "k6",
+      "url": "https://github.com/grafana/k6",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 95,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Bruno",
+      "url": "https://github.com/usebruno/bruno",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 72,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Hoppscotch",
+      "url": "https://github.com/hoppscotch/hoppscotch",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 70,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Mockoon",
+      "url": "https://github.com/mockoon/mockoon",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 115,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Artillery",
+      "url": "https://github.com/artilleryio/artillery",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 73,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Locust",
+      "url": "https://github.com/locustio/locust",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 95,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MSW (Mock Service Worker)",
+      "url": "https://github.com/mswjs/msw",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 99,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Vegeta",
+      "url": "https://github.com/tsenart/vegeta",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 101,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Open-Meteo",
+      "url": "https://open-meteo.com",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 78,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "GroqCloud Free Tier",
+      "url": "https://console.groq.com",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 109,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "JSONPlaceholder",
+      "url": "https://jsonplaceholder.typicode.com",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 101,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Hugging Face Serverless Inference",
+      "url": "https://huggingface.co/inference-api",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 109,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "ipapi.co",
+      "url": "https://ipapi.co",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 104,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "CoinGecko Free API",
+      "url": "https://www.coingecko.com/api",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 128,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Rest Countries",
+      "url": "https://restcountries.com",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 125,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "PokeAPI",
+      "url": "https://pokeapi.co",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 90,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Open Library",
+      "url": "https://openlibrary.org/developers/api",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 115,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "ReqRes",
+      "url": "https://reqres.in",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 124,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "ipify",
+      "url": "https://www.ipify.org",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 68,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "DummyJSON",
+      "url": "https://dummyjson.com",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 105,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Nominatim OpenStreetMap",
+      "url": "https://nominatim.openstreetmap.org",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 78,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "ExchangeRate-API",
+      "url": "https://www.exchangerate-api.com",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 97,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Cat Facts",
+      "url": "https://catfact.ninja",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 61,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Supabase",
+      "url": "https://supabase.com",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 97,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Neon",
+      "url": "https://neon.tech",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 132,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Cloudflare Workers",
+      "url": "https://workers.cloudflare.com",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 62,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Clerk",
+      "url": "https://clerk.com",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 75,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Resend",
+      "url": "https://resend.com",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 123,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "PocketBase",
+      "url": "https://pocketbase.io",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 124,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Appwrite",
+      "url": "https://appwrite.io",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 84,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Fly.io",
+      "url": "https://fly.io",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 117,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Render",
+      "url": "https://render.com",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 114,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Koyeb",
+      "url": "https://www.koyeb.com",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 100,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "JetBrains Free Open Source License",
+      "url": "https://www.jetbrains.com/community/opensource",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 126,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Sentry for Open Source",
+      "url": "https://sentry.io/for/open-source/",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 69,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "GitHub for Startups",
+      "url": "https://github.com/enterprise/startups",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 95,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "AWS Activate Founders",
+      "url": "https://aws.amazon.com/activate",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 136,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Google Cloud for Startups",
+      "url": "https://cloud.google.com/startup",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 62,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "DigitalOcean Open Source Sponsorship",
+      "url": "https://www.digitalocean.com/open-source",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 125,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Postman Open Source Sponsorship",
+      "url": "https://www.postman.com/open-source",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 125,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Datadog for Open Source",
+      "url": "https://www.datadoghq.com/partner/open-source/",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 84,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "BrowserStack Open Source",
+      "url": "https://www.browserstack.com/open-source",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 112,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Docker Open Source Community",
+      "url": "https://www.docker.com/community/open-source/application",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 114,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "JetBrains Mono",
+      "url": "https://github.com/JetBrains/JetBrainsMono",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 87,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Fira Code",
+      "url": "https://github.com/tonsky/FiraCode",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 139,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Cascadia Code",
+      "url": "https://github.com/microsoft/cascadia-code",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 118,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Mockoon Cloudless API Server",
+      "url": "https://github.com/mockoon/mockoon",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 115,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "PocketBase 1-Click Backend",
+      "url": "https://github.com/pocketbase/pocketbase",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 93,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "AutoHeal-QA Playwright Runner",
+      "url": "https://github.com/RitualDev-Lab/autoheal-qa",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 87,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Stirling-PDF Ultimate Toolbox",
+      "url": "https://github.com/Stirling-Tools/Stirling-PDF",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 120,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Open-WebUI for Local AI",
+      "url": "https://github.com/open-webui/open-webui",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 128,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Directus Instant Data Engine",
+      "url": "https://github.com/directus/directus",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 116,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Hoppscotch API Development Hub",
+      "url": "https://github.com/hoppscotch/hoppscotch",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 121,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Dify LLM Application Platform",
+      "url": "https://github.com/langgenius/dify",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 131,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Open Source Ideas",
+      "url": "https://github.com/open-source-ideas/ideas",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 137,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Up-For-Grabs",
+      "url": "https://github.com/up-for-grabs/up-for-grabs.net",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 126,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  ]
+}
