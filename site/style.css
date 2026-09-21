@@ -1,43 +1,35 @@
+/* Modern High-Contrast DevShelf Styles */
 :root {
-  --primary-glow: radial-gradient(rgba(139, 92, 246, 0.15), rgba(6, 182, 212, 0.05));
+  color-scheme: dark;
 }
 
 body {
   background-color: #07090e;
-  background-image: radial-gradient(at 50% 0%, rgba(124, 58, 237, 0.12) 0px, transparent 60%),
-    radial-gradient(at 100% 0%, rgba(6, 182, 212, 0.08) 0px, transparent 50%),
-    radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.035) 1px, transparent 0);
+  background-image: radial-gradient(at 50% 0%, rgba(139, 92, 246, 0.16) 0px, transparent 60%),
+    radial-gradient(at 100% 0%, rgba(6, 182, 212, 0.12) 0px, transparent 50%),
+    radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.05) 1px, transparent 0);
   background-size: 100% 100%, 100% 100%, 28px 28px;
+  color: #f1f5f9;
 }
 
-.hero-glow {
-  background: radial-gradient(
-    circle,
-    rgba(139, 92, 246, 0.25) 0%,
-    rgba(6, 182, 212, 0.15) 50%,
-    transparent 70%
-  );
-  filter: blur(80px);
-}
-
+/* Glass Card with Solid High-Contrast Base */
 .glass-card {
-  background: rgba(13, 17, 26, 0.75);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 8px 30px -4px rgba(0, 0, 0, 0.5);
-  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s, box-shadow 0.2s;
 }
 
 .glass-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(168, 85, 247, 0.45);
-  box-shadow: 0 20px 35px -10px rgba(139, 92, 246, 0.25), 0 0 0 1px rgba(168, 85, 247, 0.3);
+  transform: translateY(-3px);
+  border-color: #8b5cf6;
+  box-shadow: 0 16px 30px -8px rgba(139, 92, 246, 0.3), 0 0 0 1px rgba(139, 92, 246, 0.3);
 }
 
 .spotlight-card {
-  background: linear-gradient(135deg, rgba(20, 24, 39, 0.9), rgba(15, 20, 31, 0.85));
-  border: 1px solid rgba(139, 92, 246, 0.3);
+  background: #111827;
+  border: 1px solid #7c3aed;
+  box-shadow: 0 8px 25px -4px rgba(124, 58, 237, 0.25);
   position: relative;
   overflow: hidden;
 }
@@ -48,25 +40,67 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  height: 2px;
+  height: 3px;
   background: linear-gradient(90deg, #8b5cf6, #ec4899, #06b6d4);
 }
 
+.spotlight-card:hover {
+  border-color: #a855f7;
+  box-shadow: 0 16px 35px -6px rgba(168, 85, 247, 0.35);
+}
+
+/* Category Pill Active State */
 .category-pill {
-  transition: all 0.2s ease;
+  transition: all 0.18s ease;
+  background: #1e293b;
+  color: #cbd5e1;
+  border: 1px solid #334155;
+}
+
+.category-pill:hover {
+  background: #334155;
+  color: #ffffff;
 }
 
 .category-pill.active {
-  border-color: rgba(168, 85, 247, 0.7);
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.3), rgba(6, 182, 212, 0.15));
-  color: #f3e8ff;
-  box-shadow: 0 0 16px -2px rgba(139, 92, 246, 0.4);
+  background: #6d28d9;
+  border-color: #a78bfa;
+  color: #ffffff;
+  box-shadow: 0 0 18px -2px rgba(139, 92, 246, 0.5);
+}
+
+.filter-tag {
+  transition: all 0.18s ease;
+  background: #1e293b;
+  color: #94a3b8;
+  border: 1px solid #334155;
+}
+
+.filter-tag:hover {
+  background: #334155;
+  color: #f8fafc;
 }
 
 .filter-tag.active {
-  border-color: rgba(6, 182, 212, 0.6);
-  background: rgba(6, 182, 212, 0.2);
-  color: #a5f3fc;
+  background: #0e7490;
+  border-color: #22d3ee;
+  color: #ffffff;
+  box-shadow: 0 0 12px -2px rgba(34, 211, 238, 0.4);
+}
+
+/* Modal Behavior */
+#badge-modal {
+  display: none;
+}
+
+#badge-modal.show {
+  display: flex !important;
+}
+
+.modal-backdrop {
+  background-color: rgba(3, 7, 18, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 /* Custom Scrollbar */
@@ -76,20 +110,14 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0b0f19;
+  background: #07090e;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1f2937;
+  background: #334155;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #374151;
-}
-
-/* Modal animation */
-.modal-backdrop {
-  background: rgba(4, 7, 13, 0.85);
-  backdrop-filter: blur(12px);
+  background: #475569;
 }

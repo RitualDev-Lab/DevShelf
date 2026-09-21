@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DevShelf — The Crowdsourced Zero-Paywall Developer Ecosystem</title>
-  <meta name="description" content="Discover 75+ verified developer tools, free public APIs, local AI models, and startup perks with zero paywalls. Continuous automated health monitoring.">
+  <title>DevShelf — The Crowdsourced Zero-Paywall Developer Directory</title>
+  <meta name="description" content="Discover 75+ verified developer tools, open-source GitHub repositories, free public APIs, and developer perks with zero paywalls.">
   <link rel="canonical" href="https://devshelf.ritualdev.in/">
 
   <!-- OpenGraph / Social Meta -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://devshelf.ritualdev.in/">
   <meta property="og:title" content="DevShelf — Zero-Paywall Developer Ecosystem">
-  <meta property="og:description" content="Discover hand-curated developer tools, verified free APIs, local AI frameworks, and developer perks with zero credit-card traps.">
+  <meta property="og:description" content="Discover hand-curated developer tools, verified open-source repos, free APIs, and startup perks with zero credit-card traps.">
   <meta property="og:site_name" content="DevShelf">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="DevShelf — The Crowdsourced Developer Directory">
-  <meta name="twitter:description" content="Curated developer tools, free APIs, AI agents & perks. 100% free tiers, automated health checks.">
+  <meta name="twitter:description" content="Curated developer tools, GitHub repositories, free APIs & perks. 100% free tiers, automated health checks.">
 
   <!-- Fonts & Tailwind -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,74 +30,49 @@
           fontFamily: {
             sans: ['"Plus Jakarta Sans"', 'sans-serif'],
             mono: ['"JetBrains Mono"', 'monospace'],
-          },
-          colors: {
-            dark: {
-              950: '#07090e',
-              900: '#0B0F19',
-              800: '#111827',
-              700: '#1F2937',
-              600: '#374151',
-            }
           }
         }
       }
     }
   </script>
   <link rel="stylesheet" href="style.css">
-  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body class="bg-dark-950 text-slate-100 min-h-screen font-sans selection:bg-purple-600 selection:text-white relative">
+<body class="bg-slate-950 text-slate-100 min-h-screen font-sans selection:bg-purple-600 selection:text-white relative">
 
-  <!-- Ambient Glow Effects -->
+  <!-- Ambient Background Glows -->
   <div class="fixed inset-0 overflow-hidden pointer-events-none -z-10">
-    <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[900px] h-[450px] hero-glow opacity-70"></div>
-    <div class="absolute top-[600px] -left-48 w-[500px] h-[500px] bg-cyan-600/10 blur-[120px] rounded-full"></div>
-    <div class="absolute top-[900px] -right-48 w-[500px] h-[500px] bg-purple-600/10 blur-[120px] rounded-full"></div>
+    <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-purple-600/20 blur-[100px] rounded-full"></div>
+    <div class="absolute top-[500px] -left-32 w-[400px] h-[400px] bg-cyan-600/15 blur-[100px] rounded-full"></div>
   </div>
 
-  <!-- Top Sticky Navigation -->
-  <header class="border-b border-slate-800/80 sticky top-0 bg-dark-950/80 backdrop-blur-xl z-30">
+  <!-- Top Navigation Bar -->
+  <header class="border-b border-slate-800 bg-slate-950/90 backdrop-blur-xl sticky top-0 z-30">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <div class="flex items-center space-x-3">
-        <span class="text-2xl drop-shadow">📚</span>
+        <span class="text-2xl">📚</span>
         <a href="https://devshelf.ritualdev.in" class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">DevShelf</a>
-        <span class="hidden md:inline-block px-2.5 py-0.5 text-[11px] font-mono font-semibold rounded-full bg-purple-500/10 text-purple-300 border border-purple-500/20">v1.0 • 100% FOSS</span>
+        <span class="hidden md:inline-block px-2.5 py-0.5 text-xs font-mono font-bold rounded-full bg-purple-900/60 text-purple-200 border border-purple-500/40">100% Free Tiers</span>
       </div>
 
-      <nav class="hidden lg:flex items-center space-x-6 text-xs font-semibold text-slate-300">
-        <a href="#spotlight" class="hover:text-purple-400 transition flex items-center space-x-1">
-          <span>🔥 Spotlight</span>
-        </a>
-        <a href="#directory" class="hover:text-purple-400 transition flex items-center space-x-1">
-          <span>📁 Directory</span>
-        </a>
-        <a href="#team" class="hover:text-purple-400 transition flex items-center space-x-1">
-          <span>👥 Team</span>
-        </a>
-        <button id="open-badge-modal-btn" class="hover:text-cyan-400 transition flex items-center space-x-1 text-slate-300">
-          <i data-lucide="award" class="w-3.5 h-3.5"></i>
-          <span>Get Badge</span>
+      <nav class="hidden lg:flex items-center space-x-6 text-xs font-bold text-slate-200">
+        <a href="#spotlight" class="hover:text-purple-300 transition">🔥 Spotlight</a>
+        <a href="#directory" class="hover:text-purple-300 transition">📁 Directory</a>
+        <a href="#team" class="hover:text-purple-300 transition">👥 Team</a>
+        <button id="open-badge-modal-btn" class="hover:text-cyan-300 transition flex items-center space-x-1.5 text-slate-200 font-bold">
+          <span>🎖️ Get Badge</span>
         </button>
-        <a href="https://github.com/RitualDev-Lab/DevShelf/wiki" target="_blank" rel="noreferrer" class="hover:text-purple-400 transition">
-          <span>Wiki</span>
-        </a>
+        <a href="https://github.com/RitualDev-Lab/DevShelf/wiki" target="_blank" rel="noreferrer" class="hover:text-purple-300 transition">📖 Wiki</a>
       </nav>
 
       <div class="flex items-center space-x-2.5">
-        <button id="nav-badge-btn" class="hidden sm:inline-flex items-center space-x-1 px-3 py-1.5 text-xs font-semibold rounded-lg bg-slate-800/80 hover:bg-slate-700/80 border border-slate-700 text-slate-200 transition">
-          <i data-lucide="badge-percent" class="w-3.5 h-3.5 text-amber-400"></i>
-          <span>Badges</span>
+        <button id="nav-badge-btn" class="inline-flex items-center space-x-1 px-3 py-1.5 text-xs font-bold rounded-lg bg-purple-900/40 hover:bg-purple-900/70 border border-purple-500/50 text-purple-200 transition">
+          <span>🎖️ Badges</span>
         </button>
-        <a href="https://github.com/RitualDev-Lab/DevShelf" target="_blank" rel="noreferrer" class="hidden sm:inline-flex items-center space-x-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg bg-slate-800/90 hover:bg-slate-700/90 border border-slate-700 text-slate-200 transition">
+        <a href="https://github.com/RitualDev-Lab/DevShelf" target="_blank" rel="noreferrer" class="hidden sm:inline-flex items-center space-x-1 px-3 py-1.5 text-xs font-bold rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 transition">
           <span>⭐ Star</span>
         </a>
         <a href="https://github.com/RitualDev-Lab/DevShelf/issues/new/choose" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-1.5 px-3.5 py-1.5 text-xs font-bold rounded-lg bg-gradient-to-r from-purple-600 via-fuchsia-600 to-cyan-600 hover:opacity-95 transition shadow-lg shadow-purple-500/20 text-white">
-          <i data-lucide="plus-circle" class="w-4 h-4"></i>
-          <span>Submit Tool</span>
-        </a>
-        <a href="https://github.com/RitualDev-Lab/DevShelf" target="_blank" rel="noreferrer" class="p-2 text-slate-400 hover:text-white transition rounded-lg hover:bg-slate-800" title="GitHub Repository">
-          <i data-lucide="github" class="w-5 h-5"></i>
+          <span>➕ Submit Tool</span>
         </a>
       </div>
     </div>
@@ -107,62 +82,59 @@
   <section class="max-w-6xl mx-auto px-4 sm:px-6 pt-12 pb-6 text-center">
     
     <!-- Custom URL / Uptime Pill -->
-    <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-purple-950/60 border border-purple-500/30 text-purple-300 text-xs font-medium mb-6 backdrop-blur shadow-inner">
-      <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-      <span><b>devshelf.ritualdev.in</b></span>
-      <span class="text-purple-500">•</span>
-      <span>100% Verified Zero-Paywall Index</span>
+    <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-slate-900 border border-purple-500/50 text-purple-200 text-xs font-semibold mb-6 shadow-md">
+      <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+      <span class="font-mono font-bold text-white">devshelf.ritualdev.in</span>
+      <span class="text-purple-400">•</span>
+      <span class="text-slate-300">Verified Free Developer Resources</span>
     </div>
 
     <!-- Main Headline -->
-    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-5 leading-tight">
+    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-5 leading-tight">
       The Zero-Paywall Ecosystem <br />
       <span class="bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">Curated for Developers</span>
     </h1>
 
-    <p class="text-base sm:text-lg text-slate-400 max-w-3xl mx-auto mb-6 leading-relaxed">
-      Discover high-quality developer tools, verified free APIs, local AI frameworks, and startup sponsorships with zero credit-card paywalls. Continuous automated health monitoring.
+    <p class="text-base sm:text-lg text-slate-200 max-w-3xl mx-auto mb-6 leading-relaxed font-normal">
+      Discover hand-curated developer tools, open-source GitHub repositories, verified free public APIs, and startup sponsorships with zero credit-card paywalls. Continuous automated health monitoring.
     </p>
 
     <!-- CTAs -->
     <div class="flex items-center justify-center flex-wrap gap-3 mb-8 text-xs font-bold">
-      <a href="#directory" class="inline-flex items-center space-x-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 to-cyan-600 hover:opacity-90 text-white shadow-lg shadow-purple-500/20 transition">
-        <i data-lucide="compass" class="w-4 h-4"></i>
-        <span>Explore Curated Tools</span>
+      <a href="#directory" class="inline-flex items-center space-x-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 to-cyan-600 hover:opacity-95 text-white shadow-lg shadow-purple-500/25 transition">
+        <span>Explore 76 Curated Tools ↓</span>
       </a>
-      <a href="https://github.com/RitualDev-Lab/DevShelf/issues/new/choose" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-2 px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 transition">
-        <i data-lucide="share-2" class="w-4 h-4 text-cyan-400"></i>
-        <span>Submit Tool (Free Social Amplification)</span>
+      <a href="https://github.com/RitualDev-Lab/DevShelf/issues/new/choose" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-2 px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-600 text-white transition">
+        <span>➕ Submit Your Tool (Free Social Amplification)</span>
       </a>
-      <button id="hero-badge-btn" class="inline-flex items-center space-x-1.5 px-4 py-2.5 rounded-xl bg-slate-800/80 hover:bg-slate-700/80 border border-slate-700/80 text-purple-300 transition">
-        <i data-lucide="award" class="w-4 h-4"></i>
-        <span>Get Embed Badges</span>
+      <button id="hero-badge-btn" class="inline-flex items-center space-x-1.5 px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-purple-500/60 text-purple-200 font-bold transition">
+        <span>🎖️ Get DevShelf Badge</span>
       </button>
     </div>
 
     <!-- Live Stat Metric Pills -->
-    <div class="flex flex-wrap items-center justify-center gap-2.5 text-xs font-mono text-slate-300 max-w-4xl mx-auto mb-10" id="stats-bar">
-      <div class="px-3.5 py-1.5 rounded-full bg-slate-800/90 border border-slate-700/70 flex items-center space-x-2 shadow-sm">
+    <div class="flex flex-wrap items-center justify-center gap-2.5 text-xs font-mono text-slate-200 max-w-4xl mx-auto mb-10" id="stats-bar">
+      <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700 flex items-center space-x-2 shadow-sm font-semibold">
         <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
         <span id="stat-total" class="font-bold text-white">76 Resources</span>
       </div>
-      <div class="px-3 py-1.5 rounded-full bg-slate-800/90 border border-slate-700/70">
-        <span class="text-cyan-400 font-bold" id="stat-apis">15</span> Free APIs
+      <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700">
+        <span class="text-cyan-300 font-bold" id="stat-apis">15</span> Free APIs
       </div>
-      <div class="px-3 py-1.5 rounded-full bg-slate-800/90 border border-slate-700/70">
-        <span class="text-purple-400 font-bold" id="stat-ai">12</span> AI Frameworks
+      <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700">
+        <span class="text-purple-300 font-bold" id="stat-ai">12</span> AI Frameworks
       </div>
-      <div class="px-3 py-1.5 rounded-full bg-slate-800/90 border border-slate-700/70">
-        <span class="text-amber-400 font-bold" id="stat-cli">15</span> CLI Tools
+      <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700">
+        <span class="text-amber-300 font-bold" id="stat-cli">15</span> CLI Tools
       </div>
-      <div class="px-3 py-1.5 rounded-full bg-slate-800/90 border border-slate-700/70">
-        <span class="text-sky-400 font-bold" id="stat-cloud">10</span> Free Cloud
+      <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700">
+        <span class="text-sky-300 font-bold" id="stat-cloud">10</span> Free Cloud
       </div>
-      <div class="px-3 py-1.5 rounded-full bg-slate-800/90 border border-slate-700/70">
-        <span class="text-pink-400 font-bold" id="stat-perks">10</span> Perks
+      <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700">
+        <span class="text-pink-300 font-bold" id="stat-perks">10</span> Perks
       </div>
-      <div class="px-3 py-1.5 rounded-full bg-slate-800/90 border border-slate-700/70 text-emerald-400">
-        <span>🛡️ 100% Alive</span>
+      <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700 text-emerald-300 font-bold">
+        <span>🛡️ 100% Verified Uptime</span>
       </div>
     </div>
   </section>
@@ -172,12 +144,12 @@
     <div class="flex items-center justify-between mb-4">
       <div>
         <h2 class="text-xl font-extrabold text-white flex items-center space-x-2">
-          <span>🔥 Weekly Spotlight</span>
-          <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20 font-mono">Editor's Choice</span>
+          <span>🔥 Weekly Spotlight & Top Repos</span>
+          <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30 font-mono">Editor's Choice</span>
         </h2>
-        <p class="text-xs text-slate-400">Hand-picked developer gems and top community submissions this week</p>
+        <p class="text-xs text-slate-300">Featured developer tools and active open-source projects this week</p>
       </div>
-      <a href="#directory" class="text-xs font-semibold text-purple-400 hover:text-purple-300 transition hidden sm:inline-block">View all 76 items →</a>
+      <a href="#directory" class="text-xs font-bold text-purple-400 hover:text-purple-300 transition hidden sm:inline-block">View all 76 items →</a>
     </div>
 
     <!-- Spotlight Cards Grid -->
@@ -188,19 +160,19 @@
 
   <!-- Social Amplification Banner -->
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-    <div class="p-6 rounded-2xl bg-gradient-to-r from-purple-900/40 via-slate-900 to-cyan-950/40 border border-purple-500/30 backdrop-blur flex flex-col md:flex-row items-center justify-between gap-4 shadow-xl">
+    <div class="p-6 rounded-2xl bg-gradient-to-r from-purple-950/80 via-slate-900 to-cyan-950/80 border border-purple-500/40 backdrop-blur flex flex-col md:flex-row items-center justify-between gap-4 shadow-xl">
       <div class="flex items-center space-x-4">
-        <div class="p-3 bg-purple-500/20 border border-purple-500/30 rounded-xl text-purple-300 shrink-0">
-          <i data-lucide="megaphone" class="w-6 h-6"></i>
+        <div class="p-3 bg-purple-600/30 border border-purple-500/40 rounded-xl text-purple-200 shrink-0 text-2xl">
+          📢
         </div>
         <div>
           <h3 class="text-base font-bold text-white">The DevShelf Social Amplification Guarantee</h3>
-          <p class="text-xs text-slate-300 leading-relaxed max-w-2xl">
+          <p class="text-xs text-slate-200 leading-relaxed max-w-2xl mt-0.5">
             When your open-source tool or public API is submitted and merged, we give your project a dedicated spotlight post on <b>X (Twitter)</b> and <b>LinkedIn</b> via RitualDev Lab to put your launch in front of thousands of active engineers!
           </p>
         </div>
       </div>
-      <a href="https://github.com/RitualDev-Lab/DevShelf/issues/new/choose" target="_blank" rel="noreferrer" class="shrink-0 px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-950 hover:bg-slate-200 transition shadow">
+      <a href="https://github.com/RitualDev-Lab/DevShelf/issues/new/choose" target="_blank" rel="noreferrer" class="shrink-0 px-4 py-2.5 rounded-xl text-xs font-bold bg-white text-slate-950 hover:bg-slate-200 transition shadow">
         Submit Your Project →
       </a>
     </div>
@@ -213,21 +185,19 @@
       <!-- Search Input Box -->
       <div class="relative flex-1 max-w-2xl">
         <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
-          <i data-lucide="search" class="w-4 h-4"></i>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
         </div>
-        <input type="text" id="search-input" placeholder="Search 76 resources by name, description, category, license, or auth... (Press '/' to search)" class="w-full pl-10 pr-20 py-3 bg-dark-900/90 border border-slate-700/80 rounded-xl text-sm text-slate-100 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500/60 focus:border-transparent transition shadow-lg">
+        <input type="text" id="search-input" placeholder="Search 76 resources by name, repo, category, license, or auth... (Press '/' to search)" class="w-full pl-10 pr-20 py-3 bg-slate-900 border border-slate-700 rounded-xl text-sm text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition shadow-lg font-medium">
         <div class="absolute inset-y-0 right-0 pr-3 flex items-center space-x-1.5">
-          <button id="clear-search-btn" class="hidden text-slate-400 hover:text-white p-1 rounded transition" title="Clear search">
-            <i data-lucide="x" class="w-4 h-4"></i>
-          </button>
-          <kbd class="hidden sm:inline-block px-1.5 py-0.5 text-[10px] font-mono font-semibold text-slate-400 bg-slate-800 rounded border border-slate-700">/</kbd>
+          <button id="clear-search-btn" class="hidden text-slate-400 hover:text-white p-1 rounded transition text-xs font-bold" title="Clear search">✕</button>
+          <kbd class="hidden sm:inline-block px-1.5 py-0.5 text-[10px] font-mono font-bold text-slate-400 bg-slate-800 rounded border border-slate-700">/</kbd>
         </div>
       </div>
 
       <!-- Sort & Display Controls -->
       <div class="flex items-center space-x-3 text-xs">
-        <span class="text-slate-400 font-medium hidden sm:inline">Sort by:</span>
-        <select id="sort-select" class="px-3 py-2 bg-dark-900 border border-slate-700/80 rounded-xl text-slate-200 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-purple-500/50">
+        <span class="text-slate-300 font-semibold hidden sm:inline">Sort by:</span>
+        <select id="sort-select" class="px-3 py-2 bg-slate-900 border border-slate-700 rounded-xl text-slate-100 text-xs font-bold focus:outline-none focus:ring-2 focus:ring-purple-500">
           <option value="featured">⭐ Featured First</option>
           <option value="name-asc">🔤 Name (A → Z)</option>
           <option value="category">📁 By Category</option>
@@ -236,57 +206,58 @@
     </div>
 
     <!-- Category Filter Tabs -->
-    <div class="flex items-center flex-wrap gap-2 text-xs font-semibold mb-3" id="category-pills">
-      <button data-category="all" class="category-pill active px-3.5 py-1.5 rounded-xl border border-purple-500/40 bg-purple-600/20 text-purple-300 hover:bg-purple-600/30 transition flex items-center space-x-1.5">
+    <div class="flex items-center flex-wrap gap-2 text-xs font-bold mb-3" id="category-pills">
+      <button data-category="all" class="category-pill active px-3.5 py-2 rounded-xl transition flex items-center space-x-1.5">
         <span>All Items</span>
-        <span class="px-1.5 py-0.2 rounded-full text-[10px] bg-purple-500/30 text-purple-200" id="pill-count-all">76</span>
+        <span class="px-1.5 py-0.5 rounded-full text-[10px] bg-purple-900 text-purple-200 font-mono" id="pill-count-all">76</span>
       </button>
-      <button data-category="api" class="category-pill px-3.5 py-1.5 rounded-xl border border-slate-700 bg-slate-800/60 text-slate-300 hover:bg-slate-700/60 transition flex items-center space-x-1.5">
+      <button data-category="api" class="category-pill px-3.5 py-2 rounded-xl transition flex items-center space-x-1.5">
         <span>🌐 Free APIs</span>
-        <span class="px-1.5 py-0.2 rounded-full text-[10px] bg-slate-700 text-slate-300" id="pill-count-api">15</span>
+        <span class="px-1.5 py-0.5 rounded-full text-[10px] bg-slate-800 text-slate-300 font-mono" id="pill-count-api">15</span>
       </button>
-      <button data-category="ai" class="category-pill px-3.5 py-1.5 rounded-xl border border-slate-700 bg-slate-800/60 text-slate-300 hover:bg-slate-700/60 transition flex items-center space-x-1.5">
+      <button data-category="ai" class="category-pill px-3.5 py-2 rounded-xl transition flex items-center space-x-1.5">
         <span>🤖 AI & LLMs</span>
-        <span class="px-1.5 py-0.2 rounded-full text-[10px] bg-slate-700 text-slate-300" id="pill-count-ai">12</span>
+        <span class="px-1.5 py-0.5 rounded-full text-[10px] bg-slate-800 text-slate-300 font-mono" id="pill-count-ai">12</span>
       </button>
-      <button data-category="cli" class="category-pill px-3.5 py-1.5 rounded-xl border border-slate-700 bg-slate-800/60 text-slate-300 hover:bg-slate-700/60 transition flex items-center space-x-1.5">
+      <button data-category="cli" class="category-pill px-3.5 py-2 rounded-xl transition flex items-center space-x-1.5">
         <span>⚡ CLI Tools</span>
-        <span class="px-1.5 py-0.2 rounded-full text-[10px] bg-slate-700 text-slate-300" id="pill-count-cli">15</span>
+        <span class="px-1.5 py-0.5 rounded-full text-[10px] bg-slate-800 text-slate-300 font-mono" id="pill-count-cli">15</span>
       </button>
-      <button data-category="testing" class="category-pill px-3.5 py-1.5 rounded-xl border border-slate-700 bg-slate-800/60 text-slate-300 hover:bg-slate-700/60 transition flex items-center space-x-1.5">
+      <button data-category="testing" class="category-pill px-3.5 py-2 rounded-xl transition flex items-center space-x-1.5">
         <span>🧪 Testing & QA</span>
-        <span class="px-1.5 py-0.2 rounded-full text-[10px] bg-slate-700 text-slate-300" id="pill-count-testing">9</span>
+        <span class="px-1.5 py-0.5 rounded-full text-[10px] bg-slate-800 text-slate-300 font-mono" id="pill-count-testing">9</span>
       </button>
-      <button data-category="cloud" class="category-pill px-3.5 py-1.5 rounded-xl border border-slate-700 bg-slate-800/60 text-slate-300 hover:bg-slate-700/60 transition flex items-center space-x-1.5">
+      <button data-category="cloud" class="category-pill px-3.5 py-2 rounded-xl transition flex items-center space-x-1.5">
         <span>☁️ Free Cloud</span>
-        <span class="px-1.5 py-0.2 rounded-full text-[10px] bg-slate-700 text-slate-300" id="pill-count-cloud">10</span>
+        <span class="px-1.5 py-0.5 rounded-full text-[10px] bg-slate-800 text-slate-300 font-mono" id="pill-count-cloud">10</span>
       </button>
-      <button data-category="perks" class="category-pill px-3.5 py-1.5 rounded-xl border border-slate-700 bg-slate-800/60 text-slate-300 hover:bg-slate-700/60 transition flex items-center space-x-1.5">
+      <button data-category="perks" class="category-pill px-3.5 py-2 rounded-xl transition flex items-center space-x-1.5">
         <span>🎁 Perks</span>
-        <span class="px-1.5 py-0.2 rounded-full text-[10px] bg-slate-700 text-slate-300" id="pill-count-perks">10</span>
+        <span class="px-1.5 py-0.5 rounded-full text-[10px] bg-slate-800 text-slate-300 font-mono" id="pill-count-perks">10</span>
       </button>
-      <button data-category="contributors" class="category-pill px-3.5 py-1.5 rounded-xl border border-slate-700 bg-slate-800/60 text-slate-300 hover:bg-slate-700/60 transition flex items-center space-x-1.5">
+      <button data-category="contributors" class="category-pill px-3.5 py-2 rounded-xl transition flex items-center space-x-1.5">
         <span>🤝 Up for Grabs</span>
-        <span class="px-1.5 py-0.2 rounded-full text-[10px] bg-slate-700 text-slate-300" id="pill-count-contributors">5</span>
+        <span class="px-1.5 py-0.5 rounded-full text-[10px] bg-slate-800 text-slate-300 font-mono" id="pill-count-contributors">5</span>
       </button>
     </div>
 
     <!-- Quick Filter Tags -->
-    <div class="flex items-center flex-wrap gap-1.5 text-[11px] font-mono text-slate-400 mb-6">
-      <span class="text-slate-500 font-sans mr-1">Quick tags:</span>
-      <button data-tag="featured" class="filter-tag px-2.5 py-0.5 rounded-lg border border-slate-800 bg-slate-900/80 hover:bg-slate-800 text-slate-300 transition">⭐ Featured</button>
-      <button data-tag="no-key" class="filter-tag px-2.5 py-0.5 rounded-lg border border-slate-800 bg-slate-900/80 hover:bg-slate-800 text-slate-300 transition">🟢 No Auth</button>
-      <button data-tag="typescript" class="filter-tag px-2.5 py-0.5 rounded-lg border border-slate-800 bg-slate-900/80 hover:bg-slate-800 text-slate-300 transition">TypeScript</button>
-      <button data-tag="rust" class="filter-tag px-2.5 py-0.5 rounded-lg border border-slate-800 bg-slate-900/80 hover:bg-slate-800 text-slate-300 transition">Rust</button>
-      <button data-tag="python" class="filter-tag px-2.5 py-0.5 rounded-lg border border-slate-800 bg-slate-900/80 hover:bg-slate-800 text-slate-300 transition">Python</button>
-      <button data-tag="go" class="filter-tag px-2.5 py-0.5 rounded-lg border border-slate-800 bg-slate-900/80 hover:bg-slate-800 text-slate-300 transition">Go</button>
+    <div class="flex items-center flex-wrap gap-1.5 text-xs font-mono text-slate-300 mb-6">
+      <span class="text-slate-400 font-sans mr-1 font-semibold">Quick filters:</span>
+      <button data-tag="repo-only" class="filter-tag px-3 py-1 rounded-lg transition font-bold text-cyan-300">🐙 Has GitHub Repo</button>
+      <button data-tag="featured" class="filter-tag px-3 py-1 rounded-lg transition font-bold text-amber-300">⭐ Featured Only</button>
+      <button data-tag="no-key" class="filter-tag px-3 py-1 rounded-lg transition font-bold text-emerald-300">🟢 No Key Required</button>
+      <button data-tag="typescript" class="filter-tag px-3 py-1 rounded-lg transition">TypeScript</button>
+      <button data-tag="rust" class="filter-tag px-3 py-1 rounded-lg transition">Rust</button>
+      <button data-tag="python" class="filter-tag px-3 py-1 rounded-lg transition">Python</button>
+      <button data-tag="go" class="filter-tag px-3 py-1 rounded-lg transition">Go</button>
     </div>
   </section>
 
   <!-- Main Resource Grid -->
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
     <div class="flex items-center justify-between mb-4">
-      <div class="text-xs text-slate-400 font-mono" id="results-count">Showing 76 items</div>
+      <div class="text-xs text-slate-300 font-mono font-semibold" id="results-count">Showing 76 curated resources</div>
     </div>
 
     <!-- Cards Container -->
@@ -295,138 +266,137 @@
     </div>
 
     <!-- Empty State -->
-    <div id="empty-state" class="hidden text-center py-20 bg-dark-900/40 rounded-2xl border border-slate-800/60">
+    <div id="empty-state" class="hidden text-center py-20 bg-slate-900/60 rounded-2xl border border-slate-800">
       <div class="text-5xl mb-3">🔍</div>
       <h3 class="text-lg font-bold text-white mb-1">No matching resources found</h3>
-      <p class="text-xs text-slate-400 mb-4 max-w-sm mx-auto">Try searching for other keywords, checking another category, or resetting active filters.</p>
-      <button id="reset-filters-btn" class="px-4 py-2 text-xs font-semibold rounded-xl bg-purple-600/20 hover:bg-purple-600/30 text-purple-300 border border-purple-500/30 transition">Reset All Filters</button>
+      <p class="text-xs text-slate-300 mb-4 max-w-sm mx-auto">Try searching for other keywords, selecting another category, or resetting filters.</p>
+      <button id="reset-filters-btn" class="px-4 py-2 text-xs font-bold rounded-xl bg-purple-600 hover:bg-purple-500 text-white transition">Reset All Filters</button>
     </div>
   </main>
 
   <!-- Team & Contributors Showcase -->
-  <section id="team" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-slate-800/80">
+  <section id="team" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-slate-800">
     <div class="text-center mb-8">
-      <h2 class="text-2xl font-extrabold text-white mb-2">👥 Team & Community Contributors</h2>
-      <p class="text-xs text-slate-400 max-w-xl mx-auto">DevShelf is initiated by the team at RitualDev Lab and maintained alongside passionate open-source builders.</p>
+      <h2 class="text-2xl font-extrabold text-white mb-2">👥 Core Team & Community Contributors</h2>
+      <p class="text-xs text-slate-300 max-w-xl mx-auto">DevShelf is initiated by the team at RitualDev Lab and maintained alongside passionate open-source builders.</p>
     </div>
 
     <!-- Core Maintainers Cards -->
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto mb-10">
-      <div class="glass-card rounded-2xl p-4 text-center">
+      <div class="glass-card rounded-2xl p-5 text-center">
         <a href="https://github.com/divyanshujethi" target="_blank" rel="noreferrer" class="inline-block group">
-          <img src="https://github.com/divyanshujethi.png" class="w-16 h-16 rounded-full mx-auto mb-2.5 border-2 border-purple-500/50 group-hover:scale-105 transition" alt="Divyanshu Jethi">
+          <img src="https://github.com/divyanshujethi.png" class="w-16 h-16 rounded-full mx-auto mb-2.5 border-2 border-purple-400 group-hover:scale-105 transition" alt="Divyanshu Jethi">
           <div class="font-bold text-sm text-white group-hover:text-purple-300 transition">Divyanshu Jethi</div>
-          <div class="text-[11px] text-purple-400 font-mono">🚀 Founder & Lead</div>
+          <div class="text-xs text-purple-300 font-mono font-semibold mt-1">🚀 Founder & Lead</div>
         </a>
       </div>
 
-      <div class="glass-card rounded-2xl p-4 text-center">
+      <div class="glass-card rounded-2xl p-5 text-center">
         <a href="https://github.com/Sakshisharma1616" target="_blank" rel="noreferrer" class="inline-block group">
-          <img src="https://github.com/Sakshisharma1616.png" class="w-16 h-16 rounded-full mx-auto mb-2.5 border-2 border-pink-500/50 group-hover:scale-105 transition" alt="Sakshi Sharma">
+          <img src="https://github.com/Sakshisharma1616.png" class="w-16 h-16 rounded-full mx-auto mb-2.5 border-2 border-pink-400 group-hover:scale-105 transition" alt="Sakshi Sharma">
           <div class="font-bold text-sm text-white group-hover:text-pink-300 transition">Sakshi Sharma</div>
-          <div class="text-[11px] text-pink-400 font-mono">🎨 Core Maintainer & Product</div>
+          <div class="text-xs text-pink-300 font-mono font-semibold mt-1">🎨 Core Maintainer & Product</div>
         </a>
       </div>
 
-      <div class="glass-card rounded-2xl p-4 text-center">
+      <div class="glass-card rounded-2xl p-5 text-center">
         <a href="https://github.com/Ritual-Dev-Git" target="_blank" rel="noreferrer" class="inline-block group">
-          <img src="https://github.com/Ritual-Dev-Git.png" class="w-16 h-16 rounded-full mx-auto mb-2.5 border-2 border-cyan-500/50 group-hover:scale-105 transition" alt="RitualDev">
+          <img src="https://github.com/Ritual-Dev-Git.png" class="w-16 h-16 rounded-full mx-auto mb-2.5 border-2 border-cyan-400 group-hover:scale-105 transition" alt="RitualDev">
           <div class="font-bold text-sm text-white group-hover:text-cyan-300 transition">RitualDev</div>
-          <div class="text-[11px] text-cyan-400 font-mono">⚙️ Core Maintainer & Infra</div>
+          <div class="text-xs text-cyan-300 font-mono font-semibold mt-1">⚙️ Core Maintainer & Infra</div>
         </a>
       </div>
     </div>
 
     <!-- Community Contributors Wall -->
     <div class="text-center">
-      <div class="text-xs font-semibold text-slate-400 mb-3">🌟 Global Community Contributors</div>
+      <div class="text-xs font-bold text-slate-200 mb-3">🌟 Global Open Source Contributors</div>
       <a href="https://github.com/RitualDev-Lab/DevShelf/graphs/contributors" target="_blank" rel="noreferrer" class="inline-block hover:opacity-90 transition">
         <img src="https://contrib.rocks/image?repo=RitualDev-Lab/DevShelf" alt="DevShelf Contributors" class="mx-auto rounded-xl max-w-full">
       </a>
-      <p class="text-[11px] text-slate-500 mt-3 font-mono">Want to be on this wall? Open a pull request or submit a developer tool!</p>
+      <p class="text-xs text-slate-400 mt-3 font-mono">Want your avatar here? Submit a pull request or open an issue!</p>
     </div>
   </section>
 
   <!-- "Featured on DevShelf" Badge Modal -->
-  <div id="badge-modal" class="fixed inset-0 z-50 modal-backdrop hidden flex items-center justify-center p-4">
-    <div class="bg-dark-900 border border-slate-700/90 rounded-2xl max-w-lg w-full p-6 shadow-2xl relative">
+  <div id="badge-modal" class="fixed inset-0 z-50 modal-backdrop items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-700 rounded-2xl max-w-lg w-full p-6 shadow-2xl relative my-auto">
       <div class="flex items-center justify-between pb-3 border-b border-slate-800 mb-4">
         <div class="flex items-center space-x-2">
-          <i data-lucide="award" class="w-5 h-5 text-purple-400"></i>
+          <span class="text-xl">🎖️</span>
           <h3 class="text-base font-bold text-white">Embed "Featured on DevShelf" Badges</h3>
         </div>
-        <button id="close-badge-modal-btn" class="text-slate-400 hover:text-white p-1 rounded-lg hover:bg-slate-800 transition">
-          <i data-lucide="x" class="w-5 h-5"></i>
+        <button id="close-badge-modal-btn" class="text-slate-300 hover:text-white p-1 rounded-lg hover:bg-slate-800 transition text-sm font-bold">
+          ✕
         </button>
       </div>
 
-      <p class="text-xs text-slate-400 mb-4">Is your project featured on DevShelf? Embed one of these official badges in your GitHub <code>README.md</code> to showcase community verification:</p>
+      <p class="text-xs text-slate-300 mb-4 leading-relaxed">
+        Is your project curated on DevShelf? Embed one of these official badges in your GitHub <code>README.md</code> to show off community verification:
+      </p>
 
       <!-- Badge Option 1 -->
-      <div class="mb-4 p-3 rounded-xl bg-slate-800/60 border border-slate-700/70">
+      <div class="mb-4 p-3.5 rounded-xl bg-slate-950 border border-slate-800">
         <div class="flex items-center justify-between mb-2">
-          <span class="text-xs font-bold text-purple-300">Style 1: Modern Purple</span>
-          <button data-badge="purple" class="copy-badge-btn text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center space-x-1">
-            <i data-lucide="copy" class="w-3.5 h-3.5"></i>
-            <span>Copy Markdown</span>
+          <span class="text-xs font-bold text-purple-300">Style 1: Modern Purple (Recommended)</span>
+          <button data-badge="purple" class="copy-badge-btn px-2.5 py-1 rounded bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold transition">
+            Copy Markdown
           </button>
         </div>
         <div class="mb-2">
           <img src="https://img.shields.io/badge/Featured%20on-DevShelf-7928CA?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Featured on DevShelf" class="h-6">
         </div>
-        <input type="text" readonly value="[![Featured on DevShelf](https://img.shields.io/badge/Featured%20on-DevShelf-7928CA?style=for-the-badge&logo=googlechrome&logoColor=white)](https://devshelf.ritualdev.in/)" class="w-full text-[10px] font-mono bg-dark-950 px-2 py-1 rounded text-slate-400 border border-slate-800 select-all">
+        <input type="text" readonly value="[![Featured on DevShelf](https://img.shields.io/badge/Featured%20on-DevShelf-7928CA?style=for-the-badge&logo=googlechrome&logoColor=white)](https://devshelf.ritualdev.in/)" class="w-full text-xs font-mono bg-slate-900 px-3 py-2 rounded text-emerald-300 border border-slate-700 select-all font-semibold">
       </div>
 
       <!-- Badge Option 2 -->
-      <div class="mb-4 p-3 rounded-xl bg-slate-800/60 border border-slate-700/70">
+      <div class="mb-4 p-3.5 rounded-xl bg-slate-950 border border-slate-800">
         <div class="flex items-center justify-between mb-2">
           <span class="text-xs font-bold text-cyan-300">Style 2: Cyberpunk Neon Cyan</span>
-          <button data-badge="cyan" class="copy-badge-btn text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center space-x-1">
-            <i data-lucide="copy" class="w-3.5 h-3.5"></i>
-            <span>Copy Markdown</span>
+          <button data-badge="cyan" class="copy-badge-btn px-2.5 py-1 rounded bg-cyan-600 hover:bg-cyan-500 text-white text-xs font-bold transition">
+            Copy Markdown
           </button>
         </div>
         <div class="mb-2">
           <img src="https://img.shields.io/badge/DevShelf-Curated%20Resource-00E5FF?style=for-the-badge&logo=github&logoColor=black" alt="DevShelf Curated Resource" class="h-6">
         </div>
-        <input type="text" readonly value="[![Featured on DevShelf](https://img.shields.io/badge/DevShelf-Curated%20Resource-00E5FF?style=for-the-badge&logo=github&logoColor=black)](https://devshelf.ritualdev.in/)" class="w-full text-[10px] font-mono bg-dark-950 px-2 py-1 rounded text-slate-400 border border-slate-800 select-all">
+        <input type="text" readonly value="[![Featured on DevShelf](https://img.shields.io/badge/DevShelf-Curated%20Resource-00E5FF?style=for-the-badge&logo=github&logoColor=black)](https://devshelf.ritualdev.in/)" class="w-full text-xs font-mono bg-slate-900 px-3 py-2 rounded text-emerald-300 border border-slate-700 select-all font-semibold">
       </div>
 
       <!-- Badge Option 3 -->
-      <div class="p-3 rounded-xl bg-slate-800/60 border border-slate-700/70">
+      <div class="p-3.5 rounded-xl bg-slate-950 border border-slate-800">
         <div class="flex items-center justify-between mb-2">
           <span class="text-xs font-bold text-violet-300">Style 3: Minimal Flat Square</span>
-          <button data-badge="flat" class="copy-badge-btn text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center space-x-1">
-            <i data-lucide="copy" class="w-3.5 h-3.5"></i>
-            <span>Copy Markdown</span>
+          <button data-badge="flat" class="copy-badge-btn px-2.5 py-1 rounded bg-slate-700 hover:bg-slate-600 text-white text-xs font-bold transition">
+            Copy Markdown
           </button>
         </div>
         <div class="mb-2">
           <img src="https://img.shields.io/badge/Featured%20on-DevShelf-blueviolet?style=flat-square&logo=googlechrome&logoColor=white" alt="Featured on DevShelf" class="h-5">
         </div>
-        <input type="text" readonly value="[![Featured on DevShelf](https://img.shields.io/badge/Featured%20on-DevShelf-blueviolet?style=flat-square&logo=googlechrome&logoColor=white)](https://devshelf.ritualdev.in/)" class="w-full text-[10px] font-mono bg-dark-950 px-2 py-1 rounded text-slate-400 border border-slate-800 select-all">
+        <input type="text" readonly value="[![Featured on DevShelf](https://img.shields.io/badge/Featured%20on-DevShelf-blueviolet?style=flat-square&logo=googlechrome&logoColor=white)](https://devshelf.ritualdev.in/)" class="w-full text-xs font-mono bg-slate-900 px-3 py-2 rounded text-emerald-300 border border-slate-700 select-all font-semibold">
       </div>
     </div>
   </div>
 
-  <!-- Toast Notification -->
-  <div id="toast" class="fixed bottom-6 right-6 px-4 py-2.5 rounded-xl bg-dark-900/95 text-white text-xs font-semibold shadow-2xl border border-purple-500/40 flex items-center space-x-2 translate-y-20 opacity-0 transition-all duration-300 pointer-events-none z-50">
-    <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i>
+  <!-- Floating Toast Notification -->
+  <div id="toast" class="fixed bottom-6 right-6 px-4 py-3 rounded-xl bg-slate-900 text-white text-xs font-bold shadow-2xl border border-purple-500 flex items-center space-x-2 translate-y-20 opacity-0 transition-all duration-300 pointer-events-none z-50">
+    <span class="text-emerald-400">✓</span>
     <span id="toast-message">Copied to clipboard!</span>
   </div>
 
   <!-- Footer -->
-  <footer class="border-t border-slate-800/80 py-12 bg-dark-950 text-center text-xs text-slate-400">
+  <footer class="border-t border-slate-800 py-12 bg-slate-950 text-center text-xs text-slate-300">
     <div class="max-w-7xl mx-auto px-4 space-y-3">
       <div class="flex items-center justify-center space-x-2">
         <span class="text-xl">📚</span>
         <span class="font-extrabold text-white text-sm">DevShelf</span>
         <span class="text-slate-600">•</span>
-        <a href="https://devshelf.ritualdev.in" class="text-purple-400 hover:underline font-mono">devshelf.ritualdev.in</a>
+        <a href="https://devshelf.ritualdev.in" class="text-purple-400 hover:underline font-mono font-bold">devshelf.ritualdev.in</a>
       </div>
       <p>100% free and open-source community directory distributed under the <b>MIT License</b>.</p>
-      <p>Built with ❤️ by <a href="https://github.com/RitualDev-Lab" class="text-purple-400 hover:underline">RitualDev-Lab</a> and global developers.</p>
-      <div class="pt-2 flex items-center justify-center flex-wrap gap-4 text-slate-400">
+      <p>Built with ❤️ by <a href="https://github.com/RitualDev-Lab" target="_blank" rel="noreferrer" class="text-purple-400 hover:underline font-bold">RitualDev-Lab</a> and global developers.</p>
+      <div class="pt-2 flex items-center justify-center flex-wrap gap-4 text-slate-300 font-semibold">
         <a href="https://github.com/RitualDev-Lab/DevShelf" target="_blank" rel="noreferrer" class="hover:text-white transition">GitHub Repo</a>
         <span>•</span>
         <a href="https://github.com/RitualDev-Lab/DevShelf/wiki" target="_blank" rel="noreferrer" class="hover:text-white transition">Project Wiki</a>

@@ -44,18 +44,12 @@ function updateStatsAndPills(data) {
   const contributorsCount = data.counts?.contributors || 0;
 
   // Stats bar
-  const totalEl = document.getElementById("stat-total");
-  if (totalEl) totalEl.textContent = `${total} Resources`;
-  const apiEl = document.getElementById("stat-apis");
-  if (apiEl) apiEl.textContent = apisCount;
-  const aiEl = document.getElementById("stat-ai");
-  if (aiEl) aiEl.textContent = aiCount;
-  const cliEl = document.getElementById("stat-cli");
-  if (cliEl) cliEl.textContent = cliCount;
-  const cloudEl = document.getElementById("stat-cloud");
-  if (cloudEl) cloudEl.textContent = cloudCount;
-  const perksEl = document.getElementById("stat-perks");
-  if (perksEl) perksEl.textContent = perksCount;
+  setElText("stat-total", `${total} Resources`);
+  setElText("stat-apis", apisCount);
+  setElText("stat-ai", aiCount);
+  setElText("stat-cli", cliCount);
+  setElText("stat-cloud", cloudCount);
+  setElText("stat-perks", perksCount);
 
   // Pills counts
   setElText("pill-count-all", total);
@@ -77,34 +71,52 @@ function renderSpotlight() {
   const spotlightContainer = document.getElementById("spotlight-grid");
   if (!spotlightContainer) return;
 
-  const featured = allResources.filter((r) => r.featured).slice(0, 6);
-  if (featured.length === 0) return;
+  // Select top featured or prominent open source tools
+  const spotlightNames = [
+    "GitWhisper",
+    "FlashLane",
+    "AutoHeal-QA",
+    "Ollama",
+    "Bruno",
+    "PocketBase",
+  ];
+  const featured = allResources
+    .filter((r) => spotlightNames.includes(r.name) || r.featured)
+    .slice(0, 6);
 
   spotlightContainer.innerHTML = featured
     .map((item) => {
-      const targetUrl = item.url || item.repo;
+      const isRepo = Boolean(item.repo);
+      const targetUrl = item.repo || item.url;
+      const displayUrl = targetUrl ? targetUrl.replace(/^https?:\/\/(www\.)?/, "") : "";
+
       return `
-      <div class="spotlight-card glass-card rounded-2xl p-5 flex flex-col justify-between group">
+      <div class="spotlight-card rounded-2xl p-5 flex flex-col justify-between group">
         <div>
           <div class="flex items-start justify-between gap-3 mb-2">
-            <div class="flex items-center space-x-2">
-              <h3 class="text-base font-extrabold text-white group-hover:text-purple-300 transition line-clamp-1">
-                <a href="${targetUrl}" target="_blank" rel="noreferrer">${escapeHtml(item.name)}</a>
-              </h3>
-              <span class="px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">Spotlight</span>
+            <div>
+              <div class="flex items-center space-x-2">
+                <h3 class="text-base font-extrabold text-white group-hover:text-purple-300 transition">
+                  <a href="${targetUrl}" target="_blank" rel="noreferrer">${escapeHtml(item.name)}</a>
+                </h3>
+                <span class="px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider rounded-full bg-amber-500/25 text-amber-200 border border-amber-500/40">Spotlight</span>
+              </div>
+              <div class="text-xs font-mono text-purple-300 mt-0.5">${escapeHtml(displayUrl)}</div>
             </div>
-            <button data-url="${targetUrl}" class="copy-btn text-slate-400 hover:text-white p-1 rounded-md hover:bg-slate-800 transition" title="Copy URL">
-              <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+            <button data-url="${targetUrl}" class="copy-btn text-slate-300 hover:text-white p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 transition" title="Copy URL">
+              📋
             </button>
           </div>
-          <div class="text-[11px] font-mono font-semibold text-purple-400 mb-2">${escapeHtml(item.category || item.section)}</div>
-          <p class="text-xs text-slate-300 leading-relaxed line-clamp-2 mb-4">${escapeHtml(item.description)}</p>
+          
+          <p class="text-xs sm:text-sm text-slate-200 leading-relaxed line-clamp-3 my-3">${escapeHtml(item.description)}</p>
         </div>
-        <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between">
-          <span class="text-[11px] font-mono text-slate-400">${escapeHtml(item.language || item.license || "Free Tier")}</span>
-          <a href="${targetUrl}" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-1 text-xs font-bold text-cyan-400 hover:text-cyan-300 transition">
-            <span>Explore</span>
-            <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+
+        <div class="pt-3 border-t border-slate-800 flex items-center justify-between gap-2">
+          <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-slate-800 text-slate-200 border border-slate-700">
+            ${escapeHtml(item.language || item.license || "Free Tier")}
+          </span>
+          <a href="${targetUrl}" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-1 px-3 py-1.5 rounded-lg text-xs font-bold ${isRepo ? "bg-purple-600 hover:bg-purple-500 text-white" : "bg-cyan-600 hover:bg-cyan-500 text-white"} transition shadow">
+            <span>${isRepo ? "🐙 GitHub Repo →" : "🌐 Website →"}</span>
           </a>
         </div>
       </div>
@@ -117,7 +129,7 @@ function setupListeners() {
   const searchInput = document.getElementById("search-input");
   const clearBtn = document.getElementById("clear-search-btn");
 
-  searchInput.addEventListener("input", (e) => {
+  searchInput?.addEventListener("input", (e) => {
     searchQuery = e.target.value.toLowerCase().trim();
     if (clearBtn) {
       if (searchQuery.length > 0) {
@@ -130,6 +142,7 @@ function setupListeners() {
   });
 
   clearBtn?.addEventListener("click", () => {
+    if (!searchInput) return;
     searchInput.value = "";
     searchQuery = "";
     clearBtn.classList.add("hidden");
@@ -141,7 +154,7 @@ function setupListeners() {
   window.addEventListener("keydown", (e) => {
     if (e.key === "/" && document.activeElement !== searchInput) {
       e.preventDefault();
-      searchInput.focus();
+      searchInput?.focus();
     }
     if (e.key === "Escape") {
       closeBadgeModal();
@@ -169,7 +182,7 @@ function setupListeners() {
         b.classList.remove("active");
       }
       btn.classList.add("active");
-      activeCategory = btn.dataset.category;
+      activeCategory = btn.dataset.category || "all";
       render();
     });
   }
@@ -185,7 +198,7 @@ function setupListeners() {
         for (const tb of document.querySelectorAll(".filter-tag")) {
           tb.classList.remove("active");
         }
-        activeTag = tag;
+        activeTag = tag || "";
         tagBtn.classList.add("active");
       }
       render();
@@ -194,7 +207,7 @@ function setupListeners() {
 
   // Reset filters
   document.getElementById("reset-filters-btn")?.addEventListener("click", () => {
-    searchInput.value = "";
+    if (searchInput) searchInput.value = "";
     searchQuery = "";
     activeCategory = "all";
     activeTag = "";
@@ -238,7 +251,8 @@ function setupListeners() {
 function openBadgeModal() {
   const modal = document.getElementById("badge-modal");
   if (modal) {
-    modal.classList.remove("hidden");
+    modal.classList.add("show");
+    modal.style.display = "flex";
     document.body.classList.add("overflow-hidden");
   }
 }
@@ -246,7 +260,8 @@ function openBadgeModal() {
 function closeBadgeModal() {
   const modal = document.getElementById("badge-modal");
   if (modal) {
-    modal.classList.add("hidden");
+    modal.classList.remove("show");
+    modal.style.display = "none";
     document.body.classList.remove("overflow-hidden");
   }
 }
@@ -255,6 +270,7 @@ function render() {
   const grid = document.getElementById("cards-grid");
   const emptyState = document.getElementById("empty-state");
   const countLabel = document.getElementById("results-count");
+  if (!grid || !emptyState || !countLabel) return;
 
   const filtered = allResources.filter((item) => {
     // Category check
@@ -263,6 +279,7 @@ function render() {
 
     // Quick tag check
     if (activeTag) {
+      if (activeTag === "repo-only" && !item.repo) return false;
       if (activeTag === "featured" && !item.featured) return false;
       if (activeTag === "no-key" && item.auth !== "No Key") return false;
       if (activeTag === "typescript" && !item.language?.toLowerCase().includes("typescript"))
@@ -285,6 +302,8 @@ function render() {
       item.auth,
       item.freeTier,
       item.license,
+      item.repo,
+      item.url,
     ]
       .filter(Boolean)
       .join(" ")
@@ -320,99 +339,126 @@ function render() {
   emptyState.classList.add("hidden");
   grid.innerHTML = filtered.map((item) => createCardHtml(item)).join("");
 
-  // Re-run lucide icons on dynamically injected elements
-  if (window.lucide) {
-    window.lucide.createIcons();
-  }
-
   // Attach copy listeners
   for (const btn of document.querySelectorAll(".copy-btn")) {
     btn.addEventListener("click", (e) => {
       e.preventDefault();
       e.stopPropagation();
       const url = btn.dataset.url;
-      navigator.clipboard.writeText(url).then(() => {
-        showToast(`Copied: ${url}`);
-      });
+      if (url) {
+        navigator.clipboard.writeText(url).then(() => {
+          showToast(`Copied: ${url}`);
+        });
+      }
     });
   }
 }
 
 function createCardHtml(item) {
-  const targetUrl = item.url || item.repo;
+  const isRepo = Boolean(item.repo);
+  const targetUrl = item.repo || item.url || "#";
+  const displayRepoSlug = item.repo ? item.repo.replace(/^https?:\/\/github\.com\//, "") : "";
+  const displayUrl = targetUrl.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "");
+
   const isFeatured = item.featured
-    ? `<span class="px-2 py-0.5 text-[10px] font-bold rounded-full bg-amber-500/15 text-amber-300 border border-amber-500/30">⭐ Featured</span>`
+    ? `<span class="px-2 py-0.5 text-[10px] font-bold rounded-full bg-amber-500/20 text-amber-200 border border-amber-500/40 font-mono">⭐ Featured</span>`
     : "";
 
-  let categoryBadgeColor = "text-purple-400 bg-purple-500/10 border-purple-500/20";
+  let categoryBadgeColor = "text-purple-200 bg-purple-950 border-purple-500/40";
   if (item.type === "api")
-    categoryBadgeColor = "text-emerald-400 bg-emerald-500/10 border-emerald-500/20";
-  if (item.type === "cli")
-    categoryBadgeColor = "text-amber-400 bg-amber-500/10 border-amber-500/20";
-  if (item.type === "cloud") categoryBadgeColor = "text-sky-400 bg-sky-500/10 border-sky-500/20";
-  if (item.type === "testing")
-    categoryBadgeColor = "text-rose-400 bg-rose-500/10 border-rose-500/20";
-  if (item.type === "perks") categoryBadgeColor = "text-pink-400 bg-pink-500/10 border-pink-500/20";
+    categoryBadgeColor = "text-emerald-200 bg-emerald-950 border-emerald-500/40";
+  if (item.type === "cli") categoryBadgeColor = "text-amber-200 bg-amber-950 border-amber-500/40";
+  if (item.type === "cloud") categoryBadgeColor = "text-sky-200 bg-sky-950 border-sky-500/40";
+  if (item.type === "testing") categoryBadgeColor = "text-rose-200 bg-rose-950 border-rose-500/40";
+  if (item.type === "perks") categoryBadgeColor = "text-pink-200 bg-pink-950 border-pink-500/40";
 
   let metaBadges = "";
   if (item.type === "api") {
     const authColor =
       item.auth === "No Key"
-        ? "text-emerald-300 bg-emerald-500/15 border-emerald-500/30 font-semibold"
-        : "text-cyan-300 bg-cyan-500/15 border-cyan-500/30";
+        ? "text-emerald-300 bg-emerald-900/60 border-emerald-500/40 font-bold"
+        : "text-cyan-300 bg-cyan-900/60 border-cyan-500/40 font-bold";
     metaBadges = `
-      <span class="px-2 py-0.5 text-[10px] font-mono rounded border ${authColor}">${item.auth}</span>
-      <span class="px-2 py-0.5 text-[10px] font-mono rounded border border-slate-700 bg-slate-800 text-slate-300">${item.rateLimit || "Free"}</span>
+      <span class="px-2 py-0.5 text-xs font-mono rounded border ${authColor}">${item.auth}</span>
+      <span class="px-2 py-0.5 text-xs font-mono rounded border border-slate-700 bg-slate-800 text-slate-200">${item.rateLimit || "Free"}</span>
     `;
   } else if (item.type === "perks") {
     metaBadges = `
-      <span class="px-2 py-0.5 text-[10px] font-mono rounded border border-pink-500/30 bg-pink-500/15 text-pink-300">🎁 ${escapeHtml(item.perkValue)}</span>
+      <span class="px-2 py-0.5 text-xs font-mono rounded border border-pink-500/40 bg-pink-950/80 text-pink-200 font-bold">🎁 ${escapeHtml(item.perkValue)}</span>
     `;
   } else if (item.type === "cloud") {
     metaBadges = `
-      <span class="px-2 py-0.5 text-[10px] font-mono rounded border border-sky-500/30 bg-sky-500/15 text-sky-300">🎁 ${escapeHtml(item.freeTier || "Generous Free Tier")}</span>
+      <span class="px-2 py-0.5 text-xs font-mono rounded border border-sky-500/40 bg-sky-950/80 text-sky-200 font-bold">🎁 ${escapeHtml(item.freeTier || "Generous Free Tier")}</span>
     `;
   } else if (item.type === "contributors") {
     metaBadges = `
-      <span class="px-2 py-0.5 text-[10px] font-mono rounded border border-violet-500/30 bg-violet-500/15 text-violet-300">🎯 Seeking: ${escapeHtml(item.seeking || "Contributors")}</span>
+      <span class="px-2 py-0.5 text-xs font-mono rounded border border-purple-500/40 bg-purple-950/80 text-purple-200 font-bold">🎯 Seeking: ${escapeHtml(item.seeking || "Contributors")}</span>
     `;
   } else {
     metaBadges = `
-      ${item.language ? `<span class="px-2 py-0.5 text-[10px] font-mono rounded border border-slate-700 bg-slate-800/90 text-slate-300">${escapeHtml(item.language)}</span>` : ""}
-      ${item.license ? `<span class="px-2 py-0.5 text-[10px] font-mono rounded border border-purple-500/20 bg-purple-500/10 text-purple-300">${escapeHtml(item.license)}</span>` : ""}
+      ${item.language ? `<span class="px-2 py-0.5 text-xs font-mono font-semibold rounded border border-slate-700 bg-slate-800 text-slate-200">${escapeHtml(item.language)}</span>` : ""}
+      ${item.license ? `<span class="px-2 py-0.5 text-xs font-mono rounded border border-purple-500/30 bg-purple-900/40 text-purple-200">${escapeHtml(item.license)}</span>` : ""}
+    `;
+  }
+
+  // Action buttons
+  let actionButtons = "";
+  if (isRepo) {
+    actionButtons = `
+      <a href="${item.repo}" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-purple-600 hover:bg-purple-500 text-white transition shadow">
+        <span>🐙 View Repo</span>
+        <span>→</span>
+      </a>
+    `;
+    if (item.goodFirstIssues) {
+      actionButtons += `
+        <a href="${item.goodFirstIssues}" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-1 px-2.5 py-1.5 rounded-lg text-xs font-bold bg-emerald-600/30 hover:bg-emerald-600/50 border border-emerald-500/50 text-emerald-200 transition">
+          <span>🎯 Issues</span>
+        </a>
+      `;
+    }
+  } else {
+    actionButtons = `
+      <a href="${targetUrl}" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-cyan-600 hover:bg-cyan-500 text-white transition shadow">
+        <span>🌐 Visit Website</span>
+        <span>→</span>
+      </a>
     `;
   }
 
   return `
     <div class="glass-card rounded-2xl p-5 flex flex-col justify-between relative group">
       <div>
-        <div class="flex items-start justify-between gap-3 mb-2.5">
-          <div class="flex items-center space-x-2">
-            <h3 class="text-base font-bold text-white group-hover:text-purple-300 transition line-clamp-1">
-              <a href="${targetUrl}" target="_blank" rel="noreferrer">${escapeHtml(item.name)}</a>
-            </h3>
-            ${isFeatured}
+        <div class="flex items-start justify-between gap-3 mb-2">
+          <div>
+            <div class="flex items-center space-x-2 flex-wrap">
+              <h3 class="text-base font-extrabold text-white group-hover:text-purple-300 transition line-clamp-1">
+                <a href="${targetUrl}" target="_blank" rel="noreferrer">${escapeHtml(item.name)}</a>
+              </h3>
+              ${isFeatured}
+            </div>
+            ${isRepo ? `<div class="text-xs font-mono text-cyan-300 font-semibold mt-0.5">github.com/${escapeHtml(displayRepoSlug)}</div>` : `<div class="text-xs font-mono text-slate-300 font-semibold mt-0.5">${escapeHtml(displayUrl)}</div>`}
           </div>
-          <button data-url="${targetUrl}" class="copy-btn text-slate-400 hover:text-white p-1 rounded-md hover:bg-slate-700/50 transition" title="Copy URL">
-            <i data-lucide="copy" class="w-4 h-4"></i>
+
+          <button data-url="${targetUrl}" class="copy-btn text-slate-300 hover:text-white p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 transition" title="Copy URL">
+            📋
           </button>
         </div>
 
-        <div class="inline-block px-2.5 py-0.5 text-[11px] font-mono font-medium rounded-full border mb-2.5 ${categoryBadgeColor}">
+        <div class="inline-block px-2.5 py-0.5 text-xs font-mono font-bold rounded-full border my-2.5 ${categoryBadgeColor}">
           ${escapeHtml(item.category || item.section)}
         </div>
         
-        <p class="text-xs text-slate-300/90 leading-relaxed line-clamp-3 mb-4">${escapeHtml(item.description)}</p>
+        <p class="text-xs sm:text-sm text-slate-200 leading-relaxed line-clamp-3 mb-4 font-normal">${escapeHtml(item.description)}</p>
       </div>
 
-      <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between gap-2">
+      <div class="pt-3 border-t border-slate-800 flex items-center justify-between gap-2">
         <div class="flex items-center flex-wrap gap-1.5 overflow-hidden">
           ${metaBadges}
         </div>
-        <a href="${targetUrl}" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-1 text-xs font-bold text-cyan-400 hover:text-cyan-300 transition shrink-0">
-          <span>Visit</span>
-          <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-        </a>
+        <div class="flex items-center space-x-2 shrink-0">
+          ${actionButtons}
+        </div>
       </div>
     </div>
   `;
