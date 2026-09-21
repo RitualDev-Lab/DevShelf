@@ -1,17 +1,24 @@
-name: Weekly Shelf Healthcheck
+name: Weekly Shelf Healthcheck & Sunset Auditor
 
 on:
   schedule:
-    - cron: '0 0 * * 0' # Every Sunday at midnight
+    - cron: '0 0 * * 0' # Every Sunday at midnight UTC
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
 jobs:
-  check-links:
-    name: Verify URLs and Endpoints
+  audit-registry:
+    name: Audit Link Rottenness & Sunset Dead Tools
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Install pnpm
         uses: pnpm/action-setup@v4
@@ -30,5 +37,41 @@ jobs:
       - name: Validate Schema and Structure
         run: npx tsx scripts/validate-shelf.ts
 
-      - name: Ping and Validate Live Endpoints
+      - name: Ping and Validate Live Endpoints (Intelligent Link Rot Check)
         run: npx tsx scripts/check-links.ts
+
+      - name: Audit Chronic Link Rot & Prepare Sunset
+        run: npx tsx scripts/sunset-resources.ts
+
+      - name: Open Automated Sunset Pull Request
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -f .sunset-pr-metadata.json ]; then
+            BRANCH_NAME=$(node -e "console.log(require('./.sunset-pr-metadata.json').branchName)")
+            PR_TITLE=$(node -e "console.log(require('./.sunset-pr-metadata.json').prTitle)")
+            PR_BODY=$(node -e "console.log(require('./.sunset-pr-metadata.json').prBody)")
+            
+            git config --global user.name "DevShelf Bot"
+            git config --global user.email "bot@devshelf.local"
+            
+            git checkout -b "$BRANCH_NAME"
+            git add shelf/ README.md site/
+            git commit -m "$PR_TITLE"
+            git push origin "$BRANCH_NAME" --force
+            
+            gh pr create --title "$PR_TITLE" --body "$PR_BODY" --head "$BRANCH_NAME" --base main
+            rm -f .sunset-pr-metadata.json
+          else
+            echo "Zero resources eligible for sunset. No PR required."
+          fi
+
+      - name: Commit Fresh Uptime Telemetry to Main
+        run: |
+          git config --global user.name "DevShelf Bot"
+          git config --global user.email "bot@devshelf.local"
+          git add site/uptime.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(telemetry): update 7-day uptime metrics [skip ci]"
+            git push origin main
+          fi

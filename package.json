@@ -8,7 +8,9 @@
   "scripts": {
     "build": "npx tsx scripts/build-site.ts && npx tsx scripts/build-readme.ts",
     "validate": "npx tsx scripts/validate-shelf.ts",
+    "validate:pr": "npx tsx scripts/validate-pr.ts",
     "check:links": "npx tsx scripts/check-links.ts",
+    "sunset": "npx tsx scripts/sunset-resources.ts",
     "wiki:sync": "node scripts/sync-wiki.cjs",
     "format": "biome format --write .",
     "format:check": "biome format .",
