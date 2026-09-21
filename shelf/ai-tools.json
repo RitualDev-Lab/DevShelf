@@ -6,7 +6,8 @@
     "description": "Get up and running with Llama 3.3, Mistral, Qwen, and other large language models locally with a simple CLI and REST API.",
     "language": "Go",
     "license": "MIT",
-    "featured": true
+    "featured": true,
+    "goodFirstIssues": "https://github.com/ollama/ollama/issues"
   },
   {
     "name": "Dify",
@@ -15,7 +16,8 @@
     "description": "An open-source LLM app development platform combining AI workflow, RAG pipeline, agent capabilities, and model management.",
     "language": "Python / TypeScript",
     "license": "Apache-2.0",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/langgenius/dify/issues"
   },
   {
     "name": "vLLM",
@@ -24,7 +26,8 @@
     "description": "A high-throughput and memory-efficient inference and serving engine for LLMs with PagedAttention.",
     "language": "Python / C++",
     "license": "Apache-2.0",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/vllm-project/vllm/issues"
   },
   {
     "name": "Open-WebUI",
@@ -33,7 +36,8 @@
     "description": "User-friendly AI interface designed for self-hosting with complete Ollama and OpenAI-compatible API support.",
     "language": "Python / Svelte",
     "license": "MIT",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/open-webui/open-webui/issues"
   },
   {
     "name": "YYLO",
@@ -42,7 +46,8 @@
     "description": "Command-line orchestrator for AI coding agents: runs Claude Code, Codex CLI, and Gemini CLI in parallel git worktrees with Kanban task state, typed merge flows, and per-agent skills.",
     "language": "TypeScript",
     "license": "MIT",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/yylo-dev/yylo/issues"
   },
   {
     "name": "LocalAI",
@@ -51,7 +56,8 @@
     "description": "Local, OpenAI-compatible REST API for running LLMs, audio transcription, image generation, and embeddings on commodity CPU/GPU.",
     "language": "Go / C++",
     "license": "MIT",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/mudler/LocalAI/issues"
   },
   {
     "name": "AnythingLLM",
@@ -60,7 +66,8 @@
     "description": "The all-in-one Desktop & Docker AI application with full RAG pipeline, multi-agent workspaces, and complete privacy.",
     "language": "JavaScript",
     "license": "MIT",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/Mintplex-Labs/anything-llm/issues"
   },
   {
     "name": "Flowise",
@@ -69,7 +76,8 @@
     "description": "Drag & drop user interface for building customized LLM applications, autonomous agents, and RAG pipelines.",
     "language": "TypeScript",
     "license": "Apache-2.0",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/FlowiseAI/Flowise/issues"
   },
   {
     "name": "Langflow",
@@ -78,7 +86,8 @@
     "description": "Dynamic visual framework for building, testing, and deploying multi-agent AI and RAG applications.",
     "language": "Python / TypeScript",
     "license": "MIT",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/langflow-ai/langflow/issues"
   },
   {
     "name": "Jan",
@@ -87,7 +96,8 @@
     "description": "Open-source desktop alternative to ChatGPT that runs 100% offline on local hardware with zero data leakage.",
     "language": "TypeScript / C++",
     "license": "AGPL-3.0",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/janhq/jan/issues"
   },
   {
     "name": "LibreChat",
@@ -96,7 +106,8 @@
     "description": "Enhanced, self-hostable open-source AI chat platform unifying OpenAI, Anthropic, Gemini, and local LLMs.",
     "language": "TypeScript",
     "license": "MIT",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/danny-avila/LibreChat/issues"
   },
   {
     "name": "Fabric",
@@ -105,7 +116,8 @@
     "description": "Open-source prompt and automation framework for augmenting humans using AI patterns and modular CLI tooling.",
     "language": "Go",
     "license": "MIT",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/danielmiessler/fabric/issues"
   },
   {
     "name": "Aider",
@@ -114,7 +126,8 @@
     "description": "AI pair programming in your terminal: edit code in local git repos with Claude 3.5 Sonnet, GPT-4o, or local LLMs with auto-commits.",
     "language": "Python",
     "license": "Apache-2.0",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/Aider-AI/aider/issues"
   },
   {
     "name": "OpenHands",
@@ -123,7 +136,8 @@
     "description": "Open-source platform for software development agents that can write code, fix bugs, run bash commands, and browse documentation autonomously.",
     "language": "Python",
     "license": "MIT",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/All-Hands-AI/OpenHands/issues"
   },
   {
     "name": "Continue",
@@ -132,7 +146,8 @@
     "description": "Leading open-source AI code assistant inside VS Code and JetBrains: bring your own models, embeddings, and context providers.",
     "language": "TypeScript",
     "license": "Apache-2.0",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/continuedev/continue/issues"
   },
   {
     "name": "llama.cpp",
@@ -141,6 +156,7 @@
     "description": "High-performance LLM inference in pure C/C++ with minimal setup and state-of-the-art quantization across Apple Silicon and GPUs.",
     "language": "C / C++",
     "license": "MIT",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/ggerganov/llama.cpp/issues"
   }
 ]

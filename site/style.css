@@ -69,28 +69,37 @@ body {
   box-shadow: 0 0 18px -2px rgba(139, 92, 246, 0.5);
 }
 
+/* Button & Interactive element cursor */
+button,
+a {
+  cursor: pointer;
+}
+
 .filter-tag {
   transition: all 0.18s ease;
   background: #1e293b;
-  color: #94a3b8;
-  border: 1px solid #334155;
+  color: #f1f5f9;
+  border: 1px solid #475569;
+  cursor: pointer;
 }
 
 .filter-tag:hover {
   background: #334155;
-  color: #f8fafc;
+  color: #ffffff;
+  border-color: #64748b;
 }
 
 .filter-tag.active {
-  background: #0e7490;
-  border-color: #22d3ee;
+  background: #0891b2;
+  border-color: #38bdf8;
   color: #ffffff;
-  box-shadow: 0 0 12px -2px rgba(34, 211, 238, 0.4);
+  box-shadow: 0 0 14px -2px rgba(56, 189, 248, 0.5);
 }
 
 /* Modal Behavior */
 #badge-modal {
   display: none;
+  z-index: 9999;
 }
 
 #badge-modal.show {
@@ -98,7 +107,7 @@ body {
 }
 
 .modal-backdrop {
-  background-color: rgba(3, 7, 18, 0.85);
+  background-color: rgba(3, 7, 18, 0.88);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }

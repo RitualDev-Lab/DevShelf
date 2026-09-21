@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DevShelf — The Crowdsourced Zero-Paywall Developer Directory</title>
-  <meta name="description" content="Discover 75+ verified developer tools, open-source GitHub repositories, free public APIs, and developer perks with zero paywalls.">
+  <meta name="description" content="Discover 80+ verified developer tools, open-source GitHub repositories, free public APIs, and developer perks with zero paywalls.">
   <link rel="canonical" href="https://devshelf.ritualdev.in/">
 
   <!-- OpenGraph / Social Meta -->
@@ -116,16 +116,22 @@
     <div class="flex flex-wrap items-center justify-center gap-2.5 text-xs font-mono text-slate-200 max-w-4xl mx-auto mb-10" id="stats-bar">
       <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700 flex items-center space-x-2 shadow-sm font-semibold">
         <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-        <span id="stat-total" class="font-bold text-white">90 Resources</span>
+        <span id="stat-total" class="font-bold text-white">81 Resources</span>
+      </div>
+      <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700">
+        <span class="text-purple-300 font-bold" id="stat-repos">46</span> GitHub Repos
       </div>
       <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700">
         <span class="text-cyan-300 font-bold" id="stat-apis">15</span> Free APIs
       </div>
       <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700">
-        <span class="text-purple-300 font-bold" id="stat-ai">12</span> AI Frameworks
+        <span class="text-purple-300 font-bold" id="stat-ai">16</span> AI Tools
       </div>
       <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700">
-        <span class="text-amber-300 font-bold" id="stat-cli">15</span> CLI Tools
+        <span class="text-amber-300 font-bold" id="stat-cli">19</span> CLI Tools
+      </div>
+      <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700">
+        <span class="text-rose-300 font-bold" id="stat-testing">11</span> Testing & QA
       </div>
       <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700">
         <span class="text-sky-300 font-bold" id="stat-cloud">10</span> Free Cloud
@@ -149,7 +155,7 @@
         </h2>
         <p class="text-xs text-slate-300">Featured developer tools and active open-source projects this week</p>
       </div>
-      <a href="#directory" class="text-xs font-bold text-purple-400 hover:text-purple-300 transition hidden sm:inline-block">View all 76 items →</a>
+      <a href="#directory" class="text-xs font-bold text-purple-400 hover:text-purple-300 transition hidden sm:inline-block">View all resources →</a>
     </div>
 
     <!-- Spotlight Cards Grid -->
@@ -187,7 +193,7 @@
         <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
         </div>
-        <input type="text" id="search-input" placeholder="Search 76 resources by name, repo, category, license, or auth... (Press '/' to search)" class="w-full pl-10 pr-20 py-3 bg-slate-900 border border-slate-700 rounded-xl text-sm text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition shadow-lg font-medium">
+        <input type="text" id="search-input" placeholder="Search resources by name, repo, category, license, or auth... (Press '/' to search)" class="w-full pl-10 pr-20 py-3 bg-slate-900 border border-slate-700 rounded-xl text-sm text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition shadow-lg font-medium">
         <div class="absolute inset-y-0 right-0 pr-3 flex items-center space-x-1.5">
           <button id="clear-search-btn" class="hidden text-slate-400 hover:text-white p-1 rounded transition text-xs font-bold" title="Clear search">✕</button>
           <kbd class="hidden sm:inline-block px-1.5 py-0.5 text-[10px] font-mono font-bold text-slate-400 bg-slate-800 rounded border border-slate-700">/</kbd>
@@ -209,7 +215,11 @@
     <div class="flex items-center flex-wrap gap-2 text-xs font-bold mb-3" id="category-pills">
       <button data-category="all" class="category-pill active px-3.5 py-2 rounded-xl transition flex items-center space-x-1.5">
         <span>All Items</span>
-        <span class="px-1.5 py-0.5 rounded-full text-[10px] bg-purple-900 text-purple-200 font-mono" id="pill-count-all">76</span>
+        <span class="px-1.5 py-0.5 rounded-full text-[10px] bg-purple-900 text-purple-200 font-mono" id="pill-count-all">81</span>
+      </button>
+      <button data-category="repo" class="category-pill px-3.5 py-2 rounded-xl transition flex items-center space-x-1.5">
+        <span>🐙 GitHub Repos</span>
+        <span class="px-1.5 py-0.5 rounded-full text-[10px] bg-slate-800 text-slate-300 font-mono" id="pill-count-repo">46</span>
       </button>
       <button data-category="api" class="category-pill px-3.5 py-2 rounded-xl transition flex items-center space-x-1.5">
         <span>🌐 Free APIs</span>
@@ -217,15 +227,15 @@
       </button>
       <button data-category="ai" class="category-pill px-3.5 py-2 rounded-xl transition flex items-center space-x-1.5">
         <span>🤖 AI & LLMs</span>
-        <span class="px-1.5 py-0.5 rounded-full text-[10px] bg-slate-800 text-slate-300 font-mono" id="pill-count-ai">12</span>
+        <span class="px-1.5 py-0.5 rounded-full text-[10px] bg-slate-800 text-slate-300 font-mono" id="pill-count-ai">16</span>
       </button>
       <button data-category="cli" class="category-pill px-3.5 py-2 rounded-xl transition flex items-center space-x-1.5">
         <span>⚡ CLI Tools</span>
-        <span class="px-1.5 py-0.5 rounded-full text-[10px] bg-slate-800 text-slate-300 font-mono" id="pill-count-cli">15</span>
+        <span class="px-1.5 py-0.5 rounded-full text-[10px] bg-slate-800 text-slate-300 font-mono" id="pill-count-cli">19</span>
       </button>
       <button data-category="testing" class="category-pill px-3.5 py-2 rounded-xl transition flex items-center space-x-1.5">
         <span>🧪 Testing & QA</span>
-        <span class="px-1.5 py-0.5 rounded-full text-[10px] bg-slate-800 text-slate-300 font-mono" id="pill-count-testing">9</span>
+        <span class="px-1.5 py-0.5 rounded-full text-[10px] bg-slate-800 text-slate-300 font-mono" id="pill-count-testing">11</span>
       </button>
       <button data-category="cloud" class="category-pill px-3.5 py-2 rounded-xl transition flex items-center space-x-1.5">
         <span>☁️ Free Cloud</span>
@@ -237,7 +247,7 @@
       </button>
       <button data-category="contributors" class="category-pill px-3.5 py-2 rounded-xl transition flex items-center space-x-1.5">
         <span>🤝 Up for Grabs</span>
-        <span class="px-1.5 py-0.5 rounded-full text-[10px] bg-slate-800 text-slate-300 font-mono" id="pill-count-contributors">5</span>
+        <span class="px-1.5 py-0.5 rounded-full text-[10px] bg-slate-800 text-slate-300 font-mono" id="pill-count-contributors">9</span>
       </button>
     </div>
 
@@ -257,7 +267,7 @@
   <!-- Main Resource Grid -->
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
     <div class="flex items-center justify-between mb-4">
-      <div class="text-xs text-slate-300 font-mono font-semibold" id="results-count">Showing 76 curated resources</div>
+      <div class="text-xs text-slate-300 font-mono font-semibold" id="results-count">Showing 81 curated resources</div>
     </div>
 
     <!-- Cards Container -->
@@ -408,6 +418,7 @@
     </div>
   </footer>
 
-  <script src="app.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js?v=3.0"></script>
 </body>
 </html>

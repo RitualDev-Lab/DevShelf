@@ -6,7 +6,8 @@
     "description": "Local-first & privacy-hardened AI Git commit intelligence with Conventional Commits, AST secret redaction, atomic hunk splitting, and 1-click VS Code extension.",
     "language": "TypeScript",
     "license": "MIT",
-    "featured": true
+    "featured": true,
+    "goodFirstIssues": "https://github.com/RitualDev-Lab/GitWhisper/issues"
   },
   {
     "name": "FlashLane",
@@ -15,7 +16,8 @@
     "description": "Universal, high-speed bootable ISO/IMG USB writer with Rufus parity for Windows, macOS, and Linux. Streaming 4MB chunks, MBR/GPT, BIOS/UEFI, and simulation mode.",
     "language": "TypeScript / Electron",
     "license": "MIT",
-    "featured": true
+    "featured": true,
+    "goodFirstIssues": "https://github.com/RitualDev-Lab/FlashLane/issues"
   },
   {
     "name": "lazygit",
@@ -24,7 +26,8 @@
     "description": "Simple, fast terminal UI for git commands with interactive rebasing and visual diff navigation.",
     "language": "Go",
     "license": "MIT",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/jesseduffield/lazygit/issues"
   },
   {
     "name": "ripgrep",
@@ -33,7 +36,8 @@
     "description": "Ultra-fast line-oriented search tool that recursively searches directories for a regex pattern while respecting gitignore.",
     "language": "Rust",
     "license": "MIT / UNLICENSE",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/BurntSushi/ripgrep/issues"
   },
   {
     "name": "eza",
@@ -42,7 +46,8 @@
     "description": "A modern, maintained replacement for ls with colors, git status integration, icons, and tree views.",
     "language": "Rust",
     "license": "EUPL-1.2",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/eza-community/eza/issues"
   },
   {
     "name": "fzf",
@@ -51,7 +56,8 @@
     "description": "General-purpose command-line fuzzy finder with blazing speed and interactive shell bindings.",
     "language": "Go",
     "license": "MIT",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/junegunn/fzf/issues"
   },
   {
     "name": "agent-browser",
@@ -60,7 +66,8 @@
     "description": "Open-source browser automation CLI for AI agents, with a fast Rust core and Node.js fallback for navigation, forms, screenshots, and structured page interaction.",
     "language": "Rust / TypeScript",
     "license": "Apache-2.0",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/vercel-labs/agent-browser/issues"
   },
   {
     "name": "bat",
@@ -69,7 +76,8 @@
     "description": "Cat clone with syntax highlighting and Git integration for dozens of programming languages.",
     "language": "Rust",
     "license": "MIT / Apache-2.0",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/sharkdp/bat/issues"
   },
   {
     "name": "delta",
@@ -78,7 +86,8 @@
     "description": "A syntax-highlighting pager for git, diff, and grep output with side-by-side views and line numbers.",
     "language": "Rust",
     "license": "MIT",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/dandavison/delta/issues"
   },
   {
     "name": "hyperfine",
@@ -87,7 +96,8 @@
     "description": "Command-line benchmarking tool with statistical analysis, warmup runs, and parametric sweeps.",
     "language": "Rust",
     "license": "MIT / Apache-2.0",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/sharkdp/hyperfine/issues"
   },
   {
     "name": "tldr",
@@ -96,7 +106,8 @@
     "description": "Collaborative, simplified community man pages focusing on practical, real-world command examples.",
     "language": "Markdown",
     "license": "MIT",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/tldr-pages/tldr/issues"
   },
   {
     "name": "dust",
@@ -105,7 +116,8 @@
     "description": "A more intuitive version of du in Rust providing instant visual disk usage breakdown in terminal.",
     "language": "Rust",
     "license": "Apache-2.0",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/bootandy/dust/issues"
   },
   {
     "name": "procs",
@@ -114,7 +126,8 @@
     "description": "A modern replacement for ps with color highlighting, multi-column search, and process tree view.",
     "language": "Rust",
     "license": "MIT",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/dalance/procs/issues"
   },
   {
     "name": "bottom",
@@ -123,7 +136,8 @@
     "description": "Cross-platform graphical process and system monitor with customizable terminal charts and widgets.",
     "language": "Rust",
     "license": "MIT",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/ClementTsang/bottom/issues"
   },
   {
     "name": "curlie",
@@ -132,7 +146,8 @@
     "description": "The power of curl with the ease of use and human-friendly terminal output of HTTPie.",
     "language": "Go",
     "license": "MIT",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/rs/curlie/issues"
   },
   {
     "name": "Starship",
@@ -141,7 +156,8 @@
     "description": "The minimal, blazing-fast, and infinitely customizable cross-shell prompt for any shell (Bash, Zsh, Fish, PowerShell).",
     "language": "Rust",
     "license": "ISC",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/starship/starship/issues"
   },
   {
     "name": "zoxide",
@@ -150,7 +166,8 @@
     "description": "Smarter cd command inspired by z and autojump: learns your navigation habits to jump to directories in fewer keystrokes.",
     "language": "Rust",
     "license": "MIT",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/ajeetdsouza/zoxide/issues"
   },
   {
     "name": "gh-dash",
@@ -159,7 +176,8 @@
     "description": "Beautiful terminal user interface dashboard extension for GitHub CLI to manage pull requests and issues effortlessly.",
     "language": "Go",
     "license": "MIT",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/dlvhdr/gh-dash/issues"
   },
   {
     "name": "HTTPie",
@@ -168,6 +186,7 @@
     "description": "Modern, user-friendly command-line HTTP client for API debugging with clean JSON formatting, colorized output, and sessions.",
     "language": "Python",
     "license": "BSD-3-Clause",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/httpie/cli/issues"
   }
 ]

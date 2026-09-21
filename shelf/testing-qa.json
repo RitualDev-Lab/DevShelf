@@ -6,7 +6,8 @@
     "description": "100% Free & Local-first agentic self-healing E2E test runner for Playwright.  cloud cost with AST auto-patching and verification loop.",
     "language": "TypeScript",
     "license": "MIT",
-    "featured": true
+    "featured": true,
+    "goodFirstIssues": "https://github.com/RitualDev-Lab/autoheal-qa/issues"
   },
   {
     "name": "Playwright",
@@ -15,7 +16,8 @@
     "description": "Fast and reliable end-to-end testing framework for modern web apps across Chromium, Firefox, and WebKit.",
     "language": "TypeScript",
     "license": "Apache-2.0",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/microsoft/playwright/issues"
   },
   {
     "name": "Vitest",
@@ -24,7 +26,8 @@
     "description": "Blazing fast Vite-native unit test framework with ESM, TypeScript, and out-of-the-box coverage.",
     "language": "TypeScript",
     "license": "MIT",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/vitest-dev/vitest/issues"
   },
   {
     "name": "k6",
@@ -33,7 +36,8 @@
     "description": "Modern load testing tool, using Go and JavaScript, for testing system performance and reliability.",
     "language": "Go",
     "license": "AGPL-3.0",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/grafana/k6/issues"
   },
   {
     "name": "Bruno",
@@ -42,7 +46,8 @@
     "description": "Fast, git-friendly, open-source API client that stores collections directly in your repo via plain text files.",
     "language": "JavaScript",
     "license": "MIT",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/usebruno/bruno/issues"
   },
   {
     "name": "Hoppscotch",
@@ -51,7 +56,8 @@
     "description": "Open-source API development ecosystem, lightweight web & desktop app with WebSocket, GraphQL, and SSE support.",
     "language": "TypeScript / Vue",
     "license": "MIT",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/hoppscotch/hoppscotch/issues"
   },
   {
     "name": "Mockoon",
@@ -60,7 +66,8 @@
     "description": "The easiest and quickest way to design and run mock REST APIs locally with custom routes, rules, and proxies.",
     "language": "TypeScript",
     "license": "MIT",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/mockoon/mockoon/issues"
   },
   {
     "name": "Artillery",
@@ -69,7 +76,8 @@
     "description": "Cloud-scale load testing and functional testing platform for HTTP, WebSockets, and gRPC.",
     "language": "JavaScript",
     "license": "MPL-2.0",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/artilleryio/artillery/issues"
   },
   {
     "name": "Locust",
@@ -78,7 +86,8 @@
     "description": "Scalable user load testing tool written in Python with real-time web monitoring UI.",
     "language": "Python",
     "license": "MIT",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/locustio/locust/issues"
   },
   {
     "name": "MSW (Mock Service Worker)",
@@ -87,7 +96,8 @@
     "description": "Seamless REST and GraphQL API mocking library for browser and Node.js using Service Worker API to intercept requests at the network level.",
     "language": "TypeScript",
     "license": "MIT",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/mswjs/msw/issues"
   },
   {
     "name": "Vegeta",
@@ -96,6 +106,7 @@
     "description": "Versatile HTTP load testing tool and library built in Go for drilling HTTP services with constant request rates.",
     "language": "Go",
     "license": "MIT",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/tsenart/vegeta/issues"
   }
 ]

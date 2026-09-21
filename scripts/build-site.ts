@@ -47,39 +47,92 @@ async function buildSiteData() {
     section: "Developer Discounts & Startup Perks",
   }));
 
+  // Merge contributor metadata into matching tools so tools aren't duplicated in "All Items",
+  // but remain filterable under "contributors" / Up for Grabs!
+  const contributorMap = new Map<string, any>();
+  for (const c of contributors) {
+    contributorMap.set(c.name.toLowerCase(), c);
+  }
+
+  const tagContributor = (item: any) => {
+    const c = contributorMap.get(item.name.toLowerCase());
+    if (c) {
+      return {
+        ...item,
+        seeking: c.seeking || item.seeking,
+        goodFirstIssues: c.goodFirstIssues || item.goodFirstIssues,
+        contributorsWanted: true,
+      };
+    }
+    return item;
+  };
+
+  const taggedAi = aiTools.map(tagContributor);
+  const taggedCli = cliTools.map(tagContributor);
+  const taggedTesting = testingQa.map(tagContributor);
+
+  // If any item in contributors-wanted is NOT in ai, cli, or testing, include it as well
+  const knownNames = new Set([
+    ...taggedAi.map((t: any) => t.name.toLowerCase()),
+    ...taggedCli.map((t: any) => t.name.toLowerCase()),
+    ...taggedTesting.map((t: any) => t.name.toLowerCase()),
+  ]);
+
+  const standaloneContributors = contributors.filter(
+    (c: any) => !knownNames.has(c.name.toLowerCase()),
+  );
+
+  // Primary curated list: Open source & developer tools first, then APIs, cloud, perks
   const allResources = [
+    ...taggedAi,
+    ...taggedCli,
+    ...taggedTesting,
     ...apis,
-    ...aiTools,
-    ...cliTools,
-    ...testingQa,
     ...freeCloud,
-    ...contributors,
     ...perks,
+    ...standaloneContributors,
   ];
+
+  const reposCount = allResources.filter((r) => Boolean(r.repo)).length;
+  const contributorsWantedCount = allResources.filter(
+    (r) => r.contributorsWanted || r.type === "contributors",
+  ).length;
 
   const payload = {
     updatedAt: new Date().toISOString(),
     totalCount: allResources.length,
     counts: {
+      repos: reposCount,
       apis: apis.length,
       aiTools: aiTools.length,
       cliTools: cliTools.length,
       testingQa: testingQa.length,
       freeCloud: freeCloud.length,
-      contributors: contributors.length,
+      contributors: contributorsWantedCount,
       perks: perks.length,
     },
     resources: allResources,
   };
 
+  // 1. Write data.json for fetch requests
   await fs.writeFile(
     path.join(siteDir, "data.json"),
     `${JSON.stringify(payload, null, 2)}\n`,
     "utf8",
   );
+
+  // 2. Write data.js for instantaneous synchronous offline/local/zero-latency execution
+  await fs.writeFile(
+    path.join(siteDir, "data.js"),
+    `window.DEVSHELF_DATA = ${JSON.stringify(payload, null, 2)};\n`,
+    "utf8",
+  );
+
+  // 3. Write CNAME for custom domain
   await fs.writeFile(path.join(siteDir, "CNAME"), "devshelf.ritualdev.in\n", "utf8");
+
   console.log(
-    `✅ Built site/data.json with ${allResources.length} total resources and wrote CNAME.`,
+    `✅ Built site/data.json & site/data.js with ${allResources.length} total resources (${reposCount} GitHub repos) and wrote CNAME.`,
   );
 }
 
