@@ -253,22 +253,28 @@ APIs that provide a 100% free tier or require no API key at all.
 
   md += `\n---
 
-## 🚀 How to Submit Your Project or API
+## 🚀 Community Contributions & Issue Hub
 
-Adding your project or API to **DevShelf** is 100% free and takes less than 30 seconds!
+DevShelf is powered by the open-source community! We provide tailored issue templates for every kind of contribution:
 
-### Option 1: 1-Click Submission via GitHub Issue (Easiest)
-1. Open a new issue using our structured template:
-   - 👉 **[Submit an Open Source Repo / Tool](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=submit_project.yml)**
-   - 👉 **[Submit a Free API](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=submit_api.yml)**
-2. Fill in your project name, repository URL, category, and a one-sentence summary.
-3. Our automated GitHub Action validates the link and adds it to the shelf!
+| Action / Goal | Issue Template | Description |
+| :--- | :--- | :--- |
+| **🚀 Submit Open Source Tool** | [**Open Project Form →**](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=01_submit_tool.yml) | Submit your developer tool, CLI, or library for automated addition & social shoutout |
+| **🌐 Submit Free Public API** | [**Open API Form →**](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=02_submit_api.yml) | Add a free, no-key, or generous rate-limit public API |
+| **💡 Propose a Feature** | [**Open Feature Request →**](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=03_feature_request.yml) | Suggest new UI features, dark mode, filtering capabilities, or web app improvements |
+| **🌱 Good First Issue** | [**Open Starter Task →**](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=04_good_first_issue.yml) | Propose or claim bite-sized tasks for new open-source contributors |
+| **📖 Docs & Guides** | [**Open Docs Issue →**](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=05_docs_improvement.yml) | Suggest clarifications or guides for DevShelf or the Wiki |
+| **🔗 Report Broken Link** | [**Open Health Report →**](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=06_report_broken_link.yml) | Flag an unreachable URL or moved API endpoint |
+| **🚨 Report Paywall / Spam** | [**Open Content Report →**](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=07_content_report.yml) | Report deceptive paywalls or spam for immediate delisting |
 
-### Option 2: Submit a Pull Request
-1. Fork this repository.
-2. Add your entry to the appropriate JSON file in the \`shelf/\` directory (\`shelf/apis.json\`, \`shelf/cli-tools.json\`, etc.).
-3. Run \`pnpm run build\` to update the README.
-4. Submit your PR — automated checks will review and merge it.
+---
+
+## 🛠️ How to Contribute via Pull Request (PR)
+1. Fork this repository and clone your fork.
+2. Add your entry to the appropriate JSON file in the \`shelf/\` directory (\`shelf/apis.json\`, \`shelf/cli-tools.json\`, \`shelf/ai-tools.json\`, etc.).
+3. Run \`pnpm run validate\` to test schema conformance.
+4. Run \`pnpm run build\` to re-generate the web directory and README.
+5. Submit your PR — our automated GitHub Actions will review and merge it!
 
 ---
 

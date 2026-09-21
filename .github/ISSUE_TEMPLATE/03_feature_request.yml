@@ -1,0 +1,55 @@
+﻿name: 💡 Propose a Feature or Improvement
+description: Suggest a new capability, UI enhancement, or workflow idea for DevShelf
+title: "[Feature]: <Succinct summary of proposed feature>"
+labels: ["enhancement", "feature-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 💡 Have an idea to make DevShelf better?
+        We love suggestions for improving our web directory, search performance, badge embeds, automation scripts, or developer experience.
+  - type: input
+    id: feature_title
+    attributes:
+      label: Feature Name / Concept
+      placeholder: e.g. Dark/Light theme toggle, Bookmark favorites to localStorage, Export to JSON
+    validations:
+      required: true
+  - type: dropdown
+    id: target_area
+    attributes:
+      label: Area of Impact
+      options:
+        - Web App UI / UX (devshelf.ritualdev.in)
+        - Search & Filtering Engine
+        - Shelf Directory Data & Curation
+        - Automation Scripts & CI/CD
+        - Badge Generator & Embeds
+        - Documentation & Community
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: problem_statement
+    attributes:
+      label: Problem or Opportunity
+      placeholder: Describe what problem this solves or what user experience could be elevated.
+    validations:
+      required: true
+  - type: textarea
+    id: proposed_solution
+    attributes:
+      label: Proposed Solution & Technical Details
+      placeholder: How do you envision this working? Include mockups, UI concepts, or implementation details if you have them.
+    validations:
+      required: true
+  - type: dropdown
+    id: willingness_to_contribute
+    attributes:
+      label: Are you interested in implementing this?
+      options:
+        - "Yes, I would love to open a PR for this!"
+        - "I can help with design or testing"
+        - "No, this is just an idea for maintainers"
+    validations:
+      required: true

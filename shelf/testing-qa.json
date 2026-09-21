@@ -79,5 +79,23 @@
     "language": "Python",
     "license": "MIT",
     "featured": false
+  },
+  {
+    "name": "MSW (Mock Service Worker)",
+    "repo": "https://github.com/mswjs/msw",
+    "category": "API Mocking & Interception",
+    "description": "Seamless REST and GraphQL API mocking library for browser and Node.js using Service Worker API to intercept requests at the network level.",
+    "language": "TypeScript",
+    "license": "MIT",
+    "featured": false
+  },
+  {
+    "name": "Vegeta",
+    "repo": "https://github.com/tsenart/vegeta",
+    "category": "Performance & Load Testing",
+    "description": "Versatile HTTP load testing tool and library built in Go for drilling HTTP services with constant request rates.",
+    "language": "Go",
+    "license": "MIT",
+    "featured": false
   }
 ]

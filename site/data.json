@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-09-21T02:01:28.543Z",
-  "totalCount": 76,
+  "updatedAt": "2026-09-21T02:06:37.344Z",
+  "totalCount": 90,
   "counts": {
     "apis": 15,
-    "aiTools": 12,
-    "cliTools": 15,
-    "testingQa": 9,
+    "aiTools": 16,
+    "cliTools": 19,
+    "testingQa": 11,
     "freeCloud": 10,
-    "contributors": 5,
+    "contributors": 9,
     "perks": 10
   },
   "resources": [
@@ -324,6 +324,50 @@
       "section": "AI Agents & Local LLMs"
     },
     {
+      "name": "Aider",
+      "repo": "https://github.com/Aider-AI/aider",
+      "category": "AI Pair Programming & CLI",
+      "description": "AI pair programming in your terminal: edit code in local git repos with Claude 3.5 Sonnet, GPT-4o, or local LLMs with auto-commits.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "OpenHands",
+      "repo": "https://github.com/All-Hands-AI/OpenHands",
+      "category": "Autonomous AI Software Engineers",
+      "description": "Open-source platform for software development agents that can write code, fix bugs, run bash commands, and browse documentation autonomously.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Continue",
+      "repo": "https://github.com/continuedev/continue",
+      "category": "AI Code Assistant & Extension",
+      "description": "Leading open-source AI code assistant inside VS Code and JetBrains: bring your own models, embeddings, and context providers.",
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "featured": false,
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "llama.cpp",
+      "repo": "https://github.com/ggerganov/llama.cpp",
+      "category": "Local AI & Inference",
+      "description": "High-performance LLM inference in pure C/C++ with minimal setup and state-of-the-art quantization across Apple Silicon and GPUs.",
+      "language": "C / C++",
+      "license": "MIT",
+      "featured": false,
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
       "name": "GitWhisper",
       "repo": "https://github.com/RitualDev-Lab/GitWhisper",
       "category": "Git & Version Control",
@@ -489,6 +533,50 @@
       "section": "CLI & Productivity Tools"
     },
     {
+      "name": "Starship",
+      "repo": "https://github.com/starship/starship",
+      "category": "Terminal & Shell Prompt",
+      "description": "The minimal, blazing-fast, and infinitely customizable cross-shell prompt for any shell (Bash, Zsh, Fish, PowerShell).",
+      "language": "Rust",
+      "license": "ISC",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "zoxide",
+      "repo": "https://github.com/ajeetdsouza/zoxide",
+      "category": "Terminal Navigation",
+      "description": "Smarter cd command inspired by z and autojump: learns your navigation habits to jump to directories in fewer keystrokes.",
+      "language": "Rust",
+      "license": "MIT",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "gh-dash",
+      "repo": "https://github.com/dlvhdr/gh-dash",
+      "category": "GitHub Workflow & TUI",
+      "description": "Beautiful terminal user interface dashboard extension for GitHub CLI to manage pull requests and issues effortlessly.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "HTTPie",
+      "repo": "https://github.com/httpie/cli",
+      "category": "HTTP & Networking",
+      "description": "Modern, user-friendly command-line HTTP client for API debugging with clean JSON formatting, colorized output, and sessions.",
+      "language": "Python",
+      "license": "BSD-3-Clause",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
       "name": "AutoHeal-QA",
       "repo": "https://github.com/RitualDev-Lab/autoheal-qa",
       "category": "E2E & Playwright",
@@ -582,6 +670,28 @@
       "category": "Performance & Load Testing",
       "description": "Scalable user load testing tool written in Python with real-time web monitoring UI.",
       "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "MSW (Mock Service Worker)",
+      "repo": "https://github.com/mswjs/msw",
+      "category": "API Mocking & Interception",
+      "description": "Seamless REST and GraphQL API mocking library for browser and Node.js using Service Worker API to intercept requests at the network level.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "featured": false,
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "Vegeta",
+      "repo": "https://github.com/tsenart/vegeta",
+      "category": "Performance & Load Testing",
+      "description": "Versatile HTTP load testing tool and library built in Go for drilling HTTP services with constant request rates.",
+      "language": "Go",
       "license": "MIT",
       "featured": false,
       "type": "testing",
@@ -729,6 +839,50 @@
       "seeking": "Cross-platform terminal enhancements, playwright engine bindings, examples",
       "goodFirstIssues": "https://github.com/vercel-labs/agent-browser/issues",
       "language": "Rust / TypeScript",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "Aider",
+      "repo": "https://github.com/Aider-AI/aider",
+      "category": "AI Coding CLI",
+      "description": "Terminal-based AI pair programming tool with git auto-commit integration.",
+      "seeking": "Local model benchmark adapters, terminal UX enhancements, documentation",
+      "goodFirstIssues": "https://github.com/Aider-AI/aider/issues",
+      "language": "Python",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "OpenHands",
+      "repo": "https://github.com/All-Hands-AI/OpenHands",
+      "category": "Autonomous AI Agent",
+      "description": "Autonomous software development agent platform for solving GitHub issues.",
+      "seeking": "Docker sandbox runtime adapters, evaluation benchmarks, docs & translations",
+      "goodFirstIssues": "https://github.com/All-Hands-AI/OpenHands/issues",
+      "language": "Python",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "Continue",
+      "repo": "https://github.com/continuedev/continue",
+      "category": "IDE Assistant",
+      "description": "Leading open-source AI code assistant for VS Code and JetBrains.",
+      "seeking": "Provider integrations, prompt context templates, good first issues",
+      "goodFirstIssues": "https://github.com/continuedev/continue/issues",
+      "language": "TypeScript",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "Starship",
+      "repo": "https://github.com/starship/starship",
+      "category": "Shell & Terminal Prompt",
+      "description": "Fast and customizable cross-shell prompt for any terminal.",
+      "seeking": "New module additions, shell integrations, localized docs, bug fixes",
+      "goodFirstIssues": "https://github.com/starship/starship/issues",
+      "language": "Rust",
       "type": "contributors",
       "section": "Contributors Wanted"
     },

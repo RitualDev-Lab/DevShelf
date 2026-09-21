@@ -10,11 +10,14 @@ DevShelf is an open-source, crowdsourced directory committed to curating the bes
 There are two easy ways to contribute:
 
 ### 1. The Fast Way: Submit via GitHub Issues (No Git Required)
-If you just want to recommend a great tool or API without cloning the repo:
-- ?? **[Submit an Open Source Project / Tool](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=01_submit_tool.yml)**
-- ?? **[Submit a Free Public API](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=02_submit_api.yml)**
-- ?? **[Report a Dead Link / Changed URL](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=03_report_dead_link.yml)**
-- ?? **[Report Inappropriate / Paywalled Content](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=04_content_report.yml)**
+If you just want to recommend a great tool, suggest an improvement, or report an issue without cloning the repo:
+- 🚀 **[Submit an Open Source Project / Tool](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=01_submit_tool.yml)**
+- 🌐 **[Submit a Free Public API](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=02_submit_api.yml)**
+- 💡 **[Propose a Feature or UI Improvement](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=03_feature_request.yml)**
+- 🌱 **[Claim or Propose a Good First Issue](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=04_good_first_issue.yml)**
+- 📖 **[Suggest Documentation Improvements](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=05_docs_improvement.yml)**
+- 🔗 **[Report a Dead Link / Changed URL](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=06_report_broken_link.yml)**
+- 🚨 **[Report Inappropriate / Paywalled Content](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=07_content_report.yml)**
 
 Fill out the form and submit. Maintainers will review and merge it!
 

@@ -1,4 +1,4 @@
-name: ?? Report Inappropriate or Paywalled Content
+﻿name: 🚨 Report Inappropriate or Paywalled Content
 description: Report deceptive paywalls, malicious links, spam, or Code of Conduct violations to repository admins
 title: "[Content Report]: <Resource Name>"
 labels: ["content-report", "needs-review"]
@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        ### ??? Repository Administrator Content Report
+        ### 🚨 Repository Administrator Content Report
         DevShelf maintainers maintain a zero-tolerance policy against deceptive bait-and-switch tools, hidden credit card requirements, malicious software, and spam.
         Repository administrators actively review all submitted reports.
   - type: input
@@ -21,12 +21,12 @@ body:
     attributes:
       label: Nature of Violation
       options:
-        - Deceptive Paywall (Requires Credit Card or Paid Subscription)
-        - Malicious Software / Suspicious Binary / Phishing
-        - Crypto / NFT / Affiliate Referral Spam
-        - License Violation / Stolen Intellectual Property
-        - Code of Conduct Violation / Harassment
-        - Other
+        - "Deceptive Paywall (Requires Credit Card or Paid Subscription)"
+        - "Malicious Software / Suspicious Binary / Phishing"
+        - "Crypto / NFT / Affiliate Referral Spam"
+        - "License Violation / Stolen Intellectual Property"
+        - "Code of Conduct Violation / Harassment"
+        - "Other"
     validations:
       required: true
   - type: textarea
@@ -41,9 +41,9 @@ body:
     attributes:
       label: Recommended Remediation
       options:
-        - Delist / Remove immediately from DevShelf
-        - Update description with explicit limitations
-        - Other
+        - "Delist / Remove immediately from DevShelf"
+        - "Update description with explicit limitations"
+        - "Other"
     validations:
       required: true
   - type: checkboxes

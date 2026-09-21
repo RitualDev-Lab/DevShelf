@@ -106,5 +106,41 @@
     "language": "Go",
     "license": "MIT",
     "featured": false
+  },
+  {
+    "name": "Aider",
+    "repo": "https://github.com/Aider-AI/aider",
+    "category": "AI Pair Programming & CLI",
+    "description": "AI pair programming in your terminal: edit code in local git repos with Claude 3.5 Sonnet, GPT-4o, or local LLMs with auto-commits.",
+    "language": "Python",
+    "license": "Apache-2.0",
+    "featured": false
+  },
+  {
+    "name": "OpenHands",
+    "repo": "https://github.com/All-Hands-AI/OpenHands",
+    "category": "Autonomous AI Software Engineers",
+    "description": "Open-source platform for software development agents that can write code, fix bugs, run bash commands, and browse documentation autonomously.",
+    "language": "Python",
+    "license": "MIT",
+    "featured": false
+  },
+  {
+    "name": "Continue",
+    "repo": "https://github.com/continuedev/continue",
+    "category": "AI Code Assistant & Extension",
+    "description": "Leading open-source AI code assistant inside VS Code and JetBrains: bring your own models, embeddings, and context providers.",
+    "language": "TypeScript",
+    "license": "Apache-2.0",
+    "featured": false
+  },
+  {
+    "name": "llama.cpp",
+    "repo": "https://github.com/ggerganov/llama.cpp",
+    "category": "Local AI & Inference",
+    "description": "High-performance LLM inference in pure C/C++ with minimal setup and state-of-the-art quantization across Apple Silicon and GPUs.",
+    "language": "C / C++",
+    "license": "MIT",
+    "featured": false
   }
 ]

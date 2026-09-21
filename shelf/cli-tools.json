@@ -133,5 +133,41 @@
     "language": "Go",
     "license": "MIT",
     "featured": false
+  },
+  {
+    "name": "Starship",
+    "repo": "https://github.com/starship/starship",
+    "category": "Terminal & Shell Prompt",
+    "description": "The minimal, blazing-fast, and infinitely customizable cross-shell prompt for any shell (Bash, Zsh, Fish, PowerShell).",
+    "language": "Rust",
+    "license": "ISC",
+    "featured": false
+  },
+  {
+    "name": "zoxide",
+    "repo": "https://github.com/ajeetdsouza/zoxide",
+    "category": "Terminal Navigation",
+    "description": "Smarter cd command inspired by z and autojump: learns your navigation habits to jump to directories in fewer keystrokes.",
+    "language": "Rust",
+    "license": "MIT",
+    "featured": false
+  },
+  {
+    "name": "gh-dash",
+    "repo": "https://github.com/dlvhdr/gh-dash",
+    "category": "GitHub Workflow & TUI",
+    "description": "Beautiful terminal user interface dashboard extension for GitHub CLI to manage pull requests and issues effortlessly.",
+    "language": "Go",
+    "license": "MIT",
+    "featured": false
+  },
+  {
+    "name": "HTTPie",
+    "repo": "https://github.com/httpie/cli",
+    "category": "HTTP & Networking",
+    "description": "Modern, user-friendly command-line HTTP client for API debugging with clean JSON formatting, colorized output, and sessions.",
+    "language": "Python",
+    "license": "BSD-3-Clause",
+    "featured": false
   }
 ]

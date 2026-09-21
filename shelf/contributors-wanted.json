@@ -43,5 +43,41 @@
     "seeking": "Cross-platform terminal enhancements, playwright engine bindings, examples",
     "goodFirstIssues": "https://github.com/vercel-labs/agent-browser/issues",
     "language": "Rust / TypeScript"
+  },
+  {
+    "name": "Aider",
+    "repo": "https://github.com/Aider-AI/aider",
+    "category": "AI Coding CLI",
+    "description": "Terminal-based AI pair programming tool with git auto-commit integration.",
+    "seeking": "Local model benchmark adapters, terminal UX enhancements, documentation",
+    "goodFirstIssues": "https://github.com/Aider-AI/aider/issues",
+    "language": "Python"
+  },
+  {
+    "name": "OpenHands",
+    "repo": "https://github.com/All-Hands-AI/OpenHands",
+    "category": "Autonomous AI Agent",
+    "description": "Autonomous software development agent platform for solving GitHub issues.",
+    "seeking": "Docker sandbox runtime adapters, evaluation benchmarks, docs & translations",
+    "goodFirstIssues": "https://github.com/All-Hands-AI/OpenHands/issues",
+    "language": "Python"
+  },
+  {
+    "name": "Continue",
+    "repo": "https://github.com/continuedev/continue",
+    "category": "IDE Assistant",
+    "description": "Leading open-source AI code assistant for VS Code and JetBrains.",
+    "seeking": "Provider integrations, prompt context templates, good first issues",
+    "goodFirstIssues": "https://github.com/continuedev/continue/issues",
+    "language": "TypeScript"
+  },
+  {
+    "name": "Starship",
+    "repo": "https://github.com/starship/starship",
+    "category": "Shell & Terminal Prompt",
+    "description": "Fast and customizable cross-shell prompt for any terminal.",
+    "seeking": "New module additions, shell integrations, localized docs, bug fixes",
+    "goodFirstIssues": "https://github.com/starship/starship/issues",
+    "language": "Rust"
   }
 ]

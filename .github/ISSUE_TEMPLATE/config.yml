@@ -3,3 +3,6 @@ contact_links:
   - name: 💬 Community Discussions
     url: https://github.com/RitualDev-Lab/DevShelf/discussions
     about: Ask questions, share project ideas, or chat with fellow developers!
+  - name: 🌐 Live Web Directory
+    url: https://devshelf.ritualdev.in
+    about: Search and filter all curated developer tools, free APIs, and open-source projects!

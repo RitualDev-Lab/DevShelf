@@ -1,0 +1,40 @@
+﻿name: 📖 Documentation & Guide Improvement
+description: Suggest clarifications, new sections, or guide tutorials for DevShelf or the Wiki
+title: "[Docs]: <Clear title describing documentation improvement>"
+labels: ["documentation", "docs-update"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 📖 Excellent documentation helps everyone!
+        Whether it's clarifying submission instructions, improving the Wiki, or refining API descriptions, your suggestions make a huge difference.
+  - type: input
+    id: docs_title
+    attributes:
+      label: Documentation Area
+      placeholder: e.g. README.md, CONTRIBUTING.md, Project Wiki, or Code of Conduct
+    validations:
+      required: true
+  - type: textarea
+    id: current_state
+    attributes:
+      label: Current State / What is Missing
+      placeholder: What part of the documentation is currently unclear, incomplete, or out-of-date?
+    validations:
+      required: true
+  - type: textarea
+    id: suggested_improvement
+    attributes:
+      label: Suggested Improvement or New Content
+      placeholder: Provide the text, outline, or concrete improvements you would like to see.
+    validations:
+      required: true
+  - type: dropdown
+    id: willingness_to_pr
+    attributes:
+      label: Can you submit a PR for this docs update?
+      options:
+        - "Yes! I can write and submit the pull request."
+        - "No, I am providing feedback for the core team to update."
+    validations:
+      required: true

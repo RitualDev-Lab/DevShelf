@@ -6,7 +6,7 @@
 **Discover high-quality developer tools, verified free APIs, AI agents, and open-source projects with zero paywalls.**
 
 [![Live Web Directory](https://img.shields.io/badge/Web_Directory-Live_Search_%26_Filters-7928CA?style=for-the-badge&logo=googlechrome&logoColor=white)](https://devshelf.ritualdev.in)
-[![Curated Resources](https://img.shields.io/badge/Listed_Resources-76+_Curated-blueviolet?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
+[![Curated Resources](https://img.shields.io/badge/Listed_Resources-90+_Curated-blueviolet?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
 [![Endpoint Health](https://img.shields.io/badge/Endpoint_Health-100%25_Verified-brightgreen?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/RitualDev-Lab/DevShelf/actions)
 [![Open Source](https://img.shields.io/badge/Open_Source-100%25_FOSS-blue?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
 [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome_&_Amplified-brightgreen?style=for-the-badge)](#-how-to-submit-your-project-or-api)
@@ -24,11 +24,11 @@
 <p align="center">
   <b>Quick Jump:</b>
   <a href="#-1-free--public-apis">Free APIs</a> (15) •
-  <a href="#-2-ai-agents--local-llm-tools">AI & LLMs</a> (12) •
-  <a href="#-3-cli--productivity-tools">CLI Tools</a> (15) •
-  <a href="#-4-testing--qa-reliability">Testing & QA</a> (9) •
+  <a href="#-2-ai-agents--local-llm-tools">AI & LLMs</a> (16) •
+  <a href="#-3-cli--productivity-tools">CLI Tools</a> (19) •
+  <a href="#-4-testing--qa-reliability">Testing & QA</a> (11) •
   <a href="#-5-free-cloud--developer-tiers">Free Cloud</a> (10) •
-  <a href="#-6-contributors-wanted-up-for-grabs">Up for Grabs</a> (5) •
+  <a href="#-6-contributors-wanted-up-for-grabs">Up for Grabs</a> (9) •
   <a href="#-7-developer-discounts--startup-perks">Dev Perks</a> (10)
 </p>
 
@@ -237,6 +237,26 @@ Open-source AI frameworks, local LLM serving, and coding assistants.
 
 `Category: AI CLI & Productivity` • `Language: Go` • `License: MIT` • [View Repo →](https://github.com/danielmiessler/fabric)
 
+### [Aider](https://github.com/Aider-AI/aider)
+> AI pair programming in your terminal: edit code in local git repos with Claude 3.5 Sonnet, GPT-4o, or local LLMs with auto-commits.
+
+`Category: AI Pair Programming & CLI` • `Language: Python` • `License: Apache-2.0` • [View Repo →](https://github.com/Aider-AI/aider)
+
+### [OpenHands](https://github.com/All-Hands-AI/OpenHands)
+> Open-source platform for software development agents that can write code, fix bugs, run bash commands, and browse documentation autonomously.
+
+`Category: Autonomous AI Software Engineers` • `Language: Python` • `License: MIT` • [View Repo →](https://github.com/All-Hands-AI/OpenHands)
+
+### [Continue](https://github.com/continuedev/continue)
+> Leading open-source AI code assistant inside VS Code and JetBrains: bring your own models, embeddings, and context providers.
+
+`Category: AI Code Assistant & Extension` • `Language: TypeScript` • `License: Apache-2.0` • [View Repo →](https://github.com/continuedev/continue)
+
+### [llama.cpp](https://github.com/ggerganov/llama.cpp)
+> High-performance LLM inference in pure C/C++ with minimal setup and state-of-the-art quantization across Apple Silicon and GPUs.
+
+`Category: Local AI & Inference` • `Language: C / C++` • `License: MIT` • [View Repo →](https://github.com/ggerganov/llama.cpp)
+
 ---
 
 ## ⚡ 3. CLI & Productivity Tools
@@ -318,6 +338,26 @@ Terminal utilities, git enhancers, and developer workflows that save hours every
 
 `Category: HTTP & Networking` • `Language: Go` • `License: MIT` • [View Repo →](https://github.com/rs/curlie)
 
+### [Starship](https://github.com/starship/starship)
+> The minimal, blazing-fast, and infinitely customizable cross-shell prompt for any shell (Bash, Zsh, Fish, PowerShell).
+
+`Category: Terminal & Shell Prompt` • `Language: Rust` • `License: ISC` • [View Repo →](https://github.com/starship/starship)
+
+### [zoxide](https://github.com/ajeetdsouza/zoxide)
+> Smarter cd command inspired by z and autojump: learns your navigation habits to jump to directories in fewer keystrokes.
+
+`Category: Terminal Navigation` • `Language: Rust` • `License: MIT` • [View Repo →](https://github.com/ajeetdsouza/zoxide)
+
+### [gh-dash](https://github.com/dlvhdr/gh-dash)
+> Beautiful terminal user interface dashboard extension for GitHub CLI to manage pull requests and issues effortlessly.
+
+`Category: GitHub Workflow & TUI` • `Language: Go` • `License: MIT` • [View Repo →](https://github.com/dlvhdr/gh-dash)
+
+### [HTTPie](https://github.com/httpie/cli)
+> Modern, user-friendly command-line HTTP client for API debugging with clean JSON formatting, colorized output, and sessions.
+
+`Category: HTTP & Networking` • `Language: Python` • `License: BSD-3-Clause` • [View Repo →](https://github.com/httpie/cli)
+
 ---
 
 ## 🧪 4. Testing & QA Reliability
@@ -368,6 +408,16 @@ End-to-end testing, self-healing frameworks, mock servers, and test automation.
 > Scalable user load testing tool written in Python with real-time web monitoring UI.
 
 `Category: Performance & Load Testing` • `Language: Python` • `License: MIT` • [View Repo →](https://github.com/locustio/locust)
+
+### [MSW (Mock Service Worker)](https://github.com/mswjs/msw)
+> Seamless REST and GraphQL API mocking library for browser and Node.js using Service Worker API to intercept requests at the network level.
+
+`Category: API Mocking & Interception` • `Language: TypeScript` • `License: MIT` • [View Repo →](https://github.com/mswjs/msw)
+
+### [Vegeta](https://github.com/tsenart/vegeta)
+> Versatile HTTP load testing tool and library built in Go for drilling HTTP services with constant request rates.
+
+`Category: Performance & Load Testing` • `Language: Go` • `License: MIT` • [View Repo →](https://github.com/tsenart/vegeta)
 
 ---
 
@@ -461,6 +511,30 @@ Active open-source projects looking for contributors, bug hunters, or co-maintai
 🎯 **Seeking**: Cross-platform terminal enhancements, playwright engine bindings, examples  
 `Language: Rust / TypeScript` • [Browse Open Issues →](https://github.com/vercel-labs/agent-browser/issues) • [Repo Link →](https://github.com/vercel-labs/agent-browser)
 
+### [Aider](https://github.com/Aider-AI/aider)
+> Terminal-based AI pair programming tool with git auto-commit integration.
+
+🎯 **Seeking**: Local model benchmark adapters, terminal UX enhancements, documentation  
+`Language: Python` • [Browse Open Issues →](https://github.com/Aider-AI/aider/issues) • [Repo Link →](https://github.com/Aider-AI/aider)
+
+### [OpenHands](https://github.com/All-Hands-AI/OpenHands)
+> Autonomous software development agent platform for solving GitHub issues.
+
+🎯 **Seeking**: Docker sandbox runtime adapters, evaluation benchmarks, docs & translations  
+`Language: Python` • [Browse Open Issues →](https://github.com/All-Hands-AI/OpenHands/issues) • [Repo Link →](https://github.com/All-Hands-AI/OpenHands)
+
+### [Continue](https://github.com/continuedev/continue)
+> Leading open-source AI code assistant for VS Code and JetBrains.
+
+🎯 **Seeking**: Provider integrations, prompt context templates, good first issues  
+`Language: TypeScript` • [Browse Open Issues →](https://github.com/continuedev/continue/issues) • [Repo Link →](https://github.com/continuedev/continue)
+
+### [Starship](https://github.com/starship/starship)
+> Fast and customizable cross-shell prompt for any terminal.
+
+🎯 **Seeking**: New module additions, shell integrations, localized docs, bug fixes  
+`Language: Rust` • [Browse Open Issues →](https://github.com/starship/starship/issues) • [Repo Link →](https://github.com/starship/starship)
+
 ---
 
 ## 🎁 7. Developer Discounts & Startup Perks
@@ -482,22 +556,28 @@ Free cloud credits, software sponsorships, and startup program perks for develop
 
 ---
 
-## 🚀 How to Submit Your Project or API
+## 🚀 Community Contributions & Issue Hub
 
-Adding your project or API to **DevShelf** is 100% free and takes less than 30 seconds!
+DevShelf is powered by the open-source community! We provide tailored issue templates for every kind of contribution:
 
-### Option 1: 1-Click Submission via GitHub Issue (Easiest)
-1. Open a new issue using our structured template:
-   - 👉 **[Submit an Open Source Repo / Tool](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=submit_project.yml)**
-   - 👉 **[Submit a Free API](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=submit_api.yml)**
-2. Fill in your project name, repository URL, category, and a one-sentence summary.
-3. Our automated GitHub Action validates the link and adds it to the shelf!
+| Action / Goal | Issue Template | Description |
+| :--- | :--- | :--- |
+| **🚀 Submit Open Source Tool** | [**Open Project Form →**](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=01_submit_tool.yml) | Submit your developer tool, CLI, or library for automated addition & social shoutout |
+| **🌐 Submit Free Public API** | [**Open API Form →**](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=02_submit_api.yml) | Add a free, no-key, or generous rate-limit public API |
+| **💡 Propose a Feature** | [**Open Feature Request →**](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=03_feature_request.yml) | Suggest new UI features, dark mode, filtering capabilities, or web app improvements |
+| **🌱 Good First Issue** | [**Open Starter Task →**](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=04_good_first_issue.yml) | Propose or claim bite-sized tasks for new open-source contributors |
+| **📖 Docs & Guides** | [**Open Docs Issue →**](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=05_docs_improvement.yml) | Suggest clarifications or guides for DevShelf or the Wiki |
+| **🔗 Report Broken Link** | [**Open Health Report →**](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=06_report_broken_link.yml) | Flag an unreachable URL or moved API endpoint |
+| **🚨 Report Paywall / Spam** | [**Open Content Report →**](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=07_content_report.yml) | Report deceptive paywalls or spam for immediate delisting |
 
-### Option 2: Submit a Pull Request
-1. Fork this repository.
-2. Add your entry to the appropriate JSON file in the `shelf/` directory (`shelf/apis.json`, `shelf/cli-tools.json`, etc.).
-3. Run `pnpm run build` to update the README.
-4. Submit your PR — automated checks will review and merge it.
+---
+
+## 🛠️ How to Contribute via Pull Request (PR)
+1. Fork this repository and clone your fork.
+2. Add your entry to the appropriate JSON file in the `shelf/` directory (`shelf/apis.json`, `shelf/cli-tools.json`, `shelf/ai-tools.json`, etc.).
+3. Run `pnpm run validate` to test schema conformance.
+4. Run `pnpm run build` to re-generate the web directory and README.
+5. Submit your PR — our automated GitHub Actions will review and merge it!
 
 ---
 

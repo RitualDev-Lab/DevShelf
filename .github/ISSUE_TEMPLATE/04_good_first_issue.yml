@@ -1,0 +1,61 @@
+﻿name: 🌱 Good First Issue / Starter Task
+description: Propose a beginner-friendly, bite-sized task for new open-source contributors
+title: "[Good First Issue]: <Clear, bite-sized starter task summary>"
+labels: ["good first issue", "help wanted", "starter-task"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 🌱 Thank you for opening up starter opportunities!
+        **Good First Issues** are approachable, self-contained tasks designed to welcome first-time contributors into DevShelf.
+  - type: input
+    id: task_summary
+    attributes:
+      label: Task Summary
+      placeholder: e.g. Add 3 high-quality free Geocoding APIs to shelf/apis.json
+    validations:
+      required: true
+  - type: dropdown
+    id: difficulty
+    attributes:
+      label: Difficulty Level
+      options:
+        - "🟢 Beginner (No code needed, JSON curation or documentation)"
+        - "🟡 Intermediate (JavaScript/TypeScript, CSS/Tailwind, or Node.js scripts)"
+        - "🟠 Advanced (GitHub Actions CI/CD, build tooling, performance)"
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context & Background
+      placeholder: Explain what needs to be done and why it is useful for the project.
+    validations:
+      required: true
+  - type: textarea
+    id: steps_to_complete
+    attributes:
+      label: Suggested Steps to Complete
+      placeholder: |
+        1. Fork the repo and checkout a new branch.
+        2. Modify the file at ...
+        3. Run `pnpm run validate` and `pnpm run build`.
+        4. Open a Pull Request.
+    validations:
+      required: true
+  - type: input
+    id: files_to_touch
+    attributes:
+      label: Relevant Files / Pointers
+      placeholder: e.g. shelf/apis.json, scripts/build-readme.ts
+    validations:
+      required: false
+  - type: checkboxes
+    id: mentorship
+    attributes:
+      label: Mentorship & Support
+      options:
+        - label: Maintainers will review this PR within 24-48 hours and provide constructive feedback.
+          required: true
+        - label: Upon merge, the contributor will receive a shoutout on social channels and be featured in README!
+          required: true

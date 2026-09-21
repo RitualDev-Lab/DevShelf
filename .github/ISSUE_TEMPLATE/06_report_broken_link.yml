@@ -1,4 +1,4 @@
-name: ?? Report a Dead or Broken Link
+﻿name: 🔗 Report a Dead or Broken Link
 description: Notify maintainers about an unreachable endpoint, 404, or moved resource
 title: "[Broken Link]: <Resource Name>"
 labels: ["bug", "broken-link"]
@@ -6,13 +6,13 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for helping keep DevShelf 100% active and healthy!  
+        ### 🛡️ Thanks for keeping DevShelf 100% active and healthy!
         Our automated link checker pings endpoints weekly, but if you found a broken link first, let us know.
   - type: input
     id: resource_name
     attributes:
       label: Resource Name
-      placeholder: e.g. 1Password for Open Source
+      placeholder: e.g. Open-Meteo or Sentry for Open Source
     validations:
       required: true
   - type: input
@@ -27,11 +27,11 @@ body:
     attributes:
       label: Error Observed
       options:
-        - 404 Not Found
-        - DNS / Domain Expired
-        - Connection Timed Out
-        - Requires Paid Plan / Expired Free Tier
-        - Other
+        - "404 Not Found"
+        - "DNS / Domain Expired"
+        - "Connection Timed Out"
+        - "Requires Paid Plan / Expired Free Tier"
+        - "Other"
     validations:
       required: true
   - type: input
