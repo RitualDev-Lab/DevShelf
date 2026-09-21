@@ -165,7 +165,19 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
   </tr>
 </table>
 
-### 🌟 Open Source Contributors
+### 🌟 Community Contributors & Builders
+
+<table align="center">
+  <tr>
+    <td align="center" width="160">
+      <a href="https://github.com/Voyagerroc-Lab">
+        <img src="https://github.com/Voyagerroc-Lab.png" width="70" style="border-radius: 50%;" alt="Voyagerroc-Lab"/><br />
+        <sub><b>Voyagerroc-Lab</b></sub>
+      </a><br />
+      <sub>🔤 Coding Fonts (PR #35)</sub>
+    </td>
+  </tr>
+</table>
 
 <div align="center">
 

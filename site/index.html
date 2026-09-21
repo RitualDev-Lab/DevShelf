@@ -118,7 +118,7 @@
     <div class="flex flex-wrap items-center justify-center gap-2.5 text-xs font-mono text-slate-200 max-w-4xl mx-auto mb-10 shine-bar rounded-2xl py-2 px-1" id="stats-bar">
       <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700 flex items-center space-x-2 shadow-sm font-semibold">
         <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-        <span id="stat-total" class="font-bold text-white">81 Resources</span>
+        <span id="stat-total" class="font-bold text-white">84 Resources</span>
       </div>
       <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700">
         <span class="text-purple-300 font-bold" id="stat-repos">46</span> GitHub Repos
@@ -139,7 +139,7 @@
         <span class="text-sky-300 font-bold" id="stat-cloud">10</span> Free Cloud
       </div>
       <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700">
-        <span class="text-pink-300 font-bold" id="stat-perks">10</span> Perks
+        <span class="text-pink-300 font-bold" id="stat-perks">13</span> Perks
       </div>
       <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700 text-emerald-300 font-bold">
         <span>🛡️ 100% Verified Uptime</span>
@@ -217,7 +217,7 @@
     <div class="flex items-center flex-wrap gap-2 text-xs font-bold mb-3" id="category-pills">
       <button data-category="all" class="category-pill active px-3.5 py-2 rounded-xl transition flex items-center space-x-1.5">
         <span>All Items</span>
-        <span class="px-1.5 py-0.5 rounded-full text-[10px] bg-purple-900 text-purple-200 font-mono" id="pill-count-all">81</span>
+        <span class="px-1.5 py-0.5 rounded-full text-[10px] bg-purple-900 text-purple-200 font-mono" id="pill-count-all">84</span>
       </button>
       <button data-category="repo" class="category-pill px-3.5 py-2 rounded-xl transition flex items-center space-x-1.5">
         <span>🐙 GitHub Repos</span>
@@ -245,12 +245,19 @@
       </button>
       <button data-category="perks" class="category-pill px-3.5 py-2 rounded-xl transition flex items-center space-x-1.5">
         <span>🎁 Perks</span>
-        <span class="px-1.5 py-0.5 rounded-full text-[10px] bg-slate-800 text-slate-300 font-mono" id="pill-count-perks">10</span>
+        <span class="px-1.5 py-0.5 rounded-full text-[10px] bg-slate-800 text-slate-300 font-mono" id="pill-count-perks">13</span>
       </button>
       <button data-category="contributors" class="category-pill px-3.5 py-2 rounded-xl transition flex items-center space-x-1.5">
         <span>🤝 Up for Grabs</span>
         <span class="px-1.5 py-0.5 rounded-full text-[10px] bg-slate-800 text-slate-300 font-mono" id="pill-count-contributors">9</span>
       </button>
+    </div>
+
+    <!-- Active Filter Indicators -->
+    <div class="flex items-center space-x-2 text-xs font-mono mb-6 hidden" id="active-filters">
+      <span class="text-slate-400">Active filters:</span>
+      <div id="filter-badges" class="flex flex-wrap gap-1.5"></div>
+      <button id="clear-filters-btn" class="text-purple-400 hover:text-purple-300 underline ml-2">Clear all</button>
     </div>
 
     <!-- Quick Filter Tags -->
@@ -269,7 +276,7 @@
   <!-- Main Resource Grid -->
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
     <div class="flex items-center justify-between mb-4">
-      <div class="text-xs text-slate-300 font-mono font-semibold" id="results-count">Showing 81 curated resources</div>
+      <div class="text-xs text-slate-300 font-mono font-semibold" id="results-count">Showing 84 curated resources</div>
     </div>
 
     <!-- Cards Container -->
@@ -322,11 +329,23 @@
 
     <!-- Community Contributors Wall -->
     <div class="text-center">
-      <div class="text-xs font-bold text-slate-200 mb-3">🌟 Global Open Source Contributors</div>
+      <div class="text-xs font-bold text-slate-200 mb-4">🌟 Community Contributors & Builders</div>
+      
+      <!-- Instant Contributor Avatars -->
+      <div class="flex items-center justify-center flex-wrap gap-3 mb-5">
+        <a href="https://github.com/Voyagerroc-Lab" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-2.5 px-4 py-2 rounded-xl bg-slate-900 border border-purple-500/50 hover:border-purple-400 hover:scale-105 transition shadow-md group" title="Voyagerroc-Lab (Contributor #35 - Developer Fonts)">
+          <img src="https://github.com/Voyagerroc-Lab.png" class="w-8 h-8 rounded-full border border-purple-400" alt="Voyagerroc-Lab">
+          <div class="text-left">
+            <span class="text-xs font-bold text-white group-hover:text-purple-300 transition">Voyagerroc-Lab</span>
+            <span class="block text-[10px] text-purple-300 font-mono">PR #35 • Developer Fonts</span>
+          </div>
+        </a>
+      </div>
+
       <a href="https://github.com/RitualDev-Lab/DevShelf/graphs/contributors" target="_blank" rel="noreferrer" class="inline-block hover:opacity-90 transition">
         <img src="https://contrib.rocks/image?repo=RitualDev-Lab/DevShelf" alt="DevShelf Contributors" class="mx-auto rounded-xl max-w-full">
       </a>
-      <p class="text-xs text-slate-400 mt-3 font-mono">Want your avatar here? Submit a pull request or open an issue!</p>
+      <p class="text-xs text-slate-400 mt-3 font-mono">Want your avatar here? Submit a pull request or claim an open issue!</p>
     </div>
   </section>
 
