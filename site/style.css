@@ -247,6 +247,7 @@ body {
   animation: fadeSlideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
   animation-delay: var(--delay, 0s);
   position: relative;
+  overflow: hidden;
 }
 
 .glass-card::after {

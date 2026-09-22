@@ -1529,53 +1529,52 @@ function createCardHtml(item) {
     : "";
 
   // Action buttons
-  let actionButtons = "";
+  let primaryActionButtons = "";
   if (isBoilerplate) {
-    actionButtons = `
-      <a href="${item.deployUrl}" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 text-white transition shadow-md shadow-orange-600/25">
+    primaryActionButtons = `
+      <a href="${item.deployUrl}" target="_blank" rel="noreferrer" class="flex-1 inline-flex items-center justify-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 text-white transition shadow-md shadow-orange-600/25">
         <span>🚀 Deploy to ${escapeHtml(item.platform || "Cloud")} →</span>
       </a>
     `;
     if (item.repo) {
-      actionButtons += `
-        <a href="${item.repo}" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-1 px-2.5 py-1.5 rounded-lg text-xs font-bold bg-slate-800 hover:bg-slate-700 text-slate-200 transition border border-slate-700" title="Source Code">
+      primaryActionButtons += `
+        <a href="${item.repo}" target="_blank" rel="noreferrer" class="inline-flex items-center justify-center space-x-1 px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 hover:bg-slate-700 text-slate-200 transition border border-slate-700 shrink-0" title="Source Code">
           <span>🐙 Repo</span>
         </a>
       `;
     }
   } else if (isRepo) {
-    actionButtons = `
-      <a href="${item.repo}" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-1 px-3 py-1.5 rounded-lg text-xs font-bold bg-purple-600 hover:bg-purple-500 text-white transition shadow-md shadow-purple-600/25">
+    primaryActionButtons = `
+      <a href="${item.repo}" target="_blank" rel="noreferrer" class="flex-1 inline-flex items-center justify-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-purple-600 hover:bg-purple-500 text-white transition shadow-md shadow-purple-600/25">
         <span>🐙 GitHub Repo →</span>
       </a>
     `;
     if (item.goodFirstIssues) {
-      actionButtons += `
-        <a href="${item.goodFirstIssues}" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-1 px-2.5 py-1.5 rounded-lg text-xs font-bold bg-emerald-600 hover:bg-emerald-500 text-white transition shadow-md shadow-emerald-600/20" title="Good First Issues">
+      primaryActionButtons += `
+        <a href="${item.goodFirstIssues}" target="_blank" rel="noreferrer" class="inline-flex items-center justify-center space-x-1 px-3 py-1.5 rounded-lg text-xs font-bold bg-emerald-600 hover:bg-emerald-500 text-white transition shadow-md shadow-emerald-600/20 shrink-0" title="Good First Issues">
           <span>🎯 Issues</span>
         </a>
       `;
     }
   } else {
-    actionButtons = `
-      <a href="${targetUrl}" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-1.5 px-3.5 py-1.5 rounded-lg text-xs font-bold bg-cyan-600 hover:bg-cyan-500 text-white transition shadow-md shadow-cyan-600/25">
+    primaryActionButtons = `
+      <a href="${targetUrl}" target="_blank" rel="noreferrer" class="w-full inline-flex items-center justify-center space-x-1.5 px-3.5 py-1.5 rounded-lg text-xs font-bold bg-cyan-600 hover:bg-cyan-500 text-white transition shadow-md shadow-cyan-600/25">
         <span>🌐 Visit Website →</span>
       </a>
     `;
   }
 
   const snippetActionBtn = `
-    <button data-snippet-name="${escapeHtml(item.name)}" class="snippet-btn inline-flex items-center space-x-1 px-2.5 py-1.5 rounded-lg text-xs font-bold bg-slate-800 hover:bg-slate-700 text-slate-200 transition border border-slate-700 shadow-sm" title="Copy-Paste-Go Snippet">
+    <button data-snippet-name="${escapeHtml(item.name)}" class="snippet-btn inline-flex items-center space-x-1 px-2 py-1 rounded-md text-[11px] font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition border border-slate-700 shadow-sm" title="Copy-Paste-Go Snippet">
       <span>⚡ Snippet</span>
     </button>
   `;
 
   const playgroundActionBtn = `
-    <button data-playground-name="${escapeHtml(item.name)}" class="playground-toggle-btn inline-flex items-center space-x-1 px-2.5 py-1.5 rounded-lg text-xs font-bold bg-purple-950/70 hover:bg-purple-900 text-purple-200 transition border border-purple-500/40 shadow-sm" title="Interactive Live Playground">
+    <button data-playground-name="${escapeHtml(item.name)}" class="playground-toggle-btn inline-flex items-center space-x-1 px-2 py-1 rounded-md text-[11px] font-semibold bg-purple-950/70 hover:bg-purple-900 text-purple-200 transition border border-purple-500/40 shadow-sm" title="Interactive Live Playground">
       <span>🧪 Test Live</span>
     </button>
   `;
-  actionButtons = playgroundActionBtn + snippetActionBtn + actionButtons;
 
   const statusTagsHtml =
     Array.isArray(item.statusTags) && item.statusTags.length > 0
@@ -1639,13 +1638,19 @@ function createCardHtml(item) {
         ${seekingBox}
       </div>
 
-      <div>
-        <div class="pt-3 border-t border-slate-800 flex items-center justify-between gap-2 flex-wrap">
-          <div class="flex items-center flex-wrap gap-1.5">
-            ${metaBadges}
+      <div class="mt-auto">
+        <div class="pt-3 border-t border-slate-800 flex flex-col gap-2.5">
+          <div class="flex items-center justify-between gap-2 flex-wrap">
+            <div class="flex items-center flex-wrap gap-1.5">
+              ${metaBadges}
+            </div>
+            <div class="flex items-center gap-1.5 flex-wrap ml-auto">
+              ${playgroundActionBtn}
+              ${snippetActionBtn}
+            </div>
           </div>
-          <div class="flex items-center space-x-2 shrink-0">
-            ${actionButtons}
+          <div class="flex items-center flex-wrap gap-2 w-full">
+            ${primaryActionButtons}
           </div>
         </div>
 
