@@ -1532,8 +1532,8 @@ function createCardHtml(item) {
   let primaryActionButtons = "";
   if (isBoilerplate) {
     primaryActionButtons = `
-      <a href="${item.deployUrl}" target="_blank" rel="noreferrer" class="flex-1 inline-flex items-center justify-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 text-white transition shadow-md shadow-orange-600/25">
-        <span>🚀 Deploy to ${escapeHtml(item.platform || "Cloud")} →</span>
+      <a href="${item.deployUrl}" target="_blank" rel="noreferrer" class="flex-1 min-w-0 inline-flex items-center justify-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 text-white transition shadow-md shadow-orange-600/25">
+        <span class="truncate">🚀 Deploy to ${escapeHtml(item.platform || "Cloud")} →</span>
       </a>
     `;
     if (item.repo) {
@@ -1545,8 +1545,8 @@ function createCardHtml(item) {
     }
   } else if (isRepo) {
     primaryActionButtons = `
-      <a href="${item.repo}" target="_blank" rel="noreferrer" class="flex-1 inline-flex items-center justify-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-purple-600 hover:bg-purple-500 text-white transition shadow-md shadow-purple-600/25">
-        <span>🐙 GitHub Repo →</span>
+      <a href="${item.repo}" target="_blank" rel="noreferrer" class="flex-1 min-w-0 inline-flex items-center justify-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-purple-600 hover:bg-purple-500 text-white transition shadow-md shadow-purple-600/25">
+        <span class="truncate">🐙 GitHub Repo →</span>
       </a>
     `;
     if (item.goodFirstIssues) {
@@ -1558,8 +1558,8 @@ function createCardHtml(item) {
     }
   } else {
     primaryActionButtons = `
-      <a href="${targetUrl}" target="_blank" rel="noreferrer" class="w-full inline-flex items-center justify-center space-x-1.5 px-3.5 py-1.5 rounded-lg text-xs font-bold bg-cyan-600 hover:bg-cyan-500 text-white transition shadow-md shadow-cyan-600/25">
-        <span>🌐 Visit Website →</span>
+      <a href="${targetUrl}" target="_blank" rel="noreferrer" class="w-full min-w-0 inline-flex items-center justify-center space-x-1.5 px-3.5 py-1.5 rounded-lg text-xs font-bold bg-cyan-600 hover:bg-cyan-500 text-white transition shadow-md shadow-cyan-600/25">
+        <span class="truncate">🌐 Visit Website →</span>
       </a>
     `;
   }
