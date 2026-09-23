@@ -1,17 +1,18 @@
 {
-  "lastChecked": "2026-09-21T20:35:11.392Z",
-  "totalChecked": 94,
-  "activeReachable": 94,
-  "deadUnreachable": 0,
-  "healthPercent": 100,
-  "status": "100% Operational",
+  "lastChecked": "2026-09-23T18:37:00.251Z",
+  "totalChecked": 104,
+  "activeReachable": 103,
+  "deadUnreachable": 1,
+  "healthPercent": 99,
+  "status": "Degraded",
   "endpoints": [
     {
       "name": "Ollama",
+      "file": "ai-tools.json",
       "url": "https://github.com/ollama/ollama",
       "status": 200,
       "ok": true,
-      "latencyMs": 101,
+      "latencyMs": 908,
       "uptimePercent": 100,
       "history": [
         1,
@@ -21,14 +22,17 @@
         1,
         1,
         1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     },
     {
       "name": "Dify",
+      "file": "ai-tools.json",
       "url": "https://github.com/langgenius/dify",
       "status": 200,
       "ok": true,
-      "latencyMs": 100,
+      "latencyMs": 1808,
       "uptimePercent": 100,
       "history": [
         1,
@@ -38,14 +42,17 @@
         1,
         1,
         1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     },
     {
       "name": "vLLM",
+      "file": "ai-tools.json",
       "url": "https://github.com/vllm-project/vllm",
       "status": 200,
       "ok": true,
-      "latencyMs": 67,
+      "latencyMs": 787,
       "uptimePercent": 100,
       "history": [
         1,
@@ -55,14 +62,17 @@
         1,
         1,
         1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     },
     {
       "name": "Open-WebUI",
+      "file": "ai-tools.json",
       "url": "https://github.com/open-webui/open-webui",
       "status": 200,
       "ok": true,
-      "latencyMs": 90,
+      "latencyMs": 803,
       "uptimePercent": 100,
       "history": [
         1,
@@ -72,14 +82,17 @@
         1,
         1,
         1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     },
     {
       "name": "YYLO",
+      "file": "ai-tools.json",
       "url": "https://github.com/yylo-dev/yylo",
       "status": 200,
       "ok": true,
-      "latencyMs": 88,
+      "latencyMs": 912,
       "uptimePercent": 100,
       "history": [
         1,
@@ -89,14 +102,17 @@
         1,
         1,
         1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     },
     {
       "name": "LocalAI",
+      "file": "ai-tools.json",
       "url": "https://github.com/mudler/LocalAI",
       "status": 200,
       "ok": true,
-      "latencyMs": 61,
+      "latencyMs": 738,
       "uptimePercent": 100,
       "history": [
         1,
@@ -106,14 +122,17 @@
         1,
         1,
         1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     },
     {
       "name": "AnythingLLM",
+      "file": "ai-tools.json",
       "url": "https://github.com/Mintplex-Labs/anything-llm",
       "status": 200,
       "ok": true,
-      "latencyMs": 64,
+      "latencyMs": 709,
       "uptimePercent": 100,
       "history": [
         1,
@@ -123,14 +142,17 @@
         1,
         1,
         1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     },
     {
       "name": "Flowise",
+      "file": "ai-tools.json",
       "url": "https://github.com/FlowiseAI/Flowise",
       "status": 200,
       "ok": true,
-      "latencyMs": 104,
+      "latencyMs": 1127,
       "uptimePercent": 100,
       "history": [
         1,
@@ -140,14 +162,17 @@
         1,
         1,
         1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     },
     {
       "name": "Langflow",
+      "file": "ai-tools.json",
       "url": "https://github.com/langflow-ai/langflow",
       "status": 200,
       "ok": true,
-      "latencyMs": 128,
+      "latencyMs": 894,
       "uptimePercent": 100,
       "history": [
         1,
@@ -157,14 +182,17 @@
         1,
         1,
         1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     },
     {
       "name": "Jan",
+      "file": "ai-tools.json",
       "url": "https://github.com/janhq/jan",
       "status": 200,
       "ok": true,
-      "latencyMs": 116,
+      "latencyMs": 1113,
       "uptimePercent": 100,
       "history": [
         1,
@@ -174,14 +202,17 @@
         1,
         1,
         1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     },
     {
       "name": "LibreChat",
+      "file": "ai-tools.json",
       "url": "https://github.com/danny-avila/LibreChat",
       "status": 200,
       "ok": true,
-      "latencyMs": 92,
+      "latencyMs": 565,
       "uptimePercent": 100,
       "history": [
         1,
@@ -191,14 +222,17 @@
         1,
         1,
         1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     },
     {
       "name": "Fabric",
+      "file": "ai-tools.json",
       "url": "https://github.com/danielmiessler/fabric",
       "status": 200,
       "ok": true,
-      "latencyMs": 80,
+      "latencyMs": 712,
       "uptimePercent": 100,
       "history": [
         1,
@@ -208,14 +242,17 @@
         1,
         1,
         1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     },
     {
       "name": "Aider",
+      "file": "ai-tools.json",
       "url": "https://github.com/Aider-AI/aider",
       "status": 200,
       "ok": true,
-      "latencyMs": 78,
+      "latencyMs": 588,
       "uptimePercent": 100,
       "history": [
         1,
@@ -225,14 +262,17 @@
         1,
         1,
         1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     },
     {
       "name": "OpenHands",
+      "file": "ai-tools.json",
       "url": "https://github.com/All-Hands-AI/OpenHands",
       "status": 200,
       "ok": true,
-      "latencyMs": 110,
+      "latencyMs": 1127,
       "uptimePercent": 100,
       "history": [
         1,
@@ -242,14 +282,17 @@
         1,
         1,
         1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     },
     {
       "name": "Continue",
+      "file": "ai-tools.json",
       "url": "https://github.com/continuedev/continue",
       "status": 200,
       "ok": true,
-      "latencyMs": 80,
+      "latencyMs": 599,
       "uptimePercent": 100,
       "history": [
         1,
@@ -259,14 +302,17 @@
         1,
         1,
         1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     },
     {
       "name": "llama.cpp",
+      "file": "ai-tools.json",
       "url": "https://github.com/ggerganov/llama.cpp",
       "status": 200,
       "ok": true,
-      "latencyMs": 85,
+      "latencyMs": 1362,
       "uptimePercent": 100,
       "history": [
         1,
@@ -276,524 +322,17 @@
         1,
         1,
         1
-      ]
-    },
-    {
-      "name": "GitWhisper",
-      "url": "https://github.com/RitualDev-Lab/GitWhisper",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 74,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "FlashLane",
-      "url": "https://github.com/RitualDev-Lab/FlashLane",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 90,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "lazygit",
-      "url": "https://github.com/jesseduffield/lazygit",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 128,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "ripgrep",
-      "url": "https://github.com/BurntSushi/ripgrep",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 61,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "eza",
-      "url": "https://github.com/eza-community/eza",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 76,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "fzf",
-      "url": "https://github.com/junegunn/fzf",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 110,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "agent-browser",
-      "url": "https://github.com/vercel-labs/agent-browser",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 88,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "bat",
-      "url": "https://github.com/sharkdp/bat",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 137,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "delta",
-      "url": "https://github.com/dandavison/delta",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 82,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "hyperfine",
-      "url": "https://github.com/sharkdp/hyperfine",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 110,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "tldr",
-      "url": "https://github.com/tldr-pages/tldr",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 68,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "dust",
-      "url": "https://github.com/bootandy/dust",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 105,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "procs",
-      "url": "https://github.com/dalance/procs",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 118,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "bottom",
-      "url": "https://github.com/ClementTsang/bottom",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 75,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "curlie",
-      "url": "https://github.com/rs/curlie",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 126,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "Starship",
-      "url": "https://github.com/starship/starship",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 83,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "zoxide",
-      "url": "https://github.com/ajeetdsouza/zoxide",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 135,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "gh-dash",
-      "url": "https://github.com/dlvhdr/gh-dash",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 124,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "HTTPie",
-      "url": "https://github.com/httpie/cli",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 103,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "AutoHeal-QA",
-      "url": "https://github.com/RitualDev-Lab/autoheal-qa",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 137,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "Playwright",
-      "url": "https://github.com/microsoft/playwright",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 93,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "Vitest",
-      "url": "https://github.com/vitest-dev/vitest",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 76,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "k6",
-      "url": "https://github.com/grafana/k6",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 95,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "Bruno",
-      "url": "https://github.com/usebruno/bruno",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 72,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "Hoppscotch",
-      "url": "https://github.com/hoppscotch/hoppscotch",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 70,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "Mockoon",
-      "url": "https://github.com/mockoon/mockoon",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 115,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "Artillery",
-      "url": "https://github.com/artilleryio/artillery",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 73,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "Locust",
-      "url": "https://github.com/locustio/locust",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 95,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "MSW (Mock Service Worker)",
-      "url": "https://github.com/mswjs/msw",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 99,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "Vegeta",
-      "url": "https://github.com/tsenart/vegeta",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 101,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     },
     {
       "name": "Open-Meteo",
+      "file": "apis.json",
       "url": "https://open-meteo.com",
       "status": 200,
       "ok": true,
-      "latencyMs": 78,
+      "latencyMs": 842,
       "uptimePercent": 100,
       "history": [
         1,
@@ -803,14 +342,17 @@
         1,
         1,
         1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     },
     {
       "name": "GroqCloud Free Tier",
+      "file": "apis.json",
       "url": "https://console.groq.com",
       "status": 200,
       "ok": true,
-      "latencyMs": 109,
+      "latencyMs": 490,
       "uptimePercent": 100,
       "history": [
         1,
@@ -820,14 +362,17 @@
         1,
         1,
         1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     },
     {
       "name": "JSONPlaceholder",
+      "file": "apis.json",
       "url": "https://jsonplaceholder.typicode.com",
       "status": 200,
       "ok": true,
-      "latencyMs": 101,
+      "latencyMs": 575,
       "uptimePercent": 100,
       "history": [
         1,
@@ -837,14 +382,17 @@
         1,
         1,
         1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     },
     {
       "name": "Hugging Face Serverless Inference",
+      "file": "apis.json",
       "url": "https://huggingface.co/inference-api",
       "status": 200,
       "ok": true,
-      "latencyMs": 109,
+      "latencyMs": 655,
       "uptimePercent": 100,
       "history": [
         1,
@@ -852,16 +400,19 @@
         1,
         1,
         1,
-        1,
+        0,
         1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     },
     {
       "name": "ipapi.co",
+      "file": "apis.json",
       "url": "https://ipapi.co",
       "status": 200,
       "ok": true,
-      "latencyMs": 104,
+      "latencyMs": 384,
       "uptimePercent": 100,
       "history": [
         1,
@@ -871,14 +422,17 @@
         1,
         1,
         1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     },
     {
       "name": "CoinGecko Free API",
+      "file": "apis.json",
       "url": "https://www.coingecko.com/api",
       "status": 200,
       "ok": true,
-      "latencyMs": 128,
+      "latencyMs": 1022,
       "uptimePercent": 100,
       "history": [
         1,
@@ -888,14 +442,17 @@
         1,
         1,
         1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     },
     {
       "name": "Rest Countries",
+      "file": "apis.json",
       "url": "https://restcountries.com",
       "status": 200,
       "ok": true,
-      "latencyMs": 125,
+      "latencyMs": 1161,
       "uptimePercent": 100,
       "history": [
         1,
@@ -905,14 +462,17 @@
         1,
         1,
         1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     },
     {
       "name": "PokeAPI",
+      "file": "apis.json",
       "url": "https://pokeapi.co",
       "status": 200,
       "ok": true,
-      "latencyMs": 90,
+      "latencyMs": 925,
       "uptimePercent": 100,
       "history": [
         1,
@@ -922,15 +482,18 @@
         1,
         1,
         1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     },
     {
       "name": "Open Library",
+      "file": "apis.json",
       "url": "https://openlibrary.org/developers/api",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 115,
-      "uptimePercent": 100,
+      "status": "DNS_OR_NETWORK",
+      "ok": false,
+      "latencyMs": 5796,
+      "uptimePercent": 86,
       "history": [
         1,
         1,
@@ -938,15 +501,20 @@
         1,
         1,
         1,
-        1
-      ]
+        0
+      ],
+      "consecutiveFailures": 1,
+      "firstFailedAt": "2026-09-23T18:36:41.430Z",
+      "rotType": "timeout_or_dns",
+      "eligibleForSunset": false
     },
     {
       "name": "ReqRes",
+      "file": "apis.json",
       "url": "https://reqres.in",
       "status": 200,
       "ok": true,
-      "latencyMs": 124,
+      "latencyMs": 1450,
       "uptimePercent": 100,
       "history": [
         1,
@@ -956,14 +524,17 @@
         1,
         1,
         1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     },
     {
       "name": "ipify",
+      "file": "apis.json",
       "url": "https://www.ipify.org",
       "status": 200,
       "ok": true,
-      "latencyMs": 68,
+      "latencyMs": 267,
       "uptimePercent": 100,
       "history": [
         1,
@@ -973,14 +544,17 @@
         1,
         1,
         1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     },
     {
       "name": "DummyJSON",
+      "file": "apis.json",
       "url": "https://dummyjson.com",
       "status": 200,
       "ok": true,
-      "latencyMs": 105,
+      "latencyMs": 396,
       "uptimePercent": 100,
       "history": [
         1,
@@ -990,14 +564,17 @@
         1,
         1,
         1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     },
     {
       "name": "Nominatim OpenStreetMap",
+      "file": "apis.json",
       "url": "https://nominatim.openstreetmap.org",
       "status": 200,
       "ok": true,
-      "latencyMs": 78,
+      "latencyMs": 1159,
       "uptimePercent": 100,
       "history": [
         1,
@@ -1007,14 +584,17 @@
         1,
         1,
         1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     },
     {
       "name": "ExchangeRate-API",
+      "file": "apis.json",
       "url": "https://www.exchangerate-api.com",
       "status": 200,
       "ok": true,
-      "latencyMs": 97,
+      "latencyMs": 362,
       "uptimePercent": 100,
       "history": [
         1,
@@ -1024,14 +604,17 @@
         1,
         1,
         1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     },
     {
       "name": "Cat Facts",
+      "file": "apis.json",
       "url": "https://catfact.ninja",
       "status": 200,
       "ok": true,
-      "latencyMs": 61,
+      "latencyMs": 707,
       "uptimePercent": 100,
       "history": [
         1,
@@ -1041,31 +624,37 @@
         1,
         1,
         1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     },
     {
-      "name": "Supabase",
-      "url": "https://supabase.com",
+      "name": "Dog API",
+      "file": "apis.json",
+      "url": "https://dog.ceo/dog-api/",
       "status": 200,
       "ok": true,
-      "latencyMs": 97,
+      "latencyMs": 679,
       "uptimePercent": 100,
       "history": [
         1,
         1,
         1,
         1,
-        1,
+        0,
         1,
         1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     },
     {
-      "name": "Neon",
-      "url": "https://neon.tech",
+      "name": "Mockoon Cloudless API Server",
+      "file": "boilerplates.json",
+      "url": "https://github.com/mockoon/mockoon",
       "status": 200,
       "ok": true,
-      "latencyMs": 132,
+      "latencyMs": 1106,
       "uptimePercent": 100,
       "history": [
         1,
@@ -1075,14 +664,17 @@
         1,
         1,
         1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     },
     {
-      "name": "Cloudflare Workers",
-      "url": "https://workers.cloudflare.com",
+      "name": "PocketBase 1-Click Backend",
+      "file": "boilerplates.json",
+      "url": "https://github.com/pocketbase/pocketbase",
       "status": 200,
       "ok": true,
-      "latencyMs": 62,
+      "latencyMs": 1727,
       "uptimePercent": 100,
       "history": [
         1,
@@ -1092,11 +684,54 @@
         1,
         1,
         1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     },
     {
-      "name": "Clerk",
-      "url": "https://clerk.com",
+      "name": "AutoHeal-QA Playwright Runner",
+      "file": "boilerplates.json",
+      "url": "https://github.com/RitualDev-Lab/autoheal-qa",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 1106,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "Stirling-PDF Ultimate Toolbox",
+      "file": "boilerplates.json",
+      "url": "https://github.com/Stirling-Tools/Stirling-PDF",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 632,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "Open-WebUI for Local AI",
+      "file": "boilerplates.json",
+      "url": "https://github.com/open-webui/open-webui",
       "status": 200,
       "ok": true,
       "latencyMs": 75,
@@ -1109,422 +744,17 @@
         1,
         1,
         1
-      ]
-    },
-    {
-      "name": "Resend",
-      "url": "https://resend.com",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 123,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "PocketBase",
-      "url": "https://pocketbase.io",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 124,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "Appwrite",
-      "url": "https://appwrite.io",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 84,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "Fly.io",
-      "url": "https://fly.io",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 117,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "Render",
-      "url": "https://render.com",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 114,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "Koyeb",
-      "url": "https://www.koyeb.com",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 100,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "JetBrains Free Open Source License",
-      "url": "https://www.jetbrains.com/community/opensource",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 126,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "Sentry for Open Source",
-      "url": "https://sentry.io/for/open-source/",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 69,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "GitHub for Startups",
-      "url": "https://github.com/enterprise/startups",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 95,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "AWS Activate Founders",
-      "url": "https://aws.amazon.com/activate",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 136,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "Google Cloud for Startups",
-      "url": "https://cloud.google.com/startup",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 62,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "DigitalOcean Open Source Sponsorship",
-      "url": "https://www.digitalocean.com/open-source",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 125,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "Postman Open Source Sponsorship",
-      "url": "https://www.postman.com/open-source",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 125,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "Datadog for Open Source",
-      "url": "https://www.datadoghq.com/partner/open-source/",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 84,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "BrowserStack Open Source",
-      "url": "https://www.browserstack.com/open-source",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 112,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "Docker Open Source Community",
-      "url": "https://www.docker.com/community/open-source/application",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 114,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "JetBrains Mono",
-      "url": "https://github.com/JetBrains/JetBrainsMono",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 87,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "Fira Code",
-      "url": "https://github.com/tonsky/FiraCode",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 139,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "Cascadia Code",
-      "url": "https://github.com/microsoft/cascadia-code",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 118,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "Mockoon Cloudless API Server",
-      "url": "https://github.com/mockoon/mockoon",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 115,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "PocketBase 1-Click Backend",
-      "url": "https://github.com/pocketbase/pocketbase",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 93,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "AutoHeal-QA Playwright Runner",
-      "url": "https://github.com/RitualDev-Lab/autoheal-qa",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 87,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "Stirling-PDF Ultimate Toolbox",
-      "url": "https://github.com/Stirling-Tools/Stirling-PDF",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 120,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "name": "Open-WebUI for Local AI",
-      "url": "https://github.com/open-webui/open-webui",
-      "status": 200,
-      "ok": true,
-      "latencyMs": 128,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     },
     {
       "name": "Directus Instant Data Engine",
+      "file": "boilerplates.json",
       "url": "https://github.com/directus/directus",
       "status": 200,
       "ok": true,
-      "latencyMs": 116,
+      "latencyMs": 628,
       "uptimePercent": 100,
       "history": [
         1,
@@ -1534,14 +764,17 @@
         1,
         1,
         1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     },
     {
       "name": "Hoppscotch API Development Hub",
+      "file": "boilerplates.json",
       "url": "https://github.com/hoppscotch/hoppscotch",
       "status": 200,
       "ok": true,
-      "latencyMs": 121,
+      "latencyMs": 719,
       "uptimePercent": 100,
       "history": [
         1,
@@ -1551,14 +784,17 @@
         1,
         1,
         1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     },
     {
       "name": "Dify LLM Application Platform",
+      "file": "boilerplates.json",
       "url": "https://github.com/langgenius/dify",
       "status": 200,
       "ok": true,
-      "latencyMs": 131,
+      "latencyMs": 196,
       "uptimePercent": 100,
       "history": [
         1,
@@ -1568,14 +804,577 @@
         1,
         1,
         1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "GitWhisper",
+      "file": "cli-tools.json",
+      "url": "https://github.com/RitualDev-Lab/GitWhisper",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 793,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "FlashLane",
+      "file": "cli-tools.json",
+      "url": "https://github.com/RitualDev-Lab/FlashLane",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 698,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "lazygit",
+      "file": "cli-tools.json",
+      "url": "https://github.com/jesseduffield/lazygit",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 634,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "ripgrep",
+      "file": "cli-tools.json",
+      "url": "https://github.com/BurntSushi/ripgrep",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 668,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "eza",
+      "file": "cli-tools.json",
+      "url": "https://github.com/eza-community/eza",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 574,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "fzf",
+      "file": "cli-tools.json",
+      "url": "https://github.com/junegunn/fzf",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 598,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "agent-browser",
+      "file": "cli-tools.json",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 654,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "bat",
+      "file": "cli-tools.json",
+      "url": "https://github.com/sharkdp/bat",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 659,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "delta",
+      "file": "cli-tools.json",
+      "url": "https://github.com/dandavison/delta",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 563,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "hyperfine",
+      "file": "cli-tools.json",
+      "url": "https://github.com/sharkdp/hyperfine",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 576,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "tldr",
+      "file": "cli-tools.json",
+      "url": "https://github.com/tldr-pages/tldr",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 1190,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "dust",
+      "file": "cli-tools.json",
+      "url": "https://github.com/bootandy/dust",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 1060,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "procs",
+      "file": "cli-tools.json",
+      "url": "https://github.com/dalance/procs",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 714,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "bottom",
+      "file": "cli-tools.json",
+      "url": "https://github.com/ClementTsang/bottom",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 1093,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "curlie",
+      "file": "cli-tools.json",
+      "url": "https://github.com/rs/curlie",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 1036,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "Starship",
+      "file": "cli-tools.json",
+      "url": "https://github.com/starship/starship",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 590,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "zoxide",
+      "file": "cli-tools.json",
+      "url": "https://github.com/ajeetdsouza/zoxide",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 564,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "gh-dash",
+      "file": "cli-tools.json",
+      "url": "https://github.com/dlvhdr/gh-dash",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 576,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "HTTPie",
+      "file": "cli-tools.json",
+      "url": "https://github.com/httpie/cli",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 569,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "GitWhisper",
+      "file": "contributors-wanted.json",
+      "url": "https://github.com/RitualDev-Lab/GitWhisper",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 79,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "AutoHeal-QA",
+      "file": "contributors-wanted.json",
+      "url": "https://github.com/RitualDev-Lab/autoheal-qa",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 46,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "FlashLane",
+      "file": "contributors-wanted.json",
+      "url": "https://github.com/RitualDev-Lab/FlashLane",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 51,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "Bruno",
+      "file": "contributors-wanted.json",
+      "url": "https://github.com/usebruno/bruno",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 673,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "agent-browser",
+      "file": "contributors-wanted.json",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 97,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "Aider",
+      "file": "contributors-wanted.json",
+      "url": "https://github.com/Aider-AI/aider",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 49,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "OpenHands",
+      "file": "contributors-wanted.json",
+      "url": "https://github.com/All-Hands-AI/OpenHands",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 729,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "Continue",
+      "file": "contributors-wanted.json",
+      "url": "https://github.com/continuedev/continue",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 48,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "Starship",
+      "file": "contributors-wanted.json",
+      "url": "https://github.com/starship/starship",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 46,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     },
     {
       "name": "Open Source Ideas",
+      "file": "contributors-wanted.json",
       "url": "https://github.com/open-source-ideas/ideas",
       "status": 200,
       "ok": true,
-      "latencyMs": 137,
+      "latencyMs": 578,
       "uptimePercent": 100,
       "history": [
         1,
@@ -1585,14 +1384,17 @@
         1,
         1,
         1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     },
     {
       "name": "Up-For-Grabs",
+      "file": "contributors-wanted.json",
       "url": "https://github.com/up-for-grabs/up-for-grabs.net",
       "status": 200,
       "ok": true,
-      "latencyMs": 126,
+      "latencyMs": 647,
       "uptimePercent": 100,
       "history": [
         1,
@@ -1602,7 +1404,689 @@
         1,
         1,
         1
-      ]
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "Supabase",
+      "file": "free-cloud.json",
+      "url": "https://supabase.com",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 186,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "Neon",
+      "file": "free-cloud.json",
+      "url": "https://neon.tech",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 518,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "Cloudflare Workers",
+      "file": "free-cloud.json",
+      "url": "https://workers.cloudflare.com",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 568,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "Clerk",
+      "file": "free-cloud.json",
+      "url": "https://clerk.com",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 927,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "Resend",
+      "file": "free-cloud.json",
+      "url": "https://resend.com",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 2254,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "PocketBase",
+      "file": "free-cloud.json",
+      "url": "https://pocketbase.io",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 1036,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "Appwrite",
+      "file": "free-cloud.json",
+      "url": "https://appwrite.io",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 1915,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "Fly.io",
+      "file": "free-cloud.json",
+      "url": "https://fly.io",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 527,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "Render",
+      "file": "free-cloud.json",
+      "url": "https://render.com",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 635,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "Koyeb",
+      "file": "free-cloud.json",
+      "url": "https://www.koyeb.com",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 1373,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "JetBrains Free Open Source License",
+      "file": "perks.json",
+      "url": "https://www.jetbrains.com/community/opensource",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 705,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "Sentry for Open Source",
+      "file": "perks.json",
+      "url": "https://sentry.io/for/open-source",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 1336,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "GitHub for Startups",
+      "file": "perks.json",
+      "url": "https://github.com/enterprise/startups",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 626,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "AWS Activate Founders",
+      "file": "perks.json",
+      "url": "https://aws.amazon.com/activate",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 1739,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "Google Cloud for Startups",
+      "file": "perks.json",
+      "url": "https://cloud.google.com/startup",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 1153,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "DigitalOcean Open Source Sponsorship",
+      "file": "perks.json",
+      "url": "https://www.digitalocean.com/open-source",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 1035,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "Postman Open Source Sponsorship",
+      "file": "perks.json",
+      "url": "https://www.postman.com/open-source",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 147,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "Datadog for Open Source",
+      "file": "perks.json",
+      "url": "https://www.datadoghq.com/partner/open-source",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 674,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "BrowserStack Open Source",
+      "file": "perks.json",
+      "url": "https://www.browserstack.com/open-source",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 617,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "Docker Open Source Community",
+      "file": "perks.json",
+      "url": "https://www.docker.com/community/open-source/application",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 719,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "JetBrains Mono",
+      "file": "perks.json",
+      "url": "https://github.com/JetBrains/JetBrainsMono",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 701,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "Fira Code",
+      "file": "perks.json",
+      "url": "https://github.com/tonsky/FiraCode",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 765,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "Cascadia Code",
+      "file": "perks.json",
+      "url": "https://github.com/microsoft/cascadia-code",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 851,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "AutoHeal-QA",
+      "file": "testing-qa.json",
+      "url": "https://github.com/RitualDev-Lab/autoheal-qa",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 194,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "Playwright",
+      "file": "testing-qa.json",
+      "url": "https://github.com/microsoft/playwright",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 1679,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "Vitest",
+      "file": "testing-qa.json",
+      "url": "https://github.com/vitest-dev/vitest",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 957,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "k6",
+      "file": "testing-qa.json",
+      "url": "https://github.com/grafana/k6",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 736,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "Bruno",
+      "file": "testing-qa.json",
+      "url": "https://github.com/usebruno/bruno",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 49,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "Hoppscotch",
+      "file": "testing-qa.json",
+      "url": "https://github.com/hoppscotch/hoppscotch",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 46,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "Mockoon",
+      "file": "testing-qa.json",
+      "url": "https://github.com/mockoon/mockoon",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 45,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "Artillery",
+      "file": "testing-qa.json",
+      "url": "https://github.com/artilleryio/artillery",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 579,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "Locust",
+      "file": "testing-qa.json",
+      "url": "https://github.com/locustio/locust",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 539,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "MSW (Mock Service Worker)",
+      "file": "testing-qa.json",
+      "url": "https://github.com/mswjs/msw",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 567,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
+    },
+    {
+      "name": "Vegeta",
+      "file": "testing-qa.json",
+      "url": "https://github.com/tsenart/vegeta",
+      "status": 200,
+      "ok": true,
+      "latencyMs": 684,
+      "uptimePercent": 100,
+      "history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "consecutiveFailures": 0,
+      "eligibleForSunset": false
     }
   ]
 }

@@ -163,5 +163,17 @@
     "rateLimit": "Unlimited",
     "https": true,
     "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Dog API",
+    "url": "https://dog.ceo/dog-api/",
+    "category": "Free & Public APIs",
+    "description": "Free public REST API providing over 20,000 images of dog breeds and sub-breeds with zero authentication or API key required.",
+    "Primary Language": "REST API",
+    "license": "MIT / Free Public API",
+    "auth": "No Key",
+    "cors": "Yes",
+    "https": true,
+    "statusTags": ["No Card Required"]
   }
 ]
