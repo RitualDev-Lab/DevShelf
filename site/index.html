@@ -38,7 +38,7 @@
       }
     }
   </script>
-  <link rel="stylesheet" href="style.css?v=5.0">
+  <link rel="stylesheet" href="style.css?v=5.1">
 </head>
 <body class="bg-slate-950 text-slate-100 min-h-screen font-sans selection:bg-purple-600 selection:text-white relative">
 
@@ -79,8 +79,17 @@
         <a href="https://github.com/RitualDev-Lab/DevShelf" target="_blank" rel="noreferrer" class="hidden sm:inline-flex items-center space-x-1 px-3 py-1.5 text-xs font-bold rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 transition hover:scale-105 active:scale-95">
           <span>⭐ Star</span>
         </a>
-        <button id="nav-wizard-btn" class="inline-flex items-center space-x-1.5 px-3.5 py-1.5 text-xs font-bold rounded-lg bg-gradient-to-r from-purple-600 via-fuchsia-600 to-cyan-600 hover:opacity-95 transition shadow-lg shadow-purple-500/20 text-white hover:scale-105 active:scale-95">
-          <span>➕ Submit Tool</span>
+        <button id="nav-wizard-btn" class="liquid-metal-btn liquid-metal-btn-sm group" title="Submit a Free Developer Tool">
+          <div class="liquid-metal-frame">
+            <canvas class="liquid-metal-canvas" data-tint="#38bdf8" data-back="#090d16" data-speed="0.5" data-distortion="0.18" data-repetition="4.0"></canvas>
+          </div>
+          <div class="liquid-metal-glow"></div>
+          <div class="liquid-metal-inner liquid-metal-inner-sm">
+            <span class="liquid-metal-icon-pill liquid-metal-icon-pill-sm">
+              <span class="text-xs">➕</span>
+            </span>
+            <span class="liquid-metal-text text-xs">Submit Tool</span>
+          </div>
         </button>
       </div>
     </div>
@@ -109,8 +118,18 @@
 
     <!-- CTAs -->
     <div class="flex items-center justify-center flex-wrap gap-3 mb-8 text-xs font-bold hero-animate hero-animate-delay-4">
-      <a href="#directory" class="inline-flex items-center space-x-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 to-cyan-600 hover:opacity-95 text-white shadow-lg shadow-purple-500/25 transition">
-        <span>Explore 90+ Curated Tools ↓</span>
+      <a href="#directory" class="liquid-metal-btn group" title="Explore Curated Developer Tools">
+        <div class="liquid-metal-frame">
+          <canvas class="liquid-metal-canvas" data-tint="#c084fc" data-back="#030712" data-speed="0.6" data-distortion="0.22" data-repetition="3.5"></canvas>
+        </div>
+        <div class="liquid-metal-glow"></div>
+        <div class="liquid-metal-inner">
+          <span class="liquid-metal-icon-pill">
+            <span class="text-sm">✨</span>
+          </span>
+          <span class="liquid-metal-text text-xs sm:text-sm">Explore 90+ Curated Tools</span>
+          <span class="liquid-metal-arrow text-cyan-400">↓</span>
+        </div>
       </a>
       <button id="hero-matchmaker-btn" class="inline-flex items-center space-x-2 px-4 py-2.5 rounded-xl bg-emerald-950/80 hover:bg-emerald-900 border border-emerald-500/60 text-emerald-200 font-bold transition shadow-md shadow-emerald-500/20">
         <span>🤝 Contributor Matchmaker</span>
@@ -758,7 +777,8 @@
     </div>
   </footer>
 
-  <script src="data.js?v=5.0"></script>
-  <script src="app.js?v=5.0"></script>
+  <script src="data.js?v=5.1"></script>
+  <script src="liquid-metal.js?v=5.1"></script>
+  <script src="app.js?v=5.1"></script>
 </body>
 </html>
