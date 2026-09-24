@@ -208,6 +208,13 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
       </a><br />
       <sub>🔤 Coding Fonts (PR #35)</sub>
     </td>
+    <td align="center" width="160">
+      <a href="https://github.com/ayushxx01">
+        <img src="https://github.com/ayushxx01.png" width="70" style="border-radius: 50%;" alt="ayushxx01"/><br />
+        <sub><b>ayushxx01</b></sub>
+      </a><br />
+      <sub>🐶 Dog API (PR #36)</sub>
+    </td>
   </tr>
 </table>
 
