@@ -13,7 +13,7 @@
 <br>
 
 [![Live Web Directory](https://img.shields.io/badge/🌐_Web_Directory-Live_Search_%26_Filters-7928CA?style=for-the-badge&logoColor=white)](https://devshelf.ritualdev.in)
-[![Curated Resources](https://img.shields.io/badge/📦_Resources-103+_Curated-blueviolet?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
+[![Curated Resources](https://img.shields.io/badge/📦_Resources-104+_Curated-blueviolet?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
 [![Endpoint Health](https://img.shields.io/badge/🛡️_Health-100%25_Verified-brightgreen?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf/actions)
 [![Open Source](https://img.shields.io/badge/🔓_License-MIT_FOSS-blue?style=for-the-badge)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/🤝_PRs-Welcome_%26_Amplified-brightgreen?style=for-the-badge)](#-how-to-submit-your-project-or-api)
@@ -22,7 +22,7 @@
 
 <table>
 <tr>
-<td align="center"><b>🌐 Free APIs</b><br><code>15</code></td>
+<td align="center"><b>🌐 Free APIs</b><br><code>16</code></td>
 <td align="center"><b>🤖 AI & LLMs</b><br><code>16</code></td>
 <td align="center"><b>⚡ CLI Tools</b><br><code>19</code></td>
 <td align="center"><b>🧪 Testing & QA</b><br><code>11</code></td>
@@ -211,6 +211,7 @@ APIs that provide a 100% free tier or require no API key at all.
 | [**Nominatim OpenStreetMap**](https://nominatim.openstreetmap.org) | `Geocoding & IP` | 🟢 No Key | `1 req/sec` | Open-source search engine for OpenStreetMap data, providing forward and reverse geocoding. |
 | [**ExchangeRate-API**](https://www.exchangerate-api.com) | `Finance & Crypto` | 🔑 Free Key | `1,500 req/month` | Reliable currency conversion and forex exchange rates for 160+ currencies with a permanent free tier. |
 | [**Cat Facts**](https://catfact.ninja) | `Animals & Fun` | 🟢 No Key | `Unlimited` | Public REST API providing random cat facts, breeds, and trivia with zero authentication required. |
+| [**Dog API**](https://dog.ceo/dog-api) | `Animals & Fun` | 🟢 No Key | `Unlimited` | Free public REST API providing over 20,000 dog breed photos and random images with zero authentication required. |
 
 ---
 
