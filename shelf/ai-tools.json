@@ -13,7 +13,7 @@
   {
     "name": "Dify",
     "repo": "https://github.com/langgenius/dify",
-    "category": "AI Agents & Workflows",
+    "category": "AI Workflow & Orchestration",
     "description": "An open-source LLM app development platform combining AI workflow, RAG pipeline, agent capabilities, and model management.",
     "language": "Python / TypeScript",
     "license": "Apache-2.0",
@@ -24,7 +24,7 @@
   {
     "name": "vLLM",
     "repo": "https://github.com/vllm-project/vllm",
-    "category": "High-Throughput Serving",
+    "category": "Local AI & Inference",
     "description": "A high-throughput and memory-efficient inference and serving engine for LLMs with PagedAttention.",
     "language": "Python / C++",
     "license": "Apache-2.0",
@@ -46,7 +46,7 @@
   {
     "name": "YYLO",
     "repo": "https://github.com/yylo-dev/yylo",
-    "category": "AI Agents & Local LLMs",
+    "category": "Local AI & Inference",
     "description": "Command-line orchestrator for AI coding agents: runs Claude Code, Codex CLI, and Gemini CLI in parallel git worktrees with Kanban task state, typed merge flows, and per-agent skills.",
     "language": "TypeScript",
     "license": "MIT",
@@ -68,7 +68,7 @@
   {
     "name": "AnythingLLM",
     "repo": "https://github.com/Mintplex-Labs/anything-llm",
-    "category": "Local AI & RAG",
+    "category": "Local AI & Inference",
     "description": "The all-in-one Desktop & Docker AI application with full RAG pipeline, multi-agent workspaces, and complete privacy.",
     "language": "JavaScript",
     "license": "MIT",
@@ -79,7 +79,7 @@
   {
     "name": "Flowise",
     "repo": "https://github.com/FlowiseAI/Flowise",
-    "category": "AI Agents & Workflows",
+    "category": "AI Workflow & Orchestration",
     "description": "Drag & drop user interface for building customized LLM applications, autonomous agents, and RAG pipelines.",
     "language": "TypeScript",
     "license": "Apache-2.0",
@@ -90,7 +90,7 @@
   {
     "name": "Langflow",
     "repo": "https://github.com/langflow-ai/langflow",
-    "category": "AI Agents & Workflows",
+    "category": "AI Workflow & Orchestration",
     "description": "Dynamic visual framework for building, testing, and deploying multi-agent AI and RAG applications.",
     "language": "Python / TypeScript",
     "license": "MIT",
@@ -123,7 +123,7 @@
   {
     "name": "Fabric",
     "repo": "https://github.com/danielmiessler/fabric",
-    "category": "AI CLI & Productivity",
+    "category": "Autonomous Coding & Agent Dev",
     "description": "Open-source prompt and automation framework for augmenting humans using AI patterns and modular CLI tooling.",
     "language": "Go",
     "license": "MIT",
@@ -134,7 +134,7 @@
   {
     "name": "Aider",
     "repo": "https://github.com/Aider-AI/aider",
-    "category": "AI Pair Programming & CLI",
+    "category": "Autonomous Coding & Agent Dev",
     "description": "AI pair programming in your terminal: edit code in local git repos with Claude 3.5 Sonnet, GPT-4o, or local LLMs with auto-commits.",
     "language": "Python",
     "license": "Apache-2.0",
@@ -145,7 +145,7 @@
   {
     "name": "OpenHands",
     "repo": "https://github.com/All-Hands-AI/OpenHands",
-    "category": "Autonomous AI Software Engineers",
+    "category": "Autonomous Coding & Agent Dev",
     "description": "Open-source platform for software development agents that can write code, fix bugs, run bash commands, and browse documentation autonomously.",
     "language": "Python",
     "license": "MIT",
@@ -156,7 +156,7 @@
   {
     "name": "Continue",
     "repo": "https://github.com/continuedev/continue",
-    "category": "AI Code Assistant & Extension",
+    "category": "Autonomous Coding & Agent Dev",
     "description": "Leading open-source AI code assistant inside VS Code and JetBrains: bring your own models, embeddings, and context providers.",
     "language": "TypeScript",
     "license": "Apache-2.0",
@@ -211,7 +211,7 @@
   {
     "name": "Tabby",
     "repo": "https://github.com/TabbyML/tabby",
-    "category": "Code Generation & Agent Dev",
+    "category": "Autonomous Coding & Agent Dev",
     "description": "Self-hosted AI coding assistant alternative to GitHub Copilot with local model execution and editor plugins.",
     "language": "Rust",
     "license": "Apache-2.0",
@@ -387,7 +387,7 @@
   {
     "name": "Open-Interpreter",
     "repo": "https://github.com/OpenInterpreter/open-interpreter",
-    "category": "Code Generation & Agent Dev",
+    "category": "Autonomous Coding & Agent Dev",
     "description": "Open-source, local-first code interpreter that lets LLMs run Python, JavaScript, and Bash code on your computer.",
     "language": "Python",
     "license": "AGPL-3.0",
@@ -464,7 +464,7 @@
   {
     "name": "AutoGPT",
     "repo": "https://github.com/Significant-Gravitas/AutoGPT",
-    "category": "Code Generation & Agent Dev",
+    "category": "Autonomous Coding & Agent Dev",
     "description": "Autonomous AI agent platform empowering developers to create, test, and deploy customized AI agent chains.",
     "language": "Python",
     "license": "MIT",
@@ -519,7 +519,7 @@
   {
     "name": "SuperAGI",
     "repo": "https://github.com/TransformerOptimus/SuperAGI",
-    "category": "Code Generation & Agent Dev",
+    "category": "Autonomous Coding & Agent Dev",
     "description": "Dev-first open source autonomous AI agent framework with GUI, agent telemetry, concurrent agents, and marketplace.",
     "language": "Python",
     "license": "MIT",
@@ -860,7 +860,7 @@
   {
     "name": "BabyAGI",
     "repo": "https://github.com/yoheinakajima/babyagi",
-    "category": "Code Generation & Agent Dev",
+    "category": "Autonomous Coding & Agent Dev",
     "description": "Pioneering AI-powered task management and autonomous agent execution system that builds on task completion loops.",
     "language": "Python",
     "license": "MIT",
@@ -871,7 +871,7 @@
   {
     "name": "OpenCodeInterpreter",
     "repo": "https://github.com/OpenCodeInterpreter/OpenCodeInterpreter",
-    "category": "Code Generation & Agent Dev",
+    "category": "Autonomous Coding & Agent Dev",
     "description": "Open-source code generation system integrating dynamic execution feedback and compiler outputs for iterative code refinement.",
     "language": "Python",
     "license": "Apache-2.0",
@@ -904,7 +904,7 @@
   {
     "name": "SWE-agent",
     "repo": "https://github.com/princeton-nlp/SWE-agent",
-    "category": "Code Generation & Agent Dev",
+    "category": "Autonomous Coding & Agent Dev",
     "description": "Autonomous software engineering agent that turns LM models into autonomous agents solving GitHub issues.",
     "language": "Python",
     "license": "MIT",

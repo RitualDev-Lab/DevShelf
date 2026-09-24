@@ -10,7 +10,7 @@
   {
     "name": "Sentry for Open Source",
     "url": "https://sentry.io/for/open-source",
-    "category": "Error Tracking & Observability",
+    "category": "Observability, CI & Testing",
     "description": "Free Sentry Business plan for qualifying open-source maintainers to monitor application health, errors, and real-time performance.",
     "perkValue": "Free Sentry Business Plan ($312+/yr value)",
     "eligibility": "Public open-source repository with OSI-approved license"
@@ -18,7 +18,7 @@
   {
     "name": "GitHub for Startups",
     "url": "https://github.com/enterprise/startups",
-    "category": "Hosting & Dev Collaboration",
+    "category": "Open Source Sponsorship",
     "description": "Up to 20 seats of GitHub Enterprise free for 12 months, including GitHub Actions minutes, Advanced Security, and Copilot.",
     "perkValue": "Up to 20 Free Enterprise Seats ($5,000+ value)",
     "eligibility": "Series A or earlier startups"
@@ -26,7 +26,7 @@
   {
     "name": "AWS Activate Founders",
     "url": "https://aws.amazon.com/activate",
-    "category": "Cloud Infrastructure",
+    "category": "Cloud Credits & Infrastructure",
     "description": "Free AWS promotional cloud credits, technical support, and architectural guidance for early-stage builders and founders.",
     "perkValue": "$1,000 - $100,000 AWS Cloud Credits",
     "eligibility": "Self-funded or early-stage startups"
@@ -34,7 +34,7 @@
   {
     "name": "Google Cloud for Startups",
     "url": "https://cloud.google.com/startup",
-    "category": "Cloud Infrastructure & AI",
+    "category": "Cloud Credits & Infrastructure",
     "description": "Access up to $2,000 in GCP credits in year one, covering Compute Engine, Cloud Run, Vertex AI, and BigQuery.",
     "perkValue": "$2,000 in GCP Cloud Credits",
     "eligibility": "Early-stage bootstrap / funded startups"
@@ -42,7 +42,7 @@
   {
     "name": "DigitalOcean Open Source Sponsorship",
     "url": "https://www.digitalocean.com/open-source",
-    "category": "Cloud Hosting & Droplets",
+    "category": "Cloud Credits & Infrastructure",
     "description": "Monthly infrastructure credits to host open-source websites, build runners, test nodes, and documentation servers.",
     "perkValue": "Recurring Free Droplet / Bandwidth Credits",
     "eligibility": "Public open-source projects with active community"
@@ -50,7 +50,7 @@
   {
     "name": "Postman Open Source Sponsorship",
     "url": "https://www.postman.com/open-source",
-    "category": "API Development",
+    "category": "Developer Tools & IDEs",
     "description": "Free Postman Team subscription for open-source teams maintaining public APIs and workspaces.",
     "perkValue": "Free Postman Team Plan",
     "eligibility": "Public API open-source projects"
@@ -58,7 +58,7 @@
   {
     "name": "Datadog for Open Source",
     "url": "https://www.datadoghq.com/partner/open-source",
-    "category": "Observability & APM",
+    "category": "Observability, CI & Testing",
     "description": "Free Datadog Pro infrastructure monitoring, log management, and APM for qualifying open-source projects.",
     "perkValue": "Free Datadog Pro Account ($180+/host/yr)",
     "eligibility": "Non-commercial OSI-approved open source projects"
@@ -66,7 +66,7 @@
   {
     "name": "BrowserStack Open Source",
     "url": "https://www.browserstack.com/open-source",
-    "category": "Cross-Browser & Device Testing",
+    "category": "Observability, CI & Testing",
     "description": "Free BrowserStack testing license for open-source maintainers across 3,000+ real desktop and mobile browsers.",
     "perkValue": "Free Unlimited Live & Automate Testing ($348+/yr)",
     "eligibility": "Public open-source repository with active development"
@@ -74,7 +74,7 @@
   {
     "name": "Docker Open Source Community",
     "url": "https://www.docker.com/community/open-source/application",
-    "category": "Container Registries & CI",
+    "category": "Observability, CI & Testing",
     "description": "Free Docker Hub Team account with unlimited image pulls, public repositories, and automated security vulnerability scans.",
     "perkValue": "Free Docker Hub Team Tier ($108+/yr value)",
     "eligibility": "Active OSI-compliant open-source projects"
@@ -82,7 +82,7 @@
   {
     "name": "JetBrains Mono",
     "url": "https://github.com/JetBrains/JetBrainsMono",
-    "category": "Developer Fonts & Aesthetics",
+    "category": "Developer Tools & IDEs",
     "description": "Free monospaced coding font with toggleable OpenType ligatures; a no-ligature variant is also available.",
     "perkValue": "Free download (SIL Open Font License 1.1)",
     "eligibility": "Free for personal and commercial use under OFL 1.1"
@@ -90,7 +90,7 @@
   {
     "name": "Fira Code",
     "url": "https://github.com/tonsky/FiraCode",
-    "category": "Developer Fonts & Aesthetics",
+    "category": "Developer Tools & IDEs",
     "description": "Free monospaced font with programming ligatures; the ligatures change how code is rendered, not its underlying characters.",
     "perkValue": "Free download (SIL Open Font License 1.1)",
     "eligibility": "Free to use under OFL 1.1"
@@ -98,7 +98,7 @@
   {
     "name": "Cascadia Code",
     "url": "https://github.com/microsoft/cascadia-code",
-    "category": "Developer Fonts & Aesthetics",
+    "category": "Developer Tools & IDEs",
     "description": "Free monospaced coding font with programming ligatures; Cascadia Mono is the variant without ligatures.",
     "perkValue": "Free download (SIL Open Font License 1.1)",
     "eligibility": "Free to use under OFL 1.1"
@@ -106,7 +106,7 @@
   {
     "name": "GitHub Student Developer Pack",
     "url": "https://education.github.com/pack",
-    "category": "Cloud Credits & Developer Packs",
+    "category": "Cloud Credits & Infrastructure",
     "description": "Free developer tools, cloud hosting credits (DigitalOcean, Azure), domain names, and GitHub Pro for verified students.",
     "perkValue": "$200,000+ in free developer tooling and courses",
     "eligibility": "Verified students aged 13+ with school-issued email or proof of enrollment"
@@ -114,7 +114,7 @@
   {
     "name": "Microsoft for Startups Founders Hub",
     "url": "https://www.microsoft.com/startups",
-    "category": "Cloud Credits & Developer Packs",
+    "category": "Cloud Credits & Infrastructure",
     "description": "Up to $150,000 in Azure cloud credits, free access to OpenAI models, GitHub Enterprise, and LinkedIn tools for tech startups.",
     "perkValue": "Up to $150,000 in Azure credits + OpenAI access",
     "eligibility": "Software or AI startups building a product (no funding required)"
@@ -170,7 +170,7 @@
   {
     "name": "JetBrains Student Pack",
     "url": "https://www.jetbrains.com/community/education#students",
-    "category": "Student & Education",
+    "category": "Student & Education Packs",
     "description": "Free individual annual subscription to all JetBrains IDEs (IntelliJ IDEA, WebStorm, PyCharm, CLion, Rider) for students.",
     "perkValue": "$289/year in professional IDE licenses",
     "eligibility": "Students and teachers with valid educational email address"
@@ -178,7 +178,7 @@
   {
     "name": "Notion for Education",
     "url": "https://www.notion.so/product/notion-for-education",
-    "category": "Student & Education",
+    "category": "Student & Education Packs",
     "description": "Free Personal Pro plan for students and educators with unlimited file uploads, 30-day page history, and collaborative workspaces.",
     "perkValue": "$96/year Personal Pro subscription",
     "eligibility": "Students and teachers with school email address"
@@ -186,7 +186,7 @@
   {
     "name": "Twilio Startups Program",
     "url": "https://www.twilio.com/en-us/startups",
-    "category": "Cloud Credits & Developer Packs",
+    "category": "Cloud Credits & Infrastructure",
     "description": "Up to $500 in Twilio communication API credits, sendgrid volume, and technical mentorship for early-stage software companies.",
     "perkValue": "Up to $500 in Twilio credits + SendGrid boosts",
     "eligibility": "Early-stage startups building customer communications"
@@ -194,7 +194,7 @@
   {
     "name": "Figma for Education",
     "url": "https://www.figma.com/education",
-    "category": "Student & Education",
+    "category": "Student & Education Packs",
     "description": "Free Figma and FigJam Professional tier for students, teachers, and accredited design classrooms.",
     "perkValue": "$144/year per editor Professional tier",
     "eligibility": "Verified students and faculty in recognized educational institutions"
@@ -202,7 +202,7 @@
   {
     "name": "MongoDB for Startups",
     "url": "https://www.mongodb.com/startups",
-    "category": "Cloud Credits & Developer Packs",
+    "category": "Cloud Credits & Infrastructure",
     "description": "Up to $5,000 in MongoDB Atlas cloud database credits, dedicated technical advisory, and co-marketing opportunities.",
     "perkValue": "$500 to $5,000 in MongoDB Atlas credits",
     "eligibility": "Startups from ideation to Series A stage"
@@ -226,7 +226,7 @@
   {
     "name": "Termius for Students",
     "url": "https://termius.com/education",
-    "category": "Student & Education",
+    "category": "Student & Education Packs",
     "description": "Free Termius Pro SSH client for students with encrypted configuration sync, port forwarding, and SFTP browser.",
     "perkValue": "$120/year Pro subscription",
     "eligibility": "Students verified through GitHub Student Developer Pack"

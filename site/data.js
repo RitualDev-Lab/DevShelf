@@ -1,5 +1,5 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-09-24T21:22:31.576Z",
+  "updatedAt": "2026-09-24T21:32:15.993Z",
   "totalCount": 501,
   "counts": {
     "repos": 305,
@@ -33,7 +33,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Dify",
       "repo": "https://github.com/langgenius/dify",
-      "category": "AI Agents & Workflows",
+      "category": "AI Workflow & Orchestration",
       "description": "An open-source LLM app development platform combining AI workflow, RAG pipeline, agent capabilities, and model management.",
       "language": "Python / TypeScript",
       "license": "Apache-2.0",
@@ -50,7 +50,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "vLLM",
       "repo": "https://github.com/vllm-project/vllm",
-      "category": "High-Throughput Serving",
+      "category": "Local AI & Inference",
       "description": "A high-throughput and memory-efficient inference and serving engine for LLMs with PagedAttention.",
       "language": "Python / C++",
       "license": "Apache-2.0",
@@ -84,7 +84,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "YYLO",
       "repo": "https://github.com/yylo-dev/yylo",
-      "category": "AI Agents & Local LLMs",
+      "category": "Local AI & Inference",
       "description": "Command-line orchestrator for AI coding agents: runs Claude Code, Codex CLI, and Gemini CLI in parallel git worktrees with Kanban task state, typed merge flows, and per-agent skills.",
       "language": "TypeScript",
       "license": "MIT",
@@ -118,7 +118,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "AnythingLLM",
       "repo": "https://github.com/Mintplex-Labs/anything-llm",
-      "category": "Local AI & RAG",
+      "category": "Local AI & Inference",
       "description": "The all-in-one Desktop & Docker AI application with full RAG pipeline, multi-agent workspaces, and complete privacy.",
       "language": "JavaScript",
       "license": "MIT",
@@ -135,7 +135,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Flowise",
       "repo": "https://github.com/FlowiseAI/Flowise",
-      "category": "AI Agents & Workflows",
+      "category": "AI Workflow & Orchestration",
       "description": "Drag & drop user interface for building customized LLM applications, autonomous agents, and RAG pipelines.",
       "language": "TypeScript",
       "license": "Apache-2.0",
@@ -152,7 +152,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Langflow",
       "repo": "https://github.com/langflow-ai/langflow",
-      "category": "AI Agents & Workflows",
+      "category": "AI Workflow & Orchestration",
       "description": "Dynamic visual framework for building, testing, and deploying multi-agent AI and RAG applications.",
       "language": "Python / TypeScript",
       "license": "MIT",
@@ -203,7 +203,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Fabric",
       "repo": "https://github.com/danielmiessler/fabric",
-      "category": "AI CLI & Productivity",
+      "category": "Autonomous Coding & Agent Dev",
       "description": "Open-source prompt and automation framework for augmenting humans using AI patterns and modular CLI tooling.",
       "language": "Go",
       "license": "MIT",
@@ -220,7 +220,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Aider",
       "repo": "https://github.com/Aider-AI/aider",
-      "category": "AI Pair Programming & CLI",
+      "category": "Autonomous Coding & Agent Dev",
       "description": "AI pair programming in your terminal: edit code in local git repos with Claude 3.5 Sonnet, GPT-4o, or local LLMs with auto-commits.",
       "language": "Python",
       "license": "Apache-2.0",
@@ -239,7 +239,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "OpenHands",
       "repo": "https://github.com/All-Hands-AI/OpenHands",
-      "category": "Autonomous AI Software Engineers",
+      "category": "Autonomous Coding & Agent Dev",
       "description": "Open-source platform for software development agents that can write code, fix bugs, run bash commands, and browse documentation autonomously.",
       "language": "Python",
       "license": "MIT",
@@ -258,7 +258,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Continue",
       "repo": "https://github.com/continuedev/continue",
-      "category": "AI Code Assistant & Extension",
+      "category": "Autonomous Coding & Agent Dev",
       "description": "Leading open-source AI code assistant inside VS Code and JetBrains: bring your own models, embeddings, and context providers.",
       "language": "TypeScript",
       "license": "Apache-2.0",
@@ -342,7 +342,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Tabby",
       "repo": "https://github.com/TabbyML/tabby",
-      "category": "Code Generation & Agent Dev",
+      "category": "Autonomous Coding & Agent Dev",
       "description": "Self-hosted AI coding assistant alternative to GitHub Copilot with local model execution and editor plugins.",
       "language": "Rust",
       "license": "Apache-2.0",
@@ -598,7 +598,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Open-Interpreter",
       "repo": "https://github.com/OpenInterpreter/open-interpreter",
-      "category": "Code Generation & Agent Dev",
+      "category": "Autonomous Coding & Agent Dev",
       "description": "Open-source, local-first code interpreter that lets LLMs run Python, JavaScript, and Bash code on your computer.",
       "language": "Python",
       "license": "AGPL-3.0",
@@ -710,7 +710,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "AutoGPT",
       "repo": "https://github.com/Significant-Gravitas/AutoGPT",
-      "category": "Code Generation & Agent Dev",
+      "category": "Autonomous Coding & Agent Dev",
       "description": "Autonomous AI agent platform empowering developers to create, test, and deploy customized AI agent chains.",
       "language": "Python",
       "license": "MIT",
@@ -790,7 +790,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "SuperAGI",
       "repo": "https://github.com/TransformerOptimus/SuperAGI",
-      "category": "Code Generation & Agent Dev",
+      "category": "Autonomous Coding & Agent Dev",
       "description": "Dev-first open source autonomous AI agent framework with GUI, agent telemetry, concurrent agents, and marketplace.",
       "language": "Python",
       "license": "MIT",
@@ -1286,7 +1286,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "BabyAGI",
       "repo": "https://github.com/yoheinakajima/babyagi",
-      "category": "Code Generation & Agent Dev",
+      "category": "Autonomous Coding & Agent Dev",
       "description": "Pioneering AI-powered task management and autonomous agent execution system that builds on task completion loops.",
       "language": "Python",
       "license": "MIT",
@@ -1302,7 +1302,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "OpenCodeInterpreter",
       "repo": "https://github.com/OpenCodeInterpreter/OpenCodeInterpreter",
-      "category": "Code Generation & Agent Dev",
+      "category": "Autonomous Coding & Agent Dev",
       "description": "Open-source code generation system integrating dynamic execution feedback and compiler outputs for iterative code refinement.",
       "language": "Python",
       "license": "Apache-2.0",
@@ -1350,7 +1350,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "SWE-agent",
       "repo": "https://github.com/princeton-nlp/SWE-agent",
-      "category": "Code Generation & Agent Dev",
+      "category": "Autonomous Coding & Agent Dev",
       "description": "Autonomous software engineering agent that turns LM models into autonomous agents solving GitHub issues.",
       "language": "Python",
       "license": "MIT",
@@ -1514,7 +1514,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "agent-browser",
       "repo": "https://github.com/vercel-labs/agent-browser",
-      "category": "CLI & Developer Productivity",
+      "category": "Developer Tools",
       "description": "Open-source browser automation CLI for AI agents, with a fast Rust core and Node.js fallback for navigation, forms, screenshots, and structured page interaction.",
       "language": "Rust / TypeScript",
       "license": "Apache-2.0",
@@ -1580,7 +1580,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "tldr",
       "repo": "https://github.com/tldr-pages/tldr",
-      "category": "Terminal & Productivity",
+      "category": "Developer Tools",
       "description": "Collaborative, simplified community man pages focusing on practical, real-world command examples.",
       "language": "Markdown",
       "license": "MIT",
@@ -1644,7 +1644,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "curlie",
       "repo": "https://github.com/rs/curlie",
-      "category": "HTTP & Networking",
+      "category": "HTTP & Network",
       "description": "The power of curl with the ease of use and human-friendly terminal output of HTTPie.",
       "language": "Go",
       "license": "MIT",
@@ -1660,7 +1660,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Starship",
       "repo": "https://github.com/starship/starship",
-      "category": "Terminal & Shell Prompt",
+      "category": "Terminal & Shell",
       "description": "The minimal, blazing-fast, and infinitely customizable cross-shell prompt for any shell (Bash, Zsh, Fish, PowerShell).",
       "language": "Rust",
       "license": "ISC",
@@ -1710,7 +1710,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "HTTPie",
       "repo": "https://github.com/httpie/cli",
-      "category": "HTTP & Networking",
+      "category": "HTTP & Network",
       "description": "Modern, user-friendly command-line HTTP client for API debugging with clean JSON formatting, colorized output, and sessions.",
       "language": "Python",
       "license": "BSD-3-Clause",
@@ -1950,7 +1950,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "dive",
       "repo": "https://github.com/wagoodman/dive",
-      "category": "Container & Docker",
+      "category": "DevOps & Containers",
       "description": "Tool for exploring a Docker image, layer contents, and discovering ways to shrink your image size.",
       "language": "Go",
       "license": "MIT",
@@ -1966,7 +1966,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "lazydocker",
       "repo": "https://github.com/jesseduffield/lazydocker",
-      "category": "Container & Docker",
+      "category": "DevOps & Containers",
       "description": "A simple terminal UI for both Docker and docker-compose, written in Go with the gocui library.",
       "language": "Go",
       "license": "MIT",
@@ -3086,7 +3086,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "AutoHeal-QA",
       "repo": "https://github.com/RitualDev-Lab/autoheal-qa",
-      "category": "E2E & Playwright",
+      "category": "Browser & E2E Testing",
       "description": "100% Free & Local-first agentic self-healing E2E test runner for Playwright.  cloud cost with AST auto-patching and verification loop.",
       "language": "TypeScript",
       "license": "MIT",
@@ -3100,7 +3100,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Agent QA",
       "repo": "https://github.com/vostride/agent-qa",
-      "category": "E2E Testing",
+      "category": "Browser & E2E Testing",
       "description": "Self-improving QA agent for natural-language web and mobile tests, with a local dashboard and CLI.",
       "language": "TypeScript",
       "license": "FSL-1.1-ALv2",
@@ -3112,7 +3112,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Playwright",
       "repo": "https://github.com/microsoft/playwright",
-      "category": "E2E Testing",
+      "category": "Browser & E2E Testing",
       "description": "Fast and reliable end-to-end testing framework for modern web apps across Chromium, Firefox, and WebKit.",
       "language": "TypeScript",
       "license": "Apache-2.0",
@@ -3124,7 +3124,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Vitest",
       "repo": "https://github.com/vitest-dev/vitest",
-      "category": "Unit Testing",
+      "category": "Unit & Integration Testing",
       "description": "Blazing fast Vite-native unit test framework with ESM, TypeScript, and out-of-the-box coverage.",
       "language": "TypeScript",
       "license": "MIT",
@@ -3148,7 +3148,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Bruno",
       "repo": "https://github.com/usebruno/bruno",
-      "category": "API Testing & Exploration",
+      "category": "API Testing & Debugging",
       "description": "Fast, git-friendly, open-source API client that stores collections directly in your repo via plain text files.",
       "language": "JavaScript",
       "license": "MIT",
@@ -3162,7 +3162,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Hoppscotch",
       "repo": "https://github.com/hoppscotch/hoppscotch",
-      "category": "API Testing & Exploration",
+      "category": "API Testing & Debugging",
       "description": "Open-source API development ecosystem, lightweight web & desktop app with WebSocket, GraphQL, and SSE support.",
       "language": "TypeScript / Vue",
       "license": "MIT",
@@ -3174,7 +3174,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Mockoon",
       "repo": "https://github.com/mockoon/mockoon",
-      "category": "Mock APIs & Sandboxes",
+      "category": "API Mocking & Sandboxes",
       "description": "The easiest and quickest way to design and run mock REST APIs locally with custom routes, rules, and proxies.",
       "language": "TypeScript",
       "license": "MIT",
@@ -3210,7 +3210,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "MSW (Mock Service Worker)",
       "repo": "https://github.com/mswjs/msw",
-      "category": "API Mocking & Interception",
+      "category": "API Mocking & Sandboxes",
       "description": "Seamless REST and GraphQL API mocking library for browser and Node.js using Service Worker API to intercept requests at the network level.",
       "language": "TypeScript",
       "license": "MIT",
@@ -3258,7 +3258,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "WireMock",
       "repo": "https://github.com/wiremock/wiremock",
-      "category": "API Mocking & Virtualization",
+      "category": "API Mocking & Sandboxes",
       "description": "Flexible simulator and mock server for HTTP-based APIs with support for record/playback and stateful scenarios.",
       "language": "Java",
       "license": "Apache-2.0",
@@ -3270,7 +3270,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Prism",
       "repo": "https://github.com/stoplightio/prism",
-      "category": "API Mocking & Virtualization",
+      "category": "API Mocking & Sandboxes",
       "description": "Open-source HTTP mock server that generates realistic mock servers directly from OpenAPI and JSON Schema specs.",
       "language": "TypeScript",
       "license": "Apache-2.0",
@@ -3366,7 +3366,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Insomnia",
       "repo": "https://github.com/Kong/insomnia",
-      "category": "API Design & Debugging",
+      "category": "API Testing & Debugging",
       "description": "Leading open-source API development and debugging platform for GraphQL, REST, WebSockets, and gRPC.",
       "language": "TypeScript / Electron",
       "license": "Apache-2.0",
@@ -3414,7 +3414,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Newman",
       "repo": "https://github.com/postmanlabs/newman",
-      "category": "API Design & Debugging",
+      "category": "API Testing & Debugging",
       "description": "Postman's collection runner CLI allowing you to run and test Postman collections directly in CI/CD pipelines.",
       "language": "JavaScript",
       "license": "Apache-2.0",
@@ -3450,7 +3450,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "RestAssured",
       "repo": "https://github.com/rest-assured/rest-assured",
-      "category": "API Design & Debugging",
+      "category": "API Testing & Debugging",
       "description": "Java DSL for easy testing of REST services, bringing the simplicity of dynamic languages into Java.",
       "language": "Java",
       "license": "Apache-2.0",
@@ -3774,7 +3774,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "MockServer",
       "repo": "https://github.com/mock-server/mockserver",
-      "category": "API Mocking & Virtualization",
+      "category": "API Mocking & Sandboxes",
       "description": "Enables easy mocking of any system you integrate with via HTTP or HTTPS with expectations and verifications.",
       "language": "Java",
       "license": "Apache-2.0",
@@ -3786,7 +3786,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "JSON-Server",
       "repo": "https://github.com/typicode/json-server",
-      "category": "API Mocking & Virtualization",
+      "category": "API Mocking & Sandboxes",
       "description": "Get a full fake REST API with zero coding in less than 30 seconds from a single JSON file.",
       "language": "TypeScript",
       "license": "MIT",
@@ -5387,7 +5387,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Neon",
       "url": "https://neon.tech",
-      "category": "Serverless Postgres",
+      "category": "Databases & BaaS",
       "description": "Serverless Postgres with instant branching, bottomless storage, and autoscaling compute to zero.",
       "freeTier": "0.5 GB storage, instant branching, scale-to-zero",
       "statusTags": [
@@ -5400,7 +5400,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Cloudflare Workers",
       "url": "https://workers.cloudflare.com",
-      "category": "Serverless Compute & Edge",
+      "category": "Cloud Hosting & PaaS",
       "description": "Deploy serverless code instantly across Cloudflare's global edge network with ultra-low latency.",
       "freeTier": "100,000 requests/day, KV store, D1 SQL database",
       "statusTags": [
@@ -5413,7 +5413,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Clerk",
       "url": "https://clerk.com",
-      "category": "Authentication & User Management",
+      "category": "Authentication & Security",
       "description": "Complete user management and authentication suite for React, Next.js, and modern full-stack web applications.",
       "freeTier": "10,000 monthly active users, social logins, MFA",
       "statusTags": [
@@ -5452,7 +5452,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Appwrite",
       "url": "https://appwrite.io",
-      "category": "Backend-as-a-Service",
+      "category": "Databases & BaaS",
       "description": "Self-hosted backend-as-a-service platform providing developers with core APIs for authentication, databases, storage, and serverless functions.",
       "freeTier": "Free Cloud Tier: 2 projects, 75k monthly active users, 2GB storage",
       "statusTags": [
@@ -5465,7 +5465,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Fly.io",
       "url": "https://fly.io",
-      "category": "Serverless Compute & Global VMs",
+      "category": "Cloud Hosting & PaaS",
       "description": "Run full-stack apps and databases close to your users globally with lightweight Firecracker microVMs.",
       "freeTier": "Free allowance: up to 3 shared-cpu-1x VMs, 3GB persistent storage",
       "statusTags": [
@@ -5491,7 +5491,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Koyeb",
       "url": "https://www.koyeb.com",
-      "category": "Serverless & Containers",
+      "category": "Cloud Hosting & PaaS",
       "description": "Serverless platform to deploy full-stack apps and Docker containers globally with built-in CDN, SSL, and private networking.",
       "freeTier": "Free Eco tier: 1 web service, 512MB RAM, global edge network",
       "statusTags": [
@@ -5660,7 +5660,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Directus",
       "url": "https://directus.io",
-      "category": "Backend-as-a-Service",
+      "category": "Databases & BaaS",
       "description": "Real-time API and app dashboard layer for any SQL database with granular access control and event automation.",
       "freeTier": "100% Free & Open Source Community Edition",
       "statusTags": [
@@ -5673,7 +5673,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Strapi",
       "url": "https://strapi.io",
-      "category": "Backend-as-a-Service",
+      "category": "Databases & BaaS",
       "description": "Open-source headless CMS delivering customizable REST and GraphQL APIs for web and mobile frontends.",
       "freeTier": "100% Free & Open Source Community Edition",
       "statusTags": [
@@ -5764,7 +5764,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Oracle Cloud Always Free",
       "url": "https://www.oracle.com/cloud/free",
-      "category": "Cloud Hosting & Compute",
+      "category": "Cloud Hosting & PaaS",
       "description": "Generous always-free cloud infrastructure: 4 Arm Ampere A1 cores, 24GB RAM, and 200GB block storage.",
       "freeTier": "4 OCPU, 24GB RAM Arm compute, 2 AMD micro VMs, 200GB storage",
       "statusTags": [
@@ -5777,7 +5777,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Deno Deploy",
       "url": "https://deno.com/deploy",
-      "category": "Serverless Compute & Edge",
+      "category": "Cloud Hosting & PaaS",
       "description": "Globally distributed system that runs JavaScript, TypeScript, and WebAssembly at the edge with zero cold starts.",
       "freeTier": "1,000,000 requests/month, 100 GiB outbound transfer",
       "statusTags": [
@@ -6294,7 +6294,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Sentry for Open Source",
       "url": "https://sentry.io/for/open-source",
-      "category": "Error Tracking & Observability",
+      "category": "Observability, CI & Testing",
       "description": "Free Sentry Business plan for qualifying open-source maintainers to monitor application health, errors, and real-time performance.",
       "perkValue": "Free Sentry Business Plan ($312+/yr value)",
       "eligibility": "Public open-source repository with OSI-approved license",
@@ -6304,7 +6304,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "GitHub for Startups",
       "url": "https://github.com/enterprise/startups",
-      "category": "Hosting & Dev Collaboration",
+      "category": "Open Source Sponsorship",
       "description": "Up to 20 seats of GitHub Enterprise free for 12 months, including GitHub Actions minutes, Advanced Security, and Copilot.",
       "perkValue": "Up to 20 Free Enterprise Seats ($5,000+ value)",
       "eligibility": "Series A or earlier startups",
@@ -6314,7 +6314,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "AWS Activate Founders",
       "url": "https://aws.amazon.com/activate",
-      "category": "Cloud Infrastructure",
+      "category": "Cloud Credits & Infrastructure",
       "description": "Free AWS promotional cloud credits, technical support, and architectural guidance for early-stage builders and founders.",
       "perkValue": "$1,000 - $100,000 AWS Cloud Credits",
       "eligibility": "Self-funded or early-stage startups",
@@ -6324,7 +6324,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Google Cloud for Startups",
       "url": "https://cloud.google.com/startup",
-      "category": "Cloud Infrastructure & AI",
+      "category": "Cloud Credits & Infrastructure",
       "description": "Access up to $2,000 in GCP credits in year one, covering Compute Engine, Cloud Run, Vertex AI, and BigQuery.",
       "perkValue": "$2,000 in GCP Cloud Credits",
       "eligibility": "Early-stage bootstrap / funded startups",
@@ -6334,7 +6334,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "DigitalOcean Open Source Sponsorship",
       "url": "https://www.digitalocean.com/open-source",
-      "category": "Cloud Hosting & Droplets",
+      "category": "Cloud Credits & Infrastructure",
       "description": "Monthly infrastructure credits to host open-source websites, build runners, test nodes, and documentation servers.",
       "perkValue": "Recurring Free Droplet / Bandwidth Credits",
       "eligibility": "Public open-source projects with active community",
@@ -6344,7 +6344,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Postman Open Source Sponsorship",
       "url": "https://www.postman.com/open-source",
-      "category": "API Development",
+      "category": "Developer Tools & IDEs",
       "description": "Free Postman Team subscription for open-source teams maintaining public APIs and workspaces.",
       "perkValue": "Free Postman Team Plan",
       "eligibility": "Public API open-source projects",
@@ -6354,7 +6354,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Datadog for Open Source",
       "url": "https://www.datadoghq.com/partner/open-source",
-      "category": "Observability & APM",
+      "category": "Observability, CI & Testing",
       "description": "Free Datadog Pro infrastructure monitoring, log management, and APM for qualifying open-source projects.",
       "perkValue": "Free Datadog Pro Account ($180+/host/yr)",
       "eligibility": "Non-commercial OSI-approved open source projects",
@@ -6364,7 +6364,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "BrowserStack Open Source",
       "url": "https://www.browserstack.com/open-source",
-      "category": "Cross-Browser & Device Testing",
+      "category": "Observability, CI & Testing",
       "description": "Free BrowserStack testing license for open-source maintainers across 3,000+ real desktop and mobile browsers.",
       "perkValue": "Free Unlimited Live & Automate Testing ($348+/yr)",
       "eligibility": "Public open-source repository with active development",
@@ -6374,7 +6374,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Docker Open Source Community",
       "url": "https://www.docker.com/community/open-source/application",
-      "category": "Container Registries & CI",
+      "category": "Observability, CI & Testing",
       "description": "Free Docker Hub Team account with unlimited image pulls, public repositories, and automated security vulnerability scans.",
       "perkValue": "Free Docker Hub Team Tier ($108+/yr value)",
       "eligibility": "Active OSI-compliant open-source projects",
@@ -6384,7 +6384,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "JetBrains Mono",
       "url": "https://github.com/JetBrains/JetBrainsMono",
-      "category": "Developer Fonts & Aesthetics",
+      "category": "Developer Tools & IDEs",
       "description": "Free monospaced coding font with toggleable OpenType ligatures; a no-ligature variant is also available.",
       "perkValue": "Free download (SIL Open Font License 1.1)",
       "eligibility": "Free for personal and commercial use under OFL 1.1",
@@ -6394,7 +6394,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Fira Code",
       "url": "https://github.com/tonsky/FiraCode",
-      "category": "Developer Fonts & Aesthetics",
+      "category": "Developer Tools & IDEs",
       "description": "Free monospaced font with programming ligatures; the ligatures change how code is rendered, not its underlying characters.",
       "perkValue": "Free download (SIL Open Font License 1.1)",
       "eligibility": "Free to use under OFL 1.1",
@@ -6404,7 +6404,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Cascadia Code",
       "url": "https://github.com/microsoft/cascadia-code",
-      "category": "Developer Fonts & Aesthetics",
+      "category": "Developer Tools & IDEs",
       "description": "Free monospaced coding font with programming ligatures; Cascadia Mono is the variant without ligatures.",
       "perkValue": "Free download (SIL Open Font License 1.1)",
       "eligibility": "Free to use under OFL 1.1",
@@ -6414,7 +6414,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "GitHub Student Developer Pack",
       "url": "https://education.github.com/pack",
-      "category": "Cloud Credits & Developer Packs",
+      "category": "Cloud Credits & Infrastructure",
       "description": "Free developer tools, cloud hosting credits (DigitalOcean, Azure), domain names, and GitHub Pro for verified students.",
       "perkValue": "$200,000+ in free developer tooling and courses",
       "eligibility": "Verified students aged 13+ with school-issued email or proof of enrollment",
@@ -6424,7 +6424,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Microsoft for Startups Founders Hub",
       "url": "https://www.microsoft.com/startups",
-      "category": "Cloud Credits & Developer Packs",
+      "category": "Cloud Credits & Infrastructure",
       "description": "Up to $150,000 in Azure cloud credits, free access to OpenAI models, GitHub Enterprise, and LinkedIn tools for tech startups.",
       "perkValue": "Up to $150,000 in Azure credits + OpenAI access",
       "eligibility": "Software or AI startups building a product (no funding required)",
@@ -6494,7 +6494,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "JetBrains Student Pack",
       "url": "https://www.jetbrains.com/community/education#students",
-      "category": "Student & Education",
+      "category": "Student & Education Packs",
       "description": "Free individual annual subscription to all JetBrains IDEs (IntelliJ IDEA, WebStorm, PyCharm, CLion, Rider) for students.",
       "perkValue": "$289/year in professional IDE licenses",
       "eligibility": "Students and teachers with valid educational email address",
@@ -6504,7 +6504,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Notion for Education",
       "url": "https://www.notion.so/product/notion-for-education",
-      "category": "Student & Education",
+      "category": "Student & Education Packs",
       "description": "Free Personal Pro plan for students and educators with unlimited file uploads, 30-day page history, and collaborative workspaces.",
       "perkValue": "$96/year Personal Pro subscription",
       "eligibility": "Students and teachers with school email address",
@@ -6514,7 +6514,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Twilio Startups Program",
       "url": "https://www.twilio.com/en-us/startups",
-      "category": "Cloud Credits & Developer Packs",
+      "category": "Cloud Credits & Infrastructure",
       "description": "Up to $500 in Twilio communication API credits, sendgrid volume, and technical mentorship for early-stage software companies.",
       "perkValue": "Up to $500 in Twilio credits + SendGrid boosts",
       "eligibility": "Early-stage startups building customer communications",
@@ -6524,7 +6524,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Figma for Education",
       "url": "https://www.figma.com/education",
-      "category": "Student & Education",
+      "category": "Student & Education Packs",
       "description": "Free Figma and FigJam Professional tier for students, teachers, and accredited design classrooms.",
       "perkValue": "$144/year per editor Professional tier",
       "eligibility": "Verified students and faculty in recognized educational institutions",
@@ -6534,7 +6534,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "MongoDB for Startups",
       "url": "https://www.mongodb.com/startups",
-      "category": "Cloud Credits & Developer Packs",
+      "category": "Cloud Credits & Infrastructure",
       "description": "Up to $5,000 in MongoDB Atlas cloud database credits, dedicated technical advisory, and co-marketing opportunities.",
       "perkValue": "$500 to $5,000 in MongoDB Atlas credits",
       "eligibility": "Startups from ideation to Series A stage",
@@ -6564,7 +6564,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Termius for Students",
       "url": "https://termius.com/education",
-      "category": "Student & Education",
+      "category": "Student & Education Packs",
       "description": "Free Termius Pro SSH client for students with encrypted configuration sync, port forwarding, and SFTP browser.",
       "perkValue": "$120/year Pro subscription",
       "eligibility": "Students verified through GitHub Student Developer Pack",
@@ -6584,7 +6584,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Mockoon Cloudless API Server",
       "repo": "https://github.com/mockoon/mockoon",
-      "category": "API Mocks & Microservices",
+      "category": "Backend & Microservices",
       "description": "Deploy a lightweight, zero-dependency mock REST/GraphQL API server based on Mockoon JSON environments with 1 click.",
       "language": "TypeScript / Node.js",
       "license": "MIT",
@@ -6620,7 +6620,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "AutoHeal-QA Playwright Runner",
       "repo": "https://github.com/RitualDev-Lab/autoheal-qa",
-      "category": "Testing & QA Reliability",
+      "category": "Backend & Microservices",
       "description": "Deploy agentic self-healing E2E Playwright test automation with local LLM test fixing directly into GitHub Actions.",
       "language": "TypeScript",
       "license": "MIT",
@@ -6638,7 +6638,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Stirling-PDF Ultimate Toolbox",
       "repo": "https://github.com/Stirling-Tools/Stirling-PDF",
-      "category": "Dev Utilities & Productivity",
+      "category": "Backend & Microservices",
       "description": "Full-featured, privacy-first PDF manipulation suite to merge, split, OCR, redact, and sign PDFs with zero cloud tracking.",
       "language": "Java / Docker",
       "license": "GPL-3.0",
@@ -6656,7 +6656,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Open-WebUI for Local AI",
       "repo": "https://github.com/open-webui/open-webui",
-      "category": "AI Agents & Local LLMs",
+      "category": "AI & Full-Stack Starters",
       "description": "Feature-rich, self-hosted web chat UI for Ollama and OpenAI-compatible local endpoints with RAG and pipeline support.",
       "language": "Python / Svelte",
       "license": "MIT",
@@ -6691,7 +6691,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Hoppscotch API Development Hub",
       "repo": "https://github.com/hoppscotch/hoppscotch",
-      "category": "Testing & QA Reliability",
+      "category": "Backend & Microservices",
       "description": "Lightweight, fast, web-based API testing client supporting REST, WebSocket, GraphQL, and SSE testing.",
       "language": "TypeScript / Vue",
       "license": "MIT",
@@ -6709,7 +6709,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Dify LLM Application Platform",
       "repo": "https://github.com/langgenius/dify",
-      "category": "AI Agents & Local LLMs",
+      "category": "AI & Full-Stack Starters",
       "description": "Visual orchestration platform for LLM workflows, agent coordination, RAG pipelines, and model deployment.",
       "language": "Python / TypeScript",
       "license": "Apache-2.0",
@@ -6777,7 +6777,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Bulletproof React",
       "repo": "https://github.com/alan2207/bulletproof-react",
-      "category": "Frontend Architecture Template",
+      "category": "Full-Stack Web Starter",
       "description": "Opinionated, production-ready architecture guide and boilerplate for large-scale React enterprise applications.",
       "language": "TypeScript",
       "license": "MIT",
@@ -6845,7 +6845,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Medusa",
       "repo": "https://github.com/medusajs/medusa",
-      "category": "E-Commerce Starters",
+      "category": "SaaS & Dashboard Starters",
       "description": "Modular, open-source commerce engine and Shopify alternative built with Node.js and customizable modules.",
       "language": "TypeScript",
       "license": "MIT",
@@ -6896,7 +6896,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Turborepo Starter",
       "repo": "https://github.com/vercel/turborepo",
-      "category": "Frontend Architecture Template",
+      "category": "Full-Stack Web Starter",
       "description": "High-performance monorepo starter kit for JavaScript and TypeScript with remote caching and parallel pipelines.",
       "language": "TypeScript",
       "license": "MIT",
@@ -6947,7 +6947,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Vitesse",
       "repo": "https://github.com/antfu/vitesse",
-      "category": "Frontend Architecture Template",
+      "category": "Full-Stack Web Starter",
       "description": "Opinionated Vite starter template with file-based routing, auto-imported components, UnoCSS, and dark mode.",
       "language": "TypeScript",
       "license": "MIT",
@@ -6964,7 +6964,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Vitesse WebExt",
       "repo": "https://github.com/antfu/vitesse-webext",
-      "category": "Frontend Architecture Template",
+      "category": "Full-Stack Web Starter",
       "description": "Cross-browser web extension starter template powered by Vite with Manifest V3 and Vue components.",
       "language": "TypeScript",
       "license": "MIT",
@@ -7317,7 +7317,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "freeCodeCamp",
       "repo": "https://github.com/freeCodeCamp/freeCodeCamp",
-      "category": "Learning & Education",
+      "category": "Community & Education",
       "description": "The freeCodeCamp.org open source codebase and curriculum helping millions learn to code globally.",
       "seeking": "Curriculum improvements, UI localization, starter issues, and mobile app features",
       "goodFirstIssues": "https://github.com/freeCodeCamp/freeCodeCamp/labels/first%20timers%20only",
@@ -7328,7 +7328,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Excalidraw",
       "repo": "https://github.com/excalidraw/excalidraw",
-      "category": "Design & Whiteboarding",
+      "category": "Productivity & Design",
       "description": "Virtual whiteboard for sketching hand-drawn like diagrams with end-to-end encryption.",
       "seeking": "Canvas tools, export formats, accessibility improvements, and localization",
       "goodFirstIssues": "https://github.com/excalidraw/excalidraw/labels/good%20first%20issue",
@@ -7339,7 +7339,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Cal.com",
       "repo": "https://github.com/calcom/cal.com",
-      "category": "Scheduling & Calendar",
+      "category": "Open-Source SaaS & Web Apps",
       "description": "Scheduling infrastructure for everyone, the open-source Calendly alternative.",
       "seeking": "App integrations, workflow automations, internationalization, and documentation",
       "goodFirstIssues": "https://github.com/calcom/cal.com/labels/good%20first%20issue",
@@ -7350,7 +7350,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Documenso",
       "repo": "https://github.com/documenso/documenso",
-      "category": "Document Signing",
+      "category": "Open-Source SaaS & Web Apps",
       "description": "The open source DocuSign alternative: secure, digital document signing platform.",
       "seeking": "PDF manipulation features, webhook notifications, UI polish, and starter bugs",
       "goodFirstIssues": "https://github.com/documenso/documenso/labels/good%20first%20issue",
@@ -7361,7 +7361,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Twenty",
       "repo": "https://github.com/twentyhq/twenty",
-      "category": "CRM & Sales",
+      "category": "Open-Source SaaS & Web Apps",
       "description": "Building a modern, open-source alternative to Salesforce with clean UI and GraphQL APIs.",
       "seeking": "Frontend components, data import/export adapters, and API endpoints",
       "goodFirstIssues": "https://github.com/twentyhq/twenty/labels/good%20first%20issue",
@@ -7372,7 +7372,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Ghost",
       "repo": "https://github.com/TryGhost/Ghost",
-      "category": "CMS & Publishing",
+      "category": "Open-Source SaaS & Web Apps",
       "description": "Turn your audience into a business: open-source modern publishing and membership platform.",
       "seeking": "Admin UI polish, theme adapters, starter bugs, and translation updates",
       "goodFirstIssues": "https://github.com/TryGhost/Ghost/labels/good%20first%20issue",
@@ -7383,7 +7383,7 @@ window.DEVSHELF_DATA = {
     {
       "name": "Chatwoot",
       "repo": "https://github.com/chatwoot/chatwoot",
-      "category": "Customer Support",
+      "category": "Open-Source SaaS & Web Apps",
       "description": "Open-source customer engagement suite, alternative to Intercom and Zendesk.",
       "seeking": "Channel connectors, webhook handlers, UI polish, and documentation",
       "goodFirstIssues": "https://github.com/chatwoot/chatwoot/labels/good%20first%20issue",

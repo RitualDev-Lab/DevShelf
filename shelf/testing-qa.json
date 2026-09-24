@@ -2,7 +2,7 @@
   {
     "name": "AutoHeal-QA",
     "repo": "https://github.com/RitualDev-Lab/autoheal-qa",
-    "category": "E2E & Playwright",
+    "category": "Browser & E2E Testing",
     "description": "100% Free & Local-first agentic self-healing E2E test runner for Playwright.  cloud cost with AST auto-patching and verification loop.",
     "language": "TypeScript",
     "license": "MIT",
@@ -12,7 +12,7 @@
   {
     "name": "Agent QA",
     "repo": "https://github.com/vostride/agent-qa",
-    "category": "E2E Testing",
+    "category": "Browser & E2E Testing",
     "description": "Self-improving QA agent for natural-language web and mobile tests, with a local dashboard and CLI.",
     "language": "TypeScript",
     "license": "FSL-1.1-ALv2",
@@ -22,7 +22,7 @@
   {
     "name": "Playwright",
     "repo": "https://github.com/microsoft/playwright",
-    "category": "E2E Testing",
+    "category": "Browser & E2E Testing",
     "description": "Fast and reliable end-to-end testing framework for modern web apps across Chromium, Firefox, and WebKit.",
     "language": "TypeScript",
     "license": "Apache-2.0",
@@ -32,7 +32,7 @@
   {
     "name": "Vitest",
     "repo": "https://github.com/vitest-dev/vitest",
-    "category": "Unit Testing",
+    "category": "Unit & Integration Testing",
     "description": "Blazing fast Vite-native unit test framework with ESM, TypeScript, and out-of-the-box coverage.",
     "language": "TypeScript",
     "license": "MIT",
@@ -52,7 +52,7 @@
   {
     "name": "Bruno",
     "repo": "https://github.com/usebruno/bruno",
-    "category": "API Testing & Exploration",
+    "category": "API Testing & Debugging",
     "description": "Fast, git-friendly, open-source API client that stores collections directly in your repo via plain text files.",
     "language": "JavaScript",
     "license": "MIT",
@@ -62,7 +62,7 @@
   {
     "name": "Hoppscotch",
     "repo": "https://github.com/hoppscotch/hoppscotch",
-    "category": "API Testing & Exploration",
+    "category": "API Testing & Debugging",
     "description": "Open-source API development ecosystem, lightweight web & desktop app with WebSocket, GraphQL, and SSE support.",
     "language": "TypeScript / Vue",
     "license": "MIT",
@@ -72,7 +72,7 @@
   {
     "name": "Mockoon",
     "repo": "https://github.com/mockoon/mockoon",
-    "category": "Mock APIs & Sandboxes",
+    "category": "API Mocking & Sandboxes",
     "description": "The easiest and quickest way to design and run mock REST APIs locally with custom routes, rules, and proxies.",
     "language": "TypeScript",
     "license": "MIT",
@@ -102,7 +102,7 @@
   {
     "name": "MSW (Mock Service Worker)",
     "repo": "https://github.com/mswjs/msw",
-    "category": "API Mocking & Interception",
+    "category": "API Mocking & Sandboxes",
     "description": "Seamless REST and GraphQL API mocking library for browser and Node.js using Service Worker API to intercept requests at the network level.",
     "language": "TypeScript",
     "license": "MIT",
@@ -142,7 +142,7 @@
   {
     "name": "WireMock",
     "repo": "https://github.com/wiremock/wiremock",
-    "category": "API Mocking & Virtualization",
+    "category": "API Mocking & Sandboxes",
     "description": "Flexible simulator and mock server for HTTP-based APIs with support for record/playback and stateful scenarios.",
     "language": "Java",
     "license": "Apache-2.0",
@@ -152,7 +152,7 @@
   {
     "name": "Prism",
     "repo": "https://github.com/stoplightio/prism",
-    "category": "API Mocking & Virtualization",
+    "category": "API Mocking & Sandboxes",
     "description": "Open-source HTTP mock server that generates realistic mock servers directly from OpenAPI and JSON Schema specs.",
     "language": "TypeScript",
     "license": "Apache-2.0",
@@ -232,7 +232,7 @@
   {
     "name": "Insomnia",
     "repo": "https://github.com/Kong/insomnia",
-    "category": "API Design & Debugging",
+    "category": "API Testing & Debugging",
     "description": "Leading open-source API development and debugging platform for GraphQL, REST, WebSockets, and gRPC.",
     "language": "TypeScript / Electron",
     "license": "Apache-2.0",
@@ -272,7 +272,7 @@
   {
     "name": "Newman",
     "repo": "https://github.com/postmanlabs/newman",
-    "category": "API Design & Debugging",
+    "category": "API Testing & Debugging",
     "description": "Postman's collection runner CLI allowing you to run and test Postman collections directly in CI/CD pipelines.",
     "language": "JavaScript",
     "license": "Apache-2.0",
@@ -302,7 +302,7 @@
   {
     "name": "RestAssured",
     "repo": "https://github.com/rest-assured/rest-assured",
-    "category": "API Design & Debugging",
+    "category": "API Testing & Debugging",
     "description": "Java DSL for easy testing of REST services, bringing the simplicity of dynamic languages into Java.",
     "language": "Java",
     "license": "Apache-2.0",
@@ -572,7 +572,7 @@
   {
     "name": "MockServer",
     "repo": "https://github.com/mock-server/mockserver",
-    "category": "API Mocking & Virtualization",
+    "category": "API Mocking & Sandboxes",
     "description": "Enables easy mocking of any system you integrate with via HTTP or HTTPS with expectations and verifications.",
     "language": "Java",
     "license": "Apache-2.0",
@@ -582,7 +582,7 @@
   {
     "name": "JSON-Server",
     "repo": "https://github.com/typicode/json-server",
-    "category": "API Mocking & Virtualization",
+    "category": "API Mocking & Sandboxes",
     "description": "Get a full fake REST API with zero coding in less than 30 seconds from a single JSON file.",
     "language": "TypeScript",
     "license": "MIT",

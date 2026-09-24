@@ -2,7 +2,7 @@
   {
     "name": "GitWhisper",
     "repo": "https://github.com/RitualDev-Lab/GitWhisper",
-    "category": "CLI & Extension",
+    "category": "Developer Utilities & CLI",
     "description": "AI-assisted conventional commit generator grounded in staged index plumbing.",
     "seeking": "JetBrains IDE Plugin, Community Custom LLM Adapters, Documentation",
     "goodFirstIssues": "https://github.com/RitualDev-Lab/GitWhisper/issues",
@@ -11,7 +11,7 @@
   {
     "name": "AutoHeal-QA",
     "repo": "https://github.com/RitualDev-Lab/autoheal-qa",
-    "category": "E2E & Testing",
+    "category": "Testing & QA Automation",
     "description": "Zero-cloud-cost agentic self-healing E2E test runner for Playwright.",
     "seeking": "Cypress Adapter, Additional Local Model Adapters, Visual UI Dashboard",
     "goodFirstIssues": "https://github.com/RitualDev-Lab/autoheal-qa/issues",
@@ -20,7 +20,7 @@
   {
     "name": "FlashLane",
     "repo": "https://github.com/RitualDev-Lab/FlashLane",
-    "category": "OS & Hardware Utilities",
+    "category": "Developer Utilities & CLI",
     "description": "Universal, high-speed bootable ISO/IMG USB writer with Rufus parity for Windows, macOS, and Linux.",
     "seeking": "macOS diskutil runner, Linux block flashing, E2E ISO tests, Documentation",
     "goodFirstIssues": "https://github.com/RitualDev-Lab/FlashLane/issues",
@@ -29,7 +29,7 @@
   {
     "name": "Bruno",
     "repo": "https://github.com/usebruno/bruno",
-    "category": "API Testing & Tooling",
+    "category": "Developer Utilities & CLI",
     "description": "Fast, git-friendly open-source API client that stores collections in plain text.",
     "seeking": "Collection runner plugins, translations, UI improvements, good first issues",
     "goodFirstIssues": "https://github.com/usebruno/bruno/issues",
@@ -38,7 +38,7 @@
   {
     "name": "agent-browser",
     "repo": "https://github.com/vercel-labs/agent-browser",
-    "category": "AI & Browser Automation",
+    "category": "AI & Agent Tools",
     "description": "Open-source browser automation CLI for AI agents with fast Rust core and Node.js fallback.",
     "seeking": "Cross-platform terminal enhancements, playwright engine bindings, examples",
     "goodFirstIssues": "https://github.com/vercel-labs/agent-browser/issues",
@@ -47,7 +47,7 @@
   {
     "name": "Aider",
     "repo": "https://github.com/Aider-AI/aider",
-    "category": "AI Coding CLI",
+    "category": "AI & Agent Tools",
     "description": "Terminal-based AI pair programming tool with git auto-commit integration.",
     "seeking": "Local model benchmark adapters, terminal UX enhancements, documentation",
     "goodFirstIssues": "https://github.com/Aider-AI/aider/issues",
@@ -56,7 +56,7 @@
   {
     "name": "OpenHands",
     "repo": "https://github.com/All-Hands-AI/OpenHands",
-    "category": "Autonomous AI Agent",
+    "category": "AI & Agent Tools",
     "description": "Autonomous software development agent platform for solving GitHub issues.",
     "seeking": "Docker sandbox runtime adapters, evaluation benchmarks, docs & translations",
     "goodFirstIssues": "https://github.com/All-Hands-AI/OpenHands/issues",
@@ -65,7 +65,7 @@
   {
     "name": "Continue",
     "repo": "https://github.com/continuedev/continue",
-    "category": "IDE Assistant",
+    "category": "AI & Agent Tools",
     "description": "Leading open-source AI code assistant for VS Code and JetBrains.",
     "seeking": "Provider integrations, prompt context templates, good first issues",
     "goodFirstIssues": "https://github.com/continuedev/continue/issues",
@@ -74,7 +74,7 @@
   {
     "name": "Starship",
     "repo": "https://github.com/starship/starship",
-    "category": "Shell & Terminal Prompt",
+    "category": "Developer Utilities & CLI",
     "description": "Fast and customizable cross-shell prompt for any terminal.",
     "seeking": "New module additions, shell integrations, localized docs, bug fixes",
     "goodFirstIssues": "https://github.com/starship/starship/issues",
@@ -103,7 +103,7 @@
   {
     "name": "freeCodeCamp",
     "repo": "https://github.com/freeCodeCamp/freeCodeCamp",
-    "category": "Learning & Education",
+    "category": "Community & Education",
     "description": "The freeCodeCamp.org open source codebase and curriculum helping millions learn to code globally.",
     "seeking": "Curriculum improvements, UI localization, starter issues, and mobile app features",
     "goodFirstIssues": "https://github.com/freeCodeCamp/freeCodeCamp/labels/first%20timers%20only",
@@ -112,7 +112,7 @@
   {
     "name": "Excalidraw",
     "repo": "https://github.com/excalidraw/excalidraw",
-    "category": "Design & Whiteboarding",
+    "category": "Productivity & Design",
     "description": "Virtual whiteboard for sketching hand-drawn like diagrams with end-to-end encryption.",
     "seeking": "Canvas tools, export formats, accessibility improvements, and localization",
     "goodFirstIssues": "https://github.com/excalidraw/excalidraw/labels/good%20first%20issue",
@@ -121,7 +121,7 @@
   {
     "name": "Cal.com",
     "repo": "https://github.com/calcom/cal.com",
-    "category": "Scheduling & Calendar",
+    "category": "Open-Source SaaS & Web Apps",
     "description": "Scheduling infrastructure for everyone, the open-source Calendly alternative.",
     "seeking": "App integrations, workflow automations, internationalization, and documentation",
     "goodFirstIssues": "https://github.com/calcom/cal.com/labels/good%20first%20issue",
@@ -130,7 +130,7 @@
   {
     "name": "Documenso",
     "repo": "https://github.com/documenso/documenso",
-    "category": "Document Signing",
+    "category": "Open-Source SaaS & Web Apps",
     "description": "The open source DocuSign alternative: secure, digital document signing platform.",
     "seeking": "PDF manipulation features, webhook notifications, UI polish, and starter bugs",
     "goodFirstIssues": "https://github.com/documenso/documenso/labels/good%20first%20issue",
@@ -139,7 +139,7 @@
   {
     "name": "Twenty",
     "repo": "https://github.com/twentyhq/twenty",
-    "category": "CRM & Sales",
+    "category": "Open-Source SaaS & Web Apps",
     "description": "Building a modern, open-source alternative to Salesforce with clean UI and GraphQL APIs.",
     "seeking": "Frontend components, data import/export adapters, and API endpoints",
     "goodFirstIssues": "https://github.com/twentyhq/twenty/labels/good%20first%20issue",
@@ -148,7 +148,7 @@
   {
     "name": "Ghost",
     "repo": "https://github.com/TryGhost/Ghost",
-    "category": "CMS & Publishing",
+    "category": "Open-Source SaaS & Web Apps",
     "description": "Turn your audience into a business: open-source modern publishing and membership platform.",
     "seeking": "Admin UI polish, theme adapters, starter bugs, and translation updates",
     "goodFirstIssues": "https://github.com/TryGhost/Ghost/labels/good%20first%20issue",
@@ -157,7 +157,7 @@
   {
     "name": "Chatwoot",
     "repo": "https://github.com/chatwoot/chatwoot",
-    "category": "Customer Support",
+    "category": "Open-Source SaaS & Web Apps",
     "description": "Open-source customer engagement suite, alternative to Intercom and Zendesk.",
     "seeking": "Channel connectors, webhook handlers, UI polish, and documentation",
     "goodFirstIssues": "https://github.com/chatwoot/chatwoot/labels/good%20first%20issue",

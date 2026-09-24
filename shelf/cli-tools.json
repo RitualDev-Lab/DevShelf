@@ -68,7 +68,7 @@
   {
     "name": "agent-browser",
     "repo": "https://github.com/vercel-labs/agent-browser",
-    "category": "CLI & Developer Productivity",
+    "category": "Developer Tools",
     "description": "Open-source browser automation CLI for AI agents, with a fast Rust core and Node.js fallback for navigation, forms, screenshots, and structured page interaction.",
     "language": "Rust / TypeScript",
     "license": "Apache-2.0",
@@ -112,7 +112,7 @@
   {
     "name": "tldr",
     "repo": "https://github.com/tldr-pages/tldr",
-    "category": "Terminal & Productivity",
+    "category": "Developer Tools",
     "description": "Collaborative, simplified community man pages focusing on practical, real-world command examples.",
     "language": "Markdown",
     "license": "MIT",
@@ -156,7 +156,7 @@
   {
     "name": "curlie",
     "repo": "https://github.com/rs/curlie",
-    "category": "HTTP & Networking",
+    "category": "HTTP & Network",
     "description": "The power of curl with the ease of use and human-friendly terminal output of HTTPie.",
     "language": "Go",
     "license": "MIT",
@@ -167,7 +167,7 @@
   {
     "name": "Starship",
     "repo": "https://github.com/starship/starship",
-    "category": "Terminal & Shell Prompt",
+    "category": "Terminal & Shell",
     "description": "The minimal, blazing-fast, and infinitely customizable cross-shell prompt for any shell (Bash, Zsh, Fish, PowerShell).",
     "language": "Rust",
     "license": "ISC",
@@ -200,7 +200,7 @@
   {
     "name": "HTTPie",
     "repo": "https://github.com/httpie/cli",
-    "category": "HTTP & Networking",
+    "category": "HTTP & Network",
     "description": "Modern, user-friendly command-line HTTP client for API debugging with clean JSON formatting, colorized output, and sessions.",
     "language": "Python",
     "license": "BSD-3-Clause",
@@ -365,7 +365,7 @@
   {
     "name": "dive",
     "repo": "https://github.com/wagoodman/dive",
-    "category": "Container & Docker",
+    "category": "DevOps & Containers",
     "description": "Tool for exploring a Docker image, layer contents, and discovering ways to shrink your image size.",
     "language": "Go",
     "license": "MIT",
@@ -376,7 +376,7 @@
   {
     "name": "lazydocker",
     "repo": "https://github.com/jesseduffield/lazydocker",
-    "category": "Container & Docker",
+    "category": "DevOps & Containers",
     "description": "A simple terminal UI for both Docker and docker-compose, written in Go with the gocui library.",
     "language": "Go",
     "license": "MIT",

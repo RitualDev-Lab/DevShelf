@@ -1,9 +1,49 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 
+const BT = "```";
+const B = "`";
+
+function escapeMarkdown(text: string | undefined): string {
+  if (!text) return "";
+  return text.replace(/\|/g, "\\|").replace(/\n/g, " ").trim();
+}
+
+function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, "")
+    .replace(/\s+/g, "-");
+}
+
+function groupByCategory<T extends { category?: string; language?: string }>(
+  items: T[],
+  fallbackKey: keyof T = "category",
+): Map<string, T[]> {
+  const map = new Map<string, T[]>();
+  for (const item of items) {
+    const rawCat = (item[fallbackKey] as string) || item.category || "General";
+    const cat = rawCat.trim();
+    if (!map.has(cat)) {
+      map.set(cat, []);
+    }
+    map.get(cat)?.push(item);
+  }
+  const sorted = new Map([...map.entries()].sort((a, b) => a[0].localeCompare(b[0])));
+  return sorted;
+}
+
+function buildCategoryNav(categories: string[]): string {
+  const links = categories.map((cat) => `[${cat}](#${slugify(cat)})`);
+  return `**Jump to Subcategory:**\n${links.join(" • ")}\n\n---`;
+}
+
 async function build() {
   const root = process.cwd();
   const shelfDir = path.join(root, "shelf");
+  const docsDir = path.join(root, "docs");
+
+  await fs.mkdir(docsDir, { recursive: true });
 
   const readJson = async (filename: string) => {
     const raw = await fs.readFile(path.join(shelfDir, filename), "utf8");
@@ -29,7 +69,234 @@ async function build() {
     perks.length +
     boilerplates.length;
 
-  let md = `<div align="center">
+  const topNav =
+    "[← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)";
+
+  // =========================================================================
+  // 1. docs/apis.md
+  // =========================================================================
+  {
+    const groups = groupByCategory(apis);
+    const catNames = [...groups.keys()];
+    let md = "# 🌐 Free & Public APIs\n\n";
+    md +=
+      "> Curated public APIs with 100% free tiers, zero paywalls, and high uptime reliability.\n\n";
+    md += `${topNav}\n\n`;
+    md += `[![Total APIs](https://img.shields.io/badge/APIs-${apis.length}_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)\n\n`;
+    md += `${buildCategoryNav(catNames)}\n\n`;
+
+    for (const [cat, items] of groups) {
+      const slug = slugify(cat);
+      md += `### <a id="${slug}"></a>${cat} (${items.length})\n\n`;
+      md += "| API & URL | Auth | Rate Limit | Description |\n";
+      md += "| :--- | :---: | :---: | :--- |\n";
+      for (const api of items) {
+        const authBadge = api.auth === "No Key" ? "🟢 No Key" : "🔑 Free Key";
+        md += `| [**${escapeMarkdown(api.name)}**](${api.url}) | ${authBadge} | ${B}${escapeMarkdown(api.rateLimit)}${B} | ${escapeMarkdown(api.description)} |\n`;
+      }
+      md += "\n";
+    }
+
+    await fs.writeFile(path.join(docsDir, "apis.md"), md, "utf8");
+  }
+
+  // =========================================================================
+  // 2. docs/ai-tools.md
+  // =========================================================================
+  {
+    const groups = groupByCategory(aiTools);
+    const catNames = [...groups.keys()];
+    let md = "# 🤖 AI Agents & Local LLM Tools\n\n";
+    md +=
+      "> Open-source AI frameworks, local model runtimes, coding assistants, and autonomous agent systems.\n\n";
+    md += `${topNav}\n\n`;
+    md += `[![Total AI Tools](https://img.shields.io/badge/AI_Tools-${aiTools.length}_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)\n\n`;
+    md += `${buildCategoryNav(catNames)}\n\n`;
+
+    for (const [cat, items] of groups) {
+      const slug = slugify(cat);
+      md += `### <a id="${slug}"></a>${cat} (${items.length})\n\n`;
+      md += "| Tool | Language | License | Description | Links |\n";
+      md += "| :--- | :---: | :---: | :--- | :---: |\n";
+      for (const tool of items) {
+        const feat = tool.featured ? "⭐ " : "";
+        md += `| [**${feat}${escapeMarkdown(tool.name)}**](${tool.repo}) | ${B}${escapeMarkdown(tool.language)}${B} | ${B}${escapeMarkdown(tool.license)}${B} | ${escapeMarkdown(tool.description)} | [GitHub](${tool.repo}) |\n`;
+      }
+      md += "\n";
+    }
+
+    await fs.writeFile(path.join(docsDir, "ai-tools.md"), md, "utf8");
+  }
+
+  // =========================================================================
+  // 3. docs/cli-tools.md
+  // =========================================================================
+  {
+    const groups = groupByCategory(cliTools);
+    const catNames = [...groups.keys()];
+    let md = "# ⚡ CLI & Productivity Tools\n\n";
+    md +=
+      "> High-speed terminal utilities, Git workflow boosters, container managers, and developer productivity enhancers.\n\n";
+    md += `${topNav}\n\n`;
+    md += `[![Total CLI Tools](https://img.shields.io/badge/CLI_Tools-${cliTools.length}_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)\n\n`;
+    md += `${buildCategoryNav(catNames)}\n\n`;
+
+    for (const [cat, items] of groups) {
+      const slug = slugify(cat);
+      md += `### <a id="${slug}"></a>${cat} (${items.length})\n\n`;
+      md += "| Tool | Language | License | Description | Links |\n";
+      md += "| :--- | :---: | :---: | :--- | :---: |\n";
+      for (const tool of items) {
+        const feat = tool.featured ? "⭐ " : "";
+        md += `| [**${feat}${escapeMarkdown(tool.name)}**](${tool.repo}) | ${B}${escapeMarkdown(tool.language)}${B} | ${B}${escapeMarkdown(tool.license)}${B} | ${escapeMarkdown(tool.description)} | [GitHub](${tool.repo}) |\n`;
+      }
+      md += "\n";
+    }
+
+    await fs.writeFile(path.join(docsDir, "cli-tools.md"), md, "utf8");
+  }
+
+  // =========================================================================
+  // 4. docs/testing-qa.md
+  // =========================================================================
+  {
+    const groups = groupByCategory(testingQa);
+    const catNames = [...groups.keys()];
+    let md = "# 🧪 Testing & QA Reliability\n\n";
+    md +=
+      "> End-to-end testing runners, mock servers, contract validation, security auditing, and test automation.\n\n";
+    md += `${topNav}\n\n`;
+    md += `[![Total Testing Tools](https://img.shields.io/badge/Testing_Tools-${testingQa.length}_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)\n\n`;
+    md += `${buildCategoryNav(catNames)}\n\n`;
+
+    for (const [cat, items] of groups) {
+      const slug = slugify(cat);
+      md += `### <a id="${slug}"></a>${cat} (${items.length})\n\n`;
+      md += "| Tool | Language | License | Description | Links |\n";
+      md += "| :--- | :---: | :---: | :--- | :---: |\n";
+      for (const tool of items) {
+        const feat = tool.featured ? "⭐ " : "";
+        md += `| [**${feat}${escapeMarkdown(tool.name)}**](${tool.repo}) | ${B}${escapeMarkdown(tool.language)}${B} | ${B}${escapeMarkdown(tool.license)}${B} | ${escapeMarkdown(tool.description)} | [GitHub](${tool.repo}) |\n`;
+      }
+      md += "\n";
+    }
+
+    await fs.writeFile(path.join(docsDir, "testing-qa.md"), md, "utf8");
+  }
+
+  // =========================================================================
+  // 5. docs/free-cloud.md
+  // =========================================================================
+  {
+    const groups = groupByCategory(freeCloud);
+    const catNames = [...groups.keys()];
+    let md = "# ☁️ Free Cloud & Developer Tiers\n\n";
+    md +=
+      "> Generous zero-dollar free tiers for databases, authentication, serverless compute, object storage, and observability.\n\n";
+    md += `${topNav}\n\n`;
+    md += `[![Total Free Cloud](https://img.shields.io/badge/Free_Cloud-${freeCloud.length}_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)\n\n`;
+    md += `${buildCategoryNav(catNames)}\n\n`;
+
+    for (const [cat, items] of groups) {
+      const slug = slugify(cat);
+      md += `### <a id="${slug}"></a>${cat} (${items.length})\n\n`;
+      md += "| Service | Free Tier Allowance | Description | Links |\n";
+      md += "| :--- | :--- | :--- | :---: |\n";
+      for (const cloud of items) {
+        md += `| [**${escapeMarkdown(cloud.name)}**](${cloud.url}) | ${B}${escapeMarkdown(cloud.freeTier)}${B} | ${escapeMarkdown(cloud.description)} | [Explore](${cloud.url}) |\n`;
+      }
+      md += "\n";
+    }
+
+    await fs.writeFile(path.join(docsDir, "free-cloud.md"), md, "utf8");
+  }
+
+  // =========================================================================
+  // 6. docs/contributors-wanted.md
+  // =========================================================================
+  {
+    const groups = groupByCategory(contributors);
+    const catNames = [...groups.keys()];
+    let md = `# 🤝 Contributors Wanted ("Up for Grabs")\n\n`;
+    md +=
+      "> Active open-source repositories welcoming new contributors with curated Good First Issues and starter tasks.\n\n";
+    md += `${topNav}\n\n`;
+    md += `[![Open Projects](https://img.shields.io/badge/Projects-${contributors.length}_Seeking_Contributors-brightgreen?style=for-the-badge)](https://devshelf.ritualdev.in)\n\n`;
+    md += `${buildCategoryNav(catNames)}\n\n`;
+
+    for (const [cat, items] of groups) {
+      const slug = slugify(cat);
+      md += `### <a id="${slug}"></a>${cat} (${items.length})\n\n`;
+      md += "| Project | Language | Seeking Contributions For | Good First Issues | Repo |\n";
+      md += "| :--- | :---: | :--- | :---: | :---: |\n";
+      for (const item of items) {
+        md += `| [**${escapeMarkdown(item.name)}**](${item.repo}) | ${B}${escapeMarkdown(item.language)}${B} | ${escapeMarkdown(item.seeking)} | [Browse Issues](${item.goodFirstIssues}) | [GitHub](${item.repo}) |\n`;
+      }
+      md += "\n";
+    }
+
+    await fs.writeFile(path.join(docsDir, "contributors-wanted.md"), md, "utf8");
+  }
+
+  // =========================================================================
+  // 7. docs/perks.md
+  // =========================================================================
+  {
+    const groups = groupByCategory(perks);
+    const catNames = [...groups.keys()];
+    let md = "# 🎁 Developer Discounts & Startup Perks\n\n";
+    md +=
+      "> Free cloud credits, software sponsorships, student packs, and startup program perks for builders and indie teams.\n\n";
+    md += `${topNav}\n\n`;
+    md += `[![Total Perks](https://img.shields.io/badge/Perks-${perks.length}_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)\n\n`;
+    md += `${buildCategoryNav(catNames)}\n\n`;
+
+    for (const [cat, items] of groups) {
+      const slug = slugify(cat);
+      md += `### <a id="${slug}"></a>${cat} (${items.length})\n\n`;
+      md += "| Perk & Provider | Value & Benefits | Eligibility | Links |\n";
+      md += "| :--- | :--- | :--- | :---: |\n";
+      for (const perk of items) {
+        md += `| [**${escapeMarkdown(perk.name)}**](${perk.url}) | 🎁 **${escapeMarkdown(perk.perkValue)}** | ${escapeMarkdown(perk.eligibility)} | [Claim Perk](${perk.url}) |\n`;
+      }
+      md += "\n";
+    }
+
+    await fs.writeFile(path.join(docsDir, "perks.md"), md, "utf8");
+  }
+
+  // =========================================================================
+  // 8. docs/boilerplates.md
+  // =========================================================================
+  {
+    const groups = groupByCategory(boilerplates);
+    const catNames = [...groups.keys()];
+    let md = "# 🚀 One-Click Deployment Boilerplates\n\n";
+    md +=
+      "> Production-ready templates, starter kits, and server setups deployable in 1 click to zero-cost cloud tiers.\n\n";
+    md += `${topNav}\n\n`;
+    md += `[![Total Boilerplates](https://img.shields.io/badge/Boilerplates-${boilerplates.length}_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)\n\n`;
+    md += `${buildCategoryNav(catNames)}\n\n`;
+
+    for (const [cat, items] of groups) {
+      const slug = slugify(cat);
+      md += `### <a id="${slug}"></a>${cat} (${items.length})\n\n`;
+      md +=
+        "| Template & Repository | Platform | 1-Click Deploy | Free Tier Cost | Description |\n";
+      md += "| :--- | :---: | :---: | :---: | :--- |\n";
+      for (const b of items) {
+        md += `| [**${escapeMarkdown(b.name)}**](${b.repo}) | **${escapeMarkdown(b.platform)}** | [🚀 **Deploy**](${b.deployUrl}) | ${B}${escapeMarkdown(b.freeTierCost)}${B} | ${escapeMarkdown(b.description || "")} |\n`;
+      }
+      md += "\n";
+    }
+
+    await fs.writeFile(path.join(docsDir, "boilerplates.md"), md, "utf8");
+  }
+
+  // =========================================================================
+  // ROOT README.md: The Curated Directory Hub
+  // =========================================================================
+  const md = `<div align="center">
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,19,24,30&height=200&section=header&text=📚%20DevShelf&fontSize=60&fontAlignY=35&desc=The%20Crowdsourced%20Zero-Paywall%20Developer%20Directory&descAlignY=55&descSize=18&fontColor=fff&animation=twinkling">
@@ -66,6 +333,7 @@ async function build() {
 
 <p>
   <a href="https://devshelf.ritualdev.in"><b>🌐 Interactive Web App</b></a> •
+  <a href="#-browse-catalog-by-category"><b>📂 Category Guides</b></a> •
   <a href="#-featured-spotlight--tools-of-the-week"><b>🔥 Spotlight</b></a> •
   <a href="#-social-amplification-guarantee"><b>🚀 Social Guarantee</b></a> •
   <a href="#-team--contributors"><b>👥 Team</b></a> •
@@ -103,11 +371,28 @@ async function build() {
 
 <div align="center">
 
-\`\`\`
+${BT}
 🛡️ 100% Verified Uptime  •  🌟 Quality First  •  🚫 Zero Paywalls  •  📢 Free Social Promotion
-\`\`\`
+${BT}
 
 </div>
+
+---
+
+## 📂 Browse Catalog by Category
+
+Explore our curated collections of **${totalItems}+ zero-paywall developer tools**, categorized into dedicated guides with subcategory indexing:
+
+| Category | Resources | Description & Subcategories | Guide |
+| :--- | :---: | :--- | :---: |
+| 🌐 **Free & Public APIs** | **${apis.length}** | Weather, Finance, Mock/Dev APIs, Geocoding, AI/ML, Media, Entertainment | [**Browse APIs →**](docs/apis.md) |
+| 🤖 **AI Agents & Local LLMs** | **${aiTools.length}** | Local LLM Runtimes, Autonomous Agents, Coding Assistants, Orchestration | [**Browse AI Tools →**](docs/ai-tools.md) |
+| ⚡ **CLI & Productivity Tools** | **${cliTools.length}** | Terminal Utilities, Git Power Tools, Docker & DevOps, Benchmarking, DBs | [**Browse CLI Tools →**](docs/cli-tools.md) |
+| 🧪 **Testing & QA Reliability** | **${testingQa.length}** | E2E Testing, Mock Servers, Contract Testing, Security Auditing, Performance | [**Browse Testing Tools →**](docs/testing-qa.md) |
+| ☁️ **Free Cloud & Developer Tiers** | **${freeCloud.length}** | Databases, Auth & Identity, Serverless Compute, Object Storage, Email, APM | [**Browse Cloud Tiers →**](docs/free-cloud.md) |
+| 🤝 **Contributors Wanted** | **${contributors.length}** | Active open-source repos with curated Good First Issues and starter tasks | [**Browse Projects →**](docs/contributors-wanted.md) |
+| 🎁 **Developer Discounts & Perks** | **${perks.length}** | Cloud credits, free IDE licenses, student packs, open-source sponsorships | [**Browse Perks →**](docs/perks.md) |
+| 🚀 **1-Click Deploys & Boilerplates** | **${boilerplates.length}** | Full-Stack templates, SaaS starters, BaaS, microservices deployable in 1 click | [**Browse Boilerplates →**](docs/boilerplates.md) |
 
 ---
 
@@ -140,28 +425,28 @@ async function build() {
 
 ## 🎖️ "Featured on DevShelf" Badges
 
-Are you listed on DevShelf? Display an official badge on your project's \`README.md\` to show off your community verification:
+Are you listed on DevShelf? Display an official badge on your project's ${B}README.md${B} to show off your community verification:
 
 ### Style 1: Modern Purple (Recommended)
 [![Featured on DevShelf](https://img.shields.io/badge/Featured%20on-DevShelf-7928CA?style=for-the-badge&logo=googlechrome&logoColor=white)](https://devshelf.ritualdev.in/)
 
-\`\`\`markdown
+${BT}markdown
 [![Featured on DevShelf](https://img.shields.io/badge/Featured%20on-DevShelf-7928CA?style=for-the-badge&logo=googlechrome&logoColor=white)](https://devshelf.ritualdev.in/)
-\`\`\`
+${BT}
 
 ### Style 2: Cyberpunk Neon Cyan
 [![Featured on DevShelf](https://img.shields.io/badge/DevShelf-Curated%20Resource-00E5FF?style=for-the-badge&logo=github&logoColor=black)](https://devshelf.ritualdev.in/)
 
-\`\`\`markdown
+${BT}markdown
 [![Featured on DevShelf](https://img.shields.io/badge/DevShelf-Curated%20Resource-00E5FF?style=for-the-badge&logo=github&logoColor=black)](https://devshelf.ritualdev.in/)
-\`\`\`
+${BT}
 
 ### Style 3: Minimal Flat Square
 [![Featured on DevShelf](https://img.shields.io/badge/Featured%20on-DevShelf-blueviolet?style=flat-square&logo=googlechrome&logoColor=white)](https://devshelf.ritualdev.in/)
 
-\`\`\`markdown
+${BT}markdown
 [![Featured on DevShelf](https://img.shields.io/badge/Featured%20on-DevShelf-blueviolet?style=flat-square&logo=googlechrome&logoColor=white)](https://devshelf.ritualdev.in/)
-\`\`\`
+${BT}
 
 ---
 
@@ -235,106 +520,6 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
 
 ---
 
-## 🌐 1. Free & Public APIs
-
-APIs that provide a 100% free tier or require no API key at all.
-
-| Name & URL | Category | Auth | Rate Limit | Description |
-| :--- | :--- | :---: | :---: | :--- |
-`;
-
-  for (const api of apis) {
-    const authBadge = api.auth === "No Key" ? "🟢 No Key" : "🔑 Free Key";
-    md += `| [**${api.name}**](${api.url}) | \`${api.category}\` | ${authBadge} | \`${api.rateLimit}\` | ${api.description} |\n`;
-  }
-
-  md +=
-    "\n---\n\n<details open>\n<summary><h2>🤖 2. AI Agents & Local LLM Tools</h2></summary>\n\n> Open-source AI frameworks, local LLM serving, and coding assistants.\n\n";
-
-  for (const tool of aiTools) {
-    const featured = tool.featured ? "⭐ **Featured** • " : "";
-    md += `### [${tool.name}](${tool.repo})\n`;
-    md += `> ${tool.description}\n\n`;
-    md += `${featured}\`Category: ${tool.category}\` • \`Language: ${tool.language}\` • \`License: ${tool.license}\` • [View Repo →](${tool.repo})\n\n`;
-  }
-
-  md += "</details>\n";
-
-  md +=
-    "---\n\n<details open>\n<summary><h2>⚡ 3. CLI & Productivity Tools</h2></summary>\n\n> Terminal utilities, git enhancers, and developer workflows that save hours every week.\n\n";
-
-  for (const tool of cliTools) {
-    const featured = tool.featured ? "⭐ **Featured** • " : "";
-    md += `### [${tool.name}](${tool.repo})\n`;
-    md += `> ${tool.description}\n\n`;
-    md += `${featured}\`Category: ${tool.category}\` • \`Language: ${tool.language}\` • \`License: ${tool.license}\` • [View Repo →](${tool.repo})\n\n`;
-  }
-
-  md += "</details>\n";
-
-  md +=
-    "\n---\n\n<details open>\n<summary><h2>🧪 4. Testing & QA Reliability</h2></summary>\n\n> End-to-end testing, self-healing frameworks, mock servers, and test automation.\n\n";
-
-  for (const tool of testingQa) {
-    const featured = tool.featured ? "⭐ **Featured** • " : "";
-    md += `### [${tool.name}](${tool.repo})\n`;
-    md += `> ${tool.description}\n\n`;
-    md += `${featured}\`Category: ${tool.category}\` • \`Language: ${tool.language}\` • \`License: ${tool.license}\` • [View Repo →](${tool.repo})\n\n`;
-  }
-
-  md += "</details>\n";
-
-  md +=
-    "\n---\n\n<details open>\n<summary><h2>☁️ 5. Free Cloud & Developer Tiers</h2></summary>\n\n> Generous zero-dollar free tiers for databases, authentication, serverless compute, and email.\n\n";
-
-  for (const cloud of freeCloud) {
-    md += `### [${cloud.name}](${cloud.url})\n`;
-    md += `> ${cloud.description}\n\n`;
-    md += `\`Category: ${cloud.category}\` • 🎁 **Free Tier**: \`${cloud.freeTier}\` • [Explore ${cloud.name} →](${cloud.url})\n\n`;
-  }
-
-  md += "</details>\n";
-
-  md +=
-    '\n---\n\n<details open>\n<summary><h2>🤝 6. Contributors Wanted ("Up for Grabs")</h2></summary>\n\n> Active open-source projects looking for contributors, bug hunters, or co-maintainers.\n\n';
-
-  for (const item of contributors) {
-    md += `### [${item.name}](${item.repo})\n`;
-    md += `> ${item.description}\n\n`;
-    md += `🎯 **Seeking**: ${item.seeking}  \n`;
-    md += `\`Language: ${item.language}\` • [Browse Open Issues →](${item.goodFirstIssues}) • [Repo Link →](${item.repo})\n\n`;
-  }
-
-  md += "</details>\n";
-
-  md +=
-    "---\n\n## 🎁 7. Developer Discounts & Startup Perks\n\nFree cloud credits, software sponsorships, and startup program perks for developers and open-source teams.\n\n";
-
-  md += `| Perk & Provider | Category | Value & Benefits | Eligibility |
-| :--- | :--- | :--- | :--- |
-`;
-
-  for (const perk of perks) {
-    md += `| [**${perk.name}**](${perk.url}) | \`${perk.category}\` | 🎁 **${perk.perkValue}** | ${perk.eligibility} |\n`;
-  }
-
-  md += "</details>\n\n";
-
-  md +=
-    "---\n\n<details open>\n<summary><h2>🚀 8. One-Click Deployment Boilerplates</h2></summary>\n\n> Zero-cost templates and server configurations deployable in 1 click to free cloud tiers.\n\n";
-
-  md += `| Template & Repository | Category | Target Platform | 1-Click Deploy | Free Tier Cost |
-| :--- | :--- | :---: | :---: | :--- |
-`;
-
-  for (const b of boilerplates) {
-    md += `| [**${b.name}**](${b.repo}) | \`${b.category}\` | **${b.platform}** | [🚀 **Deploy to ${b.platform}**](${b.deployUrl}) | \`${b.freeTierCost}\` |\n`;
-  }
-
-  md += "</details>\n";
-
-  md += `\n---
-
 ## 🚀 Community Contributions & Issue Hub
 
 DevShelf is powered by the open-source community! We provide tailored issue templates for every kind of contribution:
@@ -353,9 +538,9 @@ DevShelf is powered by the open-source community! We provide tailored issue temp
 
 ## 🛠️ How to Contribute via Pull Request (PR)
 1. Fork this repository and clone your fork.
-2. Add your entry to the appropriate JSON file in the \`shelf/\` directory (\`shelf/apis.json\`, \`shelf/cli-tools.json\`, \`shelf/ai-tools.json\`, etc.).
-3. Run \`pnpm run validate\` to test schema conformance.
-4. Run \`pnpm run build\` to re-generate the web directory and README.
+2. Add your entry to the appropriate JSON file in the ${B}shelf/${B} directory (${B}shelf/apis.json${B}, ${B}shelf/cli-tools.json${B}, ${B}shelf/ai-tools.json${B}, etc.).
+3. Run ${B}pnpm run validate${B} to test schema conformance.
+4. Run ${B}pnpm run build${B} to re-generate the web directory, category markdown documents, and README.
 5. Submit your PR — our automated GitHub Actions will review and merge it!
 
 ---
@@ -400,7 +585,9 @@ Distributed under the **MIT License**. See [LICENSE](LICENSE) for more informati
 `;
 
   await fs.writeFile(path.join(root, "README.md"), md, "utf8");
-  console.log(`✅ Successfully built README.md with ${totalItems} curated resources.`);
+  console.log(
+    `✅ Successfully built README.md and 8 category docs in docs/ with ${totalItems} curated resources.`,
+  );
 }
 
 build().catch((err) => {
