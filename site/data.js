@@ -1,12 +1,12 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-09-24T03:09:32.896Z",
-  "totalCount": 95,
+  "updatedAt": "2026-09-24T21:11:25.598Z",
+  "totalCount": 96,
   "counts": {
-    "repos": 56,
+    "repos": 57,
     "apis": 16,
     "aiTools": 16,
     "cliTools": 19,
-    "testingQa": 11,
+    "testingQa": 12,
     "freeCloud": 10,
     "contributors": 11,
     "perks": 13,
@@ -616,6 +616,18 @@ window.DEVSHELF_DATA = {
       "section": "Testing & QA Reliability",
       "seeking": "Cypress Adapter, Additional Local Model Adapters, Visual UI Dashboard",
       "contributorsWanted": true
+    },
+    {
+      "name": "Agent QA",
+      "repo": "https://github.com/vostride/agent-qa",
+      "category": "E2E Testing",
+      "description": "Self-improving QA agent for natural-language web and mobile tests, with a local dashboard and CLI.",
+      "language": "TypeScript",
+      "license": "FSL-1.1-ALv2",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/vostride/agent-qa/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
     },
     {
       "name": "Playwright",

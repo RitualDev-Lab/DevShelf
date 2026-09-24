@@ -13,7 +13,7 @@
 <br>
 
 [![Live Web Directory](https://img.shields.io/badge/🌐_Web_Directory-Live_Search_%26_Filters-7928CA?style=for-the-badge&logoColor=white)](https://devshelf.ritualdev.in)
-[![Curated Resources](https://img.shields.io/badge/📦_Resources-104+_Curated-blueviolet?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
+[![Curated Resources](https://img.shields.io/badge/📦_Resources-105+_Curated-blueviolet?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
 [![Endpoint Health](https://img.shields.io/badge/🛡️_Health-100%25_Verified-brightgreen?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf/actions)
 [![Open Source](https://img.shields.io/badge/🔓_License-MIT_FOSS-blue?style=for-the-badge)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/🤝_PRs-Welcome_%26_Amplified-brightgreen?style=for-the-badge)](#-how-to-submit-your-project-or-api)
@@ -25,7 +25,7 @@
 <td align="center"><b>🌐 Free APIs</b><br><code>16</code></td>
 <td align="center"><b>🤖 AI & LLMs</b><br><code>16</code></td>
 <td align="center"><b>⚡ CLI Tools</b><br><code>19</code></td>
-<td align="center"><b>🧪 Testing & QA</b><br><code>11</code></td>
+<td align="center"><b>🧪 Testing & QA</b><br><code>12</code></td>
 <td align="center"><b>☁️ Free Cloud</b><br><code>10</code></td>
 <td align="center"><b>🤝 Up for Grabs</b><br><code>11</code></td>
 <td align="center"><b>🎁 Dev Perks</b><br><code>13</code></td>
@@ -423,6 +423,11 @@ APIs that provide a 100% free tier or require no API key at all.
 > 100% Free & Local-first agentic self-healing E2E test runner for Playwright.  cloud cost with AST auto-patching and verification loop.
 
 ⭐ **Featured** • `Category: E2E & Playwright` • `Language: TypeScript` • `License: MIT` • [View Repo →](https://github.com/RitualDev-Lab/autoheal-qa)
+
+### [Agent QA](https://github.com/vostride/agent-qa)
+> Self-improving QA agent for natural-language web and mobile tests, with a local dashboard and CLI.
+
+`Category: E2E Testing` • `Language: TypeScript` • `License: FSL-1.1-ALv2` • [View Repo →](https://github.com/vostride/agent-qa)
 
 ### [Playwright](https://github.com/microsoft/playwright)
 > Fast and reliable end-to-end testing framework for modern web apps across Chromium, Firefox, and WebKit.

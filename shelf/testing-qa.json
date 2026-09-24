@@ -10,6 +10,16 @@
     "goodFirstIssues": "https://github.com/RitualDev-Lab/autoheal-qa/issues"
   },
   {
+    "name": "Agent QA",
+    "repo": "https://github.com/vostride/agent-qa",
+    "category": "E2E Testing",
+    "description": "Self-improving QA agent for natural-language web and mobile tests, with a local dashboard and CLI.",
+    "language": "TypeScript",
+    "license": "FSL-1.1-ALv2",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/vostride/agent-qa/issues"
+  },
+  {
     "name": "Playwright",
     "repo": "https://github.com/microsoft/playwright",
     "category": "E2E Testing",
