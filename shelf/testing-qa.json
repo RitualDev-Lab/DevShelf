@@ -118,5 +118,155 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/tsenart/vegeta/issues"
+  },
+  {
+    "name": "Cypress",
+    "repo": "https://github.com/cypress-io/cypress",
+    "category": "Browser & E2E Testing",
+    "description": "Fast, easy, and reliable end-to-end testing framework for anything that runs in a web browser.",
+    "language": "JavaScript / TypeScript",
+    "license": "MIT",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/cypress-io/cypress/issues"
+  },
+  {
+    "name": "Jest",
+    "repo": "https://github.com/jestjs/jest",
+    "category": "Unit & Integration Testing",
+    "description": "Delightful JavaScript testing framework with a focus on simplicity, snapshots, and zero configuration.",
+    "language": "TypeScript",
+    "license": "MIT",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/jestjs/jest/issues"
+  },
+  {
+    "name": "WireMock",
+    "repo": "https://github.com/wiremock/wiremock",
+    "category": "API Mocking & Virtualization",
+    "description": "Flexible simulator and mock server for HTTP-based APIs with support for record/playback and stateful scenarios.",
+    "language": "Java",
+    "license": "Apache-2.0",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/wiremock/wiremock/issues"
+  },
+  {
+    "name": "Prism",
+    "repo": "https://github.com/stoplightio/prism",
+    "category": "API Mocking & Virtualization",
+    "description": "Open-source HTTP mock server that generates realistic mock servers directly from OpenAPI and JSON Schema specs.",
+    "language": "TypeScript",
+    "license": "Apache-2.0",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/stoplightio/prism/issues"
+  },
+  {
+    "name": "Lighthouse CI",
+    "repo": "https://github.com/GoogleChrome/lighthouse-ci",
+    "category": "Performance & Load Testing",
+    "description": "Automated tool suite for running Lighthouse audits in CI/CD to prevent performance and accessibility regressions.",
+    "language": "JavaScript",
+    "license": "Apache-2.0",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/GoogleChrome/lighthouse-ci/issues"
+  },
+  {
+    "name": "Axe-core",
+    "repo": "https://github.com/dequelabs/axe-core",
+    "category": "Browser & E2E Testing",
+    "description": "Accessibility testing engine for websites and HTML-based user interfaces with zero false positives.",
+    "language": "TypeScript",
+    "license": "MPL-2.0",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/dequelabs/axe-core/issues"
+  },
+  {
+    "name": "Faker",
+    "repo": "https://github.com/faker-js/faker",
+    "category": "Test Data Generation",
+    "description": "Generate massive amounts of realistic mock data in Node.js and the browser for robust testing environments.",
+    "language": "TypeScript",
+    "license": "MIT",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/faker-js/faker/issues"
+  },
+  {
+    "name": "Pact",
+    "repo": "https://github.com/pact-foundation/pact-js",
+    "category": "Contract & Schema Testing",
+    "description": "Consumer-driven contract testing library for microservices, HTTP APIs, and asynchronous message queues.",
+    "language": "TypeScript",
+    "license": "MIT",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/pact-foundation/pact-js/issues"
+  },
+  {
+    "name": "Stryker",
+    "repo": "https://github.com/stryker-mutator/stryker-js",
+    "category": "Unit & Integration Testing",
+    "description": "Mutation testing framework for JavaScript and TypeScript to ensure your unit test suite actually catches bugs.",
+    "language": "TypeScript",
+    "license": "Apache-2.0",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/stryker-mutator/stryker-js/issues"
+  },
+  {
+    "name": "Taiko",
+    "repo": "https://github.com/getgauge/taiko",
+    "category": "Browser & E2E Testing",
+    "description": "Node.js library to automate Chromium browsers with a clear, human-readable API and smart element locators.",
+    "language": "JavaScript",
+    "license": "Apache-2.0",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/getgauge/taiko/issues"
+  },
+  {
+    "name": "Autocannon",
+    "repo": "https://github.com/mcollina/autocannon",
+    "category": "Performance & Load Testing",
+    "description": "Fast HTTP/1.1 benchmarking tool written in Node.js, capable of generating massive request throughput.",
+    "language": "JavaScript",
+    "license": "MIT",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/mcollina/autocannon/issues"
+  },
+  {
+    "name": "Insomnia",
+    "repo": "https://github.com/Kong/insomnia",
+    "category": "API Design & Debugging",
+    "description": "Leading open-source API development and debugging platform for GraphQL, REST, WebSockets, and gRPC.",
+    "language": "TypeScript / Electron",
+    "license": "Apache-2.0",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/Kong/insomnia/issues"
+  },
+  {
+    "name": "Trivy",
+    "repo": "https://github.com/aquasecurity/trivy",
+    "category": "Security & Vulnerability Scanners",
+    "description": "Comprehensive security scanner for container images, file systems, Git repositories, and Kubernetes manifests.",
+    "language": "Go",
+    "license": "Apache-2.0",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/aquasecurity/trivy/issues"
+  },
+  {
+    "name": "Semgrep",
+    "repo": "https://github.com/semgrep/semgrep",
+    "category": "Security & Vulnerability Scanners",
+    "description": "Fast, lightweight static analysis engine for finding bugs, enforcing secure coding standards, and auditing ASTs.",
+    "language": "OCaml / Python",
+    "license": "LGPL-2.1",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/semgrep/semgrep/issues"
+  },
+  {
+    "name": "SonarQube Community",
+    "repo": "https://github.com/SonarSource/sonarqube",
+    "category": "Security & Vulnerability Scanners",
+    "description": "Continuous inspection engine for code quality, architectural hotspots, and security vulnerabilities across 30+ languages.",
+    "language": "Java",
+    "license": "LGPL-3.0",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/SonarSource/sonarqube/issues"
   }
 ]

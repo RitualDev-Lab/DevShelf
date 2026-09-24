@@ -102,5 +102,53 @@
     "description": "Free monospaced coding font with programming ligatures; Cascadia Mono is the variant without ligatures.",
     "perkValue": "Free download (SIL Open Font License 1.1)",
     "eligibility": "Free to use under OFL 1.1"
+  },
+  {
+    "name": "GitHub Student Developer Pack",
+    "url": "https://education.github.com/pack",
+    "category": "Cloud Credits & Developer Packs",
+    "description": "Free developer tools, cloud hosting credits (DigitalOcean, Azure), domain names, and GitHub Pro for verified students.",
+    "perkValue": "$200,000+ in free developer tooling and courses",
+    "eligibility": "Verified students aged 13+ with school-issued email or proof of enrollment"
+  },
+  {
+    "name": "Microsoft for Startups Founders Hub",
+    "url": "https://www.microsoft.com/startups",
+    "category": "Cloud Credits & Developer Packs",
+    "description": "Up to $150,000 in Azure cloud credits, free access to OpenAI models, GitHub Enterprise, and LinkedIn tools for tech startups.",
+    "perkValue": "Up to $150,000 in Azure credits + OpenAI access",
+    "eligibility": "Software or AI startups building a product (no funding required)"
+  },
+  {
+    "name": "Cloudflare for Open Source",
+    "url": "https://www.cloudflare.com/open-source-sponsorship",
+    "category": "Open Source Sponsorship",
+    "description": "Free enterprise-grade CDN, DDoS protection, edge workers, and SSL certificate management for open-source initiatives.",
+    "perkValue": "Free Enterprise Plan features & Edge bandwidth",
+    "eligibility": "Non-profit or community-driven open-source projects with OSI-approved licenses"
+  },
+  {
+    "name": "1Password for Open Source",
+    "url": "https://github.com/1Password/op-connect-playbook",
+    "category": "Open Source Sponsorship",
+    "description": "Free 1Password Teams accounts for open-source project maintainers to securely share secrets and API tokens.",
+    "perkValue": "Free 1Password Teams subscription",
+    "eligibility": "Active open-source project maintainers with public GitHub repositories"
+  },
+  {
+    "name": "Netlify for Open Source",
+    "url": "https://www.netlify.com/open-source",
+    "category": "Open Source Sponsorship",
+    "description": "Free team plan with increased build minutes, bandwidth, and preview deployments for eligible open-source projects.",
+    "perkValue": "Free Netlify Pro Team tier",
+    "eligibility": "Non-commercial open source projects displaying a Netlify badge"
+  },
+  {
+    "name": "Vercel for Open Source",
+    "url": "https://vercel.com/docs/accounts/plans/pro#open-source",
+    "category": "Open Source Sponsorship",
+    "description": "Free Pro sponsorship with elevated edge compute limits and team features for popular open-source projects.",
+    "perkValue": "Free Vercel Pro Plan sponsorship",
+    "eligibility": "Public open source projects with active community adoption and OSI license"
   }
 ]

@@ -78,5 +78,165 @@
     "description": "Serverless platform to deploy full-stack apps and Docker containers globally with built-in CDN, SSL, and private networking.",
     "freeTier": "Free Eco tier: 1 web service, 512MB RAM, global edge network",
     "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Auth.js",
+    "url": "https://authjs.dev",
+    "category": "Authentication & Security",
+    "description": "Complete open-source authentication library for Next.js, SvelteKit, Express, and modern frameworks with zero vendor lock-in.",
+    "freeTier": "100% Free & Open Source, self-hostable with unlimited users",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Better Auth",
+    "url": "https://better-auth.com",
+    "category": "Authentication & Security",
+    "description": "Comprehensive TypeScript-first open-source authentication framework supporting multi-factor auth, organizations, and plugins.",
+    "freeTier": "100% Free & Open Source framework",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Lucia",
+    "url": "https://lucia-auth.com",
+    "category": "Authentication & Security",
+    "description": "Flexible and lightweight open-source authentication and session handling resource for modern web applications.",
+    "freeTier": "100% Free & Open Source",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "SuperTokens",
+    "url": "https://supertokens.com",
+    "category": "Authentication & Security",
+    "description": "Open-source alternative to Auth0 and Firebase Auth providing passwordless, social login, session management, and user roles.",
+    "freeTier": "Free self-hosted community edition; Free cloud tier up to 5,000 MAU",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Logto",
+    "url": "https://logto.io",
+    "category": "Authentication & Security",
+    "description": "Modern open-source identity and access management infrastructure with OIDC, OAuth 2.0, and pre-built sign-in UI.",
+    "freeTier": "Free self-hosted version; Free cloud tier for up to 50k MAU",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Coolify",
+    "url": "https://coolify.io",
+    "category": "Self-Hosted Cloud & PaaS",
+    "description": "Self-hostable, open-source all-in-one alternative to Heroku, Netlify, and Vercel for applications, databases, and services.",
+    "freeTier": "100% Free & Open Source self-hosted on your own server or VPS",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Dokku",
+    "url": "https://dokku.com",
+    "category": "Self-Hosted Cloud & PaaS",
+    "description": "Smallest PaaS implementation powered by Docker, allowing Git push-to-deploy on your own single server.",
+    "freeTier": "100% Free & Open Source",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "CapRover",
+    "url": "https://caprover.com",
+    "category": "Self-Hosted Cloud & PaaS",
+    "description": "Extremely easy-to-use open-source app and database deployment platform with automated SSL and 1-click apps.",
+    "freeTier": "100% Free & Open Source",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Turso",
+    "url": "https://turso.tech",
+    "category": "Databases & BaaS",
+    "description": "Distributed SQLite database powered by libSQL designed for low-latency queries at the edge.",
+    "freeTier": "Free Starter Tier: 9GB storage, 500 databases, and 1B row reads/mo",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Upstash",
+    "url": "https://upstash.com",
+    "category": "Databases & BaaS",
+    "description": "Serverless data platform providing Redis, Apache Kafka, and QStash with per-request pricing and instant scaling.",
+    "freeTier": "10,000 commands/day free for Redis, 10,000 messages/day for Kafka",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "PostHog",
+    "url": "https://posthog.com",
+    "category": "Observability & Analytics",
+    "description": "Open-source product analytics suite combining web analytics, session replays, feature flags, and survey tools.",
+    "freeTier": "1,000,000 events/month, 5,000 session recordings/month permanently free",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Umami",
+    "url": "https://umami.is",
+    "category": "Observability & Analytics",
+    "description": "Privacy-focused, cookie-free open-source web analytics platform with a fast and intuitive dashboard.",
+    "freeTier": "100% Free & Open Source self-hosted; Free cloud tier available",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Directus",
+    "url": "https://directus.io",
+    "category": "Backend-as-a-Service",
+    "description": "Real-time API and app dashboard layer for any SQL database with granular access control and event automation.",
+    "freeTier": "100% Free & Open Source Community Edition",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Strapi",
+    "url": "https://strapi.io",
+    "category": "Backend-as-a-Service",
+    "description": "Open-source headless CMS delivering customizable REST and GraphQL APIs for web and mobile frontends.",
+    "freeTier": "100% Free & Open Source Community Edition",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "MinIO",
+    "url": "https://min.io",
+    "category": "Storage & Buckets",
+    "description": "High-performance, S3-compatible open-source object storage suite designed for high-density cloud data.",
+    "freeTier": "100% Free & Open Source GNU AGPLv3",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "GlitchTip",
+    "url": "https://glitchtip.com",
+    "category": "Observability & Analytics",
+    "description": "Open-source, self-hosted error tracking system compatible with Sentry client libraries and SDKs.",
+    "freeTier": "100% Free & Open Source; Free hosted tier with 1,000 events/mo",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Meilisearch",
+    "url": "https://www.meilisearch.com",
+    "category": "Search & Discovery",
+    "description": "Lightning-fast, typo-tolerant open-source search engine providing instant full-text search as you type.",
+    "freeTier": "100% Free & Open Source MIT binary; Free trial on Meilisearch Cloud",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Typesense",
+    "url": "https://typesense.org",
+    "category": "Search & Discovery",
+    "description": "Fast, typo-tolerant open-source search engine designed for delightful developer experience and sub-50ms search.",
+    "freeTier": "100% Free & Open Source GPLv3; Free sandbox environment",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Qdrant Cloud",
+    "url": "https://qdrant.tech",
+    "category": "Databases & BaaS",
+    "description": "Open-source vector database and similarity search engine for machine learning embeddings and semantic retrieval.",
+    "freeTier": "1GB permanent free cluster with 0.5 vCPU on Qdrant Cloud; 100% Free Open Source",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Railway",
+    "url": "https://railway.com",
+    "category": "Cloud Hosting & PaaS",
+    "description": "Infrastructure platform where developers build, ship, and scale code without configuring servers.",
+    "freeTier": "Free trial credit of $5 for new projects with zero setup",
+    "statusTags": ["Requires Credit Card to Verify", "Active Uptime 100%"]
   }
 ]

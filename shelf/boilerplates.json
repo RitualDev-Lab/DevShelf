@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "name": "Mockoon Cloudless API Server",
     "repo": "https://github.com/mockoon/mockoon",
@@ -94,5 +94,101 @@
     "deployUrl": "https://render.com/deploy?repo=https://github.com/langgenius/dify",
     "freeTierCost": "$0/month (Render Community Tier)",
     "statusTags": ["Self-Hostable", "No Card Required"]
+  },
+  {
+    "name": "Create T3 App",
+    "repo": "https://github.com/t3-oss/create-t3-app",
+    "category": "Full-Stack Web Starter",
+    "description": "Interactive CLI to build full-stack, type-safe Next.js applications with Prisma, Tailwind CSS, and tRPC.",
+    "language": "TypeScript",
+    "license": "MIT",
+    "platform": "Next.js / Node.js",
+    "deployUrl": "https://create.t3.gg",
+    "freeTierCost": "100% Free Open Source",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Shadcn Taxonomy",
+    "repo": "https://github.com/shadcn-ui/taxonomy",
+    "category": "SaaS & Dashboard Starters",
+    "description": "Open-source Next.js application built with shadcn/ui components, NextAuth, Stripe, and PostgreSQL.",
+    "language": "TypeScript",
+    "license": "MIT",
+    "platform": "Next.js / Vercel",
+    "deployUrl": "https://tx.shadcn.com",
+    "freeTierCost": "100% Free Open Source",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Next-Forge",
+    "repo": "https://github.com/haydenbleasel/next-forge",
+    "category": "SaaS & Dashboard Starters",
+    "description": "Production-grade starter kit for Next.js applications featuring Turborepo, Stripe billing, Clerk auth, and Prisma.",
+    "language": "TypeScript",
+    "license": "MIT",
+    "platform": "Next.js / Turborepo",
+    "deployUrl": "https://next-forge.com",
+    "freeTierCost": "100% Free Open Source",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Bulletproof React",
+    "repo": "https://github.com/alan2207/bulletproof-react",
+    "category": "Frontend Architecture Template",
+    "description": "Opinionated, production-ready architecture guide and boilerplate for large-scale React enterprise applications.",
+    "language": "TypeScript",
+    "license": "MIT",
+    "platform": "React / Vite",
+    "deployUrl": "https://github.com/alan2207/bulletproof-react",
+    "freeTierCost": "100% Free Open Source",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "FastAPI Full Stack Template",
+    "repo": "https://github.com/fastapi/full-stack-fastapi-template",
+    "category": "Full-Stack Web Starter",
+    "description": "Full-stack modern web application template using FastAPI, React, SQLModel, PostgreSQL, and Docker Compose.",
+    "language": "Python / TypeScript",
+    "license": "MIT",
+    "platform": "FastAPI / React / Docker",
+    "deployUrl": "https://github.com/fastapi/full-stack-fastapi-template",
+    "freeTierCost": "100% Free Open Source",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Astro Paper",
+    "repo": "https://github.com/satnaing/astro-paper",
+    "category": "Static Site & Documentation",
+    "description": "Minimal, responsive, accessible, and SEO-friendly Astro blog template with fuzzy search and dark mode.",
+    "language": "TypeScript",
+    "license": "MIT",
+    "platform": "Astro / Tailwind",
+    "deployUrl": "https://astro-paper.pages.dev",
+    "freeTierCost": "100% Free Open Source",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Refine",
+    "repo": "https://github.com/refinedev/refine",
+    "category": "SaaS & Dashboard Starters",
+    "description": "Open-source React-based framework for rapid development of data-intensive web applications, admin panels, and dashboards.",
+    "language": "TypeScript",
+    "license": "MIT",
+    "platform": "React / Next.js / Vite",
+    "deployUrl": "https://refine.dev",
+    "freeTierCost": "100% Free Open Source",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Medusa",
+    "repo": "https://github.com/medusajs/medusa",
+    "category": "E-Commerce Starters",
+    "description": "Modular, open-source commerce engine and Shopify alternative built with Node.js and customizable modules.",
+    "language": "TypeScript",
+    "license": "MIT",
+    "platform": "Node.js / Next.js",
+    "deployUrl": "https://medusajs.com",
+    "freeTierCost": "100% Free Open Source",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
   }
 ]

@@ -215,6 +215,13 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
       </a><br />
       <sub>🐶 Dog API (PR #36)</sub>
     </td>
+    <td align="center" width="160">
+      <a href="https://github.com/pranshuchittora">
+        <img src="https://github.com/pranshuchittora.png" width="70" style="border-radius: 50%;" alt="pranshuchittora"/><br />
+        <sub><b>pranshuchittora</b></sub>
+      </a><br />
+      <sub>🧪 Agent QA (PR #37)</sub>
+    </td>
   </tr>
 </table>
 

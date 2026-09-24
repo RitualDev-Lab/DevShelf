@@ -1,19 +1,19 @@
 {
-  "lastRun": "2026-09-24T06:53:43.056Z",
-  "totalBenchmarked": 104,
+  "lastRun": "2026-09-23T06:54:04.466Z",
+  "totalBenchmarked": 103,
   "sluggishCount": 0,
   "endpoints": [
     {
       "name": "Ollama",
       "file": "ai-tools.json",
       "url": "https://github.com/ollama/ollama",
-      "lastChecked": "2026-09-24T06:52:15.552Z",
+      "lastChecked": "2026-09-23T06:52:21.485Z",
       "samples": [
-        466,
-        17,
-        14
+        1415,
+        60,
+        63
       ],
-      "avgLatencyMs": 166,
+      "avgLatencyMs": 513,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -21,13 +21,13 @@
       "name": "Dify",
       "file": "ai-tools.json",
       "url": "https://github.com/langgenius/dify",
-      "lastChecked": "2026-09-24T06:52:16.354Z",
+      "lastChecked": "2026-09-23T06:52:22.467Z",
       "samples": [
-        324,
-        12,
-        14
+        415,
+        58,
+        59
       ],
-      "avgLatencyMs": 117,
+      "avgLatencyMs": 177,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -35,13 +35,13 @@
       "name": "vLLM",
       "file": "ai-tools.json",
       "url": "https://github.com/vllm-project/vllm",
-      "lastChecked": "2026-09-24T06:52:17.139Z",
+      "lastChecked": "2026-09-23T06:52:23.367Z",
       "samples": [
-        306,
-        14,
-        13
+        333,
+        58,
+        59
       ],
-      "avgLatencyMs": 111,
+      "avgLatencyMs": 150,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -49,13 +49,13 @@
       "name": "Open-WebUI",
       "file": "ai-tools.json",
       "url": "https://github.com/open-webui/open-webui",
-      "lastChecked": "2026-09-24T06:52:17.967Z",
+      "lastChecked": "2026-09-23T06:52:24.323Z",
       "samples": [
-        352,
-        12,
-        12
+        387,
+        62,
+        58
       ],
-      "avgLatencyMs": 125,
+      "avgLatencyMs": 169,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -63,13 +63,13 @@
       "name": "YYLO",
       "file": "ai-tools.json",
       "url": "https://github.com/yylo-dev/yylo",
-      "lastChecked": "2026-09-24T06:52:18.825Z",
+      "lastChecked": "2026-09-23T06:52:25.445Z",
       "samples": [
-        384,
-        11,
-        12
+        557,
+        58,
+        58
       ],
-      "avgLatencyMs": 136,
+      "avgLatencyMs": 224,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -77,13 +77,13 @@
       "name": "LocalAI",
       "file": "ai-tools.json",
       "url": "https://github.com/mudler/LocalAI",
-      "lastChecked": "2026-09-24T06:52:19.688Z",
+      "lastChecked": "2026-09-23T06:52:26.482Z",
       "samples": [
-        374,
-        18,
-        19
+        468,
+        61,
+        58
       ],
-      "avgLatencyMs": 137,
+      "avgLatencyMs": 196,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -91,13 +91,13 @@
       "name": "AnythingLLM",
       "file": "ai-tools.json",
       "url": "https://github.com/Mintplex-Labs/anything-llm",
-      "lastChecked": "2026-09-24T06:52:20.472Z",
+      "lastChecked": "2026-09-23T06:52:27.482Z",
       "samples": [
-        310,
-        11,
-        11
+        436,
+        57,
+        58
       ],
-      "avgLatencyMs": 111,
+      "avgLatencyMs": 184,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -105,13 +105,13 @@
       "name": "Flowise",
       "file": "ai-tools.json",
       "url": "https://github.com/FlowiseAI/Flowise",
-      "lastChecked": "2026-09-24T06:52:21.321Z",
+      "lastChecked": "2026-09-23T06:52:28.435Z",
       "samples": [
-        377,
-        12,
-        9
+        390,
+        58,
+        56
       ],
-      "avgLatencyMs": 133,
+      "avgLatencyMs": 168,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -119,13 +119,13 @@
       "name": "Langflow",
       "file": "ai-tools.json",
       "url": "https://github.com/langflow-ai/langflow",
-      "lastChecked": "2026-09-24T06:52:22.128Z",
+      "lastChecked": "2026-09-23T06:52:29.383Z",
       "samples": [
-        337,
-        9,
-        10
+        385,
+        56,
+        57
       ],
-      "avgLatencyMs": 119,
+      "avgLatencyMs": 166,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -133,13 +133,13 @@
       "name": "Jan",
       "file": "ai-tools.json",
       "url": "https://github.com/janhq/jan",
-      "lastChecked": "2026-09-24T06:52:23.010Z",
+      "lastChecked": "2026-09-23T06:52:30.368Z",
       "samples": [
-        412,
-        10,
-        10
+        421,
+        57,
+        57
       ],
-      "avgLatencyMs": 144,
+      "avgLatencyMs": 178,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -147,13 +147,13 @@
       "name": "LibreChat",
       "file": "ai-tools.json",
       "url": "https://github.com/danny-avila/LibreChat",
-      "lastChecked": "2026-09-24T06:52:23.930Z",
+      "lastChecked": "2026-09-23T06:52:31.313Z",
       "samples": [
-        441,
-        14,
-        14
+        379,
+        57,
+        58
       ],
-      "avgLatencyMs": 156,
+      "avgLatencyMs": 165,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -161,13 +161,13 @@
       "name": "Fabric",
       "file": "ai-tools.json",
       "url": "https://github.com/danielmiessler/fabric",
-      "lastChecked": "2026-09-24T06:52:24.784Z",
+      "lastChecked": "2026-09-23T06:52:32.245Z",
       "samples": [
-        376,
-        14,
-        13
+        364,
+        58,
+        58
       ],
-      "avgLatencyMs": 134,
+      "avgLatencyMs": 160,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -175,13 +175,13 @@
       "name": "Aider",
       "file": "ai-tools.json",
       "url": "https://github.com/Aider-AI/aider",
-      "lastChecked": "2026-09-24T06:52:25.584Z",
+      "lastChecked": "2026-09-23T06:52:33.183Z",
       "samples": [
-        323,
-        10,
-        17
+        363,
+        56,
+        69
       ],
-      "avgLatencyMs": 117,
+      "avgLatencyMs": 163,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -189,13 +189,13 @@
       "name": "OpenHands",
       "file": "ai-tools.json",
       "url": "https://github.com/All-Hands-AI/OpenHands",
-      "lastChecked": "2026-09-24T06:52:26.417Z",
+      "lastChecked": "2026-09-23T06:52:34.555Z",
       "samples": [
-        350,
-        19,
-        14
+        701,
+        111,
+        111
       ],
-      "avgLatencyMs": 128,
+      "avgLatencyMs": 308,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -203,13 +203,13 @@
       "name": "Continue",
       "file": "ai-tools.json",
       "url": "https://github.com/continuedev/continue",
-      "lastChecked": "2026-09-24T06:52:27.221Z",
+      "lastChecked": "2026-09-23T06:52:35.458Z",
       "samples": [
-        331,
-        9,
-        18
+        339,
+        56,
+        56
       ],
-      "avgLatencyMs": 119,
+      "avgLatencyMs": 150,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -217,13 +217,13 @@
       "name": "llama.cpp",
       "file": "ai-tools.json",
       "url": "https://github.com/ggerganov/llama.cpp",
-      "lastChecked": "2026-09-24T06:52:28.285Z",
+      "lastChecked": "2026-09-23T06:52:36.669Z",
       "samples": [
-        580,
-        16,
-        18
+        541,
+        109,
+        112
       ],
-      "avgLatencyMs": 205,
+      "avgLatencyMs": 254,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -231,13 +231,13 @@
       "name": "Open-Meteo",
       "file": "apis.json",
       "url": "https://open-meteo.com",
-      "lastChecked": "2026-09-24T06:52:28.842Z",
+      "lastChecked": "2026-09-23T06:52:37.393Z",
       "samples": [
+        172,
         53,
-        27,
-        27
+        48
       ],
-      "avgLatencyMs": 36,
+      "avgLatencyMs": 91,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -245,13 +245,13 @@
       "name": "GroqCloud Free Tier",
       "file": "apis.json",
       "url": "https://console.groq.com",
-      "lastChecked": "2026-09-24T06:52:29.955Z",
+      "lastChecked": "2026-09-23T06:52:38.293Z",
       "samples": [
-        210,
-        194,
-        259
+        204,
+        117,
+        129
       ],
-      "avgLatencyMs": 221,
+      "avgLatencyMs": 150,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -259,13 +259,13 @@
       "name": "JSONPlaceholder",
       "file": "apis.json",
       "url": "https://jsonplaceholder.typicode.com",
-      "lastChecked": "2026-09-24T06:52:30.460Z",
+      "lastChecked": "2026-09-23T06:52:38.943Z",
       "samples": [
-        36,
-        11,
-        11
+        137,
+        34,
+        30
       ],
-      "avgLatencyMs": 19,
+      "avgLatencyMs": 67,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -273,13 +273,13 @@
       "name": "Hugging Face Serverless Inference",
       "file": "apis.json",
       "url": "https://huggingface.co/inference-api",
-      "lastChecked": "2026-09-24T06:52:31.166Z",
+      "lastChecked": "2026-09-23T06:52:39.894Z",
       "samples": [
-        135,
-        32,
-        88
+        210,
+        150,
+        142
       ],
-      "avgLatencyMs": 85,
+      "avgLatencyMs": 167,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -287,13 +287,13 @@
       "name": "ipapi.co",
       "file": "apis.json",
       "url": "https://ipapi.co",
-      "lastChecked": "2026-09-24T06:52:32.561Z",
+      "lastChecked": "2026-09-23T06:52:40.781Z",
       "samples": [
-        326,
-        311,
-        310
+        134,
+        218,
+        84
       ],
-      "avgLatencyMs": 316,
+      "avgLatencyMs": 145,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -301,13 +301,13 @@
       "name": "CoinGecko Free API",
       "file": "apis.json",
       "url": "https://www.coingecko.com/api",
-      "lastChecked": "2026-09-24T06:52:34.208Z",
+      "lastChecked": "2026-09-23T06:52:42.658Z",
       "samples": [
-        438,
-        345,
-        415
+        546,
+        401,
+        477
       ],
-      "avgLatencyMs": 399,
+      "avgLatencyMs": 475,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -315,13 +315,13 @@
       "name": "Rest Countries",
       "file": "apis.json",
       "url": "https://restcountries.com",
-      "lastChecked": "2026-09-24T06:52:35.372Z",
+      "lastChecked": "2026-09-23T06:52:43.618Z",
       "samples": [
-        433,
-        141,
-        138
+        293,
+        109,
+        109
       ],
-      "avgLatencyMs": 237,
+      "avgLatencyMs": 170,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -329,13 +329,13 @@
       "name": "PokeAPI",
       "file": "apis.json",
       "url": "https://pokeapi.co",
-      "lastChecked": "2026-09-24T06:52:35.899Z",
+      "lastChecked": "2026-09-23T06:52:44.233Z",
       "samples": [
-        54,
-        11,
-        12
+        103,
+        30,
+        29
       ],
-      "avgLatencyMs": 26,
+      "avgLatencyMs": 54,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -343,13 +343,13 @@
       "name": "Open Library",
       "file": "apis.json",
       "url": "https://openlibrary.org/developers/api",
-      "lastChecked": "2026-09-24T06:52:37.799Z",
+      "lastChecked": "2026-09-23T06:52:45.577Z",
       "samples": [
-        971,
-        208,
-        272
+        505,
+        177,
+        210
       ],
-      "avgLatencyMs": 484,
+      "avgLatencyMs": 297,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -357,13 +357,13 @@
       "name": "ReqRes",
       "file": "apis.json",
       "url": "https://reqres.in",
-      "lastChecked": "2026-09-24T06:52:38.895Z",
+      "lastChecked": "2026-09-23T06:52:48.508Z",
       "samples": [
-        463,
-        91,
-        93
+        992,
+        900,
+        587
       ],
-      "avgLatencyMs": 216,
+      "avgLatencyMs": 826,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -371,13 +371,13 @@
       "name": "ipify",
       "file": "apis.json",
       "url": "https://www.ipify.org",
-      "lastChecked": "2026-09-24T06:52:39.462Z",
+      "lastChecked": "2026-09-23T06:52:49.042Z",
       "samples": [
-        109,
+        75,
         5,
         5
       ],
-      "avgLatencyMs": 40,
+      "avgLatencyMs": 28,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -385,13 +385,13 @@
       "name": "DummyJSON",
       "file": "apis.json",
       "url": "https://dummyjson.com",
-      "lastChecked": "2026-09-24T06:52:40.004Z",
+      "lastChecked": "2026-09-23T06:52:49.665Z",
       "samples": [
-        70,
-        12,
-        12
+        109,
+        31,
+        32
       ],
-      "avgLatencyMs": 31,
+      "avgLatencyMs": 57,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -399,13 +399,13 @@
       "name": "Nominatim OpenStreetMap",
       "file": "apis.json",
       "url": "https://nominatim.openstreetmap.org",
-      "lastChecked": "2026-09-24T06:52:40.775Z",
+      "lastChecked": "2026-09-23T06:52:50.416Z",
       "samples": [
-        302,
-        10,
-        7
+        257,
+        23,
+        20
       ],
-      "avgLatencyMs": 106,
+      "avgLatencyMs": 100,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -413,13 +413,13 @@
       "name": "ExchangeRate-API",
       "file": "apis.json",
       "url": "https://www.exchangerate-api.com",
-      "lastChecked": "2026-09-24T06:52:41.324Z",
+      "lastChecked": "2026-09-23T06:52:51.003Z",
       "samples": [
-        64,
-        17,
-        18
+        81,
+        32,
+        23
       ],
-      "avgLatencyMs": 33,
+      "avgLatencyMs": 45,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -427,27 +427,13 @@
       "name": "Cat Facts",
       "file": "apis.json",
       "url": "https://catfact.ninja",
-      "lastChecked": "2026-09-24T06:52:41.881Z",
+      "lastChecked": "2026-09-23T06:52:52.087Z",
       "samples": [
-        51,
-        28,
-        28
+        397,
+        117,
+        120
       ],
-      "avgLatencyMs": 36,
-      "consecutiveSluggishAudits": 0,
-      "hasWarning": false
-    },
-    {
-      "name": "Dog API",
-      "file": "apis.json",
-      "url": "https://dog.ceo/dog-api",
-      "lastChecked": "2026-09-24T06:52:42.766Z",
-      "samples": [
-        255,
-        90,
-        90
-      ],
-      "avgLatencyMs": 145,
+      "avgLatencyMs": 211,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -455,13 +441,13 @@
       "name": "Mockoon Cloudless API Server",
       "file": "boilerplates.json",
       "url": "https://github.com/mockoon/mockoon",
-      "lastChecked": "2026-09-24T06:52:43.583Z",
+      "lastChecked": "2026-09-23T06:52:53.282Z",
       "samples": [
-        340,
-        11,
-        14
+        626,
+        58,
+        62
       ],
-      "avgLatencyMs": 122,
+      "avgLatencyMs": 249,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -469,13 +455,13 @@
       "name": "PocketBase 1-Click Backend",
       "file": "boilerplates.json",
       "url": "https://github.com/pocketbase/pocketbase",
-      "lastChecked": "2026-09-24T06:52:44.389Z",
+      "lastChecked": "2026-09-23T06:52:54.202Z",
       "samples": [
-        335,
-        10,
-        10
+        357,
+        56,
+        57
       ],
-      "avgLatencyMs": 118,
+      "avgLatencyMs": 157,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -483,13 +469,13 @@
       "name": "AutoHeal-QA Playwright Runner",
       "file": "boilerplates.json",
       "url": "https://github.com/RitualDev-Lab/autoheal-qa",
-      "lastChecked": "2026-09-24T06:52:45.448Z",
+      "lastChecked": "2026-09-23T06:52:55.377Z",
       "samples": [
-        584,
-        11,
-        13
+        608,
+        58,
+        60
       ],
-      "avgLatencyMs": 203,
+      "avgLatencyMs": 242,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -497,13 +483,13 @@
       "name": "Stirling-PDF Ultimate Toolbox",
       "file": "boilerplates.json",
       "url": "https://github.com/Stirling-Tools/Stirling-PDF",
-      "lastChecked": "2026-09-24T06:52:46.231Z",
+      "lastChecked": "2026-09-23T06:52:56.423Z",
       "samples": [
-        314,
-        9,
-        10
+        482,
+        56,
+        57
       ],
-      "avgLatencyMs": 111,
+      "avgLatencyMs": 198,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -511,13 +497,13 @@
       "name": "Open-WebUI for Local AI",
       "file": "boilerplates.json",
       "url": "https://github.com/open-webui/open-webui",
-      "lastChecked": "2026-09-24T06:52:46.728Z",
+      "lastChecked": "2026-09-23T06:52:57.054Z",
       "samples": [
-        23,
-        10,
-        13
+        64,
+        57,
+        60
       ],
-      "avgLatencyMs": 15,
+      "avgLatencyMs": 60,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -525,13 +511,13 @@
       "name": "Directus Instant Data Engine",
       "file": "boilerplates.json",
       "url": "https://github.com/directus/directus",
-      "lastChecked": "2026-09-24T06:52:47.578Z",
+      "lastChecked": "2026-09-23T06:52:58.017Z",
       "samples": [
-        377,
-        10,
-        13
+        401,
+        57,
+        57
       ],
-      "avgLatencyMs": 133,
+      "avgLatencyMs": 172,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -539,13 +525,13 @@
       "name": "Hoppscotch API Development Hub",
       "file": "boilerplates.json",
       "url": "https://github.com/hoppscotch/hoppscotch",
-      "lastChecked": "2026-09-24T06:52:48.353Z",
+      "lastChecked": "2026-09-23T06:52:58.992Z",
       "samples": [
-        300,
-        12,
-        13
+        411,
+        56,
+        56
       ],
-      "avgLatencyMs": 108,
+      "avgLatencyMs": 174,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -553,13 +539,13 @@
       "name": "Dify LLM Application Platform",
       "file": "boilerplates.json",
       "url": "https://github.com/langgenius/dify",
-      "lastChecked": "2026-09-24T06:52:48.840Z",
+      "lastChecked": "2026-09-23T06:52:59.614Z",
       "samples": [
-        11,
-        11,
-        13
+        59,
+        57,
+        57
       ],
-      "avgLatencyMs": 12,
+      "avgLatencyMs": 58,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -567,13 +553,13 @@
       "name": "GitWhisper",
       "file": "cli-tools.json",
       "url": "https://github.com/RitualDev-Lab/GitWhisper",
-      "lastChecked": "2026-09-24T06:52:49.922Z",
+      "lastChecked": "2026-09-23T06:53:00.869Z",
       "samples": [
-        611,
-        10,
-        10
+        690,
+        57,
+        58
       ],
-      "avgLatencyMs": 210,
+      "avgLatencyMs": 268,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -581,13 +567,13 @@
       "name": "FlashLane",
       "file": "cli-tools.json",
       "url": "https://github.com/RitualDev-Lab/FlashLane",
-      "lastChecked": "2026-09-24T06:52:50.931Z",
+      "lastChecked": "2026-09-23T06:53:02.040Z",
       "samples": [
-        540,
-        10,
-        11
+        609,
+        57,
+        56
       ],
-      "avgLatencyMs": 187,
+      "avgLatencyMs": 241,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -595,13 +581,13 @@
       "name": "lazygit",
       "file": "cli-tools.json",
       "url": "https://github.com/jesseduffield/lazygit",
-      "lastChecked": "2026-09-24T06:52:51.906Z",
+      "lastChecked": "2026-09-23T06:53:03.055Z",
       "samples": [
-        496,
-        17,
-        11
+        444,
+        60,
+        62
       ],
-      "avgLatencyMs": 175,
+      "avgLatencyMs": 189,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -609,13 +595,13 @@
       "name": "ripgrep",
       "file": "cli-tools.json",
       "url": "https://github.com/BurntSushi/ripgrep",
-      "lastChecked": "2026-09-24T06:52:52.658Z",
+      "lastChecked": "2026-09-23T06:53:04.001Z",
       "samples": [
-        279,
-        10,
-        11
+        384,
+        57,
+        57
       ],
-      "avgLatencyMs": 100,
+      "avgLatencyMs": 166,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -623,13 +609,13 @@
       "name": "eza",
       "file": "cli-tools.json",
       "url": "https://github.com/eza-community/eza",
-      "lastChecked": "2026-09-24T06:52:53.446Z",
+      "lastChecked": "2026-09-23T06:53:04.942Z",
       "samples": [
-        316,
-        10,
-        10
+        379,
+        56,
+        57
       ],
-      "avgLatencyMs": 112,
+      "avgLatencyMs": 164,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -637,13 +623,13 @@
       "name": "fzf",
       "file": "cli-tools.json",
       "url": "https://github.com/junegunn/fzf",
-      "lastChecked": "2026-09-24T06:52:54.269Z",
+      "lastChecked": "2026-09-23T06:53:05.871Z",
       "samples": [
-        349,
-        13,
-        13
+        366,
+        57,
+        58
       ],
-      "avgLatencyMs": 125,
+      "avgLatencyMs": 160,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -651,13 +637,13 @@
       "name": "agent-browser",
       "file": "cli-tools.json",
       "url": "https://github.com/vercel-labs/agent-browser",
-      "lastChecked": "2026-09-24T06:52:55.140Z",
+      "lastChecked": "2026-09-23T06:53:06.919Z",
       "samples": [
-        387,
-        17,
-        17
+        471,
+        66,
+        61
       ],
-      "avgLatencyMs": 140,
+      "avgLatencyMs": 199,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -665,13 +651,13 @@
       "name": "bat",
       "file": "cli-tools.json",
       "url": "https://github.com/sharkdp/bat",
-      "lastChecked": "2026-09-24T06:52:56.008Z",
+      "lastChecked": "2026-09-23T06:53:07.975Z",
       "samples": [
-        388,
-        16,
-        13
+        491,
+        58,
+        58
       ],
-      "avgLatencyMs": 139,
+      "avgLatencyMs": 202,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -679,13 +665,13 @@
       "name": "delta",
       "file": "cli-tools.json",
       "url": "https://github.com/dandavison/delta",
-      "lastChecked": "2026-09-24T06:52:56.806Z",
+      "lastChecked": "2026-09-23T06:53:08.914Z",
       "samples": [
-        323,
-        9,
-        15
+        371,
+        61,
+        56
       ],
-      "avgLatencyMs": 116,
+      "avgLatencyMs": 163,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -693,13 +679,13 @@
       "name": "hyperfine",
       "file": "cli-tools.json",
       "url": "https://github.com/sharkdp/hyperfine",
-      "lastChecked": "2026-09-24T06:52:57.581Z",
+      "lastChecked": "2026-09-23T06:53:09.885Z",
       "samples": [
-        305,
-        9,
-        11
+        408,
+        56,
+        57
       ],
-      "avgLatencyMs": 108,
+      "avgLatencyMs": 174,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -707,13 +693,13 @@
       "name": "tldr",
       "file": "cli-tools.json",
       "url": "https://github.com/tldr-pages/tldr",
-      "lastChecked": "2026-09-24T06:52:58.410Z",
+      "lastChecked": "2026-09-23T06:53:10.930Z",
       "samples": [
-        356,
-        11,
-        10
+        480,
+        56,
+        56
       ],
-      "avgLatencyMs": 126,
+      "avgLatencyMs": 197,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -721,13 +707,13 @@
       "name": "dust",
       "file": "cli-tools.json",
       "url": "https://github.com/bootandy/dust",
-      "lastChecked": "2026-09-24T06:52:59.233Z",
+      "lastChecked": "2026-09-23T06:53:11.871Z",
       "samples": [
-        352,
-        12,
-        10
+        379,
+        57,
+        56
       ],
-      "avgLatencyMs": 125,
+      "avgLatencyMs": 164,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -735,13 +721,13 @@
       "name": "procs",
       "file": "cli-tools.json",
       "url": "https://github.com/dalance/procs",
-      "lastChecked": "2026-09-24T06:53:00.044Z",
+      "lastChecked": "2026-09-23T06:53:12.827Z",
       "samples": [
-        342,
-        10,
-        11
+        392,
+        57,
+        57
       ],
-      "avgLatencyMs": 121,
+      "avgLatencyMs": 169,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -749,13 +735,13 @@
       "name": "bottom",
       "file": "cli-tools.json",
       "url": "https://github.com/ClementTsang/bottom",
-      "lastChecked": "2026-09-24T06:53:00.938Z",
+      "lastChecked": "2026-09-23T06:53:13.827Z",
       "samples": [
-        421,
-        11,
-        11
+        437,
+        57,
+        57
       ],
-      "avgLatencyMs": 148,
+      "avgLatencyMs": 184,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -763,13 +749,13 @@
       "name": "curlie",
       "file": "cli-tools.json",
       "url": "https://github.com/rs/curlie",
-      "lastChecked": "2026-09-24T06:53:01.993Z",
+      "lastChecked": "2026-09-23T06:53:14.726Z",
       "samples": [
-        586,
-        10,
-        9
+        336,
+        55,
+        55
       ],
-      "avgLatencyMs": 202,
+      "avgLatencyMs": 149,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -777,13 +763,13 @@
       "name": "Starship",
       "file": "cli-tools.json",
       "url": "https://github.com/starship/starship",
-      "lastChecked": "2026-09-24T06:53:02.777Z",
+      "lastChecked": "2026-09-23T06:53:15.637Z",
       "samples": [
-        307,
-        18,
-        10
+        341,
+        60,
+        58
       ],
-      "avgLatencyMs": 112,
+      "avgLatencyMs": 153,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -791,13 +777,13 @@
       "name": "zoxide",
       "file": "cli-tools.json",
       "url": "https://github.com/ajeetdsouza/zoxide",
-      "lastChecked": "2026-09-24T06:53:03.550Z",
+      "lastChecked": "2026-09-23T06:53:16.610Z",
       "samples": [
-        301,
-        9,
-        11
+        408,
+        56,
+        58
       ],
-      "avgLatencyMs": 107,
+      "avgLatencyMs": 174,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -805,13 +791,13 @@
       "name": "gh-dash",
       "file": "cli-tools.json",
       "url": "https://github.com/dlvhdr/gh-dash",
-      "lastChecked": "2026-09-24T06:53:04.344Z",
+      "lastChecked": "2026-09-23T06:53:17.533Z",
       "samples": [
-        321,
-        8,
-        15
+        360,
+        58,
+        56
       ],
-      "avgLatencyMs": 115,
+      "avgLatencyMs": 158,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -819,13 +805,13 @@
       "name": "HTTPie",
       "file": "cli-tools.json",
       "url": "https://github.com/httpie/cli",
-      "lastChecked": "2026-09-24T06:53:05.218Z",
+      "lastChecked": "2026-09-23T06:53:18.588Z",
       "samples": [
-        407,
-        9,
-        8
+        491,
+        56,
+        56
       ],
-      "avgLatencyMs": 141,
+      "avgLatencyMs": 201,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -833,13 +819,13 @@
       "name": "GitWhisper",
       "file": "contributors-wanted.json",
       "url": "https://github.com/RitualDev-Lab/GitWhisper",
-      "lastChecked": "2026-09-24T06:53:05.699Z",
+      "lastChecked": "2026-09-23T06:53:19.213Z",
       "samples": [
-        10,
-        12,
-        10
+        56,
+        56,
+        63
       ],
-      "avgLatencyMs": 11,
+      "avgLatencyMs": 58,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -847,13 +833,13 @@
       "name": "AutoHeal-QA",
       "file": "contributors-wanted.json",
       "url": "https://github.com/RitualDev-Lab/autoheal-qa",
-      "lastChecked": "2026-09-24T06:53:06.184Z",
+      "lastChecked": "2026-09-23T06:53:19.835Z",
       "samples": [
-        10,
-        15,
-        9
+        56,
+        56,
+        57
       ],
-      "avgLatencyMs": 11,
+      "avgLatencyMs": 56,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -861,13 +847,13 @@
       "name": "FlashLane",
       "file": "contributors-wanted.json",
       "url": "https://github.com/RitualDev-Lab/FlashLane",
-      "lastChecked": "2026-09-24T06:53:06.663Z",
+      "lastChecked": "2026-09-23T06:53:20.455Z",
       "samples": [
-        10,
-        10,
-        11
+        56,
+        57,
+        56
       ],
-      "avgLatencyMs": 10,
+      "avgLatencyMs": 56,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -875,13 +861,13 @@
       "name": "Bruno",
       "file": "contributors-wanted.json",
       "url": "https://github.com/usebruno/bruno",
-      "lastChecked": "2026-09-24T06:53:07.410Z",
+      "lastChecked": "2026-09-23T06:53:21.486Z",
       "samples": [
-        272,
-        9,
-        14
+        468,
+        56,
+        56
       ],
-      "avgLatencyMs": 98,
+      "avgLatencyMs": 193,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -889,13 +875,13 @@
       "name": "agent-browser",
       "file": "contributors-wanted.json",
       "url": "https://github.com/vercel-labs/agent-browser",
-      "lastChecked": "2026-09-24T06:53:07.907Z",
+      "lastChecked": "2026-09-23T06:53:22.122Z",
       "samples": [
-        17,
-        15,
-        16
+        61,
+        60,
+        65
       ],
-      "avgLatencyMs": 16,
+      "avgLatencyMs": 62,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -903,13 +889,13 @@
       "name": "Aider",
       "file": "contributors-wanted.json",
       "url": "https://github.com/Aider-AI/aider",
-      "lastChecked": "2026-09-24T06:53:08.676Z",
+      "lastChecked": "2026-09-23T06:53:23.045Z",
       "samples": [
-        296,
-        9,
-        14
+        361,
+        56,
+        56
       ],
-      "avgLatencyMs": 106,
+      "avgLatencyMs": 158,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -917,13 +903,13 @@
       "name": "OpenHands",
       "file": "contributors-wanted.json",
       "url": "https://github.com/All-Hands-AI/OpenHands",
-      "lastChecked": "2026-09-24T06:53:09.589Z",
+      "lastChecked": "2026-09-23T06:53:25.402Z",
       "samples": [
-        433,
-        15,
-        14
+        1688,
+        109,
+        110
       ],
-      "avgLatencyMs": 154,
+      "avgLatencyMs": 636,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -931,13 +917,13 @@
       "name": "Continue",
       "file": "contributors-wanted.json",
       "url": "https://github.com/continuedev/continue",
-      "lastChecked": "2026-09-24T06:53:10.349Z",
+      "lastChecked": "2026-09-23T06:53:26.320Z",
       "samples": [
-        283,
-        15,
-        10
+        357,
+        56,
+        56
       ],
-      "avgLatencyMs": 103,
+      "avgLatencyMs": 156,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -945,13 +931,13 @@
       "name": "Starship",
       "file": "contributors-wanted.json",
       "url": "https://github.com/starship/starship",
-      "lastChecked": "2026-09-24T06:53:10.826Z",
+      "lastChecked": "2026-09-23T06:53:26.941Z",
       "samples": [
-        9,
-        10,
-        10
+        57,
+        57,
+        56
       ],
-      "avgLatencyMs": 10,
+      "avgLatencyMs": 57,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -959,13 +945,13 @@
       "name": "Open Source Ideas",
       "file": "contributors-wanted.json",
       "url": "https://github.com/open-source-ideas/ideas",
-      "lastChecked": "2026-09-24T06:53:11.674Z",
+      "lastChecked": "2026-09-23T06:53:27.877Z",
       "samples": [
-        380,
-        9,
-        8
+        374,
+        56,
+        57
       ],
-      "avgLatencyMs": 132,
+      "avgLatencyMs": 162,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -973,13 +959,13 @@
       "name": "Up-For-Grabs",
       "file": "contributors-wanted.json",
       "url": "https://github.com/up-for-grabs/up-for-grabs.net",
-      "lastChecked": "2026-09-24T06:53:12.557Z",
+      "lastChecked": "2026-09-23T06:53:28.798Z",
       "samples": [
-        414,
-        9,
-        9
+        359,
+        56,
+        56
       ],
-      "avgLatencyMs": 144,
+      "avgLatencyMs": 157,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -987,13 +973,13 @@
       "name": "Supabase",
       "file": "free-cloud.json",
       "url": "https://supabase.com",
-      "lastChecked": "2026-09-24T06:53:13.201Z",
+      "lastChecked": "2026-09-23T06:53:29.542Z",
       "samples": [
-        61,
-        69,
-        66
+        161,
+        72,
+        60
       ],
-      "avgLatencyMs": 65,
+      "avgLatencyMs": 98,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1001,13 +987,13 @@
       "name": "Neon",
       "file": "free-cloud.json",
       "url": "https://neon.tech",
-      "lastChecked": "2026-09-24T06:53:14.011Z",
+      "lastChecked": "2026-09-23T06:53:30.578Z",
       "samples": [
-        175,
-        106,
-        79
+        378,
+        108,
+        98
       ],
-      "avgLatencyMs": 120,
+      "avgLatencyMs": 195,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1015,13 +1001,13 @@
       "name": "Cloudflare Workers",
       "file": "free-cloud.json",
       "url": "https://workers.cloudflare.com",
-      "lastChecked": "2026-09-24T06:53:14.850Z",
+      "lastChecked": "2026-09-23T06:53:32.121Z",
       "samples": [
-        273,
-        61,
-        54
+        647,
+        232,
+        214
       ],
-      "avgLatencyMs": 129,
+      "avgLatencyMs": 364,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1029,13 +1015,13 @@
       "name": "Clerk",
       "file": "free-cloud.json",
       "url": "https://clerk.com",
-      "lastChecked": "2026-09-24T06:53:15.642Z",
+      "lastChecked": "2026-09-23T06:53:32.995Z",
       "samples": [
-        234,
-        61,
-        47
+        280,
+        69,
+        73
       ],
-      "avgLatencyMs": 114,
+      "avgLatencyMs": 141,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1043,13 +1029,13 @@
       "name": "Resend",
       "file": "free-cloud.json",
       "url": "https://resend.com",
-      "lastChecked": "2026-09-24T06:53:16.595Z",
+      "lastChecked": "2026-09-23T06:53:33.752Z",
       "samples": [
-        183,
-        171,
-        149
+        201,
+        55,
+        49
       ],
-      "avgLatencyMs": 168,
+      "avgLatencyMs": 102,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1057,13 +1043,13 @@
       "name": "PocketBase",
       "file": "free-cloud.json",
       "url": "https://pocketbase.io",
-      "lastChecked": "2026-09-24T06:53:17.980Z",
+      "lastChecked": "2026-09-23T06:53:35.686Z",
       "samples": [
-        694,
-        121,
-        121
+        1159,
+        161,
+        161
       ],
-      "avgLatencyMs": 312,
+      "avgLatencyMs": 494,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1071,13 +1057,13 @@
       "name": "Appwrite",
       "file": "free-cloud.json",
       "url": "https://appwrite.io",
-      "lastChecked": "2026-09-24T06:53:20.129Z",
+      "lastChecked": "2026-09-23T06:53:38.892Z",
       "samples": [
-        1064,
-        320,
-        316
+        1795,
+        511,
+        449
       ],
-      "avgLatencyMs": 567,
+      "avgLatencyMs": 918,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1085,13 +1071,13 @@
       "name": "Fly.io",
       "file": "free-cloud.json",
       "url": "https://fly.io",
-      "lastChecked": "2026-09-24T06:53:20.806Z",
+      "lastChecked": "2026-09-23T06:53:39.546Z",
       "samples": [
-        199,
-        15,
-        13
+        137,
+        35,
+        32
       ],
-      "avgLatencyMs": 76,
+      "avgLatencyMs": 68,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1099,13 +1085,13 @@
       "name": "Render",
       "file": "free-cloud.json",
       "url": "https://render.com",
-      "lastChecked": "2026-09-24T06:53:21.866Z",
+      "lastChecked": "2026-09-23T06:53:40.289Z",
       "samples": [
-        202,
-        307,
-        100
+        163,
+        61,
+        69
       ],
-      "avgLatencyMs": 203,
+      "avgLatencyMs": 98,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1113,13 +1099,13 @@
       "name": "Koyeb",
       "file": "free-cloud.json",
       "url": "https://www.koyeb.com",
-      "lastChecked": "2026-09-24T06:53:22.811Z",
+      "lastChecked": "2026-09-23T06:53:41.561Z",
       "samples": [
-        329,
-        77,
-        88
+        460,
+        194,
+        168
       ],
-      "avgLatencyMs": 165,
+      "avgLatencyMs": 274,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1127,13 +1113,13 @@
       "name": "JetBrains Free Open Source License",
       "file": "perks.json",
       "url": "https://www.jetbrains.com/community/opensource",
-      "lastChecked": "2026-09-24T06:53:23.595Z",
+      "lastChecked": "2026-09-23T06:53:42.239Z",
       "samples": [
-        297,
-        22,
-        14
+        181,
+        35,
+        11
       ],
-      "avgLatencyMs": 111,
+      "avgLatencyMs": 76,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1141,13 +1127,13 @@
       "name": "Sentry for Open Source",
       "file": "perks.json",
       "url": "https://sentry.io/for/open-source",
-      "lastChecked": "2026-09-24T06:53:25.087Z",
+      "lastChecked": "2026-09-23T06:53:43.815Z",
       "samples": [
-        357,
-        348,
-        337
+        396,
+        366,
+        365
       ],
-      "avgLatencyMs": 347,
+      "avgLatencyMs": 376,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1155,13 +1141,13 @@
       "name": "GitHub for Startups",
       "file": "perks.json",
       "url": "https://github.com/enterprise/startups",
-      "lastChecked": "2026-09-24T06:53:25.575Z",
+      "lastChecked": "2026-09-23T06:53:44.811Z",
       "samples": [
-        19,
-        10,
-        9
+        430,
+        58,
+        57
       ],
-      "avgLatencyMs": 13,
+      "avgLatencyMs": 182,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1169,13 +1155,13 @@
       "name": "AWS Activate Founders",
       "file": "perks.json",
       "url": "https://aws.amazon.com/activate",
-      "lastChecked": "2026-09-24T06:53:26.423Z",
+      "lastChecked": "2026-09-23T06:53:46.509Z",
       "samples": [
-        200,
-        97,
-        101
+        311,
+        506,
+        431
       ],
-      "avgLatencyMs": 133,
+      "avgLatencyMs": 416,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1183,13 +1169,13 @@
       "name": "Google Cloud for Startups",
       "file": "perks.json",
       "url": "https://cloud.google.com/startup",
-      "lastChecked": "2026-09-24T06:53:27.781Z",
+      "lastChecked": "2026-09-23T06:53:47.776Z",
       "samples": [
-        255,
-        416,
-        236
+        302,
+        245,
+        273
       ],
-      "avgLatencyMs": 302,
+      "avgLatencyMs": 273,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1197,13 +1183,13 @@
       "name": "DigitalOcean Open Source Sponsorship",
       "file": "perks.json",
       "url": "https://www.digitalocean.com/open-source",
-      "lastChecked": "2026-09-24T06:53:28.289Z",
+      "lastChecked": "2026-09-23T06:53:48.353Z",
       "samples": [
-        32,
-        12,
-        13
+        74,
+        23,
+        29
       ],
-      "avgLatencyMs": 19,
+      "avgLatencyMs": 42,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1211,13 +1197,13 @@
       "name": "Postman Open Source Sponsorship",
       "file": "perks.json",
       "url": "https://www.postman.com/open-source",
-      "lastChecked": "2026-09-24T06:53:28.908Z",
+      "lastChecked": "2026-09-23T06:53:49.070Z",
       "samples": [
-        88,
-        43,
-        37
+        126,
+        68,
+        72
       ],
-      "avgLatencyMs": 56,
+      "avgLatencyMs": 89,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1225,13 +1211,13 @@
       "name": "Datadog for Open Source",
       "file": "perks.json",
       "url": "https://www.datadoghq.com/partner/open-source",
-      "lastChecked": "2026-09-24T06:53:29.521Z",
+      "lastChecked": "2026-09-23T06:53:50.277Z",
       "samples": [
-        87,
-        62,
-        13
+        540,
+        92,
+        124
       ],
-      "avgLatencyMs": 54,
+      "avgLatencyMs": 252,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1239,13 +1225,13 @@
       "name": "BrowserStack Open Source",
       "file": "perks.json",
       "url": "https://www.browserstack.com/open-source",
-      "lastChecked": "2026-09-24T06:53:30.107Z",
+      "lastChecked": "2026-09-23T06:53:50.887Z",
       "samples": [
-        123,
-        7,
-        6
+        133,
+        15,
+        12
       ],
-      "avgLatencyMs": 45,
+      "avgLatencyMs": 53,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1253,13 +1239,13 @@
       "name": "Docker Open Source Community",
       "file": "perks.json",
       "url": "https://www.docker.com/community/open-source/application",
-      "lastChecked": "2026-09-24T06:53:30.729Z",
+      "lastChecked": "2026-09-23T06:53:51.758Z",
       "samples": [
-        138,
-        18,
-        14
+        386,
+        19,
+        15
       ],
-      "avgLatencyMs": 57,
+      "avgLatencyMs": 140,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1267,13 +1253,13 @@
       "name": "JetBrains Mono",
       "file": "perks.json",
       "url": "https://github.com/JetBrains/JetBrainsMono",
-      "lastChecked": "2026-09-24T06:53:31.541Z",
+      "lastChecked": "2026-09-23T06:53:52.923Z",
       "samples": [
-        342,
-        9,
-        10
+        601,
+        56,
+        57
       ],
-      "avgLatencyMs": 120,
+      "avgLatencyMs": 238,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1281,13 +1267,13 @@
       "name": "Fira Code",
       "file": "perks.json",
       "url": "https://github.com/tonsky/FiraCode",
-      "lastChecked": "2026-09-24T06:53:32.367Z",
+      "lastChecked": "2026-09-23T06:53:53.822Z",
       "samples": [
-        357,
-        9,
-        10
+        335,
+        56,
+        58
       ],
-      "avgLatencyMs": 125,
+      "avgLatencyMs": 150,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1295,13 +1281,13 @@
       "name": "Cascadia Code",
       "file": "perks.json",
       "url": "https://github.com/microsoft/cascadia-code",
-      "lastChecked": "2026-09-24T06:53:33.170Z",
+      "lastChecked": "2026-09-23T06:53:54.732Z",
       "samples": [
-        335,
-        10,
-        9
+        348,
+        57,
+        56
       ],
-      "avgLatencyMs": 118,
+      "avgLatencyMs": 154,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1309,13 +1295,13 @@
       "name": "AutoHeal-QA",
       "file": "testing-qa.json",
       "url": "https://github.com/RitualDev-Lab/autoheal-qa",
-      "lastChecked": "2026-09-24T06:53:34.062Z",
+      "lastChecked": "2026-09-23T06:53:55.353Z",
       "samples": [
-        423,
-        9,
-        9
+        57,
+        57,
+        56
       ],
-      "avgLatencyMs": 147,
+      "avgLatencyMs": 57,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1323,13 +1309,13 @@
       "name": "Playwright",
       "file": "testing-qa.json",
       "url": "https://github.com/microsoft/playwright",
-      "lastChecked": "2026-09-24T06:53:34.843Z",
+      "lastChecked": "2026-09-23T06:53:56.266Z",
       "samples": [
-        303,
-        11,
-        17
+        348,
+        56,
+        56
       ],
-      "avgLatencyMs": 110,
+      "avgLatencyMs": 153,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1337,13 +1323,13 @@
       "name": "Vitest",
       "file": "testing-qa.json",
       "url": "https://github.com/vitest-dev/vitest",
-      "lastChecked": "2026-09-24T06:53:35.590Z",
+      "lastChecked": "2026-09-23T06:53:57.199Z",
       "samples": [
-        276,
-        10,
-        10
+        371,
+        55,
+        56
       ],
-      "avgLatencyMs": 99,
+      "avgLatencyMs": 161,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1351,13 +1337,13 @@
       "name": "k6",
       "file": "testing-qa.json",
       "url": "https://github.com/grafana/k6",
-      "lastChecked": "2026-09-24T06:53:36.406Z",
+      "lastChecked": "2026-09-23T06:53:58.151Z",
       "samples": [
-        347,
-        10,
-        9
+        386,
+        57,
+        60
       ],
-      "avgLatencyMs": 122,
+      "avgLatencyMs": 168,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1365,13 +1351,13 @@
       "name": "Bruno",
       "file": "testing-qa.json",
       "url": "https://github.com/usebruno/bruno",
-      "lastChecked": "2026-09-24T06:53:37.224Z",
+      "lastChecked": "2026-09-23T06:53:58.773Z",
       "samples": [
-        340,
-        17,
-        10
+        57,
+        58,
+        57
       ],
-      "avgLatencyMs": 122,
+      "avgLatencyMs": 57,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1379,13 +1365,13 @@
       "name": "Hoppscotch",
       "file": "testing-qa.json",
       "url": "https://github.com/hoppscotch/hoppscotch",
-      "lastChecked": "2026-09-24T06:53:37.987Z",
+      "lastChecked": "2026-09-23T06:53:59.690Z",
       "samples": [
-        292,
-        11,
-        10
+        356,
+        57,
+        56
       ],
-      "avgLatencyMs": 104,
+      "avgLatencyMs": 156,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1393,13 +1379,13 @@
       "name": "Mockoon",
       "file": "testing-qa.json",
       "url": "https://github.com/mockoon/mockoon",
-      "lastChecked": "2026-09-24T06:53:38.784Z",
+      "lastChecked": "2026-09-23T06:54:00.686Z",
       "samples": [
-        327,
-        10,
-        9
+        433,
+        56,
+        57
       ],
-      "avgLatencyMs": 115,
+      "avgLatencyMs": 182,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1407,13 +1393,13 @@
       "name": "Artillery",
       "file": "testing-qa.json",
       "url": "https://github.com/artilleryio/artillery",
-      "lastChecked": "2026-09-24T06:53:39.629Z",
+      "lastChecked": "2026-09-23T06:54:01.605Z",
       "samples": [
-        377,
-        9,
-        9
+        355,
+        57,
+        55
       ],
-      "avgLatencyMs": 132,
+      "avgLatencyMs": 156,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1421,13 +1407,13 @@
       "name": "Locust",
       "file": "testing-qa.json",
       "url": "https://github.com/locustio/locust",
-      "lastChecked": "2026-09-24T06:53:41.415Z",
+      "lastChecked": "2026-09-23T06:54:02.538Z",
       "samples": [
-        1317,
-        10,
-        10
+        368,
+        57,
+        57
       ],
-      "avgLatencyMs": 446,
+      "avgLatencyMs": 161,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1435,13 +1421,13 @@
       "name": "MSW (Mock Service Worker)",
       "file": "testing-qa.json",
       "url": "https://github.com/mswjs/msw",
-      "lastChecked": "2026-09-24T06:53:42.211Z",
+      "lastChecked": "2026-09-23T06:54:03.464Z",
       "samples": [
-        325,
-        10,
-        10
+        364,
+        57,
+        57
       ],
-      "avgLatencyMs": 115,
+      "avgLatencyMs": 159,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1449,13 +1435,13 @@
       "name": "Vegeta",
       "file": "testing-qa.json",
       "url": "https://github.com/tsenart/vegeta",
-      "lastChecked": "2026-09-24T06:53:43.056Z",
+      "lastChecked": "2026-09-23T06:54:04.466Z",
       "samples": [
-        362,
-        20,
-        13
+        437,
+        57,
+        58
       ],
-      "avgLatencyMs": 132,
+      "avgLatencyMs": 184,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     }
