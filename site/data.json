@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-09-24T21:16:12.664Z",
-  "totalCount": 210,
+  "updatedAt": "2026-09-24T21:22:31.576Z",
+  "totalCount": 501,
   "counts": {
-    "repos": 125,
-    "apis": 36,
-    "aiTools": 36,
-    "cliTools": 44,
-    "testingQa": 27,
-    "freeCloud": 30,
-    "contributors": 11,
-    "perks": 19,
-    "boilerplates": 16
+    "repos": 305,
+    "apis": 96,
+    "aiTools": 86,
+    "cliTools": 104,
+    "testingQa": 62,
+    "freeCloud": 70,
+    "contributors": 21,
+    "perks": 30,
+    "boilerplates": 41
   },
   "resources": [
     {
@@ -604,6 +604,806 @@
       "license": "AGPL-3.0",
       "featured": false,
       "goodFirstIssues": "https://github.com/OpenInterpreter/open-interpreter/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "TGI (Text Generation Inference)",
+      "repo": "https://github.com/huggingface/text-generation-inference",
+      "category": "Local AI & Inference",
+      "description": "Hugging Face's production-ready toolkit for deploying and serving Large Language Models at scale with Tensor Parallelism.",
+      "language": "Rust / Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/huggingface/text-generation-inference/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "SGLang",
+      "repo": "https://github.com/sgl-project/sglang",
+      "category": "Local AI & Inference",
+      "description": "Fast serving engine for large language models and vision-language models with RadixAttention for multi-turn caching.",
+      "language": "Python / C++",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/sgl-project/sglang/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "TensorRT-LLM",
+      "repo": "https://github.com/NVIDIA/TensorRT-LLM",
+      "category": "Local AI & Inference",
+      "description": "NVIDIA's specialized library providing state-of-the-art acceleration and optimized execution for LLM inference.",
+      "language": "C++ / Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/NVIDIA/TensorRT-LLM/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "ExLlamaV2",
+      "repo": "https://github.com/turboderp/exllamav2",
+      "category": "Local AI & Inference",
+      "description": "Fast inference library for running local LLMs on modern NVIDIA GPUs with EXL2 quantization.",
+      "language": "Python / C++",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/turboderp/exllamav2/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "llamafile",
+      "repo": "https://github.com/Mozilla-Ocho/llamafile",
+      "category": "Local AI & Inference",
+      "description": "Distribute and run LLMs with a single multi-GB binary that runs across Windows, macOS, Linux, and FreeBSD.",
+      "language": "C++",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/Mozilla-Ocho/llamafile/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Aphrodite Engine",
+      "repo": "https://github.com/PygmalionAI/aphrodite-engine",
+      "category": "Local AI & Inference",
+      "description": "High-throughput, memory-efficient LLM inference engine supporting many architectures and quantizations.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/PygmalionAI/aphrodite-engine/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "AutoGPT",
+      "repo": "https://github.com/Significant-Gravitas/AutoGPT",
+      "category": "Code Generation & Agent Dev",
+      "description": "Autonomous AI agent platform empowering developers to create, test, and deploy customized AI agent chains.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": true,
+      "goodFirstIssues": "https://github.com/Significant-Gravitas/AutoGPT/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "CrewAI",
+      "repo": "https://github.com/crewAIInc/crewAI",
+      "category": "AI Workflow & Orchestration",
+      "description": "Cutting-edge framework for orchestrating role-playing, autonomous AI agents to collaborate seamlessly.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": true,
+      "goodFirstIssues": "https://github.com/crewAIInc/crewAI/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "AutoGen",
+      "repo": "https://github.com/microsoft/autogen",
+      "category": "AI Workflow & Orchestration",
+      "description": "Microsoft's multi-agent conversation framework for building advanced AI agent workflows and collaborative task execution.",
+      "language": "Python",
+      "license": "CC-BY-4.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/microsoft/autogen/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "MetaGPT",
+      "repo": "https://github.com/geekan/MetaGPT",
+      "category": "AI Workflow & Orchestration",
+      "description": "Multi-agent framework assigning distinct software company roles (Product Manager, Architect, Engineer) to LLMs.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/geekan/MetaGPT/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "ChatDev",
+      "repo": "https://github.com/OpenBMB/ChatDev",
+      "category": "AI Workflow & Orchestration",
+      "description": "Virtual software company simulated by communicative agents to complete full lifecycle software development.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/OpenBMB/ChatDev/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "SuperAGI",
+      "repo": "https://github.com/TransformerOptimus/SuperAGI",
+      "category": "Code Generation & Agent Dev",
+      "description": "Dev-first open source autonomous AI agent framework with GUI, agent telemetry, concurrent agents, and marketplace.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/TransformerOptimus/SuperAGI/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Unsloth",
+      "repo": "https://github.com/unslothai/unsloth",
+      "category": "Local AI & Inference",
+      "description": "Finetune Llama 3.3, Mistral, and Qwen 2x-5x faster with 70% less memory using optimized hand-written GPU kernels.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": true,
+      "goodFirstIssues": "https://github.com/unslothai/unsloth/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Axolotl",
+      "repo": "https://github.com/axolotl-ai-cloud/axolotl",
+      "category": "Local AI & Inference",
+      "description": "Post-training framework for fine-tuning hundreds of open-source language models with standard YAML configurations.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/axolotl-ai-cloud/axolotl/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "LLaMA-Factory",
+      "repo": "https://github.com/hiyouga/LLaMA-Factory",
+      "category": "Local AI & Inference",
+      "description": "Unified web UI and CLI for easy fine-tuning and evaluation of 100+ LLMs and multi-modal models.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/hiyouga/LLaMA-Factory/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "AutoAWQ",
+      "repo": "https://github.com/casper-hansen/AutoAWQ",
+      "category": "Local AI & Inference",
+      "description": "Activation-aware Weight Quantization package for 4-bit LLM quantization with 3x speedup.",
+      "language": "Python / C++",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/casper-hansen/AutoAWQ/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "AutoGPTQ",
+      "repo": "https://github.com/AutoGPTQ/AutoGPTQ",
+      "category": "Local AI & Inference",
+      "description": "Easy-to-use LLMs quantization package with user-friendly APIs, based on GPTQ algorithm.",
+      "language": "Python / CUDA",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/AutoGPTQ/AutoGPTQ/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "bitsandbytes",
+      "repo": "https://github.com/bitsandbytes-foundation/bitsandbytes",
+      "category": "Local AI & Inference",
+      "description": "Accessible 8-bit and 4-bit optimizers and quantization functions for deep learning on CUDA and ROCm.",
+      "language": "C++ / Python",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/bitsandbytes-foundation/bitsandbytes/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "PEFT",
+      "repo": "https://github.com/huggingface/peft",
+      "category": "Local AI & Inference",
+      "description": "Hugging Face's state-of-the-art Parameter-Efficient Fine-Tuning library (LoRA, QLoRA, Prefix Tuning).",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/huggingface/peft/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "TRL",
+      "repo": "https://github.com/huggingface/trl",
+      "category": "Local AI & Inference",
+      "description": "Transformer Reinforcement Learning library with Supervised Fine-Tuning (SFT), DPO, and PPO training loops.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/huggingface/trl/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Ragas",
+      "repo": "https://github.com/explodinggradients/ragas",
+      "category": "AI Workflow & Orchestration",
+      "description": "Evaluation framework for your Retrieval Augmented Generation (RAG) pipelines with faithfulness metrics.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/explodinggradients/ragas/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "DeepEval",
+      "repo": "https://github.com/confident-ai/deepeval",
+      "category": "AI Workflow & Orchestration",
+      "description": "The open-source LLM evaluation framework like Pytest for LLM applications with 14+ benchmark metrics.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/confident-ai/deepeval/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "NeMo-Guardrails",
+      "repo": "https://github.com/NVIDIA/NeMo-Guardrails",
+      "category": "AI Workflow & Orchestration",
+      "description": "NVIDIA's toolkit for easily adding programmable guardrails and safety bounds to LLM-based conversational apps.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/NVIDIA/NeMo-Guardrails/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Guidance",
+      "repo": "https://github.com/guidance-ai/guidance",
+      "category": "AI Workflow & Orchestration",
+      "description": "A guidance language for controlling large language models with interleaved generation, prompting, and constrain.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/guidance-ai/guidance/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Outlines",
+      "repo": "https://github.com/dottxt-ai/outlines",
+      "category": "AI Workflow & Orchestration",
+      "description": "Structured text generation library with regular expressions, JSON schemas, and context-free grammars.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/dottxt-ai/outlines/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Promptfoo",
+      "repo": "https://github.com/promptfoo/promptfoo",
+      "category": "AI Workflow & Orchestration",
+      "description": "Test your prompts, agents, and RAGs against red-teaming attacks, prompt injections, and regression suites.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/promptfoo/promptfoo/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Stable Diffusion WebUI",
+      "repo": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+      "category": "Local AI & Inference",
+      "description": "The ubiquitous browser interface for Stable Diffusion based on Gradio library with extensive extensions.",
+      "language": "Python",
+      "license": "AGPL-3.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "InvokeAI",
+      "repo": "https://github.com/invoke-ai/InvokeAI",
+      "category": "Local AI & Inference",
+      "description": "Professional generative AI engine and canvas for creative visual artists and digital designers.",
+      "language": "Python / TypeScript",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/invoke-ai/InvokeAI/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Fooocus",
+      "repo": "https://github.com/lllyasviel/Fooocus",
+      "category": "Local AI & Inference",
+      "description": "Focus on prompting and generating without complex parameter tuning, inspired by Midjourney simplicity.",
+      "language": "Python",
+      "license": "GPL-3.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/lllyasviel/Fooocus/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "LLaVA",
+      "repo": "https://github.com/haotian-liu/LLaVA",
+      "category": "Local AI & Inference",
+      "description": "Visual instruction tuning toward large multimodal models: chat and reasoning over high-res images.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/haotian-liu/LLaVA/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Segment Anything (SAM)",
+      "repo": "https://github.com/facebookresearch/segment-anything",
+      "category": "Local AI & Inference",
+      "description": "Meta's foundation model for image segmentation, allowing promptable cutouts of any object with one click.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/facebookresearch/segment-anything/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "YOLOv8",
+      "repo": "https://github.com/ultralytics/ultralytics",
+      "category": "Local AI & Inference",
+      "description": "Ultralytics YOLOv8 for real-time object detection, image segmentation, pose estimation, and classification.",
+      "language": "Python",
+      "license": "AGPL-3.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/ultralytics/ultralytics/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "PaddleOCR",
+      "repo": "https://github.com/PaddlePaddle/PaddleOCR",
+      "category": "Local AI & Inference",
+      "description": "Awesome multilingual OCR toolkits supporting 80+ languages, table recognition, and document structure analysis.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/PaddlePaddle/PaddleOCR/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Kokoro-TTS",
+      "repo": "https://github.com/hexgrad/kokoro",
+      "category": "Local AI & Inference",
+      "description": "Lightweight, open-weight text-to-speech model producing studio-grade human voices with only 82M parameters.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": true,
+      "goodFirstIssues": "https://github.com/hexgrad/kokoro/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Piper TTS",
+      "repo": "https://github.com/rhasspy/piper",
+      "category": "Local AI & Inference",
+      "description": "Fast, local neural text to speech system that sounds great and is optimized for Raspberry Pi and low-power hardware.",
+      "language": "C++",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/rhasspy/piper/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "ChatTTS",
+      "repo": "https://github.com/2noise/ChatTTS",
+      "category": "Local AI & Inference",
+      "description": "A generative text-to-speech model specifically designed for conversational scenarios and dialogue synthesis.",
+      "language": "Python",
+      "license": "CC-BY-NC-4.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/2noise/ChatTTS/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Faster-Whisper",
+      "repo": "https://github.com/SYSTRAN/faster-whisper",
+      "category": "Local AI & Inference",
+      "description": "Reimplementation of OpenAI's Whisper model using CTranslate2, delivering up to 4x faster transcription.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/SYSTRAN/faster-whisper/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "pgvector",
+      "repo": "https://github.com/pgvector/pgvector",
+      "category": "Local AI & Inference",
+      "description": "Open-source vector similarity search extension for PostgreSQL, supporting exact and approximate nearest neighbor.",
+      "language": "C",
+      "license": "PostgreSQL",
+      "featured": true,
+      "goodFirstIssues": "https://github.com/pgvector/pgvector/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Faiss",
+      "repo": "https://github.com/facebookresearch/faiss",
+      "category": "Local AI & Inference",
+      "description": "Meta's library for efficient similarity search and clustering of dense vectors, indexing billions of vectors on GPUs.",
+      "language": "C++ / Python",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/facebookresearch/faiss/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "LanceDB",
+      "repo": "https://github.com/lancedb/lancedb",
+      "category": "Local AI & Inference",
+      "description": "Developer-friendly, serverless open-source vector database for multi-modal AI with zero-copy storage.",
+      "language": "Rust / Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/lancedb/lancedb/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Vespa",
+      "repo": "https://github.com/vespa-engine/vespa",
+      "category": "Local AI & Inference",
+      "description": "The open big data serving engine: store, search, organize, and machine-learn over large vector and text datasets in real-time.",
+      "language": "C++ / Java",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/vespa-engine/vespa/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Annoy",
+      "repo": "https://github.com/spotify/annoy",
+      "category": "Local AI & Inference",
+      "description": "Spotify's C++ library with Python bindings to search for points in space that are close to a given query point.",
+      "language": "C++ / Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/spotify/annoy/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "BabyAGI",
+      "repo": "https://github.com/yoheinakajima/babyagi",
+      "category": "Code Generation & Agent Dev",
+      "description": "Pioneering AI-powered task management and autonomous agent execution system that builds on task completion loops.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/yoheinakajima/babyagi/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "OpenCodeInterpreter",
+      "repo": "https://github.com/OpenCodeInterpreter/OpenCodeInterpreter",
+      "category": "Code Generation & Agent Dev",
+      "description": "Open-source code generation system integrating dynamic execution feedback and compiler outputs for iterative code refinement.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/OpenCodeInterpreter/OpenCodeInterpreter/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "LMQL",
+      "repo": "https://github.com/eth-sri/lmql",
+      "category": "AI Workflow & Orchestration",
+      "description": "A query language for programming Large Language Models with typed output constraints and distribution control.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/eth-sri/lmql/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "AutoRound",
+      "repo": "https://github.com/intel/auto-round",
+      "category": "Local AI & Inference",
+      "description": "Intel's advanced weight-only quantization algorithm for low-bit LLM optimization without accuracy degradation.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/intel/auto-round/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "SWE-agent",
+      "repo": "https://github.com/princeton-nlp/SWE-agent",
+      "category": "Code Generation & Agent Dev",
+      "description": "Autonomous software engineering agent that turns LM models into autonomous agents solving GitHub issues.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/princeton-nlp/SWE-agent/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "DSPy",
+      "repo": "https://github.com/stanfordnlp/dspy",
+      "category": "AI Workflow & Orchestration",
+      "description": "Stanford framework for programming—rather than prompting—foundation models with automatic prompt optimization.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": true,
+      "goodFirstIssues": "https://github.com/stanfordnlp/dspy/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "FastChat",
+      "repo": "https://github.com/lm-sys/FastChat",
+      "category": "Local AI & Inference",
+      "description": "An open platform for training, serving, and evaluating LLM-based chatbots, the core engine behind LMSYS Chatbot Arena.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/lm-sys/FastChat/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "GPTCache",
+      "repo": "https://github.com/zilliztech/gptcache",
+      "category": "Local AI & Inference",
+      "description": "Semantic cache for LLM queries to cut costs and speed up response time up to 10x using vector similarity.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/zilliztech/gptcache/issues",
       "statusTags": [
         "100% Offline-Friendly",
         "No Card Required"
@@ -1324,6 +2124,966 @@
       "section": "CLI & Productivity Tools"
     },
     {
+      "name": "nnn",
+      "repo": "https://github.com/jarun/nnn",
+      "category": "Terminal & Shell",
+      "description": "Tiny, lightning-fast terminal file manager with disk usage analyzer, batch renamer, and app launcher.",
+      "language": "C",
+      "license": "BSD-2-Clause",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/jarun/nnn/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "ranger",
+      "repo": "https://github.com/ranger/ranger",
+      "category": "Terminal & Shell",
+      "description": "VIM-inspired console file manager with multi-column display and automatic file preview.",
+      "language": "Python",
+      "license": "GPL-3.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/ranger/ranger/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "broot",
+      "repo": "https://github.com/Canop/broot",
+      "category": "Terminal & Shell",
+      "description": "A new way to see and navigate directory trees, find files, and launch commands quickly.",
+      "language": "Rust",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/Canop/broot/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "superfile",
+      "repo": "https://github.com/yorukot/superfile",
+      "category": "Terminal & Shell",
+      "description": "Fancy and modern terminal file manager with sleek UI, file previews, and keyboard navigation.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/yorukot/superfile/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "htop",
+      "repo": "https://github.com/htop-dev/htop",
+      "category": "OS & Hardware Utilities",
+      "description": "Interactive cross-platform process viewer with colorful meters and process tree view.",
+      "language": "C",
+      "license": "GPL-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/htop-dev/htop/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "glances",
+      "repo": "https://github.com/nicolargo/glances",
+      "category": "OS & Hardware Utilities",
+      "description": "Cross-platform system monitoring tool with web interface and REST API export.",
+      "language": "Python",
+      "license": "LGPL-3.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/nicolargo/glances/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "fastfetch",
+      "repo": "https://github.com/fastfetch-cli/fastfetch",
+      "category": "OS & Hardware Utilities",
+      "description": "Neofetch-like tool for fetching system information and displaying it prettily, written in pure C.",
+      "language": "C",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/fastfetch-cli/fastfetch/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "ncdu",
+      "repo": "https://code.blicky.net/yorhel/ncdu",
+      "category": "OS & Hardware Utilities",
+      "description": "Disk usage analyzer with an ncurses interface, designed to find space hogs on remote servers.",
+      "language": "C",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://code.blicky.net/yorhel/ncdu",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "gdu",
+      "repo": "https://github.com/dundee/gdu",
+      "category": "OS & Hardware Utilities",
+      "description": "Fast console disk usage analyzer with console GUI written in Go, specifically optimized for SSDs.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/dundee/gdu/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "aria2",
+      "repo": "https://github.com/aria2/aria2",
+      "category": "HTTP & Network",
+      "description": "Ultra-fast multi-protocol and multi-source command-line download utility (HTTP, HTTPS, FTP, BitTorrent).",
+      "language": "C++",
+      "license": "GPL-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/aria2/aria2/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "croc",
+      "repo": "https://github.com/schollz/croc",
+      "category": "HTTP & Network",
+      "description": "Easily and securely send files or folders between any two computers using relay and end-to-end encryption.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/schollz/croc/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "magic-wormhole",
+      "repo": "https://github.com/magic-wormhole/magic-wormhole",
+      "category": "HTTP & Network",
+      "description": "Securely get things from one computer to another using short, human-pronounceable one-time codes.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/magic-wormhole/magic-wormhole/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "trippy",
+      "repo": "https://github.com/fujiapple852/trippy",
+      "category": "HTTP & Network",
+      "description": "A network diagnostic tool combining the functionality of traceroute and ping with interactive TUI.",
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/fujiapple852/trippy/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "mitmproxy",
+      "repo": "https://github.com/mitmproxy/mitmproxy",
+      "category": "HTTP & Network",
+      "description": "An interactive, SSL-capable intercepting HTTP proxy for penetration testers and software developers.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/mitmproxy/mitmproxy/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "websocat",
+      "repo": "https://github.com/vi/websocat",
+      "category": "HTTP & Network",
+      "description": "Command-line client for WebSockets, like netcat or curl for ws:// and wss:// endpoints.",
+      "language": "Rust",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/vi/websocat/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "grpcurl",
+      "repo": "https://github.com/fullstorydev/grpcurl",
+      "category": "HTTP & Network",
+      "description": "Like cURL, but for gRPC: command-line tool that lets you interact with gRPC servers via reflection.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/fullstorydev/grpcurl/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "gh",
+      "repo": "https://github.com/cli/cli",
+      "category": "Git & Version Control",
+      "description": "GitHub's official command line tool to manage pull requests, issues, releases, and repository workflows.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": true,
+      "goodFirstIssues": "https://github.com/cli/cli/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "glab",
+      "repo": "https://gitlab.com/gitlab-org/cli",
+      "category": "Git & Version Control",
+      "description": "GitLab's official open source CLI tool bringing GitLab features directly to your terminal.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://gitlab.com/gitlab-org/cli/-/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "git-cliff",
+      "repo": "https://github.com/orhun/git-cliff",
+      "category": "Git & Version Control",
+      "description": "Highly customizable changelog generator based on conventional commits and Git history.",
+      "language": "Rust",
+      "license": "Apache-2.0 / MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/orhun/git-cliff/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "onefetch",
+      "repo": "https://github.com/o2sh/onefetch",
+      "category": "Git & Version Control",
+      "description": "Git repository summary information tool written in Rust that displays project stats directly in terminal.",
+      "language": "Rust",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/o2sh/onefetch/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "gitleaks",
+      "repo": "https://github.com/gitleaks/gitleaks",
+      "category": "Git & Version Control",
+      "description": "Protect and discover secrets & sensitive data like passwords, API keys, and tokens in git repositories.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/gitleaks/gitleaks/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "trufflehog",
+      "repo": "https://github.com/trufflesecurity/trufflehog",
+      "category": "Git & Version Control",
+      "description": "Find leaked credentials and secrets across git commit history, filesystems, and S3 buckets.",
+      "language": "Go",
+      "license": "AGPL-3.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/trufflesecurity/trufflehog/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "osv-scanner",
+      "repo": "https://github.com/google/osv-scanner",
+      "category": "DevOps & Containers",
+      "description": "Vulnerability scanner written in Go that checks your dependencies against the Open Source Vulnerability database.",
+      "language": "Go",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/google/osv-scanner/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "tmux",
+      "repo": "https://github.com/tmux/tmux",
+      "category": "Terminal & Shell",
+      "description": "Terminal multiplexer that lets you switch easily between several programs in one terminal and detach sessions.",
+      "language": "C",
+      "license": "ISC",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/tmux/tmux/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "atuin",
+      "repo": "https://github.com/atuinsh/atuin",
+      "category": "Terminal & Shell",
+      "description": "Magical shell history sync and search tool with SQLite database backing and end-to-end encryption.",
+      "language": "Rust",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/atuinsh/atuin/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "thefuck",
+      "repo": "https://github.com/nvbn/thefuck",
+      "category": "Terminal & Shell",
+      "description": "Magnificent app that corrects errors in your previous console commands automatically.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/nvbn/thefuck/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "direnv",
+      "repo": "https://github.com/direnv/direnv",
+      "category": "Terminal & Shell",
+      "description": "Unclutter your .profile by loading and unloading environment variables depending on the current directory.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/direnv/direnv/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "mise",
+      "repo": "https://github.com/jdx/mise",
+      "category": "Developer Tools",
+      "description": "Front-end to your dev environment: polyglot runtime executor, environment variable manager, and task runner.",
+      "language": "Rust",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/jdx/mise/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "asdf-vm",
+      "repo": "https://github.com/asdf-vm/asdf",
+      "category": "Developer Tools",
+      "description": "Multiple runtime version manager with a single CLI and unified configuration for Node.js, Python, Ruby, and more.",
+      "language": "Shell",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/asdf-vm/asdf/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "pnpm",
+      "repo": "https://github.com/pnpm/pnpm",
+      "category": "Developer Tools",
+      "description": "Fast, disk space efficient package manager using hard links and content-addressable storage.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/pnpm/pnpm/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "bun",
+      "repo": "https://github.com/oven-sh/bun",
+      "category": "Developer Tools",
+      "description": "Incredibly fast JavaScript and TypeScript runtime, bundler, test runner, and package manager written in Zig.",
+      "language": "Zig / C++",
+      "license": "MIT",
+      "featured": true,
+      "goodFirstIssues": "https://github.com/oven-sh/bun/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "deno",
+      "repo": "https://github.com/denoland/deno",
+      "category": "Developer Tools",
+      "description": "Secure runtime for JavaScript and TypeScript with built-in web standards and package management.",
+      "language": "Rust",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/denoland/deno/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "jq",
+      "repo": "https://github.com/jqlang/jq",
+      "category": "Terminal & Search",
+      "description": "Command-line JSON processor: flexible, lightweight, and powerful slice, filter, and map utility.",
+      "language": "C",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/jqlang/jq/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "yq",
+      "repo": "https://github.com/mikefarah/yq",
+      "category": "Terminal & Search",
+      "description": "Portable command-line YAML, JSON, XML, CSV, and properties processor written in Go.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/mikefarah/yq/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "miller",
+      "repo": "https://github.com/johnkerl/miller",
+      "category": "Terminal & Search",
+      "description": "Miller is like awk, sed, cut, join, and sort for name-indexed data such as CSV, TSV, and JSON.",
+      "language": "Go",
+      "license": "BSD-2-Clause",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/johnkerl/miller/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "csvkit",
+      "repo": "https://github.com/wireservice/csvkit",
+      "category": "Terminal & Search",
+      "description": "A suite of command-line tools for converting to and working with CSV, the king of tabular formats.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/wireservice/csvkit/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "pandoc",
+      "repo": "https://github.com/jgm/pandoc",
+      "category": "Developer Tools",
+      "description": "Universal markup converter that translates between Markdown, LaTeX, HTML, PDF, Docx, and 40+ formats.",
+      "language": "Haskell",
+      "license": "GPL-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/jgm/pandoc/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "typos-cli",
+      "repo": "https://github.com/crate-ci/typos",
+      "category": "Developer Tools",
+      "description": "Source code spell checker that finds and corrects typos in source code with low false positives.",
+      "language": "Rust",
+      "license": "Apache-2.0 / MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/crate-ci/typos/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "vale",
+      "repo": "https://github.com/errata-ai/vale",
+      "category": "Developer Tools",
+      "description": "Syntax-aware linter for prose and documentation supporting Google, Microsoft, and custom style guides.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/errata-ai/vale/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "pgcli",
+      "repo": "https://github.com/dbcli/pgcli",
+      "category": "Database & SQL",
+      "description": "Postgres CLI with auto-completion and syntax highlighting, table formatting, and smart completions.",
+      "language": "Python",
+      "license": "BSD-3-Clause",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/dbcli/pgcli/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "mycli",
+      "repo": "https://github.com/dbcli/mycli",
+      "category": "Database & SQL",
+      "description": "A terminal client for MySQL, MariaDB, and Percona with auto-completion and syntax highlighting.",
+      "language": "Python",
+      "license": "BSD-3-Clause",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/dbcli/mycli/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "iredis",
+      "repo": "https://github.com/laixintao/iredis",
+      "category": "Database & SQL",
+      "description": "A terminal client for Redis with auto-completion and syntax highlighting, command suggestions, and hints.",
+      "language": "Python",
+      "license": "BSD-3-Clause",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/laixintao/iredis/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "litecli",
+      "repo": "https://github.com/dbcli/litecli",
+      "category": "Database & SQL",
+      "description": "CLI for SQLite databases with auto-completion and syntax highlighting.",
+      "language": "Python",
+      "license": "BSD-3-Clause",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/dbcli/litecli/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "stern",
+      "repo": "https://github.com/stern/stern",
+      "category": "DevOps & Containers",
+      "description": "Multi pod and container log tailing for Kubernetes with regex filtering and color-coded stream output.",
+      "language": "Go",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/stern/stern/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "kubectx",
+      "repo": "https://github.com/ahmetb/kubectx",
+      "category": "DevOps & Containers",
+      "description": "Faster way to switch between clusters and namespaces in kubectl with fuzzy search integration.",
+      "language": "Go",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/ahmetb/kubectx/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "helm",
+      "repo": "https://github.com/helm/helm",
+      "category": "DevOps & Containers",
+      "description": "The package manager for Kubernetes: define, install, and upgrade complex Kubernetes applications.",
+      "language": "Go",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/helm/helm/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "kustomize",
+      "repo": "https://github.com/kubernetes-sigs/kustomize",
+      "category": "DevOps & Containers",
+      "description": "Customization of Kubernetes YAML configurations without templates, using patch layers and overlays.",
+      "language": "Go",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/kubernetes-sigs/kustomize/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "minikube",
+      "repo": "https://github.com/kubernetes/minikube",
+      "category": "DevOps & Containers",
+      "description": "Run Kubernetes locally on Windows, macOS, and Linux with automated cluster provisioning.",
+      "language": "Go",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/kubernetes/minikube/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "kind",
+      "repo": "https://github.com/kubernetes-sigs/kind",
+      "category": "DevOps & Containers",
+      "description": "Kubernetes IN Docker: tool for running local Kubernetes clusters using Docker container nodes.",
+      "language": "Go",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/kubernetes-sigs/kind/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "dasel",
+      "repo": "https://github.com/TomWright/dasel",
+      "category": "Terminal & Search",
+      "description": "Query and update data structures using selectors from the command line across JSON, YAML, TOML, and XML.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/TomWright/dasel/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "zenith",
+      "repo": "https://github.com/bvaisvil/zenith",
+      "category": "OS & Hardware Utilities",
+      "description": "Terminal system monitor with zooming, historical graphs, process trees, and disk/network I/O tracking.",
+      "language": "Rust",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/bvaisvil/zenith/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "diskonaut",
+      "repo": "https://github.com/imsnif/diskonaut",
+      "category": "OS & Hardware Utilities",
+      "description": "Terminal visual disk space navigator that visually maps out filesystems to locate large directories.",
+      "language": "Rust",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/imsnif/diskonaut/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "ctop",
+      "repo": "https://github.com/bcicen/ctop",
+      "category": "DevOps & Containers",
+      "description": "Top-like interface for container metrics, real-time memory and CPU consumption for Docker and Kubernetes.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/bcicen/ctop/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "speedtest-cli",
+      "repo": "https://github.com/sivel/speedtest-cli",
+      "category": "HTTP & Network",
+      "description": "Command line interface for testing internet bandwidth using speedtest.net servers without flash/browser.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/sivel/speedtest-cli/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "git-sizer",
+      "repo": "https://github.com/github/git-sizer",
+      "category": "Git & Version Control",
+      "description": "Compute various size metrics for a Git repository to detect large files, bloated commits, or excessive branches.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/github/git-sizer/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "cz-cli",
+      "repo": "https://github.com/commitizen/cz-cli",
+      "category": "Git & Version Control",
+      "description": "The commitizen command line utility that prompts developers for conventional commit messages.",
+      "language": "JavaScript",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/commitizen/cz-cli/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "volta",
+      "repo": "https://github.com/volta-cli/volta",
+      "category": "Developer Tools",
+      "description": "The hassle-free JavaScript tool manager that automatically switches Node.js and package manager versions per project.",
+      "language": "Rust",
+      "license": "BSD-2-Clause",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/volta-cli/volta/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "q",
+      "repo": "https://github.com/harelba/q",
+      "category": "Terminal & Search",
+      "description": "Execute SQL-like queries directly on CSV, TSV, and tabular text files without loading into a database.",
+      "language": "Python",
+      "license": "GPL-3.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/harelba/q/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "lf",
+      "repo": "https://github.com/gokcehan/lf",
+      "category": "Terminal & Shell",
+      "description": "Terminal file manager written in Go, heavily inspired by ranger with faster startup and server/client architecture.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/gokcehan/lf/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "inxi",
+      "repo": "https://github.com/smxi/inxi",
+      "category": "OS & Hardware Utilities",
+      "description": "Full featured CLI system information tool designed for troubleshooting hardware and system configurations.",
+      "language": "Perl",
+      "license": "GPL-3.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/smxi/inxi/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
       "name": "AutoHeal-QA",
       "repo": "https://github.com/RitualDev-Lab/autoheal-qa",
       "category": "E2E & Playwright",
@@ -1648,6 +3408,426 @@
       "license": "LGPL-3.0",
       "featured": false,
       "goodFirstIssues": "https://github.com/SonarSource/sonarqube/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "Newman",
+      "repo": "https://github.com/postmanlabs/newman",
+      "category": "API Design & Debugging",
+      "description": "Postman's collection runner CLI allowing you to run and test Postman collections directly in CI/CD pipelines.",
+      "language": "JavaScript",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/postmanlabs/newman/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "PactumJS",
+      "repo": "https://github.com/pactumjs/pactum",
+      "category": "Contract & Schema Testing",
+      "description": "Next-generation REST API automation testing framework for all levels in a test pyramid with mock support.",
+      "language": "JavaScript",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/pactumjs/pactum/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "Karate Framework",
+      "repo": "https://github.com/karatelabs/karate",
+      "category": "Contract & Schema Testing",
+      "description": "Unified open-source test automation framework combining API testing, mocks, performance testing, and UI automation.",
+      "language": "Java",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/karatelabs/karate/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "RestAssured",
+      "repo": "https://github.com/rest-assured/rest-assured",
+      "category": "API Design & Debugging",
+      "description": "Java DSL for easy testing of REST services, bringing the simplicity of dynamic languages into Java.",
+      "language": "Java",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/rest-assured/rest-assured/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "Dredd",
+      "repo": "https://github.com/apiaryio/dredd",
+      "category": "Contract & Schema Testing",
+      "description": "Language-agnostic command-line tool for validating API description documents against backend implementation.",
+      "language": "JavaScript",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/apiaryio/dredd/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "Schemathesis",
+      "repo": "https://github.com/schemathesis/schemathesis",
+      "category": "Contract & Schema Testing",
+      "description": "Modern API testing tool that finds crashes and bugs using property-based testing and OpenAPI specifications.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/schemathesis/schemathesis/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "Puppeteer",
+      "repo": "https://github.com/puppeteer/puppeteer",
+      "category": "Browser & E2E Testing",
+      "description": "Google's Node.js library which provides a high-level API to control Chrome/Chromium over the DevTools Protocol.",
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "featured": true,
+      "goodFirstIssues": "https://github.com/puppeteer/puppeteer/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "Selenium",
+      "repo": "https://github.com/SeleniumHQ/selenium",
+      "category": "Browser & E2E Testing",
+      "description": "Industry-standard browser automation framework and ecosystem supporting multiple browsers and programming languages.",
+      "language": "Java / Python / JS",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/SeleniumHQ/selenium/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "Appium",
+      "repo": "https://github.com/appium/appium",
+      "category": "Browser & E2E Testing",
+      "description": "Cross-platform automation framework for native, hybrid, and mobile web apps on iOS, Android, and Windows.",
+      "language": "JavaScript",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/appium/appium/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "Maestro",
+      "repo": "https://github.com/mobile-dev-inc/maestro",
+      "category": "Browser & E2E Testing",
+      "description": "Painless mobile UI automation framework for Android and iOS with declarative YAML test flows.",
+      "language": "Kotlin",
+      "license": "Apache-2.0",
+      "featured": true,
+      "goodFirstIssues": "https://github.com/mobile-dev-inc/maestro/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "Detox",
+      "repo": "https://github.com/wix/Detox",
+      "category": "Browser & E2E Testing",
+      "description": "Gray box end-to-end testing and automation library for React Native mobile applications.",
+      "language": "JavaScript",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/wix/Detox/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "WebdriverIO",
+      "repo": "https://github.com/webdriverio/webdriverio",
+      "category": "Browser & E2E Testing",
+      "description": "Next-gen browser and mobile automation test framework for Node.js with native WebDriver and CDP support.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/webdriverio/webdriverio/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "Nightwatch.js",
+      "repo": "https://github.com/nightwatchjs/nightwatch",
+      "category": "Browser & E2E Testing",
+      "description": "Integrated end-to-end testing framework powered by Node.js and W3C Webdriver API.",
+      "language": "JavaScript",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/nightwatchjs/nightwatch/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "Gatling",
+      "repo": "https://github.com/gatling/gatling",
+      "category": "Performance & Load Testing",
+      "description": "High-performance load testing tool built on Akka and Netty with expressive DSL in Java, Kotlin, and Scala.",
+      "language": "Java / Scala",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/gatling/gatling/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "JMeter",
+      "repo": "https://github.com/apache/jmeter",
+      "category": "Performance & Load Testing",
+      "description": "Apache's pure Java desktop application designed to load test functional behavior and measure performance.",
+      "language": "Java",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/apache/jmeter/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "Wrk",
+      "repo": "https://github.com/wg/wrk",
+      "category": "Performance & Load Testing",
+      "description": "Modern HTTP benchmarking tool capable of generating significant load when run on a single multi-core CPU.",
+      "language": "C",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/wg/wrk/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "Hey",
+      "repo": "https://github.com/rakyll/hey",
+      "category": "Performance & Load Testing",
+      "description": "Tiny and fast command line load generator for web applications, a modern replacement for ApacheBench (ab).",
+      "language": "Go",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/rakyll/hey/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "Drill",
+      "repo": "https://github.com/fcsonline/drill",
+      "category": "Performance & Load Testing",
+      "description": "HTTP load testing tool written in Rust, inspired by Ansible syntax with support for benchmark assertions.",
+      "language": "Rust",
+      "license": "GPL-3.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/fcsonline/drill/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "Checkov",
+      "repo": "https://github.com/bridgecrewio/checkov",
+      "category": "Security & Vulnerability Scanners",
+      "description": "Static code analysis tool for infrastructure as code (Terraform, CloudFormation, Kubernetes, Dockerfile).",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/bridgecrewio/checkov/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "Hadolint",
+      "repo": "https://github.com/hadolint/hadolint",
+      "category": "Security & Vulnerability Scanners",
+      "description": "Smarter Dockerfile linter that helps you build best-practice Docker images by parsing AST rules.",
+      "language": "Haskell",
+      "license": "GPL-3.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/hadolint/hadolint/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "Bandit",
+      "repo": "https://github.com/PyCQA/bandit",
+      "category": "Security & Vulnerability Scanners",
+      "description": "Security linter designed to find common security issues in Python code using AST node analysis.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/PyCQA/bandit/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "Brakeman",
+      "repo": "https://github.com/presidentbeef/brakeman",
+      "category": "Security & Vulnerability Scanners",
+      "description": "Static analysis tool which checks Ruby on Rails applications for security vulnerabilities.",
+      "language": "Ruby",
+      "license": "CC-BY-NC-SA-4.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/presidentbeef/brakeman/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "Safety-CLI",
+      "repo": "https://github.com/pyupio/safety",
+      "category": "Security & Vulnerability Scanners",
+      "description": "Checks Python dependencies against known security vulnerabilities from CVE databases.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/pyupio/safety/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "OWASP ZAP",
+      "repo": "https://github.com/zaproxy/zaproxy",
+      "category": "Security & Vulnerability Scanners",
+      "description": "The world's most widely used web app scanner, free and open-source automated penetration testing tool.",
+      "language": "Java",
+      "license": "Apache-2.0",
+      "featured": true,
+      "goodFirstIssues": "https://github.com/zaproxy/zaproxy/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "Nuclei",
+      "repo": "https://github.com/projectdiscovery/nuclei",
+      "category": "Security & Vulnerability Scanners",
+      "description": "Fast and customizable vulnerability scanner based on simple YAML-based templates from ProjectDiscovery.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": true,
+      "goodFirstIssues": "https://github.com/projectdiscovery/nuclei/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "Pa11y",
+      "repo": "https://github.com/pa11y/pa11y",
+      "category": "Browser & E2E Testing",
+      "description": "Automated accessibility testing tool that runs via CLI or Node.js to uncover WCAG compliance errors.",
+      "language": "JavaScript",
+      "license": "LGPL-3.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/pa11y/pa11y/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "BackstopJS",
+      "repo": "https://github.com/garris/BackstopJS",
+      "category": "Browser & E2E Testing",
+      "description": "Catch visual regressions in web apps across responsive screen resolutions and DOM interactions.",
+      "language": "JavaScript",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/garris/BackstopJS/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "Pixelmatch",
+      "repo": "https://github.com/mapbox/pixelmatch",
+      "category": "Browser & E2E Testing",
+      "description": "The smallest, simplest and fastest JavaScript pixel-level image comparison library with anti-aliasing detection.",
+      "language": "JavaScript",
+      "license": "ISC",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/mapbox/pixelmatch/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "Loki",
+      "repo": "https://github.com/oblador/loki",
+      "category": "Browser & E2E Testing",
+      "description": "Visual regression testing for Storybook stories across Chrome and Android with Git diffs.",
+      "language": "JavaScript",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/oblador/loki/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "Lost-Pixel",
+      "repo": "https://github.com/lost-pixel/lost-pixel",
+      "category": "Browser & E2E Testing",
+      "description": "Open source visual regression testing engine for Storybook, Next.js, Ladle, and standalone websites.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/lost-pixel/lost-pixel/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "MockServer",
+      "repo": "https://github.com/mock-server/mockserver",
+      "category": "API Mocking & Virtualization",
+      "description": "Enables easy mocking of any system you integrate with via HTTP or HTTPS with expectations and verifications.",
+      "language": "Java",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/mock-server/mockserver/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "JSON-Server",
+      "repo": "https://github.com/typicode/json-server",
+      "category": "API Mocking & Virtualization",
+      "description": "Get a full fake REST API with zero coding in less than 30 seconds from a single JSON file.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "featured": true,
+      "goodFirstIssues": "https://github.com/typicode/json-server/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "Mimesis",
+      "repo": "https://github.com/lk-geimfari/mimesis",
+      "category": "Test Data Generation",
+      "description": "High-performance Python library for generating realistic synthetic data in a variety of locales.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/lk-geimfari/mimesis/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "Bogus",
+      "repo": "https://github.com/bchavez/Bogus",
+      "category": "Test Data Generation",
+      "description": "A simple and sane fake data generator for .NET languages, ported from Faker.js with fluent syntax.",
+      "language": "C#",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/bchavez/Bogus/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "Testcontainers",
+      "repo": "https://github.com/testcontainers/testcontainers-java",
+      "category": "Unit & Integration Testing",
+      "description": "Java library that supports JUnit tests, providing lightweight throwaway instances of Docker databases.",
+      "language": "Java",
+      "license": "MIT",
+      "featured": true,
+      "goodFirstIssues": "https://github.com/testcontainers/testcontainers-java/issues",
       "type": "testing",
       "section": "Testing & QA Reliability"
     },
@@ -2232,6 +4412,966 @@
       "section": "Free & Public APIs"
     },
     {
+      "name": "Httpbin.org",
+      "url": "https://httpbin.org",
+      "category": "Development & Testing",
+      "description": "HTTP client testing service with endpoints for inspecting headers, status codes, methods, and payloads.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "RequestBin",
+      "url": "https://requestbin.com",
+      "category": "Development & Testing",
+      "description": "Inspect HTTP requests and webhooks with real-time payload logging and debugging.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Postman Echo",
+      "url": "https://postman-echo.com",
+      "category": "Development & Testing",
+      "description": "Echo service to test REST clients, authorization headers, digest auth, and query parameters.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "JSONBin.io",
+      "url": "https://jsonbin.io",
+      "category": "Development & Testing",
+      "description": "Free cloud storage for JSON data, ideal for prototyping frontend applications with mock backends.",
+      "auth": "Free API Key",
+      "cors": "Yes",
+      "rateLimit": "10,000 req/mo",
+      "https": true,
+      "statusTags": [
+        "Rate-Limited",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Mocky.io",
+      "url": "https://designer.mocky.io",
+      "category": "Development & Testing",
+      "description": "Generate custom HTTP responses with custom bodies, headers, and status codes with zero backend setup.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Beeceptor",
+      "url": "https://beeceptor.com",
+      "category": "Development & Testing",
+      "description": "Create mock API endpoints in 5 seconds to test incoming webhooks, payloads, and simulated responses.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "50 req/day",
+      "https": true,
+      "statusTags": [
+        "Rate-Limited",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Binlist",
+      "url": "https://binlist.net",
+      "category": "Finance & Crypto",
+      "description": "Public lookup service for bank identification numbers (BIN/IIN) returning card brand, scheme, and country.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "10 req/min",
+      "https": true,
+      "statusTags": [
+        "Rate-Limited",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Hacker News Firebase API",
+      "url": "https://github.com/HackerNews/API",
+      "category": "News & Media",
+      "description": "Official Hacker News REST API powered by Firebase with real-time top stories, comments, and user profiles.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Dev.to API",
+      "url": "https://developers.forem.com/api/v1",
+      "category": "News & Media",
+      "description": "REST API for DEV Community (Forem) accessing articles, tag listings, user feeds, and comments.",
+      "auth": "Free API Key",
+      "cors": "Yes",
+      "rateLimit": "30 req/30sec",
+      "https": true,
+      "statusTags": [
+        "Rate-Limited",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Reddit JSON API",
+      "url": "https://www.reddit.com/dev/api",
+      "category": "News & Media",
+      "description": "Append .json to almost any public Reddit URL to get structured JSON post data and subreddit feeds.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "60 req/min",
+      "https": true,
+      "statusTags": [
+        "Rate-Limited",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Wikipedia REST API",
+      "url": "https://en.wikipedia.org/api/rest_v1",
+      "category": "Books & Literature",
+      "description": "Wikimedia official REST API providing page summaries, mobile views, image transforms, and search endpoints.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "200 req/sec",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Wikidata SPARQL API",
+      "url": "https://query.wikidata.org",
+      "category": "Development & Testing",
+      "description": "Query Wikidata's linked open database using SPARQL queries to extract structured facts and entities.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Archive.org API",
+      "url": "https://archive.org/help/aboutsearch.htm",
+      "category": "Books & Literature",
+      "description": "Search and retrieve millions of digitized books, movies, software, and audio files from the Internet Archive.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Geocode.xyz",
+      "url": "https://geocode.xyz/api",
+      "category": "Geocoding & IP",
+      "description": "Free batch forward and reverse geocoding API converting addresses to latitude/longitude coordinates.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "1 req/sec",
+      "https": true,
+      "statusTags": [
+        "Rate-Limited",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Sunrise-Sunset.org API",
+      "url": "https://sunrise-sunset.org/api",
+      "category": "Weather & Climate",
+      "description": "Free REST API providing sunrise, sunset, day length, and solar noon times for any coordinate.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "USGS Earthquake API",
+      "url": "https://earthquake.usgs.gov/fdsnws/event/1",
+      "category": "Science & Astronomy",
+      "description": "Real-time global seismic and earthquake event data from the United States Geological Survey in GeoJSON format.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "OpenSky Network API",
+      "url": "https://opensky-network.org/apidoc",
+      "category": "Travel & Transit",
+      "description": "Live air traffic surveillance data derived from global ADS-B receiver networks tracking flights in real time.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "100 req/day",
+      "https": true,
+      "statusTags": [
+        "Rate-Limited",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "TVMaze API",
+      "url": "https://www.tvmaze.com/api",
+      "category": "Games & Media",
+      "description": "TV show, episode guide, cast, and streaming schedule database accessible with zero authentication.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "20 req/10sec",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "The Movie Database (TMDB) API",
+      "url": "https://developer.themoviedb.org/reference/intro/getting-started",
+      "category": "Games & Media",
+      "description": "Community-built movie and TV database with metadata, posters, trailers, and cast biographies.",
+      "auth": "Free API Key",
+      "cors": "Yes",
+      "rateLimit": "50 req/sec",
+      "https": true,
+      "statusTags": [
+        "Rate-Limited",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "AniList GraphQL API",
+      "url": "https://anilist.gitbook.io/anilist-apiv2-docs",
+      "category": "Games & Media",
+      "description": "Comprehensive GraphQL API for discovering and tracking anime and manga with rich media relations.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "90 req/min",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Jikan API",
+      "url": "https://jikan.moe",
+      "category": "Games & Media",
+      "description": "Open-source REST API for MyAnimeList with caching, schedule endpoints, and character detail lookups.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "60 req/min",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Open Trivia DB",
+      "url": "https://opentdb.com/api_config.php",
+      "category": "Games & Media",
+      "description": "Community-driven database of multiple choice trivia questions across 24 categories and difficulty levels.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "1 req/5sec",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "xkcd JSON API",
+      "url": "https://xkcd.com/json.html",
+      "category": "Games & Media",
+      "description": "Direct JSON endpoint to fetch xkcd comics, titles, transcripts, and image URLs.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "PoetryDB",
+      "url": "https://poetrydb.org",
+      "category": "Books & Literature",
+      "description": "An internet database of public domain poetry accessible via clean REST endpoints.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Quotable API",
+      "url": "https://github.com/lukePeavey/quotable",
+      "category": "Books & Literature",
+      "description": "Open-source REST API for famous historical and literary quotes filterable by author and tag.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Advice Slip API",
+      "url": "https://api.adviceslip.com",
+      "category": "Animals & Fun",
+      "description": "Simple API providing random pieces of advice and motivational suggestions with zero auth.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Cataas (Cat as a service)",
+      "url": "https://cataas.com",
+      "category": "Animals & Fun",
+      "description": "REST API to fetch random cat pictures and GIFs, with custom text and filter overlays.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "RandomFox API",
+      "url": "https://randomfox.ca/floof",
+      "category": "Animals & Fun",
+      "description": "Simple JSON API returning adorable random fox photographs and image links.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Shibe.Online",
+      "url": "https://shibe.online",
+      "category": "Animals & Fun",
+      "description": "Public REST API providing curated photos of Shiba Inu dogs, birds, and cats.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "FishWatch API",
+      "url": "https://www.fishwatch.gov/developers",
+      "category": "Food & Health",
+      "description": "NOAA FishWatch database providing nutritional facts and sustainability data for seafood species.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "SpaceX REST API",
+      "url": "https://github.com/r-spacex/SpaceX-API",
+      "category": "Science & Astronomy",
+      "description": "Open-source REST and GraphQL API for historical rocket launches, Starlink satellites, and capsule telemetry.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Launch Library 2",
+      "url": "https://thespacedevs.com/llapi",
+      "category": "Science & Astronomy",
+      "description": "Comprehensive rocket launch calendar tracking orbital missions and astronauts worldwide.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "15 req/hr",
+      "https": true,
+      "statusTags": [
+        "Rate-Limited",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Solar System OpenData API",
+      "url": "https://api.le-systeme-solaire.net/en",
+      "category": "Science & Astronomy",
+      "description": "Structured database of physical and orbital characteristics for all planets, moons, and asteroids in our solar system.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "QR Code Generator API",
+      "url": "https://goqr.me/api",
+      "category": "Development & Testing",
+      "description": "Free HTTP microservice to generate customizable high-resolution QR codes on the fly in PNG and SVG.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "URLhaus Malware API",
+      "url": "https://urlhaus.abuse.ch/api",
+      "category": "Development & Testing",
+      "description": "Malicious URL feed and threat intelligence database for automated cybersecurity scanning.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Have I Been Pwned Pwned Passwords",
+      "url": "https://haveibeenpwned.com/API/v3#PwnedPasswords",
+      "category": "Development & Testing",
+      "description": "K-anonymity search API checking password hashes against billions of compromised breach credentials securely.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Coinpaprika API",
+      "url": "https://api.coinpaprika.com",
+      "category": "Finance & Crypto",
+      "description": "Cryptocurrency market data API delivering real-time quotes, global volume, and token metadata without keys.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "CryptoCompare API",
+      "url": "https://min-api.cryptocompare.com",
+      "category": "Finance & Crypto",
+      "description": "Enterprise-grade digital asset prices and OHLCV historical charting data with free developer tier.",
+      "auth": "Free API Key",
+      "cors": "Yes",
+      "rateLimit": "100,000 req/mo",
+      "https": true,
+      "statusTags": [
+        "Rate-Limited",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Open-Meteo Air Quality",
+      "url": "https://open-meteo.com/en/docs/air-quality-api",
+      "category": "Weather & Climate",
+      "description": "Hourly particulate matter (PM2.5, PM10), ozone, and European Air Quality Index forecasts with zero auth.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "10,000 req/day",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Open Library Covers API",
+      "url": "https://openlibrary.org/dev/docs/api/covers",
+      "category": "Books & Literature",
+      "description": "Retrieve book cover images and author portraits using ISBN, OCLC, LCCN, or OLID identifiers.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Meme Generator API",
+      "url": "https://api.imgflip.com/get_memes",
+      "category": "Media & Images",
+      "description": "Returns top 100 popular meme image templates with dimensions and blank background assets.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "JokeAPI",
+      "url": "https://jokeapi.dev",
+      "category": "Animals & Fun",
+      "description": "Clean REST API providing programming, dark, and pun jokes with customizable category filters.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "120 req/min",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Deck of Cards API",
+      "url": "https://deckofcardsapi.com",
+      "category": "Games & Media",
+      "description": "Simulate shuffling, dealing, and playing cards from standard 52-card decks with persistent sessions.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Open Source Licenses API",
+      "url": "https://api.github.com/licenses",
+      "category": "Development & Testing",
+      "description": "GitHub API endpoint returning metadata, permissions, and conditions for popular open source licenses.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "60 req/hr",
+      "https": true,
+      "statusTags": [
+        "Rate-Limited",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "REST Countries v3",
+      "url": "https://gitlab.com/amatos/rest-countries",
+      "category": "Geocoding & IP",
+      "description": "Detailed world geographic facts, borders, regional groupings, currencies, and languages in JSON.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Carbon Interface API",
+      "url": "https://www.carboninterface.com",
+      "category": "Science & Astronomy",
+      "description": "Estimates carbon emissions from flights, electricity consumption, and shipping logistics with free tier.",
+      "auth": "Free API Key",
+      "cors": "Yes",
+      "rateLimit": "200 req/mo",
+      "https": true,
+      "statusTags": [
+        "Rate-Limited",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Genderize API",
+      "url": "https://api.genderize.io",
+      "category": "Development & Testing",
+      "description": "Predict gender from first name with probability scores and count statistics.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "1,000 req/day",
+      "https": true,
+      "statusTags": [
+        "Rate-Limited",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Agify API",
+      "url": "https://api.agify.io",
+      "category": "Development & Testing",
+      "description": "Predict age from first names based on statistical demographic modeling.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "1,000 req/day",
+      "https": true,
+      "statusTags": [
+        "Rate-Limited",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Nationalize API",
+      "url": "https://api.nationalize.io",
+      "category": "Development & Testing",
+      "description": "Predict nationality from names returning top country codes and confidence scores.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "1,000 req/day",
+      "https": true,
+      "statusTags": [
+        "Rate-Limited",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Public APIs Index",
+      "url": "https://api.publicapis.org",
+      "category": "Development & Testing",
+      "description": "Queryable directory of hundreds of free public APIs categorized by topic and authentication requirements.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "ipinfo.io Lite",
+      "url": "https://ipinfo.io/developers",
+      "category": "Geocoding & IP",
+      "description": "Fast IP address geolocation, ASN company lookup, and hostname resolution with generous free tier.",
+      "auth": "Free API Key",
+      "cors": "Yes",
+      "rateLimit": "50,000 req/mo",
+      "https": true,
+      "statusTags": [
+        "Rate-Limited",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Big Data Cloud Free IP",
+      "url": "https://www.bigdatacloud.com/free-api",
+      "category": "Geocoding & IP",
+      "description": "Reverse geocoding and IP client info API without usage limits for client-side web apps.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Free Dictionary",
+      "url": "https://dictionaryapi.dev",
+      "category": "Books & Literature",
+      "description": "Free developer-friendly English vocabulary API providing word origins, examples, and synonyms.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Bored API Mirror",
+      "url": "https://boredapi.com",
+      "category": "Animals & Fun",
+      "description": "Random activity generator for boredom relief with accessibility, participants, and cost filters.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Corporate Bullshit Generator",
+      "url": "https://corporatebs-generator.sameerkumar.website",
+      "category": "Animals & Fun",
+      "description": "Random buzzword and corporate jargon phrase generator for humorous placeholders.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Evil Insult Generator",
+      "url": "https://evilinsult.com/api",
+      "category": "Animals & Fun",
+      "description": "Humorous and sharp insults generation API for games and bot development.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Geek Jokes API",
+      "url": "https://geek-jokes.sameerkumar.website/api",
+      "category": "Animals & Fun",
+      "description": "Curated tech jokes, programming puns, and geek culture humor returned as clean JSON.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Kanye Rest",
+      "url": "https://kanye.rest",
+      "category": "Animals & Fun",
+      "description": "Free REST API delivering memorable quotes from Kanye West as JSON with zero setup.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Tronald Dump API",
+      "url": "https://www.tronalddump.io",
+      "category": "Animals & Fun",
+      "description": "Smart archive and quote retriever with meme tags and original source links.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "FoxPics",
+      "url": "https://randomfox.ca",
+      "category": "Animals & Fun",
+      "description": "Curated collection of high-resolution wild fox photos with zero rate limit.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "Unlimited",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
       "name": "Supabase",
       "url": "https://supabase.com",
       "category": "Databases & BaaS",
@@ -2622,6 +5762,526 @@
       "section": "Free Cloud & Developer Tiers"
     },
     {
+      "name": "Oracle Cloud Always Free",
+      "url": "https://www.oracle.com/cloud/free",
+      "category": "Cloud Hosting & Compute",
+      "description": "Generous always-free cloud infrastructure: 4 Arm Ampere A1 cores, 24GB RAM, and 200GB block storage.",
+      "freeTier": "4 OCPU, 24GB RAM Arm compute, 2 AMD micro VMs, 200GB storage",
+      "statusTags": [
+        "Requires Credit Card to Verify",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "Deno Deploy",
+      "url": "https://deno.com/deploy",
+      "category": "Serverless Compute & Edge",
+      "description": "Globally distributed system that runs JavaScript, TypeScript, and WebAssembly at the edge with zero cold starts.",
+      "freeTier": "1,000,000 requests/month, 100 GiB outbound transfer",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "Vercel",
+      "url": "https://vercel.com",
+      "category": "Cloud Hosting & PaaS",
+      "description": "Frontend cloud platform providing seamless Git deployments, edge middleware, and serverless functions.",
+      "freeTier": "Free Hobby Plan: 100GB bandwidth, automated CI/CD previews, serverless functions",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "Netlify",
+      "url": "https://www.netlify.com",
+      "category": "Cloud Hosting & PaaS",
+      "description": "Platform for deploying modern web projects with automated Git workflows, serverless functions, and form handling.",
+      "freeTier": "Free Starter Tier: 100GB bandwidth/mo, 300 build minutes/mo",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "Cloudflare Pages",
+      "url": "https://pages.cloudflare.com",
+      "category": "Cloud Hosting & PaaS",
+      "description": "Fast, secure, and free Jamstack platform for frontend developers running directly on Cloudflare edge.",
+      "freeTier": "Unlimited sites, unlimited requests, 500 builds per month",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "GitHub Pages",
+      "url": "https://pages.github.com",
+      "category": "Cloud Hosting & PaaS",
+      "description": "Websites for you and your projects, hosted directly from your GitHub repository with automatic SSL.",
+      "freeTier": "100% Free with 1GB repository size limit and 100GB bandwidth/mo",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "GitLab Pages",
+      "url": "https://docs.gitlab.com/ee/user/project/pages",
+      "category": "Cloud Hosting & PaaS",
+      "description": "Publish static websites directly from any repository on GitLab with integrated CI/CD pipelines.",
+      "freeTier": "100% Free with custom domain support and Let's Encrypt SSL",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "Glitch",
+      "url": "https://glitch.com",
+      "category": "Cloud Hosting & PaaS",
+      "description": "Friendly community and instant web development environment where anyone can build, remix, and host full-stack apps.",
+      "freeTier": "Free public hosting with auto-sleep after inactivity",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "Aiven Free Tier",
+      "url": "https://aiven.io/free-plans",
+      "category": "Databases & BaaS",
+      "description": "Managed cloud data platform offering permanent free tiers for PostgreSQL, MySQL, and OpenSearch.",
+      "freeTier": "Free tier PostgreSQL / MySQL single-node with 1GB RAM and 5GB storage",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "MongoDB Atlas",
+      "url": "https://www.mongodb.com/products/platform/atlas-database",
+      "category": "Databases & BaaS",
+      "description": "Fully managed document database service with automated scaling, backups, and built-in security.",
+      "freeTier": "Shared M0 cluster with 512MB storage and shared RAM permanently free",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "Redis Cloud",
+      "url": "https://redis.io/cloud",
+      "category": "Databases & BaaS",
+      "description": "High-performance in-memory key-value database managed on AWS, GCP, and Azure.",
+      "freeTier": "Free 30MB database with high throughput and basic persistence",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "CockroachDB Serverless",
+      "url": "https://www.cockroachlabs.com/pricing",
+      "category": "Databases & BaaS",
+      "description": "Distributed, multi-region SQL database that scales automatically and ensures serializable ACID consistency.",
+      "freeTier": "Free tier with 10GB storage and 50M Request Units per month",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "TiDB Serverless",
+      "url": "https://www.pingcap.com/tidb-serverless",
+      "category": "Databases & BaaS",
+      "description": "Distributed, MySQL-compatible Hybrid Transactional/Analytical Processing (HTAP) database with serverless auto-scaling.",
+      "freeTier": "Free tier with 5GB row storage, 5GB columnar storage, and 50M RU/mo",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "Backblaze B2",
+      "url": "https://www.backblaze.com/cloud-storage",
+      "category": "Storage & Buckets",
+      "description": "S3-compatible cloud object storage with ultra-low pricing and free bandwidth partnerships with Cloudflare.",
+      "freeTier": "10GB permanent free storage and 1GB/day free download bandwidth",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "Scaleway Stardust & Object Storage",
+      "url": "https://www.scaleway.com/en/pricing",
+      "category": "Storage & Buckets",
+      "description": "European cloud provider offering multi-AZ S3-compatible object storage with generous free allowances.",
+      "freeTier": "75GB free Object Storage per month permanently",
+      "statusTags": [
+        "Requires Credit Card to Verify",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "Keycloak",
+      "url": "https://www.keycloak.org",
+      "category": "Authentication & Security",
+      "description": "Open source identity and access management solution for modern applications and services, supporting OpenID Connect and SAML.",
+      "freeTier": "100% Free & Open Source Apache-2.0, self-hostable",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "Authentik",
+      "url": "https://goauthentik.io",
+      "category": "Authentication & Security",
+      "description": "Open-source Identity Provider focused on flexibility and versatility with built-in user directory, MFA, and SSO.",
+      "freeTier": "100% Free & Open Source GNU GPLv3",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "Authelia",
+      "url": "https://www.authelia.com",
+      "category": "Authentication & Security",
+      "description": "Open-source authentication and authorization server providing 2-factor authentication and single sign-on for reverse proxies.",
+      "freeTier": "100% Free & Open Source Apache-2.0",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "Zitadel",
+      "url": "https://zitadel.com",
+      "category": "Authentication & Security",
+      "description": "Open source identity infrastructure with turnkey authentication, audit logs, multi-tenancy, and passkeys.",
+      "freeTier": "100% Free Open Source self-hosted; Free cloud tier with 25k requests/mo",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "FusionAuth",
+      "url": "https://fusionauth.io",
+      "category": "Authentication & Security",
+      "description": "Complete customer identity and access management system with fast setup and flexible user management APIs.",
+      "freeTier": "Free Community Edition with unlimited users and basic MFA",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "Casdoor",
+      "url": "https://casdoor.org",
+      "category": "Authentication & Security",
+      "description": "UI-first open-source Identity and Access Management (IAM) / Single-Sign-On (SSO) platform with web UI.",
+      "freeTier": "100% Free & Open Source Apache-2.0",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "Ory Kratos",
+      "url": "https://www.ory.sh/kratos",
+      "category": "Authentication & Security",
+      "description": "Cloud-native user management system and identity provider implementing login, registration, MFA, and social auth.",
+      "freeTier": "100% Free & Open Source Apache-2.0",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "Portainer Community",
+      "url": "https://www.portainer.io",
+      "category": "Self-Hosted Cloud & PaaS",
+      "description": "Universal container management platform for Docker, Docker Swarm, and Kubernetes with clean web GUI.",
+      "freeTier": "100% Free & Open Source Community Edition",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "Nginx Proxy Manager",
+      "url": "https://nginxproxymanager.com",
+      "category": "Self-Hosted Cloud & PaaS",
+      "description": "Expose your web services easily and securely with automatic Let's Encrypt SSL certificates and web administration.",
+      "freeTier": "100% Free & Open Source MIT",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "Traefik Community",
+      "url": "https://traefik.io/traefik",
+      "category": "Self-Hosted Cloud & PaaS",
+      "description": "The leading cloud-native application proxy that integrates with your existing cluster and configures itself automatically.",
+      "freeTier": "100% Free & Open Source Apache-2.0",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "Caddy Web Server",
+      "url": "https://caddyserver.com",
+      "category": "Self-Hosted Cloud & PaaS",
+      "description": "Enterprise-ready, open source web server with automatic HTTPS written in pure Go.",
+      "freeTier": "100% Free & Open Source Apache-2.0",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "CasaOS",
+      "url": "https://casaos.io",
+      "category": "Self-Hosted Cloud & PaaS",
+      "description": "Simple, personal cloud OS designed for home servers and self-hosting Docker apps with an elegant UI.",
+      "freeTier": "100% Free & Open Source Apache-2.0",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "Umbrel",
+      "url": "https://umbrel.com",
+      "category": "Self-Hosted Cloud & PaaS",
+      "description": "The ultimate personal home cloud server OS that lets you self-host Bitcoin, AI models, and nextcloud apps with 1 click.",
+      "freeTier": "100% Free & Open Source",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "YunoHost",
+      "url": "https://yunohost.org",
+      "category": "Self-Hosted Cloud & PaaS",
+      "description": "Operating system aiming to simplify as much as possible the administration of a self-hosted server.",
+      "freeTier": "100% Free & Open Source GPL-3.0",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "RabbitMQ",
+      "url": "https://www.rabbitmq.com",
+      "category": "Messaging & Queues",
+      "description": "Most widely deployed open source message broker supporting AMQP, MQTT, and STOMP protocols.",
+      "freeTier": "100% Free & Open Source MPL-2.0",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "Eclipse Mosquitto",
+      "url": "https://mosquitto.org",
+      "category": "Messaging & Queues",
+      "description": "Lightweight open-source message broker that implements the MQTT protocol versions 5.0, 3.1.1 and 3.1.",
+      "freeTier": "100% Free & Open Source EPL-2.0",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "EMQX",
+      "url": "https://www.emqx.com/en",
+      "category": "Messaging & Queues",
+      "description": "The world's most scalable open-source MQTT platform for connected IoT, automotive, and industrial devices.",
+      "freeTier": "100% Free Open Source Community Edition; Free cloud tier",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "Brevo (formerly Sendinblue)",
+      "url": "https://www.brevo.com/pricing",
+      "category": "Transactional Email",
+      "description": "Email marketing and transactional messaging platform with reliable delivery and webhook tracking.",
+      "freeTier": "300 emails/day permanently free with unlimited contacts",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "SendGrid Free Tier",
+      "url": "https://sendgrid.com/pricing",
+      "category": "Transactional Email",
+      "description": "Cloud-based email infrastructure platform with robust delivery APIs, template engines, and analytics.",
+      "freeTier": "100 emails/day permanently free",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "Mailgun Free Foundation",
+      "url": "https://www.mailgun.com/pricing",
+      "category": "Transactional Email",
+      "description": "Developer-first email delivery platform offering inbound routing, SPF/DKIM verification, and logs.",
+      "freeTier": "5,000 free emails for 1 month, then low pay-as-you-grow",
+      "statusTags": [
+        "Requires Credit Card to Verify",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "Plausible Analytics Self-Hosted",
+      "url": "https://plausible.io/self-hosted",
+      "category": "Observability & Analytics",
+      "description": "Lightweight and open-source Google Analytics alternative with zero cookies and full GDPR compliance.",
+      "freeTier": "100% Free & Open Source AGPLv3 for self-hosters",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "Grafana OSS",
+      "url": "https://grafana.com/oss/grafana",
+      "category": "Observability & Analytics",
+      "description": "The open and composable observability and data visualization platform with rich dashboards and alerts.",
+      "freeTier": "100% Free & Open Source AGPLv3 self-hosted",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "Prometheus",
+      "url": "https://prometheus.io",
+      "category": "Observability & Analytics",
+      "description": "An open-source monitoring system with a dimensional data model, flexible query language, and alerting.",
+      "freeTier": "100% Free & Open Source Apache-2.0",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "Uptime Kuma",
+      "url": "https://github.com/louislam/uptime-kuma",
+      "category": "Observability & Analytics",
+      "description": "Self-hosted monitoring tool like Uptime Robot with modern dashboard and notifications across 90+ services.",
+      "freeTier": "100% Free & Open Source MIT",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "Dragonfly",
+      "url": "https://www.dragonflydb.io",
+      "category": "Databases & BaaS",
+      "description": "A modern, highly performant replacement for Redis and Memcached with 25x throughput and multi-threaded core.",
+      "freeTier": "100% Free & Open Source BSL",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
       "name": "JetBrains Free Open Source License",
       "url": "https://www.jetbrains.com/community/opensource",
       "category": "Developer Tools & IDEs",
@@ -2808,6 +6468,116 @@
       "description": "Free Pro sponsorship with elevated edge compute limits and team features for popular open-source projects.",
       "perkValue": "Free Vercel Pro Plan sponsorship",
       "eligibility": "Public open source projects with active community adoption and OSI license",
+      "type": "perks",
+      "section": "Developer Discounts & Startup Perks"
+    },
+    {
+      "name": "GitLab for Open Source",
+      "url": "https://about.gitlab.com/solutions/open-source/program",
+      "category": "Open Source Sponsorship",
+      "description": "Free top-tier GitLab Ultimate with 50,000 CI build minutes per month and security scanning for public open-source projects.",
+      "perkValue": "GitLab Ultimate subscription ($1,188/user/year value) + 50k CI mins",
+      "eligibility": "Public open-source projects with OSI-approved licenses",
+      "type": "perks",
+      "section": "Developer Discounts & Startup Perks"
+    },
+    {
+      "name": "Atlassian Open Source Project Licensing",
+      "url": "https://www.atlassian.com/software/views/open-source-license-request",
+      "category": "Open Source Sponsorship",
+      "description": "Free cloud subscriptions for Jira Software, Confluence, and Jira Service Management for qualifying open source initiatives.",
+      "perkValue": "Free Jira & Confluence Cloud licenses",
+      "eligibility": "Active open-source projects with public repositories and standard licenses",
+      "type": "perks",
+      "section": "Developer Discounts & Startup Perks"
+    },
+    {
+      "name": "JetBrains Student Pack",
+      "url": "https://www.jetbrains.com/community/education#students",
+      "category": "Student & Education",
+      "description": "Free individual annual subscription to all JetBrains IDEs (IntelliJ IDEA, WebStorm, PyCharm, CLion, Rider) for students.",
+      "perkValue": "$289/year in professional IDE licenses",
+      "eligibility": "Students and teachers with valid educational email address",
+      "type": "perks",
+      "section": "Developer Discounts & Startup Perks"
+    },
+    {
+      "name": "Notion for Education",
+      "url": "https://www.notion.so/product/notion-for-education",
+      "category": "Student & Education",
+      "description": "Free Personal Pro plan for students and educators with unlimited file uploads, 30-day page history, and collaborative workspaces.",
+      "perkValue": "$96/year Personal Pro subscription",
+      "eligibility": "Students and teachers with school email address",
+      "type": "perks",
+      "section": "Developer Discounts & Startup Perks"
+    },
+    {
+      "name": "Twilio Startups Program",
+      "url": "https://www.twilio.com/en-us/startups",
+      "category": "Cloud Credits & Developer Packs",
+      "description": "Up to $500 in Twilio communication API credits, sendgrid volume, and technical mentorship for early-stage software companies.",
+      "perkValue": "Up to $500 in Twilio credits + SendGrid boosts",
+      "eligibility": "Early-stage startups building customer communications",
+      "type": "perks",
+      "section": "Developer Discounts & Startup Perks"
+    },
+    {
+      "name": "Figma for Education",
+      "url": "https://www.figma.com/education",
+      "category": "Student & Education",
+      "description": "Free Figma and FigJam Professional tier for students, teachers, and accredited design classrooms.",
+      "perkValue": "$144/year per editor Professional tier",
+      "eligibility": "Verified students and faculty in recognized educational institutions",
+      "type": "perks",
+      "section": "Developer Discounts & Startup Perks"
+    },
+    {
+      "name": "MongoDB for Startups",
+      "url": "https://www.mongodb.com/startups",
+      "category": "Cloud Credits & Developer Packs",
+      "description": "Up to $5,000 in MongoDB Atlas cloud database credits, dedicated technical advisory, and co-marketing opportunities.",
+      "perkValue": "$500 to $5,000 in MongoDB Atlas credits",
+      "eligibility": "Startups from ideation to Series A stage",
+      "type": "perks",
+      "section": "Developer Discounts & Startup Perks"
+    },
+    {
+      "name": "Codecov for Open Source",
+      "url": "https://about.codecov.io/pricing",
+      "category": "Open Source Sponsorship",
+      "description": "Free unlimited code coverage reports and PR quality checks for public GitHub and GitLab repositories.",
+      "perkValue": "Free Pro tier code coverage reports",
+      "eligibility": "Public open-source projects with open GitHub repositories",
+      "type": "perks",
+      "section": "Developer Discounts & Startup Perks"
+    },
+    {
+      "name": "Crowdin for Open Source",
+      "url": "https://crowdin.com/page/open-source-project-setup",
+      "category": "Open Source Sponsorship",
+      "description": "Free localization and translation management platform for open-source software projects and global documentation.",
+      "perkValue": "Free Crowdin Enterprise translation suite",
+      "eligibility": "Non-commercial open-source projects with public repositories",
+      "type": "perks",
+      "section": "Developer Discounts & Startup Perks"
+    },
+    {
+      "name": "Termius for Students",
+      "url": "https://termius.com/education",
+      "category": "Student & Education",
+      "description": "Free Termius Pro SSH client for students with encrypted configuration sync, port forwarding, and SFTP browser.",
+      "perkValue": "$120/year Pro subscription",
+      "eligibility": "Students verified through GitHub Student Developer Pack",
+      "type": "perks",
+      "section": "Developer Discounts & Startup Perks"
+    },
+    {
+      "name": "Snyk for Open Source",
+      "url": "https://snyk.io/plans",
+      "category": "Open Source Sponsorship",
+      "description": "Free unlimited automated security scans for open source repositories, finding known vulnerabilities in code and packages.",
+      "perkValue": "Free unlimited vulnerability scanning",
+      "eligibility": "Public open-source repositories",
       "type": "perks",
       "section": "Developer Discounts & Startup Perks"
     },
@@ -3090,6 +6860,431 @@
       "section": "One-Click Deployment Boilerplates"
     },
     {
+      "name": "Next.js Enterprise Boilerplate",
+      "repo": "https://github.com/Blazity/next-enterprise",
+      "category": "Full-Stack Web Starter",
+      "description": "Enterprise-grade Next.js boilerplate featuring Tailwind CSS, Radix UI, TypeScript, Jest, and Vitest.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "platform": "Next.js / Vercel",
+      "deployUrl": "https://next-enterprise.vercel.app",
+      "freeTierCost": "100% Free Open Source",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "boilerplate",
+      "section": "One-Click Deployment Boilerplates"
+    },
+    {
+      "name": "SaaS Boilerplate by BoxyHQ",
+      "repo": "https://github.com/boxyhq/saas-starter-kit",
+      "category": "SaaS & Dashboard Starters",
+      "description": "Open-source enterprise SaaS template with Next.js, Tailwind CSS, SAML SSO, Directory Sync, and multi-tenancy.",
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "platform": "Next.js / Docker",
+      "deployUrl": "https://github.com/boxyhq/saas-starter-kit",
+      "freeTierCost": "100% Free Open Source",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "boilerplate",
+      "section": "One-Click Deployment Boilerplates"
+    },
+    {
+      "name": "Turborepo Starter",
+      "repo": "https://github.com/vercel/turborepo",
+      "category": "Frontend Architecture Template",
+      "description": "High-performance monorepo starter kit for JavaScript and TypeScript with remote caching and parallel pipelines.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "platform": "Node.js / Monorepo",
+      "deployUrl": "https://turbo.build",
+      "freeTierCost": "100% Free Open Source",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "boilerplate",
+      "section": "One-Click Deployment Boilerplates"
+    },
+    {
+      "name": "Payload CMS Starter",
+      "repo": "https://github.com/payloadcms/payload",
+      "category": "Full-Stack Web Starter",
+      "description": "The modern headless CMS and application framework built directly inside Next.js with TypeScript and SQLite/Postgres.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "platform": "Next.js / Node.js",
+      "deployUrl": "https://payloadcms.com",
+      "freeTierCost": "100% Free Open Source",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "boilerplate",
+      "section": "One-Click Deployment Boilerplates"
+    },
+    {
+      "name": "Nuxt 3 Starter",
+      "repo": "https://github.com/nuxt/starter",
+      "category": "Full-Stack Web Starter",
+      "description": "Official template for creating full-stack Vue 3 and Nuxt applications with hybrid rendering and nitro engine.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "platform": "Nuxt / Node.js",
+      "deployUrl": "https://nuxt.com",
+      "freeTierCost": "100% Free Open Source",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "boilerplate",
+      "section": "One-Click Deployment Boilerplates"
+    },
+    {
+      "name": "Vitesse",
+      "repo": "https://github.com/antfu/vitesse",
+      "category": "Frontend Architecture Template",
+      "description": "Opinionated Vite starter template with file-based routing, auto-imported components, UnoCSS, and dark mode.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "platform": "Vite / Vue 3",
+      "deployUrl": "https://vitesse.netlify.app",
+      "freeTierCost": "100% Free Open Source",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "boilerplate",
+      "section": "One-Click Deployment Boilerplates"
+    },
+    {
+      "name": "Vitesse WebExt",
+      "repo": "https://github.com/antfu/vitesse-webext",
+      "category": "Frontend Architecture Template",
+      "description": "Cross-browser web extension starter template powered by Vite with Manifest V3 and Vue components.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "platform": "Browser Extension / Vite",
+      "deployUrl": "https://github.com/antfu/vitesse-webext",
+      "freeTierCost": "100% Free Open Source",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "boilerplate",
+      "section": "One-Click Deployment Boilerplates"
+    },
+    {
+      "name": "Expo Starter Kit",
+      "repo": "https://github.com/expo/examples",
+      "category": "Mobile & Cross-Platform",
+      "description": "Universal React Native application template running across iOS, Android, and web with file-based routing.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "platform": "React Native / Expo",
+      "deployUrl": "https://expo.dev",
+      "freeTierCost": "100% Free Open Source",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "boilerplate",
+      "section": "One-Click Deployment Boilerplates"
+    },
+    {
+      "name": "Tauri App Starter",
+      "repo": "https://github.com/tauri-apps/tauri",
+      "category": "Mobile & Cross-Platform",
+      "description": "Build tiny, blazingly fast binaries for all major desktop and mobile platforms using web frontend and Rust backend.",
+      "language": "Rust / TypeScript",
+      "license": "Apache-2.0 / MIT",
+      "platform": "Tauri / Desktop",
+      "deployUrl": "https://tauri.app",
+      "freeTierCost": "100% Free Open Source",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "boilerplate",
+      "section": "One-Click Deployment Boilerplates"
+    },
+    {
+      "name": "Electron React Boilerplate",
+      "repo": "https://github.com/electron-react-boilerplate/electron-react-boilerplate",
+      "category": "Mobile & Cross-Platform",
+      "description": "Scalable desktop application template using Electron, React, TypeScript, and Webpack with hot reload.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "platform": "Electron / Desktop",
+      "deployUrl": "https://electron-react-boilerplate.js.org",
+      "freeTierCost": "100% Free Open Source",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "boilerplate",
+      "section": "One-Click Deployment Boilerplates"
+    },
+    {
+      "name": "Flutter Starter Kit",
+      "repo": "https://github.com/flutter/samples",
+      "category": "Mobile & Cross-Platform",
+      "description": "Official multi-platform starter templates from Google Flutter covering state management and Material 3.",
+      "language": "Dart",
+      "license": "BSD-3-Clause",
+      "platform": "Flutter / Mobile",
+      "deployUrl": "https://flutter.dev",
+      "freeTierCost": "100% Free Open Source",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "boilerplate",
+      "section": "One-Click Deployment Boilerplates"
+    },
+    {
+      "name": "NestJS Starter",
+      "repo": "https://github.com/nestjs/typescript-starter",
+      "category": "Backend & Microservices",
+      "description": "Progressive Node.js starter template for building efficient, reliable, and scalable enterprise server applications.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "platform": "NestJS / Node.js",
+      "deployUrl": "https://nestjs.com",
+      "freeTierCost": "100% Free Open Source",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "boilerplate",
+      "section": "One-Click Deployment Boilerplates"
+    },
+    {
+      "name": "FastAPI Clean Architecture",
+      "repo": "https://github.com/zhanymkanov/fastapi-best-practices",
+      "category": "Backend & Microservices",
+      "description": "Clean architecture boilerplate for FastAPI apps with asynchronous database sessions and dependency injection.",
+      "language": "Python",
+      "license": "MIT",
+      "platform": "FastAPI / Python",
+      "deployUrl": "https://fastapi.tiangolo.com",
+      "freeTierCost": "100% Free Open Source",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "boilerplate",
+      "section": "One-Click Deployment Boilerplates"
+    },
+    {
+      "name": "Django Boilerplate (Wemake)",
+      "repo": "https://github.com/wemake-services/wemake-django-template",
+      "category": "Backend & Microservices",
+      "description": "Bleeding edge, secure, and production-ready Django template with strict linting, Docker, and Celery support.",
+      "language": "Python",
+      "license": "MIT",
+      "platform": "Django / Python",
+      "deployUrl": "https://github.com/wemake-services/wemake-django-template",
+      "freeTierCost": "100% Free Open Source",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "boilerplate",
+      "section": "One-Click Deployment Boilerplates"
+    },
+    {
+      "name": "Go Clean Architecture Template",
+      "repo": "https://github.com/evrone/go-clean-template",
+      "category": "Backend & Microservices",
+      "description": "Clean Architecture template for Golang services with PostgreSQL, Docker Compose, and Swagger docs.",
+      "language": "Go",
+      "license": "MIT",
+      "platform": "Go / Microservices",
+      "deployUrl": "https://github.com/evrone/go-clean-template",
+      "freeTierCost": "100% Free Open Source",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "boilerplate",
+      "section": "One-Click Deployment Boilerplates"
+    },
+    {
+      "name": "Rust Axum Starter",
+      "repo": "https://github.com/tokio-rs/axum",
+      "category": "Backend & Microservices",
+      "description": "Ergonomic and modular web framework built with Tokio, Tower, and Hyper for blazing fast microservices.",
+      "language": "Rust",
+      "license": "MIT",
+      "platform": "Rust / Tokio",
+      "deployUrl": "https://github.com/tokio-rs/axum",
+      "freeTierCost": "100% Free Open Source",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "boilerplate",
+      "section": "One-Click Deployment Boilerplates"
+    },
+    {
+      "name": "Spring Boot Initializr Template",
+      "repo": "https://github.com/spring-projects/spring-boot",
+      "category": "Backend & Microservices",
+      "description": "Modern enterprise backend boilerplate with embedded Tomcat, Spring Data JPA, and actuator monitoring.",
+      "language": "Java",
+      "license": "Apache-2.0",
+      "platform": "Spring Boot / JVM",
+      "deployUrl": "https://start.spring.io",
+      "freeTierCost": "100% Free Open Source",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "boilerplate",
+      "section": "One-Click Deployment Boilerplates"
+    },
+    {
+      "name": "AdonisJS Starter",
+      "repo": "https://github.com/adonisjs/core",
+      "category": "Full-Stack Web Starter",
+      "description": "Fully featured Node.js web framework with built-in ORM, auth, routing, and template engine, Laravel-like feel.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "platform": "AdonisJS / Node.js",
+      "deployUrl": "https://adonisjs.com",
+      "freeTierCost": "100% Free Open Source",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "boilerplate",
+      "section": "One-Click Deployment Boilerplates"
+    },
+    {
+      "name": "Vercel AI SDK Starter",
+      "repo": "https://github.com/vercel/ai-chatbot",
+      "category": "AI & Full-Stack Starters",
+      "description": "Full-featured, hackable Next.js AI chatbot built by Vercel using the AI SDK, Shadcn UI, and Neon Postgres.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "platform": "Next.js / AI SDK",
+      "deployUrl": "https://chat.vercel.ai",
+      "freeTierCost": "100% Free Open Source",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "boilerplate",
+      "section": "One-Click Deployment Boilerplates"
+    },
+    {
+      "name": "LangChain Next.js Template",
+      "repo": "https://github.com/langchain-ai/langchain-nextjs-template",
+      "category": "AI & Full-Stack Starters",
+      "description": "Starter template for building full-stack LangChain applications with Next.js App Router and streaming responses.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "platform": "Next.js / LangChain",
+      "deployUrl": "https://langchain-nextjs-template.vercel.app",
+      "freeTierCost": "100% Free Open Source",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "boilerplate",
+      "section": "One-Click Deployment Boilerplates"
+    },
+    {
+      "name": "Streamlit AI Dashboard Starter",
+      "repo": "https://github.com/streamlit/streamlit",
+      "category": "AI & Full-Stack Starters",
+      "description": "Turn Python data scripts into shareable web applications in minutes with built-in charting and interactive widgets.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "platform": "Streamlit / Python",
+      "deployUrl": "https://streamlit.io",
+      "freeTierCost": "100% Free Open Source",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "boilerplate",
+      "section": "One-Click Deployment Boilerplates"
+    },
+    {
+      "name": "Hono Starter",
+      "repo": "https://github.com/honojs/hono",
+      "category": "Backend & Microservices",
+      "description": "Fast, lightweight, web-standards based web framework for Cloudflare Workers, Fastly, Deno, Bun, and Node.js.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "platform": "Hono / Multi-Runtime",
+      "deployUrl": "https://hono.dev",
+      "freeTierCost": "100% Free Open Source",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "boilerplate",
+      "section": "One-Click Deployment Boilerplates"
+    },
+    {
+      "name": "Elysia Starter",
+      "repo": "https://github.com/elysiajs/elysia",
+      "category": "Backend & Microservices",
+      "description": "Ergonomic TypeScript web framework for Bun with end-to-end type safety and TypeBox validation.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "platform": "Elysia / Bun",
+      "deployUrl": "https://elysiajs.com",
+      "freeTierCost": "100% Free Open Source",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "boilerplate",
+      "section": "One-Click Deployment Boilerplates"
+    },
+    {
+      "name": "Fastify Starter",
+      "repo": "https://github.com/fastify/fastify",
+      "category": "Backend & Microservices",
+      "description": "Fast and low overhead web framework for Node.js with built-in schema-based JSON serialization.",
+      "language": "JavaScript / TypeScript",
+      "license": "MIT",
+      "platform": "Fastify / Node.js",
+      "deployUrl": "https://fastify.dev",
+      "freeTierCost": "100% Free Open Source",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "boilerplate",
+      "section": "One-Click Deployment Boilerplates"
+    },
+    {
+      "name": "Astro Blog Starter",
+      "repo": "https://github.com/withastro/astro",
+      "category": "Static Site & Documentation",
+      "description": "Content-driven website template with island architecture, zero JavaScript by default, and Markdown/MDX.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "platform": "Astro / Web",
+      "deployUrl": "https://astro.build",
+      "freeTierCost": "100% Free Open Source",
+      "statusTags": [
+        "No Card Required",
+        "Active Uptime 100%"
+      ],
+      "type": "boilerplate",
+      "section": "One-Click Deployment Boilerplates"
+    },
+    {
       "name": "Open Source Ideas",
       "repo": "https://github.com/open-source-ideas/ideas",
       "category": "Open Source Discovery",
@@ -3116,6 +7311,116 @@
         "100% Offline-Friendly",
         "No Card Required"
       ],
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "freeCodeCamp",
+      "repo": "https://github.com/freeCodeCamp/freeCodeCamp",
+      "category": "Learning & Education",
+      "description": "The freeCodeCamp.org open source codebase and curriculum helping millions learn to code globally.",
+      "seeking": "Curriculum improvements, UI localization, starter issues, and mobile app features",
+      "goodFirstIssues": "https://github.com/freeCodeCamp/freeCodeCamp/labels/first%20timers%20only",
+      "language": "TypeScript",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "Excalidraw",
+      "repo": "https://github.com/excalidraw/excalidraw",
+      "category": "Design & Whiteboarding",
+      "description": "Virtual whiteboard for sketching hand-drawn like diagrams with end-to-end encryption.",
+      "seeking": "Canvas tools, export formats, accessibility improvements, and localization",
+      "goodFirstIssues": "https://github.com/excalidraw/excalidraw/labels/good%20first%20issue",
+      "language": "TypeScript",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "Cal.com",
+      "repo": "https://github.com/calcom/cal.com",
+      "category": "Scheduling & Calendar",
+      "description": "Scheduling infrastructure for everyone, the open-source Calendly alternative.",
+      "seeking": "App integrations, workflow automations, internationalization, and documentation",
+      "goodFirstIssues": "https://github.com/calcom/cal.com/labels/good%20first%20issue",
+      "language": "TypeScript",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "Documenso",
+      "repo": "https://github.com/documenso/documenso",
+      "category": "Document Signing",
+      "description": "The open source DocuSign alternative: secure, digital document signing platform.",
+      "seeking": "PDF manipulation features, webhook notifications, UI polish, and starter bugs",
+      "goodFirstIssues": "https://github.com/documenso/documenso/labels/good%20first%20issue",
+      "language": "TypeScript",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "Twenty",
+      "repo": "https://github.com/twentyhq/twenty",
+      "category": "CRM & Sales",
+      "description": "Building a modern, open-source alternative to Salesforce with clean UI and GraphQL APIs.",
+      "seeking": "Frontend components, data import/export adapters, and API endpoints",
+      "goodFirstIssues": "https://github.com/twentyhq/twenty/labels/good%20first%20issue",
+      "language": "TypeScript",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "Ghost",
+      "repo": "https://github.com/TryGhost/Ghost",
+      "category": "CMS & Publishing",
+      "description": "Turn your audience into a business: open-source modern publishing and membership platform.",
+      "seeking": "Admin UI polish, theme adapters, starter bugs, and translation updates",
+      "goodFirstIssues": "https://github.com/TryGhost/Ghost/labels/good%20first%20issue",
+      "language": "JavaScript",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "Chatwoot",
+      "repo": "https://github.com/chatwoot/chatwoot",
+      "category": "Customer Support",
+      "description": "Open-source customer engagement suite, alternative to Intercom and Zendesk.",
+      "seeking": "Channel connectors, webhook handlers, UI polish, and documentation",
+      "goodFirstIssues": "https://github.com/chatwoot/chatwoot/labels/good%20first%20issue",
+      "language": "Ruby / Vue",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "AppFlowy",
+      "repo": "https://github.com/AppFlowy-IO/AppFlowy",
+      "category": "Productivity & Notes",
+      "description": "Open source Notion alternative built with Flutter and Rust for privacy and offline-first workflows.",
+      "seeking": "Flutter widgets, keyboard shortcuts, markdown renderers, and bug fixes",
+      "goodFirstIssues": "https://github.com/AppFlowy-IO/AppFlowy/labels/good%20first%20issue",
+      "language": "Flutter / Rust",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "Affine",
+      "repo": "https://github.com/toeverything/AFFiNE",
+      "category": "Productivity & Notes",
+      "description": "Next-gen collaborative knowledge base for tasks, whiteboards, and multi-modal documents.",
+      "seeking": "Plugin extensions, block editor features, and starter issues",
+      "goodFirstIssues": "https://github.com/toeverything/AFFiNE/labels/good%20first%20issue",
+      "language": "TypeScript / Rust",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "Dub.co",
+      "repo": "https://github.com/dubinc/dub",
+      "category": "Marketing & Analytics",
+      "description": "Open-source link management infrastructure for modern marketing teams with custom domains and analytics.",
+      "seeking": "Analytics widgets, API client SDKs, documentation, and starter features",
+      "goodFirstIssues": "https://github.com/dubinc/dub/labels/good%20first%20issue",
+      "language": "TypeScript",
       "type": "contributors",
       "section": "Contributors Wanted"
     }

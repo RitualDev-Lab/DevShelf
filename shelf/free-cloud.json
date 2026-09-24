@@ -238,5 +238,325 @@
     "description": "Infrastructure platform where developers build, ship, and scale code without configuring servers.",
     "freeTier": "Free trial credit of $5 for new projects with zero setup",
     "statusTags": ["Requires Credit Card to Verify", "Active Uptime 100%"]
+  },
+  {
+    "name": "Oracle Cloud Always Free",
+    "url": "https://www.oracle.com/cloud/free",
+    "category": "Cloud Hosting & Compute",
+    "description": "Generous always-free cloud infrastructure: 4 Arm Ampere A1 cores, 24GB RAM, and 200GB block storage.",
+    "freeTier": "4 OCPU, 24GB RAM Arm compute, 2 AMD micro VMs, 200GB storage",
+    "statusTags": ["Requires Credit Card to Verify", "Active Uptime 100%"]
+  },
+  {
+    "name": "Deno Deploy",
+    "url": "https://deno.com/deploy",
+    "category": "Serverless Compute & Edge",
+    "description": "Globally distributed system that runs JavaScript, TypeScript, and WebAssembly at the edge with zero cold starts.",
+    "freeTier": "1,000,000 requests/month, 100 GiB outbound transfer",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Vercel",
+    "url": "https://vercel.com",
+    "category": "Cloud Hosting & PaaS",
+    "description": "Frontend cloud platform providing seamless Git deployments, edge middleware, and serverless functions.",
+    "freeTier": "Free Hobby Plan: 100GB bandwidth, automated CI/CD previews, serverless functions",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Netlify",
+    "url": "https://www.netlify.com",
+    "category": "Cloud Hosting & PaaS",
+    "description": "Platform for deploying modern web projects with automated Git workflows, serverless functions, and form handling.",
+    "freeTier": "Free Starter Tier: 100GB bandwidth/mo, 300 build minutes/mo",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Cloudflare Pages",
+    "url": "https://pages.cloudflare.com",
+    "category": "Cloud Hosting & PaaS",
+    "description": "Fast, secure, and free Jamstack platform for frontend developers running directly on Cloudflare edge.",
+    "freeTier": "Unlimited sites, unlimited requests, 500 builds per month",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "GitHub Pages",
+    "url": "https://pages.github.com",
+    "category": "Cloud Hosting & PaaS",
+    "description": "Websites for you and your projects, hosted directly from your GitHub repository with automatic SSL.",
+    "freeTier": "100% Free with 1GB repository size limit and 100GB bandwidth/mo",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "GitLab Pages",
+    "url": "https://docs.gitlab.com/ee/user/project/pages",
+    "category": "Cloud Hosting & PaaS",
+    "description": "Publish static websites directly from any repository on GitLab with integrated CI/CD pipelines.",
+    "freeTier": "100% Free with custom domain support and Let's Encrypt SSL",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Glitch",
+    "url": "https://glitch.com",
+    "category": "Cloud Hosting & PaaS",
+    "description": "Friendly community and instant web development environment where anyone can build, remix, and host full-stack apps.",
+    "freeTier": "Free public hosting with auto-sleep after inactivity",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Aiven Free Tier",
+    "url": "https://aiven.io/free-plans",
+    "category": "Databases & BaaS",
+    "description": "Managed cloud data platform offering permanent free tiers for PostgreSQL, MySQL, and OpenSearch.",
+    "freeTier": "Free tier PostgreSQL / MySQL single-node with 1GB RAM and 5GB storage",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "MongoDB Atlas",
+    "url": "https://www.mongodb.com/products/platform/atlas-database",
+    "category": "Databases & BaaS",
+    "description": "Fully managed document database service with automated scaling, backups, and built-in security.",
+    "freeTier": "Shared M0 cluster with 512MB storage and shared RAM permanently free",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Redis Cloud",
+    "url": "https://redis.io/cloud",
+    "category": "Databases & BaaS",
+    "description": "High-performance in-memory key-value database managed on AWS, GCP, and Azure.",
+    "freeTier": "Free 30MB database with high throughput and basic persistence",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "CockroachDB Serverless",
+    "url": "https://www.cockroachlabs.com/pricing",
+    "category": "Databases & BaaS",
+    "description": "Distributed, multi-region SQL database that scales automatically and ensures serializable ACID consistency.",
+    "freeTier": "Free tier with 10GB storage and 50M Request Units per month",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "TiDB Serverless",
+    "url": "https://www.pingcap.com/tidb-serverless",
+    "category": "Databases & BaaS",
+    "description": "Distributed, MySQL-compatible Hybrid Transactional/Analytical Processing (HTAP) database with serverless auto-scaling.",
+    "freeTier": "Free tier with 5GB row storage, 5GB columnar storage, and 50M RU/mo",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Backblaze B2",
+    "url": "https://www.backblaze.com/cloud-storage",
+    "category": "Storage & Buckets",
+    "description": "S3-compatible cloud object storage with ultra-low pricing and free bandwidth partnerships with Cloudflare.",
+    "freeTier": "10GB permanent free storage and 1GB/day free download bandwidth",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Scaleway Stardust & Object Storage",
+    "url": "https://www.scaleway.com/en/pricing",
+    "category": "Storage & Buckets",
+    "description": "European cloud provider offering multi-AZ S3-compatible object storage with generous free allowances.",
+    "freeTier": "75GB free Object Storage per month permanently",
+    "statusTags": ["Requires Credit Card to Verify", "Active Uptime 100%"]
+  },
+  {
+    "name": "Keycloak",
+    "url": "https://www.keycloak.org",
+    "category": "Authentication & Security",
+    "description": "Open source identity and access management solution for modern applications and services, supporting OpenID Connect and SAML.",
+    "freeTier": "100% Free & Open Source Apache-2.0, self-hostable",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Authentik",
+    "url": "https://goauthentik.io",
+    "category": "Authentication & Security",
+    "description": "Open-source Identity Provider focused on flexibility and versatility with built-in user directory, MFA, and SSO.",
+    "freeTier": "100% Free & Open Source GNU GPLv3",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Authelia",
+    "url": "https://www.authelia.com",
+    "category": "Authentication & Security",
+    "description": "Open-source authentication and authorization server providing 2-factor authentication and single sign-on for reverse proxies.",
+    "freeTier": "100% Free & Open Source Apache-2.0",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Zitadel",
+    "url": "https://zitadel.com",
+    "category": "Authentication & Security",
+    "description": "Open source identity infrastructure with turnkey authentication, audit logs, multi-tenancy, and passkeys.",
+    "freeTier": "100% Free Open Source self-hosted; Free cloud tier with 25k requests/mo",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "FusionAuth",
+    "url": "https://fusionauth.io",
+    "category": "Authentication & Security",
+    "description": "Complete customer identity and access management system with fast setup and flexible user management APIs.",
+    "freeTier": "Free Community Edition with unlimited users and basic MFA",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Casdoor",
+    "url": "https://casdoor.org",
+    "category": "Authentication & Security",
+    "description": "UI-first open-source Identity and Access Management (IAM) / Single-Sign-On (SSO) platform with web UI.",
+    "freeTier": "100% Free & Open Source Apache-2.0",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Ory Kratos",
+    "url": "https://www.ory.sh/kratos",
+    "category": "Authentication & Security",
+    "description": "Cloud-native user management system and identity provider implementing login, registration, MFA, and social auth.",
+    "freeTier": "100% Free & Open Source Apache-2.0",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Portainer Community",
+    "url": "https://www.portainer.io",
+    "category": "Self-Hosted Cloud & PaaS",
+    "description": "Universal container management platform for Docker, Docker Swarm, and Kubernetes with clean web GUI.",
+    "freeTier": "100% Free & Open Source Community Edition",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Nginx Proxy Manager",
+    "url": "https://nginxproxymanager.com",
+    "category": "Self-Hosted Cloud & PaaS",
+    "description": "Expose your web services easily and securely with automatic Let's Encrypt SSL certificates and web administration.",
+    "freeTier": "100% Free & Open Source MIT",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Traefik Community",
+    "url": "https://traefik.io/traefik",
+    "category": "Self-Hosted Cloud & PaaS",
+    "description": "The leading cloud-native application proxy that integrates with your existing cluster and configures itself automatically.",
+    "freeTier": "100% Free & Open Source Apache-2.0",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Caddy Web Server",
+    "url": "https://caddyserver.com",
+    "category": "Self-Hosted Cloud & PaaS",
+    "description": "Enterprise-ready, open source web server with automatic HTTPS written in pure Go.",
+    "freeTier": "100% Free & Open Source Apache-2.0",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "CasaOS",
+    "url": "https://casaos.io",
+    "category": "Self-Hosted Cloud & PaaS",
+    "description": "Simple, personal cloud OS designed for home servers and self-hosting Docker apps with an elegant UI.",
+    "freeTier": "100% Free & Open Source Apache-2.0",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Umbrel",
+    "url": "https://umbrel.com",
+    "category": "Self-Hosted Cloud & PaaS",
+    "description": "The ultimate personal home cloud server OS that lets you self-host Bitcoin, AI models, and nextcloud apps with 1 click.",
+    "freeTier": "100% Free & Open Source",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "YunoHost",
+    "url": "https://yunohost.org",
+    "category": "Self-Hosted Cloud & PaaS",
+    "description": "Operating system aiming to simplify as much as possible the administration of a self-hosted server.",
+    "freeTier": "100% Free & Open Source GPL-3.0",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "RabbitMQ",
+    "url": "https://www.rabbitmq.com",
+    "category": "Messaging & Queues",
+    "description": "Most widely deployed open source message broker supporting AMQP, MQTT, and STOMP protocols.",
+    "freeTier": "100% Free & Open Source MPL-2.0",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Eclipse Mosquitto",
+    "url": "https://mosquitto.org",
+    "category": "Messaging & Queues",
+    "description": "Lightweight open-source message broker that implements the MQTT protocol versions 5.0, 3.1.1 and 3.1.",
+    "freeTier": "100% Free & Open Source EPL-2.0",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "EMQX",
+    "url": "https://www.emqx.com/en",
+    "category": "Messaging & Queues",
+    "description": "The world's most scalable open-source MQTT platform for connected IoT, automotive, and industrial devices.",
+    "freeTier": "100% Free Open Source Community Edition; Free cloud tier",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Brevo (formerly Sendinblue)",
+    "url": "https://www.brevo.com/pricing",
+    "category": "Transactional Email",
+    "description": "Email marketing and transactional messaging platform with reliable delivery and webhook tracking.",
+    "freeTier": "300 emails/day permanently free with unlimited contacts",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "SendGrid Free Tier",
+    "url": "https://sendgrid.com/pricing",
+    "category": "Transactional Email",
+    "description": "Cloud-based email infrastructure platform with robust delivery APIs, template engines, and analytics.",
+    "freeTier": "100 emails/day permanently free",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Mailgun Free Foundation",
+    "url": "https://www.mailgun.com/pricing",
+    "category": "Transactional Email",
+    "description": "Developer-first email delivery platform offering inbound routing, SPF/DKIM verification, and logs.",
+    "freeTier": "5,000 free emails for 1 month, then low pay-as-you-grow",
+    "statusTags": ["Requires Credit Card to Verify", "Active Uptime 100%"]
+  },
+  {
+    "name": "Plausible Analytics Self-Hosted",
+    "url": "https://plausible.io/self-hosted",
+    "category": "Observability & Analytics",
+    "description": "Lightweight and open-source Google Analytics alternative with zero cookies and full GDPR compliance.",
+    "freeTier": "100% Free & Open Source AGPLv3 for self-hosters",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Grafana OSS",
+    "url": "https://grafana.com/oss/grafana",
+    "category": "Observability & Analytics",
+    "description": "The open and composable observability and data visualization platform with rich dashboards and alerts.",
+    "freeTier": "100% Free & Open Source AGPLv3 self-hosted",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Prometheus",
+    "url": "https://prometheus.io",
+    "category": "Observability & Analytics",
+    "description": "An open-source monitoring system with a dimensional data model, flexible query language, and alerting.",
+    "freeTier": "100% Free & Open Source Apache-2.0",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Uptime Kuma",
+    "url": "https://github.com/louislam/uptime-kuma",
+    "category": "Observability & Analytics",
+    "description": "Self-hosted monitoring tool like Uptime Robot with modern dashboard and notifications across 90+ services.",
+    "freeTier": "100% Free & Open Source MIT",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
+  },
+  {
+    "name": "Dragonfly",
+    "url": "https://www.dragonflydb.io",
+    "category": "Databases & BaaS",
+    "description": "A modern, highly performant replacement for Redis and Memcached with 25x throughput and multi-threaded core.",
+    "freeTier": "100% Free & Open Source BSL",
+    "statusTags": ["No Card Required", "Active Uptime 100%"]
   }
 ]

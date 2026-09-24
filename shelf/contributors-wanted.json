@@ -99,5 +99,95 @@
     "goodFirstIssues": "https://github.com/up-for-grabs/up-for-grabs.net/issues",
     "language": "Ruby / JavaScript",
     "statusTags": ["100% Offline-Friendly", "No Card Required"]
+  },
+  {
+    "name": "freeCodeCamp",
+    "repo": "https://github.com/freeCodeCamp/freeCodeCamp",
+    "category": "Learning & Education",
+    "description": "The freeCodeCamp.org open source codebase and curriculum helping millions learn to code globally.",
+    "seeking": "Curriculum improvements, UI localization, starter issues, and mobile app features",
+    "goodFirstIssues": "https://github.com/freeCodeCamp/freeCodeCamp/labels/first%20timers%20only",
+    "language": "TypeScript"
+  },
+  {
+    "name": "Excalidraw",
+    "repo": "https://github.com/excalidraw/excalidraw",
+    "category": "Design & Whiteboarding",
+    "description": "Virtual whiteboard for sketching hand-drawn like diagrams with end-to-end encryption.",
+    "seeking": "Canvas tools, export formats, accessibility improvements, and localization",
+    "goodFirstIssues": "https://github.com/excalidraw/excalidraw/labels/good%20first%20issue",
+    "language": "TypeScript"
+  },
+  {
+    "name": "Cal.com",
+    "repo": "https://github.com/calcom/cal.com",
+    "category": "Scheduling & Calendar",
+    "description": "Scheduling infrastructure for everyone, the open-source Calendly alternative.",
+    "seeking": "App integrations, workflow automations, internationalization, and documentation",
+    "goodFirstIssues": "https://github.com/calcom/cal.com/labels/good%20first%20issue",
+    "language": "TypeScript"
+  },
+  {
+    "name": "Documenso",
+    "repo": "https://github.com/documenso/documenso",
+    "category": "Document Signing",
+    "description": "The open source DocuSign alternative: secure, digital document signing platform.",
+    "seeking": "PDF manipulation features, webhook notifications, UI polish, and starter bugs",
+    "goodFirstIssues": "https://github.com/documenso/documenso/labels/good%20first%20issue",
+    "language": "TypeScript"
+  },
+  {
+    "name": "Twenty",
+    "repo": "https://github.com/twentyhq/twenty",
+    "category": "CRM & Sales",
+    "description": "Building a modern, open-source alternative to Salesforce with clean UI and GraphQL APIs.",
+    "seeking": "Frontend components, data import/export adapters, and API endpoints",
+    "goodFirstIssues": "https://github.com/twentyhq/twenty/labels/good%20first%20issue",
+    "language": "TypeScript"
+  },
+  {
+    "name": "Ghost",
+    "repo": "https://github.com/TryGhost/Ghost",
+    "category": "CMS & Publishing",
+    "description": "Turn your audience into a business: open-source modern publishing and membership platform.",
+    "seeking": "Admin UI polish, theme adapters, starter bugs, and translation updates",
+    "goodFirstIssues": "https://github.com/TryGhost/Ghost/labels/good%20first%20issue",
+    "language": "JavaScript"
+  },
+  {
+    "name": "Chatwoot",
+    "repo": "https://github.com/chatwoot/chatwoot",
+    "category": "Customer Support",
+    "description": "Open-source customer engagement suite, alternative to Intercom and Zendesk.",
+    "seeking": "Channel connectors, webhook handlers, UI polish, and documentation",
+    "goodFirstIssues": "https://github.com/chatwoot/chatwoot/labels/good%20first%20issue",
+    "language": "Ruby / Vue"
+  },
+  {
+    "name": "AppFlowy",
+    "repo": "https://github.com/AppFlowy-IO/AppFlowy",
+    "category": "Productivity & Notes",
+    "description": "Open source Notion alternative built with Flutter and Rust for privacy and offline-first workflows.",
+    "seeking": "Flutter widgets, keyboard shortcuts, markdown renderers, and bug fixes",
+    "goodFirstIssues": "https://github.com/AppFlowy-IO/AppFlowy/labels/good%20first%20issue",
+    "language": "Flutter / Rust"
+  },
+  {
+    "name": "Affine",
+    "repo": "https://github.com/toeverything/AFFiNE",
+    "category": "Productivity & Notes",
+    "description": "Next-gen collaborative knowledge base for tasks, whiteboards, and multi-modal documents.",
+    "seeking": "Plugin extensions, block editor features, and starter issues",
+    "goodFirstIssues": "https://github.com/toeverything/AFFiNE/labels/good%20first%20issue",
+    "language": "TypeScript / Rust"
+  },
+  {
+    "name": "Dub.co",
+    "repo": "https://github.com/dubinc/dub",
+    "category": "Marketing & Analytics",
+    "description": "Open-source link management infrastructure for modern marketing teams with custom domains and analytics.",
+    "seeking": "Analytics widgets, API client SDKs, documentation, and starter features",
+    "goodFirstIssues": "https://github.com/dubinc/dub/labels/good%20first%20issue",
+    "language": "TypeScript"
   }
 ]

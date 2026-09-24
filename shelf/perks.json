@@ -150,5 +150,93 @@
     "description": "Free Pro sponsorship with elevated edge compute limits and team features for popular open-source projects.",
     "perkValue": "Free Vercel Pro Plan sponsorship",
     "eligibility": "Public open source projects with active community adoption and OSI license"
+  },
+  {
+    "name": "GitLab for Open Source",
+    "url": "https://about.gitlab.com/solutions/open-source/program",
+    "category": "Open Source Sponsorship",
+    "description": "Free top-tier GitLab Ultimate with 50,000 CI build minutes per month and security scanning for public open-source projects.",
+    "perkValue": "GitLab Ultimate subscription ($1,188/user/year value) + 50k CI mins",
+    "eligibility": "Public open-source projects with OSI-approved licenses"
+  },
+  {
+    "name": "Atlassian Open Source Project Licensing",
+    "url": "https://www.atlassian.com/software/views/open-source-license-request",
+    "category": "Open Source Sponsorship",
+    "description": "Free cloud subscriptions for Jira Software, Confluence, and Jira Service Management for qualifying open source initiatives.",
+    "perkValue": "Free Jira & Confluence Cloud licenses",
+    "eligibility": "Active open-source projects with public repositories and standard licenses"
+  },
+  {
+    "name": "JetBrains Student Pack",
+    "url": "https://www.jetbrains.com/community/education#students",
+    "category": "Student & Education",
+    "description": "Free individual annual subscription to all JetBrains IDEs (IntelliJ IDEA, WebStorm, PyCharm, CLion, Rider) for students.",
+    "perkValue": "$289/year in professional IDE licenses",
+    "eligibility": "Students and teachers with valid educational email address"
+  },
+  {
+    "name": "Notion for Education",
+    "url": "https://www.notion.so/product/notion-for-education",
+    "category": "Student & Education",
+    "description": "Free Personal Pro plan for students and educators with unlimited file uploads, 30-day page history, and collaborative workspaces.",
+    "perkValue": "$96/year Personal Pro subscription",
+    "eligibility": "Students and teachers with school email address"
+  },
+  {
+    "name": "Twilio Startups Program",
+    "url": "https://www.twilio.com/en-us/startups",
+    "category": "Cloud Credits & Developer Packs",
+    "description": "Up to $500 in Twilio communication API credits, sendgrid volume, and technical mentorship for early-stage software companies.",
+    "perkValue": "Up to $500 in Twilio credits + SendGrid boosts",
+    "eligibility": "Early-stage startups building customer communications"
+  },
+  {
+    "name": "Figma for Education",
+    "url": "https://www.figma.com/education",
+    "category": "Student & Education",
+    "description": "Free Figma and FigJam Professional tier for students, teachers, and accredited design classrooms.",
+    "perkValue": "$144/year per editor Professional tier",
+    "eligibility": "Verified students and faculty in recognized educational institutions"
+  },
+  {
+    "name": "MongoDB for Startups",
+    "url": "https://www.mongodb.com/startups",
+    "category": "Cloud Credits & Developer Packs",
+    "description": "Up to $5,000 in MongoDB Atlas cloud database credits, dedicated technical advisory, and co-marketing opportunities.",
+    "perkValue": "$500 to $5,000 in MongoDB Atlas credits",
+    "eligibility": "Startups from ideation to Series A stage"
+  },
+  {
+    "name": "Codecov for Open Source",
+    "url": "https://about.codecov.io/pricing",
+    "category": "Open Source Sponsorship",
+    "description": "Free unlimited code coverage reports and PR quality checks for public GitHub and GitLab repositories.",
+    "perkValue": "Free Pro tier code coverage reports",
+    "eligibility": "Public open-source projects with open GitHub repositories"
+  },
+  {
+    "name": "Crowdin for Open Source",
+    "url": "https://crowdin.com/page/open-source-project-setup",
+    "category": "Open Source Sponsorship",
+    "description": "Free localization and translation management platform for open-source software projects and global documentation.",
+    "perkValue": "Free Crowdin Enterprise translation suite",
+    "eligibility": "Non-commercial open-source projects with public repositories"
+  },
+  {
+    "name": "Termius for Students",
+    "url": "https://termius.com/education",
+    "category": "Student & Education",
+    "description": "Free Termius Pro SSH client for students with encrypted configuration sync, port forwarding, and SFTP browser.",
+    "perkValue": "$120/year Pro subscription",
+    "eligibility": "Students verified through GitHub Student Developer Pack"
+  },
+  {
+    "name": "Snyk for Open Source",
+    "url": "https://snyk.io/plans",
+    "category": "Open Source Sponsorship",
+    "description": "Free unlimited automated security scans for open source repositories, finding known vulnerabilities in code and packages.",
+    "perkValue": "Free unlimited vulnerability scanning",
+    "eligibility": "Public open-source repositories"
   }
 ]

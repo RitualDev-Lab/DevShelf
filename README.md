@@ -13,7 +13,7 @@
 <br>
 
 [![Live Web Directory](https://img.shields.io/badge/🌐_Web_Directory-Live_Search_%26_Filters-7928CA?style=for-the-badge&logoColor=white)](https://devshelf.ritualdev.in)
-[![Curated Resources](https://img.shields.io/badge/📦_Resources-219+_Curated-blueviolet?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
+[![Curated Resources](https://img.shields.io/badge/📦_Resources-510+_Curated-blueviolet?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
 [![Endpoint Health](https://img.shields.io/badge/🛡️_Health-100%25_Verified-brightgreen?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf/actions)
 [![Open Source](https://img.shields.io/badge/🔓_License-MIT_FOSS-blue?style=for-the-badge)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/🤝_PRs-Welcome_%26_Amplified-brightgreen?style=for-the-badge)](#-how-to-submit-your-project-or-api)
@@ -22,14 +22,14 @@
 
 <table>
 <tr>
-<td align="center"><b>🌐 Free APIs</b><br><code>36</code></td>
-<td align="center"><b>🤖 AI & LLMs</b><br><code>36</code></td>
-<td align="center"><b>⚡ CLI Tools</b><br><code>44</code></td>
-<td align="center"><b>🧪 Testing & QA</b><br><code>27</code></td>
-<td align="center"><b>☁️ Free Cloud</b><br><code>30</code></td>
-<td align="center"><b>🤝 Up for Grabs</b><br><code>11</code></td>
-<td align="center"><b>🎁 Dev Perks</b><br><code>19</code></td>
-<td align="center"><b>🚀 1-Click Deploys</b><br><code>16</code></td>
+<td align="center"><b>🌐 Free APIs</b><br><code>96</code></td>
+<td align="center"><b>🤖 AI & LLMs</b><br><code>86</code></td>
+<td align="center"><b>⚡ CLI Tools</b><br><code>104</code></td>
+<td align="center"><b>🧪 Testing & QA</b><br><code>62</code></td>
+<td align="center"><b>☁️ Free Cloud</b><br><code>70</code></td>
+<td align="center"><b>🤝 Up for Grabs</b><br><code>21</code></td>
+<td align="center"><b>🎁 Dev Perks</b><br><code>30</code></td>
+<td align="center"><b>🚀 1-Click Deploys</b><br><code>41</code></td>
 </tr>
 </table>
 
@@ -246,6 +246,66 @@ APIs that provide a 100% free tier or require no API key at all.
 | [**Genderize.io**](https://genderize.io) | `Development & Testing` | 🟢 No Key | `1,000 req/day` | Predict gender from first name with international probability scores and database of over 100M profiles. |
 | [**Nationalize.io**](https://nationalize.io) | `Development & Testing` | 🟢 No Key | `1,000 req/day` | Estimate nationality and origin country probabilities from given names using statistical country data. |
 | [**RandomUser.me**](https://randomuser.me) | `Development & Testing` | 🟢 No Key | `Unlimited` | Free API for generating realistic placeholder user data with photos, names, emails, and address models. |
+| [**Httpbin.org**](https://httpbin.org) | `Development & Testing` | 🟢 No Key | `Unlimited` | HTTP client testing service with endpoints for inspecting headers, status codes, methods, and payloads. |
+| [**RequestBin**](https://requestbin.com) | `Development & Testing` | 🟢 No Key | `Unlimited` | Inspect HTTP requests and webhooks with real-time payload logging and debugging. |
+| [**Postman Echo**](https://postman-echo.com) | `Development & Testing` | 🟢 No Key | `Unlimited` | Echo service to test REST clients, authorization headers, digest auth, and query parameters. |
+| [**JSONBin.io**](https://jsonbin.io) | `Development & Testing` | 🔑 Free Key | `10,000 req/mo` | Free cloud storage for JSON data, ideal for prototyping frontend applications with mock backends. |
+| [**Mocky.io**](https://designer.mocky.io) | `Development & Testing` | 🟢 No Key | `Unlimited` | Generate custom HTTP responses with custom bodies, headers, and status codes with zero backend setup. |
+| [**Beeceptor**](https://beeceptor.com) | `Development & Testing` | 🟢 No Key | `50 req/day` | Create mock API endpoints in 5 seconds to test incoming webhooks, payloads, and simulated responses. |
+| [**Binlist**](https://binlist.net) | `Finance & Crypto` | 🟢 No Key | `10 req/min` | Public lookup service for bank identification numbers (BIN/IIN) returning card brand, scheme, and country. |
+| [**Hacker News Firebase API**](https://github.com/HackerNews/API) | `News & Media` | 🟢 No Key | `Unlimited` | Official Hacker News REST API powered by Firebase with real-time top stories, comments, and user profiles. |
+| [**Dev.to API**](https://developers.forem.com/api/v1) | `News & Media` | 🔑 Free Key | `30 req/30sec` | REST API for DEV Community (Forem) accessing articles, tag listings, user feeds, and comments. |
+| [**Reddit JSON API**](https://www.reddit.com/dev/api) | `News & Media` | 🟢 No Key | `60 req/min` | Append .json to almost any public Reddit URL to get structured JSON post data and subreddit feeds. |
+| [**Wikipedia REST API**](https://en.wikipedia.org/api/rest_v1) | `Books & Literature` | 🟢 No Key | `200 req/sec` | Wikimedia official REST API providing page summaries, mobile views, image transforms, and search endpoints. |
+| [**Wikidata SPARQL API**](https://query.wikidata.org) | `Development & Testing` | 🟢 No Key | `Unlimited` | Query Wikidata's linked open database using SPARQL queries to extract structured facts and entities. |
+| [**Archive.org API**](https://archive.org/help/aboutsearch.htm) | `Books & Literature` | 🟢 No Key | `Unlimited` | Search and retrieve millions of digitized books, movies, software, and audio files from the Internet Archive. |
+| [**Geocode.xyz**](https://geocode.xyz/api) | `Geocoding & IP` | 🟢 No Key | `1 req/sec` | Free batch forward and reverse geocoding API converting addresses to latitude/longitude coordinates. |
+| [**Sunrise-Sunset.org API**](https://sunrise-sunset.org/api) | `Weather & Climate` | 🟢 No Key | `Unlimited` | Free REST API providing sunrise, sunset, day length, and solar noon times for any coordinate. |
+| [**USGS Earthquake API**](https://earthquake.usgs.gov/fdsnws/event/1) | `Science & Astronomy` | 🟢 No Key | `Unlimited` | Real-time global seismic and earthquake event data from the United States Geological Survey in GeoJSON format. |
+| [**OpenSky Network API**](https://opensky-network.org/apidoc) | `Travel & Transit` | 🟢 No Key | `100 req/day` | Live air traffic surveillance data derived from global ADS-B receiver networks tracking flights in real time. |
+| [**TVMaze API**](https://www.tvmaze.com/api) | `Games & Media` | 🟢 No Key | `20 req/10sec` | TV show, episode guide, cast, and streaming schedule database accessible with zero authentication. |
+| [**The Movie Database (TMDB) API**](https://developer.themoviedb.org/reference/intro/getting-started) | `Games & Media` | 🔑 Free Key | `50 req/sec` | Community-built movie and TV database with metadata, posters, trailers, and cast biographies. |
+| [**AniList GraphQL API**](https://anilist.gitbook.io/anilist-apiv2-docs) | `Games & Media` | 🟢 No Key | `90 req/min` | Comprehensive GraphQL API for discovering and tracking anime and manga with rich media relations. |
+| [**Jikan API**](https://jikan.moe) | `Games & Media` | 🟢 No Key | `60 req/min` | Open-source REST API for MyAnimeList with caching, schedule endpoints, and character detail lookups. |
+| [**Open Trivia DB**](https://opentdb.com/api_config.php) | `Games & Media` | 🟢 No Key | `1 req/5sec` | Community-driven database of multiple choice trivia questions across 24 categories and difficulty levels. |
+| [**xkcd JSON API**](https://xkcd.com/json.html) | `Games & Media` | 🟢 No Key | `Unlimited` | Direct JSON endpoint to fetch xkcd comics, titles, transcripts, and image URLs. |
+| [**PoetryDB**](https://poetrydb.org) | `Books & Literature` | 🟢 No Key | `Unlimited` | An internet database of public domain poetry accessible via clean REST endpoints. |
+| [**Quotable API**](https://github.com/lukePeavey/quotable) | `Books & Literature` | 🟢 No Key | `Unlimited` | Open-source REST API for famous historical and literary quotes filterable by author and tag. |
+| [**Advice Slip API**](https://api.adviceslip.com) | `Animals & Fun` | 🟢 No Key | `Unlimited` | Simple API providing random pieces of advice and motivational suggestions with zero auth. |
+| [**Cataas (Cat as a service)**](https://cataas.com) | `Animals & Fun` | 🟢 No Key | `Unlimited` | REST API to fetch random cat pictures and GIFs, with custom text and filter overlays. |
+| [**RandomFox API**](https://randomfox.ca/floof) | `Animals & Fun` | 🟢 No Key | `Unlimited` | Simple JSON API returning adorable random fox photographs and image links. |
+| [**Shibe.Online**](https://shibe.online) | `Animals & Fun` | 🟢 No Key | `Unlimited` | Public REST API providing curated photos of Shiba Inu dogs, birds, and cats. |
+| [**FishWatch API**](https://www.fishwatch.gov/developers) | `Food & Health` | 🟢 No Key | `Unlimited` | NOAA FishWatch database providing nutritional facts and sustainability data for seafood species. |
+| [**SpaceX REST API**](https://github.com/r-spacex/SpaceX-API) | `Science & Astronomy` | 🟢 No Key | `Unlimited` | Open-source REST and GraphQL API for historical rocket launches, Starlink satellites, and capsule telemetry. |
+| [**Launch Library 2**](https://thespacedevs.com/llapi) | `Science & Astronomy` | 🟢 No Key | `15 req/hr` | Comprehensive rocket launch calendar tracking orbital missions and astronauts worldwide. |
+| [**Solar System OpenData API**](https://api.le-systeme-solaire.net/en) | `Science & Astronomy` | 🟢 No Key | `Unlimited` | Structured database of physical and orbital characteristics for all planets, moons, and asteroids in our solar system. |
+| [**QR Code Generator API**](https://goqr.me/api) | `Development & Testing` | 🟢 No Key | `Unlimited` | Free HTTP microservice to generate customizable high-resolution QR codes on the fly in PNG and SVG. |
+| [**URLhaus Malware API**](https://urlhaus.abuse.ch/api) | `Development & Testing` | 🟢 No Key | `Unlimited` | Malicious URL feed and threat intelligence database for automated cybersecurity scanning. |
+| [**Have I Been Pwned Pwned Passwords**](https://haveibeenpwned.com/API/v3#PwnedPasswords) | `Development & Testing` | 🟢 No Key | `Unlimited` | K-anonymity search API checking password hashes against billions of compromised breach credentials securely. |
+| [**Coinpaprika API**](https://api.coinpaprika.com) | `Finance & Crypto` | 🟢 No Key | `Unlimited` | Cryptocurrency market data API delivering real-time quotes, global volume, and token metadata without keys. |
+| [**CryptoCompare API**](https://min-api.cryptocompare.com) | `Finance & Crypto` | 🔑 Free Key | `100,000 req/mo` | Enterprise-grade digital asset prices and OHLCV historical charting data with free developer tier. |
+| [**Open-Meteo Air Quality**](https://open-meteo.com/en/docs/air-quality-api) | `Weather & Climate` | 🟢 No Key | `10,000 req/day` | Hourly particulate matter (PM2.5, PM10), ozone, and European Air Quality Index forecasts with zero auth. |
+| [**Open Library Covers API**](https://openlibrary.org/dev/docs/api/covers) | `Books & Literature` | 🟢 No Key | `Unlimited` | Retrieve book cover images and author portraits using ISBN, OCLC, LCCN, or OLID identifiers. |
+| [**Meme Generator API**](https://api.imgflip.com/get_memes) | `Media & Images` | 🟢 No Key | `Unlimited` | Returns top 100 popular meme image templates with dimensions and blank background assets. |
+| [**JokeAPI**](https://jokeapi.dev) | `Animals & Fun` | 🟢 No Key | `120 req/min` | Clean REST API providing programming, dark, and pun jokes with customizable category filters. |
+| [**Deck of Cards API**](https://deckofcardsapi.com) | `Games & Media` | 🟢 No Key | `Unlimited` | Simulate shuffling, dealing, and playing cards from standard 52-card decks with persistent sessions. |
+| [**Open Source Licenses API**](https://api.github.com/licenses) | `Development & Testing` | 🟢 No Key | `60 req/hr` | GitHub API endpoint returning metadata, permissions, and conditions for popular open source licenses. |
+| [**REST Countries v3**](https://gitlab.com/amatos/rest-countries) | `Geocoding & IP` | 🟢 No Key | `Unlimited` | Detailed world geographic facts, borders, regional groupings, currencies, and languages in JSON. |
+| [**Carbon Interface API**](https://www.carboninterface.com) | `Science & Astronomy` | 🔑 Free Key | `200 req/mo` | Estimates carbon emissions from flights, electricity consumption, and shipping logistics with free tier. |
+| [**Genderize API**](https://api.genderize.io) | `Development & Testing` | 🟢 No Key | `1,000 req/day` | Predict gender from first name with probability scores and count statistics. |
+| [**Agify API**](https://api.agify.io) | `Development & Testing` | 🟢 No Key | `1,000 req/day` | Predict age from first names based on statistical demographic modeling. |
+| [**Nationalize API**](https://api.nationalize.io) | `Development & Testing` | 🟢 No Key | `1,000 req/day` | Predict nationality from names returning top country codes and confidence scores. |
+| [**Public APIs Index**](https://api.publicapis.org) | `Development & Testing` | 🟢 No Key | `Unlimited` | Queryable directory of hundreds of free public APIs categorized by topic and authentication requirements. |
+| [**ipinfo.io Lite**](https://ipinfo.io/developers) | `Geocoding & IP` | 🔑 Free Key | `50,000 req/mo` | Fast IP address geolocation, ASN company lookup, and hostname resolution with generous free tier. |
+| [**Big Data Cloud Free IP**](https://www.bigdatacloud.com/free-api) | `Geocoding & IP` | 🟢 No Key | `Unlimited` | Reverse geocoding and IP client info API without usage limits for client-side web apps. |
+| [**Free Dictionary**](https://dictionaryapi.dev) | `Books & Literature` | 🟢 No Key | `Unlimited` | Free developer-friendly English vocabulary API providing word origins, examples, and synonyms. |
+| [**Bored API Mirror**](https://boredapi.com) | `Animals & Fun` | 🟢 No Key | `Unlimited` | Random activity generator for boredom relief with accessibility, participants, and cost filters. |
+| [**Corporate Bullshit Generator**](https://corporatebs-generator.sameerkumar.website) | `Animals & Fun` | 🟢 No Key | `Unlimited` | Random buzzword and corporate jargon phrase generator for humorous placeholders. |
+| [**Evil Insult Generator**](https://evilinsult.com/api) | `Animals & Fun` | 🟢 No Key | `Unlimited` | Humorous and sharp insults generation API for games and bot development. |
+| [**Geek Jokes API**](https://geek-jokes.sameerkumar.website/api) | `Animals & Fun` | 🟢 No Key | `Unlimited` | Curated tech jokes, programming puns, and geek culture humor returned as clean JSON. |
+| [**Kanye Rest**](https://kanye.rest) | `Animals & Fun` | 🟢 No Key | `Unlimited` | Free REST API delivering memorable quotes from Kanye West as JSON with zero setup. |
+| [**Tronald Dump API**](https://www.tronalddump.io) | `Animals & Fun` | 🟢 No Key | `Unlimited` | Smart archive and quote retriever with meme tags and original source links. |
+| [**FoxPics**](https://randomfox.ca) | `Animals & Fun` | 🟢 No Key | `Unlimited` | Curated collection of high-resolution wild fox photos with zero rate limit. |
 
 ---
 
@@ -433,6 +493,256 @@ APIs that provide a 100% free tier or require no API key at all.
 > Open-source, local-first code interpreter that lets LLMs run Python, JavaScript, and Bash code on your computer.
 
 `Category: Code Generation & Agent Dev` • `Language: Python` • `License: AGPL-3.0` • [View Repo →](https://github.com/OpenInterpreter/open-interpreter)
+
+### [TGI (Text Generation Inference)](https://github.com/huggingface/text-generation-inference)
+> Hugging Face's production-ready toolkit for deploying and serving Large Language Models at scale with Tensor Parallelism.
+
+`Category: Local AI & Inference` • `Language: Rust / Python` • `License: Apache-2.0` • [View Repo →](https://github.com/huggingface/text-generation-inference)
+
+### [SGLang](https://github.com/sgl-project/sglang)
+> Fast serving engine for large language models and vision-language models with RadixAttention for multi-turn caching.
+
+`Category: Local AI & Inference` • `Language: Python / C++` • `License: Apache-2.0` • [View Repo →](https://github.com/sgl-project/sglang)
+
+### [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM)
+> NVIDIA's specialized library providing state-of-the-art acceleration and optimized execution for LLM inference.
+
+`Category: Local AI & Inference` • `Language: C++ / Python` • `License: Apache-2.0` • [View Repo →](https://github.com/NVIDIA/TensorRT-LLM)
+
+### [ExLlamaV2](https://github.com/turboderp/exllamav2)
+> Fast inference library for running local LLMs on modern NVIDIA GPUs with EXL2 quantization.
+
+`Category: Local AI & Inference` • `Language: Python / C++` • `License: MIT` • [View Repo →](https://github.com/turboderp/exllamav2)
+
+### [llamafile](https://github.com/Mozilla-Ocho/llamafile)
+> Distribute and run LLMs with a single multi-GB binary that runs across Windows, macOS, Linux, and FreeBSD.
+
+`Category: Local AI & Inference` • `Language: C++` • `License: Apache-2.0` • [View Repo →](https://github.com/Mozilla-Ocho/llamafile)
+
+### [Aphrodite Engine](https://github.com/PygmalionAI/aphrodite-engine)
+> High-throughput, memory-efficient LLM inference engine supporting many architectures and quantizations.
+
+`Category: Local AI & Inference` • `Language: Python` • `License: Apache-2.0` • [View Repo →](https://github.com/PygmalionAI/aphrodite-engine)
+
+### [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT)
+> Autonomous AI agent platform empowering developers to create, test, and deploy customized AI agent chains.
+
+⭐ **Featured** • `Category: Code Generation & Agent Dev` • `Language: Python` • `License: MIT` • [View Repo →](https://github.com/Significant-Gravitas/AutoGPT)
+
+### [CrewAI](https://github.com/crewAIInc/crewAI)
+> Cutting-edge framework for orchestrating role-playing, autonomous AI agents to collaborate seamlessly.
+
+⭐ **Featured** • `Category: AI Workflow & Orchestration` • `Language: Python` • `License: MIT` • [View Repo →](https://github.com/crewAIInc/crewAI)
+
+### [AutoGen](https://github.com/microsoft/autogen)
+> Microsoft's multi-agent conversation framework for building advanced AI agent workflows and collaborative task execution.
+
+`Category: AI Workflow & Orchestration` • `Language: Python` • `License: CC-BY-4.0` • [View Repo →](https://github.com/microsoft/autogen)
+
+### [MetaGPT](https://github.com/geekan/MetaGPT)
+> Multi-agent framework assigning distinct software company roles (Product Manager, Architect, Engineer) to LLMs.
+
+`Category: AI Workflow & Orchestration` • `Language: Python` • `License: MIT` • [View Repo →](https://github.com/geekan/MetaGPT)
+
+### [ChatDev](https://github.com/OpenBMB/ChatDev)
+> Virtual software company simulated by communicative agents to complete full lifecycle software development.
+
+`Category: AI Workflow & Orchestration` • `Language: Python` • `License: Apache-2.0` • [View Repo →](https://github.com/OpenBMB/ChatDev)
+
+### [SuperAGI](https://github.com/TransformerOptimus/SuperAGI)
+> Dev-first open source autonomous AI agent framework with GUI, agent telemetry, concurrent agents, and marketplace.
+
+`Category: Code Generation & Agent Dev` • `Language: Python` • `License: MIT` • [View Repo →](https://github.com/TransformerOptimus/SuperAGI)
+
+### [Unsloth](https://github.com/unslothai/unsloth)
+> Finetune Llama 3.3, Mistral, and Qwen 2x-5x faster with 70% less memory using optimized hand-written GPU kernels.
+
+⭐ **Featured** • `Category: Local AI & Inference` • `Language: Python` • `License: Apache-2.0` • [View Repo →](https://github.com/unslothai/unsloth)
+
+### [Axolotl](https://github.com/axolotl-ai-cloud/axolotl)
+> Post-training framework for fine-tuning hundreds of open-source language models with standard YAML configurations.
+
+`Category: Local AI & Inference` • `Language: Python` • `License: Apache-2.0` • [View Repo →](https://github.com/axolotl-ai-cloud/axolotl)
+
+### [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)
+> Unified web UI and CLI for easy fine-tuning and evaluation of 100+ LLMs and multi-modal models.
+
+`Category: Local AI & Inference` • `Language: Python` • `License: Apache-2.0` • [View Repo →](https://github.com/hiyouga/LLaMA-Factory)
+
+### [AutoAWQ](https://github.com/casper-hansen/AutoAWQ)
+> Activation-aware Weight Quantization package for 4-bit LLM quantization with 3x speedup.
+
+`Category: Local AI & Inference` • `Language: Python / C++` • `License: Apache-2.0` • [View Repo →](https://github.com/casper-hansen/AutoAWQ)
+
+### [AutoGPTQ](https://github.com/AutoGPTQ/AutoGPTQ)
+> Easy-to-use LLMs quantization package with user-friendly APIs, based on GPTQ algorithm.
+
+`Category: Local AI & Inference` • `Language: Python / CUDA` • `License: MIT` • [View Repo →](https://github.com/AutoGPTQ/AutoGPTQ)
+
+### [bitsandbytes](https://github.com/bitsandbytes-foundation/bitsandbytes)
+> Accessible 8-bit and 4-bit optimizers and quantization functions for deep learning on CUDA and ROCm.
+
+`Category: Local AI & Inference` • `Language: C++ / Python` • `License: MIT` • [View Repo →](https://github.com/bitsandbytes-foundation/bitsandbytes)
+
+### [PEFT](https://github.com/huggingface/peft)
+> Hugging Face's state-of-the-art Parameter-Efficient Fine-Tuning library (LoRA, QLoRA, Prefix Tuning).
+
+`Category: Local AI & Inference` • `Language: Python` • `License: Apache-2.0` • [View Repo →](https://github.com/huggingface/peft)
+
+### [TRL](https://github.com/huggingface/trl)
+> Transformer Reinforcement Learning library with Supervised Fine-Tuning (SFT), DPO, and PPO training loops.
+
+`Category: Local AI & Inference` • `Language: Python` • `License: Apache-2.0` • [View Repo →](https://github.com/huggingface/trl)
+
+### [Ragas](https://github.com/explodinggradients/ragas)
+> Evaluation framework for your Retrieval Augmented Generation (RAG) pipelines with faithfulness metrics.
+
+`Category: AI Workflow & Orchestration` • `Language: Python` • `License: Apache-2.0` • [View Repo →](https://github.com/explodinggradients/ragas)
+
+### [DeepEval](https://github.com/confident-ai/deepeval)
+> The open-source LLM evaluation framework like Pytest for LLM applications with 14+ benchmark metrics.
+
+`Category: AI Workflow & Orchestration` • `Language: Python` • `License: Apache-2.0` • [View Repo →](https://github.com/confident-ai/deepeval)
+
+### [NeMo-Guardrails](https://github.com/NVIDIA/NeMo-Guardrails)
+> NVIDIA's toolkit for easily adding programmable guardrails and safety bounds to LLM-based conversational apps.
+
+`Category: AI Workflow & Orchestration` • `Language: Python` • `License: Apache-2.0` • [View Repo →](https://github.com/NVIDIA/NeMo-Guardrails)
+
+### [Guidance](https://github.com/guidance-ai/guidance)
+> A guidance language for controlling large language models with interleaved generation, prompting, and constrain.
+
+`Category: AI Workflow & Orchestration` • `Language: Python` • `License: MIT` • [View Repo →](https://github.com/guidance-ai/guidance)
+
+### [Outlines](https://github.com/dottxt-ai/outlines)
+> Structured text generation library with regular expressions, JSON schemas, and context-free grammars.
+
+`Category: AI Workflow & Orchestration` • `Language: Python` • `License: Apache-2.0` • [View Repo →](https://github.com/dottxt-ai/outlines)
+
+### [Promptfoo](https://github.com/promptfoo/promptfoo)
+> Test your prompts, agents, and RAGs against red-teaming attacks, prompt injections, and regression suites.
+
+`Category: AI Workflow & Orchestration` • `Language: TypeScript` • `License: MIT` • [View Repo →](https://github.com/promptfoo/promptfoo)
+
+### [Stable Diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
+> The ubiquitous browser interface for Stable Diffusion based on Gradio library with extensive extensions.
+
+`Category: Local AI & Inference` • `Language: Python` • `License: AGPL-3.0` • [View Repo →](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
+
+### [InvokeAI](https://github.com/invoke-ai/InvokeAI)
+> Professional generative AI engine and canvas for creative visual artists and digital designers.
+
+`Category: Local AI & Inference` • `Language: Python / TypeScript` • `License: Apache-2.0` • [View Repo →](https://github.com/invoke-ai/InvokeAI)
+
+### [Fooocus](https://github.com/lllyasviel/Fooocus)
+> Focus on prompting and generating without complex parameter tuning, inspired by Midjourney simplicity.
+
+`Category: Local AI & Inference` • `Language: Python` • `License: GPL-3.0` • [View Repo →](https://github.com/lllyasviel/Fooocus)
+
+### [LLaVA](https://github.com/haotian-liu/LLaVA)
+> Visual instruction tuning toward large multimodal models: chat and reasoning over high-res images.
+
+`Category: Local AI & Inference` • `Language: Python` • `License: Apache-2.0` • [View Repo →](https://github.com/haotian-liu/LLaVA)
+
+### [Segment Anything (SAM)](https://github.com/facebookresearch/segment-anything)
+> Meta's foundation model for image segmentation, allowing promptable cutouts of any object with one click.
+
+`Category: Local AI & Inference` • `Language: Python` • `License: Apache-2.0` • [View Repo →](https://github.com/facebookresearch/segment-anything)
+
+### [YOLOv8](https://github.com/ultralytics/ultralytics)
+> Ultralytics YOLOv8 for real-time object detection, image segmentation, pose estimation, and classification.
+
+`Category: Local AI & Inference` • `Language: Python` • `License: AGPL-3.0` • [View Repo →](https://github.com/ultralytics/ultralytics)
+
+### [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)
+> Awesome multilingual OCR toolkits supporting 80+ languages, table recognition, and document structure analysis.
+
+`Category: Local AI & Inference` • `Language: Python` • `License: Apache-2.0` • [View Repo →](https://github.com/PaddlePaddle/PaddleOCR)
+
+### [Kokoro-TTS](https://github.com/hexgrad/kokoro)
+> Lightweight, open-weight text-to-speech model producing studio-grade human voices with only 82M parameters.
+
+⭐ **Featured** • `Category: Local AI & Inference` • `Language: Python` • `License: Apache-2.0` • [View Repo →](https://github.com/hexgrad/kokoro)
+
+### [Piper TTS](https://github.com/rhasspy/piper)
+> Fast, local neural text to speech system that sounds great and is optimized for Raspberry Pi and low-power hardware.
+
+`Category: Local AI & Inference` • `Language: C++` • `License: MIT` • [View Repo →](https://github.com/rhasspy/piper)
+
+### [ChatTTS](https://github.com/2noise/ChatTTS)
+> A generative text-to-speech model specifically designed for conversational scenarios and dialogue synthesis.
+
+`Category: Local AI & Inference` • `Language: Python` • `License: CC-BY-NC-4.0` • [View Repo →](https://github.com/2noise/ChatTTS)
+
+### [Faster-Whisper](https://github.com/SYSTRAN/faster-whisper)
+> Reimplementation of OpenAI's Whisper model using CTranslate2, delivering up to 4x faster transcription.
+
+`Category: Local AI & Inference` • `Language: Python` • `License: MIT` • [View Repo →](https://github.com/SYSTRAN/faster-whisper)
+
+### [pgvector](https://github.com/pgvector/pgvector)
+> Open-source vector similarity search extension for PostgreSQL, supporting exact and approximate nearest neighbor.
+
+⭐ **Featured** • `Category: Local AI & Inference` • `Language: C` • `License: PostgreSQL` • [View Repo →](https://github.com/pgvector/pgvector)
+
+### [Faiss](https://github.com/facebookresearch/faiss)
+> Meta's library for efficient similarity search and clustering of dense vectors, indexing billions of vectors on GPUs.
+
+`Category: Local AI & Inference` • `Language: C++ / Python` • `License: MIT` • [View Repo →](https://github.com/facebookresearch/faiss)
+
+### [LanceDB](https://github.com/lancedb/lancedb)
+> Developer-friendly, serverless open-source vector database for multi-modal AI with zero-copy storage.
+
+`Category: Local AI & Inference` • `Language: Rust / Python` • `License: Apache-2.0` • [View Repo →](https://github.com/lancedb/lancedb)
+
+### [Vespa](https://github.com/vespa-engine/vespa)
+> The open big data serving engine: store, search, organize, and machine-learn over large vector and text datasets in real-time.
+
+`Category: Local AI & Inference` • `Language: C++ / Java` • `License: Apache-2.0` • [View Repo →](https://github.com/vespa-engine/vespa)
+
+### [Annoy](https://github.com/spotify/annoy)
+> Spotify's C++ library with Python bindings to search for points in space that are close to a given query point.
+
+`Category: Local AI & Inference` • `Language: C++ / Python` • `License: Apache-2.0` • [View Repo →](https://github.com/spotify/annoy)
+
+### [BabyAGI](https://github.com/yoheinakajima/babyagi)
+> Pioneering AI-powered task management and autonomous agent execution system that builds on task completion loops.
+
+`Category: Code Generation & Agent Dev` • `Language: Python` • `License: MIT` • [View Repo →](https://github.com/yoheinakajima/babyagi)
+
+### [OpenCodeInterpreter](https://github.com/OpenCodeInterpreter/OpenCodeInterpreter)
+> Open-source code generation system integrating dynamic execution feedback and compiler outputs for iterative code refinement.
+
+`Category: Code Generation & Agent Dev` • `Language: Python` • `License: Apache-2.0` • [View Repo →](https://github.com/OpenCodeInterpreter/OpenCodeInterpreter)
+
+### [LMQL](https://github.com/eth-sri/lmql)
+> A query language for programming Large Language Models with typed output constraints and distribution control.
+
+`Category: AI Workflow & Orchestration` • `Language: Python` • `License: Apache-2.0` • [View Repo →](https://github.com/eth-sri/lmql)
+
+### [AutoRound](https://github.com/intel/auto-round)
+> Intel's advanced weight-only quantization algorithm for low-bit LLM optimization without accuracy degradation.
+
+`Category: Local AI & Inference` • `Language: Python` • `License: Apache-2.0` • [View Repo →](https://github.com/intel/auto-round)
+
+### [SWE-agent](https://github.com/princeton-nlp/SWE-agent)
+> Autonomous software engineering agent that turns LM models into autonomous agents solving GitHub issues.
+
+`Category: Code Generation & Agent Dev` • `Language: Python` • `License: MIT` • [View Repo →](https://github.com/princeton-nlp/SWE-agent)
+
+### [DSPy](https://github.com/stanfordnlp/dspy)
+> Stanford framework for programming—rather than prompting—foundation models with automatic prompt optimization.
+
+⭐ **Featured** • `Category: AI Workflow & Orchestration` • `Language: Python` • `License: MIT` • [View Repo →](https://github.com/stanfordnlp/dspy)
+
+### [FastChat](https://github.com/lm-sys/FastChat)
+> An open platform for training, serving, and evaluating LLM-based chatbots, the core engine behind LMSYS Chatbot Arena.
+
+`Category: Local AI & Inference` • `Language: Python` • `License: Apache-2.0` • [View Repo →](https://github.com/lm-sys/FastChat)
+
+### [GPTCache](https://github.com/zilliztech/gptcache)
+> Semantic cache for LLM queries to cut costs and speed up response time up to 10x using vector similarity.
+
+`Category: Local AI & Inference` • `Language: Python` • `License: MIT` • [View Repo →](https://github.com/zilliztech/gptcache)
 
 </details>
 ---
@@ -662,6 +972,306 @@ APIs that provide a 100% free tier or require no API key at all.
 
 `Category: Terminal & Shell` • `Language: Rust` • `License: MIT` • [View Repo →](https://github.com/zellij-org/zellij)
 
+### [nnn](https://github.com/jarun/nnn)
+> Tiny, lightning-fast terminal file manager with disk usage analyzer, batch renamer, and app launcher.
+
+`Category: Terminal & Shell` • `Language: C` • `License: BSD-2-Clause` • [View Repo →](https://github.com/jarun/nnn)
+
+### [ranger](https://github.com/ranger/ranger)
+> VIM-inspired console file manager with multi-column display and automatic file preview.
+
+`Category: Terminal & Shell` • `Language: Python` • `License: GPL-3.0` • [View Repo →](https://github.com/ranger/ranger)
+
+### [broot](https://github.com/Canop/broot)
+> A new way to see and navigate directory trees, find files, and launch commands quickly.
+
+`Category: Terminal & Shell` • `Language: Rust` • `License: MIT` • [View Repo →](https://github.com/Canop/broot)
+
+### [superfile](https://github.com/yorukot/superfile)
+> Fancy and modern terminal file manager with sleek UI, file previews, and keyboard navigation.
+
+`Category: Terminal & Shell` • `Language: Go` • `License: MIT` • [View Repo →](https://github.com/yorukot/superfile)
+
+### [htop](https://github.com/htop-dev/htop)
+> Interactive cross-platform process viewer with colorful meters and process tree view.
+
+`Category: OS & Hardware Utilities` • `Language: C` • `License: GPL-2.0` • [View Repo →](https://github.com/htop-dev/htop)
+
+### [glances](https://github.com/nicolargo/glances)
+> Cross-platform system monitoring tool with web interface and REST API export.
+
+`Category: OS & Hardware Utilities` • `Language: Python` • `License: LGPL-3.0` • [View Repo →](https://github.com/nicolargo/glances)
+
+### [fastfetch](https://github.com/fastfetch-cli/fastfetch)
+> Neofetch-like tool for fetching system information and displaying it prettily, written in pure C.
+
+`Category: OS & Hardware Utilities` • `Language: C` • `License: MIT` • [View Repo →](https://github.com/fastfetch-cli/fastfetch)
+
+### [ncdu](https://code.blicky.net/yorhel/ncdu)
+> Disk usage analyzer with an ncurses interface, designed to find space hogs on remote servers.
+
+`Category: OS & Hardware Utilities` • `Language: C` • `License: MIT` • [View Repo →](https://code.blicky.net/yorhel/ncdu)
+
+### [gdu](https://github.com/dundee/gdu)
+> Fast console disk usage analyzer with console GUI written in Go, specifically optimized for SSDs.
+
+`Category: OS & Hardware Utilities` • `Language: Go` • `License: MIT` • [View Repo →](https://github.com/dundee/gdu)
+
+### [aria2](https://github.com/aria2/aria2)
+> Ultra-fast multi-protocol and multi-source command-line download utility (HTTP, HTTPS, FTP, BitTorrent).
+
+`Category: HTTP & Network` • `Language: C++` • `License: GPL-2.0` • [View Repo →](https://github.com/aria2/aria2)
+
+### [croc](https://github.com/schollz/croc)
+> Easily and securely send files or folders between any two computers using relay and end-to-end encryption.
+
+`Category: HTTP & Network` • `Language: Go` • `License: MIT` • [View Repo →](https://github.com/schollz/croc)
+
+### [magic-wormhole](https://github.com/magic-wormhole/magic-wormhole)
+> Securely get things from one computer to another using short, human-pronounceable one-time codes.
+
+`Category: HTTP & Network` • `Language: Python` • `License: MIT` • [View Repo →](https://github.com/magic-wormhole/magic-wormhole)
+
+### [trippy](https://github.com/fujiapple852/trippy)
+> A network diagnostic tool combining the functionality of traceroute and ping with interactive TUI.
+
+`Category: HTTP & Network` • `Language: Rust` • `License: Apache-2.0` • [View Repo →](https://github.com/fujiapple852/trippy)
+
+### [mitmproxy](https://github.com/mitmproxy/mitmproxy)
+> An interactive, SSL-capable intercepting HTTP proxy for penetration testers and software developers.
+
+`Category: HTTP & Network` • `Language: Python` • `License: MIT` • [View Repo →](https://github.com/mitmproxy/mitmproxy)
+
+### [websocat](https://github.com/vi/websocat)
+> Command-line client for WebSockets, like netcat or curl for ws:// and wss:// endpoints.
+
+`Category: HTTP & Network` • `Language: Rust` • `License: MIT` • [View Repo →](https://github.com/vi/websocat)
+
+### [grpcurl](https://github.com/fullstorydev/grpcurl)
+> Like cURL, but for gRPC: command-line tool that lets you interact with gRPC servers via reflection.
+
+`Category: HTTP & Network` • `Language: Go` • `License: MIT` • [View Repo →](https://github.com/fullstorydev/grpcurl)
+
+### [gh](https://github.com/cli/cli)
+> GitHub's official command line tool to manage pull requests, issues, releases, and repository workflows.
+
+⭐ **Featured** • `Category: Git & Version Control` • `Language: Go` • `License: MIT` • [View Repo →](https://github.com/cli/cli)
+
+### [glab](https://gitlab.com/gitlab-org/cli)
+> GitLab's official open source CLI tool bringing GitLab features directly to your terminal.
+
+`Category: Git & Version Control` • `Language: Go` • `License: MIT` • [View Repo →](https://gitlab.com/gitlab-org/cli)
+
+### [git-cliff](https://github.com/orhun/git-cliff)
+> Highly customizable changelog generator based on conventional commits and Git history.
+
+`Category: Git & Version Control` • `Language: Rust` • `License: Apache-2.0 / MIT` • [View Repo →](https://github.com/orhun/git-cliff)
+
+### [onefetch](https://github.com/o2sh/onefetch)
+> Git repository summary information tool written in Rust that displays project stats directly in terminal.
+
+`Category: Git & Version Control` • `Language: Rust` • `License: MIT` • [View Repo →](https://github.com/o2sh/onefetch)
+
+### [gitleaks](https://github.com/gitleaks/gitleaks)
+> Protect and discover secrets & sensitive data like passwords, API keys, and tokens in git repositories.
+
+`Category: Git & Version Control` • `Language: Go` • `License: MIT` • [View Repo →](https://github.com/gitleaks/gitleaks)
+
+### [trufflehog](https://github.com/trufflesecurity/trufflehog)
+> Find leaked credentials and secrets across git commit history, filesystems, and S3 buckets.
+
+`Category: Git & Version Control` • `Language: Go` • `License: AGPL-3.0` • [View Repo →](https://github.com/trufflesecurity/trufflehog)
+
+### [osv-scanner](https://github.com/google/osv-scanner)
+> Vulnerability scanner written in Go that checks your dependencies against the Open Source Vulnerability database.
+
+`Category: DevOps & Containers` • `Language: Go` • `License: Apache-2.0` • [View Repo →](https://github.com/google/osv-scanner)
+
+### [tmux](https://github.com/tmux/tmux)
+> Terminal multiplexer that lets you switch easily between several programs in one terminal and detach sessions.
+
+`Category: Terminal & Shell` • `Language: C` • `License: ISC` • [View Repo →](https://github.com/tmux/tmux)
+
+### [atuin](https://github.com/atuinsh/atuin)
+> Magical shell history sync and search tool with SQLite database backing and end-to-end encryption.
+
+`Category: Terminal & Shell` • `Language: Rust` • `License: MIT` • [View Repo →](https://github.com/atuinsh/atuin)
+
+### [thefuck](https://github.com/nvbn/thefuck)
+> Magnificent app that corrects errors in your previous console commands automatically.
+
+`Category: Terminal & Shell` • `Language: Python` • `License: MIT` • [View Repo →](https://github.com/nvbn/thefuck)
+
+### [direnv](https://github.com/direnv/direnv)
+> Unclutter your .profile by loading and unloading environment variables depending on the current directory.
+
+`Category: Terminal & Shell` • `Language: Go` • `License: MIT` • [View Repo →](https://github.com/direnv/direnv)
+
+### [mise](https://github.com/jdx/mise)
+> Front-end to your dev environment: polyglot runtime executor, environment variable manager, and task runner.
+
+`Category: Developer Tools` • `Language: Rust` • `License: MIT` • [View Repo →](https://github.com/jdx/mise)
+
+### [asdf-vm](https://github.com/asdf-vm/asdf)
+> Multiple runtime version manager with a single CLI and unified configuration for Node.js, Python, Ruby, and more.
+
+`Category: Developer Tools` • `Language: Shell` • `License: MIT` • [View Repo →](https://github.com/asdf-vm/asdf)
+
+### [pnpm](https://github.com/pnpm/pnpm)
+> Fast, disk space efficient package manager using hard links and content-addressable storage.
+
+`Category: Developer Tools` • `Language: TypeScript` • `License: MIT` • [View Repo →](https://github.com/pnpm/pnpm)
+
+### [bun](https://github.com/oven-sh/bun)
+> Incredibly fast JavaScript and TypeScript runtime, bundler, test runner, and package manager written in Zig.
+
+⭐ **Featured** • `Category: Developer Tools` • `Language: Zig / C++` • `License: MIT` • [View Repo →](https://github.com/oven-sh/bun)
+
+### [deno](https://github.com/denoland/deno)
+> Secure runtime for JavaScript and TypeScript with built-in web standards and package management.
+
+`Category: Developer Tools` • `Language: Rust` • `License: MIT` • [View Repo →](https://github.com/denoland/deno)
+
+### [jq](https://github.com/jqlang/jq)
+> Command-line JSON processor: flexible, lightweight, and powerful slice, filter, and map utility.
+
+`Category: Terminal & Search` • `Language: C` • `License: MIT` • [View Repo →](https://github.com/jqlang/jq)
+
+### [yq](https://github.com/mikefarah/yq)
+> Portable command-line YAML, JSON, XML, CSV, and properties processor written in Go.
+
+`Category: Terminal & Search` • `Language: Go` • `License: MIT` • [View Repo →](https://github.com/mikefarah/yq)
+
+### [miller](https://github.com/johnkerl/miller)
+> Miller is like awk, sed, cut, join, and sort for name-indexed data such as CSV, TSV, and JSON.
+
+`Category: Terminal & Search` • `Language: Go` • `License: BSD-2-Clause` • [View Repo →](https://github.com/johnkerl/miller)
+
+### [csvkit](https://github.com/wireservice/csvkit)
+> A suite of command-line tools for converting to and working with CSV, the king of tabular formats.
+
+`Category: Terminal & Search` • `Language: Python` • `License: MIT` • [View Repo →](https://github.com/wireservice/csvkit)
+
+### [pandoc](https://github.com/jgm/pandoc)
+> Universal markup converter that translates between Markdown, LaTeX, HTML, PDF, Docx, and 40+ formats.
+
+`Category: Developer Tools` • `Language: Haskell` • `License: GPL-2.0` • [View Repo →](https://github.com/jgm/pandoc)
+
+### [typos-cli](https://github.com/crate-ci/typos)
+> Source code spell checker that finds and corrects typos in source code with low false positives.
+
+`Category: Developer Tools` • `Language: Rust` • `License: Apache-2.0 / MIT` • [View Repo →](https://github.com/crate-ci/typos)
+
+### [vale](https://github.com/errata-ai/vale)
+> Syntax-aware linter for prose and documentation supporting Google, Microsoft, and custom style guides.
+
+`Category: Developer Tools` • `Language: Go` • `License: MIT` • [View Repo →](https://github.com/errata-ai/vale)
+
+### [pgcli](https://github.com/dbcli/pgcli)
+> Postgres CLI with auto-completion and syntax highlighting, table formatting, and smart completions.
+
+`Category: Database & SQL` • `Language: Python` • `License: BSD-3-Clause` • [View Repo →](https://github.com/dbcli/pgcli)
+
+### [mycli](https://github.com/dbcli/mycli)
+> A terminal client for MySQL, MariaDB, and Percona with auto-completion and syntax highlighting.
+
+`Category: Database & SQL` • `Language: Python` • `License: BSD-3-Clause` • [View Repo →](https://github.com/dbcli/mycli)
+
+### [iredis](https://github.com/laixintao/iredis)
+> A terminal client for Redis with auto-completion and syntax highlighting, command suggestions, and hints.
+
+`Category: Database & SQL` • `Language: Python` • `License: BSD-3-Clause` • [View Repo →](https://github.com/laixintao/iredis)
+
+### [litecli](https://github.com/dbcli/litecli)
+> CLI for SQLite databases with auto-completion and syntax highlighting.
+
+`Category: Database & SQL` • `Language: Python` • `License: BSD-3-Clause` • [View Repo →](https://github.com/dbcli/litecli)
+
+### [stern](https://github.com/stern/stern)
+> Multi pod and container log tailing for Kubernetes with regex filtering and color-coded stream output.
+
+`Category: DevOps & Containers` • `Language: Go` • `License: Apache-2.0` • [View Repo →](https://github.com/stern/stern)
+
+### [kubectx](https://github.com/ahmetb/kubectx)
+> Faster way to switch between clusters and namespaces in kubectl with fuzzy search integration.
+
+`Category: DevOps & Containers` • `Language: Go` • `License: Apache-2.0` • [View Repo →](https://github.com/ahmetb/kubectx)
+
+### [helm](https://github.com/helm/helm)
+> The package manager for Kubernetes: define, install, and upgrade complex Kubernetes applications.
+
+`Category: DevOps & Containers` • `Language: Go` • `License: Apache-2.0` • [View Repo →](https://github.com/helm/helm)
+
+### [kustomize](https://github.com/kubernetes-sigs/kustomize)
+> Customization of Kubernetes YAML configurations without templates, using patch layers and overlays.
+
+`Category: DevOps & Containers` • `Language: Go` • `License: Apache-2.0` • [View Repo →](https://github.com/kubernetes-sigs/kustomize)
+
+### [minikube](https://github.com/kubernetes/minikube)
+> Run Kubernetes locally on Windows, macOS, and Linux with automated cluster provisioning.
+
+`Category: DevOps & Containers` • `Language: Go` • `License: Apache-2.0` • [View Repo →](https://github.com/kubernetes/minikube)
+
+### [kind](https://github.com/kubernetes-sigs/kind)
+> Kubernetes IN Docker: tool for running local Kubernetes clusters using Docker container nodes.
+
+`Category: DevOps & Containers` • `Language: Go` • `License: Apache-2.0` • [View Repo →](https://github.com/kubernetes-sigs/kind)
+
+### [dasel](https://github.com/TomWright/dasel)
+> Query and update data structures using selectors from the command line across JSON, YAML, TOML, and XML.
+
+`Category: Terminal & Search` • `Language: Go` • `License: MIT` • [View Repo →](https://github.com/TomWright/dasel)
+
+### [zenith](https://github.com/bvaisvil/zenith)
+> Terminal system monitor with zooming, historical graphs, process trees, and disk/network I/O tracking.
+
+`Category: OS & Hardware Utilities` • `Language: Rust` • `License: MIT` • [View Repo →](https://github.com/bvaisvil/zenith)
+
+### [diskonaut](https://github.com/imsnif/diskonaut)
+> Terminal visual disk space navigator that visually maps out filesystems to locate large directories.
+
+`Category: OS & Hardware Utilities` • `Language: Rust` • `License: MIT` • [View Repo →](https://github.com/imsnif/diskonaut)
+
+### [ctop](https://github.com/bcicen/ctop)
+> Top-like interface for container metrics, real-time memory and CPU consumption for Docker and Kubernetes.
+
+`Category: DevOps & Containers` • `Language: Go` • `License: MIT` • [View Repo →](https://github.com/bcicen/ctop)
+
+### [speedtest-cli](https://github.com/sivel/speedtest-cli)
+> Command line interface for testing internet bandwidth using speedtest.net servers without flash/browser.
+
+`Category: HTTP & Network` • `Language: Python` • `License: Apache-2.0` • [View Repo →](https://github.com/sivel/speedtest-cli)
+
+### [git-sizer](https://github.com/github/git-sizer)
+> Compute various size metrics for a Git repository to detect large files, bloated commits, or excessive branches.
+
+`Category: Git & Version Control` • `Language: Go` • `License: MIT` • [View Repo →](https://github.com/github/git-sizer)
+
+### [cz-cli](https://github.com/commitizen/cz-cli)
+> The commitizen command line utility that prompts developers for conventional commit messages.
+
+`Category: Git & Version Control` • `Language: JavaScript` • `License: MIT` • [View Repo →](https://github.com/commitizen/cz-cli)
+
+### [volta](https://github.com/volta-cli/volta)
+> The hassle-free JavaScript tool manager that automatically switches Node.js and package manager versions per project.
+
+`Category: Developer Tools` • `Language: Rust` • `License: BSD-2-Clause` • [View Repo →](https://github.com/volta-cli/volta)
+
+### [q](https://github.com/harelba/q)
+> Execute SQL-like queries directly on CSV, TSV, and tabular text files without loading into a database.
+
+`Category: Terminal & Search` • `Language: Python` • `License: GPL-3.0` • [View Repo →](https://github.com/harelba/q)
+
+### [lf](https://github.com/gokcehan/lf)
+> Terminal file manager written in Go, heavily inspired by ranger with faster startup and server/client architecture.
+
+`Category: Terminal & Shell` • `Language: Go` • `License: MIT` • [View Repo →](https://github.com/gokcehan/lf)
+
+### [inxi](https://github.com/smxi/inxi)
+> Full featured CLI system information tool designed for troubleshooting hardware and system configurations.
+
+`Category: OS & Hardware Utilities` • `Language: Perl` • `License: GPL-3.0` • [View Repo →](https://github.com/smxi/inxi)
+
 </details>
 
 ---
@@ -805,6 +1415,181 @@ APIs that provide a 100% free tier or require no API key at all.
 > Continuous inspection engine for code quality, architectural hotspots, and security vulnerabilities across 30+ languages.
 
 `Category: Security & Vulnerability Scanners` • `Language: Java` • `License: LGPL-3.0` • [View Repo →](https://github.com/SonarSource/sonarqube)
+
+### [Newman](https://github.com/postmanlabs/newman)
+> Postman's collection runner CLI allowing you to run and test Postman collections directly in CI/CD pipelines.
+
+`Category: API Design & Debugging` • `Language: JavaScript` • `License: Apache-2.0` • [View Repo →](https://github.com/postmanlabs/newman)
+
+### [PactumJS](https://github.com/pactumjs/pactum)
+> Next-generation REST API automation testing framework for all levels in a test pyramid with mock support.
+
+`Category: Contract & Schema Testing` • `Language: JavaScript` • `License: MIT` • [View Repo →](https://github.com/pactumjs/pactum)
+
+### [Karate Framework](https://github.com/karatelabs/karate)
+> Unified open-source test automation framework combining API testing, mocks, performance testing, and UI automation.
+
+`Category: Contract & Schema Testing` • `Language: Java` • `License: MIT` • [View Repo →](https://github.com/karatelabs/karate)
+
+### [RestAssured](https://github.com/rest-assured/rest-assured)
+> Java DSL for easy testing of REST services, bringing the simplicity of dynamic languages into Java.
+
+`Category: API Design & Debugging` • `Language: Java` • `License: Apache-2.0` • [View Repo →](https://github.com/rest-assured/rest-assured)
+
+### [Dredd](https://github.com/apiaryio/dredd)
+> Language-agnostic command-line tool for validating API description documents against backend implementation.
+
+`Category: Contract & Schema Testing` • `Language: JavaScript` • `License: MIT` • [View Repo →](https://github.com/apiaryio/dredd)
+
+### [Schemathesis](https://github.com/schemathesis/schemathesis)
+> Modern API testing tool that finds crashes and bugs using property-based testing and OpenAPI specifications.
+
+`Category: Contract & Schema Testing` • `Language: Python` • `License: MIT` • [View Repo →](https://github.com/schemathesis/schemathesis)
+
+### [Puppeteer](https://github.com/puppeteer/puppeteer)
+> Google's Node.js library which provides a high-level API to control Chrome/Chromium over the DevTools Protocol.
+
+⭐ **Featured** • `Category: Browser & E2E Testing` • `Language: TypeScript` • `License: Apache-2.0` • [View Repo →](https://github.com/puppeteer/puppeteer)
+
+### [Selenium](https://github.com/SeleniumHQ/selenium)
+> Industry-standard browser automation framework and ecosystem supporting multiple browsers and programming languages.
+
+`Category: Browser & E2E Testing` • `Language: Java / Python / JS` • `License: Apache-2.0` • [View Repo →](https://github.com/SeleniumHQ/selenium)
+
+### [Appium](https://github.com/appium/appium)
+> Cross-platform automation framework for native, hybrid, and mobile web apps on iOS, Android, and Windows.
+
+`Category: Browser & E2E Testing` • `Language: JavaScript` • `License: Apache-2.0` • [View Repo →](https://github.com/appium/appium)
+
+### [Maestro](https://github.com/mobile-dev-inc/maestro)
+> Painless mobile UI automation framework for Android and iOS with declarative YAML test flows.
+
+⭐ **Featured** • `Category: Browser & E2E Testing` • `Language: Kotlin` • `License: Apache-2.0` • [View Repo →](https://github.com/mobile-dev-inc/maestro)
+
+### [Detox](https://github.com/wix/Detox)
+> Gray box end-to-end testing and automation library for React Native mobile applications.
+
+`Category: Browser & E2E Testing` • `Language: JavaScript` • `License: MIT` • [View Repo →](https://github.com/wix/Detox)
+
+### [WebdriverIO](https://github.com/webdriverio/webdriverio)
+> Next-gen browser and mobile automation test framework for Node.js with native WebDriver and CDP support.
+
+`Category: Browser & E2E Testing` • `Language: TypeScript` • `License: MIT` • [View Repo →](https://github.com/webdriverio/webdriverio)
+
+### [Nightwatch.js](https://github.com/nightwatchjs/nightwatch)
+> Integrated end-to-end testing framework powered by Node.js and W3C Webdriver API.
+
+`Category: Browser & E2E Testing` • `Language: JavaScript` • `License: MIT` • [View Repo →](https://github.com/nightwatchjs/nightwatch)
+
+### [Gatling](https://github.com/gatling/gatling)
+> High-performance load testing tool built on Akka and Netty with expressive DSL in Java, Kotlin, and Scala.
+
+`Category: Performance & Load Testing` • `Language: Java / Scala` • `License: Apache-2.0` • [View Repo →](https://github.com/gatling/gatling)
+
+### [JMeter](https://github.com/apache/jmeter)
+> Apache's pure Java desktop application designed to load test functional behavior and measure performance.
+
+`Category: Performance & Load Testing` • `Language: Java` • `License: Apache-2.0` • [View Repo →](https://github.com/apache/jmeter)
+
+### [Wrk](https://github.com/wg/wrk)
+> Modern HTTP benchmarking tool capable of generating significant load when run on a single multi-core CPU.
+
+`Category: Performance & Load Testing` • `Language: C` • `License: Apache-2.0` • [View Repo →](https://github.com/wg/wrk)
+
+### [Hey](https://github.com/rakyll/hey)
+> Tiny and fast command line load generator for web applications, a modern replacement for ApacheBench (ab).
+
+`Category: Performance & Load Testing` • `Language: Go` • `License: Apache-2.0` • [View Repo →](https://github.com/rakyll/hey)
+
+### [Drill](https://github.com/fcsonline/drill)
+> HTTP load testing tool written in Rust, inspired by Ansible syntax with support for benchmark assertions.
+
+`Category: Performance & Load Testing` • `Language: Rust` • `License: GPL-3.0` • [View Repo →](https://github.com/fcsonline/drill)
+
+### [Checkov](https://github.com/bridgecrewio/checkov)
+> Static code analysis tool for infrastructure as code (Terraform, CloudFormation, Kubernetes, Dockerfile).
+
+`Category: Security & Vulnerability Scanners` • `Language: Python` • `License: Apache-2.0` • [View Repo →](https://github.com/bridgecrewio/checkov)
+
+### [Hadolint](https://github.com/hadolint/hadolint)
+> Smarter Dockerfile linter that helps you build best-practice Docker images by parsing AST rules.
+
+`Category: Security & Vulnerability Scanners` • `Language: Haskell` • `License: GPL-3.0` • [View Repo →](https://github.com/hadolint/hadolint)
+
+### [Bandit](https://github.com/PyCQA/bandit)
+> Security linter designed to find common security issues in Python code using AST node analysis.
+
+`Category: Security & Vulnerability Scanners` • `Language: Python` • `License: Apache-2.0` • [View Repo →](https://github.com/PyCQA/bandit)
+
+### [Brakeman](https://github.com/presidentbeef/brakeman)
+> Static analysis tool which checks Ruby on Rails applications for security vulnerabilities.
+
+`Category: Security & Vulnerability Scanners` • `Language: Ruby` • `License: CC-BY-NC-SA-4.0` • [View Repo →](https://github.com/presidentbeef/brakeman)
+
+### [Safety-CLI](https://github.com/pyupio/safety)
+> Checks Python dependencies against known security vulnerabilities from CVE databases.
+
+`Category: Security & Vulnerability Scanners` • `Language: Python` • `License: MIT` • [View Repo →](https://github.com/pyupio/safety)
+
+### [OWASP ZAP](https://github.com/zaproxy/zaproxy)
+> The world's most widely used web app scanner, free and open-source automated penetration testing tool.
+
+⭐ **Featured** • `Category: Security & Vulnerability Scanners` • `Language: Java` • `License: Apache-2.0` • [View Repo →](https://github.com/zaproxy/zaproxy)
+
+### [Nuclei](https://github.com/projectdiscovery/nuclei)
+> Fast and customizable vulnerability scanner based on simple YAML-based templates from ProjectDiscovery.
+
+⭐ **Featured** • `Category: Security & Vulnerability Scanners` • `Language: Go` • `License: MIT` • [View Repo →](https://github.com/projectdiscovery/nuclei)
+
+### [Pa11y](https://github.com/pa11y/pa11y)
+> Automated accessibility testing tool that runs via CLI or Node.js to uncover WCAG compliance errors.
+
+`Category: Browser & E2E Testing` • `Language: JavaScript` • `License: LGPL-3.0` • [View Repo →](https://github.com/pa11y/pa11y)
+
+### [BackstopJS](https://github.com/garris/BackstopJS)
+> Catch visual regressions in web apps across responsive screen resolutions and DOM interactions.
+
+`Category: Browser & E2E Testing` • `Language: JavaScript` • `License: MIT` • [View Repo →](https://github.com/garris/BackstopJS)
+
+### [Pixelmatch](https://github.com/mapbox/pixelmatch)
+> The smallest, simplest and fastest JavaScript pixel-level image comparison library with anti-aliasing detection.
+
+`Category: Browser & E2E Testing` • `Language: JavaScript` • `License: ISC` • [View Repo →](https://github.com/mapbox/pixelmatch)
+
+### [Loki](https://github.com/oblador/loki)
+> Visual regression testing for Storybook stories across Chrome and Android with Git diffs.
+
+`Category: Browser & E2E Testing` • `Language: JavaScript` • `License: MIT` • [View Repo →](https://github.com/oblador/loki)
+
+### [Lost-Pixel](https://github.com/lost-pixel/lost-pixel)
+> Open source visual regression testing engine for Storybook, Next.js, Ladle, and standalone websites.
+
+`Category: Browser & E2E Testing` • `Language: TypeScript` • `License: MIT` • [View Repo →](https://github.com/lost-pixel/lost-pixel)
+
+### [MockServer](https://github.com/mock-server/mockserver)
+> Enables easy mocking of any system you integrate with via HTTP or HTTPS with expectations and verifications.
+
+`Category: API Mocking & Virtualization` • `Language: Java` • `License: Apache-2.0` • [View Repo →](https://github.com/mock-server/mockserver)
+
+### [JSON-Server](https://github.com/typicode/json-server)
+> Get a full fake REST API with zero coding in less than 30 seconds from a single JSON file.
+
+⭐ **Featured** • `Category: API Mocking & Virtualization` • `Language: TypeScript` • `License: MIT` • [View Repo →](https://github.com/typicode/json-server)
+
+### [Mimesis](https://github.com/lk-geimfari/mimesis)
+> High-performance Python library for generating realistic synthetic data in a variety of locales.
+
+`Category: Test Data Generation` • `Language: Python` • `License: MIT` • [View Repo →](https://github.com/lk-geimfari/mimesis)
+
+### [Bogus](https://github.com/bchavez/Bogus)
+> A simple and sane fake data generator for .NET languages, ported from Faker.js with fluent syntax.
+
+`Category: Test Data Generation` • `Language: C#` • `License: MIT` • [View Repo →](https://github.com/bchavez/Bogus)
+
+### [Testcontainers](https://github.com/testcontainers/testcontainers-java)
+> Java library that supports JUnit tests, providing lightweight throwaway instances of Docker databases.
+
+⭐ **Featured** • `Category: Unit & Integration Testing` • `Language: Java` • `License: MIT` • [View Repo →](https://github.com/testcontainers/testcontainers-java)
 
 </details>
 
@@ -965,6 +1750,206 @@ APIs that provide a 100% free tier or require no API key at all.
 
 `Category: Cloud Hosting & PaaS` • 🎁 **Free Tier**: `Free trial credit of $5 for new projects with zero setup` • [Explore Railway →](https://railway.com)
 
+### [Oracle Cloud Always Free](https://www.oracle.com/cloud/free)
+> Generous always-free cloud infrastructure: 4 Arm Ampere A1 cores, 24GB RAM, and 200GB block storage.
+
+`Category: Cloud Hosting & Compute` • 🎁 **Free Tier**: `4 OCPU, 24GB RAM Arm compute, 2 AMD micro VMs, 200GB storage` • [Explore Oracle Cloud Always Free →](https://www.oracle.com/cloud/free)
+
+### [Deno Deploy](https://deno.com/deploy)
+> Globally distributed system that runs JavaScript, TypeScript, and WebAssembly at the edge with zero cold starts.
+
+`Category: Serverless Compute & Edge` • 🎁 **Free Tier**: `1,000,000 requests/month, 100 GiB outbound transfer` • [Explore Deno Deploy →](https://deno.com/deploy)
+
+### [Vercel](https://vercel.com)
+> Frontend cloud platform providing seamless Git deployments, edge middleware, and serverless functions.
+
+`Category: Cloud Hosting & PaaS` • 🎁 **Free Tier**: `Free Hobby Plan: 100GB bandwidth, automated CI/CD previews, serverless functions` • [Explore Vercel →](https://vercel.com)
+
+### [Netlify](https://www.netlify.com)
+> Platform for deploying modern web projects with automated Git workflows, serverless functions, and form handling.
+
+`Category: Cloud Hosting & PaaS` • 🎁 **Free Tier**: `Free Starter Tier: 100GB bandwidth/mo, 300 build minutes/mo` • [Explore Netlify →](https://www.netlify.com)
+
+### [Cloudflare Pages](https://pages.cloudflare.com)
+> Fast, secure, and free Jamstack platform for frontend developers running directly on Cloudflare edge.
+
+`Category: Cloud Hosting & PaaS` • 🎁 **Free Tier**: `Unlimited sites, unlimited requests, 500 builds per month` • [Explore Cloudflare Pages →](https://pages.cloudflare.com)
+
+### [GitHub Pages](https://pages.github.com)
+> Websites for you and your projects, hosted directly from your GitHub repository with automatic SSL.
+
+`Category: Cloud Hosting & PaaS` • 🎁 **Free Tier**: `100% Free with 1GB repository size limit and 100GB bandwidth/mo` • [Explore GitHub Pages →](https://pages.github.com)
+
+### [GitLab Pages](https://docs.gitlab.com/ee/user/project/pages)
+> Publish static websites directly from any repository on GitLab with integrated CI/CD pipelines.
+
+`Category: Cloud Hosting & PaaS` • 🎁 **Free Tier**: `100% Free with custom domain support and Let's Encrypt SSL` • [Explore GitLab Pages →](https://docs.gitlab.com/ee/user/project/pages)
+
+### [Glitch](https://glitch.com)
+> Friendly community and instant web development environment where anyone can build, remix, and host full-stack apps.
+
+`Category: Cloud Hosting & PaaS` • 🎁 **Free Tier**: `Free public hosting with auto-sleep after inactivity` • [Explore Glitch →](https://glitch.com)
+
+### [Aiven Free Tier](https://aiven.io/free-plans)
+> Managed cloud data platform offering permanent free tiers for PostgreSQL, MySQL, and OpenSearch.
+
+`Category: Databases & BaaS` • 🎁 **Free Tier**: `Free tier PostgreSQL / MySQL single-node with 1GB RAM and 5GB storage` • [Explore Aiven Free Tier →](https://aiven.io/free-plans)
+
+### [MongoDB Atlas](https://www.mongodb.com/products/platform/atlas-database)
+> Fully managed document database service with automated scaling, backups, and built-in security.
+
+`Category: Databases & BaaS` • 🎁 **Free Tier**: `Shared M0 cluster with 512MB storage and shared RAM permanently free` • [Explore MongoDB Atlas →](https://www.mongodb.com/products/platform/atlas-database)
+
+### [Redis Cloud](https://redis.io/cloud)
+> High-performance in-memory key-value database managed on AWS, GCP, and Azure.
+
+`Category: Databases & BaaS` • 🎁 **Free Tier**: `Free 30MB database with high throughput and basic persistence` • [Explore Redis Cloud →](https://redis.io/cloud)
+
+### [CockroachDB Serverless](https://www.cockroachlabs.com/pricing)
+> Distributed, multi-region SQL database that scales automatically and ensures serializable ACID consistency.
+
+`Category: Databases & BaaS` • 🎁 **Free Tier**: `Free tier with 10GB storage and 50M Request Units per month` • [Explore CockroachDB Serverless →](https://www.cockroachlabs.com/pricing)
+
+### [TiDB Serverless](https://www.pingcap.com/tidb-serverless)
+> Distributed, MySQL-compatible Hybrid Transactional/Analytical Processing (HTAP) database with serverless auto-scaling.
+
+`Category: Databases & BaaS` • 🎁 **Free Tier**: `Free tier with 5GB row storage, 5GB columnar storage, and 50M RU/mo` • [Explore TiDB Serverless →](https://www.pingcap.com/tidb-serverless)
+
+### [Backblaze B2](https://www.backblaze.com/cloud-storage)
+> S3-compatible cloud object storage with ultra-low pricing and free bandwidth partnerships with Cloudflare.
+
+`Category: Storage & Buckets` • 🎁 **Free Tier**: `10GB permanent free storage and 1GB/day free download bandwidth` • [Explore Backblaze B2 →](https://www.backblaze.com/cloud-storage)
+
+### [Scaleway Stardust & Object Storage](https://www.scaleway.com/en/pricing)
+> European cloud provider offering multi-AZ S3-compatible object storage with generous free allowances.
+
+`Category: Storage & Buckets` • 🎁 **Free Tier**: `75GB free Object Storage per month permanently` • [Explore Scaleway Stardust & Object Storage →](https://www.scaleway.com/en/pricing)
+
+### [Keycloak](https://www.keycloak.org)
+> Open source identity and access management solution for modern applications and services, supporting OpenID Connect and SAML.
+
+`Category: Authentication & Security` • 🎁 **Free Tier**: `100% Free & Open Source Apache-2.0, self-hostable` • [Explore Keycloak →](https://www.keycloak.org)
+
+### [Authentik](https://goauthentik.io)
+> Open-source Identity Provider focused on flexibility and versatility with built-in user directory, MFA, and SSO.
+
+`Category: Authentication & Security` • 🎁 **Free Tier**: `100% Free & Open Source GNU GPLv3` • [Explore Authentik →](https://goauthentik.io)
+
+### [Authelia](https://www.authelia.com)
+> Open-source authentication and authorization server providing 2-factor authentication and single sign-on for reverse proxies.
+
+`Category: Authentication & Security` • 🎁 **Free Tier**: `100% Free & Open Source Apache-2.0` • [Explore Authelia →](https://www.authelia.com)
+
+### [Zitadel](https://zitadel.com)
+> Open source identity infrastructure with turnkey authentication, audit logs, multi-tenancy, and passkeys.
+
+`Category: Authentication & Security` • 🎁 **Free Tier**: `100% Free Open Source self-hosted; Free cloud tier with 25k requests/mo` • [Explore Zitadel →](https://zitadel.com)
+
+### [FusionAuth](https://fusionauth.io)
+> Complete customer identity and access management system with fast setup and flexible user management APIs.
+
+`Category: Authentication & Security` • 🎁 **Free Tier**: `Free Community Edition with unlimited users and basic MFA` • [Explore FusionAuth →](https://fusionauth.io)
+
+### [Casdoor](https://casdoor.org)
+> UI-first open-source Identity and Access Management (IAM) / Single-Sign-On (SSO) platform with web UI.
+
+`Category: Authentication & Security` • 🎁 **Free Tier**: `100% Free & Open Source Apache-2.0` • [Explore Casdoor →](https://casdoor.org)
+
+### [Ory Kratos](https://www.ory.sh/kratos)
+> Cloud-native user management system and identity provider implementing login, registration, MFA, and social auth.
+
+`Category: Authentication & Security` • 🎁 **Free Tier**: `100% Free & Open Source Apache-2.0` • [Explore Ory Kratos →](https://www.ory.sh/kratos)
+
+### [Portainer Community](https://www.portainer.io)
+> Universal container management platform for Docker, Docker Swarm, and Kubernetes with clean web GUI.
+
+`Category: Self-Hosted Cloud & PaaS` • 🎁 **Free Tier**: `100% Free & Open Source Community Edition` • [Explore Portainer Community →](https://www.portainer.io)
+
+### [Nginx Proxy Manager](https://nginxproxymanager.com)
+> Expose your web services easily and securely with automatic Let's Encrypt SSL certificates and web administration.
+
+`Category: Self-Hosted Cloud & PaaS` • 🎁 **Free Tier**: `100% Free & Open Source MIT` • [Explore Nginx Proxy Manager →](https://nginxproxymanager.com)
+
+### [Traefik Community](https://traefik.io/traefik)
+> The leading cloud-native application proxy that integrates with your existing cluster and configures itself automatically.
+
+`Category: Self-Hosted Cloud & PaaS` • 🎁 **Free Tier**: `100% Free & Open Source Apache-2.0` • [Explore Traefik Community →](https://traefik.io/traefik)
+
+### [Caddy Web Server](https://caddyserver.com)
+> Enterprise-ready, open source web server with automatic HTTPS written in pure Go.
+
+`Category: Self-Hosted Cloud & PaaS` • 🎁 **Free Tier**: `100% Free & Open Source Apache-2.0` • [Explore Caddy Web Server →](https://caddyserver.com)
+
+### [CasaOS](https://casaos.io)
+> Simple, personal cloud OS designed for home servers and self-hosting Docker apps with an elegant UI.
+
+`Category: Self-Hosted Cloud & PaaS` • 🎁 **Free Tier**: `100% Free & Open Source Apache-2.0` • [Explore CasaOS →](https://casaos.io)
+
+### [Umbrel](https://umbrel.com)
+> The ultimate personal home cloud server OS that lets you self-host Bitcoin, AI models, and nextcloud apps with 1 click.
+
+`Category: Self-Hosted Cloud & PaaS` • 🎁 **Free Tier**: `100% Free & Open Source` • [Explore Umbrel →](https://umbrel.com)
+
+### [YunoHost](https://yunohost.org)
+> Operating system aiming to simplify as much as possible the administration of a self-hosted server.
+
+`Category: Self-Hosted Cloud & PaaS` • 🎁 **Free Tier**: `100% Free & Open Source GPL-3.0` • [Explore YunoHost →](https://yunohost.org)
+
+### [RabbitMQ](https://www.rabbitmq.com)
+> Most widely deployed open source message broker supporting AMQP, MQTT, and STOMP protocols.
+
+`Category: Messaging & Queues` • 🎁 **Free Tier**: `100% Free & Open Source MPL-2.0` • [Explore RabbitMQ →](https://www.rabbitmq.com)
+
+### [Eclipse Mosquitto](https://mosquitto.org)
+> Lightweight open-source message broker that implements the MQTT protocol versions 5.0, 3.1.1 and 3.1.
+
+`Category: Messaging & Queues` • 🎁 **Free Tier**: `100% Free & Open Source EPL-2.0` • [Explore Eclipse Mosquitto →](https://mosquitto.org)
+
+### [EMQX](https://www.emqx.com/en)
+> The world's most scalable open-source MQTT platform for connected IoT, automotive, and industrial devices.
+
+`Category: Messaging & Queues` • 🎁 **Free Tier**: `100% Free Open Source Community Edition; Free cloud tier` • [Explore EMQX →](https://www.emqx.com/en)
+
+### [Brevo (formerly Sendinblue)](https://www.brevo.com/pricing)
+> Email marketing and transactional messaging platform with reliable delivery and webhook tracking.
+
+`Category: Transactional Email` • 🎁 **Free Tier**: `300 emails/day permanently free with unlimited contacts` • [Explore Brevo (formerly Sendinblue) →](https://www.brevo.com/pricing)
+
+### [SendGrid Free Tier](https://sendgrid.com/pricing)
+> Cloud-based email infrastructure platform with robust delivery APIs, template engines, and analytics.
+
+`Category: Transactional Email` • 🎁 **Free Tier**: `100 emails/day permanently free` • [Explore SendGrid Free Tier →](https://sendgrid.com/pricing)
+
+### [Mailgun Free Foundation](https://www.mailgun.com/pricing)
+> Developer-first email delivery platform offering inbound routing, SPF/DKIM verification, and logs.
+
+`Category: Transactional Email` • 🎁 **Free Tier**: `5,000 free emails for 1 month, then low pay-as-you-grow` • [Explore Mailgun Free Foundation →](https://www.mailgun.com/pricing)
+
+### [Plausible Analytics Self-Hosted](https://plausible.io/self-hosted)
+> Lightweight and open-source Google Analytics alternative with zero cookies and full GDPR compliance.
+
+`Category: Observability & Analytics` • 🎁 **Free Tier**: `100% Free & Open Source AGPLv3 for self-hosters` • [Explore Plausible Analytics Self-Hosted →](https://plausible.io/self-hosted)
+
+### [Grafana OSS](https://grafana.com/oss/grafana)
+> The open and composable observability and data visualization platform with rich dashboards and alerts.
+
+`Category: Observability & Analytics` • 🎁 **Free Tier**: `100% Free & Open Source AGPLv3 self-hosted` • [Explore Grafana OSS →](https://grafana.com/oss/grafana)
+
+### [Prometheus](https://prometheus.io)
+> An open-source monitoring system with a dimensional data model, flexible query language, and alerting.
+
+`Category: Observability & Analytics` • 🎁 **Free Tier**: `100% Free & Open Source Apache-2.0` • [Explore Prometheus →](https://prometheus.io)
+
+### [Uptime Kuma](https://github.com/louislam/uptime-kuma)
+> Self-hosted monitoring tool like Uptime Robot with modern dashboard and notifications across 90+ services.
+
+`Category: Observability & Analytics` • 🎁 **Free Tier**: `100% Free & Open Source MIT` • [Explore Uptime Kuma →](https://github.com/louislam/uptime-kuma)
+
+### [Dragonfly](https://www.dragonflydb.io)
+> A modern, highly performant replacement for Redis and Memcached with 25x throughput and multi-threaded core.
+
+`Category: Databases & BaaS` • 🎁 **Free Tier**: `100% Free & Open Source BSL` • [Explore Dragonfly →](https://www.dragonflydb.io)
+
 </details>
 
 ---
@@ -1040,6 +2025,66 @@ APIs that provide a 100% free tier or require no API key at all.
 🎯 **Seeking**: Site enhancements, new project definitions, triage, Jekyll improvements  
 `Language: Ruby / JavaScript` • [Browse Open Issues →](https://github.com/up-for-grabs/up-for-grabs.net/issues) • [Repo Link →](https://github.com/up-for-grabs/up-for-grabs.net)
 
+### [freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp)
+> The freeCodeCamp.org open source codebase and curriculum helping millions learn to code globally.
+
+🎯 **Seeking**: Curriculum improvements, UI localization, starter issues, and mobile app features  
+`Language: TypeScript` • [Browse Open Issues →](https://github.com/freeCodeCamp/freeCodeCamp/labels/first%20timers%20only) • [Repo Link →](https://github.com/freeCodeCamp/freeCodeCamp)
+
+### [Excalidraw](https://github.com/excalidraw/excalidraw)
+> Virtual whiteboard for sketching hand-drawn like diagrams with end-to-end encryption.
+
+🎯 **Seeking**: Canvas tools, export formats, accessibility improvements, and localization  
+`Language: TypeScript` • [Browse Open Issues →](https://github.com/excalidraw/excalidraw/labels/good%20first%20issue) • [Repo Link →](https://github.com/excalidraw/excalidraw)
+
+### [Cal.com](https://github.com/calcom/cal.com)
+> Scheduling infrastructure for everyone, the open-source Calendly alternative.
+
+🎯 **Seeking**: App integrations, workflow automations, internationalization, and documentation  
+`Language: TypeScript` • [Browse Open Issues →](https://github.com/calcom/cal.com/labels/good%20first%20issue) • [Repo Link →](https://github.com/calcom/cal.com)
+
+### [Documenso](https://github.com/documenso/documenso)
+> The open source DocuSign alternative: secure, digital document signing platform.
+
+🎯 **Seeking**: PDF manipulation features, webhook notifications, UI polish, and starter bugs  
+`Language: TypeScript` • [Browse Open Issues →](https://github.com/documenso/documenso/labels/good%20first%20issue) • [Repo Link →](https://github.com/documenso/documenso)
+
+### [Twenty](https://github.com/twentyhq/twenty)
+> Building a modern, open-source alternative to Salesforce with clean UI and GraphQL APIs.
+
+🎯 **Seeking**: Frontend components, data import/export adapters, and API endpoints  
+`Language: TypeScript` • [Browse Open Issues →](https://github.com/twentyhq/twenty/labels/good%20first%20issue) • [Repo Link →](https://github.com/twentyhq/twenty)
+
+### [Ghost](https://github.com/TryGhost/Ghost)
+> Turn your audience into a business: open-source modern publishing and membership platform.
+
+🎯 **Seeking**: Admin UI polish, theme adapters, starter bugs, and translation updates  
+`Language: JavaScript` • [Browse Open Issues →](https://github.com/TryGhost/Ghost/labels/good%20first%20issue) • [Repo Link →](https://github.com/TryGhost/Ghost)
+
+### [Chatwoot](https://github.com/chatwoot/chatwoot)
+> Open-source customer engagement suite, alternative to Intercom and Zendesk.
+
+🎯 **Seeking**: Channel connectors, webhook handlers, UI polish, and documentation  
+`Language: Ruby / Vue` • [Browse Open Issues →](https://github.com/chatwoot/chatwoot/labels/good%20first%20issue) • [Repo Link →](https://github.com/chatwoot/chatwoot)
+
+### [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy)
+> Open source Notion alternative built with Flutter and Rust for privacy and offline-first workflows.
+
+🎯 **Seeking**: Flutter widgets, keyboard shortcuts, markdown renderers, and bug fixes  
+`Language: Flutter / Rust` • [Browse Open Issues →](https://github.com/AppFlowy-IO/AppFlowy/labels/good%20first%20issue) • [Repo Link →](https://github.com/AppFlowy-IO/AppFlowy)
+
+### [Affine](https://github.com/toeverything/AFFiNE)
+> Next-gen collaborative knowledge base for tasks, whiteboards, and multi-modal documents.
+
+🎯 **Seeking**: Plugin extensions, block editor features, and starter issues  
+`Language: TypeScript / Rust` • [Browse Open Issues →](https://github.com/toeverything/AFFiNE/labels/good%20first%20issue) • [Repo Link →](https://github.com/toeverything/AFFiNE)
+
+### [Dub.co](https://github.com/dubinc/dub)
+> Open-source link management infrastructure for modern marketing teams with custom domains and analytics.
+
+🎯 **Seeking**: Analytics widgets, API client SDKs, documentation, and starter features  
+`Language: TypeScript` • [Browse Open Issues →](https://github.com/dubinc/dub/labels/good%20first%20issue) • [Repo Link →](https://github.com/dubinc/dub)
+
 </details>
 ---
 
@@ -1068,6 +2113,17 @@ Free cloud credits, software sponsorships, and startup program perks for develop
 | [**1Password for Open Source**](https://github.com/1Password/op-connect-playbook) | `Open Source Sponsorship` | 🎁 **Free 1Password Teams subscription** | Active open-source project maintainers with public GitHub repositories |
 | [**Netlify for Open Source**](https://www.netlify.com/open-source) | `Open Source Sponsorship` | 🎁 **Free Netlify Pro Team tier** | Non-commercial open source projects displaying a Netlify badge |
 | [**Vercel for Open Source**](https://vercel.com/docs/accounts/plans/pro#open-source) | `Open Source Sponsorship` | 🎁 **Free Vercel Pro Plan sponsorship** | Public open source projects with active community adoption and OSI license |
+| [**GitLab for Open Source**](https://about.gitlab.com/solutions/open-source/program) | `Open Source Sponsorship` | 🎁 **GitLab Ultimate subscription ($1,188/user/year value) + 50k CI mins** | Public open-source projects with OSI-approved licenses |
+| [**Atlassian Open Source Project Licensing**](https://www.atlassian.com/software/views/open-source-license-request) | `Open Source Sponsorship` | 🎁 **Free Jira & Confluence Cloud licenses** | Active open-source projects with public repositories and standard licenses |
+| [**JetBrains Student Pack**](https://www.jetbrains.com/community/education#students) | `Student & Education` | 🎁 **$289/year in professional IDE licenses** | Students and teachers with valid educational email address |
+| [**Notion for Education**](https://www.notion.so/product/notion-for-education) | `Student & Education` | 🎁 **$96/year Personal Pro subscription** | Students and teachers with school email address |
+| [**Twilio Startups Program**](https://www.twilio.com/en-us/startups) | `Cloud Credits & Developer Packs` | 🎁 **Up to $500 in Twilio credits + SendGrid boosts** | Early-stage startups building customer communications |
+| [**Figma for Education**](https://www.figma.com/education) | `Student & Education` | 🎁 **$144/year per editor Professional tier** | Verified students and faculty in recognized educational institutions |
+| [**MongoDB for Startups**](https://www.mongodb.com/startups) | `Cloud Credits & Developer Packs` | 🎁 **$500 to $5,000 in MongoDB Atlas credits** | Startups from ideation to Series A stage |
+| [**Codecov for Open Source**](https://about.codecov.io/pricing) | `Open Source Sponsorship` | 🎁 **Free Pro tier code coverage reports** | Public open-source projects with open GitHub repositories |
+| [**Crowdin for Open Source**](https://crowdin.com/page/open-source-project-setup) | `Open Source Sponsorship` | 🎁 **Free Crowdin Enterprise translation suite** | Non-commercial open-source projects with public repositories |
+| [**Termius for Students**](https://termius.com/education) | `Student & Education` | 🎁 **$120/year Pro subscription** | Students verified through GitHub Student Developer Pack |
+| [**Snyk for Open Source**](https://snyk.io/plans) | `Open Source Sponsorship` | 🎁 **Free unlimited vulnerability scanning** | Public open-source repositories |
 </details>
 
 ---
@@ -1095,6 +2151,31 @@ Free cloud credits, software sponsorships, and startup program perks for develop
 | [**Astro Paper**](https://github.com/satnaing/astro-paper) | `Static Site & Documentation` | **Astro / Tailwind** | [🚀 **Deploy to Astro / Tailwind**](https://astro-paper.pages.dev) | `100% Free Open Source` |
 | [**Refine**](https://github.com/refinedev/refine) | `SaaS & Dashboard Starters` | **React / Next.js / Vite** | [🚀 **Deploy to React / Next.js / Vite**](https://refine.dev) | `100% Free Open Source` |
 | [**Medusa**](https://github.com/medusajs/medusa) | `E-Commerce Starters` | **Node.js / Next.js** | [🚀 **Deploy to Node.js / Next.js**](https://medusajs.com) | `100% Free Open Source` |
+| [**Next.js Enterprise Boilerplate**](https://github.com/Blazity/next-enterprise) | `Full-Stack Web Starter` | **Next.js / Vercel** | [🚀 **Deploy to Next.js / Vercel**](https://next-enterprise.vercel.app) | `100% Free Open Source` |
+| [**SaaS Boilerplate by BoxyHQ**](https://github.com/boxyhq/saas-starter-kit) | `SaaS & Dashboard Starters` | **Next.js / Docker** | [🚀 **Deploy to Next.js / Docker**](https://github.com/boxyhq/saas-starter-kit) | `100% Free Open Source` |
+| [**Turborepo Starter**](https://github.com/vercel/turborepo) | `Frontend Architecture Template` | **Node.js / Monorepo** | [🚀 **Deploy to Node.js / Monorepo**](https://turbo.build) | `100% Free Open Source` |
+| [**Payload CMS Starter**](https://github.com/payloadcms/payload) | `Full-Stack Web Starter` | **Next.js / Node.js** | [🚀 **Deploy to Next.js / Node.js**](https://payloadcms.com) | `100% Free Open Source` |
+| [**Nuxt 3 Starter**](https://github.com/nuxt/starter) | `Full-Stack Web Starter` | **Nuxt / Node.js** | [🚀 **Deploy to Nuxt / Node.js**](https://nuxt.com) | `100% Free Open Source` |
+| [**Vitesse**](https://github.com/antfu/vitesse) | `Frontend Architecture Template` | **Vite / Vue 3** | [🚀 **Deploy to Vite / Vue 3**](https://vitesse.netlify.app) | `100% Free Open Source` |
+| [**Vitesse WebExt**](https://github.com/antfu/vitesse-webext) | `Frontend Architecture Template` | **Browser Extension / Vite** | [🚀 **Deploy to Browser Extension / Vite**](https://github.com/antfu/vitesse-webext) | `100% Free Open Source` |
+| [**Expo Starter Kit**](https://github.com/expo/examples) | `Mobile & Cross-Platform` | **React Native / Expo** | [🚀 **Deploy to React Native / Expo**](https://expo.dev) | `100% Free Open Source` |
+| [**Tauri App Starter**](https://github.com/tauri-apps/tauri) | `Mobile & Cross-Platform` | **Tauri / Desktop** | [🚀 **Deploy to Tauri / Desktop**](https://tauri.app) | `100% Free Open Source` |
+| [**Electron React Boilerplate**](https://github.com/electron-react-boilerplate/electron-react-boilerplate) | `Mobile & Cross-Platform` | **Electron / Desktop** | [🚀 **Deploy to Electron / Desktop**](https://electron-react-boilerplate.js.org) | `100% Free Open Source` |
+| [**Flutter Starter Kit**](https://github.com/flutter/samples) | `Mobile & Cross-Platform` | **Flutter / Mobile** | [🚀 **Deploy to Flutter / Mobile**](https://flutter.dev) | `100% Free Open Source` |
+| [**NestJS Starter**](https://github.com/nestjs/typescript-starter) | `Backend & Microservices` | **NestJS / Node.js** | [🚀 **Deploy to NestJS / Node.js**](https://nestjs.com) | `100% Free Open Source` |
+| [**FastAPI Clean Architecture**](https://github.com/zhanymkanov/fastapi-best-practices) | `Backend & Microservices` | **FastAPI / Python** | [🚀 **Deploy to FastAPI / Python**](https://fastapi.tiangolo.com) | `100% Free Open Source` |
+| [**Django Boilerplate (Wemake)**](https://github.com/wemake-services/wemake-django-template) | `Backend & Microservices` | **Django / Python** | [🚀 **Deploy to Django / Python**](https://github.com/wemake-services/wemake-django-template) | `100% Free Open Source` |
+| [**Go Clean Architecture Template**](https://github.com/evrone/go-clean-template) | `Backend & Microservices` | **Go / Microservices** | [🚀 **Deploy to Go / Microservices**](https://github.com/evrone/go-clean-template) | `100% Free Open Source` |
+| [**Rust Axum Starter**](https://github.com/tokio-rs/axum) | `Backend & Microservices` | **Rust / Tokio** | [🚀 **Deploy to Rust / Tokio**](https://github.com/tokio-rs/axum) | `100% Free Open Source` |
+| [**Spring Boot Initializr Template**](https://github.com/spring-projects/spring-boot) | `Backend & Microservices` | **Spring Boot / JVM** | [🚀 **Deploy to Spring Boot / JVM**](https://start.spring.io) | `100% Free Open Source` |
+| [**AdonisJS Starter**](https://github.com/adonisjs/core) | `Full-Stack Web Starter` | **AdonisJS / Node.js** | [🚀 **Deploy to AdonisJS / Node.js**](https://adonisjs.com) | `100% Free Open Source` |
+| [**Vercel AI SDK Starter**](https://github.com/vercel/ai-chatbot) | `AI & Full-Stack Starters` | **Next.js / AI SDK** | [🚀 **Deploy to Next.js / AI SDK**](https://chat.vercel.ai) | `100% Free Open Source` |
+| [**LangChain Next.js Template**](https://github.com/langchain-ai/langchain-nextjs-template) | `AI & Full-Stack Starters` | **Next.js / LangChain** | [🚀 **Deploy to Next.js / LangChain**](https://langchain-nextjs-template.vercel.app) | `100% Free Open Source` |
+| [**Streamlit AI Dashboard Starter**](https://github.com/streamlit/streamlit) | `AI & Full-Stack Starters` | **Streamlit / Python** | [🚀 **Deploy to Streamlit / Python**](https://streamlit.io) | `100% Free Open Source` |
+| [**Hono Starter**](https://github.com/honojs/hono) | `Backend & Microservices` | **Hono / Multi-Runtime** | [🚀 **Deploy to Hono / Multi-Runtime**](https://hono.dev) | `100% Free Open Source` |
+| [**Elysia Starter**](https://github.com/elysiajs/elysia) | `Backend & Microservices` | **Elysia / Bun** | [🚀 **Deploy to Elysia / Bun**](https://elysiajs.com) | `100% Free Open Source` |
+| [**Fastify Starter**](https://github.com/fastify/fastify) | `Backend & Microservices` | **Fastify / Node.js** | [🚀 **Deploy to Fastify / Node.js**](https://fastify.dev) | `100% Free Open Source` |
+| [**Astro Blog Starter**](https://github.com/withastro/astro) | `Static Site & Documentation` | **Astro / Web** | [🚀 **Deploy to Astro / Web**](https://astro.build) | `100% Free Open Source` |
 </details>
 
 ---

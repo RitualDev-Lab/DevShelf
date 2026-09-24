@@ -268,5 +268,355 @@
     "license": "LGPL-3.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/SonarSource/sonarqube/issues"
+  },
+  {
+    "name": "Newman",
+    "repo": "https://github.com/postmanlabs/newman",
+    "category": "API Design & Debugging",
+    "description": "Postman's collection runner CLI allowing you to run and test Postman collections directly in CI/CD pipelines.",
+    "language": "JavaScript",
+    "license": "Apache-2.0",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/postmanlabs/newman/issues"
+  },
+  {
+    "name": "PactumJS",
+    "repo": "https://github.com/pactumjs/pactum",
+    "category": "Contract & Schema Testing",
+    "description": "Next-generation REST API automation testing framework for all levels in a test pyramid with mock support.",
+    "language": "JavaScript",
+    "license": "MIT",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/pactumjs/pactum/issues"
+  },
+  {
+    "name": "Karate Framework",
+    "repo": "https://github.com/karatelabs/karate",
+    "category": "Contract & Schema Testing",
+    "description": "Unified open-source test automation framework combining API testing, mocks, performance testing, and UI automation.",
+    "language": "Java",
+    "license": "MIT",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/karatelabs/karate/issues"
+  },
+  {
+    "name": "RestAssured",
+    "repo": "https://github.com/rest-assured/rest-assured",
+    "category": "API Design & Debugging",
+    "description": "Java DSL for easy testing of REST services, bringing the simplicity of dynamic languages into Java.",
+    "language": "Java",
+    "license": "Apache-2.0",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/rest-assured/rest-assured/issues"
+  },
+  {
+    "name": "Dredd",
+    "repo": "https://github.com/apiaryio/dredd",
+    "category": "Contract & Schema Testing",
+    "description": "Language-agnostic command-line tool for validating API description documents against backend implementation.",
+    "language": "JavaScript",
+    "license": "MIT",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/apiaryio/dredd/issues"
+  },
+  {
+    "name": "Schemathesis",
+    "repo": "https://github.com/schemathesis/schemathesis",
+    "category": "Contract & Schema Testing",
+    "description": "Modern API testing tool that finds crashes and bugs using property-based testing and OpenAPI specifications.",
+    "language": "Python",
+    "license": "MIT",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/schemathesis/schemathesis/issues"
+  },
+  {
+    "name": "Puppeteer",
+    "repo": "https://github.com/puppeteer/puppeteer",
+    "category": "Browser & E2E Testing",
+    "description": "Google's Node.js library which provides a high-level API to control Chrome/Chromium over the DevTools Protocol.",
+    "language": "TypeScript",
+    "license": "Apache-2.0",
+    "featured": true,
+    "goodFirstIssues": "https://github.com/puppeteer/puppeteer/issues"
+  },
+  {
+    "name": "Selenium",
+    "repo": "https://github.com/SeleniumHQ/selenium",
+    "category": "Browser & E2E Testing",
+    "description": "Industry-standard browser automation framework and ecosystem supporting multiple browsers and programming languages.",
+    "language": "Java / Python / JS",
+    "license": "Apache-2.0",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/SeleniumHQ/selenium/issues"
+  },
+  {
+    "name": "Appium",
+    "repo": "https://github.com/appium/appium",
+    "category": "Browser & E2E Testing",
+    "description": "Cross-platform automation framework for native, hybrid, and mobile web apps on iOS, Android, and Windows.",
+    "language": "JavaScript",
+    "license": "Apache-2.0",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/appium/appium/issues"
+  },
+  {
+    "name": "Maestro",
+    "repo": "https://github.com/mobile-dev-inc/maestro",
+    "category": "Browser & E2E Testing",
+    "description": "Painless mobile UI automation framework for Android and iOS with declarative YAML test flows.",
+    "language": "Kotlin",
+    "license": "Apache-2.0",
+    "featured": true,
+    "goodFirstIssues": "https://github.com/mobile-dev-inc/maestro/issues"
+  },
+  {
+    "name": "Detox",
+    "repo": "https://github.com/wix/Detox",
+    "category": "Browser & E2E Testing",
+    "description": "Gray box end-to-end testing and automation library for React Native mobile applications.",
+    "language": "JavaScript",
+    "license": "MIT",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/wix/Detox/issues"
+  },
+  {
+    "name": "WebdriverIO",
+    "repo": "https://github.com/webdriverio/webdriverio",
+    "category": "Browser & E2E Testing",
+    "description": "Next-gen browser and mobile automation test framework for Node.js with native WebDriver and CDP support.",
+    "language": "TypeScript",
+    "license": "MIT",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/webdriverio/webdriverio/issues"
+  },
+  {
+    "name": "Nightwatch.js",
+    "repo": "https://github.com/nightwatchjs/nightwatch",
+    "category": "Browser & E2E Testing",
+    "description": "Integrated end-to-end testing framework powered by Node.js and W3C Webdriver API.",
+    "language": "JavaScript",
+    "license": "MIT",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/nightwatchjs/nightwatch/issues"
+  },
+  {
+    "name": "Gatling",
+    "repo": "https://github.com/gatling/gatling",
+    "category": "Performance & Load Testing",
+    "description": "High-performance load testing tool built on Akka and Netty with expressive DSL in Java, Kotlin, and Scala.",
+    "language": "Java / Scala",
+    "license": "Apache-2.0",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/gatling/gatling/issues"
+  },
+  {
+    "name": "JMeter",
+    "repo": "https://github.com/apache/jmeter",
+    "category": "Performance & Load Testing",
+    "description": "Apache's pure Java desktop application designed to load test functional behavior and measure performance.",
+    "language": "Java",
+    "license": "Apache-2.0",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/apache/jmeter/issues"
+  },
+  {
+    "name": "Wrk",
+    "repo": "https://github.com/wg/wrk",
+    "category": "Performance & Load Testing",
+    "description": "Modern HTTP benchmarking tool capable of generating significant load when run on a single multi-core CPU.",
+    "language": "C",
+    "license": "Apache-2.0",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/wg/wrk/issues"
+  },
+  {
+    "name": "Hey",
+    "repo": "https://github.com/rakyll/hey",
+    "category": "Performance & Load Testing",
+    "description": "Tiny and fast command line load generator for web applications, a modern replacement for ApacheBench (ab).",
+    "language": "Go",
+    "license": "Apache-2.0",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/rakyll/hey/issues"
+  },
+  {
+    "name": "Drill",
+    "repo": "https://github.com/fcsonline/drill",
+    "category": "Performance & Load Testing",
+    "description": "HTTP load testing tool written in Rust, inspired by Ansible syntax with support for benchmark assertions.",
+    "language": "Rust",
+    "license": "GPL-3.0",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/fcsonline/drill/issues"
+  },
+  {
+    "name": "Checkov",
+    "repo": "https://github.com/bridgecrewio/checkov",
+    "category": "Security & Vulnerability Scanners",
+    "description": "Static code analysis tool for infrastructure as code (Terraform, CloudFormation, Kubernetes, Dockerfile).",
+    "language": "Python",
+    "license": "Apache-2.0",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/bridgecrewio/checkov/issues"
+  },
+  {
+    "name": "Hadolint",
+    "repo": "https://github.com/hadolint/hadolint",
+    "category": "Security & Vulnerability Scanners",
+    "description": "Smarter Dockerfile linter that helps you build best-practice Docker images by parsing AST rules.",
+    "language": "Haskell",
+    "license": "GPL-3.0",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/hadolint/hadolint/issues"
+  },
+  {
+    "name": "Bandit",
+    "repo": "https://github.com/PyCQA/bandit",
+    "category": "Security & Vulnerability Scanners",
+    "description": "Security linter designed to find common security issues in Python code using AST node analysis.",
+    "language": "Python",
+    "license": "Apache-2.0",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/PyCQA/bandit/issues"
+  },
+  {
+    "name": "Brakeman",
+    "repo": "https://github.com/presidentbeef/brakeman",
+    "category": "Security & Vulnerability Scanners",
+    "description": "Static analysis tool which checks Ruby on Rails applications for security vulnerabilities.",
+    "language": "Ruby",
+    "license": "CC-BY-NC-SA-4.0",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/presidentbeef/brakeman/issues"
+  },
+  {
+    "name": "Safety-CLI",
+    "repo": "https://github.com/pyupio/safety",
+    "category": "Security & Vulnerability Scanners",
+    "description": "Checks Python dependencies against known security vulnerabilities from CVE databases.",
+    "language": "Python",
+    "license": "MIT",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/pyupio/safety/issues"
+  },
+  {
+    "name": "OWASP ZAP",
+    "repo": "https://github.com/zaproxy/zaproxy",
+    "category": "Security & Vulnerability Scanners",
+    "description": "The world's most widely used web app scanner, free and open-source automated penetration testing tool.",
+    "language": "Java",
+    "license": "Apache-2.0",
+    "featured": true,
+    "goodFirstIssues": "https://github.com/zaproxy/zaproxy/issues"
+  },
+  {
+    "name": "Nuclei",
+    "repo": "https://github.com/projectdiscovery/nuclei",
+    "category": "Security & Vulnerability Scanners",
+    "description": "Fast and customizable vulnerability scanner based on simple YAML-based templates from ProjectDiscovery.",
+    "language": "Go",
+    "license": "MIT",
+    "featured": true,
+    "goodFirstIssues": "https://github.com/projectdiscovery/nuclei/issues"
+  },
+  {
+    "name": "Pa11y",
+    "repo": "https://github.com/pa11y/pa11y",
+    "category": "Browser & E2E Testing",
+    "description": "Automated accessibility testing tool that runs via CLI or Node.js to uncover WCAG compliance errors.",
+    "language": "JavaScript",
+    "license": "LGPL-3.0",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/pa11y/pa11y/issues"
+  },
+  {
+    "name": "BackstopJS",
+    "repo": "https://github.com/garris/BackstopJS",
+    "category": "Browser & E2E Testing",
+    "description": "Catch visual regressions in web apps across responsive screen resolutions and DOM interactions.",
+    "language": "JavaScript",
+    "license": "MIT",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/garris/BackstopJS/issues"
+  },
+  {
+    "name": "Pixelmatch",
+    "repo": "https://github.com/mapbox/pixelmatch",
+    "category": "Browser & E2E Testing",
+    "description": "The smallest, simplest and fastest JavaScript pixel-level image comparison library with anti-aliasing detection.",
+    "language": "JavaScript",
+    "license": "ISC",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/mapbox/pixelmatch/issues"
+  },
+  {
+    "name": "Loki",
+    "repo": "https://github.com/oblador/loki",
+    "category": "Browser & E2E Testing",
+    "description": "Visual regression testing for Storybook stories across Chrome and Android with Git diffs.",
+    "language": "JavaScript",
+    "license": "MIT",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/oblador/loki/issues"
+  },
+  {
+    "name": "Lost-Pixel",
+    "repo": "https://github.com/lost-pixel/lost-pixel",
+    "category": "Browser & E2E Testing",
+    "description": "Open source visual regression testing engine for Storybook, Next.js, Ladle, and standalone websites.",
+    "language": "TypeScript",
+    "license": "MIT",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/lost-pixel/lost-pixel/issues"
+  },
+  {
+    "name": "MockServer",
+    "repo": "https://github.com/mock-server/mockserver",
+    "category": "API Mocking & Virtualization",
+    "description": "Enables easy mocking of any system you integrate with via HTTP or HTTPS with expectations and verifications.",
+    "language": "Java",
+    "license": "Apache-2.0",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/mock-server/mockserver/issues"
+  },
+  {
+    "name": "JSON-Server",
+    "repo": "https://github.com/typicode/json-server",
+    "category": "API Mocking & Virtualization",
+    "description": "Get a full fake REST API with zero coding in less than 30 seconds from a single JSON file.",
+    "language": "TypeScript",
+    "license": "MIT",
+    "featured": true,
+    "goodFirstIssues": "https://github.com/typicode/json-server/issues"
+  },
+  {
+    "name": "Mimesis",
+    "repo": "https://github.com/lk-geimfari/mimesis",
+    "category": "Test Data Generation",
+    "description": "High-performance Python library for generating realistic synthetic data in a variety of locales.",
+    "language": "Python",
+    "license": "MIT",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/lk-geimfari/mimesis/issues"
+  },
+  {
+    "name": "Bogus",
+    "repo": "https://github.com/bchavez/Bogus",
+    "category": "Test Data Generation",
+    "description": "A simple and sane fake data generator for .NET languages, ported from Faker.js with fluent syntax.",
+    "language": "C#",
+    "license": "MIT",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/bchavez/Bogus/issues"
+  },
+  {
+    "name": "Testcontainers",
+    "repo": "https://github.com/testcontainers/testcontainers-java",
+    "category": "Unit & Integration Testing",
+    "description": "Java library that supports JUnit tests, providing lightweight throwaway instances of Docker databases.",
+    "language": "Java",
+    "license": "MIT",
+    "featured": true,
+    "goodFirstIssues": "https://github.com/testcontainers/testcontainers-java/issues"
   }
 ]
