@@ -13,7 +13,7 @@
 <br>
 
 [![Live Web Directory](https://img.shields.io/badge/🌐_Web_Directory-Live_Search_%26_Filters-7928CA?style=for-the-badge&logoColor=white)](https://devshelf.ritualdev.in)
-[![Curated Resources](https://img.shields.io/badge/📦_Resources-510+_Curated-blueviolet?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
+[![Curated Resources](https://img.shields.io/badge/📦_Resources-511+_Curated-blueviolet?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
 [![Endpoint Health](https://img.shields.io/badge/🛡️_Health-100%25_Verified-brightgreen?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf/actions)
 [![Open Source](https://img.shields.io/badge/🔓_License-MIT_FOSS-blue?style=for-the-badge)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/🤝_PRs-Welcome_%26_Amplified-brightgreen?style=for-the-badge)](#-how-to-submit-your-project-or-api)
@@ -24,7 +24,7 @@
 <tr>
 <td align="center"><b>🌐 Free APIs</b><br><code>96</code></td>
 <td align="center"><b>🤖 AI & LLMs</b><br><code>86</code></td>
-<td align="center"><b>⚡ CLI Tools</b><br><code>104</code></td>
+<td align="center"><b>⚡ CLI Tools</b><br><code>105</code></td>
 <td align="center"><b>🧪 Testing & QA</b><br><code>62</code></td>
 <td align="center"><b>☁️ Free Cloud</b><br><code>70</code></td>
 <td align="center"><b>🤝 Up for Grabs</b><br><code>21</code></td>
@@ -83,13 +83,13 @@
 
 ## 📂 Browse Catalog by Category
 
-Explore our curated collections of **510+ zero-paywall developer tools**, categorized into dedicated guides with subcategory indexing:
+Explore our curated collections of **511+ zero-paywall developer tools**, categorized into dedicated guides with subcategory indexing:
 
 | Category | Resources | Description & Subcategories | Guide |
 | :--- | :---: | :--- | :---: |
 | 🌐 **Free & Public APIs** | **96** | Weather, Finance, Mock/Dev APIs, Geocoding, AI/ML, Media, Entertainment | [**Browse APIs →**](docs/apis.md) |
 | 🤖 **AI Agents & Local LLMs** | **86** | Local LLM Runtimes, Autonomous Agents, Coding Assistants, Orchestration | [**Browse AI Tools →**](docs/ai-tools.md) |
-| ⚡ **CLI & Productivity Tools** | **104** | Terminal Utilities, Git Power Tools, Docker & DevOps, Benchmarking, DBs | [**Browse CLI Tools →**](docs/cli-tools.md) |
+| ⚡ **CLI & Productivity Tools** | **105** | Terminal Utilities, Git Power Tools, Docker & DevOps, Benchmarking, DBs | [**Browse CLI Tools →**](docs/cli-tools.md) |
 | 🧪 **Testing & QA Reliability** | **62** | E2E Testing, Mock Servers, Contract Testing, Security Auditing, Performance | [**Browse Testing Tools →**](docs/testing-qa.md) |
 | ☁️ **Free Cloud & Developer Tiers** | **70** | Databases, Auth & Identity, Serverless Compute, Object Storage, Email, APM | [**Browse Cloud Tiers →**](docs/free-cloud.md) |
 | 🤝 **Contributors Wanted** | **21** | Active open-source repos with curated Good First Issues and starter tasks | [**Browse Projects →**](docs/contributors-wanted.md) |

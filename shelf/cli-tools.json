@@ -1142,5 +1142,14 @@
     "featured": false,
     "goodFirstIssues": "https://github.com/smxi/inxi/issues",
     "statusTags": ["100% Offline-Friendly", "No Card Required"]
+  },
+  {
+    "name": "Codex Quota Overlay",
+    "repo": "https://github.com/cpys/codex-quota-overlay",
+    "category": "Dev Utilities & Libraries",
+    "description": "An independent, open-source Codex Desktop companion for Windows and macOS. It displays quota limits, reset times, and reset credits, with a local Quota Center for pace and history. I am a maintainer of this independent project; it is not affiliated with or endorsed by OpenAI.",
+    "language": "JavaScript / Electron, with C# and Swift native helpers",
+    "license": "MIT",
+    "featured": false
   }
 ]

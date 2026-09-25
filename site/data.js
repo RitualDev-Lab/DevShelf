@@ -1,11 +1,11 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-09-24T21:32:15.993Z",
-  "totalCount": 501,
+  "updatedAt": "2026-09-25T02:20:33.499Z",
+  "totalCount": 502,
   "counts": {
-    "repos": 305,
+    "repos": 306,
     "apis": 96,
     "aiTools": 86,
-    "cliTools": 104,
+    "cliTools": 105,
     "testingQa": 62,
     "freeCloud": 70,
     "contributors": 21,
@@ -3080,6 +3080,17 @@ window.DEVSHELF_DATA = {
         "100% Offline-Friendly",
         "No Card Required"
       ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "Codex Quota Overlay",
+      "repo": "https://github.com/cpys/codex-quota-overlay",
+      "category": "Dev Utilities & Libraries",
+      "description": "An independent, open-source Codex Desktop companion for Windows and macOS. It displays quota limits, reset times, and reset credits, with a local Quota Center for pace and history. I am a maintainer of this independent project; it is not affiliated with or endorsed by OpenAI.",
+      "language": "JavaScript / Electron, with C# and Swift native helpers",
+      "license": "MIT",
+      "featured": false,
       "type": "cli",
       "section": "CLI & Productivity Tools"
     },
