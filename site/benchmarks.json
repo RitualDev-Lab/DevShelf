@@ -1,19 +1,19 @@
 {
-  "lastRun": "2026-09-23T06:54:04.466Z",
-  "totalBenchmarked": 103,
+  "lastRun": "2026-09-25T06:57:04.638Z",
+  "totalBenchmarked": 511,
   "sluggishCount": 0,
   "endpoints": [
     {
       "name": "Ollama",
       "file": "ai-tools.json",
       "url": "https://github.com/ollama/ollama",
-      "lastChecked": "2026-09-23T06:52:21.485Z",
+      "lastChecked": "2026-09-25T06:47:05.375Z",
       "samples": [
-        1415,
-        60,
-        63
+        532,
+        28,
+        27
       ],
-      "avgLatencyMs": 513,
+      "avgLatencyMs": 196,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -21,13 +21,13 @@
       "name": "Dify",
       "file": "ai-tools.json",
       "url": "https://github.com/langgenius/dify",
-      "lastChecked": "2026-09-23T06:52:22.467Z",
+      "lastChecked": "2026-09-25T06:47:06.269Z",
       "samples": [
-        415,
-        58,
-        59
+        392,
+        26,
+        26
       ],
-      "avgLatencyMs": 177,
+      "avgLatencyMs": 148,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -35,13 +35,13 @@
       "name": "vLLM",
       "file": "ai-tools.json",
       "url": "https://github.com/vllm-project/vllm",
-      "lastChecked": "2026-09-23T06:52:23.367Z",
+      "lastChecked": "2026-09-25T06:47:07.152Z",
       "samples": [
-        333,
-        58,
-        59
+        382,
+        24,
+        25
       ],
-      "avgLatencyMs": 150,
+      "avgLatencyMs": 144,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -49,13 +49,13 @@
       "name": "Open-WebUI",
       "file": "ai-tools.json",
       "url": "https://github.com/open-webui/open-webui",
-      "lastChecked": "2026-09-23T06:52:24.323Z",
+      "lastChecked": "2026-09-25T06:47:08.043Z",
       "samples": [
-        387,
-        62,
-        58
+        389,
+        25,
+        25
       ],
-      "avgLatencyMs": 169,
+      "avgLatencyMs": 146,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -63,13 +63,13 @@
       "name": "YYLO",
       "file": "ai-tools.json",
       "url": "https://github.com/yylo-dev/yylo",
-      "lastChecked": "2026-09-23T06:52:25.445Z",
+      "lastChecked": "2026-09-25T06:47:08.961Z",
       "samples": [
-        557,
-        58,
-        58
+        417,
+        26,
+        26
       ],
-      "avgLatencyMs": 224,
+      "avgLatencyMs": 156,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -77,13 +77,13 @@
       "name": "LocalAI",
       "file": "ai-tools.json",
       "url": "https://github.com/mudler/LocalAI",
-      "lastChecked": "2026-09-23T06:52:26.482Z",
+      "lastChecked": "2026-09-25T06:47:09.898Z",
       "samples": [
-        468,
-        61,
-        58
+        438,
+        25,
+        25
       ],
-      "avgLatencyMs": 196,
+      "avgLatencyMs": 163,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -91,13 +91,13 @@
       "name": "AnythingLLM",
       "file": "ai-tools.json",
       "url": "https://github.com/Mintplex-Labs/anything-llm",
-      "lastChecked": "2026-09-23T06:52:27.482Z",
+      "lastChecked": "2026-09-25T06:47:10.821Z",
       "samples": [
-        436,
-        57,
-        58
+        425,
+        25,
+        25
       ],
-      "avgLatencyMs": 184,
+      "avgLatencyMs": 158,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -105,13 +105,13 @@
       "name": "Flowise",
       "file": "ai-tools.json",
       "url": "https://github.com/FlowiseAI/Flowise",
-      "lastChecked": "2026-09-23T06:52:28.435Z",
+      "lastChecked": "2026-09-25T06:47:11.836Z",
       "samples": [
-        390,
-        58,
-        56
+        515,
+        25,
+        26
       ],
-      "avgLatencyMs": 168,
+      "avgLatencyMs": 189,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -119,11 +119,11 @@
       "name": "Langflow",
       "file": "ai-tools.json",
       "url": "https://github.com/langflow-ai/langflow",
-      "lastChecked": "2026-09-23T06:52:29.383Z",
+      "lastChecked": "2026-09-25T06:47:12.782Z",
       "samples": [
-        385,
-        56,
-        57
+        448,
+        24,
+        25
       ],
       "avgLatencyMs": 166,
       "consecutiveSluggishAudits": 0,
@@ -133,13 +133,13 @@
       "name": "Jan",
       "file": "ai-tools.json",
       "url": "https://github.com/janhq/jan",
-      "lastChecked": "2026-09-23T06:52:30.368Z",
+      "lastChecked": "2026-09-25T06:47:13.695Z",
       "samples": [
-        421,
-        57,
-        57
+        415,
+        24,
+        24
       ],
-      "avgLatencyMs": 178,
+      "avgLatencyMs": 154,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -147,13 +147,13 @@
       "name": "LibreChat",
       "file": "ai-tools.json",
       "url": "https://github.com/danny-avila/LibreChat",
-      "lastChecked": "2026-09-23T06:52:31.313Z",
+      "lastChecked": "2026-09-25T06:47:14.884Z",
       "samples": [
-        379,
-        57,
-        58
+        647,
+        46,
+        46
       ],
-      "avgLatencyMs": 165,
+      "avgLatencyMs": 246,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -161,13 +161,13 @@
       "name": "Fabric",
       "file": "ai-tools.json",
       "url": "https://github.com/danielmiessler/fabric",
-      "lastChecked": "2026-09-23T06:52:32.245Z",
+      "lastChecked": "2026-09-25T06:47:15.854Z",
       "samples": [
-        364,
-        58,
-        58
+        467,
+        26,
+        25
       ],
-      "avgLatencyMs": 160,
+      "avgLatencyMs": 173,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -175,13 +175,13 @@
       "name": "Aider",
       "file": "ai-tools.json",
       "url": "https://github.com/Aider-AI/aider",
-      "lastChecked": "2026-09-23T06:52:33.183Z",
+      "lastChecked": "2026-09-25T06:47:16.743Z",
       "samples": [
-        363,
-        56,
-        69
+        389,
+        24,
+        23
       ],
-      "avgLatencyMs": 163,
+      "avgLatencyMs": 145,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -189,13 +189,13 @@
       "name": "OpenHands",
       "file": "ai-tools.json",
       "url": "https://github.com/All-Hands-AI/OpenHands",
-      "lastChecked": "2026-09-23T06:52:34.555Z",
+      "lastChecked": "2026-09-25T06:47:17.861Z",
       "samples": [
-        701,
-        111,
-        111
+        577,
+        46,
+        45
       ],
-      "avgLatencyMs": 308,
+      "avgLatencyMs": 223,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -203,13 +203,13 @@
       "name": "Continue",
       "file": "ai-tools.json",
       "url": "https://github.com/continuedev/continue",
-      "lastChecked": "2026-09-23T06:52:35.458Z",
+      "lastChecked": "2026-09-25T06:47:18.741Z",
       "samples": [
-        339,
-        56,
-        56
+        379,
+        24,
+        24
       ],
-      "avgLatencyMs": 150,
+      "avgLatencyMs": 142,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -217,13 +217,993 @@
       "name": "llama.cpp",
       "file": "ai-tools.json",
       "url": "https://github.com/ggerganov/llama.cpp",
-      "lastChecked": "2026-09-23T06:52:36.669Z",
+      "lastChecked": "2026-09-25T06:47:19.907Z",
+      "samples": [
+        623,
+        45,
+        46
+      ],
+      "avgLatencyMs": 238,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "LiteLLM",
+      "file": "ai-tools.json",
+      "url": "https://github.com/BerriAI/litellm",
+      "lastChecked": "2026-09-25T06:47:20.925Z",
+      "samples": [
+        518,
+        24,
+        25
+      ],
+      "avgLatencyMs": 189,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "PrivateGPT",
+      "file": "ai-tools.json",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "lastChecked": "2026-09-25T06:47:21.829Z",
+      "samples": [
+        406,
+        23,
+        24
+      ],
+      "avgLatencyMs": 151,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "GPT4All",
+      "file": "ai-tools.json",
+      "url": "https://github.com/nomic-ai/gpt4all",
+      "lastChecked": "2026-09-25T06:47:22.760Z",
+      "samples": [
+        434,
+        23,
+        23
+      ],
+      "avgLatencyMs": 160,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Tabby",
+      "file": "ai-tools.json",
+      "url": "https://github.com/TabbyML/tabby",
+      "lastChecked": "2026-09-25T06:47:23.734Z",
+      "samples": [
+        473,
+        25,
+        23
+      ],
+      "avgLatencyMs": 174,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Khoj",
+      "file": "ai-tools.json",
+      "url": "https://github.com/khoj-ai/khoj",
+      "lastChecked": "2026-09-25T06:47:24.609Z",
+      "samples": [
+        378,
+        23,
+        23
+      ],
+      "avgLatencyMs": 141,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "LlamaIndex",
+      "file": "ai-tools.json",
+      "url": "https://github.com/run-llama/llama_index",
+      "lastChecked": "2026-09-25T06:47:25.535Z",
+      "samples": [
+        427,
+        24,
+        24
+      ],
+      "avgLatencyMs": 158,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "LangChain",
+      "file": "ai-tools.json",
+      "url": "https://github.com/langchain-ai/langchain",
+      "lastChecked": "2026-09-25T06:47:26.462Z",
+      "samples": [
+        424,
+        28,
+        24
+      ],
+      "avgLatencyMs": 159,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Instructor",
+      "file": "ai-tools.json",
+      "url": "https://github.com/jxnl/instructor",
+      "lastChecked": "2026-09-25T06:47:27.628Z",
+      "samples": [
+        624,
+        45,
+        45
+      ],
+      "avgLatencyMs": 238,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "MindsDB",
+      "file": "ai-tools.json",
+      "url": "https://github.com/mindsdb/mindsdb",
+      "lastChecked": "2026-09-25T06:47:28.715Z",
+      "samples": [
+        546,
+        44,
+        45
+      ],
+      "avgLatencyMs": 212,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Chroma",
+      "file": "ai-tools.json",
+      "url": "https://github.com/chroma-core/chroma",
+      "lastChecked": "2026-09-25T06:47:29.609Z",
+      "samples": [
+        395,
+        24,
+        24
+      ],
+      "avgLatencyMs": 148,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Qdrant",
+      "file": "ai-tools.json",
+      "url": "https://github.com/qdrant/qdrant",
+      "lastChecked": "2026-09-25T06:47:30.559Z",
+      "samples": [
+        451,
+        25,
+        24
+      ],
+      "avgLatencyMs": 167,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Milvus",
+      "file": "ai-tools.json",
+      "url": "https://github.com/milvus-io/milvus",
+      "lastChecked": "2026-09-25T06:47:31.482Z",
+      "samples": [
+        423,
+        26,
+        25
+      ],
+      "avgLatencyMs": 158,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Weaviate",
+      "file": "ai-tools.json",
+      "url": "https://github.com/weaviate/weaviate",
+      "lastChecked": "2026-09-25T06:47:32.383Z",
+      "samples": [
+        403,
+        24,
+        24
+      ],
+      "avgLatencyMs": 150,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Bark",
+      "file": "ai-tools.json",
+      "url": "https://github.com/suno-ai/bark",
+      "lastChecked": "2026-09-25T06:47:33.236Z",
+      "samples": [
+        355,
+        23,
+        23
+      ],
+      "avgLatencyMs": 134,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Whisper.cpp",
+      "file": "ai-tools.json",
+      "url": "https://github.com/ggerganov/whisper.cpp",
+      "lastChecked": "2026-09-25T06:47:34.541Z",
+      "samples": [
+        757,
+        46,
+        51
+      ],
+      "avgLatencyMs": 285,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "ComfyUI",
+      "file": "ai-tools.json",
+      "url": "https://github.com/comfyanonymous/ComfyUI",
+      "lastChecked": "2026-09-25T06:47:35.577Z",
+      "samples": [
+        496,
+        43,
+        44
+      ],
+      "avgLatencyMs": 194,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "SearXNG",
+      "file": "ai-tools.json",
+      "url": "https://github.com/searxng/searxng",
+      "lastChecked": "2026-09-25T06:47:36.459Z",
+      "samples": [
+        383,
+        25,
+        23
+      ],
+      "avgLatencyMs": 144,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "RAGFlow",
+      "file": "ai-tools.json",
+      "url": "https://github.com/infiniflow/ragflow",
+      "lastChecked": "2026-09-25T06:47:37.443Z",
+      "samples": [
+        483,
+        25,
+        24
+      ],
+      "avgLatencyMs": 177,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Mem0",
+      "file": "ai-tools.json",
+      "url": "https://github.com/mem0ai/mem0",
+      "lastChecked": "2026-09-25T06:47:38.336Z",
+      "samples": [
+        396,
+        24,
+        23
+      ],
+      "avgLatencyMs": 148,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Open-Interpreter",
+      "file": "ai-tools.json",
+      "url": "https://github.com/OpenInterpreter/open-interpreter",
+      "lastChecked": "2026-09-25T06:47:39.375Z",
+      "samples": [
+        501,
+        44,
+        43
+      ],
+      "avgLatencyMs": 196,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "TGI (Text Generation Inference)",
+      "file": "ai-tools.json",
+      "url": "https://github.com/huggingface/text-generation-inference",
+      "lastChecked": "2026-09-25T06:47:40.259Z",
+      "samples": [
+        386,
+        23,
+        24
+      ],
+      "avgLatencyMs": 144,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "SGLang",
+      "file": "ai-tools.json",
+      "url": "https://github.com/sgl-project/sglang",
+      "lastChecked": "2026-09-25T06:47:41.157Z",
+      "samples": [
+        399,
+        24,
+        25
+      ],
+      "avgLatencyMs": 149,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "TensorRT-LLM",
+      "file": "ai-tools.json",
+      "url": "https://github.com/NVIDIA/TensorRT-LLM",
+      "lastChecked": "2026-09-25T06:47:42.039Z",
+      "samples": [
+        382,
+        23,
+        26
+      ],
+      "avgLatencyMs": 144,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "ExLlamaV2",
+      "file": "ai-tools.json",
+      "url": "https://github.com/turboderp/exllamav2",
+      "lastChecked": "2026-09-25T06:47:43.116Z",
       "samples": [
         541,
-        109,
-        112
+        43,
+        43
+      ],
+      "avgLatencyMs": 209,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "llamafile",
+      "file": "ai-tools.json",
+      "url": "https://github.com/Mozilla-Ocho/llamafile",
+      "lastChecked": "2026-09-25T06:47:44.131Z",
+      "samples": [
+        480,
+        43,
+        42
+      ],
+      "avgLatencyMs": 188,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Aphrodite Engine",
+      "file": "ai-tools.json",
+      "url": "https://github.com/PygmalionAI/aphrodite-engine",
+      "lastChecked": "2026-09-25T06:47:45.204Z",
+      "samples": [
+        534,
+        44,
+        45
+      ],
+      "avgLatencyMs": 208,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "AutoGPT",
+      "file": "ai-tools.json",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "lastChecked": "2026-09-25T06:47:46.090Z",
+      "samples": [
+        388,
+        23,
+        24
+      ],
+      "avgLatencyMs": 145,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "CrewAI",
+      "file": "ai-tools.json",
+      "url": "https://github.com/crewAIInc/crewAI",
+      "lastChecked": "2026-09-25T06:47:47.001Z",
+      "samples": [
+        412,
+        24,
+        24
+      ],
+      "avgLatencyMs": 153,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "AutoGen",
+      "file": "ai-tools.json",
+      "url": "https://github.com/microsoft/autogen",
+      "lastChecked": "2026-09-25T06:47:47.879Z",
+      "samples": [
+        381,
+        24,
+        24
+      ],
+      "avgLatencyMs": 143,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "MetaGPT",
+      "file": "ai-tools.json",
+      "url": "https://github.com/geekan/MetaGPT",
+      "lastChecked": "2026-09-25T06:47:48.945Z",
+      "samples": [
+        528,
+        43,
+        44
+      ],
+      "avgLatencyMs": 205,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "ChatDev",
+      "file": "ai-tools.json",
+      "url": "https://github.com/OpenBMB/ChatDev",
+      "lastChecked": "2026-09-25T06:47:49.880Z",
+      "samples": [
+        436,
+        24,
+        24
+      ],
+      "avgLatencyMs": 161,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "SuperAGI",
+      "file": "ai-tools.json",
+      "url": "https://github.com/TransformerOptimus/SuperAGI",
+      "lastChecked": "2026-09-25T06:47:50.761Z",
+      "samples": [
+        384,
+        24,
+        24
+      ],
+      "avgLatencyMs": 144,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Unsloth",
+      "file": "ai-tools.json",
+      "url": "https://github.com/unslothai/unsloth",
+      "lastChecked": "2026-09-25T06:47:51.654Z",
+      "samples": [
+        395,
+        24,
+        25
+      ],
+      "avgLatencyMs": 148,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Axolotl",
+      "file": "ai-tools.json",
+      "url": "https://github.com/axolotl-ai-cloud/axolotl",
+      "lastChecked": "2026-09-25T06:47:52.634Z",
+      "samples": [
+        483,
+        24,
+        25
+      ],
+      "avgLatencyMs": 177,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "LLaMA-Factory",
+      "file": "ai-tools.json",
+      "url": "https://github.com/hiyouga/LLaMA-Factory",
+      "lastChecked": "2026-09-25T06:47:54.007Z",
+      "samples": [
+        833,
+        46,
+        45
+      ],
+      "avgLatencyMs": 308,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "AutoAWQ",
+      "file": "ai-tools.json",
+      "url": "https://github.com/casper-hansen/AutoAWQ",
+      "lastChecked": "2026-09-25T06:47:55.221Z",
+      "samples": [
+        717,
+        23,
+        23
       ],
       "avgLatencyMs": 254,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "AutoGPTQ",
+      "file": "ai-tools.json",
+      "url": "https://github.com/AutoGPTQ/AutoGPTQ",
+      "lastChecked": "2026-09-25T06:47:56.206Z",
+      "samples": [
+        488,
+        23,
+        24
+      ],
+      "avgLatencyMs": 178,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "bitsandbytes",
+      "file": "ai-tools.json",
+      "url": "https://github.com/bitsandbytes-foundation/bitsandbytes",
+      "lastChecked": "2026-09-25T06:47:57.111Z",
+      "samples": [
+        407,
+        25,
+        24
+      ],
+      "avgLatencyMs": 152,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "PEFT",
+      "file": "ai-tools.json",
+      "url": "https://github.com/huggingface/peft",
+      "lastChecked": "2026-09-25T06:47:58.009Z",
+      "samples": [
+        403,
+        24,
+        23
+      ],
+      "avgLatencyMs": 150,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "TRL",
+      "file": "ai-tools.json",
+      "url": "https://github.com/huggingface/trl",
+      "lastChecked": "2026-09-25T06:47:58.938Z",
+      "samples": [
+        432,
+        24,
+        23
+      ],
+      "avgLatencyMs": 160,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Ragas",
+      "file": "ai-tools.json",
+      "url": "https://github.com/explodinggradients/ragas",
+      "lastChecked": "2026-09-25T06:48:00.060Z",
+      "samples": [
+        587,
+        42,
+        42
+      ],
+      "avgLatencyMs": 224,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "DeepEval",
+      "file": "ai-tools.json",
+      "url": "https://github.com/confident-ai/deepeval",
+      "lastChecked": "2026-09-25T06:48:00.929Z",
+      "samples": [
+        371,
+        24,
+        24
+      ],
+      "avgLatencyMs": 140,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "NeMo-Guardrails",
+      "file": "ai-tools.json",
+      "url": "https://github.com/NVIDIA/NeMo-Guardrails",
+      "lastChecked": "2026-09-25T06:48:02.029Z",
+      "samples": [
+        566,
+        42,
+        43
+      ],
+      "avgLatencyMs": 217,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Guidance",
+      "file": "ai-tools.json",
+      "url": "https://github.com/guidance-ai/guidance",
+      "lastChecked": "2026-09-25T06:48:02.965Z",
+      "samples": [
+        439,
+        24,
+        24
+      ],
+      "avgLatencyMs": 162,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Outlines",
+      "file": "ai-tools.json",
+      "url": "https://github.com/dottxt-ai/outlines",
+      "lastChecked": "2026-09-25T06:48:03.885Z",
+      "samples": [
+        422,
+        24,
+        25
+      ],
+      "avgLatencyMs": 157,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Promptfoo",
+      "file": "ai-tools.json",
+      "url": "https://github.com/promptfoo/promptfoo",
+      "lastChecked": "2026-09-25T06:48:04.757Z",
+      "samples": [
+        376,
+        23,
+        23
+      ],
+      "avgLatencyMs": 141,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Stable Diffusion WebUI",
+      "file": "ai-tools.json",
+      "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+      "lastChecked": "2026-09-25T06:48:05.683Z",
+      "samples": [
+        430,
+        23,
+        23
+      ],
+      "avgLatencyMs": 159,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "InvokeAI",
+      "file": "ai-tools.json",
+      "url": "https://github.com/invoke-ai/InvokeAI",
+      "lastChecked": "2026-09-25T06:48:07.624Z",
+      "samples": [
+        1445,
+        23,
+        23
+      ],
+      "avgLatencyMs": 497,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Fooocus",
+      "file": "ai-tools.json",
+      "url": "https://github.com/lllyasviel/Fooocus",
+      "lastChecked": "2026-09-25T06:48:08.617Z",
+      "samples": [
+        495,
+        24,
+        24
+      ],
+      "avgLatencyMs": 181,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "LLaVA",
+      "file": "ai-tools.json",
+      "url": "https://github.com/haotian-liu/LLaVA",
+      "lastChecked": "2026-09-25T06:48:09.535Z",
+      "samples": [
+        421,
+        24,
+        23
+      ],
+      "avgLatencyMs": 156,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Segment Anything (SAM)",
+      "file": "ai-tools.json",
+      "url": "https://github.com/facebookresearch/segment-anything",
+      "lastChecked": "2026-09-25T06:48:10.451Z",
+      "samples": [
+        419,
+        23,
+        24
+      ],
+      "avgLatencyMs": 155,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "YOLOv8",
+      "file": "ai-tools.json",
+      "url": "https://github.com/ultralytics/ultralytics",
+      "lastChecked": "2026-09-25T06:48:11.369Z",
+      "samples": [
+        420,
+        23,
+        24
+      ],
+      "avgLatencyMs": 156,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "PaddleOCR",
+      "file": "ai-tools.json",
+      "url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "lastChecked": "2026-09-25T06:48:12.224Z",
+      "samples": [
+        358,
+        23,
+        24
+      ],
+      "avgLatencyMs": 135,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Kokoro-TTS",
+      "file": "ai-tools.json",
+      "url": "https://github.com/hexgrad/kokoro",
+      "lastChecked": "2026-09-25T06:48:13.069Z",
+      "samples": [
+        349,
+        24,
+        24
+      ],
+      "avgLatencyMs": 132,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Piper TTS",
+      "file": "ai-tools.json",
+      "url": "https://github.com/rhasspy/piper",
+      "lastChecked": "2026-09-25T06:48:13.963Z",
+      "samples": [
+        398,
+        24,
+        23
+      ],
+      "avgLatencyMs": 148,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "ChatTTS",
+      "file": "ai-tools.json",
+      "url": "https://github.com/2noise/ChatTTS",
+      "lastChecked": "2026-09-25T06:48:15.021Z",
+      "samples": [
+        560,
+        24,
+        24
+      ],
+      "avgLatencyMs": 203,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Faster-Whisper",
+      "file": "ai-tools.json",
+      "url": "https://github.com/SYSTRAN/faster-whisper",
+      "lastChecked": "2026-09-25T06:48:15.940Z",
+      "samples": [
+        422,
+        24,
+        25
+      ],
+      "avgLatencyMs": 157,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "pgvector",
+      "file": "ai-tools.json",
+      "url": "https://github.com/pgvector/pgvector",
+      "lastChecked": "2026-09-25T06:48:16.856Z",
+      "samples": [
+        417,
+        25,
+        25
+      ],
+      "avgLatencyMs": 156,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Faiss",
+      "file": "ai-tools.json",
+      "url": "https://github.com/facebookresearch/faiss",
+      "lastChecked": "2026-09-25T06:48:17.712Z",
+      "samples": [
+        360,
+        23,
+        23
+      ],
+      "avgLatencyMs": 135,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "LanceDB",
+      "file": "ai-tools.json",
+      "url": "https://github.com/lancedb/lancedb",
+      "lastChecked": "2026-09-25T06:48:18.633Z",
+      "samples": [
+        424,
+        24,
+        24
+      ],
+      "avgLatencyMs": 157,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Vespa",
+      "file": "ai-tools.json",
+      "url": "https://github.com/vespa-engine/vespa",
+      "lastChecked": "2026-09-25T06:48:19.632Z",
+      "samples": [
+        502,
+        24,
+        25
+      ],
+      "avgLatencyMs": 184,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Annoy",
+      "file": "ai-tools.json",
+      "url": "https://github.com/spotify/annoy",
+      "lastChecked": "2026-09-25T06:48:20.562Z",
+      "samples": [
+        433,
+        24,
+        24
+      ],
+      "avgLatencyMs": 160,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "BabyAGI",
+      "file": "ai-tools.json",
+      "url": "https://github.com/yoheinakajima/babyagi",
+      "lastChecked": "2026-09-25T06:48:21.462Z",
+      "samples": [
+        402,
+        24,
+        23
+      ],
+      "avgLatencyMs": 150,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "OpenCodeInterpreter",
+      "file": "ai-tools.json",
+      "url": "https://github.com/OpenCodeInterpreter/OpenCodeInterpreter",
+      "lastChecked": "2026-09-25T06:48:22.309Z",
+      "samples": [
+        350,
+        23,
+        24
+      ],
+      "avgLatencyMs": 132,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "LMQL",
+      "file": "ai-tools.json",
+      "url": "https://github.com/eth-sri/lmql",
+      "lastChecked": "2026-09-25T06:48:23.176Z",
+      "samples": [
+        370,
+        23,
+        24
+      ],
+      "avgLatencyMs": 139,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "AutoRound",
+      "file": "ai-tools.json",
+      "url": "https://github.com/intel/auto-round",
+      "lastChecked": "2026-09-25T06:48:24.078Z",
+      "samples": [
+        399,
+        24,
+        30
+      ],
+      "avgLatencyMs": 151,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "SWE-agent",
+      "file": "ai-tools.json",
+      "url": "https://github.com/princeton-nlp/SWE-agent",
+      "lastChecked": "2026-09-25T06:48:25.150Z",
+      "samples": [
+        536,
+        44,
+        43
+      ],
+      "avgLatencyMs": 208,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "DSPy",
+      "file": "ai-tools.json",
+      "url": "https://github.com/stanfordnlp/dspy",
+      "lastChecked": "2026-09-25T06:48:26.027Z",
+      "samples": [
+        381,
+        25,
+        23
+      ],
+      "avgLatencyMs": 143,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "FastChat",
+      "file": "ai-tools.json",
+      "url": "https://github.com/lm-sys/FastChat",
+      "lastChecked": "2026-09-25T06:48:26.907Z",
+      "samples": [
+        384,
+        25,
+        24
+      ],
+      "avgLatencyMs": 144,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "GPTCache",
+      "file": "ai-tools.json",
+      "url": "https://github.com/zilliztech/gptcache",
+      "lastChecked": "2026-09-25T06:48:27.838Z",
+      "samples": [
+        434,
+        24,
+        24
+      ],
+      "avgLatencyMs": 161,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -231,13 +1211,13 @@
       "name": "Open-Meteo",
       "file": "apis.json",
       "url": "https://open-meteo.com",
-      "lastChecked": "2026-09-23T06:52:37.393Z",
+      "lastChecked": "2026-09-25T06:48:28.423Z",
       "samples": [
-        172,
-        53,
-        48
+        74,
+        32,
+        30
       ],
-      "avgLatencyMs": 91,
+      "avgLatencyMs": 45,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -245,13 +1225,13 @@
       "name": "GroqCloud Free Tier",
       "file": "apis.json",
       "url": "https://console.groq.com",
-      "lastChecked": "2026-09-23T06:52:38.293Z",
+      "lastChecked": "2026-09-25T06:48:29.200Z",
       "samples": [
-        204,
-        117,
-        129
+        162,
+        85,
+        81
       ],
-      "avgLatencyMs": 150,
+      "avgLatencyMs": 109,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -259,13 +1239,13 @@
       "name": "JSONPlaceholder",
       "file": "apis.json",
       "url": "https://jsonplaceholder.typicode.com",
-      "lastChecked": "2026-09-23T06:52:38.943Z",
+      "lastChecked": "2026-09-25T06:48:29.711Z",
       "samples": [
-        137,
-        34,
-        30
+        39,
+        11,
+        12
       ],
-      "avgLatencyMs": 67,
+      "avgLatencyMs": 21,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -273,13 +1253,13 @@
       "name": "Hugging Face Serverless Inference",
       "file": "apis.json",
       "url": "https://huggingface.co/inference-api",
-      "lastChecked": "2026-09-23T06:52:39.894Z",
+      "lastChecked": "2026-09-25T06:48:30.847Z",
       "samples": [
-        210,
-        150,
-        142
+        201,
+        294,
+        191
       ],
-      "avgLatencyMs": 167,
+      "avgLatencyMs": 229,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -287,13 +1267,13 @@
       "name": "ipapi.co",
       "file": "apis.json",
       "url": "https://ipapi.co",
-      "lastChecked": "2026-09-23T06:52:40.781Z",
+      "lastChecked": "2026-09-25T06:48:31.576Z",
       "samples": [
-        134,
-        218,
-        84
+        93,
+        129,
+        55
       ],
-      "avgLatencyMs": 145,
+      "avgLatencyMs": 92,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -301,13 +1281,13 @@
       "name": "CoinGecko Free API",
       "file": "apis.json",
       "url": "https://www.coingecko.com/api",
-      "lastChecked": "2026-09-23T06:52:42.658Z",
+      "lastChecked": "2026-09-25T06:48:33.291Z",
       "samples": [
-        546,
-        401,
-        477
+        432,
+        426,
+        407
       ],
-      "avgLatencyMs": 475,
+      "avgLatencyMs": 422,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -315,13 +1295,13 @@
       "name": "Rest Countries",
       "file": "apis.json",
       "url": "https://restcountries.com",
-      "lastChecked": "2026-09-23T06:52:43.618Z",
+      "lastChecked": "2026-09-25T06:48:34.138Z",
       "samples": [
-        293,
-        109,
-        109
+        226,
+        85,
+        86
       ],
-      "avgLatencyMs": 170,
+      "avgLatencyMs": 132,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -329,13 +1309,13 @@
       "name": "PokeAPI",
       "file": "apis.json",
       "url": "https://pokeapi.co",
-      "lastChecked": "2026-09-23T06:52:44.233Z",
+      "lastChecked": "2026-09-25T06:48:34.645Z",
       "samples": [
-        103,
-        30,
-        29
+        31,
+        14,
+        13
       ],
-      "avgLatencyMs": 54,
+      "avgLatencyMs": 19,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -343,13 +1323,13 @@
       "name": "Open Library",
       "file": "apis.json",
       "url": "https://openlibrary.org/developers/api",
-      "lastChecked": "2026-09-23T06:52:45.577Z",
+      "lastChecked": "2026-09-25T06:48:36.741Z",
       "samples": [
-        505,
-        177,
-        210
+        1134,
+        322,
+        192
       ],
-      "avgLatencyMs": 297,
+      "avgLatencyMs": 549,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -357,13 +1337,13 @@
       "name": "ReqRes",
       "file": "apis.json",
       "url": "https://reqres.in",
-      "lastChecked": "2026-09-23T06:52:48.508Z",
+      "lastChecked": "2026-09-25T06:48:38.168Z",
       "samples": [
-        992,
-        900,
-        587
+        672,
+        157,
+        148
       ],
-      "avgLatencyMs": 826,
+      "avgLatencyMs": 326,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -371,13 +1351,13 @@
       "name": "ipify",
       "file": "apis.json",
       "url": "https://www.ipify.org",
-      "lastChecked": "2026-09-23T06:52:49.042Z",
+      "lastChecked": "2026-09-25T06:48:38.668Z",
       "samples": [
-        75,
+        41,
         5,
-        5
+        4
       ],
-      "avgLatencyMs": 28,
+      "avgLatencyMs": 17,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -385,13 +1365,13 @@
       "name": "DummyJSON",
       "file": "apis.json",
       "url": "https://dummyjson.com",
-      "lastChecked": "2026-09-23T06:52:49.665Z",
+      "lastChecked": "2026-09-25T06:48:39.187Z",
       "samples": [
-        109,
-        31,
-        32
+        45,
+        12,
+        11
       ],
-      "avgLatencyMs": 57,
+      "avgLatencyMs": 23,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -399,13 +1379,13 @@
       "name": "Nominatim OpenStreetMap",
       "file": "apis.json",
       "url": "https://nominatim.openstreetmap.org",
-      "lastChecked": "2026-09-23T06:52:50.416Z",
+      "lastChecked": "2026-09-25T06:48:40.204Z",
       "samples": [
-        257,
-        23,
-        20
+        516,
+        25,
+        24
       ],
-      "avgLatencyMs": 100,
+      "avgLatencyMs": 188,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -413,13 +1393,13 @@
       "name": "ExchangeRate-API",
       "file": "apis.json",
       "url": "https://www.exchangerate-api.com",
-      "lastChecked": "2026-09-23T06:52:51.003Z",
+      "lastChecked": "2026-09-25T06:48:40.781Z",
       "samples": [
-        81,
-        32,
-        23
+        98,
+        12,
+        17
       ],
-      "avgLatencyMs": 45,
+      "avgLatencyMs": 42,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -427,13 +1407,1113 @@
       "name": "Cat Facts",
       "file": "apis.json",
       "url": "https://catfact.ninja",
-      "lastChecked": "2026-09-23T06:52:52.087Z",
+      "lastChecked": "2026-09-25T06:48:41.525Z",
       "samples": [
-        397,
-        117,
-        120
+        116,
+        88,
+        88
       ],
-      "avgLatencyMs": 211,
+      "avgLatencyMs": 97,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Dog API",
+      "file": "apis.json",
+      "url": "https://dog.ceo/dog-api",
+      "lastChecked": "2026-09-25T06:48:42.427Z",
+      "samples": [
+        166,
+        143,
+        144
+      ],
+      "avgLatencyMs": 151,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Frankfurter",
+      "file": "apis.json",
+      "url": "https://api.frankfurter.app",
+      "lastChecked": "2026-09-25T06:48:43.040Z",
+      "samples": [
+        128,
+        20,
+        16
+      ],
+      "avgLatencyMs": 55,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "NASA Open APIs",
+      "file": "apis.json",
+      "url": "https://api.nasa.gov",
+      "lastChecked": "2026-09-25T06:48:43.709Z",
+      "samples": [
+        164,
+        28,
+        28
+      ],
+      "avgLatencyMs": 73,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Open Food Facts",
+      "file": "apis.json",
+      "url": "https://world.openfoodfacts.org",
+      "lastChecked": "2026-09-25T06:48:46.967Z",
+      "samples": [
+        1757,
+        526,
+        525
+      ],
+      "avgLatencyMs": 936,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Open Brewery DB",
+      "file": "apis.json",
+      "url": "https://www.openbrewerydb.org",
+      "lastChecked": "2026-09-25T06:48:48.215Z",
+      "samples": [
+        655,
+        76,
+        68
+      ],
+      "avgLatencyMs": 266,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Rick and Morty API",
+      "file": "apis.json",
+      "url": "https://rickandmortyapi.com",
+      "lastChecked": "2026-09-25T06:48:48.796Z",
+      "samples": [
+        105,
+        14,
+        13
+      ],
+      "avgLatencyMs": 44,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Gutendex",
+      "file": "apis.json",
+      "url": "https://gutendex.com",
+      "lastChecked": "2026-09-25T06:48:49.464Z",
+      "samples": [
+        33,
+        173,
+        10
+      ],
+      "avgLatencyMs": 72,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "7Timer!",
+      "file": "apis.json",
+      "url": "http://www.7timer.info",
+      "lastChecked": "2026-09-25T06:48:50.751Z",
+      "samples": [
+        524,
+        157,
+        156
+      ],
+      "avgLatencyMs": 279,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "IP-API",
+      "file": "apis.json",
+      "url": "https://ip-api.com",
+      "lastChecked": "2026-09-25T06:48:51.325Z",
+      "samples": [
+        80,
+        10,
+        34
+      ],
+      "avgLatencyMs": 41,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Dictionary API",
+      "file": "apis.json",
+      "url": "https://api.dictionaryapi.dev",
+      "lastChecked": "2026-09-25T06:49:15.780Z",
+      "samples": [],
+      "avgLatencyMs": 250,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "RoboHash",
+      "file": "apis.json",
+      "url": "https://robohash.org",
+      "lastChecked": "2026-09-25T06:49:16.737Z",
+      "samples": [
+        337,
+        86,
+        84
+      ],
+      "avgLatencyMs": 169,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "DiceBear",
+      "file": "apis.json",
+      "url": "https://www.dicebear.com",
+      "lastChecked": "2026-09-25T06:49:17.446Z",
+      "samples": [
+        211,
+        25,
+        23
+      ],
+      "avgLatencyMs": 86,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Universities List API",
+      "file": "apis.json",
+      "url": "https://github.com/Hipo/university-domains-list",
+      "lastChecked": "2026-09-25T06:49:18.434Z",
+      "samples": [
+        488,
+        24,
+        25
+      ],
+      "avgLatencyMs": 179,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Zippopotam.us",
+      "file": "apis.json",
+      "url": "https://www.zippopotam.us",
+      "lastChecked": "2026-09-25T06:49:18.993Z",
+      "samples": [
+        86,
+        11,
+        9
+      ],
+      "avgLatencyMs": 35,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Chuck Norris Jokes API",
+      "file": "apis.json",
+      "url": "https://api.chucknorris.io",
+      "lastChecked": "2026-09-25T06:49:20.105Z",
+      "samples": [
+        332,
+        164,
+        165
+      ],
+      "avgLatencyMs": 220,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Bored API",
+      "file": "apis.json",
+      "url": "https://bored-api.appbrewery.com",
+      "lastChecked": "2026-09-25T06:49:20.881Z",
+      "samples": [
+        186,
+        69,
+        70
+      ],
+      "avgLatencyMs": 108,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "CountAPI",
+      "file": "apis.json",
+      "url": "https://countapi.xyz",
+      "lastChecked": "2026-09-25T06:49:44.673Z",
+      "samples": [],
+      "avgLatencyMs": 250,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Agify.io",
+      "file": "apis.json",
+      "url": "https://agify.io",
+      "lastChecked": "2026-09-25T06:49:46.153Z",
+      "samples": [
+        586,
+        222,
+        222
+      ],
+      "avgLatencyMs": 343,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Genderize.io",
+      "file": "apis.json",
+      "url": "https://genderize.io",
+      "lastChecked": "2026-09-25T06:49:47.624Z",
+      "samples": [
+        582,
+        218,
+        220
+      ],
+      "avgLatencyMs": 340,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Nationalize.io",
+      "file": "apis.json",
+      "url": "https://nationalize.io",
+      "lastChecked": "2026-09-25T06:49:49.111Z",
+      "samples": [
+        589,
+        223,
+        224
+      ],
+      "avgLatencyMs": 345,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "RandomUser.me",
+      "file": "apis.json",
+      "url": "https://randomuser.me",
+      "lastChecked": "2026-09-25T06:49:49.853Z",
+      "samples": [
+        121,
+        83,
+        85
+      ],
+      "avgLatencyMs": 96,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Httpbin.org",
+      "file": "apis.json",
+      "url": "https://httpbin.org",
+      "lastChecked": "2026-09-25T06:50:06.651Z",
+      "samples": [
+        347
+      ],
+      "avgLatencyMs": 347,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "RequestBin",
+      "file": "apis.json",
+      "url": "https://requestbin.com",
+      "lastChecked": "2026-09-25T06:50:08.926Z",
+      "samples": [
+        732,
+        572,
+        520
+      ],
+      "avgLatencyMs": 608,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Postman Echo",
+      "file": "apis.json",
+      "url": "https://postman-echo.com",
+      "lastChecked": "2026-09-25T06:50:10.397Z",
+      "samples": [
+        513,
+        238,
+        269
+      ],
+      "avgLatencyMs": 340,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "JSONBin.io",
+      "file": "apis.json",
+      "url": "https://jsonbin.io",
+      "lastChecked": "2026-09-25T06:50:34.850Z",
+      "samples": [],
+      "avgLatencyMs": 250,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Mocky.io",
+      "file": "apis.json",
+      "url": "https://designer.mocky.io",
+      "lastChecked": "2026-09-25T06:50:36.275Z",
+      "samples": [],
+      "avgLatencyMs": 250,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Beeceptor",
+      "file": "apis.json",
+      "url": "https://beeceptor.com",
+      "lastChecked": "2026-09-25T06:50:36.896Z",
+      "samples": [
+        142,
+        14,
+        14
+      ],
+      "avgLatencyMs": 57,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Binlist",
+      "file": "apis.json",
+      "url": "https://binlist.net",
+      "lastChecked": "2026-09-25T06:50:37.501Z",
+      "samples": [
+        100,
+        24,
+        28
+      ],
+      "avgLatencyMs": 51,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Hacker News Firebase API",
+      "file": "apis.json",
+      "url": "https://github.com/HackerNews/API",
+      "lastChecked": "2026-09-25T06:50:38.356Z",
+      "samples": [
+        360,
+        23,
+        22
+      ],
+      "avgLatencyMs": 135,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Dev.to API",
+      "file": "apis.json",
+      "url": "https://developers.forem.com/api/v1",
+      "lastChecked": "2026-09-25T06:50:39.479Z",
+      "samples": [
+        643,
+        17,
+        11
+      ],
+      "avgLatencyMs": 224,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Reddit JSON API",
+      "file": "apis.json",
+      "url": "https://www.reddit.com/dev/api",
+      "lastChecked": "2026-09-25T06:50:40.802Z",
+      "samples": [
+        337,
+        275,
+        260
+      ],
+      "avgLatencyMs": 291,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Wikipedia REST API",
+      "file": "apis.json",
+      "url": "https://en.wikipedia.org/api/rest_v1",
+      "lastChecked": "2026-09-25T06:50:41.322Z",
+      "samples": [
+        60,
+        5,
+        5
+      ],
+      "avgLatencyMs": 23,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Wikidata SPARQL API",
+      "file": "apis.json",
+      "url": "https://query.wikidata.org",
+      "lastChecked": "2026-09-25T06:50:42.431Z",
+      "samples": [
+        282,
+        195,
+        184
+      ],
+      "avgLatencyMs": 220,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Archive.org API",
+      "file": "apis.json",
+      "url": "https://archive.org/help/aboutsearch.htm",
+      "lastChecked": "2026-09-25T06:50:42.941Z",
+      "samples": [
+        27,
+        13,
+        22
+      ],
+      "avgLatencyMs": 21,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Geocode.xyz",
+      "file": "apis.json",
+      "url": "https://geocode.xyz/api",
+      "lastChecked": "2026-09-25T06:50:44.633Z",
+      "samples": [
+        429,
+        403,
+        410
+      ],
+      "avgLatencyMs": 414,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Sunrise-Sunset.org API",
+      "file": "apis.json",
+      "url": "https://sunrise-sunset.org/api",
+      "lastChecked": "2026-09-25T06:50:45.869Z",
+      "samples": [
+        401,
+        180,
+        204
+      ],
+      "avgLatencyMs": 262,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "USGS Earthquake API",
+      "file": "apis.json",
+      "url": "https://earthquake.usgs.gov/fdsnws/event/1",
+      "lastChecked": "2026-09-25T06:50:46.734Z",
+      "samples": [],
+      "avgLatencyMs": 250,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "OpenSky Network API",
+      "file": "apis.json",
+      "url": "https://opensky-network.org/apidoc",
+      "lastChecked": "2026-09-25T06:50:47.980Z",
+      "samples": [
+        477,
+        161,
+        159
+      ],
+      "avgLatencyMs": 266,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "TVMaze API",
+      "file": "apis.json",
+      "url": "https://www.tvmaze.com/api",
+      "lastChecked": "2026-09-25T06:50:49.316Z",
+      "samples": [
+        556,
+        164,
+        164
+      ],
+      "avgLatencyMs": 295,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "The Movie Database (TMDB) API",
+      "file": "apis.json",
+      "url": "https://developer.themoviedb.org/reference/intro/getting-started",
+      "lastChecked": "2026-09-25T06:50:50.180Z",
+      "samples": [
+        200,
+        113,
+        103
+      ],
+      "avgLatencyMs": 139,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "AniList GraphQL API",
+      "file": "apis.json",
+      "url": "https://anilist.gitbook.io/anilist-apiv2-docs",
+      "lastChecked": "2026-09-25T06:50:50.875Z",
+      "samples": [
+        115,
+        66,
+        61
+      ],
+      "avgLatencyMs": 81,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Jikan API",
+      "file": "apis.json",
+      "url": "https://jikan.moe",
+      "lastChecked": "2026-09-25T06:50:51.487Z",
+      "samples": [
+        151,
+        4,
+        5
+      ],
+      "avgLatencyMs": 53,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Open Trivia DB",
+      "file": "apis.json",
+      "url": "https://opentdb.com/api_config.php",
+      "lastChecked": "2026-09-25T06:50:52.326Z",
+      "samples": [
+        250,
+        69,
+        69
+      ],
+      "avgLatencyMs": 129,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "xkcd JSON API",
+      "file": "apis.json",
+      "url": "https://xkcd.com/json.html",
+      "lastChecked": "2026-09-25T06:50:53.005Z",
+      "samples": [
+        222,
+        5,
+        4
+      ],
+      "avgLatencyMs": 77,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "PoetryDB",
+      "file": "apis.json",
+      "url": "https://poetrydb.org",
+      "lastChecked": "2026-09-25T06:50:54.416Z",
+      "samples": [
+        609,
+        182,
+        170
+      ],
+      "avgLatencyMs": 320,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Quotable API",
+      "file": "apis.json",
+      "url": "https://github.com/lukePeavey/quotable",
+      "lastChecked": "2026-09-25T06:50:55.341Z",
+      "samples": [
+        429,
+        22,
+        23
+      ],
+      "avgLatencyMs": 158,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Advice Slip API",
+      "file": "apis.json",
+      "url": "https://api.adviceslip.com",
+      "lastChecked": "2026-09-25T06:50:56.585Z",
+      "samples": [
+        503,
+        147,
+        144
+      ],
+      "avgLatencyMs": 265,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Cataas (Cat as a service)",
+      "file": "apis.json",
+      "url": "https://cataas.com",
+      "lastChecked": "2026-09-25T06:50:58.214Z",
+      "samples": [
+        694,
+        251,
+        233
+      ],
+      "avgLatencyMs": 393,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "RandomFox API",
+      "file": "apis.json",
+      "url": "https://randomfox.ca/floof",
+      "lastChecked": "2026-09-25T06:50:59.434Z",
+      "samples": [
+        506,
+        205,
+        60
+      ],
+      "avgLatencyMs": 257,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Shibe.Online",
+      "file": "apis.json",
+      "url": "https://shibe.online",
+      "lastChecked": "2026-09-25T06:51:00.342Z",
+      "samples": [],
+      "avgLatencyMs": 250,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "FishWatch API",
+      "file": "apis.json",
+      "url": "https://www.fishwatch.gov/developers",
+      "lastChecked": "2026-09-25T06:51:01.212Z",
+      "samples": [
+        348,
+        31,
+        43
+      ],
+      "avgLatencyMs": 141,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "SpaceX REST API",
+      "file": "apis.json",
+      "url": "https://github.com/r-spacex/SpaceX-API",
+      "lastChecked": "2026-09-25T06:51:02.110Z",
+      "samples": [
+        404,
+        23,
+        23
+      ],
+      "avgLatencyMs": 150,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Launch Library 2",
+      "file": "apis.json",
+      "url": "https://thespacedevs.com/llapi",
+      "lastChecked": "2026-09-25T06:51:03.306Z",
+      "samples": [
+        530,
+        110,
+        107
+      ],
+      "avgLatencyMs": 249,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Solar System OpenData API",
+      "file": "apis.json",
+      "url": "https://api.le-systeme-solaire.net/en",
+      "lastChecked": "2026-09-25T06:51:05.606Z",
+      "samples": [
+        1239,
+        305,
+        306
+      ],
+      "avgLatencyMs": 617,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "QR Code Generator API",
+      "file": "apis.json",
+      "url": "https://goqr.me/api",
+      "lastChecked": "2026-09-25T06:51:08.222Z",
+      "samples": [
+        1562,
+        303,
+        303
+      ],
+      "avgLatencyMs": 723,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "URLhaus Malware API",
+      "file": "apis.json",
+      "url": "https://urlhaus.abuse.ch/api",
+      "lastChecked": "2026-09-25T06:51:09.495Z",
+      "samples": [
+        209,
+        453,
+        161
+      ],
+      "avgLatencyMs": 274,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Have I Been Pwned Pwned Passwords",
+      "file": "apis.json",
+      "url": "https://haveibeenpwned.com/API/v3#PwnedPasswords",
+      "lastChecked": "2026-09-25T06:51:10.028Z",
+      "samples": [
+        53,
+        14,
+        15
+      ],
+      "avgLatencyMs": 27,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Coinpaprika API",
+      "file": "apis.json",
+      "url": "https://api.coinpaprika.com",
+      "lastChecked": "2026-09-25T06:51:10.979Z",
+      "samples": [
+        453,
+        22,
+        26
+      ],
+      "avgLatencyMs": 167,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "CryptoCompare API",
+      "file": "apis.json",
+      "url": "https://min-api.cryptocompare.com",
+      "lastChecked": "2026-09-25T06:51:11.521Z",
+      "samples": [
+        82,
+        6,
+        6
+      ],
+      "avgLatencyMs": 31,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Open-Meteo Air Quality",
+      "file": "apis.json",
+      "url": "https://open-meteo.com/en/docs/air-quality-api",
+      "lastChecked": "2026-09-25T06:51:12.127Z",
+      "samples": [
+        78,
+        43,
+        35
+      ],
+      "avgLatencyMs": 52,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Open Library Covers API",
+      "file": "apis.json",
+      "url": "https://openlibrary.org/dev/docs/api/covers",
+      "lastChecked": "2026-09-25T06:51:15.722Z",
+      "samples": [
+        2456,
+        156,
+        533
+      ],
+      "avgLatencyMs": 1048,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Meme Generator API",
+      "file": "apis.json",
+      "url": "https://api.imgflip.com/get_memes",
+      "lastChecked": "2026-09-25T06:51:16.247Z",
+      "samples": [
+        52,
+        11,
+        11
+      ],
+      "avgLatencyMs": 25,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "JokeAPI",
+      "file": "apis.json",
+      "url": "https://jokeapi.dev",
+      "lastChecked": "2026-09-25T06:51:17.760Z",
+      "samples": [
+        721,
+        172,
+        171
+      ],
+      "avgLatencyMs": 355,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Deck of Cards API",
+      "file": "apis.json",
+      "url": "https://deckofcardsapi.com",
+      "lastChecked": "2026-09-25T06:51:18.706Z",
+      "samples": [
+        329,
+        83,
+        83
+      ],
+      "avgLatencyMs": 165,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Open Source Licenses API",
+      "file": "apis.json",
+      "url": "https://api.github.com/licenses",
+      "lastChecked": "2026-09-25T06:51:19.342Z",
+      "samples": [
+        146,
+        19,
+        19
+      ],
+      "avgLatencyMs": 61,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "REST Countries v3",
+      "file": "apis.json",
+      "url": "https://gitlab.com/amatos/rest-countries",
+      "lastChecked": "2026-09-25T06:51:22.523Z",
+      "samples": [
+        950,
+        995,
+        784
+      ],
+      "avgLatencyMs": 910,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Carbon Interface API",
+      "file": "apis.json",
+      "url": "https://www.carboninterface.com",
+      "lastChecked": "2026-09-25T06:51:23.418Z",
+      "samples": [
+        266,
+        88,
+        89
+      ],
+      "avgLatencyMs": 148,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Genderize API",
+      "file": "apis.json",
+      "url": "https://api.genderize.io",
+      "lastChecked": "2026-09-25T06:51:24.458Z",
+      "samples": [
+        444,
+        74,
+        73
+      ],
+      "avgLatencyMs": 197,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Agify API",
+      "file": "apis.json",
+      "url": "https://api.agify.io",
+      "lastChecked": "2026-09-25T06:51:25.647Z",
+      "samples": [
+        593,
+        72,
+        73
+      ],
+      "avgLatencyMs": 246,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Nationalize API",
+      "file": "apis.json",
+      "url": "https://api.nationalize.io",
+      "lastChecked": "2026-09-25T06:51:26.840Z",
+      "samples": [
+        595,
+        74,
+        73
+      ],
+      "avgLatencyMs": 247,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Public APIs Index",
+      "file": "apis.json",
+      "url": "https://api.publicapis.org",
+      "lastChecked": "2026-09-25T06:51:27.674Z",
+      "samples": [],
+      "avgLatencyMs": 250,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "ipinfo.io Lite",
+      "file": "apis.json",
+      "url": "https://ipinfo.io/developers",
+      "lastChecked": "2026-09-25T06:51:28.594Z",
+      "samples": [
+        172,
+        183,
+        115
+      ],
+      "avgLatencyMs": 157,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Big Data Cloud Free IP",
+      "file": "apis.json",
+      "url": "https://www.bigdatacloud.com/free-api",
+      "lastChecked": "2026-09-25T06:51:29.453Z",
+      "samples": [
+        216,
+        106,
+        85
+      ],
+      "avgLatencyMs": 136,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Free Dictionary",
+      "file": "apis.json",
+      "url": "https://dictionaryapi.dev",
+      "lastChecked": "2026-09-25T06:51:30.108Z",
+      "samples": [
+        169,
+        18,
+        18
+      ],
+      "avgLatencyMs": 68,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Bored API Mirror",
+      "file": "apis.json",
+      "url": "https://boredapi.com",
+      "lastChecked": "2026-09-25T06:51:30.715Z",
+      "samples": [],
+      "avgLatencyMs": 250,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Corporate Bullshit Generator",
+      "file": "apis.json",
+      "url": "https://corporatebs-generator.sameerkumar.website",
+      "lastChecked": "2026-09-25T06:51:31.377Z",
+      "samples": [
+        123,
+        57,
+        33
+      ],
+      "avgLatencyMs": 71,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Evil Insult Generator",
+      "file": "apis.json",
+      "url": "https://evilinsult.com/api",
+      "lastChecked": "2026-09-25T06:51:33.977Z",
+      "samples": [
+        44,
+        1081,
+        1025
+      ],
+      "avgLatencyMs": 717,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Geek Jokes API",
+      "file": "apis.json",
+      "url": "https://geek-jokes.sameerkumar.website/api",
+      "lastChecked": "2026-09-25T06:51:34.676Z",
+      "samples": [
+        178,
+        36,
+        34
+      ],
+      "avgLatencyMs": 83,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Kanye Rest",
+      "file": "apis.json",
+      "url": "https://kanye.rest",
+      "lastChecked": "2026-09-25T06:51:35.271Z",
+      "samples": [
+        98,
+        22,
+        25
+      ],
+      "avgLatencyMs": 48,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Tronald Dump API",
+      "file": "apis.json",
+      "url": "https://www.tronalddump.io",
+      "lastChecked": "2026-09-25T06:51:39.109Z",
+      "samples": [
+        2620,
+        450,
+        318
+      ],
+      "avgLatencyMs": 1129,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "FoxPics",
+      "file": "apis.json",
+      "url": "https://randomfox.ca",
+      "lastChecked": "2026-09-25T06:51:44.973Z",
+      "samples": [
+        5068,
+        249,
+        97
+      ],
+      "avgLatencyMs": 1805,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -441,13 +2521,13 @@
       "name": "Mockoon Cloudless API Server",
       "file": "boilerplates.json",
       "url": "https://github.com/mockoon/mockoon",
-      "lastChecked": "2026-09-23T06:52:53.282Z",
+      "lastChecked": "2026-09-25T06:51:45.900Z",
       "samples": [
-        626,
-        58,
-        62
+        431,
+        22,
+        22
       ],
-      "avgLatencyMs": 249,
+      "avgLatencyMs": 158,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -455,13 +2535,13 @@
       "name": "PocketBase 1-Click Backend",
       "file": "boilerplates.json",
       "url": "https://github.com/pocketbase/pocketbase",
-      "lastChecked": "2026-09-23T06:52:54.202Z",
+      "lastChecked": "2026-09-25T06:51:46.753Z",
       "samples": [
         357,
-        56,
-        57
+        22,
+        22
       ],
-      "avgLatencyMs": 157,
+      "avgLatencyMs": 134,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -469,13 +2549,13 @@
       "name": "AutoHeal-QA Playwright Runner",
       "file": "boilerplates.json",
       "url": "https://github.com/RitualDev-Lab/autoheal-qa",
-      "lastChecked": "2026-09-23T06:52:55.377Z",
+      "lastChecked": "2026-09-25T06:51:47.845Z",
       "samples": [
-        608,
-        58,
-        60
+        594,
+        24,
+        23
       ],
-      "avgLatencyMs": 242,
+      "avgLatencyMs": 214,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -483,13 +2563,13 @@
       "name": "Stirling-PDF Ultimate Toolbox",
       "file": "boilerplates.json",
       "url": "https://github.com/Stirling-Tools/Stirling-PDF",
-      "lastChecked": "2026-09-23T06:52:56.423Z",
+      "lastChecked": "2026-09-25T06:51:48.804Z",
       "samples": [
-        482,
-        56,
-        57
+        464,
+        23,
+        23
       ],
-      "avgLatencyMs": 198,
+      "avgLatencyMs": 170,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -497,13 +2577,13 @@
       "name": "Open-WebUI for Local AI",
       "file": "boilerplates.json",
       "url": "https://github.com/open-webui/open-webui",
-      "lastChecked": "2026-09-23T06:52:57.054Z",
+      "lastChecked": "2026-09-25T06:51:49.705Z",
       "samples": [
-        64,
-        57,
-        60
+        404,
+        23,
+        23
       ],
-      "avgLatencyMs": 60,
+      "avgLatencyMs": 150,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -511,13 +2591,13 @@
       "name": "Directus Instant Data Engine",
       "file": "boilerplates.json",
       "url": "https://github.com/directus/directus",
-      "lastChecked": "2026-09-23T06:52:58.017Z",
+      "lastChecked": "2026-09-25T06:51:50.513Z",
       "samples": [
-        401,
-        57,
-        57
+        311,
+        24,
+        24
       ],
-      "avgLatencyMs": 172,
+      "avgLatencyMs": 120,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -525,13 +2605,13 @@
       "name": "Hoppscotch API Development Hub",
       "file": "boilerplates.json",
       "url": "https://github.com/hoppscotch/hoppscotch",
-      "lastChecked": "2026-09-23T06:52:58.992Z",
+      "lastChecked": "2026-09-25T06:51:51.418Z",
       "samples": [
-        411,
-        56,
-        56
+        410,
+        23,
+        23
       ],
-      "avgLatencyMs": 174,
+      "avgLatencyMs": 152,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -539,13 +2619,475 @@
       "name": "Dify LLM Application Platform",
       "file": "boilerplates.json",
       "url": "https://github.com/langgenius/dify",
-      "lastChecked": "2026-09-23T06:52:59.614Z",
+      "lastChecked": "2026-09-25T06:51:52.290Z",
       "samples": [
-        59,
-        57,
-        57
+        375,
+        22,
+        23
       ],
-      "avgLatencyMs": 58,
+      "avgLatencyMs": 140,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Create T3 App",
+      "file": "boilerplates.json",
+      "url": "https://github.com/t3-oss/create-t3-app",
+      "lastChecked": "2026-09-25T06:51:53.086Z",
+      "samples": [
+        298,
+        23,
+        22
+      ],
+      "avgLatencyMs": 114,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Shadcn Taxonomy",
+      "file": "boilerplates.json",
+      "url": "https://github.com/shadcn-ui/taxonomy",
+      "lastChecked": "2026-09-25T06:51:53.916Z",
+      "samples": [
+        335,
+        21,
+        22
+      ],
+      "avgLatencyMs": 126,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Next-Forge",
+      "file": "boilerplates.json",
+      "url": "https://github.com/haydenbleasel/next-forge",
+      "lastChecked": "2026-09-25T06:51:54.954Z",
+      "samples": [
+        505,
+        40,
+        41
+      ],
+      "avgLatencyMs": 195,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Bulletproof React",
+      "file": "boilerplates.json",
+      "url": "https://github.com/alan2207/bulletproof-react",
+      "lastChecked": "2026-09-25T06:51:55.785Z",
+      "samples": [
+        335,
+        23,
+        22
+      ],
+      "avgLatencyMs": 127,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "FastAPI Full Stack Template",
+      "file": "boilerplates.json",
+      "url": "https://github.com/fastapi/full-stack-fastapi-template",
+      "lastChecked": "2026-09-25T06:51:56.636Z",
+      "samples": [
+        354,
+        22,
+        22
+      ],
+      "avgLatencyMs": 133,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Astro Paper",
+      "file": "boilerplates.json",
+      "url": "https://github.com/satnaing/astro-paper",
+      "lastChecked": "2026-09-25T06:51:57.546Z",
+      "samples": [
+        416,
+        22,
+        23
+      ],
+      "avgLatencyMs": 154,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Refine",
+      "file": "boilerplates.json",
+      "url": "https://github.com/refinedev/refine",
+      "lastChecked": "2026-09-25T06:51:58.389Z",
+      "samples": [
+        347,
+        23,
+        23
+      ],
+      "avgLatencyMs": 131,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Medusa",
+      "file": "boilerplates.json",
+      "url": "https://github.com/medusajs/medusa",
+      "lastChecked": "2026-09-25T06:51:59.238Z",
+      "samples": [
+        353,
+        23,
+        23
+      ],
+      "avgLatencyMs": 133,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Next.js Enterprise Boilerplate",
+      "file": "boilerplates.json",
+      "url": "https://github.com/Blazity/next-enterprise",
+      "lastChecked": "2026-09-25T06:52:00.173Z",
+      "samples": [
+        435,
+        22,
+        29
+      ],
+      "avgLatencyMs": 162,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "SaaS Boilerplate by BoxyHQ",
+      "file": "boilerplates.json",
+      "url": "https://github.com/boxyhq/saas-starter-kit",
+      "lastChecked": "2026-09-25T06:52:01.082Z",
+      "samples": [
+        414,
+        22,
+        23
+      ],
+      "avgLatencyMs": 153,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Turborepo Starter",
+      "file": "boilerplates.json",
+      "url": "https://github.com/vercel/turborepo",
+      "lastChecked": "2026-09-25T06:52:01.921Z",
+      "samples": [
+        346,
+        21,
+        22
+      ],
+      "avgLatencyMs": 130,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Payload CMS Starter",
+      "file": "boilerplates.json",
+      "url": "https://github.com/payloadcms/payload",
+      "lastChecked": "2026-09-25T06:52:02.767Z",
+      "samples": [
+        355,
+        22,
+        22
+      ],
+      "avgLatencyMs": 133,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Nuxt 3 Starter",
+      "file": "boilerplates.json",
+      "url": "https://github.com/nuxt/starter",
+      "lastChecked": "2026-09-25T06:52:03.706Z",
+      "samples": [
+        447,
+        22,
+        22
+      ],
+      "avgLatencyMs": 164,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Vitesse",
+      "file": "boilerplates.json",
+      "url": "https://github.com/antfu/vitesse",
+      "lastChecked": "2026-09-25T06:52:04.846Z",
+      "samples": [
+        608,
+        41,
+        42
+      ],
+      "avgLatencyMs": 230,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Vitesse WebExt",
+      "file": "boilerplates.json",
+      "url": "https://github.com/antfu/vitesse-webext",
+      "lastChecked": "2026-09-25T06:52:05.920Z",
+      "samples": [
+        543,
+        41,
+        41
+      ],
+      "avgLatencyMs": 208,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Expo Starter Kit",
+      "file": "boilerplates.json",
+      "url": "https://github.com/expo/examples",
+      "lastChecked": "2026-09-25T06:52:06.797Z",
+      "samples": [
+        384,
+        23,
+        23
+      ],
+      "avgLatencyMs": 143,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Tauri App Starter",
+      "file": "boilerplates.json",
+      "url": "https://github.com/tauri-apps/tauri",
+      "lastChecked": "2026-09-25T06:52:07.664Z",
+      "samples": [
+        372,
+        23,
+        22
+      ],
+      "avgLatencyMs": 139,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Electron React Boilerplate",
+      "file": "boilerplates.json",
+      "url": "https://github.com/electron-react-boilerplate/electron-react-boilerplate",
+      "lastChecked": "2026-09-25T06:52:08.505Z",
+      "samples": [
+        347,
+        22,
+        22
+      ],
+      "avgLatencyMs": 130,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Flutter Starter Kit",
+      "file": "boilerplates.json",
+      "url": "https://github.com/flutter/samples",
+      "lastChecked": "2026-09-25T06:52:09.356Z",
+      "samples": [
+        358,
+        22,
+        22
+      ],
+      "avgLatencyMs": 134,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "NestJS Starter",
+      "file": "boilerplates.json",
+      "url": "https://github.com/nestjs/typescript-starter",
+      "lastChecked": "2026-09-25T06:52:10.220Z",
+      "samples": [
+        371,
+        22,
+        22
+      ],
+      "avgLatencyMs": 138,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "FastAPI Clean Architecture",
+      "file": "boilerplates.json",
+      "url": "https://github.com/zhanymkanov/fastapi-best-practices",
+      "lastChecked": "2026-09-25T06:52:11.177Z",
+      "samples": [
+        462,
+        24,
+        23
+      ],
+      "avgLatencyMs": 170,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Django Boilerplate (Wemake)",
+      "file": "boilerplates.json",
+      "url": "https://github.com/wemake-services/wemake-django-template",
+      "lastChecked": "2026-09-25T06:52:12.057Z",
+      "samples": [
+        385,
+        22,
+        22
+      ],
+      "avgLatencyMs": 143,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Go Clean Architecture Template",
+      "file": "boilerplates.json",
+      "url": "https://github.com/evrone/go-clean-template",
+      "lastChecked": "2026-09-25T06:52:12.899Z",
+      "samples": [
+        347,
+        23,
+        23
+      ],
+      "avgLatencyMs": 131,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Rust Axum Starter",
+      "file": "boilerplates.json",
+      "url": "https://github.com/tokio-rs/axum",
+      "lastChecked": "2026-09-25T06:52:13.696Z",
+      "samples": [
+        301,
+        23,
+        22
+      ],
+      "avgLatencyMs": 115,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Spring Boot Initializr Template",
+      "file": "boilerplates.json",
+      "url": "https://github.com/spring-projects/spring-boot",
+      "lastChecked": "2026-09-25T06:52:14.542Z",
+      "samples": [
+        349,
+        22,
+        25
+      ],
+      "avgLatencyMs": 132,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "AdonisJS Starter",
+      "file": "boilerplates.json",
+      "url": "https://github.com/adonisjs/core",
+      "lastChecked": "2026-09-25T06:52:15.448Z",
+      "samples": [
+        410,
+        22,
+        22
+      ],
+      "avgLatencyMs": 151,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Vercel AI SDK Starter",
+      "file": "boilerplates.json",
+      "url": "https://github.com/vercel/ai-chatbot",
+      "lastChecked": "2026-09-25T06:52:16.591Z",
+      "samples": [
+        609,
+        42,
+        43
+      ],
+      "avgLatencyMs": 231,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "LangChain Next.js Template",
+      "file": "boilerplates.json",
+      "url": "https://github.com/langchain-ai/langchain-nextjs-template",
+      "lastChecked": "2026-09-25T06:52:17.464Z",
+      "samples": [
+        379,
+        23,
+        24
+      ],
+      "avgLatencyMs": 142,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Streamlit AI Dashboard Starter",
+      "file": "boilerplates.json",
+      "url": "https://github.com/streamlit/streamlit",
+      "lastChecked": "2026-09-25T06:52:18.292Z",
+      "samples": [
+        334,
+        22,
+        23
+      ],
+      "avgLatencyMs": 126,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Hono Starter",
+      "file": "boilerplates.json",
+      "url": "https://github.com/honojs/hono",
+      "lastChecked": "2026-09-25T06:52:19.140Z",
+      "samples": [
+        355,
+        22,
+        22
+      ],
+      "avgLatencyMs": 133,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Elysia Starter",
+      "file": "boilerplates.json",
+      "url": "https://github.com/elysiajs/elysia",
+      "lastChecked": "2026-09-25T06:52:19.967Z",
+      "samples": [
+        332,
+        22,
+        22
+      ],
+      "avgLatencyMs": 125,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Fastify Starter",
+      "file": "boilerplates.json",
+      "url": "https://github.com/fastify/fastify",
+      "lastChecked": "2026-09-25T06:52:20.866Z",
+      "samples": [
+        406,
+        23,
+        23
+      ],
+      "avgLatencyMs": 151,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Astro Blog Starter",
+      "file": "boilerplates.json",
+      "url": "https://github.com/withastro/astro",
+      "lastChecked": "2026-09-25T06:52:21.744Z",
+      "samples": [
+        383,
+        24,
+        22
+      ],
+      "avgLatencyMs": 143,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -553,13 +3095,13 @@
       "name": "GitWhisper",
       "file": "cli-tools.json",
       "url": "https://github.com/RitualDev-Lab/GitWhisper",
-      "lastChecked": "2026-09-23T06:53:00.869Z",
+      "lastChecked": "2026-09-25T06:52:23.058Z",
       "samples": [
-        690,
-        57,
-        58
+        819,
+        23,
+        23
       ],
-      "avgLatencyMs": 268,
+      "avgLatencyMs": 288,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -567,13 +3109,13 @@
       "name": "FlashLane",
       "file": "cli-tools.json",
       "url": "https://github.com/RitualDev-Lab/FlashLane",
-      "lastChecked": "2026-09-23T06:53:02.040Z",
+      "lastChecked": "2026-09-25T06:52:24.123Z",
       "samples": [
-        609,
-        57,
-        56
+        570,
+        23,
+        22
       ],
-      "avgLatencyMs": 241,
+      "avgLatencyMs": 205,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -581,13 +3123,13 @@
       "name": "lazygit",
       "file": "cli-tools.json",
       "url": "https://github.com/jesseduffield/lazygit",
-      "lastChecked": "2026-09-23T06:53:03.055Z",
+      "lastChecked": "2026-09-25T06:52:24.991Z",
       "samples": [
-        444,
-        60,
-        62
+        372,
+        23,
+        23
       ],
-      "avgLatencyMs": 189,
+      "avgLatencyMs": 139,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -595,13 +3137,13 @@
       "name": "ripgrep",
       "file": "cli-tools.json",
       "url": "https://github.com/BurntSushi/ripgrep",
-      "lastChecked": "2026-09-23T06:53:04.001Z",
+      "lastChecked": "2026-09-25T06:52:25.838Z",
       "samples": [
-        384,
-        57,
-        57
+        350,
+        24,
+        23
       ],
-      "avgLatencyMs": 166,
+      "avgLatencyMs": 132,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -609,13 +3151,13 @@
       "name": "eza",
       "file": "cli-tools.json",
       "url": "https://github.com/eza-community/eza",
-      "lastChecked": "2026-09-23T06:53:04.942Z",
+      "lastChecked": "2026-09-25T06:52:26.708Z",
       "samples": [
-        379,
-        56,
-        57
+        374,
+        24,
+        23
       ],
-      "avgLatencyMs": 164,
+      "avgLatencyMs": 140,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -623,13 +3165,13 @@
       "name": "fzf",
       "file": "cli-tools.json",
       "url": "https://github.com/junegunn/fzf",
-      "lastChecked": "2026-09-23T06:53:05.871Z",
+      "lastChecked": "2026-09-25T06:52:27.582Z",
       "samples": [
-        366,
-        57,
-        58
+        375,
+        25,
+        24
       ],
-      "avgLatencyMs": 160,
+      "avgLatencyMs": 141,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -637,13 +3179,13 @@
       "name": "agent-browser",
       "file": "cli-tools.json",
       "url": "https://github.com/vercel-labs/agent-browser",
-      "lastChecked": "2026-09-23T06:53:06.919Z",
+      "lastChecked": "2026-09-25T06:52:28.472Z",
       "samples": [
-        471,
-        66,
-        61
+        389,
+        26,
+        26
       ],
-      "avgLatencyMs": 199,
+      "avgLatencyMs": 147,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -651,13 +3193,13 @@
       "name": "bat",
       "file": "cli-tools.json",
       "url": "https://github.com/sharkdp/bat",
-      "lastChecked": "2026-09-23T06:53:07.975Z",
+      "lastChecked": "2026-09-25T06:52:29.418Z",
       "samples": [
-        491,
-        58,
-        58
+        449,
+        24,
+        24
       ],
-      "avgLatencyMs": 202,
+      "avgLatencyMs": 166,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -665,13 +3207,13 @@
       "name": "delta",
       "file": "cli-tools.json",
       "url": "https://github.com/dandavison/delta",
-      "lastChecked": "2026-09-23T06:53:08.914Z",
+      "lastChecked": "2026-09-25T06:52:30.226Z",
       "samples": [
-        371,
-        61,
-        56
+        314,
+        22,
+        21
       ],
-      "avgLatencyMs": 163,
+      "avgLatencyMs": 119,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -679,13 +3221,13 @@
       "name": "hyperfine",
       "file": "cli-tools.json",
       "url": "https://github.com/sharkdp/hyperfine",
-      "lastChecked": "2026-09-23T06:53:09.885Z",
+      "lastChecked": "2026-09-25T06:52:31.071Z",
       "samples": [
-        408,
-        56,
-        57
+        348,
+        22,
+        23
       ],
-      "avgLatencyMs": 174,
+      "avgLatencyMs": 131,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -693,13 +3235,13 @@
       "name": "tldr",
       "file": "cli-tools.json",
       "url": "https://github.com/tldr-pages/tldr",
-      "lastChecked": "2026-09-23T06:53:10.930Z",
+      "lastChecked": "2026-09-25T06:52:32.002Z",
       "samples": [
-        480,
-        56,
-        56
+        433,
+        25,
+        22
       ],
-      "avgLatencyMs": 197,
+      "avgLatencyMs": 160,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -707,13 +3249,13 @@
       "name": "dust",
       "file": "cli-tools.json",
       "url": "https://github.com/bootandy/dust",
-      "lastChecked": "2026-09-23T06:53:11.871Z",
+      "lastChecked": "2026-09-25T06:52:32.806Z",
       "samples": [
-        379,
-        57,
-        56
+        310,
+        21,
+        21
       ],
-      "avgLatencyMs": 164,
+      "avgLatencyMs": 117,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -721,13 +3263,13 @@
       "name": "procs",
       "file": "cli-tools.json",
       "url": "https://github.com/dalance/procs",
-      "lastChecked": "2026-09-23T06:53:12.827Z",
+      "lastChecked": "2026-09-25T06:52:33.667Z",
       "samples": [
-        392,
-        57,
-        57
+        365,
+        23,
+        23
       ],
-      "avgLatencyMs": 169,
+      "avgLatencyMs": 137,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -735,13 +3277,13 @@
       "name": "bottom",
       "file": "cli-tools.json",
       "url": "https://github.com/ClementTsang/bottom",
-      "lastChecked": "2026-09-23T06:53:13.827Z",
+      "lastChecked": "2026-09-25T06:52:34.653Z",
       "samples": [
-        437,
-        57,
-        57
+        489,
+        24,
+        25
       ],
-      "avgLatencyMs": 184,
+      "avgLatencyMs": 179,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -749,13 +3291,13 @@
       "name": "curlie",
       "file": "cli-tools.json",
       "url": "https://github.com/rs/curlie",
-      "lastChecked": "2026-09-23T06:53:14.726Z",
+      "lastChecked": "2026-09-25T06:52:35.485Z",
       "samples": [
-        336,
-        55,
-        55
+        337,
+        22,
+        22
       ],
-      "avgLatencyMs": 149,
+      "avgLatencyMs": 127,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -763,13 +3305,13 @@
       "name": "Starship",
       "file": "cli-tools.json",
       "url": "https://github.com/starship/starship",
-      "lastChecked": "2026-09-23T06:53:15.637Z",
+      "lastChecked": "2026-09-25T06:52:36.309Z",
       "samples": [
-        341,
-        60,
-        58
+        328,
+        23,
+        23
       ],
-      "avgLatencyMs": 153,
+      "avgLatencyMs": 125,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -777,13 +3319,13 @@
       "name": "zoxide",
       "file": "cli-tools.json",
       "url": "https://github.com/ajeetdsouza/zoxide",
-      "lastChecked": "2026-09-23T06:53:16.610Z",
+      "lastChecked": "2026-09-25T06:52:37.240Z",
       "samples": [
-        408,
-        56,
-        58
+        436,
+        23,
+        23
       ],
-      "avgLatencyMs": 174,
+      "avgLatencyMs": 161,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -791,13 +3333,13 @@
       "name": "gh-dash",
       "file": "cli-tools.json",
       "url": "https://github.com/dlvhdr/gh-dash",
-      "lastChecked": "2026-09-23T06:53:17.533Z",
+      "lastChecked": "2026-09-25T06:52:38.097Z",
       "samples": [
-        360,
-        58,
-        56
+        362,
+        23,
+        23
       ],
-      "avgLatencyMs": 158,
+      "avgLatencyMs": 136,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -805,13 +3347,1217 @@
       "name": "HTTPie",
       "file": "cli-tools.json",
       "url": "https://github.com/httpie/cli",
-      "lastChecked": "2026-09-23T06:53:18.588Z",
+      "lastChecked": "2026-09-25T06:52:39.099Z",
       "samples": [
-        491,
-        56,
-        56
+        507,
+        22,
+        23
+      ],
+      "avgLatencyMs": 184,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "fd",
+      "file": "cli-tools.json",
+      "url": "https://github.com/sharkdp/fd",
+      "lastChecked": "2026-09-25T06:52:39.989Z",
+      "samples": [
+        395,
+        23,
+        23
+      ],
+      "avgLatencyMs": 147,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "btop",
+      "file": "cli-tools.json",
+      "url": "https://github.com/aristocratos/btop",
+      "lastChecked": "2026-09-25T06:52:40.856Z",
+      "samples": [
+        371,
+        24,
+        24
+      ],
+      "avgLatencyMs": 140,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "k9s",
+      "file": "cli-tools.json",
+      "url": "https://github.com/derailed/k9s",
+      "lastChecked": "2026-09-25T06:52:41.815Z",
+      "samples": [
+        457,
+        24,
+        29
+      ],
+      "avgLatencyMs": 170,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "act",
+      "file": "cli-tools.json",
+      "url": "https://github.com/nektos/act",
+      "lastChecked": "2026-09-25T06:52:42.688Z",
+      "samples": [
+        381,
+        22,
+        22
+      ],
+      "avgLatencyMs": 142,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "duf",
+      "file": "cli-tools.json",
+      "url": "https://github.com/muesli/duf",
+      "lastChecked": "2026-09-25T06:52:43.527Z",
+      "samples": [
+        346,
+        22,
+        22
+      ],
+      "avgLatencyMs": 130,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "tokei",
+      "file": "cli-tools.json",
+      "url": "https://github.com/XAMPPRocky/tokei",
+      "lastChecked": "2026-09-25T06:52:44.388Z",
+      "samples": [
+        359,
+        30,
+        22
+      ],
+      "avgLatencyMs": 137,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "xh",
+      "file": "cli-tools.json",
+      "url": "https://github.com/ducaale/xh",
+      "lastChecked": "2026-09-25T06:52:45.193Z",
+      "samples": [
+        310,
+        22,
+        22
+      ],
+      "avgLatencyMs": 118,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "doggo",
+      "file": "cli-tools.json",
+      "url": "https://github.com/mr-karan/doggo",
+      "lastChecked": "2026-09-25T06:52:45.969Z",
+      "samples": [
+        276,
+        22,
+        29
+      ],
+      "avgLatencyMs": 109,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "fx",
+      "file": "cli-tools.json",
+      "url": "https://github.com/antonmedv/fx",
+      "lastChecked": "2026-09-25T06:52:46.861Z",
+      "samples": [
+        396,
+        22,
+        23
+      ],
+      "avgLatencyMs": 147,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "jless",
+      "file": "cli-tools.json",
+      "url": "https://github.com/PaulJuliusMartinez/jless",
+      "lastChecked": "2026-09-25T06:52:47.819Z",
+      "samples": [
+        462,
+        22,
+        21
+      ],
+      "avgLatencyMs": 168,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "lazysql",
+      "file": "cli-tools.json",
+      "url": "https://github.com/jorgerojas26/lazysql",
+      "lastChecked": "2026-09-25T06:52:48.756Z",
+      "samples": [
+        435,
+        26,
+        23
+      ],
+      "avgLatencyMs": 161,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "gum",
+      "file": "cli-tools.json",
+      "url": "https://github.com/charmbracelet/gum",
+      "lastChecked": "2026-09-25T06:52:49.629Z",
+      "samples": [
+        377,
+        23,
+        23
+      ],
+      "avgLatencyMs": 141,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "vhs",
+      "file": "cli-tools.json",
+      "url": "https://github.com/charmbracelet/vhs",
+      "lastChecked": "2026-09-25T06:52:50.511Z",
+      "samples": [
+        384,
+        24,
+        24
+      ],
+      "avgLatencyMs": 144,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "glow",
+      "file": "cli-tools.json",
+      "url": "https://github.com/charmbracelet/glow",
+      "lastChecked": "2026-09-25T06:52:51.386Z",
+      "samples": [
+        382,
+        23,
+        22
+      ],
+      "avgLatencyMs": 142,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "dive",
+      "file": "cli-tools.json",
+      "url": "https://github.com/wagoodman/dive",
+      "lastChecked": "2026-09-25T06:52:52.269Z",
+      "samples": [
+        387,
+        23,
+        23
+      ],
+      "avgLatencyMs": 144,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "lazydocker",
+      "file": "cli-tools.json",
+      "url": "https://github.com/jesseduffield/lazydocker",
+      "lastChecked": "2026-09-25T06:52:53.090Z",
+      "samples": [
+        324,
+        24,
+        23
+      ],
+      "avgLatencyMs": 124,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "usql",
+      "file": "cli-tools.json",
+      "url": "https://github.com/xo/usql",
+      "lastChecked": "2026-09-25T06:52:53.963Z",
+      "samples": [
+        376,
+        24,
+        23
+      ],
+      "avgLatencyMs": 141,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "gping",
+      "file": "cli-tools.json",
+      "url": "https://github.com/orf/gping",
+      "lastChecked": "2026-09-25T06:52:54.766Z",
+      "samples": [
+        309,
+        21,
+        22
+      ],
+      "avgLatencyMs": 117,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "bandwhich",
+      "file": "cli-tools.json",
+      "url": "https://github.com/imsnif/bandwhich",
+      "lastChecked": "2026-09-25T06:52:55.598Z",
+      "samples": [
+        336,
+        23,
+        21
+      ],
+      "avgLatencyMs": 127,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "choose",
+      "file": "cli-tools.json",
+      "url": "https://github.com/theryangeary/choose",
+      "lastChecked": "2026-09-25T06:52:56.431Z",
+      "samples": [
+        338,
+        23,
+        22
+      ],
+      "avgLatencyMs": 128,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "sd",
+      "file": "cli-tools.json",
+      "url": "https://github.com/chmln/sd",
+      "lastChecked": "2026-09-25T06:52:57.378Z",
+      "samples": [
+        454,
+        22,
+        23
+      ],
+      "avgLatencyMs": 166,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "mcfly",
+      "file": "cli-tools.json",
+      "url": "https://github.com/cantino/mcfly",
+      "lastChecked": "2026-09-25T06:52:58.251Z",
+      "samples": [
+        378,
+        22,
+        22
+      ],
+      "avgLatencyMs": 141,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "yazi",
+      "file": "cli-tools.json",
+      "url": "https://github.com/sxyazi/yazi",
+      "lastChecked": "2026-09-25T06:52:59.072Z",
+      "samples": [
+        327,
+        23,
+        23
+      ],
+      "avgLatencyMs": 124,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "helix",
+      "file": "cli-tools.json",
+      "url": "https://github.com/helix-editor/helix",
+      "lastChecked": "2026-09-25T06:52:59.932Z",
+      "samples": [
+        365,
+        21,
+        21
+      ],
+      "avgLatencyMs": 136,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "zellij",
+      "file": "cli-tools.json",
+      "url": "https://github.com/zellij-org/zellij",
+      "lastChecked": "2026-09-25T06:53:00.768Z",
+      "samples": [
+        341,
+        22,
+        22
+      ],
+      "avgLatencyMs": 128,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "nnn",
+      "file": "cli-tools.json",
+      "url": "https://github.com/jarun/nnn",
+      "lastChecked": "2026-09-25T06:53:01.658Z",
+      "samples": [
+        394,
+        24,
+        21
+      ],
+      "avgLatencyMs": 146,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "ranger",
+      "file": "cli-tools.json",
+      "url": "https://github.com/ranger/ranger",
+      "lastChecked": "2026-09-25T06:53:02.479Z",
+      "samples": [
+        325,
+        25,
+        23
+      ],
+      "avgLatencyMs": 124,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "broot",
+      "file": "cli-tools.json",
+      "url": "https://github.com/Canop/broot",
+      "lastChecked": "2026-09-25T06:53:03.272Z",
+      "samples": [
+        300,
+        23,
+        22
+      ],
+      "avgLatencyMs": 115,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "superfile",
+      "file": "cli-tools.json",
+      "url": "https://github.com/yorukot/superfile",
+      "lastChecked": "2026-09-25T06:53:04.084Z",
+      "samples": [
+        315,
+        24,
+        23
+      ],
+      "avgLatencyMs": 121,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "htop",
+      "file": "cli-tools.json",
+      "url": "https://github.com/htop-dev/htop",
+      "lastChecked": "2026-09-25T06:53:05.011Z",
+      "samples": [
+        430,
+        22,
+        23
+      ],
+      "avgLatencyMs": 158,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "glances",
+      "file": "cli-tools.json",
+      "url": "https://github.com/nicolargo/glances",
+      "lastChecked": "2026-09-25T06:53:05.933Z",
+      "samples": [
+        425,
+        23,
+        22
+      ],
+      "avgLatencyMs": 157,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "fastfetch",
+      "file": "cli-tools.json",
+      "url": "https://github.com/fastfetch-cli/fastfetch",
+      "lastChecked": "2026-09-25T06:53:06.807Z",
+      "samples": [
+        380,
+        23,
+        22
+      ],
+      "avgLatencyMs": 142,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "ncdu",
+      "file": "cli-tools.json",
+      "url": "https://code.blicky.net/yorhel/ncdu",
+      "lastChecked": "2026-09-25T06:53:08.790Z",
+      "samples": [
+        1122,
+        201,
+        209
+      ],
+      "avgLatencyMs": 511,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "gdu",
+      "file": "cli-tools.json",
+      "url": "https://github.com/dundee/gdu",
+      "lastChecked": "2026-09-25T06:53:09.638Z",
+      "samples": [
+        353,
+        22,
+        22
+      ],
+      "avgLatencyMs": 132,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "aria2",
+      "file": "cli-tools.json",
+      "url": "https://github.com/aria2/aria2",
+      "lastChecked": "2026-09-25T06:53:10.468Z",
+      "samples": [
+        334,
+        22,
+        22
+      ],
+      "avgLatencyMs": 126,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "croc",
+      "file": "cli-tools.json",
+      "url": "https://github.com/schollz/croc",
+      "lastChecked": "2026-09-25T06:53:11.322Z",
+      "samples": [
+        361,
+        22,
+        22
+      ],
+      "avgLatencyMs": 135,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "magic-wormhole",
+      "file": "cli-tools.json",
+      "url": "https://github.com/magic-wormhole/magic-wormhole",
+      "lastChecked": "2026-09-25T06:53:12.122Z",
+      "samples": [
+        308,
+        22,
+        22
+      ],
+      "avgLatencyMs": 117,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "trippy",
+      "file": "cli-tools.json",
+      "url": "https://github.com/fujiapple852/trippy",
+      "lastChecked": "2026-09-25T06:53:12.991Z",
+      "samples": [
+        374,
+        22,
+        22
+      ],
+      "avgLatencyMs": 139,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "mitmproxy",
+      "file": "cli-tools.json",
+      "url": "https://github.com/mitmproxy/mitmproxy",
+      "lastChecked": "2026-09-25T06:53:13.824Z",
+      "samples": [
+        338,
+        22,
+        21
+      ],
+      "avgLatencyMs": 127,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "websocat",
+      "file": "cli-tools.json",
+      "url": "https://github.com/vi/websocat",
+      "lastChecked": "2026-09-25T06:53:14.706Z",
+      "samples": [
+        388,
+        23,
+        22
+      ],
+      "avgLatencyMs": 144,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "grpcurl",
+      "file": "cli-tools.json",
+      "url": "https://github.com/fullstorydev/grpcurl",
+      "lastChecked": "2026-09-25T06:53:15.553Z",
+      "samples": [
+        353,
+        22,
+        22
+      ],
+      "avgLatencyMs": 132,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "gh",
+      "file": "cli-tools.json",
+      "url": "https://github.com/cli/cli",
+      "lastChecked": "2026-09-25T06:53:16.607Z",
+      "samples": [
+        559,
+        22,
+        22
       ],
       "avgLatencyMs": 201,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "glab",
+      "file": "cli-tools.json",
+      "url": "https://gitlab.com/gitlab-org/cli",
+      "lastChecked": "2026-09-25T06:53:18.636Z",
+      "samples": [
+        664,
+        466,
+        450
+      ],
+      "avgLatencyMs": 527,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "git-cliff",
+      "file": "cli-tools.json",
+      "url": "https://github.com/orhun/git-cliff",
+      "lastChecked": "2026-09-25T06:53:19.651Z",
+      "samples": [
+        520,
+        21,
+        22
+      ],
+      "avgLatencyMs": 188,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "onefetch",
+      "file": "cli-tools.json",
+      "url": "https://github.com/o2sh/onefetch",
+      "lastChecked": "2026-09-25T06:53:20.474Z",
+      "samples": [
+        330,
+        22,
+        22
+      ],
+      "avgLatencyMs": 125,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "gitleaks",
+      "file": "cli-tools.json",
+      "url": "https://github.com/gitleaks/gitleaks",
+      "lastChecked": "2026-09-25T06:53:21.500Z",
+      "samples": [
+        529,
+        22,
+        22
+      ],
+      "avgLatencyMs": 191,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "trufflehog",
+      "file": "cli-tools.json",
+      "url": "https://github.com/trufflesecurity/trufflehog",
+      "lastChecked": "2026-09-25T06:53:22.410Z",
+      "samples": [
+        414,
+        24,
+        23
+      ],
+      "avgLatencyMs": 154,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "osv-scanner",
+      "file": "cli-tools.json",
+      "url": "https://github.com/google/osv-scanner",
+      "lastChecked": "2026-09-25T06:53:23.266Z",
+      "samples": [
+        361,
+        22,
+        23
+      ],
+      "avgLatencyMs": 135,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "tmux",
+      "file": "cli-tools.json",
+      "url": "https://github.com/tmux/tmux",
+      "lastChecked": "2026-09-25T06:53:24.134Z",
+      "samples": [
+        372,
+        22,
+        23
+      ],
+      "avgLatencyMs": 139,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "atuin",
+      "file": "cli-tools.json",
+      "url": "https://github.com/atuinsh/atuin",
+      "lastChecked": "2026-09-25T06:53:25.024Z",
+      "samples": [
+        394,
+        22,
+        22
+      ],
+      "avgLatencyMs": 146,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "thefuck",
+      "file": "cli-tools.json",
+      "url": "https://github.com/nvbn/thefuck",
+      "lastChecked": "2026-09-25T06:53:25.858Z",
+      "samples": [
+        337,
+        23,
+        24
+      ],
+      "avgLatencyMs": 128,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "direnv",
+      "file": "cli-tools.json",
+      "url": "https://github.com/direnv/direnv",
+      "lastChecked": "2026-09-25T06:53:26.698Z",
+      "samples": [
+        345,
+        22,
+        21
+      ],
+      "avgLatencyMs": 129,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "mise",
+      "file": "cli-tools.json",
+      "url": "https://github.com/jdx/mise",
+      "lastChecked": "2026-09-25T06:53:27.641Z",
+      "samples": [
+        449,
+        23,
+        22
+      ],
+      "avgLatencyMs": 165,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "asdf-vm",
+      "file": "cli-tools.json",
+      "url": "https://github.com/asdf-vm/asdf",
+      "lastChecked": "2026-09-25T06:53:28.435Z",
+      "samples": [
+        300,
+        21,
+        21
+      ],
+      "avgLatencyMs": 114,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "pnpm",
+      "file": "cli-tools.json",
+      "url": "https://github.com/pnpm/pnpm",
+      "lastChecked": "2026-09-25T06:53:29.262Z",
+      "samples": [
+        332,
+        21,
+        22
+      ],
+      "avgLatencyMs": 125,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "bun",
+      "file": "cli-tools.json",
+      "url": "https://github.com/oven-sh/bun",
+      "lastChecked": "2026-09-25T06:53:30.219Z",
+      "samples": [
+        463,
+        23,
+        22
+      ],
+      "avgLatencyMs": 169,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "deno",
+      "file": "cli-tools.json",
+      "url": "https://github.com/denoland/deno",
+      "lastChecked": "2026-09-25T06:53:31.052Z",
+      "samples": [
+        341,
+        21,
+        22
+      ],
+      "avgLatencyMs": 128,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "jq",
+      "file": "cli-tools.json",
+      "url": "https://github.com/jqlang/jq",
+      "lastChecked": "2026-09-25T06:53:31.932Z",
+      "samples": [
+        384,
+        22,
+        22
+      ],
+      "avgLatencyMs": 143,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "yq",
+      "file": "cli-tools.json",
+      "url": "https://github.com/mikefarah/yq",
+      "lastChecked": "2026-09-25T06:53:32.771Z",
+      "samples": [
+        342,
+        23,
+        23
+      ],
+      "avgLatencyMs": 129,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "miller",
+      "file": "cli-tools.json",
+      "url": "https://github.com/johnkerl/miller",
+      "lastChecked": "2026-09-25T06:53:33.737Z",
+      "samples": [
+        472,
+        23,
+        22
+      ],
+      "avgLatencyMs": 172,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "csvkit",
+      "file": "cli-tools.json",
+      "url": "https://github.com/wireservice/csvkit",
+      "lastChecked": "2026-09-25T06:53:34.521Z",
+      "samples": [
+        291,
+        22,
+        20
+      ],
+      "avgLatencyMs": 111,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "pandoc",
+      "file": "cli-tools.json",
+      "url": "https://github.com/jgm/pandoc",
+      "lastChecked": "2026-09-25T06:53:35.373Z",
+      "samples": [
+        357,
+        21,
+        23
+      ],
+      "avgLatencyMs": 134,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "typos-cli",
+      "file": "cli-tools.json",
+      "url": "https://github.com/crate-ci/typos",
+      "lastChecked": "2026-09-25T06:53:36.241Z",
+      "samples": [
+        373,
+        22,
+        22
+      ],
+      "avgLatencyMs": 139,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "vale",
+      "file": "cli-tools.json",
+      "url": "https://github.com/errata-ai/vale",
+      "lastChecked": "2026-09-25T06:53:37.314Z",
+      "samples": [
+        536,
+        44,
+        43
+      ],
+      "avgLatencyMs": 208,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "pgcli",
+      "file": "cli-tools.json",
+      "url": "https://github.com/dbcli/pgcli",
+      "lastChecked": "2026-09-25T06:53:38.183Z",
+      "samples": [
+        376,
+        23,
+        22
+      ],
+      "avgLatencyMs": 140,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "mycli",
+      "file": "cli-tools.json",
+      "url": "https://github.com/dbcli/mycli",
+      "lastChecked": "2026-09-25T06:53:39.061Z",
+      "samples": [
+        386,
+        22,
+        22
+      ],
+      "avgLatencyMs": 143,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "iredis",
+      "file": "cli-tools.json",
+      "url": "https://github.com/laixintao/iredis",
+      "lastChecked": "2026-09-25T06:53:39.982Z",
+      "samples": [
+        426,
+        22,
+        22
+      ],
+      "avgLatencyMs": 157,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "litecli",
+      "file": "cli-tools.json",
+      "url": "https://github.com/dbcli/litecli",
+      "lastChecked": "2026-09-25T06:53:40.782Z",
+      "samples": [
+        307,
+        22,
+        22
+      ],
+      "avgLatencyMs": 117,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "stern",
+      "file": "cli-tools.json",
+      "url": "https://github.com/stern/stern",
+      "lastChecked": "2026-09-25T06:53:41.579Z",
+      "samples": [
+        304,
+        22,
+        22
+      ],
+      "avgLatencyMs": 116,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "kubectx",
+      "file": "cli-tools.json",
+      "url": "https://github.com/ahmetb/kubectx",
+      "lastChecked": "2026-09-25T06:53:42.479Z",
+      "samples": [
+        397,
+        29,
+        22
+      ],
+      "avgLatencyMs": 149,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "helm",
+      "file": "cli-tools.json",
+      "url": "https://github.com/helm/helm",
+      "lastChecked": "2026-09-25T06:53:43.260Z",
+      "samples": [
+        287,
+        22,
+        22
+      ],
+      "avgLatencyMs": 110,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "kustomize",
+      "file": "cli-tools.json",
+      "url": "https://github.com/kubernetes-sigs/kustomize",
+      "lastChecked": "2026-09-25T06:53:44.110Z",
+      "samples": [
+        357,
+        22,
+        22
+      ],
+      "avgLatencyMs": 134,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "minikube",
+      "file": "cli-tools.json",
+      "url": "https://github.com/kubernetes/minikube",
+      "lastChecked": "2026-09-25T06:53:44.958Z",
+      "samples": [
+        354,
+        22,
+        22
+      ],
+      "avgLatencyMs": 133,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "kind",
+      "file": "cli-tools.json",
+      "url": "https://github.com/kubernetes-sigs/kind",
+      "lastChecked": "2026-09-25T06:53:45.803Z",
+      "samples": [
+        351,
+        22,
+        22
+      ],
+      "avgLatencyMs": 132,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "dasel",
+      "file": "cli-tools.json",
+      "url": "https://github.com/TomWright/dasel",
+      "lastChecked": "2026-09-25T06:53:46.634Z",
+      "samples": [
+        336,
+        22,
+        22
+      ],
+      "avgLatencyMs": 127,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "zenith",
+      "file": "cli-tools.json",
+      "url": "https://github.com/bvaisvil/zenith",
+      "lastChecked": "2026-09-25T06:53:47.495Z",
+      "samples": [
+        367,
+        23,
+        22
+      ],
+      "avgLatencyMs": 137,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "diskonaut",
+      "file": "cli-tools.json",
+      "url": "https://github.com/imsnif/diskonaut",
+      "lastChecked": "2026-09-25T06:53:48.428Z",
+      "samples": [
+        439,
+        22,
+        21
+      ],
+      "avgLatencyMs": 161,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "ctop",
+      "file": "cli-tools.json",
+      "url": "https://github.com/bcicen/ctop",
+      "lastChecked": "2026-09-25T06:53:49.278Z",
+      "samples": [
+        355,
+        23,
+        22
+      ],
+      "avgLatencyMs": 133,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "speedtest-cli",
+      "file": "cli-tools.json",
+      "url": "https://github.com/sivel/speedtest-cli",
+      "lastChecked": "2026-09-25T06:53:50.112Z",
+      "samples": [
+        340,
+        21,
+        22
+      ],
+      "avgLatencyMs": 128,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "git-sizer",
+      "file": "cli-tools.json",
+      "url": "https://github.com/github/git-sizer",
+      "lastChecked": "2026-09-25T06:53:51.012Z",
+      "samples": [
+        405,
+        22,
+        23
+      ],
+      "avgLatencyMs": 150,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "cz-cli",
+      "file": "cli-tools.json",
+      "url": "https://github.com/commitizen/cz-cli",
+      "lastChecked": "2026-09-25T06:53:51.936Z",
+      "samples": [
+        428,
+        22,
+        22
+      ],
+      "avgLatencyMs": 157,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "volta",
+      "file": "cli-tools.json",
+      "url": "https://github.com/volta-cli/volta",
+      "lastChecked": "2026-09-25T06:53:52.781Z",
+      "samples": [
+        350,
+        21,
+        21
+      ],
+      "avgLatencyMs": 131,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "q",
+      "file": "cli-tools.json",
+      "url": "https://github.com/harelba/q",
+      "lastChecked": "2026-09-25T06:53:53.701Z",
+      "samples": [
+        426,
+        22,
+        21
+      ],
+      "avgLatencyMs": 156,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "lf",
+      "file": "cli-tools.json",
+      "url": "https://github.com/gokcehan/lf",
+      "lastChecked": "2026-09-25T06:53:54.643Z",
+      "samples": [
+        450,
+        22,
+        22
+      ],
+      "avgLatencyMs": 165,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "inxi",
+      "file": "cli-tools.json",
+      "url": "https://github.com/smxi/inxi",
+      "lastChecked": "2026-09-25T06:53:55.639Z",
+      "samples": [
+        499,
+        23,
+        22
+      ],
+      "avgLatencyMs": 181,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Codex Quota Overlay",
+      "file": "cli-tools.json",
+      "url": "https://github.com/cpys/codex-quota-overlay",
+      "lastChecked": "2026-09-25T06:53:56.726Z",
+      "samples": [
+        592,
+        23,
+        22
+      ],
+      "avgLatencyMs": 212,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -819,13 +4565,13 @@
       "name": "GitWhisper",
       "file": "contributors-wanted.json",
       "url": "https://github.com/RitualDev-Lab/GitWhisper",
-      "lastChecked": "2026-09-23T06:53:19.213Z",
+      "lastChecked": "2026-09-25T06:53:57.597Z",
       "samples": [
-        56,
-        56,
-        63
+        368,
+        29,
+        23
       ],
-      "avgLatencyMs": 58,
+      "avgLatencyMs": 140,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -833,13 +4579,13 @@
       "name": "AutoHeal-QA",
       "file": "contributors-wanted.json",
       "url": "https://github.com/RitualDev-Lab/autoheal-qa",
-      "lastChecked": "2026-09-23T06:53:19.835Z",
+      "lastChecked": "2026-09-25T06:53:58.393Z",
       "samples": [
-        56,
-        56,
-        57
+        300,
+        21,
+        23
       ],
-      "avgLatencyMs": 56,
+      "avgLatencyMs": 115,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -847,13 +4593,13 @@
       "name": "FlashLane",
       "file": "contributors-wanted.json",
       "url": "https://github.com/RitualDev-Lab/FlashLane",
-      "lastChecked": "2026-09-23T06:53:20.455Z",
+      "lastChecked": "2026-09-25T06:53:59.231Z",
       "samples": [
-        56,
-        57,
-        56
+        343,
+        22,
+        22
       ],
-      "avgLatencyMs": 56,
+      "avgLatencyMs": 129,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -861,13 +4607,13 @@
       "name": "Bruno",
       "file": "contributors-wanted.json",
       "url": "https://github.com/usebruno/bruno",
-      "lastChecked": "2026-09-23T06:53:21.486Z",
+      "lastChecked": "2026-09-25T06:54:00.055Z",
       "samples": [
-        468,
-        56,
-        56
+        329,
+        22,
+        22
       ],
-      "avgLatencyMs": 193,
+      "avgLatencyMs": 124,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -875,13 +4621,13 @@
       "name": "agent-browser",
       "file": "contributors-wanted.json",
       "url": "https://github.com/vercel-labs/agent-browser",
-      "lastChecked": "2026-09-23T06:53:22.122Z",
+      "lastChecked": "2026-09-25T06:54:00.906Z",
       "samples": [
-        61,
-        60,
-        65
+        350,
+        24,
+        25
       ],
-      "avgLatencyMs": 62,
+      "avgLatencyMs": 133,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -889,13 +4635,13 @@
       "name": "Aider",
       "file": "contributors-wanted.json",
       "url": "https://github.com/Aider-AI/aider",
-      "lastChecked": "2026-09-23T06:53:23.045Z",
+      "lastChecked": "2026-09-25T06:54:01.701Z",
       "samples": [
-        361,
-        56,
-        56
+        301,
+        23,
+        22
       ],
-      "avgLatencyMs": 158,
+      "avgLatencyMs": 115,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -903,13 +4649,13 @@
       "name": "OpenHands",
       "file": "contributors-wanted.json",
       "url": "https://github.com/All-Hands-AI/OpenHands",
-      "lastChecked": "2026-09-23T06:53:25.402Z",
+      "lastChecked": "2026-09-25T06:54:02.842Z",
       "samples": [
-        1688,
-        109,
-        110
+        601,
+        44,
+        44
       ],
-      "avgLatencyMs": 636,
+      "avgLatencyMs": 230,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -917,13 +4663,13 @@
       "name": "Continue",
       "file": "contributors-wanted.json",
       "url": "https://github.com/continuedev/continue",
-      "lastChecked": "2026-09-23T06:53:26.320Z",
+      "lastChecked": "2026-09-25T06:54:03.719Z",
       "samples": [
-        357,
-        56,
-        56
+        384,
+        22,
+        22
       ],
-      "avgLatencyMs": 156,
+      "avgLatencyMs": 143,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -931,13 +4677,13 @@
       "name": "Starship",
       "file": "contributors-wanted.json",
       "url": "https://github.com/starship/starship",
-      "lastChecked": "2026-09-23T06:53:26.941Z",
+      "lastChecked": "2026-09-25T06:54:04.592Z",
       "samples": [
-        57,
-        57,
-        56
+        379,
+        23,
+        22
       ],
-      "avgLatencyMs": 57,
+      "avgLatencyMs": 141,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -945,13 +4691,13 @@
       "name": "Open Source Ideas",
       "file": "contributors-wanted.json",
       "url": "https://github.com/open-source-ideas/ideas",
-      "lastChecked": "2026-09-23T06:53:27.877Z",
+      "lastChecked": "2026-09-25T06:54:05.504Z",
       "samples": [
-        374,
-        56,
-        57
+        420,
+        23,
+        21
       ],
-      "avgLatencyMs": 162,
+      "avgLatencyMs": 155,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -959,13 +4705,153 @@
       "name": "Up-For-Grabs",
       "file": "contributors-wanted.json",
       "url": "https://github.com/up-for-grabs/up-for-grabs.net",
-      "lastChecked": "2026-09-23T06:53:28.798Z",
+      "lastChecked": "2026-09-25T06:54:06.332Z",
       "samples": [
-        359,
-        56,
-        56
+        333,
+        22,
+        23
       ],
-      "avgLatencyMs": 157,
+      "avgLatencyMs": 126,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "freeCodeCamp",
+      "file": "contributors-wanted.json",
+      "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+      "lastChecked": "2026-09-25T06:54:07.217Z",
+      "samples": [
+        390,
+        22,
+        22
+      ],
+      "avgLatencyMs": 145,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Excalidraw",
+      "file": "contributors-wanted.json",
+      "url": "https://github.com/excalidraw/excalidraw",
+      "lastChecked": "2026-09-25T06:54:08.057Z",
+      "samples": [
+        344,
+        23,
+        23
+      ],
+      "avgLatencyMs": 130,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Cal.com",
+      "file": "contributors-wanted.json",
+      "url": "https://github.com/calcom/cal.com",
+      "lastChecked": "2026-09-25T06:54:09.127Z",
+      "samples": [
+        523,
+        55,
+        42
+      ],
+      "avgLatencyMs": 207,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Documenso",
+      "file": "contributors-wanted.json",
+      "url": "https://github.com/documenso/documenso",
+      "lastChecked": "2026-09-25T06:54:09.947Z",
+      "samples": [
+        327,
+        22,
+        21
+      ],
+      "avgLatencyMs": 123,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Twenty",
+      "file": "contributors-wanted.json",
+      "url": "https://github.com/twentyhq/twenty",
+      "lastChecked": "2026-09-25T06:54:10.750Z",
+      "samples": [
+        307,
+        22,
+        24
+      ],
+      "avgLatencyMs": 118,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Ghost",
+      "file": "contributors-wanted.json",
+      "url": "https://github.com/TryGhost/Ghost",
+      "lastChecked": "2026-09-25T06:54:11.598Z",
+      "samples": [
+        357,
+        21,
+        22
+      ],
+      "avgLatencyMs": 133,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Chatwoot",
+      "file": "contributors-wanted.json",
+      "url": "https://github.com/chatwoot/chatwoot",
+      "lastChecked": "2026-09-25T06:54:12.476Z",
+      "samples": [
+        385,
+        23,
+        23
+      ],
+      "avgLatencyMs": 144,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "AppFlowy",
+      "file": "contributors-wanted.json",
+      "url": "https://github.com/AppFlowy-IO/AppFlowy",
+      "lastChecked": "2026-09-25T06:54:13.249Z",
+      "samples": [
+        279,
+        23,
+        22
+      ],
+      "avgLatencyMs": 108,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Affine",
+      "file": "contributors-wanted.json",
+      "url": "https://github.com/toeverything/AFFiNE",
+      "lastChecked": "2026-09-25T06:54:14.133Z",
+      "samples": [
+        391,
+        22,
+        22
+      ],
+      "avgLatencyMs": 145,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Dub.co",
+      "file": "contributors-wanted.json",
+      "url": "https://github.com/dubinc/dub",
+      "lastChecked": "2026-09-25T06:54:14.986Z",
+      "samples": [
+        357,
+        24,
+        21
+      ],
+      "avgLatencyMs": 134,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -973,13 +4859,13 @@
       "name": "Supabase",
       "file": "free-cloud.json",
       "url": "https://supabase.com",
-      "lastChecked": "2026-09-23T06:53:29.542Z",
+      "lastChecked": "2026-09-25T06:54:15.583Z",
       "samples": [
-        161,
-        72,
-        60
+        67,
+        38,
+        42
       ],
-      "avgLatencyMs": 98,
+      "avgLatencyMs": 49,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -987,13 +4873,13 @@
       "name": "Neon",
       "file": "free-cloud.json",
       "url": "https://neon.tech",
-      "lastChecked": "2026-09-23T06:53:30.578Z",
+      "lastChecked": "2026-09-25T06:54:16.379Z",
       "samples": [
-        378,
-        108,
-        98
+        205,
+        68,
+        72
       ],
-      "avgLatencyMs": 195,
+      "avgLatencyMs": 115,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1001,13 +4887,13 @@
       "name": "Cloudflare Workers",
       "file": "free-cloud.json",
       "url": "https://workers.cloudflare.com",
-      "lastChecked": "2026-09-23T06:53:32.121Z",
+      "lastChecked": "2026-09-25T06:54:17.288Z",
       "samples": [
-        647,
-        232,
-        214
+        176,
+        141,
+        142
       ],
-      "avgLatencyMs": 364,
+      "avgLatencyMs": 153,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1015,13 +4901,13 @@
       "name": "Clerk",
       "file": "free-cloud.json",
       "url": "https://clerk.com",
-      "lastChecked": "2026-09-23T06:53:32.995Z",
+      "lastChecked": "2026-09-25T06:54:18.081Z",
       "samples": [
-        280,
-        69,
-        73
+        230,
+        53,
+        59
       ],
-      "avgLatencyMs": 141,
+      "avgLatencyMs": 114,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1029,13 +4915,13 @@
       "name": "Resend",
       "file": "free-cloud.json",
       "url": "https://resend.com",
-      "lastChecked": "2026-09-23T06:53:33.752Z",
+      "lastChecked": "2026-09-25T06:54:18.660Z",
       "samples": [
-        201,
-        55,
-        49
+        70,
+        20,
+        39
       ],
-      "avgLatencyMs": 102,
+      "avgLatencyMs": 43,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1043,13 +4929,13 @@
       "name": "PocketBase",
       "file": "free-cloud.json",
       "url": "https://pocketbase.io",
-      "lastChecked": "2026-09-23T06:53:35.686Z",
+      "lastChecked": "2026-09-25T06:54:20.479Z",
       "samples": [
-        1159,
-        161,
-        161
+        1020,
+        175,
+        175
       ],
-      "avgLatencyMs": 494,
+      "avgLatencyMs": 457,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1057,13 +4943,13 @@
       "name": "Appwrite",
       "file": "free-cloud.json",
       "url": "https://appwrite.io",
-      "lastChecked": "2026-09-23T06:53:38.892Z",
+      "lastChecked": "2026-09-25T06:54:23.183Z",
       "samples": [
-        1795,
-        511,
-        449
+        1422,
+        489,
+        345
       ],
-      "avgLatencyMs": 918,
+      "avgLatencyMs": 752,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1071,13 +4957,13 @@
       "name": "Fly.io",
       "file": "free-cloud.json",
       "url": "https://fly.io",
-      "lastChecked": "2026-09-23T06:53:39.546Z",
+      "lastChecked": "2026-09-25T06:54:23.914Z",
       "samples": [
-        137,
-        35,
-        32
+        236,
+        23,
+        23
       ],
-      "avgLatencyMs": 68,
+      "avgLatencyMs": 94,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1085,13 +4971,13 @@
       "name": "Render",
       "file": "free-cloud.json",
       "url": "https://render.com",
-      "lastChecked": "2026-09-23T06:53:40.289Z",
+      "lastChecked": "2026-09-25T06:54:24.623Z",
       "samples": [
-        163,
-        61,
-        69
+        96,
+        80,
+        82
       ],
-      "avgLatencyMs": 98,
+      "avgLatencyMs": 86,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1099,13 +4985,852 @@
       "name": "Koyeb",
       "file": "free-cloud.json",
       "url": "https://www.koyeb.com",
-      "lastChecked": "2026-09-23T06:53:41.561Z",
+      "lastChecked": "2026-09-25T06:54:25.856Z",
       "samples": [
-        460,
-        194,
-        168
+        412,
+        197,
+        175
       ],
-      "avgLatencyMs": 274,
+      "avgLatencyMs": 261,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Auth.js",
+      "file": "free-cloud.json",
+      "url": "https://authjs.dev",
+      "lastChecked": "2026-09-25T06:54:26.461Z",
+      "samples": [
+        116,
+        20,
+        17
+      ],
+      "avgLatencyMs": 51,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Better Auth",
+      "file": "free-cloud.json",
+      "url": "https://better-auth.com",
+      "lastChecked": "2026-09-25T06:54:27.019Z",
+      "samples": [
+        54,
+        24,
+        30
+      ],
+      "avgLatencyMs": 36,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Lucia",
+      "file": "free-cloud.json",
+      "url": "https://lucia-auth.com",
+      "lastChecked": "2026-09-25T06:54:27.600Z",
+      "samples": [
+        123,
+        5,
+        3
+      ],
+      "avgLatencyMs": 44,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "SuperTokens",
+      "file": "free-cloud.json",
+      "url": "https://supertokens.com",
+      "lastChecked": "2026-09-25T06:54:28.406Z",
+      "samples": [
+        181,
+        87,
+        88
+      ],
+      "avgLatencyMs": 119,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Logto",
+      "file": "free-cloud.json",
+      "url": "https://logto.io",
+      "lastChecked": "2026-09-25T06:54:29.001Z",
+      "samples": [
+        65,
+        44,
+        37
+      ],
+      "avgLatencyMs": 49,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Coolify",
+      "file": "free-cloud.json",
+      "url": "https://coolify.io",
+      "lastChecked": "2026-09-25T06:54:30.614Z",
+      "samples": [
+        785,
+        188,
+        188
+      ],
+      "avgLatencyMs": 387,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Dokku",
+      "file": "free-cloud.json",
+      "url": "https://dokku.com",
+      "lastChecked": "2026-09-25T06:54:31.546Z",
+      "samples": [
+        323,
+        81,
+        79
+      ],
+      "avgLatencyMs": 161,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "CapRover",
+      "file": "free-cloud.json",
+      "url": "https://caprover.com",
+      "lastChecked": "2026-09-25T06:54:32.117Z",
+      "samples": [
+        114,
+        4,
+        4
+      ],
+      "avgLatencyMs": 41,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Turso",
+      "file": "free-cloud.json",
+      "url": "https://turso.tech",
+      "lastChecked": "2026-09-25T06:54:32.706Z",
+      "samples": [
+        74,
+        34,
+        31
+      ],
+      "avgLatencyMs": 46,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Upstash",
+      "file": "free-cloud.json",
+      "url": "https://upstash.com",
+      "lastChecked": "2026-09-25T06:54:33.320Z",
+      "samples": [
+        91,
+        36,
+        35
+      ],
+      "avgLatencyMs": 54,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "PostHog",
+      "file": "free-cloud.json",
+      "url": "https://posthog.com",
+      "lastChecked": "2026-09-25T06:54:33.982Z",
+      "samples": [
+        118,
+        51,
+        42
+      ],
+      "avgLatencyMs": 70,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Umami",
+      "file": "free-cloud.json",
+      "url": "https://umami.is",
+      "lastChecked": "2026-09-25T06:54:34.761Z",
+      "samples": [
+        263,
+        33,
+        33
+      ],
+      "avgLatencyMs": 110,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Directus",
+      "file": "free-cloud.json",
+      "url": "https://directus.io",
+      "lastChecked": "2026-09-25T06:54:35.843Z",
+      "samples": [
+        440,
+        97,
+        96
+      ],
+      "avgLatencyMs": 211,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Strapi",
+      "file": "free-cloud.json",
+      "url": "https://strapi.io",
+      "lastChecked": "2026-09-25T06:54:36.346Z",
+      "samples": [
+        36,
+        9,
+        8
+      ],
+      "avgLatencyMs": 18,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "MinIO",
+      "file": "free-cloud.json",
+      "url": "https://min.io",
+      "lastChecked": "2026-09-25T06:54:37.347Z",
+      "samples": [
+        230,
+        170,
+        150
+      ],
+      "avgLatencyMs": 183,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "GlitchTip",
+      "file": "free-cloud.json",
+      "url": "https://glitchtip.com",
+      "lastChecked": "2026-09-25T06:54:38.267Z",
+      "samples": [
+        441,
+        14,
+        16
+      ],
+      "avgLatencyMs": 157,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Meilisearch",
+      "file": "free-cloud.json",
+      "url": "https://www.meilisearch.com",
+      "lastChecked": "2026-09-25T06:54:38.925Z",
+      "samples": [
+        123,
+        33,
+        53
+      ],
+      "avgLatencyMs": 70,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Typesense",
+      "file": "free-cloud.json",
+      "url": "https://typesense.org",
+      "lastChecked": "2026-09-25T06:54:39.553Z",
+      "samples": [
+        165,
+        6,
+        5
+      ],
+      "avgLatencyMs": 59,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Qdrant Cloud",
+      "file": "free-cloud.json",
+      "url": "https://qdrant.tech",
+      "lastChecked": "2026-09-25T06:54:40.074Z",
+      "samples": [
+        46,
+        13,
+        13
+      ],
+      "avgLatencyMs": 24,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Railway",
+      "file": "free-cloud.json",
+      "url": "https://railway.com",
+      "lastChecked": "2026-09-25T06:54:40.652Z",
+      "samples": [
+        84,
+        24,
+        17
+      ],
+      "avgLatencyMs": 42,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Oracle Cloud Always Free",
+      "file": "free-cloud.json",
+      "url": "https://www.oracle.com/cloud/free",
+      "lastChecked": "2026-09-25T06:54:41.262Z",
+      "samples": [
+        62,
+        46,
+        52
+      ],
+      "avgLatencyMs": 53,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Deno Deploy",
+      "file": "free-cloud.json",
+      "url": "https://deno.com/deploy",
+      "lastChecked": "2026-09-25T06:54:42.226Z",
+      "samples": [
+        369,
+        95,
+        51
+      ],
+      "avgLatencyMs": 172,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Vercel",
+      "file": "free-cloud.json",
+      "url": "https://vercel.com",
+      "lastChecked": "2026-09-25T06:54:42.945Z",
+      "samples": [
+        52,
+        189,
+        27
+      ],
+      "avgLatencyMs": 89,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Netlify",
+      "file": "free-cloud.json",
+      "url": "https://www.netlify.com",
+      "lastChecked": "2026-09-25T06:54:43.464Z",
+      "samples": [
+        36,
+        13,
+        19
+      ],
+      "avgLatencyMs": 23,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Cloudflare Pages",
+      "file": "free-cloud.json",
+      "url": "https://pages.cloudflare.com",
+      "lastChecked": "2026-09-25T06:54:44.594Z",
+      "samples": [
+        419,
+        126,
+        134
+      ],
+      "avgLatencyMs": 226,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "GitHub Pages",
+      "file": "free-cloud.json",
+      "url": "https://pages.github.com",
+      "lastChecked": "2026-09-25T06:54:45.073Z",
+      "samples": [
+        24,
+        4,
+        4
+      ],
+      "avgLatencyMs": 11,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "GitLab Pages",
+      "file": "free-cloud.json",
+      "url": "https://docs.gitlab.com/ee/user/project/pages",
+      "lastChecked": "2026-09-25T06:54:46.016Z",
+      "samples": [
+        441,
+        26,
+        26
+      ],
+      "avgLatencyMs": 164,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Glitch",
+      "file": "free-cloud.json",
+      "url": "https://glitch.com",
+      "lastChecked": "2026-09-25T06:54:46.963Z",
+      "samples": [
+        320,
+        87,
+        90
+      ],
+      "avgLatencyMs": 166,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Aiven Free Tier",
+      "file": "free-cloud.json",
+      "url": "https://aiven.io/free-plans",
+      "lastChecked": "2026-09-25T06:54:48.439Z",
+      "samples": [
+        574,
+        122,
+        329
+      ],
+      "avgLatencyMs": 342,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "MongoDB Atlas",
+      "file": "free-cloud.json",
+      "url": "https://www.mongodb.com/products/platform/atlas-database",
+      "lastChecked": "2026-09-25T06:54:50.990Z",
+      "samples": [
+        2074,
+        15,
+        10
+      ],
+      "avgLatencyMs": 700,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Redis Cloud",
+      "file": "free-cloud.json",
+      "url": "https://redis.io/cloud",
+      "lastChecked": "2026-09-25T06:54:52.704Z",
+      "samples": [
+        761,
+        262,
+        240
+      ],
+      "avgLatencyMs": 421,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "CockroachDB Serverless",
+      "file": "free-cloud.json",
+      "url": "https://www.cockroachlabs.com/pricing",
+      "lastChecked": "2026-09-25T06:54:55.108Z",
+      "samples": [
+        800,
+        506,
+        648
+      ],
+      "avgLatencyMs": 651,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "TiDB Serverless",
+      "file": "free-cloud.json",
+      "url": "https://www.pingcap.com/tidb-serverless",
+      "lastChecked": "2026-09-25T06:54:57.036Z",
+      "samples": [
+        1427,
+        39,
+        15
+      ],
+      "avgLatencyMs": 494,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Backblaze B2",
+      "file": "free-cloud.json",
+      "url": "https://www.backblaze.com/cloud-storage",
+      "lastChecked": "2026-09-25T06:54:57.744Z",
+      "samples": [
+        115,
+        69,
+        72
+      ],
+      "avgLatencyMs": 85,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Scaleway Stardust & Object Storage",
+      "file": "free-cloud.json",
+      "url": "https://www.scaleway.com/en/pricing",
+      "lastChecked": "2026-09-25T06:54:59.419Z",
+      "samples": [
+        1141,
+        49,
+        36
+      ],
+      "avgLatencyMs": 409,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Keycloak",
+      "file": "free-cloud.json",
+      "url": "https://www.keycloak.org",
+      "lastChecked": "2026-09-25T06:55:00.279Z",
+      "samples": [
+        402,
+        4,
+        3
+      ],
+      "avgLatencyMs": 136,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Authentik",
+      "file": "free-cloud.json",
+      "url": "https://goauthentik.io",
+      "lastChecked": "2026-09-25T06:55:00.831Z",
+      "samples": [
+        61,
+        21,
+        19
+      ],
+      "avgLatencyMs": 34,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Authelia",
+      "file": "free-cloud.json",
+      "url": "https://www.authelia.com",
+      "lastChecked": "2026-09-25T06:55:01.523Z",
+      "samples": [
+        231,
+        6,
+        6
+      ],
+      "avgLatencyMs": 81,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Zitadel",
+      "file": "free-cloud.json",
+      "url": "https://zitadel.com",
+      "lastChecked": "2026-09-25T06:55:02.197Z",
+      "samples": [
+        166,
+        18,
+        39
+      ],
+      "avgLatencyMs": 74,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "FusionAuth",
+      "file": "free-cloud.json",
+      "url": "https://fusionauth.io",
+      "lastChecked": "2026-09-25T06:55:02.693Z",
+      "samples": [
+        30,
+        8,
+        9
+      ],
+      "avgLatencyMs": 16,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Casdoor",
+      "file": "free-cloud.json",
+      "url": "https://casdoor.org",
+      "lastChecked": "2026-09-25T06:55:12.768Z",
+      "samples": [
+        1301,
+        324
+      ],
+      "avgLatencyMs": 813,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Ory Kratos",
+      "file": "free-cloud.json",
+      "url": "https://www.ory.sh/kratos",
+      "lastChecked": "2026-09-25T06:55:13.733Z",
+      "samples": [
+        330,
+        94,
+        91
+      ],
+      "avgLatencyMs": 172,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Portainer Community",
+      "file": "free-cloud.json",
+      "url": "https://www.portainer.io",
+      "lastChecked": "2026-09-25T06:55:14.320Z",
+      "samples": [
+        81,
+        25,
+        29
+      ],
+      "avgLatencyMs": 45,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Nginx Proxy Manager",
+      "file": "free-cloud.json",
+      "url": "https://nginxproxymanager.com",
+      "lastChecked": "2026-09-25T06:55:14.923Z",
+      "samples": [
+        83,
+        54,
+        14
+      ],
+      "avgLatencyMs": 50,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Traefik Community",
+      "file": "free-cloud.json",
+      "url": "https://traefik.io/traefik",
+      "lastChecked": "2026-09-25T06:55:15.950Z",
+      "samples": [
+        535,
+        23,
+        19
+      ],
+      "avgLatencyMs": 192,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Caddy Web Server",
+      "file": "free-cloud.json",
+      "url": "https://caddyserver.com",
+      "lastChecked": "2026-09-25T06:55:16.500Z",
+      "samples": [
+        66,
+        17,
+        17
+      ],
+      "avgLatencyMs": 33,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "CasaOS",
+      "file": "free-cloud.json",
+      "url": "https://casaos.io",
+      "lastChecked": "2026-09-25T06:55:18.027Z",
+      "samples": [
+        666,
+        204,
+        205
+      ],
+      "avgLatencyMs": 358,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Umbrel",
+      "file": "free-cloud.json",
+      "url": "https://umbrel.com",
+      "lastChecked": "2026-09-25T06:55:18.647Z",
+      "samples": [
+        87,
+        38,
+        47
+      ],
+      "avgLatencyMs": 57,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "YunoHost",
+      "file": "free-cloud.json",
+      "url": "https://yunohost.org",
+      "lastChecked": "2026-09-25T06:55:20.015Z",
+      "samples": [
+        619,
+        149,
+        149
+      ],
+      "avgLatencyMs": 306,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "RabbitMQ",
+      "file": "free-cloud.json",
+      "url": "https://www.rabbitmq.com",
+      "lastChecked": "2026-09-25T06:55:20.640Z",
+      "samples": [
+        114,
+        30,
+        30
+      ],
+      "avgLatencyMs": 58,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Eclipse Mosquitto",
+      "file": "free-cloud.json",
+      "url": "https://mosquitto.org",
+      "lastChecked": "2026-09-25T06:55:22.230Z",
+      "samples": [
+        863,
+        138,
+        138
+      ],
+      "avgLatencyMs": 380,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "EMQX",
+      "file": "free-cloud.json",
+      "url": "https://www.emqx.com/en",
+      "lastChecked": "2026-09-25T06:55:22.812Z",
+      "samples": [
+        111,
+        11,
+        12
+      ],
+      "avgLatencyMs": 45,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Brevo (formerly Sendinblue)",
+      "file": "free-cloud.json",
+      "url": "https://www.brevo.com/pricing",
+      "lastChecked": "2026-09-25T06:55:23.593Z",
+      "samples": [
+        190,
+        65,
+        73
+      ],
+      "avgLatencyMs": 109,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "SendGrid Free Tier",
+      "file": "free-cloud.json",
+      "url": "https://sendgrid.com/pricing",
+      "lastChecked": "2026-09-25T06:55:25.040Z",
+      "samples": [
+        628,
+        195,
+        174
+      ],
+      "avgLatencyMs": 332,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Mailgun Free Foundation",
+      "file": "free-cloud.json",
+      "url": "https://www.mailgun.com/pricing",
+      "lastChecked": "2026-09-25T06:55:25.992Z",
+      "samples": [
+        261,
+        131,
+        110
+      ],
+      "avgLatencyMs": 167,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Plausible Analytics Self-Hosted",
+      "file": "free-cloud.json",
+      "url": "https://plausible.io/self-hosted",
+      "lastChecked": "2026-09-25T06:55:27.171Z",
+      "samples": [
+        350,
+        189,
+        189
+      ],
+      "avgLatencyMs": 243,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Grafana OSS",
+      "file": "free-cloud.json",
+      "url": "https://grafana.com/oss/grafana",
+      "lastChecked": "2026-09-25T06:55:29.152Z",
+      "samples": [
+        675,
+        594,
+        260
+      ],
+      "avgLatencyMs": 510,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Prometheus",
+      "file": "free-cloud.json",
+      "url": "https://prometheus.io",
+      "lastChecked": "2026-09-25T06:55:29.833Z",
+      "samples": [
+        195,
+        16,
+        17
+      ],
+      "avgLatencyMs": 76,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Uptime Kuma",
+      "file": "free-cloud.json",
+      "url": "https://github.com/louislam/uptime-kuma",
+      "lastChecked": "2026-09-25T06:55:30.845Z",
+      "samples": [
+        515,
+        25,
+        23
+      ],
+      "avgLatencyMs": 188,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Dragonfly",
+      "file": "free-cloud.json",
+      "url": "https://www.dragonflydb.io",
+      "lastChecked": "2026-09-25T06:55:32.021Z",
+      "samples": [
+        321,
+        235,
+        169
+      ],
+      "avgLatencyMs": 242,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1113,13 +5838,13 @@
       "name": "JetBrains Free Open Source License",
       "file": "perks.json",
       "url": "https://www.jetbrains.com/community/opensource",
-      "lastChecked": "2026-09-23T06:53:42.239Z",
+      "lastChecked": "2026-09-25T06:55:32.616Z",
       "samples": [
-        181,
-        35,
-        11
+        99,
+        32,
+        13
       ],
-      "avgLatencyMs": 76,
+      "avgLatencyMs": 48,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1127,13 +5852,13 @@
       "name": "Sentry for Open Source",
       "file": "perks.json",
       "url": "https://sentry.io/for/open-source",
-      "lastChecked": "2026-09-23T06:53:43.815Z",
+      "lastChecked": "2026-09-25T06:55:34.279Z",
       "samples": [
-        396,
-        366,
-        365
+        577,
+        394,
+        240
       ],
-      "avgLatencyMs": 376,
+      "avgLatencyMs": 404,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1141,13 +5866,13 @@
       "name": "GitHub for Startups",
       "file": "perks.json",
       "url": "https://github.com/enterprise/startups",
-      "lastChecked": "2026-09-23T06:53:44.811Z",
+      "lastChecked": "2026-09-25T06:55:34.997Z",
       "samples": [
-        430,
-        58,
-        57
+        219,
+        23,
+        24
       ],
-      "avgLatencyMs": 182,
+      "avgLatencyMs": 89,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1155,13 +5880,13 @@
       "name": "AWS Activate Founders",
       "file": "perks.json",
       "url": "https://aws.amazon.com/activate",
-      "lastChecked": "2026-09-23T06:53:46.509Z",
+      "lastChecked": "2026-09-25T06:55:36.049Z",
       "samples": [
-        311,
-        506,
-        431
+        262,
+        161,
+        179
       ],
-      "avgLatencyMs": 416,
+      "avgLatencyMs": 201,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1169,13 +5894,13 @@
       "name": "Google Cloud for Startups",
       "file": "perks.json",
       "url": "https://cloud.google.com/startup",
-      "lastChecked": "2026-09-23T06:53:47.776Z",
+      "lastChecked": "2026-09-25T06:55:37.212Z",
       "samples": [
-        302,
-        245,
-        273
+        255,
+        252,
+        207
       ],
-      "avgLatencyMs": 273,
+      "avgLatencyMs": 238,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1183,13 +5908,13 @@
       "name": "DigitalOcean Open Source Sponsorship",
       "file": "perks.json",
       "url": "https://www.digitalocean.com/open-source",
-      "lastChecked": "2026-09-23T06:53:48.353Z",
+      "lastChecked": "2026-09-25T06:55:37.731Z",
       "samples": [
-        74,
-        23,
-        29
+        40,
+        14,
+        13
       ],
-      "avgLatencyMs": 42,
+      "avgLatencyMs": 22,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1197,13 +5922,13 @@
       "name": "Postman Open Source Sponsorship",
       "file": "perks.json",
       "url": "https://www.postman.com/open-source",
-      "lastChecked": "2026-09-23T06:53:49.070Z",
+      "lastChecked": "2026-09-25T06:55:38.486Z",
       "samples": [
-        126,
-        68,
-        72
+        152,
+        72,
+        81
       ],
-      "avgLatencyMs": 89,
+      "avgLatencyMs": 102,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1211,13 +5936,13 @@
       "name": "Datadog for Open Source",
       "file": "perks.json",
       "url": "https://www.datadoghq.com/partner/open-source",
-      "lastChecked": "2026-09-23T06:53:50.277Z",
+      "lastChecked": "2026-09-25T06:55:39.667Z",
       "samples": [
-        540,
-        92,
-        124
+        542,
+        178,
+        10
       ],
-      "avgLatencyMs": 252,
+      "avgLatencyMs": 243,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1225,13 +5950,13 @@
       "name": "BrowserStack Open Source",
       "file": "perks.json",
       "url": "https://www.browserstack.com/open-source",
-      "lastChecked": "2026-09-23T06:53:50.887Z",
+      "lastChecked": "2026-09-25T06:55:40.157Z",
       "samples": [
-        133,
-        15,
-        12
+        29,
+        7,
+        6
       ],
-      "avgLatencyMs": 53,
+      "avgLatencyMs": 14,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1239,13 +5964,13 @@
       "name": "Docker Open Source Community",
       "file": "perks.json",
       "url": "https://www.docker.com/community/open-source/application",
-      "lastChecked": "2026-09-23T06:53:51.758Z",
+      "lastChecked": "2026-09-25T06:55:40.775Z",
       "samples": [
-        386,
+        133,
         19,
-        15
+        14
       ],
-      "avgLatencyMs": 140,
+      "avgLatencyMs": 55,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1253,13 +5978,13 @@
       "name": "JetBrains Mono",
       "file": "perks.json",
       "url": "https://github.com/JetBrains/JetBrainsMono",
-      "lastChecked": "2026-09-23T06:53:52.923Z",
+      "lastChecked": "2026-09-25T06:55:41.786Z",
       "samples": [
-        601,
-        56,
-        57
+        514,
+        22,
+        24
       ],
-      "avgLatencyMs": 238,
+      "avgLatencyMs": 187,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1267,13 +5992,13 @@
       "name": "Fira Code",
       "file": "perks.json",
       "url": "https://github.com/tonsky/FiraCode",
-      "lastChecked": "2026-09-23T06:53:53.822Z",
+      "lastChecked": "2026-09-25T06:55:42.663Z",
       "samples": [
-        335,
-        56,
-        58
+        378,
+        24,
+        25
       ],
-      "avgLatencyMs": 150,
+      "avgLatencyMs": 142,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1281,13 +6006,251 @@
       "name": "Cascadia Code",
       "file": "perks.json",
       "url": "https://github.com/microsoft/cascadia-code",
-      "lastChecked": "2026-09-23T06:53:54.732Z",
+      "lastChecked": "2026-09-25T06:55:43.547Z",
       "samples": [
-        348,
-        57,
-        56
+        386,
+        23,
+        23
       ],
-      "avgLatencyMs": 154,
+      "avgLatencyMs": 144,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "GitHub Student Developer Pack",
+      "file": "perks.json",
+      "url": "https://education.github.com/pack",
+      "lastChecked": "2026-09-25T06:55:50.432Z",
+      "samples": [
+        2422,
+        1913,
+        2100
+      ],
+      "avgLatencyMs": 2145,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Microsoft for Startups Founders Hub",
+      "file": "perks.json",
+      "url": "https://www.microsoft.com/startups",
+      "lastChecked": "2026-09-25T06:55:51.552Z",
+      "samples": [
+        484,
+        105,
+        81
+      ],
+      "avgLatencyMs": 223,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Cloudflare for Open Source",
+      "file": "perks.json",
+      "url": "https://www.cloudflare.com/open-source-sponsorship",
+      "lastChecked": "2026-09-25T06:55:52.919Z",
+      "samples": [
+        467,
+        236,
+        212
+      ],
+      "avgLatencyMs": 305,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "1Password for Open Source",
+      "file": "perks.json",
+      "url": "https://github.com/1Password/op-connect-playbook",
+      "lastChecked": "2026-09-25T06:55:53.688Z",
+      "samples": [
+        272,
+        23,
+        22
+      ],
+      "avgLatencyMs": 106,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Netlify for Open Source",
+      "file": "perks.json",
+      "url": "https://www.netlify.com/open-source",
+      "lastChecked": "2026-09-25T06:55:54.897Z",
+      "samples": [
+        435,
+        192,
+        131
+      ],
+      "avgLatencyMs": 253,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Vercel for Open Source",
+      "file": "perks.json",
+      "url": "https://vercel.com/docs/accounts/plans/pro#open-source",
+      "lastChecked": "2026-09-25T06:55:56.976Z",
+      "samples": [
+        618,
+        570,
+        441
+      ],
+      "avgLatencyMs": 543,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "GitLab for Open Source",
+      "file": "perks.json",
+      "url": "https://about.gitlab.com/solutions/open-source/program",
+      "lastChecked": "2026-09-25T06:55:57.659Z",
+      "samples": [
+        163,
+        36,
+        32
+      ],
+      "avgLatencyMs": 77,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Atlassian Open Source Project Licensing",
+      "file": "perks.json",
+      "url": "https://www.atlassian.com/software/views/open-source-license-request",
+      "lastChecked": "2026-09-25T06:55:58.269Z",
+      "samples": [
+        139,
+        13,
+        7
+      ],
+      "avgLatencyMs": 53,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "JetBrains Student Pack",
+      "file": "perks.json",
+      "url": "https://www.jetbrains.com/community/education#students",
+      "lastChecked": "2026-09-25T06:55:58.881Z",
+      "samples": [
+        103,
+        38,
+        20
+      ],
+      "avgLatencyMs": 54,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Notion for Education",
+      "file": "perks.json",
+      "url": "https://www.notion.so/product/notion-for-education",
+      "lastChecked": "2026-09-25T06:55:59.932Z",
+      "samples": [
+        200,
+        212,
+        187
+      ],
+      "avgLatencyMs": 200,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Twilio Startups Program",
+      "file": "perks.json",
+      "url": "https://www.twilio.com/en-us/startups",
+      "lastChecked": "2026-09-25T06:56:00.929Z",
+      "samples": [
+        515,
+        15,
+        17
+      ],
+      "avgLatencyMs": 182,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Figma for Education",
+      "file": "perks.json",
+      "url": "https://www.figma.com/education",
+      "lastChecked": "2026-09-25T06:56:02.073Z",
+      "samples": [
+        370,
+        164,
+        157
+      ],
+      "avgLatencyMs": 230,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "MongoDB for Startups",
+      "file": "perks.json",
+      "url": "https://www.mongodb.com/startups",
+      "lastChecked": "2026-09-25T06:56:03.636Z",
+      "samples": [
+        1058,
+        28,
+        26
+      ],
+      "avgLatencyMs": 371,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Codecov for Open Source",
+      "file": "perks.json",
+      "url": "https://about.codecov.io/pricing",
+      "lastChecked": "2026-09-25T06:56:06.160Z",
+      "samples": [
+        1678,
+        220,
+        173
+      ],
+      "avgLatencyMs": 690,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Crowdin for Open Source",
+      "file": "perks.json",
+      "url": "https://crowdin.com/page/open-source-project-setup",
+      "lastChecked": "2026-09-25T06:56:07.121Z",
+      "samples": [
+        308,
+        104,
+        102
+      ],
+      "avgLatencyMs": 171,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Termius for Students",
+      "file": "perks.json",
+      "url": "https://termius.com/education",
+      "lastChecked": "2026-09-25T06:56:07.715Z",
+      "samples": [
+        129,
+        8,
+        7
+      ],
+      "avgLatencyMs": 48,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Snyk for Open Source",
+      "file": "perks.json",
+      "url": "https://snyk.io/plans",
+      "lastChecked": "2026-09-25T06:56:09.838Z",
+      "samples": [
+        737,
+        469,
+        467
+      ],
+      "avgLatencyMs": 558,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1295,13 +6258,27 @@
       "name": "AutoHeal-QA",
       "file": "testing-qa.json",
       "url": "https://github.com/RitualDev-Lab/autoheal-qa",
-      "lastChecked": "2026-09-23T06:53:55.353Z",
+      "lastChecked": "2026-09-25T06:56:10.726Z",
       "samples": [
-        57,
-        57,
-        56
+        394,
+        22,
+        23
       ],
-      "avgLatencyMs": 57,
+      "avgLatencyMs": 146,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Agent QA",
+      "file": "testing-qa.json",
+      "url": "https://github.com/vostride/agent-qa",
+      "lastChecked": "2026-09-25T06:56:11.512Z",
+      "samples": [
+        292,
+        22,
+        23
+      ],
+      "avgLatencyMs": 112,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1309,13 +6286,13 @@
       "name": "Playwright",
       "file": "testing-qa.json",
       "url": "https://github.com/microsoft/playwright",
-      "lastChecked": "2026-09-23T06:53:56.266Z",
+      "lastChecked": "2026-09-25T06:56:12.343Z",
       "samples": [
-        348,
-        56,
-        56
+        335,
+        22,
+        23
       ],
-      "avgLatencyMs": 153,
+      "avgLatencyMs": 127,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1323,13 +6300,13 @@
       "name": "Vitest",
       "file": "testing-qa.json",
       "url": "https://github.com/vitest-dev/vitest",
-      "lastChecked": "2026-09-23T06:53:57.199Z",
+      "lastChecked": "2026-09-25T06:56:13.136Z",
       "samples": [
-        371,
-        55,
-        56
+        299,
+        22,
+        21
       ],
-      "avgLatencyMs": 161,
+      "avgLatencyMs": 114,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1337,13 +6314,13 @@
       "name": "k6",
       "file": "testing-qa.json",
       "url": "https://github.com/grafana/k6",
-      "lastChecked": "2026-09-23T06:53:58.151Z",
+      "lastChecked": "2026-09-25T06:56:13.958Z",
       "samples": [
-        386,
-        57,
-        60
+        329,
+        22,
+        21
       ],
-      "avgLatencyMs": 168,
+      "avgLatencyMs": 124,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1351,13 +6328,13 @@
       "name": "Bruno",
       "file": "testing-qa.json",
       "url": "https://github.com/usebruno/bruno",
-      "lastChecked": "2026-09-23T06:53:58.773Z",
+      "lastChecked": "2026-09-25T06:56:14.868Z",
       "samples": [
-        57,
-        58,
-        57
+        417,
+        23,
+        22
       ],
-      "avgLatencyMs": 57,
+      "avgLatencyMs": 154,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1365,13 +6342,13 @@
       "name": "Hoppscotch",
       "file": "testing-qa.json",
       "url": "https://github.com/hoppscotch/hoppscotch",
-      "lastChecked": "2026-09-23T06:53:59.690Z",
+      "lastChecked": "2026-09-25T06:56:15.729Z",
       "samples": [
-        356,
-        57,
-        56
+        367,
+        22,
+        23
       ],
-      "avgLatencyMs": 156,
+      "avgLatencyMs": 137,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1379,13 +6356,13 @@
       "name": "Mockoon",
       "file": "testing-qa.json",
       "url": "https://github.com/mockoon/mockoon",
-      "lastChecked": "2026-09-23T06:54:00.686Z",
+      "lastChecked": "2026-09-25T06:56:16.570Z",
       "samples": [
-        433,
-        56,
-        57
+        346,
+        22,
+        21
       ],
-      "avgLatencyMs": 182,
+      "avgLatencyMs": 130,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1393,13 +6370,13 @@
       "name": "Artillery",
       "file": "testing-qa.json",
       "url": "https://github.com/artilleryio/artillery",
-      "lastChecked": "2026-09-23T06:54:01.605Z",
+      "lastChecked": "2026-09-25T06:56:17.426Z",
       "samples": [
-        355,
-        57,
-        55
+        363,
+        22,
+        23
       ],
-      "avgLatencyMs": 156,
+      "avgLatencyMs": 136,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1407,13 +6384,13 @@
       "name": "Locust",
       "file": "testing-qa.json",
       "url": "https://github.com/locustio/locust",
-      "lastChecked": "2026-09-23T06:54:02.538Z",
+      "lastChecked": "2026-09-25T06:56:18.316Z",
       "samples": [
-        368,
-        57,
-        57
+        395,
+        22,
+        24
       ],
-      "avgLatencyMs": 161,
+      "avgLatencyMs": 147,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1421,13 +6398,13 @@
       "name": "MSW (Mock Service Worker)",
       "file": "testing-qa.json",
       "url": "https://github.com/mswjs/msw",
-      "lastChecked": "2026-09-23T06:54:03.464Z",
+      "lastChecked": "2026-09-25T06:56:19.188Z",
       "samples": [
-        364,
-        57,
-        57
+        378,
+        22,
+        23
       ],
-      "avgLatencyMs": 159,
+      "avgLatencyMs": 141,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     },
@@ -1435,13 +6412,713 @@
       "name": "Vegeta",
       "file": "testing-qa.json",
       "url": "https://github.com/tsenart/vegeta",
-      "lastChecked": "2026-09-23T06:54:04.466Z",
+      "lastChecked": "2026-09-25T06:56:20.091Z",
       "samples": [
-        437,
-        57,
-        58
+        409,
+        23,
+        22
       ],
-      "avgLatencyMs": 184,
+      "avgLatencyMs": 151,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Cypress",
+      "file": "testing-qa.json",
+      "url": "https://github.com/cypress-io/cypress",
+      "lastChecked": "2026-09-25T06:56:20.959Z",
+      "samples": [
+        375,
+        22,
+        21
+      ],
+      "avgLatencyMs": 139,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Jest",
+      "file": "testing-qa.json",
+      "url": "https://github.com/jestjs/jest",
+      "lastChecked": "2026-09-25T06:56:21.785Z",
+      "samples": [
+        331,
+        22,
+        22
+      ],
+      "avgLatencyMs": 125,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "WireMock",
+      "file": "testing-qa.json",
+      "url": "https://github.com/wiremock/wiremock",
+      "lastChecked": "2026-09-25T06:56:22.680Z",
+      "samples": [
+        401,
+        23,
+        22
+      ],
+      "avgLatencyMs": 149,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Prism",
+      "file": "testing-qa.json",
+      "url": "https://github.com/stoplightio/prism",
+      "lastChecked": "2026-09-25T06:56:23.560Z",
+      "samples": [
+        388,
+        22,
+        22
+      ],
+      "avgLatencyMs": 144,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Lighthouse CI",
+      "file": "testing-qa.json",
+      "url": "https://github.com/GoogleChrome/lighthouse-ci",
+      "lastChecked": "2026-09-25T06:56:24.394Z",
+      "samples": [
+        340,
+        22,
+        22
+      ],
+      "avgLatencyMs": 128,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Axe-core",
+      "file": "testing-qa.json",
+      "url": "https://github.com/dequelabs/axe-core",
+      "lastChecked": "2026-09-25T06:56:25.250Z",
+      "samples": [
+        360,
+        22,
+        22
+      ],
+      "avgLatencyMs": 135,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Faker",
+      "file": "testing-qa.json",
+      "url": "https://github.com/faker-js/faker",
+      "lastChecked": "2026-09-25T06:56:26.062Z",
+      "samples": [
+        317,
+        23,
+        21
+      ],
+      "avgLatencyMs": 120,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Pact",
+      "file": "testing-qa.json",
+      "url": "https://github.com/pact-foundation/pact-js",
+      "lastChecked": "2026-09-25T06:56:26.933Z",
+      "samples": [
+        377,
+        22,
+        22
+      ],
+      "avgLatencyMs": 140,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Stryker",
+      "file": "testing-qa.json",
+      "url": "https://github.com/stryker-mutator/stryker-js",
+      "lastChecked": "2026-09-25T06:56:27.905Z",
+      "samples": [
+        479,
+        22,
+        22
+      ],
+      "avgLatencyMs": 174,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Taiko",
+      "file": "testing-qa.json",
+      "url": "https://github.com/getgauge/taiko",
+      "lastChecked": "2026-09-25T06:56:28.846Z",
+      "samples": [
+        449,
+        22,
+        22
+      ],
+      "avgLatencyMs": 164,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Autocannon",
+      "file": "testing-qa.json",
+      "url": "https://github.com/mcollina/autocannon",
+      "lastChecked": "2026-09-25T06:56:29.723Z",
+      "samples": [
+        383,
+        22,
+        22
+      ],
+      "avgLatencyMs": 142,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Insomnia",
+      "file": "testing-qa.json",
+      "url": "https://github.com/Kong/insomnia",
+      "lastChecked": "2026-09-25T06:56:30.556Z",
+      "samples": [
+        337,
+        23,
+        23
+      ],
+      "avgLatencyMs": 128,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Trivy",
+      "file": "testing-qa.json",
+      "url": "https://github.com/aquasecurity/trivy",
+      "lastChecked": "2026-09-25T06:56:31.408Z",
+      "samples": [
+        359,
+        22,
+        22
+      ],
+      "avgLatencyMs": 134,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Semgrep",
+      "file": "testing-qa.json",
+      "url": "https://github.com/semgrep/semgrep",
+      "lastChecked": "2026-09-25T06:56:32.264Z",
+      "samples": [
+        362,
+        23,
+        22
+      ],
+      "avgLatencyMs": 136,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "SonarQube Community",
+      "file": "testing-qa.json",
+      "url": "https://github.com/SonarSource/sonarqube",
+      "lastChecked": "2026-09-25T06:56:33.209Z",
+      "samples": [
+        452,
+        22,
+        23
+      ],
+      "avgLatencyMs": 166,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Newman",
+      "file": "testing-qa.json",
+      "url": "https://github.com/postmanlabs/newman",
+      "lastChecked": "2026-09-25T06:56:34.106Z",
+      "samples": [
+        400,
+        24,
+        23
+      ],
+      "avgLatencyMs": 149,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "PactumJS",
+      "file": "testing-qa.json",
+      "url": "https://github.com/pactumjs/pactum",
+      "lastChecked": "2026-09-25T06:56:34.990Z",
+      "samples": [
+        391,
+        22,
+        23
+      ],
+      "avgLatencyMs": 145,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Karate Framework",
+      "file": "testing-qa.json",
+      "url": "https://github.com/karatelabs/karate",
+      "lastChecked": "2026-09-25T06:56:35.782Z",
+      "samples": [
+        298,
+        22,
+        22
+      ],
+      "avgLatencyMs": 114,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "RestAssured",
+      "file": "testing-qa.json",
+      "url": "https://github.com/rest-assured/rest-assured",
+      "lastChecked": "2026-09-25T06:56:36.663Z",
+      "samples": [
+        388,
+        21,
+        21
+      ],
+      "avgLatencyMs": 143,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Dredd",
+      "file": "testing-qa.json",
+      "url": "https://github.com/apiaryio/dredd",
+      "lastChecked": "2026-09-25T06:56:37.538Z",
+      "samples": [
+        379,
+        22,
+        22
+      ],
+      "avgLatencyMs": 141,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Schemathesis",
+      "file": "testing-qa.json",
+      "url": "https://github.com/schemathesis/schemathesis",
+      "lastChecked": "2026-09-25T06:56:38.450Z",
+      "samples": [
+        419,
+        23,
+        22
+      ],
+      "avgLatencyMs": 155,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Puppeteer",
+      "file": "testing-qa.json",
+      "url": "https://github.com/puppeteer/puppeteer",
+      "lastChecked": "2026-09-25T06:56:39.350Z",
+      "samples": [
+        408,
+        21,
+        22
+      ],
+      "avgLatencyMs": 150,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Selenium",
+      "file": "testing-qa.json",
+      "url": "https://github.com/SeleniumHQ/selenium",
+      "lastChecked": "2026-09-25T06:56:40.205Z",
+      "samples": [
+        362,
+        23,
+        23
+      ],
+      "avgLatencyMs": 136,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Appium",
+      "file": "testing-qa.json",
+      "url": "https://github.com/appium/appium",
+      "lastChecked": "2026-09-25T06:56:41.086Z",
+      "samples": [
+        386,
+        23,
+        23
+      ],
+      "avgLatencyMs": 144,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Maestro",
+      "file": "testing-qa.json",
+      "url": "https://github.com/mobile-dev-inc/maestro",
+      "lastChecked": "2026-09-25T06:56:41.889Z",
+      "samples": [
+        308,
+        22,
+        22
+      ],
+      "avgLatencyMs": 117,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Detox",
+      "file": "testing-qa.json",
+      "url": "https://github.com/wix/Detox",
+      "lastChecked": "2026-09-25T06:56:42.787Z",
+      "samples": [
+        403,
+        23,
+        23
+      ],
+      "avgLatencyMs": 150,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "WebdriverIO",
+      "file": "testing-qa.json",
+      "url": "https://github.com/webdriverio/webdriverio",
+      "lastChecked": "2026-09-25T06:56:43.644Z",
+      "samples": [
+        363,
+        22,
+        22
+      ],
+      "avgLatencyMs": 136,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Nightwatch.js",
+      "file": "testing-qa.json",
+      "url": "https://github.com/nightwatchjs/nightwatch",
+      "lastChecked": "2026-09-25T06:56:44.538Z",
+      "samples": [
+        400,
+        23,
+        22
+      ],
+      "avgLatencyMs": 148,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Gatling",
+      "file": "testing-qa.json",
+      "url": "https://github.com/gatling/gatling",
+      "lastChecked": "2026-09-25T06:56:45.391Z",
+      "samples": [
+        359,
+        21,
+        22
+      ],
+      "avgLatencyMs": 134,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "JMeter",
+      "file": "testing-qa.json",
+      "url": "https://github.com/apache/jmeter",
+      "lastChecked": "2026-09-25T06:56:46.252Z",
+      "samples": [
+        367,
+        23,
+        22
+      ],
+      "avgLatencyMs": 137,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Wrk",
+      "file": "testing-qa.json",
+      "url": "https://github.com/wg/wrk",
+      "lastChecked": "2026-09-25T06:56:47.107Z",
+      "samples": [
+        359,
+        21,
+        24
+      ],
+      "avgLatencyMs": 135,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Hey",
+      "file": "testing-qa.json",
+      "url": "https://github.com/rakyll/hey",
+      "lastChecked": "2026-09-25T06:56:47.968Z",
+      "samples": [
+        368,
+        22,
+        22
+      ],
+      "avgLatencyMs": 137,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Drill",
+      "file": "testing-qa.json",
+      "url": "https://github.com/fcsonline/drill",
+      "lastChecked": "2026-09-25T06:56:48.983Z",
+      "samples": [
+        521,
+        22,
+        22
+      ],
+      "avgLatencyMs": 188,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Checkov",
+      "file": "testing-qa.json",
+      "url": "https://github.com/bridgecrewio/checkov",
+      "lastChecked": "2026-09-25T06:56:49.902Z",
+      "samples": [
+        423,
+        23,
+        23
+      ],
+      "avgLatencyMs": 156,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Hadolint",
+      "file": "testing-qa.json",
+      "url": "https://github.com/hadolint/hadolint",
+      "lastChecked": "2026-09-25T06:56:50.830Z",
+      "samples": [
+        434,
+        24,
+        23
+      ],
+      "avgLatencyMs": 160,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Bandit",
+      "file": "testing-qa.json",
+      "url": "https://github.com/PyCQA/bandit",
+      "lastChecked": "2026-09-25T06:56:51.678Z",
+      "samples": [
+        355,
+        22,
+        23
+      ],
+      "avgLatencyMs": 133,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Brakeman",
+      "file": "testing-qa.json",
+      "url": "https://github.com/presidentbeef/brakeman",
+      "lastChecked": "2026-09-25T06:56:52.543Z",
+      "samples": [
+        371,
+        23,
+        22
+      ],
+      "avgLatencyMs": 139,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Safety-CLI",
+      "file": "testing-qa.json",
+      "url": "https://github.com/pyupio/safety",
+      "lastChecked": "2026-09-25T06:56:53.422Z",
+      "samples": [
+        384,
+        22,
+        23
+      ],
+      "avgLatencyMs": 143,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "OWASP ZAP",
+      "file": "testing-qa.json",
+      "url": "https://github.com/zaproxy/zaproxy",
+      "lastChecked": "2026-09-25T06:56:54.243Z",
+      "samples": [
+        328,
+        21,
+        22
+      ],
+      "avgLatencyMs": 124,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Nuclei",
+      "file": "testing-qa.json",
+      "url": "https://github.com/projectdiscovery/nuclei",
+      "lastChecked": "2026-09-25T06:56:55.167Z",
+      "samples": [
+        429,
+        24,
+        23
+      ],
+      "avgLatencyMs": 159,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Pa11y",
+      "file": "testing-qa.json",
+      "url": "https://github.com/pa11y/pa11y",
+      "lastChecked": "2026-09-25T06:56:56.070Z",
+      "samples": [
+        401,
+        31,
+        23
+      ],
+      "avgLatencyMs": 152,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "BackstopJS",
+      "file": "testing-qa.json",
+      "url": "https://github.com/garris/BackstopJS",
+      "lastChecked": "2026-09-25T06:56:56.961Z",
+      "samples": [
+        395,
+        24,
+        24
+      ],
+      "avgLatencyMs": 148,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Pixelmatch",
+      "file": "testing-qa.json",
+      "url": "https://github.com/mapbox/pixelmatch",
+      "lastChecked": "2026-09-25T06:56:57.826Z",
+      "samples": [
+        371,
+        22,
+        22
+      ],
+      "avgLatencyMs": 138,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Loki",
+      "file": "testing-qa.json",
+      "url": "https://github.com/oblador/loki",
+      "lastChecked": "2026-09-25T06:56:59.010Z",
+      "samples": [
+        688,
+        22,
+        21
+      ],
+      "avgLatencyMs": 244,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Lost-Pixel",
+      "file": "testing-qa.json",
+      "url": "https://github.com/lost-pixel/lost-pixel",
+      "lastChecked": "2026-09-25T06:56:59.869Z",
+      "samples": [
+        364,
+        22,
+        23
+      ],
+      "avgLatencyMs": 136,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "MockServer",
+      "file": "testing-qa.json",
+      "url": "https://github.com/mock-server/mockserver",
+      "lastChecked": "2026-09-25T06:57:01.045Z",
+      "samples": [
+        640,
+        44,
+        44
+      ],
+      "avgLatencyMs": 243,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "JSON-Server",
+      "file": "testing-qa.json",
+      "url": "https://github.com/typicode/json-server",
+      "lastChecked": "2026-09-25T06:57:01.867Z",
+      "samples": [
+        327,
+        23,
+        22
+      ],
+      "avgLatencyMs": 124,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Mimesis",
+      "file": "testing-qa.json",
+      "url": "https://github.com/lk-geimfari/mimesis",
+      "lastChecked": "2026-09-25T06:57:02.745Z",
+      "samples": [
+        383,
+        22,
+        22
+      ],
+      "avgLatencyMs": 142,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Bogus",
+      "file": "testing-qa.json",
+      "url": "https://github.com/bchavez/Bogus",
+      "lastChecked": "2026-09-25T06:57:03.747Z",
+      "samples": [
+        505,
+        25,
+        25
+      ],
+      "avgLatencyMs": 185,
+      "consecutiveSluggishAudits": 0,
+      "hasWarning": false
+    },
+    {
+      "name": "Testcontainers",
+      "file": "testing-qa.json",
+      "url": "https://github.com/testcontainers/testcontainers-java",
+      "lastChecked": "2026-09-25T06:57:04.638Z",
+      "samples": [
+        397,
+        21,
+        22
+      ],
+      "avgLatencyMs": 147,
       "consecutiveSluggishAudits": 0,
       "hasWarning": false
     }
