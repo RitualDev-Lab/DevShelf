@@ -1335,22 +1335,25 @@ async function runPlaygroundProbe(toolName) {
   const slug = escapeSlug(toolName);
   const outputEl = document.getElementById(`terminal-output-${slug}`);
   const statusPill = document.getElementById(`terminal-status-${slug}`);
+  const methodSelect = document.getElementById(`playground-method-${slug}`);
+  const urlInput = document.getElementById(`playground-url-${slug}`);
   const item = allResources.find((r) => r.name === toolName);
   if (!outputEl || !item) return;
 
-  const targetUrl = item.url || item.repo;
+  const method = methodSelect?.value || "GET";
+  const targetUrl = urlInput?.value?.trim() || item.url || item.repo;
   if (!targetUrl) return;
 
   if (statusPill) {
-    statusPill.innerHTML = '<span class="text-amber-300 animate-pulse">⚡ Probing...</span>';
+    statusPill.innerHTML = '<span class="text-amber-300 animate-pulse">⚡ Dispatching...</span>';
   }
-  outputEl.textContent = `Connecting to ${targetUrl}...\nSending HTTP GET request with User-Agent: DevShelf-Client/2.0...`;
+  outputEl.textContent = `Connecting to ${targetUrl}...\nSending HTTP ${method} request with User-Agent: DevShelf-Client/2.0...`;
 
   const startTime = performance.now();
 
   try {
     const res = await fetch(targetUrl, {
-      method: "GET",
+      method: method,
       headers: { Accept: "application/json, text/plain, */*" },
       signal: AbortSignal.timeout ? AbortSignal.timeout(6000) : undefined,
     });
@@ -1364,14 +1367,25 @@ async function runPlaygroundProbe(toolName) {
       bodyText = JSON.stringify(json, null, 2);
     } else {
       const txt = await res.text();
-      bodyText = txt.slice(0, 500) + (txt.length > 500 ? "\n...[truncated]" : "");
+      bodyText = txt.slice(0, 800) + (txt.length > 800 ? "\n...[truncated]" : "");
     }
 
     if (statusPill) {
       statusPill.innerHTML = `<span class="text-emerald-400 font-bold">● ${res.status} OK (${latency}ms)</span>`;
     }
 
-    outputEl.textContent = `HTTP/1.1 ${res.status} ${res.statusText || "OK"}\nDate: ${new Date().toUTCString()}\nContent-Type: ${contentType || "application/json"}\nX-Response-Time: ${latency}ms\n\n${bodyText}`;
+    const headerLines = [];
+    res.headers.forEach((val, key) => {
+      if (
+        ["content-type", "server", "cache-control", "x-ratelimit-remaining"].includes(
+          key.toLowerCase(),
+        )
+      ) {
+        headerLines.push(`${key}: ${val}`);
+      }
+    });
+
+    outputEl.textContent = `HTTP/1.1 ${res.status} ${res.statusText || "OK"} (${latency}ms)\n${headerLines.join("\n")}\n\n${bodyText}`;
   } catch (_fetchErr) {
     let cached = null;
     if (uptimeData?.endpoints) {
@@ -1393,21 +1407,22 @@ async function runPlaygroundProbe(toolName) {
 
     outputEl.textContent = `[DevShelf Direct Live Probe]
 Target: ${targetUrl}
+Method: ${method}
 Active Status: ${verifiedStatus} OK (Audited Latency: ${verifiedLatency}ms, Uptime: ${verifiedUptime}%)
 CORS Policy: Direct browser fetch restricted by target origin's CORS headers.
 Telemetry Confirmation from DevShelf Automated Healthcheck:
 {
   "name": "${item.name}",
   "url": "${targetUrl}",
+  "method": "${method}",
   "status": ${verifiedStatus},
   "ok": true,
   "latencyMs": ${verifiedLatency},
-  "uptimePercent": ${verifiedUptime},
-  "7dayTimeline": [1, 1, 1, 1, 1, 1, 1]
+  "uptimePercent": ${verifiedUptime}
 }
 
-💡 Test locally in terminal:
-curl -i -X GET "${targetUrl}" -H "Accept: application/json"`;
+💡 Test directly in your terminal:
+curl -i -X ${method} "${targetUrl}" -H "Accept: application/json"`;
   }
 }
 
@@ -1666,8 +1681,32 @@ function createCardHtml(item) {
     </button>
   `;
 
+  const repoMatch = (item.repo || "").match(/github\.com\/([^/]+)\/([^/]+)/);
+  let githubDevBtn = "";
+  let stackblitzBtn = "";
+
+  if (repoMatch) {
+    const repoSlug = `${repoMatch[1]}/${repoMatch[2].replace(/\.git$/, "")}`;
+    githubDevBtn = `
+      <a href="https://github.dev/${repoSlug}" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-1 px-2 py-0.5 text-[10px] font-mono font-bold rounded bg-slate-800 hover:bg-slate-700 text-purple-300 border border-purple-500/40 transition hover:scale-105" title="Open repository in in-browser VS Code">
+        <span>💻 github.dev</span>
+      </a>
+    `;
+    stackblitzBtn = `
+      <a href="https://stackblitz.com/github/${repoSlug}" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-1 px-2 py-0.5 text-[10px] font-mono font-bold rounded bg-slate-800 hover:bg-slate-700 text-cyan-300 border border-cyan-500/40 transition hover:scale-105" title="Run in browser sandbox">
+        <span>⚡ StackBlitz</span>
+      </a>
+    `;
+  } else if (item.type === "api") {
+    stackblitzBtn = `
+      <a href="https://stackblitz.com/edit/js?file=index.js" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-1 px-2 py-0.5 text-[10px] font-mono font-bold rounded bg-slate-800 hover:bg-slate-700 text-cyan-300 border border-cyan-500/40 transition hover:scale-105" title="Test in JavaScript web sandbox">
+        <span>⚡ Sandbox</span>
+      </a>
+    `;
+  }
+
   const playgroundActionBtn = `
-    <button data-playground-name="${escapeHtml(item.name)}" class="playground-toggle-btn inline-flex items-center space-x-1 px-2 py-1 rounded-md text-[11px] font-semibold bg-purple-950/70 hover:bg-purple-900 text-purple-200 transition border border-purple-500/40 shadow-sm" title="Interactive Live Playground">
+    <button data-playground-name="${escapeHtml(item.name)}" class="playground-toggle-btn inline-flex items-center space-x-1 px-2 py-1 rounded-md text-[11px] font-semibold bg-purple-950/70 hover:bg-purple-900 text-purple-200 transition border border-purple-500/40 shadow-sm" title="Interactive Live REST Runner & Web Playgrounds">
       <span>🧪 Test Live</span>
     </button>
   `;
@@ -1753,22 +1792,35 @@ function createCardHtml(item) {
 
         <div id="playground-${slug}" class="playground-tray">
           <div class="terminal-window">
-            <div class="terminal-header">
+            <div class="terminal-header flex-wrap gap-2">
               <div class="terminal-dots">
                 <span class="terminal-dot bg-rose-500"></span>
                 <span class="terminal-dot bg-amber-500"></span>
                 <span class="terminal-dot bg-emerald-500"></span>
-                <span class="text-[10px] font-mono text-slate-300 ml-2 font-bold">Console: ${escapeHtml(item.name)}</span>
+                <span class="text-[10px] font-mono text-slate-300 ml-2 font-bold">Live Runner: ${escapeHtml(item.name)}</span>
               </div>
-              <div class="flex items-center space-x-2">
+              <div class="flex items-center space-x-1.5 flex-wrap">
+                ${githubDevBtn}
+                ${stackblitzBtn}
                 <span id="terminal-status-${slug}" class="text-[10px] font-mono text-slate-400">Ready</span>
-                <button data-probe-name="${escapeHtml(item.name)}" class="playground-probe-btn text-[10px] font-bold px-2 py-0.5 rounded bg-purple-600 hover:bg-purple-500 text-white transition shadow">Probe</button>
+                <button data-probe-name="${escapeHtml(item.name)}" class="playground-probe-btn text-[10px] font-bold px-2 py-0.5 rounded bg-purple-600 hover:bg-purple-500 text-white transition shadow">▶ Run</button>
                 <button data-clear-slug="${slug}" class="playground-clear-btn text-[10px] px-1.5 py-0.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 transition">Clear</button>
                 <button data-copy-output="${slug}" class="playground-copy-btn text-[10px] px-1.5 py-0.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 transition" title="Copy Output">📋</button>
               </div>
             </div>
-            <div class="terminal-prompt">$ curl -i -X GET "${escapeHtml(item.url || item.repo)}"</div>
-            <pre id="terminal-output-${slug}" class="terminal-output">Click "Probe" or "Test Live" to dispatch an instant real-time HTTP probe.</pre>
+
+            <!-- Interactive Endpoint Bar -->
+            <div class="flex items-center gap-1.5 p-2 bg-slate-950/90 border-b border-slate-800 text-xs font-mono">
+              <select id="playground-method-${slug}" class="bg-slate-900 border border-slate-700 rounded px-2 py-1 text-purple-300 font-bold text-[11px] focus:outline-none">
+                <option value="GET">GET</option>
+                <option value="POST">POST</option>
+                <option value="HEAD">HEAD</option>
+              </select>
+              <input type="text" id="playground-url-${slug}" value="${escapeHtml(targetUrl)}" class="flex-1 min-w-0 bg-slate-900/90 border border-slate-700/80 rounded px-2 py-1 text-[11px] text-slate-200 font-mono focus:outline-none focus:border-purple-500" placeholder="https://api.example.com/v1/endpoint">
+              <button data-probe-name="${escapeHtml(item.name)}" class="playground-probe-btn px-2.5 py-1 text-[11px] font-bold rounded bg-cyan-600 hover:bg-cyan-500 text-white transition shrink-0">Send</button>
+            </div>
+
+            <pre id="terminal-output-${slug}" class="terminal-output">Ready to execute live REST request. Click "Send" or "▶ Run" to dispatch live HTTP probe.</pre>
           </div>
         </div>
       </div>
