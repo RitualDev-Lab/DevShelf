@@ -1,0 +1,69 @@
+name: Weekly Trial Bait & Paywall Trap Auditor
+
+on:
+  schedule:
+    - cron: '0 4 * * 1' # Every Monday at 04:00 UTC
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: 'Maximum resources to audit (leave empty for all)'
+        required: false
+        default: ''
+      dry_run:
+        description: 'Dry run mode (do not file GitHub issues)'
+        type: boolean
+        required: false
+        default: false
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  audit-trial-bait:
+    name: Scan for Free Tier Degradations & Upfront Paywalls
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          run_install: false
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run Trial Bait & Paywall Trap Auditor
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          ARGS=""
+          if [ -n "${{ github.event.inputs.limit }}" ]; then
+            ARGS="$ARGS --limit=${{ github.event.inputs.limit }}"
+          fi
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            ARGS="$ARGS --dry-run"
+          fi
+          npx tsx scripts/audit-trial-bait.ts $ARGS
+
+      - name: Commit Fresh Trial Bait Audit Report to Main
+        run: |
+          git config --global user.name "DevShelf Bot"
+          git config --global user.email "bot@devshelf.local"
+          if [ -f site/trial-bait-report.json ]; then
+            git add site/trial-bait-report.json
+            if ! git diff --cached --quiet; then
+              git commit -m "chore(audit): update trial-bait telemetry report [skip ci]"
+              git push origin main
+            fi
+          fi

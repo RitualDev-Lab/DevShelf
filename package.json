@@ -21,6 +21,7 @@
     "benchmark": "npx tsx scripts/benchmark-performance.ts",
     "sunset": "npx tsx scripts/sunset-resources.ts",
     "issues:rot": "npx tsx scripts/generate-rot-issues.ts",
+    "audit:trial-bait": "npx tsx scripts/audit-trial-bait.ts",
     "wiki:sync": "node scripts/sync-wiki.cjs",
     "format": "biome format --write .",
     "format:check": "biome format .",
