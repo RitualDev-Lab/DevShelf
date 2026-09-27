@@ -122,6 +122,7 @@ async function validateAndSanitizeRegistry() {
 
   const dirtyUrls = [];
   const duplicates = [];
+  const crossShelfReferences = [];
   const modifiedFiles = new Set();
 
   // Shelves that intentionally reference projects from primary shelves
@@ -205,6 +206,14 @@ async function validateAndSanitizeRegistry() {
         } else {
           urlRegistry.set(fingerprint, { file, item });
         }
+      } else if (urlRegistry.has(fingerprint)) {
+        const prior = urlRegistry.get(fingerprint);
+        crossShelfReferences.push({
+          name: itemName,
+          primaryFile: prior.file,
+          referenceFile: file,
+          url: targetUrl,
+        });
       }
     }
 
@@ -218,10 +227,11 @@ async function validateAndSanitizeRegistry() {
   // Summary Report
   console.log("========================================");
   console.log("📊 URL Validation & Duplicate Audit Summary:");
-  console.log(`   Files Scanned:        ${files.length}`);
-  console.log(`   Primary URLs Audited: ${urlRegistry.size}`);
-  console.log(`   Dirty URLs Found:     ${dirtyUrls.length}`);
-  console.log(`   Duplicate Collisions: ${duplicates.length}`);
+  console.log(`   Files Scanned:          ${files.length}`);
+  console.log(`   Primary URLs Audited:   ${urlRegistry.size}`);
+  console.log(`   Dirty URLs Found:       ${dirtyUrls.length}`);
+  console.log(`   Duplicate Collisions:   ${duplicates.length}`);
+  console.log(`   Cross-Shelf References: ${crossShelfReferences.length} (Documented Intentional)`);
   console.log("========================================\n");
 
   if (dirtyUrls.length > 0) {
@@ -265,7 +275,10 @@ async function validateAndSanitizeRegistry() {
   }
 }
 
-validateAndSanitizeRegistry().catch((err) => {
-  console.error("Link validation crashed:", err);
-  process.exit(1);
-});
+// Execute only when invoked directly as CLI script
+if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1])) {
+  validateAndSanitizeRegistry().catch((err) => {
+    console.error("Link validation crashed:", err);
+    process.exit(1);
+  });
+}

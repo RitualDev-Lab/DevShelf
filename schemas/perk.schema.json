@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://devshelf.ritualdev.in/schemas/perk.schema.json",
+  "title": "DevShelf Developer Perk & Sponsorship",
+  "description": "Schema for developer discounts, cloud credits, and maintainer sponsorships",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["name", "url", "category", "perkValue", "eligibility"],
+    "properties": {
+      "name": {
+        "type": "string",
+        "minLength": 2,
+        "description": "Name of the perk, discount, or sponsorship"
+      },
+      "url": {
+        "type": "string",
+        "format": "uri",
+        "pattern": "^https?://",
+        "description": "Official application or claim page URL"
+      },
+      "category": {
+        "type": "string",
+        "description": "Perk category (e.g. Cloud Credits & Infrastructure, Student & Education Packs)"
+      },
+      "description": {
+        "type": "string",
+        "maxLength": 300,
+        "description": "Optional description of the benefit"
+      },
+      "perkValue": {
+        "type": "string",
+        "minLength": 3,
+        "description": "Monetary or feature value of the perk (e.g. $1,000 Cloud Credits, Free Pro Plan)"
+      },
+      "eligibility": {
+        "type": "string",
+        "minLength": 5,
+        "description": "Requirements to qualify for the perk"
+      },
+      "statusTags": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "Optional telemetry status tags"
+      }
+    },
+    "additionalProperties": false
+  }
+}

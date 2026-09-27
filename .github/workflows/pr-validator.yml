@@ -34,6 +34,9 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Run Automated Test Suite
+        run: pnpm test
+
       - name: Run Schema Validator & Duplicate Detector
         id: validator
         continue-on-error: true

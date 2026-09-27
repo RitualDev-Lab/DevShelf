@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://devshelf.ritualdev.in/schemas/contributor.schema.json",
+  "title": "DevShelf Contributors Wanted Project",
+  "description": "Schema for open-source repositories welcoming contributors",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "name",
+      "repo",
+      "category",
+      "description",
+      "seeking",
+      "goodFirstIssues",
+      "language"
+    ],
+    "properties": {
+      "name": {
+        "type": "string",
+        "minLength": 2,
+        "description": "Name of the open source project"
+      },
+      "repo": {
+        "type": "string",
+        "format": "uri",
+        "pattern": "^https?://",
+        "description": "GitHub repository URL"
+      },
+      "category": {
+        "type": "string",
+        "description": "Functional domain of the project"
+      },
+      "description": {
+        "type": "string",
+        "minLength": 10,
+        "maxLength": 300,
+        "description": "Description of the repository's mission"
+      },
+      "seeking": {
+        "type": "string",
+        "description": "Specific areas where contributions or help are needed"
+      },
+      "goodFirstIssues": {
+        "type": "string",
+        "format": "uri",
+        "pattern": "^https?://",
+        "description": "Direct URL to good-first-issues or beginner contributor issues"
+      },
+      "language": {
+        "type": "string",
+        "description": "Primary programming language"
+      },
+      "statusTags": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "Optional telemetry status tags"
+      }
+    },
+    "additionalProperties": false
+  }
+}

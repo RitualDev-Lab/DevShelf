@@ -7,6 +7,7 @@
   "packageManager": "pnpm@9.15.4",
   "scripts": {
     "build": "npx tsx scripts/build-site.ts && npx tsx scripts/build-readme.ts",
+    "test": "npx tsx --test tests/**/*.test.ts",
     "validate": "npx tsx scripts/validate-shelf.ts",
     "validate:pr": "npx tsx scripts/validate-pr.ts",
     "validate:links": "node scripts/validate-links.js",

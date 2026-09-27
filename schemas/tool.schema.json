@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://devshelf.ritualdev.in/schemas/tool.schema.json",
+  "title": "DevShelf Developer Tool",
+  "description": "Schema for open-source developer tools, CLI utilities, AI engines, and QA frameworks",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["name", "repo", "category", "description", "language", "license"],
+    "properties": {
+      "name": {
+        "type": "string",
+        "minLength": 2,
+        "description": "Name of the developer tool"
+      },
+      "repo": {
+        "type": "string",
+        "format": "uri",
+        "pattern": "^https?://",
+        "description": "Direct link to the public GitHub / GitLab repository"
+      },
+      "category": {
+        "type": "string",
+        "description": "Functional category of the tool"
+      },
+      "description": {
+        "type": "string",
+        "minLength": 10,
+        "maxLength": 300,
+        "description": "Objective 1-2 sentence description explaining what it does"
+      },
+      "language": {
+        "type": "string",
+        "description": "Primary programming language or runtime"
+      },
+      "license": {
+        "type": "string",
+        "description": "Open source license (e.g. MIT, Apache-2.0, GPL-3.0, BSD-3-Clause)"
+      },
+      "featured": {
+        "type": "boolean",
+        "description": "Whether this tool is highlighted in weekly spotlights"
+      },
+      "statusTags": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "Optional telemetry status tags"
+      }
+    },
+    "additionalProperties": false
+  }
+}

@@ -190,15 +190,21 @@ async function runBenchmark() {
   }
 
   // Save benchmark history
+  // Save benchmark history in compact format to prevent git history bloat
   const sluggishTotal = results.filter((r) => r.hasWarning).length;
-  const benchmarkReport: BenchmarksData = {
+  const benchmarkReport = {
     lastRun: new Date().toISOString(),
     totalBenchmarked: results.length,
     sluggishCount: sluggishTotal,
-    endpoints: results,
+    endpoints: results.map((r) => ({
+      name: r.name,
+      avgLatencyMs: r.avgLatencyMs,
+      consecutiveSluggishAudits: r.consecutiveSluggishAudits,
+      hasWarning: r.hasWarning,
+    })),
   };
 
-  await fs.writeFile(benchmarkPath, `${JSON.stringify(benchmarkReport, null, 2)}\n`, "utf8");
+  await fs.writeFile(benchmarkPath, `${JSON.stringify(benchmarkReport)}\n`, "utf8");
   console.log(
     `\n📁 Performance benchmark saved to site/benchmarks.json (${sluggishTotal} high-latency endpoints)`,
   );

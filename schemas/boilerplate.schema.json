@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://devshelf.ritualdev.in/schemas/boilerplate.schema.json",
+  "title": "DevShelf 1-Click Deployment Boilerplate",
+  "description": "Schema for production templates and 1-click cloud deployments",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["name", "repo", "category", "platform", "deployUrl", "freeTierCost"],
+    "properties": {
+      "name": {
+        "type": "string",
+        "minLength": 2,
+        "description": "Name of the boilerplate template"
+      },
+      "repo": {
+        "type": "string",
+        "format": "uri",
+        "pattern": "^https?://",
+        "description": "GitHub repository URL of the boilerplate template"
+      },
+      "category": {
+        "type": "string",
+        "description": "Template domain (e.g. Full-Stack Web Starter, SaaS & Dashboard Starters)"
+      },
+      "platform": {
+        "type": "string",
+        "description": "Target hosting platform (e.g. Vercel, Netlify, Railway, Render)"
+      },
+      "deployUrl": {
+        "type": "string",
+        "format": "uri",
+        "pattern": "^https?://",
+        "description": "1-click deploy URL button link"
+      },
+      "freeTierCost": {
+        "type": "string",
+        "description": "Expected cost on target platform free tier (e.g. 100% Free on Vercel Hobby)"
+      },
+      "description": {
+        "type": "string",
+        "maxLength": 300,
+        "description": "Summary of frameworks, libraries, and tooling preconfigured in the template"
+      },
+      "statusTags": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "Optional telemetry status tags"
+      }
+    },
+    "additionalProperties": false
+  }
+}

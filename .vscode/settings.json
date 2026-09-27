@@ -1,0 +1,30 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": ["/shelf/apis.json"],
+      "url": "./schemas/api.schema.json"
+    },
+    {
+      "fileMatch": ["/shelf/ai-tools.json", "/shelf/cli-tools.json", "/shelf/testing-qa.json"],
+      "url": "./schemas/tool.schema.json"
+    },
+    {
+      "fileMatch": ["/shelf/free-cloud.json"],
+      "url": "./schemas/free-cloud.schema.json"
+    },
+    {
+      "fileMatch": ["/shelf/contributors-wanted.json"],
+      "url": "./schemas/contributor.schema.json"
+    },
+    {
+      "fileMatch": ["/shelf/perks.json"],
+      "url": "./schemas/perk.schema.json"
+    },
+    {
+      "fileMatch": ["/shelf/boilerplates.json"],
+      "url": "./schemas/boilerplate.schema.json"
+    }
+  ],
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "biomejs.biome"
+}
