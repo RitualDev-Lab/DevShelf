@@ -36,6 +36,7 @@
 
 <p>
   <a href="https://devshelf.ritualdev.in"><b>🌐 Interactive Web App</b></a> •
+  <a href="#-devshelf-cli--tui-terminal-discovery"><b>⚡ Terminal CLI</b></a> •
   <a href="#-browse-catalog-by-category"><b>📂 Category Guides</b></a> •
   <a href="#-featured-spotlight--tools-of-the-week"><b>🔥 Spotlight</b></a> •
   <a href="HACKTOBERFEST.md"><b>🎃 Hacktoberfest</b></a> •
@@ -47,6 +48,27 @@
 </div>
 
 <br>
+
+## ⚡ DevShelf CLI & TUI (Terminal Discovery)
+
+Stay in flow! DevShelf includes a zero-dependency interactive Terminal User Interface (TUI) and CLI:
+
+```bash
+# Launch interactive Terminal UI (fuzzy search, category browsing, and open in browser)
+npx devshelf
+
+# Instant search across all 500+ curated resources
+npx devshelf search "postgres"
+npx devshelf search "auth" --open
+
+# Discover a random resource for inspiration
+npx devshelf random
+
+# View live catalog counts and telemetry
+npx devshelf stats
+```
+
+---
 
 ## 💡 Why DevShelf?
 
@@ -65,7 +87,7 @@
 
 ### ✅ DevShelf is Built Different
 - 🟢 **Automated Health Checks** — GitHub Actions pings every endpoint continuously
-- 🟢 **Interactive Web UI** — instant search, filters, 1-click copy at [devshelf.ritualdev.in](https://devshelf.ritualdev.in)
+- 🟢 **Interactive Web UI & CLI** — instant search, filters, 1-click copy at [devshelf.ritualdev.in](https://devshelf.ritualdev.in) or via `npx devshelf`
 - 🟢 **1-Click Submissions** — add your project in 30 seconds via GitHub Issue forms
 - 🟢 **Social Amplification** — every merged project gets free promotion
 
