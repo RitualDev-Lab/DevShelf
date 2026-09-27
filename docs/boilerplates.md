@@ -11,12 +11,10 @@
 
 ---
 
-### <a id="ai-full-stack-starters"></a>AI & Full-Stack Starters (5)
+### <a id="ai-full-stack-starters"></a>AI & Full-Stack Starters (3)
 
 | Template & Repository | Platform | 1-Click Deploy | Free Tier Cost | Description |
 | :--- | :---: | :---: | :---: | :--- |
-| [**Open-WebUI for Local AI**](https://github.com/open-webui/open-webui) | **Render** | [🚀 **Deploy**](https://render.com/deploy?repo=https://github.com/open-webui/open-webui) | `$0/month (Render Free Tier)` | Feature-rich, self-hosted web chat UI for Ollama and OpenAI-compatible local endpoints with RAG and pipeline support. |
-| [**Dify LLM Application Platform**](https://github.com/langgenius/dify) | **Render** | [🚀 **Deploy**](https://render.com/deploy?repo=https://github.com/langgenius/dify) | `$0/month (Render Community Tier)` | Visual orchestration platform for LLM workflows, agent coordination, RAG pipelines, and model deployment. |
 | [**Vercel AI SDK Starter**](https://github.com/vercel/ai-chatbot) | **Next.js / AI SDK** | [🚀 **Deploy**](https://chat.vercel.ai) | `100% Free Open Source` | Full-featured, hackable Next.js AI chatbot built by Vercel using the AI SDK, Shadcn UI, and Neon Postgres. |
 | [**LangChain Next.js Template**](https://github.com/langchain-ai/langchain-nextjs-template) | **Next.js / LangChain** | [🚀 **Deploy**](https://langchain-nextjs-template.vercel.app) | `100% Free Open Source` | Starter template for building full-stack LangChain applications with Next.js App Router and streaming responses. |
 | [**Streamlit AI Dashboard Starter**](https://github.com/streamlit/streamlit) | **Streamlit / Python** | [🚀 **Deploy**](https://streamlit.io) | `100% Free Open Source` | Turn Python data scripts into shareable web applications in minutes with built-in charting and interactive widgets. |
@@ -28,14 +26,13 @@
 | [**PocketBase 1-Click Backend**](https://github.com/pocketbase/pocketbase) | **Fly.io** | [🚀 **Deploy**](https://fly.io/launch?template=https://github.com/pocketbase/pocketbase) | `$0/month (Fly.io Free Allowance)` | Instant open-source backend in 1 binary file with embedded SQLite database, real-time subscriptions, and auth rules. |
 | [**Directus Instant Data Engine**](https://github.com/directus/directus) | **Railway** | [🚀 **Deploy**](https://railway.app/template/directus) | `$0/month (Railway Free Starter Tier)` | Turn any SQL database into an instant real-time REST and GraphQL API engine with an intuitive no-code admin panel. |
 
-### <a id="backend-microservices"></a>Backend & Microservices (13)
+### <a id="backend-microservices"></a>Backend & Microservices (12)
 
 | Template & Repository | Platform | 1-Click Deploy | Free Tier Cost | Description |
 | :--- | :---: | :---: | :---: | :--- |
-| [**Mockoon Cloudless API Server**](https://github.com/mockoon/mockoon) | **Render** | [🚀 **Deploy**](https://render.com/deploy?repo=https://github.com/mockoon/mock-samples) | `$0/month (Render Free Web Service)` | Deploy a lightweight, zero-dependency mock REST/GraphQL API server based on Mockoon JSON environments with 1 click. |
-| [**AutoHeal-QA Playwright Runner**](https://github.com/RitualDev-Lab/autoheal-qa) | **GitHub Actions** | [🚀 **Deploy**](https://github.com/RitualDev-Lab/autoheal-qa/fork) | `$0/month (GitHub Actions 2,000 free min/mo)` | Deploy agentic self-healing E2E Playwright test automation with local LLM test fixing directly into GitHub Actions. |
+| [**Full-Stack FastAPI Template**](https://github.com/tiangolo/full-stack-fastapi-template) | **Docker / Self-Hosted** | [🚀 **Deploy**](https://github.com/tiangolo/full-stack-fastapi-template/generate) | `$0/month (Self-Hostable / Free Cloud Tiers)` | Robust full-stack starter featuring FastAPI, PostgreSQL, Docker Compose, Celery, and React frontend with JWT authentication. |
 | [**Stirling-PDF Ultimate Toolbox**](https://github.com/Stirling-Tools/Stirling-PDF) | **Render** | [🚀 **Deploy**](https://render.com/deploy?repo=https://github.com/Stirling-Tools/Stirling-PDF) | `$0/month (Render Free Tier)` | Full-featured, privacy-first PDF manipulation suite to merge, split, OCR, redact, and sign PDFs with zero cloud tracking. |
-| [**Hoppscotch API Development Hub**](https://github.com/hoppscotch/hoppscotch) | **Render** | [🚀 **Deploy**](https://render.com/deploy?repo=https://github.com/hoppscotch/hoppscotch) | `$0/month (Render Web Service)` | Lightweight, fast, web-based API testing client supporting REST, WebSocket, GraphQL, and SSE testing. |
+| [**Go Clean Architecture API**](https://github.com/bxcodec/go-clean-arch) | **Docker / Self-Hosted** | [🚀 **Deploy**](https://github.com/bxcodec/go-clean-arch/generate) | `$0/month (Self-Hostable)` | Clean Architecture template for Go RESTful services adhering to Uncle Bob's Clean Architecture principles. |
 | [**NestJS Starter**](https://github.com/nestjs/typescript-starter) | **NestJS / Node.js** | [🚀 **Deploy**](https://nestjs.com) | `100% Free Open Source` | Progressive Node.js starter template for building efficient, reliable, and scalable enterprise server applications. |
 | [**FastAPI Clean Architecture**](https://github.com/zhanymkanov/fastapi-best-practices) | **FastAPI / Python** | [🚀 **Deploy**](https://fastapi.tiangolo.com) | `100% Free Open Source` | Clean architecture boilerplate for FastAPI apps with asynchronous database sessions and dependency injection. |
 | [**Django Boilerplate (Wemake)**](https://github.com/wemake-services/wemake-django-template) | **Django / Python** | [🚀 **Deploy**](https://github.com/wemake-services/wemake-django-template) | `100% Free Open Source` | Bleeding edge, secure, and production-ready Django template with strict linting, Docker, and Celery support. |
@@ -46,10 +43,13 @@
 | [**Elysia Starter**](https://github.com/elysiajs/elysia) | **Elysia / Bun** | [🚀 **Deploy**](https://elysiajs.com) | `100% Free Open Source` | Ergonomic TypeScript web framework for Bun with end-to-end type safety and TypeBox validation. |
 | [**Fastify Starter**](https://github.com/fastify/fastify) | **Fastify / Node.js** | [🚀 **Deploy**](https://fastify.dev) | `100% Free Open Source` | Fast and low overhead web framework for Node.js with built-in schema-based JSON serialization. |
 
-### <a id="full-stack-web-starter"></a>Full-Stack Web Starter (10)
+### <a id="full-stack-web-starter"></a>Full-Stack Web Starter (13)
 
 | Template & Repository | Platform | 1-Click Deploy | Free Tier Cost | Description |
 | :--- | :---: | :---: | :---: | :--- |
+| [**AstroWind Starter**](https://github.com/onwidget/astrowind) | **Vercel / Netlify** | [🚀 **Deploy**](https://vercel.com/new/clone?repository-url=https://github.com/onwidget/astrowind) | `$0/month (Vercel Free Tier)` | Production-ready, highly customizable Astro template styled with Tailwind CSS, SEO-optimized, and built for speed. |
+| [**WXT Extension Framework**](https://github.com/wxt-dev/wxt) | **Cross-Browser** | [🚀 **Deploy**](https://github.com/wxt-dev/wxt/generate) | `$0/month (Open Source / Free)` | Next-gen framework for building cross-browser web extensions with Manifest V3, TypeScript, and multi-browser support. |
+| [**Remix Indie Stack**](https://github.com/remix-run/indie-stack) | **Fly.io** | [🚀 **Deploy**](https://fly.io/launch?template=https://github.com/remix-run/indie-stack) | `$0/month (Fly.io Free Allowance)` | Production-ready Remix stack with SQLite database, Prisma ORM, user auth, Fly.io deployment, and end-to-end testing. |
 | [**Create T3 App**](https://github.com/t3-oss/create-t3-app) | **Next.js / Node.js** | [🚀 **Deploy**](https://create.t3.gg) | `100% Free Open Source` | Interactive CLI to build full-stack, type-safe Next.js applications with Prisma, Tailwind CSS, and tRPC. |
 | [**Bulletproof React**](https://github.com/alan2207/bulletproof-react) | **React / Vite** | [🚀 **Deploy**](https://github.com/alan2207/bulletproof-react) | `100% Free Open Source` | Opinionated, production-ready architecture guide and boilerplate for large-scale React enterprise applications. |
 | [**FastAPI Full Stack Template**](https://github.com/fastapi/full-stack-fastapi-template) | **FastAPI / React / Docker** | [🚀 **Deploy**](https://github.com/fastapi/full-stack-fastapi-template) | `100% Free Open Source` | Full-stack modern web application template using FastAPI, React, SQLModel, PostgreSQL, and Docker Compose. |

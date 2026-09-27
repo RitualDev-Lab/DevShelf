@@ -7,18 +7,9 @@
 [![Open Projects](https://img.shields.io/badge/Projects-21_Seeking_Contributors-brightgreen?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
-[AI & Agent Tools](#ai-agent-tools) • [Community & Education](#community-education) • [Developer Utilities & CLI](#developer-utilities-cli) • [Marketing & Analytics](#marketing-analytics) • [Open Source Discovery](#open-source-discovery) • [Open-Source SaaS & Web Apps](#open-source-saas-web-apps) • [Productivity & Design](#productivity-design) • [Productivity & Notes](#productivity-notes) • [Testing & QA Automation](#testing-qa-automation)
+[Community & Education](#community-education) • [Developer Utilities & CLI](#developer-utilities-cli) • [DevOps & Cloud Tools](#devops-cloud-tools) • [Marketing & Analytics](#marketing-analytics) • [Open Source Discovery](#open-source-discovery) • [Open-Source SaaS & Web Apps](#open-source-saas-web-apps) • [Productivity & Design](#productivity-design) • [Productivity & Notes](#productivity-notes) • [Security & Identity](#security-identity)
 
 ---
-
-### <a id="ai-agent-tools"></a>AI & Agent Tools (4)
-
-| Project | Language | Seeking Contributions For | Good First Issues | Repo |
-| :--- | :---: | :--- | :---: | :---: |
-| [**agent-browser**](https://github.com/vercel-labs/agent-browser) | `Rust / TypeScript` | Cross-platform terminal enhancements, playwright engine bindings, examples | [Browse Issues](https://github.com/vercel-labs/agent-browser/issues) | [GitHub](https://github.com/vercel-labs/agent-browser) |
-| [**Aider**](https://github.com/Aider-AI/aider) | `Python` | Local model benchmark adapters, terminal UX enhancements, documentation | [Browse Issues](https://github.com/Aider-AI/aider/issues) | [GitHub](https://github.com/Aider-AI/aider) |
-| [**OpenHands**](https://github.com/All-Hands-AI/OpenHands) | `Python` | Docker sandbox runtime adapters, evaluation benchmarks, docs & translations | [Browse Issues](https://github.com/All-Hands-AI/OpenHands/issues) | [GitHub](https://github.com/All-Hands-AI/OpenHands) |
-| [**Continue**](https://github.com/continuedev/continue) | `TypeScript` | Provider integrations, prompt context templates, good first issues | [Browse Issues](https://github.com/continuedev/continue/issues) | [GitHub](https://github.com/continuedev/continue) |
 
 ### <a id="community-education"></a>Community & Education (1)
 
@@ -26,14 +17,21 @@
 | :--- | :---: | :--- | :---: | :---: |
 | [**freeCodeCamp**](https://github.com/freeCodeCamp/freeCodeCamp) | `TypeScript` | Curriculum improvements, UI localization, starter issues, and mobile app features | [Browse Issues](https://github.com/freeCodeCamp/freeCodeCamp/labels/first%20timers%20only) | [GitHub](https://github.com/freeCodeCamp/freeCodeCamp) |
 
-### <a id="developer-utilities-cli"></a>Developer Utilities & CLI (4)
+### <a id="developer-utilities-cli"></a>Developer Utilities & CLI (5)
 
 | Project | Language | Seeking Contributions For | Good First Issues | Repo |
 | :--- | :---: | :--- | :---: | :---: |
-| [**GitWhisper**](https://github.com/RitualDev-Lab/GitWhisper) | `TypeScript` | JetBrains IDE Plugin, Community Custom LLM Adapters, Documentation | [Browse Issues](https://github.com/RitualDev-Lab/GitWhisper/issues) | [GitHub](https://github.com/RitualDev-Lab/GitWhisper) |
-| [**FlashLane**](https://github.com/RitualDev-Lab/FlashLane) | `TypeScript / Electron` | macOS diskutil runner, Linux block flashing, E2E ISO tests, Documentation | [Browse Issues](https://github.com/RitualDev-Lab/FlashLane/issues) | [GitHub](https://github.com/RitualDev-Lab/FlashLane) |
-| [**Bruno**](https://github.com/usebruno/bruno) | `JavaScript` | Collection runner plugins, translations, UI improvements, good first issues | [Browse Issues](https://github.com/usebruno/bruno/issues) | [GitHub](https://github.com/usebruno/bruno) |
-| [**Starship**](https://github.com/starship/starship) | `Rust` | New module additions, shell integrations, localized docs, bug fixes | [Browse Issues](https://github.com/starship/starship/issues) | [GitHub](https://github.com/starship/starship) |
+| [**Zed**](https://github.com/zed-industries/zed) | `Rust` | Language extensions, themes, cross-platform UI polish, keybindings, and starter bugs | [Browse Issues](https://github.com/zed-industries/zed/labels/good%20first%20issue) | [GitHub](https://github.com/zed-industries/zed) |
+| [**Biome**](https://github.com/biomejs/biome) | `Rust` | New linter rules, parser optimizations, CSS support, documentation, and starter issues | [Browse Issues](https://github.com/biomejs/biome/labels/good%20first%20issue) | [GitHub](https://github.com/biomejs/biome) |
+| [**Nushell**](https://github.com/nushell/nushell) | `Rust` | Shell builtins, plugin architecture, cross-platform completions, and bug fixes | [Browse Issues](https://github.com/nushell/nushell/labels/good%20first%20issue) | [GitHub](https://github.com/nushell/nushell) |
+| [**ast-grep**](https://github.com/ast-grep/ast-grep) | `Rust` | Language parsers, rule templates, editor plugins, and starter issues | [Browse Issues](https://github.com/ast-grep/ast-grep/labels/good%20first%20issue) | [GitHub](https://github.com/ast-grep/ast-grep) |
+| [**WezTerm**](https://github.com/wez/wezterm) | `Rust / Lua` | Configuration presets, font rendering, platform fixes, and starter issues | [Browse Issues](https://github.com/wez/wezterm/labels/good%20first%20issue) | [GitHub](https://github.com/wez/wezterm) |
+
+### <a id="devops-cloud-tools"></a>DevOps & Cloud Tools (1)
+
+| Project | Language | Seeking Contributions For | Good First Issues | Repo |
+| :--- | :---: | :--- | :---: | :---: |
+| [**Infracost**](https://github.com/infracost/infracost) | `Go` | Cloud resource mapping, pricing estimators, CLI features, and documentation | [Browse Issues](https://github.com/infracost/infracost/labels/good%20first%20issue) | [GitHub](https://github.com/infracost/infracost) |
 
 ### <a id="marketing-analytics"></a>Marketing & Analytics (1)
 
@@ -71,9 +69,11 @@
 | [**AppFlowy**](https://github.com/AppFlowy-IO/AppFlowy) | `Flutter / Rust` | Flutter widgets, keyboard shortcuts, markdown renderers, and bug fixes | [Browse Issues](https://github.com/AppFlowy-IO/AppFlowy/labels/good%20first%20issue) | [GitHub](https://github.com/AppFlowy-IO/AppFlowy) |
 | [**Affine**](https://github.com/toeverything/AFFiNE) | `TypeScript / Rust` | Plugin extensions, block editor features, and starter issues | [Browse Issues](https://github.com/toeverything/AFFiNE/labels/good%20first%20issue) | [GitHub](https://github.com/toeverything/AFFiNE) |
 
-### <a id="testing-qa-automation"></a>Testing & QA Automation (1)
+### <a id="security-identity"></a>Security & Identity (3)
 
 | Project | Language | Seeking Contributions For | Good First Issues | Repo |
 | :--- | :---: | :--- | :---: | :---: |
-| [**AutoHeal-QA**](https://github.com/RitualDev-Lab/autoheal-qa) | `TypeScript` | Cypress Adapter, Additional Local Model Adapters, Visual UI Dashboard | [Browse Issues](https://github.com/RitualDev-Lab/autoheal-qa/issues) | [GitHub](https://github.com/RitualDev-Lab/autoheal-qa) |
+| [**Infisical**](https://github.com/Infisical/infisical) | `TypeScript / Go` | CLI integrations, Kubernetes operator features, SDK clients, and documentation | [Browse Issues](https://github.com/Infisical/infisical/labels/good%20first%20issue) | [GitHub](https://github.com/Infisical/infisical) |
+| [**Cerbos**](https://github.com/cerbos/cerbos) | `Go` | SDK adapters, policy testing tools, docs, and starter tasks | [Browse Issues](https://github.com/cerbos/cerbos/labels/good%20first%20issue) | [GitHub](https://github.com/cerbos/cerbos) |
+| [**Casbin**](https://github.com/casbin/casbin) | `Go` | Middleware adapters, documentation, database adapters, and starter bugs | [Browse Issues](https://github.com/casbin/casbin/labels/good%20first%20issue) | [GitHub](https://github.com/casbin/casbin) |
 

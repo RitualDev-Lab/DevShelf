@@ -5,7 +5,7 @@
     "category": "Databases & BaaS",
     "description": "Open source Firebase alternative providing PostgreSQL, Auth, Instant APIs, Realtime subscriptions, and Storage.",
     "freeTier": "500MB DB, 50k monthly active users, 1GB storage",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Neon",
@@ -13,7 +13,7 @@
     "category": "Databases & BaaS",
     "description": "Serverless Postgres with instant branching, bottomless storage, and autoscaling compute to zero.",
     "freeTier": "0.5 GB storage, instant branching, scale-to-zero",
-    "statusTags": ["Requires Credit Card to Verify", "Active Uptime 100%"]
+    "statusTags": ["Requires Credit Card to Verify", "CI Verified"]
   },
   {
     "name": "Cloudflare Workers",
@@ -21,7 +21,7 @@
     "category": "Cloud Hosting & PaaS",
     "description": "Deploy serverless code instantly across Cloudflare's global edge network with ultra-low latency.",
     "freeTier": "100,000 requests/day, KV store, D1 SQL database",
-    "statusTags": ["Requires Credit Card to Verify", "Active Uptime 100%"]
+    "statusTags": ["Requires Credit Card to Verify", "CI Verified"]
   },
   {
     "name": "Clerk",
@@ -29,7 +29,7 @@
     "category": "Authentication & Security",
     "description": "Complete user management and authentication suite for React, Next.js, and modern full-stack web applications.",
     "freeTier": "10,000 monthly active users, social logins, MFA",
-    "statusTags": ["Requires Credit Card to Verify", "Active Uptime 100%"]
+    "statusTags": ["Requires Credit Card to Verify", "CI Verified"]
   },
   {
     "name": "Resend",
@@ -37,7 +37,7 @@
     "category": "Transactional Email",
     "description": "Developer-first email platform for sending transactional emails using clean React components.",
     "freeTier": "3,000 emails/month, 100 emails/day, 1 custom domain",
-    "statusTags": ["Requires Credit Card to Verify", "Active Uptime 100%"]
+    "statusTags": ["Requires Credit Card to Verify", "CI Verified"]
   },
   {
     "name": "PocketBase",
@@ -45,7 +45,7 @@
     "category": "Databases & BaaS",
     "description": "Open source backend in 1 file consisting of embedded SQLite database with real-time subscriptions, built-in auth, and admin dashboard.",
     "freeTier": "100% Free & Open Source, single binary self-hostable",
-    "statusTags": ["Requires Credit Card to Verify", "Active Uptime 100%"]
+    "statusTags": ["Requires Credit Card to Verify", "CI Verified"]
   },
   {
     "name": "Appwrite",
@@ -53,7 +53,7 @@
     "category": "Databases & BaaS",
     "description": "Self-hosted backend-as-a-service platform providing developers with core APIs for authentication, databases, storage, and serverless functions.",
     "freeTier": "Free Cloud Tier: 2 projects, 75k monthly active users, 2GB storage",
-    "statusTags": ["Requires Credit Card to Verify", "Active Uptime 100%"]
+    "statusTags": ["Requires Credit Card to Verify", "CI Verified"]
   },
   {
     "name": "Fly.io",
@@ -61,7 +61,7 @@
     "category": "Cloud Hosting & PaaS",
     "description": "Run full-stack apps and databases close to your users globally with lightweight Firecracker microVMs.",
     "freeTier": "Free allowance: up to 3 shared-cpu-1x VMs, 3GB persistent storage",
-    "statusTags": ["Requires Credit Card to Verify", "Active Uptime 100%"]
+    "statusTags": ["Requires Credit Card to Verify", "CI Verified"]
   },
   {
     "name": "Render",
@@ -69,7 +69,7 @@
     "category": "Cloud Hosting & PaaS",
     "description": "Unified cloud to build and run web applications, APIs, static sites, and background workers with automated Git deploys.",
     "freeTier": "Free static sites, free web services (750 hrs/mo), free PostgreSQL",
-    "statusTags": ["Requires Credit Card to Verify", "Active Uptime 100%"]
+    "statusTags": ["Requires Credit Card to Verify", "CI Verified"]
   },
   {
     "name": "Koyeb",
@@ -77,7 +77,7 @@
     "category": "Cloud Hosting & PaaS",
     "description": "Serverless platform to deploy full-stack apps and Docker containers globally with built-in CDN, SSL, and private networking.",
     "freeTier": "Free Eco tier: 1 web service, 512MB RAM, global edge network",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Auth.js",
@@ -85,7 +85,7 @@
     "category": "Authentication & Security",
     "description": "Complete open-source authentication library for Next.js, SvelteKit, Express, and modern frameworks with zero vendor lock-in.",
     "freeTier": "100% Free & Open Source, self-hostable with unlimited users",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Better Auth",
@@ -93,7 +93,7 @@
     "category": "Authentication & Security",
     "description": "Comprehensive TypeScript-first open-source authentication framework supporting multi-factor auth, organizations, and plugins.",
     "freeTier": "100% Free & Open Source framework",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Lucia",
@@ -101,7 +101,7 @@
     "category": "Authentication & Security",
     "description": "Flexible and lightweight open-source authentication and session handling resource for modern web applications.",
     "freeTier": "100% Free & Open Source",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "SuperTokens",
@@ -109,7 +109,7 @@
     "category": "Authentication & Security",
     "description": "Open-source alternative to Auth0 and Firebase Auth providing passwordless, social login, session management, and user roles.",
     "freeTier": "Free self-hosted community edition; Free cloud tier up to 5,000 MAU",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Logto",
@@ -117,7 +117,7 @@
     "category": "Authentication & Security",
     "description": "Modern open-source identity and access management infrastructure with OIDC, OAuth 2.0, and pre-built sign-in UI.",
     "freeTier": "Free self-hosted version; Free cloud tier for up to 50k MAU",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Coolify",
@@ -125,7 +125,7 @@
     "category": "Self-Hosted Cloud & PaaS",
     "description": "Self-hostable, open-source all-in-one alternative to Heroku, Netlify, and Vercel for applications, databases, and services.",
     "freeTier": "100% Free & Open Source self-hosted on your own server or VPS",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Dokku",
@@ -133,7 +133,7 @@
     "category": "Self-Hosted Cloud & PaaS",
     "description": "Smallest PaaS implementation powered by Docker, allowing Git push-to-deploy on your own single server.",
     "freeTier": "100% Free & Open Source",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "CapRover",
@@ -141,7 +141,7 @@
     "category": "Self-Hosted Cloud & PaaS",
     "description": "Extremely easy-to-use open-source app and database deployment platform with automated SSL and 1-click apps.",
     "freeTier": "100% Free & Open Source",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Turso",
@@ -149,7 +149,7 @@
     "category": "Databases & BaaS",
     "description": "Distributed SQLite database powered by libSQL designed for low-latency queries at the edge.",
     "freeTier": "Free Starter Tier: 9GB storage, 500 databases, and 1B row reads/mo",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Upstash",
@@ -157,7 +157,7 @@
     "category": "Databases & BaaS",
     "description": "Serverless data platform providing Redis, Apache Kafka, and QStash with per-request pricing and instant scaling.",
     "freeTier": "10,000 commands/day free for Redis, 10,000 messages/day for Kafka",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "PostHog",
@@ -165,7 +165,7 @@
     "category": "Observability & Analytics",
     "description": "Open-source product analytics suite combining web analytics, session replays, feature flags, and survey tools.",
     "freeTier": "1,000,000 events/month, 5,000 session recordings/month permanently free",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Umami",
@@ -173,7 +173,7 @@
     "category": "Observability & Analytics",
     "description": "Privacy-focused, cookie-free open-source web analytics platform with a fast and intuitive dashboard.",
     "freeTier": "100% Free & Open Source self-hosted; Free cloud tier available",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Directus",
@@ -181,7 +181,7 @@
     "category": "Databases & BaaS",
     "description": "Real-time API and app dashboard layer for any SQL database with granular access control and event automation.",
     "freeTier": "100% Free & Open Source Community Edition",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Strapi",
@@ -189,7 +189,7 @@
     "category": "Databases & BaaS",
     "description": "Open-source headless CMS delivering customizable REST and GraphQL APIs for web and mobile frontends.",
     "freeTier": "100% Free & Open Source Community Edition",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "MinIO",
@@ -197,7 +197,7 @@
     "category": "Storage & Buckets",
     "description": "High-performance, S3-compatible open-source object storage suite designed for high-density cloud data.",
     "freeTier": "100% Free & Open Source GNU AGPLv3",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "GlitchTip",
@@ -205,7 +205,7 @@
     "category": "Observability & Analytics",
     "description": "Open-source, self-hosted error tracking system compatible with Sentry client libraries and SDKs.",
     "freeTier": "100% Free & Open Source; Free hosted tier with 1,000 events/mo",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Meilisearch",
@@ -213,7 +213,7 @@
     "category": "Search & Discovery",
     "description": "Lightning-fast, typo-tolerant open-source search engine providing instant full-text search as you type.",
     "freeTier": "100% Free & Open Source MIT binary; Free trial on Meilisearch Cloud",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Typesense",
@@ -221,7 +221,7 @@
     "category": "Search & Discovery",
     "description": "Fast, typo-tolerant open-source search engine designed for delightful developer experience and sub-50ms search.",
     "freeTier": "100% Free & Open Source GPLv3; Free sandbox environment",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Qdrant Cloud",
@@ -229,7 +229,7 @@
     "category": "Databases & BaaS",
     "description": "Open-source vector database and similarity search engine for machine learning embeddings and semantic retrieval.",
     "freeTier": "1GB permanent free cluster with 0.5 vCPU on Qdrant Cloud; 100% Free Open Source",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Railway",
@@ -237,7 +237,7 @@
     "category": "Cloud Hosting & PaaS",
     "description": "Infrastructure platform where developers build, ship, and scale code without configuring servers.",
     "freeTier": "Free trial credit of $5 for new projects with zero setup",
-    "statusTags": ["Requires Credit Card to Verify", "Active Uptime 100%"]
+    "statusTags": ["Requires Credit Card to Verify", "CI Verified"]
   },
   {
     "name": "Oracle Cloud Always Free",
@@ -245,7 +245,7 @@
     "category": "Cloud Hosting & PaaS",
     "description": "Generous always-free cloud infrastructure: 4 Arm Ampere A1 cores, 24GB RAM, and 200GB block storage.",
     "freeTier": "4 OCPU, 24GB RAM Arm compute, 2 AMD micro VMs, 200GB storage",
-    "statusTags": ["Requires Credit Card to Verify", "Active Uptime 100%"]
+    "statusTags": ["Requires Credit Card to Verify", "CI Verified"]
   },
   {
     "name": "Deno Deploy",
@@ -253,7 +253,7 @@
     "category": "Cloud Hosting & PaaS",
     "description": "Globally distributed system that runs JavaScript, TypeScript, and WebAssembly at the edge with zero cold starts.",
     "freeTier": "1,000,000 requests/month, 100 GiB outbound transfer",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Vercel",
@@ -261,7 +261,7 @@
     "category": "Cloud Hosting & PaaS",
     "description": "Frontend cloud platform providing seamless Git deployments, edge middleware, and serverless functions.",
     "freeTier": "Free Hobby Plan: 100GB bandwidth, automated CI/CD previews, serverless functions",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Netlify",
@@ -269,7 +269,7 @@
     "category": "Cloud Hosting & PaaS",
     "description": "Platform for deploying modern web projects with automated Git workflows, serverless functions, and form handling.",
     "freeTier": "Free Starter Tier: 100GB bandwidth/mo, 300 build minutes/mo",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Cloudflare Pages",
@@ -277,7 +277,7 @@
     "category": "Cloud Hosting & PaaS",
     "description": "Fast, secure, and free Jamstack platform for frontend developers running directly on Cloudflare edge.",
     "freeTier": "Unlimited sites, unlimited requests, 500 builds per month",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "GitHub Pages",
@@ -285,7 +285,7 @@
     "category": "Cloud Hosting & PaaS",
     "description": "Websites for you and your projects, hosted directly from your GitHub repository with automatic SSL.",
     "freeTier": "100% Free with 1GB repository size limit and 100GB bandwidth/mo",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "GitLab Pages",
@@ -293,7 +293,7 @@
     "category": "Cloud Hosting & PaaS",
     "description": "Publish static websites directly from any repository on GitLab with integrated CI/CD pipelines.",
     "freeTier": "100% Free with custom domain support and Let's Encrypt SSL",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Glitch",
@@ -301,7 +301,7 @@
     "category": "Cloud Hosting & PaaS",
     "description": "Friendly community and instant web development environment where anyone can build, remix, and host full-stack apps.",
     "freeTier": "Free public hosting with auto-sleep after inactivity",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Aiven Free Tier",
@@ -309,7 +309,7 @@
     "category": "Databases & BaaS",
     "description": "Managed cloud data platform offering permanent free tiers for PostgreSQL, MySQL, and OpenSearch.",
     "freeTier": "Free tier PostgreSQL / MySQL single-node with 1GB RAM and 5GB storage",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "MongoDB Atlas",
@@ -317,7 +317,7 @@
     "category": "Databases & BaaS",
     "description": "Fully managed document database service with automated scaling, backups, and built-in security.",
     "freeTier": "Shared M0 cluster with 512MB storage and shared RAM permanently free",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Redis Cloud",
@@ -325,7 +325,7 @@
     "category": "Databases & BaaS",
     "description": "High-performance in-memory key-value database managed on AWS, GCP, and Azure.",
     "freeTier": "Free 30MB database with high throughput and basic persistence",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "CockroachDB Serverless",
@@ -333,7 +333,7 @@
     "category": "Databases & BaaS",
     "description": "Distributed, multi-region SQL database that scales automatically and ensures serializable ACID consistency.",
     "freeTier": "Free tier with 10GB storage and 50M Request Units per month",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "TiDB Serverless",
@@ -341,7 +341,7 @@
     "category": "Databases & BaaS",
     "description": "Distributed, MySQL-compatible Hybrid Transactional/Analytical Processing (HTAP) database with serverless auto-scaling.",
     "freeTier": "Free tier with 5GB row storage, 5GB columnar storage, and 50M RU/mo",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Backblaze B2",
@@ -349,7 +349,7 @@
     "category": "Storage & Buckets",
     "description": "S3-compatible cloud object storage with ultra-low pricing and free bandwidth partnerships with Cloudflare.",
     "freeTier": "10GB permanent free storage and 1GB/day free download bandwidth",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Scaleway Stardust & Object Storage",
@@ -357,7 +357,7 @@
     "category": "Storage & Buckets",
     "description": "European cloud provider offering multi-AZ S3-compatible object storage with generous free allowances.",
     "freeTier": "75GB free Object Storage per month permanently",
-    "statusTags": ["Requires Credit Card to Verify", "Active Uptime 100%"]
+    "statusTags": ["Requires Credit Card to Verify", "CI Verified"]
   },
   {
     "name": "Keycloak",
@@ -365,7 +365,7 @@
     "category": "Authentication & Security",
     "description": "Open source identity and access management solution for modern applications and services, supporting OpenID Connect and SAML.",
     "freeTier": "100% Free & Open Source Apache-2.0, self-hostable",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Authentik",
@@ -373,7 +373,7 @@
     "category": "Authentication & Security",
     "description": "Open-source Identity Provider focused on flexibility and versatility with built-in user directory, MFA, and SSO.",
     "freeTier": "100% Free & Open Source GNU GPLv3",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Authelia",
@@ -381,7 +381,7 @@
     "category": "Authentication & Security",
     "description": "Open-source authentication and authorization server providing 2-factor authentication and single sign-on for reverse proxies.",
     "freeTier": "100% Free & Open Source Apache-2.0",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Zitadel",
@@ -389,7 +389,7 @@
     "category": "Authentication & Security",
     "description": "Open source identity infrastructure with turnkey authentication, audit logs, multi-tenancy, and passkeys.",
     "freeTier": "100% Free Open Source self-hosted; Free cloud tier with 25k requests/mo",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "FusionAuth",
@@ -397,7 +397,7 @@
     "category": "Authentication & Security",
     "description": "Complete customer identity and access management system with fast setup and flexible user management APIs.",
     "freeTier": "Free Community Edition with unlimited users and basic MFA",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Casdoor",
@@ -405,7 +405,7 @@
     "category": "Authentication & Security",
     "description": "UI-first open-source Identity and Access Management (IAM) / Single-Sign-On (SSO) platform with web UI.",
     "freeTier": "100% Free & Open Source Apache-2.0",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Ory Kratos",
@@ -413,7 +413,7 @@
     "category": "Authentication & Security",
     "description": "Cloud-native user management system and identity provider implementing login, registration, MFA, and social auth.",
     "freeTier": "100% Free & Open Source Apache-2.0",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Portainer Community",
@@ -421,7 +421,7 @@
     "category": "Self-Hosted Cloud & PaaS",
     "description": "Universal container management platform for Docker, Docker Swarm, and Kubernetes with clean web GUI.",
     "freeTier": "100% Free & Open Source Community Edition",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Nginx Proxy Manager",
@@ -429,7 +429,7 @@
     "category": "Self-Hosted Cloud & PaaS",
     "description": "Expose your web services easily and securely with automatic Let's Encrypt SSL certificates and web administration.",
     "freeTier": "100% Free & Open Source MIT",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Traefik Community",
@@ -437,7 +437,7 @@
     "category": "Self-Hosted Cloud & PaaS",
     "description": "The leading cloud-native application proxy that integrates with your existing cluster and configures itself automatically.",
     "freeTier": "100% Free & Open Source Apache-2.0",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Caddy Web Server",
@@ -445,7 +445,7 @@
     "category": "Self-Hosted Cloud & PaaS",
     "description": "Enterprise-ready, open source web server with automatic HTTPS written in pure Go.",
     "freeTier": "100% Free & Open Source Apache-2.0",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "CasaOS",
@@ -453,7 +453,7 @@
     "category": "Self-Hosted Cloud & PaaS",
     "description": "Simple, personal cloud OS designed for home servers and self-hosting Docker apps with an elegant UI.",
     "freeTier": "100% Free & Open Source Apache-2.0",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Umbrel",
@@ -461,7 +461,7 @@
     "category": "Self-Hosted Cloud & PaaS",
     "description": "The ultimate personal home cloud server OS that lets you self-host Bitcoin, AI models, and nextcloud apps with 1 click.",
     "freeTier": "100% Free & Open Source",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "YunoHost",
@@ -469,7 +469,7 @@
     "category": "Self-Hosted Cloud & PaaS",
     "description": "Operating system aiming to simplify as much as possible the administration of a self-hosted server.",
     "freeTier": "100% Free & Open Source GPL-3.0",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "RabbitMQ",
@@ -477,7 +477,7 @@
     "category": "Messaging & Queues",
     "description": "Most widely deployed open source message broker supporting AMQP, MQTT, and STOMP protocols.",
     "freeTier": "100% Free & Open Source MPL-2.0",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Eclipse Mosquitto",
@@ -485,7 +485,7 @@
     "category": "Messaging & Queues",
     "description": "Lightweight open-source message broker that implements the MQTT protocol versions 5.0, 3.1.1 and 3.1.",
     "freeTier": "100% Free & Open Source EPL-2.0",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "EMQX",
@@ -493,7 +493,7 @@
     "category": "Messaging & Queues",
     "description": "The world's most scalable open-source MQTT platform for connected IoT, automotive, and industrial devices.",
     "freeTier": "100% Free Open Source Community Edition; Free cloud tier",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Brevo (formerly Sendinblue)",
@@ -501,7 +501,7 @@
     "category": "Transactional Email",
     "description": "Email marketing and transactional messaging platform with reliable delivery and webhook tracking.",
     "freeTier": "300 emails/day permanently free with unlimited contacts",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "SendGrid Free Tier",
@@ -509,7 +509,7 @@
     "category": "Transactional Email",
     "description": "Cloud-based email infrastructure platform with robust delivery APIs, template engines, and analytics.",
     "freeTier": "100 emails/day permanently free",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Mailgun Free Foundation",
@@ -517,7 +517,7 @@
     "category": "Transactional Email",
     "description": "Developer-first email delivery platform offering inbound routing, SPF/DKIM verification, and logs.",
     "freeTier": "5,000 free emails for 1 month, then low pay-as-you-grow",
-    "statusTags": ["Requires Credit Card to Verify", "Active Uptime 100%"]
+    "statusTags": ["Requires Credit Card to Verify", "CI Verified"]
   },
   {
     "name": "Plausible Analytics Self-Hosted",
@@ -525,7 +525,7 @@
     "category": "Observability & Analytics",
     "description": "Lightweight and open-source Google Analytics alternative with zero cookies and full GDPR compliance.",
     "freeTier": "100% Free & Open Source AGPLv3 for self-hosters",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Grafana OSS",
@@ -533,7 +533,7 @@
     "category": "Observability & Analytics",
     "description": "The open and composable observability and data visualization platform with rich dashboards and alerts.",
     "freeTier": "100% Free & Open Source AGPLv3 self-hosted",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Prometheus",
@@ -541,7 +541,7 @@
     "category": "Observability & Analytics",
     "description": "An open-source monitoring system with a dimensional data model, flexible query language, and alerting.",
     "freeTier": "100% Free & Open Source Apache-2.0",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Uptime Kuma",
@@ -549,7 +549,7 @@
     "category": "Observability & Analytics",
     "description": "Self-hosted monitoring tool like Uptime Robot with modern dashboard and notifications across 90+ services.",
     "freeTier": "100% Free & Open Source MIT",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Dragonfly",
@@ -557,6 +557,6 @@
     "category": "Databases & BaaS",
     "description": "A modern, highly performant replacement for Redis and Memcached with 25x throughput and multi-threaded core.",
     "freeTier": "100% Free & Open Source BSL",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   }
 ]

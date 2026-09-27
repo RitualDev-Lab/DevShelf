@@ -102,10 +102,12 @@ export function sanitizeUrl(rawUrl) {
  */
 export function getUrlFingerprint(rawUrl) {
   try {
-    const parsed = new URL(rawUrl.trim());
+    const { sanitized } = sanitizeUrl(rawUrl);
+    const parsed = new URL(sanitized);
     const host = parsed.hostname.toLowerCase().replace(/^www\./, "");
     const path = parsed.pathname.replace(/\/$/, "");
-    return `${host}${path}`;
+    const search = parsed.search ? parsed.search.toLowerCase() : "";
+    return `${host}${path}${search}`;
   } catch {
     return rawUrl.toLowerCase().trim();
   }
@@ -122,11 +124,7 @@ async function validateAndSanitizeRegistry() {
 
   const dirtyUrls = [];
   const duplicates = [];
-  const crossShelfReferences = [];
   const modifiedFiles = new Set();
-
-  // Shelves that intentionally reference projects from primary shelves
-  const REFERENCE_SHELVES = new Set(["contributors-wanted.json", "boilerplates.json"]);
 
   for (const file of files) {
     const filePath = path.join(SHELF_DIR, file);
@@ -136,7 +134,7 @@ async function validateAndSanitizeRegistry() {
     const seenInThisFile = new Set();
 
     for (const item of items) {
-      const targetUrl = item.deployUrl || item.url || item.repo;
+      const targetUrl = item.url || item.repo || item.deployUrl;
       const itemName = item.name?.trim() || "(unnamed)";
       const lowerName = itemName.toLowerCase();
 
@@ -152,20 +150,18 @@ async function validateAndSanitizeRegistry() {
       }
       seenInThisFile.add(lowerName);
 
-      // Check name uniqueness across primary shelves
-      if (!REFERENCE_SHELVES.has(file)) {
-        if (nameRegistry.has(lowerName)) {
-          const prior = nameRegistry.get(lowerName);
-          duplicates.push({
-            type: "Duplicate Cross-Shelf Name Collision",
-            name: itemName,
-            firstFile: prior.file,
-            secondFile: file,
-            value: itemName,
-          });
-        } else {
-          nameRegistry.set(lowerName, { file, item });
-        }
+      // Check name uniqueness across all shelf files
+      if (nameRegistry.has(lowerName)) {
+        const prior = nameRegistry.get(lowerName);
+        duplicates.push({
+          type: "Duplicate Cross-Shelf Name Collision",
+          name: itemName,
+          firstFile: prior.file,
+          secondFile: file,
+          value: itemName,
+        });
+      } else {
+        nameRegistry.set(lowerName, { file, item });
       }
 
       if (!targetUrl) continue;
@@ -189,31 +185,21 @@ async function validateAndSanitizeRegistry() {
         }
       }
 
-      // Check URL Fingerprint Duplicates
+      // Check URL Fingerprint Duplicates across all shelf files
       const fingerprint = getUrlFingerprint(targetUrl);
-      if (!REFERENCE_SHELVES.has(file)) {
-        if (urlRegistry.has(fingerprint)) {
-          const prior = urlRegistry.get(fingerprint);
-          duplicates.push({
-            type: "Duplicate URL Collision",
-            name: itemName,
-            firstFile: prior.file,
-            firstItem: prior.item.name,
-            secondFile: file,
-            secondItem: itemName,
-            value: targetUrl,
-          });
-        } else {
-          urlRegistry.set(fingerprint, { file, item });
-        }
-      } else if (urlRegistry.has(fingerprint)) {
+      if (urlRegistry.has(fingerprint)) {
         const prior = urlRegistry.get(fingerprint);
-        crossShelfReferences.push({
+        duplicates.push({
+          type: "Duplicate URL Collision",
           name: itemName,
-          primaryFile: prior.file,
-          referenceFile: file,
-          url: targetUrl,
+          firstFile: prior.file,
+          firstItem: prior.item.name,
+          secondFile: file,
+          secondItem: itemName,
+          value: targetUrl,
         });
+      } else {
+        urlRegistry.set(fingerprint, { file, item });
       }
     }
 
@@ -231,7 +217,6 @@ async function validateAndSanitizeRegistry() {
   console.log(`   Primary URLs Audited:   ${urlRegistry.size}`);
   console.log(`   Dirty URLs Found:       ${dirtyUrls.length}`);
   console.log(`   Duplicate Collisions:   ${duplicates.length}`);
-  console.log(`   Cross-Shelf References: ${crossShelfReferences.length} (Documented Intentional)`);
   console.log("========================================\n");
 
   if (dirtyUrls.length > 0) {

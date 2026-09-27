@@ -1,15 +1,15 @@
 [
   {
-    "name": "Mockoon Cloudless API Server",
-    "repo": "https://github.com/mockoon/mockoon",
-    "category": "Backend & Microservices",
-    "description": "Deploy a lightweight, zero-dependency mock REST/GraphQL API server based on Mockoon JSON environments with 1 click.",
-    "language": "TypeScript / Node.js",
+    "name": "AstroWind Starter",
+    "repo": "https://github.com/onwidget/astrowind",
+    "category": "Full-Stack Web Starter",
+    "description": "Production-ready, highly customizable Astro template styled with Tailwind CSS, SEO-optimized, and built for speed.",
+    "language": "Astro / TypeScript",
     "license": "MIT",
-    "platform": "Render",
-    "deployUrl": "https://render.com/deploy?repo=https://github.com/mockoon/mock-samples",
-    "freeTierCost": "$0/month (Render Free Web Service)",
-    "statusTags": ["100% Offline-Friendly", "Self-Hostable", "No Card Required"]
+    "platform": "Vercel / Netlify",
+    "deployUrl": "https://vercel.com/new/clone?repository-url=https://github.com/onwidget/astrowind",
+    "freeTierCost": "$0/month (Vercel Free Tier)",
+    "statusTags": ["Production-Ready", "Self-Hostable", "No Card Required"]
   },
   {
     "name": "PocketBase 1-Click Backend",
@@ -24,16 +24,16 @@
     "statusTags": ["100% Offline-Friendly", "Self-Hostable", "No Card Required"]
   },
   {
-    "name": "AutoHeal-QA Playwright Runner",
-    "repo": "https://github.com/RitualDev-Lab/autoheal-qa",
+    "name": "Full-Stack FastAPI Template",
+    "repo": "https://github.com/tiangolo/full-stack-fastapi-template",
     "category": "Backend & Microservices",
-    "description": "Deploy agentic self-healing E2E Playwright test automation with local LLM test fixing directly into GitHub Actions.",
-    "language": "TypeScript",
+    "description": "Robust full-stack starter featuring FastAPI, PostgreSQL, Docker Compose, Celery, and React frontend with JWT authentication.",
+    "language": "Python / TypeScript",
     "license": "MIT",
-    "platform": "GitHub Actions",
-    "deployUrl": "https://github.com/RitualDev-Lab/autoheal-qa/fork",
-    "freeTierCost": "$0/month (GitHub Actions 2,000 free min/mo)",
-    "statusTags": ["100% Offline-Friendly", "Self-Hostable", "Active Uptime 100%"]
+    "platform": "Docker / Self-Hosted",
+    "deployUrl": "https://github.com/tiangolo/full-stack-fastapi-template/generate",
+    "freeTierCost": "$0/month (Self-Hostable / Free Cloud Tiers)",
+    "statusTags": ["Production-Ready", "Self-Hostable", "No Card Required"]
   },
   {
     "name": "Stirling-PDF Ultimate Toolbox",
@@ -48,16 +48,16 @@
     "statusTags": ["Self-Hostable", "100% Offline-Friendly", "No Card Required"]
   },
   {
-    "name": "Open-WebUI for Local AI",
-    "repo": "https://github.com/open-webui/open-webui",
-    "category": "AI & Full-Stack Starters",
-    "description": "Feature-rich, self-hosted web chat UI for Ollama and OpenAI-compatible local endpoints with RAG and pipeline support.",
-    "language": "Python / Svelte",
+    "name": "Go Clean Architecture API",
+    "repo": "https://github.com/bxcodec/go-clean-arch",
+    "category": "Backend & Microservices",
+    "description": "Clean Architecture template for Go RESTful services adhering to Uncle Bob's Clean Architecture principles.",
+    "language": "Go",
     "license": "MIT",
-    "platform": "Render",
-    "deployUrl": "https://render.com/deploy?repo=https://github.com/open-webui/open-webui",
-    "freeTierCost": "$0/month (Render Free Tier)",
-    "statusTags": ["Self-Hostable", "100% Offline-Friendly", "No Card Required"]
+    "platform": "Docker / Self-Hosted",
+    "deployUrl": "https://github.com/bxcodec/go-clean-arch/generate",
+    "freeTierCost": "$0/month (Self-Hostable)",
+    "statusTags": ["Production-Ready", "Self-Hostable", "No Card Required"]
   },
   {
     "name": "Directus Instant Data Engine",
@@ -69,31 +69,31 @@
     "platform": "Railway",
     "deployUrl": "https://railway.app/template/directus",
     "freeTierCost": "$0/month (Railway Free Starter Tier)",
-    "statusTags": ["Self-Hostable", "Active Uptime 100%"]
+    "statusTags": ["Self-Hostable", "CI Verified"]
   },
   {
-    "name": "Hoppscotch API Development Hub",
-    "repo": "https://github.com/hoppscotch/hoppscotch",
-    "category": "Backend & Microservices",
-    "description": "Lightweight, fast, web-based API testing client supporting REST, WebSocket, GraphQL, and SSE testing.",
-    "language": "TypeScript / Vue",
+    "name": "WXT Extension Framework",
+    "repo": "https://github.com/wxt-dev/wxt",
+    "category": "Full-Stack Web Starter",
+    "description": "Next-gen framework for building cross-browser web extensions with Manifest V3, TypeScript, and multi-browser support.",
+    "language": "TypeScript",
     "license": "MIT",
-    "platform": "Render",
-    "deployUrl": "https://render.com/deploy?repo=https://github.com/hoppscotch/hoppscotch",
-    "freeTierCost": "$0/month (Render Web Service)",
-    "statusTags": ["Self-Hostable", "No Card Required", "100% Offline-Friendly"]
+    "platform": "Cross-Browser",
+    "deployUrl": "https://github.com/wxt-dev/wxt/generate",
+    "freeTierCost": "$0/month (Open Source / Free)",
+    "statusTags": ["Production-Ready", "100% Offline-Friendly", "No Card Required"]
   },
   {
-    "name": "Dify LLM Application Platform",
-    "repo": "https://github.com/langgenius/dify",
-    "category": "AI & Full-Stack Starters",
-    "description": "Visual orchestration platform for LLM workflows, agent coordination, RAG pipelines, and model deployment.",
-    "language": "Python / TypeScript",
-    "license": "Apache-2.0",
-    "platform": "Render",
-    "deployUrl": "https://render.com/deploy?repo=https://github.com/langgenius/dify",
-    "freeTierCost": "$0/month (Render Community Tier)",
-    "statusTags": ["Self-Hostable", "No Card Required"]
+    "name": "Remix Indie Stack",
+    "repo": "https://github.com/remix-run/indie-stack",
+    "category": "Full-Stack Web Starter",
+    "description": "Production-ready Remix stack with SQLite database, Prisma ORM, user auth, Fly.io deployment, and end-to-end testing.",
+    "language": "TypeScript",
+    "license": "MIT",
+    "platform": "Fly.io",
+    "deployUrl": "https://fly.io/launch?template=https://github.com/remix-run/indie-stack",
+    "freeTierCost": "$0/month (Fly.io Free Allowance)",
+    "statusTags": ["Production-Ready", "Self-Hostable", "No Card Required"]
   },
   {
     "name": "Create T3 App",
@@ -105,7 +105,7 @@
     "platform": "Next.js / Node.js",
     "deployUrl": "https://create.t3.gg",
     "freeTierCost": "100% Free Open Source",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Shadcn Taxonomy",
@@ -117,7 +117,7 @@
     "platform": "Next.js / Vercel",
     "deployUrl": "https://tx.shadcn.com",
     "freeTierCost": "100% Free Open Source",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Next-Forge",
@@ -129,7 +129,7 @@
     "platform": "Next.js / Turborepo",
     "deployUrl": "https://next-forge.com",
     "freeTierCost": "100% Free Open Source",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Bulletproof React",
@@ -141,7 +141,7 @@
     "platform": "React / Vite",
     "deployUrl": "https://github.com/alan2207/bulletproof-react",
     "freeTierCost": "100% Free Open Source",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "FastAPI Full Stack Template",
@@ -153,7 +153,7 @@
     "platform": "FastAPI / React / Docker",
     "deployUrl": "https://github.com/fastapi/full-stack-fastapi-template",
     "freeTierCost": "100% Free Open Source",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Astro Paper",
@@ -165,7 +165,7 @@
     "platform": "Astro / Tailwind",
     "deployUrl": "https://astro-paper.pages.dev",
     "freeTierCost": "100% Free Open Source",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Refine",
@@ -177,7 +177,7 @@
     "platform": "React / Next.js / Vite",
     "deployUrl": "https://refine.dev",
     "freeTierCost": "100% Free Open Source",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Medusa",
@@ -189,7 +189,7 @@
     "platform": "Node.js / Next.js",
     "deployUrl": "https://medusajs.com",
     "freeTierCost": "100% Free Open Source",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Next.js Enterprise Boilerplate",
@@ -201,7 +201,7 @@
     "platform": "Next.js / Vercel",
     "deployUrl": "https://next-enterprise.vercel.app",
     "freeTierCost": "100% Free Open Source",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "SaaS Boilerplate by BoxyHQ",
@@ -213,7 +213,7 @@
     "platform": "Next.js / Docker",
     "deployUrl": "https://github.com/boxyhq/saas-starter-kit",
     "freeTierCost": "100% Free Open Source",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Turborepo Starter",
@@ -225,7 +225,7 @@
     "platform": "Node.js / Monorepo",
     "deployUrl": "https://turbo.build",
     "freeTierCost": "100% Free Open Source",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Payload CMS Starter",
@@ -237,7 +237,7 @@
     "platform": "Next.js / Node.js",
     "deployUrl": "https://payloadcms.com",
     "freeTierCost": "100% Free Open Source",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Nuxt 3 Starter",
@@ -249,7 +249,7 @@
     "platform": "Nuxt / Node.js",
     "deployUrl": "https://nuxt.com",
     "freeTierCost": "100% Free Open Source",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Vitesse",
@@ -261,7 +261,7 @@
     "platform": "Vite / Vue 3",
     "deployUrl": "https://vitesse.netlify.app",
     "freeTierCost": "100% Free Open Source",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Vitesse WebExt",
@@ -273,7 +273,7 @@
     "platform": "Browser Extension / Vite",
     "deployUrl": "https://github.com/antfu/vitesse-webext",
     "freeTierCost": "100% Free Open Source",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Expo Starter Kit",
@@ -285,7 +285,7 @@
     "platform": "React Native / Expo",
     "deployUrl": "https://expo.dev",
     "freeTierCost": "100% Free Open Source",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Tauri App Starter",
@@ -297,7 +297,7 @@
     "platform": "Tauri / Desktop",
     "deployUrl": "https://tauri.app",
     "freeTierCost": "100% Free Open Source",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Electron React Boilerplate",
@@ -309,7 +309,7 @@
     "platform": "Electron / Desktop",
     "deployUrl": "https://electron-react-boilerplate.js.org",
     "freeTierCost": "100% Free Open Source",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Flutter Starter Kit",
@@ -321,7 +321,7 @@
     "platform": "Flutter / Mobile",
     "deployUrl": "https://flutter.dev",
     "freeTierCost": "100% Free Open Source",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "NestJS Starter",
@@ -333,7 +333,7 @@
     "platform": "NestJS / Node.js",
     "deployUrl": "https://nestjs.com",
     "freeTierCost": "100% Free Open Source",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "FastAPI Clean Architecture",
@@ -345,7 +345,7 @@
     "platform": "FastAPI / Python",
     "deployUrl": "https://fastapi.tiangolo.com",
     "freeTierCost": "100% Free Open Source",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Django Boilerplate (Wemake)",
@@ -357,7 +357,7 @@
     "platform": "Django / Python",
     "deployUrl": "https://github.com/wemake-services/wemake-django-template",
     "freeTierCost": "100% Free Open Source",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Go Clean Architecture Template",
@@ -369,7 +369,7 @@
     "platform": "Go / Microservices",
     "deployUrl": "https://github.com/evrone/go-clean-template",
     "freeTierCost": "100% Free Open Source",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Rust Axum Starter",
@@ -381,7 +381,7 @@
     "platform": "Rust / Tokio",
     "deployUrl": "https://github.com/tokio-rs/axum",
     "freeTierCost": "100% Free Open Source",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Spring Boot Initializr Template",
@@ -393,7 +393,7 @@
     "platform": "Spring Boot / JVM",
     "deployUrl": "https://start.spring.io",
     "freeTierCost": "100% Free Open Source",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "AdonisJS Starter",
@@ -405,7 +405,7 @@
     "platform": "AdonisJS / Node.js",
     "deployUrl": "https://adonisjs.com",
     "freeTierCost": "100% Free Open Source",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Vercel AI SDK Starter",
@@ -417,7 +417,7 @@
     "platform": "Next.js / AI SDK",
     "deployUrl": "https://chat.vercel.ai",
     "freeTierCost": "100% Free Open Source",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "LangChain Next.js Template",
@@ -429,7 +429,7 @@
     "platform": "Next.js / LangChain",
     "deployUrl": "https://langchain-nextjs-template.vercel.app",
     "freeTierCost": "100% Free Open Source",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Streamlit AI Dashboard Starter",
@@ -441,7 +441,7 @@
     "platform": "Streamlit / Python",
     "deployUrl": "https://streamlit.io",
     "freeTierCost": "100% Free Open Source",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Hono Starter",
@@ -453,7 +453,7 @@
     "platform": "Hono / Multi-Runtime",
     "deployUrl": "https://hono.dev",
     "freeTierCost": "100% Free Open Source",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Elysia Starter",
@@ -465,7 +465,7 @@
     "platform": "Elysia / Bun",
     "deployUrl": "https://elysiajs.com",
     "freeTierCost": "100% Free Open Source",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Fastify Starter",
@@ -477,7 +477,7 @@
     "platform": "Fastify / Node.js",
     "deployUrl": "https://fastify.dev",
     "freeTierCost": "100% Free Open Source",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Astro Blog Starter",
@@ -489,6 +489,6 @@
     "platform": "Astro / Web",
     "deployUrl": "https://astro.build",
     "freeTierCost": "100% Free Open Source",
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   }
 ]

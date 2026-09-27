@@ -1,84 +1,84 @@
 [
   {
-    "name": "GitWhisper",
-    "repo": "https://github.com/RitualDev-Lab/GitWhisper",
+    "name": "Zed",
+    "repo": "https://github.com/zed-industries/zed",
     "category": "Developer Utilities & CLI",
-    "description": "AI-assisted conventional commit generator grounded in staged index plumbing.",
-    "seeking": "JetBrains IDE Plugin, Community Custom LLM Adapters, Documentation",
-    "goodFirstIssues": "https://github.com/RitualDev-Lab/GitWhisper/issues",
-    "language": "TypeScript"
-  },
-  {
-    "name": "AutoHeal-QA",
-    "repo": "https://github.com/RitualDev-Lab/autoheal-qa",
-    "category": "Testing & QA Automation",
-    "description": "Zero-cloud-cost agentic self-healing E2E test runner for Playwright.",
-    "seeking": "Cypress Adapter, Additional Local Model Adapters, Visual UI Dashboard",
-    "goodFirstIssues": "https://github.com/RitualDev-Lab/autoheal-qa/issues",
-    "language": "TypeScript"
-  },
-  {
-    "name": "FlashLane",
-    "repo": "https://github.com/RitualDev-Lab/FlashLane",
-    "category": "Developer Utilities & CLI",
-    "description": "Universal, high-speed bootable ISO/IMG USB writer with Rufus parity for Windows, macOS, and Linux.",
-    "seeking": "macOS diskutil runner, Linux block flashing, E2E ISO tests, Documentation",
-    "goodFirstIssues": "https://github.com/RitualDev-Lab/FlashLane/issues",
-    "language": "TypeScript / Electron"
-  },
-  {
-    "name": "Bruno",
-    "repo": "https://github.com/usebruno/bruno",
-    "category": "Developer Utilities & CLI",
-    "description": "Fast, git-friendly open-source API client that stores collections in plain text.",
-    "seeking": "Collection runner plugins, translations, UI improvements, good first issues",
-    "goodFirstIssues": "https://github.com/usebruno/bruno/issues",
-    "language": "JavaScript"
-  },
-  {
-    "name": "agent-browser",
-    "repo": "https://github.com/vercel-labs/agent-browser",
-    "category": "AI & Agent Tools",
-    "description": "Open-source browser automation CLI for AI agents with fast Rust core and Node.js fallback.",
-    "seeking": "Cross-platform terminal enhancements, playwright engine bindings, examples",
-    "goodFirstIssues": "https://github.com/vercel-labs/agent-browser/issues",
-    "language": "Rust / TypeScript"
-  },
-  {
-    "name": "Aider",
-    "repo": "https://github.com/Aider-AI/aider",
-    "category": "AI & Agent Tools",
-    "description": "Terminal-based AI pair programming tool with git auto-commit integration.",
-    "seeking": "Local model benchmark adapters, terminal UX enhancements, documentation",
-    "goodFirstIssues": "https://github.com/Aider-AI/aider/issues",
-    "language": "Python"
-  },
-  {
-    "name": "OpenHands",
-    "repo": "https://github.com/All-Hands-AI/OpenHands",
-    "category": "AI & Agent Tools",
-    "description": "Autonomous software development agent platform for solving GitHub issues.",
-    "seeking": "Docker sandbox runtime adapters, evaluation benchmarks, docs & translations",
-    "goodFirstIssues": "https://github.com/All-Hands-AI/OpenHands/issues",
-    "language": "Python"
-  },
-  {
-    "name": "Continue",
-    "repo": "https://github.com/continuedev/continue",
-    "category": "AI & Agent Tools",
-    "description": "Leading open-source AI code assistant for VS Code and JetBrains.",
-    "seeking": "Provider integrations, prompt context templates, good first issues",
-    "goodFirstIssues": "https://github.com/continuedev/continue/issues",
-    "language": "TypeScript"
-  },
-  {
-    "name": "Starship",
-    "repo": "https://github.com/starship/starship",
-    "category": "Developer Utilities & CLI",
-    "description": "Fast and customizable cross-shell prompt for any terminal.",
-    "seeking": "New module additions, shell integrations, localized docs, bug fixes",
-    "goodFirstIssues": "https://github.com/starship/starship/issues",
+    "description": "High-performance, multiplayer code editor written in Rust with built-in language intelligence and AI.",
+    "seeking": "Language extensions, themes, cross-platform UI polish, keybindings, and starter bugs",
+    "goodFirstIssues": "https://github.com/zed-industries/zed/labels/good%20first%20issue",
     "language": "Rust"
+  },
+  {
+    "name": "Biome",
+    "repo": "https://github.com/biomejs/biome",
+    "category": "Developer Utilities & CLI",
+    "description": "Fast formatter and linter for JavaScript, TypeScript, JSX, and JSON that aims to replace Prettier and ESLint.",
+    "seeking": "New linter rules, parser optimizations, CSS support, documentation, and starter issues",
+    "goodFirstIssues": "https://github.com/biomejs/biome/labels/good%20first%20issue",
+    "language": "Rust"
+  },
+  {
+    "name": "Nushell",
+    "repo": "https://github.com/nushell/nushell",
+    "category": "Developer Utilities & CLI",
+    "description": "A modern shell powered by a structured data pipeline that treats output as typed tables rather than text.",
+    "seeking": "Shell builtins, plugin architecture, cross-platform completions, and bug fixes",
+    "goodFirstIssues": "https://github.com/nushell/nushell/labels/good%20first%20issue",
+    "language": "Rust"
+  },
+  {
+    "name": "Infisical",
+    "repo": "https://github.com/Infisical/infisical",
+    "category": "Security & Identity",
+    "description": "Open-source secret management platform to sync configuration and secrets across infrastructure, CI/CD, and teams.",
+    "seeking": "CLI integrations, Kubernetes operator features, SDK clients, and documentation",
+    "goodFirstIssues": "https://github.com/Infisical/infisical/labels/good%20first%20issue",
+    "language": "TypeScript / Go"
+  },
+  {
+    "name": "ast-grep",
+    "repo": "https://github.com/ast-grep/ast-grep",
+    "category": "Developer Utilities & CLI",
+    "description": "Fast and polyglot code search, linting, and rewrite tool using abstract syntax tree pattern matching.",
+    "seeking": "Language parsers, rule templates, editor plugins, and starter issues",
+    "goodFirstIssues": "https://github.com/ast-grep/ast-grep/labels/good%20first%20issue",
+    "language": "Rust"
+  },
+  {
+    "name": "Cerbos",
+    "repo": "https://github.com/cerbos/cerbos",
+    "category": "Security & Identity",
+    "description": "Scalable, open-source authorization policy engine for cloud applications and microservices.",
+    "seeking": "SDK adapters, policy testing tools, docs, and starter tasks",
+    "goodFirstIssues": "https://github.com/cerbos/cerbos/labels/good%20first%20issue",
+    "language": "Go"
+  },
+  {
+    "name": "Infracost",
+    "repo": "https://github.com/infracost/infracost",
+    "category": "DevOps & Cloud Tools",
+    "description": "Cloud cost estimates for Terraform in pull requests before deployment.",
+    "seeking": "Cloud resource mapping, pricing estimators, CLI features, and documentation",
+    "goodFirstIssues": "https://github.com/infracost/infracost/labels/good%20first%20issue",
+    "language": "Go"
+  },
+  {
+    "name": "WezTerm",
+    "repo": "https://github.com/wez/wezterm",
+    "category": "Developer Utilities & CLI",
+    "description": "GPU-accelerated cross-platform terminal emulator and multiplexer implemented in Rust.",
+    "seeking": "Configuration presets, font rendering, platform fixes, and starter issues",
+    "goodFirstIssues": "https://github.com/wez/wezterm/labels/good%20first%20issue",
+    "language": "Rust / Lua"
+  },
+  {
+    "name": "Casbin",
+    "repo": "https://github.com/casbin/casbin",
+    "category": "Security & Identity",
+    "description": "An authorization library that supports access control models like ACL, RBAC, ABAC in Go and other languages.",
+    "seeking": "Middleware adapters, documentation, database adapters, and starter bugs",
+    "goodFirstIssues": "https://github.com/casbin/casbin/labels/good%20first%20issue",
+    "language": "Go"
   },
   {
     "name": "Open Source Ideas",

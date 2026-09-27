@@ -1,12 +1,15 @@
 {
-  "updatedAt": "2026-09-27T17:31:46.632Z",
-  "totalCount": 502,
+  "updatedAt": "2026-09-27T18:21:21.245Z",
+  "totalCount": 511,
+  "reposCount": 315,
+  "facets": {
+    "repos": 315
+  },
   "counts": {
-    "repos": 306,
-    "apis": 96,
     "aiTools": 86,
     "cliTools": 105,
     "testingQa": 62,
+    "apis": 96,
     "freeCloud": 70,
     "contributors": 21,
     "perks": 30,
@@ -232,9 +235,7 @@
         "No Card Required"
       ],
       "type": "ai",
-      "section": "AI Agents & Local LLMs",
-      "seeking": "Local model benchmark adapters, terminal UX enhancements, documentation",
-      "contributorsWanted": true
+      "section": "AI Agents & Local LLMs"
     },
     {
       "name": "OpenHands",
@@ -251,9 +252,7 @@
         "No Card Required"
       ],
       "type": "ai",
-      "section": "AI Agents & Local LLMs",
-      "seeking": "Docker sandbox runtime adapters, evaluation benchmarks, docs & translations",
-      "contributorsWanted": true
+      "section": "AI Agents & Local LLMs"
     },
     {
       "name": "Continue",
@@ -270,9 +269,7 @@
         "No Card Required"
       ],
       "type": "ai",
-      "section": "AI Agents & Local LLMs",
-      "seeking": "Provider integrations, prompt context templates, good first issues",
-      "contributorsWanted": true
+      "section": "AI Agents & Local LLMs"
     },
     {
       "name": "llama.cpp",
@@ -1425,9 +1422,7 @@
         "No Card Required"
       ],
       "type": "cli",
-      "section": "CLI & Productivity Tools",
-      "seeking": "JetBrains IDE Plugin, Community Custom LLM Adapters, Documentation",
-      "contributorsWanted": true
+      "section": "CLI & Productivity Tools"
     },
     {
       "name": "FlashLane",
@@ -1443,9 +1438,7 @@
         "No Card Required"
       ],
       "type": "cli",
-      "section": "CLI & Productivity Tools",
-      "seeking": "macOS diskutil runner, Linux block flashing, E2E ISO tests, Documentation",
-      "contributorsWanted": true
+      "section": "CLI & Productivity Tools"
     },
     {
       "name": "lazygit",
@@ -1525,9 +1518,7 @@
         "No Card Required"
       ],
       "type": "cli",
-      "section": "CLI & Productivity Tools",
-      "seeking": "Cross-platform terminal enhancements, playwright engine bindings, examples",
-      "contributorsWanted": true
+      "section": "CLI & Productivity Tools"
     },
     {
       "name": "bat",
@@ -1671,9 +1662,7 @@
         "No Card Required"
       ],
       "type": "cli",
-      "section": "CLI & Productivity Tools",
-      "seeking": "New module additions, shell integrations, localized docs, bug fixes",
-      "contributorsWanted": true
+      "section": "CLI & Productivity Tools"
     },
     {
       "name": "zoxide",
@@ -3104,9 +3093,7 @@
       "featured": true,
       "goodFirstIssues": "https://github.com/RitualDev-Lab/autoheal-qa/issues",
       "type": "testing",
-      "section": "Testing & QA Reliability",
-      "seeking": "Cypress Adapter, Additional Local Model Adapters, Visual UI Dashboard",
-      "contributorsWanted": true
+      "section": "Testing & QA Reliability"
     },
     {
       "name": "Agent QA",
@@ -3166,9 +3153,7 @@
       "featured": false,
       "goodFirstIssues": "https://github.com/usebruno/bruno/issues",
       "type": "testing",
-      "section": "Testing & QA Reliability",
-      "seeking": "Collection runner plugins, translations, UI improvements, good first issues",
-      "contributorsWanted": true
+      "section": "Testing & QA Reliability"
     },
     {
       "name": "Hoppscotch",
@@ -3854,7 +3839,7 @@
       "statusTags": [
         "Rate-Limited",
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -3870,7 +3855,7 @@
       "https": true,
       "statusTags": [
         "Rate-Limited",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -3886,7 +3871,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -3902,7 +3887,7 @@
       "https": true,
       "statusTags": [
         "Rate-Limited",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -3919,7 +3904,7 @@
       "statusTags": [
         "Rate-Limited",
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -3935,7 +3920,7 @@
       "https": true,
       "statusTags": [
         "Rate-Limited",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -3951,7 +3936,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -3968,7 +3953,7 @@
       "statusTags": [
         "Rate-Limited",
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -3984,7 +3969,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4000,7 +3985,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4016,7 +4001,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4032,7 +4017,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4049,7 +4034,7 @@
       "statusTags": [
         "Rate-Limited",
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4065,7 +4050,7 @@
       "https": true,
       "statusTags": [
         "Rate-Limited",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4081,7 +4066,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4097,7 +4082,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4113,7 +4098,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4129,7 +4114,7 @@
       "https": true,
       "statusTags": [
         "Rate-Limited",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4145,7 +4130,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4161,7 +4146,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4177,7 +4162,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4193,7 +4178,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4209,7 +4194,7 @@
       "https": false,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4225,7 +4210,7 @@
       "https": true,
       "statusTags": [
         "Rate-Limited",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4241,7 +4226,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4257,7 +4242,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4273,7 +4258,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4289,7 +4274,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4305,7 +4290,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4321,7 +4306,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4337,7 +4322,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4353,7 +4338,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4369,7 +4354,7 @@
       "https": true,
       "statusTags": [
         "Rate-Limited",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4385,7 +4370,7 @@
       "https": true,
       "statusTags": [
         "Rate-Limited",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4401,7 +4386,7 @@
       "https": true,
       "statusTags": [
         "Rate-Limited",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4417,7 +4402,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4433,7 +4418,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4449,7 +4434,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4465,7 +4450,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4481,7 +4466,7 @@
       "https": true,
       "statusTags": [
         "Rate-Limited",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4497,7 +4482,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4513,7 +4498,7 @@
       "https": true,
       "statusTags": [
         "Rate-Limited",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4529,7 +4514,7 @@
       "https": true,
       "statusTags": [
         "Rate-Limited",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4545,7 +4530,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4561,7 +4546,7 @@
       "https": true,
       "statusTags": [
         "Rate-Limited",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4577,7 +4562,7 @@
       "https": true,
       "statusTags": [
         "Rate-Limited",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4593,7 +4578,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4609,7 +4594,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4625,7 +4610,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4641,7 +4626,7 @@
       "https": true,
       "statusTags": [
         "Rate-Limited",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4657,7 +4642,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4673,7 +4658,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4689,7 +4674,7 @@
       "https": true,
       "statusTags": [
         "Rate-Limited",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4705,7 +4690,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4721,7 +4706,7 @@
       "https": true,
       "statusTags": [
         "Rate-Limited",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4737,7 +4722,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4753,7 +4738,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4769,7 +4754,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4785,7 +4770,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4801,7 +4786,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4817,7 +4802,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4833,7 +4818,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4849,7 +4834,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4865,7 +4850,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4881,7 +4866,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4897,7 +4882,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4913,7 +4898,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4929,7 +4914,7 @@
       "https": true,
       "statusTags": [
         "Rate-Limited",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4945,7 +4930,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4961,7 +4946,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4977,7 +4962,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -4993,7 +4978,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -5009,7 +4994,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -5025,7 +5010,7 @@
       "https": true,
       "statusTags": [
         "Rate-Limited",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -5041,7 +5026,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -5057,7 +5042,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -5073,7 +5058,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -5089,7 +5074,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -5105,7 +5090,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -5121,7 +5106,7 @@
       "https": true,
       "statusTags": [
         "Rate-Limited",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -5137,7 +5122,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -5153,7 +5138,7 @@
       "https": true,
       "statusTags": [
         "Rate-Limited",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -5169,7 +5154,7 @@
       "https": true,
       "statusTags": [
         "Rate-Limited",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -5185,7 +5170,7 @@
       "https": true,
       "statusTags": [
         "Rate-Limited",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -5201,7 +5186,7 @@
       "https": true,
       "statusTags": [
         "Rate-Limited",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -5217,7 +5202,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -5233,7 +5218,7 @@
       "https": true,
       "statusTags": [
         "Rate-Limited",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -5249,7 +5234,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -5265,7 +5250,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -5281,7 +5266,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -5297,7 +5282,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -5313,7 +5298,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -5329,7 +5314,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -5345,7 +5330,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -5361,7 +5346,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -5377,7 +5362,7 @@
       "https": true,
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "api",
       "section": "Free & Public APIs"
@@ -5390,7 +5375,7 @@
       "freeTier": "500MB DB, 50k monthly active users, 1GB storage",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5403,7 +5388,7 @@
       "freeTier": "0.5 GB storage, instant branching, scale-to-zero",
       "statusTags": [
         "Requires Credit Card to Verify",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5416,7 +5401,7 @@
       "freeTier": "100,000 requests/day, KV store, D1 SQL database",
       "statusTags": [
         "Requires Credit Card to Verify",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5429,7 +5414,7 @@
       "freeTier": "10,000 monthly active users, social logins, MFA",
       "statusTags": [
         "Requires Credit Card to Verify",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5442,7 +5427,7 @@
       "freeTier": "3,000 emails/month, 100 emails/day, 1 custom domain",
       "statusTags": [
         "Requires Credit Card to Verify",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5455,7 +5440,7 @@
       "freeTier": "100% Free & Open Source, single binary self-hostable",
       "statusTags": [
         "Requires Credit Card to Verify",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5468,7 +5453,7 @@
       "freeTier": "Free Cloud Tier: 2 projects, 75k monthly active users, 2GB storage",
       "statusTags": [
         "Requires Credit Card to Verify",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5481,7 +5466,7 @@
       "freeTier": "Free allowance: up to 3 shared-cpu-1x VMs, 3GB persistent storage",
       "statusTags": [
         "Requires Credit Card to Verify",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5494,7 +5479,7 @@
       "freeTier": "Free static sites, free web services (750 hrs/mo), free PostgreSQL",
       "statusTags": [
         "Requires Credit Card to Verify",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5507,7 +5492,7 @@
       "freeTier": "Free Eco tier: 1 web service, 512MB RAM, global edge network",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5520,7 +5505,7 @@
       "freeTier": "100% Free & Open Source, self-hostable with unlimited users",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5533,7 +5518,7 @@
       "freeTier": "100% Free & Open Source framework",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5546,7 +5531,7 @@
       "freeTier": "100% Free & Open Source",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5559,7 +5544,7 @@
       "freeTier": "Free self-hosted community edition; Free cloud tier up to 5,000 MAU",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5572,7 +5557,7 @@
       "freeTier": "Free self-hosted version; Free cloud tier for up to 50k MAU",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5585,7 +5570,7 @@
       "freeTier": "100% Free & Open Source self-hosted on your own server or VPS",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5598,7 +5583,7 @@
       "freeTier": "100% Free & Open Source",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5611,7 +5596,7 @@
       "freeTier": "100% Free & Open Source",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5624,7 +5609,7 @@
       "freeTier": "Free Starter Tier: 9GB storage, 500 databases, and 1B row reads/mo",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5637,7 +5622,7 @@
       "freeTier": "10,000 commands/day free for Redis, 10,000 messages/day for Kafka",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5650,7 +5635,7 @@
       "freeTier": "1,000,000 events/month, 5,000 session recordings/month permanently free",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5663,7 +5648,7 @@
       "freeTier": "100% Free & Open Source self-hosted; Free cloud tier available",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5676,7 +5661,7 @@
       "freeTier": "100% Free & Open Source Community Edition",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5689,7 +5674,7 @@
       "freeTier": "100% Free & Open Source Community Edition",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5702,7 +5687,7 @@
       "freeTier": "100% Free & Open Source GNU AGPLv3",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5715,7 +5700,7 @@
       "freeTier": "100% Free & Open Source; Free hosted tier with 1,000 events/mo",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5728,7 +5713,7 @@
       "freeTier": "100% Free & Open Source MIT binary; Free trial on Meilisearch Cloud",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5741,7 +5726,7 @@
       "freeTier": "100% Free & Open Source GPLv3; Free sandbox environment",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5754,7 +5739,7 @@
       "freeTier": "1GB permanent free cluster with 0.5 vCPU on Qdrant Cloud; 100% Free Open Source",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5767,7 +5752,7 @@
       "freeTier": "Free trial credit of $5 for new projects with zero setup",
       "statusTags": [
         "Requires Credit Card to Verify",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5780,7 +5765,7 @@
       "freeTier": "4 OCPU, 24GB RAM Arm compute, 2 AMD micro VMs, 200GB storage",
       "statusTags": [
         "Requires Credit Card to Verify",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5793,7 +5778,7 @@
       "freeTier": "1,000,000 requests/month, 100 GiB outbound transfer",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5806,7 +5791,7 @@
       "freeTier": "Free Hobby Plan: 100GB bandwidth, automated CI/CD previews, serverless functions",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5819,7 +5804,7 @@
       "freeTier": "Free Starter Tier: 100GB bandwidth/mo, 300 build minutes/mo",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5832,7 +5817,7 @@
       "freeTier": "Unlimited sites, unlimited requests, 500 builds per month",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5845,7 +5830,7 @@
       "freeTier": "100% Free with 1GB repository size limit and 100GB bandwidth/mo",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5858,7 +5843,7 @@
       "freeTier": "100% Free with custom domain support and Let's Encrypt SSL",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5871,7 +5856,7 @@
       "freeTier": "Free public hosting with auto-sleep after inactivity",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5884,7 +5869,7 @@
       "freeTier": "Free tier PostgreSQL / MySQL single-node with 1GB RAM and 5GB storage",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5897,7 +5882,7 @@
       "freeTier": "Shared M0 cluster with 512MB storage and shared RAM permanently free",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5910,7 +5895,7 @@
       "freeTier": "Free 30MB database with high throughput and basic persistence",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5923,7 +5908,7 @@
       "freeTier": "Free tier with 10GB storage and 50M Request Units per month",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5936,7 +5921,7 @@
       "freeTier": "Free tier with 5GB row storage, 5GB columnar storage, and 50M RU/mo",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5949,7 +5934,7 @@
       "freeTier": "10GB permanent free storage and 1GB/day free download bandwidth",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5962,7 +5947,7 @@
       "freeTier": "75GB free Object Storage per month permanently",
       "statusTags": [
         "Requires Credit Card to Verify",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5975,7 +5960,7 @@
       "freeTier": "100% Free & Open Source Apache-2.0, self-hostable",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -5988,7 +5973,7 @@
       "freeTier": "100% Free & Open Source GNU GPLv3",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -6001,7 +5986,7 @@
       "freeTier": "100% Free & Open Source Apache-2.0",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -6014,7 +5999,7 @@
       "freeTier": "100% Free Open Source self-hosted; Free cloud tier with 25k requests/mo",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -6027,7 +6012,7 @@
       "freeTier": "Free Community Edition with unlimited users and basic MFA",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -6040,7 +6025,7 @@
       "freeTier": "100% Free & Open Source Apache-2.0",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -6053,7 +6038,7 @@
       "freeTier": "100% Free & Open Source Apache-2.0",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -6066,7 +6051,7 @@
       "freeTier": "100% Free & Open Source Community Edition",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -6079,7 +6064,7 @@
       "freeTier": "100% Free & Open Source MIT",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -6092,7 +6077,7 @@
       "freeTier": "100% Free & Open Source Apache-2.0",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -6105,7 +6090,7 @@
       "freeTier": "100% Free & Open Source Apache-2.0",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -6118,7 +6103,7 @@
       "freeTier": "100% Free & Open Source Apache-2.0",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -6131,7 +6116,7 @@
       "freeTier": "100% Free & Open Source",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -6144,7 +6129,7 @@
       "freeTier": "100% Free & Open Source GPL-3.0",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -6157,7 +6142,7 @@
       "freeTier": "100% Free & Open Source MPL-2.0",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -6170,7 +6155,7 @@
       "freeTier": "100% Free & Open Source EPL-2.0",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -6183,7 +6168,7 @@
       "freeTier": "100% Free Open Source Community Edition; Free cloud tier",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -6196,7 +6181,7 @@
       "freeTier": "300 emails/day permanently free with unlimited contacts",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -6209,7 +6194,7 @@
       "freeTier": "100 emails/day permanently free",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -6222,7 +6207,7 @@
       "freeTier": "5,000 free emails for 1 month, then low pay-as-you-grow",
       "statusTags": [
         "Requires Credit Card to Verify",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -6235,7 +6220,7 @@
       "freeTier": "100% Free & Open Source AGPLv3 for self-hosters",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -6248,7 +6233,7 @@
       "freeTier": "100% Free & Open Source AGPLv3 self-hosted",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -6261,7 +6246,7 @@
       "freeTier": "100% Free & Open Source Apache-2.0",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -6274,7 +6259,7 @@
       "freeTier": "100% Free & Open Source MIT",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -6287,7 +6272,7 @@
       "freeTier": "100% Free & Open Source BSL",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
@@ -6593,17 +6578,17 @@
       "section": "Developer Discounts & Startup Perks"
     },
     {
-      "name": "Mockoon Cloudless API Server",
-      "repo": "https://github.com/mockoon/mockoon",
-      "category": "Backend & Microservices",
-      "description": "Deploy a lightweight, zero-dependency mock REST/GraphQL API server based on Mockoon JSON environments with 1 click.",
-      "language": "TypeScript / Node.js",
+      "name": "AstroWind Starter",
+      "repo": "https://github.com/onwidget/astrowind",
+      "category": "Full-Stack Web Starter",
+      "description": "Production-ready, highly customizable Astro template styled with Tailwind CSS, SEO-optimized, and built for speed.",
+      "language": "Astro / TypeScript",
       "license": "MIT",
-      "platform": "Render",
-      "deployUrl": "https://render.com/deploy?repo=https://github.com/mockoon/mock-samples",
-      "freeTierCost": "$0/month (Render Free Web Service)",
+      "platform": "Vercel / Netlify",
+      "deployUrl": "https://vercel.com/new/clone?repository-url=https://github.com/onwidget/astrowind",
+      "freeTierCost": "$0/month (Vercel Free Tier)",
       "statusTags": [
-        "100% Offline-Friendly",
+        "Production-Ready",
         "Self-Hostable",
         "No Card Required"
       ],
@@ -6629,19 +6614,19 @@
       "section": "One-Click Deployment Boilerplates"
     },
     {
-      "name": "AutoHeal-QA Playwright Runner",
-      "repo": "https://github.com/RitualDev-Lab/autoheal-qa",
+      "name": "Full-Stack FastAPI Template",
+      "repo": "https://github.com/tiangolo/full-stack-fastapi-template",
       "category": "Backend & Microservices",
-      "description": "Deploy agentic self-healing E2E Playwright test automation with local LLM test fixing directly into GitHub Actions.",
-      "language": "TypeScript",
+      "description": "Robust full-stack starter featuring FastAPI, PostgreSQL, Docker Compose, Celery, and React frontend with JWT authentication.",
+      "language": "Python / TypeScript",
       "license": "MIT",
-      "platform": "GitHub Actions",
-      "deployUrl": "https://github.com/RitualDev-Lab/autoheal-qa/fork",
-      "freeTierCost": "$0/month (GitHub Actions 2,000 free min/mo)",
+      "platform": "Docker / Self-Hosted",
+      "deployUrl": "https://github.com/tiangolo/full-stack-fastapi-template/generate",
+      "freeTierCost": "$0/month (Self-Hostable / Free Cloud Tiers)",
       "statusTags": [
-        "100% Offline-Friendly",
+        "Production-Ready",
         "Self-Hostable",
-        "Active Uptime 100%"
+        "No Card Required"
       ],
       "type": "boilerplate",
       "section": "One-Click Deployment Boilerplates"
@@ -6665,18 +6650,18 @@
       "section": "One-Click Deployment Boilerplates"
     },
     {
-      "name": "Open-WebUI for Local AI",
-      "repo": "https://github.com/open-webui/open-webui",
-      "category": "AI & Full-Stack Starters",
-      "description": "Feature-rich, self-hosted web chat UI for Ollama and OpenAI-compatible local endpoints with RAG and pipeline support.",
-      "language": "Python / Svelte",
+      "name": "Go Clean Architecture API",
+      "repo": "https://github.com/bxcodec/go-clean-arch",
+      "category": "Backend & Microservices",
+      "description": "Clean Architecture template for Go RESTful services adhering to Uncle Bob's Clean Architecture principles.",
+      "language": "Go",
       "license": "MIT",
-      "platform": "Render",
-      "deployUrl": "https://render.com/deploy?repo=https://github.com/open-webui/open-webui",
-      "freeTierCost": "$0/month (Render Free Tier)",
+      "platform": "Docker / Self-Hosted",
+      "deployUrl": "https://github.com/bxcodec/go-clean-arch/generate",
+      "freeTierCost": "$0/month (Self-Hostable)",
       "statusTags": [
+        "Production-Ready",
         "Self-Hostable",
-        "100% Offline-Friendly",
         "No Card Required"
       ],
       "type": "boilerplate",
@@ -6694,40 +6679,41 @@
       "freeTierCost": "$0/month (Railway Free Starter Tier)",
       "statusTags": [
         "Self-Hostable",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "boilerplate",
       "section": "One-Click Deployment Boilerplates"
     },
     {
-      "name": "Hoppscotch API Development Hub",
-      "repo": "https://github.com/hoppscotch/hoppscotch",
-      "category": "Backend & Microservices",
-      "description": "Lightweight, fast, web-based API testing client supporting REST, WebSocket, GraphQL, and SSE testing.",
-      "language": "TypeScript / Vue",
+      "name": "WXT Extension Framework",
+      "repo": "https://github.com/wxt-dev/wxt",
+      "category": "Full-Stack Web Starter",
+      "description": "Next-gen framework for building cross-browser web extensions with Manifest V3, TypeScript, and multi-browser support.",
+      "language": "TypeScript",
       "license": "MIT",
-      "platform": "Render",
-      "deployUrl": "https://render.com/deploy?repo=https://github.com/hoppscotch/hoppscotch",
-      "freeTierCost": "$0/month (Render Web Service)",
+      "platform": "Cross-Browser",
+      "deployUrl": "https://github.com/wxt-dev/wxt/generate",
+      "freeTierCost": "$0/month (Open Source / Free)",
       "statusTags": [
-        "Self-Hostable",
-        "No Card Required",
-        "100% Offline-Friendly"
+        "Production-Ready",
+        "100% Offline-Friendly",
+        "No Card Required"
       ],
       "type": "boilerplate",
       "section": "One-Click Deployment Boilerplates"
     },
     {
-      "name": "Dify LLM Application Platform",
-      "repo": "https://github.com/langgenius/dify",
-      "category": "AI & Full-Stack Starters",
-      "description": "Visual orchestration platform for LLM workflows, agent coordination, RAG pipelines, and model deployment.",
-      "language": "Python / TypeScript",
-      "license": "Apache-2.0",
-      "platform": "Render",
-      "deployUrl": "https://render.com/deploy?repo=https://github.com/langgenius/dify",
-      "freeTierCost": "$0/month (Render Community Tier)",
+      "name": "Remix Indie Stack",
+      "repo": "https://github.com/remix-run/indie-stack",
+      "category": "Full-Stack Web Starter",
+      "description": "Production-ready Remix stack with SQLite database, Prisma ORM, user auth, Fly.io deployment, and end-to-end testing.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "platform": "Fly.io",
+      "deployUrl": "https://fly.io/launch?template=https://github.com/remix-run/indie-stack",
+      "freeTierCost": "$0/month (Fly.io Free Allowance)",
       "statusTags": [
+        "Production-Ready",
         "Self-Hostable",
         "No Card Required"
       ],
@@ -6746,7 +6732,7 @@
       "freeTierCost": "100% Free Open Source",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "boilerplate",
       "section": "One-Click Deployment Boilerplates"
@@ -6763,7 +6749,7 @@
       "freeTierCost": "100% Free Open Source",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "boilerplate",
       "section": "One-Click Deployment Boilerplates"
@@ -6780,7 +6766,7 @@
       "freeTierCost": "100% Free Open Source",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "boilerplate",
       "section": "One-Click Deployment Boilerplates"
@@ -6797,7 +6783,7 @@
       "freeTierCost": "100% Free Open Source",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "boilerplate",
       "section": "One-Click Deployment Boilerplates"
@@ -6814,7 +6800,7 @@
       "freeTierCost": "100% Free Open Source",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "boilerplate",
       "section": "One-Click Deployment Boilerplates"
@@ -6831,7 +6817,7 @@
       "freeTierCost": "100% Free Open Source",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "boilerplate",
       "section": "One-Click Deployment Boilerplates"
@@ -6848,7 +6834,7 @@
       "freeTierCost": "100% Free Open Source",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "boilerplate",
       "section": "One-Click Deployment Boilerplates"
@@ -6865,7 +6851,7 @@
       "freeTierCost": "100% Free Open Source",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "boilerplate",
       "section": "One-Click Deployment Boilerplates"
@@ -6882,7 +6868,7 @@
       "freeTierCost": "100% Free Open Source",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "boilerplate",
       "section": "One-Click Deployment Boilerplates"
@@ -6899,7 +6885,7 @@
       "freeTierCost": "100% Free Open Source",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "boilerplate",
       "section": "One-Click Deployment Boilerplates"
@@ -6916,7 +6902,7 @@
       "freeTierCost": "100% Free Open Source",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "boilerplate",
       "section": "One-Click Deployment Boilerplates"
@@ -6933,7 +6919,7 @@
       "freeTierCost": "100% Free Open Source",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "boilerplate",
       "section": "One-Click Deployment Boilerplates"
@@ -6950,7 +6936,7 @@
       "freeTierCost": "100% Free Open Source",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "boilerplate",
       "section": "One-Click Deployment Boilerplates"
@@ -6967,7 +6953,7 @@
       "freeTierCost": "100% Free Open Source",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "boilerplate",
       "section": "One-Click Deployment Boilerplates"
@@ -6984,7 +6970,7 @@
       "freeTierCost": "100% Free Open Source",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "boilerplate",
       "section": "One-Click Deployment Boilerplates"
@@ -7001,7 +6987,7 @@
       "freeTierCost": "100% Free Open Source",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "boilerplate",
       "section": "One-Click Deployment Boilerplates"
@@ -7018,7 +7004,7 @@
       "freeTierCost": "100% Free Open Source",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "boilerplate",
       "section": "One-Click Deployment Boilerplates"
@@ -7035,7 +7021,7 @@
       "freeTierCost": "100% Free Open Source",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "boilerplate",
       "section": "One-Click Deployment Boilerplates"
@@ -7052,7 +7038,7 @@
       "freeTierCost": "100% Free Open Source",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "boilerplate",
       "section": "One-Click Deployment Boilerplates"
@@ -7069,7 +7055,7 @@
       "freeTierCost": "100% Free Open Source",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "boilerplate",
       "section": "One-Click Deployment Boilerplates"
@@ -7086,7 +7072,7 @@
       "freeTierCost": "100% Free Open Source",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "boilerplate",
       "section": "One-Click Deployment Boilerplates"
@@ -7103,7 +7089,7 @@
       "freeTierCost": "100% Free Open Source",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "boilerplate",
       "section": "One-Click Deployment Boilerplates"
@@ -7120,7 +7106,7 @@
       "freeTierCost": "100% Free Open Source",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "boilerplate",
       "section": "One-Click Deployment Boilerplates"
@@ -7137,7 +7123,7 @@
       "freeTierCost": "100% Free Open Source",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "boilerplate",
       "section": "One-Click Deployment Boilerplates"
@@ -7154,7 +7140,7 @@
       "freeTierCost": "100% Free Open Source",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "boilerplate",
       "section": "One-Click Deployment Boilerplates"
@@ -7171,7 +7157,7 @@
       "freeTierCost": "100% Free Open Source",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "boilerplate",
       "section": "One-Click Deployment Boilerplates"
@@ -7188,7 +7174,7 @@
       "freeTierCost": "100% Free Open Source",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "boilerplate",
       "section": "One-Click Deployment Boilerplates"
@@ -7205,7 +7191,7 @@
       "freeTierCost": "100% Free Open Source",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "boilerplate",
       "section": "One-Click Deployment Boilerplates"
@@ -7222,7 +7208,7 @@
       "freeTierCost": "100% Free Open Source",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "boilerplate",
       "section": "One-Click Deployment Boilerplates"
@@ -7239,7 +7225,7 @@
       "freeTierCost": "100% Free Open Source",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "boilerplate",
       "section": "One-Click Deployment Boilerplates"
@@ -7256,7 +7242,7 @@
       "freeTierCost": "100% Free Open Source",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "boilerplate",
       "section": "One-Click Deployment Boilerplates"
@@ -7273,7 +7259,7 @@
       "freeTierCost": "100% Free Open Source",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "boilerplate",
       "section": "One-Click Deployment Boilerplates"
@@ -7290,10 +7276,109 @@
       "freeTierCost": "100% Free Open Source",
       "statusTags": [
         "No Card Required",
-        "Active Uptime 100%"
+        "CI Verified"
       ],
       "type": "boilerplate",
       "section": "One-Click Deployment Boilerplates"
+    },
+    {
+      "name": "Zed",
+      "repo": "https://github.com/zed-industries/zed",
+      "category": "Developer Utilities & CLI",
+      "description": "High-performance, multiplayer code editor written in Rust with built-in language intelligence and AI.",
+      "seeking": "Language extensions, themes, cross-platform UI polish, keybindings, and starter bugs",
+      "goodFirstIssues": "https://github.com/zed-industries/zed/labels/good%20first%20issue",
+      "language": "Rust",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "Biome",
+      "repo": "https://github.com/biomejs/biome",
+      "category": "Developer Utilities & CLI",
+      "description": "Fast formatter and linter for JavaScript, TypeScript, JSX, and JSON that aims to replace Prettier and ESLint.",
+      "seeking": "New linter rules, parser optimizations, CSS support, documentation, and starter issues",
+      "goodFirstIssues": "https://github.com/biomejs/biome/labels/good%20first%20issue",
+      "language": "Rust",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "Nushell",
+      "repo": "https://github.com/nushell/nushell",
+      "category": "Developer Utilities & CLI",
+      "description": "A modern shell powered by a structured data pipeline that treats output as typed tables rather than text.",
+      "seeking": "Shell builtins, plugin architecture, cross-platform completions, and bug fixes",
+      "goodFirstIssues": "https://github.com/nushell/nushell/labels/good%20first%20issue",
+      "language": "Rust",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "Infisical",
+      "repo": "https://github.com/Infisical/infisical",
+      "category": "Security & Identity",
+      "description": "Open-source secret management platform to sync configuration and secrets across infrastructure, CI/CD, and teams.",
+      "seeking": "CLI integrations, Kubernetes operator features, SDK clients, and documentation",
+      "goodFirstIssues": "https://github.com/Infisical/infisical/labels/good%20first%20issue",
+      "language": "TypeScript / Go",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "ast-grep",
+      "repo": "https://github.com/ast-grep/ast-grep",
+      "category": "Developer Utilities & CLI",
+      "description": "Fast and polyglot code search, linting, and rewrite tool using abstract syntax tree pattern matching.",
+      "seeking": "Language parsers, rule templates, editor plugins, and starter issues",
+      "goodFirstIssues": "https://github.com/ast-grep/ast-grep/labels/good%20first%20issue",
+      "language": "Rust",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "Cerbos",
+      "repo": "https://github.com/cerbos/cerbos",
+      "category": "Security & Identity",
+      "description": "Scalable, open-source authorization policy engine for cloud applications and microservices.",
+      "seeking": "SDK adapters, policy testing tools, docs, and starter tasks",
+      "goodFirstIssues": "https://github.com/cerbos/cerbos/labels/good%20first%20issue",
+      "language": "Go",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "Infracost",
+      "repo": "https://github.com/infracost/infracost",
+      "category": "DevOps & Cloud Tools",
+      "description": "Cloud cost estimates for Terraform in pull requests before deployment.",
+      "seeking": "Cloud resource mapping, pricing estimators, CLI features, and documentation",
+      "goodFirstIssues": "https://github.com/infracost/infracost/labels/good%20first%20issue",
+      "language": "Go",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "WezTerm",
+      "repo": "https://github.com/wez/wezterm",
+      "category": "Developer Utilities & CLI",
+      "description": "GPU-accelerated cross-platform terminal emulator and multiplexer implemented in Rust.",
+      "seeking": "Configuration presets, font rendering, platform fixes, and starter issues",
+      "goodFirstIssues": "https://github.com/wez/wezterm/labels/good%20first%20issue",
+      "language": "Rust / Lua",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "Casbin",
+      "repo": "https://github.com/casbin/casbin",
+      "category": "Security & Identity",
+      "description": "An authorization library that supports access control models like ACL, RBAC, ABAC in Go and other languages.",
+      "seeking": "Middleware adapters, documentation, database adapters, and starter bugs",
+      "goodFirstIssues": "https://github.com/casbin/casbin/labels/good%20first%20issue",
+      "language": "Go",
+      "type": "contributors",
+      "section": "Contributors Wanted"
     },
     {
       "name": "Open Source Ideas",

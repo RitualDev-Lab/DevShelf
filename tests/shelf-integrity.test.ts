@@ -101,7 +101,7 @@ describe("DevShelf Catalog Data Integrity", async () => {
     }
   });
 
-  test("no internal duplicate names or URLs exist within individual shelf files", () => {
+  test("no duplicate names or URLs exist within individual shelf files", () => {
     for (const [file, items] of shelfData) {
       const names = new Set<string>();
       const urls = new Set<string>();
@@ -128,24 +128,57 @@ describe("DevShelf Catalog Data Integrity", async () => {
     }
   });
 
-  test("total catalog scale satisfies 500+ milestone", () => {
+  test("no duplicate canonical URLs exist across any of the 8 shelf files (cross-shelf uniqueness)", () => {
+    const globalUrls = new Map<string, { file: string; name: string }>();
+
+    for (const [file, items] of shelfData) {
+      for (const item of items) {
+        const rawUrl = (item.url || item.repo || "").toLowerCase().replace(/\/$/, "");
+        if (rawUrl) {
+          const prior = globalUrls.get(rawUrl);
+          assert.ok(
+            !prior,
+            `Duplicate URL collision across shelf files: "${rawUrl}" in both [${prior?.file}] (${prior?.name}) and [${file}] (${item.name})`,
+          );
+          globalUrls.set(rawUrl, { file, name: item.name });
+        }
+      }
+    }
+    assert.strictEqual(globalUrls.size, 511, `Expected 511 unique URLs, got ${globalUrls.size}`);
+  });
+
+  test("total catalog scale satisfies 511 milestone", () => {
     let total = 0;
     for (const [_, items] of shelfData) {
       total += items.length;
     }
-    assert.ok(total >= 500, `Expected total catalog count to be at least 500 items, got ${total}`);
+    assert.strictEqual(
+      total,
+      511,
+      `Expected total catalog count to be exactly 511 items, got ${total}`,
+    );
   });
 });
 
 describe("DevShelf Generated Artifacts & Docs Sync", async () => {
-  test("site/data.json exists, is valid, and matches catalog", async () => {
+  test("site/data.json exists, is valid, and matches catalog exactly (511)", async () => {
     const dataJsonPath = path.join(ROOT, "site", "data.json");
     const raw = await fs.readFile(dataJsonPath, "utf8");
     const data = JSON.parse(raw);
 
-    assert.ok(data.totalCount >= 500, `Expected totalCount >= 500, got ${data.totalCount}`);
+    assert.strictEqual(data.totalCount, 511, `Expected totalCount 511, got ${data.totalCount}`);
     assert.ok(Array.isArray(data.resources), "Expected data.resources to be an array");
-    assert.strictEqual(data.resources.length, data.totalCount);
+    assert.strictEqual(data.resources.length, 511);
+
+    const countsSum = Object.values(data.counts).reduce(
+      (acc: number, val: any) => acc + (typeof val === "number" ? val : 0),
+      0,
+    );
+    assert.strictEqual(
+      countsSum,
+      511,
+      `Expected data.counts to sum to exactly 511, got ${countsSum}`,
+    );
   });
 
   test("all 8 modular docs/*.md category guides exist and are populated", async () => {

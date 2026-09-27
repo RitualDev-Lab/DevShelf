@@ -52,69 +52,34 @@ async function buildSiteData() {
     section: "One-Click Deployment Boilerplates",
   }));
 
-  // Merge contributor metadata into matching tools so tools aren't duplicated in "All Items",
-  // but remain filterable under "contributors" / Up for Grabs!
-  const contributorMap = new Map<string, any>();
-  for (const c of contributors) {
-    contributorMap.set(c.name.toLowerCase(), c);
-  }
-
-  const tagContributor = (item: any) => {
-    const c = contributorMap.get(item.name.toLowerCase());
-    if (c) {
-      return {
-        ...item,
-        seeking: c.seeking || item.seeking,
-        goodFirstIssues: c.goodFirstIssues || item.goodFirstIssues,
-        contributorsWanted: true,
-      };
-    }
-    return item;
-  };
-
-  const taggedAi = aiTools.map(tagContributor);
-  const taggedCli = cliTools.map(tagContributor);
-  const taggedTesting = testingQa.map(tagContributor);
-
-  // If any item in contributors-wanted is NOT in ai, cli, or testing, include it as well
-  const knownNames = new Set([
-    ...taggedAi.map((t: any) => t.name.toLowerCase()),
-    ...taggedCli.map((t: any) => t.name.toLowerCase()),
-    ...taggedTesting.map((t: any) => t.name.toLowerCase()),
-  ]);
-
-  const standaloneContributors = contributors.filter(
-    (c: any) => !knownNames.has(c.name.toLowerCase()),
-  );
-
-  // Primary curated list: Open source & developer tools first, then APIs, cloud, perks, boilerplates
+  // Primary curated list: Open source & developer tools first, then APIs, cloud, perks, boilerplates, contributors
   const allResources = [
-    ...taggedAi,
-    ...taggedCli,
-    ...taggedTesting,
+    ...aiTools,
+    ...cliTools,
+    ...testingQa,
     ...apis,
     ...freeCloud,
     ...perks,
     ...boilerplates,
-    ...standaloneContributors,
+    ...contributors,
   ];
 
   const reposCount = allResources.filter((r) => Boolean(r.repo)).length;
-  const contributorsWantedCount = allResources.filter(
-    (r) => r.contributorsWanted || r.type === "contributors",
-  ).length;
 
   const payload = {
     updatedAt: new Date().toISOString(),
     totalCount: allResources.length,
-    counts: {
+    reposCount,
+    facets: {
       repos: reposCount,
-      apis: apis.length,
+    },
+    counts: {
       aiTools: aiTools.length,
       cliTools: cliTools.length,
       testingQa: testingQa.length,
+      apis: apis.length,
       freeCloud: freeCloud.length,
-      contributors: contributorsWantedCount,
+      contributors: contributors.length,
       perks: perks.length,
       boilerplates: boilerplates.length,
     },

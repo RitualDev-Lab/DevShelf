@@ -557,8 +557,19 @@ async function main() {
   }
 
   if (command === "stats") {
+    const reposCount =
+      data.reposCount ||
+      data.facets?.repos ||
+      data.counts?.repos ||
+      resources.filter((r) => Boolean(r.repo)).length;
+    const statsObj = {
+      total: data.totalCount || resources.length,
+      repos: reposCount,
+      ...(data.counts || {}),
+    };
+
     if (isJson) {
-      console.log(JSON.stringify(data.counts || {}, null, 2));
+      console.log(JSON.stringify(statsObj, null, 2));
       return;
     }
 
@@ -567,8 +578,8 @@ async function main() {
     console.log(
       `  Total Resources:      ${c.purple}${c.bold}${data.totalCount || resources.length}${c.reset}`,
     );
+    console.log(`  GitHub Repositories:  ${c.cyan}${reposCount}${c.reset}`);
     if (data.counts) {
-      console.log(`  GitHub Repositories:  ${c.cyan}${data.counts.repos || "300+"}${c.reset}`);
       console.log(`  Public Free APIs:     ${c.green}${data.counts.apis || "90+"}${c.reset}`);
       console.log(`  AI & Local LLMs:      ${c.purple}${data.counts.aiTools || "80+"}${c.reset}`);
       console.log(`  CLI Utilities:        ${c.cyan}${data.counts.cliTools || "100+"}${c.reset}`);

@@ -2251,7 +2251,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://devshelf.ritualdev.in/tools/mockoon-cloudless-api-server.html</loc>
+    <loc>https://devshelf.ritualdev.in/tools/astrowind-starter.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -2261,7 +2261,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://devshelf.ritualdev.in/tools/autoheal-qa-playwright-runner.html</loc>
+    <loc>https://devshelf.ritualdev.in/tools/full-stack-fastapi-template.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -2271,7 +2271,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://devshelf.ritualdev.in/tools/open-webui-for-local-ai.html</loc>
+    <loc>https://devshelf.ritualdev.in/tools/go-clean-architecture-api.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -2281,12 +2281,12 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://devshelf.ritualdev.in/tools/hoppscotch-api-development-hub.html</loc>
+    <loc>https://devshelf.ritualdev.in/tools/wxt-extension-framework.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://devshelf.ritualdev.in/tools/dify-llm-application-platform.html</loc>
+    <loc>https://devshelf.ritualdev.in/tools/remix-indie-stack.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -2452,6 +2452,51 @@
   </url>
   <url>
     <loc>https://devshelf.ritualdev.in/tools/astro-blog-starter.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devshelf.ritualdev.in/tools/zed.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devshelf.ritualdev.in/tools/biome.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devshelf.ritualdev.in/tools/nushell.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devshelf.ritualdev.in/tools/infisical.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devshelf.ritualdev.in/tools/ast-grep.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devshelf.ritualdev.in/tools/cerbos.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devshelf.ritualdev.in/tools/infracost.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devshelf.ritualdev.in/tools/wezterm.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devshelf.ritualdev.in/tools/casbin.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

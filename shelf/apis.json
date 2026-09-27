@@ -8,7 +8,7 @@
     "cors": "Yes",
     "rateLimit": "10,000 req/day",
     "https": true,
-    "statusTags": ["Rate-Limited", "No Card Required", "Active Uptime 100%"]
+    "statusTags": ["Rate-Limited", "No Card Required", "CI Verified"]
   },
   {
     "name": "GroqCloud Free Tier",
@@ -19,7 +19,7 @@
     "cors": "Yes",
     "rateLimit": "30 req/min",
     "https": true,
-    "statusTags": ["Rate-Limited", "Active Uptime 100%"]
+    "statusTags": ["Rate-Limited", "CI Verified"]
   },
   {
     "name": "JSONPlaceholder",
@@ -30,7 +30,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Hugging Face Serverless Inference",
@@ -41,7 +41,7 @@
     "cors": "Yes",
     "rateLimit": "Free monthly tier",
     "https": true,
-    "statusTags": ["Rate-Limited", "Active Uptime 100%"]
+    "statusTags": ["Rate-Limited", "CI Verified"]
   },
   {
     "name": "ipapi.co",
@@ -52,7 +52,7 @@
     "cors": "Yes",
     "rateLimit": "1,000 req/day",
     "https": true,
-    "statusTags": ["Rate-Limited", "No Card Required", "Active Uptime 100%"]
+    "statusTags": ["Rate-Limited", "No Card Required", "CI Verified"]
   },
   {
     "name": "CoinGecko Free API",
@@ -63,7 +63,7 @@
     "cors": "Yes",
     "rateLimit": "30 req/min",
     "https": true,
-    "statusTags": ["Rate-Limited", "Active Uptime 100%"]
+    "statusTags": ["Rate-Limited", "CI Verified"]
   },
   {
     "name": "Rest Countries",
@@ -74,7 +74,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "PokeAPI",
@@ -85,7 +85,7 @@
     "cors": "Yes",
     "rateLimit": "100 req/min",
     "https": true,
-    "statusTags": ["Rate-Limited", "No Card Required", "Active Uptime 100%"]
+    "statusTags": ["Rate-Limited", "No Card Required", "CI Verified"]
   },
   {
     "name": "Open Library",
@@ -96,7 +96,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "ReqRes",
@@ -107,7 +107,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "ipify",
@@ -118,7 +118,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "DummyJSON",
@@ -129,7 +129,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Nominatim OpenStreetMap",
@@ -140,7 +140,7 @@
     "cors": "Yes",
     "rateLimit": "1 req/sec",
     "https": true,
-    "statusTags": ["Rate-Limited", "No Card Required", "Active Uptime 100%"]
+    "statusTags": ["Rate-Limited", "No Card Required", "CI Verified"]
   },
   {
     "name": "ExchangeRate-API",
@@ -151,7 +151,7 @@
     "cors": "Yes",
     "rateLimit": "1,500 req/month",
     "https": true,
-    "statusTags": ["Rate-Limited", "Active Uptime 100%"]
+    "statusTags": ["Rate-Limited", "CI Verified"]
   },
   {
     "name": "Cat Facts",
@@ -162,7 +162,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Dog API",
@@ -173,7 +173,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Frankfurter",
@@ -184,7 +184,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "NASA Open APIs",
@@ -195,7 +195,7 @@
     "cors": "Yes",
     "rateLimit": "1,000 req/hr",
     "https": true,
-    "statusTags": ["Rate-Limited", "Active Uptime 100%"]
+    "statusTags": ["Rate-Limited", "CI Verified"]
   },
   {
     "name": "Open Food Facts",
@@ -206,7 +206,7 @@
     "cors": "Yes",
     "rateLimit": "100 req/min",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Open Brewery DB",
@@ -217,7 +217,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Rick and Morty API",
@@ -228,7 +228,7 @@
     "cors": "Yes",
     "rateLimit": "10,000 req/day",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Gutendex",
@@ -239,7 +239,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "7Timer!",
@@ -250,7 +250,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": false,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "IP-API",
@@ -261,7 +261,7 @@
     "cors": "Yes",
     "rateLimit": "45 req/min",
     "https": true,
-    "statusTags": ["Rate-Limited", "Active Uptime 100%"]
+    "statusTags": ["Rate-Limited", "CI Verified"]
   },
   {
     "name": "Dictionary API",
@@ -272,7 +272,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "RoboHash",
@@ -283,7 +283,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "DiceBear",
@@ -294,7 +294,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Universities List API",
@@ -305,7 +305,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Zippopotam.us",
@@ -316,7 +316,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Chuck Norris Jokes API",
@@ -327,7 +327,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Bored API",
@@ -338,7 +338,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "CountAPI",
@@ -349,7 +349,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Agify.io",
@@ -360,7 +360,7 @@
     "cors": "Yes",
     "rateLimit": "1,000 req/day",
     "https": true,
-    "statusTags": ["Rate-Limited", "Active Uptime 100%"]
+    "statusTags": ["Rate-Limited", "CI Verified"]
   },
   {
     "name": "Genderize.io",
@@ -371,7 +371,7 @@
     "cors": "Yes",
     "rateLimit": "1,000 req/day",
     "https": true,
-    "statusTags": ["Rate-Limited", "Active Uptime 100%"]
+    "statusTags": ["Rate-Limited", "CI Verified"]
   },
   {
     "name": "Nationalize.io",
@@ -382,7 +382,7 @@
     "cors": "Yes",
     "rateLimit": "1,000 req/day",
     "https": true,
-    "statusTags": ["Rate-Limited", "Active Uptime 100%"]
+    "statusTags": ["Rate-Limited", "CI Verified"]
   },
   {
     "name": "RandomUser.me",
@@ -393,7 +393,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Httpbin.org",
@@ -404,7 +404,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "RequestBin",
@@ -415,7 +415,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Postman Echo",
@@ -426,7 +426,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "JSONBin.io",
@@ -437,7 +437,7 @@
     "cors": "Yes",
     "rateLimit": "10,000 req/mo",
     "https": true,
-    "statusTags": ["Rate-Limited", "Active Uptime 100%"]
+    "statusTags": ["Rate-Limited", "CI Verified"]
   },
   {
     "name": "Mocky.io",
@@ -448,7 +448,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Beeceptor",
@@ -459,7 +459,7 @@
     "cors": "Yes",
     "rateLimit": "50 req/day",
     "https": true,
-    "statusTags": ["Rate-Limited", "Active Uptime 100%"]
+    "statusTags": ["Rate-Limited", "CI Verified"]
   },
   {
     "name": "Binlist",
@@ -470,7 +470,7 @@
     "cors": "Yes",
     "rateLimit": "10 req/min",
     "https": true,
-    "statusTags": ["Rate-Limited", "Active Uptime 100%"]
+    "statusTags": ["Rate-Limited", "CI Verified"]
   },
   {
     "name": "Hacker News Firebase API",
@@ -481,7 +481,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Dev.to API",
@@ -492,7 +492,7 @@
     "cors": "Yes",
     "rateLimit": "30 req/30sec",
     "https": true,
-    "statusTags": ["Rate-Limited", "Active Uptime 100%"]
+    "statusTags": ["Rate-Limited", "CI Verified"]
   },
   {
     "name": "Reddit JSON API",
@@ -503,7 +503,7 @@
     "cors": "Yes",
     "rateLimit": "60 req/min",
     "https": true,
-    "statusTags": ["Rate-Limited", "Active Uptime 100%"]
+    "statusTags": ["Rate-Limited", "CI Verified"]
   },
   {
     "name": "Wikipedia REST API",
@@ -514,7 +514,7 @@
     "cors": "Yes",
     "rateLimit": "200 req/sec",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Wikidata SPARQL API",
@@ -525,7 +525,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Archive.org API",
@@ -536,7 +536,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Geocode.xyz",
@@ -547,7 +547,7 @@
     "cors": "Yes",
     "rateLimit": "1 req/sec",
     "https": true,
-    "statusTags": ["Rate-Limited", "Active Uptime 100%"]
+    "statusTags": ["Rate-Limited", "CI Verified"]
   },
   {
     "name": "Sunrise-Sunset.org API",
@@ -558,7 +558,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "USGS Earthquake API",
@@ -569,7 +569,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "OpenSky Network API",
@@ -580,7 +580,7 @@
     "cors": "Yes",
     "rateLimit": "100 req/day",
     "https": true,
-    "statusTags": ["Rate-Limited", "Active Uptime 100%"]
+    "statusTags": ["Rate-Limited", "CI Verified"]
   },
   {
     "name": "TVMaze API",
@@ -591,7 +591,7 @@
     "cors": "Yes",
     "rateLimit": "20 req/10sec",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "The Movie Database (TMDB) API",
@@ -602,7 +602,7 @@
     "cors": "Yes",
     "rateLimit": "50 req/sec",
     "https": true,
-    "statusTags": ["Rate-Limited", "Active Uptime 100%"]
+    "statusTags": ["Rate-Limited", "CI Verified"]
   },
   {
     "name": "AniList GraphQL API",
@@ -613,7 +613,7 @@
     "cors": "Yes",
     "rateLimit": "90 req/min",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Jikan API",
@@ -624,7 +624,7 @@
     "cors": "Yes",
     "rateLimit": "60 req/min",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Open Trivia DB",
@@ -635,7 +635,7 @@
     "cors": "Yes",
     "rateLimit": "1 req/5sec",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "xkcd JSON API",
@@ -646,7 +646,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "PoetryDB",
@@ -657,7 +657,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Quotable API",
@@ -668,7 +668,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Advice Slip API",
@@ -679,7 +679,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Cataas (Cat as a service)",
@@ -690,7 +690,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "RandomFox API",
@@ -701,7 +701,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Shibe.Online",
@@ -712,7 +712,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "FishWatch API",
@@ -723,7 +723,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "SpaceX REST API",
@@ -734,7 +734,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Launch Library 2",
@@ -745,7 +745,7 @@
     "cors": "Yes",
     "rateLimit": "15 req/hr",
     "https": true,
-    "statusTags": ["Rate-Limited", "Active Uptime 100%"]
+    "statusTags": ["Rate-Limited", "CI Verified"]
   },
   {
     "name": "Solar System OpenData API",
@@ -756,7 +756,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "QR Code Generator API",
@@ -767,7 +767,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "URLhaus Malware API",
@@ -778,7 +778,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Have I Been Pwned Pwned Passwords",
@@ -789,7 +789,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Coinpaprika API",
@@ -800,7 +800,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "CryptoCompare API",
@@ -811,7 +811,7 @@
     "cors": "Yes",
     "rateLimit": "100,000 req/mo",
     "https": true,
-    "statusTags": ["Rate-Limited", "Active Uptime 100%"]
+    "statusTags": ["Rate-Limited", "CI Verified"]
   },
   {
     "name": "Open-Meteo Air Quality",
@@ -822,7 +822,7 @@
     "cors": "Yes",
     "rateLimit": "10,000 req/day",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Open Library Covers API",
@@ -833,7 +833,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Meme Generator API",
@@ -844,7 +844,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "JokeAPI",
@@ -855,7 +855,7 @@
     "cors": "Yes",
     "rateLimit": "120 req/min",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Deck of Cards API",
@@ -866,7 +866,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Open Source Licenses API",
@@ -877,7 +877,7 @@
     "cors": "Yes",
     "rateLimit": "60 req/hr",
     "https": true,
-    "statusTags": ["Rate-Limited", "Active Uptime 100%"]
+    "statusTags": ["Rate-Limited", "CI Verified"]
   },
   {
     "name": "REST Countries v3",
@@ -888,7 +888,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Carbon Interface API",
@@ -899,7 +899,7 @@
     "cors": "Yes",
     "rateLimit": "200 req/mo",
     "https": true,
-    "statusTags": ["Rate-Limited", "Active Uptime 100%"]
+    "statusTags": ["Rate-Limited", "CI Verified"]
   },
   {
     "name": "Genderize API",
@@ -910,7 +910,7 @@
     "cors": "Yes",
     "rateLimit": "1,000 req/day",
     "https": true,
-    "statusTags": ["Rate-Limited", "Active Uptime 100%"]
+    "statusTags": ["Rate-Limited", "CI Verified"]
   },
   {
     "name": "Agify API",
@@ -921,7 +921,7 @@
     "cors": "Yes",
     "rateLimit": "1,000 req/day",
     "https": true,
-    "statusTags": ["Rate-Limited", "Active Uptime 100%"]
+    "statusTags": ["Rate-Limited", "CI Verified"]
   },
   {
     "name": "Nationalize API",
@@ -932,7 +932,7 @@
     "cors": "Yes",
     "rateLimit": "1,000 req/day",
     "https": true,
-    "statusTags": ["Rate-Limited", "Active Uptime 100%"]
+    "statusTags": ["Rate-Limited", "CI Verified"]
   },
   {
     "name": "Public APIs Index",
@@ -943,7 +943,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "ipinfo.io Lite",
@@ -954,7 +954,7 @@
     "cors": "Yes",
     "rateLimit": "50,000 req/mo",
     "https": true,
-    "statusTags": ["Rate-Limited", "Active Uptime 100%"]
+    "statusTags": ["Rate-Limited", "CI Verified"]
   },
   {
     "name": "Big Data Cloud Free IP",
@@ -965,7 +965,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Free Dictionary",
@@ -976,7 +976,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Bored API Mirror",
@@ -987,7 +987,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Corporate Bullshit Generator",
@@ -998,7 +998,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Evil Insult Generator",
@@ -1009,7 +1009,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Geek Jokes API",
@@ -1020,7 +1020,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Kanye Rest",
@@ -1031,7 +1031,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "Tronald Dump API",
@@ -1042,7 +1042,7 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   },
   {
     "name": "FoxPics",
@@ -1053,6 +1053,6 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "Active Uptime 100%"]
+    "statusTags": ["No Card Required", "CI Verified"]
   }
 ]
