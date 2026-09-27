@@ -6,7 +6,7 @@
   "description": "The open-source community directory for discovering developer tools, free APIs, AI agents, and open-source projects.",
   "packageManager": "pnpm@9.15.4",
   "scripts": {
-    "build": "npx tsx scripts/build-site.ts && npx tsx scripts/build-readme.ts",
+    "build": "npx tsx scripts/build-site.ts && npx tsx scripts/build-readme.ts && npx tsx scripts/generate-seo.ts",
     "test": "npx tsx --test tests/**/*.test.ts",
     "validate": "npx tsx scripts/validate-shelf.ts",
     "validate:pr": "npx tsx scripts/validate-pr.ts",
@@ -15,6 +15,7 @@
     "check:links": "npx tsx scripts/check-links.ts",
     "benchmark": "npx tsx scripts/benchmark-performance.ts",
     "sunset": "npx tsx scripts/sunset-resources.ts",
+    "issues:rot": "npx tsx scripts/generate-rot-issues.ts",
     "wiki:sync": "node scripts/sync-wiki.cjs",
     "format": "biome format --write .",
     "format:check": "biome format .",

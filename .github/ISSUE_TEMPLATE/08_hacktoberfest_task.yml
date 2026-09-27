@@ -1,0 +1,52 @@
+name: 🎃 Hacktoberfest Task / Opportunity
+description: Suggest or propose a qualifying Hacktoberfest task for open source contributors
+title: "[Hacktoberfest]: <Bite-sized task summary>"
+labels: ["hacktoberfest", "good first issue", "help wanted"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 🎃 Hacktoberfest 2026 Opportunity
+        Thank you for opening up a Hacktoberfest task!
+        Tasks should be clear, self-contained, and aligned with our [Hacktoberfest Guide](https://github.com/RitualDev-Lab/DevShelf/blob/main/HACKTOBERFEST.md).
+  - type: input
+    id: task_title
+    attributes:
+      label: Task Summary
+      placeholder: e.g., Add 3 high-quality free Observability APIs or fix broken documentation links
+    validations:
+      required: true
+  - type: dropdown
+    id: track
+    attributes:
+      label: Contribution Track
+      options:
+        - "🗃️ Shelf Curation (Add vetted open-source tools or free APIs to shelf/*.json)"
+        - "🔗 Healing the Shelf (Fix broken links or update stale endpoints)"
+        - "🎨 Web UI & UX (Improve site/ styling, accessibility, or mobile responsiveness)"
+        - "⚙️ Tooling & Automation (Enhance scripts, testing, or schema validation)"
+    validations:
+      required: true
+  - type: textarea
+    id: task_description
+    attributes:
+      label: Description & Acceptance Criteria
+      placeholder: Detail what should be done and how a contributor can verify completion.
+    validations:
+      required: true
+  - type: input
+    id: relevant_files
+    attributes:
+      label: Relevant Files or Directories
+      placeholder: e.g., shelf/apis.json, site/index.html, scripts/validate-links.js
+    validations:
+      required: false
+  - type: checkboxes
+    id: standards
+    attributes:
+      label: Quality Standards
+      options:
+        - label: This task aligns with Hacktoberfest quality principles (no spam, no trivial churn).
+          required: true
+        - label: Maintainers will review this PR within 24-48 hours.
+          required: true

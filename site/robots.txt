@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://devshelf.ritualdev.in/sitemap.xml

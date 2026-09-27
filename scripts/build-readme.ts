@@ -315,6 +315,7 @@ async function build() {
 [![Endpoint Health](https://img.shields.io/badge/🛡️_Health-CI_Health_Audited-brightgreen?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf/actions)
 [![Open Source](https://img.shields.io/badge/🔓_License-MIT_FOSS-blue?style=for-the-badge)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/🤝_PRs-Welcome_%26_Amplified-brightgreen?style=for-the-badge)](#-how-to-submit-your-project-or-api)
+[![Hacktoberfest](https://img.shields.io/badge/🎃_Hacktoberfest-2026_Ready-ff7800?style=for-the-badge)](HACKTOBERFEST.md)
 
 <br>
 
@@ -335,6 +336,7 @@ async function build() {
   <a href="https://devshelf.ritualdev.in"><b>🌐 Interactive Web App</b></a> •
   <a href="#-browse-catalog-by-category"><b>📂 Category Guides</b></a> •
   <a href="#-featured-spotlight--tools-of-the-week"><b>🔥 Spotlight</b></a> •
+  <a href="HACKTOBERFEST.md"><b>🎃 Hacktoberfest</b></a> •
   <a href="#-social-amplification-guarantee"><b>🚀 Social Guarantee</b></a> •
   <a href="#-team--contributors"><b>👥 Team</b></a> •
   <a href="#-how-to-submit-your-project-or-api"><b>➕ Submit Yours</b></a>
@@ -526,6 +528,7 @@ DevShelf is powered by the open-source community! We provide tailored issue temp
 
 | Action / Goal | Issue Template | Description |
 | :--- | :--- | :--- |
+| **🎃 Hacktoberfest 2026** | [**View Guide →**](HACKTOBERFEST.md) • [**Starter Task →**](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=08_hacktoberfest_task.yml) | Find qualifying starter tasks, curation guidelines, and earn Hacktoberfest recognition |
 | **🚀 Submit Open Source Tool** | [**Open Project Form →**](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=01_submit_tool.yml) | Submit your developer tool, CLI, or library for automated addition & social shoutout |
 | **🌐 Submit Free Public API** | [**Open API Form →**](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=02_submit_api.yml) | Add a free, no-key, or generous rate-limit public API |
 | **💡 Propose a Feature** | [**Open Feature Request →**](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=03_feature_request.yml) | Suggest new UI features, dark mode, filtering capabilities, or web app improvements |
