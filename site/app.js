@@ -7,6 +7,8 @@ let matchmakerData = null;
 let activeMatchLang = "all";
 const activeMatrixTags = new Set();
 let uptimeData = null;
+const myStack = new Set();
+let activeStackTab = "env";
 const drawerState = {
   currentItem: null,
   activeTab: "curl",
@@ -77,6 +79,7 @@ function applyData(data) {
   allResources = data.resources || [];
   updateStatsAndPills(data);
   updateMatrixCounts();
+  loadStackFromStorageAndUrl();
   renderSpotlight();
   render();
 }
@@ -229,9 +232,14 @@ function renderSpotlight() {
         </div>
 
         <div class="pt-3 border-t border-slate-800 flex items-center justify-between gap-2 flex-wrap">
-          <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-slate-800 text-slate-200 border border-slate-700">
-            ${escapeHtml(item.language || item.license || "100% Free")}
-          </span>
+          <div class="flex items-center space-x-2">
+            <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-slate-800 text-slate-200 border border-slate-700">
+              ${escapeHtml(item.language || item.license || "100% Free")}
+            </span>
+            <button data-stack-name="${escapeHtml(item.name)}" class="stack-toggle-btn inline-flex items-center space-x-1 px-2 py-1 rounded-md text-[11px] font-semibold ${isItemInStack(item.name) ? "bg-cyan-500 text-slate-950 font-bold border-cyan-400" : "bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border-slate-700"} transition border shadow-sm" title="Add to My Stack">
+              <span>${isItemInStack(item.name) ? "✓ In Stack" : "🔀 +Stack"}</span>
+            </button>
+          </div>
           <div class="flex items-center space-x-2">
             ${
               isRepo
@@ -264,6 +272,7 @@ function setupListeners() {
   closeMatchmakerModal();
   closeWizardModal();
   closeSnippetDrawer();
+  closeStackModal();
 
   const searchInput = document.getElementById("search-input");
   const clearBtn = document.getElementById("clear-search-btn");
@@ -426,6 +435,85 @@ function setupListeners() {
       if (out?.textContent) {
         copyToClipboard(out.textContent, "Console output copied to clipboard!");
       }
+      return;
+    }
+
+    // 9g. Stack Toggle Button
+    const stackToggleBtn = e.target.closest(".stack-toggle-btn");
+    if (stackToggleBtn) {
+      e.preventDefault();
+      const sName = stackToggleBtn.dataset.stackName;
+      if (sName) toggleStackItem(sName);
+      return;
+    }
+
+    // 9h. Remove from Stack tag button
+    const removeStackBtn = e.target.closest("[data-remove-stack]");
+    if (removeStackBtn) {
+      e.preventDefault();
+      const sName = removeStackBtn.dataset.removeStack;
+      if (sName) toggleStackItem(sName);
+      return;
+    }
+
+    // 9i. Nav Stack / Open Stack Modal
+    if (e.target.closest("#nav-stack-btn")) {
+      e.preventDefault();
+      if (myStack.size === 0) {
+        showToast("Your stack is empty! Click 🔀 +Stack on any tool to begin.");
+      } else {
+        openStackModal();
+      }
+      return;
+    }
+
+    if (e.target.closest("#open-stack-export-btn")) {
+      e.preventDefault();
+      openStackModal();
+      return;
+    }
+
+    // 9j. Close Stack Modal
+    if (e.target.closest("#close-stack-modal-btn") || e.target.id === "stack-modal") {
+      e.preventDefault();
+      closeStackModal();
+      return;
+    }
+
+    // 9k. Clear Stack
+    if (e.target.closest("#clear-stack-btn")) {
+      e.preventDefault();
+      clearStack();
+      return;
+    }
+
+    // 9l. Share Stack
+    if (e.target.closest("#share-stack-btn")) {
+      e.preventDefault();
+      shareStackUrl();
+      return;
+    }
+
+    // 9m. Copy Stack Export
+    if (e.target.closest("#copy-stack-export-btn")) {
+      e.preventDefault();
+      copyStackExport();
+      return;
+    }
+
+    // 9n. Download Stack Artifact
+    if (e.target.closest("#download-stack-artifact-btn")) {
+      e.preventDefault();
+      downloadStackArtifact();
+      return;
+    }
+
+    // 9o. Stack Tabs
+    const stackTabBtn = e.target.closest(".stack-tab");
+    if (stackTabBtn) {
+      e.preventDefault();
+      const tab = stackTabBtn.dataset.stacktab;
+      if (tab) setStackTab(tab);
       return;
     }
 
@@ -624,6 +712,7 @@ function setupListeners() {
       closeMatchmakerModal();
       closeWizardModal();
       closeSnippetDrawer();
+      closeStackModal();
       if (document.activeElement === searchInput) {
         searchInput.value = "";
         searchQuery = "";
@@ -1570,6 +1659,13 @@ function createCardHtml(item) {
     </button>
   `;
 
+  const inStack = isItemInStack(item.name);
+  const stackActionBtn = `
+    <button data-stack-name="${escapeHtml(item.name)}" class="stack-toggle-btn inline-flex items-center space-x-1 px-2 py-1 rounded-md text-[11px] font-semibold ${inStack ? "bg-cyan-500 text-slate-950 font-bold border-cyan-400" : "bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border-slate-700"} transition border shadow-sm" title="${inStack ? "Remove from My Stack" : "Add to My Stack"}">
+      <span>${inStack ? "✓ In Stack" : "🔀 +Stack"}</span>
+    </button>
+  `;
+
   const playgroundActionBtn = `
     <button data-playground-name="${escapeHtml(item.name)}" class="playground-toggle-btn inline-flex items-center space-x-1 px-2 py-1 rounded-md text-[11px] font-semibold bg-purple-950/70 hover:bg-purple-900 text-purple-200 transition border border-purple-500/40 shadow-sm" title="Interactive Live Playground">
       <span>🧪 Test Live</span>
@@ -1645,6 +1741,7 @@ function createCardHtml(item) {
               ${metaBadges}
             </div>
             <div class="flex items-center gap-1.5 flex-wrap ml-auto">
+              ${stackActionBtn}
               ${playgroundActionBtn}
               ${snippetActionBtn}
             </div>
@@ -1677,6 +1774,587 @@ function createCardHtml(item) {
       </div>
     </div>
   `;
+}
+
+// ── Stack Builder & Exporter Engine ─────────────────
+
+function isItemInStack(name) {
+  return myStack.has(name);
+}
+
+function loadStackFromStorageAndUrl() {
+  try {
+    const saved = localStorage.getItem("devshelf_my_stack");
+    if (saved) {
+      const arr = JSON.parse(saved);
+      if (Array.isArray(arr)) {
+        myStack.clear();
+        for (const item of arr) {
+          myStack.add(item);
+        }
+      }
+    }
+  } catch (_e) {
+    // Ignore storage parse issues
+  }
+
+  // URL override: if ?stack=... exists, load those tools
+  try {
+    const urlParams = new URLSearchParams(window.location.search);
+    const stackParam = urlParams.get("stack");
+    if (stackParam) {
+      const slugs = stackParam
+        .split(",")
+        .map((s) => s.trim().toLowerCase())
+        .filter(Boolean);
+      for (const slug of slugs) {
+        const match = allResources.find(
+          (r) => escapeSlug(r.name) === slug || r.name.toLowerCase() === slug,
+        );
+        if (match) {
+          myStack.add(match.name);
+        }
+      }
+    }
+  } catch (_e) {
+    // Ignore URL parse issues
+  }
+
+  updateStackUi();
+}
+
+function saveStackToStorage() {
+  try {
+    localStorage.setItem("devshelf_my_stack", JSON.stringify([...myStack]));
+  } catch (_e) {}
+
+  // Synchronize stack state to URL query parameter without page reload
+  try {
+    const url = new URL(window.location.href);
+    if (myStack.size > 0) {
+      const slugs = [...myStack].map((name) => escapeSlug(name)).join(",");
+      url.searchParams.set("stack", slugs);
+    } else {
+      url.searchParams.delete("stack");
+    }
+    window.history.replaceState({}, "", url.toString());
+  } catch (_e) {}
+}
+
+function toggleStackItem(name) {
+  if (myStack.has(name)) {
+    myStack.delete(name);
+    showToast(`Removed ${name} from your stack`);
+  } else {
+    myStack.add(name);
+    showToast(`Added ${name} to your stack! 🔀`);
+  }
+  saveStackToStorage();
+  updateStackUi();
+  updateStackButtonState(name);
+}
+
+function clearStack() {
+  myStack.clear();
+  saveStackToStorage();
+  updateStackUi();
+  render();
+  showToast("Cleared your stack");
+}
+
+function updateStackButtonState(name) {
+  const inStack = myStack.has(name);
+  const safeName =
+    typeof CSS !== "undefined" && CSS.escape ? CSS.escape(name) : name.replace(/"/g, '\\"');
+  const btns = document.querySelectorAll(`.stack-toggle-btn[data-stack-name="${safeName}"]`);
+  for (const btn of btns) {
+    if (inStack) {
+      btn.className =
+        "stack-toggle-btn inline-flex items-center space-x-1 px-2 py-1 rounded-md text-[11px] font-bold bg-cyan-500 text-slate-950 border-cyan-400 transition border shadow-sm";
+      btn.innerHTML = "<span>✓ In Stack</span>";
+      btn.title = "Remove from My Stack";
+    } else {
+      btn.className =
+        "stack-toggle-btn inline-flex items-center space-x-1 px-2 py-1 rounded-md text-[11px] font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border-slate-700 transition border shadow-sm";
+      btn.innerHTML = "<span>🔀 +Stack</span>";
+      btn.title = "Add to My Stack";
+    }
+  }
+}
+
+function updateStackUi() {
+  const count = myStack.size;
+
+  // Update navigation badge
+  const navBadge = document.getElementById("nav-stack-badge");
+  if (navBadge) {
+    if (count > 0) {
+      navBadge.textContent = String(count);
+      navBadge.classList.remove("hidden");
+    } else {
+      navBadge.classList.add("hidden");
+    }
+  }
+
+  // Update floating dock
+  const dock = document.getElementById("stack-dock");
+  const countBadge = document.getElementById("stack-count-badge");
+  const itemsList = document.getElementById("stack-items-list");
+
+  if (dock) {
+    if (count > 0) {
+      dock.classList.remove("hidden");
+      dock.classList.add("open");
+    } else {
+      dock.classList.add("hidden");
+      dock.classList.remove("open");
+    }
+  }
+
+  if (countBadge) {
+    countBadge.textContent = `${count} ${count === 1 ? "tool" : "tools"}`;
+  }
+
+  if (itemsList) {
+    itemsList.innerHTML = [...myStack]
+      .map((name) => {
+        const item = allResources.find((r) => r.name === name);
+        let icon = "⚡";
+        if (item?.type === "api") icon = "🌐";
+        else if (item?.type === "ai") icon = "🤖";
+        else if (item?.type === "cloud") icon = "☁️";
+        else if (item?.type === "boilerplate") icon = "🚀";
+
+        return `
+          <span class="inline-flex items-center space-x-1.5 px-2.5 py-1 rounded-lg text-xs font-mono font-semibold bg-slate-800/90 text-slate-200 border border-slate-700 hover:border-cyan-500/50 transition">
+            <span>${icon}</span>
+            <span>${escapeHtml(name)}</span>
+            <button data-remove-stack="${escapeHtml(name)}" class="text-slate-400 hover:text-rose-400 ml-1 font-bold">×</button>
+          </span>
+        `;
+      })
+      .join("");
+  }
+}
+
+function openStackModal() {
+  const modal = document.getElementById("stack-modal");
+  if (modal) {
+    modal.classList.remove("hidden");
+    modal.classList.add("show");
+    modal.style.display = "flex";
+    document.body.classList.add("overflow-hidden");
+    renderStackExport();
+  }
+}
+
+function closeStackModal() {
+  const modal = document.getElementById("stack-modal");
+  if (modal) {
+    modal.classList.remove("show");
+    modal.classList.add("hidden");
+    modal.style.display = "none";
+    document.body.classList.remove("overflow-hidden");
+  }
+}
+
+function setStackTab(tab) {
+  activeStackTab = tab;
+  const tabs = document.querySelectorAll(".stack-tab");
+  for (const t of tabs) {
+    t.classList.toggle("active", t.dataset.stacktab === tab);
+  }
+  renderStackExport();
+}
+
+function getStackShareUrl() {
+  const slugs = [...myStack].map((n) => escapeSlug(n)).join(",");
+  return `https://devshelf.ritualdev.in/?stack=${slugs}`;
+}
+
+function shareStackUrl() {
+  if (myStack.size === 0) {
+    showToast("Your stack is empty! Add tools before sharing.");
+    return;
+  }
+  const url = getStackShareUrl();
+  copyToClipboard(url, "Shareable stack link copied to clipboard! 🔗");
+}
+
+function copyStackExport() {
+  const contentEl = document.getElementById("stack-export-content");
+  if (contentEl?.textContent) {
+    let label = ".env.example";
+    if (activeStackTab === "docker") label = "docker-compose.yml";
+    else if (activeStackTab === "markdown") label = "README Markdown";
+    else if (activeStackTab === "json") label = "JSON Blueprint";
+
+    copyToClipboard(contentEl.textContent, `${label} copied to clipboard! 📋`);
+  }
+}
+
+function downloadStackArtifact() {
+  const contentEl = document.getElementById("stack-export-content");
+  if (!contentEl?.textContent) return;
+
+  const filenames = {
+    env: ".env.example",
+    docker: "docker-compose.yml",
+    markdown: "TECH_STACK.md",
+    json: "devshelf-stack.json",
+  };
+  const mimes = {
+    env: "text/plain",
+    docker: "text/yaml",
+    markdown: "text/markdown",
+    json: "application/json",
+  };
+
+  const filename = filenames[activeStackTab] || "stack-export.txt";
+  const blob = new Blob([contentEl.textContent], {
+    type: mimes[activeStackTab] || "text/plain",
+  });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+  showToast(`Downloaded ${filename} 💾`);
+}
+
+function renderStackExport() {
+  const contentEl = document.getElementById("stack-export-content");
+  const hintEl = document.getElementById("stack-export-hint");
+  if (!contentEl) return;
+
+  const items = [...myStack]
+    .map((name) => allResources.find((r) => r.name === name))
+    .filter(Boolean);
+
+  if (hintEl) {
+    hintEl.textContent = `${items.length} ${items.length === 1 ? "tool" : "tools"} in your stack`;
+  }
+
+  if (items.length === 0) {
+    contentEl.textContent =
+      '# Your stack is currently empty.\n# Click "🔀 +Stack" on any tool card in the directory to add it to your stack!';
+    return;
+  }
+
+  if (activeStackTab === "env") {
+    contentEl.textContent = generateStackEnv(items);
+  } else if (activeStackTab === "docker") {
+    contentEl.textContent = generateStackDocker(items);
+  } else if (activeStackTab === "markdown") {
+    contentEl.textContent = generateStackMarkdown(items);
+  } else if (activeStackTab === "json") {
+    contentEl.textContent = JSON.stringify(
+      {
+        exportedAt: new Date().toISOString(),
+        devshelfStackUrl: getStackShareUrl(),
+        totalTools: items.length,
+        stack: items.map((i) => ({
+          name: i.name,
+          category: i.category || i.section,
+          url: i.url || i.repo || i.deployUrl,
+          freeTier: i.freeTier || i.freeTierCost || "100% Free Open Source",
+          license: i.license || null,
+        })),
+      },
+      null,
+      2,
+    );
+  }
+}
+
+function generateStackEnv(items) {
+  let env = `# ==============================================================================
+# Environment Configuration (.env.example)
+# Generated by DevShelf (https://devshelf.ritualdev.in)
+# Stack: ${items.map((i) => i.name).join(", ")}
+# Date: ${new Date().toISOString().split("T")[0]}
+# ==============================================================================
+
+# Core Application Settings
+NODE_ENV=development
+PORT=3000
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+
+`;
+
+  for (const item of items) {
+    const nameLower = item.name.toLowerCase();
+    const varPrefix = item.name
+      .toUpperCase()
+      .replace(/[^A-Z0-9]/g, "_")
+      .replace(/_+/g, "_");
+
+    env += `# ─── ${item.name} (${item.category || item.section || "Developer Tool"}) ───\n`;
+    if (item.url || item.repo) {
+      env += `# Docs: ${item.url || item.repo}\n`;
+    }
+
+    if (nameLower.includes("supabase")) {
+      env += "NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co\n";
+      env += "NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...\n";
+      env += "SUPABASE_SERVICE_ROLE_KEY=your_supabase_service_role_secret\n";
+    } else if (
+      nameLower.includes("auth.js") ||
+      nameLower.includes("nextauth") ||
+      nameLower.includes("better auth") ||
+      nameLower.includes("lucia")
+    ) {
+      env += "AUTH_SECRET=your_32_char_secret_openssl_rand_base64_32\n";
+      env += "NEXTAUTH_URL=http://localhost:3000\n";
+    } else if (nameLower.includes("neon")) {
+      env +=
+        "DATABASE_URL=postgresql://neondb_owner:password@ep-sample-pooler.us-east-2.aws.neon.tech/neondb?sslmode=require\n";
+    } else if (nameLower.includes("resend")) {
+      env += "RESEND_API_KEY=re_123456789_abcdef\n";
+      env += 'EMAIL_FROM="MyApp <onboarding@yourdomain.com>"\n';
+    } else if (nameLower.includes("upstash")) {
+      env += "UPSTASH_REDIS_REST_URL=https://your-database.upstash.io\n";
+      env += "UPSTASH_REDIS_REST_TOKEN=your_upstash_rest_token\n";
+    } else if (nameLower.includes("turso")) {
+      env += "TURSO_DATABASE_URL=libsql://your-db-name.turso.io\n";
+      env += "TURSO_AUTH_TOKEN=your_turso_auth_token\n";
+    } else if (nameLower.includes("posthog")) {
+      env += "NEXT_PUBLIC_POSTHOG_KEY=phc_your_project_api_key\n";
+      env += "NEXT_PUBLIC_POSTHOG_HOST=https://us.i.posthog.com\n";
+    } else if (nameLower.includes("ollama")) {
+      env += "OLLAMA_BASE_URL=http://localhost:11434\n";
+      env += "OLLAMA_MODEL=llama3.3\n";
+    } else if (nameLower.includes("pocketbase")) {
+      env += "POCKETBASE_URL=http://127.0.0.1:8090\n";
+    } else if (nameLower.includes("redis")) {
+      env += "REDIS_URL=redis://localhost:6379\n";
+    } else if (nameLower.includes("postgres")) {
+      env += "DATABASE_URL=postgresql://postgres:password@localhost:5432/appdb\n";
+    } else if (item.type === "api") {
+      if (item.auth === "No Key") {
+        env += `${varPrefix}_API_URL=${item.url || "https://api.example.com"}\n`;
+      } else {
+        env += `${varPrefix}_API_KEY=your_${varPrefix.toLowerCase()}_api_key\n`;
+        env += `${varPrefix}_API_URL=${item.url || "https://api.example.com"}\n`;
+      }
+    } else {
+      env += `${varPrefix}_API_KEY=your_${varPrefix.toLowerCase()}_api_key_or_token\n`;
+      env += `${varPrefix}_URL=${item.url || item.repo || "https://example.com"}\n`;
+    }
+    env += "\n";
+  }
+
+  return env.trim();
+}
+
+function generateStackDocker(items) {
+  const selfHostable = items.filter((i) => {
+    const t = `${i.name} ${i.description || ""} ${(i.statusTags || []).join(" ")}`.toLowerCase();
+    return (
+      t.includes("self-hostable") ||
+      t.includes("pocketbase") ||
+      t.includes("umami") ||
+      t.includes("stirling") ||
+      t.includes("ollama") ||
+      t.includes("searxng") ||
+      t.includes("redis") ||
+      t.includes("postgres") ||
+      t.includes("rabbitmq") ||
+      t.includes("uptime kuma") ||
+      t.includes("portainer") ||
+      t.includes("traefik") ||
+      t.includes("plausible")
+    );
+  });
+
+  const cloudItems = items.filter((i) => !selfHostable.includes(i));
+
+  let compose = `version: "3.8"
+
+# ==============================================================================
+# Docker Compose Architecture
+# Generated by DevShelf (https://devshelf.ritualdev.in)
+# ==============================================================================
+
+services:
+`;
+
+  if (selfHostable.length === 0) {
+    compose += `  # None of your selected tools require local self-hosting containers!
+  # Your stack uses managed zero-cost cloud tiers & public APIs:
+`;
+    for (const item of cloudItems) {
+      compose += `  # - ${item.name} (${item.url || item.repo})\n`;
+    }
+    compose += `
+  # Starter web application container:
+  app:
+    image: node:20-alpine
+    container_name: devshelf_app
+    restart: unless-stopped
+    working_dir: /app
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    command: npm run dev
+`;
+    return compose.trim();
+  }
+
+  const volumes = new Set();
+
+  for (const item of selfHostable) {
+    const n = item.name.toLowerCase();
+    const serviceName = escapeSlug(item.name).replace(/-/g, "_");
+
+    if (n.includes("pocketbase")) {
+      compose += `  pocketbase:
+    image: ghcr.io/muchobien/pocketbase:latest
+    container_name: pocketbase
+    restart: unless-stopped
+    ports:
+      - "8090:8090"
+    volumes:
+      - pb_data:/pb_data
+
+`;
+      volumes.add("pb_data");
+    } else if (n.includes("umami")) {
+      compose += `  umami:
+    image: ghcr.io/umami-software/umami:postgresql-latest
+    container_name: umami
+    restart: always
+    ports:
+      - "3001:3000"
+    environment:
+      DATABASE_URL: \${DATABASE_URL}
+      DATABASE_TYPE: postgresql
+      APP_SECRET: \${AUTH_SECRET:-devshelf_secret_string}
+    depends_on:
+      - db
+
+  db:
+    image: postgres:16-alpine
+    container_name: umami_db
+    restart: always
+    environment:
+      POSTGRES_DB: umami
+      POSTGRES_USER: umami
+      POSTGRES_PASSWORD: \${POSTGRES_PASSWORD:-umami_password}
+    volumes:
+      - umami_db_data:/var/lib/postgresql/data
+
+`;
+      volumes.add("umami_db_data");
+    } else if (n.includes("stirling")) {
+      compose += `  stirling_pdf:
+    image: frooodle/s-pdf:latest
+    container_name: stirling_pdf
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./trainingData:/usr/share/tessdata
+      - ./extraConfigs:/configs
+
+`;
+    } else if (n.includes("ollama")) {
+      compose += `  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    restart: unless-stopped
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_models:/root/.ollama
+
+`;
+      volumes.add("ollama_models");
+    } else if (n.includes("uptime kuma")) {
+      compose += `  uptime_kuma:
+    image: louislam/uptime-kuma:1
+    container_name: uptime_kuma
+    restart: always
+    ports:
+      - "3001:3001"
+    volumes:
+      - uptime_kuma_data:/app/data
+
+`;
+      volumes.add("uptime_kuma_data");
+    } else if (n.includes("redis")) {
+      compose += `  redis:
+    image: redis:alpine
+    container_name: redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+`;
+      volumes.add("redis_data");
+    } else {
+      compose += `  ${serviceName}:
+    image: ${serviceName}:latest
+    container_name: ${serviceName}
+    restart: unless-stopped
+    env_file:
+      - .env
+
+`;
+    }
+  }
+
+  if (cloudItems.length > 0) {
+    compose += "  # ── Cloud-Hosted Components (No local containers required) ──\n";
+    for (const item of cloudItems) {
+      compose += `  # - ${item.name}: ${item.url || item.repo}\n`;
+    }
+    compose += "\n";
+  }
+
+  if (volumes.size > 0) {
+    compose += "volumes:\n";
+    for (const v of volumes) {
+      compose += `  ${v}:\n`;
+    }
+  }
+
+  return compose.trim();
+}
+
+function generateStackMarkdown(items) {
+  const shareUrl = getStackShareUrl();
+  let md = `### 🛠️ Tech Stack & Architecture
+
+Curated with [DevShelf](https://devshelf.ritualdev.in) &mdash; 100% Free & Open-Source Stack.
+
+| Category / Layer | Tool | Free Tier / Cost | License | Direct Link |
+| :--- | :--- | :--- | :---: | :---: |
+`;
+
+  for (const item of items) {
+    const cat = item.category || item.section || "General";
+    const cost = item.freeTier || item.freeTierCost || item.rateLimit || "100% Free";
+    const lic = item.license || item.auth || "MIT";
+    const url = item.url || item.repo || item.deployUrl || "https://devshelf.ritualdev.in";
+    md += `| **${cat}** | **${item.name}** | \`${cost}\` | ${lic} | [Website / Repo](${url}) |\n`;
+  }
+
+  md += `
+---
+
+[![Built with DevShelf Stack](https://img.shields.io/badge/Stack-DevShelf_Curated-7928CA?style=for-the-badge&logo=rocket)](${shareUrl})
+
+> 💡 *Inspect, modify, or export this stack at: [${shareUrl}](${shareUrl})*
+`;
+
+  return md.trim();
 }
 
 function copyToClipboard(text, successMsg = "Copied to clipboard!") {

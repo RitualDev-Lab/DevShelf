@@ -1043,3 +1043,39 @@ a {
 .liquid-metal-btn:hover .liquid-metal-arrow {
   transform: translateY(2px);
 }
+
+/* ── Stack Dock & Exporter ────────────────────────── */
+
+.stack-tab {
+  color: #94a3b8;
+  background: transparent;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.stack-tab:hover {
+  color: #f1f5f9;
+  background: rgba(30, 41, 59, 0.7);
+}
+
+.stack-tab.active {
+  color: #38bdf8;
+  background: rgba(6, 182, 212, 0.15);
+  border-color: rgba(6, 182, 212, 0.4);
+}
+
+#stack-dock.open {
+  display: block !important;
+  animation: slideUpFade 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideUpFade {
+  from {
+    transform: translate(-50%, 40px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+}
