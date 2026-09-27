@@ -1,4 +1,4 @@
-# ?? Curated Categories & Schemas
+# 📂 Curated Categories & Schemas
 
 All entries in DevShelf are stored inside individual category files in the `shelf/` directory.
 
@@ -33,7 +33,7 @@ Command-line utilities that dramatically improve developer terminal workflows.
 ```json
 {
   "name": "ripgrep",
-  "url": "https://github.com/BurntSushi/ripgrep",
+  "repo": "https://github.com/BurntSushi/ripgrep",
   "category": "File Search",
   "description": "Blazingly fast recursive regex search tool that respects your .gitignore rules automatically.",
   "language": "Rust",
@@ -50,7 +50,7 @@ Open-source inference runtimes, local agents, UI wrappers, and self-hosted model
 ```json
 {
   "name": "Ollama",
-  "url": "https://github.com/ollama/ollama",
+  "repo": "https://github.com/ollama/ollama",
   "category": "Local LLM Runtime",
   "description": "Run Llama 3, Mistral, Qwen, and custom GGUF models locally on macOS, Linux, and Windows with a single command.",
   "language": "Go",
@@ -67,7 +67,7 @@ Testing frameworks, self-healing test tools, load testers, and mocking utilities
 ```json
 {
   "name": "Playwright",
-  "url": "https://github.com/microsoft/playwright",
+  "repo": "https://github.com/microsoft/playwright",
   "category": "E2E Testing",
   "description": "Fast, reliable cross-browser end-to-end automation for modern web applications across Chromium, Firefox, and WebKit.",
   "language": "TypeScript",
@@ -100,11 +100,12 @@ High-potential open-source repositories actively welcoming newcomers and communi
 ```json
 {
   "name": "GitWhisper",
-  "url": "https://github.com/RitualDev-Lab/GitWhisper",
-  "category": "AI & Developer Tooling",
-  "description": "Zero-config local AI commit message generator grounded in staged git changes with AST secret redaction.",
-  "language": "TypeScript",
-  "goodFirstIssuesUrl": "https://github.com/RitualDev-Lab/GitWhisper/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22"
+  "repo": "https://github.com/RitualDev-Lab/GitWhisper",
+  "category": "Developer Utilities & CLI",
+  "description": "AI-assisted conventional commit generator grounded in staged index plumbing.",
+  "seeking": "JetBrains IDE Plugin, Community Custom LLM Adapters, Documentation",
+  "goodFirstIssues": "https://github.com/RitualDev-Lab/GitWhisper/issues",
+  "language": "TypeScript"
 }
 ```
 
@@ -118,9 +119,27 @@ Verified open-source maintainer sponsorships, student developer packs, and start
 {
   "name": "Sentry for Open Source",
   "url": "https://sentry.io/for/open-source/",
-  "category": "Error Tracking & Observability",
+  "category": "Observability, CI & Testing",
   "description": "Free Sentry Business plan for qualifying open-source maintainers to monitor application health, errors, and real-time performance.",
   "perkValue": "Free Sentry Business Plan ($312+/yr value)",
   "eligibility": "Public open-source repository with OSI-approved license"
+}
+```
+
+---
+
+## 8. 1-Click Deployment Boilerplates (`shelf/boilerplates.json`)
+Zero-cost templates and server configurations deployable in 1 click to free cloud tiers.
+
+### Schema:
+```json
+{
+  "name": "Next.js Enterprise Boilerplate",
+  "repo": "https://github.com/Blazity/next-enterprise",
+  "category": "Full-Stack Web Starter",
+  "platform": "Vercel",
+  "deployUrl": "https://vercel.com/new/clone?repository-url=https://github.com/Blazity/next-enterprise",
+  "freeTierCost": "100% Free on Vercel Hobby",
+  "description": "Enterprise-grade Next.js starter featuring Tailwind CSS, TypeScript, ESLint, Prettier, Jest, Playwright, and GitHub Actions."
 }
 ```

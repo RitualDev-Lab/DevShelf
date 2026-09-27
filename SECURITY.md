@@ -44,4 +44,5 @@ DevShelf is a crowdsourced repository. We enforce strict policies to protect dev
   - Anyone in the developer community can report problematic entries using our **[Content Report Template](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=content_report.yml)**.
   - Repository administrators actively review all incoming content reports.
 
-Thank you for keeping the open-source community safe! ???
+Thank you for keeping the open-source community safe! 🛡️
+

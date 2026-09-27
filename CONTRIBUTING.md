@@ -1,11 +1,11 @@
-# ?? Contributing to DevShelf
+# 🤝 Contributing to DevShelf
 
 Thank you for your interest in contributing to **DevShelf**!  
 DevShelf is an open-source, crowdsourced directory committed to curating the best **100% free, paywall-free developer tools, APIs, AI agents, CLI utilities, and startup perks**.
 
 ---
 
-## ?? Ways to Contribute
+## 💡 Ways to Contribute
 
 There are two easy ways to contribute:
 
@@ -80,7 +80,7 @@ Open a PR against the `main` branch. Our automated CI will run checks and ping t
 
 ---
 
-## ??? Inclusion Criteria & Quality Guidelines
+## 🛡️ Inclusion Criteria & Quality Guidelines
 
 To preserve high quality for the developer community:
 * **Genuine Free Tier or 100% FOSS**: Tools must be open-source or have a genuine, non-expiring free tier (no "14-day free trial that requires a credit card").

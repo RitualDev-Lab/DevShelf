@@ -6,11 +6,12 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
   issues: write
 
 jobs:
   process-submission:
-    name: Validate and Add to Shelf
+    name: Validate Submission & Open PR
     if: contains(github.event.issue.labels.*.name, 'submission') || startsWith(github.event.issue.title, '[Submit Project]') || startsWith(github.event.issue.title, '[Submit API]')
     runs-on: ubuntu-latest
     steps:
@@ -36,26 +37,66 @@ jobs:
         run: |
           npx tsx scripts/process-submission.ts
 
-      - name: Rebuild README & Web Directory Data
+      - name: Rebuild Catalog Documentation & Web Data
         run: |
           pnpm run build
           pnpm run format
 
-      - name: Commit and Push to Main
+      - name: Create Submission Branch & Open Pull Request
+        id: create-pr
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUM: ${{ github.event.issue.number }}
+          USER_LOGIN: ${{ github.event.issue.user.login }}
+          USER_ID: ${{ github.event.issue.user.id }}
         run: |
           git config --global user.name "DevShelf Bot"
           git config --global user.email "bot@devshelf.local"
-          git add shelf/ README.md site/
+          git add shelf/ README.md docs/ site/
           if git diff --cached --quiet; then
-            echo "No changes to commit."
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "No changes produced from submission."
           else
-            git commit -m "feat(community): add submission from issue #${{ github.event.issue.number }} [skip ci]"
-            git push origin main
+            BRANCH_NAME="submission/issue-${ISSUE_NUM}"
+            git checkout -b "$BRANCH_NAME"
+            git commit -m "feat(community): add submission from issue #${ISSUE_NUM}
+
+          Co-authored-by: ${USER_LOGIN} <${USER_ID}+${USER_LOGIN}@users.noreply.github.com>"
+            git push origin "$BRANCH_NAME" --force
+            
+            PR_URL=$(gh pr create \
+              --title "feat(community): add submission from #${ISSUE_NUM}" \
+              --body "Resolves #${ISSUE_NUM}
+
+          Submitted by @${USER_LOGIN} via Issue form.
+          
+          - **Automated PR**: Created by DevShelf Bot with contributor credited as co-author.
+          - **Verification**: Full CI suite, schema validator, and URL audit will run on this PR automatically." \
+              --head "$BRANCH_NAME" \
+              --base "main" \
+              --label "submission")
+            
+            PR_NUM=$(echo "$PR_URL" | grep -oE '[0-9]+$')
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "pr_url=$PR_URL" >> $GITHUB_OUTPUT
+            echo "pr_number=$PR_NUM" >> $GITHUB_OUTPUT
           fi
 
-      - name: Post Confirmation & Close Issue
+      - name: Post Confirmation Comment on Issue
+        if: steps.create-pr.outputs.has_changes == 'true'
         uses: actions/github-script@v7
         with:
           script: |
             const postSubmissionComment = require('./scripts/post-submission-comment.cjs');
-            await postSubmissionComment({ github, context });
+            await postSubmissionComment({
+              github,
+              context,
+              prUrl: '${{ steps.create-pr.outputs.pr_url }}',
+              prNumber: '${{ steps.create-pr.outputs.pr_number }}'
+            });
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              labels: ['has-pr']
+            });

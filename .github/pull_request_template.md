@@ -1,4 +1,4 @@
-## ?? Submission Overview
+## 📋 Submission Overview
 
 <!-- Provide a quick summary of the tool, API, or fix being submitted -->
 - **Resource Name**: 
@@ -8,7 +8,7 @@
 
 ---
 
-## ?? Validation Checklist
+## ✅ Validation Checklist
 
 Before submitting, please ensure you have checked the following:
 
@@ -26,6 +26,7 @@ Before submitting, please ensure you have checked the following:
 
 ---
 
-## ?? Additional Notes / Context
+## 💬 Additional Notes / Context
 
 <!-- Any extra details, screenshots, or context for the maintainers -->
+

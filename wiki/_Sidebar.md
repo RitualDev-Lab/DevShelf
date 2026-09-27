@@ -1,15 +1,15 @@
-### ?? [DevShelf Wiki](Home)
+### 📚 [DevShelf Wiki](Home)
 
-- **[?? Welcome & Architecture](Home)**
-- **[?? Curated Categories](Curated-Categories)**
-- **[?? Validation & Link Pipeline](Automated-Validation-Pipeline)**
-- **[?? Contributor Guide & Schema](Contributor-Guide-&-Workflows)**
-- **[?? Ecosystem Synergy](Ecosystem-Synergy)**
+- **[🏠 Welcome & Architecture](Home)**
+- **[📂 Curated Categories](Curated-Categories)**
+- **[🛡️ Validation & Link Pipeline](Automated-Validation-Pipeline)**
+- **[🤝 Contributor Guide & Schema](Contributor-Guide-and-Workflows)**
+- **[⚡ Ecosystem Synergy](Ecosystem-Synergy)**
 
 ---
 
-### ?? Quick Links
-- [?? Live Web Directory](https://devshelf.ritualdev.in/)
-- [?? GitHub Repository](https://github.com/RitualDev-Lab/DevShelf)
-- [? Submit New Tool](https://github.com/RitualDev-Lab/DevShelf/issues/new/choose)
-- [?? Report Content](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=04_content_report.yml)
+### 🔗 Quick Links
+- [🌐 Live Web Directory](https://devshelf.ritualdev.in/)
+- [💻 GitHub Repository](https://github.com/RitualDev-Lab/DevShelf)
+- [➕ Submit New Tool](https://github.com/RitualDev-Lab/DevShelf/issues/new/choose)
+- [🚨 Report Content](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=07_content_report.yml)

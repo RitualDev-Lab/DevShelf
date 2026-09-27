@@ -1,10 +1,10 @@
-# ?? RitualDev Ecosystem Synergy
+# ⚡ RitualDev Ecosystem Synergy
 
 DevShelf serves as the curated discovery hub for the **[RitualDev Lab](https://github.com/RitualDev-Lab)** open-source developer tooling suite.
 
 ---
 
-## ??? The Core Suite
+## 🛠️ The Core Suite
 
 Each tool in the RitualDev ecosystem solves a common developer bottleneck with **100% local privacy**, **$0 cloud cost**, and **zero telemetry**:
 
@@ -18,7 +18,7 @@ Each tool in the RitualDev ecosystem solves a common developer bottleneck with *
 
 ---
 
-## ?? Cross-Pollination Architecture
+## 🌐 Cross-Pollination Architecture
 
 - **Discovery & Curation**: New utilities developed by the community can be submitted directly into DevShelf for immediate visibility.
 - **Unified Quality Standards**: All projects follow identical repository governance &mdash; Contributor Covenant Code of Conduct, GitHub Security Advisories, Biome/TypeScript strict checking, and automated CI test runners.

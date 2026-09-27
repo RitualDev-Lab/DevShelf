@@ -1,39 +1,28 @@
-module.exports = async function postSubmissionComment({ github, context }) {
+module.exports = async function postSubmissionComment({ github, context, prUrl, prNumber }) {
   const username = context.payload.issue.user.login;
 
   const commentBody = [
-    `?? **Congratulations @${username}!**`,
+    `🎉 **Thank you @${username} for submitting to DevShelf!**`,
     "",
-    "Your submission has been verified and is now live on [DevShelf](https://github.com/RitualDev-Lab/DevShelf) and the [Interactive Web App](https://devshelf.ritualdev.in)!",
+    prUrl
+      ? `We have automatically generated a Pull Request for your submission:\n👉 **[Pull Request #${prNumber}](${prUrl})**`
+      : "Your submission has been verified and processed.",
+    "",
+    "### 🛡️ What happens next?",
+    "- Our automated CI suite will audit the URL endpoint, schema conformance, and security posture.",
+    "- You have been credited as **Co-Author** on the submission commit.",
+    "- Once merged, your project will be permanently indexed at [devshelf.ritualdev.in](https://devshelf.ritualdev.in) and featured in our community spotlight!",
     "",
     "---",
     "",
-    '### ??? Display the "Featured on DevShelf" Badge on Your README',
-    "",
-    "If you'd like to show it off on your README, pick whichever style fits your project:",
-    "",
-    "#### Option 1: Modern Electric Violet (Recommended)",
-    "[![Featured on DevShelf](https://img.shields.io/badge/Featured_on-DevShelf-8B5CF6?style=for-the-badge&logo=compass&logoColor=06B6D4&labelColor=0B0F19)](https://devshelf.ritualdev.in/)",
+    '### 🎖️ Display the "Featured on DevShelf" Badge',
+    "Once merged, you can display an official community verification badge on your repository:",
     "",
     "```markdown",
-    "[![Featured on DevShelf](https://img.shields.io/badge/Featured_on-DevShelf-8B5CF6?style=for-the-badge&logo=compass&logoColor=06B6D4&labelColor=0B0F19)](https://devshelf.ritualdev.in/)",
+    "[![Featured on DevShelf](https://img.shields.io/badge/Featured%20on-DevShelf-7928CA?style=for-the-badge&logo=googlechrome&logoColor=white)](https://devshelf.ritualdev.in/)",
     "```",
     "",
-    "#### Option 2: Terminal Emerald",
-    "[![DevShelf Verified](https://img.shields.io/badge/DevShelf-100%25_Verified_FOSS-10B981?style=for-the-badge&logo=gnubash&logoColor=white&labelColor=111827)](https://devshelf.ritualdev.in/)",
-    "",
-    "```markdown",
-    "[![DevShelf Verified](https://img.shields.io/badge/DevShelf-100%25_Verified_FOSS-10B981?style=for-the-badge&logo=gnubash&logoColor=white&labelColor=111827)](https://devshelf.ritualdev.in/)",
-    "```",
-    "",
-    "#### Option 3: Minimal Dark Pill",
-    "[![Featured on DevShelf](https://img.shields.io/badge/??_Featured_on-DevShelf-6366F1?style=flat&labelColor=1E1E2E&color=A855F7)](https://devshelf.ritualdev.in/)",
-    "",
-    "```markdown",
-    "[![Featured on DevShelf](https://img.shields.io/badge/??_Featured_on-DevShelf-6366F1?style=flat&labelColor=1E1E2E&color=A855F7)](https://devshelf.ritualdev.in/)",
-    "```",
-    "",
-    "Thank you for contributing to the open-source community! ?",
+    "Thank you for powering the zero-paywall open-source movement! 🚀",
   ].join("\n");
 
   await github.rest.issues.createComment({
@@ -41,12 +30,5 @@ module.exports = async function postSubmissionComment({ github, context }) {
     repo: context.repo.repo,
     issue_number: context.issue.number,
     body: commentBody,
-  });
-
-  await github.rest.issues.update({
-    owner: context.repo.owner,
-    repo: context.repo.repo,
-    issue_number: context.issue.number,
-    state: "closed",
   });
 };

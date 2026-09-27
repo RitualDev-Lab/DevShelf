@@ -312,7 +312,7 @@ async function build() {
 
 [![Live Web Directory](https://img.shields.io/badge/🌐_Web_Directory-Live_Search_%26_Filters-7928CA?style=for-the-badge&logoColor=white)](https://devshelf.ritualdev.in)
 [![Curated Resources](https://img.shields.io/badge/📦_Resources-${totalItems}+_Curated-blueviolet?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
-[![Endpoint Health](https://img.shields.io/badge/🛡️_Health-100%25_Verified-brightgreen?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf/actions)
+[![Endpoint Health](https://img.shields.io/badge/🛡️_Health-CI_Health_Audited-brightgreen?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf/actions)
 [![Open Source](https://img.shields.io/badge/🔓_License-MIT_FOSS-blue?style=for-the-badge)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/🤝_PRs-Welcome_%26_Amplified-brightgreen?style=for-the-badge)](#-how-to-submit-your-project-or-api)
 
@@ -372,7 +372,7 @@ async function build() {
 <div align="center">
 
 ${BT}
-🛡️ 100% Verified Uptime  •  🌟 Quality First  •  🚫 Zero Paywalls  •  📢 Free Social Promotion
+🛡️ Automated Health Auditing  •  🌟 Quality First  •  🚫 Zero Paywalls  •  📢 Free Social Promotion
 ${BT}
 
 </div>
