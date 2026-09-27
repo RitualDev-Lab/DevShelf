@@ -104,6 +104,56 @@ function getResourceUrl(item) {
   return item.url || item.repo || item.deployUrl || "";
 }
 
+async function loadMatchmakerData() {
+  const localMatchmakerPath = path.join(__dirname, "..", "site", "matchmaker.json");
+  if (fs.existsSync(localMatchmakerPath)) {
+    try {
+      const raw = fs.readFileSync(localMatchmakerPath, "utf8");
+      return JSON.parse(raw);
+    } catch {
+      // Fall through
+    }
+  }
+
+  try {
+    const res = await fetch("https://devshelf.ritualdev.in/matchmaker.json", {
+      signal: AbortSignal.timeout(4000),
+    });
+    if (res.ok) {
+      return await res.json();
+    }
+  } catch {
+    // Remote failed
+  }
+  return null;
+}
+
+function printMatchmakerProject(proj, index = null) {
+  const idxStr = index !== null ? `${c.purple}[${index + 1}]${c.reset} ` : "";
+  const starsStr = typeof proj.stars === "number" ? ` ⭐ ${proj.stars.toLocaleString()}` : "";
+  const activeStr = proj.lastActivityRelative ? ` 🕒 Active ${proj.lastActivityRelative}` : "";
+  const langBadge = proj.language ? ` ${c.cyan}[${proj.language}]${c.reset}` : "";
+
+  console.log(
+    `  ${idxStr}${c.bold}${proj.name}${c.reset}${langBadge}${c.amber}${starsStr}${c.reset}${c.green}${activeStr}${c.reset}`,
+  );
+  if (proj.description) {
+    console.log(`    ${c.gray}${proj.description}${c.reset}`);
+  }
+  if (proj.seeking) {
+    console.log(`    ${c.amber}🎯 Seeking:${c.reset} ${proj.seeking}`);
+  }
+  if (Array.isArray(proj.issues) && proj.issues.length > 0) {
+    console.log(`    ${c.green}Good First Issues:${c.reset}`);
+    proj.issues.slice(0, 3).forEach((iss) => {
+      const commentsStr = iss.comments ? ` (💬 ${iss.comments})` : "";
+      console.log(`      • ${iss.title}${c.gray}${commentsStr}${c.reset}`);
+      console.log(`        ${c.underline}${c.blue}${iss.url}${c.reset}`);
+    });
+  }
+  console.log();
+}
+
 function printHeader() {
   console.log(`
 ${c.purple}${c.bold}  📚 DevShelf CLI & TUI${c.reset} ${c.gray}v1.0.0${c.reset}
@@ -117,6 +167,7 @@ function printHelp() {
 ${c.bold}USAGE:${c.reset}
   ${c.green}npx devshelf${c.reset}                     Launch interactive Terminal User Interface (TUI)
   ${c.green}npx devshelf search <query>${c.reset}      Search tools, APIs, and AI agents
+  ${c.green}npx devshelf contribute [query]${c.reset}  Find repos actively seeking help & starter tasks
   ${c.green}npx devshelf list [category]${c.reset}     List items by category
   ${c.green}npx devshelf random${c.reset}              Discover a random curated resource
   ${c.green}npx devshelf stats${c.reset}               Show catalog counts and metrics
@@ -130,6 +181,7 @@ ${c.bold}OPTIONS:${c.reset}
 
 ${c.bold}EXAMPLES:${c.reset}
   ${c.gray}$${c.reset} npx devshelf search "postgres"
+  ${c.gray}$${c.reset} npx devshelf contribute "rust"
   ${c.gray}$${c.reset} npx devshelf search "auth" --open
   ${c.gray}$${c.reset} npx devshelf list "ai"
   ${c.gray}$${c.reset} npx devshelf random
@@ -201,12 +253,13 @@ async function runInteractiveTui(data) {
     ${c.purple}[1]${c.reset} 🔍 Search 500+ Tools, APIs & AI Agents
     ${c.purple}[2]${c.reset} 📂 Browse Categories
     ${c.purple}[3]${c.reset} 🎲 Pick a Random Resource
-    ${c.purple}[4]${c.reset} 📊 Catalog Statistics
-    ${c.purple}[5]${c.reset} 🌐 Open Live Web Directory
+    ${c.purple}[4]${c.reset} 🤝 Contributor Matchmaker (Live Good First Issues)
+    ${c.purple}[5]${c.reset} 📊 Catalog Statistics
+    ${c.purple}[6]${c.reset} 🌐 Open Live Web Directory
     ${c.purple}[0]${c.reset} 🚪 Exit
 `);
 
-    const choice = (await question(`  ${c.green}Select an option [0-5]:${c.reset} `)).trim();
+    const choice = (await question(`  ${c.green}Select an option [0-6]:${c.reset} `)).trim();
 
     if (choice === "0" || choice.toLowerCase() === "exit" || choice.toLowerCase() === "q") {
       console.log(`\n  ${c.purple}Happy hacking with DevShelf! ⭐${c.reset}\n`);
@@ -311,6 +364,59 @@ async function runInteractiveTui(data) {
       }
       await question(`  ${c.gray}Press Enter to continue...${c.reset}`);
     } else if (choice === "4") {
+      // Contributor Matchmaker
+      const mmData = await loadMatchmakerData();
+      if (!mmData || !Array.isArray(mmData.projects)) {
+        console.log(`\n  ${c.red}Could not load Matchmaker telemetry data.${c.reset}`);
+      } else {
+        const langChoice = (
+          await question(
+            `\n  ${c.cyan}Filter by language or query (e.g. rust, typescript, python, or press Enter for all):${c.reset} `,
+          )
+        )
+          .trim()
+          .toLowerCase();
+
+        let filtered = mmData.projects;
+        if (langChoice) {
+          filtered = filtered.filter((p) => {
+            const name = (p.name || "").toLowerCase();
+            const lang = (p.language || "").toLowerCase();
+            const seeking = (p.seeking || "").toLowerCase();
+            const tech = Array.isArray(p.techStack) ? p.techStack.join(" ").toLowerCase() : "";
+            return (
+              name.includes(langChoice) ||
+              lang.includes(langChoice) ||
+              seeking.includes(langChoice) ||
+              tech.includes(langChoice)
+            );
+          });
+        }
+
+        console.log(
+          `\n  ${c.bold}🤝 Contributor Matchmaker (${filtered.length} projects found):${c.reset}\n`,
+        );
+        const displayList = filtered.slice(0, 8);
+        displayList.forEach((p, idx) => printMatchmakerProject(p, idx));
+
+        if (displayList.length > 0) {
+          const itemChoice = (
+            await question(
+              `\n  ${c.green}Enter number to open repo in browser (or press Enter to return):${c.reset} `,
+            )
+          ).trim();
+          const selectedIndex = Number.parseInt(itemChoice, 10) - 1;
+          if (!Number.isNaN(selectedIndex) && displayList[selectedIndex]) {
+            const targetUrl = displayList[selectedIndex].repo;
+            console.log(`  🚀 Opening ${targetUrl}...`);
+            openUrl(targetUrl);
+            await question(`  ${c.gray}Press Enter to continue...${c.reset}`);
+          }
+        } else {
+          await question(`  ${c.gray}Press Enter to continue...${c.reset}`);
+        }
+      }
+    } else if (choice === "5") {
       // Stats
       console.log(`\n  ${c.bold}📊 DevShelf Catalog Telemetry:${c.reset}`);
       console.log(
@@ -333,7 +439,7 @@ async function runInteractiveTui(data) {
         `  Audit Status:         ${c.green}🛡️ CI Health Audited (Zero Tracking Params)${c.reset}`,
       );
       await question(`\n  ${c.gray}Press Enter to continue...${c.reset}`);
-    } else if (choice === "5") {
+    } else if (choice === "6") {
       // Open web app
       console.log("  🚀 Opening https://devshelf.ritualdev.in in your browser...");
       openUrl("https://devshelf.ritualdev.in");
@@ -471,6 +577,46 @@ async function main() {
       console.log(
         `  1-Click Boilerplates: ${c.green}${data.counts.boilerplates || "40+"}${c.reset}`,
       );
+    }
+    return;
+  }
+
+  if (command === "contribute" || command === "matchmaker") {
+    const query = cleanArgs.slice(1).join(" ").toLowerCase();
+    const mmData = await loadMatchmakerData();
+    if (!mmData || !Array.isArray(mmData.projects)) {
+      console.error(`${c.red}Error:${c.reset} Could not load Matchmaker telemetry data.`);
+      process.exit(1);
+    }
+
+    let filtered = mmData.projects;
+    if (query) {
+      filtered = filtered.filter((p) => {
+        const name = (p.name || "").toLowerCase();
+        const lang = (p.language || "").toLowerCase();
+        const seeking = (p.seeking || "").toLowerCase();
+        const tech = Array.isArray(p.techStack) ? p.techStack.join(" ").toLowerCase() : "";
+        return (
+          name.includes(query) ||
+          lang.includes(query) ||
+          seeking.includes(query) ||
+          tech.includes(query)
+        );
+      });
+    }
+
+    if (isJson) {
+      console.log(JSON.stringify(filtered, null, 2));
+      return;
+    }
+
+    printHeader();
+    console.log(`  🤝 Contributor Matchmaker (${filtered.length} active projects found):\n`);
+    filtered.forEach((p, idx) => printMatchmakerProject(p, idx));
+
+    if (shouldOpen && filtered.length > 0) {
+      const firstIssue = filtered[0].issues?.[0]?.url || filtered[0].repo;
+      openUrl(firstIssue);
     }
     return;
   }

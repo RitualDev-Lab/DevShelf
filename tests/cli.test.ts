@@ -65,4 +65,16 @@ describe("DevShelf CLI & TUI Suite", () => {
     assert.ok(typeof item === "object" && item !== null);
     assert.ok(item.name && item.name.length > 0, "Random item must have a name");
   });
+
+  test("returns active projects with contribute --json", () => {
+    const res = runCli("contribute --json");
+    assert.equal(res.status, 0);
+    const results = JSON.parse(res.stdout);
+    assert.ok(Array.isArray(results), "Contribute results should be an array");
+    assert.ok(results.length > 0, "Should list matchmaker projects");
+    assert.ok(
+      results.some((r: any) => Array.isArray(r.issues) && r.issues.length > 0),
+      "Projects should contain starter issues",
+    );
+  });
 });

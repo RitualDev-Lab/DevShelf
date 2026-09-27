@@ -503,14 +503,20 @@
         </button>
       </div>
 
+      <!-- Matchmaker Search Bar -->
+      <div class="relative mb-3">
+        <input type="text" id="matchmaker-search-input" placeholder="🔍 Search projects, languages, or issues (e.g. rust, monaco, api, electron)..." class="w-full bg-slate-950/90 border border-slate-700/80 rounded-xl px-3.5 py-2 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-purple-500 font-mono transition">
+      </div>
+
       <!-- Language Filter Pills inside Matchmaker -->
       <div class="flex items-center flex-wrap gap-1.5 mb-4 text-xs font-mono" id="matchmaker-lang-filters">
-        <span class="text-slate-400 font-sans text-xs">Filter:</span>
+        <span class="text-slate-400 font-sans text-xs">Language:</span>
         <button data-matchlang="all" class="match-lang-btn px-2.5 py-1 rounded-lg bg-purple-600 text-white font-bold transition">All</button>
         <button data-matchlang="typescript" class="match-lang-btn px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 transition">TypeScript</button>
-        <button data-matchlang="go" class="match-lang-btn px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 transition">Go</button>
-        <button data-tag="rust" data-matchlang="rust" class="match-lang-btn px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 transition">Rust</button>
+        <button data-matchlang="javascript" class="match-lang-btn px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 transition">JavaScript</button>
+        <button data-matchlang="rust" class="match-lang-btn px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 transition">Rust</button>
         <button data-matchlang="python" class="match-lang-btn px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 transition">Python</button>
+        <button data-matchlang="go" class="match-lang-btn px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 transition">Go</button>
       </div>
 
       <!-- Matchmaker Issue Cards Scrollable List -->

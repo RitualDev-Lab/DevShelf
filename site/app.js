@@ -5,6 +5,7 @@ let searchQuery = "";
 let currentSort = "featured";
 let matchmakerData = null;
 let activeMatchLang = "all";
+let matchmakerSearchQuery = "";
 const activeMatrixTags = new Set();
 let uptimeData = null;
 const myStack = new Set();
@@ -289,6 +290,14 @@ function setupListeners() {
     render();
   });
 
+  const matchSearchInput = document.getElementById("matchmaker-search-input");
+  matchSearchInput?.addEventListener("input", (e) => {
+    matchmakerSearchQuery = e.target.value.toLowerCase().trim();
+    if (matchmakerData) {
+      renderMatchmakerList(matchmakerData);
+    }
+  });
+
   // Global Unified Event Delegation
   document.addEventListener("click", (e) => {
     // 1. Open Badge Modal
@@ -309,6 +318,14 @@ function setupListeners() {
     if (e.target.closest("#open-matchmaker-btn, #nav-matchmaker-btn, #hero-matchmaker-btn")) {
       e.preventDefault();
       openMatchmakerModal();
+      return;
+    }
+
+    const matchmakerTrigger = e.target.closest(".matchmaker-trigger-btn");
+    if (matchmakerTrigger) {
+      e.preventDefault();
+      const targetProj = matchmakerTrigger.getAttribute("data-matchmaker-proj");
+      openMatchmakerModal(targetProj);
       return;
     }
 
@@ -757,7 +774,7 @@ async function loadMatchmaker() {
   return matchmakerData;
 }
 
-async function openMatchmakerModal() {
+async function openMatchmakerModal(targetProjectName = null) {
   const modal = document.getElementById("matchmaker-modal");
   if (modal) {
     modal.classList.remove("hidden");
@@ -766,6 +783,11 @@ async function openMatchmakerModal() {
     document.body.classList.add("overflow-hidden");
   }
   const data = await loadMatchmaker();
+  if (targetProjectName) {
+    matchmakerSearchQuery = targetProjectName.toLowerCase();
+    const searchInput = document.getElementById("matchmaker-search-input");
+    if (searchInput) searchInput.value = targetProjectName;
+  }
   renderMatchmakerList(data);
 }
 
@@ -777,6 +799,9 @@ function closeMatchmakerModal() {
     modal.style.display = "none";
     document.body.classList.remove("overflow-hidden");
   }
+  matchmakerSearchQuery = "";
+  const searchInput = document.getElementById("matchmaker-search-input");
+  if (searchInput) searchInput.value = "";
 }
 
 function renderMatchmakerList(data) {
@@ -793,15 +818,35 @@ function renderMatchmakerList(data) {
     return;
   }
 
-  const filtered = data.projects.filter((p) => {
-    if (activeMatchLang === "all") return true;
-    return (p.language || "").toLowerCase().includes(activeMatchLang.toLowerCase());
-  });
+  let filtered = data.projects;
+  if (activeMatchLang !== "all") {
+    filtered = filtered.filter((p) =>
+      (p.language || "").toLowerCase().includes(activeMatchLang.toLowerCase()),
+    );
+  }
+
+  if (matchmakerSearchQuery) {
+    const q = matchmakerSearchQuery.toLowerCase();
+    filtered = filtered.filter((p) => {
+      const name = (p.name || "").toLowerCase();
+      const desc = (p.description || "").toLowerCase();
+      const seeking = (p.seeking || "").toLowerCase();
+      const tech = Array.isArray(p.techStack) ? p.techStack.join(" ").toLowerCase() : "";
+      const issueTitles = (p.issues || []).map((i) => (i.title || "").toLowerCase()).join(" ");
+      return (
+        name.includes(q) ||
+        desc.includes(q) ||
+        seeking.includes(q) ||
+        tech.includes(q) ||
+        issueTitles.includes(q)
+      );
+    });
+  }
 
   if (filtered.length === 0) {
     list.innerHTML = `
       <div class="text-center py-8 text-slate-400 text-xs">
-        No projects currently seeking contributions for <b>${escapeHtml(activeMatchLang)}</b>.
+        No projects found matching your search. Try a different query or language filter.
       </div>
     `;
     return;
@@ -809,6 +854,32 @@ function renderMatchmakerList(data) {
 
   list.innerHTML = filtered
     .map((p) => {
+      const starsHtml =
+        typeof p.stars === "number"
+          ? `<span class="inline-flex items-center space-x-1 px-1.5 py-0.5 rounded text-[10px] font-mono bg-slate-800 text-amber-300 border border-slate-700 font-bold" title="GitHub Stars">
+              <span>⭐ ${p.stars.toLocaleString()}</span>
+            </span>`
+          : "";
+
+      const activityHtml = p.lastActivityRelative
+        ? `<span class="inline-flex items-center space-x-1 px-1.5 py-0.5 rounded text-[10px] font-mono bg-emerald-950/70 text-emerald-300 border border-emerald-500/30" title="Latest push to repository">
+            <span>🕒 Active ${escapeHtml(p.lastActivityRelative)}</span>
+          </span>`
+        : "";
+
+      const techStackHtml =
+        Array.isArray(p.techStack) && p.techStack.length > 0
+          ? `<div class="flex items-center flex-wrap gap-1 mt-1">
+              ${p.techStack
+                .slice(0, 4)
+                .map(
+                  (t) =>
+                    `<span class="px-1.5 py-0.2 text-[9px] font-mono rounded bg-slate-900 text-slate-400 border border-slate-800">#${escapeHtml(t)}</span>`,
+                )
+                .join("")}
+            </div>`
+          : "";
+
       const issuesHtml = (p.issues || [])
         .map(
           (issue) => `
@@ -819,6 +890,11 @@ function renderMatchmakerList(data) {
             </div>
             <div class="flex items-center gap-1.5 mt-1 flex-wrap">
               <span class="px-1.5 py-0.5 text-[10px] font-mono rounded bg-purple-900/60 text-purple-200 border border-purple-500/30 font-bold">${escapeHtml(issue.difficulty || "Starter Task")}</span>
+              ${
+                issue.comments && issue.comments > 0
+                  ? `<span class="px-1.5 py-0.5 text-[10px] font-mono rounded bg-cyan-950/70 text-cyan-300 border border-cyan-500/30">💬 ${issue.comments} comments</span>`
+                  : ""
+              }
               ${(issue.labels || [])
                 .slice(0, 2)
                 .map(
@@ -840,11 +916,14 @@ function renderMatchmakerList(data) {
       <div class="p-3.5 rounded-xl bg-slate-800/60 border border-slate-700/80 flex flex-col gap-2.5">
         <div class="flex items-start justify-between gap-2">
           <div>
-            <div class="flex items-center space-x-2">
+            <div class="flex items-center flex-wrap gap-2">
               <span class="font-bold text-white text-sm">${escapeHtml(p.name)}</span>
               <span class="px-2 py-0.5 text-[10px] font-mono rounded bg-purple-950 text-purple-300 border border-purple-500/40">${escapeHtml(p.language || "Open Source")}</span>
+              ${starsHtml}
+              ${activityHtml}
             </div>
-            <p class="text-xs text-slate-300 mt-0.5">${escapeHtml(p.description || "")}</p>
+            <p class="text-xs text-slate-300 mt-1">${escapeHtml(p.description || "")}</p>
+            ${techStackHtml}
           </div>
           <a href="${p.repo}" target="_blank" rel="noreferrer" class="shrink-0 text-xs text-purple-400 hover:text-purple-300 font-mono">
             🐙 Repo
@@ -1723,6 +1802,18 @@ function createCardHtml(item) {
         </div>`
       : "";
 
+  const isMatchmakerProject = Boolean(
+    item.contributorsWanted || item.type === "contributors" || item.seeking || item.goodFirstIssues,
+  );
+
+  const matchmakerActionBtn = isMatchmakerProject
+    ? `
+    <button data-matchmaker-proj="${escapeHtml(item.name)}" class="matchmaker-trigger-btn inline-flex items-center space-x-1 px-2 py-1 rounded-md text-[11px] font-semibold bg-emerald-950/70 hover:bg-emerald-900 text-emerald-200 transition border border-emerald-500/40 shadow-sm" title="View Starter Issues & Seeking Contributors">
+      <span>🤝 Good First Issues</span>
+    </button>
+  `
+    : "";
+
   return `
     <div class="glass-card rounded-2xl p-5 flex flex-col justify-between relative group">
       <div>
@@ -1780,6 +1871,7 @@ function createCardHtml(item) {
               ${metaBadges}
             </div>
             <div class="flex items-center gap-1.5 flex-wrap ml-auto">
+              ${matchmakerActionBtn}
               ${stackActionBtn}
               ${playgroundActionBtn}
               ${snippetActionBtn}
