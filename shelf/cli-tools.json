@@ -1160,5 +1160,14 @@
     "language": "JavaScript (Node.js 22+)",
     "license": "MIT",
     "featured": false
+  },
+  {
+    "name": "Hyperconsciousness",
+    "repo": "https://github.com/louis030195/hyperconsciousness",
+    "category": "CLI & Developer Productivity",
+    "description": "Developer-alpha encrypted, append-only knowledge store with a Rust CLI and MCP server. Developers can sync signed records across devices and give agents scoped, expiring access to notes.",
+    "language": "Rust",
+    "license": "MIT",
+    "featured": false
   }
 ]

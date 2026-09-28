@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-09-28T05:51:56.286Z",
-  "totalCount": 512,
-  "reposCount": 316,
+  "updatedAt": "2026-09-28T11:23:26.727Z",
+  "totalCount": 513,
+  "reposCount": 317,
   "facets": {
-    "repos": 316
+    "repos": 317
   },
   "counts": {
     "aiTools": 86,
-    "cliTools": 106,
+    "cliTools": 107,
     "testingQa": 62,
     "apis": 96,
     "freeCloud": 70,
@@ -3155,6 +3155,17 @@
       "category": "CLI & Developer Productivity",
       "description": "Offline Node.js CLI that checks captured Lighthouse JSON against declared route-level performance budgets and reports a completed budget failure. It does not run Lighthouse or measure a live page.",
       "language": "JavaScript (Node.js 22+)",
+      "license": "MIT",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "Hyperconsciousness",
+      "repo": "https://github.com/louis030195/hyperconsciousness",
+      "category": "CLI & Developer Productivity",
+      "description": "Developer-alpha encrypted, append-only knowledge store with a Rust CLI and MCP server. Developers can sync signed records across devices and give agents scoped, expiring access to notes.",
+      "language": "Rust",
       "license": "MIT",
       "featured": false,
       "type": "cli",
