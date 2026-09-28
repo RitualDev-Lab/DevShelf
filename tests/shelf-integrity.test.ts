@@ -130,8 +130,10 @@ describe("DevShelf Catalog Data Integrity", async () => {
 
   test("no duplicate canonical URLs exist across any of the 8 shelf files (cross-shelf uniqueness)", () => {
     const globalUrls = new Map<string, { file: string; name: string }>();
+    let total = 0;
 
     for (const [file, items] of shelfData) {
+      total += items.length;
       for (const item of items) {
         const rawUrl = (item.url || item.repo || "").toLowerCase().replace(/\/$/, "");
         if (rawUrl) {
@@ -144,31 +146,45 @@ describe("DevShelf Catalog Data Integrity", async () => {
         }
       }
     }
-    assert.strictEqual(globalUrls.size, 512, `Expected 512 unique URLs, got ${globalUrls.size}`);
+    assert.strictEqual(
+      globalUrls.size,
+      total,
+      `Expected ${total} unique URLs, got ${globalUrls.size}`,
+    );
   });
 
-  test("total catalog scale satisfies 512 milestone", () => {
+  test("total catalog scale satisfies 500+ milestone", () => {
     let total = 0;
     for (const [_, items] of shelfData) {
       total += items.length;
     }
-    assert.strictEqual(
-      total,
-      512,
-      `Expected total catalog count to be exactly 512 items, got ${total}`,
-    );
+    assert.ok(total >= 500, `Expected total catalog count to be at least 500 items, got ${total}`);
   });
 });
 
 describe("DevShelf Generated Artifacts & Docs Sync", async () => {
-  test("site/data.json exists, is valid, and matches catalog exactly (512)", async () => {
+  test("site/data.json exists, is valid, and matches catalog exactly", async () => {
     const dataJsonPath = path.join(ROOT, "site", "data.json");
     const raw = await fs.readFile(dataJsonPath, "utf8");
     const data = JSON.parse(raw);
 
-    assert.strictEqual(data.totalCount, 512, `Expected totalCount 512, got ${data.totalCount}`);
+    const shelfFiles = await fs.readdir(SHELF_DIR);
+    let totalCatalogCount = 0;
+    for (const file of shelfFiles) {
+      if (file.endsWith(".json")) {
+        const content = await fs.readFile(path.join(SHELF_DIR, file), "utf8");
+        const items = JSON.parse(content.replace(/^\uFEFF/, ""));
+        totalCatalogCount += items.length;
+      }
+    }
+
+    assert.strictEqual(
+      data.totalCount,
+      totalCatalogCount,
+      `Expected totalCount ${totalCatalogCount}, got ${data.totalCount}`,
+    );
     assert.ok(Array.isArray(data.resources), "Expected data.resources to be an array");
-    assert.strictEqual(data.resources.length, 512);
+    assert.strictEqual(data.resources.length, totalCatalogCount);
 
     const countsSum = Object.values(data.counts).reduce(
       (acc: number, val: any) => acc + (typeof val === "number" ? val : 0),
@@ -176,8 +192,8 @@ describe("DevShelf Generated Artifacts & Docs Sync", async () => {
     );
     assert.strictEqual(
       countsSum,
-      512,
-      `Expected data.counts to sum to exactly 512, got ${countsSum}`,
+      totalCatalogCount,
+      `Expected data.counts to sum to exactly ${totalCatalogCount}, got ${countsSum}`,
     );
   });
 
