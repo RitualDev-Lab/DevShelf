@@ -24,10 +24,13 @@ const CHUNK_SIZE = 24;
 let loadMoreObserver = null;
 
 const BADGE_MARKDOWNS = {
+  "verified-free":
+    "[![Featured on DevShelf](https://img.shields.io/badge/DevShelf-Verified_Free-7928CA?style=flat-square&logo=googlechrome&logoColor=white)](https://devshelf.ritualdev.in/)",
   purple:
     "[![Featured on DevShelf](https://img.shields.io/badge/Featured%20on-DevShelf-7928CA?style=for-the-badge&logo=googlechrome&logoColor=white)](https://devshelf.ritualdev.in/)",
+  svg: '<a href="https://devshelf.ritualdev.in/"><img src="https://devshelf.ritualdev.in/badge.svg" alt="Featured on DevShelf"></a>',
   cyan: "[![Featured on DevShelf](https://img.shields.io/badge/DevShelf-Curated%20Resource-00E5FF?style=for-the-badge&logo=github&logoColor=black)](https://devshelf.ritualdev.in/)",
-  flat: "[![Featured on DevShelf](https://img.shields.io/badge/Featured%20on-DevShelf-blueviolet?style=flat-square&logo=googlechrome&logoColor=white)](https://devshelf.ritualdev.in/)",
+  flat: "[![Featured on DevShelf](https://img.shields.io/badge/DevShelf-Verified_Free-7928CA?style=flat-square&logo=googlechrome&logoColor=white)](https://devshelf.ritualdev.in/)",
 };
 
 /**
@@ -93,6 +96,8 @@ function applyData(data) {
 function updateMatrixCounts() {
   const counts = {
     noauth: 0,
+    alternatives: 0,
+    docker: 0,
     selfhost: 0,
     freetier: 0,
     offline: 0,
@@ -100,18 +105,28 @@ function updateMatrixCounts() {
 
   for (const item of allResources) {
     if (matchesMatrixTag(item, "noauth")) counts.noauth++;
+    if (matchesMatrixTag(item, "alternatives")) counts.alternatives++;
+    if (matchesMatrixTag(item, "docker")) counts.docker++;
     if (matchesMatrixTag(item, "selfhost")) counts.selfhost++;
     if (matchesMatrixTag(item, "freetier")) counts.freetier++;
     if (matchesMatrixTag(item, "offline")) counts.offline++;
   }
 
   setElText("matrix-count-noauth", counts.noauth);
+  setElText("matrix-count-alternatives", counts.alternatives);
+  setElText("matrix-count-docker", counts.docker);
   setElText("matrix-count-selfhost", counts.selfhost);
   setElText("matrix-count-freetier", counts.freetier);
   setElText("matrix-count-offline", counts.offline);
 }
 
 function matchesMatrixTag(item, tag) {
+  if (tag === "alternatives") {
+    return Boolean(item.alternativeTo);
+  }
+  if (tag === "docker") {
+    return Boolean(item.dockerCompose);
+  }
   if (tag === "noauth") {
     return (
       item.auth === "No Key" ||
@@ -123,6 +138,7 @@ function matchesMatrixTag(item, tag) {
   if (tag === "selfhost") {
     return (
       item.type === "boilerplate" ||
+      Boolean(item.dockerCompose) ||
       (item.statusTags || []).some(
         (t) => t.toLowerCase().includes("self-hostable") || t.toLowerCase().includes("selfhost"),
       )
@@ -402,6 +418,49 @@ function setupListeners() {
       if (item) {
         openSnippetDrawer(item);
       }
+      return;
+    }
+
+    // 9x. Copy docker-compose.yml Button on Card
+    const dockerBtn = e.target.closest(".copy-docker-btn");
+    if (dockerBtn) {
+      e.preventDefault();
+      const toolName = dockerBtn.dataset.dockerName;
+      const item = allResources.find((r) => r.name === toolName);
+      if (item?.dockerCompose) {
+        copyToClipboard(
+          item.dockerCompose,
+          `✓ Copied docker-compose.yml for ${item.name}! Run "docker compose up -d" to launch.`,
+        );
+        const origText = dockerBtn.innerHTML;
+        dockerBtn.innerHTML = "<span>✓ Copied Compose!</span>";
+        dockerBtn.classList.remove("text-cyan-200", "bg-cyan-950/80");
+        dockerBtn.classList.add("text-emerald-200", "bg-emerald-950/80", "border-emerald-500/50");
+        setTimeout(() => {
+          dockerBtn.innerHTML = origText;
+          dockerBtn.classList.add("text-cyan-200", "bg-cyan-950/80");
+          dockerBtn.classList.remove(
+            "text-emerald-200",
+            "bg-emerald-950/80",
+            "border-emerald-500/50",
+          );
+        }, 2200);
+      }
+      return;
+    }
+
+    // 9y. Card Badge Button
+    const cardBadgeBtn = e.target.closest(".card-badge-btn");
+    if (cardBadgeBtn) {
+      e.preventDefault();
+      const badgeMd =
+        "[![Featured on DevShelf](https://img.shields.io/badge/DevShelf-Verified_Free-7928CA?style=flat-square&logo=googlechrome&logoColor=white)](https://devshelf.ritualdev.in/)";
+      copyToClipboard(badgeMd, "✓ Copied official README badge markdown to clipboard!");
+      const orig = cardBadgeBtn.innerHTML;
+      cardBadgeBtn.innerHTML = "<span>✓ Copied!</span>";
+      setTimeout(() => {
+        cardBadgeBtn.innerHTML = orig;
+      }, 2000);
       return;
     }
 
@@ -1144,6 +1203,13 @@ ${
     ? `# Clone & Inspect repository\ngit clone ${item.repo}.git\ncd ${repoSlug.split("/")[1] || "repo"}`
     : `# Inspect endpoint headers\ncurl -s -I "${url}"`
 }`,
+    docker: item.dockerCompose
+      ? `# 5. 60-Second Docker Compose Deployment for ${item.name}
+# Save as docker-compose.yml and run: docker compose up -d
+
+${item.dockerCompose}`
+      : `# 5. 60-Second Docker Quickstart for ${item.name}
+docker run -d --name ${escapeSlug(item.name)} -p 8080:8080 ${escapeSlug(item.name)}:latest`,
   };
 }
 
@@ -1617,6 +1683,8 @@ function render() {
       item.license,
       item.repo,
       item.url,
+      item.alternativeTo,
+      item.dockerCompose,
       ...(item.statusTags || []),
     ]
       .filter(Boolean)
@@ -1943,6 +2011,28 @@ function createCardHtml(item) {
   `
     : "";
 
+  const dockerActionBtn = item.dockerCompose
+    ? `
+    <button data-docker-name="${escapeHtml(item.name)}" class="copy-docker-btn inline-flex items-center space-x-1 px-2.5 py-1 rounded-md text-[11px] font-bold bg-cyan-950/80 hover:bg-cyan-900 text-cyan-200 transition border border-cyan-500/40 shadow-sm" title="Copy 60-Second docker-compose.yml">
+      <span>🐳 Copy docker-compose.yml</span>
+    </button>
+  `
+    : "";
+
+  const badgeActionBtn = isRepo
+    ? `
+    <button data-badge-repo="${escapeHtml(item.repo)}" class="card-badge-btn inline-flex items-center space-x-1 px-2 py-1 rounded-md text-[11px] font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-purple-300 transition border border-slate-700 shadow-sm" title="Copy README Badge for ${escapeHtml(item.name)}">
+      <span>🏷️ Badge</span>
+    </button>
+  `
+    : "";
+
+  const alternativeTagHtml = item.alternativeTo
+    ? `<span class="inline-block px-2.5 py-0.5 text-xs font-mono font-bold rounded-full border bg-amber-950/80 text-amber-300 border-amber-500/40" title="Free & open-source alternative to ${escapeHtml(item.alternativeTo)}">
+        ⚡ Alt to ${escapeHtml(item.alternativeTo)}
+      </span>`
+    : "";
+
   return `
     <div class="glass-card rounded-2xl p-5 flex flex-col justify-between relative group">
       <div>
@@ -1983,8 +2073,11 @@ function createCardHtml(item) {
           </div>
         </div>
 
-        <div class="inline-block px-2.5 py-0.5 text-xs font-mono font-bold rounded-full border my-2 ${categoryBadgeColor}">
-          ${escapeHtml(item.category || item.section)}
+        <div class="flex items-center flex-wrap gap-1.5 my-2">
+          <div class="inline-block px-2.5 py-0.5 text-xs font-mono font-bold rounded-full border ${categoryBadgeColor}">
+            ${escapeHtml(item.category || item.section)}
+          </div>
+          ${alternativeTagHtml}
         </div>
         ${flaggedNotice}
         ${statusTagsHtml}
@@ -2000,10 +2093,12 @@ function createCardHtml(item) {
               ${metaBadges}
             </div>
             <div class="flex items-center gap-1.5 flex-wrap ml-auto">
+              ${dockerActionBtn}
               ${matchmakerActionBtn}
               ${stackActionBtn}
               ${playgroundActionBtn}
               ${snippetActionBtn}
+              ${badgeActionBtn}
             </div>
           </div>
           <div class="flex items-center flex-wrap gap-2 w-full">

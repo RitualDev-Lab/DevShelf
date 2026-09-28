@@ -166,6 +166,7 @@ function printHelp() {
   console.log(`
 ${c.bold}USAGE:${c.reset}
   ${c.green}npx devshelf${c.reset}                     Launch interactive Terminal User Interface (TUI)
+  ${c.green}npx devshelf daily [--quiet]${c.reset}     Print today's curated open-source discovery
   ${c.green}npx devshelf search <query>${c.reset}      Search tools, APIs, and AI agents
   ${c.green}npx devshelf contribute [query]${c.reset}  Find repos actively seeking help & starter tasks
   ${c.green}npx devshelf list [category]${c.reset}     List items by category
@@ -174,18 +175,35 @@ ${c.bold}USAGE:${c.reset}
   ${c.green}npx devshelf open <name>${c.reset}          Open resource URL directly in browser
 
 ${c.bold}OPTIONS:${c.reset}
+  ${c.cyan}-q, --quiet${c.reset}                      Ultra-compact output for .zshrc / .bashrc execution
   ${c.cyan}--json${c.reset}                           Output raw JSON results for piping
   ${c.cyan}--open${c.reset}                           Open first result in browser
   ${c.cyan}-h, --help${c.reset}                       Show this help message
   ${c.cyan}-v, --version${c.reset}                    Show version
 
 ${c.bold}EXAMPLES:${c.reset}
+  ${c.gray}$${c.reset} npx devshelf daily --quiet
+  ${c.gray}$${c.reset} npx devshelf search "postman"
   ${c.gray}$${c.reset} npx devshelf search "postgres"
   ${c.gray}$${c.reset} npx devshelf contribute "rust"
-  ${c.gray}$${c.reset} npx devshelf search "auth" --open
   ${c.gray}$${c.reset} npx devshelf list "ai"
   ${c.gray}$${c.reset} npx devshelf random
 `);
+}
+
+function getDailyItem(resources) {
+  if (!resources || resources.length === 0) return null;
+  const today = new Date();
+  const year = today.getFullYear();
+  const month = String(today.getMonth() + 1).padStart(2, "0");
+  const day = String(today.getDate()).padStart(2, "0");
+  const dateStr = `${year}-${month}-${day}`;
+  let hash = 0;
+  for (let i = 0; i < dateStr.length; i++) {
+    hash = (hash * 31 + dateStr.charCodeAt(i)) % 2147483647;
+  }
+  const index = Math.abs(hash) % resources.length;
+  return { date: dateStr, item: resources[index] };
 }
 
 function searchItems(resources, query) {
@@ -195,12 +213,14 @@ function searchItems(resources, query) {
     const desc = (item.description || "").toLowerCase();
     const cat = (item.category || "").toLowerCase();
     const lang = (item.language || "").toLowerCase();
+    const alt = (item.alternativeTo || "").toLowerCase();
     const tags = Array.isArray(item.statusTags) ? item.statusTags.join(" ").toLowerCase() : "";
     return (
       name.includes(q) ||
       desc.includes(q) ||
       cat.includes(q) ||
       lang.includes(q) ||
+      alt.includes(q) ||
       tags.includes(q)
     );
   });
@@ -213,6 +233,11 @@ function printItemCard(item, index) {
   const url = getResourceUrl(item);
 
   console.log(`\n  ${prefix}${name} ${cat}`);
+  if (item.alternativeTo) {
+    console.log(
+      `  ${c.purple}⚡ Alternative to:${c.reset} ${c.bold}${item.alternativeTo}${c.reset}`,
+    );
+  }
   if (item.description) {
     console.log(`  ${c.gray}${item.description}${c.reset}`);
   }
@@ -220,6 +245,7 @@ function printItemCard(item, index) {
   const badges = [];
   if (item.language) badges.push(`${c.cyan}Lang: ${item.language}${c.reset}`);
   if (item.license) badges.push(`${c.blue}Lic: ${item.license}${c.reset}`);
+  if (item.dockerCompose) badges.push(`${c.cyan}🐳 Self-Hostable${c.reset}`);
   if (item.auth) badges.push(`${c.green}Auth: ${item.auth}${c.reset}`);
   if (item.rateLimit) badges.push(`${c.amber}Rate: ${item.rateLimit}${c.reset}`);
   if (item.freeTier) badges.push(`${c.green}Free: ${item.freeTier}${c.reset}`);
@@ -477,6 +503,50 @@ async function main() {
       return;
     }
     await runInteractiveTui(data);
+    return;
+  }
+
+  if (command === "daily" || command === "today") {
+    const isQuiet = args.includes("--quiet") || args.includes("-q");
+    const daily = getDailyItem(resources);
+    if (!daily || !daily.item) {
+      console.error(`${c.red}Error:${c.reset} No catalog items available.`);
+      process.exit(1);
+    }
+    const { date, item } = daily;
+
+    if (isJson) {
+      console.log(JSON.stringify({ date, item }, null, 2));
+      return;
+    }
+
+    const url = getResourceUrl(item);
+    const altStr = item.alternativeTo ? ` (⚡ Alt to ${item.alternativeTo})` : "";
+
+    if (isQuiet) {
+      console.log(
+        `${c.purple}💡 DevShelf Daily:${c.reset} ${c.bold}${item.name}${c.reset}${c.cyan}${altStr}${c.reset} — ${item.description}`,
+      );
+      if (url) {
+        console.log(`   ${c.underline}${c.blue}${url}${c.reset}`);
+      }
+      return;
+    }
+
+    printHeader();
+    console.log(
+      `  ${c.purple}${c.bold}📅 DevShelf Daily Discovery${c.reset} ${c.gray}— ${date}${c.reset}\n`,
+    );
+    printItemCard(item);
+
+    console.log(`
+  ${c.gray}💡 Add to your ${c.cyan}~/.zshrc${c.gray} or ${c.cyan}~/.bashrc${c.gray} for a new discovery on every tab:${c.reset}
+  ${c.green}npx devshelf daily --quiet${c.reset}
+`);
+
+    if (shouldOpen) {
+      openUrl(url);
+    }
     return;
   }
 

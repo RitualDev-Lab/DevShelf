@@ -22,6 +22,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.svg">
+
   <!-- Static Compiled Tailwind CSS (zero runtime JS parser) & Custom Styles -->
   <link rel="stylesheet" href="tailwind.min.css?v=1.0.0">
   <link rel="stylesheet" href="style.css?v=5.2">
@@ -251,6 +255,14 @@
           <span>🟢 [No Auth Required]</span>
           <span class="matrix-count px-1.5 py-0.5 rounded-md text-[10px] bg-slate-800 text-slate-300 font-mono" id="matrix-count-noauth">0</span>
         </button>
+        <button data-matrixtag="alternatives" class="matrix-btn px-3 py-1.5 rounded-xl bg-slate-900/90 border border-slate-700 text-slate-200 hover:border-amber-500/50 flex items-center space-x-1.5 transition">
+          <span>⚡ [Alt to Paid Tools]</span>
+          <span class="matrix-count px-1.5 py-0.5 rounded-md text-[10px] bg-slate-800 text-slate-300 font-mono" id="matrix-count-alternatives">0</span>
+        </button>
+        <button data-matrixtag="docker" class="matrix-btn px-3 py-1.5 rounded-xl bg-slate-900/90 border border-slate-700 text-slate-200 hover:border-cyan-500/50 flex items-center space-x-1.5 transition">
+          <span>🐳 [Self-Host in 60s]</span>
+          <span class="matrix-count px-1.5 py-0.5 rounded-md text-[10px] bg-slate-800 text-slate-300 font-mono" id="matrix-count-docker">0</span>
+        </button>
         <button data-matrixtag="selfhost" class="matrix-btn px-3 py-1.5 rounded-xl bg-slate-900/90 border border-slate-700 text-slate-200 hover:border-sky-500/50 flex items-center space-x-1.5 transition">
           <span>🏠 [Self-Hostable]</span>
           <span class="matrix-count px-1.5 py-0.5 rounded-md text-[10px] bg-slate-800 text-slate-300 font-mono" id="matrix-count-selfhost">0</span>
@@ -440,11 +452,25 @@
         Is your project curated on DevShelf? Embed one of these official badges in your GitHub <code>README.md</code> to show off community verification:
       </p>
 
-      <!-- Badge Option 1 -->
+      <!-- Badge Option 1: Verified Free Flat Square (Flagship) -->
+      <div class="mb-4 p-3.5 rounded-xl bg-slate-950 border border-purple-500/40">
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-xs font-bold text-purple-300">Style 1: Verified Free (Flat Square — Flagship)</span>
+          <button data-badge="verified-free" class="copy-badge-btn px-2.5 py-1 rounded bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold transition">
+            Copy Markdown
+          </button>
+        </div>
+        <div class="mb-2">
+          <img src="https://img.shields.io/badge/DevShelf-Verified_Free-7928CA?style=flat-square&logo=googlechrome&logoColor=white" alt="Featured on DevShelf - Verified Free" class="h-5">
+        </div>
+        <input type="text" readonly value="[![Featured on DevShelf](https://img.shields.io/badge/DevShelf-Verified_Free-7928CA?style=flat-square&logo=googlechrome&logoColor=white)](https://devshelf.ritualdev.in/)" class="w-full text-xs font-mono bg-slate-900 px-3 py-2 rounded text-emerald-300 border border-slate-700 select-all font-semibold">
+      </div>
+
+      <!-- Badge Option 2 -->
       <div class="mb-4 p-3.5 rounded-xl bg-slate-950 border border-slate-800">
         <div class="flex items-center justify-between mb-2">
-          <span class="text-xs font-bold text-purple-300">Style 1: Modern Purple (Recommended)</span>
-          <button data-badge="purple" class="copy-badge-btn px-2.5 py-1 rounded bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold transition">
+          <span class="text-xs font-bold text-purple-300">Style 2: For-The-Badge Gradient</span>
+          <button data-badge="purple" class="copy-badge-btn px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold transition border border-slate-700">
             Copy Markdown
           </button>
         </div>
@@ -454,32 +480,18 @@
         <input type="text" readonly value="[![Featured on DevShelf](https://img.shields.io/badge/Featured%20on-DevShelf-7928CA?style=for-the-badge&logo=googlechrome&logoColor=white)](https://devshelf.ritualdev.in/)" class="w-full text-xs font-mono bg-slate-900 px-3 py-2 rounded text-emerald-300 border border-slate-700 select-all font-semibold">
       </div>
 
-      <!-- Badge Option 2 -->
-      <div class="mb-4 p-3.5 rounded-xl bg-slate-950 border border-slate-800">
-        <div class="flex items-center justify-between mb-2">
-          <span class="text-xs font-bold text-cyan-300">Style 2: Cyberpunk Neon Cyan</span>
-          <button data-badge="cyan" class="copy-badge-btn px-2.5 py-1 rounded bg-cyan-600 hover:bg-cyan-500 text-white text-xs font-bold transition">
-            Copy Markdown
-          </button>
-        </div>
-        <div class="mb-2">
-          <img src="https://img.shields.io/badge/DevShelf-Curated%20Resource-00E5FF?style=for-the-badge&logo=github&logoColor=black" alt="DevShelf Curated Resource" class="h-6">
-        </div>
-        <input type="text" readonly value="[![Featured on DevShelf](https://img.shields.io/badge/DevShelf-Curated%20Resource-00E5FF?style=for-the-badge&logo=github&logoColor=black)](https://devshelf.ritualdev.in/)" class="w-full text-xs font-mono bg-slate-900 px-3 py-2 rounded text-emerald-300 border border-slate-700 select-all font-semibold">
-      </div>
-
       <!-- Badge Option 3 -->
       <div class="p-3.5 rounded-xl bg-slate-950 border border-slate-800">
         <div class="flex items-center justify-between mb-2">
-          <span class="text-xs font-bold text-violet-300">Style 3: Minimal Flat Square</span>
-          <button data-badge="flat" class="copy-badge-btn px-2.5 py-1 rounded bg-slate-700 hover:bg-slate-600 text-white text-xs font-bold transition">
-            Copy Markdown
+          <span class="text-xs font-bold text-cyan-300">Style 3: Direct SVG Embed</span>
+          <button data-badge="svg" class="copy-badge-btn px-2.5 py-1 rounded bg-cyan-600 hover:bg-cyan-500 text-white text-xs font-bold transition">
+            Copy HTML
           </button>
         </div>
         <div class="mb-2">
-          <img src="https://img.shields.io/badge/Featured%20on-DevShelf-blueviolet?style=flat-square&logo=googlechrome&logoColor=white" alt="Featured on DevShelf" class="h-5">
+          <img src="badge.svg" alt="DevShelf Verified Free Badge" class="h-6">
         </div>
-        <input type="text" readonly value="[![Featured on DevShelf](https://img.shields.io/badge/Featured%20on-DevShelf-blueviolet?style=flat-square&logo=googlechrome&logoColor=white)](https://devshelf.ritualdev.in/)" class="w-full text-xs font-mono bg-slate-900 px-3 py-2 rounded text-emerald-300 border border-slate-700 select-all font-semibold">
+        <input type="text" readonly value="&lt;a href=&quot;https://devshelf.ritualdev.in/&quot;&gt;&lt;img src=&quot;https://devshelf.ritualdev.in/badge.svg&quot; alt=&quot;Featured on DevShelf&quot;&gt;&lt;/a&gt;" class="w-full text-xs font-mono bg-slate-900 px-3 py-2 rounded text-emerald-300 border border-slate-700 select-all font-semibold">
       </div>
     </div>
   </div>
@@ -707,7 +719,8 @@
         <button data-snippettab="curl" class="drawer-tab active flex-1 text-center">cURL</button>
         <button data-snippettab="fetch" class="drawer-tab flex-1 text-center">Fetch (JS)</button>
         <button data-snippettab="python" class="drawer-tab flex-1 text-center">Python</button>
-        <button data-snippettab="cli" class="drawer-tab flex-1 text-center">CLI / Docker</button>
+        <button data-snippettab="docker" class="drawer-tab flex-1 text-center">🐳 Docker</button>
+        <button data-snippettab="cli" class="drawer-tab flex-1 text-center">CLI</button>
       </div>
 
       <!-- Code Snippet Box -->

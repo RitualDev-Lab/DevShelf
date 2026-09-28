@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28T04:11:09.813Z",
+  "updatedAt": "2026-09-28T04:25:38.530Z",
   "totalCount": 511,
   "reposCount": 315,
   "facets": {
@@ -31,7 +31,9 @@
         "No Card Required"
       ],
       "type": "ai",
-      "section": "AI Agents & Local LLMs"
+      "section": "AI Agents & Local LLMs",
+      "alternativeTo": "GitHub Copilot / OpenAI API",
+      "dockerCompose": "services:\n  ollama:\n    image: ollama/ollama:latest\n    container_name: ollama\n    restart: unless-stopped\n    ports:\n      - \"11434:11434\"\n    volumes:\n      - ollama:/root/.ollama\n\nvolumes:\n  ollama:"
     },
     {
       "name": "Dify",
@@ -65,7 +67,8 @@
         "No Card Required"
       ],
       "type": "ai",
-      "section": "AI Agents & Local LLMs"
+      "section": "AI Agents & Local LLMs",
+      "alternativeTo": "Triton Inference Server"
     },
     {
       "name": "Open-WebUI",
@@ -116,7 +119,9 @@
         "No Card Required"
       ],
       "type": "ai",
-      "section": "AI Agents & Local LLMs"
+      "section": "AI Agents & Local LLMs",
+      "alternativeTo": "OpenAI API",
+      "dockerCompose": "services:\n  localai:\n    image: localai/localai:latest\n    container_name: localai\n    restart: unless-stopped\n    ports:\n      - \"8080:8080\""
     },
     {
       "name": "AnythingLLM",
@@ -133,7 +138,8 @@
         "No Card Required"
       ],
       "type": "ai",
-      "section": "AI Agents & Local LLMs"
+      "section": "AI Agents & Local LLMs",
+      "alternativeTo": "Chatbase / TypingMind"
     },
     {
       "name": "Flowise",
@@ -167,7 +173,8 @@
         "No Card Required"
       ],
       "type": "ai",
-      "section": "AI Agents & Local LLMs"
+      "section": "AI Agents & Local LLMs",
+      "alternativeTo": "Flowise / Dify"
     },
     {
       "name": "Jan",
@@ -201,7 +208,9 @@
         "No Card Required"
       ],
       "type": "ai",
-      "section": "AI Agents & Local LLMs"
+      "section": "AI Agents & Local LLMs",
+      "alternativeTo": "ChatGPT Plus / Claude Pro",
+      "dockerCompose": "services:\n  librechat:\n    image: ghcr.io/danny-avila/librechat:latest\n    container_name: librechat\n    restart: unless-stopped\n    ports:\n      - \"3080:3080\""
     },
     {
       "name": "Fabric",
@@ -252,7 +261,8 @@
         "No Card Required"
       ],
       "type": "ai",
-      "section": "AI Agents & Local LLMs"
+      "section": "AI Agents & Local LLMs",
+      "alternativeTo": "Devin / Copilot Workspace"
     },
     {
       "name": "Continue",
@@ -318,7 +328,8 @@
         "No Card Required"
       ],
       "type": "ai",
-      "section": "AI Agents & Local LLMs"
+      "section": "AI Agents & Local LLMs",
+      "alternativeTo": "ChatGPT Enterprise"
     },
     {
       "name": "GPT4All",
@@ -350,7 +361,8 @@
         "No Card Required"
       ],
       "type": "ai",
-      "section": "AI Agents & Local LLMs"
+      "section": "AI Agents & Local LLMs",
+      "alternativeTo": "GitHub Copilot"
     },
     {
       "name": "Khoj",
@@ -366,7 +378,8 @@
         "No Card Required"
       ],
       "type": "ai",
-      "section": "AI Agents & Local LLMs"
+      "section": "AI Agents & Local LLMs",
+      "alternativeTo": "Rewind AI / Notion AI"
     },
     {
       "name": "LlamaIndex",
@@ -398,7 +411,8 @@
         "No Card Required"
       ],
       "type": "ai",
-      "section": "AI Agents & Local LLMs"
+      "section": "AI Agents & Local LLMs",
+      "alternativeTo": "LlamaIndex Enterprise"
     },
     {
       "name": "Instructor",
@@ -462,7 +476,9 @@
         "No Card Required"
       ],
       "type": "ai",
-      "section": "AI Agents & Local LLMs"
+      "section": "AI Agents & Local LLMs",
+      "alternativeTo": "Pinecone",
+      "dockerCompose": "services:\n  qdrant:\n    image: qdrant/qdrant:latest\n    container_name: qdrant\n    restart: unless-stopped\n    ports:\n      - \"6333:6333\"\n      - \"6334:6334\"\n    volumes:\n      - ./qdrant_storage:/qdrant/storage"
     },
     {
       "name": "Milvus",
@@ -478,7 +494,8 @@
         "No Card Required"
       ],
       "type": "ai",
-      "section": "AI Agents & Local LLMs"
+      "section": "AI Agents & Local LLMs",
+      "alternativeTo": "Pinecone"
     },
     {
       "name": "Weaviate",
@@ -494,7 +511,8 @@
         "No Card Required"
       ],
       "type": "ai",
-      "section": "AI Agents & Local LLMs"
+      "section": "AI Agents & Local LLMs",
+      "alternativeTo": "Pinecone"
     },
     {
       "name": "Bark",
@@ -526,7 +544,8 @@
         "No Card Required"
       ],
       "type": "ai",
-      "section": "AI Agents & Local LLMs"
+      "section": "AI Agents & Local LLMs",
+      "alternativeTo": "OpenAI Whisper API"
     },
     {
       "name": "ComfyUI",
@@ -558,7 +577,9 @@
         "No Card Required"
       ],
       "type": "ai",
-      "section": "AI Agents & Local LLMs"
+      "section": "AI Agents & Local LLMs",
+      "alternativeTo": "Google Custom Search API",
+      "dockerCompose": "services:\n  searxng:\n    image: searxng/searxng:latest\n    container_name: searxng\n    restart: unless-stopped\n    ports:\n      - \"8080:8080\"\n    volumes:\n      - ./searxng:/etc/searxng"
     },
     {
       "name": "RAGFlow",
@@ -574,7 +595,8 @@
         "No Card Required"
       ],
       "type": "ai",
-      "section": "AI Agents & Local LLMs"
+      "section": "AI Agents & Local LLMs",
+      "alternativeTo": "Dify Enterprise"
     },
     {
       "name": "Mem0",
@@ -590,7 +612,8 @@
         "No Card Required"
       ],
       "type": "ai",
-      "section": "AI Agents & Local LLMs"
+      "section": "AI Agents & Local LLMs",
+      "alternativeTo": "Zep Memory"
     },
     {
       "name": "Open-Interpreter",
@@ -622,7 +645,8 @@
         "No Card Required"
       ],
       "type": "ai",
-      "section": "AI Agents & Local LLMs"
+      "section": "AI Agents & Local LLMs",
+      "alternativeTo": "Triton Inference Server"
     },
     {
       "name": "SGLang",
@@ -638,7 +662,8 @@
         "No Card Required"
       ],
       "type": "ai",
-      "section": "AI Agents & Local LLMs"
+      "section": "AI Agents & Local LLMs",
+      "alternativeTo": "vLLM / TensorRT-LLM"
     },
     {
       "name": "TensorRT-LLM",
@@ -654,7 +679,8 @@
         "No Card Required"
       ],
       "type": "ai",
-      "section": "AI Agents & Local LLMs"
+      "section": "AI Agents & Local LLMs",
+      "alternativeTo": "NVIDIA AI Enterprise"
     },
     {
       "name": "ExLlamaV2",
@@ -766,7 +792,8 @@
         "No Card Required"
       ],
       "type": "ai",
-      "section": "AI Agents & Local LLMs"
+      "section": "AI Agents & Local LLMs",
+      "alternativeTo": "Devin AI"
     },
     {
       "name": "ChatDev",
@@ -798,7 +825,8 @@
         "No Card Required"
       ],
       "type": "ai",
-      "section": "AI Agents & Local LLMs"
+      "section": "AI Agents & Local LLMs",
+      "alternativeTo": "AutoGPT Enterprise"
     },
     {
       "name": "Unsloth",
@@ -814,7 +842,8 @@
         "No Card Required"
       ],
       "type": "ai",
-      "section": "AI Agents & Local LLMs"
+      "section": "AI Agents & Local LLMs",
+      "alternativeTo": "Anyscale / RunPod"
     },
     {
       "name": "Axolotl",
@@ -942,7 +971,8 @@
         "No Card Required"
       ],
       "type": "ai",
-      "section": "AI Agents & Local LLMs"
+      "section": "AI Agents & Local LLMs",
+      "alternativeTo": "Arize Phoenix"
     },
     {
       "name": "DeepEval",
@@ -1022,7 +1052,8 @@
         "No Card Required"
       ],
       "type": "ai",
-      "section": "AI Agents & Local LLMs"
+      "section": "AI Agents & Local LLMs",
+      "alternativeTo": "LangSmith"
     },
     {
       "name": "Stable Diffusion WebUI",
@@ -1134,7 +1165,8 @@
         "No Card Required"
       ],
       "type": "ai",
-      "section": "AI Agents & Local LLMs"
+      "section": "AI Agents & Local LLMs",
+      "alternativeTo": "Google Cloud Vision OCR"
     },
     {
       "name": "Kokoro-TTS",
@@ -1166,7 +1198,8 @@
         "No Card Required"
       ],
       "type": "ai",
-      "section": "AI Agents & Local LLMs"
+      "section": "AI Agents & Local LLMs",
+      "alternativeTo": "ElevenLabs"
     },
     {
       "name": "ChatTTS",
@@ -1214,7 +1247,8 @@
         "No Card Required"
       ],
       "type": "ai",
-      "section": "AI Agents & Local LLMs"
+      "section": "AI Agents & Local LLMs",
+      "alternativeTo": "Pinecone / Weaviate Cloud"
     },
     {
       "name": "Faiss",
@@ -1246,7 +1280,8 @@
         "No Card Required"
       ],
       "type": "ai",
-      "section": "AI Agents & Local LLMs"
+      "section": "AI Agents & Local LLMs",
+      "alternativeTo": "Pinecone"
     },
     {
       "name": "Vespa",
@@ -1310,7 +1345,8 @@
         "No Card Required"
       ],
       "type": "ai",
-      "section": "AI Agents & Local LLMs"
+      "section": "AI Agents & Local LLMs",
+      "alternativeTo": "GitHub Copilot"
     },
     {
       "name": "LMQL",
@@ -1358,7 +1394,8 @@
         "No Card Required"
       ],
       "type": "ai",
-      "section": "AI Agents & Local LLMs"
+      "section": "AI Agents & Local LLMs",
+      "alternativeTo": "Devin AI"
     },
     {
       "name": "DSPy",
@@ -1470,7 +1507,8 @@
         "No Card Required"
       ],
       "type": "cli",
-      "section": "CLI & Productivity Tools"
+      "section": "CLI & Productivity Tools",
+      "alternativeTo": "Grep"
     },
     {
       "name": "eza",
@@ -1486,7 +1524,8 @@
         "No Card Required"
       ],
       "type": "cli",
-      "section": "CLI & Productivity Tools"
+      "section": "CLI & Productivity Tools",
+      "alternativeTo": "Ls"
     },
     {
       "name": "fzf",
@@ -1502,7 +1541,8 @@
         "No Card Required"
       ],
       "type": "cli",
-      "section": "CLI & Productivity Tools"
+      "section": "CLI & Productivity Tools",
+      "alternativeTo": "Command-T / QuickOpen"
     },
     {
       "name": "agent-browser",
@@ -1534,7 +1574,8 @@
         "No Card Required"
       ],
       "type": "cli",
-      "section": "CLI & Productivity Tools"
+      "section": "CLI & Productivity Tools",
+      "alternativeTo": "Cat"
     },
     {
       "name": "delta",
@@ -1662,7 +1703,8 @@
         "No Card Required"
       ],
       "type": "cli",
-      "section": "CLI & Productivity Tools"
+      "section": "CLI & Productivity Tools",
+      "alternativeTo": "Oh My Zsh"
     },
     {
       "name": "zoxide",
@@ -1678,7 +1720,8 @@
         "No Card Required"
       ],
       "type": "cli",
-      "section": "CLI & Productivity Tools"
+      "section": "CLI & Productivity Tools",
+      "alternativeTo": "Autojump"
     },
     {
       "name": "gh-dash",
@@ -1742,7 +1785,8 @@
         "No Card Required"
       ],
       "type": "cli",
-      "section": "CLI & Productivity Tools"
+      "section": "CLI & Productivity Tools",
+      "alternativeTo": "Activity Monitor / Datadog Agent"
     },
     {
       "name": "k9s",
@@ -1758,7 +1802,8 @@
         "No Card Required"
       ],
       "type": "cli",
-      "section": "CLI & Productivity Tools"
+      "section": "CLI & Productivity Tools",
+      "alternativeTo": "Lens Kubernetes IDE"
     },
     {
       "name": "act",
@@ -1790,7 +1835,8 @@
         "No Card Required"
       ],
       "type": "cli",
-      "section": "CLI & Productivity Tools"
+      "section": "CLI & Productivity Tools",
+      "alternativeTo": "Df Command"
     },
     {
       "name": "tokei",
@@ -1806,7 +1852,8 @@
         "No Card Required"
       ],
       "type": "cli",
-      "section": "CLI & Productivity Tools"
+      "section": "CLI & Productivity Tools",
+      "alternativeTo": "CLOC Enterprise"
     },
     {
       "name": "xh",
@@ -1822,7 +1869,8 @@
         "No Card Required"
       ],
       "type": "cli",
-      "section": "CLI & Productivity Tools"
+      "section": "CLI & Productivity Tools",
+      "alternativeTo": "HTTPie / Postman CLI"
     },
     {
       "name": "doggo",
@@ -1966,7 +2014,8 @@
         "No Card Required"
       ],
       "type": "cli",
-      "section": "CLI & Productivity Tools"
+      "section": "CLI & Productivity Tools",
+      "alternativeTo": "Docker Desktop"
     },
     {
       "name": "usql",
@@ -2062,7 +2111,8 @@
         "No Card Required"
       ],
       "type": "cli",
-      "section": "CLI & Productivity Tools"
+      "section": "CLI & Productivity Tools",
+      "alternativeTo": "Shell History Pro"
     },
     {
       "name": "yazi",
@@ -2078,7 +2128,8 @@
         "No Card Required"
       ],
       "type": "cli",
-      "section": "CLI & Productivity Tools"
+      "section": "CLI & Productivity Tools",
+      "alternativeTo": "Mac Finder / TotalFinder"
     },
     {
       "name": "helix",
@@ -2174,7 +2225,8 @@
         "No Card Required"
       ],
       "type": "cli",
-      "section": "CLI & Productivity Tools"
+      "section": "CLI & Productivity Tools",
+      "alternativeTo": "TotalFinder / Directory Opus"
     },
     {
       "name": "htop",
@@ -2238,7 +2290,8 @@
         "No Card Required"
       ],
       "type": "cli",
-      "section": "CLI & Productivity Tools"
+      "section": "CLI & Productivity Tools",
+      "alternativeTo": "Disk Inventory X / DaisyDisk"
     },
     {
       "name": "gdu",
@@ -2318,7 +2371,8 @@
         "No Card Required"
       ],
       "type": "cli",
-      "section": "CLI & Productivity Tools"
+      "section": "CLI & Productivity Tools",
+      "alternativeTo": "Traceroute Pro"
     },
     {
       "name": "mitmproxy",
@@ -2334,7 +2388,8 @@
         "No Card Required"
       ],
       "type": "cli",
-      "section": "CLI & Productivity Tools"
+      "section": "CLI & Productivity Tools",
+      "alternativeTo": "Charles Proxy / Fiddler Everywhere"
     },
     {
       "name": "websocat",
@@ -2430,7 +2485,8 @@
         "No Card Required"
       ],
       "type": "cli",
-      "section": "CLI & Productivity Tools"
+      "section": "CLI & Productivity Tools",
+      "alternativeTo": "Neofetch Pro"
     },
     {
       "name": "gitleaks",
@@ -2462,7 +2518,8 @@
         "No Card Required"
       ],
       "type": "cli",
-      "section": "CLI & Productivity Tools"
+      "section": "CLI & Productivity Tools",
+      "alternativeTo": "GitGuardian"
     },
     {
       "name": "osv-scanner",
@@ -2478,7 +2535,8 @@
         "No Card Required"
       ],
       "type": "cli",
-      "section": "CLI & Productivity Tools"
+      "section": "CLI & Productivity Tools",
+      "alternativeTo": "Snyk Open Source"
     },
     {
       "name": "tmux",
@@ -2526,7 +2584,8 @@
         "No Card Required"
       ],
       "type": "cli",
-      "section": "CLI & Productivity Tools"
+      "section": "CLI & Productivity Tools",
+      "alternativeTo": "Shell Error Corrector"
     },
     {
       "name": "direnv",
@@ -2558,7 +2617,8 @@
         "No Card Required"
       ],
       "type": "cli",
-      "section": "CLI & Productivity Tools"
+      "section": "CLI & Productivity Tools",
+      "alternativeTo": "ASDF"
     },
     {
       "name": "asdf-vm",
@@ -2734,7 +2794,8 @@
         "No Card Required"
       ],
       "type": "cli",
-      "section": "CLI & Productivity Tools"
+      "section": "CLI & Productivity Tools",
+      "alternativeTo": "Grammarly Business"
     },
     {
       "name": "pgcli",
@@ -2814,7 +2875,8 @@
         "No Card Required"
       ],
       "type": "cli",
-      "section": "CLI & Productivity Tools"
+      "section": "CLI & Productivity Tools",
+      "alternativeTo": "Kubernetes Log Viewers"
     },
     {
       "name": "kubectx",
@@ -2830,7 +2892,8 @@
         "No Card Required"
       ],
       "type": "cli",
-      "section": "CLI & Productivity Tools"
+      "section": "CLI & Productivity Tools",
+      "alternativeTo": "Kubernetes Context Switchers"
     },
     {
       "name": "helm",
@@ -2878,7 +2941,8 @@
         "No Card Required"
       ],
       "type": "cli",
-      "section": "CLI & Productivity Tools"
+      "section": "CLI & Productivity Tools",
+      "alternativeTo": "Docker Desktop Kubernetes"
     },
     {
       "name": "kind",
@@ -2894,7 +2958,8 @@
         "No Card Required"
       ],
       "type": "cli",
-      "section": "CLI & Productivity Tools"
+      "section": "CLI & Productivity Tools",
+      "alternativeTo": "EKS / GKE Local"
     },
     {
       "name": "dasel",
@@ -3022,7 +3087,8 @@
         "No Card Required"
       ],
       "type": "cli",
-      "section": "CLI & Productivity Tools"
+      "section": "CLI & Productivity Tools",
+      "alternativeTo": "NVM"
     },
     {
       "name": "q",
@@ -3141,7 +3207,8 @@
       "featured": false,
       "goodFirstIssues": "https://github.com/grafana/k6/issues",
       "type": "testing",
-      "section": "Testing & QA Reliability"
+      "section": "Testing & QA Reliability",
+      "alternativeTo": "LoadRunner / Gatling Enterprise"
     },
     {
       "name": "Bruno",
@@ -3153,7 +3220,8 @@
       "featured": false,
       "goodFirstIssues": "https://github.com/usebruno/bruno/issues",
       "type": "testing",
-      "section": "Testing & QA Reliability"
+      "section": "Testing & QA Reliability",
+      "alternativeTo": "Postman"
     },
     {
       "name": "Hoppscotch",
@@ -3165,7 +3233,9 @@
       "featured": false,
       "goodFirstIssues": "https://github.com/hoppscotch/hoppscotch/issues",
       "type": "testing",
-      "section": "Testing & QA Reliability"
+      "section": "Testing & QA Reliability",
+      "alternativeTo": "Postman",
+      "dockerCompose": "services:\n  hoppscotch:\n    image: hoppscotch/hoppscotch:latest\n    container_name: hoppscotch\n    restart: unless-stopped\n    ports:\n      - \"3000:3000\""
     },
     {
       "name": "Mockoon",
@@ -3177,7 +3247,9 @@
       "featured": false,
       "goodFirstIssues": "https://github.com/mockoon/mockoon/issues",
       "type": "testing",
-      "section": "Testing & QA Reliability"
+      "section": "Testing & QA Reliability",
+      "alternativeTo": "Postman Mock Server",
+      "dockerCompose": "services:\n  mockoon:\n    image: mockoon/cli:latest\n    container_name: mockoon\n    ports:\n      - \"3000:3000\""
     },
     {
       "name": "Artillery",
@@ -3201,7 +3273,8 @@
       "featured": false,
       "goodFirstIssues": "https://github.com/locustio/locust/issues",
       "type": "testing",
-      "section": "Testing & QA Reliability"
+      "section": "Testing & QA Reliability",
+      "alternativeTo": "LoadRunner / Artillery Pro"
     },
     {
       "name": "MSW (Mock Service Worker)",
@@ -3213,7 +3286,8 @@
       "featured": false,
       "goodFirstIssues": "https://github.com/mswjs/msw/issues",
       "type": "testing",
-      "section": "Testing & QA Reliability"
+      "section": "Testing & QA Reliability",
+      "alternativeTo": "Postman Mocks"
     },
     {
       "name": "Vegeta",
@@ -3261,7 +3335,9 @@
       "featured": false,
       "goodFirstIssues": "https://github.com/wiremock/wiremock/issues",
       "type": "testing",
-      "section": "Testing & QA Reliability"
+      "section": "Testing & QA Reliability",
+      "alternativeTo": "Postman Mock Server",
+      "dockerCompose": "services:\n  wiremock:\n    image: wiremock/wiremock:latest\n    container_name: wiremock\n    restart: unless-stopped\n    ports:\n      - \"8080:8080\""
     },
     {
       "name": "Prism",
@@ -3273,7 +3349,8 @@
       "featured": false,
       "goodFirstIssues": "https://github.com/stoplightio/prism/issues",
       "type": "testing",
-      "section": "Testing & QA Reliability"
+      "section": "Testing & QA Reliability",
+      "alternativeTo": "Stoplight / Postman Mocks"
     },
     {
       "name": "Lighthouse CI",
@@ -3381,7 +3458,8 @@
       "featured": false,
       "goodFirstIssues": "https://github.com/aquasecurity/trivy/issues",
       "type": "testing",
-      "section": "Testing & QA Reliability"
+      "section": "Testing & QA Reliability",
+      "alternativeTo": "Snyk Container"
     },
     {
       "name": "Semgrep",
@@ -3393,7 +3471,8 @@
       "featured": false,
       "goodFirstIssues": "https://github.com/semgrep/semgrep/issues",
       "type": "testing",
-      "section": "Testing & QA Reliability"
+      "section": "Testing & QA Reliability",
+      "alternativeTo": "Veracode / Checkmarx"
     },
     {
       "name": "SonarQube Community",
@@ -3405,7 +3484,8 @@
       "featured": false,
       "goodFirstIssues": "https://github.com/SonarSource/sonarqube/issues",
       "type": "testing",
-      "section": "Testing & QA Reliability"
+      "section": "Testing & QA Reliability",
+      "alternativeTo": "Snyk Code / Veracode"
     },
     {
       "name": "Newman",
@@ -3417,7 +3497,8 @@
       "featured": false,
       "goodFirstIssues": "https://github.com/postmanlabs/newman/issues",
       "type": "testing",
-      "section": "Testing & QA Reliability"
+      "section": "Testing & QA Reliability",
+      "alternativeTo": "Postman CLI"
     },
     {
       "name": "PactumJS",
@@ -3429,7 +3510,8 @@
       "featured": false,
       "goodFirstIssues": "https://github.com/pactumjs/pactum/issues",
       "type": "testing",
-      "section": "Testing & QA Reliability"
+      "section": "Testing & QA Reliability",
+      "alternativeTo": "Postman / Newman"
     },
     {
       "name": "Karate Framework",
@@ -3441,7 +3523,8 @@
       "featured": false,
       "goodFirstIssues": "https://github.com/karatelabs/karate/issues",
       "type": "testing",
-      "section": "Testing & QA Reliability"
+      "section": "Testing & QA Reliability",
+      "alternativeTo": "Postman / RestAssured"
     },
     {
       "name": "RestAssured",
@@ -3453,7 +3536,8 @@
       "featured": false,
       "goodFirstIssues": "https://github.com/rest-assured/rest-assured/issues",
       "type": "testing",
-      "section": "Testing & QA Reliability"
+      "section": "Testing & QA Reliability",
+      "alternativeTo": "Commercial API Testers"
     },
     {
       "name": "Dredd",
@@ -3477,7 +3561,8 @@
       "featured": false,
       "goodFirstIssues": "https://github.com/schemathesis/schemathesis/issues",
       "type": "testing",
-      "section": "Testing & QA Reliability"
+      "section": "Testing & QA Reliability",
+      "alternativeTo": "API Fuzzing Commercial Tools"
     },
     {
       "name": "Puppeteer",
@@ -3597,7 +3682,8 @@
       "featured": false,
       "goodFirstIssues": "https://github.com/wg/wrk/issues",
       "type": "testing",
-      "section": "Testing & QA Reliability"
+      "section": "Testing & QA Reliability",
+      "alternativeTo": "LoadRunner"
     },
     {
       "name": "Hey",
@@ -3633,7 +3719,8 @@
       "featured": false,
       "goodFirstIssues": "https://github.com/bridgecrewio/checkov/issues",
       "type": "testing",
-      "section": "Testing & QA Reliability"
+      "section": "Testing & QA Reliability",
+      "alternativeTo": "Bridgecrew / Prisma Cloud"
     },
     {
       "name": "Hadolint",
@@ -3645,7 +3732,8 @@
       "featured": false,
       "goodFirstIssues": "https://github.com/hadolint/hadolint/issues",
       "type": "testing",
-      "section": "Testing & QA Reliability"
+      "section": "Testing & QA Reliability",
+      "alternativeTo": "Docker Linter Pro"
     },
     {
       "name": "Bandit",
@@ -3693,7 +3781,8 @@
       "featured": true,
       "goodFirstIssues": "https://github.com/zaproxy/zaproxy/issues",
       "type": "testing",
-      "section": "Testing & QA Reliability"
+      "section": "Testing & QA Reliability",
+      "alternativeTo": "Burp Suite Professional"
     },
     {
       "name": "Nuclei",
@@ -3705,7 +3794,8 @@
       "featured": true,
       "goodFirstIssues": "https://github.com/projectdiscovery/nuclei/issues",
       "type": "testing",
-      "section": "Testing & QA Reliability"
+      "section": "Testing & QA Reliability",
+      "alternativeTo": "Acunetix / Nessus Scanner"
     },
     {
       "name": "Pa11y",
@@ -3753,7 +3843,8 @@
       "featured": false,
       "goodFirstIssues": "https://github.com/oblador/loki/issues",
       "type": "testing",
-      "section": "Testing & QA Reliability"
+      "section": "Testing & QA Reliability",
+      "alternativeTo": "Datadog Logs / Splunk"
     },
     {
       "name": "Lost-Pixel",
@@ -5378,7 +5469,9 @@
         "CI Verified"
       ],
       "type": "cloud",
-      "section": "Free Cloud & Developer Tiers"
+      "section": "Free Cloud & Developer Tiers",
+      "alternativeTo": "Firebase / AWS RDS",
+      "dockerCompose": "services:\n  supabase-db:\n    image: supabase/postgres:15.1.1.78\n    container_name: supabase-db\n    restart: unless-stopped\n    ports:\n      - \"5432:5432\"\n    environment:\n      POSTGRES_PASSWORD: postgres"
     },
     {
       "name": "Neon",
@@ -5391,7 +5484,8 @@
         "CI Verified"
       ],
       "type": "cloud",
-      "section": "Free Cloud & Developer Tiers"
+      "section": "Free Cloud & Developer Tiers",
+      "alternativeTo": "AWS Aurora Serverless"
     },
     {
       "name": "Cloudflare Workers",
@@ -5443,7 +5537,9 @@
         "CI Verified"
       ],
       "type": "cloud",
-      "section": "Free Cloud & Developer Tiers"
+      "section": "Free Cloud & Developer Tiers",
+      "alternativeTo": "Firebase",
+      "dockerCompose": "services:\n  pocketbase:\n    image: ghcr.io/muchobien/pocketbase:latest\n    container_name: pocketbase\n    restart: unless-stopped\n    ports:\n      - \"8090:8090\"\n    volumes:\n      - ./pb_data:/pb/pb_data"
     },
     {
       "name": "Appwrite",
@@ -5456,7 +5552,8 @@
         "CI Verified"
       ],
       "type": "cloud",
-      "section": "Free Cloud & Developer Tiers"
+      "section": "Free Cloud & Developer Tiers",
+      "alternativeTo": "Firebase"
     },
     {
       "name": "Fly.io",
@@ -5482,7 +5579,8 @@
         "CI Verified"
       ],
       "type": "cloud",
-      "section": "Free Cloud & Developer Tiers"
+      "section": "Free Cloud & Developer Tiers",
+      "alternativeTo": "Heroku"
     },
     {
       "name": "Koyeb",
@@ -5495,7 +5593,8 @@
         "CI Verified"
       ],
       "type": "cloud",
-      "section": "Free Cloud & Developer Tiers"
+      "section": "Free Cloud & Developer Tiers",
+      "alternativeTo": "Heroku / Render Paid"
     },
     {
       "name": "Auth.js",
@@ -5534,7 +5633,8 @@
         "CI Verified"
       ],
       "type": "cloud",
-      "section": "Free Cloud & Developer Tiers"
+      "section": "Free Cloud & Developer Tiers",
+      "alternativeTo": "Auth0"
     },
     {
       "name": "SuperTokens",
@@ -5547,7 +5647,9 @@
         "CI Verified"
       ],
       "type": "cloud",
-      "section": "Free Cloud & Developer Tiers"
+      "section": "Free Cloud & Developer Tiers",
+      "alternativeTo": "Auth0 / Clerk",
+      "dockerCompose": "services:\n  supertokens:\n    image: registry.supertokens.io/supertokens/supertokens-postgresql:latest\n    container_name: supertokens\n    ports:\n      - \"3567:3567\""
     },
     {
       "name": "Logto",
@@ -5560,7 +5662,8 @@
         "CI Verified"
       ],
       "type": "cloud",
-      "section": "Free Cloud & Developer Tiers"
+      "section": "Free Cloud & Developer Tiers",
+      "alternativeTo": "Auth0 / Clerk"
     },
     {
       "name": "Coolify",
@@ -5573,7 +5676,9 @@
         "CI Verified"
       ],
       "type": "cloud",
-      "section": "Free Cloud & Developer Tiers"
+      "section": "Free Cloud & Developer Tiers",
+      "alternativeTo": "Vercel / Heroku",
+      "dockerCompose": "# 60-Second Coolify Quick-Install\n# Run in bash:\n# curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash"
     },
     {
       "name": "Dokku",
@@ -5586,7 +5691,9 @@
         "CI Verified"
       ],
       "type": "cloud",
-      "section": "Free Cloud & Developer Tiers"
+      "section": "Free Cloud & Developer Tiers",
+      "alternativeTo": "Heroku / Vercel",
+      "dockerCompose": "# 60-Second Dokku Quick-Install\n# Run in bash:\n# wget -NP . https://dokku.com/bootstrap.sh && sudo DOKKU_TAG=v0.34.8 bash bootstrap.sh"
     },
     {
       "name": "CapRover",
@@ -5612,7 +5719,8 @@
         "CI Verified"
       ],
       "type": "cloud",
-      "section": "Free Cloud & Developer Tiers"
+      "section": "Free Cloud & Developer Tiers",
+      "alternativeTo": "PlanetScale"
     },
     {
       "name": "Upstash",
@@ -5625,7 +5733,8 @@
         "CI Verified"
       ],
       "type": "cloud",
-      "section": "Free Cloud & Developer Tiers"
+      "section": "Free Cloud & Developer Tiers",
+      "alternativeTo": "Redis Enterprise / AWS DynamoDB"
     },
     {
       "name": "PostHog",
@@ -5638,7 +5747,9 @@
         "CI Verified"
       ],
       "type": "cloud",
-      "section": "Free Cloud & Developer Tiers"
+      "section": "Free Cloud & Developer Tiers",
+      "alternativeTo": "Mixpanel / Segment / Amplitude",
+      "dockerCompose": "services:\n  posthog:\n    image: posthog/posthog:latest\n    container_name: posthog\n    restart: unless-stopped\n    ports:\n      - \"8000:8000\""
     },
     {
       "name": "Umami",
@@ -5651,7 +5762,9 @@
         "CI Verified"
       ],
       "type": "cloud",
-      "section": "Free Cloud & Developer Tiers"
+      "section": "Free Cloud & Developer Tiers",
+      "alternativeTo": "Google Analytics",
+      "dockerCompose": "services:\n  umami:\n    image: ghcr.io/umami-software/umami:postgresql-latest\n    container_name: umami\n    restart: unless-stopped\n    ports:\n      - \"3000:3000\"\n    environment:\n      - DATABASE_URL=postgresql://umami:umami@db:5432/umami\n      - DATABASE_TYPE=postgresql\n      - APP_SECRET=devshelf-secret-replace-me"
     },
     {
       "name": "Directus",
@@ -5677,7 +5790,8 @@
         "CI Verified"
       ],
       "type": "cloud",
-      "section": "Free Cloud & Developer Tiers"
+      "section": "Free Cloud & Developer Tiers",
+      "alternativeTo": "Contentful / Strapi Cloud"
     },
     {
       "name": "MinIO",
@@ -5690,7 +5804,9 @@
         "CI Verified"
       ],
       "type": "cloud",
-      "section": "Free Cloud & Developer Tiers"
+      "section": "Free Cloud & Developer Tiers",
+      "alternativeTo": "AWS S3",
+      "dockerCompose": "services:\n  minio:\n    image: minio/minio:latest\n    container_name: minio\n    restart: unless-stopped\n    command: server /data --console-address \":9001\"\n    ports:\n      - \"9000:9000\"\n      - \"9001:9001\"\n    environment:\n      - MINIO_ROOT_USER=admin\n      - MINIO_ROOT_PASSWORD=password123\n    volumes:\n      - ./minio_data:/data"
     },
     {
       "name": "GlitchTip",
@@ -5703,7 +5819,9 @@
         "CI Verified"
       ],
       "type": "cloud",
-      "section": "Free Cloud & Developer Tiers"
+      "section": "Free Cloud & Developer Tiers",
+      "alternativeTo": "Datadog / Sentry SaaS",
+      "dockerCompose": "services:\n  glitchtip:\n    image: glitchtip/glitchtip:latest\n    container_name: glitchtip\n    restart: unless-stopped\n    ports:\n      - \"8000:8000\""
     },
     {
       "name": "Meilisearch",
@@ -5716,7 +5834,9 @@
         "CI Verified"
       ],
       "type": "cloud",
-      "section": "Free Cloud & Developer Tiers"
+      "section": "Free Cloud & Developer Tiers",
+      "alternativeTo": "Algolia",
+      "dockerCompose": "services:\n  meilisearch:\n    image: getmeili/meilisearch:latest\n    container_name: meilisearch\n    restart: unless-stopped\n    ports:\n      - \"7700:7700\"\n    environment:\n      - MEILI_MASTER_KEY=masterKey123\n    volumes:\n      - ./meili_data:/meili_data"
     },
     {
       "name": "Typesense",
@@ -5729,7 +5849,9 @@
         "CI Verified"
       ],
       "type": "cloud",
-      "section": "Free Cloud & Developer Tiers"
+      "section": "Free Cloud & Developer Tiers",
+      "alternativeTo": "Algolia",
+      "dockerCompose": "services:\n  typesense:\n    image: typesense/typesense:26.0\n    container_name: typesense\n    restart: unless-stopped\n    ports:\n      - \"8108:8108\"\n    volumes:\n      - ./typesense_data:/data\n    command: '--data-dir /data --api-key=xyz --enable-cors'"
     },
     {
       "name": "Qdrant Cloud",
@@ -5742,7 +5864,9 @@
         "CI Verified"
       ],
       "type": "cloud",
-      "section": "Free Cloud & Developer Tiers"
+      "section": "Free Cloud & Developer Tiers",
+      "alternativeTo": "Pinecone",
+      "dockerCompose": "services:\n  qdrant:\n    image: qdrant/qdrant:latest\n    container_name: qdrant\n    restart: unless-stopped\n    ports:\n      - \"6333:6333\"\n      - \"6334:6334\"\n    volumes:\n      - ./qdrant_storage:/qdrant/storage"
     },
     {
       "name": "Railway",
@@ -5755,7 +5879,8 @@
         "CI Verified"
       ],
       "type": "cloud",
-      "section": "Free Cloud & Developer Tiers"
+      "section": "Free Cloud & Developer Tiers",
+      "alternativeTo": "Heroku"
     },
     {
       "name": "Oracle Cloud Always Free",
@@ -5885,7 +6010,8 @@
         "CI Verified"
       ],
       "type": "cloud",
-      "section": "Free Cloud & Developer Tiers"
+      "section": "Free Cloud & Developer Tiers",
+      "alternativeTo": "AWS DocumentDB"
     },
     {
       "name": "Redis Cloud",
@@ -5898,7 +6024,8 @@
         "CI Verified"
       ],
       "type": "cloud",
-      "section": "Free Cloud & Developer Tiers"
+      "section": "Free Cloud & Developer Tiers",
+      "alternativeTo": "AWS ElastiCache"
     },
     {
       "name": "CockroachDB Serverless",
@@ -5924,7 +6051,8 @@
         "CI Verified"
       ],
       "type": "cloud",
-      "section": "Free Cloud & Developer Tiers"
+      "section": "Free Cloud & Developer Tiers",
+      "alternativeTo": "Google Cloud Spanner"
     },
     {
       "name": "Backblaze B2",
@@ -5963,7 +6091,9 @@
         "CI Verified"
       ],
       "type": "cloud",
-      "section": "Free Cloud & Developer Tiers"
+      "section": "Free Cloud & Developer Tiers",
+      "alternativeTo": "Auth0 / Okta",
+      "dockerCompose": "services:\n  keycloak:\n    image: quay.io/keycloak/keycloak:latest\n    container_name: keycloak\n    restart: unless-stopped\n    ports:\n      - \"8080:8080\"\n    environment:\n      - KEYCLOAK_ADMIN=admin\n      - KEYCLOAK_ADMIN_PASSWORD=admin\n    command: start-dev"
     },
     {
       "name": "Authentik",
@@ -6002,7 +6132,9 @@
         "CI Verified"
       ],
       "type": "cloud",
-      "section": "Free Cloud & Developer Tiers"
+      "section": "Free Cloud & Developer Tiers",
+      "alternativeTo": "Auth0 / Okta",
+      "dockerCompose": "services:\n  zitadel:\n    image: ghcr.io/zitadel/zitadel:latest\n    container_name: zitadel\n    ports:\n      - \"8080:8080\"\n    command: 'start-from-init --masterkey \"MasterkeyNeedsToHave32Characters\" --tlsMode disabled'"
     },
     {
       "name": "FusionAuth",
@@ -6041,7 +6173,8 @@
         "CI Verified"
       ],
       "type": "cloud",
-      "section": "Free Cloud & Developer Tiers"
+      "section": "Free Cloud & Developer Tiers",
+      "alternativeTo": "Auth0 / AWS Cognito"
     },
     {
       "name": "Portainer Community",
@@ -6054,7 +6187,9 @@
         "CI Verified"
       ],
       "type": "cloud",
-      "section": "Free Cloud & Developer Tiers"
+      "section": "Free Cloud & Developer Tiers",
+      "alternativeTo": "Docker Desktop GUI",
+      "dockerCompose": "services:\n  portainer:\n    image: portainer/portainer-ce:latest\n    container_name: portainer\n    restart: always\n    ports:\n      - \"9000:9000\"\n      - \"9443:9443\"\n    volumes:\n      - /var/run/docker.sock:/var/run/docker.sock\n      - portainer_data:/data\n\nvolumes:\n  portainer_data:"
     },
     {
       "name": "Nginx Proxy Manager",
@@ -6067,7 +6202,9 @@
         "CI Verified"
       ],
       "type": "cloud",
-      "section": "Free Cloud & Developer Tiers"
+      "section": "Free Cloud & Developer Tiers",
+      "alternativeTo": "Cloudflare Pro / Traefik Enterprise",
+      "dockerCompose": "services:\n  app:\n    image: jc21/nginx-proxy-manager:latest\n    container_name: npm\n    restart: unless-stopped\n    ports:\n      - '80:80'\n      - '81:81'\n      - '443:443'\n    volumes:\n      - ./data:/data\n      - ./letsencrypt:/etc/letsencrypt"
     },
     {
       "name": "Traefik Community",
@@ -6080,7 +6217,8 @@
         "CI Verified"
       ],
       "type": "cloud",
-      "section": "Free Cloud & Developer Tiers"
+      "section": "Free Cloud & Developer Tiers",
+      "alternativeTo": "NGINX Plus / AWS ALB"
     },
     {
       "name": "Caddy Web Server",
@@ -6106,7 +6244,8 @@
         "CI Verified"
       ],
       "type": "cloud",
-      "section": "Free Cloud & Developer Tiers"
+      "section": "Free Cloud & Developer Tiers",
+      "alternativeTo": "Docker Desktop / Umbrel"
     },
     {
       "name": "Umbrel",
@@ -6223,7 +6362,9 @@
         "CI Verified"
       ],
       "type": "cloud",
-      "section": "Free Cloud & Developer Tiers"
+      "section": "Free Cloud & Developer Tiers",
+      "alternativeTo": "Google Analytics",
+      "dockerCompose": "services:\n  plausible:\n    image: ghcr.io/plausible/community-edition:latest\n    container_name: plausible\n    restart: unless-stopped\n    ports:\n      - \"8000:8000\""
     },
     {
       "name": "Grafana OSS",
@@ -6249,7 +6390,9 @@
         "CI Verified"
       ],
       "type": "cloud",
-      "section": "Free Cloud & Developer Tiers"
+      "section": "Free Cloud & Developer Tiers",
+      "alternativeTo": "Datadog Metrics",
+      "dockerCompose": "services:\n  prometheus:\n    image: prom/prometheus:latest\n    container_name: prometheus\n    restart: unless-stopped\n    ports:\n      - \"9090:9090\""
     },
     {
       "name": "Uptime Kuma",
@@ -6262,7 +6405,9 @@
         "CI Verified"
       ],
       "type": "cloud",
-      "section": "Free Cloud & Developer Tiers"
+      "section": "Free Cloud & Developer Tiers",
+      "alternativeTo": "Datadog / Better Uptime",
+      "dockerCompose": "services:\n  uptime-kuma:\n    image: louislam/uptime-kuma:1\n    container_name: uptime-kuma\n    restart: always\n    ports:\n      - \"3001:3001\"\n    volumes:\n      - ./uptime-kuma-data:/app/data"
     },
     {
       "name": "Dragonfly",
@@ -6295,7 +6440,8 @@
       "perkValue": "Free Sentry Business Plan ($312+/yr value)",
       "eligibility": "Public open-source repository with OSI-approved license",
       "type": "perks",
-      "section": "Developer Discounts & Startup Perks"
+      "section": "Developer Discounts & Startup Perks",
+      "alternativeTo": "Datadog APM / Bugsnag"
     },
     {
       "name": "GitHub for Startups",
@@ -6455,7 +6601,8 @@
       "perkValue": "Free Netlify Pro Team tier",
       "eligibility": "Non-commercial open source projects displaying a Netlify badge",
       "type": "perks",
-      "section": "Developer Discounts & Startup Perks"
+      "section": "Developer Discounts & Startup Perks",
+      "alternativeTo": "AWS Amplify"
     },
     {
       "name": "Vercel for Open Source",
@@ -6465,7 +6612,8 @@
       "perkValue": "Free Vercel Pro Plan sponsorship",
       "eligibility": "Public open source projects with active community adoption and OSI license",
       "type": "perks",
-      "section": "Developer Discounts & Startup Perks"
+      "section": "Developer Discounts & Startup Perks",
+      "alternativeTo": "AWS Amplify"
     },
     {
       "name": "GitLab for Open Source",
@@ -6611,7 +6759,9 @@
         "No Card Required"
       ],
       "type": "boilerplate",
-      "section": "One-Click Deployment Boilerplates"
+      "section": "One-Click Deployment Boilerplates",
+      "alternativeTo": "Firebase",
+      "dockerCompose": "services:\n  pocketbase:\n    image: ghcr.io/muchobien/pocketbase:latest\n    container_name: pocketbase\n    restart: unless-stopped\n    ports:\n      - \"8090:8090\"\n    volumes:\n      - ./pb_data:/pb/pb_data"
     },
     {
       "name": "Full-Stack FastAPI Template",
@@ -6629,7 +6779,8 @@
         "No Card Required"
       ],
       "type": "boilerplate",
-      "section": "One-Click Deployment Boilerplates"
+      "section": "One-Click Deployment Boilerplates",
+      "alternativeTo": "SaaS Boilerplate Paid"
     },
     {
       "name": "Stirling-PDF Ultimate Toolbox",
@@ -6647,7 +6798,9 @@
         "No Card Required"
       ],
       "type": "boilerplate",
-      "section": "One-Click Deployment Boilerplates"
+      "section": "One-Click Deployment Boilerplates",
+      "alternativeTo": "Adobe Acrobat DC ($20/mo)",
+      "dockerCompose": "services:\n  stirling-pdf:\n    image: frooodle/s-pdf:latest\n    container_name: stirling-pdf\n    restart: unless-stopped\n    ports:\n      - \"8080:8080\"\n    volumes:\n      - ./trainingData:/usr/share/tessdata\n      - ./extraConfigs:/configs\n    environment:\n      - DOCKER_ENABLE_SECURITY=false"
     },
     {
       "name": "Go Clean Architecture API",
@@ -6752,7 +6905,8 @@
         "CI Verified"
       ],
       "type": "boilerplate",
-      "section": "One-Click Deployment Boilerplates"
+      "section": "One-Click Deployment Boilerplates",
+      "alternativeTo": "Tailwind UI ($299)"
     },
     {
       "name": "Next-Forge",
@@ -6769,7 +6923,8 @@
         "CI Verified"
       ],
       "type": "boilerplate",
-      "section": "One-Click Deployment Boilerplates"
+      "section": "One-Click Deployment Boilerplates",
+      "alternativeTo": "ShipFast ($199)"
     },
     {
       "name": "Bulletproof React",
@@ -6803,7 +6958,8 @@
         "CI Verified"
       ],
       "type": "boilerplate",
-      "section": "One-Click Deployment Boilerplates"
+      "section": "One-Click Deployment Boilerplates",
+      "alternativeTo": "SaaS Boilerplate Paid"
     },
     {
       "name": "Astro Paper",
@@ -6837,7 +6993,8 @@
         "CI Verified"
       ],
       "type": "boilerplate",
-      "section": "One-Click Deployment Boilerplates"
+      "section": "One-Click Deployment Boilerplates",
+      "alternativeTo": "Retool Enterprise"
     },
     {
       "name": "Medusa",
@@ -6854,7 +7011,8 @@
         "CI Verified"
       ],
       "type": "boilerplate",
-      "section": "One-Click Deployment Boilerplates"
+      "section": "One-Click Deployment Boilerplates",
+      "alternativeTo": "Shopify Plus ($2000/mo)"
     },
     {
       "name": "Next.js Enterprise Boilerplate",
@@ -6888,7 +7046,8 @@
         "CI Verified"
       ],
       "type": "boilerplate",
-      "section": "One-Click Deployment Boilerplates"
+      "section": "One-Click Deployment Boilerplates",
+      "alternativeTo": "ShipFast ($199)"
     },
     {
       "name": "Turborepo Starter",
@@ -6922,7 +7081,8 @@
         "CI Verified"
       ],
       "type": "boilerplate",
-      "section": "One-Click Deployment Boilerplates"
+      "section": "One-Click Deployment Boilerplates",
+      "alternativeTo": "Contentful / Sanity Pro"
     },
     {
       "name": "Nuxt 3 Starter",
@@ -6956,7 +7116,8 @@
         "CI Verified"
       ],
       "type": "boilerplate",
-      "section": "One-Click Deployment Boilerplates"
+      "section": "One-Click Deployment Boilerplates",
+      "alternativeTo": "Vite Commercial Templates"
     },
     {
       "name": "Vitesse WebExt",
@@ -7007,7 +7168,8 @@
         "CI Verified"
       ],
       "type": "boilerplate",
-      "section": "One-Click Deployment Boilerplates"
+      "section": "One-Click Deployment Boilerplates",
+      "alternativeTo": "Electron Pro"
     },
     {
       "name": "Electron React Boilerplate",
@@ -7290,7 +7452,8 @@
       "goodFirstIssues": "https://github.com/zed-industries/zed/labels/good%20first%20issue",
       "language": "Rust",
       "type": "contributors",
-      "section": "Contributors Wanted"
+      "section": "Contributors Wanted",
+      "alternativeTo": "Cursor / Sublime Text"
     },
     {
       "name": "Biome",
@@ -7312,7 +7475,8 @@
       "goodFirstIssues": "https://github.com/nushell/nushell/labels/good%20first%20issue",
       "language": "Rust",
       "type": "contributors",
-      "section": "Contributors Wanted"
+      "section": "Contributors Wanted",
+      "alternativeTo": "PowerShell / Zsh"
     },
     {
       "name": "Infisical",
@@ -7367,7 +7531,8 @@
       "goodFirstIssues": "https://github.com/wez/wezterm/labels/good%20first%20issue",
       "language": "Rust / Lua",
       "type": "contributors",
-      "section": "Contributors Wanted"
+      "section": "Contributors Wanted",
+      "alternativeTo": "iTerm2 / Warp Pro"
     },
     {
       "name": "Casbin",
@@ -7463,7 +7628,9 @@
       "goodFirstIssues": "https://github.com/twentyhq/twenty/labels/good%20first%20issue",
       "language": "TypeScript",
       "type": "contributors",
-      "section": "Contributors Wanted"
+      "section": "Contributors Wanted",
+      "alternativeTo": "Salesforce / HubSpot CRM",
+      "dockerCompose": "services:\n  twenty:\n    image: twentycrm/twenty:latest\n    container_name: twenty\n    restart: unless-stopped\n    ports:\n      - \"3000:3000\""
     },
     {
       "name": "Ghost",

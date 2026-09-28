@@ -51,6 +51,17 @@ async function generateSeo() {
     const auth = escapeHtml(item.auth || "");
     const freeTier = escapeHtml(item.freeTier || "");
 
+    const alternativeTo = escapeHtml(item.alternativeTo || "");
+    const dockerCompose = item.dockerCompose || "";
+
+    const pageTitle = alternativeTo
+      ? `${name} - Free Open Source Alternative to ${alternativeTo} | DevShelf`
+      : `${name} - Free Developer Tool | DevShelf`;
+
+    const metaKeywords = alternativeTo
+      ? `${name}, free alternative to ${alternativeTo}, open source alternative to ${alternativeTo}, ${alternativeTo} alternative, ${category}, developer tools`
+      : `${name}, free developer tool, ${category}, open source tools`;
+
     sitemapUrls.push(
       `  <url>\n    <loc>${pageUrl}</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>`,
     );
@@ -70,25 +81,62 @@ async function generateSeo() {
       url: targetUrl,
     };
 
+    const dockerSectionHtml = dockerCompose
+      ? `
+      <div class="mt-8 p-6 rounded-xl bg-slate-950/90 border border-cyan-500/40">
+        <div class="flex items-center justify-between mb-3 flex-wrap gap-2">
+          <div class="flex items-center space-x-2">
+            <span class="text-base">🐳</span>
+            <h3 class="text-sm font-bold text-cyan-300 font-mono">Self-Host in 60 Seconds (docker-compose.yml)</h3>
+          </div>
+          <button onclick="navigator.clipboard.writeText(document.getElementById('compose-snippet').innerText); alert('Copied docker-compose.yml to clipboard!');" class="px-2.5 py-1 text-xs font-bold rounded bg-cyan-600 hover:bg-cyan-500 text-white transition">
+            Copy Compose
+          </button>
+        </div>
+        <pre id="compose-snippet" class="p-3 bg-slate-900 rounded-lg text-xs font-mono text-cyan-200 overflow-x-auto border border-slate-800 leading-relaxed">${escapeHtml(dockerCompose)}</pre>
+      </div>`
+      : "";
+
+    const badgeSectionHtml = `
+      <div class="mt-8 p-5 rounded-xl bg-slate-950/70 border border-slate-800">
+        <div class="flex items-center justify-between mb-2">
+          <div class="flex items-center space-x-2">
+            <span class="text-xs font-bold text-purple-300">🏷️ Official Maintainer Badge for README.md</span>
+          </div>
+          <button onclick="navigator.clipboard.writeText('[![Featured on DevShelf](https://img.shields.io/badge/DevShelf-Verified_Free-7928CA?style=flat-square&logo=googlechrome&logoColor=white)](https://devshelf.ritualdev.in/)'); alert('Copied badge Markdown to clipboard!');" class="px-2.5 py-1 text-xs font-bold rounded bg-purple-600 hover:bg-purple-500 text-white transition">
+            Copy Markdown
+          </button>
+        </div>
+        <div class="mb-2">
+          <img src="https://img.shields.io/badge/DevShelf-Verified_Free-7928CA?style=flat-square&logo=googlechrome&logoColor=white" alt="Featured on DevShelf" class="h-5">
+        </div>
+        <input type="text" readonly value="[![Featured on DevShelf](https://img.shields.io/badge/DevShelf-Verified_Free-7928CA?style=flat-square&logo=googlechrome&logoColor=white)](https://devshelf.ritualdev.in/)" class="w-full text-xs font-mono bg-slate-900 px-3 py-1.5 rounded text-emerald-300 border border-slate-800 select-all">
+      </div>`;
+
     const html = `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${name} - Free Developer Tool | DevShelf</title>
+  <title>${pageTitle}</title>
   <meta name="description" content="${desc}">
+  <meta name="keywords" content="${metaKeywords}">
   <link rel="canonical" href="${pageUrl}">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="alternate icon" href="../favicon.svg">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="${pageUrl}">
-  <meta property="og:title" content="${name} - Free Developer Tool | DevShelf">
+  <meta property="og:title" content="${pageTitle}">
   <meta property="og:description" content="${desc}">
   <meta property="og:site_name" content="DevShelf">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="${name} - DevShelf">
+  <meta name="twitter:title" content="${pageTitle}">
   <meta name="twitter:description" content="${desc}">
 
   <!-- JSON-LD Structured Data -->
@@ -124,9 +172,12 @@ async function generateSeo() {
 
       <div class="flex items-start justify-between flex-wrap gap-4 mb-6">
         <div>
-          <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-purple-950/80 border border-purple-500/40 text-purple-300 mb-3">
-            ${category}
-          </span>
+          <div class="flex items-center space-x-2 flex-wrap gap-2 mb-3">
+            <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-purple-950/80 border border-purple-500/40 text-purple-300">
+              ${category}
+            </span>
+            ${alternativeTo ? `<span class="inline-block px-3 py-1 rounded-full text-xs font-mono font-bold bg-amber-950/80 border border-amber-500/40 text-amber-300">⚡ Alternative to ${alternativeTo}</span>` : ""}
+          </div>
           <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">${name}</h1>
         </div>
         <a href="${escapeHtml(targetUrl)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-bold text-sm shadow-lg shadow-purple-500/20 transition transform hover:-translate-y-0.5">
@@ -149,6 +200,9 @@ async function generateSeo() {
         ${auth ? `<div><span class="text-slate-500 block mb-1">Auth Requirement</span><span class="text-amber-300 font-semibold">${auth}</span></div>` : ""}
         ${freeTier ? `<div class="col-span-2"><span class="text-slate-500 block mb-1">Free Tier Allowance</span><span class="text-slate-200">${freeTier}</span></div>` : ""}
       </div>
+
+      ${dockerSectionHtml}
+      ${badgeSectionHtml}
 
       <div class="mt-8 pt-6 border-t border-slate-800 flex items-center justify-between flex-wrap gap-4">
         <a href="../" class="text-xs text-purple-400 hover:text-purple-300 font-semibold transition">

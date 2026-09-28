@@ -77,4 +77,29 @@ describe("DevShelf CLI & TUI Suite", () => {
       "Projects should contain starter issues",
     );
   });
+
+  test("returns daily discovery in JSON with daily --json", () => {
+    const res = runCli("daily --json");
+    assert.equal(res.status, 0);
+    const parsed = JSON.parse(res.stdout);
+    assert.ok(parsed.date && typeof parsed.date === "string");
+    assert.ok(parsed.item && typeof parsed.item.name === "string");
+  });
+
+  test("runs daily --quiet with ultra-compact single line format", () => {
+    const res = runCli("daily --quiet");
+    assert.equal(res.status, 0);
+    assert.match(res.stdout, /DevShelf Daily:/);
+  });
+
+  test("finds free alternatives when searching for paid tools", () => {
+    const res = runCli('search "postman" --json');
+    assert.equal(res.status, 0);
+    const results = JSON.parse(res.stdout);
+    assert.ok(Array.isArray(results));
+    assert.ok(
+      results.some((r: any) => (r.name || "").toLowerCase() === "bruno"),
+      "Should match Bruno as an alternative to Postman",
+    );
+  });
 });

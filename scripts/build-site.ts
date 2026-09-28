@@ -1,5 +1,6 @@
 import fs from "node:fs/promises";
 import path from "node:path";
+import { getAlternativeTo, getDockerCompose } from "./catalog-enrichment.js";
 
 async function buildSiteData() {
   const root = process.cwd();
@@ -53,7 +54,7 @@ async function buildSiteData() {
   }));
 
   // Primary curated list: Open source & developer tools first, then APIs, cloud, perks, boilerplates, contributors
-  const allResources = [
+  const rawResources = [
     ...aiTools,
     ...cliTools,
     ...testingQa,
@@ -63,6 +64,16 @@ async function buildSiteData() {
     ...boilerplates,
     ...contributors,
   ];
+
+  const allResources = rawResources.map((item) => {
+    const alternativeTo = getAlternativeTo(item.name);
+    const dockerCompose = getDockerCompose(item.name);
+    return {
+      ...item,
+      ...(alternativeTo ? { alternativeTo } : {}),
+      ...(dockerCompose ? { dockerCompose } : {}),
+    };
+  });
 
   const reposCount = allResources.filter((r) => Boolean(r.repo)).length;
 
