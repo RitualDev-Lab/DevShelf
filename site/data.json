@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-09-28T11:23:26.727Z",
-  "totalCount": 513,
-  "reposCount": 317,
+  "updatedAt": "2026-09-28T12:24:07.738Z",
+  "totalCount": 514,
+  "reposCount": 318,
   "facets": {
-    "repos": 317
+    "repos": 318
   },
   "counts": {
     "aiTools": 86,
-    "cliTools": 107,
+    "cliTools": 108,
     "testingQa": 62,
     "apis": 96,
     "freeCloud": 70,
@@ -3166,6 +3166,17 @@
       "category": "CLI & Developer Productivity",
       "description": "Developer-alpha encrypted, append-only knowledge store with a Rust CLI and MCP server. Developers can sync signed records across devices and give agents scoped, expiring access to notes.",
       "language": "Rust",
+      "license": "MIT",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "Image Format Readiness",
+      "repo": "https://github.com/edilec/image-format-readiness",
+      "category": "CLI & Developer Productivity",
+      "description": "Offline Node.js CLI that checks exported HTML and local image files for declared dimensions, aspect ratio, alternative text, loading declarations, pinned format policy, and byte budgets. It reports pass, fail, or incomplete evidence; it does not optimize images or test live browser compatibility.",
+      "language": "JavaScript (Node.js 22+)",
       "license": "MIT",
       "featured": false,
       "type": "cli",

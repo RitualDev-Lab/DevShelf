@@ -1169,5 +1169,14 @@
     "language": "Rust",
     "license": "MIT",
     "featured": false
+  },
+  {
+    "name": "Image Format Readiness",
+    "repo": "https://github.com/edilec/image-format-readiness",
+    "category": "CLI & Developer Productivity",
+    "description": "Offline Node.js CLI that checks exported HTML and local image files for declared dimensions, aspect ratio, alternative text, loading declarations, pinned format policy, and byte budgets. It reports pass, fail, or incomplete evidence; it does not optimize images or test live browser compatibility.",
+    "language": "JavaScript (Node.js 22+)",
+    "license": "MIT",
+    "featured": false
   }
 ]
