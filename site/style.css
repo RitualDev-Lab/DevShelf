@@ -239,6 +239,8 @@ body {
 /* ── Glass Card ────────────────────────────────────── */
 
 .glass-card {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 280px;
   background: #0f172a;
   border: 1px solid #1e293b;
   box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5);

@@ -4,11 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DevShelf — The Crowdsourced Zero-Paywall Developer Directory</title>
-  <meta name="description" content="Discover 80+ verified developer tools, open-source GitHub repositories, free public APIs, and developer perks with zero paywalls.">
+  <meta name="description" content="Discover 511 verified developer tools, open-source GitHub repositories, free public APIs, 1-click cloud boilerplates, and developer perks with zero paywalls.">
   <link rel="canonical" href="https://devshelf.ritualdev.in/">
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">
 
   <!-- OpenGraph / Social Meta -->
   <meta property="og:type" content="website">
@@ -20,25 +17,14 @@
   <meta name="twitter:title" content="DevShelf — The Crowdsourced Developer Directory">
   <meta name="twitter:description" content="Curated developer tools, GitHub repositories, free APIs & perks. 100% free tiers, automated health checks.">
 
-  <!-- Fonts & Tailwind -->
+  <!-- Preconnect & Fonts with display=swap -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-            mono: ['"JetBrains Mono"', 'monospace'],
-          }
-        }
-      }
-    }
-  </script>
-  <link rel="stylesheet" href="style.css?v=5.1">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Static Compiled Tailwind CSS (zero runtime JS parser) & Custom Styles -->
+  <link rel="stylesheet" href="tailwind.min.css?v=1.0.0">
+  <link rel="stylesheet" href="style.css?v=5.2">
 </head>
 <body class="bg-slate-950 text-slate-100 min-h-screen font-sans selection:bg-purple-600 selection:text-white relative">
 
@@ -359,6 +345,17 @@
     <!-- Cards Container -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" id="cards-grid">
       <!-- Dynamically generated via app.js -->
+    </div>
+
+    <!-- Progressive Chunking Sentinel / Load More Container -->
+    <div id="scroll-sentinel" class="mt-8 text-center py-4">
+      <button id="load-more-btn" class="hidden px-5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-purple-500/50 hover:border-purple-400 text-purple-200 text-xs font-bold transition shadow-lg inline-flex items-center space-x-2">
+        <span>✨ Load More Resources</span>
+        <span id="load-more-remaining" class="px-2 py-0.5 rounded-full text-[10px] bg-purple-900/80 text-purple-200 font-mono"></span>
+      </button>
+      <div id="all-loaded-indicator" class="hidden text-xs text-slate-400 font-mono py-2">
+        <span>✓ Showing all curated resources</span>
+      </div>
     </div>
 
     <!-- Empty State -->

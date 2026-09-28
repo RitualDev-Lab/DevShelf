@@ -17,6 +17,11 @@ const drawerState = {
 const wizardState = {
   step: 1,
 };
+let currentFilteredList = [];
+let renderedCardCount = 0;
+const INITIAL_CARD_LIMIT = 24;
+const CHUNK_SIZE = 24;
+let loadMoreObserver = null;
 
 const BADGE_MARKDOWNS = {
   purple:
@@ -278,6 +283,7 @@ function setupListeners() {
   closeWizardModal();
   closeSnippetDrawer();
   closeStackModal();
+  setupScrollObserver();
 
   const searchInput = document.getElementById("search-input");
   const clearBtn = document.getElementById("clear-search-btn");
@@ -1641,19 +1647,117 @@ function render() {
 
   countLabel.textContent = `Showing ${filtered.length} of ${allResources.length} curated resources`;
 
+  currentFilteredList = filtered;
+  renderedCardCount = Math.min(INITIAL_CARD_LIMIT, filtered.length);
+
   if (filtered.length === 0) {
     grid.innerHTML = "";
     emptyState.classList.remove("hidden");
+    updateSentinelState();
     return;
   }
 
   emptyState.classList.add("hidden");
-  grid.innerHTML = filtered.map((item) => createCardHtml(item)).join("");
 
-  // Stagger card entrance animations
+  // Render initial lightweight chunk (24 cards = ~350 DOM nodes, preventing mobile DOM explosion)
+  const initialBatch = filtered.slice(0, renderedCardCount);
+  grid.innerHTML = initialBatch.map((item) => createCardHtml(item)).join("");
+
+  // Stagger card entrance animations for initial batch
   const cards = grid.children;
   for (let i = 0; i < cards.length; i++) {
-    cards[i].style.setProperty("--delay", `${i * 0.04}s`);
+    cards[i].style.setProperty("--delay", `${Math.min(i * 0.03, 0.4)}s`);
+  }
+
+  updateSentinelState();
+}
+
+function appendNextCardChunk() {
+  if (renderedCardCount >= currentFilteredList.length) {
+    updateSentinelState();
+    return;
+  }
+
+  const grid = document.getElementById("cards-grid");
+  if (!grid) return;
+
+  const nextBatch = currentFilteredList.slice(renderedCardCount, renderedCardCount + CHUNK_SIZE);
+  renderedCardCount += nextBatch.length;
+
+  const tempContainer = document.createElement("div");
+  tempContainer.innerHTML = nextBatch.map((item) => createCardHtml(item)).join("");
+
+  const newCards = Array.from(tempContainer.children);
+  for (let i = 0; i < newCards.length; i++) {
+    newCards[i].style.setProperty("--delay", `${Math.min(i * 0.03, 0.3)}s`);
+    grid.appendChild(newCards[i]);
+  }
+
+  updateSentinelState();
+}
+
+function updateSentinelState() {
+  const sentinel = document.getElementById("scroll-sentinel");
+  const loadMoreBtn = document.getElementById("load-more-btn");
+  const remainingBadge = document.getElementById("load-more-remaining");
+  const allLoadedInd = document.getElementById("all-loaded-indicator");
+
+  if (!sentinel || !loadMoreBtn || !allLoadedInd) return;
+
+  const total = currentFilteredList.length;
+  const remaining = total - renderedCardCount;
+
+  if (total === 0) {
+    sentinel.classList.add("hidden");
+    loadMoreBtn.classList.add("hidden");
+    allLoadedInd.classList.add("hidden");
+    return;
+  }
+
+  sentinel.classList.remove("hidden");
+
+  if (remaining > 0) {
+    loadMoreBtn.classList.remove("hidden");
+    if (remainingBadge) {
+      remainingBadge.textContent = `${remaining} more`;
+    }
+    allLoadedInd.classList.add("hidden");
+  } else {
+    loadMoreBtn.classList.add("hidden");
+    allLoadedInd.classList.remove("hidden");
+  }
+}
+
+function setupScrollObserver() {
+  const sentinel = document.getElementById("scroll-sentinel");
+  if (!sentinel) return;
+
+  const loadMoreBtn = document.getElementById("load-more-btn");
+  if (loadMoreBtn && !loadMoreBtn.dataset.bound) {
+    loadMoreBtn.dataset.bound = "true";
+    loadMoreBtn.addEventListener("click", () => {
+      appendNextCardChunk();
+    });
+  }
+
+  if ("IntersectionObserver" in window) {
+    if (loadMoreObserver) {
+      loadMoreObserver.disconnect();
+    }
+
+    loadMoreObserver = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0];
+        if (entry?.isIntersecting) {
+          if (renderedCardCount < currentFilteredList.length) {
+            appendNextCardChunk();
+          }
+        }
+      },
+      { rootMargin: "400px 0px" },
+    );
+
+    loadMoreObserver.observe(sentinel);
   }
 }
 

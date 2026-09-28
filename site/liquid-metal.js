@@ -1,4 +1,4 @@
-﻿/**
+/**
  * DevShelf — Vengeance UI Liquid Metal Shader Engine
  * Ultra-fast GPU-accelerated molten chrome fluid shader with interactive cursor ripples
  * and IntersectionObserver auto-pause for optimal battery and 60 FPS performance.
@@ -266,6 +266,14 @@
 
   // Initialize all Liquid Metal Buttons with IntersectionObserver
   function initLiquidMetal() {
+    // Skip heavy WebGL shaders on mobile viewports (<640px) or if user prefers reduced motion
+    if (
+      typeof window !== "undefined" &&
+      (window.innerWidth < 640 || window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches)
+    ) {
+      return;
+    }
+
     const canvases = document.querySelectorAll(".liquid-metal-canvas");
     if (!canvases.length) return;
 
@@ -298,10 +306,19 @@
     }
   }
 
+  // Defer initialization to requestIdleCallback to avoid blocking FCP / LCP
+  function scheduleInit() {
+    if ("requestIdleCallback" in window) {
+      window.requestIdleCallback(() => initLiquidMetal(), { timeout: 2000 });
+    } else {
+      setTimeout(initLiquidMetal, 300);
+    }
+  }
+
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", initLiquidMetal);
+    document.addEventListener("DOMContentLoaded", scheduleInit);
   } else {
-    initLiquidMetal();
+    scheduleInit();
   }
 
   window.initLiquidMetal = initLiquidMetal;
