@@ -1,13 +1,13 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-09-28T12:24:07.738Z",
-  "totalCount": 514,
-  "reposCount": 318,
+  "updatedAt": "2026-09-28T14:58:49.095Z",
+  "totalCount": 515,
+  "reposCount": 319,
   "facets": {
-    "repos": 318
+    "repos": 319
   },
   "counts": {
     "aiTools": 86,
-    "cliTools": 108,
+    "cliTools": 109,
     "testingQa": 62,
     "apis": 96,
     "freeCloud": 70,
@@ -3176,6 +3176,17 @@ window.DEVSHELF_DATA = {
       "repo": "https://github.com/edilec/image-format-readiness",
       "category": "CLI & Developer Productivity",
       "description": "Offline Node.js CLI that checks exported HTML and local image files for declared dimensions, aspect ratio, alternative text, loading declarations, pinned format policy, and byte budgets. It reports pass, fail, or incomplete evidence; it does not optimize images or test live browser compatibility.",
+      "language": "JavaScript (Node.js 22+)",
+      "license": "MIT",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "Docs Link Integrity Checker",
+      "repo": "https://github.com/edilec/docs-link-integrity-checker",
+      "category": "CLI & Developer Productivity",
+      "description": "Offline Node.js CLI that checks Markdown and HTML links, local targets and anchors inside a bounded documentation root. It never fetches external URLs; without an imported status for them, the report stays incomplete rather than passing silently.",
       "language": "JavaScript (Node.js 22+)",
       "license": "MIT",
       "featured": false,
