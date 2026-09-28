@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DevShelf — The Crowdsourced Zero-Paywall Developer Directory</title>
-  <meta name="description" content="Discover 512 verified developer tools, open-source GitHub repositories, free public APIs, 1-click cloud boilerplates, and developer perks with zero paywalls.">
+  <meta name="description" content="Discover 500+ verified developer tools, open-source GitHub repositories, free public APIs, 1-click cloud boilerplates, and developer perks with zero paywalls.">
   <link rel="canonical" href="https://devshelf.ritualdev.in/">
 
   <!-- OpenGraph / Social Meta -->
@@ -13,9 +13,16 @@
   <meta property="og:title" content="DevShelf — Zero-Paywall Developer Ecosystem">
   <meta property="og:description" content="Discover hand-curated developer tools, verified open-source repos, free APIs, and startup perks with zero credit-card traps.">
   <meta property="og:site_name" content="DevShelf">
+  <meta property="og:image" content="https://devshelf.ritualdev.in/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="DevShelf — 500+ free developer tools, APIs, and boilerplates with zero paywalls">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@RitualDevLab">
   <meta name="twitter:title" content="DevShelf — The Crowdsourced Developer Directory">
   <meta name="twitter:description" content="Curated developer tools, GitHub repositories, free APIs & perks. 100% free tiers, automated health checks.">
+  <meta name="twitter:image" content="https://devshelf.ritualdev.in/og-image.jpg">
+
 
   <!-- Preconnect & Fonts with display=swap -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -125,7 +132,7 @@
           <span class="liquid-metal-icon-pill">
             <span class="text-sm">✨</span>
           </span>
-          <span class="liquid-metal-text text-xs sm:text-sm">Explore 512 Curated Resources</span>
+          <span class="liquid-metal-text text-xs sm:text-sm">Explore <span id="hero-total-count">500+</span> Curated Resources</span>
           <span class="liquid-metal-arrow text-cyan-400">↓</span>
         </div>
       </a>
@@ -289,7 +296,7 @@
     <div class="flex items-center flex-wrap gap-2 text-xs font-bold mb-3" id="category-pills">
       <button data-category="all" class="category-pill active px-3.5 py-2 rounded-xl transition flex items-center space-x-1.5">
         <span>All Items</span>
-        <span class="px-1.5 py-0.5 rounded-full text-[10px] bg-purple-900 text-purple-200 font-mono" id="pill-count-all">512</span>
+        <span class="px-1.5 py-0.5 rounded-full text-[10px] bg-purple-900 text-purple-200 font-mono" id="pill-count-all">…</span>
       </button>
       <button data-category="repo" class="category-pill px-3.5 py-2 rounded-xl transition flex items-center space-x-1.5">
         <span>🐙 GitHub Repos</span>

@@ -202,6 +202,9 @@ function updateStatsAndPills(data) {
   setElText("pill-count-cloud", cloudCount);
   setElText("pill-count-perks", perksCount);
   setElText("pill-count-contributors", contributorsCount);
+
+  // Hero CTA count
+  setElText("hero-total-count", total);
 }
 
 function setElText(id, val) {

@@ -134,11 +134,16 @@ async function generateSeo() {
   <meta property="og:title" content="${pageTitle}">
   <meta property="og:description" content="${desc}">
   <meta property="og:site_name" content="DevShelf">
+  <meta property="og:image" content="https://devshelf.ritualdev.in/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@RitualDevLab">
   <meta name="twitter:title" content="${pageTitle}">
   <meta name="twitter:description" content="${desc}">
+  <meta name="twitter:image" content="https://devshelf.ritualdev.in/og-image.jpg">
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
