@@ -1151,5 +1151,14 @@
     "language": "JavaScript / Electron, with C# and Swift native helpers",
     "license": "MIT",
     "featured": false
+  },
+  {
+    "name": "Web Performance Budget Gate",
+    "repo": "https://github.com/edilec/web-performance-budget-gate",
+    "category": "CLI & Developer Productivity",
+    "description": "Offline Node.js CLI that checks captured Lighthouse JSON against declared route-level performance budgets and reports a completed budget failure. It does not run Lighthouse or measure a live page.",
+    "language": "JavaScript (Node.js 22+)",
+    "license": "MIT",
+    "featured": false
   }
 ]

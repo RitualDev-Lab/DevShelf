@@ -1,13 +1,13 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-09-28T04:25:38.530Z",
-  "totalCount": 511,
-  "reposCount": 315,
+  "updatedAt": "2026-09-28T04:51:34.639Z",
+  "totalCount": 512,
+  "reposCount": 316,
   "facets": {
-    "repos": 315
+    "repos": 316
   },
   "counts": {
     "aiTools": 86,
-    "cliTools": 105,
+    "cliTools": 106,
     "testingQa": 62,
     "apis": 96,
     "freeCloud": 70,
@@ -3144,6 +3144,17 @@ window.DEVSHELF_DATA = {
       "category": "Dev Utilities & Libraries",
       "description": "An independent, open-source Codex Desktop companion for Windows and macOS. It displays quota limits, reset times, and reset credits, with a local Quota Center for pace and history. I am a maintainer of this independent project; it is not affiliated with or endorsed by OpenAI.",
       "language": "JavaScript / Electron, with C# and Swift native helpers",
+      "license": "MIT",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "Web Performance Budget Gate",
+      "repo": "https://github.com/edilec/web-performance-budget-gate",
+      "category": "CLI & Developer Productivity",
+      "description": "Offline Node.js CLI that checks captured Lighthouse JSON against declared route-level performance budgets and reports a completed budget failure. It does not run Lighthouse or measure a live page.",
+      "language": "JavaScript (Node.js 22+)",
       "license": "MIT",
       "featured": false,
       "type": "cli",

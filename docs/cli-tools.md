@@ -4,10 +4,10 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total CLI Tools](https://img.shields.io/badge/CLI_Tools-105_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total CLI Tools](https://img.shields.io/badge/CLI_Tools-106_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
-[Benchmarking & Performance](#benchmarking-performance) • [Database & SQL](#database-sql) • [Dev Utilities & Libraries](#dev-utilities-libraries) • [Developer Tools](#developer-tools) • [DevOps & Containers](#devops-containers) • [Disk & Storage](#disk-storage) • [Git & Version Control](#git-version-control) • [GitHub Workflow & TUI](#github-workflow-tui) • [HTTP & Network](#http-network) • [OS & Hardware Utilities](#os-hardware-utilities) • [System & Process Monitoring](#system-process-monitoring) • [Terminal & Search](#terminal-search) • [Terminal & Shell](#terminal-shell) • [Terminal Navigation](#terminal-navigation)
+[Benchmarking & Performance](#benchmarking-performance) • [CLI & Developer Productivity](#cli-developer-productivity) • [Database & SQL](#database-sql) • [Dev Utilities & Libraries](#dev-utilities-libraries) • [Developer Tools](#developer-tools) • [DevOps & Containers](#devops-containers) • [Disk & Storage](#disk-storage) • [Git & Version Control](#git-version-control) • [GitHub Workflow & TUI](#github-workflow-tui) • [HTTP & Network](#http-network) • [OS & Hardware Utilities](#os-hardware-utilities) • [System & Process Monitoring](#system-process-monitoring) • [Terminal & Search](#terminal-search) • [Terminal & Shell](#terminal-shell) • [Terminal Navigation](#terminal-navigation)
 
 ---
 
@@ -16,6 +16,12 @@
 | Tool | Language | License | Description | Links |
 | :--- | :---: | :---: | :--- | :---: |
 | [**hyperfine**](https://github.com/sharkdp/hyperfine) | `Rust` | `MIT / Apache-2.0` | Command-line benchmarking tool with statistical analysis, warmup runs, and parametric sweeps. | [GitHub](https://github.com/sharkdp/hyperfine) |
+
+### <a id="cli-developer-productivity"></a>CLI & Developer Productivity (1)
+
+| Tool | Language | License | Description | Links |
+| :--- | :---: | :---: | :--- | :---: |
+| [**Web Performance Budget Gate**](https://github.com/edilec/web-performance-budget-gate) | `JavaScript (Node.js 22+)` | `MIT` | Offline Node.js CLI that checks captured Lighthouse JSON against declared route-level performance budgets and reports a completed budget failure. It does not run Lighthouse or measure a live page. | [GitHub](https://github.com/edilec/web-performance-budget-gate) |
 
 ### <a id="database-sql"></a>Database & SQL (6)
 
