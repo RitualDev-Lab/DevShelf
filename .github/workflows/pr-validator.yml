@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   validate-pr:
-    name: Validate Schema, Duplicates & AI Optimization
+    name: PR Integrity Gate
     runs-on: ubuntu-latest
     steps:
       - name: Checkout PR Code
