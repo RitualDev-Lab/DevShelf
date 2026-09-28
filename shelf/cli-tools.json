@@ -1178,5 +1178,14 @@
     "language": "JavaScript (Node.js 22+)",
     "license": "MIT",
     "featured": false
+  },
+  {
+    "name": "Docs Link Integrity Checker",
+    "repo": "https://github.com/edilec/docs-link-integrity-checker",
+    "category": "CLI & Developer Productivity",
+    "description": "Offline Node.js CLI that checks Markdown and HTML links, local targets and anchors inside a bounded documentation root. It never fetches external URLs; without an imported status for them, the report stays incomplete rather than passing silently.",
+    "language": "JavaScript (Node.js 22+)",
+    "license": "MIT",
+    "featured": false
   }
 ]
