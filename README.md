@@ -233,6 +233,13 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
       </a><br />
       <sub>🧪 Agent QA (PR #37)</sub>
     </td>
+    <td align="center" width="160">
+      <a href="https://github.com/KRISHNAMMurarka">
+        <img src="https://github.com/KRISHNAMMurarka.png" width="70" style="border-radius: 50%;" alt="KRISHNAMMurarka"/><br />
+        <sub><b>KRISHNAMMurarka</b></sub>
+      </a><br />
+      <sub>⚡ Budget Gate (PR #41)</sub>
+    </td>
   </tr>
 </table>
 
@@ -289,6 +296,20 @@ DevShelf is powered by the open-source community! We provide tailored issue temp
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 ![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-222?style=flat-square&logo=github&logoColor=white)
 ![pnpm](https://img.shields.io/badge/pnpm-F69220?style=flat-square&logo=pnpm&logoColor=white)
+
+</div>
+
+---
+
+## 💖 Support DevShelf
+
+DevShelf is a 100% free and open-source community directory. If DevShelf saved you cloud expenses or helped discover useful tools, consider supporting server uptime and automated healthcheck infrastructure:
+
+<div align="center">
+
+[![Support on RoleNest](https://img.shields.io/badge/Donate-RoleNest-FF69B4?style=for-the-badge&logo=heart&logoColor=white)](https://donation.rolenest.in)
+
+[**💖 Support via RoleNest (donation.rolenest.in)**](https://donation.rolenest.in)
 
 </div>
 

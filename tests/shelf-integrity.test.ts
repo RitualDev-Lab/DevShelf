@@ -144,31 +144,31 @@ describe("DevShelf Catalog Data Integrity", async () => {
         }
       }
     }
-    assert.strictEqual(globalUrls.size, 511, `Expected 511 unique URLs, got ${globalUrls.size}`);
+    assert.strictEqual(globalUrls.size, 512, `Expected 512 unique URLs, got ${globalUrls.size}`);
   });
 
-  test("total catalog scale satisfies 511 milestone", () => {
+  test("total catalog scale satisfies 512 milestone", () => {
     let total = 0;
     for (const [_, items] of shelfData) {
       total += items.length;
     }
     assert.strictEqual(
       total,
-      511,
-      `Expected total catalog count to be exactly 511 items, got ${total}`,
+      512,
+      `Expected total catalog count to be exactly 512 items, got ${total}`,
     );
   });
 });
 
 describe("DevShelf Generated Artifacts & Docs Sync", async () => {
-  test("site/data.json exists, is valid, and matches catalog exactly (511)", async () => {
+  test("site/data.json exists, is valid, and matches catalog exactly (512)", async () => {
     const dataJsonPath = path.join(ROOT, "site", "data.json");
     const raw = await fs.readFile(dataJsonPath, "utf8");
     const data = JSON.parse(raw);
 
-    assert.strictEqual(data.totalCount, 511, `Expected totalCount 511, got ${data.totalCount}`);
+    assert.strictEqual(data.totalCount, 512, `Expected totalCount 512, got ${data.totalCount}`);
     assert.ok(Array.isArray(data.resources), "Expected data.resources to be an array");
-    assert.strictEqual(data.resources.length, 511);
+    assert.strictEqual(data.resources.length, 512);
 
     const countsSum = Object.values(data.counts).reduce(
       (acc: number, val: any) => acc + (typeof val === "number" ? val : 0),
@@ -176,8 +176,8 @@ describe("DevShelf Generated Artifacts & Docs Sync", async () => {
     );
     assert.strictEqual(
       countsSum,
-      511,
-      `Expected data.counts to sum to exactly 511, got ${countsSum}`,
+      512,
+      `Expected data.counts to sum to exactly 512, got ${countsSum}`,
     );
   });
 

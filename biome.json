@@ -6,7 +6,14 @@
       "site/data.js",
       "site/uptime.json",
       "site/matchmaker.json",
-      "site/benchmarks.json"
+      "site/benchmarks.json",
+      "site/tailwind.min.css",
+      "site/tools/**",
+      "site/sitemap.xml",
+      "site/robots.txt",
+      "site/badge.svg",
+      "site/favicon.svg",
+      "site/favicon.ico"
     ]
   },
   "formatter": {
