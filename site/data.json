@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-09-28T14:58:49.095Z",
-  "totalCount": 515,
-  "reposCount": 319,
+  "updatedAt": "2026-09-28T17:19:06.557Z",
+  "totalCount": 516,
+  "reposCount": 320,
   "facets": {
-    "repos": 319
+    "repos": 320
   },
   "counts": {
     "aiTools": 86,
-    "cliTools": 109,
+    "cliTools": 110,
     "testingQa": 62,
     "apis": 96,
     "freeCloud": 70,
@@ -3187,6 +3187,17 @@
       "repo": "https://github.com/edilec/docs-link-integrity-checker",
       "category": "CLI & Developer Productivity",
       "description": "Offline Node.js CLI that checks Markdown and HTML links, local targets and anchors inside a bounded documentation root. It never fetches external URLs; without an imported status for them, the report stays incomplete rather than passing silently.",
+      "language": "JavaScript (Node.js 22+)",
+      "license": "MIT",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "OpenAPI Example Validator",
+      "repo": "https://github.com/edilec/openapi-example-validator",
+      "category": "CLI & Developer Productivity",
+      "description": "Offline Node.js CLI that checks examples in local JSON OpenAPI 3.0 and 3.1 descriptions against the schema for their operation and media type. It reports unsupported checks as incomplete instead of treating them as a pass.",
       "language": "JavaScript (Node.js 22+)",
       "license": "MIT",
       "featured": false,

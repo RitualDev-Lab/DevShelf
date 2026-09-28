@@ -1187,5 +1187,14 @@
     "language": "JavaScript (Node.js 22+)",
     "license": "MIT",
     "featured": false
+  },
+  {
+    "name": "OpenAPI Example Validator",
+    "repo": "https://github.com/edilec/openapi-example-validator",
+    "category": "CLI & Developer Productivity",
+    "description": "Offline Node.js CLI that checks examples in local JSON OpenAPI 3.0 and 3.1 descriptions against the schema for their operation and media type. It reports unsupported checks as incomplete instead of treating them as a pass.",
+    "language": "JavaScript (Node.js 22+)",
+    "license": "MIT",
+    "featured": false
   }
 ]
