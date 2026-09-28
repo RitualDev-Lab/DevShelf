@@ -205,6 +205,13 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
       </a><br />
       <sub>⚙️ Core Maintainer & Infra</sub>
     </td>
+    <td align="center" width="180">
+      <a href="https://github.com/Divyanshu-hub-dotcom">
+        <img src="https://github.com/Divyanshu-hub-dotcom.png" width="80" style="border-radius: 50%;" alt="Divyanshu-hub-dotcom"/><br />
+        <sub><b>Divyanshu-hub-dotcom</b></sub>
+      </a><br />
+      <sub>🛠️ Core Member</sub>
+    </td>
   </tr>
 </table>
 
