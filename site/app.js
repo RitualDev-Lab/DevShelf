@@ -55,10 +55,11 @@ async function loadDataAndRender() {
     Array.isArray(window.DEVSHELF_DATA.resources)
   ) {
     applyData(window.DEVSHELF_DATA);
+    return;
   }
 
   try {
-    const res = await fetch(`data.json?v=${Date.now()}`);
+    const res = await fetch("data.json");
     if (res.ok) {
       const liveData = await res.json();
       if (liveData && Array.isArray(liveData.resources)) {
@@ -73,7 +74,7 @@ async function loadDataAndRender() {
 async function loadUptimeData() {
   if (uptimeData) return uptimeData;
   try {
-    const res = await fetch(`uptime.json?v=${Date.now()}`);
+    const res = await fetch("uptime.json");
     if (res.ok) {
       uptimeData = await res.json();
       render();
@@ -1299,7 +1300,7 @@ function getHealthBarsHtml(item) {
       : "● Active • CI Verified (Link & Status OK)";
 
   return `
-    <div class="health-bars" title="${tooltipText}" aria-label="7-day operational status: ${tooltipText}">
+    <div class="health-bars" role="img" title="${tooltipText}" aria-label="7-day operational status: ${tooltipText}">
       ${segmentsHtml}
       <span class="health-tooltip">${tooltipText}</span>
     </div>

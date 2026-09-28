@@ -17,10 +17,14 @@
   <meta name="twitter:title" content="DevShelf — The Crowdsourced Developer Directory">
   <meta name="twitter:description" content="Curated developer tools, GitHub repositories, free APIs & perks. 100% free tiers, automated health checks.">
 
-  <!-- Preconnect & Fonts with display=swap -->
+  <!-- Preconnect & Non-blocking Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap">
+  </noscript>
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -46,14 +50,14 @@
 
   <!-- Top Navigation Bar -->
   <header class="border-b border-slate-800 bg-slate-950/90 backdrop-blur-xl sticky top-0 z-30">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-      <div class="flex items-center space-x-3">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center space-x-3 flex-shrink-0">
         <span class="text-2xl">📚</span>
         <a href="https://devshelf.ritualdev.in" class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">DevShelf</a>
         <span class="hidden md:inline-block px-2.5 py-0.5 text-xs font-mono font-bold rounded-full bg-purple-900/60 text-purple-200 border border-purple-500/40">100% Free Tiers</span>
       </div>
 
-      <nav class="hidden lg:flex items-center space-x-6 text-xs font-bold text-slate-200">
+      <nav class="hidden lg:flex items-center space-x-5 text-xs font-bold text-slate-200">
         <a href="#spotlight" class="hover:text-purple-300 transition">🔥 Spotlight</a>
         <a href="#directory" class="hover:text-purple-300 transition">📁 Directory</a>
         <button id="nav-matchmaker-btn" class="hover:text-emerald-300 transition flex items-center space-x-1.5 text-slate-200 font-bold">
@@ -67,27 +71,19 @@
         <a href="https://github.com/RitualDev-Lab/DevShelf/wiki" target="_blank" rel="noreferrer" class="hover:text-purple-300 transition">📖 Wiki</a>
       </nav>
 
-      <div class="flex items-center space-x-2.5">
-        <a href="https://donation.rolenest.in" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1 px-3 py-1.5 text-xs font-bold rounded-lg bg-pink-950/60 hover:bg-pink-900/80 border border-pink-500/50 text-pink-200 transition hover:scale-105 active:scale-95 shadow-sm shadow-pink-900/40" title="Support DevShelf (donation.rolenest.in)">
+      <div class="flex items-center space-x-2 sm:space-x-2.5 flex-shrink-0">
+        <a href="https://donation.rolenest.in" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1 px-3 py-1.5 text-xs font-bold rounded-lg bg-pink-950/60 hover:bg-pink-900/80 border border-pink-500/50 text-pink-200 transition hover:scale-105 active:scale-95 shadow-sm shadow-pink-900/40 flex-shrink-0" title="Support DevShelf (donation.rolenest.in)">
           <span>💖 Donate</span>
         </a>
-        <button id="open-badge-modal-btn" class="inline-flex items-center space-x-1 px-3 py-1.5 text-xs font-bold rounded-lg bg-purple-900/40 hover:bg-purple-900/70 border border-purple-500/50 text-purple-200 transition hover:scale-105 active:scale-95" title="Embed Featured Badges">
-          <span>🎖️ Get Badge</span>
+        <button id="open-badge-modal-btn" class="hidden sm:inline-flex items-center space-x-1 px-3 py-1.5 text-xs font-bold rounded-lg bg-purple-900/40 hover:bg-purple-900/70 border border-purple-500/50 text-purple-200 transition hover:scale-105 active:scale-95 flex-shrink-0" title="Embed Featured Badges">
+          <span>🎖️ Badges</span>
         </button>
-        <a href="https://github.com/RitualDev-Lab/DevShelf" target="_blank" rel="noreferrer" class="hidden sm:inline-flex items-center space-x-1 px-3 py-1.5 text-xs font-bold rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 transition hover:scale-105 active:scale-95">
+        <a href="https://github.com/RitualDev-Lab/DevShelf" target="_blank" rel="noreferrer" class="hidden xl:inline-flex items-center space-x-1 px-3 py-1.5 text-xs font-bold rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 transition hover:scale-105 active:scale-95 flex-shrink-0">
           <span>⭐ Star</span>
         </a>
-        <button id="nav-wizard-btn" class="liquid-metal-btn liquid-metal-btn-sm group" title="Submit a Free Developer Tool">
-          <div class="liquid-metal-frame">
-            <canvas class="liquid-metal-canvas" data-tint="#38bdf8" data-back="#090d16" data-speed="0.5" data-distortion="0.18" data-repetition="4.0"></canvas>
-          </div>
-          <div class="liquid-metal-glow"></div>
-          <div class="liquid-metal-inner liquid-metal-inner-sm">
-            <span class="liquid-metal-icon-pill liquid-metal-icon-pill-sm">
-              <span class="text-xs">➕</span>
-            </span>
-            <span class="liquid-metal-text text-xs">Submit Tool</span>
-          </div>
+        <button id="nav-wizard-btn" class="inline-flex items-center space-x-1.5 px-3.5 py-1.5 text-xs font-bold rounded-xl bg-gradient-to-r from-purple-600 via-indigo-600 to-cyan-600 hover:from-purple-500 hover:to-cyan-500 text-white shadow-md shadow-purple-600/30 transition hover:scale-105 active:scale-95 flex-shrink-0" title="Submit a Free Developer Tool">
+          <span class="text-xs">➕</span>
+          <span>Submit Tool</span>
         </button>
       </div>
     </div>
@@ -119,15 +115,15 @@
       <a href="#directory" class="liquid-metal-btn group" title="Explore Curated Developer Tools">
         <div class="liquid-metal-frame">
           <canvas class="liquid-metal-canvas" data-tint="#c084fc" data-back="#030712" data-speed="0.6" data-distortion="0.22" data-repetition="3.5"></canvas>
+          <div class="liquid-metal-inner">
+            <span class="liquid-metal-icon-pill">
+              <span class="text-sm">✨</span>
+            </span>
+            <span class="liquid-metal-text text-xs sm:text-sm">Explore 512 Curated Resources</span>
+            <span class="liquid-metal-arrow text-cyan-400">↓</span>
+          </div>
         </div>
         <div class="liquid-metal-glow"></div>
-        <div class="liquid-metal-inner">
-          <span class="liquid-metal-icon-pill">
-            <span class="text-sm">✨</span>
-          </span>
-          <span class="liquid-metal-text text-xs sm:text-sm">Explore 512 Curated Resources</span>
-          <span class="liquid-metal-arrow text-cyan-400">↓</span>
-        </div>
       </a>
       <button id="hero-matchmaker-btn" class="inline-flex items-center space-x-2 px-4 py-2.5 rounded-xl bg-emerald-950/80 hover:bg-emerald-900 border border-emerald-500/60 text-emerald-200 font-bold transition shadow-md shadow-emerald-500/20">
         <span>🤝 Contributor Matchmaker</span>
@@ -234,7 +230,7 @@
       <!-- Sort & Display Controls -->
       <div class="flex items-center space-x-3 text-xs">
         <span class="text-slate-300 font-semibold hidden sm:inline">Sort by:</span>
-        <select id="sort-select" class="px-3 py-2 bg-slate-900 border border-slate-700 rounded-xl text-slate-100 text-xs font-bold focus:outline-none focus:ring-2 focus:ring-purple-500">
+        <select id="sort-select" aria-label="Sort resources by" class="px-3 py-2 bg-slate-900 border border-slate-700 rounded-xl text-slate-100 text-xs font-bold focus:outline-none focus:ring-2 focus:ring-purple-500">
           <option value="featured">⭐ Featured First</option>
           <option value="name-asc">🔤 Name (A → Z)</option>
           <option value="category">📁 By Category</option>
@@ -433,7 +429,7 @@
       </div>
 
       <a href="https://github.com/RitualDev-Lab/DevShelf/graphs/contributors" target="_blank" rel="noreferrer" class="inline-block hover:opacity-90 transition">
-        <img src="https://contrib.rocks/image?repo=RitualDev-Lab/DevShelf" alt="DevShelf Contributors" class="mx-auto rounded-xl max-w-full">
+        <img src="https://contrib.rocks/image?repo=RitualDev-Lab/DevShelf" alt="DevShelf Contributors" class="mx-auto rounded-xl max-w-full" width="460" height="64" loading="lazy" decoding="async">
       </a>
       <p class="text-xs text-slate-400 mt-3 font-mono">Want your avatar here? Submit a pull request or claim an open issue!</p>
     </div>
@@ -879,8 +875,8 @@
     </div>
   </footer>
 
-  <script src="data.js?v=5.1"></script>
-  <script src="liquid-metal.js?v=5.1"></script>
-  <script src="app.js?v=5.1"></script>
+  <script src="data.js?v=5.2" defer></script>
+  <script src="liquid-metal.js?v=5.2" defer></script>
+  <script src="app.js?v=5.2" defer></script>
 </body>
 </html>
