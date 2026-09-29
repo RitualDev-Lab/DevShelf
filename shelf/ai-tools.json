@@ -944,5 +944,16 @@
     "featured": false,
     "goodFirstIssues": "https://github.com/zilliztech/gptcache/issues",
     "statusTags": ["100% Offline-Friendly", "No Card Required"]
+  },
+  {
+    "name": "MCP Dubai",
+    "repo": "https://github.com/mahdi-salmanzade/MCP-Dubai",
+    "url": "https://pypi.org/project/mcp-dubai",
+    "category": "AI Agents & MCP Servers",
+    "description": "Open-source MCP server connecting AI assistants to Dubai and UAE public APIs — real estate, transport, statistics, education, health, and business data via Dubai Pulse, RTA, DLD, KHDA, and DHA. Runs locally over stdio.",
+    "language": "Python",
+    "license": "MIT",
+    "featured": false,
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   }
 ]
