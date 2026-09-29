@@ -4,12 +4,18 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total AI Tools](https://img.shields.io/badge/AI_Tools-86_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total AI Tools](https://img.shields.io/badge/AI_Tools-87_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
-[AI Workflow & Orchestration](#ai-workflow-orchestration) • [Autonomous Coding & Agent Dev](#autonomous-coding-agent-dev) • [Local AI & Inference](#local-ai-inference) • [Web UI & Chat](#web-ui-chat)
+[AI Agents & MCP Servers](#ai-agents-mcp-servers) • [AI Workflow & Orchestration](#ai-workflow-orchestration) • [Autonomous Coding & Agent Dev](#autonomous-coding-agent-dev) • [Local AI & Inference](#local-ai-inference) • [Web UI & Chat](#web-ui-chat)
 
 ---
+
+### <a id="ai-agents-mcp-servers"></a>AI Agents & MCP Servers (1)
+
+| Tool | Language | License | Description | Links |
+| :--- | :---: | :---: | :--- | :---: |
+| [**MCP Dubai**](https://github.com/mahdi-salmanzade/MCP-Dubai) | `Python` | `MIT` | Open-source MCP server connecting AI assistants to Dubai and UAE public APIs — real estate, transport, statistics, education, health, and business data via Dubai Pulse, RTA, DLD, KHDA, and DHA. Runs locally over stdio. | [GitHub](https://github.com/mahdi-salmanzade/MCP-Dubai) |
 
 ### <a id="ai-workflow-orchestration"></a>AI Workflow & Orchestration (22)
 
