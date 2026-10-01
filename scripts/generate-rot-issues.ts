@@ -114,11 +114,18 @@ Our automated link healthcheck detected that **${ep.name}** is currently returni
 `;
 
     try {
-      execSync(
-        `gh issue create --title "${title}" --body "${body.replace(/"/g, '\\"')}" --label "broken-link,good first issue,hacktoberfest,help wanted"`,
-        { stdio: "inherit" },
-      );
-      console.log(`  🎉 Created issue for ${ep.name}`);
+      // Write body to a temp file to avoid shell injection via string interpolation
+      const tmpFile = path.join(process.cwd(), `.rot-issue-body-${Date.now()}.md`);
+      await fs.writeFile(tmpFile, body, "utf8");
+      try {
+        execSync(
+          `gh issue create --title ${JSON.stringify(title)} --body-file ${JSON.stringify(tmpFile)} --label "broken-link,good first issue,hacktoberfest,help wanted"`,
+          { stdio: "inherit" },
+        );
+        console.log(`  🎉 Created issue for ${ep.name}`);
+      } finally {
+        await fs.unlink(tmpFile).catch(() => {});
+      }
     } catch (err: any) {
       console.log(`  Could not run gh issue create: ${err.message}. Ready for CI.`);
     }

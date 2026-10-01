@@ -13,7 +13,7 @@
  *   npx devshelf open <name>         # Open resource URL in default browser
  */
 
-import { exec } from "node:child_process";
+import { execFile } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 import readline from "node:readline";
@@ -41,16 +41,23 @@ const c = {
   white: useColor ? "\x1b[97m" : "",
 };
 
-// Open URL cross-platform
+// Open URL cross-platform — use execFile to avoid shell injection (no string interpolation)
 function openUrl(url) {
   if (!url) return;
-  const cmd =
-    process.platform === "win32"
-      ? `start "" "${url}"`
-      : process.platform === "darwin"
-        ? `open "${url}"`
-        : `xdg-open "${url}"`;
-  exec(cmd);
+  // Validate the URL is http(s) before passing to the OS opener
+  try {
+    const parsed = new URL(url);
+    if (parsed.protocol !== "http:" && parsed.protocol !== "https:") return;
+  } catch {
+    return;
+  }
+  if (process.platform === "win32") {
+    execFile("cmd.exe", ["/c", "start", "", url]);
+  } else if (process.platform === "darwin") {
+    execFile("open", [url]);
+  } else {
+    execFile("xdg-open", [url]);
+  }
 }
 
 // Load resources from local file or fetch remotely

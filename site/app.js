@@ -1448,9 +1448,18 @@ function toggleVouch(toolName) {
   }
   saveVouchedSet(vouched);
 
-  const safeName =
-    typeof CSS !== "undefined" && CSS.escape ? CSS.escape(toolName) : toolName.replace(/"/g, '\\"');
-  const btn = document.querySelector(`.vouch-btn[data-vouch-name="${safeName}"]`);
+  // Use DOM attribute matching instead of CSS string interpolation to avoid selector injection
+  let btn = null;
+  if (typeof CSS !== "undefined" && CSS.escape) {
+    btn = document.querySelector(`.vouch-btn[data-vouch-name="${CSS.escape(toolName)}"]`);
+  } else {
+    for (const el of document.querySelectorAll(".vouch-btn[data-vouch-name]")) {
+      if (el.getAttribute("data-vouch-name") === toolName) {
+        btn = el;
+        break;
+      }
+    }
+  }
   if (btn) {
     const item = allResources.find((r) => r.name === toolName);
     const baseCount = item ? getBaseVouchCount(item) : 10;
@@ -2235,9 +2244,15 @@ function clearStack() {
 
 function updateStackButtonState(name) {
   const inStack = myStack.has(name);
-  const safeName =
-    typeof CSS !== "undefined" && CSS.escape ? CSS.escape(name) : name.replace(/"/g, '\\"');
-  const btns = document.querySelectorAll(`.stack-toggle-btn[data-stack-name="${safeName}"]`);
+  // Use DOM attribute matching instead of CSS string interpolation to avoid selector injection
+  let btns;
+  if (typeof CSS !== "undefined" && CSS.escape) {
+    btns = document.querySelectorAll(`.stack-toggle-btn[data-stack-name="${CSS.escape(name)}"]`);
+  } else {
+    btns = Array.from(document.querySelectorAll(".stack-toggle-btn[data-stack-name]")).filter(
+      (el) => el.getAttribute("data-stack-name") === name,
+    );
+  }
   for (const btn of btns) {
     if (inStack) {
       btn.className =

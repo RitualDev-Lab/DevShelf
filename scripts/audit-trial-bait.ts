@@ -42,19 +42,31 @@ export interface TrialBaitReport {
 }
 
 /**
- * Strips HTML tags and normalizes whitespace for text analysis
+ * Strips HTML tags and normalizes whitespace for text analysis.
+ * Uses an allowlist-free approach: strips script/style blocks first,
+ * then removes all remaining tags using a pattern robust to newlines.
  */
 export function extractTextFromHtml(html: string): string {
-  return html
-    .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, " ")
-    .replace(/<style\b[^<]*(?:(?!<\/style>)<[^<]*)*<\/style>/gi, " ")
-    .replace(/<[^>]+>/g, " ")
-    .replace(/&nbsp;/g, " ")
-    .replace(/&amp;/g, "&")
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/\s+/g, " ")
-    .trim();
+  // Strip script and style blocks (including multiline content)
+  const noScripts = html
+    .replace(/<script\b[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style\b[\s\S]*?<\/style>/gi, " ");
+
+  // Remove all HTML tags — use [\s\S] instead of [^>] to handle newlines in attributes
+  const noTags = noScripts.replace(/<[\s\S]*?>/g, " ");
+
+  // Decode HTML entities via a single-pass lookup (avoids double-unescaping chains)
+  const entities: Record<string, string> = {
+    "&nbsp;": " ",
+    "&amp;": "&",
+    "&quot;": '"',
+    "&#39;": "'",
+    "&lt;": "<",
+    "&gt;": ">",
+  };
+  const decoded = noTags.replace(/&(?:nbsp|amp|quot|#39|lt|gt);/g, (m) => entities[m] ?? m);
+
+  return decoded.replace(/\s+/g, " ").trim();
 }
 
 /**
@@ -409,11 +421,18 @@ ${f.analysis.matches.map((m) => `[${m.rule}]: "${m.phrase}"\nExcerpt: ...${m.exc
 `;
 
     try {
-      execSync(
-        `gh issue create --title "${issueTitle}" --body "${body.replace(/"/g, '\\"')}" --label "trial-bait,audit,help wanted,good first issue"`,
-        { stdio: "inherit" },
-      );
-      console.log(`  🎉 Created issue for ${f.name}`);
+      // Write body to a temp file to avoid shell injection via string interpolation
+      const tmpFile = path.join(process.cwd(), `.audit-issue-body-${Date.now()}.md`);
+      await fs.writeFile(tmpFile, body, "utf8");
+      try {
+        execSync(
+          `gh issue create --title ${JSON.stringify(issueTitle)} --body-file ${JSON.stringify(tmpFile)} --label "trial-bait,audit,help wanted,good first issue"`,
+          { stdio: "inherit" },
+        );
+        console.log(`  🎉 Created issue for ${f.name}`);
+      } finally {
+        await fs.unlink(tmpFile).catch(() => {});
+      }
     } catch (err: any) {
       console.log(`  Could not run gh issue create: ${err.message}`);
     }

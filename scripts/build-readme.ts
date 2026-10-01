@@ -6,7 +6,11 @@ const B = "`";
 
 function escapeMarkdown(text: string | undefined): string {
   if (!text) return "";
-  return text.replace(/\|/g, "\\|").replace(/\n/g, " ").trim();
+  return text
+    .replace(/\\/g, "\\\\") // escape backslash first to avoid double-escaping
+    .replace(/\|/g, "\\|")
+    .replace(/\n/g, " ")
+    .trim();
 }
 
 function slugify(text: string): string {

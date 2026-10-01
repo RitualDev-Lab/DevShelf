@@ -14,6 +14,8 @@ jobs:
   mirror:
     name: Push Mirror to GitLab
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - name: Checkout repository (full history)
         uses: actions/checkout@v4
