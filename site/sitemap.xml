@@ -991,6 +991,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://devshelf.ritualdev.in/tools/orkasvideostudio.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://devshelf.ritualdev.in/tools/autoheal-qa.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

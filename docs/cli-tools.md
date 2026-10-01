@@ -4,7 +4,7 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total CLI Tools](https://img.shields.io/badge/CLI_Tools-110_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total CLI Tools](https://img.shields.io/badge/CLI_Tools-111_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
 [Benchmarking & Performance](#benchmarking-performance) • [CLI & Developer Productivity](#cli-developer-productivity) • [Database & SQL](#database-sql) • [Dev Utilities & Libraries](#dev-utilities-libraries) • [Developer Tools](#developer-tools) • [DevOps & Containers](#devops-containers) • [Disk & Storage](#disk-storage) • [Git & Version Control](#git-version-control) • [GitHub Workflow & TUI](#github-workflow-tui) • [HTTP & Network](#http-network) • [OS & Hardware Utilities](#os-hardware-utilities) • [System & Process Monitoring](#system-process-monitoring) • [Terminal & Search](#terminal-search) • [Terminal & Shell](#terminal-shell) • [Terminal Navigation](#terminal-navigation)
@@ -17,7 +17,7 @@
 | :--- | :---: | :---: | :--- | :---: |
 | [**hyperfine**](https://github.com/sharkdp/hyperfine) | `Rust` | `MIT / Apache-2.0` | Command-line benchmarking tool with statistical analysis, warmup runs, and parametric sweeps. | [GitHub](https://github.com/sharkdp/hyperfine) |
 
-### <a id="cli-developer-productivity"></a>CLI & Developer Productivity (5)
+### <a id="cli-developer-productivity"></a>CLI & Developer Productivity (6)
 
 | Tool | Language | License | Description | Links |
 | :--- | :---: | :---: | :--- | :---: |
@@ -26,6 +26,7 @@
 | [**Image Format Readiness**](https://github.com/edilec/image-format-readiness) | `JavaScript (Node.js 22+)` | `MIT` | Offline Node.js CLI that checks exported HTML and local image files for declared dimensions, aspect ratio, alternative text, loading declarations, pinned format policy, and byte budgets. It reports pass, fail, or incomplete evidence; it does not optimize images or test live browser compatibility. | [GitHub](https://github.com/edilec/image-format-readiness) |
 | [**Docs Link Integrity Checker**](https://github.com/edilec/docs-link-integrity-checker) | `JavaScript (Node.js 22+)` | `MIT` | Offline Node.js CLI that checks Markdown and HTML links, local targets and anchors inside a bounded documentation root. It never fetches external URLs; without an imported status for them, the report stays incomplete rather than passing silently. | [GitHub](https://github.com/edilec/docs-link-integrity-checker) |
 | [**OpenAPI Example Validator**](https://github.com/edilec/openapi-example-validator) | `JavaScript (Node.js 22+)` | `MIT` | Offline Node.js CLI that checks examples in local JSON OpenAPI 3.0 and 3.1 descriptions against the schema for their operation and media type. It reports unsupported checks as incomplete instead of treating them as a pass. | [GitHub](https://github.com/edilec/openapi-example-validator) |
+| [**OrkasVideoStudio**](https://github.com/Orkas-AI/Orkas-VideoStudio) | `TypeScript, Node.js, CLI and MCP; ffmpeg for media operations.` | `MIT` | OrkasVideoStudio is an MIT-licensed, local-first TypeScript CLI and MCP toolkit that lets coding agents compose, edit, generate, and automatically assemble videos from editable plan.json timelines. Composition, editing and transcription form the zero-key trunk; optional provider-backed generation uses your own keys and may incur provider costs. | [GitHub](https://github.com/Orkas-AI/Orkas-VideoStudio) |
 
 ### <a id="database-sql"></a>Database & SQL (6)
 

@@ -25,7 +25,7 @@
 <tr>
 <td align="center"><b>🌐 Free APIs</b><br><code>96</code></td>
 <td align="center"><b>🤖 AI & LLMs</b><br><code>87</code></td>
-<td align="center"><b>⚡ CLI Tools</b><br><code>110</code></td>
+<td align="center"><b>⚡ CLI Tools</b><br><code>111</code></td>
 <td align="center"><b>🧪 Testing & QA</b><br><code>62</code></td>
 <td align="center"><b>☁️ Free Cloud</b><br><code>71</code></td>
 <td align="center"><b>🤝 Up for Grabs</b><br><code>21</code></td>
@@ -113,7 +113,7 @@ Explore our curated collections of **518+ zero-paywall developer tools**, catego
 | :--- | :---: | :--- | :---: |
 | 🌐 **Free & Public APIs** | **96** | Weather, Finance, Mock/Dev APIs, Geocoding, AI/ML, Media, Entertainment | [**Browse APIs →**](docs/apis.md) |
 | 🤖 **AI Agents & Local LLMs** | **87** | Local LLM Runtimes, Autonomous Agents, Coding Assistants, Orchestration | [**Browse AI Tools →**](docs/ai-tools.md) |
-| ⚡ **CLI & Productivity Tools** | **110** | Terminal Utilities, Git Power Tools, Docker & DevOps, Benchmarking, DBs | [**Browse CLI Tools →**](docs/cli-tools.md) |
+| ⚡ **CLI & Productivity Tools** | **111** | Terminal Utilities, Git Power Tools, Docker & DevOps, Benchmarking, DBs | [**Browse CLI Tools →**](docs/cli-tools.md) |
 | 🧪 **Testing & QA Reliability** | **62** | E2E Testing, Mock Servers, Contract Testing, Security Auditing, Performance | [**Browse Testing Tools →**](docs/testing-qa.md) |
 | ☁️ **Free Cloud & Developer Tiers** | **71** | Databases, Auth & Identity, Serverless Compute, Object Storage, Email, APM | [**Browse Cloud Tiers →**](docs/free-cloud.md) |
 | 🤝 **Contributors Wanted** | **21** | Active open-source repos with curated Good First Issues and starter tasks | [**Browse Projects →**](docs/contributors-wanted.md) |
