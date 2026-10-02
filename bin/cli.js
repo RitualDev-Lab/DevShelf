@@ -13,7 +13,7 @@
  *   npx devshelf open <name>         # Open resource URL in default browser
  */
 
-import { exec } from "node:child_process";
+import { spawn } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 import readline from "node:readline";
@@ -44,13 +44,24 @@ const c = {
 // Open URL cross-platform
 function openUrl(url) {
   if (!url) return;
-  const cmd =
-    process.platform === "win32"
-      ? `start "" "${url}"`
-      : process.platform === "darwin"
-        ? `open "${url}"`
-        : `xdg-open "${url}"`;
-  exec(cmd);
+
+  if (process.platform === "win32") {
+    const child = spawn(process.env.comspec || "cmd.exe", ["/c", "start", "", url], {
+      detached: true,
+      stdio: "ignore",
+      shell: false,
+    });
+    child.unref();
+    return;
+  }
+
+  const opener = process.platform === "darwin" ? "open" : "xdg-open";
+  const child = spawn(opener, [url], {
+    detached: true,
+    stdio: "ignore",
+    shell: false,
+  });
+  child.unref();
 }
 
 // Load resources from local file or fetch remotely
