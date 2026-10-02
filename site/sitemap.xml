@@ -1871,6 +1871,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://devshelf.ritualdev.in/tools/easypanel.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://devshelf.ritualdev.in/tools/turso.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
