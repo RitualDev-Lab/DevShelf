@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-10-02T06:49:44.428Z",
-  "totalCount": 518,
-  "reposCount": 321,
+  "updatedAt": "2026-10-02T11:34:32.645Z",
+  "totalCount": 519,
+  "reposCount": 322,
   "facets": {
-    "repos": 321
+    "repos": 322
   },
   "counts": {
     "aiTools": 87,
-    "cliTools": 110,
+    "cliTools": 111,
     "testingQa": 62,
     "apis": 96,
     "freeCloud": 71,
@@ -3215,6 +3215,17 @@
       "category": "CLI & Developer Productivity",
       "description": "Offline Node.js CLI that checks examples in local JSON OpenAPI 3.0 and 3.1 descriptions against the schema for their operation and media type. It reports unsupported checks as incomplete instead of treating them as a pass.",
       "language": "JavaScript (Node.js 22+)",
+      "license": "MIT",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "OrkasVideoStudio",
+      "repo": "https://github.com/Orkas-AI/Orkas-VideoStudio",
+      "category": "CLI & Developer Productivity",
+      "description": "Local-first TypeScript CLI and MCP toolkit for coding agents to compose, edit, and assemble videos from editable plan.json timelines. Core editing and transcription need no API keys; optional generation features use your own provider keys.",
+      "language": "TypeScript",
       "license": "MIT",
       "featured": false,
       "type": "cli",

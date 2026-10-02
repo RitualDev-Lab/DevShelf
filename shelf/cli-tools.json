@@ -1196,5 +1196,14 @@
     "language": "JavaScript (Node.js 22+)",
     "license": "MIT",
     "featured": false
+  },
+  {
+    "name": "OrkasVideoStudio",
+    "repo": "https://github.com/Orkas-AI/Orkas-VideoStudio",
+    "category": "CLI & Developer Productivity",
+    "description": "Local-first TypeScript CLI and MCP toolkit for coding agents to compose, edit, and assemble videos from editable plan.json timelines. Core editing and transcription need no API keys; optional generation features use your own provider keys.",
+    "language": "TypeScript",
+    "license": "MIT",
+    "featured": false
   }
 ]
