@@ -247,6 +247,30 @@
         <span>🛡️ Automated Health Checks</span>
       </div>
     </div>
+
+    <!-- Live Progress Tracker: The Race to 1,000 Tools -->
+    <div class="max-w-2xl mx-auto mb-8 p-4 rounded-2xl bg-slate-900/90 border border-purple-500/40 shadow-xl shadow-purple-950/30 text-left">
+      <div class="flex items-center justify-between mb-2 flex-wrap gap-2">
+        <div class="flex items-center space-x-2">
+          <span class="text-base">🎯</span>
+          <span class="text-xs sm:text-sm font-extrabold text-white">The Race to 1,000 Verified Tools</span>
+          <span class="text-[10px] font-mono font-bold px-2 py-0.5 rounded-full bg-orange-500/20 text-orange-300 border border-orange-500/30">Hacktoberfest Milestone</span>
+        </div>
+        <div class="text-xs font-mono font-bold text-purple-300" id="progress-percent-label">52% Complete</div>
+      </div>
+      <div class="w-full bg-slate-950 rounded-full h-3.5 p-0.5 border border-slate-800 overflow-hidden mb-2">
+        <div id="milestone-progress-bar" class="h-full rounded-full bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-400 transition-all duration-1000 shadow-sm" style="width: 52%;"></div>
+      </div>
+      <div class="flex items-center justify-between text-[11px] font-mono text-slate-400 flex-wrap gap-1">
+        <span class="text-slate-200">
+          <code id="progress-ascii-bar" class="text-purple-300 font-bold hidden sm:inline">[██████████░░░░░░░░░░]</code>
+          <strong id="progress-count-label" class="text-emerald-300">519</strong> / 1,000 Tools Verified (<span id="progress-remaining-label" class="text-amber-300">481 to go!</span>)
+        </span>
+        <a href="https://github.com/RitualDev-Lab/DevShelf#how-to-submit-a-tool" target="_blank" rel="noreferrer" class="text-cyan-400 hover:text-cyan-300 font-bold transition hover:underline">
+          Help reach 1,000 +Submit Tool →
+        </a>
+      </div>
+    </div>
   </section>
 
   <!-- Spotlight Section -->

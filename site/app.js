@@ -205,6 +205,27 @@ function updateStatsAndPills(data) {
 
   // Hero CTA count
   setElText("hero-total-count", total);
+
+  // 1,000 Tools Milestone Progress Tracker
+  const targetGoal = 1000;
+  const progressRatio = Math.min(total / targetGoal, 1);
+  const percentComplete = Math.round(progressRatio * 100);
+  const remaining = Math.max(targetGoal - total, 0);
+
+  const progressBar = document.getElementById("milestone-progress-bar");
+  if (progressBar) progressBar.style.width = `${percentComplete}%`;
+
+  setElText("progress-percent-label", `${percentComplete}% Complete`);
+  setElText("progress-count-label", total);
+  setElText("progress-remaining-label", `${remaining} to go!`);
+
+  const asciiBar = document.getElementById("progress-ascii-bar");
+  if (asciiBar) {
+    const barBlocks = 20;
+    const filled = Math.round(progressRatio * barBlocks);
+    const empty = barBlocks - filled;
+    asciiBar.textContent = `[${"█".repeat(filled)}${"░".repeat(empty)}]`;
+  }
 }
 
 function setElText(id, val) {

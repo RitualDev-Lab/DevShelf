@@ -296,6 +296,15 @@ async function build() {
   // =========================================================================
   // ROOT README.md: The Curated Directory Hub
   // =========================================================================
+  const targetGoal = 1000;
+  const progressRatio = Math.min(totalItems / targetGoal, 1);
+  const percentComplete = Math.round(progressRatio * 100);
+  const remainingTools = Math.max(targetGoal - totalItems, 0);
+  const barBlocks = 20;
+  const filledBlocks = Math.round(progressRatio * barBlocks);
+  const emptyBlocks = barBlocks - filledBlocks;
+  const progressBar = "█".repeat(filledBlocks) + "░".repeat(emptyBlocks);
+
   const md = `<div align="center">
 
 <picture>
@@ -331,6 +340,14 @@ async function build() {
 <td align="center"><b>🚀 1-Click Deploys</b><br><code>${boilerplates.length}</code></td>
 </tr>
 </table>
+
+### 🎯 The Race to 1,000 Verified Tools (Hacktoberfest Milestone)
+
+${BT}text
+[${progressBar}] ${totalItems} / 1,000 Tools Verified (${percentComplete}% • ${remainingTools} to go!)
+${BT}
+
+*Help us curate the definitive zero-paywall index! [Submit your favorite developer tool, API, or AI framework →](#-how-to-submit-your-project-or-api)*
 
 <p>
   <a href="https://devshelf.ritualdev.in"><b>🌐 Interactive Web App</b></a> •

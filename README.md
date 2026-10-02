@@ -34,6 +34,14 @@
 </tr>
 </table>
 
+### 🎯 The Race to 1,000 Verified Tools (Hacktoberfest Milestone)
+
+```text
+[██████████░░░░░░░░░░] 519 / 1,000 Tools Verified (52% • 481 to go!)
+```
+
+*Help us curate the definitive zero-paywall index! [Submit your favorite developer tool, API, or AI framework →](#-how-to-submit-your-project-or-api)*
+
 <p>
   <a href="https://devshelf.ritualdev.in"><b>🌐 Interactive Web App</b></a> •
   <a href="#-devshelf-cli--tui-terminal-discovery"><b>⚡ Terminal CLI</b></a> •
