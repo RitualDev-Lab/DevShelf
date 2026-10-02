@@ -256,6 +256,13 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
       </a><br />
       <sub>🧠 Hyperconsciousness (PR #44)</sub>
     </td>
+    <td align="center" width="160">
+      <a href="https://github.com/deiucanta">
+        <img src="https://github.com/deiucanta.png" width="70" style="border-radius: 50%;" alt="deiucanta"/><br />
+        <sub><b>deiucanta</b></sub>
+      </a><br />
+      <sub>🖥️ Easypanel (PR #56)</sub>
+    </td>
   </tr>
 </table>
 
