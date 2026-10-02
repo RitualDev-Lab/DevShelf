@@ -4,7 +4,7 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total Free Cloud](https://img.shields.io/badge/Free_Cloud-70_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total Free Cloud](https://img.shields.io/badge/Free_Cloud-71_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
 [Authentication & Security](#authentication-security) • [Cloud Hosting & PaaS](#cloud-hosting-paas) • [Databases & BaaS](#databases-baas) • [Messaging & Queues](#messaging-queues) • [Observability & Analytics](#observability-analytics) • [Search & Discovery](#search-discovery) • [Self-Hosted Cloud & PaaS](#self-hosted-cloud-paas) • [Storage & Buckets](#storage-buckets) • [Transactional Email](#transactional-email)
@@ -94,13 +94,14 @@
 | [**Meilisearch**](https://www.meilisearch.com) | `100% Free & Open Source MIT binary; Free trial on Meilisearch Cloud` | Lightning-fast, typo-tolerant open-source search engine providing instant full-text search as you type. | [Explore](https://www.meilisearch.com) |
 | [**Typesense**](https://typesense.org) | `100% Free & Open Source GPLv3; Free sandbox environment` | Fast, typo-tolerant open-source search engine designed for delightful developer experience and sub-50ms search. | [Explore](https://typesense.org) |
 
-### <a id="self-hosted-cloud-paas"></a>Self-Hosted Cloud & PaaS (10)
+### <a id="self-hosted-cloud-paas"></a>Self-Hosted Cloud & PaaS (11)
 
 | Service | Free Tier Allowance | Description | Links |
 | :--- | :--- | :--- | :---: |
 | [**Coolify**](https://coolify.io) | `100% Free & Open Source self-hosted on your own server or VPS` | Self-hostable, open-source all-in-one alternative to Heroku, Netlify, and Vercel for applications, databases, and services. | [Explore](https://coolify.io) |
 | [**Dokku**](https://dokku.com) | `100% Free & Open Source` | Smallest PaaS implementation powered by Docker, allowing Git push-to-deploy on your own single server. | [Explore](https://dokku.com) |
 | [**CapRover**](https://caprover.com) | `100% Free & Open Source` | Extremely easy-to-use open-source app and database deployment platform with automated SSL and 1-click apps. | [Explore](https://caprover.com) |
+| [**Easypanel**](https://easypanel.io) | `Free forever: up to 3 projects, unlimited services and deployments, basic monitoring. Requires your own server; hosting costs are separate.` | Proprietary self-hosted control panel for deploying applications and databases with Docker, automatic SSL and a browser interface. | [Explore](https://easypanel.io) |
 | [**Portainer Community**](https://www.portainer.io) | `100% Free & Open Source Community Edition` | Universal container management platform for Docker, Docker Swarm, and Kubernetes with clean web GUI. | [Explore](https://www.portainer.io) |
 | [**Nginx Proxy Manager**](https://nginxproxymanager.com) | `100% Free & Open Source MIT` | Expose your web services easily and securely with automatic Let's Encrypt SSL certificates and web administration. | [Explore](https://nginxproxymanager.com) |
 | [**Traefik Community**](https://traefik.io/traefik) | `100% Free & Open Source Apache-2.0` | The leading cloud-native application proxy that integrates with your existing cluster and configures itself automatically. | [Explore](https://traefik.io/traefik) |

@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-29T13:11:34.841Z",
-  "totalCount": 517,
+  "updatedAt": "2026-10-02T06:49:44.428Z",
+  "totalCount": 518,
   "reposCount": 321,
   "facets": {
     "repos": 321
@@ -10,7 +10,7 @@
     "cliTools": 110,
     "testingQa": 62,
     "apis": 96,
-    "freeCloud": 70,
+    "freeCloud": 71,
     "contributors": 21,
     "perks": 30,
     "boilerplates": 41
@@ -5775,6 +5775,19 @@
       "statusTags": [
         "No Card Required",
         "CI Verified"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "Easypanel",
+      "url": "https://easypanel.io",
+      "category": "Self-Hosted Cloud & PaaS",
+      "description": "Proprietary self-hosted control panel for deploying applications and databases with Docker, automatic SSL and a browser interface.",
+      "freeTier": "Free forever: up to 3 projects, unlimited services and deployments, basic monitoring. Requires your own server; hosting costs are separate.",
+      "statusTags": [
+        "Self-Hostable",
+        "No Card Required"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
