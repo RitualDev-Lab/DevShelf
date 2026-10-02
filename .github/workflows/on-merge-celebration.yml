@@ -1,0 +1,28 @@
+name: 🚀 On Merge Contributor Celebration & Badge Delivery
+
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - main
+
+permissions:
+  pull-requests: write
+  issues: write
+  contents: read
+
+jobs:
+  celebrate:
+    name: Celebrate Submission Merge & Send Badge
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Post Celebration & Delivery Comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const postMergeCelebration = require('./scripts/post-merge-celebration.cjs');
+            await postMergeCelebration({ github, context });
