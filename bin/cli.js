@@ -41,25 +41,37 @@ const c = {
   white: useColor ? "\x1b[97m" : "",
 };
 
-// Open URL cross-platform
+// Open URL cross-platform — safely open web URLs without invoking shell interpreters
 function openUrl(url) {
-  if (!url) return;
+  if (!url || typeof url !== "string") return;
+
+  // Strictly validate URL to only allow web protocols (prevents script/executable execution)
+  let parsed;
+  try {
+    parsed = new URL(url);
+    if (parsed.protocol !== "http:" && parsed.protocol !== "https:") {
+      return;
+    }
+  } catch {
+    return;
+  }
+
+  const safeUrl = parsed.href;
 
   if (process.platform === "win32") {
-    const child = spawn(process.env.comspec || "cmd.exe", ["/c", "start", "", url], {
+    // Avoid cmd.exe command-line parsing and comspec environment tampering entirely
+    const child = spawn("rundll32.exe", ["url.dll,FileProtocolHandler", safeUrl], {
       detached: true,
       stdio: "ignore",
-      shell: false,
     });
     child.unref();
     return;
   }
 
   const opener = process.platform === "darwin" ? "open" : "xdg-open";
-  const child = spawn(opener, [url], {
+  const child = spawn(opener, [safeUrl], {
     detached: true,
     stdio: "ignore",
-    shell: false,
   });
   child.unref();
 }
