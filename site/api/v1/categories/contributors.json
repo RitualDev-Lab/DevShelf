@@ -1,0 +1,248 @@
+{
+  "version": "1.0.0",
+  "updatedAt": "2026-10-02T19:51:53.287Z",
+  "slug": "contributors",
+  "name": "Contributors Wanted / Up for Grabs",
+  "count": 21,
+  "items": [
+    {
+      "name": "Zed",
+      "repo": "https://github.com/zed-industries/zed",
+      "category": "Developer Utilities & CLI",
+      "description": "High-performance, multiplayer code editor written in Rust with built-in language intelligence and AI.",
+      "seeking": "Language extensions, themes, cross-platform UI polish, keybindings, and starter bugs",
+      "goodFirstIssues": "https://github.com/zed-industries/zed/labels/good%20first%20issue",
+      "language": "Rust",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "Biome",
+      "repo": "https://github.com/biomejs/biome",
+      "category": "Developer Utilities & CLI",
+      "description": "Fast formatter and linter for JavaScript, TypeScript, JSX, and JSON that aims to replace Prettier and ESLint.",
+      "seeking": "New linter rules, parser optimizations, CSS support, documentation, and starter issues",
+      "goodFirstIssues": "https://github.com/biomejs/biome/labels/good%20first%20issue",
+      "language": "Rust",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "Nushell",
+      "repo": "https://github.com/nushell/nushell",
+      "category": "Developer Utilities & CLI",
+      "description": "A modern shell powered by a structured data pipeline that treats output as typed tables rather than text.",
+      "seeking": "Shell builtins, plugin architecture, cross-platform completions, and bug fixes",
+      "goodFirstIssues": "https://github.com/nushell/nushell/labels/good%20first%20issue",
+      "language": "Rust",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "Infisical",
+      "repo": "https://github.com/Infisical/infisical",
+      "category": "Security & Identity",
+      "description": "Open-source secret management platform to sync configuration and secrets across infrastructure, CI/CD, and teams.",
+      "seeking": "CLI integrations, Kubernetes operator features, SDK clients, and documentation",
+      "goodFirstIssues": "https://github.com/Infisical/infisical/labels/good%20first%20issue",
+      "language": "TypeScript / Go",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "ast-grep",
+      "repo": "https://github.com/ast-grep/ast-grep",
+      "category": "Developer Utilities & CLI",
+      "description": "Fast and polyglot code search, linting, and rewrite tool using abstract syntax tree pattern matching.",
+      "seeking": "Language parsers, rule templates, editor plugins, and starter issues",
+      "goodFirstIssues": "https://github.com/ast-grep/ast-grep/labels/good%20first%20issue",
+      "language": "Rust",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "Cerbos",
+      "repo": "https://github.com/cerbos/cerbos",
+      "category": "Security & Identity",
+      "description": "Scalable, open-source authorization policy engine for cloud applications and microservices.",
+      "seeking": "SDK adapters, policy testing tools, docs, and starter tasks",
+      "goodFirstIssues": "https://github.com/cerbos/cerbos/labels/good%20first%20issue",
+      "language": "Go",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "Infracost",
+      "repo": "https://github.com/infracost/infracost",
+      "category": "DevOps & Cloud Tools",
+      "description": "Cloud cost estimates for Terraform in pull requests before deployment.",
+      "seeking": "Cloud resource mapping, pricing estimators, CLI features, and documentation",
+      "goodFirstIssues": "https://github.com/infracost/infracost/labels/good%20first%20issue",
+      "language": "Go",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "WezTerm",
+      "repo": "https://github.com/wez/wezterm",
+      "category": "Developer Utilities & CLI",
+      "description": "GPU-accelerated cross-platform terminal emulator and multiplexer implemented in Rust.",
+      "seeking": "Configuration presets, font rendering, platform fixes, and starter issues",
+      "goodFirstIssues": "https://github.com/wez/wezterm/labels/good%20first%20issue",
+      "language": "Rust / Lua",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "Casbin",
+      "repo": "https://github.com/casbin/casbin",
+      "category": "Security & Identity",
+      "description": "An authorization library that supports access control models like ACL, RBAC, ABAC in Go and other languages.",
+      "seeking": "Middleware adapters, documentation, database adapters, and starter bugs",
+      "goodFirstIssues": "https://github.com/casbin/casbin/labels/good%20first%20issue",
+      "language": "Go",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "Open Source Ideas",
+      "repo": "https://github.com/open-source-ideas/ideas",
+      "category": "Open Source Discovery",
+      "description": "Community brainstorming and collaboration hub where developers propose, discuss, and build open-source projects.",
+      "seeking": "Project proposals, feature ideation, starter contributors, documentation",
+      "goodFirstIssues": "https://github.com/open-source-ideas/ideas/issues",
+      "language": "Community / Markdown",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "Up-For-Grabs",
+      "repo": "https://github.com/up-for-grabs/up-for-grabs.net",
+      "category": "Open Source Discovery",
+      "description": "Community-curated platform highlighting open-source projects with starter tasks to help new contributors dive in.",
+      "seeking": "Site enhancements, new project definitions, triage, Jekyll improvements",
+      "goodFirstIssues": "https://github.com/up-for-grabs/up-for-grabs.net/issues",
+      "language": "Ruby / JavaScript",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "freeCodeCamp",
+      "repo": "https://github.com/freeCodeCamp/freeCodeCamp",
+      "category": "Community & Education",
+      "description": "The freeCodeCamp.org open source codebase and curriculum helping millions learn to code globally.",
+      "seeking": "Curriculum improvements, UI localization, starter issues, and mobile app features",
+      "goodFirstIssues": "https://github.com/freeCodeCamp/freeCodeCamp/labels/first%20timers%20only",
+      "language": "TypeScript",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "Excalidraw",
+      "repo": "https://github.com/excalidraw/excalidraw",
+      "category": "Productivity & Design",
+      "description": "Virtual whiteboard for sketching hand-drawn like diagrams with end-to-end encryption.",
+      "seeking": "Canvas tools, export formats, accessibility improvements, and localization",
+      "goodFirstIssues": "https://github.com/excalidraw/excalidraw/labels/good%20first%20issue",
+      "language": "TypeScript",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "Cal.com",
+      "repo": "https://github.com/calcom/cal.com",
+      "category": "Open-Source SaaS & Web Apps",
+      "description": "Scheduling infrastructure for everyone, the open-source Calendly alternative.",
+      "seeking": "App integrations, workflow automations, internationalization, and documentation",
+      "goodFirstIssues": "https://github.com/calcom/cal.com/labels/good%20first%20issue",
+      "language": "TypeScript",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "Documenso",
+      "repo": "https://github.com/documenso/documenso",
+      "category": "Open-Source SaaS & Web Apps",
+      "description": "The open source DocuSign alternative: secure, digital document signing platform.",
+      "seeking": "PDF manipulation features, webhook notifications, UI polish, and starter bugs",
+      "goodFirstIssues": "https://github.com/documenso/documenso/labels/good%20first%20issue",
+      "language": "TypeScript",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "Twenty",
+      "repo": "https://github.com/twentyhq/twenty",
+      "category": "Open-Source SaaS & Web Apps",
+      "description": "Building a modern, open-source alternative to Salesforce with clean UI and GraphQL APIs.",
+      "seeking": "Frontend components, data import/export adapters, and API endpoints",
+      "goodFirstIssues": "https://github.com/twentyhq/twenty/labels/good%20first%20issue",
+      "language": "TypeScript",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "Ghost",
+      "repo": "https://github.com/TryGhost/Ghost",
+      "category": "Open-Source SaaS & Web Apps",
+      "description": "Turn your audience into a business: open-source modern publishing and membership platform.",
+      "seeking": "Admin UI polish, theme adapters, starter bugs, and translation updates",
+      "goodFirstIssues": "https://github.com/TryGhost/Ghost/labels/good%20first%20issue",
+      "language": "JavaScript",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "Chatwoot",
+      "repo": "https://github.com/chatwoot/chatwoot",
+      "category": "Open-Source SaaS & Web Apps",
+      "description": "Open-source customer engagement suite, alternative to Intercom and Zendesk.",
+      "seeking": "Channel connectors, webhook handlers, UI polish, and documentation",
+      "goodFirstIssues": "https://github.com/chatwoot/chatwoot/labels/good%20first%20issue",
+      "language": "Ruby / Vue",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "AppFlowy",
+      "repo": "https://github.com/AppFlowy-IO/AppFlowy",
+      "category": "Productivity & Notes",
+      "description": "Open source Notion alternative built with Flutter and Rust for privacy and offline-first workflows.",
+      "seeking": "Flutter widgets, keyboard shortcuts, markdown renderers, and bug fixes",
+      "goodFirstIssues": "https://github.com/AppFlowy-IO/AppFlowy/labels/good%20first%20issue",
+      "language": "Flutter / Rust",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "Affine",
+      "repo": "https://github.com/toeverything/AFFiNE",
+      "category": "Productivity & Notes",
+      "description": "Next-gen collaborative knowledge base for tasks, whiteboards, and multi-modal documents.",
+      "seeking": "Plugin extensions, block editor features, and starter issues",
+      "goodFirstIssues": "https://github.com/toeverything/AFFiNE/labels/good%20first%20issue",
+      "language": "TypeScript / Rust",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "Dub.co",
+      "repo": "https://github.com/dubinc/dub",
+      "category": "Marketing & Analytics",
+      "description": "Open-source link management infrastructure for modern marketing teams with custom domains and analytics.",
+      "seeking": "Analytics widgets, API client SDKs, documentation, and starter features",
+      "goodFirstIssues": "https://github.com/dubinc/dub/labels/good%20first%20issue",
+      "language": "TypeScript",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    }
+  ]
+}

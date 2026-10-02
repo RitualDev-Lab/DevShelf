@@ -13,7 +13,9 @@
       "site/robots.txt",
       "site/badge.svg",
       "site/favicon.svg",
-      "site/favicon.ico"
+      "site/favicon.ico",
+      "site/api/**",
+      "extensions/**"
     ]
   },
   "formatter": {

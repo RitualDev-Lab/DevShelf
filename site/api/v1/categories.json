@@ -1,0 +1,55 @@
+{
+  "version": "1.0.0",
+  "updatedAt": "2026-10-02T19:51:53.287Z",
+  "totalCategories": 8,
+  "categories": [
+    {
+      "slug": "ai",
+      "name": "AI Agents & Local LLMs",
+      "count": 87,
+      "endpoint": "https://devshelf.ritualdev.in/api/v1/categories/ai.json"
+    },
+    {
+      "slug": "cli",
+      "name": "CLI & Developer Productivity",
+      "count": 111,
+      "endpoint": "https://devshelf.ritualdev.in/api/v1/categories/cli.json"
+    },
+    {
+      "slug": "apis",
+      "name": "Free Public APIs",
+      "count": 96,
+      "endpoint": "https://devshelf.ritualdev.in/api/v1/categories/apis.json"
+    },
+    {
+      "slug": "cloud",
+      "name": "Free Cloud & Databases",
+      "count": 71,
+      "endpoint": "https://devshelf.ritualdev.in/api/v1/categories/cloud.json"
+    },
+    {
+      "slug": "testing",
+      "name": "Testing & QA Automation",
+      "count": 62,
+      "endpoint": "https://devshelf.ritualdev.in/api/v1/categories/testing.json"
+    },
+    {
+      "slug": "perks",
+      "name": "Developer Perks & Startup Credits",
+      "count": 30,
+      "endpoint": "https://devshelf.ritualdev.in/api/v1/categories/perks.json"
+    },
+    {
+      "slug": "boilerplates",
+      "name": "1-Click Deploy Boilerplates",
+      "count": 41,
+      "endpoint": "https://devshelf.ritualdev.in/api/v1/categories/boilerplates.json"
+    },
+    {
+      "slug": "contributors",
+      "name": "Contributors Wanted / Up for Grabs",
+      "count": 21,
+      "endpoint": "https://devshelf.ritualdev.in/api/v1/categories/contributors.json"
+    }
+  ]
+}

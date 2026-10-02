@@ -23,6 +23,60 @@
   <meta name="twitter:description" content="Curated developer tools, GitHub repositories, free APIs & perks. 100% free tiers, automated health checks.">
   <meta name="twitter:image" content="https://devshelf.ritualdev.in/og-image.jpg">
 
+  <!-- Schema.org Programmatic Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://devshelf.ritualdev.in/#website",
+        "url": "https://devshelf.ritualdev.in/",
+        "name": "DevShelf",
+        "description": "Crowdsourced, zero-paywall directory of 500+ verified developer tools, free APIs, AI agents, and cloud resources.",
+        "publisher": {
+          "@id": "https://devshelf.ritualdev.in/#organization"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://devshelf.ritualdev.in/?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://devshelf.ritualdev.in/#organization",
+        "name": "RitualDev Lab",
+        "url": "https://ritualdev.in",
+        "logo": "https://devshelf.ritualdev.in/favicon.svg",
+        "sameAs": [
+          "https://github.com/RitualDev-Lab",
+          "https://twitter.com/RitualDevLab"
+        ]
+      },
+      {
+        "@type": "DataCatalog",
+        "@id": "https://devshelf.ritualdev.in/#catalog",
+        "name": "DevShelf Open Developer Resource Directory",
+        "description": "Curated catalog of free public APIs, developer perks, AI models, CLI tools, and cloud infrastructure.",
+        "url": "https://devshelf.ritualdev.in/",
+        "isAccessibleForFree": true,
+        "keywords": [
+          "free developer tools",
+          "public APIs",
+          "open source",
+          "no credit card free tier",
+          "AI agents",
+          "CLI tools"
+        ]
+      }
+    ]
+  }
+  </script>
+
 
   <!-- Preconnect & Fonts with display=swap -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -72,6 +126,9 @@
         </button>
         <a href="#team" class="hover:text-purple-300 transition">👥 Team</a>
         <a href="https://github.com/RitualDev-Lab/DevShelf/wiki" target="_blank" rel="noreferrer" class="hover:text-purple-300 transition">📖 Wiki</a>
+        <a href="api/v1/tools.json" target="_blank" rel="noreferrer" class="hover:text-cyan-300 transition flex items-center space-x-1" title="DevShelf Public REST API">
+          <span>⚡ API</span>
+        </a>
       </nav>
 
       <div class="flex items-center space-x-2.5">
@@ -103,6 +160,15 @@
   <!-- Hero Section -->
   <section class="max-w-6xl mx-auto px-4 sm:px-6 pt-12 pb-6 text-center">
     
+    <!-- Hacktoberfest 2026 Live Banner -->
+    <div>
+      <a href="https://github.com/RitualDev-Lab/DevShelf/blob/main/HACKTOBERFEST.md" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-gradient-to-r from-orange-500/20 via-amber-500/20 to-orange-500/20 border border-orange-500/50 text-orange-200 text-xs font-bold mb-3 shadow-md hover:scale-105 transition">
+        <span>🎃 Hacktoberfest 2026 Active</span>
+        <span class="text-orange-400">•</span>
+        <span class="text-amber-300 font-semibold underline">Claim Starter Issues &amp; Guides →</span>
+      </a>
+    </div>
+
     <!-- Custom URL / Uptime Pill -->
     <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-slate-900 border border-purple-500/50 text-purple-200 text-xs font-semibold mb-6 shadow-md hero-animate hero-animate-delay-1">
       <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>

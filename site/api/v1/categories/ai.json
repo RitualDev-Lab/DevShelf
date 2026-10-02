@@ -1,0 +1,1417 @@
+{
+  "version": "1.0.0",
+  "updatedAt": "2026-10-02T19:51:53.287Z",
+  "slug": "ai",
+  "name": "AI Agents & Local LLMs",
+  "count": 87,
+  "items": [
+    {
+      "name": "Ollama",
+      "repo": "https://github.com/ollama/ollama",
+      "category": "Local AI & Inference",
+      "description": "Get up and running with Llama 3.3, Mistral, Qwen, and other large language models locally with a simple CLI and REST API.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": true,
+      "goodFirstIssues": "https://github.com/ollama/ollama/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "Self-Hostable",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Dify",
+      "repo": "https://github.com/langgenius/dify",
+      "category": "AI Workflow & Orchestration",
+      "description": "An open-source LLM app development platform combining AI workflow, RAG pipeline, agent capabilities, and model management.",
+      "language": "Python / TypeScript",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/langgenius/dify/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "Self-Hostable",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "vLLM",
+      "repo": "https://github.com/vllm-project/vllm",
+      "category": "Local AI & Inference",
+      "description": "A high-throughput and memory-efficient inference and serving engine for LLMs with PagedAttention.",
+      "language": "Python / C++",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/vllm-project/vllm/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "Self-Hostable",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Open-WebUI",
+      "repo": "https://github.com/open-webui/open-webui",
+      "category": "Web UI & Chat",
+      "description": "User-friendly AI interface designed for self-hosting with complete Ollama and OpenAI-compatible API support.",
+      "language": "Python / Svelte",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/open-webui/open-webui/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "Self-Hostable",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "YYLO",
+      "repo": "https://github.com/yylo-dev/yylo",
+      "category": "Local AI & Inference",
+      "description": "Command-line orchestrator for AI coding agents: runs Claude Code, Codex CLI, and Gemini CLI in parallel git worktrees with Kanban task state, typed merge flows, and per-agent skills.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/yylo-dev/yylo/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "Self-Hostable",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "LocalAI",
+      "repo": "https://github.com/mudler/LocalAI",
+      "category": "Local AI & Inference",
+      "description": "Local, OpenAI-compatible REST API for running LLMs, audio transcription, image generation, and embeddings on commodity CPU/GPU.",
+      "language": "Go / C++",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/mudler/LocalAI/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "Self-Hostable",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "AnythingLLM",
+      "repo": "https://github.com/Mintplex-Labs/anything-llm",
+      "category": "Local AI & Inference",
+      "description": "The all-in-one Desktop & Docker AI application with full RAG pipeline, multi-agent workspaces, and complete privacy.",
+      "language": "JavaScript",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/Mintplex-Labs/anything-llm/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "Self-Hostable",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Flowise",
+      "repo": "https://github.com/FlowiseAI/Flowise",
+      "category": "AI Workflow & Orchestration",
+      "description": "Drag & drop user interface for building customized LLM applications, autonomous agents, and RAG pipelines.",
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/FlowiseAI/Flowise/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "Self-Hostable",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Langflow",
+      "repo": "https://github.com/langflow-ai/langflow",
+      "category": "AI Workflow & Orchestration",
+      "description": "Dynamic visual framework for building, testing, and deploying multi-agent AI and RAG applications.",
+      "language": "Python / TypeScript",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/langflow-ai/langflow/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "Self-Hostable",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Jan",
+      "repo": "https://github.com/janhq/jan",
+      "category": "Local AI & Inference",
+      "description": "Open-source desktop alternative to ChatGPT that runs 100% offline on local hardware with zero data leakage.",
+      "language": "TypeScript / C++",
+      "license": "AGPL-3.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/janhq/jan/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "Self-Hostable",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "LibreChat",
+      "repo": "https://github.com/danny-avila/LibreChat",
+      "category": "Web UI & Chat",
+      "description": "Enhanced, self-hostable open-source AI chat platform unifying OpenAI, Anthropic, Gemini, and local LLMs.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/danny-avila/LibreChat/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "Self-Hostable",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Fabric",
+      "repo": "https://github.com/danielmiessler/fabric",
+      "category": "Autonomous Coding & Agent Dev",
+      "description": "Open-source prompt and automation framework for augmenting humans using AI patterns and modular CLI tooling.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/danielmiessler/fabric/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "Self-Hostable",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Aider",
+      "repo": "https://github.com/Aider-AI/aider",
+      "category": "Autonomous Coding & Agent Dev",
+      "description": "AI pair programming in your terminal: edit code in local git repos with Claude 3.5 Sonnet, GPT-4o, or local LLMs with auto-commits.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/Aider-AI/aider/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "Self-Hostable",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "OpenHands",
+      "repo": "https://github.com/All-Hands-AI/OpenHands",
+      "category": "Autonomous Coding & Agent Dev",
+      "description": "Open-source platform for software development agents that can write code, fix bugs, run bash commands, and browse documentation autonomously.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/All-Hands-AI/OpenHands/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "Self-Hostable",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Continue",
+      "repo": "https://github.com/continuedev/continue",
+      "category": "Autonomous Coding & Agent Dev",
+      "description": "Leading open-source AI code assistant inside VS Code and JetBrains: bring your own models, embeddings, and context providers.",
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/continuedev/continue/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "Self-Hostable",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "llama.cpp",
+      "repo": "https://github.com/ggerganov/llama.cpp",
+      "category": "Local AI & Inference",
+      "description": "High-performance LLM inference in pure C/C++ with minimal setup and state-of-the-art quantization across Apple Silicon and GPUs.",
+      "language": "C / C++",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/ggerganov/llama.cpp/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "Self-Hostable",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "LiteLLM",
+      "repo": "https://github.com/BerriAI/litellm",
+      "category": "Local AI & Inference",
+      "description": "Call 100+ LLM APIs using the standardized OpenAI input/output format with load balancing, proxy, and spend tracking.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/BerriAI/litellm/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "PrivateGPT",
+      "repo": "https://github.com/zylon-ai/private-gpt",
+      "category": "Local AI & Inference",
+      "description": "100% private, local document question and answering engine using open LLMs without internet connection or data leaks.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/zylon-ai/private-gpt/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "GPT4All",
+      "repo": "https://github.com/nomic-ai/gpt4all",
+      "category": "Local AI & Inference",
+      "description": "Open-source ecosystem of consumer hardware-optimized LLMs running locally with desktop client and Python bindings.",
+      "language": "C++ / Python",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/nomic-ai/gpt4all/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Tabby",
+      "repo": "https://github.com/TabbyML/tabby",
+      "category": "Autonomous Coding & Agent Dev",
+      "description": "Self-hosted AI coding assistant alternative to GitHub Copilot with local model execution and editor plugins.",
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/TabbyML/tabby/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Khoj",
+      "repo": "https://github.com/khoj-ai/khoj",
+      "category": "Local AI & Inference",
+      "description": "Open-source, personal AI second brain that searches, reasons over, and answers questions from your personal docs and notes.",
+      "language": "Python",
+      "license": "GPL-3.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/khoj-ai/khoj/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "LlamaIndex",
+      "repo": "https://github.com/run-llama/llama_index",
+      "category": "AI Workflow & Orchestration",
+      "description": "Data framework for connecting enterprise custom data sources and knowledge bases to Large Language Models.",
+      "language": "Python / TypeScript",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/run-llama/llama_index/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "LangChain",
+      "repo": "https://github.com/langchain-ai/langchain",
+      "category": "AI Workflow & Orchestration",
+      "description": "Standard open-source framework for building context-aware reasoning applications, agents, and multi-agent systems.",
+      "language": "Python / TypeScript",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/langchain-ai/langchain/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Instructor",
+      "repo": "https://github.com/jxnl/instructor",
+      "category": "AI Workflow & Orchestration",
+      "description": "Structured data extraction from LLMs powered by Pydantic with validation, retries, and streaming support.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/jxnl/instructor/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "MindsDB",
+      "repo": "https://github.com/mindsdb/mindsdb",
+      "category": "AI Workflow & Orchestration",
+      "description": "Platform for customizing AI models directly on top of real-time enterprise data engines using SQL queries.",
+      "language": "Python",
+      "license": "GPL-3.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/mindsdb/mindsdb/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Chroma",
+      "repo": "https://github.com/chroma-core/chroma",
+      "category": "Local AI & Inference",
+      "description": "The AI-native open-source embedding database with simple Python and JavaScript client SDKs.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/chroma-core/chroma/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Qdrant",
+      "repo": "https://github.com/qdrant/qdrant",
+      "category": "Local AI & Inference",
+      "description": "Vector similarity search engine with extended filtering support, payload indexing, and high-performance Rust core.",
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/qdrant/qdrant/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Milvus",
+      "repo": "https://github.com/milvus-io/milvus",
+      "category": "Local AI & Inference",
+      "description": "Cloud-native open-source vector database built for massive scale similarity search and AI vector retrieval.",
+      "language": "Go / C++",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/milvus-io/milvus/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Weaviate",
+      "repo": "https://github.com/weaviate/weaviate",
+      "category": "Local AI & Inference",
+      "description": "Open-source vector database that stores both objects and vectors, allowing for seamless hybrid search.",
+      "language": "Go",
+      "license": "BSD-3-Clause",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/weaviate/weaviate/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Bark",
+      "repo": "https://github.com/suno-ai/bark",
+      "category": "Local AI & Inference",
+      "description": "Transformer-based text-to-audio model created by Suno that can generate highly realistic speech, music, and ambient noise.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/suno-ai/bark/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Whisper.cpp",
+      "repo": "https://github.com/ggerganov/whisper.cpp",
+      "category": "Local AI & Inference",
+      "description": "High-performance inference of OpenAI's Whisper automatic speech recognition in pure C/C++ without external dependencies.",
+      "language": "C/C++",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/ggerganov/whisper.cpp/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "ComfyUI",
+      "repo": "https://github.com/comfyanonymous/ComfyUI",
+      "category": "Local AI & Inference",
+      "description": "The most powerful and modular stable diffusion GUI and backend with graph/nodes-based workflow interface.",
+      "language": "Python",
+      "license": "GPL-3.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/comfyanonymous/ComfyUI/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "SearXNG",
+      "repo": "https://github.com/searxng/searxng",
+      "category": "AI Workflow & Orchestration",
+      "description": "Privacy-respecting open-source metasearch engine ideal for grounding AI models and retrieval-augmented generation.",
+      "language": "Python",
+      "license": "AGPL-3.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/searxng/searxng/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "RAGFlow",
+      "repo": "https://github.com/infiniflow/ragflow",
+      "category": "AI Workflow & Orchestration",
+      "description": "Next-generation open-source RAG engine based on deep document understanding to extract structured data from complex files.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/infiniflow/ragflow/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Mem0",
+      "repo": "https://github.com/mem0ai/mem0",
+      "category": "AI Workflow & Orchestration",
+      "description": "The memory layer for personalized AI assistants and autonomous agents, improving retention over time.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/mem0ai/mem0/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Open-Interpreter",
+      "repo": "https://github.com/OpenInterpreter/open-interpreter",
+      "category": "Autonomous Coding & Agent Dev",
+      "description": "Open-source, local-first code interpreter that lets LLMs run Python, JavaScript, and Bash code on your computer.",
+      "language": "Python",
+      "license": "AGPL-3.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/OpenInterpreter/open-interpreter/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "TGI (Text Generation Inference)",
+      "repo": "https://github.com/huggingface/text-generation-inference",
+      "category": "Local AI & Inference",
+      "description": "Hugging Face's production-ready toolkit for deploying and serving Large Language Models at scale with Tensor Parallelism.",
+      "language": "Rust / Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/huggingface/text-generation-inference/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "SGLang",
+      "repo": "https://github.com/sgl-project/sglang",
+      "category": "Local AI & Inference",
+      "description": "Fast serving engine for large language models and vision-language models with RadixAttention for multi-turn caching.",
+      "language": "Python / C++",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/sgl-project/sglang/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "TensorRT-LLM",
+      "repo": "https://github.com/NVIDIA/TensorRT-LLM",
+      "category": "Local AI & Inference",
+      "description": "NVIDIA's specialized library providing state-of-the-art acceleration and optimized execution for LLM inference.",
+      "language": "C++ / Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/NVIDIA/TensorRT-LLM/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "ExLlamaV2",
+      "repo": "https://github.com/turboderp/exllamav2",
+      "category": "Local AI & Inference",
+      "description": "Fast inference library for running local LLMs on modern NVIDIA GPUs with EXL2 quantization.",
+      "language": "Python / C++",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/turboderp/exllamav2/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "llamafile",
+      "repo": "https://github.com/Mozilla-Ocho/llamafile",
+      "category": "Local AI & Inference",
+      "description": "Distribute and run LLMs with a single multi-GB binary that runs across Windows, macOS, Linux, and FreeBSD.",
+      "language": "C++",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/Mozilla-Ocho/llamafile/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Aphrodite Engine",
+      "repo": "https://github.com/PygmalionAI/aphrodite-engine",
+      "category": "Local AI & Inference",
+      "description": "High-throughput, memory-efficient LLM inference engine supporting many architectures and quantizations.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/PygmalionAI/aphrodite-engine/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "AutoGPT",
+      "repo": "https://github.com/Significant-Gravitas/AutoGPT",
+      "category": "Autonomous Coding & Agent Dev",
+      "description": "Autonomous AI agent platform empowering developers to create, test, and deploy customized AI agent chains.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": true,
+      "goodFirstIssues": "https://github.com/Significant-Gravitas/AutoGPT/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "CrewAI",
+      "repo": "https://github.com/crewAIInc/crewAI",
+      "category": "AI Workflow & Orchestration",
+      "description": "Cutting-edge framework for orchestrating role-playing, autonomous AI agents to collaborate seamlessly.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": true,
+      "goodFirstIssues": "https://github.com/crewAIInc/crewAI/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "AutoGen",
+      "repo": "https://github.com/microsoft/autogen",
+      "category": "AI Workflow & Orchestration",
+      "description": "Microsoft's multi-agent conversation framework for building advanced AI agent workflows and collaborative task execution.",
+      "language": "Python",
+      "license": "CC-BY-4.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/microsoft/autogen/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "MetaGPT",
+      "repo": "https://github.com/geekan/MetaGPT",
+      "category": "AI Workflow & Orchestration",
+      "description": "Multi-agent framework assigning distinct software company roles (Product Manager, Architect, Engineer) to LLMs.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/geekan/MetaGPT/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "ChatDev",
+      "repo": "https://github.com/OpenBMB/ChatDev",
+      "category": "AI Workflow & Orchestration",
+      "description": "Virtual software company simulated by communicative agents to complete full lifecycle software development.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/OpenBMB/ChatDev/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "SuperAGI",
+      "repo": "https://github.com/TransformerOptimus/SuperAGI",
+      "category": "Autonomous Coding & Agent Dev",
+      "description": "Dev-first open source autonomous AI agent framework with GUI, agent telemetry, concurrent agents, and marketplace.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/TransformerOptimus/SuperAGI/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Unsloth",
+      "repo": "https://github.com/unslothai/unsloth",
+      "category": "Local AI & Inference",
+      "description": "Finetune Llama 3.3, Mistral, and Qwen 2x-5x faster with 70% less memory using optimized hand-written GPU kernels.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": true,
+      "goodFirstIssues": "https://github.com/unslothai/unsloth/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Axolotl",
+      "repo": "https://github.com/axolotl-ai-cloud/axolotl",
+      "category": "Local AI & Inference",
+      "description": "Post-training framework for fine-tuning hundreds of open-source language models with standard YAML configurations.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/axolotl-ai-cloud/axolotl/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "LLaMA-Factory",
+      "repo": "https://github.com/hiyouga/LLaMA-Factory",
+      "category": "Local AI & Inference",
+      "description": "Unified web UI and CLI for easy fine-tuning and evaluation of 100+ LLMs and multi-modal models.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/hiyouga/LLaMA-Factory/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "AutoAWQ",
+      "repo": "https://github.com/casper-hansen/AutoAWQ",
+      "category": "Local AI & Inference",
+      "description": "Activation-aware Weight Quantization package for 4-bit LLM quantization with 3x speedup.",
+      "language": "Python / C++",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/casper-hansen/AutoAWQ/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "AutoGPTQ",
+      "repo": "https://github.com/AutoGPTQ/AutoGPTQ",
+      "category": "Local AI & Inference",
+      "description": "Easy-to-use LLMs quantization package with user-friendly APIs, based on GPTQ algorithm.",
+      "language": "Python / CUDA",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/AutoGPTQ/AutoGPTQ/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "bitsandbytes",
+      "repo": "https://github.com/bitsandbytes-foundation/bitsandbytes",
+      "category": "Local AI & Inference",
+      "description": "Accessible 8-bit and 4-bit optimizers and quantization functions for deep learning on CUDA and ROCm.",
+      "language": "C++ / Python",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/bitsandbytes-foundation/bitsandbytes/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "PEFT",
+      "repo": "https://github.com/huggingface/peft",
+      "category": "Local AI & Inference",
+      "description": "Hugging Face's state-of-the-art Parameter-Efficient Fine-Tuning library (LoRA, QLoRA, Prefix Tuning).",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/huggingface/peft/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "TRL",
+      "repo": "https://github.com/huggingface/trl",
+      "category": "Local AI & Inference",
+      "description": "Transformer Reinforcement Learning library with Supervised Fine-Tuning (SFT), DPO, and PPO training loops.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/huggingface/trl/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Ragas",
+      "repo": "https://github.com/explodinggradients/ragas",
+      "category": "AI Workflow & Orchestration",
+      "description": "Evaluation framework for your Retrieval Augmented Generation (RAG) pipelines with faithfulness metrics.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/explodinggradients/ragas/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "DeepEval",
+      "repo": "https://github.com/confident-ai/deepeval",
+      "category": "AI Workflow & Orchestration",
+      "description": "The open-source LLM evaluation framework like Pytest for LLM applications with 14+ benchmark metrics.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/confident-ai/deepeval/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "NeMo-Guardrails",
+      "repo": "https://github.com/NVIDIA/NeMo-Guardrails",
+      "category": "AI Workflow & Orchestration",
+      "description": "NVIDIA's toolkit for easily adding programmable guardrails and safety bounds to LLM-based conversational apps.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/NVIDIA/NeMo-Guardrails/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Guidance",
+      "repo": "https://github.com/guidance-ai/guidance",
+      "category": "AI Workflow & Orchestration",
+      "description": "A guidance language for controlling large language models with interleaved generation, prompting, and constrain.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/guidance-ai/guidance/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Outlines",
+      "repo": "https://github.com/dottxt-ai/outlines",
+      "category": "AI Workflow & Orchestration",
+      "description": "Structured text generation library with regular expressions, JSON schemas, and context-free grammars.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/dottxt-ai/outlines/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Promptfoo",
+      "repo": "https://github.com/promptfoo/promptfoo",
+      "category": "AI Workflow & Orchestration",
+      "description": "Test your prompts, agents, and RAGs against red-teaming attacks, prompt injections, and regression suites.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/promptfoo/promptfoo/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Stable Diffusion WebUI",
+      "repo": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+      "category": "Local AI & Inference",
+      "description": "The ubiquitous browser interface for Stable Diffusion based on Gradio library with extensive extensions.",
+      "language": "Python",
+      "license": "AGPL-3.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "InvokeAI",
+      "repo": "https://github.com/invoke-ai/InvokeAI",
+      "category": "Local AI & Inference",
+      "description": "Professional generative AI engine and canvas for creative visual artists and digital designers.",
+      "language": "Python / TypeScript",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/invoke-ai/InvokeAI/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Fooocus",
+      "repo": "https://github.com/lllyasviel/Fooocus",
+      "category": "Local AI & Inference",
+      "description": "Focus on prompting and generating without complex parameter tuning, inspired by Midjourney simplicity.",
+      "language": "Python",
+      "license": "GPL-3.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/lllyasviel/Fooocus/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "LLaVA",
+      "repo": "https://github.com/haotian-liu/LLaVA",
+      "category": "Local AI & Inference",
+      "description": "Visual instruction tuning toward large multimodal models: chat and reasoning over high-res images.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/haotian-liu/LLaVA/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Segment Anything (SAM)",
+      "repo": "https://github.com/facebookresearch/segment-anything",
+      "category": "Local AI & Inference",
+      "description": "Meta's foundation model for image segmentation, allowing promptable cutouts of any object with one click.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/facebookresearch/segment-anything/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "YOLOv8",
+      "repo": "https://github.com/ultralytics/ultralytics",
+      "category": "Local AI & Inference",
+      "description": "Ultralytics YOLOv8 for real-time object detection, image segmentation, pose estimation, and classification.",
+      "language": "Python",
+      "license": "AGPL-3.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/ultralytics/ultralytics/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "PaddleOCR",
+      "repo": "https://github.com/PaddlePaddle/PaddleOCR",
+      "category": "Local AI & Inference",
+      "description": "Awesome multilingual OCR toolkits supporting 80+ languages, table recognition, and document structure analysis.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/PaddlePaddle/PaddleOCR/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Kokoro-TTS",
+      "repo": "https://github.com/hexgrad/kokoro",
+      "category": "Local AI & Inference",
+      "description": "Lightweight, open-weight text-to-speech model producing studio-grade human voices with only 82M parameters.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": true,
+      "goodFirstIssues": "https://github.com/hexgrad/kokoro/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Piper TTS",
+      "repo": "https://github.com/rhasspy/piper",
+      "category": "Local AI & Inference",
+      "description": "Fast, local neural text to speech system that sounds great and is optimized for Raspberry Pi and low-power hardware.",
+      "language": "C++",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/rhasspy/piper/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "ChatTTS",
+      "repo": "https://github.com/2noise/ChatTTS",
+      "category": "Local AI & Inference",
+      "description": "A generative text-to-speech model specifically designed for conversational scenarios and dialogue synthesis.",
+      "language": "Python",
+      "license": "CC-BY-NC-4.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/2noise/ChatTTS/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Faster-Whisper",
+      "repo": "https://github.com/SYSTRAN/faster-whisper",
+      "category": "Local AI & Inference",
+      "description": "Reimplementation of OpenAI's Whisper model using CTranslate2, delivering up to 4x faster transcription.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/SYSTRAN/faster-whisper/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "pgvector",
+      "repo": "https://github.com/pgvector/pgvector",
+      "category": "Local AI & Inference",
+      "description": "Open-source vector similarity search extension for PostgreSQL, supporting exact and approximate nearest neighbor.",
+      "language": "C",
+      "license": "PostgreSQL",
+      "featured": true,
+      "goodFirstIssues": "https://github.com/pgvector/pgvector/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Faiss",
+      "repo": "https://github.com/facebookresearch/faiss",
+      "category": "Local AI & Inference",
+      "description": "Meta's library for efficient similarity search and clustering of dense vectors, indexing billions of vectors on GPUs.",
+      "language": "C++ / Python",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/facebookresearch/faiss/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "LanceDB",
+      "repo": "https://github.com/lancedb/lancedb",
+      "category": "Local AI & Inference",
+      "description": "Developer-friendly, serverless open-source vector database for multi-modal AI with zero-copy storage.",
+      "language": "Rust / Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/lancedb/lancedb/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Vespa",
+      "repo": "https://github.com/vespa-engine/vespa",
+      "category": "Local AI & Inference",
+      "description": "The open big data serving engine: store, search, organize, and machine-learn over large vector and text datasets in real-time.",
+      "language": "C++ / Java",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/vespa-engine/vespa/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Annoy",
+      "repo": "https://github.com/spotify/annoy",
+      "category": "Local AI & Inference",
+      "description": "Spotify's C++ library with Python bindings to search for points in space that are close to a given query point.",
+      "language": "C++ / Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/spotify/annoy/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "BabyAGI",
+      "repo": "https://github.com/yoheinakajima/babyagi",
+      "category": "Autonomous Coding & Agent Dev",
+      "description": "Pioneering AI-powered task management and autonomous agent execution system that builds on task completion loops.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/yoheinakajima/babyagi/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "OpenCodeInterpreter",
+      "repo": "https://github.com/OpenCodeInterpreter/OpenCodeInterpreter",
+      "category": "Autonomous Coding & Agent Dev",
+      "description": "Open-source code generation system integrating dynamic execution feedback and compiler outputs for iterative code refinement.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/OpenCodeInterpreter/OpenCodeInterpreter/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "LMQL",
+      "repo": "https://github.com/eth-sri/lmql",
+      "category": "AI Workflow & Orchestration",
+      "description": "A query language for programming Large Language Models with typed output constraints and distribution control.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/eth-sri/lmql/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "AutoRound",
+      "repo": "https://github.com/intel/auto-round",
+      "category": "Local AI & Inference",
+      "description": "Intel's advanced weight-only quantization algorithm for low-bit LLM optimization without accuracy degradation.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/intel/auto-round/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "SWE-agent",
+      "repo": "https://github.com/princeton-nlp/SWE-agent",
+      "category": "Autonomous Coding & Agent Dev",
+      "description": "Autonomous software engineering agent that turns LM models into autonomous agents solving GitHub issues.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/princeton-nlp/SWE-agent/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "DSPy",
+      "repo": "https://github.com/stanfordnlp/dspy",
+      "category": "AI Workflow & Orchestration",
+      "description": "Stanford framework for programming—rather than prompting—foundation models with automatic prompt optimization.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": true,
+      "goodFirstIssues": "https://github.com/stanfordnlp/dspy/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "FastChat",
+      "repo": "https://github.com/lm-sys/FastChat",
+      "category": "Local AI & Inference",
+      "description": "An open platform for training, serving, and evaluating LLM-based chatbots, the core engine behind LMSYS Chatbot Arena.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/lm-sys/FastChat/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "GPTCache",
+      "repo": "https://github.com/zilliztech/gptcache",
+      "category": "Local AI & Inference",
+      "description": "Semantic cache for LLM queries to cut costs and speed up response time up to 10x using vector similarity.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/zilliztech/gptcache/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "MCP Dubai",
+      "repo": "https://github.com/mahdi-salmanzade/MCP-Dubai",
+      "url": "https://pypi.org/project/mcp-dubai",
+      "category": "AI Agents & MCP Servers",
+      "description": "Open-source MCP server connecting AI assistants to Dubai and UAE public APIs — real estate, transport, statistics, education, health, and business data via Dubai Pulse, RTA, DLD, KHDA, and DHA. Runs locally over stdio.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    }
+  ]
+}

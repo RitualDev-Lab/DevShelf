@@ -1,0 +1,39 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "devshelf",
+  "title": "DevShelf",
+  "description": "Search 500+ curated developer tools, free APIs, AI agents, and zero-paywall utilities directly from Raycast.",
+  "icon": "icon.png",
+  "author": "RitualDev-Lab",
+  "categories": ["Developer Tools", "Productivity"],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "search-tools",
+      "title": "Search Developer Tools & APIs",
+      "description": "Instant search across 500+ free developer tools, APIs, AI frameworks, and CLI utilities.",
+      "mode": "view"
+    },
+    {
+      "name": "random-tool",
+      "title": "Random Free Developer Gem",
+      "description": "Discover a random zero-paywall developer tool from the DevShelf catalog.",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.70.0",
+    "@raycast/utils": "^1.14.0",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^1.0.8",
+    "@types/node": "20.8.10",
+    "@types/react": "18.2.27",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop"
+  }
+}

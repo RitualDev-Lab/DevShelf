@@ -1,0 +1,41 @@
+{
+  "name": "devshelf-vscode",
+  "displayName": "DevShelf — Free Developer Tools & APIs",
+  "description": "Search 500+ curated developer tools, free APIs, AI frameworks, and CLI utilities directly inside VS Code.",
+  "version": "1.0.0",
+  "publisher": "RitualDev-Lab",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other",
+    "Snippets"
+  ],
+  "activationEvents": [
+    "onCommand:devshelf.search",
+    "onCommand:devshelf.random"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "devshelf.search",
+        "title": "DevShelf: Search Free Developer Tools & APIs"
+      },
+      {
+        "command": "devshelf.random",
+        "title": "DevShelf: Pick a Random Free Tool"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "20.x",
+    "@types/vscode": "^1.80.0",
+    "typescript": "^5.2.2"
+  }
+}

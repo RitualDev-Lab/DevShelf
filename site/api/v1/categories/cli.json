@@ -1,0 +1,1750 @@
+{
+  "version": "1.0.0",
+  "updatedAt": "2026-10-02T19:51:53.287Z",
+  "slug": "cli",
+  "name": "CLI & Developer Productivity",
+  "count": 111,
+  "items": [
+    {
+      "name": "GitWhisper",
+      "repo": "https://github.com/RitualDev-Lab/GitWhisper",
+      "category": "Git & Version Control",
+      "description": "Local-first & privacy-hardened AI Git commit intelligence with Conventional Commits, AST secret redaction, atomic hunk splitting, and 1-click VS Code extension.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "featured": true,
+      "goodFirstIssues": "https://github.com/RitualDev-Lab/GitWhisper/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "FlashLane",
+      "repo": "https://github.com/RitualDev-Lab/FlashLane",
+      "category": "OS & Hardware Utilities",
+      "description": "Universal, high-speed bootable ISO/IMG USB writer with Rufus parity for Windows, macOS, and Linux. Streaming 4MB chunks, MBR/GPT, BIOS/UEFI, and simulation mode.",
+      "language": "TypeScript / Electron",
+      "license": "MIT",
+      "featured": true,
+      "goodFirstIssues": "https://github.com/RitualDev-Lab/FlashLane/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "lazygit",
+      "repo": "https://github.com/jesseduffield/lazygit",
+      "category": "Git & Version Control",
+      "description": "Simple, fast terminal UI for git commands with interactive rebasing and visual diff navigation.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/jesseduffield/lazygit/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "ripgrep",
+      "repo": "https://github.com/BurntSushi/ripgrep",
+      "category": "Terminal & Search",
+      "description": "Ultra-fast line-oriented search tool that recursively searches directories for a regex pattern while respecting gitignore.",
+      "language": "Rust",
+      "license": "MIT / UNLICENSE",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/BurntSushi/ripgrep/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "eza",
+      "repo": "https://github.com/eza-community/eza",
+      "category": "Terminal & Shell",
+      "description": "A modern, maintained replacement for ls with colors, git status integration, icons, and tree views.",
+      "language": "Rust",
+      "license": "EUPL-1.2",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/eza-community/eza/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "fzf",
+      "repo": "https://github.com/junegunn/fzf",
+      "category": "Terminal & Shell",
+      "description": "General-purpose command-line fuzzy finder with blazing speed and interactive shell bindings.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/junegunn/fzf/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "agent-browser",
+      "repo": "https://github.com/vercel-labs/agent-browser",
+      "category": "Developer Tools",
+      "description": "Open-source browser automation CLI for AI agents, with a fast Rust core and Node.js fallback for navigation, forms, screenshots, and structured page interaction.",
+      "language": "Rust / TypeScript",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/vercel-labs/agent-browser/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "bat",
+      "repo": "https://github.com/sharkdp/bat",
+      "category": "Terminal & Shell",
+      "description": "Cat clone with syntax highlighting and Git integration for dozens of programming languages.",
+      "language": "Rust",
+      "license": "MIT / Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/sharkdp/bat/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "delta",
+      "repo": "https://github.com/dandavison/delta",
+      "category": "Git & Version Control",
+      "description": "A syntax-highlighting pager for git, diff, and grep output with side-by-side views and line numbers.",
+      "language": "Rust",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/dandavison/delta/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "hyperfine",
+      "repo": "https://github.com/sharkdp/hyperfine",
+      "category": "Benchmarking & Performance",
+      "description": "Command-line benchmarking tool with statistical analysis, warmup runs, and parametric sweeps.",
+      "language": "Rust",
+      "license": "MIT / Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/sharkdp/hyperfine/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "tldr",
+      "repo": "https://github.com/tldr-pages/tldr",
+      "category": "Developer Tools",
+      "description": "Collaborative, simplified community man pages focusing on practical, real-world command examples.",
+      "language": "Markdown",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/tldr-pages/tldr/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "dust",
+      "repo": "https://github.com/bootandy/dust",
+      "category": "Disk & Storage",
+      "description": "A more intuitive version of du in Rust providing instant visual disk usage breakdown in terminal.",
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/bootandy/dust/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "procs",
+      "repo": "https://github.com/dalance/procs",
+      "category": "System & Process Monitoring",
+      "description": "A modern replacement for ps with color highlighting, multi-column search, and process tree view.",
+      "language": "Rust",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/dalance/procs/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "bottom",
+      "repo": "https://github.com/ClementTsang/bottom",
+      "category": "System & Process Monitoring",
+      "description": "Cross-platform graphical process and system monitor with customizable terminal charts and widgets.",
+      "language": "Rust",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/ClementTsang/bottom/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "curlie",
+      "repo": "https://github.com/rs/curlie",
+      "category": "HTTP & Network",
+      "description": "The power of curl with the ease of use and human-friendly terminal output of HTTPie.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/rs/curlie/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "Starship",
+      "repo": "https://github.com/starship/starship",
+      "category": "Terminal & Shell",
+      "description": "The minimal, blazing-fast, and infinitely customizable cross-shell prompt for any shell (Bash, Zsh, Fish, PowerShell).",
+      "language": "Rust",
+      "license": "ISC",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/starship/starship/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "zoxide",
+      "repo": "https://github.com/ajeetdsouza/zoxide",
+      "category": "Terminal Navigation",
+      "description": "Smarter cd command inspired by z and autojump: learns your navigation habits to jump to directories in fewer keystrokes.",
+      "language": "Rust",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/ajeetdsouza/zoxide/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "gh-dash",
+      "repo": "https://github.com/dlvhdr/gh-dash",
+      "category": "GitHub Workflow & TUI",
+      "description": "Beautiful terminal user interface dashboard extension for GitHub CLI to manage pull requests and issues effortlessly.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/dlvhdr/gh-dash/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "HTTPie",
+      "repo": "https://github.com/httpie/cli",
+      "category": "HTTP & Network",
+      "description": "Modern, user-friendly command-line HTTP client for API debugging with clean JSON formatting, colorized output, and sessions.",
+      "language": "Python",
+      "license": "BSD-3-Clause",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/httpie/cli/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "fd",
+      "repo": "https://github.com/sharkdp/fd",
+      "category": "Terminal & Search",
+      "description": "A simple, fast, and user-friendly alternative to find with intuitive syntax and colorized terminal output.",
+      "language": "Rust",
+      "license": "Apache-2.0 / MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/sharkdp/fd/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "btop",
+      "repo": "https://github.com/aristocratos/btop",
+      "category": "OS & Hardware Utilities",
+      "description": "Resource monitor that shows usage and stats for processor, memory, disks, network, and processes with responsive graphs.",
+      "language": "C++",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/aristocratos/btop/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "k9s",
+      "repo": "https://github.com/derailed/k9s",
+      "category": "DevOps & Containers",
+      "description": "Kubernetes CLI to manage your clusters in style, observe real-time events, and troubleshoot workloads.",
+      "language": "Go",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/derailed/k9s/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "act",
+      "repo": "https://github.com/nektos/act",
+      "category": "DevOps & Containers",
+      "description": "Run your GitHub Actions locally inside Docker containers for fast, offline CI/CD pipeline iteration.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/nektos/act/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "duf",
+      "repo": "https://github.com/muesli/duf",
+      "category": "OS & Hardware Utilities",
+      "description": "Disk Usage/Free utility, a colorful and user-friendly modern replacement for df.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/muesli/duf/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "tokei",
+      "repo": "https://github.com/XAMPPRocky/tokei",
+      "category": "Terminal & Shell",
+      "description": "Blazingly fast CLI utility that counts code, lines, comments, and blank spaces across hundreds of programming languages.",
+      "language": "Rust",
+      "license": "MIT / Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/XAMPPRocky/tokei/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "xh",
+      "repo": "https://github.com/ducaale/xh",
+      "category": "HTTP & Network",
+      "description": "Friendly and fast tool for sending HTTP requests with intuitive syntax, colorized output, and native curl translation.",
+      "language": "Rust",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/ducaale/xh/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "doggo",
+      "repo": "https://github.com/mr-karan/doggo",
+      "category": "HTTP & Network",
+      "description": "Modern command-line DNS client with colorful output, support for DoH, DoT, and DNSCrypt protocols.",
+      "language": "Go",
+      "license": "GPL-3.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/mr-karan/doggo/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "fx",
+      "repo": "https://github.com/antonmedv/fx",
+      "category": "Terminal & Shell",
+      "description": "Terminal JSON viewer and interactive streaming processor supporting JavaScript, Python, and Ruby one-liners.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/antonmedv/fx/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "jless",
+      "repo": "https://github.com/PaulJuliusMartinez/jless",
+      "category": "Terminal & Shell",
+      "description": "Command-line JSON viewer designed for reading, exploring, and querying JSON objects with Vim-style navigation.",
+      "language": "Rust",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/PaulJuliusMartinez/jless/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "lazysql",
+      "repo": "https://github.com/jorgerojas26/lazysql",
+      "category": "Database & SQL",
+      "description": "Cross-platform terminal UI database management tool for PostgreSQL, MySQL, and SQLite.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/jorgerojas26/lazysql/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "gum",
+      "repo": "https://github.com/charmbracelet/gum",
+      "category": "Terminal & Shell",
+      "description": "A tool for glamorous shell scripts with interactive prompts, file pickers, filters, and spin animations.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/charmbracelet/gum/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "vhs",
+      "repo": "https://github.com/charmbracelet/vhs",
+      "category": "Terminal & Shell",
+      "description": "Write terminal GIFs as code, automatically testing and generating high-resolution recordings for documentation.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/charmbracelet/vhs/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "glow",
+      "repo": "https://github.com/charmbracelet/glow",
+      "category": "Terminal & Shell",
+      "description": "Terminal-based markdown reader designed for reading documentation directly in the shell with beautiful formatting.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/charmbracelet/glow/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "dive",
+      "repo": "https://github.com/wagoodman/dive",
+      "category": "DevOps & Containers",
+      "description": "Tool for exploring a Docker image, layer contents, and discovering ways to shrink your image size.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/wagoodman/dive/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "lazydocker",
+      "repo": "https://github.com/jesseduffield/lazydocker",
+      "category": "DevOps & Containers",
+      "description": "A simple terminal UI for both Docker and docker-compose, written in Go with the gocui library.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/jesseduffield/lazydocker/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "usql",
+      "repo": "https://github.com/xo/usql",
+      "category": "Database & SQL",
+      "description": "Universal command-line interface for PostgreSQL, MySQL, SQLite, Oracle, ClickHouse, and 20+ database systems.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/xo/usql/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "gping",
+      "repo": "https://github.com/orf/gping",
+      "category": "HTTP & Network",
+      "description": "Ping, but with a live line graph rendering network latency trends right inside your terminal.",
+      "language": "Rust",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/orf/gping/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "bandwhich",
+      "repo": "https://github.com/imsnif/bandwhich",
+      "category": "HTTP & Network",
+      "description": "Terminal bandwidth utilization tool that sniffs network packets to determine process bandwidth usage.",
+      "language": "Rust",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/imsnif/bandwhich/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "choose",
+      "repo": "https://github.com/theryangeary/choose",
+      "category": "Terminal & Shell",
+      "description": "Human-friendly, fast alternative to cut and awk with intuitive zero-indexed field selection.",
+      "language": "Rust",
+      "license": "GPL-3.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/theryangeary/choose/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "sd",
+      "repo": "https://github.com/chmln/sd",
+      "category": "Terminal & Search",
+      "description": "Intuitive find & replace CLI, modern replacement for sed with regex and smart case support.",
+      "language": "Rust",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/chmln/sd/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "mcfly",
+      "repo": "https://github.com/cantino/mcfly",
+      "category": "Terminal & Shell",
+      "description": "Neural network-powered shell history search that prioritizes commands by directory context and exit status.",
+      "language": "Rust",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/cantino/mcfly/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "yazi",
+      "repo": "https://github.com/sxyazi/yazi",
+      "category": "Terminal & Shell",
+      "description": "Blazingly fast terminal file manager written in Rust, based on async I/O with image preview support.",
+      "language": "Rust",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/sxyazi/yazi/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "helix",
+      "repo": "https://github.com/helix-editor/helix",
+      "category": "Developer Tools",
+      "description": "Post-modern modal text editor built in Rust with built-in Language Server Protocol (LSP) and Tree-sitter syntax highlighting.",
+      "language": "Rust",
+      "license": "MPL-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/helix-editor/helix/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "zellij",
+      "repo": "https://github.com/zellij-org/zellij",
+      "category": "Terminal & Shell",
+      "description": "A terminal workspace and multiplexer with batteries included, floating panes, and WebAssembly plugin system.",
+      "language": "Rust",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/zellij-org/zellij/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "nnn",
+      "repo": "https://github.com/jarun/nnn",
+      "category": "Terminal & Shell",
+      "description": "Tiny, lightning-fast terminal file manager with disk usage analyzer, batch renamer, and app launcher.",
+      "language": "C",
+      "license": "BSD-2-Clause",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/jarun/nnn/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "ranger",
+      "repo": "https://github.com/ranger/ranger",
+      "category": "Terminal & Shell",
+      "description": "VIM-inspired console file manager with multi-column display and automatic file preview.",
+      "language": "Python",
+      "license": "GPL-3.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/ranger/ranger/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "broot",
+      "repo": "https://github.com/Canop/broot",
+      "category": "Terminal & Shell",
+      "description": "A new way to see and navigate directory trees, find files, and launch commands quickly.",
+      "language": "Rust",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/Canop/broot/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "superfile",
+      "repo": "https://github.com/yorukot/superfile",
+      "category": "Terminal & Shell",
+      "description": "Fancy and modern terminal file manager with sleek UI, file previews, and keyboard navigation.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/yorukot/superfile/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "htop",
+      "repo": "https://github.com/htop-dev/htop",
+      "category": "OS & Hardware Utilities",
+      "description": "Interactive cross-platform process viewer with colorful meters and process tree view.",
+      "language": "C",
+      "license": "GPL-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/htop-dev/htop/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "glances",
+      "repo": "https://github.com/nicolargo/glances",
+      "category": "OS & Hardware Utilities",
+      "description": "Cross-platform system monitoring tool with web interface and REST API export.",
+      "language": "Python",
+      "license": "LGPL-3.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/nicolargo/glances/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "fastfetch",
+      "repo": "https://github.com/fastfetch-cli/fastfetch",
+      "category": "OS & Hardware Utilities",
+      "description": "Neofetch-like tool for fetching system information and displaying it prettily, written in pure C.",
+      "language": "C",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/fastfetch-cli/fastfetch/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "ncdu",
+      "repo": "https://code.blicky.net/yorhel/ncdu",
+      "category": "OS & Hardware Utilities",
+      "description": "Disk usage analyzer with an ncurses interface, designed to find space hogs on remote servers.",
+      "language": "C",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://code.blicky.net/yorhel/ncdu",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "gdu",
+      "repo": "https://github.com/dundee/gdu",
+      "category": "OS & Hardware Utilities",
+      "description": "Fast console disk usage analyzer with console GUI written in Go, specifically optimized for SSDs.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/dundee/gdu/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "aria2",
+      "repo": "https://github.com/aria2/aria2",
+      "category": "HTTP & Network",
+      "description": "Ultra-fast multi-protocol and multi-source command-line download utility (HTTP, HTTPS, FTP, BitTorrent).",
+      "language": "C++",
+      "license": "GPL-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/aria2/aria2/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "croc",
+      "repo": "https://github.com/schollz/croc",
+      "category": "HTTP & Network",
+      "description": "Easily and securely send files or folders between any two computers using relay and end-to-end encryption.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/schollz/croc/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "magic-wormhole",
+      "repo": "https://github.com/magic-wormhole/magic-wormhole",
+      "category": "HTTP & Network",
+      "description": "Securely get things from one computer to another using short, human-pronounceable one-time codes.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/magic-wormhole/magic-wormhole/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "trippy",
+      "repo": "https://github.com/fujiapple852/trippy",
+      "category": "HTTP & Network",
+      "description": "A network diagnostic tool combining the functionality of traceroute and ping with interactive TUI.",
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/fujiapple852/trippy/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "mitmproxy",
+      "repo": "https://github.com/mitmproxy/mitmproxy",
+      "category": "HTTP & Network",
+      "description": "An interactive, SSL-capable intercepting HTTP proxy for penetration testers and software developers.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/mitmproxy/mitmproxy/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "websocat",
+      "repo": "https://github.com/vi/websocat",
+      "category": "HTTP & Network",
+      "description": "Command-line client for WebSockets, like netcat or curl for ws:// and wss:// endpoints.",
+      "language": "Rust",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/vi/websocat/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "grpcurl",
+      "repo": "https://github.com/fullstorydev/grpcurl",
+      "category": "HTTP & Network",
+      "description": "Like cURL, but for gRPC: command-line tool that lets you interact with gRPC servers via reflection.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/fullstorydev/grpcurl/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "gh",
+      "repo": "https://github.com/cli/cli",
+      "category": "Git & Version Control",
+      "description": "GitHub's official command line tool to manage pull requests, issues, releases, and repository workflows.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": true,
+      "goodFirstIssues": "https://github.com/cli/cli/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "glab",
+      "repo": "https://gitlab.com/gitlab-org/cli",
+      "category": "Git & Version Control",
+      "description": "GitLab's official open source CLI tool bringing GitLab features directly to your terminal.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://gitlab.com/gitlab-org/cli/-/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "git-cliff",
+      "repo": "https://github.com/orhun/git-cliff",
+      "category": "Git & Version Control",
+      "description": "Highly customizable changelog generator based on conventional commits and Git history.",
+      "language": "Rust",
+      "license": "Apache-2.0 / MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/orhun/git-cliff/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "onefetch",
+      "repo": "https://github.com/o2sh/onefetch",
+      "category": "Git & Version Control",
+      "description": "Git repository summary information tool written in Rust that displays project stats directly in terminal.",
+      "language": "Rust",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/o2sh/onefetch/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "gitleaks",
+      "repo": "https://github.com/gitleaks/gitleaks",
+      "category": "Git & Version Control",
+      "description": "Protect and discover secrets & sensitive data like passwords, API keys, and tokens in git repositories.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/gitleaks/gitleaks/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "trufflehog",
+      "repo": "https://github.com/trufflesecurity/trufflehog",
+      "category": "Git & Version Control",
+      "description": "Find leaked credentials and secrets across git commit history, filesystems, and S3 buckets.",
+      "language": "Go",
+      "license": "AGPL-3.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/trufflesecurity/trufflehog/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "osv-scanner",
+      "repo": "https://github.com/google/osv-scanner",
+      "category": "DevOps & Containers",
+      "description": "Vulnerability scanner written in Go that checks your dependencies against the Open Source Vulnerability database.",
+      "language": "Go",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/google/osv-scanner/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "tmux",
+      "repo": "https://github.com/tmux/tmux",
+      "category": "Terminal & Shell",
+      "description": "Terminal multiplexer that lets you switch easily between several programs in one terminal and detach sessions.",
+      "language": "C",
+      "license": "ISC",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/tmux/tmux/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "atuin",
+      "repo": "https://github.com/atuinsh/atuin",
+      "category": "Terminal & Shell",
+      "description": "Magical shell history sync and search tool with SQLite database backing and end-to-end encryption.",
+      "language": "Rust",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/atuinsh/atuin/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "thefuck",
+      "repo": "https://github.com/nvbn/thefuck",
+      "category": "Terminal & Shell",
+      "description": "Magnificent app that corrects errors in your previous console commands automatically.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/nvbn/thefuck/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "direnv",
+      "repo": "https://github.com/direnv/direnv",
+      "category": "Terminal & Shell",
+      "description": "Unclutter your .profile by loading and unloading environment variables depending on the current directory.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/direnv/direnv/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "mise",
+      "repo": "https://github.com/jdx/mise",
+      "category": "Developer Tools",
+      "description": "Front-end to your dev environment: polyglot runtime executor, environment variable manager, and task runner.",
+      "language": "Rust",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/jdx/mise/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "asdf-vm",
+      "repo": "https://github.com/asdf-vm/asdf",
+      "category": "Developer Tools",
+      "description": "Multiple runtime version manager with a single CLI and unified configuration for Node.js, Python, Ruby, and more.",
+      "language": "Shell",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/asdf-vm/asdf/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "pnpm",
+      "repo": "https://github.com/pnpm/pnpm",
+      "category": "Developer Tools",
+      "description": "Fast, disk space efficient package manager using hard links and content-addressable storage.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/pnpm/pnpm/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "bun",
+      "repo": "https://github.com/oven-sh/bun",
+      "category": "Developer Tools",
+      "description": "Incredibly fast JavaScript and TypeScript runtime, bundler, test runner, and package manager written in Zig.",
+      "language": "Zig / C++",
+      "license": "MIT",
+      "featured": true,
+      "goodFirstIssues": "https://github.com/oven-sh/bun/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "deno",
+      "repo": "https://github.com/denoland/deno",
+      "category": "Developer Tools",
+      "description": "Secure runtime for JavaScript and TypeScript with built-in web standards and package management.",
+      "language": "Rust",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/denoland/deno/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "jq",
+      "repo": "https://github.com/jqlang/jq",
+      "category": "Terminal & Search",
+      "description": "Command-line JSON processor: flexible, lightweight, and powerful slice, filter, and map utility.",
+      "language": "C",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/jqlang/jq/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "yq",
+      "repo": "https://github.com/mikefarah/yq",
+      "category": "Terminal & Search",
+      "description": "Portable command-line YAML, JSON, XML, CSV, and properties processor written in Go.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/mikefarah/yq/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "miller",
+      "repo": "https://github.com/johnkerl/miller",
+      "category": "Terminal & Search",
+      "description": "Miller is like awk, sed, cut, join, and sort for name-indexed data such as CSV, TSV, and JSON.",
+      "language": "Go",
+      "license": "BSD-2-Clause",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/johnkerl/miller/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "csvkit",
+      "repo": "https://github.com/wireservice/csvkit",
+      "category": "Terminal & Search",
+      "description": "A suite of command-line tools for converting to and working with CSV, the king of tabular formats.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/wireservice/csvkit/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "pandoc",
+      "repo": "https://github.com/jgm/pandoc",
+      "category": "Developer Tools",
+      "description": "Universal markup converter that translates between Markdown, LaTeX, HTML, PDF, Docx, and 40+ formats.",
+      "language": "Haskell",
+      "license": "GPL-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/jgm/pandoc/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "typos-cli",
+      "repo": "https://github.com/crate-ci/typos",
+      "category": "Developer Tools",
+      "description": "Source code spell checker that finds and corrects typos in source code with low false positives.",
+      "language": "Rust",
+      "license": "Apache-2.0 / MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/crate-ci/typos/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "vale",
+      "repo": "https://github.com/errata-ai/vale",
+      "category": "Developer Tools",
+      "description": "Syntax-aware linter for prose and documentation supporting Google, Microsoft, and custom style guides.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/errata-ai/vale/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "pgcli",
+      "repo": "https://github.com/dbcli/pgcli",
+      "category": "Database & SQL",
+      "description": "Postgres CLI with auto-completion and syntax highlighting, table formatting, and smart completions.",
+      "language": "Python",
+      "license": "BSD-3-Clause",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/dbcli/pgcli/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "mycli",
+      "repo": "https://github.com/dbcli/mycli",
+      "category": "Database & SQL",
+      "description": "A terminal client for MySQL, MariaDB, and Percona with auto-completion and syntax highlighting.",
+      "language": "Python",
+      "license": "BSD-3-Clause",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/dbcli/mycli/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "iredis",
+      "repo": "https://github.com/laixintao/iredis",
+      "category": "Database & SQL",
+      "description": "A terminal client for Redis with auto-completion and syntax highlighting, command suggestions, and hints.",
+      "language": "Python",
+      "license": "BSD-3-Clause",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/laixintao/iredis/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "litecli",
+      "repo": "https://github.com/dbcli/litecli",
+      "category": "Database & SQL",
+      "description": "CLI for SQLite databases with auto-completion and syntax highlighting.",
+      "language": "Python",
+      "license": "BSD-3-Clause",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/dbcli/litecli/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "stern",
+      "repo": "https://github.com/stern/stern",
+      "category": "DevOps & Containers",
+      "description": "Multi pod and container log tailing for Kubernetes with regex filtering and color-coded stream output.",
+      "language": "Go",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/stern/stern/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "kubectx",
+      "repo": "https://github.com/ahmetb/kubectx",
+      "category": "DevOps & Containers",
+      "description": "Faster way to switch between clusters and namespaces in kubectl with fuzzy search integration.",
+      "language": "Go",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/ahmetb/kubectx/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "helm",
+      "repo": "https://github.com/helm/helm",
+      "category": "DevOps & Containers",
+      "description": "The package manager for Kubernetes: define, install, and upgrade complex Kubernetes applications.",
+      "language": "Go",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/helm/helm/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "kustomize",
+      "repo": "https://github.com/kubernetes-sigs/kustomize",
+      "category": "DevOps & Containers",
+      "description": "Customization of Kubernetes YAML configurations without templates, using patch layers and overlays.",
+      "language": "Go",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/kubernetes-sigs/kustomize/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "minikube",
+      "repo": "https://github.com/kubernetes/minikube",
+      "category": "DevOps & Containers",
+      "description": "Run Kubernetes locally on Windows, macOS, and Linux with automated cluster provisioning.",
+      "language": "Go",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/kubernetes/minikube/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "kind",
+      "repo": "https://github.com/kubernetes-sigs/kind",
+      "category": "DevOps & Containers",
+      "description": "Kubernetes IN Docker: tool for running local Kubernetes clusters using Docker container nodes.",
+      "language": "Go",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/kubernetes-sigs/kind/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "dasel",
+      "repo": "https://github.com/TomWright/dasel",
+      "category": "Terminal & Search",
+      "description": "Query and update data structures using selectors from the command line across JSON, YAML, TOML, and XML.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/TomWright/dasel/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "zenith",
+      "repo": "https://github.com/bvaisvil/zenith",
+      "category": "OS & Hardware Utilities",
+      "description": "Terminal system monitor with zooming, historical graphs, process trees, and disk/network I/O tracking.",
+      "language": "Rust",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/bvaisvil/zenith/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "diskonaut",
+      "repo": "https://github.com/imsnif/diskonaut",
+      "category": "OS & Hardware Utilities",
+      "description": "Terminal visual disk space navigator that visually maps out filesystems to locate large directories.",
+      "language": "Rust",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/imsnif/diskonaut/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "ctop",
+      "repo": "https://github.com/bcicen/ctop",
+      "category": "DevOps & Containers",
+      "description": "Top-like interface for container metrics, real-time memory and CPU consumption for Docker and Kubernetes.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/bcicen/ctop/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "speedtest-cli",
+      "repo": "https://github.com/sivel/speedtest-cli",
+      "category": "HTTP & Network",
+      "description": "Command line interface for testing internet bandwidth using speedtest.net servers without flash/browser.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/sivel/speedtest-cli/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "git-sizer",
+      "repo": "https://github.com/github/git-sizer",
+      "category": "Git & Version Control",
+      "description": "Compute various size metrics for a Git repository to detect large files, bloated commits, or excessive branches.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/github/git-sizer/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "cz-cli",
+      "repo": "https://github.com/commitizen/cz-cli",
+      "category": "Git & Version Control",
+      "description": "The commitizen command line utility that prompts developers for conventional commit messages.",
+      "language": "JavaScript",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/commitizen/cz-cli/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "volta",
+      "repo": "https://github.com/volta-cli/volta",
+      "category": "Developer Tools",
+      "description": "The hassle-free JavaScript tool manager that automatically switches Node.js and package manager versions per project.",
+      "language": "Rust",
+      "license": "BSD-2-Clause",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/volta-cli/volta/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "q",
+      "repo": "https://github.com/harelba/q",
+      "category": "Terminal & Search",
+      "description": "Execute SQL-like queries directly on CSV, TSV, and tabular text files without loading into a database.",
+      "language": "Python",
+      "license": "GPL-3.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/harelba/q/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "lf",
+      "repo": "https://github.com/gokcehan/lf",
+      "category": "Terminal & Shell",
+      "description": "Terminal file manager written in Go, heavily inspired by ranger with faster startup and server/client architecture.",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/gokcehan/lf/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "inxi",
+      "repo": "https://github.com/smxi/inxi",
+      "category": "OS & Hardware Utilities",
+      "description": "Full featured CLI system information tool designed for troubleshooting hardware and system configurations.",
+      "language": "Perl",
+      "license": "GPL-3.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/smxi/inxi/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "Codex Quota Overlay",
+      "repo": "https://github.com/cpys/codex-quota-overlay",
+      "category": "Dev Utilities & Libraries",
+      "description": "An independent, open-source Codex Desktop companion for Windows and macOS. It displays quota limits, reset times, and reset credits, with a local Quota Center for pace and history. I am a maintainer of this independent project; it is not affiliated with or endorsed by OpenAI.",
+      "language": "JavaScript / Electron, with C# and Swift native helpers",
+      "license": "MIT",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "Web Performance Budget Gate",
+      "repo": "https://github.com/edilec/web-performance-budget-gate",
+      "category": "CLI & Developer Productivity",
+      "description": "Offline Node.js CLI that checks captured Lighthouse JSON against declared route-level performance budgets and reports a completed budget failure. It does not run Lighthouse or measure a live page.",
+      "language": "JavaScript (Node.js 22+)",
+      "license": "MIT",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "Hyperconsciousness",
+      "repo": "https://github.com/louis030195/hyperconsciousness",
+      "category": "CLI & Developer Productivity",
+      "description": "Developer-alpha encrypted, append-only knowledge store with a Rust CLI and MCP server. Developers can sync signed records across devices and give agents scoped, expiring access to notes.",
+      "language": "Rust",
+      "license": "MIT",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "Image Format Readiness",
+      "repo": "https://github.com/edilec/image-format-readiness",
+      "category": "CLI & Developer Productivity",
+      "description": "Offline Node.js CLI that checks exported HTML and local image files for declared dimensions, aspect ratio, alternative text, loading declarations, pinned format policy, and byte budgets. It reports pass, fail, or incomplete evidence; it does not optimize images or test live browser compatibility.",
+      "language": "JavaScript (Node.js 22+)",
+      "license": "MIT",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "Docs Link Integrity Checker",
+      "repo": "https://github.com/edilec/docs-link-integrity-checker",
+      "category": "CLI & Developer Productivity",
+      "description": "Offline Node.js CLI that checks Markdown and HTML links, local targets and anchors inside a bounded documentation root. It never fetches external URLs; without an imported status for them, the report stays incomplete rather than passing silently.",
+      "language": "JavaScript (Node.js 22+)",
+      "license": "MIT",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "OpenAPI Example Validator",
+      "repo": "https://github.com/edilec/openapi-example-validator",
+      "category": "CLI & Developer Productivity",
+      "description": "Offline Node.js CLI that checks examples in local JSON OpenAPI 3.0 and 3.1 descriptions against the schema for their operation and media type. It reports unsupported checks as incomplete instead of treating them as a pass.",
+      "language": "JavaScript (Node.js 22+)",
+      "license": "MIT",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "OrkasVideoStudio",
+      "repo": "https://github.com/Orkas-AI/Orkas-VideoStudio",
+      "category": "CLI & Developer Productivity",
+      "description": "Local-first TypeScript CLI and MCP toolkit for coding agents to compose, edit, and assemble videos from editable plan.json timelines. Core editing and transcription need no API keys; optional generation features use your own provider keys.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    }
+  ]
+}

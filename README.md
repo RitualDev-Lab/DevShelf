@@ -176,6 +176,39 @@ Are you listed on DevShelf? Display an official badge on your project's `README.
 
 ---
 
+## ⚡ DevShelf Public REST API (v1)
+
+DevShelf is backed by a 100% free, CORS-enabled, static public REST API with zero rate-limiting or registration requirements:
+
+| Endpoint | Method | Description |
+| :--- | :--- | :--- |
+| **[`/api/v1/tools.json`](https://devshelf.ritualdev.in/api/v1/tools.json)** | `GET` | All 500+ curated developer tools, APIs, and AI models |
+| **[`/api/v1/stats.json`](https://devshelf.ritualdev.in/api/v1/stats.json)** | `GET` | Catalog telemetry, repo counts, and category breakdowns |
+| **[`/api/v1/categories.json`](https://devshelf.ritualdev.in/api/v1/categories.json)** | `GET` | Category listing and dedicated JSON endpoints |
+
+👉 **Read the complete [API Documentation & Code Samples (TypeScript, Python, cURL) →](docs/api.md)**
+
+---
+
+## 🧩 IDE & Launcher Extensions
+
+Query and explore 500+ free developer tools directly within your workflow:
+
+- **[Raycast Extension](extensions/raycast/)** &mdash; Instant tool search & random gem picker from your desktop spotlight (`Cmd+Shift+B` to copy badges).
+- **[VS Code Extension](extensions/vscode/)** &mdash; Command Palette integration (`Ctrl+Shift+P` -> `DevShelf: Search`).
+- 👉 **[Read Extension Guides & Installation →](docs/extensions.md)**
+
+---
+
+## 🎃 Hacktoberfest 2026
+
+DevShelf is proud to participate in **Hacktoberfest 2026**! We welcome beginner and experienced open-source contributors with automated PR validation and prompt reviews:
+
+- 🍁 **[Read Hacktoberfest Guide & Standards →](HACKTOBERFEST.md)**
+- 🚀 **[Claim a Starter Issue →](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=08_hacktoberfest_task.yml)**
+
+---
+
 ## 👥 Team & Contributors
 
 DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDev-Lab) and expanded by the global open-source community.
