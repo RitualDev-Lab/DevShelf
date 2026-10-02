@@ -13,7 +13,7 @@
  *   npx devshelf open <name>         # Open resource URL in default browser
  */
 
-import { exec } from "node:child_process";
+import { spawn } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 import readline from "node:readline";
@@ -41,16 +41,39 @@ const c = {
   white: useColor ? "\x1b[97m" : "",
 };
 
-// Open URL cross-platform
+// Open URL cross-platform — safely open web URLs without invoking shell interpreters
 function openUrl(url) {
-  if (!url) return;
-  const cmd =
-    process.platform === "win32"
-      ? `start "" "${url}"`
-      : process.platform === "darwin"
-        ? `open "${url}"`
-        : `xdg-open "${url}"`;
-  exec(cmd);
+  if (!url || typeof url !== "string") return;
+
+  // Strictly validate URL to only allow web protocols (prevents script/executable execution)
+  let parsed;
+  try {
+    parsed = new URL(url);
+    if (parsed.protocol !== "http:" && parsed.protocol !== "https:") {
+      return;
+    }
+  } catch {
+    return;
+  }
+
+  const safeUrl = parsed.href;
+
+  if (process.platform === "win32") {
+    // Avoid cmd.exe command-line parsing and comspec environment tampering entirely
+    const child = spawn("rundll32.exe", ["url.dll,FileProtocolHandler", safeUrl], {
+      detached: true,
+      stdio: "ignore",
+    });
+    child.unref();
+    return;
+  }
+
+  const opener = process.platform === "darwin" ? "open" : "xdg-open";
+  const child = spawn(opener, [safeUrl], {
+    detached: true,
+    stdio: "ignore",
+  });
+  child.unref();
 }
 
 // Load resources from local file or fetch remotely

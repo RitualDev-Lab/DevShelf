@@ -138,6 +138,11 @@ async function runPrValidation() {
   const { allExisting, domainIndex } = await loadExistingRegistry(shelfDir);
   const changedFiles = getChangedShelfFiles(shelfDir);
 
+  if (process.env.GITHUB_BASE_REF && changedFiles.length === 0) {
+    console.log("ℹ️ No shelf JSON files modified in this PR. Skipping shelf schema validation.\n");
+    return;
+  }
+
   const filesToInspect =
     changedFiles.length > 0
       ? changedFiles
@@ -245,7 +250,11 @@ async function runPrValidation() {
             issue: `Description is too long (${desc.length} chars). Maximum 300 characters allowed.`,
           });
         }
-        if (/^(todo|tbd|test|placeholder|lorem ipsum)/i.test(desc)) {
+        if (
+          /^(todo\b|tbd\b|placeholder\b|lorem ipsum\b|test\s*(item|description|data|tool)?\s*$)/i.test(
+            desc,
+          )
+        ) {
           errors.push({
             file,
             item: itemName,
@@ -285,12 +294,17 @@ async function runPrValidation() {
           });
         }
 
-        // Check domain collision (excluding github/gitlab)
-        if (domain && !["github.com", "gitlab.com", "bitbucket.org"].includes(domain)) {
+        // Check domain collision (excluding github/gitlab and developer perks which grant credits for existing platforms)
+        if (
+          domain &&
+          !["github.com", "gitlab.com", "bitbucket.org"].includes(domain) &&
+          file !== "perks.json"
+        ) {
           const existingByDomain = domainIndex.get(domain);
           if (
             existingByDomain &&
             existingByDomain.file !== file &&
+            existingByDomain.file !== "perks.json" &&
             existingByDomain.item.name.toLowerCase() !== lowerName
           ) {
             duplicates.push({
