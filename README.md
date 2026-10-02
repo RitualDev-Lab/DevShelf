@@ -263,6 +263,20 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
       </a><br />
       <sub>🖥️ Easypanel (PR #56)</sub>
     </td>
+    <td align="center" width="160">
+      <a href="https://github.com/mahdi-salmanzade">
+        <img src="https://github.com/mahdi-salmanzade.png" width="70" style="border-radius: 50%;" alt="mahdi-salmanzade"/><br />
+        <sub><b>mahdi-salmanzade</b></sub>
+      </a><br />
+      <sub>🇦🇪 MCP Dubai (PR #53)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/BlueSkyID666">
+        <img src="https://github.com/BlueSkyID666.png" width="70" style="border-radius: 50%;" alt="BlueSkyID666"/><br />
+        <sub><b>BlueSkyID666</b></sub>
+      </a><br />
+      <sub>🎬 OrkasVideoStudio (PR #55)</sub>
+    </td>
   </tr>
 </table>
 
