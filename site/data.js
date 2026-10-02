@@ -1,5 +1,5 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-10-01T22:50:59.910Z",
+  "updatedAt": "2026-10-02T07:51:03.073Z",
   "totalCount": 518,
   "reposCount": 322,
   "facets": {
@@ -3224,8 +3224,8 @@ window.DEVSHELF_DATA = {
       "name": "OrkasVideoStudio",
       "repo": "https://github.com/Orkas-AI/Orkas-VideoStudio",
       "category": "CLI & Developer Productivity",
-      "description": "OrkasVideoStudio is an MIT-licensed, local-first TypeScript CLI and MCP toolkit that lets coding agents compose, edit, generate, and automatically assemble videos from editable plan.json timelines. Composition, editing and transcription form the zero-key trunk; optional provider-backed generation uses your own keys and may incur provider costs.",
-      "language": "TypeScript, Node.js, CLI and MCP; ffmpeg for media operations.",
+      "description": "Local-first TypeScript CLI and MCP toolkit for coding agents to compose, edit, and assemble videos from editable plan.json timelines. Core editing and transcription need no API keys; optional generation features use your own provider keys.",
+      "language": "TypeScript",
       "license": "MIT",
       "featured": false,
       "type": "cli",
