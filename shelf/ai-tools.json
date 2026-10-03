@@ -964,5 +964,14 @@
     "language": "JavaScript / Node.js, Claude Code plugins",
     "license": "MIT",
     "featured": false
+  },
+  {
+    "name": "Tale",
+    "repo": "https://github.com/tale-project/tale",
+    "category": "AI Agents & Local LLMs",
+    "description": "Open-source project workspace for teams and AI agents, with task delegation, persistent sandbox workspaces, and deliverable review. Self-hosting uses separately configured model-provider credentials.",
+    "language": "TypeScript / Bun",
+    "license": "MIT",
+    "featured": false
   }
 ]

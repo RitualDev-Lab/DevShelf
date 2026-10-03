@@ -2,8 +2,8 @@
   "version": "1.0.0",
   "docs": "https://devshelf.ritualdev.in/docs/api.html",
   "license": "https://github.com/RitualDev-Lab/DevShelf/blob/main/LICENSE",
-  "updatedAt": "2026-10-03T18:35:39.285Z",
-  "totalCount": 520,
+  "updatedAt": "2026-10-03T18:56:07.562Z",
+  "totalCount": 521,
   "tools": [
     {
       "name": "Ollama",
@@ -1456,6 +1456,17 @@
       "category": "AI Agents & Local LLMs",
       "description": "Free, MIT-licensed plugins for Claude Code covering maintained codebase maps, project rules, coding-work orchestration, capability discovery, model routing, and local observability. Developers can install individual plugins rather than the entire collection; Claude or model-provider usage may have its own costs.",
       "language": "JavaScript / Node.js, Claude Code plugins",
+      "license": "MIT",
+      "featured": false,
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Tale",
+      "repo": "https://github.com/tale-project/tale",
+      "category": "AI Agents & Local LLMs",
+      "description": "Open-source project workspace for teams and AI agents, with task delegation, persistent sandbox workspaces, and deliverable review. Self-hosting uses separately configured model-provider credentials.",
+      "language": "TypeScript / Bun",
       "license": "MIT",
       "featured": false,
       "type": "ai",
