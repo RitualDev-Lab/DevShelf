@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-10-02T20:06:36.912Z",
-  "totalCount": 519,
-  "reposCount": 322,
+  "updatedAt": "2026-10-03T18:35:39.285Z",
+  "totalCount": 520,
+  "reposCount": 323,
   "categoryCounts": {
-    "aiTools": 87,
+    "aiTools": 88,
     "cliTools": 111,
     "testingQa": 62,
     "apis": 96,
