@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-10-03T15:11:21.312Z",
+  "updatedAt": "2026-10-03T18:56:07.562Z",
   "totalCategories": 8,
   "categories": [
     {
       "slug": "ai",
       "name": "AI Agents & Local LLMs",
-      "count": 88,
+      "count": 89,
       "endpoint": "https://devshelf.ritualdev.in/api/v1/categories/ai.json"
     },
     {
