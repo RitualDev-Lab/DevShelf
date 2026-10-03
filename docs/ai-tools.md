@@ -4,12 +4,18 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total AI Tools](https://img.shields.io/badge/AI_Tools-87_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total AI Tools](https://img.shields.io/badge/AI_Tools-88_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
-[AI Agents & MCP Servers](#ai-agents-mcp-servers) • [AI Workflow & Orchestration](#ai-workflow-orchestration) • [Autonomous Coding & Agent Dev](#autonomous-coding-agent-dev) • [Local AI & Inference](#local-ai-inference) • [Web UI & Chat](#web-ui-chat)
+[AI Agents & Local LLMs](#ai-agents-local-llms) • [AI Agents & MCP Servers](#ai-agents-mcp-servers) • [AI Workflow & Orchestration](#ai-workflow-orchestration) • [Autonomous Coding & Agent Dev](#autonomous-coding-agent-dev) • [Local AI & Inference](#local-ai-inference) • [Web UI & Chat](#web-ui-chat)
 
 ---
+
+### <a id="ai-agents-local-llms"></a>AI Agents & Local LLMs (1)
+
+| Tool | Language | License | Description | Links |
+| :--- | :---: | :---: | :--- | :---: |
+| [**Tale**](https://github.com/tale-project/tale) | `TypeScript / Bun` | `MIT` | Open-source project workspace for teams and AI agents, with task delegation, persistent sandbox workspaces, and deliverable review. Self-hosting uses separately configured model-provider credentials. | [GitHub](https://github.com/tale-project/tale) |
 
 ### <a id="ai-agents-mcp-servers"></a>AI Agents & MCP Servers (1)
 

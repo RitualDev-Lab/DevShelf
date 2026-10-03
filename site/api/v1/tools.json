@@ -2,8 +2,8 @@
   "version": "1.0.0",
   "docs": "https://devshelf.ritualdev.in/docs/api.html",
   "license": "https://github.com/RitualDev-Lab/DevShelf/blob/main/LICENSE",
-  "updatedAt": "2026-10-02T20:06:36.912Z",
-  "totalCount": 519,
+  "updatedAt": "2026-10-03T15:11:21.312Z",
+  "totalCount": 520,
   "tools": [
     {
       "name": "Ollama",
@@ -1447,6 +1447,17 @@
         "100% Offline-Friendly",
         "No Card Required"
       ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Tale",
+      "repo": "https://github.com/tale-project/tale",
+      "category": "AI Agents & Local LLMs",
+      "description": "Open-source project workspace for teams and AI agents, with task delegation, persistent sandbox workspaces, and deliverable review. Self-hosting uses separately configured model-provider credentials.",
+      "language": "TypeScript / Bun",
+      "license": "MIT",
+      "featured": false,
       "type": "ai",
       "section": "AI Agents & Local LLMs"
     },
