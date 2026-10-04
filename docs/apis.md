@@ -150,7 +150,7 @@
 
 | API & URL | Auth | Rate Limit | Description |
 | :--- | :---: | :---: | :--- |
-| [**Court Rules**](https://www.courtrules.app/api?ref=ritualdev) | 🔑 Free Key | `Generous Free Tier` | Free federal court rules, local rules, judge standing orders and filing deadlines, with a deadline calculator for every district. |
+| [**Court Rules**](https://www.courtrules.app/api) | 🔑 Free Key | `Generous Free Tier` | Free federal court rules, local rules, judge standing orders and filing deadlines, with a deadline calculator for every district. |
 
 ### <a id="science-astronomy"></a>Science & Astronomy (6)
 

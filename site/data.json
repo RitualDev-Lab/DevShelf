@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04T01:37:26.057Z",
+  "updatedAt": "2026-10-04T11:07:00.611Z",
   "totalCount": 522,
   "reposCount": 324,
   "facets": {
@@ -5564,7 +5564,7 @@
     },
     {
       "name": "Court Rules",
-      "url": "https://www.courtrules.app/api?ref=ritualdev",
+      "url": "https://www.courtrules.app/api",
       "category": "Other",
       "description": "Free federal court rules, local rules, judge standing orders and filing deadlines, with a deadline calculator for every district.",
       "auth": "Free API Key",
