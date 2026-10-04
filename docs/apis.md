@@ -4,10 +4,10 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total APIs](https://img.shields.io/badge/APIs-96_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total APIs](https://img.shields.io/badge/APIs-97_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
-[AI & Machine Learning](#ai-machine-learning) • [Animals & Fun](#animals-fun) • [Books & Literature](#books-literature) • [Development & Testing](#development-testing) • [Finance & Crypto](#finance-crypto) • [Food & Health](#food-health) • [Games & Media](#games-media) • [Geocoding & IP](#geocoding-ip) • [Media & Images](#media-images) • [News & Media](#news-media) • [Science & Astronomy](#science-astronomy) • [Travel & Transit](#travel-transit) • [Weather & Climate](#weather-climate)
+[AI & Machine Learning](#ai-machine-learning) • [Animals & Fun](#animals-fun) • [Books & Literature](#books-literature) • [Development & Testing](#development-testing) • [Finance & Crypto](#finance-crypto) • [Food & Health](#food-health) • [Games & Media](#games-media) • [Geocoding & IP](#geocoding-ip) • [Media & Images](#media-images) • [News & Media](#news-media) • [Other](#other) • [Science & Astronomy](#science-astronomy) • [Travel & Transit](#travel-transit) • [Weather & Climate](#weather-climate)
 
 ---
 
@@ -145,6 +145,12 @@
 | [**Hacker News Firebase API**](https://github.com/HackerNews/API) | 🟢 No Key | `Unlimited` | Official Hacker News REST API powered by Firebase with real-time top stories, comments, and user profiles. |
 | [**Dev.to API**](https://developers.forem.com/api/v1) | 🔑 Free Key | `30 req/30sec` | REST API for DEV Community (Forem) accessing articles, tag listings, user feeds, and comments. |
 | [**Reddit JSON API**](https://www.reddit.com/dev/api) | 🟢 No Key | `60 req/min` | Append .json to almost any public Reddit URL to get structured JSON post data and subreddit feeds. |
+
+### <a id="other"></a>Other (1)
+
+| API & URL | Auth | Rate Limit | Description |
+| :--- | :---: | :---: | :--- |
+| [**Court Rules**](https://www.courtrules.app/api) | 🔑 Free Key | `Generous Free Tier` | Free federal court rules, local rules, judge standing orders and filing deadlines, with a deadline calculator for every district. |
 
 ### <a id="science-astronomy"></a>Science & Astronomy (6)
 

@@ -1,6 +1,6 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-10-03T19:32:07.457Z",
-  "totalCount": 521,
+  "updatedAt": "2026-10-04T11:07:00.611Z",
+  "totalCount": 522,
   "reposCount": 324,
   "facets": {
     "repos": 324
@@ -9,7 +9,7 @@ window.DEVSHELF_DATA = {
     "aiTools": 89,
     "cliTools": 111,
     "testingQa": 62,
-    "apis": 96,
+    "apis": 97,
     "freeCloud": 71,
     "contributors": 21,
     "perks": 30,
@@ -5559,6 +5559,18 @@ window.DEVSHELF_DATA = {
         "No Card Required",
         "CI Verified"
       ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Court Rules",
+      "url": "https://www.courtrules.app/api",
+      "category": "Other",
+      "description": "Free federal court rules, local rules, judge standing orders and filing deadlines, with a deadline calculator for every district.",
+      "auth": "Free API Key",
+      "cors": "Unknown",
+      "rateLimit": "Generous Free Tier",
+      "https": true,
       "type": "api",
       "section": "Free & Public APIs"
     },

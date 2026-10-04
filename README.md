@@ -13,7 +13,7 @@
 <br>
 
 [![Live Web Directory](https://img.shields.io/badge/🌐_Web_Directory-Live_Search_%26_Filters-7928CA?style=for-the-badge&logoColor=white)](https://devshelf.ritualdev.in)
-[![Curated Resources](https://img.shields.io/badge/📦_Resources-521+_Curated-blueviolet?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
+[![Curated Resources](https://img.shields.io/badge/📦_Resources-522+_Curated-blueviolet?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
 [![Endpoint Health](https://img.shields.io/badge/🛡️_Health-CI_Health_Audited-brightgreen?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf/actions)
 [![Open Source](https://img.shields.io/badge/🔓_License-MIT_FOSS-blue?style=for-the-badge)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/🤝_PRs-Welcome_%26_Amplified-brightgreen?style=for-the-badge)](#-how-to-submit-your-project-or-api)
@@ -23,7 +23,7 @@
 
 <table>
 <tr>
-<td align="center"><b>🌐 Free APIs</b><br><code>96</code></td>
+<td align="center"><b>🌐 Free APIs</b><br><code>97</code></td>
 <td align="center"><b>🤖 AI & LLMs</b><br><code>89</code></td>
 <td align="center"><b>⚡ CLI Tools</b><br><code>111</code></td>
 <td align="center"><b>🧪 Testing & QA</b><br><code>62</code></td>
@@ -37,7 +37,7 @@
 ### 🎯 The Race to 1,000 Verified Tools (Hacktoberfest Milestone)
 
 ```text
-[██████████░░░░░░░░░░] 521 / 1,000 Tools Verified (52% • 479 to go!)
+[██████████░░░░░░░░░░] 522 / 1,000 Tools Verified (52% • 478 to go!)
 ```
 
 *Help us curate the definitive zero-paywall index! [Submit your favorite developer tool, API, or AI framework →](#-how-to-submit-your-project-or-api)*
@@ -115,11 +115,11 @@ npx devshelf stats
 
 ## 📂 Browse Catalog by Category
 
-Explore our curated collections of **521+ zero-paywall developer tools**, categorized into dedicated guides with subcategory indexing:
+Explore our curated collections of **522+ zero-paywall developer tools**, categorized into dedicated guides with subcategory indexing:
 
 | Category | Resources | Description & Subcategories | Guide |
 | :--- | :---: | :--- | :---: |
-| 🌐 **Free & Public APIs** | **96** | Weather, Finance, Mock/Dev APIs, Geocoding, AI/ML, Media, Entertainment | [**Browse APIs →**](docs/apis.md) |
+| 🌐 **Free & Public APIs** | **97** | Weather, Finance, Mock/Dev APIs, Geocoding, AI/ML, Media, Entertainment | [**Browse APIs →**](docs/apis.md) |
 | 🤖 **AI Agents & Local LLMs** | **89** | Local LLM Runtimes, Autonomous Agents, Coding Assistants, Orchestration | [**Browse AI Tools →**](docs/ai-tools.md) |
 | ⚡ **CLI & Productivity Tools** | **111** | Terminal Utilities, Git Power Tools, Docker & DevOps, Benchmarking, DBs | [**Browse CLI Tools →**](docs/cli-tools.md) |
 | 🧪 **Testing & QA Reliability** | **62** | E2E Testing, Mock Servers, Contract Testing, Security Auditing, Performance | [**Browse Testing Tools →**](docs/testing-qa.md) |
@@ -333,6 +333,13 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
         <sub><b>Eigenwise</b></sub>
       </a><br />
       <sub>🛠️ Toolshed (PR #61)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/foklepoint">
+        <img src="https://github.com/foklepoint.png" width="70" style="border-radius: 50%;" alt="foklepoint"/><br />
+        <sub><b>foklepoint</b></sub>
+      </a><br />
+      <sub>⚖️ Court Rules (PR #63)</sub>
     </td>
   </tr>
 </table>
