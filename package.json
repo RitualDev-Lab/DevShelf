@@ -1,16 +1,36 @@
 {
   "name": "devshelf",
-  "version": "1.0.0",
-  "private": true,
+  "version": "1.1.0",
+  "private": false,
   "type": "module",
-  "description": "The open-source community directory for discovering developer tools, free APIs, AI agents, and open-source projects.",
+  "description": "The open-source community directory for discovering 520+ developer tools, free APIs, AI agents, and open-source projects. Includes terminal CLI and MCP server.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RitualDev-Lab/DevShelf.git"
+  },
+  "homepage": "https://devshelf.ritualdev.in",
+  "keywords": [
+    "developer-tools",
+    "free-apis",
+    "mcp-server",
+    "model-context-protocol",
+    "ai-agents",
+    "open-source",
+    "cli"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "packageManager": "pnpm@9.15.4",
   "bin": {
-    "devshelf": "./bin/cli.js"
+    "devshelf": "./bin/cli.js",
+    "devshelf-mcp": "./bin/mcp.js"
   },
   "files": ["bin", "shelf", "site/data.json"],
   "scripts": {
     "devshelf": "node bin/cli.js",
+    "mcp": "node bin/mcp.js",
     "build:css": "tailwindcss -i site/input.css -o site/tailwind.min.css --minify",
     "build": "npm run build:css && npx tsx scripts/build-site.ts && npx tsx scripts/build-readme.ts && npx tsx scripts/generate-seo.ts",
     "test": "npx tsx --test tests/**/*.test.ts",

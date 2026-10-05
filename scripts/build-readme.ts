@@ -315,16 +315,26 @@ async function build() {
 
 <br>
 
-**Discover high-quality developer tools, verified free APIs, AI agents, and open-source projects — all with zero paywalls.**
+### ⚡ The Zero-Paywall Developer Directory & MCP Knowledge Hub
+
+**The only curated developer directory that never rots — verified by continuous CI health checks, accessible in your terminal (${B}npx devshelf${B}), powered by an open JSON REST API, and native MCP server for AI coding assistants.**
 
 <br>
 
-[![Live Web Directory](https://img.shields.io/badge/🌐_Web_Directory-Live_Search_%26_Filters-7928CA?style=for-the-badge&logoColor=white)](https://devshelf.ritualdev.in)
-[![Curated Resources](https://img.shields.io/badge/📦_Resources-${totalItems}+_Curated-blueviolet?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf)
-[![Endpoint Health](https://img.shields.io/badge/🛡️_Health-CI_Health_Audited-brightgreen?style=for-the-badge)](https://github.com/RitualDev-Lab/DevShelf/actions)
-[![Open Source](https://img.shields.io/badge/🔓_License-MIT_FOSS-blue?style=for-the-badge)](LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/🤝_PRs-Welcome_%26_Amplified-brightgreen?style=for-the-badge)](#-how-to-submit-your-project-or-api)
-[![Hacktoberfest](https://img.shields.io/badge/🎃_Hacktoberfest-2026_Ready-ff7800?style=for-the-badge)](HACKTOBERFEST.md)
+<p>
+  <a href="https://devshelf.ritualdev.in"><b>🌐 Interactive Web App</b></a> •
+  <a href="#-devshelf-cli--terminal-discovery"><b>⚡ Terminal CLI</b></a> •
+  <a href="#-official-mcp-server-for-ai-agents"><b>🤖 Model Context Protocol (MCP)</b></a> •
+  <a href="#-devshelf-public-rest-api-v1"><b>📡 Public REST API</b></a> •
+  <a href="#-browse-catalog-by-category"><b>📂 Category Guides</b></a>
+</p>
+
+[![npm version](https://img.shields.io/npm/v/devshelf.svg?style=flat-square&color=cb3837)](https://www.npmjs.com/package/devshelf)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
+[![CI Health Status](https://img.shields.io/badge/CI%20Health-Audited%20%26%20Live-brightgreen.svg?style=flat-square)](https://github.com/RitualDev-Lab/DevShelf/actions)
+[![MCP Ready](https://img.shields.io/badge/MCP-Claude%20%7C%20Cursor%20%7C%20Zed-purple.svg?style=flat-square)](docs/mcp.md)
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome_%26_Amplified-brightgreen.svg?style=flat-square)](#-how-to-submit-your-project-or-api)
+[![Hacktoberfest](https://img.shields.io/badge/🎃_Hacktoberfest-2026_Ready-ff7800?style=flat-square)](HACKTOBERFEST.md)
 
 <br>
 
@@ -349,74 +359,105 @@ ${BT}
 
 *Help us curate the definitive zero-paywall index! [Submit your favorite developer tool, API, or AI framework →](#-how-to-submit-your-project-or-api)*
 
-<p>
-  <a href="https://devshelf.ritualdev.in"><b>🌐 Interactive Web App</b></a> •
-  <a href="#-devshelf-cli--tui-terminal-discovery"><b>⚡ Terminal CLI</b></a> •
-  <a href="#-browse-catalog-by-category"><b>📂 Category Guides</b></a> •
-  <a href="#-featured-spotlight--tools-of-the-week"><b>🔥 Spotlight</b></a> •
-  <a href="HACKTOBERFEST.md"><b>🎃 Hacktoberfest</b></a> •
-  <a href="#-social-amplification-guarantee"><b>🚀 Social Guarantee</b></a> •
-  <a href="#-team--contributors"><b>👥 Team</b></a> •
-  <a href="#-how-to-submit-your-project-or-api"><b>➕ Submit Yours</b></a>
-</p>
-
 </div>
 
 <br>
 
-## ⚡ DevShelf CLI & TUI (Terminal Discovery)
+---
 
-Stay in flow! DevShelf includes a zero-dependency interactive Terminal User Interface (TUI) and CLI:
+## ⚡ 5-Second Interactive Visual Demo
 
-${BT}bash
-# Launch interactive Terminal UI (fuzzy search, category browsing, and open in browser)
-npx devshelf
+DevShelf isn't a static markdown list. It runs directly inside your terminal, in your web browser, and as a native tool inside your AI assistant:
 
-# Instant search across all 500+ curated resources
-npx devshelf search "postgres"
-npx devshelf search "auth" --open
-
-# Discover a random resource for inspiration
-npx devshelf random
-
-# View live catalog counts and telemetry
-npx devshelf stats
+${BT}text
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│ $ npx devshelf search "postgres"                                                │
+│                                                                                 │
+│ 📚 DevShelf CLI v1.1.0 — ${totalItems} Curated Tools (Live CI Audited)                    │
+│                                                                                 │
+│ [1] Neon (Database / Serverless)                                                │
+│     Serverless Postgres with autoscaling, branching, and generous free tier.    │
+│     ⚡ Alt to AWS RDS  •  Free: 0.5 GB storage, 1 compute CU                     │
+│     🔗 https://neon.tech                                                        │
+│                                                                                 │
+│ [2] Supabase (Database & BaaS)                                                  │
+│     The open source Firebase alternative with Postgres, Auth, & Storage.        │
+│     ⚡ Alt to Firebase  •  Free: 500 MB database, 50,000 MAUs                    │
+│     🔗 https://supabase.com                                                     │
+│                                                                                 │
+│ 🤖 Plug into AI Assistants (Claude Desktop, Cursor, Windsurf, Zed):             │
+│ $ npx devshelf-mcp                                                              │
+└─────────────────────────────────────────────────────────────────────────────────┘
 ${BT}
 
 ---
 
-## 💡 Why DevShelf?
+## 🥊 Why DevShelf Beats Legacy "Awesome Lists"
 
-<table>
-<tr>
-<td width="50%">
+Most developer resource lists (*public-apis*, *free-for-dev*) suffer from link rot, abandoned projects, and sneaky "free 14-day trials". DevShelf solves this with **3 unfair advantages**:
 
-### ❌ Traditional "Awesome" Lists
-- 🔴 Links rot — broken APIs sit untouched for years
-- 🔴 No discovery — indie creators buried under corporate tools
-- 🔴 Static lists — no search, no filters, no live status
-- 🔴 No incentive — contributors get nothing in return
+| Dimension | 🧟 Static Awesome Lists & Repos | 🚀 DevShelf |
+| :--- | :--- | :--- |
+| **Endpoint Health** | 40%+ broken links & dead APIs sitting for years | 🛡️ **Automated CI Health Checks** ping every endpoint continuously |
+| **Trial-Bait Protection** | Riddled with "14-day trials" & bait-and-switch pricing | 🚫 **Strict Zero-Paywall Audit** &mdash; 100% free forever tiers or MIT/Apache FOSS |
+| **Developer Access** | Read-only markdown tables; constant browser tab flipping | ⚡ **Zero-Install CLI (${B}npx devshelf${B})** & fuzzy TUI right in your terminal |
+| **AI Agent Native** | None (manual copying and pasting into chat) | 🤖 **Official MCP Server (${B}npx devshelf-mcp${B})** for Claude, Cursor, & Zed |
+| **Data Programmability** | Static markdown formatting | 📡 **Free CORS JSON REST API (${B}/api/v1/tools.json${B})** with no keys needed |
+| **Creator Backing** | Submissions sit unreviewed for months with zero recognition | 📢 **Social Amplification Guarantee** &mdash; merged tools get featured on X & LinkedIn |
 
-</td>
-<td width="50%">
+---
 
-### ✅ DevShelf is Built Different
-- 🟢 **Automated Health Checks** — GitHub Actions pings every endpoint continuously
-- 🟢 **Interactive Web UI & CLI** — instant search, filters, 1-click copy at [devshelf.ritualdev.in](https://devshelf.ritualdev.in) or via ${B}npx devshelf${B}
-- 🟢 **1-Click Submissions** — add your project in 30 seconds via GitHub Issue forms
-- 🟢 **Social Amplification** — every merged project gets free promotion
+## 🤖 Official MCP Server for AI Agents
 
-</td>
-</tr>
-</table>
+Turn your AI coding assistant into a free developer tool & API search engine! DevShelf implements the official **Model Context Protocol (MCP)** over stdio:
 
-<div align="center">
-
-${BT}
-🛡️ Automated Health Auditing  •  🌟 Quality First  •  🚫 Zero Paywalls  •  📢 Free Social Promotion
+${BT}bash
+# Run stdio MCP server for Claude Desktop, Cursor, Zed, or Windsurf
+npx devshelf-mcp
+# or
+npx devshelf mcp
 ${BT}
 
-</div>
+### 1-Click Cursor Configuration (${B}.cursor/mcp.json${B})
+${BT}json
+{
+  "mcpServers": {
+    "devshelf": {
+      "command": "npx",
+      "args": ["-y", "devshelf-mcp"]
+    }
+  }
+}
+${BT}
+
+👉 **[Read Full MCP Setup Guide for Claude Desktop, Cursor, Windsurf & Zed →](docs/mcp.md)**
+
+---
+
+## ⚡ DevShelf CLI & Terminal Discovery
+
+Stay in flow without leaving your terminal. DevShelf includes an interactive fuzzy TUI and fast CLI utilities:
+
+${BT}bash
+# Launch interactive Terminal UI (fuzzy search, category browsing, and 1-click open)
+npx devshelf
+
+# Instant search across all 520+ curated resources
+npx devshelf search "postgres"
+npx devshelf search "auth" --open
+
+# Get your daily open-source discovery (add to ~/.zshrc or ~/.bashrc)
+npx devshelf daily --quiet
+
+# Find open-source projects actively seeking contributors & starter issues
+npx devshelf contribute "rust"
+
+# Discover a random resource for inspiration
+npx devshelf random
+
+# View live catalog telemetry and counts
+npx devshelf stats
+${BT}
 
 ---
 

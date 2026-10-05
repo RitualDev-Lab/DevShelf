@@ -23,7 +23,7 @@ describe("DevShelf CLI & TUI Suite", () => {
   test("prints version with --version flag", () => {
     const res = runCli("--version");
     assert.equal(res.status, 0);
-    assert.match(res.stdout, /devshelf v1\.0\.0/);
+    assert.match(res.stdout, /devshelf v1\.1\.0/);
   });
 
   test("prints help message with --help flag", () => {
@@ -32,6 +32,7 @@ describe("DevShelf CLI & TUI Suite", () => {
     assert.match(res.stdout, /USAGE:/);
     assert.match(res.stdout, /npx devshelf search/);
     assert.match(res.stdout, /npx devshelf random/);
+    assert.match(res.stdout, /npx devshelf mcp/);
   });
 
   test("returns valid JSON telemetry with stats --json", () => {
@@ -101,5 +102,29 @@ describe("DevShelf CLI & TUI Suite", () => {
       results.some((r: any) => (r.name || "").toLowerCase() === "bruno"),
       "Should match Bruno as an alternative to Postman",
     );
+  });
+
+  test("runs MCP server and answers initialize & tools/list via stdio", () => {
+    const initReq = `${JSON.stringify({ jsonrpc: "2.0", id: 1, method: "initialize", params: {} })}\n`;
+    const toolsReq = `${JSON.stringify({ jsonrpc: "2.0", id: 2, method: "tools/list", params: {} })}\n`;
+    const stdout = execSync("node bin/mcp.js", {
+      input: initReq + toolsReq,
+      cwd: ROOT,
+      encoding: "utf8",
+    });
+
+    const lines = stdout.trim().split("\n").filter(Boolean);
+    assert.ok(lines.length >= 2, "Expected at least 2 JSON-RPC responses");
+    const initRes = JSON.parse(lines[0]);
+    assert.equal(initRes.id, 1);
+    assert.equal(initRes.result?.serverInfo?.name, "devshelf-mcp");
+
+    const toolsRes = JSON.parse(lines[1]);
+    assert.equal(toolsRes.id, 2);
+    assert.ok(Array.isArray(toolsRes.result?.tools));
+    const toolNames = toolsRes.result.tools.map((t: any) => t.name);
+    assert.ok(toolNames.includes("search_tools"));
+    assert.ok(toolNames.includes("get_tool"));
+    assert.ok(toolNames.includes("find_free_alternatives"));
   });
 });

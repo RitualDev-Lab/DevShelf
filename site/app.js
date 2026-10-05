@@ -919,6 +919,40 @@ function setupListeners() {
       }
       return;
     }
+    // 22. Random Tool Modal Triggers
+    if (
+      e.target.closest(
+        "#hero-random-btn, #controls-random-btn, #nav-random-btn, #mobile-random-btn",
+      )
+    ) {
+      e.preventDefault();
+      openRandomToolModal();
+      return;
+    }
+
+    if (e.target.closest("#close-random-modal-btn") || e.target.id === "random-tool-modal") {
+      e.preventDefault();
+      closeRandomToolModal();
+      return;
+    }
+
+    if (e.target.closest("#random-reroll-btn")) {
+      e.preventDefault();
+      pickAndDisplayRandomTool();
+      return;
+    }
+
+    if (e.target.closest("#random-copy-btn")) {
+      e.preventDefault();
+      copyRandomToolLink();
+      return;
+    }
+
+    if (e.target.closest("#random-share-tweet-btn")) {
+      e.preventDefault();
+      shareRandomToolTweet();
+      return;
+    }
   });
 
   // Sort dropdown
@@ -928,15 +962,24 @@ function setupListeners() {
     render();
   });
 
-  // Keyboard Shortcuts ('/' to focus search, 'Escape' to close modals / drawer / clear search)
+  // Keyboard Shortcuts ('/' to focus search, 'r' for random tool, 'Escape' to close modals / drawer / clear search)
   window.addEventListener("keydown", (e) => {
     if (e.key === "/" && document.activeElement !== searchInput) {
       e.preventDefault();
       searchInput?.focus();
       searchInput?.scrollIntoView({ behavior: "smooth", block: "center" });
     }
+    if ((e.key === "r" || e.key === "R") && document.activeElement !== searchInput) {
+      const activeEl = document.activeElement;
+      const isInput = activeEl && ["INPUT", "TEXTAREA", "SELECT"].includes(activeEl.tagName);
+      if (!isInput && !e.ctrlKey && !e.metaKey && !e.altKey) {
+        e.preventDefault();
+        openRandomToolModal();
+      }
+    }
     if (e.key === "Escape") {
       closeMobileMenu();
+      closeRandomToolModal();
       closeBadgeModal();
       closeMatchmakerModal();
       closeWizardModal();
@@ -971,6 +1014,140 @@ function closeBadgeModal() {
     modal.style.display = "none";
     document.body.classList.remove("overflow-hidden");
   }
+}
+
+let currentRandomTool = null;
+
+function openRandomToolModal() {
+  const modal = document.getElementById("random-tool-modal");
+  if (!modal) return;
+  pickAndDisplayRandomTool();
+  modal.classList.remove("hidden");
+  modal.classList.add("show");
+  modal.style.display = "flex";
+  document.body.classList.add("overflow-hidden");
+}
+
+function closeRandomToolModal() {
+  const modal = document.getElementById("random-tool-modal");
+  if (!modal) return;
+  modal.classList.remove("show");
+  modal.classList.add("hidden");
+  modal.style.display = "none";
+  document.body.classList.remove("overflow-hidden");
+}
+
+function pickAndDisplayRandomTool() {
+  if (!allResources || allResources.length === 0) {
+    showToast("No catalog tools loaded yet.");
+    return;
+  }
+  const randomIndex = Math.floor(Math.random() * allResources.length);
+  const tool = allResources[randomIndex];
+  currentRandomTool = tool;
+
+  const contentEl = document.getElementById("random-tool-content");
+  const visitLink = document.getElementById("random-visit-link");
+  if (!contentEl) return;
+
+  const url =
+    tool.url || tool.repo || `https://github.com/search?q=${encodeURIComponent(tool.name)}`;
+  if (visitLink) {
+    visitLink.href = url;
+  }
+
+  let typeIcon = "⚡";
+  if (tool.type === "api") typeIcon = "🌐";
+  else if (tool.type === "ai") typeIcon = "🤖";
+  else if (tool.type === "cli") typeIcon = "💻";
+  else if (tool.type === "cloud") typeIcon = "☁️";
+  else if (tool.type === "testing") typeIcon = "🧪";
+  else if (tool.type === "perk") typeIcon = "🎁";
+  else if (tool.type === "boilerplate") typeIcon = "🚀";
+
+  const badges = [];
+  if (tool.category || tool.section) {
+    badges.push(
+      `<span class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-purple-950/80 text-purple-300 border border-purple-500/30">${escapeHtml(tool.category || tool.section)}</span>`,
+    );
+  }
+  if (tool.language) {
+    badges.push(
+      `<span class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-cyan-950/80 text-cyan-300 border border-cyan-500/30">${escapeHtml(tool.language)}</span>`,
+    );
+  }
+  if (tool.license) {
+    badges.push(
+      `<span class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-blue-950/80 text-blue-300 border border-blue-500/30">${escapeHtml(tool.license)}</span>`,
+    );
+  }
+  if (tool.auth) {
+    const authColor = tool.auth.toLowerCase().includes("no")
+      ? "text-emerald-300 bg-emerald-950/80 border-emerald-500/30"
+      : "text-amber-300 bg-amber-950/80 border-amber-500/30";
+    badges.push(
+      `<span class="px-2.5 py-1 rounded-lg text-xs font-semibold ${authColor} border">🔑 ${escapeHtml(tool.auth)}</span>`,
+    );
+  }
+  if (tool.rateLimit) {
+    badges.push(
+      `<span class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 border border-slate-700">⏱️ ${escapeHtml(tool.rateLimit)}</span>`,
+    );
+  }
+  if (tool.freeTier) {
+    badges.push(
+      `<span class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-emerald-950/80 text-emerald-300 border border-emerald-500/30">💎 ${escapeHtml(tool.freeTier)}</span>`,
+    );
+  }
+
+  contentEl.innerHTML = `
+    <div class="space-y-4 animate-fadeIn">
+      <div class="flex items-start justify-between gap-3">
+        <div class="flex items-center space-x-3">
+          <span class="text-3xl p-3 rounded-2xl bg-slate-800/90 border border-slate-700">${typeIcon}</span>
+          <div>
+            <h4 class="text-xl font-extrabold text-white">${escapeHtml(tool.name)}</h4>
+            <span class="text-xs font-mono text-purple-300">${escapeHtml(tool.category || tool.section || tool.type || "Tool")}</span>
+          </div>
+        </div>
+      </div>
+
+      ${
+        tool.alternativeTo
+          ? `
+        <div class="p-3 rounded-xl bg-purple-950/40 border border-purple-500/40 text-xs text-purple-200 flex items-center space-x-2">
+          <span>⚡</span>
+          <span><strong>Free Alternative to:</strong> <span class="text-white font-bold">${escapeHtml(tool.alternativeTo)}</span></span>
+        </div>
+      `
+          : ""
+      }
+
+      <p class="text-sm text-slate-200 leading-relaxed">${escapeHtml(tool.description || "Curated zero-paywall developer resource.")}</p>
+
+      <div class="flex flex-wrap gap-2 pt-1">
+        ${badges.join("")}
+      </div>
+
+      <div class="pt-2 text-xs font-mono text-slate-400 truncate bg-slate-950 p-2.5 rounded-xl border border-slate-800">
+        🔗 <a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline font-mono">${escapeHtml(url)}</a>
+      </div>
+    </div>
+  `;
+}
+
+function copyRandomToolLink() {
+  if (!currentRandomTool) return;
+  const url = currentRandomTool.url || currentRandomTool.repo || "https://devshelf.ritualdev.in";
+  copyToClipboard(url, `Copied link for ${currentRandomTool.name}! 📋`);
+}
+
+function shareRandomToolTweet() {
+  if (!currentRandomTool) return;
+  const text = `Discovered ${currentRandomTool.name} on @RitualDev DevShelf — 520+ verified zero-paywall developer tools & free APIs!\n\nCheck it out:`;
+  const url = currentRandomTool.url || currentRandomTool.repo || "https://devshelf.ritualdev.in";
+  const shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
+  window.open(shareUrl, "_blank", "noopener,noreferrer");
 }
 
 async function loadMatchmaker() {

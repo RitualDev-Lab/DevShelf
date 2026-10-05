@@ -255,6 +255,399 @@ async function generateSeo() {
     await fs.writeFile(path.join(toolsDir, `${slug}.html`), html, "utf8");
   }
 
+  // =========================================================================
+  // 2. Programmatic Alternatives Pages (e.g. site/alternatives/postman.html)
+  // =========================================================================
+  const alternativesDir = path.join(siteDir, "alternatives");
+  await fs.mkdir(alternativesDir, { recursive: true });
+
+  const altMap = new Map<string, any[]>();
+  for (const item of resources) {
+    if (item.alternativeTo) {
+      const rawTargets = item.alternativeTo
+        .split(/[\/,]/)
+        .map((t: string) => t.trim())
+        .filter(Boolean);
+      for (const target of rawTargets) {
+        const cleanTarget = target.replace(/\s*\(\$.*?\)/g, "").trim();
+        if (cleanTarget.length < 2) continue;
+        if (!altMap.has(cleanTarget)) {
+          altMap.set(cleanTarget, []);
+        }
+        const list = altMap.get(cleanTarget);
+        if (list && !list.some((existing) => existing.name === item.name)) {
+          list.push(item);
+        }
+      }
+    }
+  }
+
+  console.log(
+    `🌐 [DevShelf SEO Engine] Generating alternative roundup pages for ${altMap.size} commercial targets...`,
+  );
+
+  for (const [targetName, altTools] of altMap) {
+    const slug = slugify(targetName);
+    const pageUrl = `${domain}/alternatives/${slug}.html`;
+    const title = `Best Free & Open Source Alternatives to ${escapeHtml(targetName)} | DevShelf`;
+    const desc = `Explore ${altTools.length} verified free and open-source alternatives to ${escapeHtml(targetName)}. Zero paywalls, honest pricing, and active community maintenance.`;
+
+    sitemapUrls.push(
+      `  <url>\n    <loc>${pageUrl}</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.9</priority>\n  </url>`,
+    );
+
+    const jsonLd = {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      name: `Free Alternatives to ${targetName}`,
+      description: desc,
+      numberOfItems: altTools.length,
+      itemListElement: altTools.map((t, idx) => ({
+        "@type": "ListItem",
+        position: idx + 1,
+        item: {
+          "@type": "SoftwareApplication",
+          name: t.name,
+          description: t.description,
+          url: t.url || t.repo,
+          offers: {
+            "@type": "Offer",
+            price: "0",
+            priceCurrency: "USD",
+            availability: "https://schema.org/InStock",
+          },
+        },
+      })),
+    };
+
+    const cardsHtml = altTools
+      .map((tool) => {
+        const toolUrl = tool.url || tool.repo || "";
+        const toolSlug = slugify(tool.name);
+        return `
+        <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 shadow-xl hover:border-purple-500/50 transition">
+          <div class="flex items-start justify-between flex-wrap gap-2 mb-3">
+            <div>
+              <h3 class="text-xl font-bold text-white">
+                <a href="../tools/${toolSlug}.html" class="hover:text-purple-300 transition">${escapeHtml(tool.name)}</a>
+              </h3>
+              <span class="text-xs font-mono text-purple-400">${escapeHtml(tool.category || "Tool")}</span>
+            </div>
+            <a href="${escapeHtml(toolUrl)}" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold transition">
+              Visit Site →
+            </a>
+          </div>
+          <p class="text-sm text-slate-300 leading-relaxed mb-4">${escapeHtml(tool.description)}</p>
+          <div class="flex flex-wrap gap-2 text-xs font-mono">
+            <span class="px-2.5 py-1 rounded-lg bg-emerald-950/80 text-emerald-300 border border-emerald-500/30">💎 Free: ${escapeHtml(tool.freeTier || "100% Free / FOSS")}</span>
+            ${tool.language ? `<span class="px-2.5 py-1 rounded-lg bg-cyan-950/80 text-cyan-300 border border-cyan-500/30">${escapeHtml(tool.language)}</span>` : ""}
+            ${tool.license ? `<span class="px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 border border-slate-700">${escapeHtml(tool.license)}</span>` : ""}
+          </div>
+        </div>`;
+      })
+      .join("\n");
+
+    const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>${title}</title>
+  <meta name="description" content="${desc}">
+  <link rel="canonical" href="${pageUrl}">
+
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="${pageUrl}">
+  <meta property="og:title" content="${title}">
+  <meta property="og:description" content="${desc}">
+  <meta property="og:image" content="https://devshelf.ritualdev.in/og-image.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@RitualDevLab">
+  <meta name="twitter:title" content="${title}">
+  <meta name="twitter:description" content="${desc}">
+  <meta name="twitter:image" content="https://devshelf.ritualdev.in/og-image.jpg">
+
+  <script type="application/ld+json">
+  ${JSON.stringify(jsonLd, null, 2)}
+  </script>
+
+  <link rel="stylesheet" href="../tailwind.min.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen flex flex-col justify-between selection:bg-purple-500 selection:text-white">
+  <header class="border-b border-slate-800 bg-slate-900/60 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="../" class="flex items-center space-x-2 text-white font-extrabold text-lg hover:text-purple-400 transition">
+        <span>📚 DevShelf</span>
+      </a>
+      <div class="flex items-center space-x-3">
+        <a href="https://donation.rolenest.in" target="_blank" rel="noopener noreferrer" class="text-xs font-bold px-3 py-1.5 rounded-lg bg-pink-950/60 hover:bg-pink-900/80 border border-pink-500/50 text-pink-200 transition">
+          💖 Donate
+        </a>
+        <a href="../#directory" class="text-xs font-semibold px-3 py-1.5 rounded-lg bg-purple-600 hover:bg-purple-500 text-white transition">
+          Browse Directory →
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 py-12 flex-1 w-full">
+    <nav class="text-xs text-slate-400 mb-6 flex items-center space-x-2 font-mono">
+      <a href="../" class="hover:text-purple-400">DevShelf</a>
+      <span>/</span>
+      <span class="text-purple-300 font-bold">Alternatives to ${escapeHtml(targetName)}</span>
+    </nav>
+
+    <div class="mb-10 text-center sm:text-left">
+      <div class="inline-block px-3 py-1 rounded-full text-xs font-mono font-bold bg-amber-950/80 border border-amber-500/40 text-amber-300 mb-3">
+        ⚡ Zero-Paywall Alternatives
+      </div>
+      <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-4">
+        Best Free Alternatives to ${escapeHtml(targetName)}
+      </h1>
+      <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-3xl">
+        Tired of paywalls, subscription price hikes, or forced cloud accounts? Here are <strong>${altTools.length} verified free &amp; open-source alternatives to ${escapeHtml(targetName)}</strong> with generous free tiers or local self-hosting.
+      </p>
+    </div>
+
+    <div class="space-y-6">
+      ${cardsHtml}
+    </div>
+
+    <div class="mt-12 p-6 rounded-2xl bg-slate-900 border border-slate-800 text-center space-y-3">
+      <h3 class="text-lg font-bold text-white">Know another great alternative to ${escapeHtml(targetName)}?</h3>
+      <p class="text-xs text-slate-400 max-w-xl mx-auto">Help thousands of engineers save money and find better tools. DevShelf is open-source and welcomes contributions.</p>
+      <a href="https://github.com/RitualDev-Lab/DevShelf#how-to-submit-a-tool" target="_blank" rel="noopener noreferrer" class="inline-block px-4 py-2 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold transition">
+        ➕ Submit a Tool to DevShelf
+      </a>
+    </div>
+  </main>
+
+  <footer class="border-t border-slate-800 bg-slate-900/40 py-6 text-center text-xs text-slate-400 space-y-2">
+    <p>Curated with ❤️ by <a href="https://github.com/RitualDev-Lab" class="text-purple-400 hover:underline">RitualDev-Lab</a> and the global open-source community.</p>
+    <p><a href="https://donation.rolenest.in" target="_blank" rel="noopener noreferrer" class="text-pink-400 hover:text-pink-300 font-semibold transition">💖 Support DevShelf (donation.rolenest.in)</a></p>
+  </footer>
+</body>
+</html>`;
+
+    await fs.writeFile(path.join(alternativesDir, `${slug}.html`), html, "utf8");
+  }
+
+  // =========================================================================
+  // 3. Curated Topic Collections (e.g. site/collections/free-weather-apis.html)
+  // =========================================================================
+  const collectionsDir = path.join(siteDir, "collections");
+  await fs.mkdir(collectionsDir, { recursive: true });
+
+  const collections = [
+    {
+      slug: "free-weather-apis",
+      title: "Best Free Weather APIs (No Credit Card & Generous Tiers) | DevShelf",
+      heading: "Free Public Weather APIs for Developers",
+      desc: "Curated collection of 100% free, reliable weather forecast and radar APIs with no credit card required.",
+      filter: (r: any) =>
+        r.type === "api" &&
+        (r.category?.toLowerCase().includes("weather") ||
+          r.name.toLowerCase().includes("weather") ||
+          r.description?.toLowerCase().includes("weather")),
+    },
+    {
+      slug: "ai-coding-agents",
+      title: "Best Open-Source AI Coding Agents & Local LLMs | DevShelf",
+      heading: "Free & Open Source AI Coding Agents",
+      desc: "Run autonomous agents, local LLMs, and code assistants on your own hardware without paying cloud subscription fees.",
+      filter: (r: any) =>
+        r.type === "ai" ||
+        r.category?.toLowerCase().includes("ai") ||
+        r.category?.toLowerCase().includes("agent") ||
+        r.description?.toLowerCase().includes("llm"),
+    },
+    {
+      slug: "free-mock-apis",
+      title: "Best Free Mock & Testing APIs for Prototyping | DevShelf",
+      heading: "Free Mock APIs & Test Data Services",
+      desc: "Realistic dummy data, REST endpoints, and mock servers for rapid frontend and mobile prototyping.",
+      filter: (r: any) =>
+        r.type === "api" &&
+        (r.category?.toLowerCase().includes("mock") ||
+          r.category?.toLowerCase().includes("dev") ||
+          r.description?.toLowerCase().includes("mock")),
+    },
+    {
+      slug: "self-hostable-docker-tools",
+      title: "Best Self-Hostable Developer Tools (1-Click Docker Compose) | DevShelf",
+      heading: "Self-Hostable Developer Utilities & BaaS",
+      desc: "Own your data. Verified open-source developer platforms and tools that can be launched with a single docker-compose.yml file.",
+      filter: (r: any) => Boolean(r.dockerCompose),
+    },
+    {
+      slug: "free-serverless-databases",
+      title: "Best Free Cloud & Serverless Databases (Postgres, SQLite, Redis) | DevShelf",
+      heading: "Free Serverless & Cloud Databases",
+      desc: "Databases with generous permanent free tiers for side projects, production apps, and prototypes.",
+      filter: (r: any) =>
+        (r.type === "cloud" || r.category?.toLowerCase().includes("database")) &&
+        (r.description?.toLowerCase().includes("postgres") ||
+          r.description?.toLowerCase().includes("database") ||
+          r.description?.toLowerCase().includes("sql") ||
+          r.description?.toLowerCase().includes("redis")),
+    },
+  ];
+
+  console.log(
+    `🌐 [DevShelf SEO Engine] Generating ${collections.length} curated topic collections...`,
+  );
+
+  for (const col of collections) {
+    const colTools = resources.filter(col.filter);
+    const pageUrl = `${domain}/collections/${col.slug}.html`;
+
+    sitemapUrls.push(
+      `  <url>\n    <loc>${pageUrl}</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.9</priority>\n  </url>`,
+    );
+
+    const jsonLd = {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      name: col.heading,
+      description: col.desc,
+      numberOfItems: colTools.length,
+      itemListElement: colTools.map((t, idx) => ({
+        "@type": "ListItem",
+        position: idx + 1,
+        item: {
+          "@type": "SoftwareApplication",
+          name: t.name,
+          description: t.description,
+          url: t.url || t.repo,
+          offers: {
+            "@type": "Offer",
+            price: "0",
+            priceCurrency: "USD",
+          },
+        },
+      })),
+    };
+
+    const cardsHtml = colTools
+      .map((tool) => {
+        const toolUrl = tool.url || tool.repo || "";
+        const toolSlug = slugify(tool.name);
+        return `
+        <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 shadow-xl hover:border-purple-500/50 transition">
+          <div class="flex items-start justify-between flex-wrap gap-2 mb-3">
+            <div>
+              <h3 class="text-xl font-bold text-white">
+                <a href="../tools/${toolSlug}.html" class="hover:text-purple-300 transition">${escapeHtml(tool.name)}</a>
+              </h3>
+              <span class="text-xs font-mono text-purple-400">${escapeHtml(tool.category || "Tool")}</span>
+            </div>
+            <a href="${escapeHtml(toolUrl)}" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold transition">
+              Visit Tool →
+            </a>
+          </div>
+          <p class="text-sm text-slate-300 leading-relaxed mb-4">${escapeHtml(tool.description)}</p>
+          <div class="flex flex-wrap gap-2 text-xs font-mono">
+            <span class="px-2.5 py-1 rounded-lg bg-emerald-950/80 text-emerald-300 border border-emerald-500/30">💎 Free: ${escapeHtml(tool.freeTier || "100% Free / FOSS")}</span>
+            ${tool.auth ? `<span class="px-2.5 py-1 rounded-lg bg-amber-950/80 text-amber-300 border border-amber-500/30">🔑 ${escapeHtml(tool.auth)}</span>` : ""}
+            ${tool.language ? `<span class="px-2.5 py-1 rounded-lg bg-cyan-950/80 text-cyan-300 border border-cyan-500/30">${escapeHtml(tool.language)}</span>` : ""}
+          </div>
+        </div>`;
+      })
+      .join("\n");
+
+    const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>${escapeHtml(col.title)}</title>
+  <meta name="description" content="${escapeHtml(col.desc)}">
+  <link rel="canonical" href="${pageUrl}">
+
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="${pageUrl}">
+  <meta property="og:title" content="${escapeHtml(col.title)}">
+  <meta property="og:description" content="${escapeHtml(col.desc)}">
+  <meta property="og:image" content="https://devshelf.ritualdev.in/og-image.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@RitualDevLab">
+  <meta name="twitter:title" content="${escapeHtml(col.title)}">
+  <meta name="twitter:description" content="${escapeHtml(col.desc)}">
+  <meta name="twitter:image" content="https://devshelf.ritualdev.in/og-image.jpg">
+
+  <script type="application/ld+json">
+  ${JSON.stringify(jsonLd, null, 2)}
+  </script>
+
+  <link rel="stylesheet" href="../tailwind.min.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen flex flex-col justify-between selection:bg-purple-500 selection:text-white">
+  <header class="border-b border-slate-800 bg-slate-900/60 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="../" class="flex items-center space-x-2 text-white font-extrabold text-lg hover:text-purple-400 transition">
+        <span>📚 DevShelf</span>
+      </a>
+      <div class="flex items-center space-x-3">
+        <a href="https://donation.rolenest.in" target="_blank" rel="noopener noreferrer" class="text-xs font-bold px-3 py-1.5 rounded-lg bg-pink-950/60 hover:bg-pink-900/80 border border-pink-500/50 text-pink-200 transition">
+          💖 Donate
+        </a>
+        <a href="../#directory" class="text-xs font-semibold px-3 py-1.5 rounded-lg bg-purple-600 hover:bg-purple-500 text-white transition">
+          Browse Directory →
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 py-12 flex-1 w-full">
+    <nav class="text-xs text-slate-400 mb-6 flex items-center space-x-2 font-mono">
+      <a href="../" class="hover:text-purple-400">DevShelf</a>
+      <span>/</span>
+      <span class="text-purple-300 font-bold">${escapeHtml(col.heading)}</span>
+    </nav>
+
+    <div class="mb-10 text-center sm:text-left">
+      <div class="inline-block px-3 py-1 rounded-full text-xs font-mono font-bold bg-cyan-950/80 border border-cyan-500/40 text-cyan-300 mb-3">
+        📂 Curated DevShelf Collection (${colTools.length} Tools)
+      </div>
+      <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-4">
+        ${escapeHtml(col.heading)}
+      </h1>
+      <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-3xl">
+        ${escapeHtml(col.desc)}
+      </p>
+    </div>
+
+    <div class="space-y-6">
+      ${cardsHtml}
+    </div>
+
+    <div class="mt-12 p-6 rounded-2xl bg-slate-900 border border-slate-800 text-center space-y-3">
+      <h3 class="text-lg font-bold text-white">Have a tool to add to this collection?</h3>
+      <p class="text-xs text-slate-400 max-w-xl mx-auto">DevShelf is 100% community-driven. Add your project or suggest another zero-paywall gem.</p>
+      <a href="https://github.com/RitualDev-Lab/DevShelf#how-to-submit-a-tool" target="_blank" rel="noopener noreferrer" class="inline-block px-4 py-2 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold transition">
+        ➕ Submit a Tool to DevShelf
+      </a>
+    </div>
+  </main>
+
+  <footer class="border-t border-slate-800 bg-slate-900/40 py-6 text-center text-xs text-slate-400 space-y-2">
+    <p>Curated with ❤️ by <a href="https://github.com/RitualDev-Lab" class="text-purple-400 hover:underline">RitualDev-Lab</a> and the global open-source community.</p>
+    <p><a href="https://donation.rolenest.in" target="_blank" rel="noopener noreferrer" class="text-pink-400 hover:text-pink-300 font-semibold transition">💖 Support DevShelf (donation.rolenest.in)</a></p>
+  </footer>
+</body>
+</html>`;
+
+    await fs.writeFile(path.join(collectionsDir, `${col.slug}.html`), html, "utf8");
+  }
+
   // Generate site/sitemap.xml
   const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

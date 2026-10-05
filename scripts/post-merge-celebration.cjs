@@ -23,12 +23,12 @@ module.exports = async function postMergeCelebration({ github, context }) {
 
   // Check if submitted on behalf of someone via the issue form
   const submitterMatch = prBody.match(/Submitted by @([a-zA-Z0-9_-]+)/i);
-  if (submitterMatch && submitterMatch[1]) {
+  if (submitterMatch?.[1]) {
     contributor = submitterMatch[1];
   }
 
   // Detect which items were added in shelf/*.json
-  let addedItems = [];
+  const addedItems = [];
   try {
     const filesList = await github.rest.pulls.listFiles({
       owner: context.repo.owner,
@@ -56,7 +56,7 @@ module.exports = async function postMergeCelebration({ github, context }) {
   // Fallback: search title or body for tool name
   if (addedItems.length === 0) {
     const titleMatch = prTitle.match(/add (?:submission from #\d+|([A-Za-z0-9_-]+))/i);
-    if (titleMatch && titleMatch[1]) {
+    if (titleMatch?.[1]) {
       addedItems.push({ name: titleMatch[1] });
     }
   }
@@ -78,7 +78,7 @@ module.exports = async function postMergeCelebration({ github, context }) {
     `Your submission of **${toolName}** has passed all schema, duplicate, and endpoint integrity audits and is now merged into \`main\`!`,
     "",
     "### 🌐 Permanent Live Listing",
-    `Your project has a dedicated, high-ranking SEO landing page with verified zero-paywall status:`,
+    "Your project has a dedicated, high-ranking SEO landing page with verified zero-paywall status:",
     `👉 **[View ${toolName} on DevShelf](${toolPageUrl})**`,
     "",
     "---",
@@ -104,7 +104,7 @@ module.exports = async function postMergeCelebration({ github, context }) {
     "",
     "### 📢 Amplify & Get Discovered",
     `- 🐦 **[Click here to share the news on X / Twitter](${tweetUrl})** to get amplified by @RitualDevLab`,
-    `- ⭐ Give **[RitualDev-Lab/DevShelf](https://github.com/RitualDev-Lab/DevShelf)** a star on GitHub to help more developers discover great open-source tools!`,
+    "- ⭐ Give **[RitualDev-Lab/DevShelf](https://github.com/RitualDev-Lab/DevShelf)** a star on GitHub to help more developers discover great open-source tools!",
     "",
     "Welcome to the community! 🤝",
   ].join("\n");
@@ -124,8 +124,8 @@ module.exports = async function postMergeCelebration({ github, context }) {
 
   // Also post on the resolved issue if one is linked (e.g. Resolves #54)
   const resolvedIssueMatch = prBody.match(/Resolves #(\d+)/i);
-  if (resolvedIssueMatch && resolvedIssueMatch[1]) {
-    const issueNum = parseInt(resolvedIssueMatch[1], 10);
+  if (resolvedIssueMatch?.[1]) {
+    const issueNum = Number.parseInt(resolvedIssueMatch[1], 10);
     try {
       await github.rest.issues.createComment({
         owner: context.repo.owner,

@@ -126,6 +126,9 @@
           <span>🔀 My Stack</span>
           <span id="nav-stack-badge" class="hidden px-1.5 py-0.2 bg-cyan-400 text-slate-950 rounded-full text-[10px] font-extrabold">0</span>
         </button>
+        <button id="nav-random-btn" class="hover:text-amber-300 transition flex items-center space-x-1 text-slate-200 font-bold" title="Pick a Random Developer Tool (r)">
+          <span>🎲 Random</span>
+        </button>
         <a href="#team" class="hover:text-purple-300 transition">👥 Team</a>
         <a href="https://github.com/RitualDev-Lab/DevShelf/wiki" target="_blank" rel="noreferrer" class="hover:text-purple-300 transition">📖 Wiki</a>
         <a href="api/v1/tools.json" target="_blank" rel="noreferrer" class="hover:text-cyan-300 transition flex items-center space-x-1" title="DevShelf Public REST API">
@@ -183,6 +186,9 @@
         </button>
         <button id="mobile-stack-btn" class="mobile-nav-item flex items-center space-x-2 p-2.5 rounded-xl bg-cyan-950/40 border border-cyan-500/40 text-cyan-200 text-left font-bold">
           <span>🔀 My Stack</span>
+        </button>
+        <button id="mobile-random-btn" class="mobile-nav-item flex items-center space-x-2 p-2.5 rounded-xl bg-amber-950/40 border border-amber-500/40 text-amber-200 text-left font-bold">
+          <span>🎲 Surprise Me</span>
         </button>
         <a href="#team" class="mobile-nav-item flex items-center space-x-2 p-2.5 rounded-xl bg-slate-900/80 hover:bg-slate-800 text-slate-200 border border-slate-800">
           <span>👥 Team</span>
@@ -253,6 +259,9 @@
           <span class="liquid-metal-arrow text-cyan-400">↓</span>
         </div>
       </a>
+      <button id="hero-random-btn" class="inline-flex items-center space-x-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-amber-500/20 via-orange-500/20 to-amber-500/20 hover:from-amber-500/30 hover:to-orange-500/30 border border-amber-500/50 text-amber-200 font-bold transition shadow-md shadow-amber-500/10 hover:scale-105 active:scale-95" title="Discover a Random Tool (Shortcut: r)">
+        <span>🎲 Surprise Me (Random Tool)</span>
+      </button>
       <button id="hero-matchmaker-btn" class="inline-flex items-center space-x-2 px-4 py-2.5 rounded-xl bg-emerald-950/80 hover:bg-emerald-900 border border-emerald-500/60 text-emerald-200 font-bold transition shadow-md shadow-emerald-500/20">
         <span>🤝 Contributor Matchmaker</span>
       </button>
@@ -380,8 +389,11 @@
       </div>
 
       <!-- Sort & Display Controls -->
-      <div class="flex items-center space-x-3 text-xs">
-        <span class="text-slate-300 font-semibold hidden sm:inline">Sort by:</span>
+      <div class="flex items-center space-x-2.5 text-xs">
+        <button id="controls-random-btn" class="px-3 py-2 bg-gradient-to-r from-amber-500/10 via-orange-500/10 to-amber-500/10 hover:from-amber-500/20 hover:to-orange-500/20 border border-amber-500/40 rounded-xl text-amber-200 text-xs font-bold transition flex items-center space-x-1.5 shadow-sm" title="Discover a Random Tool (Shortcut: r)">
+          <span>🎲 Random</span>
+        </button>
+        <span class="text-slate-300 font-semibold hidden sm:inline">Sort:</span>
         <select id="sort-select" class="px-3 py-2 bg-slate-900 border border-slate-700 rounded-xl text-slate-100 text-xs font-bold focus:outline-none focus:ring-2 focus:ring-purple-500">
           <option value="featured">⭐ Featured First</option>
           <option value="name-asc">🔤 Name (A → Z)</option>
@@ -996,6 +1008,48 @@
       <!-- Injected dynamically via app.js -->
     </div>
   </aside>
+
+  <!-- Random Tool Discovery Modal -->
+  <div id="random-tool-modal" class="fixed inset-0 z-50 bg-slate-950/85 backdrop-blur-md hidden items-center justify-center p-4">
+    <div class="bg-slate-900 border border-purple-500/50 rounded-3xl max-w-xl w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] flex flex-col animate-fadeIn">
+      <!-- Modal Header -->
+      <div class="flex items-center justify-between pb-4 border-b border-slate-800">
+        <div class="flex items-center space-x-2.5">
+          <span class="text-2xl p-2 rounded-2xl bg-amber-500/20 border border-amber-500/40">🎲</span>
+          <div>
+            <h3 class="text-lg font-extrabold text-white">Random Developer Gem</h3>
+            <p class="text-xs text-slate-400">Curated from 520+ verified zero-paywall resources</p>
+          </div>
+        </div>
+        <button id="close-random-modal-btn" class="text-slate-400 hover:text-white text-lg p-1.5 rounded-lg hover:bg-slate-800 transition" aria-label="Close Random Tool Modal">✕</button>
+      </div>
+
+      <!-- Content Area -->
+      <div class="py-6 flex-1 overflow-y-auto" id="random-tool-content">
+        <!-- Rendered dynamically via app.js -->
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="pt-4 border-t border-slate-800 flex items-center justify-between gap-2 flex-wrap">
+        <div class="flex items-center space-x-2">
+          <button id="random-reroll-btn" class="px-4 py-2 text-xs font-bold rounded-xl bg-purple-900/40 hover:bg-purple-900/70 border border-purple-500/50 text-purple-200 transition flex items-center space-x-1.5 active:scale-95">
+            <span>🎲 Roll Again</span>
+          </button>
+          <button id="random-share-tweet-btn" class="px-3.5 py-2 text-xs font-bold rounded-xl bg-sky-950/60 hover:bg-sky-900/80 border border-sky-500/50 text-sky-200 transition flex items-center space-x-1.5" title="Share on X">
+            <span>🐦 Share on X</span>
+          </button>
+        </div>
+        <div class="flex items-center space-x-2">
+          <button id="random-copy-btn" class="px-3.5 py-2 text-xs font-bold rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition flex items-center space-x-1.5">
+            <span>📋 Copy Link</span>
+          </button>
+          <a id="random-visit-link" href="#" target="_blank" rel="noopener noreferrer" class="px-4 py-2 text-xs font-bold rounded-xl bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-500 hover:to-cyan-500 text-white transition shadow-md shadow-purple-600/30 flex items-center space-x-1.5">
+            <span>🚀 Visit Tool →</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Stack Exporter Modal -->
   <div id="stack-modal" class="fixed inset-0 z-50 bg-slate-950/85 backdrop-blur-md hidden items-center justify-center p-4">

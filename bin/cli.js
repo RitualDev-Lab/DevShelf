@@ -195,6 +195,7 @@ ${c.bold}USAGE:${c.reset}
   ${c.green}npx devshelf list [category]${c.reset}     List items by category
   ${c.green}npx devshelf random${c.reset}              Discover a random curated resource
   ${c.green}npx devshelf stats${c.reset}               Show catalog counts and metrics
+  ${c.green}npx devshelf mcp${c.reset}                 Launch DevShelf as a Model Context Protocol (MCP) server
   ${c.green}npx devshelf open <name>${c.reset}          Open resource URL directly in browser
 
 ${c.bold}OPTIONS:${c.reset}
@@ -507,7 +508,7 @@ async function main() {
   }
 
   if (args.includes("-v") || args.includes("--version")) {
-    console.log("devshelf v1.0.0");
+    console.log("devshelf v1.1.0");
     return;
   }
 
@@ -739,6 +740,12 @@ async function main() {
     const url = getResourceUrl(item);
     console.log(`  🚀 Opening ${item.name} (${url})...`);
     openUrl(url);
+    return;
+  }
+
+  if (command === "mcp") {
+    const { startMcpServer } = await import("./mcp.js");
+    startMcpServer();
     return;
   }
 
