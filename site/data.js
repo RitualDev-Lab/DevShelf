@@ -1,5 +1,5 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-10-06T20:13:11.649Z",
+  "updatedAt": "2026-10-06T23:57:51.686Z",
   "totalCount": 523,
   "reposCount": 325,
   "facets": {
@@ -4136,13 +4136,14 @@ window.DEVSHELF_DATA = {
       "url": "https://restcountries.com",
       "category": "Geocoding & IP",
       "description": "Get detailed information about world countries (flags, borders, capitals, currencies, languages) via REST.",
-      "auth": "No Key",
+      "auth": "Free API Key",
       "cors": "Yes",
-      "rateLimit": "Unlimited",
+      "rateLimit": "1,000 req/mo",
       "https": true,
       "statusTags": [
         "No Card Required",
-        "CI Verified"
+        "CI Verified",
+        "Rate-Limited"
       ],
       "type": "api",
       "section": "Free & Public APIs"

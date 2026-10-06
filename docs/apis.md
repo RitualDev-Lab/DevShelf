@@ -120,7 +120,7 @@
 | API & URL | Auth | Rate Limit | Description |
 | :--- | :---: | :---: | :--- |
 | [**ipapi.co**](https://ipapi.co) | 🟢 No Key | `1,000 req/day` | Real-time IP geolocation and network threat intelligence API returning JSON country, city, timezone, and ASN data. |
-| [**Rest Countries**](https://restcountries.com) | 🟢 No Key | `Unlimited` | Get detailed information about world countries (flags, borders, capitals, currencies, languages) via REST. |
+| [**Rest Countries**](https://restcountries.com) | 🔑 Free Key | `1,000 req/mo` | Get detailed information about world countries (flags, borders, capitals, currencies, languages) via REST. |
 | [**ipify**](https://www.ipify.org) | 🟢 No Key | `Unlimited` | A simple public IP address API with guaranteed 99.99% uptime and zero setup. |
 | [**Nominatim OpenStreetMap**](https://nominatim.openstreetmap.org) | 🟢 No Key | `1 req/sec` | Open-source search engine for OpenStreetMap data, providing forward and reverse geocoding. |
 | [**IP-API**](https://ip-api.com) | 🟢 No Key | `45 req/min` | Real-time IP geolocation API returning country, city, ISP, coordinates, and timezone in fast JSON format. |
