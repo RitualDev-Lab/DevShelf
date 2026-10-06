@@ -382,6 +382,13 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
       </a><br />
       <sub>⚖️ Court Rules (PR #63)</sub>
     </td>
+    <td align="center" width="160">
+      <a href="https://github.com/stefanautomateed">
+        <img src="https://github.com/stefanautomateed.png" width="70" style="border-radius: 50%;" alt="stefanautomateed"/><br />
+        <sub><b>stefanautomateed</b></sub>
+      </a><br />
+      <sub>🚢 Shipvela (PR #65)</sub>
+    </td>
   </tr>
 </table>
 
