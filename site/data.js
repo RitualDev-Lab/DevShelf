@@ -1,13 +1,13 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-10-05T23:53:00.892Z",
-  "totalCount": 522,
-  "reposCount": 324,
+  "updatedAt": "2026-10-06T11:37:24.426Z",
+  "totalCount": 523,
+  "reposCount": 325,
   "facets": {
-    "repos": 324
+    "repos": 325
   },
   "counts": {
     "aiTools": 89,
-    "cliTools": 111,
+    "cliTools": 112,
     "testingQa": 62,
     "apis": 97,
     "freeCloud": 71,
@@ -3249,6 +3249,17 @@ window.DEVSHELF_DATA = {
       "description": "Local-first TypeScript CLI and MCP toolkit for coding agents to compose, edit, and assemble videos from editable plan.json timelines. Core editing and transcription need no API keys; optional generation features use your own provider keys.",
       "language": "TypeScript",
       "license": "MIT",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "Shipvela publishing plugin and skills",
+      "repo": "https://github.com/stefanautomateed/shipvela-codex",
+      "category": "CLI & Developer Productivity",
+      "description": "MIT-licensed publishing skills and client configuration for coding agents to connect to Shipvela's OAuth MCP service, stage public website files for owner review, and track deployment status and logs. They cover website publishing from existing coding-agent workflows; they do not generate code or provide a self-hosted server.",
+      "language": "Markdown skills, JSON client/plugin manifests, CLI workflow documentation",
+      "license": "MIT: https://github.com/stefanautomateed/shipvela-codex/blob/main/LICENSE",
       "featured": false,
       "type": "cli",
       "section": "CLI & Productivity Tools"
