@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-10-06T23:57:51.686Z",
+  "updatedAt": "2026-10-07T10:12:02.216Z",
   "totalCategories": 8,
   "categories": [
     {
@@ -18,7 +18,7 @@
     {
       "slug": "apis",
       "name": "Free Public APIs",
-      "count": 97,
+      "count": 98,
       "endpoint": "https://devshelf.ritualdev.in/api/v1/categories/apis.json"
     },
     {

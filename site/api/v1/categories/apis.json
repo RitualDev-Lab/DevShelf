@@ -1,9 +1,9 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-10-06T23:57:51.686Z",
+  "updatedAt": "2026-10-07T10:12:02.216Z",
   "slug": "apis",
   "name": "Free Public APIs",
-  "count": 97,
+  "count": 98,
   "items": [
     {
       "name": "Open-Meteo",
@@ -1554,6 +1554,18 @@
       "auth": "Free API Key",
       "cors": "Unknown",
       "rateLimit": "Generous Free Tier",
+      "https": true,
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Arcmira: YouTube Transcript Search",
+      "url": "https://arcmira.com/docs",
+      "category": "Entertainment & Media",
+      "description": "Search indexed YouTube transcripts by topic and return passages with source links and timestamps. Also retrieve caption transcripts and resolve people, channels and videos. Indexed coverage is partial. Paid plans add features such as Premium transcripts and sponsor research; these are distinct from the Free tier.\n\nHomepage: https://arcmira.com\nOpenAPI: https://api.arcmira.com/v1/openapi.json",
+      "auth": "Free API Key",
+      "cors": "Unknown",
+      "rateLimit": "60 requests per minute per key; 1,000 included credits per month. First five search passages per request use zero credits. The Free plan withholds the newest 30 days and later result pages. No card required; Free is not a time-limited trial.\n\nCurrent limits: https://arcmira.com/docs/usage-and-billing",
       "https": true,
       "type": "api",
       "section": "Free & Public APIs"

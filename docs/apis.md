@@ -4,10 +4,10 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total APIs](https://img.shields.io/badge/APIs-97_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total APIs](https://img.shields.io/badge/APIs-98_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
-[AI & Machine Learning](#ai-machine-learning) • [Animals & Fun](#animals-fun) • [Books & Literature](#books-literature) • [Development & Testing](#development-testing) • [Finance & Crypto](#finance-crypto) • [Food & Health](#food-health) • [Games & Media](#games-media) • [Geocoding & IP](#geocoding-ip) • [Media & Images](#media-images) • [News & Media](#news-media) • [Other](#other) • [Science & Astronomy](#science-astronomy) • [Travel & Transit](#travel-transit) • [Weather & Climate](#weather-climate)
+[AI & Machine Learning](#ai-machine-learning) • [Animals & Fun](#animals-fun) • [Books & Literature](#books-literature) • [Development & Testing](#development-testing) • [Entertainment & Media](#entertainment-media) • [Finance & Crypto](#finance-crypto) • [Food & Health](#food-health) • [Games & Media](#games-media) • [Geocoding & IP](#geocoding-ip) • [Media & Images](#media-images) • [News & Media](#news-media) • [Other](#other) • [Science & Astronomy](#science-astronomy) • [Travel & Transit](#travel-transit) • [Weather & Climate](#weather-climate)
 
 ---
 
@@ -81,6 +81,12 @@
 | [**Agify API**](https://api.agify.io) | 🟢 No Key | `1,000 req/day` | Predict age from first names based on statistical demographic modeling. |
 | [**Nationalize API**](https://api.nationalize.io) | 🟢 No Key | `1,000 req/day` | Predict nationality from names returning top country codes and confidence scores. |
 | [**Public APIs Index**](https://api.publicapis.org) | 🟢 No Key | `Unlimited` | Queryable directory of hundreds of free public APIs categorized by topic and authentication requirements. |
+
+### <a id="entertainment-media"></a>Entertainment & Media (1)
+
+| API & URL | Auth | Rate Limit | Description |
+| :--- | :---: | :---: | :--- |
+| [**Arcmira: YouTube Transcript Search**](https://arcmira.com/docs) | 🔑 Free Key | `60 requests per minute per key; 1,000 included credits per month. First five search passages per request use zero credits. The Free plan withholds the newest 30 days and later result pages. No card required; Free is not a time-limited trial.  Current limits: https://arcmira.com/docs/usage-and-billing` | Search indexed YouTube transcripts by topic and return passages with source links and timestamps. Also retrieve caption transcripts and resolve people, channels and videos. Indexed coverage is partial. Paid plans add features such as Premium transcripts and sponsor research; these are distinct from the Free tier.  Homepage: https://arcmira.com OpenAPI: https://api.arcmira.com/v1/openapi.json |
 
 ### <a id="finance-crypto"></a>Finance & Crypto (6)
 
