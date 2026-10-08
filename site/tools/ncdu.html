@@ -7,6 +7,8 @@
   <meta name="description" content="Disk usage analyzer with an ncurses interface, designed to find space hogs on remote servers.">
   <meta name="keywords" content="ncdu, free alternative to Disk Inventory X / DaisyDisk, open source alternative to Disk Inventory X / DaisyDisk, Disk Inventory X / DaisyDisk alternative, OS &amp; Hardware Utilities, developer tools">
   <link rel="canonical" href="https://devshelf.ritualdev.in/tools/ncdu.html">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="alternate" type="text/plain" href="../llms.txt" title="DevShelf LLMs.txt Context for AI Agents">
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="../favicon.ico">
@@ -34,35 +36,68 @@
   <script type="application/ld+json">
   {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "ncdu",
-  "description": "Disk usage analyzer with an ncurses interface, designed to find space hogs on remote servers.",
-  "applicationCategory": "OS & Hardware Utilities",
-  "operatingSystem": "All",
-  "isAccessibleForFree": true,
-  "url": "https://code.blicky.net/yorhel/ncdu",
-  "mainEntityOfPage": "https://devshelf.ritualdev.in/tools/ncdu.html",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD",
-    "availability": "https://schema.org/InStock",
-    "description": "Verified permanent free or open-source tier"
-  },
-  "license": "MIT",
-  "programmingLanguage": "C",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "128",
-    "bestRating": "5",
-    "worstRating": "1"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "DevShelf by RitualDev Lab",
-    "url": "https://devshelf.ritualdev.in"
-  }
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "ncdu",
+      "description": "Disk usage analyzer with an ncurses interface, designed to find space hogs on remote servers.",
+      "applicationCategory": "OS & Hardware Utilities",
+      "operatingSystem": "All",
+      "isAccessibleForFree": true,
+      "url": "https://code.blicky.net/yorhel/ncdu",
+      "mainEntityOfPage": "https://devshelf.ritualdev.in/tools/ncdu.html",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "description": "Verified permanent free or open-source tier"
+      },
+      "license": "MIT",
+      "programmingLanguage": "C",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "128",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "DevShelf by RitualDev Lab",
+        "url": "https://devshelf.ritualdev.in"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is ncdu really free to use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. ncdu is verified on DevShelf under the MIT license. Pricing: 100% Free / FOSS with no upfront credit card requirement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes ncdu a free alternative to Disk Inventory X / DaisyDisk?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ncdu provides core developer capabilities comparable to Disk Inventory X / DaisyDisk while prioritizing free access, open-source transparency, and avoiding proprietary subscription paywalls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the authentication and access requirements for ncdu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No mandatory credit card or paywalled account needed to get started."
+          }
+        }
+      ]
+    }
+  ]
 }
   </script>
 
@@ -177,6 +212,40 @@
               </div>
               <span class="text-xs text-purple-400 group-hover:translate-x-0.5 transition font-mono shrink-0">→</span>
             </a>
+        </div>
+      </div>
+      
+      <div class="mt-8 pt-6 border-t border-slate-800">
+        <h3 class="text-xs font-mono font-bold text-slate-400 uppercase tracking-wider mb-4">💬 Frequently Asked Questions (AI & Developer Summary)</h3>
+        <div class="space-y-3">
+          
+            <details class="p-4 rounded-xl bg-slate-950/70 border border-slate-800 group" open>
+              <summary class="font-bold text-xs sm:text-sm text-slate-200 cursor-pointer flex items-center justify-between">
+                <span>Is ncdu really free to use?</span>
+                <span class="text-purple-400 text-xs font-mono group-open:rotate-180 transition">▼</span>
+              </summary>
+              <p class="mt-2 text-xs text-slate-400 leading-relaxed font-sans">
+                Yes. ncdu is verified on DevShelf under the MIT license. Pricing: 100% Free / FOSS with no upfront credit card requirement.
+              </p>
+            </details>
+            <details class="p-4 rounded-xl bg-slate-950/70 border border-slate-800 group" >
+              <summary class="font-bold text-xs sm:text-sm text-slate-200 cursor-pointer flex items-center justify-between">
+                <span>What makes ncdu a free alternative to Disk Inventory X / DaisyDisk?</span>
+                <span class="text-purple-400 text-xs font-mono group-open:rotate-180 transition">▼</span>
+              </summary>
+              <p class="mt-2 text-xs text-slate-400 leading-relaxed font-sans">
+                ncdu provides core developer capabilities comparable to Disk Inventory X / DaisyDisk while prioritizing free access, open-source transparency, and avoiding proprietary subscription paywalls.
+              </p>
+            </details>
+            <details class="p-4 rounded-xl bg-slate-950/70 border border-slate-800 group" >
+              <summary class="font-bold text-xs sm:text-sm text-slate-200 cursor-pointer flex items-center justify-between">
+                <span>What are the authentication and access requirements for ncdu?</span>
+                <span class="text-purple-400 text-xs font-mono group-open:rotate-180 transition">▼</span>
+              </summary>
+              <p class="mt-2 text-xs text-slate-400 leading-relaxed font-sans">
+                No mandatory credit card or paywalled account needed to get started.
+              </p>
+            </details>
         </div>
       </div>
 

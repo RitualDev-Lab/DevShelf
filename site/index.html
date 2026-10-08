@@ -22,6 +22,8 @@
   <meta name="twitter:title" content="DevShelf — The Crowdsourced Developer Directory">
   <meta name="twitter:description" content="Curated developer tools, GitHub repositories, free APIs & perks. 100% free tiers, automated health checks.">
   <meta name="twitter:image" content="https://devshelf.ritualdev.in/og-image.jpg">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="alternate" type="text/plain" href="llms.txt" title="DevShelf LLMs.txt Context for AI Agents">
 
   <!-- Schema.org Programmatic Structured Data -->
   <script type="application/ld+json">
@@ -71,6 +73,36 @@
           "no credit card free tier",
           "AI agents",
           "CLI tools"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://devshelf.ritualdev.in/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is DevShelf?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "DevShelf is an open-source, community-curated directory indexing 520+ verified free developer tools, free public APIs, AI coding agents, and commercial software alternatives with zero paywalls and no credit card traps."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are the developer tools on DevShelf completely free?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Every tool on DevShelf is manually verified by the community to provide a permanent free tier, open-source license, or generous allowance. Tools with hidden 14-day trial traps or mandatory credit cards are flagged and excluded."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can AI agents and LLMs query DevShelf directly?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. DevShelf features an official Model Context Protocol (MCP) server runnable via 'npx devshelf-mcp', a public REST API at 'https://devshelf.ritualdev.in/api/v1/tools.json', and machine-readable context at 'https://devshelf.ritualdev.in/llms.txt'."
+            }
+          }
         ]
       }
     ]

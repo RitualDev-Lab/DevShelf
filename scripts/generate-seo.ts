@@ -66,37 +66,73 @@ async function generateSeo() {
       `  <url>\n    <loc>${pageUrl}</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>`,
     );
 
+    const faqs = [
+      {
+        question: `Is ${name} really free to use?`,
+        answer: `Yes. ${name} is verified on DevShelf under the ${license || "open-source"} license. Pricing: ${freeTier || "100% Free / FOSS"} with no upfront credit card requirement.`,
+      },
+      ...(alternativeTo
+        ? [
+            {
+              question: `What makes ${name} a free alternative to ${alternativeTo}?`,
+              answer: `${name} provides core developer capabilities comparable to ${alternativeTo} while prioritizing free access, open-source transparency, and avoiding proprietary subscription paywalls.`,
+            },
+          ]
+        : []),
+      {
+        question: `What are the authentication and access requirements for ${name}?`,
+        answer: auth
+          ? `Authentication requirement: ${auth}.`
+          : "No mandatory credit card or paywalled account needed to get started.",
+      },
+    ];
+
     const jsonLd = {
       "@context": "https://schema.org",
-      "@type": item.type === "api" ? "WebAPI" : "SoftwareApplication",
-      name: item.name,
-      description: item.description,
-      applicationCategory: item.category,
-      operatingSystem: "All",
-      isAccessibleForFree: true,
-      url: targetUrl,
-      mainEntityOfPage: pageUrl,
-      offers: {
-        "@type": "Offer",
-        price: "0",
-        priceCurrency: "USD",
-        availability: "https://schema.org/InStock",
-        description: item.freeTier || "Verified permanent free or open-source tier",
-      },
-      ...(item.license ? { license: item.license } : {}),
-      ...(item.language ? { programmingLanguage: item.language } : {}),
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.9",
-        reviewCount: "128",
-        bestRating: "5",
-        worstRating: "1",
-      },
-      publisher: {
-        "@type": "Organization",
-        name: "DevShelf by RitualDev Lab",
-        url: "https://devshelf.ritualdev.in",
-      },
+      "@graph": [
+        {
+          "@type": item.type === "api" ? "WebAPI" : "SoftwareApplication",
+          name: item.name,
+          description: item.description,
+          applicationCategory: item.category,
+          operatingSystem: "All",
+          isAccessibleForFree: true,
+          url: targetUrl,
+          mainEntityOfPage: pageUrl,
+          offers: {
+            "@type": "Offer",
+            price: "0",
+            priceCurrency: "USD",
+            availability: "https://schema.org/InStock",
+            description: item.freeTier || "Verified permanent free or open-source tier",
+          },
+          ...(item.license ? { license: item.license } : {}),
+          ...(item.language ? { programmingLanguage: item.language } : {}),
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "128",
+            bestRating: "5",
+            worstRating: "1",
+          },
+          publisher: {
+            "@type": "Organization",
+            name: "DevShelf by RitualDev Lab",
+            url: "https://devshelf.ritualdev.in",
+          },
+        },
+        {
+          "@type": "FAQPage",
+          mainEntity: faqs.map((f) => ({
+            "@type": "Question",
+            name: f.question,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: f.answer,
+            },
+          })),
+        },
+      ],
     };
 
     const dockerSectionHtml = dockerCompose
@@ -161,6 +197,27 @@ async function generateSeo() {
       </div>`
         : "";
 
+    const faqSectionHtml = `
+      <div class="mt-8 pt-6 border-t border-slate-800">
+        <h3 class="text-xs font-mono font-bold text-slate-400 uppercase tracking-wider mb-4">💬 Frequently Asked Questions (AI & Developer Summary)</h3>
+        <div class="space-y-3">
+          ${faqs
+            .map(
+              (f, i) => `
+            <details class="p-4 rounded-xl bg-slate-950/70 border border-slate-800 group" ${i === 0 ? "open" : ""}>
+              <summary class="font-bold text-xs sm:text-sm text-slate-200 cursor-pointer flex items-center justify-between">
+                <span>${escapeHtml(f.question)}</span>
+                <span class="text-purple-400 text-xs font-mono group-open:rotate-180 transition">▼</span>
+              </summary>
+              <p class="mt-2 text-xs text-slate-400 leading-relaxed font-sans">
+                ${escapeHtml(f.answer)}
+              </p>
+            </details>`,
+            )
+            .join("")}
+        </div>
+      </div>`;
+
     const html = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -170,6 +227,8 @@ async function generateSeo() {
   <meta name="description" content="${desc}">
   <meta name="keywords" content="${metaKeywords}">
   <link rel="canonical" href="${pageUrl}">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="alternate" type="text/plain" href="../llms.txt" title="DevShelf LLMs.txt Context for AI Agents">
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="../favicon.ico">
@@ -271,6 +330,7 @@ async function generateSeo() {
       ${dockerSectionHtml}
       ${badgeSectionHtml}
       ${relatedSectionHtml}
+      ${faqSectionHtml}
 
       <div class="mt-8 pt-6 border-t border-slate-800 flex items-center justify-between flex-wrap gap-4">
         <a href="../" class="text-xs text-purple-400 hover:text-purple-300 font-semibold transition">
@@ -347,28 +407,61 @@ async function generateSeo() {
       `  <url>\n    <loc>${pageUrl}</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.9</priority>\n  </url>`,
     );
 
+    const altFaqs = [
+      {
+        question: `What is the best free alternative to ${targetName}?`,
+        answer: `The leading free and open-source alternative to ${targetName} is ${altTools[0].name}. ${altTools[0].description}`,
+      },
+      {
+        question: `Are there open-source alternatives to ${targetName}?`,
+        answer: `Yes, DevShelf indexes ${altTools.length} verified free and open-source alternatives to ${targetName}, including ${altTools
+          .slice(0, 3)
+          .map((t) => t.name)
+          .join(", ")}.`,
+      },
+      {
+        question: `Why switch from ${targetName} to an open-source tool?`,
+        answer: `Switching to open-source alternatives to ${targetName} eliminates recurring subscription costs, vendor lock-in, and account limits while allowing full self-hosting and data privacy.`,
+      },
+    ];
+
     const jsonLd = {
       "@context": "https://schema.org",
-      "@type": "ItemList",
-      name: `Free Alternatives to ${targetName}`,
-      description: desc,
-      numberOfItems: altTools.length,
-      itemListElement: altTools.map((t, idx) => ({
-        "@type": "ListItem",
-        position: idx + 1,
-        item: {
-          "@type": "SoftwareApplication",
-          name: t.name,
-          description: t.description,
-          url: t.url || t.repo,
-          offers: {
-            "@type": "Offer",
-            price: "0",
-            priceCurrency: "USD",
-            availability: "https://schema.org/InStock",
-          },
+      "@graph": [
+        {
+          "@type": "ItemList",
+          name: `Free Alternatives to ${targetName}`,
+          description: desc,
+          numberOfItems: altTools.length,
+          itemListElement: altTools.map((t, idx) => ({
+            "@type": "ListItem",
+            position: idx + 1,
+            item: {
+              "@type": "SoftwareApplication",
+              name: t.name,
+              description: t.description,
+              url: t.url || t.repo,
+              offers: {
+                "@type": "Offer",
+                price: "0",
+                priceCurrency: "USD",
+                availability: "https://schema.org/InStock",
+              },
+            },
+          })),
         },
-      })),
+        {
+          "@type": "FAQPage",
+          mainEntity: altFaqs.map((f) => ({
+            "@type": "Question",
+            name: f.question,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: f.answer,
+            },
+          })),
+        },
+      ],
     };
 
     const cardsHtml = altTools
@@ -397,6 +490,60 @@ async function generateSeo() {
         </div>`;
       })
       .join("\n");
+
+    const matrixTableHtml = `
+      <div class="mb-10 overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/60">
+        <table class="w-full text-left text-xs font-mono">
+          <thead class="bg-slate-950 text-slate-400 uppercase tracking-wider text-[11px] border-b border-slate-800">
+            <tr>
+              <th class="p-3.5">Alternative Tool</th>
+              <th class="p-3.5">Category</th>
+              <th class="p-3.5">Pricing Model</th>
+              <th class="p-3.5">Language / Stack</th>
+              <th class="p-3.5 text-right">Details</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-800/60 text-slate-300">
+            ${altTools
+              .map(
+                (t) => `
+              <tr class="hover:bg-slate-800/40 transition">
+                <td class="p-3.5 font-bold text-white">
+                  <a href="../tools/${slugify(t.name)}.html" class="hover:text-purple-300 transition">${escapeHtml(t.name)}</a>
+                </td>
+                <td class="p-3.5 text-slate-400">${escapeHtml(t.category || "Tool")}</td>
+                <td class="p-3.5 text-emerald-400">${escapeHtml(t.freeTier || "100% Free")}</td>
+                <td class="p-3.5 text-cyan-300">${escapeHtml(t.language || "Multi-platform")}</td>
+                <td class="p-3.5 text-right font-sans">
+                  <a href="../tools/${slugify(t.name)}.html" class="text-purple-400 hover:text-purple-300 font-bold">Specs →</a>
+                </td>
+              </tr>`,
+              )
+              .join("")}
+          </tbody>
+        </table>
+      </div>`;
+
+    const altFaqSectionHtml = `
+      <div class="mt-12 pt-8 border-t border-slate-800">
+        <h3 class="text-xs font-mono font-bold text-slate-400 uppercase tracking-wider mb-4">💬 Frequently Asked Questions about ${escapeHtml(targetName)} Alternatives</h3>
+        <div class="space-y-3">
+          ${altFaqs
+            .map(
+              (f, i) => `
+            <details class="p-4 rounded-xl bg-slate-950/70 border border-slate-800 group" ${i === 0 ? "open" : ""}>
+              <summary class="font-bold text-xs sm:text-sm text-slate-200 cursor-pointer flex items-center justify-between">
+                <span>${escapeHtml(f.question)}</span>
+                <span class="text-purple-400 text-xs font-mono group-open:rotate-180 transition">▼</span>
+              </summary>
+              <p class="mt-2 text-xs text-slate-400 leading-relaxed font-sans">
+                ${escapeHtml(f.answer)}
+              </p>
+            </details>`,
+            )
+            .join("")}
+        </div>
+      </div>`;
 
     const otherAlternatives = Array.from(altMap.entries())
       .filter(([k]) => k !== targetName)
@@ -427,6 +574,8 @@ async function generateSeo() {
   <title>${title}</title>
   <meta name="description" content="${desc}">
   <link rel="canonical" href="${pageUrl}">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="alternate" type="text/plain" href="../llms.txt" title="DevShelf LLMs.txt Context for AI Agents">
 
   <link rel="icon" type="image/x-icon" href="../favicon.ico">
   <link rel="icon" type="image/svg+xml" href="../favicon.svg">
@@ -480,15 +629,30 @@ async function generateSeo() {
       <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-4">
         Best Free Alternatives to ${escapeHtml(targetName)}
       </h1>
-      <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-3xl">
+      <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-3xl mb-6">
         Tired of paywalls, subscription price hikes, or forced cloud accounts? Here are <strong>${altTools.length} verified free &amp; open-source alternatives to ${escapeHtml(targetName)}</strong> with generous free tiers or local self-hosting.
       </p>
+
+      <!-- AI Direct Answer Summary Box -->
+      <div class="p-5 rounded-2xl bg-gradient-to-r from-purple-950/60 to-slate-900 border border-purple-500/40 text-xs sm:text-sm text-slate-200 shadow-xl">
+        <div class="flex items-center space-x-2 mb-2 font-mono text-purple-300 font-bold text-xs">
+          <span>🤖</span>
+          <span>AI DIRECT ANSWER SUMMARY</span>
+        </div>
+        <p class="leading-relaxed">
+          The leading free and open-source alternative to <strong>${escapeHtml(targetName)}</strong> is <strong>${escapeHtml(altTools[0].name)}</strong>: <em>${escapeHtml(altTools[0].description)}</em>. DevShelf indexes <strong>${altTools.length} community-verified alternatives</strong> to ${escapeHtml(targetName)} with generous free tiers, local offline mode, or self-hosted deployment.
+        </p>
+      </div>
     </div>
+
+    <!-- Structured Comparison Matrix Table -->
+    ${matrixTableHtml}
 
     <div class="space-y-6">
       ${cardsHtml}
     </div>
 
+    ${altFaqSectionHtml}
     ${otherAltsHtml}
 
     <div class="mt-12 p-6 rounded-2xl bg-slate-900 border border-slate-800 text-center space-y-3">
@@ -668,6 +832,8 @@ async function generateSeo() {
   <title>${escapeHtml(col.title)}</title>
   <meta name="description" content="${escapeHtml(col.desc)}">
   <link rel="canonical" href="${pageUrl}">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="alternate" type="text/plain" href="../llms.txt" title="DevShelf LLMs.txt Context for AI Agents">
 
   <link rel="icon" type="image/x-icon" href="../favicon.ico">
   <link rel="icon" type="image/svg+xml" href="../favicon.svg">
@@ -842,6 +1008,8 @@ async function generateSeo() {
   <title>Complete Free Developer Tools Directory Index | DevShelf</title>
   <meta name="description" content="Explore the full directory index of ${resources.length} verified free developer tools, APIs, AI agents, and open-source software. Zero paywalls, no trial bait.">
   <link rel="canonical" href="${directoryUrl}">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="alternate" type="text/plain" href="llms.txt" title="DevShelf LLMs.txt Context for AI Agents">
 
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -935,6 +1103,81 @@ async function generateSeo() {
   await fs.writeFile(path.join(siteDir, "directory.html"), directoryHtml, "utf8");
   console.log("✅ Generated site/directory.html master index.");
 
+  // =========================================================================
+  // 5. Emerging LLM Standard: site/llms.txt & site/llms-full.txt
+  // =========================================================================
+  const topAltsMarkdown = Array.from(altMap.entries())
+    .slice(0, 30)
+    .map(
+      ([target, tools]) =>
+        `- [Alternatives to ${target}](${domain}/alternatives/${slugify(target)}.html): ${tools
+          .slice(0, 3)
+          .map((t) => t.name)
+          .join(", ")} (${tools.length} total options)`,
+    )
+    .join("\n");
+
+  const llmsTxt = `# DevShelf: Free Developer Tools & Public APIs Directory
+
+> Curated catalog of ${resources.length} verified free developer tools, public APIs, AI coding agents, and open-source alternatives with zero paywalls.
+
+DevShelf is an open-source, community-driven developer resource ecosystem curated by RitualDev-Lab and developers worldwide. Every resource is manually verified to ensure a permanent free tier, open-source license, or generous allowance with no mandatory credit card or 14-day trial traps.
+
+## Machine & AI Agent Integration
+- **Model Context Protocol (MCP) Server**: Run \`npx devshelf-mcp\` in Claude Desktop, Cursor, Windsurf, or LangChain agents.
+- **REST API**: ${domain}/api/v1/tools.json
+- **Full Catalog Raw Knowledge Base**: ${domain}/llms-full.txt
+- **Master HTML Directory**: ${domain}/directory.html
+- **Sitemap**: ${domain}/sitemap.xml
+
+## Curated Collections
+- [Free Weather APIs](${domain}/collections/free-weather-apis.html): Reliable forecast and radar APIs with no credit card requirement.
+- [AI Coding Agents & Local LLMs](${domain}/collections/ai-coding-agents.html): Autonomous software engineering agents, local LLM runners, and prompt debuggers.
+- [Free Mock & Testing APIs](${domain}/collections/free-mock-apis.html): Realistic dummy data, REST endpoints, and mock servers for rapid prototyping.
+- [Self-Hostable Docker Tools](${domain}/collections/self-hostable-docker-tools.html): 1-click self-hosted platforms via docker-compose.yml.
+- [Free Serverless Databases](${domain}/collections/free-serverless-databases.html): Cloud PostgreSQL, SQLite, and Redis with permanent free tiers.
+
+## Popular Commercial Software Alternatives
+${topAltsMarkdown}
+
+## Catalog Categories
+- **AI & ML**: Local models, vector databases, and LLM tooling.
+- **APIs**: Public, free endpoints for sports, finance, weather, geocoding, and dev utilities.
+- **CLI Tools**: Terminal productivity boosters and developer command-line utilities.
+- **Cloud & BaaS**: Free hosting, databases, and serverless compute.
+- **Testing & QA**: E2E testing, API probing, and browser automation.
+- **Dev Perks**: Student packs, startup credits, and open-source licenses.
+- **Boilerplates**: Production-ready starters for Next.js, FastAPI, Astro, and more.
+`;
+  await fs.writeFile(path.join(siteDir, "llms.txt"), llmsTxt, "utf8");
+  console.log("✅ Generated site/llms.txt for AI agents and LLM search.");
+
+  const llmsFullLines = [
+    "# DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)",
+    "",
+    `> Complete metadata dump of all ${resources.length} free and open-source developer tools indexed on DevShelf.`,
+    `> Authoritative Source: ${domain}`,
+    "> License: MIT",
+    "",
+  ];
+
+  for (const item of resources) {
+    llmsFullLines.push(`### ${item.name}`);
+    llmsFullLines.push(`- **Category**: ${item.category || item.section || "Tool"}`);
+    llmsFullLines.push(`- **Pricing Model**: ${item.freeTier || "100% Free / FOSS"}`);
+    if (item.alternativeTo) llmsFullLines.push(`- **Alternative To**: ${item.alternativeTo}`);
+    if (item.license) llmsFullLines.push(`- **License**: ${item.license}`);
+    if (item.language) llmsFullLines.push(`- **Language**: ${item.language}`);
+    if (item.auth) llmsFullLines.push(`- **Auth**: ${item.auth}`);
+    llmsFullLines.push(`- **URL**: ${item.url || item.repo || ""}`);
+    llmsFullLines.push(`- **DevShelf Dossier**: ${domain}/tools/${slugify(item.name)}.html`);
+    llmsFullLines.push(`- **Description**: ${item.description || ""}`);
+    llmsFullLines.push("");
+  }
+
+  await fs.writeFile(path.join(siteDir, "llms-full.txt"), llmsFullLines.join("\n"), "utf8");
+  console.log("✅ Generated site/llms-full.txt complete AI knowledge base.");
+
   // Generate site/sitemap.xml
   const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -944,14 +1187,39 @@ ${sitemapUrls.join("\n")}
   await fs.writeFile(path.join(siteDir, "sitemap.xml"), sitemapXml, "utf8");
   console.log(`✅ Generated site/sitemap.xml with ${sitemapUrls.length} indexed URLs.`);
 
-  // Generate site/robots.txt
+  // Generate site/robots.txt welcoming AI & search engines
   const robotsTxt = `User-agent: *
+Allow: /
+
+# Dedicated Directives for AI Crawlers and Generative Search
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: OAI-SearchBot
 Allow: /
 
 Sitemap: https://devshelf.ritualdev.in/sitemap.xml
 `;
   await fs.writeFile(path.join(siteDir, "robots.txt"), robotsTxt, "utf8");
-  console.log("✅ Generated site/robots.txt pointing to live sitemap.");
+  console.log("✅ Generated site/robots.txt welcoming AI crawlers and pointing to live sitemap.");
 }
 
 generateSeo().catch((err) => {

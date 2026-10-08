@@ -7,6 +7,8 @@
   <meta name="description" content="Fast, typo-tolerant open-source search engine designed for delightful developer experience and sub-50ms search.">
   <meta name="keywords" content="Typesense, free alternative to Algolia, open source alternative to Algolia, Algolia alternative, Search &amp; Discovery, developer tools">
   <link rel="canonical" href="https://devshelf.ritualdev.in/tools/typesense.html">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="alternate" type="text/plain" href="../llms.txt" title="DevShelf LLMs.txt Context for AI Agents">
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="../favicon.ico">
@@ -34,33 +36,66 @@
   <script type="application/ld+json">
   {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Typesense",
-  "description": "Fast, typo-tolerant open-source search engine designed for delightful developer experience and sub-50ms search.",
-  "applicationCategory": "Search & Discovery",
-  "operatingSystem": "All",
-  "isAccessibleForFree": true,
-  "url": "https://typesense.org",
-  "mainEntityOfPage": "https://devshelf.ritualdev.in/tools/typesense.html",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD",
-    "availability": "https://schema.org/InStock",
-    "description": "100% Free & Open Source GPLv3; Free sandbox environment"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "128",
-    "bestRating": "5",
-    "worstRating": "1"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "DevShelf by RitualDev Lab",
-    "url": "https://devshelf.ritualdev.in"
-  }
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Typesense",
+      "description": "Fast, typo-tolerant open-source search engine designed for delightful developer experience and sub-50ms search.",
+      "applicationCategory": "Search & Discovery",
+      "operatingSystem": "All",
+      "isAccessibleForFree": true,
+      "url": "https://typesense.org",
+      "mainEntityOfPage": "https://devshelf.ritualdev.in/tools/typesense.html",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "description": "100% Free & Open Source GPLv3; Free sandbox environment"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "128",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "DevShelf by RitualDev Lab",
+        "url": "https://devshelf.ritualdev.in"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Typesense really free to use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Typesense is verified on DevShelf under the Free / FOSS license. Pricing: 100% Free &amp; Open Source GPLv3; Free sandbox environment with no upfront credit card requirement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes Typesense a free alternative to Algolia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Typesense provides core developer capabilities comparable to Algolia while prioritizing free access, open-source transparency, and avoiding proprietary subscription paywalls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the authentication and access requirements for Typesense?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No mandatory credit card or paywalled account needed to get started."
+          }
+        }
+      ]
+    }
+  ]
 }
   </script>
 
@@ -175,6 +210,40 @@
               </div>
               <span class="text-xs text-purple-400 group-hover:translate-x-0.5 transition font-mono shrink-0">→</span>
             </a>
+        </div>
+      </div>
+      
+      <div class="mt-8 pt-6 border-t border-slate-800">
+        <h3 class="text-xs font-mono font-bold text-slate-400 uppercase tracking-wider mb-4">💬 Frequently Asked Questions (AI & Developer Summary)</h3>
+        <div class="space-y-3">
+          
+            <details class="p-4 rounded-xl bg-slate-950/70 border border-slate-800 group" open>
+              <summary class="font-bold text-xs sm:text-sm text-slate-200 cursor-pointer flex items-center justify-between">
+                <span>Is Typesense really free to use?</span>
+                <span class="text-purple-400 text-xs font-mono group-open:rotate-180 transition">▼</span>
+              </summary>
+              <p class="mt-2 text-xs text-slate-400 leading-relaxed font-sans">
+                Yes. Typesense is verified on DevShelf under the Free / FOSS license. Pricing: 100% Free &amp;amp; Open Source GPLv3; Free sandbox environment with no upfront credit card requirement.
+              </p>
+            </details>
+            <details class="p-4 rounded-xl bg-slate-950/70 border border-slate-800 group" >
+              <summary class="font-bold text-xs sm:text-sm text-slate-200 cursor-pointer flex items-center justify-between">
+                <span>What makes Typesense a free alternative to Algolia?</span>
+                <span class="text-purple-400 text-xs font-mono group-open:rotate-180 transition">▼</span>
+              </summary>
+              <p class="mt-2 text-xs text-slate-400 leading-relaxed font-sans">
+                Typesense provides core developer capabilities comparable to Algolia while prioritizing free access, open-source transparency, and avoiding proprietary subscription paywalls.
+              </p>
+            </details>
+            <details class="p-4 rounded-xl bg-slate-950/70 border border-slate-800 group" >
+              <summary class="font-bold text-xs sm:text-sm text-slate-200 cursor-pointer flex items-center justify-between">
+                <span>What are the authentication and access requirements for Typesense?</span>
+                <span class="text-purple-400 text-xs font-mono group-open:rotate-180 transition">▼</span>
+              </summary>
+              <p class="mt-2 text-xs text-slate-400 leading-relaxed font-sans">
+                No mandatory credit card or paywalled account needed to get started.
+              </p>
+            </details>
         </div>
       </div>
 

@@ -1,0 +1,60 @@
+# DevShelf: Free Developer Tools & Public APIs Directory
+
+> Curated catalog of 524 verified free developer tools, public APIs, AI coding agents, and open-source alternatives with zero paywalls.
+
+DevShelf is an open-source, community-driven developer resource ecosystem curated by RitualDev-Lab and developers worldwide. Every resource is manually verified to ensure a permanent free tier, open-source license, or generous allowance with no mandatory credit card or 14-day trial traps.
+
+## Machine & AI Agent Integration
+- **Model Context Protocol (MCP) Server**: Run `npx devshelf-mcp` in Claude Desktop, Cursor, Windsurf, or LangChain agents.
+- **REST API**: https://devshelf.ritualdev.in/api/v1/tools.json
+- **Full Catalog Raw Knowledge Base**: https://devshelf.ritualdev.in/llms-full.txt
+- **Master HTML Directory**: https://devshelf.ritualdev.in/directory.html
+- **Sitemap**: https://devshelf.ritualdev.in/sitemap.xml
+
+## Curated Collections
+- [Free Weather APIs](https://devshelf.ritualdev.in/collections/free-weather-apis.html): Reliable forecast and radar APIs with no credit card requirement.
+- [AI Coding Agents & Local LLMs](https://devshelf.ritualdev.in/collections/ai-coding-agents.html): Autonomous software engineering agents, local LLM runners, and prompt debuggers.
+- [Free Mock & Testing APIs](https://devshelf.ritualdev.in/collections/free-mock-apis.html): Realistic dummy data, REST endpoints, and mock servers for rapid prototyping.
+- [Self-Hostable Docker Tools](https://devshelf.ritualdev.in/collections/self-hostable-docker-tools.html): 1-click self-hosted platforms via docker-compose.yml.
+- [Free Serverless Databases](https://devshelf.ritualdev.in/collections/free-serverless-databases.html): Cloud PostgreSQL, SQLite, and Redis with permanent free tiers.
+
+## Popular Commercial Software Alternatives
+- [Alternatives to GitHub Copilot](https://devshelf.ritualdev.in/alternatives/github-copilot.html): Ollama, Tabby, OpenCodeInterpreter (3 total options)
+- [Alternatives to OpenAI API](https://devshelf.ritualdev.in/alternatives/openai-api.html): Ollama, LocalAI (2 total options)
+- [Alternatives to Triton Inference Server](https://devshelf.ritualdev.in/alternatives/triton-inference-server.html): vLLM, TGI (Text Generation Inference) (2 total options)
+- [Alternatives to Chatbase](https://devshelf.ritualdev.in/alternatives/chatbase.html): AnythingLLM (1 total options)
+- [Alternatives to TypingMind](https://devshelf.ritualdev.in/alternatives/typingmind.html): AnythingLLM (1 total options)
+- [Alternatives to Flowise](https://devshelf.ritualdev.in/alternatives/flowise.html): Langflow (1 total options)
+- [Alternatives to Dify](https://devshelf.ritualdev.in/alternatives/dify.html): Langflow (1 total options)
+- [Alternatives to ChatGPT Plus](https://devshelf.ritualdev.in/alternatives/chatgpt-plus.html): LibreChat (1 total options)
+- [Alternatives to Claude Pro](https://devshelf.ritualdev.in/alternatives/claude-pro.html): LibreChat (1 total options)
+- [Alternatives to Devin](https://devshelf.ritualdev.in/alternatives/devin.html): OpenHands (1 total options)
+- [Alternatives to Copilot Workspace](https://devshelf.ritualdev.in/alternatives/copilot-workspace.html): OpenHands (1 total options)
+- [Alternatives to ChatGPT Enterprise](https://devshelf.ritualdev.in/alternatives/chatgpt-enterprise.html): PrivateGPT (1 total options)
+- [Alternatives to Rewind AI](https://devshelf.ritualdev.in/alternatives/rewind-ai.html): Khoj (1 total options)
+- [Alternatives to Notion AI](https://devshelf.ritualdev.in/alternatives/notion-ai.html): Khoj (1 total options)
+- [Alternatives to LlamaIndex Enterprise](https://devshelf.ritualdev.in/alternatives/llamaindex-enterprise.html): LangChain (1 total options)
+- [Alternatives to Pinecone](https://devshelf.ritualdev.in/alternatives/pinecone.html): Qdrant, Milvus, Weaviate (6 total options)
+- [Alternatives to OpenAI Whisper API](https://devshelf.ritualdev.in/alternatives/openai-whisper-api.html): Whisper.cpp (1 total options)
+- [Alternatives to Google Custom Search API](https://devshelf.ritualdev.in/alternatives/google-custom-search-api.html): SearXNG (1 total options)
+- [Alternatives to Dify Enterprise](https://devshelf.ritualdev.in/alternatives/dify-enterprise.html): RAGFlow (1 total options)
+- [Alternatives to Zep Memory](https://devshelf.ritualdev.in/alternatives/zep-memory.html): Mem0 (1 total options)
+- [Alternatives to vLLM](https://devshelf.ritualdev.in/alternatives/vllm.html): SGLang (1 total options)
+- [Alternatives to TensorRT-LLM](https://devshelf.ritualdev.in/alternatives/tensorrt-llm.html): SGLang (1 total options)
+- [Alternatives to NVIDIA AI Enterprise](https://devshelf.ritualdev.in/alternatives/nvidia-ai-enterprise.html): TensorRT-LLM (1 total options)
+- [Alternatives to Devin AI](https://devshelf.ritualdev.in/alternatives/devin-ai.html): MetaGPT, SWE-agent (2 total options)
+- [Alternatives to AutoGPT Enterprise](https://devshelf.ritualdev.in/alternatives/autogpt-enterprise.html): SuperAGI (1 total options)
+- [Alternatives to Anyscale](https://devshelf.ritualdev.in/alternatives/anyscale.html): Unsloth (1 total options)
+- [Alternatives to RunPod](https://devshelf.ritualdev.in/alternatives/runpod.html): Unsloth (1 total options)
+- [Alternatives to Arize Phoenix](https://devshelf.ritualdev.in/alternatives/arize-phoenix.html): Ragas (1 total options)
+- [Alternatives to LangSmith](https://devshelf.ritualdev.in/alternatives/langsmith.html): Promptfoo (1 total options)
+- [Alternatives to Google Cloud Vision OCR](https://devshelf.ritualdev.in/alternatives/google-cloud-vision-ocr.html): PaddleOCR (1 total options)
+
+## Catalog Categories
+- **AI & ML**: Local models, vector databases, and LLM tooling.
+- **APIs**: Public, free endpoints for sports, finance, weather, geocoding, and dev utilities.
+- **CLI Tools**: Terminal productivity boosters and developer command-line utilities.
+- **Cloud & BaaS**: Free hosting, databases, and serverless compute.
+- **Testing & QA**: E2E testing, API probing, and browser automation.
+- **Dev Perks**: Student packs, startup credits, and open-source licenses.
+- **Boilerplates**: Production-ready starters for Next.js, FastAPI, Astro, and more.
