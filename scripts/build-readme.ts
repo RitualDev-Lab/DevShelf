@@ -601,6 +601,13 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
       </a><br />
       <sub>🛠️ Core Member</sub>
     </td>
+    <td align="center" width="180">
+      <a href="https://github.com/ayushxx01">
+        <img src="https://github.com/ayushxx01.png" width="80" style="border-radius: 50%;" alt="Ayush"/><br />
+        <sub><b>Ayush</b></sub>
+      </a><br />
+      <sub>🛡️ Core Maintainer & Triage</sub>
+    </td>
   </tr>
 </table>
 
