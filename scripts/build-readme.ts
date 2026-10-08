@@ -697,6 +697,15 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
       <sub>🚢 Shipvela (PR #65)</sub>
     </td>
   </tr>
+  <tr>
+    <td align="center" width="160">
+      <a href="https://github.com/zealous1">
+        <img src="https://github.com/zealous1.png" width="70" style="border-radius: 50%;" alt="zealous1"/><br />
+        <sub><b>zealous1</b></sub>
+      </a><br />
+      <sub>🎬 Arcmira (PR #67)</sub>
+    </td>
+  </tr>
 </table>
 
 <div align="center">
