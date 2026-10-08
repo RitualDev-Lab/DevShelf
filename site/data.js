@@ -5590,7 +5590,7 @@ window.DEVSHELF_DATA = {
       "name": "Arcmira: YouTube Transcript Search",
       "url": "https://arcmira.com/docs",
       "category": "Entertainment & Media",
-      "description": "Search indexed YouTube transcripts by topic and return passages with source links and timestamps. Also retrieve caption transcripts and resolve people, channels and videos. Indexed coverage is partial. Paid plans add features such as Premium transcripts and sponsor research; these are distinct from the Free tier.\n\nHomepage: https://arcmira.com\nOpenAPI: https://api.arcmira.com/v1/openapi.json",
+      "description": "Search indexed YouTube transcripts by topic, with source links and timestamps. Retrieve captions and resolve people, channels and videos. Coverage is partial. A permanent Free tier is available; Premium transcripts and sponsor research use paid plans.",
       "auth": "Free API Key",
       "cors": "Unknown",
       "rateLimit": "60 requests per minute per key; 1,000 included credits per month. First five search passages per request use zero credits. The Free plan withholds the newest 30 days and later result pages. No card required; Free is not a time-limited trial.\n\nCurrent limits: https://arcmira.com/docs/usage-and-billing",
