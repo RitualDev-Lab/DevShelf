@@ -131,6 +131,36 @@ async function generateSeo() {
         <input type="text" readonly value="[![Featured on DevShelf](https://img.shields.io/badge/DevShelf-Verified_Free-7928CA?style=flat-square&logo=googlechrome&logoColor=white)](https://devshelf.ritualdev.in/)" class="w-full text-xs font-mono bg-slate-900 px-3 py-1.5 rounded text-emerald-300 border border-slate-800 select-all">
       </div>`;
 
+    const related = resources
+      .filter(
+        (r) =>
+          r.name !== item.name &&
+          (r.category === item.category || (item.language && r.language === item.language)),
+      )
+      .slice(0, 4);
+
+    const relatedSectionHtml =
+      related.length > 0
+        ? `
+      <div class="mt-8 pt-6 border-t border-slate-800">
+        <h3 class="text-xs font-mono font-bold text-slate-400 uppercase tracking-wider mb-4">🔗 Related Free Tools in ${category}</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          ${related
+            .map(
+              (r) => `
+            <a href="${slugify(r.name)}.html" class="p-3.5 rounded-xl bg-slate-950/70 hover:bg-slate-800 border border-slate-800 hover:border-purple-500/40 transition flex items-center justify-between group">
+              <div class="min-w-0 pr-2">
+                <span class="text-xs font-bold text-white group-hover:text-purple-300 transition truncate block">${escapeHtml(r.name)}</span>
+                <span class="text-[11px] text-slate-400 truncate block mt-0.5">${escapeHtml(r.description || "")}</span>
+              </div>
+              <span class="text-xs text-purple-400 group-hover:translate-x-0.5 transition font-mono shrink-0">→</span>
+            </a>`,
+            )
+            .join("")}
+        </div>
+      </div>`
+        : "";
+
     const html = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -205,7 +235,15 @@ async function generateSeo() {
             <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-purple-950/80 border border-purple-500/40 text-purple-300">
               ${category}
             </span>
-            ${alternativeTo ? `<span class="inline-block px-3 py-1 rounded-full text-xs font-mono font-bold bg-amber-950/80 border border-amber-500/40 text-amber-300">⚡ Alternative to ${alternativeTo}</span>` : ""}
+            ${
+              alternativeTo
+                ? `<a href="../alternatives/${slugify(
+                    alternativeTo.replace(/\s*\(\$.*?\)/g, "").trim(),
+                  )}.html" class="inline-block px-3 py-1 rounded-full text-xs font-mono font-bold bg-amber-950/80 border border-amber-500/40 text-amber-300 hover:bg-amber-900 hover:border-amber-400 transition" title="Explore free alternatives to ${escapeHtml(
+                    alternativeTo,
+                  )}">⚡ Alternative to ${escapeHtml(alternativeTo)} →</a>`
+                : ""
+            }
           </div>
           <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">${name}</h1>
         </div>
@@ -232,10 +270,14 @@ async function generateSeo() {
 
       ${dockerSectionHtml}
       ${badgeSectionHtml}
+      ${relatedSectionHtml}
 
       <div class="mt-8 pt-6 border-t border-slate-800 flex items-center justify-between flex-wrap gap-4">
         <a href="../" class="text-xs text-purple-400 hover:text-purple-300 font-semibold transition">
           ← Back to DevShelf Directory
+        </a>
+        <a href="../directory.html" class="text-xs text-slate-400 hover:text-slate-200 transition font-mono">
+          All Tools Index (520+) →
         </a>
         <span class="text-xs text-slate-500 font-mono">
           Verified Zero-Paywall Resource
@@ -245,6 +287,15 @@ async function generateSeo() {
   </main>
 
   <footer class="border-t border-slate-800 bg-slate-900/40 py-6 text-center text-xs text-slate-400 space-y-2">
+    <div class="flex items-center justify-center flex-wrap gap-3 font-mono text-[11px] text-slate-400 mb-2">
+      <a href="../" class="hover:text-purple-300 transition">DevShelf Home</a>
+      <span>•</span>
+      <a href="../directory.html" class="hover:text-purple-300 transition">All Tools Index</a>
+      <span>•</span>
+      <a href="../collections/free-weather-apis.html" class="hover:text-purple-300 transition">Collections</a>
+      <span>•</span>
+      <a href="https://github.com/RitualDev-Lab/DevShelf" target="_blank" rel="noreferrer" class="hover:text-purple-300 transition">GitHub</a>
+    </div>
     <p>Curated with ❤️ by <a href="https://github.com/RitualDev-Lab" class="text-purple-400 hover:underline">RitualDev-Lab</a> and the global open-source community.</p>
     <p><a href="https://donation.rolenest.in" target="_blank" rel="noopener noreferrer" class="text-pink-400 hover:text-pink-300 font-semibold transition">💖 Support DevShelf (donation.rolenest.in)</a></p>
   </footer>
@@ -347,6 +398,27 @@ async function generateSeo() {
       })
       .join("\n");
 
+    const otherAlternatives = Array.from(altMap.entries())
+      .filter(([k]) => k !== targetName)
+      .slice(0, 8);
+
+    const otherAltsHtml = `
+      <div class="mt-12 pt-8 border-t border-slate-800">
+        <h3 class="text-xs font-mono font-bold text-slate-400 uppercase tracking-wider mb-4">⚡ Explore More Free Alternatives</h3>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          ${otherAlternatives
+            .map(
+              ([name, tools]) => `
+            <a href="${slugify(name)}.html" class="p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-purple-500/40 transition flex items-center justify-between group">
+              <span class="text-xs font-semibold text-slate-300 group-hover:text-purple-300 transition truncate">${escapeHtml(name)}</span>
+              <span class="text-[11px] font-mono text-purple-400 shrink-0 ml-2 font-bold">${tools.length}</span>
+            </a>`,
+            )
+            .join("")}
+        </div>
+      </div>
+    `;
+
     const html = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -417,6 +489,8 @@ async function generateSeo() {
       ${cardsHtml}
     </div>
 
+    ${otherAltsHtml}
+
     <div class="mt-12 p-6 rounded-2xl bg-slate-900 border border-slate-800 text-center space-y-3">
       <h3 class="text-lg font-bold text-white">Know another great alternative to ${escapeHtml(targetName)}?</h3>
       <p class="text-xs text-slate-400 max-w-xl mx-auto">Help thousands of engineers save money and find better tools. DevShelf is open-source and welcomes contributions.</p>
@@ -427,6 +501,15 @@ async function generateSeo() {
   </main>
 
   <footer class="border-t border-slate-800 bg-slate-900/40 py-6 text-center text-xs text-slate-400 space-y-2">
+    <div class="flex items-center justify-center flex-wrap gap-3 font-mono text-[11px] text-slate-400 mb-2">
+      <a href="../" class="hover:text-purple-300 transition">DevShelf Home</a>
+      <span>•</span>
+      <a href="../directory.html" class="hover:text-purple-300 transition">All Tools Index</a>
+      <span>•</span>
+      <a href="../collections/free-weather-apis.html" class="hover:text-purple-300 transition">Collections</a>
+      <span>•</span>
+      <a href="https://github.com/RitualDev-Lab/DevShelf" target="_blank" rel="noreferrer" class="hover:text-purple-300 transition">GitHub</a>
+    </div>
     <p>Curated with ❤️ by <a href="https://github.com/RitualDev-Lab" class="text-purple-400 hover:underline">RitualDev-Lab</a> and the global open-source community.</p>
     <p><a href="https://donation.rolenest.in" target="_blank" rel="noopener noreferrer" class="text-pink-400 hover:text-pink-300 font-semibold transition">💖 Support DevShelf (donation.rolenest.in)</a></p>
   </footer>
@@ -559,6 +642,24 @@ async function generateSeo() {
       })
       .join("\n");
 
+    const otherCollections = collections.filter((c) => c.slug !== col.slug);
+    const otherCollectionsHtml = `
+      <div class="mt-12 pt-8 border-t border-slate-800">
+        <h3 class="text-xs font-mono font-bold text-slate-400 uppercase tracking-wider mb-4">📂 Explore Other Curated Collections</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          ${otherCollections
+            .map(
+              (c) => `
+            <a href="${c.slug}.html" class="p-3.5 rounded-xl bg-slate-900 border border-slate-800 hover:border-cyan-500/40 transition flex items-center justify-between group">
+              <span class="text-xs font-semibold text-slate-300 group-hover:text-cyan-300 transition truncate">${escapeHtml(c.heading)}</span>
+              <span class="text-xs text-cyan-400 group-hover:translate-x-0.5 transition font-mono shrink-0">→</span>
+            </a>`,
+            )
+            .join("")}
+        </div>
+      </div>
+    `;
+
     const html = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -629,6 +730,8 @@ async function generateSeo() {
       ${cardsHtml}
     </div>
 
+    ${otherCollectionsHtml}
+
     <div class="mt-12 p-6 rounded-2xl bg-slate-900 border border-slate-800 text-center space-y-3">
       <h3 class="text-lg font-bold text-white">Have a tool to add to this collection?</h3>
       <p class="text-xs text-slate-400 max-w-xl mx-auto">DevShelf is 100% community-driven. Add your project or suggest another zero-paywall gem.</p>
@@ -639,6 +742,15 @@ async function generateSeo() {
   </main>
 
   <footer class="border-t border-slate-800 bg-slate-900/40 py-6 text-center text-xs text-slate-400 space-y-2">
+    <div class="flex items-center justify-center flex-wrap gap-3 font-mono text-[11px] text-slate-400 mb-2">
+      <a href="../" class="hover:text-purple-300 transition">DevShelf Home</a>
+      <span>•</span>
+      <a href="../directory.html" class="hover:text-purple-300 transition">All Tools Index</a>
+      <span>•</span>
+      <a href="../collections/free-weather-apis.html" class="hover:text-purple-300 transition">Collections</a>
+      <span>•</span>
+      <a href="https://github.com/RitualDev-Lab/DevShelf" target="_blank" rel="noreferrer" class="hover:text-purple-300 transition">GitHub</a>
+    </div>
     <p>Curated with ❤️ by <a href="https://github.com/RitualDev-Lab" class="text-purple-400 hover:underline">RitualDev-Lab</a> and the global open-source community.</p>
     <p><a href="https://donation.rolenest.in" target="_blank" rel="noopener noreferrer" class="text-pink-400 hover:text-pink-300 font-semibold transition">💖 Support DevShelf (donation.rolenest.in)</a></p>
   </footer>
@@ -647,6 +759,181 @@ async function generateSeo() {
 
     await fs.writeFile(path.join(collectionsDir, `${col.slug}.html`), html, "utf8");
   }
+
+  // =========================================================================
+  // 4. Static Directory Index (site/directory.html) - Zero-Orphan Master Index
+  // =========================================================================
+  const directoryUrl = `${domain}/directory.html`;
+  sitemapUrls.push(
+    `  <url>\n    <loc>${directoryUrl}</loc>\n    <changefreq>daily</changefreq>\n    <priority>0.95</priority>\n  </url>`,
+  );
+
+  const categoriesMap = new Map<string, any[]>();
+  for (const item of resources) {
+    const cat = item.category || item.section || "General";
+    if (!categoriesMap.has(cat)) {
+      categoriesMap.set(cat, []);
+    }
+    categoriesMap.get(cat)?.push(item);
+  }
+
+  let directoryCategoriesHtml = "";
+  for (const [catName, catItems] of categoriesMap.entries()) {
+    directoryCategoriesHtml += `
+      <section class="mb-12">
+        <div class="flex items-center space-x-3 pb-3 border-b border-slate-800 mb-6">
+          <span class="text-xl">📁</span>
+          <h2 class="text-xl font-bold text-white tracking-tight">${escapeHtml(catName)}</h2>
+          <span class="text-xs font-mono px-2 py-0.5 rounded-full bg-slate-800 text-purple-300 border border-slate-700">${catItems.length} tools</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          ${catItems
+            .map(
+              (item) => `
+            <div class="p-4 rounded-xl bg-slate-900 border border-slate-800/80 hover:border-purple-500/40 transition flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-2">
+                  <a href="tools/${slugify(item.name)}.html" class="text-sm font-bold text-white hover:text-purple-300 transition">
+                    ${escapeHtml(item.name)}
+                  </a>
+                  ${item.language ? `<span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-950 text-slate-400 border border-slate-800">${escapeHtml(item.language)}</span>` : ""}
+                </div>
+                <p class="text-xs text-slate-400 line-clamp-2 mb-3 leading-relaxed">${escapeHtml(item.description || "")}</p>
+              </div>
+              <div class="pt-2 border-t border-slate-800/60 flex items-center justify-between text-[11px] font-mono">
+                <span class="text-emerald-400 truncate max-w-[150px]">💎 ${escapeHtml(item.freeTier || "100% Free")}</span>
+                <a href="tools/${slugify(item.name)}.html" class="text-purple-400 hover:text-purple-300 font-bold">Details →</a>
+              </div>
+            </div>`,
+            )
+            .join("")}
+        </div>
+      </section>
+    `;
+  }
+
+  const altLinksHtml = Array.from(altMap.entries())
+    .map(
+      ([altName, items]) => `
+      <a href="alternatives/${slugify(altName)}.html" class="p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-amber-500/40 transition text-xs font-medium text-slate-300 hover:text-white flex items-center justify-between">
+        <span>⚡ Alternatives to <strong class="text-amber-300">${escapeHtml(altName)}</strong></span>
+        <span class="text-slate-500 font-mono text-[11px]">${items.length} tools</span>
+      </a>
+    `,
+    )
+    .join("");
+
+  const colLinksHtml = collections
+    .map(
+      (c) => `
+      <a href="collections/${c.slug}.html" class="p-3.5 rounded-xl bg-slate-900 border border-slate-800 hover:border-cyan-500/40 transition flex items-center justify-between">
+        <span class="text-xs font-bold text-cyan-300">${escapeHtml(c.heading)}</span>
+        <span class="text-xs text-cyan-400 font-mono">→</span>
+      </a>
+    `,
+    )
+    .join("");
+
+  const directoryHtml = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete Free Developer Tools Directory Index | DevShelf</title>
+  <meta name="description" content="Explore the full directory index of ${resources.length} verified free developer tools, APIs, AI agents, and open-source software. Zero paywalls, no trial bait.">
+  <link rel="canonical" href="${directoryUrl}">
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="${directoryUrl}">
+  <meta property="og:title" content="Complete Free Developer Tools Directory Index | DevShelf">
+  <meta property="og:description" content="Explore all ${resources.length} free and open-source developer resources across ${categoriesMap.size} categories.">
+  <meta property="og:image" content="https://devshelf.ritualdev.in/og-image.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@RitualDevLab">
+  <meta name="twitter:title" content="Complete Free Developer Tools Directory Index | DevShelf">
+  <meta name="twitter:description" content="Explore all ${resources.length} free and open-source developer resources across ${categoriesMap.size} categories.">
+  <meta name="twitter:image" content="https://devshelf.ritualdev.in/og-image.jpg">
+
+  <link rel="stylesheet" href="tailwind.min.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen flex flex-col justify-between selection:bg-purple-500 selection:text-white">
+  <header class="border-b border-slate-800 bg-slate-900/60 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="./" class="flex items-center space-x-2 text-white font-extrabold text-lg hover:text-purple-400 transition">
+        <span>📚 DevShelf</span>
+      </a>
+      <div class="flex items-center space-x-3">
+        <a href="https://donation.rolenest.in" target="_blank" rel="noopener noreferrer" class="text-xs font-bold px-3 py-1.5 rounded-lg bg-pink-950/60 hover:bg-pink-900/80 border border-pink-500/50 text-pink-200 transition">
+          💖 Donate
+        </a>
+        <a href="./#directory" class="text-xs font-semibold px-3 py-1.5 rounded-lg bg-purple-600 hover:bg-purple-500 text-white transition">
+          ← Interactive App
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 py-12 flex-1 w-full">
+    <div class="mb-12 text-center max-w-3xl mx-auto">
+      <div class="inline-block px-3 py-1 rounded-full text-xs font-mono font-bold bg-purple-950/80 border border-purple-500/40 text-purple-300 mb-3">
+        🗂️ Complete Master Directory (${resources.length} Verified Tools)
+      </div>
+      <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-4">
+        Browse All Free Developer Tools
+      </h1>
+      <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+        Every tool listed below is manually verified to have a permanent free tier, open-source license, or generous zero-paywall allowance. No credit card required.
+      </p>
+    </div>
+
+    <!-- Curated Hubs -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 p-6 rounded-2xl bg-slate-900/50 border border-slate-800">
+      <div>
+        <h3 class="text-sm font-bold text-white uppercase tracking-wider font-mono mb-4 flex items-center space-x-2">
+          <span>📂</span>
+          <span>Curated Topic Collections</span>
+        </h3>
+        <div class="grid grid-cols-1 gap-2.5">
+          ${colLinksHtml}
+        </div>
+      </div>
+      <div>
+        <h3 class="text-sm font-bold text-white uppercase tracking-wider font-mono mb-4 flex items-center space-x-2">
+          <span>⚡</span>
+          <span>Popular Commercial Alternatives</span>
+        </h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 max-h-[340px] overflow-y-auto pr-2">
+          ${altLinksHtml}
+        </div>
+      </div>
+    </div>
+
+    <!-- Category Sections -->
+    ${directoryCategoriesHtml}
+  </main>
+
+  <footer class="border-t border-slate-800 bg-slate-900/40 py-8 text-center text-xs text-slate-400 space-y-3">
+    <div class="flex items-center justify-center flex-wrap gap-4 font-mono text-[11px] text-slate-400">
+      <a href="./" class="hover:text-purple-300 transition">Interactive App</a>
+      <span>•</span>
+      <a href="directory.html" class="hover:text-purple-300 transition">Directory Index</a>
+      <span>•</span>
+      <a href="https://github.com/RitualDev-Lab/DevShelf" target="_blank" rel="noreferrer" class="hover:text-purple-300 transition">GitHub Repo</a>
+      <span>•</span>
+      <a href="api/v1/tools.json" target="_blank" rel="noreferrer" class="hover:text-cyan-300 transition">REST API</a>
+    </div>
+    <p>Curated with ❤️ by <a href="https://github.com/RitualDev-Lab" class="text-purple-400 hover:underline">RitualDev-Lab</a> and the global open-source community.</p>
+    <p><a href="https://donation.rolenest.in" target="_blank" rel="noopener noreferrer" class="text-pink-400 hover:text-pink-300 font-semibold transition">💖 Support DevShelf (donation.rolenest.in)</a></p>
+  </footer>
+</body>
+</html>`;
+
+  await fs.writeFile(path.join(siteDir, "directory.html"), directoryHtml, "utf8");
+  console.log("✅ Generated site/directory.html master index.");
 
   // Generate site/sitemap.xml
   const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>

@@ -1798,6 +1798,13 @@ function escapeSlug(str) {
   return (str || "").toLowerCase().replace(/[^a-z0-9]/g, "-");
 }
 
+function slugify(text) {
+  return (text || "")
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, "")
+    .replace(/\s+/g, "-");
+}
+
 function togglePlayground(toolName) {
   const slug = escapeSlug(toolName);
   const tray = document.getElementById(`playground-${slug}`);
@@ -2342,6 +2349,13 @@ function createCardHtml(item) {
   `
     : "";
 
+  const toolSlug = slugify(item.name);
+  const detailsActionBtn = `
+    <a href="tools/${toolSlug}.html" class="inline-flex items-center space-x-1 px-2 py-1 rounded-md text-[11px] font-semibold bg-slate-800 hover:bg-slate-700 text-purple-300 hover:text-white transition border border-slate-700 shadow-sm" title="View dedicated SEO details for ${escapeHtml(item.name)}">
+      <span>📄 Details</span>
+    </a>
+  `;
+
   const alternativeTagHtml = item.alternativeTo
     ? `<span class="inline-block px-2.5 py-0.5 text-xs font-mono font-bold rounded-full border bg-amber-950/80 text-amber-300 border-amber-500/40" title="Free & open-source alternative to ${escapeHtml(item.alternativeTo)}">
         ⚡ Alt to ${escapeHtml(item.alternativeTo)}
@@ -2414,6 +2428,7 @@ function createCardHtml(item) {
               ${playgroundActionBtn}
               ${snippetActionBtn}
               ${badgeActionBtn}
+              ${detailsActionBtn}
             </div>
           </div>
           <div class="flex items-center flex-wrap gap-2 w-full">
