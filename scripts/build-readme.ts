@@ -712,6 +712,13 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
       </a><br />
       <sub>🎬 Arcmira (PR #67)</sub>
     </td>
+    <td align="center" width="160">
+      <a href="https://github.com/jeshuadomingo-byte">
+        <img src="https://github.com/jeshuadomingo-byte.png" width="70" style="border-radius: 50%;" alt="jeshuadomingo-byte"/><br />
+        <sub><b>jeshuadomingo-byte</b></sub>
+      </a><br />
+      <sub>💬 Caption-Pack (PR #68)</sub>
+    </td>
   </tr>
 </table>
 

@@ -1,6 +1,6 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-10-08T06:06:20.034Z",
-  "totalCount": 524,
+  "updatedAt": "2026-10-09T18:34:40.076Z",
+  "totalCount": 525,
   "reposCount": 325,
   "facets": {
     "repos": 325
@@ -9,7 +9,7 @@ window.DEVSHELF_DATA = {
     "aiTools": 89,
     "cliTools": 112,
     "testingQa": 62,
-    "apis": 98,
+    "apis": 99,
     "freeCloud": 71,
     "contributors": 21,
     "perks": 30,
@@ -5595,6 +5595,22 @@ window.DEVSHELF_DATA = {
       "cors": "Unknown",
       "rateLimit": "60 requests per minute per key; 1,000 included credits per month. First five search passages per request use zero credits. The Free plan withholds the newest 30 days and later result pages. No card required; Free is not a time-limited trial.\n\nCurrent limits: https://arcmira.com/docs/usage-and-billing",
       "https": true,
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Caption-Pack API",
+      "url": "https://muse.ai/s/caption-pack-api-xfxt62ya0xcxlxhh",
+      "category": "AI & Machine Learning",
+      "description": "Deterministic social caption and hashtag generator API returning platform-ready JSON. Features a permanent keyless playground endpoint for developers and AI agents.",
+      "auth": "No Key",
+      "cors": "No",
+      "rateLimit": "5 req/hour (Playground)",
+      "https": true,
+      "statusTags": [
+        "No Card Required",
+        "Rate-Limited"
+      ],
       "type": "api",
       "section": "Free & Public APIs"
     },
