@@ -1872,7 +1872,7 @@
 - **Language**: Markdown, JSON, CLI
 - **URL**: https://github.com/stefanautomateed/shipvela-codex
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/shipvela-publishing-plugin-and-skills.html
-- **Description**: MIT-licensed publishing skills and client configuration for coding agents to connect to Shipvela's OAuth MCP service, stage public website files for owner review, and track deployment status and logs. They cover website publishing from existing coding-agent workflows; they do not generate code or provide a self-hosted server.
+- **Description**: MIT-licensed publishing skills and MCP client configuration for coding agents to stage website files, review deployments, and track status. Enables direct website publishing from agent workflows without requiring code generation or a self-hosted server.
 
 ### LeanFPS
 - **Category**: OS & Hardware Utilities

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-11T03:10:20.004Z",
+  "updatedAt": "2026-10-11T03:53:52.584Z",
   "totalCount": 527,
   "reposCount": 327,
   "facets": {
@@ -3257,7 +3257,7 @@
       "name": "Shipvela publishing plugin and skills",
       "repo": "https://github.com/stefanautomateed/shipvela-codex",
       "category": "CLI & Developer Productivity",
-      "description": "MIT-licensed publishing skills and client configuration for coding agents to connect to Shipvela's OAuth MCP service, stage public website files for owner review, and track deployment status and logs. They cover website publishing from existing coding-agent workflows; they do not generate code or provide a self-hosted server.",
+      "description": "MIT-licensed publishing skills and MCP client configuration for coding agents to stage website files, review deployments, and track status. Enables direct website publishing from agent workflows without requiring code generation or a self-hosted server.",
       "language": "Markdown, JSON, CLI",
       "license": "MIT",
       "featured": false,
