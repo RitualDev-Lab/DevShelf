@@ -2,8 +2,8 @@
   "version": "1.0.0",
   "docs": "https://devshelf.ritualdev.in/docs/api.html",
   "license": "https://github.com/RitualDev-Lab/DevShelf/blob/main/LICENSE",
-  "updatedAt": "2026-10-09T18:34:40.076Z",
-  "totalCount": 525,
+  "updatedAt": "2026-10-11T03:10:20.004Z",
+  "totalCount": 527,
   "tools": [
     {
       "name": "Ollama",
@@ -3248,6 +3248,29 @@
       "category": "CLI & Developer Productivity",
       "description": "MIT-licensed publishing skills and client configuration for coding agents to connect to Shipvela's OAuth MCP service, stage public website files for owner review, and track deployment status and logs. They cover website publishing from existing coding-agent workflows; they do not generate code or provide a self-hosted server.",
       "language": "Markdown, JSON, CLI",
+      "license": "MIT",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "LeanFPS",
+      "repo": "https://github.com/Jamailar/leanfps",
+      "url": "https://leanfps.com",
+      "category": "OS & Hardware Utilities",
+      "description": "Open-source Windows performance utility built in Rust and egui. Features game detection, ETW FPS recording, safe tweak undo, and crash recovery without modifying game files.",
+      "language": "Rust",
+      "license": "MIT",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "Solaris Dev Shop",
+      "repo": "https://github.com/Shaisolaris/solaris-dev-shop",
+      "category": "Dev Utilities & Libraries",
+      "description": "Free MIT skill library and toolkit. A deterministic intake router assigns one specialist skill for agentic workflows.",
+      "language": "Python",
       "license": "MIT",
       "featured": false,
       "type": "cli",

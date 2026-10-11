@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 525 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 527 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -1873,6 +1873,24 @@
 - **URL**: https://github.com/stefanautomateed/shipvela-codex
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/shipvela-publishing-plugin-and-skills.html
 - **Description**: MIT-licensed publishing skills and client configuration for coding agents to connect to Shipvela's OAuth MCP service, stage public website files for owner review, and track deployment status and logs. They cover website publishing from existing coding-agent workflows; they do not generate code or provide a self-hosted server.
+
+### LeanFPS
+- **Category**: OS & Hardware Utilities
+- **Pricing Model**: 100% Free / FOSS
+- **License**: MIT
+- **Language**: Rust
+- **URL**: https://leanfps.com
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/leanfps.html
+- **Description**: Open-source Windows performance utility built in Rust and egui. Features game detection, ETW FPS recording, safe tweak undo, and crash recovery without modifying game files.
+
+### Solaris Dev Shop
+- **Category**: Dev Utilities & Libraries
+- **Pricing Model**: 100% Free / FOSS
+- **License**: MIT
+- **Language**: Python
+- **URL**: https://github.com/Shaisolaris/solaris-dev-shop
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/solaris-dev-shop.html
+- **Description**: Free MIT skill library and toolkit. A deterministic intake router assigns one specialist skill for agentic workflows.
 
 ### AutoHeal-QA
 - **Category**: Browser & E2E Testing

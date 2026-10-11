@@ -4,7 +4,7 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total CLI Tools](https://img.shields.io/badge/CLI_Tools-112_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total CLI Tools](https://img.shields.io/badge/CLI_Tools-114_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
 [Benchmarking & Performance](#benchmarking-performance) • [CLI & Developer Productivity](#cli-developer-productivity) • [Database & SQL](#database-sql) • [Dev Utilities & Libraries](#dev-utilities-libraries) • [Developer Tools](#developer-tools) • [DevOps & Containers](#devops-containers) • [Disk & Storage](#disk-storage) • [Git & Version Control](#git-version-control) • [GitHub Workflow & TUI](#github-workflow-tui) • [HTTP & Network](#http-network) • [OS & Hardware Utilities](#os-hardware-utilities) • [System & Process Monitoring](#system-process-monitoring) • [Terminal & Search](#terminal-search) • [Terminal & Shell](#terminal-shell) • [Terminal Navigation](#terminal-navigation)
@@ -40,11 +40,12 @@
 | [**iredis**](https://github.com/laixintao/iredis) | `Python` | `BSD-3-Clause` | A terminal client for Redis with auto-completion and syntax highlighting, command suggestions, and hints. | [GitHub](https://github.com/laixintao/iredis) |
 | [**litecli**](https://github.com/dbcli/litecli) | `Python` | `BSD-3-Clause` | CLI for SQLite databases with auto-completion and syntax highlighting. | [GitHub](https://github.com/dbcli/litecli) |
 
-### <a id="dev-utilities-libraries"></a>Dev Utilities & Libraries (1)
+### <a id="dev-utilities-libraries"></a>Dev Utilities & Libraries (2)
 
 | Tool | Language | License | Description | Links |
 | :--- | :---: | :---: | :--- | :---: |
 | [**Codex Quota Overlay**](https://github.com/cpys/codex-quota-overlay) | `JavaScript / Electron, with C# and Swift native helpers` | `MIT` | An independent, open-source Codex Desktop companion for Windows and macOS. It displays quota limits, reset times, and reset credits, with a local Quota Center for pace and history. I am a maintainer of this independent project; it is not affiliated with or endorsed by OpenAI. | [GitHub](https://github.com/cpys/codex-quota-overlay) |
+| [**Solaris Dev Shop**](https://github.com/Shaisolaris/solaris-dev-shop) | `Python` | `MIT` | Free MIT skill library and toolkit. A deterministic intake router assigns one specialist skill for agentic workflows. | [GitHub](https://github.com/Shaisolaris/solaris-dev-shop) |
 
 ### <a id="developer-tools"></a>Developer Tools (12)
 
@@ -127,7 +128,7 @@
 | [**grpcurl**](https://github.com/fullstorydev/grpcurl) | `Go` | `MIT` | Like cURL, but for gRPC: command-line tool that lets you interact with gRPC servers via reflection. | [GitHub](https://github.com/fullstorydev/grpcurl) |
 | [**speedtest-cli**](https://github.com/sivel/speedtest-cli) | `Python` | `Apache-2.0` | Command line interface for testing internet bandwidth using speedtest.net servers without flash/browser. | [GitHub](https://github.com/sivel/speedtest-cli) |
 
-### <a id="os-hardware-utilities"></a>OS & Hardware Utilities (11)
+### <a id="os-hardware-utilities"></a>OS & Hardware Utilities (12)
 
 | Tool | Language | License | Description | Links |
 | :--- | :---: | :---: | :--- | :---: |
@@ -142,6 +143,7 @@
 | [**zenith**](https://github.com/bvaisvil/zenith) | `Rust` | `MIT` | Terminal system monitor with zooming, historical graphs, process trees, and disk/network I/O tracking. | [GitHub](https://github.com/bvaisvil/zenith) |
 | [**diskonaut**](https://github.com/imsnif/diskonaut) | `Rust` | `MIT` | Terminal visual disk space navigator that visually maps out filesystems to locate large directories. | [GitHub](https://github.com/imsnif/diskonaut) |
 | [**inxi**](https://github.com/smxi/inxi) | `Perl` | `GPL-3.0` | Full featured CLI system information tool designed for troubleshooting hardware and system configurations. | [GitHub](https://github.com/smxi/inxi) |
+| [**LeanFPS**](https://github.com/Jamailar/leanfps) | `Rust` | `MIT` | Open-source Windows performance utility built in Rust and egui. Features game detection, ETW FPS recording, safe tweak undo, and crash recovery without modifying game files. | [GitHub](https://github.com/Jamailar/leanfps) |
 
 ### <a id="system-process-monitoring"></a>System & Process Monitoring (2)
 

@@ -1011,6 +1011,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://devshelf.ritualdev.in/tools/leanfps.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devshelf.ritualdev.in/tools/solaris-dev-shop.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://devshelf.ritualdev.in/tools/autoheal-qa.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

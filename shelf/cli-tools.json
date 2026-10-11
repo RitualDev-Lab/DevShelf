@@ -1214,5 +1214,24 @@
     "language": "Markdown, JSON, CLI",
     "license": "MIT",
     "featured": false
+  },
+  {
+    "name": "LeanFPS",
+    "repo": "https://github.com/Jamailar/leanfps",
+    "url": "https://leanfps.com",
+    "category": "OS & Hardware Utilities",
+    "description": "Open-source Windows performance utility built in Rust and egui. Features game detection, ETW FPS recording, safe tweak undo, and crash recovery without modifying game files.",
+    "language": "Rust",
+    "license": "MIT",
+    "featured": false
+  },
+  {
+    "name": "Solaris Dev Shop",
+    "repo": "https://github.com/Shaisolaris/solaris-dev-shop",
+    "category": "Dev Utilities & Libraries",
+    "description": "Free MIT skill library and toolkit. A deterministic intake router assigns one specialist skill for agentic workflows.",
+    "language": "Python",
+    "license": "MIT",
+    "featured": false
   }
 ]

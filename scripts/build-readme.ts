@@ -719,6 +719,20 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
       </a><br />
       <sub>💬 Caption-Pack (PR #68)</sub>
     </td>
+    <td align="center" width="160">
+      <a href="https://github.com/Jamailar">
+        <img src="https://github.com/Jamailar.png" width="70" style="border-radius: 50%;" alt="Jamailar"/><br />
+        <sub><b>Jamailar</b></sub>
+      </a><br />
+      <sub>⚡ LeanFPS (#70)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/Shaisolaris">
+        <img src="https://github.com/Shaisolaris.png" width="70" style="border-radius: 50%;" alt="Shaisolaris"/><br />
+        <sub><b>Shaisolaris</b></sub>
+      </a><br />
+      <sub>☀️ Solaris Dev Shop (#71)</sub>
+    </td>
   </tr>
 </table>
 
