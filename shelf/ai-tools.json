@@ -8,7 +8,12 @@
     "license": "Apache-2.0",
     "featured": true,
     "goodFirstIssues": "https://github.com/RitualDev-Lab/AgentShield/issues",
-    "statusTags": ["Zero-Leak Sandbox", "AI Agent Security", "100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "Zero-Leak Sandbox",
+      "AI Agent Security",
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "Ollama",
