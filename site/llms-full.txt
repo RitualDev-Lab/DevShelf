@@ -835,7 +835,7 @@
 - **Language**: JavaScript / Node.js, Claude Code plugins
 - **URL**: https://github.com/Eigenwise/eigenwise-toolshed
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/eigenwise-toolshed.html
-- **Description**: Free, MIT-licensed plugins for Claude Code covering maintained codebase maps, project rules, coding-work orchestration, capability discovery, model routing, and local observability. Developers can install individual plugins rather than the entire collection; Claude or model-provider usage may have its own costs.
+- **Description**: Free, MIT-licensed plugins for Claude Code covering codebase maps, project rules, coding-work orchestration, capability discovery, model routing, and local observability. Developers can install individual modular plugins.
 
 ### Tale
 - **Category**: AI Agents & Local LLMs
