@@ -160,7 +160,7 @@
 | :--- | :---: | :---: | :--- |
 | [**Court Rules**](https://www.courtrules.app/api) | 🔑 Free Key | `Generous Free Tier` | Free federal court rules, local rules, judge standing orders and filing deadlines, with a deadline calculator for every district. |
 | [**Invokely**](https://invokely.ai/docs) | 🔑 Free Key | `500 calls/month; MCP trial 25/day per IP` | Hosted MCP and REST API for official statistics by indicator, place and period. Each value includes a source citation. The free plan has 500 calls a month with no card; an MCP trial allows 25 calls a day per IP without an account. |
-| [**CareJobs.Now Open Healthcare Jobs and Pay Data**](https://carejobs.now/data) | 🟢 No Key | `Unlimited (no key, read-only, cached static JSON)` | Free, no-key JSON and CSV endpoints with US healthcare open jobs by kind of job and employer (https://carejobs.now/roles.json) and posted hourly pay by kind of job (https://carejobs.now/pay.json, https://carejobs.now/pay.csv). Read daily from 270 employers' career sites. OpenAPI 3.1 spec: https://raw.githubusercontent.com/yumaheymans/carejobs-mcp/main/openapi.yaml |
+| [**CareJobs.Now Open Healthcare Jobs and Pay Data**](https://carejobs.now/data) | 🟢 No Key | `Unlimited (no key, read-only, cached static JSON)` | Free, no-key JSON and CSV endpoints providing US healthcare open jobs and posted hourly pay by role and employer. Aggregated daily from 270+ employers' career sites, complete with OpenAPI 3.1 specifications. |
 
 ### <a id="science-astronomy"></a>Science & Astronomy (6)
 

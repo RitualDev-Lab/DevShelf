@@ -1,6 +1,6 @@
 {
   "version": "1.1.2",
-  "updatedAt": "2026-10-16T04:12:00.847Z",
+  "updatedAt": "2026-10-16T06:37:32.215Z",
   "slug": "apis",
   "name": "Free Public APIs",
   "count": 102,
@@ -1614,7 +1614,7 @@
       "name": "CareJobs.Now Open Healthcare Jobs and Pay Data",
       "url": "https://carejobs.now/data",
       "category": "Other",
-      "description": "Free, no-key JSON and CSV endpoints with US healthcare open jobs by kind of job and employer (https://carejobs.now/roles.json) and posted hourly pay by kind of job (https://carejobs.now/pay.json, https://carejobs.now/pay.csv). Read daily from 270 employers' career sites. OpenAPI 3.1 spec: https://raw.githubusercontent.com/yumaheymans/carejobs-mcp/main/openapi.yaml",
+      "description": "Free, no-key JSON and CSV endpoints providing US healthcare open jobs and posted hourly pay by role and employer. Aggregated daily from 270+ employers' career sites, complete with OpenAPI 3.1 specifications.",
       "auth": "No Key",
       "cors": "Yes",
       "rateLimit": "Unlimited (no key, read-only, cached static JSON)",
