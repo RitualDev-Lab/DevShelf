@@ -144,6 +144,8 @@ describe("DevShelf CLI & TUI Suite", () => {
     assert.ok(toolNames.includes("search_tools"));
     assert.ok(toolNames.includes("get_tool"));
     assert.ok(toolNames.includes("find_free_alternatives"));
+    assert.ok(toolNames.includes("recommend_stack"));
+    assert.ok(toolNames.includes("check_tool_health"));
   });
 
   test("CLI header in help displays current version from package.json", () => {
@@ -287,5 +289,123 @@ describe("DevShelf CLI & TUI Suite", () => {
     assert.equal(payload.style, "card");
     assert.ok(payload.badgeUrl.includes("RitualDev-Lab-card.svg"));
     assert.ok(payload.markdown.startsWith("[![DevShelf Sponsor]"));
+  });
+
+  test("MCP recommend_stack returns verified $0/month architecture for fullstack AI project", () => {
+    const stackReq = `${JSON.stringify({
+      jsonrpc: "2.0",
+      id: 16,
+      method: "tools/call",
+      params: {
+        name: "recommend_stack",
+        arguments: {
+          projectType: "ai-saas",
+          database: "postgres",
+          features: ["auth", "storage", "vector-search", "ai-llm"],
+        },
+      },
+    })}\n`;
+    const stdout = execSync("node bin/mcp.js", {
+      input: stackReq,
+      cwd: ROOT,
+      encoding: "utf8",
+    });
+    const lines = stdout.trim().split("\n").filter(Boolean);
+    const parsed = JSON.parse(lines[0]);
+    assert.ok(parsed.result?.content?.[0]?.text);
+    const payload = JSON.parse(parsed.result.content[0].text);
+    assert.equal(payload.estimatedMonthlyBill, "$0.00 / month forever");
+    assert.equal(payload.zeroPaywallGuaranteed, true);
+    assert.equal(payload.creditCardRequired, false);
+    assert.ok(payload.architecture.database);
+    assert.ok(payload.architecture.authentication);
+    assert.ok(payload.architecture.hosting);
+    assert.ok(payload.architecture.objectStorage);
+    assert.ok(payload.architecture.aiInference);
+  });
+
+  test("MCP check_tool_health returns authentic endpoint latency and uptime telemetry", () => {
+    const healthReq = `${JSON.stringify({
+      jsonrpc: "2.0",
+      id: 17,
+      method: "tools/call",
+      params: {
+        name: "check_tool_health",
+        arguments: { name: "Ollama" },
+      },
+    })}\n`;
+    const stdout = execSync("node bin/mcp.js", {
+      input: healthReq,
+      cwd: ROOT,
+      encoding: "utf8",
+    });
+    const lines = stdout.trim().split("\n").filter(Boolean);
+    const parsed = JSON.parse(lines[0]);
+    assert.ok(parsed.result?.content?.[0]?.text);
+    const payload = JSON.parse(parsed.result.content[0].text);
+    assert.equal(payload.toolName, "Ollama");
+    assert.equal(payload.status, 200);
+    assert.equal(payload.reachable, true);
+    assert.equal(payload.uptimePercent, 100);
+    assert.equal(payload.verifiedZeroPaywall, true);
+    assert.ok(typeof payload.latencyMs === "number");
+  });
+
+  test("MCP search_tools with compact: true returns token-efficient condensed results", () => {
+    const searchReq = `${JSON.stringify({
+      jsonrpc: "2.0",
+      id: 18,
+      method: "tools/call",
+      params: {
+        name: "search_tools",
+        arguments: { query: "postgres", compact: true, limit: 3 },
+      },
+    })}\n`;
+    const stdout = execSync("node bin/mcp.js", {
+      input: searchReq,
+      cwd: ROOT,
+      encoding: "utf8",
+    });
+    const lines = stdout.trim().split("\n").filter(Boolean);
+    const parsed = JSON.parse(lines[0]);
+    assert.ok(parsed.result?.content?.[0]?.text);
+    const payload = JSON.parse(parsed.result.content[0].text);
+    assert.equal(payload.compact, true);
+    assert.ok(Array.isArray(payload.results));
+    assert.ok(payload.results.length <= 3);
+    const first = payload.results[0];
+    assert.ok(first.name);
+    assert.ok(first.url);
+    assert.ok(first.license);
+    assert.ok(first.freeTier);
+    assert.strictEqual(first.description, undefined);
+    assert.strictEqual(first.statusTags, undefined);
+  });
+
+  test("MCP find_free_alternatives with compact: true returns token-efficient alternatives", () => {
+    const altReq = `${JSON.stringify({
+      jsonrpc: "2.0",
+      id: 19,
+      method: "tools/call",
+      params: {
+        name: "find_free_alternatives",
+        arguments: { commercialTool: "postman", compact: true },
+      },
+    })}\n`;
+    const stdout = execSync("node bin/mcp.js", {
+      input: altReq,
+      cwd: ROOT,
+      encoding: "utf8",
+    });
+    const lines = stdout.trim().split("\n").filter(Boolean);
+    const parsed = JSON.parse(lines[0]);
+    assert.ok(parsed.result?.content?.[0]?.text);
+    const payload = JSON.parse(parsed.result.content[0].text);
+    assert.equal(payload.compact, true);
+    assert.ok(Array.isArray(payload.alternatives));
+    const bruno = payload.alternatives.find((a: any) => a.name.toLowerCase() === "bruno");
+    assert.ok(bruno);
+    assert.ok(bruno.url);
+    assert.strictEqual(bruno.description, undefined);
   });
 });

@@ -29,13 +29,15 @@ npx -y @smithery/cli install devshelf-mcp --client claude
 
 ## 🛠️ MCP Tools Exposed
 
-DevShelf MCP exposes 9 specialized tools to connected LLMs:
+DevShelf MCP exposes 11 specialized tools to connected LLMs:
 
 | Tool Name | Parameters | Description |
 | :--- | :--- | :--- |
-| `search_tools` | `query` (string, required), `category` (string, optional), `limit` (number, default: 8, max: 25) | Full-text fuzzy search across all 530+ developer tools, APIs, AI frameworks, and boilerplates. |
+| `search_tools` | `query` (string, required), `category` (string, optional), `limit` (number, default: 8, max: 25), `compact` (boolean, optional) | Full-text fuzzy search across all 530+ developer tools, APIs, AI frameworks, and boilerplates. Supports `compact: true` for 70% token savings in LLM chats. |
 | `get_tool` | `name` (string, required) | Retrieve deep metadata for a specific tool: license, auth type, rate limits, free tier details, docker compose support, and repo link. |
-| `find_free_alternatives` | `commercialTool` (string, required) | Discover verified free & open-source alternatives to expensive commercial SaaS (e.g., Postman → Bruno, Datadog → Prometheus, Airtable → NocoDB). |
+| `find_free_alternatives` | `commercialTool` (string, required), `compact` (boolean, optional) | Discover verified free & open-source alternatives to expensive commercial SaaS (e.g., Postman → Bruno, Datadog → Prometheus, Airtable → NocoDB). Supports `compact: true`. |
+| `recommend_stack` | `projectType` (string, optional), `database` (string, optional), `hosting` (string, optional), `features` (string[], optional) | Recommend a verified $0/month production architecture (Database, Auth, Hosting, Storage, Testing, Monitoring, AI) tailored to requirements with zero-paywall guarantee. |
+| `check_tool_health` | `name` (string, required) | Inspect real-time endpoint latency, HTTP status, uptime percentage, and verified zero-paywall heartbeat telemetry from continuous monitoring. |
 | `list_categories` | *None* | List all 8 primary categories and subcategories with live resource counts. |
 | `get_random_tool` | `category` (string, optional) | Fetch a random curated tool for developer inspiration and stack discovery. |
 | `get_security_audit` | `name` (string, required) | Inspect catalog identity provenance and authentic external cryptographic audit records. |
