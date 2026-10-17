@@ -334,7 +334,7 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
   <tr>
     <td align="center" width="160">
       <a href="https://github.com/Voyagerroc-Lab">
-        <img src="https://github.com/Voyagerroc-Lab.png" width="70" style="border-radius: 50%;" alt="Voyagerroc-Lab"/><br />
+        <img src="https://api.dicebear.com/7.x/identicon/png?seed=Voyagerroc-Lab" width="70" style="border-radius: 50%;" alt="Voyagerroc-Lab"/><br />
         <sub><b>Voyagerroc-Lab</b></sub>
       </a><br />
       <sub>🔤 Coding Fonts (PR #35)</sub>
@@ -453,6 +453,13 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
   </tr>
   <tr>
     <td align="center" width="160">
+      <a href="https://github.com/estevecastells">
+        <img src="https://github.com/estevecastells.png" width="70" style="border-radius: 50%;" alt="estevecastells"/><br />
+        <sub><b>estevecastells</b></sub>
+      </a><br />
+      <sub>⚡ Invokely (PR #74)</sub>
+    </td>
+    <td align="center" width="160">
       <a href="https://github.com/Alox1d">
         <img src="https://github.com/Alox1d.png" width="70" style="border-radius: 50%;" alt="Alox1d"/><br />
         <sub><b>Alox1d</b></sub>
@@ -464,7 +471,7 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
         <img src="https://github.com/Dramex.png" width="70" style="border-radius: 50%;" alt="Dramex"/><br />
         <sub><b>Dramex</b></sub>
       </a><br />
-      <sub>🛡️ RowSafe (PR #77, #87)</sub>
+      <sub>🛡️ RowSafe (PR #77, #86, #87)</sub>
     </td>
     <td align="center" width="160">
       <a href="https://github.com/SergiuPogor">
@@ -472,6 +479,15 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
         <sub><b>SergiuPogor</b></sub>
       </a><br />
       <sub>📸 CurlShot (PR #79)</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="160">
+      <a href="https://github.com/harshitethic">
+        <img src="https://github.com/harshitethic.png" width="70" style="border-radius: 50%;" alt="harshitethic"/><br />
+        <sub><b>harshitethic</b></sub>
+      </a><br />
+      <sub>🔍 ClonePeek (#80)</sub>
     </td>
     <td align="center" width="160">
       <a href="https://github.com/yumaheymans">
@@ -481,20 +497,18 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
       <sub>🏥 CareJobs.Now (PR #83)</sub>
     </td>
     <td align="center" width="160">
-      <a href="https://github.com/harshitethic">
-        <img src="https://github.com/harshitethic.png" width="70" style="border-radius: 50%;" alt="harshitethic"/><br />
-        <sub><b>harshitethic</b></sub>
-      </a><br />
-      <sub>🔍 ClonePeek (#80)</sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="160">
       <a href="https://github.com/mountainowl">
         <img src="https://github.com/mountainowl.png" width="70" style="border-radius: 50%;" alt="mountainowl"/><br />
         <sub><b>mountainowl</b></sub>
       </a><br />
       <sub>🦉 Bubo (PR #89)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/cpys">
+        <img src="https://github.com/cpys.png" width="70" style="border-radius: 50%;" alt="cpys"/><br />
+        <sub><b>cpys</b></sub>
+      </a><br />
+      <sub>📊 Codex Quota Overlay (#38)</sub>
     </td>
   </tr>
 </table>
