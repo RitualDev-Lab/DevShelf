@@ -475,6 +475,45 @@ function setupListeners() {
 
   // Global Unified Event Delegation
   document.addEventListener("click", (e) => {
+    // 0. MCP Modal Handlers
+    if (e.target.closest("#open-mcp-modal-btn, #hero-mcp-btn, #mobile-mcp-btn, #nav-mcp-btn")) {
+      e.preventDefault();
+      openMcpModal();
+      return;
+    }
+
+    if (e.target.closest("#close-mcp-modal-btn") || e.target.id === "mcp-modal") {
+      e.preventDefault();
+      closeMcpModal();
+      return;
+    }
+
+    const mcpTabBtn = e.target.closest(".mcp-tab-btn");
+    if (mcpTabBtn) {
+      e.preventDefault();
+      const targetId = mcpTabBtn.getAttribute("data-target");
+      document.querySelectorAll(".mcp-tab-btn").forEach((btn) => {
+        btn.classList.remove("active", "bg-purple-600", "text-white");
+        btn.classList.add("bg-slate-800", "text-slate-300");
+      });
+      mcpTabBtn.classList.add("active", "bg-purple-600", "text-white");
+      mcpTabBtn.classList.remove("bg-slate-800", "text-slate-300");
+      document.querySelectorAll(".mcp-tab-pane").forEach((pane) => pane.classList.add("hidden"));
+      const targetPane = document.getElementById(targetId);
+      if (targetPane) targetPane.classList.remove("hidden");
+      return;
+    }
+
+    const copyMcpBtn = e.target.closest(".copy-mcp-btn");
+    if (copyMcpBtn) {
+      e.preventDefault();
+      const text = copyMcpBtn.getAttribute("data-copy");
+      if (text) {
+        copyToClipboard(text, "MCP configuration copied to clipboard!");
+      }
+      return;
+    }
+
     // 1. Open Badge Modal
     if (e.target.closest("#open-badge-modal-btn, #nav-badge-btn, #hero-badge-btn")) {
       e.preventDefault();
@@ -1010,6 +1049,26 @@ function setupListeners() {
       }
     }
   });
+}
+
+function openMcpModal() {
+  const modal = document.getElementById("mcp-modal");
+  if (modal) {
+    modal.classList.remove("hidden");
+    modal.classList.add("show");
+    modal.style.display = "flex";
+    document.body.classList.add("overflow-hidden");
+  }
+}
+
+function closeMcpModal() {
+  const modal = document.getElementById("mcp-modal");
+  if (modal) {
+    modal.classList.remove("show");
+    modal.classList.add("hidden");
+    modal.style.display = "none";
+    document.body.classList.remove("overflow-hidden");
+  }
 }
 
 function openBadgeModal() {

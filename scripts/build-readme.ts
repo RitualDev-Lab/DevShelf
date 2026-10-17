@@ -437,10 +437,11 @@ DevShelf does not rely on subjective claims or stale markdown lists. Catalog int
 Turn your AI coding assistant into a free developer tool & API search engine! DevShelf implements the official **Model Context Protocol (MCP)** over stdio:
 
 ${BT}bash
-# Run stdio MCP server for Claude Desktop, Cursor, Zed, or Windsurf
+# 1-Line Install for Claude Desktop via Smithery
+npx -y @smithery/cli install devshelf-mcp --client claude
+
+# Or run stdio server directly for Cursor, Claude Desktop, Windsurf, or Zed
 npx devshelf-mcp
-# or
-npx devshelf mcp
 ${BT}
 
 ### 1-Click Cursor Configuration (${B}.cursor/mcp.json${B})

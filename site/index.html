@@ -232,6 +232,13 @@
           </div>
         </div>
 
+        <!-- Connect to Cursor / Claude (MCP) Button -->
+        <button id="open-mcp-modal-btn" class="hidden sm:inline-flex items-center space-x-1.5 px-3 py-1.5 text-xs font-bold rounded-lg bg-gradient-to-r from-purple-900/60 to-indigo-900/60 hover:from-purple-800/80 hover:to-indigo-800/80 border border-purple-400/50 text-purple-200 hover:text-white transition hover:scale-105 active:scale-95 shadow-sm shadow-purple-500/20" title="Connect to Cursor, Claude Desktop, Windsurf, Zed">
+          <span>🤖</span>
+          <span class="hidden md:inline">Connect to AI (MCP)</span>
+          <span class="md:hidden">MCP</span>
+        </button>
+
         <!-- Badges Modal Trigger -->
         <button id="open-badge-modal-btn" class="hidden lg:inline-flex items-center space-x-1 px-3 py-1.5 text-xs font-bold rounded-lg bg-purple-900/40 hover:bg-purple-900/70 border border-purple-500/50 text-purple-200 transition hover:scale-105 active:scale-95" title="Embed Featured Badges">
           <span>🎖️ Badges</span>
@@ -301,6 +308,9 @@
         <a href="https://github.com/RitualDev-Lab/DevShelf/wiki" target="_blank" rel="noreferrer" class="mobile-nav-item flex items-center space-x-2 p-2.5 rounded-xl bg-slate-900/80 hover:bg-slate-800 text-slate-200 border border-slate-800">
           <span>📖 Wiki</span>
         </a>
+        <button id="mobile-mcp-btn" class="mobile-nav-item flex items-center space-x-2 p-2.5 rounded-xl bg-purple-950/60 border border-purple-400/50 text-purple-200 text-left font-bold">
+          <span>🤖 Connect to AI (MCP)</span>
+        </button>
         <button id="mobile-badge-btn" class="mobile-nav-item flex items-center space-x-2 p-2.5 rounded-xl bg-purple-950/40 border border-purple-500/40 text-purple-200 text-left font-bold">
           <span>🎖️ Embed Badges</span>
         </button>
@@ -379,6 +389,10 @@
           <span class="liquid-metal-arrow text-cyan-400">↓</span>
         </div>
       </a>
+      <button id="hero-mcp-btn" class="inline-flex items-center space-x-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-purple-600/30 via-indigo-600/30 to-cyan-600/30 hover:from-purple-600/50 hover:to-cyan-600/50 border border-purple-400/70 text-white font-bold transition shadow-lg shadow-purple-500/25 hover:scale-105 active:scale-95" title="Connect DevShelf to Cursor, Claude Desktop, Windsurf, Zed">
+        <span class="text-base">🤖</span>
+        <span>Connect to Cursor &amp; Claude (MCP)</span>
+      </button>
       <button id="hero-random-btn" class="inline-flex items-center space-x-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-amber-500/20 via-orange-500/20 to-amber-500/20 hover:from-amber-500/30 hover:to-orange-500/30 border border-amber-500/50 text-amber-200 font-bold transition shadow-md shadow-amber-500/10 hover:scale-105 active:scale-95" title="Discover a Random Tool (Shortcut: r)">
         <span>🎲 Surprise Me (Random Tool)</span>
       </button>
@@ -917,6 +931,159 @@
       <p class="text-xs text-slate-400 mt-3 font-mono">Want your avatar here? Submit a pull request or claim an open issue!</p>
     </div>
   </section>
+
+  <!-- DevShelf MCP AI Assistant Modal -->
+  <div id="mcp-modal" class="fixed inset-0 z-50 modal-backdrop items-center justify-center p-4 hidden" style="display: none;">
+    <div class="bg-slate-900 border border-purple-500/50 rounded-2xl max-w-2xl w-full p-6 shadow-2xl relative my-auto max-h-[90vh] overflow-y-auto">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-800 mb-4">
+        <div class="flex items-center space-x-2.5">
+          <span class="text-2xl">🤖</span>
+          <div>
+            <h3 class="text-base font-bold text-white">Connect DevShelf to your AI Coding Assistant</h3>
+            <p class="text-[11px] text-purple-300 font-mono">Official Model Context Protocol (MCP) Server • Zero-Paywall Tools &amp; APIs</p>
+          </div>
+        </div>
+        <button id="close-mcp-modal-btn" class="text-slate-300 hover:text-white p-1 rounded-lg hover:bg-slate-800 transition text-sm font-bold">
+          ✕
+        </button>
+      </div>
+
+      <p class="text-xs text-slate-300 mb-4 leading-relaxed">
+        Ground <strong>Cursor</strong>, <strong>Claude Desktop</strong>, <strong>Windsurf</strong>, and <strong>Zed</strong> with 530+ verified zero-paywall tools, public APIs, and FOSS alternatives directly inside your AI coding chats:
+      </p>
+
+      <!-- Client Tabs -->
+      <div class="flex items-center space-x-1 border-b border-slate-800 mb-4 overflow-x-auto pb-1 text-xs font-bold" id="mcp-tabs">
+        <button class="mcp-tab-btn active px-3 py-1.5 rounded-lg bg-purple-600 text-white transition" data-target="mcp-tab-cursor">Cursor</button>
+        <button class="mcp-tab-btn px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 hover:text-white transition" data-target="mcp-tab-claude">Claude Desktop</button>
+        <button class="mcp-tab-btn px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 hover:text-white transition" data-target="mcp-tab-windsurf">Windsurf</button>
+        <button class="mcp-tab-btn px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 hover:text-white transition" data-target="mcp-tab-zed">Zed</button>
+        <button class="mcp-tab-btn px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 hover:text-white transition" data-target="mcp-tab-smithery">Smithery CLI</button>
+      </div>
+
+      <!-- Tab 1: Cursor -->
+      <div id="mcp-tab-cursor" class="mcp-tab-pane">
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-xs font-mono text-purple-300">File: <code>.cursor/mcp.json</code> (or Settings → Features → MCP)</span>
+          <button class="copy-mcp-btn px-2.5 py-1 rounded bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold transition" data-copy='{
+  "mcpServers": {
+    "devshelf": {
+      "command": "npx",
+      "args": ["-y", "devshelf-mcp"]
+    }
+  }
+}'>
+            Copy JSON
+          </button>
+        </div>
+        <pre class="bg-slate-950 p-3 rounded-xl border border-slate-800 text-[11px] font-mono text-emerald-300 overflow-x-auto"><code>{
+  "mcpServers": {
+    "devshelf": {
+      "command": "npx",
+      "args": ["-y", "devshelf-mcp"]
+    }
+  }
+}</code></pre>
+      </div>
+
+      <!-- Tab 2: Claude Desktop -->
+      <div id="mcp-tab-claude" class="mcp-tab-pane hidden">
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-xs font-mono text-purple-300">File: <code>claude_desktop_config.json</code></span>
+          <button class="copy-mcp-btn px-2.5 py-1 rounded bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold transition" data-copy='{
+  "mcpServers": {
+    "devshelf": {
+      "command": "npx",
+      "args": ["-y", "devshelf-mcp"]
+    }
+  }
+}'>
+            Copy JSON
+          </button>
+        </div>
+        <p class="text-[11px] text-slate-400 mb-2 font-mono">
+          macOS: <code>~/Library/Application Support/Claude/claude_desktop_config.json</code><br>
+          Windows: <code>%APPDATA%\Claude\claude_desktop_config.json</code>
+        </p>
+        <pre class="bg-slate-950 p-3 rounded-xl border border-slate-800 text-[11px] font-mono text-emerald-300 overflow-x-auto"><code>{
+  "mcpServers": {
+    "devshelf": {
+      "command": "npx",
+      "args": ["-y", "devshelf-mcp"]
+    }
+  }
+}</code></pre>
+      </div>
+
+      <!-- Tab 3: Windsurf -->
+      <div id="mcp-tab-windsurf" class="mcp-tab-pane hidden">
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-xs font-mono text-purple-300">File: <code>~/.codeium/windsurf/mcp_config.json</code></span>
+          <button class="copy-mcp-btn px-2.5 py-1 rounded bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold transition" data-copy='{
+  "mcpServers": {
+    "devshelf": {
+      "command": "npx",
+      "args": ["-y", "devshelf-mcp"]
+    }
+  }
+}'>
+            Copy JSON
+          </button>
+        </div>
+        <pre class="bg-slate-950 p-3 rounded-xl border border-slate-800 text-[11px] font-mono text-emerald-300 overflow-x-auto"><code>{
+  "mcpServers": {
+    "devshelf": {
+      "command": "npx",
+      "args": ["-y", "devshelf-mcp"]
+    }
+  }
+}</code></pre>
+      </div>
+
+      <!-- Tab 4: Zed -->
+      <div id="mcp-tab-zed" class="mcp-tab-pane hidden">
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-xs font-mono text-purple-300">File: <code>~/.config/zed/settings.json</code></span>
+          <button class="copy-mcp-btn px-2.5 py-1 rounded bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold transition" data-copy='{
+  "context_servers": {
+    "devshelf": {
+      "command": "npx",
+      "args": ["-y", "devshelf-mcp"]
+    }
+  }
+}'>
+            Copy JSON
+          </button>
+        </div>
+        <pre class="bg-slate-950 p-3 rounded-xl border border-slate-800 text-[11px] font-mono text-emerald-300 overflow-x-auto"><code>{
+  "context_servers": {
+    "devshelf": {
+      "command": "npx",
+      "args": ["-y", "devshelf-mcp"]
+    }
+  }
+}</code></pre>
+      </div>
+
+      <!-- Tab 5: Smithery CLI -->
+      <div id="mcp-tab-smithery" class="mcp-tab-pane hidden">
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-xs font-mono text-purple-300">1-Line CLI Install via Smithery</span>
+          <button class="copy-mcp-btn px-2.5 py-1 rounded bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold transition" data-copy="npx -y @smithery/cli install devshelf-mcp --client claude">
+            Copy Command
+          </button>
+        </div>
+        <pre class="bg-slate-950 p-3 rounded-xl border border-slate-800 text-[11px] font-mono text-cyan-300 overflow-x-auto"><code>npx -y @smithery/cli install devshelf-mcp --client claude</code></pre>
+      </div>
+
+      <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between text-xs">
+        <span class="text-slate-400">Terminal test: <code class="text-purple-300">npx devshelf-mcp</code></span>
+        <a href="https://github.com/RitualDev-Lab/DevShelf/blob/main/docs/mcp.md" target="_blank" rel="noreferrer" class="text-cyan-400 hover:underline font-bold">
+          View MCP Docs &amp; Tools Guide →
+        </a>
+      </div>
+    </div>
+  </div>
 
   <!-- "Featured on DevShelf" Badge Modal -->
   <div id="badge-modal" class="fixed inset-0 z-50 modal-backdrop items-center justify-center p-4 hidden" style="display: none;">

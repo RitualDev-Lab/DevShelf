@@ -1,14 +1,18 @@
 # 🤖 DevShelf Model Context Protocol (MCP) Server
 
-> Connect your AI coding assistant (Claude Desktop, Cursor, Antigravity, Windsurf, Zed) directly to DevShelf's 520+ verified zero-paywall developer tools, free APIs, and open-source infrastructure.
+> Connect your AI coding assistant (Claude Desktop, Cursor, Antigravity, Windsurf, Zed) directly to DevShelf's 530+ verified zero-paywall developer tools, free APIs, and open-source infrastructure.
 
 DevShelf provides an official, zero-dependency **Model Context Protocol (MCP)** server over standard I/O (stdio). Once connected, your AI assistant can recommend battle-tested free tools, find open-source alternatives to expensive SaaS, and inspect rate limits or free tier allowances in real time.
+
+[![Smithery Ready](https://img.shields.io/badge/Smithery-Install_Ready-blueviolet.svg?style=flat-square)](https://smithery.ai)
+[![MCP Ready](https://img.shields.io/badge/MCP-Claude%20%7C%20Cursor%20%7C%20Zed-purple.svg?style=flat-square)](https://modelcontextprotocol.io)
+[![Zero Paywall](https://img.shields.io/badge/Zero--Paywall-100%25_Verified-brightgreen.svg?style=flat-square)](https://devshelf.ritualdev.in)
 
 ---
 
 ## ⚡ Quick Start
 
-You can run the MCP server instantly via `npx` with zero installation:
+Run the server instantly via `npx` with zero local configuration:
 
 ```bash
 npx devshelf-mcp
@@ -16,25 +20,59 @@ npx devshelf-mcp
 npx devshelf mcp
 ```
 
+### 1-Line Installer via Smithery
+```bash
+npx -y @smithery/cli install devshelf-mcp --client claude
+```
+
 ---
 
 ## 🛠️ MCP Tools Exposed
 
-DevShelf MCP exposes 5 specialized tools to connected LLMs:
+DevShelf MCP exposes 9 specialized tools to connected LLMs:
 
 | Tool Name | Parameters | Description |
 | :--- | :--- | :--- |
-| `search_tools` | `query` (string, required), `category` (string, optional), `limit` (number, default: 10) | Full-text fuzzy search across all 520+ developer tools, APIs, AI frameworks, and boilerplates. |
+| `search_tools` | `query` (string, required), `category` (string, optional), `limit` (number, default: 8, max: 25) | Full-text fuzzy search across all 530+ developer tools, APIs, AI frameworks, and boilerplates. |
 | `get_tool` | `name` (string, required) | Retrieve deep metadata for a specific tool: license, auth type, rate limits, free tier details, docker compose support, and repo link. |
-| `find_free_alternatives` | `commercial_tool` (string, required) | Discover verified free & open-source alternatives to expensive SaaS (e.g., Postman, Firebase, Datadog, Airtable, Auth0). |
-| `list_categories` | *None* | List all 8 primary categories and subcategories with resource counts. |
-| `get_random_tool` | `category` (string, optional) | Fetch a random curated tool for discovery and developer inspiration. |
+| `find_free_alternatives` | `commercialTool` (string, required) | Discover verified free & open-source alternatives to expensive commercial SaaS (e.g., Postman → Bruno, Datadog → Prometheus, Airtable → NocoDB). |
+| `list_categories` | *None* | List all 8 primary categories and subcategories with live resource counts. |
+| `get_random_tool` | `category` (string, optional) | Fetch a random curated tool for developer inspiration and stack discovery. |
+| `get_security_audit` | `name` (string, required) | Inspect catalog identity provenance and authentic external cryptographic audit records. |
+| `list_verified_sponsor_tools` | `tier` (string, optional) | Query verified community sponsor tools with transparent zero-paywall editorial standards. |
+| `list_sponsors` | *None* | Inspect community patron ledger, contribution tiers, and sponsorship provenance. |
+| `get_sponsor_badge` | `name` (string, required), `style` (string, optional) | Generate SVG and markdown badge embed snippets for verified catalog tools. |
 
 ---
 
 ## 💻 Configuration by AI Editor
 
-### 1. Claude Desktop
+### 1. Cursor
+
+In Cursor:
+1. Navigate to **Cursor Settings** -> **Features** -> **MCP Servers**.
+2. Click **Add New MCP Server**.
+3. Configure:
+   - **Name**: `devshelf`
+   - **Type**: `command`
+   - **Command**: `npx -y devshelf-mcp`
+
+Or create/edit `.cursor/mcp.json` in your workspace root:
+
+```json
+{
+  "mcpServers": {
+    "devshelf": {
+      "command": "npx",
+      "args": ["-y", "devshelf-mcp"]
+    }
+  }
+}
+```
+
+---
+
+### 2. Claude Desktop
 
 Add DevShelf to your Claude Desktop configuration file:
 
@@ -54,31 +92,6 @@ Add DevShelf to your Claude Desktop configuration file:
 ```
 
 Restart Claude Desktop. The hammer icon will display the `devshelf` tools.
-
----
-
-### 2. Cursor
-
-In Cursor:
-1. Navigate to **Cursor Settings** -> **Features** -> **MCP Servers**.
-2. Click **Add New MCP Server**.
-3. Configure:
-   - **Name**: `devshelf`
-   - **Type**: `command`
-   - **Command**: `npx -y devshelf-mcp`
-
-Or add directly to `.cursor/mcp.json` in your workspace root:
-
-```json
-{
-  "mcpServers": {
-    "devshelf": {
-      "command": "npx",
-      "args": ["-y", "devshelf-mcp"]
-    }
-  }
-}
-```
 
 ---
 
