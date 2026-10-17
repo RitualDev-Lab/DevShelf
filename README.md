@@ -360,8 +360,6 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
       </a><br />
       <sub>⚡ Budget Gate (PR #41)</sub>
     </td>
-  </tr>
-  <tr>
     <td align="center" width="160">
       <a href="https://github.com/louis030195">
         <img src="https://github.com/louis030195.png" width="70" style="border-radius: 50%;" alt="louis030195"/><br />
@@ -369,6 +367,8 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
       </a><br />
       <sub>🧠 Hyperconsciousness (PR #44)</sub>
     </td>
+  </tr>
+  <tr>
     <td align="center" width="160">
       <a href="https://github.com/deiucanta">
         <img src="https://github.com/deiucanta.png" width="70" style="border-radius: 50%;" alt="deiucanta"/><br />
@@ -390,8 +390,6 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
       </a><br />
       <sub>🎬 OrkasVideoStudio (PR #55)</sub>
     </td>
-  </tr>
-  <tr>
     <td align="center" width="160">
       <a href="https://github.com/yannickmonney">
         <img src="https://github.com/yannickmonney.png" width="70" style="border-radius: 50%;" alt="yannickmonney"/><br />
@@ -406,6 +404,8 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
       </a><br />
       <sub>🛠️ Toolshed (PR #61)</sub>
     </td>
+  </tr>
+  <tr>
     <td align="center" width="160">
       <a href="https://github.com/foklepoint">
         <img src="https://github.com/foklepoint.png" width="70" style="border-radius: 50%;" alt="foklepoint"/><br />
@@ -420,8 +420,6 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
       </a><br />
       <sub>🚢 Shipvela (PR #65)</sub>
     </td>
-  </tr>
-  <tr>
     <td align="center" width="160">
       <a href="https://github.com/zealous1">
         <img src="https://github.com/zealous1.png" width="70" style="border-radius: 50%;" alt="zealous1"/><br />
@@ -443,6 +441,8 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
       </a><br />
       <sub>⚡ LeanFPS (#70)</sub>
     </td>
+  </tr>
+  <tr>
     <td align="center" width="160">
       <a href="https://github.com/Shaisolaris">
         <img src="https://github.com/Shaisolaris.png" width="70" style="border-radius: 50%;" alt="Shaisolaris"/><br />
@@ -450,8 +450,6 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
       </a><br />
       <sub>☀️ Solaris Dev Shop (#71)</sub>
     </td>
-  </tr>
-  <tr>
     <td align="center" width="160">
       <a href="https://github.com/estevecastells">
         <img src="https://github.com/estevecastells.png" width="70" style="border-radius: 50%;" alt="estevecastells"/><br />
@@ -509,6 +507,13 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
         <sub><b>cpys</b></sub>
       </a><br />
       <sub>📊 Codex Quota Overlay (#38)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/InsightFactoryAPP">
+        <img src="https://github.com/InsightFactoryAPP.png" width="70" style="border-radius: 50%;" alt="InsightFactoryAPP"/><br />
+        <sub><b>InsightFactoryAPP</b></sub>
+      </a><br />
+      <sub>🚀 YYLO (#3)</sub>
     </td>
   </tr>
 </table>
