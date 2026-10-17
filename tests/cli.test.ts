@@ -146,6 +146,7 @@ describe("DevShelf CLI & TUI Suite", () => {
     assert.ok(toolNames.includes("find_free_alternatives"));
     assert.ok(toolNames.includes("recommend_stack"));
     assert.ok(toolNames.includes("check_tool_health"));
+    assert.ok(toolNames.includes("get_sponsor_telemetry"));
   });
 
   test("CLI header in help displays current version from package.json", () => {
@@ -407,5 +408,59 @@ describe("DevShelf CLI & TUI Suite", () => {
     assert.ok(bruno);
     assert.ok(bruno.url);
     assert.strictEqual(bruno.description, undefined);
+  });
+
+  test("MCP get_sponsor_telemetry returns server reach and self-serve sponsor packages", () => {
+    const telReq = `${JSON.stringify({
+      jsonrpc: "2.0",
+      id: 20,
+      method: "tools/call",
+      params: {
+        name: "get_sponsor_telemetry",
+        arguments: {},
+      },
+    })}\n`;
+    const stdout = execSync("node bin/mcp.js", {
+      input: telReq,
+      cwd: ROOT,
+      encoding: "utf8",
+    });
+    const lines = stdout.trim().split("\n").filter(Boolean);
+    const parsed = JSON.parse(lines[0]);
+    assert.ok(parsed.result?.content?.[0]?.text);
+    const payload = JSON.parse(parsed.result.content[0].text);
+    assert.equal(payload.serverName, "devshelf-mcp");
+    assert.ok(payload.metrics?.monthlyAgentSessions >= 1000);
+    assert.ok(Array.isArray(payload.metrics?.activeEditors));
+    assert.ok(payload.packages?.starter);
+    assert.ok(payload.packages?.mcpPro);
+    assert.ok(payload.packages?.enterprise);
+    assert.ok(payload.checkoutUrl.includes("sponsors.html#mcp-sponsors"));
+  });
+
+  test("MCP search_tools prioritizes featured tools and injects sponsorTier tag", () => {
+    const searchReq = `${JSON.stringify({
+      jsonrpc: "2.0",
+      id: 21,
+      method: "tools/call",
+      params: {
+        name: "search_tools",
+        arguments: { query: "agentshield" },
+      },
+    })}\n`;
+    const stdout = execSync("node bin/mcp.js", {
+      input: searchReq,
+      cwd: ROOT,
+      encoding: "utf8",
+    });
+    const lines = stdout.trim().split("\n").filter(Boolean);
+    const parsed = JSON.parse(lines[0]);
+    assert.ok(parsed.result?.content?.[0]?.text);
+    const payload = JSON.parse(parsed.result.content[0].text);
+    assert.ok(payload.results.length >= 1);
+    const first = payload.results[0];
+    assert.equal(first.name, "AgentShield");
+    assert.equal(first.featured, true);
+    assert.ok(first.sponsorTier);
   });
 });

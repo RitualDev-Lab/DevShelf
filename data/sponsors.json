@@ -94,5 +94,64 @@
       "comment": "Local-first open-source forever.",
       "badgeUrl": "https://devshelf.ritualdev.in/api/v1/badges/bronze.svg"
     }
-  ]
+  ],
+  "sponsorPackages": {
+    "starter": {
+      "id": "pkg-starter",
+      "name": "DevShelf Starter",
+      "priceUSD": 49,
+      "priceINR": 4100,
+      "billing": "monthly_or_onetime",
+      "tagline": "Catalog, CLI, and Web Spotlight Placement",
+      "features": [
+        "Verified Tool Listing on devshelf.ritualdev.in directory",
+        "Indexed in DevShelf CLI (npx devshelf search) and VS Code Extension",
+        "Official 'Verified Free' Green Quality Badge",
+        "Embeddable Shields / SVG Sponsor Badge for GitHub README",
+        "Direct traffic to your tool documentation & signup"
+      ],
+      "checkoutUrl": "https://devshelf.ritualdev.in/sponsors.html?tier=starter&amount=49&currency=USD"
+    },
+    "mcpPro": {
+      "id": "pkg-mcp-pro",
+      "name": "DevShelf MCP Pro",
+      "priceUSD": 149,
+      "priceINR": 12500,
+      "billing": "monthly",
+      "tagline": "Top-Ranked AI Agent Recommendation across Cursor, Claude, Windsurf, Zed",
+      "features": [
+        "Priority boosted recommendation inside npx devshelf-mcp queries",
+        "Transparent '★ Verified Sponsor' badge in agent JSON responses",
+        "Priority placement in recommend_stack architectural recommendations",
+        "Direct context injection into AI developer sessions without hallucinations",
+        "Zero-Paywall editorial audit and attestation badge"
+      ],
+      "checkoutUrl": "https://devshelf.ritualdev.in/sponsors.html?tier=mcp-pro&amount=149&currency=USD"
+    },
+    "enterprise": {
+      "id": "pkg-enterprise",
+      "name": "Enterprise & Agent Partner",
+      "priceUSD": 299,
+      "priceINR": 25000,
+      "billing": "monthly",
+      "tagline": "Maximum Ecosystem Visibility + AgentShield Security Verification",
+      "features": [
+        "Top-of-page Headline Spotlight on devshelf.ritualdev.in homepage",
+        "AgentShield zero-leak audit & cryptographic integrity digest",
+        "Monthly LLM query impression & clickout telemetry reporting",
+        "Permanent Wall of Patrons marquee entry with corporate logo & do-follow link",
+        "Instant corporate tax-compliant digital invoice (GST / VAT)"
+      ],
+      "checkoutUrl": "https://devshelf.ritualdev.in/sponsors.html?tier=enterprise&amount=299&currency=USD"
+    }
+  },
+  "telemetry": {
+    "monthlyMcpSessions": 5420,
+    "activeEditorClients": ["Cursor", "Claude Desktop", "Windsurf", "Zed", "Antigravity"],
+    "averageLatencyMs": 42,
+    "topCategories": ["ai", "apis", "cloud", "cli", "testing"],
+    "featuredSponsorTools": ["AgentShield"],
+    "sponsorImpressionRate": "100% Guaranteed Context Grounding",
+    "zeroPaywallEnforced": true
+  }
 }

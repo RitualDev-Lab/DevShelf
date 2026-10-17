@@ -181,6 +181,23 @@ export async function buildStaticBadges() {
     const raw = await fs.readFile(sponsorsDataPath, "utf8");
     const parsed = JSON.parse(raw);
     await fs.writeFile(apiSponsorsPath, JSON.stringify(parsed, null, 2), "utf8");
+    const apiTelemetryPath = path.join(ROOT_DIR, "site", "api", "v1", "sponsor-telemetry.json");
+    if (parsed.telemetry) {
+      await fs.writeFile(
+        apiTelemetryPath,
+        JSON.stringify(
+          {
+            serverName: "devshelf-mcp",
+            telemetry: parsed.telemetry,
+            packages: parsed.sponsorPackages,
+            checkoutUrl: "https://devshelf.ritualdev.in/sponsors.html#mcp-sponsors",
+          },
+          null,
+          2,
+        ),
+        "utf8",
+      );
+    }
     if (Array.isArray(parsed.patrons)) {
       patronsList = parsed.patrons.map((p: any) => ({
         handle: p.github || (p.name ? p.name.toLowerCase().replace(/[^a-z0-9]/g, "") : "patron"),

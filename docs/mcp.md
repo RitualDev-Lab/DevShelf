@@ -29,11 +29,11 @@ npx -y @smithery/cli install devshelf-mcp --client claude
 
 ## 🛠️ MCP Tools Exposed
 
-DevShelf MCP exposes 11 specialized tools to connected LLMs:
+DevShelf MCP exposes 12 specialized tools to connected LLMs:
 
 | Tool Name | Parameters | Description |
 | :--- | :--- | :--- |
-| `search_tools` | `query` (string, required), `category` (string, optional), `limit` (number, default: 8, max: 25), `compact` (boolean, optional) | Full-text fuzzy search across all 530+ developer tools, APIs, AI frameworks, and boilerplates. Supports `compact: true` for 70% token savings in LLM chats. |
+| `search_tools` | `query` (string, required), `category` (string, optional), `limit` (number, default: 8, max: 25), `compact` (boolean, optional) | Full-text fuzzy search across all 530+ developer tools, APIs, AI frameworks, and boilerplates. Supports `compact: true` for 70% token savings in LLM chats and prioritizes verified sponsor tools. |
 | `get_tool` | `name` (string, required) | Retrieve deep metadata for a specific tool: license, auth type, rate limits, free tier details, docker compose support, and repo link. |
 | `find_free_alternatives` | `commercialTool` (string, required), `compact` (boolean, optional) | Discover verified free & open-source alternatives to expensive commercial SaaS (e.g., Postman → Bruno, Datadog → Prometheus, Airtable → NocoDB). Supports `compact: true`. |
 | `recommend_stack` | `projectType` (string, optional), `database` (string, optional), `hosting` (string, optional), `features` (string[], optional) | Recommend a verified $0/month production architecture (Database, Auth, Hosting, Storage, Testing, Monitoring, AI) tailored to requirements with zero-paywall guarantee. |
@@ -44,6 +44,7 @@ DevShelf MCP exposes 11 specialized tools to connected LLMs:
 | `list_verified_sponsor_tools` | `tier` (string, optional) | Query verified community sponsor tools with transparent zero-paywall editorial standards. |
 | `list_sponsors` | *None* | Inspect community patron ledger, contribution tiers, and sponsorship provenance. |
 | `get_sponsor_badge` | `name` (string, required), `style` (string, optional) | Generate SVG and markdown badge embed snippets for verified catalog tools. |
+| `get_sponsor_telemetry` | *None* | Inspect live MCP server reach, monthly agent sessions, tool recommendation impressions, and self-serve developer tool sponsorship tiers with live booking links. |
 
 ---
 

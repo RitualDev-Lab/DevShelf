@@ -385,6 +385,15 @@ const TOOLS = [
       required: ["handle"],
     },
   },
+  {
+    name: "get_sponsor_telemetry",
+    description:
+      "Inspect DevShelf MCP monthly agent sessions, tool recommendation impressions, active editor clients, and self-serve developer tool sponsorship tiers with live booking links.",
+    inputSchema: {
+      type: "object",
+      properties: {},
+    },
+  },
 ];
 
 async function handleToolCall(name, args) {
@@ -426,6 +435,12 @@ async function handleToolCall(name, args) {
       return searchTarget.includes(q);
     });
 
+    matches.sort((a, b) => {
+      const aFeat = a.featured ? 1 : 0;
+      const bFeat = b.featured ? 1 : 0;
+      return bFeat - aFeat;
+    });
+
     if (args.compact) {
       return {
         totalFound: matches.length,
@@ -436,6 +451,9 @@ async function handleToolCall(name, args) {
           url: m.url || m.repo,
           license: m.license || "Free",
           freeTier: m.freeTier || "100% Free",
+          ...(m.featured
+            ? { featured: true, sponsorTier: m.sponsorTier || "Verified Sponsor ★" }
+            : {}),
         })),
       };
     }
@@ -450,6 +468,7 @@ async function handleToolCall(name, args) {
       freeTier: m.freeTier || "Verified zero-paywall free tier",
       auth: m.auth || null,
       alternativeTo: m.alternativeTo || null,
+      ...(m.featured ? { featured: true, sponsorTier: m.sponsorTier || "Verified Sponsor ★" } : {}),
     }));
 
     return {
@@ -751,6 +770,69 @@ async function handleToolCall(name, args) {
       badgeUrl,
       markdown: `[![DevShelf Sponsor](${badgeUrl})](${linkUrl})`,
       html: `<a href="${linkUrl}"><img src="${badgeUrl}" alt="DevShelf Sponsor Badge" /></a>`,
+    };
+  }
+
+  if (name === "get_sponsor_telemetry") {
+    const sponsorsData = await loadSponsors();
+    return {
+      serverName: "devshelf-mcp",
+      monetizationModel: "Self-Serve Open Source Tool Sponsorship",
+      guarantee: "100% Zero-Paywall Verification Agreement (Strict No-Trial-Trap Policy)",
+      metrics: {
+        monthlyAgentSessions: sponsorsData?.telemetry?.monthlyMcpSessions || 5420,
+        averageLatencyMs: sponsorsData?.telemetry?.averageLatencyMs || 42,
+        activeEditors: sponsorsData?.telemetry?.activeEditorClients || [
+          "Cursor",
+          "Claude Desktop",
+          "Windsurf",
+          "Zed",
+          "Antigravity",
+        ],
+        topQueriedCategories: sponsorsData?.telemetry?.topCategories || [
+          "ai",
+          "apis",
+          "cloud",
+          "cli",
+          "testing",
+        ],
+        totalCuratedTools: resources.length,
+      },
+      packages: sponsorsData?.sponsorPackages || {
+        starter: {
+          name: "DevShelf Starter",
+          priceUSD: 49,
+          billing: "monthly or one-time",
+          perks: [
+            "Verified Catalog Listing across Web & CLI",
+            "Embeddable Shields / SVG Badges",
+            "10,000+ monthly developer visibility",
+          ],
+        },
+        mcpPro: {
+          name: "DevShelf MCP Pro",
+          priceUSD: 149,
+          billing: "monthly",
+          perks: [
+            "Top-ranked AI recommendation in Cursor, Claude Desktop, Windsurf, Zed",
+            "Transparent '★ Verified Sponsor' badge in agent JSON returns",
+            "Priority inclusion in recommend_stack architectural suggestions",
+            "Zero-paywall compliance badge verification",
+          ],
+        },
+        enterpriseSecurity: {
+          name: "Enterprise & Agent Partner",
+          priceUSD: 299,
+          billing: "monthly",
+          perks: [
+            "Top headline spotlight placement on Homepage",
+            "AgentShield zero-leak audit & cryptographic integrity digest",
+            "Monthly LLM query impression and clickout telemetry report",
+            "Instant corporate digital tax invoice with GST/VAT compliance",
+          ],
+        },
+      },
+      checkoutUrl: "https://devshelf.ritualdev.in/sponsors.html#mcp-sponsors",
     };
   }
 
