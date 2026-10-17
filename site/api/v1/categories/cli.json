@@ -1,9 +1,9 @@
 {
   "version": "1.1.2",
-  "updatedAt": "2026-10-17T11:58:39.380Z",
+  "updatedAt": "2026-10-17T17:17:37.058Z",
   "slug": "cli",
   "name": "CLI & Developer Productivity",
-  "count": 117,
+  "count": 118,
   "items": [
     {
       "name": "GitWhisper",
@@ -1837,6 +1837,17 @@
       "repo": "https://github.com/harshitethic/clonepeek",
       "category": "CLI & Developer Productivity",
       "description": "Read-only Python CLI and GitHub Action that inventories first-run repository execution hooks (npm scripts, VS Code tasks, devcontainers, and MCP process settings) and generates review reports without executing project code.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "Bubo",
+      "repo": "https://github.com/mountainowl/bubo",
+      "category": "CLI & Developer Productivity",
+      "description": "Bubo is a self-hosted AI code reviewer for GitHub pull requests and GitLab merge requests. It runs with an operator-chosen LLM, posts evidence-backed inline findings, and provides auditable quality, governance, provenance, cost, and ROI data.",
       "language": "Python",
       "license": "MIT",
       "featured": false,

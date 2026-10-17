@@ -1,11 +1,11 @@
 {
   "version": "1.1.2",
-  "updatedAt": "2026-10-17T11:58:39.380Z",
-  "totalCount": 534,
-  "reposCount": 331,
+  "updatedAt": "2026-10-17T17:17:37.058Z",
+  "totalCount": 535,
+  "reposCount": 332,
   "categoryCounts": {
     "aiTools": 90,
-    "cliTools": 117,
+    "cliTools": 118,
     "testingQa": 62,
     "apis": 102,
     "freeCloud": 71,

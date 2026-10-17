@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 534 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 535 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -1927,6 +1927,15 @@
 - **URL**: https://github.com/harshitethic/clonepeek
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/clonepeek.html
 - **Description**: Read-only Python CLI and GitHub Action that inventories first-run repository execution hooks (npm scripts, VS Code tasks, devcontainers, and MCP process settings) and generates review reports without executing project code.
+
+### Bubo
+- **Category**: CLI & Developer Productivity
+- **Pricing Model**: See official site for free access and limits
+- **License**: MIT
+- **Language**: Python
+- **URL**: https://github.com/mountainowl/bubo
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/bubo.html
+- **Description**: Bubo is a self-hosted AI code reviewer for GitHub pull requests and GitLab merge requests. It runs with an operator-chosen LLM, posts evidence-backed inline findings, and provides auditable quality, governance, provenance, cost, and ROI data.
 
 ### AutoHeal-QA
 - **Category**: Browser & E2E Testing

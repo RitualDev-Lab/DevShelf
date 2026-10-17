@@ -1,13 +1,13 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-10-17T11:58:39.380Z",
-  "totalCount": 534,
-  "reposCount": 331,
+  "updatedAt": "2026-10-17T17:17:37.058Z",
+  "totalCount": 535,
+  "reposCount": 332,
   "facets": {
-    "repos": 331
+    "repos": 332
   },
   "counts": {
     "aiTools": 90,
-    "cliTools": 117,
+    "cliTools": 118,
     "testingQa": 62,
     "apis": 102,
     "freeCloud": 71,
@@ -3333,6 +3333,17 @@ window.DEVSHELF_DATA = {
       "repo": "https://github.com/harshitethic/clonepeek",
       "category": "CLI & Developer Productivity",
       "description": "Read-only Python CLI and GitHub Action that inventories first-run repository execution hooks (npm scripts, VS Code tasks, devcontainers, and MCP process settings) and generates review reports without executing project code.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "Bubo",
+      "repo": "https://github.com/mountainowl/bubo",
+      "category": "CLI & Developer Productivity",
+      "description": "Bubo is a self-hosted AI code reviewer for GitHub pull requests and GitLab merge requests. It runs with an operator-chosen LLM, posts evidence-backed inline findings, and provides auditable quality, governance, provenance, cost, and ROI data.",
       "language": "Python",
       "license": "MIT",
       "featured": false,

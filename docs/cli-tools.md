@@ -4,7 +4,7 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total CLI Tools](https://img.shields.io/badge/CLI_Tools-117_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total CLI Tools](https://img.shields.io/badge/CLI_Tools-118_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
 [Benchmarking & Performance](#benchmarking-performance) • [CLI & Developer Productivity](#cli-developer-productivity) • [Database & SQL](#database-sql) • [Dev Utilities & Libraries](#dev-utilities-libraries) • [Developer Tools](#developer-tools) • [DevOps & Containers](#devops-containers) • [Disk & Storage](#disk-storage) • [Git & Version Control](#git-version-control) • [GitHub Workflow & TUI](#github-workflow-tui) • [HTTP & Network](#http-network) • [OS & Hardware Utilities](#os-hardware-utilities) • [System & Process Monitoring](#system-process-monitoring) • [Terminal & Search](#terminal-search) • [Terminal & Shell](#terminal-shell) • [Terminal Navigation](#terminal-navigation)
@@ -17,7 +17,7 @@
 | :--- | :---: | :---: | :--- | :---: |
 | [**hyperfine**](https://github.com/sharkdp/hyperfine) | `Rust` | `MIT / Apache-2.0` | Command-line benchmarking tool with statistical analysis, warmup runs, and parametric sweeps. | [GitHub](https://github.com/sharkdp/hyperfine) |
 
-### <a id="cli-developer-productivity"></a>CLI & Developer Productivity (8)
+### <a id="cli-developer-productivity"></a>CLI & Developer Productivity (9)
 
 | Tool | Language | License | Description | Links |
 | :--- | :---: | :---: | :--- | :---: |
@@ -29,6 +29,7 @@
 | [**OrkasVideoStudio**](https://github.com/Orkas-AI/Orkas-VideoStudio) | `TypeScript` | `MIT` | Local-first TypeScript CLI and MCP toolkit for coding agents to compose, edit, and assemble videos from editable plan.json timelines. Core editing and transcription need no API keys; optional generation features use your own provider keys. | [GitHub](https://github.com/Orkas-AI/Orkas-VideoStudio) |
 | [**Shipvela publishing plugin and skills**](https://github.com/stefanautomateed/shipvela-codex) | `Markdown, JSON, CLI` | `MIT` | MIT-licensed publishing skills and MCP client configuration for coding agents to stage website files, review deployments, and track status. Enables direct website publishing from agent workflows without requiring code generation or a self-hosted server. | [GitHub](https://github.com/stefanautomateed/shipvela-codex) |
 | [**ClonePeek**](https://github.com/harshitethic/clonepeek) | `Python` | `MIT` | Read-only Python CLI and GitHub Action that inventories first-run repository execution hooks (npm scripts, VS Code tasks, devcontainers, and MCP process settings) and generates review reports without executing project code. | [GitHub](https://github.com/harshitethic/clonepeek) |
+| [**Bubo**](https://github.com/mountainowl/bubo) | `Python` | `MIT` | Bubo is a self-hosted AI code reviewer for GitHub pull requests and GitLab merge requests. It runs with an operator-chosen LLM, posts evidence-backed inline findings, and provides auditable quality, governance, provenance, cost, and ROI data. | [GitHub](https://github.com/mountainowl/bubo) |
 
 ### <a id="database-sql"></a>Database & SQL (7)
 

@@ -1261,5 +1261,14 @@
     "language": "Python",
     "license": "MIT",
     "featured": false
+  },
+  {
+    "name": "Bubo",
+    "repo": "https://github.com/mountainowl/bubo",
+    "category": "CLI & Developer Productivity",
+    "description": "Bubo is a self-hosted AI code reviewer for GitHub pull requests and GitLab merge requests. It runs with an operator-chosen LLM, posts evidence-backed inline findings, and provides auditable quality, governance, provenance, cost, and ROI data.",
+    "language": "Python",
+    "license": "MIT",
+    "featured": false
   }
 ]
