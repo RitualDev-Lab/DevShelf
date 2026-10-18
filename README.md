@@ -35,7 +35,7 @@
 <tr>
 <td align="center"><b>🌐 Free APIs</b><br><code>102</code></td>
 <td align="center"><b>🤖 AI & LLMs</b><br><code>90</code></td>
-<td align="center"><b>⚡ CLI Tools</b><br><code>118</code></td>
+<td align="center"><b>⚡ CLI Tools</b><br><code>119</code></td>
 <td align="center"><b>🧪 Testing & QA</b><br><code>62</code></td>
 <td align="center"><b>☁️ Free Cloud</b><br><code>71</code></td>
 <td align="center"><b>🤝 Up for Grabs</b><br><code>21</code></td>
@@ -47,7 +47,7 @@
 ### 🎯 The Race to 1,000 Verified Tools (Hacktoberfest Milestone)
 
 ```text
-[███████████░░░░░░░░░] 535 / 1,000 Tools Verified (54% • 465 to go!)
+[███████████░░░░░░░░░] 536 / 1,000 Tools Verified (54% • 464 to go!)
 ```
 
 *Help us curate the definitive zero-paywall index! [Submit your favorite developer tool, API, or AI framework →](#-how-to-submit-your-project-or-api)*
@@ -66,7 +66,7 @@ DevShelf isn't a static markdown list. It runs directly inside your terminal, in
 ┌─────────────────────────────────────────────────────────────────────────────────┐
 │ $ npx devshelf search "postgres"                                                │
 │                                                                                 │
-│ 📚 DevShelf CLI v1.1.0 — 535 Curated Tools (Live CI Audited)                    │
+│ 📚 DevShelf CLI v1.1.0 — 536 Curated Tools (Live CI Audited)                    │
 │                                                                                 │
 │ [1] Neon (Database / Serverless)                                                │
 │     Serverless Postgres with autoscaling, branching, and generous free tier.    │
@@ -181,13 +181,13 @@ npx devshelf stats
 
 ## 📂 Browse Catalog by Category
 
-Explore our curated collections of **535+ zero-paywall developer tools**, categorized into dedicated guides with subcategory indexing:
+Explore our curated collections of **536+ zero-paywall developer tools**, categorized into dedicated guides with subcategory indexing:
 
 | Category | Resources | Description & Subcategories | Guide |
 | :--- | :---: | :--- | :---: |
 | 🌐 **Free & Public APIs** | **102** | Weather, Finance, Mock/Dev APIs, Geocoding, AI/ML, Media, Entertainment | [**Browse APIs →**](docs/apis.md) |
 | 🤖 **AI Agents & Local LLMs** | **90** | Local LLM Runtimes, Autonomous Agents, Coding Assistants, Orchestration | [**Browse AI Tools →**](docs/ai-tools.md) |
-| ⚡ **CLI & Productivity Tools** | **118** | Terminal Utilities, Git Power Tools, Docker & DevOps, Benchmarking, DBs | [**Browse CLI Tools →**](docs/cli-tools.md) |
+| ⚡ **CLI & Productivity Tools** | **119** | Terminal Utilities, Git Power Tools, Docker & DevOps, Benchmarking, DBs | [**Browse CLI Tools →**](docs/cli-tools.md) |
 | 🧪 **Testing & QA Reliability** | **62** | E2E Testing, Mock Servers, Contract Testing, Security Auditing, Performance | [**Browse Testing Tools →**](docs/testing-qa.md) |
 | ☁️ **Free Cloud & Developer Tiers** | **71** | Databases, Auth & Identity, Serverless Compute, Object Storage, Email, APM | [**Browse Cloud Tiers →**](docs/free-cloud.md) |
 | 🤝 **Contributors Wanted** | **21** | Active open-source repos with curated Good First Issues and starter tasks | [**Browse Projects →**](docs/contributors-wanted.md) |
@@ -449,7 +449,7 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
         <img src="https://github.com/Shaisolaris.png" width="70" style="border-radius: 50%;" alt="Shaisolaris"/><br />
         <sub><b>Shaisolaris</b></sub>
       </a><br />
-      <sub>☀️ Solaris Dev Shop (#71)</sub>
+      <sub>☀️ Solaris Dev Shop (#71, #93)</sub>
     </td>
     <td align="center" width="160">
       <a href="https://github.com/estevecastells">
@@ -470,7 +470,7 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
         <img src="https://github.com/Dramex.png" width="70" style="border-radius: 50%;" alt="Dramex"/><br />
         <sub><b>Dramex</b></sub>
       </a><br />
-      <sub>🛡️ RowSafe (PR #77, #86, #87)</sub>
+      <sub>🛡️ RowSafe (PR #77, #86, #87, #90)</sub>
     </td>
     <td align="center" width="160">
       <a href="https://github.com/SergiuPogor">
@@ -515,6 +515,15 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
         <sub><b>InsightFactoryAPP</b></sub>
       </a><br />
       <sub>🚀 YYLO (#3)</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="160">
+      <a href="https://github.com/firzen">
+        <img src="https://github.com/firzen.png" width="70" style="border-radius: 50%;" alt="firzen"/><br />
+        <sub><b>firzen</b></sub>
+      </a><br />
+      <sub>🪨 StoneSVN (PR #92)</sub>
     </td>
   </tr>
 </table>
