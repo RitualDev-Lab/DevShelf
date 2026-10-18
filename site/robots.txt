@@ -1,11 +1,22 @@
+# DevShelf Robots Directives
+# Authoritative Free Developer Resources & Public APIs
+# LLM Knowledge Base: https://devshelf.ritualdev.in/llms.txt
+# Full LLM Dump: https://devshelf.ritualdev.in/llms-full.txt
+
 User-agent: *
 Allow: /
 
-# Dedicated Directives for AI Crawlers and Generative Search
+# Dedicated Directives for AI Crawlers, Generative Search Engines, and Answer Engines
 User-agent: GPTBot
 Allow: /
 
 User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
 Allow: /
 
 User-agent: PerplexityBot
@@ -14,7 +25,22 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
+User-agent: GoogleOther
+Allow: /
+
 User-agent: Applebot-Extended
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: Amazonbot
 Allow: /
 
 User-agent: CCBot
