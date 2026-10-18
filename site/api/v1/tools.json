@@ -2,8 +2,8 @@
   "version": "1.1.2",
   "docs": "https://devshelf.ritualdev.in/docs/api.html",
   "license": "https://github.com/RitualDev-Lab/DevShelf/blob/main/LICENSE",
-  "updatedAt": "2026-10-17T19:10:01.412Z",
-  "totalCount": 535,
+  "updatedAt": "2026-10-18T14:54:51.201Z",
+  "totalCount": 536,
   "tools": [
     {
       "name": "AgentShield",
@@ -3334,6 +3334,17 @@
       "category": "CLI & Developer Productivity",
       "description": "Bubo is a self-hosted AI code reviewer for GitHub pull requests and GitLab merge requests. It runs with an operator-chosen LLM, posts evidence-backed inline findings, and provides auditable quality, governance, provenance, cost, and ROI data.",
       "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "StoneSVN",
+      "repo": "https://github.com/firzen/StoneSVN",
+      "category": "CLI & Developer Productivity",
+      "description": "MIT-licensed SVN desktop client for Windows, macOS and Linux, developed from OrcaSVN. It helps developers switch working copies, review diffs, choose files/directories to commit and shelve selected text hunks through the locally installed SVN CLI.",
+      "language": "Rust, Vue 3, TypeScript, Tauri 2",
       "license": "MIT",
       "featured": false,
       "type": "cli",

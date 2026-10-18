@@ -1270,5 +1270,14 @@
     "language": "Python",
     "license": "MIT",
     "featured": false
+  },
+  {
+    "name": "StoneSVN",
+    "repo": "https://github.com/firzen/StoneSVN",
+    "category": "CLI & Developer Productivity",
+    "description": "MIT-licensed SVN desktop client for Windows, macOS and Linux, developed from OrcaSVN. It helps developers switch working copies, review diffs, choose files/directories to commit and shelve selected text hunks through the locally installed SVN CLI.",
+    "language": "Rust, Vue 3, TypeScript, Tauri 2",
+    "license": "MIT",
+    "featured": false
   }
 ]
