@@ -1,0 +1,136 @@
+name: ⚡ Activate Sponsored Tool & MCP Spotlight
+
+on:
+  workflow_dispatch:
+    inputs:
+      tool_name:
+        description: "Tool or product name (e.g. RowSafe, CurlShot, Supabase)"
+        required: true
+        type: string
+      tool_url:
+        description: "Product documentation URL or GitHub repo"
+        required: true
+        type: string
+      category:
+        description: "Catalog Shelf Category"
+        required: true
+        type: choice
+        default: "cli"
+        options:
+          - "ai"
+          - "cli"
+          - "apis"
+          - "cloud"
+          - "testing"
+          - "boilerplates"
+          - "perks"
+      tier:
+        description: "Sponsorship Tier"
+        required: true
+        type: choice
+        default: "mcpPro"
+        options:
+          - "starter"
+          - "mcpPro"
+          - "enterprise"
+      pitch:
+        description: "1-line developer value pitch (max 160 characters)"
+        required: false
+        type: string
+      alt:
+        description: "Commercial tool replaced (e.g. Postman, Datadog, Supabase)"
+        required: false
+        type: string
+      patron_name:
+        description: "Sponsor or company legal name"
+        required: false
+        type: string
+      github_handle:
+        description: "GitHub username/org handle for avatar & verified badges"
+        required: false
+        type: string
+      amount:
+        description: "Custom USD pledged amount (defaults: starter=$49, mcpPro=$149, enterprise=$299)"
+        required: false
+        type: string
+      comment:
+        description: "Community note for public Wall of Love"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  activate-sponsor:
+    name: Activate Sponsor & Sync AI Context
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install pnpm
+        run: npm install -g pnpm@latest
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run Sponsor Ingestion Engine
+        env:
+          TOOL_NAME: ${{ inputs.tool_name }}
+          TOOL_URL: ${{ inputs.tool_url }}
+          CATEGORY: ${{ inputs.category }}
+          TIER: ${{ inputs.tier }}
+          PITCH: ${{ inputs.pitch }}
+          ALT: ${{ inputs.alt }}
+          PATRON_NAME: ${{ inputs.patron_name }}
+          GITHUB_HANDLE: ${{ inputs.github_handle }}
+          AMOUNT: ${{ inputs.amount }}
+          COMMENT: ${{ inputs.comment }}
+        run: |
+          CMD_ARGS=(--name "$TOOL_NAME" --url "$TOOL_URL" --category "$CATEGORY" --tier "$TIER")
+          if [ -n "$PITCH" ]; then CMD_ARGS+=(--pitch "$PITCH"); fi
+          if [ -n "$ALT" ]; then CMD_ARGS+=(--alt "$ALT"); fi
+          if [ -n "$PATRON_NAME" ]; then CMD_ARGS+=(--patron-name "$PATRON_NAME"); fi
+          if [ -n "$GITHUB_HANDLE" ]; then CMD_ARGS+=(--github "$GITHUB_HANDLE"); fi
+          if [ -n "$AMOUNT" ]; then CMD_ARGS+=(--amount "$AMOUNT"); fi
+          if [ -n "$COMMENT" ]; then CMD_ARGS+=(--comment "$COMMENT"); fi
+
+          pnpm tsx scripts/activate-sponsor.ts "${CMD_ARGS[@]}"
+
+      - name: Run Full Test Suite
+        run: pnpm test
+
+      - name: Commit & Push Changes
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TOOL_NAME: ${{ inputs.tool_name }}
+          TIER: ${{ inputs.tier }}
+        run: |
+          git config --global user.name "DevShelf Bot"
+          git config --global user.email "bot@devshelf.local"
+          git add shelf/ data/ site/ README.md package.json
+          if git diff --cached --quiet; then
+            echo "No changes produced."
+          else
+            git commit -m "feat(sponsor): activate $TOOL_NAME as $TIER verified sponsor ⚡"
+            git push origin main
+          fi
+
+      - name: Output Summary
+        run: |
+          echo "### 🎉 DevShelf Sponsor Activated Successfully" >> $GITHUB_STEP_SUMMARY
+          echo "- **Tool**: \`${{ inputs.tool_name }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "- **Tier**: \`${{ inputs.tier }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "- **Category**: \`${{ inputs.category }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "- **AI Agent Injection**: Injected into \`npx devshelf-mcp\` priority recommendations" >> $GITHUB_STEP_SUMMARY
+          echo "- **Badge URL**: https://devshelf.ritualdev.in/api/v1/badges/${{ inputs.github_handle || 'verified' }}.svg" >> $GITHUB_STEP_SUMMARY

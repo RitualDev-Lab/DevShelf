@@ -46,6 +46,8 @@ interface InvoicePayload {
   billingTaxId?: string;
   productType?: string;
   shippingRequired?: string;
+  toolName?: string;
+  toolCategory?: string;
 }
 
 function generateDigitalInvoice(payload: InvoicePayload) {
@@ -59,6 +61,7 @@ function generateDigitalInvoice(payload: InvoicePayload) {
     shippingCost: 0,
     billedTo: payload.billingCompany || payload.name || "Anonymous Patron",
     taxId: payload.billingTaxId || "Exempt (Digital Open-Source Grant)",
+    toolPlacement: payload.toolName ? `${payload.toolName} (${payload.toolCategory || "general"})` : undefined,
   };
 }
 
@@ -136,6 +139,48 @@ test("Digital Invoice & Receipt Setup - Zero Physical Shipping Verification", ()
   assert.equal(invoice.shippingCost, 0, "Physical shipping cost must be exactly 0");
   assert.equal(invoice.billedTo, "Acme Inc.");
   assert.equal(invoice.taxId, "US-EIN-12345678");
+});
+
+test("Tool Sponsorship Checkout Return - URL Parameter & Metadata Processing", () => {
+  const urlParams = new URLSearchParams({
+    status: "success",
+    amount: "149",
+    currency: "USD",
+    sponsor_name: "RowSafe Security",
+    tool_name: "RowSafe",
+    tool_url: "https://github.com/RitualDev-Lab/RowSafe",
+    tool_category: "cli",
+    tool_alt: "Postman, Datadog",
+    tool_pitch: "Zero-leak secret interception and local sandbox for autonomous AI agents.",
+  });
+
+  const toolName = urlParams.get("tool_name");
+  const toolUrl = urlParams.get("tool_url");
+  const toolCategory = urlParams.get("tool_category");
+  const toolPitch = urlParams.get("tool_pitch");
+
+  assert.equal(toolName, "RowSafe");
+  assert.equal(toolUrl, "https://github.com/RitualDev-Lab/RowSafe");
+  assert.equal(toolCategory, "cli");
+  assert.ok(toolPitch?.includes("Zero-leak secret interception"));
+});
+
+test("Digital Invoice - Generates Tool Placement Line Items", () => {
+  const invoice = generateDigitalInvoice({
+    patronId: "patron-1729089999999",
+    name: "RowSafe Labs",
+    amountUSD: 149,
+    billingCompany: "RowSafe Technologies Ltd.",
+    billingTaxId: "GB-VAT-987654321",
+    productType: "digital",
+    shippingRequired: "false",
+    toolName: "RowSafe",
+    toolCategory: "cli",
+  });
+
+  assert.equal(invoice.isDigitalOnly, true);
+  assert.equal(invoice.shippingCost, 0);
+  assert.equal(invoice.toolPlacement, "RowSafe (cli)");
 });
 
 test("Sponsors Ledger Data Integrity - Schema and Values", async () => {

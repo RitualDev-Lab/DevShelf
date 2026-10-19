@@ -51,6 +51,14 @@
         "type": "string",
         "description": "Primary programming language"
       },
+      "featured": {
+        "type": "boolean",
+        "description": "Whether this tool is highlighted in weekly spotlights"
+      },
+      "sponsorTier": {
+        "type": "string",
+        "description": "Optional verified sponsor tier metadata"
+      },
       "statusTags": {
         "type": "array",
         "items": { "type": "string" },

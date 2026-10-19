@@ -42,6 +42,14 @@
         "maxLength": 300,
         "description": "Summary of frameworks, libraries, and tooling preconfigured in the template"
       },
+      "featured": {
+        "type": "boolean",
+        "description": "Whether this tool is highlighted in weekly spotlights"
+      },
+      "sponsorTier": {
+        "type": "string",
+        "description": "Optional verified sponsor tier metadata"
+      },
       "statusTags": {
         "type": "array",
         "items": { "type": "string" },

@@ -46,6 +46,14 @@
         "type": "boolean",
         "description": "Whether the API serves over HTTPS"
       },
+      "featured": {
+        "type": "boolean",
+        "description": "Whether this tool is highlighted in weekly spotlights"
+      },
+      "sponsorTier": {
+        "type": "string",
+        "description": "Optional verified sponsor tier metadata"
+      },
       "statusTags": {
         "type": "array",
         "items": { "type": "string" },
