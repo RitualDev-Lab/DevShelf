@@ -1239,7 +1239,7 @@
     "name": "Solaris Dev Shop",
     "repo": "https://github.com/Shaisolaris/solaris-dev-shop",
     "category": "Dev Utilities & Libraries",
-    "description": "Free MIT skill library and toolkit. A deterministic intake router assigns one specialist skill for agentic workflows.",
+    "description": "Free MIT skill library. A deterministic Python router assigns one accountable lead and, when needed, supporting specialist skills. It does not start agents, call a model, or require an account.",
     "language": "Python",
     "license": "MIT",
     "featured": false

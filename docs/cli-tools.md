@@ -49,7 +49,7 @@
 | Tool | Language | License | Description | Links |
 | :--- | :---: | :---: | :--- | :---: |
 | [**Codex Quota Overlay**](https://github.com/cpys/codex-quota-overlay) | `JavaScript / Electron, with C# and Swift native helpers` | `MIT` | An independent, open-source Codex Desktop companion for Windows and macOS. It displays quota limits, reset times, and reset credits, with a local Quota Center for pace and history. I am a maintainer of this independent project; it is not affiliated with or endorsed by OpenAI. | [GitHub](https://github.com/cpys/codex-quota-overlay) |
-| [**Solaris Dev Shop**](https://github.com/Shaisolaris/solaris-dev-shop) | `Python` | `MIT` | Free MIT skill library and toolkit. A deterministic intake router assigns one specialist skill for agentic workflows. | [GitHub](https://github.com/Shaisolaris/solaris-dev-shop) |
+| [**Solaris Dev Shop**](https://github.com/Shaisolaris/solaris-dev-shop) | `Python` | `MIT` | Free MIT skill library. A deterministic Python router assigns one accountable lead and, when needed, supporting specialist skills. It does not start agents, call a model, or require an account. | [GitHub](https://github.com/Shaisolaris/solaris-dev-shop) |
 | [**DateParser Kotlin**](https://github.com/Alox1d/dateparser-kotlin) | `Kotlin Multiplatform, kotlinx-datetime` | `MIT` | MIT Kotlin Multiplatform library for offline natural-language date and time parsing in Russian and English. Published Android (API 26+), JVM and iOS variants resolve supported phrases against an explicit reference time and timezone for use in task/reminder forms. | [GitHub](https://github.com/Alox1d/dateparser-kotlin) |
 
 ### <a id="developer-tools"></a>Developer Tools (12)

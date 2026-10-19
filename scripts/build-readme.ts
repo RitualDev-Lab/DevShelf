@@ -757,7 +757,7 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
         <img src="https://github.com/Shaisolaris.png" width="70" style="border-radius: 50%;" alt="Shaisolaris"/><br />
         <sub><b>Shaisolaris</b></sub>
       </a><br />
-      <sub>☀️ Solaris Dev Shop (#71)</sub>
+      <sub>☀️ Solaris Dev Shop (#71, #93)</sub>
     </td>
     <td align="center" width="160">
       <a href="https://github.com/estevecastells">
@@ -778,7 +778,7 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
         <img src="https://github.com/Dramex.png" width="70" style="border-radius: 50%;" alt="Dramex"/><br />
         <sub><b>Dramex</b></sub>
       </a><br />
-      <sub>🛡️ RowSafe (PR #77, #86, #87)</sub>
+      <sub>🛡️ RowSafe (PR #77, #86, #87, #90)</sub>
     </td>
     <td align="center" width="160">
       <a href="https://github.com/SergiuPogor">
@@ -823,6 +823,15 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
         <sub><b>InsightFactoryAPP</b></sub>
       </a><br />
       <sub>🚀 YYLO (#3)</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="160">
+      <a href="https://github.com/firzen">
+        <img src="https://github.com/firzen.png" width="70" style="border-radius: 50%;" alt="firzen"/><br />
+        <sub><b>firzen</b></sub>
+      </a><br />
+      <sub>🪨 StoneSVN (PR #92)</sub>
     </td>
   </tr>
 </table>

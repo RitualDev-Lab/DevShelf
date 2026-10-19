@@ -4,11 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Solaris Dev Shop - Free Developer Tool | DevShelf</title>
-  <meta name="description" content="Free MIT skill library and toolkit. A deterministic intake router assigns one specialist skill for agentic workflows.">
+  <meta name="description" content="Free MIT skill library. A deterministic Python router assigns one accountable lead and, when needed, supporting specialist skills. It does not start agents, call a model, or require an account.">
   <meta name="keywords" content="Solaris Dev Shop, free developer tool, Dev Utilities &amp; Libraries, open source tools">
   <link rel="canonical" href="https://devshelf.ritualdev.in/tools/solaris-dev-shop.html">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="author" content="RitualDev Lab">
+  <meta name="ai-content-declaration" content="human-curated, zero-paywall verified">
   <link rel="alternate" type="text/plain" href="../llms.txt" title="DevShelf LLMs.txt Context for AI Agents">
+  <link rel="alternate" type="text/markdown" href="../llms.txt" title="DevShelf LLMs.txt Context for AI Agents">
+  <link rel="alternate" type="text/markdown" href="../llms-full.txt" title="DevShelf Full LLM Knowledge Base">
+  <link rel="alternate" type="application/json" href="../api/v1/tools.json" title="DevShelf Public REST API">
+  <link rel="help" href="../llms.txt">
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="../favicon.ico">
@@ -19,7 +25,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://devshelf.ritualdev.in/tools/solaris-dev-shop.html">
   <meta property="og:title" content="Solaris Dev Shop - Free Developer Tool | DevShelf">
-  <meta property="og:description" content="Free MIT skill library and toolkit. A deterministic intake router assigns one specialist skill for agentic workflows.">
+  <meta property="og:description" content="Free MIT skill library. A deterministic Python router assigns one accountable lead and, when needed, supporting specialist skills. It does not start agents, call a model, or require an account.">
   <meta property="og:site_name" content="DevShelf">
   <meta property="og:image" content="https://devshelf.ritualdev.in/og-image.jpg">
   <meta property="og:image:width" content="1200">
@@ -29,7 +35,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@RitualDevLab">
   <meta name="twitter:title" content="Solaris Dev Shop - Free Developer Tool | DevShelf">
-  <meta name="twitter:description" content="Free MIT skill library and toolkit. A deterministic intake router assigns one specialist skill for agentic workflows.">
+  <meta name="twitter:description" content="Free MIT skill library. A deterministic Python router assigns one accountable lead and, when needed, supporting specialist skills. It does not start agents, call a model, or require an account.">
   <meta name="twitter:image" content="https://devshelf.ritualdev.in/og-image.jpg">
 
   <!-- JSON-LD Structured Data -->
@@ -40,7 +46,7 @@
     {
       "@type": "SoftwareApplication",
       "name": "Solaris Dev Shop",
-      "description": "Free MIT skill library and toolkit. A deterministic intake router assigns one specialist skill for agentic workflows.",
+      "description": "Free MIT skill library. A deterministic Python router assigns one accountable lead and, when needed, supporting specialist skills. It does not start agents, call a model, or require an account.",
       "applicationCategory": "Dev Utilities & Libraries",
       "operatingSystem": "All",
       "isAccessibleForFree": true,
@@ -85,6 +91,15 @@
   ]
 }
   </script>
+
+  <!-- Preconnect & Asynchronous Fonts (Non-Render-Blocking for LCP & FCP) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap">
+  </noscript>
 
   <link rel="stylesheet" href="../tailwind.min.css">
 </head>
@@ -134,7 +149,7 @@
       </div>
 
       <p class="text-slate-300 text-base sm:text-lg leading-relaxed mb-8">
-        Free MIT skill library and toolkit. A deterministic intake router assigns one specialist skill for agentic workflows.
+        Free MIT skill library. A deterministic Python router assigns one accountable lead and, when needed, supporting specialist skills. It does not start agents, call a model, or require an account.
       </p>
 
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 p-5 rounded-xl bg-slate-950/80 border border-slate-800 text-xs font-mono">
@@ -161,7 +176,7 @@
             </button>
           </div>
           <div class="mb-2">
-            <img src="https://img.shields.io/badge/DevShelf-Verified_Free-7928CA?style=flat-square&logo=googlechrome&logoColor=white" alt="Featured on DevShelf" class="h-5">
+            <img src="https://img.shields.io/badge/DevShelf-Verified_Free-7928CA?style=flat-square&logo=googlechrome&logoColor=white" alt="Featured on DevShelf" class="h-5" loading="lazy" decoding="async">
           </div>
           <input type="text" readonly value="[![Featured on DevShelf](https://img.shields.io/badge/DevShelf-Verified_Free-7928CA?style=flat-square&logo=googlechrome&logoColor=white)](https://devshelf.ritualdev.in/)" class="w-full text-xs font-mono bg-slate-900 px-3 py-1.5 rounded text-emerald-300 border border-slate-800 select-all">
         </div>
@@ -176,7 +191,7 @@
             </button>
           </div>
           <div class="mb-2">
-            <img src="https://img.shields.io/badge/Secured%20by-AgentShield%20Zero--Leak-8b5cf6?logo=shield&logoColor=white&style=flat-square" alt="Secured by AgentShield" class="h-5">
+            <img src="https://img.shields.io/badge/Secured%20by-AgentShield%20Zero--Leak-8b5cf6?logo=shield&logoColor=white&style=flat-square" alt="Secured by AgentShield" class="h-5" loading="lazy" decoding="async">
           </div>
           <input type="text" readonly value="[![Secured by AgentShield](https://img.shields.io/badge/Secured%20by-AgentShield%20Zero--Leak-8b5cf6?logo=shield&logoColor=white&style=flat-square)](https://agentshield.ritualdev.in/)" class="w-full text-xs font-mono bg-slate-900 px-3 py-1.5 rounded text-cyan-300 border border-slate-800 select-all">
         </div>
