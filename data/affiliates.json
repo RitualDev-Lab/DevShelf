@@ -1,0 +1,67 @@
+{
+  "version": "1.0.0",
+  "updatedAt": "2026-10-20T00:00:00.000Z",
+  "description": "DevShelf Verified Developer Affiliate & Partner Perks Registry. Cleanly maps high-converting developer perks, free cloud credits, and verified partner links to directory dossiers without tracking param pollution.",
+  "partners": [
+    {
+      "slug": "digitalocean",
+      "toolName": "DigitalOcean",
+      "url": "https://m.do.co/c/devshelf",
+      "vanityPath": "/go/digitalocean.html",
+      "category": "cloud",
+      "perkTitle": "$200 Free Cloud Credits (60 Days)",
+      "perkDescription": "Get $200 in free cloud infrastructure credits to deploy Droplets, Kubernetes, and App Platform instances.",
+      "ctaText": "Claim $200 Credits →",
+      "badge": "🎁 $200 Dev Credit",
+      "active": true
+    },
+    {
+      "slug": "hetzner",
+      "toolName": "Hetzner Cloud",
+      "url": "https://hetzner.cloud/?ref=devshelf",
+      "vanityPath": "/go/hetzner.html",
+      "category": "cloud",
+      "perkTitle": "€20 Free Cloud Credits",
+      "perkDescription": "High-performance European and US cloud instances starting at €3.79/mo. Claim €20 in free test credits.",
+      "ctaText": "Claim €20 Credits →",
+      "badge": "🎁 €20 Cloud Credit",
+      "active": true
+    },
+    {
+      "slug": "vultr",
+      "toolName": "Vultr",
+      "url": "https://www.vultr.com/?ref=devshelf",
+      "vanityPath": "/go/vultr.html",
+      "category": "cloud",
+      "perkTitle": "$100 Free Cloud Credits",
+      "perkDescription": "Global cloud compute, bare metal, and managed Kubernetes across 32 worldwide locations with instant credits.",
+      "ctaText": "Claim $100 Credits →",
+      "badge": "🎁 $100 Cloud Credit",
+      "active": true
+    },
+    {
+      "slug": "supabase",
+      "toolName": "Supabase",
+      "url": "https://supabase.com/?ref=devshelf",
+      "vanityPath": "/go/supabase.html",
+      "category": "cloud",
+      "perkTitle": "Generous Permanent Free Postgres Tier",
+      "perkDescription": "Full Postgres database, authentication, instant REST/GraphQL APIs, and real-time subscriptions with 500MB storage.",
+      "ctaText": "Launch Free Project →",
+      "badge": "⚡ Verified Free Tier",
+      "active": true
+    },
+    {
+      "slug": "neon",
+      "toolName": "Neon",
+      "url": "https://neon.tech/?ref=devshelf",
+      "vanityPath": "/go/neon.html",
+      "category": "cloud",
+      "perkTitle": "Serverless Postgres with Instant Branching",
+      "perkDescription": "Autoscaling, database branching like Git, and zero cold starts with generous free tier allowances.",
+      "ctaText": "Get Free Postgres →",
+      "badge": "⚡ Free Serverless DB",
+      "active": true
+    }
+  ]
+}

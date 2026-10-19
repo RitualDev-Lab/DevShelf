@@ -1,5 +1,6 @@
 import fs from "node:fs/promises";
 import path from "node:path";
+import { type AffiliatePartner, generateGoRedirectHtml } from "./add-affiliate.ts";
 
 function slugify(text: string): string {
   return text
@@ -23,12 +24,66 @@ async function generateSeo() {
   const siteDir = path.join(root, "site");
   const toolsDir = path.join(siteDir, "tools");
   const dataPath = path.join(siteDir, "data.json");
+  const affiliatesPath = path.join(root, "data", "affiliates.json");
+  const goDir = path.join(siteDir, "go");
 
   await fs.mkdir(toolsDir, { recursive: true });
+  await fs.mkdir(goDir, { recursive: true });
 
   const rawData = await fs.readFile(dataPath, "utf8");
   const data = JSON.parse(rawData);
   const resources: any[] = data.resources || [];
+
+  // Load Verified Developer Affiliate & Partner Perks
+  let affiliates: { partners: AffiliatePartner[] } = { partners: [] };
+  try {
+    const rawAffiliates = await fs.readFile(affiliatesPath, "utf8");
+    affiliates = JSON.parse(rawAffiliates);
+  } catch {
+    // If data/affiliates.json is not yet created, initialize empty
+  }
+
+  const activePartners = (affiliates.partners || []).filter((p) => p.active);
+
+  // Sync site/api/v1/affiliates.json
+  const apiV1Dir = path.join(siteDir, "api", "v1");
+  await fs.mkdir(apiV1Dir, { recursive: true });
+  await fs.writeFile(
+    path.join(apiV1Dir, "affiliates.json"),
+    `${JSON.stringify(affiliates, null, 2)}\n`,
+    "utf8",
+  );
+
+  // Generate /go/[slug].html redirect pages for all active partners
+  for (const partner of activePartners) {
+    const redirectHtml = generateGoRedirectHtml(partner);
+    await fs.writeFile(path.join(goDir, `${partner.slug}.html`), redirectHtml, "utf8");
+  }
+
+  function getHostname(urlStr: string): string {
+    try {
+      return new URL(urlStr).hostname.replace(/^www\./, "").toLowerCase();
+    } catch {
+      return "";
+    }
+  }
+
+  function findPartner(tool: any): AffiliatePartner | undefined {
+    if (!tool || !tool.name) return undefined;
+    const toolNameLower = tool.name.toLowerCase();
+    const toolHost = getHostname(tool.url || tool.repo || "");
+
+    return activePartners.find((p) => {
+      const pSlug = p.slug.toLowerCase();
+      const pName = p.toolName.toLowerCase();
+      if (pSlug === toolNameLower || pName === toolNameLower) return true;
+      if (slugify(tool.name) === pSlug) return true;
+      if (toolNameLower.includes(pName)) return true;
+      const partnerHost = getHostname(p.url);
+      if (toolHost && partnerHost && toolHost === partnerHost) return true;
+      return false;
+    });
+  }
 
   const domain = "https://devshelf.ritualdev.in";
   const milestone = `${Math.floor(resources.length / 10) * 10}+`;
@@ -38,11 +93,12 @@ async function generateSeo() {
   ];
 
   console.log(
-    `🌐 [DevShelf SEO Engine] Generating static pages and sitemap for ${resources.length} resources...`,
+    `🌐 [DevShelf SEO Engine] Generating static pages and sitemap for ${resources.length} resources (${activePartners.length} affiliate partners)...`,
   );
 
   for (const item of resources) {
     const slug = slugify(item.name);
+    const partner = findPartner(item);
     const pageUrl = `${domain}/tools/${slug}.html`;
     const targetUrl = item.url || item.repo || "";
     const name = escapeHtml(item.name);
@@ -243,6 +299,33 @@ async function generateSeo() {
         </div>
       </div>`;
 
+    const partnerPerkHtml = partner
+      ? `
+      <div class="mt-8 p-6 rounded-2xl bg-gradient-to-r from-amber-950/40 via-slate-900 to-purple-950/40 border border-amber-500/40 shadow-xl relative overflow-hidden">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div>
+            <div class="flex items-center space-x-2 mb-2 font-mono text-amber-300 font-bold text-xs">
+              <span>🎁</span>
+              <span>VERIFIED DEVELOPER PARTNER PERK</span>
+            </div>
+            <h3 class="text-base sm:text-lg font-bold text-white mb-1">
+              ${escapeHtml(partner.perkTitle)}
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-xl">
+              ${escapeHtml(partner.perkDescription)}
+            </p>
+          </div>
+          <a href="../go/${partner.slug}.html" target="_blank" rel="noopener noreferrer sponsored" class="shrink-0 px-5 py-2.5 rounded-xl font-bold font-mono text-xs sm:text-sm bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-slate-950 transition shadow-lg shadow-amber-500/20 hover:scale-105 active:scale-95">
+            ${escapeHtml(partner.ctaText || "Claim Perk →")}
+          </a>
+        </div>
+        <div class="mt-3 pt-3 border-t border-slate-800/80 flex items-center justify-between text-[11px] font-mono text-slate-400">
+          <span>⚡ Zero cost, instant activation via DevShelf community partnership</span>
+          <span class="text-slate-500">Sponsored Link • Supports Open Source</span>
+        </div>
+      </div>`
+      : "";
+
     const html = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -335,6 +418,13 @@ async function generateSeo() {
               ${category}
             </span>
             ${
+              partner
+                ? `<span class="inline-block px-3 py-1 rounded-full text-xs font-mono font-bold bg-amber-950/80 border border-amber-500/40 text-amber-300">
+                    ${escapeHtml(partner.badge || "🎁 Dev Partner Perk")}
+                  </span>`
+                : ""
+            }
+            ${
               alternativeTo
                 ? `<a href="../alternatives/${slugify(
                     alternativeTo.replace(/\s*\(\$.*?\)/g, "").trim(),
@@ -346,10 +436,22 @@ async function generateSeo() {
           </div>
           <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">${name}</h1>
         </div>
-        <a href="${escapeHtml(targetUrl)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-bold text-sm shadow-lg shadow-purple-500/20 transition transform hover:-translate-y-0.5">
-          <span>Visit Official Page</span>
-          <span>→</span>
-        </a>
+        <div class="flex flex-wrap items-center gap-2.5">
+          ${
+            partner
+              ? `<a href="../go/${partner.slug}.html" target="_blank" rel="noopener noreferrer sponsored" class="inline-flex items-center space-x-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 text-slate-950 font-extrabold text-sm shadow-lg shadow-orange-500/20 transition transform hover:-translate-y-0.5" title="${escapeHtml(
+                  partner.perkTitle,
+                )}">
+                  <span>${escapeHtml(partner.badge || "⚡ Claim Perk")}</span>
+                  <span>${escapeHtml(partner.ctaText || "Claim Perk →")}</span>
+                </a>`
+              : ""
+          }
+          <a href="${escapeHtml(targetUrl)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-bold text-sm shadow-lg shadow-purple-500/20 transition transform hover:-translate-y-0.5">
+            <span>Visit Official Page</span>
+            <span>→</span>
+          </a>
+        </div>
       </div>
 
       <p class="text-slate-300 text-base sm:text-lg leading-relaxed mb-8">
@@ -367,6 +469,7 @@ async function generateSeo() {
         ${freeTier ? `<div class="col-span-2"><span class="text-slate-500 block mb-1">Free Tier Allowance</span><span class="text-slate-200">${freeTier}</span></div>` : ""}
       </div>
 
+      ${partnerPerkHtml}
       ${dockerSectionHtml}
       ${badgeSectionHtml}
       ${creatorPromoHtml}
@@ -509,18 +612,35 @@ async function generateSeo() {
       .map((tool) => {
         const toolUrl = tool.url || tool.repo || "";
         const toolSlug = slugify(tool.name);
+        const toolPartner = findPartner(tool);
         return `
-        <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 shadow-xl hover:border-purple-500/50 transition">
+        <div class="p-6 rounded-2xl bg-slate-900 border ${toolPartner ? "border-amber-500/40" : "border-slate-800"} shadow-xl hover:border-purple-500/50 transition">
           <div class="flex items-start justify-between flex-wrap gap-2 mb-3">
             <div>
-              <h3 class="text-xl font-bold text-white">
-                <a href="../tools/${toolSlug}.html" class="hover:text-purple-300 transition">${escapeHtml(tool.name)}</a>
-              </h3>
+              <div class="flex items-center space-x-2 flex-wrap gap-1.5">
+                <h3 class="text-xl font-bold text-white">
+                  <a href="../tools/${toolSlug}.html" class="hover:text-purple-300 transition">${escapeHtml(tool.name)}</a>
+                </h3>
+                ${
+                  toolPartner
+                    ? `<span class="px-2 py-0.5 rounded text-[11px] font-mono font-bold bg-amber-950/80 text-amber-300 border border-amber-500/40">${escapeHtml(toolPartner.badge || "🎁 Dev Perk")}</span>`
+                    : ""
+                }
+              </div>
               <span class="text-xs font-mono text-purple-400">${escapeHtml(tool.category || "Tool")}</span>
             </div>
-            <a href="${escapeHtml(toolUrl)}" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold transition">
-              Visit Site →
-            </a>
+            <div class="flex items-center gap-2">
+              ${
+                toolPartner
+                  ? `<a href="../go/${toolPartner.slug}.html" target="_blank" rel="noopener noreferrer sponsored" class="px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-slate-950 text-xs font-extrabold transition shadow-md shadow-amber-500/20" title="${escapeHtml(toolPartner.perkTitle)}">
+                      ${escapeHtml(toolPartner.ctaText || "Claim Perk →")}
+                    </a>`
+                  : ""
+              }
+              <a href="${escapeHtml(toolUrl)}" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold transition">
+                Visit Site →
+              </a>
+            </div>
           </div>
           <p class="text-sm text-slate-300 leading-relaxed mb-4">${escapeHtml(tool.description)}</p>
           <div class="flex flex-wrap gap-2 text-xs font-mono">
@@ -528,6 +648,18 @@ async function generateSeo() {
             ${tool.language ? `<span class="px-2.5 py-1 rounded-lg bg-cyan-950/80 text-cyan-300 border border-cyan-500/30">${escapeHtml(tool.language)}</span>` : ""}
             ${tool.license ? `<span class="px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 border border-slate-700">${escapeHtml(tool.license)}</span>` : ""}
           </div>
+          ${
+            toolPartner
+              ? `<div class="mt-4 p-3 rounded-xl bg-amber-950/30 border border-amber-500/30 flex items-center justify-between text-xs font-mono">
+                  <div class="text-amber-200">
+                    <span class="font-bold">⚡ Exclusive Partner Offer:</span> ${escapeHtml(toolPartner.perkTitle)}
+                  </div>
+                  <a href="../go/${toolPartner.slug}.html" target="_blank" rel="noopener noreferrer sponsored" class="text-amber-300 hover:underline font-bold shrink-0 ml-2">
+                    Claim →
+                  </a>
+                </div>`
+              : ""
+          }
         </div>`;
       })
       .join("\n");
@@ -546,20 +678,27 @@ async function generateSeo() {
           </thead>
           <tbody class="divide-y divide-slate-800/60 text-slate-300">
             ${altTools
-              .map(
-                (t) => `
+              .map((t) => {
+                const tPartner = findPartner(t);
+                return `
               <tr class="hover:bg-slate-800/40 transition">
                 <td class="p-3.5 font-bold text-white">
-                  <a href="../tools/${slugify(t.name)}.html" class="hover:text-purple-300 transition">${escapeHtml(t.name)}</a>
+                  <div class="flex items-center space-x-1.5">
+                    <a href="../tools/${slugify(t.name)}.html" class="hover:text-purple-300 transition">${escapeHtml(t.name)}</a>
+                    ${tPartner ? `<span class="text-[10px] text-amber-400 font-mono" title="Partner Perk Available">🎁</span>` : ""}
+                  </div>
                 </td>
                 <td class="p-3.5 text-slate-400">${escapeHtml(t.category || "Tool")}</td>
                 <td class="p-3.5 text-emerald-400">${escapeHtml(t.freeTier || t.rateLimit || "See official site for free access and limits")}</td>
                 <td class="p-3.5 text-cyan-300">${escapeHtml(t.language || "Multi-platform")}</td>
                 <td class="p-3.5 text-right font-sans">
-                  <a href="../tools/${slugify(t.name)}.html" class="text-purple-400 hover:text-purple-300 font-bold">Specs →</a>
+                  <div class="flex items-center justify-end space-x-2">
+                    ${tPartner ? `<a href="../go/${tPartner.slug}.html" target="_blank" rel="noopener noreferrer sponsored" class="text-amber-400 hover:text-amber-300 font-bold text-xs">Perk →</a>` : ""}
+                    <a href="../tools/${slugify(t.name)}.html" class="text-purple-400 hover:text-purple-300 font-bold">Specs →</a>
+                  </div>
                 </td>
-              </tr>`,
-              )
+              </tr>`;
+              })
               .join("")}
           </tbody>
         </table>
@@ -1350,6 +1489,7 @@ DevShelf is an open-source, community-driven developer resource ecosystem curate
 ## Machine & AI Agent Integration
 - **Model Context Protocol (MCP) Server**: Run \`npx devshelf-mcp\` in Claude Desktop, Cursor, Windsurf, or LangChain agents.
 - **REST API**: ${domain}/api/v1/tools.json
+- **Verified Partner Perks & Cloud Credits**: ${domain}/api/v1/affiliates.json
 - **Full Catalog Raw Knowledge Base**: ${domain}/llms-full.txt
 - **Master HTML Directory**: ${domain}/directory.html
 - **Sitemap**: ${domain}/sitemap.xml
