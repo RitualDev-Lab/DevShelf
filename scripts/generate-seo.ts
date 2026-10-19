@@ -181,6 +181,17 @@ async function generateSeo() {
         </div>
       </div>`;
 
+    const creatorPromoHtml = `
+      <div class="mt-8 p-4 rounded-xl bg-slate-950/80 border border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
+        <div class="flex items-center space-x-2.5">
+          <span class="text-base">🚀</span>
+          <span class="text-slate-300">Are you the creator of <strong>${escapeHtml(item.name)}</strong> or building a devtool in this category?</span>
+        </div>
+        <a href="../sponsors.html#mcp-sponsors" class="shrink-0 px-3 py-1.5 rounded-lg font-bold font-mono text-xs bg-purple-600/30 hover:bg-purple-600 border border-purple-500/50 text-purple-200 hover:text-white transition">
+          Feature in AI Chats ($49) →
+        </a>
+      </div>`;
+
     const related = resources
       .filter(
         (r) =>
@@ -295,8 +306,8 @@ async function generateSeo() {
         <span>📚 DevShelf</span>
       </a>
       <div class="flex items-center space-x-3">
-        <a href="https://checkout.dodopayments.com/buy/pdt_0NpjONGugY5QkrFDUaPva" target="_blank" rel="noopener noreferrer" class="text-xs font-bold px-3 py-1.5 rounded-lg bg-pink-950/60 hover:bg-pink-900/80 border border-pink-500/50 text-pink-200 transition">
-          💖 Sponsor
+        <a href="../sponsors.html#mcp-sponsors" class="text-xs font-bold px-3 py-1.5 rounded-lg bg-gradient-to-r from-emerald-950/80 to-teal-950/80 hover:from-emerald-900 border border-emerald-500/50 text-emerald-200 transition">
+          ⚡ Promote Your Tool
         </a>
         <a href="../#directory" class="text-xs font-semibold px-3 py-1.5 rounded-lg bg-purple-600 hover:bg-purple-500 text-white transition">
           ← Browse ${resources.length} Tools
@@ -358,6 +369,7 @@ async function generateSeo() {
 
       ${dockerSectionHtml}
       ${badgeSectionHtml}
+      ${creatorPromoHtml}
       ${relatedSectionHtml}
       ${faqSectionHtml}
 
@@ -650,8 +662,8 @@ async function generateSeo() {
         <span>📚 DevShelf</span>
       </a>
       <div class="flex items-center space-x-3">
-        <a href="https://checkout.dodopayments.com/buy/pdt_0NpjONGugY5QkrFDUaPva" target="_blank" rel="noopener noreferrer" class="text-xs font-bold px-3 py-1.5 rounded-lg bg-pink-950/60 hover:bg-pink-900/80 border border-pink-500/50 text-pink-200 transition">
-          💖 Sponsor
+        <a href="../sponsors.html#mcp-sponsors" class="text-xs font-bold px-3 py-1.5 rounded-lg bg-gradient-to-r from-emerald-950/80 to-teal-950/80 hover:from-emerald-900 border border-emerald-500/50 text-emerald-200 transition">
+          ⚡ Promote Your Tool
         </a>
         <a href="../#directory" class="text-xs font-semibold px-3 py-1.5 rounded-lg bg-purple-600 hover:bg-purple-500 text-white transition">
           Browse Directory →
@@ -688,6 +700,25 @@ async function generateSeo() {
           The leading free and open-source alternative to <strong>${escapeHtml(targetName)}</strong> is <strong>${escapeHtml(altTools[0].name)}</strong>: <em>${escapeHtml(altTools[0].description)}</em>. DevShelf indexes <strong>${altTools.length} community-verified alternatives</strong> to ${escapeHtml(targetName)} with generous free tiers, local offline mode, or self-hosted deployment.
         </p>
       </div>
+    </div>
+
+    <!-- B2B Sponsor Opportunity Callout -->
+    <div class="mb-8 p-4 rounded-xl bg-gradient-to-r from-purple-950/60 via-slate-900 to-indigo-950/60 border border-purple-500/40 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-lg shadow-purple-950/30">
+      <div class="flex items-center space-x-3.5">
+        <span class="text-2xl">⚡</span>
+        <div>
+          <div class="text-xs font-bold text-white flex items-center space-x-2">
+            <span>Building a free or open-source ${escapeHtml(targetName)} alternative?</span>
+            <span class="px-2 py-0.5 rounded-full text-[10px] font-mono font-bold bg-purple-900/60 text-purple-300 border border-purple-500/40">Sponsor Opportunity</span>
+          </div>
+          <p class="text-[11px] text-slate-300 mt-0.5">
+            Reach thousands of engineers seeking alternatives. Claim this page's spotlight &amp; get recommended inside Cursor &amp; Claude AI chats.
+          </p>
+        </div>
+      </div>
+      <a href="../sponsors.html#mcp-sponsors" class="shrink-0 px-3.5 py-2 rounded-xl text-xs font-bold font-mono text-white bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-500 hover:to-purple-500 transition shadow-md shadow-purple-900/40 hover:scale-105 active:scale-95">
+        Claim Spot ($49/mo) →
+      </a>
     </div>
 
     <!-- Structured Comparison Matrix Table -->
@@ -924,8 +955,8 @@ async function generateSeo() {
         <span>📚 DevShelf</span>
       </a>
       <div class="flex items-center space-x-3">
-        <a href="https://checkout.dodopayments.com/buy/pdt_0NpjONGugY5QkrFDUaPva" target="_blank" rel="noopener noreferrer" class="text-xs font-bold px-3 py-1.5 rounded-lg bg-pink-950/60 hover:bg-pink-900/80 border border-pink-500/50 text-pink-200 transition">
-          💖 Sponsor
+        <a href="../sponsors.html#mcp-sponsors" class="text-xs font-bold px-3 py-1.5 rounded-lg bg-gradient-to-r from-emerald-950/80 to-teal-950/80 hover:from-emerald-900 border border-emerald-500/50 text-emerald-200 transition">
+          ⚡ Promote Your Tool
         </a>
         <a href="../#directory" class="text-xs font-semibold px-3 py-1.5 rounded-lg bg-purple-600 hover:bg-purple-500 text-white transition">
           Browse Directory →
@@ -951,6 +982,25 @@ async function generateSeo() {
       <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-3xl">
         ${escapeHtml(col.desc)}
       </p>
+    </div>
+
+    <!-- Category Sponsor Callout -->
+    <div class="mb-8 p-4 rounded-xl bg-gradient-to-r from-purple-950/60 via-slate-900 to-indigo-950/60 border border-purple-500/40 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-lg shadow-purple-950/30">
+      <div class="flex items-center space-x-3.5">
+        <span class="text-2xl">⚡</span>
+        <div>
+          <div class="text-xs font-bold text-white flex items-center space-x-2">
+            <span>Feature your devtool in this curated collection</span>
+            <span class="px-2 py-0.5 rounded-full text-[10px] font-mono font-bold bg-purple-900/60 text-purple-300 border border-purple-500/40">Category Sponsor</span>
+          </div>
+          <p class="text-[11px] text-slate-300 mt-0.5">
+            Put your developer tool at the top of this collection and inside Cursor &amp; Claude AI agent recommendation outputs.
+          </p>
+        </div>
+      </div>
+      <a href="../sponsors.html#mcp-sponsors" class="shrink-0 px-3.5 py-2 rounded-xl text-xs font-bold font-mono text-white bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-500 hover:to-purple-500 transition shadow-md shadow-purple-900/40 hover:scale-105 active:scale-95">
+        Sponsor Category ($39/mo) →
+      </a>
     </div>
 
     <div class="space-y-6">
@@ -1175,8 +1225,8 @@ async function generateSeo() {
         <span>📚 DevShelf</span>
       </a>
       <div class="flex items-center space-x-3">
-        <a href="https://checkout.dodopayments.com/buy/pdt_0NpjONGugY5QkrFDUaPva" target="_blank" rel="noopener noreferrer" class="text-xs font-bold px-3 py-1.5 rounded-lg bg-pink-950/60 hover:bg-pink-900/80 border border-pink-500/50 text-pink-200 transition">
-          💖 Sponsor
+        <a href="sponsors.html#mcp-sponsors" class="text-xs font-bold px-3 py-1.5 rounded-lg bg-gradient-to-r from-emerald-950/80 to-teal-950/80 hover:from-emerald-900 border border-emerald-500/50 text-emerald-200 transition">
+          ⚡ Promote Your Tool
         </a>
         <a href="./#directory" class="text-xs font-semibold px-3 py-1.5 rounded-lg bg-purple-600 hover:bg-purple-500 text-white transition">
           ← Interactive App
@@ -1211,6 +1261,25 @@ async function generateSeo() {
           <code class="text-purple-300 bg-slate-950 px-1.5 py-0.5 rounded">npx devshelf-mcp</code>
         </div>
       </div>
+    </div>
+
+    <!-- B2B Directory Sponsor Banner -->
+    <div class="mb-12 p-5 rounded-2xl bg-gradient-to-r from-purple-950/50 via-slate-900 to-indigo-950/50 border border-purple-500/30 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-xl">
+      <div class="flex items-center space-x-3.5">
+        <span class="text-2xl">⚡</span>
+        <div>
+          <div class="text-sm font-bold text-white flex items-center space-x-2">
+            <span>Are you a developer tool or API founder?</span>
+            <span class="px-2 py-0.5 rounded-full text-[10px] font-mono font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40">Sponsor DevShelf</span>
+          </div>
+          <p class="text-xs text-slate-300 mt-0.5">
+            Get your tool featured across 680+ SEO pages, top of our directory, and directly inside Cursor &amp; Claude AI chats via <code class="text-purple-300 font-mono text-[11px]">npx devshelf-mcp</code>.
+          </p>
+        </div>
+      </div>
+      <a href="sponsors.html#mcp-sponsors" class="shrink-0 px-4 py-2 rounded-xl text-xs font-bold font-mono text-white bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-500 hover:to-purple-500 transition shadow-md shadow-purple-900/40 hover:scale-105 active:scale-95">
+        Promote Your Tool ($49/mo) →
+      </a>
     </div>
 
     <!-- Curated Hubs -->
