@@ -1,13 +1,13 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-10-17T19:10:01.412Z",
-  "totalCount": 535,
-  "reposCount": 332,
+  "updatedAt": "2026-10-18T19:09:49.512Z",
+  "totalCount": 536,
+  "reposCount": 333,
   "facets": {
-    "repos": 332
+    "repos": 333
   },
   "counts": {
     "aiTools": 90,
-    "cliTools": 118,
+    "cliTools": 119,
     "testingQa": 62,
     "apis": 102,
     "freeCloud": 71,
@@ -3310,7 +3310,7 @@ window.DEVSHELF_DATA = {
       "name": "Solaris Dev Shop",
       "repo": "https://github.com/Shaisolaris/solaris-dev-shop",
       "category": "Dev Utilities & Libraries",
-      "description": "Free MIT skill library and toolkit. A deterministic intake router assigns one specialist skill for agentic workflows.",
+      "description": "Free MIT skill library. A deterministic Python router assigns one accountable lead and, when needed, supporting specialist skills. It does not start agents, call a model, or require an account.",
       "language": "Python",
       "license": "MIT",
       "featured": false,
@@ -3345,6 +3345,17 @@ window.DEVSHELF_DATA = {
       "category": "CLI & Developer Productivity",
       "description": "Bubo is a self-hosted AI code reviewer for GitHub pull requests and GitLab merge requests. It runs with an operator-chosen LLM, posts evidence-backed inline findings, and provides auditable quality, governance, provenance, cost, and ROI data.",
       "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "StoneSVN",
+      "repo": "https://github.com/firzen/StoneSVN",
+      "category": "CLI & Developer Productivity",
+      "description": "MIT-licensed SVN desktop client for Windows, macOS and Linux, developed from OrcaSVN. It helps developers switch working copies, review diffs, choose files/directories to commit and shelve selected text hunks through the locally installed SVN CLI.",
+      "language": "Rust, Vue 3, TypeScript, Tauri 2",
       "license": "MIT",
       "featured": false,
       "type": "cli",

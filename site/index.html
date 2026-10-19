@@ -29,9 +29,16 @@
   <meta name="twitter:description" content="Discover 531+ verified developer tools, open-source GitHub repositories, free public APIs, 1-click cloud boilerplates, and developer perks with zero paywalls.">
   <meta name="twitter:image" content="https://devshelf.ritualdev.in/og-image.jpg">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="keywords" content="free developer tools, open source alternatives, free public APIs, no credit card required, free tier developer tools, free postman alternative, free supabase alternative, free datadog alternative, zero paywall dev directory, AI coding agents, mcp server">
+  <meta name="author" content="RitualDev Lab">
+  <meta name="ai-content-declaration" content="human-curated, zero-paywall verified">
   <link rel="alternate" type="text/plain" href="llms.txt" title="DevShelf LLMs.txt Context for AI Agents">
+  <link rel="alternate" type="text/markdown" href="llms.txt" title="DevShelf LLMs.txt Context for AI Agents">
+  <link rel="alternate" type="text/markdown" href="llms-full.txt" title="DevShelf Full LLM Knowledge Base">
+  <link rel="alternate" type="application/json" href="api/v1/tools.json" title="DevShelf Public REST API">
+  <link rel="help" href="llms.txt">
 
-  <!-- Schema.org Programmatic Structured Data -->
+  <!-- Schema.org Programmatic Structured Data (Google Rich Snippets + AEO/GEO Grounding) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -41,7 +48,8 @@
         "@id": "https://devshelf.ritualdev.in/#website",
         "url": "https://devshelf.ritualdev.in/",
         "name": "DevShelf",
-        "description": "Crowdsourced, zero-paywall directory of 530+ verified developer tools, free APIs, AI agents, and cloud resources.",
+        "headline": "The Crowdsourced Zero-Paywall Developer Directory",
+        "description": "Crowdsourced, zero-paywall directory of 530+ verified free developer tools, free APIs, AI agents, and cloud resources with no credit card traps.",
         "publisher": {
           "@id": "https://devshelf.ritualdev.in/#organization"
         },
@@ -52,7 +60,8 @@
             "urlTemplate": "https://devshelf.ritualdev.in/?q={search_term_string}"
           },
           "query-input": "required name=search_term_string"
-        }
+        },
+        "inLanguage": "en"
       },
       {
         "@type": "Organization",
@@ -72,13 +81,82 @@
         "description": "Curated catalog of free public APIs, developer perks, AI models, CLI tools, and cloud infrastructure.",
         "url": "https://devshelf.ritualdev.in/",
         "isAccessibleForFree": true,
+        "license": "https://opensource.org/licenses/MIT",
         "keywords": [
           "free developer tools",
           "public APIs",
-          "open source",
+          "open source alternatives",
           "no credit card free tier",
           "AI agents",
-          "CLI tools"
+          "CLI tools",
+          "model context protocol"
+        ]
+      },
+      {
+        "@type": "Dataset",
+        "@id": "https://devshelf.ritualdev.in/#dataset",
+        "name": "DevShelf Verified Free Developer Resources Dataset",
+        "description": "Structured repository of 530+ verified free developer tools, open-source repos, rate limits, and authentication policies.",
+        "url": "https://devshelf.ritualdev.in/api/v1/tools.json",
+        "isAccessibleForFree": true,
+        "license": "https://opensource.org/licenses/MIT",
+        "creator": {
+          "@id": "https://devshelf.ritualdev.in/#organization"
+        },
+        "distribution": [
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "application/json",
+            "contentUrl": "https://devshelf.ritualdev.in/api/v1/tools.json"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "text/plain",
+            "contentUrl": "https://devshelf.ritualdev.in/llms-full.txt"
+          }
+        ]
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": "https://devshelf.ritualdev.in/#collection",
+        "url": "https://devshelf.ritualdev.in/",
+        "name": "Zero-Paywall Developer Directory & Commercial Alternatives",
+        "description": "Community-curated zero-paywall directory indexing 530+ developer tools, APIs, and open-source alternatives to commercial software.",
+        "isPartOf": {
+          "@id": "https://devshelf.ritualdev.in/#website"
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "#hero-headline",
+            "#hero-description",
+            "#aeo-overview",
+            "#faq-section"
+          ]
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://devshelf.ritualdev.in/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "DevShelf Home",
+            "item": "https://devshelf.ritualdev.in/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Directory Index",
+            "item": "https://devshelf.ritualdev.in/directory.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Live Health Status",
+            "item": "https://devshelf.ritualdev.in/status.html"
+          }
         ]
       },
       {
@@ -87,26 +165,66 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "What is DevShelf?",
+            "name": "What is DevShelf and how are developer tools verified?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "DevShelf is an open-source, community-curated directory indexing 530+ verified free developer tools, free public APIs, AI coding agents, and commercial software alternatives with zero paywalls and no credit card traps."
+              "text": "DevShelf is an open-source, community-curated directory indexing 530+ verified free developer tools, free public APIs, AI coding agents, and commercial software alternatives with zero paywalls. Every tool undergoes automated daily reachability checks, API health checks, and strict manual verification ensuring a permanent free tier or open-source license with no mandatory credit card or 14-day trial traps."
             }
           },
           {
             "@type": "Question",
-            "name": "Are the developer tools on DevShelf completely free?",
+            "name": "What is the best free open-source alternative to Postman?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. Every tool on DevShelf is manually verified by the community to provide a permanent free tier, open-source license, or generous allowance. Tools with hidden 14-day trial traps or mandatory credit cards are flagged and excluded."
+              "text": "The leading free and open-source alternatives to Postman are Bruno (a fast, offline-first desktop API client that stores collections directly in your Git repository) and Hoppscotch (a lightweight, web-based open-source API request client). Both eliminate paid cloud account restrictions and team limits."
             }
           },
           {
             "@type": "Question",
-            "name": "Can AI agents and LLMs query DevShelf directly?",
+            "name": "Which free cloud databases and backends require no credit card?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. DevShelf features an official Model Context Protocol (MCP) server runnable via 'npx devshelf-mcp', a public REST API at 'https://devshelf.ritualdev.in/api/v1/tools.json', and machine-readable context at 'https://devshelf.ritualdev.in/llms.txt'."
+              "text": "Popular free cloud databases with no mandatory credit card include Supabase (generous free PostgreSQL database with Auth and Storage), Neon (serverless Postgres with instant branching), Turso (distributed SQLite powered by libSQL with a generous free tier), and PocketBase (an open-source single-file backend with real-time SQLite database)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the best local LLM runners and AI coding tools?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Top free and open-source local LLM tools include Ollama (run Llama, Mistral, and DeepSeek locally with a simple CLI), vLLM (high-throughput inference engine), and DevShelf MCP Server (connects live catalog data directly into Cursor, Claude Desktop, and Windsurf)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I connect AI coding assistants (Cursor, Claude Desktop, Windsurf, Zed) to DevShelf?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can connect your AI coding agent directly to DevShelf via the Model Context Protocol (MCP) by running 'npx devshelf-mcp'. Add it to your claude_desktop_config.json or cursor settings under mcpServers to give your agent real-time access to 530+ free developer tools and alternatives."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does DevShelf detect trial bait and hidden paywalls?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "DevShelf maintains automated trial bait analyzers and health probes that inspect pricing pages for deceptive 14-day trial expirations, mandatory upfront credit card gates, and silent sunsetting. Tools found violating zero-paywall criteria enter a 14-day grace period before being sunset from the catalog."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can developers submit an open-source tool or API?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Developers can submit tools via the interactive Contribution Wizard on the website or by opening a pull request on GitHub (https://github.com/RitualDev-Lab/DevShelf). All merged submissions receive social amplification across RitualDev Lab developer networks."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does DevShelf provide a public REST API and machine-readable data?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. DevShelf exposes a zero-rate-limit public REST API at 'https://devshelf.ritualdev.in/api/v1/tools.json', category feeds at 'api/v1/categories.json', live health stats at 'status.html', and LLM-friendly context at 'https://devshelf.ritualdev.in/llms.txt'."
             }
           }
         ]
@@ -115,11 +233,14 @@
   }
   </script>
 
-
-  <!-- Preconnect & Fonts with display=swap -->
+  <!-- Preconnect & Asynchronous Fonts (Non-Render-Blocking for LCP & FCP) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap">
+  </noscript>
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -414,10 +535,10 @@
     <div class="flex flex-wrap items-center justify-center gap-2.5 text-xs font-mono text-slate-200 max-w-5xl mx-auto mb-10 shine-bar rounded-2xl py-2 px-1" id="stats-bar">
       <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700 flex items-center space-x-2 shadow-sm font-semibold">
         <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-        <span id="stat-total" class="font-bold text-white">535 Resources</span>
+        <span id="stat-total" class="font-bold text-white">536 Resources</span>
       </div>
       <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700">
-        <span class="text-purple-300 font-bold" id="stat-repos">332</span> GitHub Repos
+        <span class="text-purple-300 font-bold" id="stat-repos">333</span> GitHub Repos
       </div>
       <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700">
         <span class="text-orange-300 font-bold" id="stat-boilerplates">41</span> 1-Click Deploys
@@ -429,7 +550,7 @@
         <span class="text-purple-300 font-bold" id="stat-ai">90</span> AI Tools
       </div>
       <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700">
-        <span class="text-amber-300 font-bold" id="stat-cli">118</span> CLI Tools
+        <span class="text-amber-300 font-bold" id="stat-cli">119</span> CLI Tools
       </div>
       <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700">
         <span class="text-rose-300 font-bold" id="stat-testing">62</span> Testing & QA
@@ -461,7 +582,7 @@
       <div class="flex items-center justify-between text-[11px] font-mono text-slate-400 flex-wrap gap-1">
         <span class="text-slate-200">
           <code id="progress-ascii-bar" class="text-purple-300 font-bold hidden sm:inline">[███████████░░░░░░░░░]</code>
-          <strong id="progress-count-label" class="text-emerald-300">535</strong> / 1,000 Tools Verified (<span id="progress-remaining-label" class="text-amber-300">465 to go!</span>)
+          <strong id="progress-count-label" class="text-emerald-300">536</strong> / 1,000 Tools Verified (<span id="progress-remaining-label" class="text-amber-300">464 to go!</span>)
         </span>
         <a href="https://github.com/RitualDev-Lab/DevShelf#how-to-submit-a-tool" target="_blank" rel="noreferrer" class="text-cyan-400 hover:text-cyan-300 font-bold transition hover:underline">
           Help reach 1,000 +Submit Tool →
@@ -703,7 +824,7 @@
     <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 max-w-5xl mx-auto mb-10">
       <div class="glass-card rounded-2xl p-5 text-center">
         <a href="https://github.com/divyanshujethi" target="_blank" rel="noreferrer" class="inline-block group">
-          <img src="https://github.com/divyanshujethi.png" class="w-16 h-16 rounded-full mx-auto mb-2.5 border-2 border-purple-400 group-hover:scale-105 transition" alt="Divyanshu Jethi">
+          <img src="https://github.com/divyanshujethi.png" class="w-16 h-16 rounded-full mx-auto mb-2.5 border-2 border-purple-400 group-hover:scale-105 transition" alt="Divyanshu Jethi" loading="lazy" decoding="async" width="64" height="64">
           <div class="font-bold text-sm text-white group-hover:text-purple-300 transition">Divyanshu Jethi</div>
           <div class="text-xs text-purple-300 font-mono font-semibold mt-1">🚀 Founder & Lead</div>
         </a>
@@ -711,7 +832,7 @@
 
       <div class="glass-card rounded-2xl p-5 text-center">
         <a href="https://github.com/Sakshisharma1616" target="_blank" rel="noreferrer" class="inline-block group">
-          <img src="https://github.com/Sakshisharma1616.png" class="w-16 h-16 rounded-full mx-auto mb-2.5 border-2 border-pink-400 group-hover:scale-105 transition" alt="Sakshi Sharma">
+          <img src="https://github.com/Sakshisharma1616.png" class="w-16 h-16 rounded-full mx-auto mb-2.5 border-2 border-pink-400 group-hover:scale-105 transition" alt="Sakshi Sharma" loading="lazy" decoding="async" width="64" height="64">
           <div class="font-bold text-sm text-white group-hover:text-pink-300 transition">Sakshi Sharma</div>
           <div class="text-xs text-pink-300 font-mono font-semibold mt-1">🎨 Core Maintainer & Product</div>
         </a>
@@ -719,7 +840,7 @@
 
       <div class="glass-card rounded-2xl p-5 text-center">
         <a href="https://github.com/Ritual-Dev-Git" target="_blank" rel="noreferrer" class="inline-block group">
-          <img src="https://github.com/Ritual-Dev-Git.png" class="w-16 h-16 rounded-full mx-auto mb-2.5 border-2 border-cyan-400 group-hover:scale-105 transition" alt="RitualDev">
+          <img src="https://github.com/Ritual-Dev-Git.png" class="w-16 h-16 rounded-full mx-auto mb-2.5 border-2 border-cyan-400 group-hover:scale-105 transition" alt="RitualDev" loading="lazy" decoding="async" width="64" height="64">
           <div class="font-bold text-sm text-white group-hover:text-cyan-300 transition">RitualDev</div>
           <div class="text-xs text-cyan-300 font-mono font-semibold mt-1">⚙️ Core Maintainer & Infra</div>
         </a>
@@ -727,7 +848,7 @@
 
       <div class="glass-card rounded-2xl p-5 text-center">
         <a href="https://github.com/Divyanshu-hub-dotcom" target="_blank" rel="noreferrer" class="inline-block group">
-          <img src="https://github.com/Divyanshu-hub-dotcom.png" class="w-16 h-16 rounded-full mx-auto mb-2.5 border-2 border-amber-400 group-hover:scale-105 transition" alt="Divyanshu-hub-dotcom">
+          <img src="https://github.com/Divyanshu-hub-dotcom.png" class="w-16 h-16 rounded-full mx-auto mb-2.5 border-2 border-amber-400 group-hover:scale-105 transition" alt="Divyanshu-hub-dotcom" loading="lazy" decoding="async" width="64" height="64">
           <div class="font-bold text-sm text-white group-hover:text-amber-300 transition">Divyanshu-hub-dotcom</div>
           <div class="text-xs text-amber-300 font-mono font-semibold mt-1">🛠️ Core Member</div>
         </a>
@@ -735,7 +856,7 @@
 
       <div class="glass-card rounded-2xl p-5 text-center">
         <a href="https://github.com/ayushxx01" target="_blank" rel="noreferrer" class="inline-block group">
-          <img src="https://github.com/ayushxx01.png" class="w-16 h-16 rounded-full mx-auto mb-2.5 border-2 border-emerald-400 group-hover:scale-105 transition" alt="Ayush">
+          <img src="https://github.com/ayushxx01.png" class="w-16 h-16 rounded-full mx-auto mb-2.5 border-2 border-emerald-400 group-hover:scale-105 transition" alt="Ayush" loading="lazy" decoding="async" width="64" height="64">
           <div class="font-bold text-sm text-white group-hover:text-emerald-300 transition">Ayush</div>
           <div class="text-xs text-emerald-300 font-mono font-semibold mt-1">🛡️ Core Maintainer & Triage</div>
         </a>
@@ -749,175 +870,175 @@
       <!-- Instant Contributor Avatars -->
       <div class="flex items-center justify-center flex-wrap gap-3 mb-5">
         <a href="https://github.com/Voyagerroc-Lab" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-2.5 px-4 py-2 rounded-xl bg-slate-900 border border-purple-500/50 hover:border-purple-400 hover:scale-105 transition shadow-md group" title="Voyagerroc-Lab (Contributor #35 - Developer Fonts)">
-          <img src="https://api.dicebear.com/7.x/identicon/png?seed=Voyagerroc-Lab" class="w-8 h-8 rounded-full border border-purple-400" alt="Voyagerroc-Lab">
+          <img src="https://api.dicebear.com/7.x/identicon/png?seed=Voyagerroc-Lab" class="w-8 h-8 rounded-full border border-purple-400" alt="Voyagerroc-Lab" loading="lazy" decoding="async" width="32" height="32">
           <div class="text-left">
             <span class="text-xs font-bold text-white group-hover:text-purple-300 transition">Voyagerroc-Lab</span>
             <span class="block text-[10px] text-purple-300 font-mono">PR #35 • Developer Fonts</span>
           </div>
         </a>
         <a href="https://github.com/ayushxx01" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-2.5 px-4 py-2 rounded-xl bg-slate-900 border border-purple-500/50 hover:border-purple-400 hover:scale-105 transition shadow-md group" title="ayushxx01 (Contributor #36 - Dog API)">
-          <img src="https://github.com/ayushxx01.png" class="w-8 h-8 rounded-full border border-purple-400" alt="ayushxx01">
+          <img src="https://github.com/ayushxx01.png" class="w-8 h-8 rounded-full border border-purple-400" alt="ayushxx01" loading="lazy" decoding="async" width="32" height="32">
           <div class="text-left">
             <span class="text-xs font-bold text-white group-hover:text-purple-300 transition">ayushxx01</span>
             <span class="block text-[10px] text-purple-300 font-mono">PR #36 • Dog API</span>
           </div>
         </a>
         <a href="https://github.com/pranshuchittora" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-2.5 px-4 py-2 rounded-xl bg-slate-900 border border-purple-500/50 hover:border-purple-400 hover:scale-105 transition shadow-md group" title="pranshuchittora (Contributor #37 - Agent QA)">
-          <img src="https://github.com/pranshuchittora.png" class="w-8 h-8 rounded-full border border-purple-400" alt="pranshuchittora">
+          <img src="https://github.com/pranshuchittora.png" class="w-8 h-8 rounded-full border border-purple-400" alt="pranshuchittora" loading="lazy" decoding="async" width="32" height="32">
           <div class="text-left">
             <span class="text-xs font-bold text-white group-hover:text-purple-300 transition">pranshuchittora</span>
             <span class="block text-[10px] text-purple-300 font-mono">PR #37 • Agent QA</span>
           </div>
         </a>
         <a href="https://github.com/KRISHNAMMurarka" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-2.5 px-4 py-2 rounded-xl bg-slate-900 border border-purple-500/50 hover:border-purple-400 hover:scale-105 transition shadow-md group" title="KRISHNAMMurarka (Contributor #41 - Budget Gate)">
-          <img src="https://github.com/KRISHNAMMurarka.png" class="w-8 h-8 rounded-full border border-purple-400" alt="KRISHNAMMurarka">
+          <img src="https://github.com/KRISHNAMMurarka.png" class="w-8 h-8 rounded-full border border-purple-400" alt="KRISHNAMMurarka" loading="lazy" decoding="async" width="32" height="32">
           <div class="text-left">
             <span class="text-xs font-bold text-white group-hover:text-purple-300 transition">KRISHNAMMurarka</span>
             <span class="block text-[10px] text-purple-300 font-mono">PR #41 • Budget Gate</span>
           </div>
         </a>
         <a href="https://github.com/louis030195" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-2.5 px-4 py-2 rounded-xl bg-slate-900 border border-purple-500/50 hover:border-purple-400 hover:scale-105 transition shadow-md group" title="louis030195 (Contributor #44 - Hyperconsciousness)">
-          <img src="https://github.com/louis030195.png" class="w-8 h-8 rounded-full border border-purple-400" alt="louis030195">
+          <img src="https://github.com/louis030195.png" class="w-8 h-8 rounded-full border border-purple-400" alt="louis030195" loading="lazy" decoding="async" width="32" height="32">
           <div class="text-left">
             <span class="text-xs font-bold text-white group-hover:text-purple-300 transition">louis030195</span>
             <span class="block text-[10px] text-purple-300 font-mono">PR #44 • Hyperconsciousness</span>
           </div>
         </a>
         <a href="https://github.com/mahdi-salmanzade" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-2.5 px-4 py-2 rounded-xl bg-slate-900 border border-purple-500/50 hover:border-purple-400 hover:scale-105 transition shadow-md group" title="mahdi-salmanzade (Contributor #53 - MCP Dubai)">
-          <img src="https://github.com/mahdi-salmanzade.png" class="w-8 h-8 rounded-full border border-purple-400" alt="mahdi-salmanzade">
+          <img src="https://github.com/mahdi-salmanzade.png" class="w-8 h-8 rounded-full border border-purple-400" alt="mahdi-salmanzade" loading="lazy" decoding="async" width="32" height="32">
           <div class="text-left">
             <span class="text-xs font-bold text-white group-hover:text-purple-300 transition">mahdi-salmanzade</span>
             <span class="block text-[10px] text-purple-300 font-mono">PR #53 • MCP Dubai</span>
           </div>
         </a>
         <a href="https://github.com/BlueSkyID666" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-2.5 px-4 py-2 rounded-xl bg-slate-900 border border-purple-500/50 hover:border-purple-400 hover:scale-105 transition shadow-md group" title="BlueSkyID666 (Contributor #55 - OrkasVideoStudio)">
-          <img src="https://github.com/BlueSkyID666.png" class="w-8 h-8 rounded-full border border-purple-400" alt="BlueSkyID666">
+          <img src="https://github.com/BlueSkyID666.png" class="w-8 h-8 rounded-full border border-purple-400" alt="BlueSkyID666" loading="lazy" decoding="async" width="32" height="32">
           <div class="text-left">
             <span class="text-xs font-bold text-white group-hover:text-purple-300 transition">BlueSkyID666</span>
             <span class="block text-[10px] text-purple-300 font-mono">PR #55 • OrkasVideoStudio</span>
           </div>
         </a>
         <a href="https://github.com/deiucanta" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-2.5 px-4 py-2 rounded-xl bg-slate-900 border border-purple-500/50 hover:border-purple-400 hover:scale-105 transition shadow-md group" title="deiucanta (Contributor #56 - Easypanel)">
-          <img src="https://github.com/deiucanta.png" class="w-8 h-8 rounded-full border border-purple-400" alt="deiucanta">
+          <img src="https://github.com/deiucanta.png" class="w-8 h-8 rounded-full border border-purple-400" alt="deiucanta" loading="lazy" decoding="async" width="32" height="32">
           <div class="text-left">
             <span class="text-xs font-bold text-white group-hover:text-purple-300 transition">deiucanta</span>
             <span class="block text-[10px] text-purple-300 font-mono">PR #56 • Easypanel</span>
           </div>
         </a>
         <a href="https://github.com/yannickmonney" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-2.5 px-4 py-2 rounded-xl bg-slate-900 border border-purple-500/50 hover:border-purple-400 hover:scale-105 transition shadow-md group" title="yannickmonney (Contributor #59 - Tale)">
-          <img src="https://github.com/yannickmonney.png" class="w-8 h-8 rounded-full border border-purple-400" alt="yannickmonney">
+          <img src="https://github.com/yannickmonney.png" class="w-8 h-8 rounded-full border border-purple-400" alt="yannickmonney" loading="lazy" decoding="async" width="32" height="32">
           <div class="text-left">
             <span class="text-xs font-bold text-white group-hover:text-purple-300 transition">yannickmonney</span>
             <span class="block text-[10px] text-purple-300 font-mono">PR #59 • Tale</span>
           </div>
         </a>
         <a href="https://github.com/Eigenwise" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-2.5 px-4 py-2 rounded-xl bg-slate-900 border border-purple-500/50 hover:border-purple-400 hover:scale-105 transition shadow-md group" title="Eigenwise (Contributor #61 - Toolshed)">
-          <img src="https://github.com/Eigenwise.png" class="w-8 h-8 rounded-full border border-purple-400" alt="Eigenwise">
+          <img src="https://github.com/Eigenwise.png" class="w-8 h-8 rounded-full border border-purple-400" alt="Eigenwise" loading="lazy" decoding="async" width="32" height="32">
           <div class="text-left">
             <span class="text-xs font-bold text-white group-hover:text-purple-300 transition">Eigenwise</span>
             <span class="block text-[10px] text-purple-300 font-mono">PR #61 • Toolshed</span>
           </div>
         </a>
         <a href="https://github.com/foklepoint" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-2.5 px-4 py-2 rounded-xl bg-slate-900 border border-purple-500/50 hover:border-purple-400 hover:scale-105 transition shadow-md group" title="foklepoint (Contributor #63 - Court Rules)">
-          <img src="https://github.com/foklepoint.png" class="w-8 h-8 rounded-full border border-purple-400" alt="foklepoint">
+          <img src="https://github.com/foklepoint.png" class="w-8 h-8 rounded-full border border-purple-400" alt="foklepoint" loading="lazy" decoding="async" width="32" height="32">
           <div class="text-left">
             <span class="text-xs font-bold text-white group-hover:text-purple-300 transition">foklepoint</span>
             <span class="block text-[10px] text-purple-300 font-mono">PR #63 • Court Rules</span>
           </div>
         </a>
         <a href="https://github.com/stefanautomateed" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-2.5 px-4 py-2 rounded-xl bg-slate-900 border border-purple-500/50 hover:border-purple-400 hover:scale-105 transition shadow-md group" title="stefanautomateed (Contributor #65 - Shipvela)">
-          <img src="https://github.com/stefanautomateed.png" class="w-8 h-8 rounded-full border border-purple-400" alt="stefanautomateed">
+          <img src="https://github.com/stefanautomateed.png" class="w-8 h-8 rounded-full border border-purple-400" alt="stefanautomateed" loading="lazy" decoding="async" width="32" height="32">
           <div class="text-left">
             <span class="text-xs font-bold text-white group-hover:text-purple-300 transition">stefanautomateed</span>
             <span class="block text-[10px] text-purple-300 font-mono">PR #65 • Shipvela</span>
           </div>
         </a>
         <a href="https://github.com/zealous1" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-2.5 px-4 py-2 rounded-xl bg-slate-900 border border-purple-500/50 hover:border-purple-400 hover:scale-105 transition shadow-md group" title="zealous1 (Contributor #67 - Arcmira)">
-          <img src="https://github.com/zealous1.png" class="w-8 h-8 rounded-full border border-purple-400" alt="zealous1">
+          <img src="https://github.com/zealous1.png" class="w-8 h-8 rounded-full border border-purple-400" alt="zealous1" loading="lazy" decoding="async" width="32" height="32">
           <div class="text-left">
             <span class="text-xs font-bold text-white group-hover:text-purple-300 transition">zealous1</span>
             <span class="block text-[10px] text-purple-300 font-mono">PR #67 • Arcmira</span>
           </div>
         </a>
         <a href="https://github.com/jeshuadomingo-byte" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-2.5 px-4 py-2 rounded-xl bg-slate-900 border border-purple-500/50 hover:border-purple-400 hover:scale-105 transition shadow-md group" title="jeshuadomingo-byte (Contributor #68 - Caption-Pack)">
-          <img src="https://github.com/jeshuadomingo-byte.png" class="w-8 h-8 rounded-full border border-purple-400" alt="jeshuadomingo-byte">
+          <img src="https://github.com/jeshuadomingo-byte.png" class="w-8 h-8 rounded-full border border-purple-400" alt="jeshuadomingo-byte" loading="lazy" decoding="async" width="32" height="32">
           <div class="text-left">
             <span class="text-xs font-bold text-white group-hover:text-purple-300 transition">jeshuadomingo-byte</span>
             <span class="block text-[10px] text-purple-300 font-mono">PR #68 • Caption-Pack</span>
           </div>
         </a>
         <a href="https://github.com/Jamailar" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-2.5 px-4 py-2 rounded-xl bg-slate-900 border border-purple-500/50 hover:border-purple-400 hover:scale-105 transition shadow-md group" title="Jamailar (Contributor #70 - LeanFPS)">
-          <img src="https://github.com/Jamailar.png" class="w-8 h-8 rounded-full border border-purple-400" alt="Jamailar">
+          <img src="https://github.com/Jamailar.png" class="w-8 h-8 rounded-full border border-purple-400" alt="Jamailar" loading="lazy" decoding="async" width="32" height="32">
           <div class="text-left">
             <span class="text-xs font-bold text-white group-hover:text-purple-300 transition">Jamailar</span>
             <span class="block text-[10px] text-purple-300 font-mono">#70 • LeanFPS</span>
           </div>
         </a>
         <a href="https://github.com/Shaisolaris" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-2.5 px-4 py-2 rounded-xl bg-slate-900 border border-purple-500/50 hover:border-purple-400 hover:scale-105 transition shadow-md group" title="Shaisolaris (Contributor #71 - Solaris Dev Shop)">
-          <img src="https://github.com/Shaisolaris.png" class="w-8 h-8 rounded-full border border-purple-400" alt="Shaisolaris">
+          <img src="https://github.com/Shaisolaris.png" class="w-8 h-8 rounded-full border border-purple-400" alt="Shaisolaris" loading="lazy" decoding="async" width="32" height="32">
           <div class="text-left">
             <span class="text-xs font-bold text-white group-hover:text-purple-300 transition">Shaisolaris</span>
             <span class="block text-[10px] text-purple-300 font-mono">#71 • Solaris Dev Shop</span>
           </div>
         </a>
         <a href="https://github.com/estevecastells" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-2.5 px-4 py-2 rounded-xl bg-slate-900 border border-purple-500/50 hover:border-purple-400 hover:scale-105 transition shadow-md group" title="estevecastells (Contributor #74 - Invokely)">
-          <img src="https://github.com/estevecastells.png" class="w-8 h-8 rounded-full border border-purple-400" alt="estevecastells">
+          <img src="https://github.com/estevecastells.png" class="w-8 h-8 rounded-full border border-purple-400" alt="estevecastells" loading="lazy" decoding="async" width="32" height="32">
           <div class="text-left">
             <span class="text-xs font-bold text-white group-hover:text-purple-300 transition">estevecastells</span>
             <span class="block text-[10px] text-purple-300 font-mono">PR #74 • Invokely</span>
           </div>
         </a>
         <a href="https://github.com/Alox1d" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-2.5 px-4 py-2 rounded-xl bg-slate-900 border border-purple-500/50 hover:border-purple-400 hover:scale-105 transition shadow-md group" title="Alox1d (Contributor #76 - DateParser)">
-          <img src="https://github.com/Alox1d.png" class="w-8 h-8 rounded-full border border-purple-400" alt="Alox1d">
+          <img src="https://github.com/Alox1d.png" class="w-8 h-8 rounded-full border border-purple-400" alt="Alox1d" loading="lazy" decoding="async" width="32" height="32">
           <div class="text-left">
             <span class="text-xs font-bold text-white group-hover:text-purple-300 transition">Alox1d</span>
             <span class="block text-[10px] text-purple-300 font-mono">PR #76 • DateParser</span>
           </div>
         </a>
         <a href="https://github.com/Dramex" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-2.5 px-4 py-2 rounded-xl bg-slate-900 border border-purple-500/50 hover:border-purple-400 hover:scale-105 transition shadow-md group" title="Dramex (Contributor #77, #86, #87 - RowSafe)">
-          <img src="https://github.com/Dramex.png" class="w-8 h-8 rounded-full border border-purple-400" alt="Dramex">
+          <img src="https://github.com/Dramex.png" class="w-8 h-8 rounded-full border border-purple-400" alt="Dramex" loading="lazy" decoding="async" width="32" height="32">
           <div class="text-left">
             <span class="text-xs font-bold text-white group-hover:text-purple-300 transition">Dramex</span>
             <span class="block text-[10px] text-purple-300 font-mono">PR #77 • RowSafe</span>
           </div>
         </a>
         <a href="https://github.com/SergiuPogor" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-2.5 px-4 py-2 rounded-xl bg-slate-900 border border-purple-500/50 hover:border-purple-400 hover:scale-105 transition shadow-md group" title="SergiuPogor (Contributor #79 - CurlShot)">
-          <img src="https://github.com/SergiuPogor.png" class="w-8 h-8 rounded-full border border-purple-400" alt="SergiuPogor">
+          <img src="https://github.com/SergiuPogor.png" class="w-8 h-8 rounded-full border border-purple-400" alt="SergiuPogor" loading="lazy" decoding="async" width="32" height="32">
           <div class="text-left">
             <span class="text-xs font-bold text-white group-hover:text-purple-300 transition">SergiuPogor</span>
             <span class="block text-[10px] text-purple-300 font-mono">PR #79 • CurlShot</span>
           </div>
         </a>
         <a href="https://github.com/harshitethic" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-2.5 px-4 py-2 rounded-xl bg-slate-900 border border-purple-500/50 hover:border-purple-400 hover:scale-105 transition shadow-md group" title="harshitethic (Contributor #80 - ClonePeek)">
-          <img src="https://github.com/harshitethic.png" class="w-8 h-8 rounded-full border border-purple-400" alt="harshitethic">
+          <img src="https://github.com/harshitethic.png" class="w-8 h-8 rounded-full border border-purple-400" alt="harshitethic" loading="lazy" decoding="async" width="32" height="32">
           <div class="text-left">
             <span class="text-xs font-bold text-white group-hover:text-purple-300 transition">harshitethic</span>
             <span class="block text-[10px] text-purple-300 font-mono">#80 • ClonePeek</span>
           </div>
         </a>
         <a href="https://github.com/yumaheymans" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-2.5 px-4 py-2 rounded-xl bg-slate-900 border border-purple-500/50 hover:border-purple-400 hover:scale-105 transition shadow-md group" title="yumaheymans (Contributor #83 - CareJobs.Now)">
-          <img src="https://github.com/yumaheymans.png" class="w-8 h-8 rounded-full border border-purple-400" alt="yumaheymans">
+          <img src="https://github.com/yumaheymans.png" class="w-8 h-8 rounded-full border border-purple-400" alt="yumaheymans" loading="lazy" decoding="async" width="32" height="32">
           <div class="text-left">
             <span class="text-xs font-bold text-white group-hover:text-purple-300 transition">yumaheymans</span>
             <span class="block text-[10px] text-purple-300 font-mono">PR #83 • CareJobs.Now</span>
           </div>
         </a>
         <a href="https://github.com/mountainowl" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-2.5 px-4 py-2 rounded-xl bg-slate-900 border border-purple-500/50 hover:border-purple-400 hover:scale-105 transition shadow-md group" title="mountainowl (Contributor #89 - Bubo)">
-          <img src="https://github.com/mountainowl.png" class="w-8 h-8 rounded-full border border-purple-400" alt="mountainowl">
+          <img src="https://github.com/mountainowl.png" class="w-8 h-8 rounded-full border border-purple-400" alt="mountainowl" loading="lazy" decoding="async" width="32" height="32">
           <div class="text-left">
             <span class="text-xs font-bold text-white group-hover:text-purple-300 transition">mountainowl</span>
             <span class="block text-[10px] text-purple-300 font-mono">PR #89 • Bubo</span>
           </div>
         </a>
         <a href="https://github.com/cpys" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-2.5 px-4 py-2 rounded-xl bg-slate-900 border border-purple-500/50 hover:border-purple-400 hover:scale-105 transition shadow-md group" title="cpys (Contributor #38 - Codex Quota Overlay)">
-          <img src="https://github.com/cpys.png" class="w-8 h-8 rounded-full border border-purple-400" alt="cpys">
+          <img src="https://github.com/cpys.png" class="w-8 h-8 rounded-full border border-purple-400" alt="cpys" loading="lazy" decoding="async" width="32" height="32">
           <div class="text-left">
             <span class="text-xs font-bold text-white group-hover:text-purple-300 transition">cpys</span>
             <span class="block text-[10px] text-purple-300 font-mono">#38 • Codex Quota</span>
           </div>
         </a>
         <a href="https://github.com/InsightFactoryAPP" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-2.5 px-4 py-2 rounded-xl bg-slate-900 border border-purple-500/50 hover:border-purple-400 hover:scale-105 transition shadow-md group" title="InsightFactoryAPP (Contributor #3 - YYLO)">
-          <img src="https://github.com/InsightFactoryAPP.png" class="w-8 h-8 rounded-full border border-purple-400" alt="InsightFactoryAPP">
+          <img src="https://github.com/InsightFactoryAPP.png" class="w-8 h-8 rounded-full border border-purple-400" alt="InsightFactoryAPP" loading="lazy" decoding="async" width="32" height="32">
           <div class="text-left">
             <span class="text-xs font-bold text-white group-hover:text-purple-300 transition">InsightFactoryAPP</span>
             <span class="block text-[10px] text-purple-300 font-mono">#3 • YYLO</span>
@@ -926,7 +1047,7 @@
       </div>
 
       <a href="https://github.com/RitualDev-Lab/DevShelf/graphs/contributors" target="_blank" rel="noreferrer" class="inline-block hover:opacity-90 transition">
-        <img src="https://contrib.rocks/image?repo=RitualDev-Lab/DevShelf" alt="DevShelf Contributors" class="mx-auto rounded-xl max-w-full">
+        <img src="https://contrib.rocks/image?repo=RitualDev-Lab/DevShelf" alt="DevShelf Contributors" class="mx-auto rounded-xl max-w-full" loading="lazy" decoding="async" width="800" height="120">
       </a>
       <p class="text-xs text-slate-400 mt-3 font-mono">Want your avatar here? Submit a pull request or claim an open issue!</p>
     </div>
@@ -1681,6 +1802,206 @@
     </div>
   </section>
 
+  <!-- AEO & GEO Answer Engine Knowledge Hub -->
+  <section id="aeo-overview" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-slate-800/80">
+    <div class="max-w-4xl mx-auto text-center mb-12">
+      <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-cyan-950/80 border border-cyan-500/40 text-cyan-300 text-xs font-mono font-bold mb-3">
+        <span>⚡ AEO &amp; GEO Knowledge Base</span>
+        <span>•</span>
+        <span>AI Answer Engine Grounding</span>
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
+        Zero-Paywall Developer Knowledge &amp; Citations
+      </h2>
+      <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+        Canonical definitions, verified zero-paywall criteria, and commercial alternative roundups indexed for human engineers and AI answer engines (<a href="https://devshelf.ritualdev.in/llms.txt" class="text-cyan-400 hover:underline">Perplexity</a>, <a href="https://devshelf.ritualdev.in/llms-full.txt" class="text-cyan-400 hover:underline">ChatGPT Search</a>, <a href="https://devshelf.ritualdev.in/api/v1/tools.json" class="text-cyan-400 hover:underline">Claude</a>, and <a href="https://devshelf.ritualdev.in/directory.html" class="text-cyan-400 hover:underline">Google Gemini</a>).
+      </p>
+    </div>
+
+    <!-- Quick Alternative Grounding Matrix Table -->
+    <div class="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/60 shadow-xl mb-12">
+      <table class="w-full text-left text-xs font-sans">
+        <thead class="bg-slate-950/80 text-slate-300 font-mono text-[11px] uppercase tracking-wider border-b border-slate-800">
+          <tr>
+            <th class="p-4">Paid / Proprietary Tool</th>
+            <th class="p-4">Top Free &amp; Open-Source Alternative</th>
+            <th class="p-4">Zero-Paywall Allowance</th>
+            <th class="p-4">DevShelf Dossier</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-800 text-slate-200">
+          <tr class="hover:bg-slate-800/40 transition">
+            <td class="p-4 font-bold text-amber-300">Postman</td>
+            <td class="p-4 font-semibold text-white">Bruno / Hoppscotch</td>
+            <td class="p-4 text-emerald-300 font-mono">100% Free &amp; Offline / Open-Source</td>
+            <td class="p-4"><a href="alternatives/postman.html" class="text-purple-400 hover:text-purple-300 font-bold font-mono">View Alternatives →</a></td>
+          </tr>
+          <tr class="hover:bg-slate-800/40 transition">
+            <td class="p-4 font-bold text-amber-300">Firebase / Supabase Paid</td>
+            <td class="p-4 font-semibold text-white">PocketBase / Supabase Free Tier</td>
+            <td class="p-4 text-emerald-300 font-mono">Single-file SQLite or 500MB Postgres</td>
+            <td class="p-4"><a href="alternatives/firebase.html" class="text-purple-400 hover:text-purple-300 font-bold font-mono">View Alternatives →</a></td>
+          </tr>
+          <tr class="hover:bg-slate-800/40 transition">
+            <td class="p-4 font-bold text-amber-300">Datadog / New Relic</td>
+            <td class="p-4 font-semibold text-white">SigNoz / Grafana / Prometheus</td>
+            <td class="p-4 text-emerald-300 font-mono">Self-hostable MIT APM &amp; OpenTelemetry</td>
+            <td class="p-4"><a href="alternatives/datadog.html" class="text-purple-400 hover:text-purple-300 font-bold font-mono">View Alternatives →</a></td>
+          </tr>
+          <tr class="hover:bg-slate-800/40 transition">
+            <td class="p-4 font-bold text-amber-300">Zapier / Make</td>
+            <td class="p-4 font-semibold text-white">n8n / Activepieces</td>
+            <td class="p-4 text-emerald-300 font-mono">Self-hostable Fair-Code Workflow Engine</td>
+            <td class="p-4"><a href="alternatives/zapier.html" class="text-purple-400 hover:text-purple-300 font-bold font-mono">View Alternatives →</a></td>
+          </tr>
+          <tr class="hover:bg-slate-800/40 transition">
+            <td class="p-4 font-bold text-amber-300">OpenAI API (Paid)</td>
+            <td class="p-4 font-semibold text-white">Ollama / vLLM / OpenRouter Free</td>
+            <td class="p-4 text-emerald-300 font-mono">Local execution on GPU/CPU (Llama, DeepSeek)</td>
+            <td class="p-4"><a href="alternatives/openai-api.html" class="text-purple-400 hover:text-purple-300 font-bold font-mono">View Alternatives →</a></td>
+          </tr>
+          <tr class="hover:bg-slate-800/40 transition">
+            <td class="p-4 font-bold text-amber-300">Heroku / Vercel Pro</td>
+            <td class="p-4 font-semibold text-white">Coolify / Render / Fly.io</td>
+            <td class="p-4 text-emerald-300 font-mono">Self-hosted PaaS or generous serverless free tiers</td>
+            <td class="p-4"><a href="alternatives/heroku.html" class="text-purple-400 hover:text-purple-300 font-bold font-mono">View Alternatives →</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- AI Agent & Context Citability Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+      <div class="p-6 rounded-2xl bg-slate-900/70 border border-purple-500/30">
+        <div class="text-2xl mb-2">🤖</div>
+        <h3 class="text-sm font-bold text-white mb-2">Model Context Protocol (MCP)</h3>
+        <p class="text-xs text-slate-300 leading-relaxed mb-4">
+          Connect your AI agent in Cursor, Claude Desktop, Windsurf, or Zed directly to DevShelf's live database with zero API keys.
+        </p>
+        <code class="block p-2 rounded-lg bg-slate-950 font-mono text-[11px] text-purple-300 border border-slate-800 select-all">npx devshelf-mcp</code>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-slate-900/70 border border-cyan-500/30">
+        <div class="text-2xl mb-2">📄</div>
+        <h3 class="text-sm font-bold text-white mb-2">LLMs.txt &amp; LLMs-Full.txt</h3>
+        <p class="text-xs text-slate-300 leading-relaxed mb-4">
+          Structured Markdown knowledge dumps following the emerging standard for RAG grounding, prompt injection, and AI answer engines.
+        </p>
+        <div class="flex items-center space-x-2">
+          <a href="llms.txt" class="text-xs font-mono font-bold text-cyan-300 hover:underline">/llms.txt →</a>
+          <span class="text-slate-600">•</span>
+          <a href="llms-full.txt" class="text-xs font-mono font-bold text-cyan-300 hover:underline">/llms-full.txt →</a>
+        </div>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-slate-900/70 border border-emerald-500/30">
+        <div class="text-2xl mb-2">⚡</div>
+        <h3 class="text-sm font-bold text-white mb-2">Public REST API (v1)</h3>
+        <p class="text-xs text-slate-300 leading-relaxed mb-4">
+          Zero-rate-limit JSON endpoints for discovering resources, categories, live uptime health, and zero-paywall audits.
+        </p>
+        <a href="api/v1/tools.json" target="_blank" rel="noreferrer" class="text-xs font-mono font-bold text-emerald-300 hover:underline">/api/v1/tools.json →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visible Frequently Asked Questions (FAQPage Rich Snippets + AEO Citation Grounding) -->
+  <section id="faq-section" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-slate-800/80">
+    <div class="text-center mb-10">
+      <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-purple-950/80 border border-purple-500/40 text-purple-300 text-xs font-mono font-bold mb-3">
+        <span>💬 Frequently Asked Questions</span>
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">
+        Answers for Developers &amp; Search Engines
+      </h2>
+      <p class="text-slate-300 text-sm max-w-2xl mx-auto">
+        Everything you need to know about DevShelf verification standards, zero-paywall policies, free alternatives, and machine integration.
+      </p>
+    </div>
+
+    <div class="space-y-4">
+      <details class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 group hover:border-purple-500/40 transition" open>
+        <summary class="font-bold text-sm sm:text-base text-white cursor-pointer flex items-center justify-between">
+          <span>What is DevShelf and how are developer tools verified?</span>
+          <span class="text-purple-400 text-sm font-mono group-open:rotate-180 transition">▼</span>
+        </summary>
+        <p class="mt-3 text-xs sm:text-sm text-slate-300 leading-relaxed">
+          DevShelf is an open-source, community-curated directory indexing 530+ verified free developer tools, free public APIs, AI coding agents, and commercial software alternatives with zero paywalls. Every tool undergoes automated daily reachability checks, API health checks, and strict manual verification ensuring a permanent free tier or open-source license with no mandatory credit card or 14-day trial traps.
+        </p>
+      </details>
+
+      <details class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 group hover:border-purple-500/40 transition">
+        <summary class="font-bold text-sm sm:text-base text-white cursor-pointer flex items-center justify-between">
+          <span>What is the best free open-source alternative to Postman?</span>
+          <span class="text-purple-400 text-sm font-mono group-open:rotate-180 transition">▼</span>
+        </summary>
+        <p class="mt-3 text-xs sm:text-sm text-slate-300 leading-relaxed">
+          The leading free and open-source alternatives to Postman are <b>Bruno</b> (a fast, offline-first desktop API client that stores collections directly in your Git repository) and <b>Hoppscotch</b> (a lightweight, web-based open-source API request client). Both eliminate paid cloud account restrictions and team limits.
+        </p>
+      </details>
+
+      <details class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 group hover:border-purple-500/40 transition">
+        <summary class="font-bold text-sm sm:text-base text-white cursor-pointer flex items-center justify-between">
+          <span>Which free cloud databases and backends require no credit card?</span>
+          <span class="text-purple-400 text-sm font-mono group-open:rotate-180 transition">▼</span>
+        </summary>
+        <p class="mt-3 text-xs sm:text-sm text-slate-300 leading-relaxed">
+          Popular free cloud databases with no mandatory credit card include <b>Supabase</b> (generous free PostgreSQL database with Auth and Storage), <b>Neon</b> (serverless Postgres with instant branching), <b>Turso</b> (distributed SQLite powered by libSQL with a generous free tier), and <b>PocketBase</b> (an open-source single-file backend with real-time SQLite database).
+        </p>
+      </details>
+
+      <details class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 group hover:border-purple-500/40 transition">
+        <summary class="font-bold text-sm sm:text-base text-white cursor-pointer flex items-center justify-between">
+          <span>What are the best local LLM runners and AI coding tools?</span>
+          <span class="text-purple-400 text-sm font-mono group-open:rotate-180 transition">▼</span>
+        </summary>
+        <p class="mt-3 text-xs sm:text-sm text-slate-300 leading-relaxed">
+          Top free and open-source local LLM tools include <b>Ollama</b> (run Llama, Mistral, and DeepSeek locally with a simple CLI), <b>vLLM</b> (high-throughput inference engine), and <b>DevShelf MCP Server</b> (connects live catalog data directly into Cursor, Claude Desktop, and Windsurf).
+        </p>
+      </details>
+
+      <details class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 group hover:border-purple-500/40 transition">
+        <summary class="font-bold text-sm sm:text-base text-white cursor-pointer flex items-center justify-between">
+          <span>How do I connect AI coding assistants (Cursor, Claude Desktop, Windsurf, Zed) to DevShelf?</span>
+          <span class="text-purple-400 text-sm font-mono group-open:rotate-180 transition">▼</span>
+        </summary>
+        <p class="mt-3 text-xs sm:text-sm text-slate-300 leading-relaxed">
+          You can connect your AI coding agent directly to DevShelf via the Model Context Protocol (MCP) by running <code class="px-1.5 py-0.5 rounded bg-slate-950 text-purple-300 font-mono">npx devshelf-mcp</code>. Add it to your <code class="px-1.5 py-0.5 rounded bg-slate-950 text-purple-300 font-mono">claude_desktop_config.json</code> or Cursor settings under <code class="px-1.5 py-0.5 rounded bg-slate-950 text-purple-300 font-mono">mcpServers</code> to give your agent real-time access to 530+ free developer tools and alternatives.
+        </p>
+      </details>
+
+      <details class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 group hover:border-purple-500/40 transition">
+        <summary class="font-bold text-sm sm:text-base text-white cursor-pointer flex items-center justify-between">
+          <span>How does DevShelf detect trial bait and hidden paywalls?</span>
+          <span class="text-purple-400 text-sm font-mono group-open:rotate-180 transition">▼</span>
+        </summary>
+        <p class="mt-3 text-xs sm:text-sm text-slate-300 leading-relaxed">
+          DevShelf maintains automated trial bait analyzers and health probes that inspect pricing pages for deceptive 14-day trial expirations, mandatory upfront credit card gates, and silent sunsetting. Tools found violating zero-paywall criteria enter a 14-day grace period before being sunset from the catalog.
+        </p>
+      </details>
+
+      <details class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 group hover:border-purple-500/40 transition">
+        <summary class="font-bold text-sm sm:text-base text-white cursor-pointer flex items-center justify-between">
+          <span>How can developers submit an open-source tool or API?</span>
+          <span class="text-purple-400 text-sm font-mono group-open:rotate-180 transition">▼</span>
+        </summary>
+        <p class="mt-3 text-xs sm:text-sm text-slate-300 leading-relaxed">
+          Developers can submit tools via the interactive Contribution Wizard on the website or by opening a pull request on GitHub (<a href="https://github.com/RitualDev-Lab/DevShelf" target="_blank" rel="noreferrer" class="text-purple-400 hover:underline">github.com/RitualDev-Lab/DevShelf</a>). All merged submissions receive social amplification across RitualDev Lab developer networks.
+        </p>
+      </details>
+
+      <details class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 group hover:border-purple-500/40 transition">
+        <summary class="font-bold text-sm sm:text-base text-white cursor-pointer flex items-center justify-between">
+          <span>Does DevShelf provide a public REST API and machine-readable data?</span>
+          <span class="text-purple-400 text-sm font-mono group-open:rotate-180 transition">▼</span>
+        </summary>
+        <p class="mt-3 text-xs sm:text-sm text-slate-300 leading-relaxed">
+          Yes. DevShelf exposes a zero-rate-limit public REST API at <a href="https://devshelf.ritualdev.in/api/v1/tools.json" class="text-cyan-400 hover:underline font-mono">api/v1/tools.json</a>, category feeds at <a href="https://devshelf.ritualdev.in/api/v1/categories.json" class="text-cyan-400 hover:underline font-mono">api/v1/categories.json</a>, live health stats at <a href="https://devshelf.ritualdev.in/status.html" class="text-cyan-400 hover:underline font-mono">status.html</a>, and LLM-friendly context at <a href="https://devshelf.ritualdev.in/llms.txt" class="text-cyan-400 hover:underline font-mono">llms.txt</a>.
+        </p>
+      </details>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer class="border-t border-slate-800 py-12 bg-slate-950 text-center text-xs text-slate-300">
     <div class="max-w-7xl mx-auto px-4 space-y-3">
@@ -1696,6 +2017,10 @@
         <a href="directory.html" class="text-purple-400 hover:text-purple-300 transition">📂 Directory Index (530+ Tools)</a>
         <span>•</span>
         <a href="status.html" class="text-emerald-400 hover:text-emerald-300 transition">🟢 Live Status &amp; Audits</a>
+        <span>•</span>
+        <a href="#aeo-overview" class="hover:text-cyan-300 transition">⚡ AEO/GEO Grounding</a>
+        <span>•</span>
+        <a href="#faq-section" class="hover:text-purple-300 transition">💬 FAQ</a>
         <span>•</span>
         <a href="collections/free-weather-apis.html" class="hover:text-white transition">Collections</a>
         <span>•</span>
@@ -1783,8 +2108,8 @@
     </div>
   </div>
 
-  <script src="data.js?v=5.2.0"></script>
-  <script src="liquid-metal.js?v=5.2.0"></script>
-  <script src="app.js?v=5.2.0"></script>
+  <script src="data.js?v=5.2.0" defer></script>
+  <script src="liquid-metal.js?v=5.2.0" defer></script>
+  <script src="app.js?v=5.2.0" defer></script>
 </body>
 </html>
