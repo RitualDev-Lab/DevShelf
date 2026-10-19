@@ -107,6 +107,7 @@
         <a href="index.html#spotlight" class="hover:text-purple-300 transition">🔥 Spotlight</a>
         <a href="#sponsor-form" class="hover:text-pink-300 transition">💖 Make a Contribution</a>
         <a href="#mcp-sponsors" class="hover:text-emerald-300 transition">⚡ Tool / MCP Sponsorship</a>
+        <a href="newsletter.html" class="hover:text-cyan-300 transition">📬 Newsletter</a>
         <a href="#leaderboard" class="hover:text-amber-300 transition">🏆 Leaderboard</a>
         <a href="#comments" class="hover:text-cyan-300 transition">💬 Wall of Love</a>
         <a href="#faq" class="hover:text-slate-400 transition">❓ FAQ</a>
@@ -506,7 +507,7 @@
       </div>
 
       <!-- Pricing Cards Grid -->
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
         
         <!-- Tier 1: Starter -->
         <div class="bg-slate-900/90 rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-slate-700 transition">
@@ -591,7 +592,87 @@
           </button>
         </div>
 
-        <!-- Tier 3: Enterprise & Security Partner -->
+        <!-- Tier 3: Category Takeover Retainer -->
+        <div class="bg-gradient-to-b from-cyan-950/50 to-slate-900 rounded-2xl border border-cyan-500/40 p-6 flex flex-col justify-between hover:border-cyan-400 transition shadow-xl">
+          <div>
+            <div class="inline-block px-2.5 py-0.5 text-[10px] font-mono font-bold rounded-full bg-cyan-950 text-cyan-300 border border-cyan-500/40 mb-3">
+              👑 Category Exclusivity Retainer
+            </div>
+            <h3 class="text-xl font-bold text-white mb-1">Category Takeover</h3>
+            <p class="text-xs text-slate-300 mb-4">Exclusive brand dominance across Cloud, AI, APIs, or CLI. Own 100% of your category's traffic.</p>
+            <div class="flex items-baseline gap-1 mb-6">
+              <span class="text-3xl font-extrabold text-cyan-400 font-mono">$199</span>
+              <span class="text-xs text-slate-400 font-mono">/ month</span>
+            </div>
+            <ul class="space-y-2.5 text-xs text-slate-300 mb-6 font-sans">
+              <li class="flex items-start gap-2">
+                <span class="text-cyan-400 font-bold">✓</span>
+                <span><strong>Exclusive Sticky Category Banner</strong> across all category tools</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-cyan-400 font-bold">✓</span>
+                <span>Featured placement across all category <strong>Alternatives roundups</strong></span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-cyan-400 font-bold">✓</span>
+                <span>Top architectural recommendation in MCP &amp; CLI stacks</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-cyan-400 font-bold">✓</span>
+                <span>DevShelf Weekly newsletter category spotlight sponsor</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-cyan-400 font-bold">✓</span>
+                <span><strong>Instant Corporate Tax Invoice</strong> with compliant GST / VAT</span>
+              </li>
+            </ul>
+          </div>
+          <button type="button" onclick="selectPackage('categoryTakeover', 199)" class="w-full py-2.5 px-4 rounded-xl font-bold text-xs font-mono text-cyan-300 hover:text-white bg-slate-950 hover:bg-slate-900 border border-cyan-500/50 hover:border-cyan-400 transition shadow-sm">
+            Book Category Takeover ($199/mo) →
+          </button>
+        </div>
+
+        <!-- Tier 4: DevShelf Weekly Newsletter Spotlight -->
+        <div class="bg-gradient-to-b from-emerald-950/50 to-slate-900 rounded-2xl border border-emerald-500/40 p-6 flex flex-col justify-between hover:border-emerald-400 transition shadow-xl">
+          <div>
+            <div class="inline-block px-2.5 py-0.5 text-[10px] font-mono font-bold rounded-full bg-emerald-950 text-emerald-300 border border-emerald-500/40 mb-3">
+              📬 Direct Inboxes of 2,800+ Engineers
+            </div>
+            <h3 class="text-xl font-bold text-white mb-1">Newsletter Spotlight</h3>
+            <p class="text-xs text-slate-300 mb-4">Reach 2,800+ active software engineers, founders, and AI developers every Monday morning.</p>
+            <div class="flex items-baseline gap-1 mb-6">
+              <span class="text-3xl font-extrabold text-emerald-400 font-mono">$99</span>
+              <span class="text-xs text-slate-400 font-mono">/ issue</span>
+            </div>
+            <ul class="space-y-2.5 text-xs text-slate-300 mb-6 font-sans">
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <span><strong>Primary Header Sponsor Banner</strong> + 100-word developer pitch</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <span>Permanent dossier backlink on <code class="text-emerald-300 font-mono text-[11px]">newsletter.html</code></span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <span>Syndicated in W3C RSS 2.0 / Atom feed (<code class="text-emerald-300 font-mono text-[11px]">feed.xml</code>)</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <span>Direct lead clickouts with verified CTA &amp; referral attribution</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <span>Optional 4-issue monthly retainer bundle ($299/mo)</span>
+              </li>
+            </ul>
+          </div>
+          <button type="button" onclick="selectPackage('newsletterSpotlight', 99)" class="w-full py-2.5 px-4 rounded-xl font-bold text-xs font-mono text-emerald-300 hover:text-white bg-slate-950 hover:bg-slate-900 border border-emerald-500/50 hover:border-emerald-400 transition shadow-sm">
+            Book Newsletter Spotlight ($99/issue) →
+          </button>
+        </div>
+
+        <!-- Tier 5: Enterprise & Security Partner -->
         <div class="bg-slate-900/90 rounded-2xl border border-amber-500/40 p-6 flex flex-col justify-between hover:border-amber-400 transition">
           <div>
             <div class="inline-block px-2.5 py-0.5 text-[10px] font-mono font-bold rounded-full bg-amber-950 text-amber-300 border border-amber-500/40 mb-3">
@@ -2287,6 +2368,8 @@
         const pkgNames = {
           starter: 'DevShelf Starter',
           mcpPro: 'DevShelf MCP Pro',
+          categoryTakeover: 'Category Takeover Retainer',
+          newsletterSpotlight: 'DevShelf Weekly Newsletter Spotlight',
           enterprise: 'Enterprise Partner'
         };
         sponsorCommentInput.value = `Sponsoring ${pkgNames[pkgId] || 'DevShelf'} to connect our developer tool with AI coding assistants! 🚀`;
@@ -2313,6 +2396,10 @@
           selectPackage('starter', 49);
         } else if (tier === 'mcp-pro' || tier === 'mcppro') {
           selectPackage('mcpPro', 149);
+        } else if (tier === 'category-takeover' || tier === 'categorytakeover') {
+          selectPackage('categoryTakeover', 199);
+        } else if (tier === 'newsletter-spotlight' || tier === 'newsletter') {
+          selectPackage('newsletterSpotlight', 99);
         } else if (tier === 'enterprise') {
           selectPackage('enterprise', 299);
         }

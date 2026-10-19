@@ -26,6 +26,7 @@ import {
   searchCatalog,
 } from "./lib/catalog.js";
 import { loadSponsors } from "./lib/sponsors.js";
+import { loadNewsletter } from "./lib/newsletter.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -169,6 +170,7 @@ ${c.bold}USAGE:${c.reset}
   ${c.green}npx devshelf stats${c.reset}               Show catalog counts and metrics
   ${c.green}npx devshelf update${c.reset}              Refresh catalog cache from live directory
   ${c.green}npx devshelf sponsors${c.reset}            Display Wall of Patrons & verified backer ledger
+  ${c.green}npx devshelf newsletter${c.reset}          Read latest DevShelf Weekly issue & zero-paywall tools
   ${c.green}npx devshelf submit [options]${c.reset}     Submit a new free developer tool via PR from terminal
   ${c.green}npx devshelf mcp${c.reset}                 Launch DevShelf as a Model Context Protocol (MCP) server
   ${c.green}npx devshelf open <name>${c.reset}          Open resource URL directly in browser
@@ -778,6 +780,80 @@ async function main() {
 
     if (shouldOpen) {
       openUrl("https://devshelf.ritualdev.in/sponsors.html");
+    }
+    return;
+  }
+
+  if (command === "newsletter") {
+    const nlData = await loadNewsletter();
+    if (!nlData || !Array.isArray(nlData.issues) || nlData.issues.length === 0) {
+      console.error(`${c.red}Error:${c.reset} Could not load DevShelf Weekly newsletter editions.`);
+      process.exit(1);
+    }
+
+    const latest = nlData.issues[0];
+
+    if (isJson) {
+      console.log(
+        JSON.stringify(
+          {
+            name: nlData.name,
+            tagline: nlData.tagline,
+            website: nlData.website,
+            feedUrl: nlData.feedUrl,
+            stats: nlData.stats,
+            latestIssue: latest,
+            allIssues: nlData.issues,
+          },
+          null,
+          2
+        )
+      );
+      return;
+    }
+
+    printHeader();
+    console.log(`  📬 ${c.bold}${c.purple}DevShelf Weekly${c.reset} — Curated Zero-Paywall Tools`);
+    console.log(`     ${c.gray}${nlData.tagline}${c.reset}\n`);
+
+    console.log(`  ${c.bold}📅 ${latest.title}${c.reset} ${c.gray}(${latest.date})${c.reset}`);
+    console.log(`  ${c.dim}${latest.summary}${c.reset}\n`);
+
+    if (latest.sponsor) {
+      console.log(
+        `  ${c.amber}⚡ Issue Sponsor: ${c.bold}${latest.sponsor.name}${c.reset} ${c.gray}— ${latest.sponsor.tagline}${c.reset}`
+      );
+      console.log(`     Perk: ${latest.sponsor.perk}`);
+      console.log(`     URL:  ${c.underline}${c.blue}${latest.sponsor.url}${c.reset}\n`);
+    }
+
+    console.log(`  ${c.bold}🛠️ Top 5 Zero-Paywall Tools This Week:${c.reset}`);
+    (latest.featuredTools || []).slice(0, 5).forEach((tool, idx) => {
+      const badge = tool.badge ? ` ${c.cyan}[${tool.badge}]${c.reset}` : "";
+      console.log(
+        `   ${idx + 1}. ${c.bold}${tool.name}${c.reset}${badge} ${c.gray}(${tool.category})${c.reset}`
+      );
+      console.log(`      ${tool.description}`);
+      console.log(`      ${c.underline}${c.blue}${tool.url}${c.reset}`);
+    });
+    console.log();
+
+    if (latest.perkOfTheWeek) {
+      console.log(
+        `  🎁 ${c.green}${c.bold}Perk of the Week:${c.reset} ${latest.perkOfTheWeek.title}`
+      );
+      console.log(`     ${latest.perkOfTheWeek.description}`);
+      console.log(`     ${c.underline}${c.blue}${latest.perkOfTheWeek.url}${c.reset}\n`);
+    }
+
+    console.log(
+      `  ${c.gray}Active Subscribers: ${c.bold}${nlData.stats?.activeSubscribers?.toLocaleString() || "2,800+"}${c.reset} engineers`
+    );
+    console.log(`  📡 W3C RSS Feed:    ${c.underline}${c.blue}${nlData.feedUrl}${c.reset}`);
+    console.log(`  🌐 Web Archive:     ${c.underline}${c.blue}${nlData.website}${c.reset}\n`);
+
+    if (shouldOpen) {
+      openUrl(nlData.website);
     }
     return;
   }

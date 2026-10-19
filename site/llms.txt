@@ -8,6 +8,8 @@ DevShelf is an open-source, community-driven developer resource ecosystem curate
 - **Model Context Protocol (MCP) Server**: Run `npx devshelf-mcp` in Claude Desktop, Cursor, Windsurf, or LangChain agents.
 - **REST API**: https://devshelf.ritualdev.in/api/v1/tools.json
 - **Verified Partner Perks & Cloud Credits**: https://devshelf.ritualdev.in/api/v1/affiliates.json
+- **DevShelf Weekly Curated Newsletter & RSS**: https://devshelf.ritualdev.in/newsletter.html (RSS: https://devshelf.ritualdev.in/feed.xml)
+- **Newsletter Editions REST API**: https://devshelf.ritualdev.in/api/v1/newsletter.json
 - **Full Catalog Raw Knowledge Base**: https://devshelf.ritualdev.in/llms-full.txt
 - **Master HTML Directory**: https://devshelf.ritualdev.in/directory.html
 - **Sitemap**: https://devshelf.ritualdev.in/sitemap.xml

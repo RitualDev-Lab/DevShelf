@@ -85,6 +85,31 @@ async function generateSeo() {
     });
   }
 
+  // Load Category Exclusivity Retainers
+  const sponsorsPath = path.join(root, "data", "sponsors.json");
+  let sponsorsData: any = {};
+  try {
+    const rawSponsors = await fs.readFile(sponsorsPath, "utf8");
+    sponsorsData = JSON.parse(rawSponsors);
+  } catch {
+    // fallback
+  }
+  const categorySponsors: Record<string, any> = sponsorsData.categorySponsors || {};
+
+  function findCategorySponsor(tool: any): any | undefined {
+    if (!tool) return undefined;
+    const typeKey = (tool.type || "").toLowerCase();
+    if (categorySponsors[typeKey]) return categorySponsors[typeKey];
+
+    const catLower = (tool.category || "").toLowerCase();
+    for (const [key, sponsor] of Object.entries(categorySponsors)) {
+      if (catLower.includes(key) || key.includes(catLower)) {
+        return sponsor;
+      }
+    }
+    return undefined;
+  }
+
   const domain = "https://devshelf.ritualdev.in";
   const milestone = `${Math.floor(resources.length / 10) * 10}+`;
   const today = new Date().toISOString().split("T")[0];
@@ -99,6 +124,7 @@ async function generateSeo() {
   for (const item of resources) {
     const slug = slugify(item.name);
     const partner = findPartner(item);
+    const catSponsor = findCategorySponsor(item);
     const pageUrl = `${domain}/tools/${slug}.html`;
     const targetUrl = item.url || item.repo || "";
     const name = escapeHtml(item.name);
@@ -326,6 +352,20 @@ async function generateSeo() {
       </div>`
       : "";
 
+    const categorySponsorHtml =
+      catSponsor && catSponsor.toolName.toLowerCase() !== item.name.toLowerCase()
+        ? `
+      <div class="mt-6 p-4 rounded-xl bg-gradient-to-r from-purple-950/60 via-slate-900 to-indigo-950/60 border border-purple-500/40 flex items-center justify-between text-xs font-mono">
+        <div class="flex items-center space-x-2.5">
+          <span class="text-amber-400 text-sm">👑</span>
+          <span class="text-slate-300">Official <strong class="text-white">${escapeHtml(catSponsor.categoryName || category)}</strong> Partner: <strong class="text-purple-300">${escapeHtml(catSponsor.sponsorName)}</strong></span>
+        </div>
+        <a href="${escapeHtml(catSponsor.url)}" target="_blank" rel="noopener noreferrer sponsored" class="text-purple-400 hover:text-purple-300 font-bold ml-2 shrink-0">
+          Explore Partner →
+        </a>
+      </div>`
+        : "";
+
     const html = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -469,6 +509,7 @@ async function generateSeo() {
         ${freeTier ? `<div class="col-span-2"><span class="text-slate-500 block mb-1">Free Tier Allowance</span><span class="text-slate-200">${freeTier}</span></div>` : ""}
       </div>
 
+      ${categorySponsorHtml}
       ${partnerPerkHtml}
       ${dockerSectionHtml}
       ${badgeSectionHtml}
@@ -746,6 +787,28 @@ async function generateSeo() {
       </div>
     `;
 
+    const altCatSponsor = findCategorySponsor(altTools[0]);
+    const altCatSponsorHtml = altCatSponsor
+      ? `
+    <div class="mb-6 p-4 rounded-xl bg-gradient-to-r from-amber-950/40 via-slate-900 to-purple-950/40 border border-amber-500/40 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-lg shadow-amber-950/20">
+      <div class="flex items-center space-x-3.5">
+        <span class="text-2xl">👑</span>
+        <div>
+          <div class="text-xs font-bold text-white flex items-center space-x-2">
+            <span>Exclusive ${escapeHtml(altCatSponsor.categoryName || "Category")} Partner: ${escapeHtml(altCatSponsor.sponsorName)}</span>
+            <span class="px-2 py-0.5 rounded-full text-[10px] font-mono font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40">Category Sponsor</span>
+          </div>
+          <p class="text-[11px] text-slate-300 mt-0.5">
+            ${escapeHtml(altCatSponsor.tagline)}
+          </p>
+        </div>
+      </div>
+      <a href="${escapeHtml(altCatSponsor.url)}" target="_blank" rel="noopener noreferrer sponsored" class="shrink-0 px-4 py-2 rounded-xl text-xs font-bold font-mono text-slate-950 bg-gradient-to-r from-amber-400 to-orange-400 hover:from-amber-300 hover:to-orange-300 transition shadow-md shadow-amber-500/20">
+        Claim Partner Perk →
+      </a>
+    </div>`
+      : "";
+
     const html = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -859,6 +922,8 @@ async function generateSeo() {
         Claim Spot ($49/mo) →
       </a>
     </div>
+
+    ${altCatSponsorHtml}
 
     <!-- Structured Comparison Matrix Table -->
     ${matrixTableHtml}
@@ -1490,6 +1555,8 @@ DevShelf is an open-source, community-driven developer resource ecosystem curate
 - **Model Context Protocol (MCP) Server**: Run \`npx devshelf-mcp\` in Claude Desktop, Cursor, Windsurf, or LangChain agents.
 - **REST API**: ${domain}/api/v1/tools.json
 - **Verified Partner Perks & Cloud Credits**: ${domain}/api/v1/affiliates.json
+- **DevShelf Weekly Curated Newsletter & RSS**: ${domain}/newsletter.html (RSS: ${domain}/feed.xml)
+- **Newsletter Editions REST API**: ${domain}/api/v1/newsletter.json
 - **Full Catalog Raw Knowledge Base**: ${domain}/llms-full.txt
 - **Master HTML Directory**: ${domain}/directory.html
 - **Sitemap**: ${domain}/sitemap.xml

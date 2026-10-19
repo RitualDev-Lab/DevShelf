@@ -15,6 +15,7 @@ import readline from "node:readline";
 import { fileURLToPath } from "node:url";
 import { loadCatalog } from "./lib/catalog.js";
 import { loadSponsors } from "./lib/sponsors.js";
+import { loadNewsletter } from "./lib/newsletter.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -392,6 +393,25 @@ const TOOLS = [
     inputSchema: {
       type: "object",
       properties: {},
+    },
+  },
+  {
+    name: "get_newsletter",
+    description:
+      "Retrieve the latest DevShelf Weekly developer newsletter edition or archive issues. Returns featured zero-paywall tools, verified sponsor spotlights, perk of the week, active subscriber stats, and W3C RSS feed links.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        issueNumber: {
+          type: "number",
+          description:
+            "Optional specific issue number (e.g. 1, 2, 3). If omitted, returns the latest edition.",
+        },
+        limit: {
+          type: "number",
+          description: "Maximum number of issues to return if requesting archive list (default: 1)",
+        },
+      },
     },
   },
 ];
@@ -833,6 +853,51 @@ async function handleToolCall(name, args) {
         },
       },
       checkoutUrl: "https://devshelf.ritualdev.in/sponsors.html#mcp-sponsors",
+    };
+  }
+
+  if (name === "get_newsletter") {
+    const nlData = await loadNewsletter();
+    const issues = nlData.issues || [];
+
+    if (args.issueNumber) {
+      const match = issues.find((i) => i.issueNumber === Number(args.issueNumber));
+      if (!match) {
+        return {
+          error: `Newsletter Issue #${args.issueNumber} not found. Available issues: 1 to ${issues.length}.`,
+          totalIssues: issues.length,
+        };
+      }
+      return {
+        newsletter: nlData.name,
+        website: nlData.website,
+        feedUrl: nlData.feedUrl,
+        stats: nlData.stats,
+        issue: match,
+      };
+    }
+
+    const limit = Math.max(1, Number(args.limit) || 1);
+    if (limit === 1) {
+      return {
+        newsletter: nlData.name,
+        tagline: nlData.tagline,
+        website: nlData.website,
+        feedUrl: nlData.feedUrl,
+        stats: nlData.stats,
+        latestIssue: issues[0] || null,
+        totalIssues: issues.length,
+      };
+    }
+
+    return {
+      newsletter: nlData.name,
+      tagline: nlData.tagline,
+      website: nlData.website,
+      feedUrl: nlData.feedUrl,
+      stats: nlData.stats,
+      issues: issues.slice(0, limit),
+      totalIssues: issues.length,
     };
   }
 

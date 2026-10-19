@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevShelf Weekly — Curated Zero-Paywall Tools &amp; Public APIs Newsletter</title>
+  <meta name="description" content="Subscribe to DevShelf Weekly: 5 curated free developer tools, open-source alternatives, public APIs, and verified partner perks delivered every Monday. Zero spam.">
+  <link rel="canonical" href="https://devshelf.ritualdev.in/newsletter.html">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="author" content="RitualDev Lab">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://devshelf.ritualdev.in/newsletter.html">
+  <meta property="og:title" content="DevShelf Weekly — Curated Zero-Paywall Developer Newsletter">
+  <meta property="og:description" content="Join 2,800+ developers discovering battle-tested open-source alternatives, public APIs, and free developer credits before they hit Hacker News.">
+  <meta property="og:image" content="https://devshelf.ritualdev.in/og-image.jpg">
+
+  <!-- RSS / Atom Feeds -->
+  <link rel="alternate" type="application/rss+xml" title="DevShelf Weekly RSS Feed" href="feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="DevShelf Weekly RSS Feed" href="newsletter.xml">
+  <link rel="alternate" type="application/json" title="DevShelf Weekly JSON API" href="api/v1/newsletter.json">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tailwind.min.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen flex flex-col justify-between selection:bg-purple-500 selection:text-white">
+  <!-- Ambient Glow -->
+  <div class="fixed inset-0 overflow-hidden pointer-events-none -z-10">
+    <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-purple-600/15 blur-[100px] rounded-full"></div>
+    <div class="absolute top-[600px] -left-32 w-[400px] h-[400px] bg-pink-600/10 blur-[100px] rounded-full"></div>
+  </div>
+
+  <header class="border-b border-slate-800 bg-slate-900/60 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="./" class="flex items-center space-x-2 text-white font-extrabold text-lg hover:text-purple-400 transition">
+        <span>📚 DevShelf</span>
+      </a>
+      <div class="flex items-center space-x-3 text-xs font-mono">
+        <a href="feed.xml" target="_blank" class="px-2.5 py-1.5 rounded-lg bg-orange-950/80 hover:bg-orange-900 border border-orange-500/40 text-orange-300 font-bold transition flex items-center space-x-1">
+          <span>📡</span>
+          <span>RSS Feed</span>
+        </a>
+        <a href="#sponsor-kit" class="px-3 py-1.5 rounded-lg bg-gradient-to-r from-emerald-950/80 to-teal-950/80 hover:from-emerald-900 border border-emerald-500/50 text-emerald-200 font-bold transition">
+          ⚡ Sponsor ($99)
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 py-12 flex-1 w-full">
+    <!-- Hero Header -->
+    <div class="text-center mb-12">
+      <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full text-xs font-mono font-bold bg-purple-950/80 border border-purple-500/40 text-purple-300 mb-4">
+        <span>📬</span>
+        <span>Every Monday Morning • Zero Paywall Guarantee</span>
+      </div>
+      <h1 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight mb-4">
+        DevShelf Weekly
+      </h1>
+      <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto mb-6">
+        5 battle-tested open-source alternatives, free developer APIs, and verified partner perks delivered directly to your inbox or RSS reader every Monday.
+      </p>
+
+      <!-- Metric Badges -->
+      <div class="flex items-center justify-center flex-wrap gap-3 font-mono text-xs text-slate-300 mb-8">
+        <span class="px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-800">
+          👥 <strong class="text-white">2,840</strong> Engineers &amp; Founders
+        </span>
+        <span class="px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-800">
+          📈 <strong class="text-emerald-400">48.2%</strong> Open Rate
+        </span>
+        <span class="px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-800">
+          ⚡ <strong class="text-cyan-300">3</strong> Published Editions
+        </span>
+        <span class="px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-800 text-purple-300">
+          100% Free Forever
+        </span>
+      </div>
+
+      <!-- Free Email Subscription Form -->
+      <div class="p-6 sm:p-8 rounded-2xl bg-gradient-to-r from-purple-950/50 via-slate-900 to-indigo-950/50 border border-purple-500/40 shadow-2xl max-w-xl mx-auto text-left">
+        <h3 class="text-base font-bold text-white mb-2">Join 2,800+ Developers Subscribing Free</h3>
+        <p class="text-xs text-slate-300 mb-4">No spam, no vendor pitches. Just clean tool summaries, benchmarks, and exclusive perks.</p>
+        
+        <form id="newsletter-form" onsubmit="event.preventDefault(); const em = document.getElementById('nl-email').value; if(em){ localStorage.setItem('devshelf_subscriber', em); document.getElementById('nl-success').classList.remove('hidden'); document.getElementById('nl-inputs').classList.add('hidden'); }" class="space-y-3">
+          <div id="nl-inputs" class="flex flex-col sm:flex-row gap-2">
+            <input type="email" id="nl-email" required placeholder="developer@acme.com" class="flex-1 px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-purple-400 font-mono">
+            <button type="submit" class="px-5 py-2.5 rounded-xl text-xs font-bold font-mono text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 transition shadow-lg shadow-purple-600/30 whitespace-nowrap">
+              Subscribe Free →
+            </button>
+          </div>
+          <div id="nl-success" class="hidden p-3 rounded-xl bg-emerald-950/60 border border-emerald-500/40 text-xs font-mono text-emerald-300 text-center">
+            🎉 You're subscribed! You will receive Issue #4 next Monday. You can also add <a href="feed.xml" class="underline font-bold">our RSS feed</a> to your reader.
+          </div>
+          <div class="flex items-center justify-between text-[11px] font-mono text-slate-400 pt-1">
+            <span>🔒 Strict zero-spam policy</span>
+            <a href="feed.xml" class="text-orange-400 hover:underline">Prefer RSS? Click here →</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Sponsor Media Kit & B2B Packages Section -->
+    <section id="sponsor-kit" class="mb-14 p-6 sm:p-8 rounded-2xl bg-gradient-to-r from-purple-950/40 via-slate-900 to-slate-950 border border-purple-500/40 shadow-xl scroll-mt-24">
+      <div class="flex items-center justify-between flex-wrap gap-2 mb-6">
+        <div>
+          <div class="text-xs font-mono font-bold text-purple-400 uppercase tracking-wider mb-1">📢 Sponsor Media Kit</div>
+          <h2 class="text-xl sm:text-2xl font-extrabold text-white">Feature Your Tool in DevShelf Weekly</h2>
+        </div>
+        <span class="px-3 py-1 rounded-full text-xs font-mono font-bold bg-emerald-950 border border-emerald-500/40 text-emerald-300">
+          ⚡ 2,800+ Active Subscribers
+        </span>
+      </div>
+
+      <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">
+        Reach software architects, fullstack developers, DevOps engineers, and startup founders who actively test, evaluate, and adopt new developer tools every week.
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="p-5 rounded-xl bg-slate-950/80 border border-slate-800 flex flex-col justify-between">
+          <div>
+            <div class="text-xs font-mono font-bold text-slate-400 mb-1">Single Issue Spotlight</div>
+            <div class="text-2xl font-extrabold text-white font-mono mb-2">$99 <span class="text-xs text-slate-400 font-normal">/ issue</span></div>
+            <ul class="text-xs text-slate-300 space-y-2 mb-4">
+              <li>✓ Top header sponsor slot in 1 upcoming Monday edition</li>
+              <li>✓ 100-word product pitch with custom CTA button</li>
+              <li>✓ Included in W3C RSS 2.0 / Atom feed and web archive</li>
+              <li>✓ Direct clickout telemetry reporting</li>
+            </ul>
+          </div>
+          <a href="sponsors.html?tier=newsletter-spotlight&amount=99&currency=USD" class="w-full py-2.5 px-4 rounded-xl text-xs font-mono font-bold text-center text-white bg-purple-600 hover:bg-purple-500 transition shadow-md shadow-purple-900/30">
+            Book Next Monday ($99) →
+          </a>
+        </div>
+
+        <div class="p-5 rounded-xl bg-slate-950/80 border border-purple-500/40 flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute -right-8 -top-8 w-24 h-24 bg-purple-600/20 rounded-full blur-xl pointer-events-none"></div>
+          <div>
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-xs font-mono font-bold text-purple-300">Monthly 4-Issue Retainer</span>
+              <span class="text-[10px] font-mono font-bold px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-500/30">Best Value</span>
+            </div>
+            <div class="text-2xl font-extrabold text-white font-mono mb-2">$299 <span class="text-xs text-slate-400 font-normal">/ month (4 issues)</span></div>
+            <ul class="text-xs text-slate-300 space-y-2 mb-4">
+              <li>✓ Top sponsor slot across 4 consecutive Monday editions</li>
+              <li>✓ Rotational CTA messaging &amp; headline split-testing</li>
+              <li>✓ Permanent archive entry &amp; do-follow backlink</li>
+              <li>✓ Category takeover inclusion across web directory</li>
+            </ul>
+          </div>
+          <a href="sponsors.html?tier=category-takeover&amount=199&currency=USD" class="w-full py-2.5 px-4 rounded-xl text-xs font-mono font-bold text-center text-slate-950 bg-gradient-to-r from-amber-400 to-orange-400 hover:from-amber-300 hover:to-orange-300 transition shadow-md shadow-amber-500/20">
+            Reserve Monthly Retainer →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Past Issues Archives -->
+    <div class="mb-8">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-xl sm:text-2xl font-extrabold text-white tracking-tight">
+          Recent Editions &amp; Archives
+        </h2>
+        <span class="text-xs font-mono text-slate-400">Showing all 3 editions</span>
+      </div>
+
+      
+      <article id="issue-3" class="mb-12 p-6 sm:p-8 rounded-2xl bg-slate-900 border border-slate-800 shadow-xl scroll-mt-24">
+        <div class="flex items-center justify-between flex-wrap gap-2 mb-4 pb-4 border-b border-slate-800">
+          <div class="flex items-center space-x-2.5">
+            <span class="px-2.5 py-1 rounded-full text-xs font-mono font-bold bg-purple-950/80 border border-purple-500/40 text-purple-300">
+              Edition #3
+            </span>
+            <span class="text-xs font-mono text-slate-400">Published: 2026-10-19</span>
+          </div>
+          <button onclick="navigator.clipboard.writeText('https://devshelf.ritualdev.in/newsletter.html#issue-3'); alert('Copied issue permalink to clipboard!');" class="text-xs font-mono text-purple-400 hover:text-purple-300 transition">
+            🔗 Copy Link
+          </button>
+        </div>
+
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mb-3">
+          Issue #3: Local-First AI Agents, Fast Postgres Branching, and Weather Radar APIs
+        </h2>
+
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
+          This week: Run local LLM agents without cloud API tokens, instant Postgres branches with Neon, and accurate free weather forecasts without credit cards.
+        </p>
+
+        
+        <div class="mb-8 p-4 rounded-xl bg-gradient-to-r from-purple-950/60 via-slate-900 to-indigo-950/60 border border-purple-500/40 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-lg shadow-purple-950/20">
+          <div>
+            <div class="flex items-center space-x-2 mb-1">
+              <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-purple-900/80 text-purple-300 border border-purple-500/40">
+                ⚡ Weekly Sponsor
+              </span>
+              <span class="text-xs font-bold text-white">Neon</span>
+            </div>
+            <p class="text-xs text-slate-300">Serverless Postgres with Instant Git-like Branching <span class="text-amber-300">• Permanent generous free tier with zero cold starts.</span></p>
+          </div>
+          <a href="https://devshelf.ritualdev.in/go/neon.html" target="_blank" rel="noopener noreferrer sponsored" class="shrink-0 px-4 py-2 rounded-xl text-xs font-mono font-bold bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white transition shadow-md shadow-purple-900/30">
+            Visit Partner Site →
+          </a>
+        </div>
+
+        <h3 class="text-xs font-mono font-bold uppercase tracking-wider text-slate-400 mb-4 flex items-center space-x-2">
+          <span>🛠️ 5 Curated Discoveries of the Week</span>
+        </h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+          
+          <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800 hover:border-purple-500/40 transition flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <span class="font-bold text-white text-sm">RowSafe</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-slate-800 text-cyan-300 border border-slate-700">🛡️ 100% Free CLI</span>
+              </div>
+              <p class="text-xs text-slate-400 leading-relaxed mb-3">AI-assisted PostgreSQL CLI guard that prevents accidental destructive DROP, TRUNCATE, and unindexed bulk updates.</p>
+            </div>
+            <a href="https://devshelf.ritualdev.in/tools/rowsafe.html" class="text-xs font-mono font-bold text-purple-400 hover:text-purple-300 transition inline-flex items-center space-x-1">
+              <span>Explore Specs</span>
+              <span>→</span>
+            </a>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800 hover:border-purple-500/40 transition flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <span class="font-bold text-white text-sm">CurlShot</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-slate-800 text-cyan-300 border border-slate-700">⚡ Terminal Productivity</span>
+              </div>
+              <p class="text-xs text-slate-400 leading-relaxed mb-3">Zero-config terminal tool to convert curl commands into beautiful, shareable developer documentation snippets.</p>
+            </div>
+            <a href="https://devshelf.ritualdev.in/tools/curlshot.html" class="text-xs font-mono font-bold text-purple-400 hover:text-purple-300 transition inline-flex items-center space-x-1">
+              <span>Explore Specs</span>
+              <span>→</span>
+            </a>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800 hover:border-purple-500/40 transition flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <span class="font-bold text-white text-sm">Open-Meteo</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-slate-800 text-cyan-300 border border-slate-700">🌤️ No Key Needed</span>
+              </div>
+              <p class="text-xs text-slate-400 leading-relaxed mb-3">Public weather forecast and climate API with up to 10,000 daily requests free with no API key required.</p>
+            </div>
+            <a href="https://devshelf.ritualdev.in/tools/open-meteo.html" class="text-xs font-mono font-bold text-purple-400 hover:text-purple-300 transition inline-flex items-center space-x-1">
+              <span>Explore Specs</span>
+              <span>→</span>
+            </a>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800 hover:border-purple-500/40 transition flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <span class="font-bold text-white text-sm">Open-WebUI</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-slate-800 text-cyan-300 border border-slate-700">🤖 Self-Hosted AI</span>
+              </div>
+              <p class="text-xs text-slate-400 leading-relaxed mb-3">Self-hosted, ChatGPT-like web UI for local models (Ollama, vLLM) with multi-model chat, RAG, and voice.</p>
+            </div>
+            <a href="https://devshelf.ritualdev.in/tools/open-webui.html" class="text-xs font-mono font-bold text-purple-400 hover:text-purple-300 transition inline-flex items-center space-x-1">
+              <span>Explore Specs</span>
+              <span>→</span>
+            </a>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800 hover:border-purple-500/40 transition flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <span class="font-bold text-white text-sm">Bruno</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-slate-800 text-cyan-300 border border-slate-700">🚀 Free Postman Alternative</span>
+              </div>
+              <p class="text-xs text-slate-400 leading-relaxed mb-3">Fast, git-friendly open-source desktop API client alternative to Postman and Insomnia with local collection storage.</p>
+            </div>
+            <a href="https://devshelf.ritualdev.in/tools/bruno.html" class="text-xs font-mono font-bold text-purple-400 hover:text-purple-300 transition inline-flex items-center space-x-1">
+              <span>Explore Specs</span>
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+
+        
+        <div class="p-4 rounded-xl bg-gradient-to-r from-amber-950/30 via-slate-950 to-orange-950/30 border border-amber-500/40 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div>
+            <div class="text-[11px] font-mono font-bold text-amber-300 uppercase tracking-wider mb-1">🎁 Developer Perk of the Week</div>
+            <div class="text-sm font-bold text-white">DigitalOcean $200 Free Cloud Credits</div>
+            <p class="text-xs text-slate-300 mt-0.5">Get $200 in free cloud infrastructure credits for 60 days to deploy Droplets, Kubernetes, and App Platform apps.</p>
+          </div>
+          <a href="https://devshelf.ritualdev.in/go/digitalocean.html" target="_blank" rel="noopener noreferrer sponsored" class="shrink-0 px-4 py-2 rounded-xl text-xs font-mono font-extrabold bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-slate-950 transition shadow-md shadow-amber-500/20">
+            Claim Perk →
+          </a>
+        </div>
+      </article>
+
+      <article id="issue-2" class="mb-12 p-6 sm:p-8 rounded-2xl bg-slate-900 border border-slate-800 shadow-xl scroll-mt-24">
+        <div class="flex items-center justify-between flex-wrap gap-2 mb-4 pb-4 border-b border-slate-800">
+          <div class="flex items-center space-x-2.5">
+            <span class="px-2.5 py-1 rounded-full text-xs font-mono font-bold bg-purple-950/80 border border-purple-500/40 text-purple-300">
+              Edition #2
+            </span>
+            <span class="text-xs font-mono text-slate-400">Published: 2026-10-12</span>
+          </div>
+          <button onclick="navigator.clipboard.writeText('https://devshelf.ritualdev.in/newsletter.html#issue-2'); alert('Copied issue permalink to clipboard!');" class="text-xs font-mono text-purple-400 hover:text-purple-300 transition">
+            🔗 Copy Link
+          </button>
+        </div>
+
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mb-3">
+          Issue #2: Zero-Paywall Database Stacks, API Prototyping, and Terminal Multiplexers
+        </h2>
+
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
+          This week: Complete $0/month production database stacks, mock data generators for frontend testing, and modern terminal environments.
+        </p>
+
+        
+        <div class="mb-8 p-4 rounded-xl bg-gradient-to-r from-purple-950/60 via-slate-900 to-indigo-950/60 border border-purple-500/40 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-lg shadow-purple-950/20">
+          <div>
+            <div class="flex items-center space-x-2 mb-1">
+              <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-purple-900/80 text-purple-300 border border-purple-500/40">
+                ⚡ Weekly Sponsor
+              </span>
+              <span class="text-xs font-bold text-white">Supabase</span>
+            </div>
+            <p class="text-xs text-slate-300">The Open Source Firebase Alternative <span class="text-amber-300">• Free Postgres database, Auth, APIs, and Realtime with 500MB storage.</span></p>
+          </div>
+          <a href="https://devshelf.ritualdev.in/go/supabase.html" target="_blank" rel="noopener noreferrer sponsored" class="shrink-0 px-4 py-2 rounded-xl text-xs font-mono font-bold bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white transition shadow-md shadow-purple-900/30">
+            Visit Partner Site →
+          </a>
+        </div>
+
+        <h3 class="text-xs font-mono font-bold uppercase tracking-wider text-slate-400 mb-4 flex items-center space-x-2">
+          <span>🛠️ 5 Curated Discoveries of the Week</span>
+        </h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+          
+          <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800 hover:border-purple-500/40 transition flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <span class="font-bold text-white text-sm">Supabase</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-slate-800 text-cyan-300 border border-slate-700">⚡ Cloud BaaS</span>
+              </div>
+              <p class="text-xs text-slate-400 leading-relaxed mb-3">The open-source Firebase alternative with Postgres database, Authentication, instant APIs, and Realtime subscriptions.</p>
+            </div>
+            <a href="https://devshelf.ritualdev.in/tools/supabase.html" class="text-xs font-mono font-bold text-purple-400 hover:text-purple-300 transition inline-flex items-center space-x-1">
+              <span>Explore Specs</span>
+              <span>→</span>
+            </a>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800 hover:border-purple-500/40 transition flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <span class="font-bold text-white text-sm">Mockoon</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-slate-800 text-cyan-300 border border-slate-700">🧪 Mock APIs</span>
+              </div>
+              <p class="text-xs text-slate-400 leading-relaxed mb-3">The easiest and quickest way to run local mock REST APIs offline with route rules and JSON templating.</p>
+            </div>
+            <a href="https://devshelf.ritualdev.in/tools/mockoon.html" class="text-xs font-mono font-bold text-purple-400 hover:text-purple-300 transition inline-flex items-center space-x-1">
+              <span>Explore Specs</span>
+              <span>→</span>
+            </a>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800 hover:border-purple-500/40 transition flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <span class="font-bold text-white text-sm">Zellij</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-slate-800 text-cyan-300 border border-slate-700">⚡ CLI Multiplexer</span>
+              </div>
+              <p class="text-xs text-slate-400 leading-relaxed mb-3">A modern terminal workspace and multiplexer written in Rust with built-in layouts, tabs, and floating panes.</p>
+            </div>
+            <a href="https://devshelf.ritualdev.in/tools/zellij.html" class="text-xs font-mono font-bold text-purple-400 hover:text-purple-300 transition inline-flex items-center space-x-1">
+              <span>Explore Specs</span>
+              <span>→</span>
+            </a>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800 hover:border-purple-500/40 transition flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <span class="font-bold text-white text-sm">Ollama</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-slate-800 text-cyan-300 border border-slate-700">🧠 Local LLM Engine</span>
+              </div>
+              <p class="text-xs text-slate-400 leading-relaxed mb-3">Get up and running with Llama 3, Mistral, and other large language models locally with a single command.</p>
+            </div>
+            <a href="https://devshelf.ritualdev.in/tools/ollama.html" class="text-xs font-mono font-bold text-purple-400 hover:text-purple-300 transition inline-flex items-center space-x-1">
+              <span>Explore Specs</span>
+              <span>→</span>
+            </a>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800 hover:border-purple-500/40 transition flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <span class="font-bold text-white text-sm">ReqRes</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-slate-800 text-cyan-300 border border-slate-700">📡 Dummy REST API</span>
+              </div>
+              <p class="text-xs text-slate-400 leading-relaxed mb-3">A hosted REST-API ready to respond to your AJAX requests with realistic simulated developer responses.</p>
+            </div>
+            <a href="https://devshelf.ritualdev.in/tools/reqres.html" class="text-xs font-mono font-bold text-purple-400 hover:text-purple-300 transition inline-flex items-center space-x-1">
+              <span>Explore Specs</span>
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+
+        
+        <div class="p-4 rounded-xl bg-gradient-to-r from-amber-950/30 via-slate-950 to-orange-950/30 border border-amber-500/40 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div>
+            <div class="text-[11px] font-mono font-bold text-amber-300 uppercase tracking-wider mb-1">🎁 Developer Perk of the Week</div>
+            <div class="text-sm font-bold text-white">Hetzner Cloud €20 Free Server Credits</div>
+            <p class="text-xs text-slate-300 mt-0.5">Test dedicated cloud compute instances across Europe and North America with €20 in free initial credits.</p>
+          </div>
+          <a href="https://devshelf.ritualdev.in/go/hetzner.html" target="_blank" rel="noopener noreferrer sponsored" class="shrink-0 px-4 py-2 rounded-xl text-xs font-mono font-extrabold bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-slate-950 transition shadow-md shadow-amber-500/20">
+            Claim Perk →
+          </a>
+        </div>
+      </article>
+
+      <article id="issue-1" class="mb-12 p-6 sm:p-8 rounded-2xl bg-slate-900 border border-slate-800 shadow-xl scroll-mt-24">
+        <div class="flex items-center justify-between flex-wrap gap-2 mb-4 pb-4 border-b border-slate-800">
+          <div class="flex items-center space-x-2.5">
+            <span class="px-2.5 py-1 rounded-full text-xs font-mono font-bold bg-purple-950/80 border border-purple-500/40 text-purple-300">
+              Edition #1
+            </span>
+            <span class="text-xs font-mono text-slate-400">Published: 2026-10-05</span>
+          </div>
+          <button onclick="navigator.clipboard.writeText('https://devshelf.ritualdev.in/newsletter.html#issue-1'); alert('Copied issue permalink to clipboard!');" class="text-xs font-mono text-purple-400 hover:text-purple-300 transition">
+            🔗 Copy Link
+          </button>
+        </div>
+
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mb-3">
+          Issue #1: DevShelf Launch Edition — 500+ Zero-Paywall Tools for Developers
+        </h2>
+
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
+          In our inaugural edition: Why we built DevShelf, the 100% zero-paywall pledge, and 5 foundational developer tools everyone should bookmark.
+        </p>
+
+        
+
+        <h3 class="text-xs font-mono font-bold uppercase tracking-wider text-slate-400 mb-4 flex items-center space-x-2">
+          <span>🛠️ 5 Curated Discoveries of the Week</span>
+        </h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+          
+          <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800 hover:border-purple-500/40 transition flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <span class="font-bold text-white text-sm">PocketBase</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-slate-800 text-cyan-300 border border-slate-700">📦 1-File BaaS</span>
+              </div>
+              <p class="text-xs text-slate-400 leading-relaxed mb-3">1-file backend in Go consisting of embedded SQLite database with real-time subscriptions, auth, and file storage.</p>
+            </div>
+            <a href="https://devshelf.ritualdev.in/tools/pocketbase.html" class="text-xs font-mono font-bold text-purple-400 hover:text-purple-300 transition inline-flex items-center space-x-1">
+              <span>Explore Specs</span>
+              <span>→</span>
+            </a>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800 hover:border-purple-500/40 transition flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <span class="font-bold text-white text-sm">Ripgrep</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-slate-800 text-cyan-300 border border-slate-700">⚡ Fast Search</span>
+              </div>
+              <p class="text-xs text-slate-400 leading-relaxed mb-3">Line-oriented search tool that recursively searches the current directory for a regex pattern faster than GNU grep.</p>
+            </div>
+            <a href="https://devshelf.ritualdev.in/tools/ripgrep.html" class="text-xs font-mono font-bold text-purple-400 hover:text-purple-300 transition inline-flex items-center space-x-1">
+              <span>Explore Specs</span>
+              <span>→</span>
+            </a>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800 hover:border-purple-500/40 transition flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <span class="font-bold text-white text-sm">REST Countries</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-slate-800 text-cyan-300 border border-slate-700">🌍 Free Public API</span>
+              </div>
+              <p class="text-xs text-slate-400 leading-relaxed mb-3">Get information about countries via a RESTful API with currency, flags, calling codes, and coordinates.</p>
+            </div>
+            <a href="https://devshelf.ritualdev.in/tools/rest-countries.html" class="text-xs font-mono font-bold text-purple-400 hover:text-purple-300 transition inline-flex items-center space-x-1">
+              <span>Explore Specs</span>
+              <span>→</span>
+            </a>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800 hover:border-purple-500/40 transition flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <span class="font-bold text-white text-sm">Vitest</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-slate-800 text-cyan-300 border border-slate-700">🧪 Unit Testing</span>
+              </div>
+              <p class="text-xs text-slate-400 leading-relaxed mb-3">Blazing fast unit test framework powered by Vite with modern ESM, TypeScript, and Jest-compatible API.</p>
+            </div>
+            <a href="https://devshelf.ritualdev.in/tools/vitest.html" class="text-xs font-mono font-bold text-purple-400 hover:text-purple-300 transition inline-flex items-center space-x-1">
+              <span>Explore Specs</span>
+              <span>→</span>
+            </a>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800 hover:border-purple-500/40 transition flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <span class="font-bold text-white text-sm">Starship</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-slate-800 text-cyan-300 border border-slate-700">🚀 Shell Prompt</span>
+              </div>
+              <p class="text-xs text-slate-400 leading-relaxed mb-3">The minimal, blazing-fast, and infinitely customizable prompt for any shell with git status and runtime versions.</p>
+            </div>
+            <a href="https://devshelf.ritualdev.in/tools/starship.html" class="text-xs font-mono font-bold text-purple-400 hover:text-purple-300 transition inline-flex items-center space-x-1">
+              <span>Explore Specs</span>
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+
+        
+        <div class="p-4 rounded-xl bg-gradient-to-r from-amber-950/30 via-slate-950 to-orange-950/30 border border-amber-500/40 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div>
+            <div class="text-[11px] font-mono font-bold text-amber-300 uppercase tracking-wider mb-1">🎁 Developer Perk of the Week</div>
+            <div class="text-sm font-bold text-white">Vultr $100 Free Cloud Credits</div>
+            <p class="text-xs text-slate-300 mt-0.5">Deploy global compute, bare metal, and managed Kubernetes with $100 in trial credits.</p>
+          </div>
+          <a href="https://devshelf.ritualdev.in/go/vultr.html" target="_blank" rel="noopener noreferrer sponsored" class="shrink-0 px-4 py-2 rounded-xl text-xs font-mono font-extrabold bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-slate-950 transition shadow-md shadow-amber-500/20">
+            Claim Perk →
+          </a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="border-t border-slate-800 bg-slate-900/40 py-6 text-center text-xs text-slate-400 space-y-2">
+    <div class="flex items-center justify-center flex-wrap gap-3 font-mono text-[11px] text-slate-400 mb-2">
+      <a href="./" class="hover:text-purple-300 transition">DevShelf Home</a>
+      <span>•</span>
+      <a href="directory.html" class="hover:text-purple-300 transition">All Tools Index</a>
+      <span>•</span>
+      <a href="feed.xml" class="hover:text-purple-300 transition">RSS Feed</a>
+      <span>•</span>
+      <a href="sponsors.html" class="hover:text-purple-300 transition">Sponsors &amp; Patrons</a>
+    </div>
+    <p>Curated with ❤️ by <a href="https://github.com/RitualDev-Lab" class="text-purple-400 hover:underline">RitualDev-Lab</a> and the global open-source community.</p>
+  </footer>
+</body>
+</html>

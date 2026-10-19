@@ -56,6 +56,38 @@
       ],
       "checkoutUrl": "https://devshelf.ritualdev.in/sponsors.html?tier=mcp-pro&amount=149&currency=USD"
     },
+    "categoryTakeover": {
+      "id": "pkg-category-takeover",
+      "name": "Category Takeover Retainer",
+      "priceUSD": 199,
+      "priceINR": 16500,
+      "billing": "monthly",
+      "tagline": "Exclusive Top-of-Category Dominance across Cloud, AI, APIs, or CLI",
+      "features": [
+        "100% exclusive sticky brand header across your chosen category and tool dossiers",
+        "Featured recommendation across all alternative roundups in your category",
+        "Top architectural recommendation in MCP & CLI recommend_stack queries",
+        "DevShelf Weekly newsletter category spotlight inclusion",
+        "Instant corporate tax-compliant invoice (GST / VAT)"
+      ],
+      "checkoutUrl": "https://devshelf.ritualdev.in/sponsors.html?tier=category-takeover&amount=199&currency=USD"
+    },
+    "newsletterSpotlight": {
+      "id": "pkg-newsletter-spotlight",
+      "name": "DevShelf Weekly Newsletter Spotlight",
+      "priceUSD": 99,
+      "priceINR": 8200,
+      "billing": "per_issue",
+      "tagline": "Reach 2,800+ Active Software Engineers, Founders & AI Builders",
+      "features": [
+        "Primary header sponsor banner & 100-word featured developer pitch",
+        "Permanent backlink & featured placement on devshelf.ritualdev.in/newsletter.html",
+        "Included in W3C RSS 2.0 / Atom feed (devshelf.ritualdev.in/feed.xml)",
+        "Direct lead clickouts with verified CTA link",
+        "Instant corporate invoice with GST / VAT details"
+      ],
+      "checkoutUrl": "https://devshelf.ritualdev.in/sponsors.html?tier=newsletter-spotlight&amount=99&currency=USD"
+    },
     "enterprise": {
       "id": "pkg-enterprise",
       "name": "Enterprise & Agent Partner",

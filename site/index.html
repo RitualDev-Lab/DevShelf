@@ -295,6 +295,10 @@
           <span>💖</span>
           <span>Sponsors</span>
         </a>
+        <a href="newsletter.html" class="hover:text-purple-300 transition text-purple-300 flex items-center space-x-1 font-bold" title="DevShelf Weekly Newsletter &amp; RSS Feed">
+          <span>📬</span>
+          <span>Newsletter</span>
+        </a>
         <a href="status.html" class="hover:text-emerald-300 transition text-emerald-400 flex items-center space-x-1 font-bold" title="DevShelf Live Health &amp; Zero-Paywall Status">
           <span>🟢</span>
           <span>Status</span>
@@ -590,6 +594,39 @@
         <a href="https://github.com/RitualDev-Lab/DevShelf#how-to-submit-a-tool" target="_blank" rel="noreferrer" class="text-cyan-400 hover:text-cyan-300 font-bold transition hover:underline">
           Help reach 1,000 +Submit Tool →
         </a>
+      </div>
+    </div>
+
+    <!-- DevShelf Weekly Newsletter Subscription Card -->
+    <div class="max-w-4xl mx-auto mb-10 p-5 sm:p-6 rounded-2xl bg-gradient-to-r from-purple-950/70 via-slate-900 to-indigo-950/70 border border-purple-500/40 shadow-2xl relative overflow-hidden">
+      <div class="absolute -right-12 -top-12 w-48 h-48 bg-purple-600/15 rounded-full blur-2xl pointer-events-none"></div>
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="text-left max-w-xl">
+          <div class="flex items-center space-x-2 mb-2 font-mono text-purple-300 font-bold text-xs">
+            <span>📬</span>
+            <span>DEVSHELF WEEKLY NEWSLETTER</span>
+            <span class="px-2 py-0.5 rounded-full text-[10px] bg-emerald-950 text-emerald-300 border border-emerald-500/40">2,800+ Devs</span>
+          </div>
+          <h3 class="text-lg sm:text-xl font-extrabold text-white mb-1.5">
+            5 Curated Zero-Paywall Tools Every Monday
+          </h3>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            Discover verified open-source alternatives, public APIs, and developer perks before they hit Hacker News. 100% spam-free, one-click unsubscribe.
+          </p>
+        </div>
+        <form onsubmit="event.preventDefault(); const em = this.querySelector('input').value; if(em){ localStorage.setItem('devshelf_subscriber', em); this.innerHTML = '<div class=\'p-3 rounded-xl bg-emerald-950/80 border border-emerald-500/50 text-emerald-300 font-mono text-xs text-center font-bold\'>🎉 Subscribed! Welcome aboard.</div>'; }" class="w-full md:w-auto shrink-0 space-y-2">
+          <div class="flex items-center gap-2">
+            <input type="email" required placeholder="developer@acme.com" class="px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-xs text-white placeholder-slate-500 font-mono focus:outline-none focus:border-purple-400 w-full sm:w-64">
+            <button type="submit" class="px-4 py-2.5 rounded-xl text-xs font-bold font-mono text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 transition shadow-lg shadow-purple-600/30 whitespace-nowrap">
+              Subscribe Free →
+            </button>
+          </div>
+          <div class="flex items-center justify-between text-[11px] font-mono text-slate-400">
+            <a href="newsletter.html" class="hover:text-purple-300 transition underline">Read past issues</a>
+            <span class="text-slate-600">•</span>
+            <a href="feed.xml" class="text-orange-400 hover:underline">RSS Feed (feed.xml)</a>
+          </div>
+        </form>
       </div>
     </div>
   </section>

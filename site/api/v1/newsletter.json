@@ -1,0 +1,178 @@
+{
+  "version": "1.0.0",
+  "updatedAt": "2026-10-20T00:00:00.000Z",
+  "name": "DevShelf Weekly",
+  "tagline": "5 Curated Zero-Paywall Developer Tools & Public APIs Every Monday",
+  "description": "Weekly curated developer newsletter featuring verified open-source alternatives, free cloud infrastructure, public APIs, and developer perks with zero paywalls.",
+  "website": "https://devshelf.ritualdev.in/newsletter.html",
+  "feedUrl": "https://devshelf.ritualdev.in/feed.xml",
+  "stats": {
+    "totalIssues": 3,
+    "activeSubscribers": 2840,
+    "openRate": "48.2%",
+    "clickRate": "14.6%"
+  },
+  "issues": [
+    {
+      "issueNumber": 3,
+      "date": "2026-10-19",
+      "title": "Issue #3: Local-First AI Agents, Fast Postgres Branching, and Weather Radar APIs",
+      "slug": "issue-3",
+      "summary": "This week: Run local LLM agents without cloud API tokens, instant Postgres branches with Neon, and accurate free weather forecasts without credit cards.",
+      "sponsor": {
+        "name": "Neon",
+        "tagline": "Serverless Postgres with Instant Git-like Branching",
+        "url": "https://devshelf.ritualdev.in/go/neon.html",
+        "perk": "Permanent generous free tier with zero cold starts.",
+        "badge": "⚡ Weekly Sponsor"
+      },
+      "featuredTools": [
+        {
+          "name": "RowSafe",
+          "category": "cli",
+          "description": "AI-assisted PostgreSQL CLI guard that prevents accidental destructive DROP, TRUNCATE, and unindexed bulk updates.",
+          "url": "https://devshelf.ritualdev.in/tools/rowsafe.html",
+          "badge": "🛡️ 100% Free CLI"
+        },
+        {
+          "name": "CurlShot",
+          "category": "cli",
+          "description": "Zero-config terminal tool to convert curl commands into beautiful, shareable developer documentation snippets.",
+          "url": "https://devshelf.ritualdev.in/tools/curlshot.html",
+          "badge": "⚡ Terminal Productivity"
+        },
+        {
+          "name": "Open-Meteo",
+          "category": "api",
+          "description": "Public weather forecast and climate API with up to 10,000 daily requests free with no API key required.",
+          "url": "https://devshelf.ritualdev.in/tools/open-meteo.html",
+          "badge": "🌤️ No Key Needed"
+        },
+        {
+          "name": "Open-WebUI",
+          "category": "ai",
+          "description": "Self-hosted, ChatGPT-like web UI for local models (Ollama, vLLM) with multi-model chat, RAG, and voice.",
+          "url": "https://devshelf.ritualdev.in/tools/open-webui.html",
+          "badge": "🤖 Self-Hosted AI"
+        },
+        {
+          "name": "Bruno",
+          "category": "testing",
+          "description": "Fast, git-friendly open-source desktop API client alternative to Postman and Insomnia with local collection storage.",
+          "url": "https://devshelf.ritualdev.in/tools/bruno.html",
+          "badge": "🚀 Free Postman Alternative"
+        }
+      ],
+      "perkOfTheWeek": {
+        "title": "DigitalOcean $200 Free Cloud Credits",
+        "description": "Get $200 in free cloud infrastructure credits for 60 days to deploy Droplets, Kubernetes, and App Platform apps.",
+        "url": "https://devshelf.ritualdev.in/go/digitalocean.html"
+      }
+    },
+    {
+      "issueNumber": 2,
+      "date": "2026-10-12",
+      "title": "Issue #2: Zero-Paywall Database Stacks, API Prototyping, and Terminal Multiplexers",
+      "slug": "issue-2",
+      "summary": "This week: Complete $0/month production database stacks, mock data generators for frontend testing, and modern terminal environments.",
+      "sponsor": {
+        "name": "Supabase",
+        "tagline": "The Open Source Firebase Alternative",
+        "url": "https://devshelf.ritualdev.in/go/supabase.html",
+        "perk": "Free Postgres database, Auth, APIs, and Realtime with 500MB storage.",
+        "badge": "⚡ Weekly Sponsor"
+      },
+      "featuredTools": [
+        {
+          "name": "Supabase",
+          "category": "cloud",
+          "description": "The open-source Firebase alternative with Postgres database, Authentication, instant APIs, and Realtime subscriptions.",
+          "url": "https://devshelf.ritualdev.in/tools/supabase.html",
+          "badge": "⚡ Cloud BaaS"
+        },
+        {
+          "name": "Mockoon",
+          "category": "testing",
+          "description": "The easiest and quickest way to run local mock REST APIs offline with route rules and JSON templating.",
+          "url": "https://devshelf.ritualdev.in/tools/mockoon.html",
+          "badge": "🧪 Mock APIs"
+        },
+        {
+          "name": "Zellij",
+          "category": "cli",
+          "description": "A modern terminal workspace and multiplexer written in Rust with built-in layouts, tabs, and floating panes.",
+          "url": "https://devshelf.ritualdev.in/tools/zellij.html",
+          "badge": "⚡ CLI Multiplexer"
+        },
+        {
+          "name": "Ollama",
+          "category": "ai",
+          "description": "Get up and running with Llama 3, Mistral, and other large language models locally with a single command.",
+          "url": "https://devshelf.ritualdev.in/tools/ollama.html",
+          "badge": "🧠 Local LLM Engine"
+        },
+        {
+          "name": "ReqRes",
+          "category": "api",
+          "description": "A hosted REST-API ready to respond to your AJAX requests with realistic simulated developer responses.",
+          "url": "https://devshelf.ritualdev.in/tools/reqres.html",
+          "badge": "📡 Dummy REST API"
+        }
+      ],
+      "perkOfTheWeek": {
+        "title": "Hetzner Cloud €20 Free Server Credits",
+        "description": "Test dedicated cloud compute instances across Europe and North America with €20 in free initial credits.",
+        "url": "https://devshelf.ritualdev.in/go/hetzner.html"
+      }
+    },
+    {
+      "issueNumber": 1,
+      "date": "2026-10-05",
+      "title": "Issue #1: DevShelf Launch Edition — 500+ Zero-Paywall Tools for Developers",
+      "slug": "issue-1",
+      "summary": "In our inaugural edition: Why we built DevShelf, the 100% zero-paywall pledge, and 5 foundational developer tools everyone should bookmark.",
+      "featuredTools": [
+        {
+          "name": "PocketBase",
+          "category": "cloud",
+          "description": "1-file backend in Go consisting of embedded SQLite database with real-time subscriptions, auth, and file storage.",
+          "url": "https://devshelf.ritualdev.in/tools/pocketbase.html",
+          "badge": "📦 1-File BaaS"
+        },
+        {
+          "name": "Ripgrep",
+          "category": "cli",
+          "description": "Line-oriented search tool that recursively searches the current directory for a regex pattern faster than GNU grep.",
+          "url": "https://devshelf.ritualdev.in/tools/ripgrep.html",
+          "badge": "⚡ Fast Search"
+        },
+        {
+          "name": "REST Countries",
+          "category": "api",
+          "description": "Get information about countries via a RESTful API with currency, flags, calling codes, and coordinates.",
+          "url": "https://devshelf.ritualdev.in/tools/rest-countries.html",
+          "badge": "🌍 Free Public API"
+        },
+        {
+          "name": "Vitest",
+          "category": "testing",
+          "description": "Blazing fast unit test framework powered by Vite with modern ESM, TypeScript, and Jest-compatible API.",
+          "url": "https://devshelf.ritualdev.in/tools/vitest.html",
+          "badge": "🧪 Unit Testing"
+        },
+        {
+          "name": "Starship",
+          "category": "cli",
+          "description": "The minimal, blazing-fast, and infinitely customizable prompt for any shell with git status and runtime versions.",
+          "url": "https://devshelf.ritualdev.in/tools/starship.html",
+          "badge": "🚀 Shell Prompt"
+        }
+      ],
+      "perkOfTheWeek": {
+        "title": "Vultr $100 Free Cloud Credits",
+        "description": "Deploy global compute, bare metal, and managed Kubernetes with $100 in trial credits.",
+        "url": "https://devshelf.ritualdev.in/go/vultr.html"
+      }
+    }
+  ]
+}
