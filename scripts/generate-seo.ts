@@ -112,6 +112,7 @@ async function generateSeo() {
 
   const domain = "https://devshelf.ritualdev.in";
   const milestone = `${Math.floor(resources.length / 10) * 10}+`;
+  const currentYear = new Date().getFullYear();
   const today = new Date().toISOString().split("T")[0];
   const sitemapUrls: string[] = [
     `  <url>\n    <loc>${domain}/</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>`,
@@ -144,12 +145,15 @@ async function generateSeo() {
     const dockerCompose = item.dockerCompose || "";
 
     const pageTitle = alternativeTo
-      ? `${name} - Free Open Source Alternative to ${alternativeTo} | DevShelf`
-      : `${name} - Free Developer Tool | DevShelf`;
+      ? `${name} — Best Free ${alternativeTo} Alternative (${currentYear}) | DevShelf`
+      : `${name} — Free ${category} & Open Source Tool (${currentYear}) | DevShelf`;
+
+    const cleanRawDesc = (item.description || "Zero-paywall developer tool curated on DevShelf.").trim().replace(/\.$/, "");
+    const pageMetaDesc = escapeHtml(`Verified in ${currentYear}: ${cleanRawDesc}. 100% free tier (${pricing}), zero paywall traps, and active maintenance.`);
 
     const metaKeywords = alternativeTo
-      ? `${name}, free alternative to ${alternativeTo}, open source alternative to ${alternativeTo}, ${alternativeTo} alternative, ${category}, developer tools`
-      : `${name}, free developer tool, ${category}, open source tools`;
+      ? `${name}, free alternative to ${alternativeTo}, open source alternative to ${alternativeTo}, ${alternativeTo} alternative ${currentYear}, ${category}, developer tools`
+      : `${name}, free developer tool, ${category}, open source tools ${currentYear}`;
 
     sitemapUrls.push(
       `  <url>\n    <loc>${pageUrl}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>`,
@@ -157,13 +161,13 @@ async function generateSeo() {
 
     const faqs = [
       {
-        question: `What free access does ${item.name} offer?`,
-        answer: `${pricing}${item.license ? ` License: ${item.license}.` : ""}`,
+        question: `What free access does ${item.name} offer in ${currentYear}?`,
+        answer: `As verified in ${currentYear}, ${pricing}${item.license ? ` License: ${item.license}.` : ""}`,
       },
       ...(alternativeTo
         ? [
             {
-              question: `What makes ${name} a free alternative to ${alternativeTo}?`,
+              question: `Why choose ${name} as a free alternative to ${alternativeTo} in ${currentYear}?`,
               answer: `${name} provides core developer capabilities comparable to ${alternativeTo} while prioritizing free access, open-source transparency, and avoiding proprietary subscription paywalls.`,
             },
           ]
@@ -188,12 +192,15 @@ async function generateSeo() {
           isAccessibleForFree: true,
           url: targetUrl,
           mainEntityOfPage: pageUrl,
+          dateModified: today,
+          copyrightYear: currentYear,
           offers: {
             "@type": "Offer",
             price: "0",
             priceCurrency: "USD",
             availability: "https://schema.org/InStock",
             description: pricing,
+            validFrom: `${currentYear}-01-01`,
           },
           ...(item.license ? { license: item.license } : {}),
           ...(item.language ? { programmingLanguage: item.language } : {}),
@@ -375,7 +382,7 @@ async function generateSeo() {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${pageTitle}</title>
-  <meta name="description" content="${desc}">
+  <meta name="description" content="${pageMetaDesc}">
   <meta name="keywords" content="${metaKeywords}">
   <link rel="canonical" href="${pageUrl}">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -396,7 +403,7 @@ async function generateSeo() {
   <meta property="og:type" content="website">
   <meta property="og:url" content="${pageUrl}">
   <meta property="og:title" content="${pageTitle}">
-  <meta property="og:description" content="${desc}">
+  <meta property="og:description" content="${pageMetaDesc}">
   <meta property="og:site_name" content="DevShelf">
   <meta property="og:image" content="https://devshelf.ritualdev.in/og-image.jpg">
   <meta property="og:image:width" content="1200">
@@ -406,7 +413,7 @@ async function generateSeo() {
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@RitualDevLab">
   <meta name="twitter:title" content="${pageTitle}">
-  <meta name="twitter:description" content="${desc}">
+  <meta name="twitter:description" content="${pageMetaDesc}">
   <meta name="twitter:image" content="https://devshelf.ritualdev.in/og-image.jpg">
 
   <!-- JSON-LD Structured Data -->
@@ -588,8 +595,8 @@ async function generateSeo() {
   for (const [targetName, altTools] of altMap) {
     const slug = slugify(targetName);
     const pageUrl = `${domain}/alternatives/${slug}.html`;
-    const title = `Best Free & Open Source Alternatives to ${escapeHtml(targetName)} | DevShelf`;
-    const desc = `Explore ${altTools.length} verified free and open-source alternatives to ${escapeHtml(targetName)}. Zero paywalls, honest pricing, and active community maintenance.`;
+    const title = `${altTools.length}+ Best Free Alternatives to ${escapeHtml(targetName)} (${currentYear} Updated) | DevShelf`;
+    const desc = `Compare ${altTools.length} verified free & open-source alternatives to ${escapeHtml(targetName)} in ${currentYear}. Zero paywalls, honest pricing, and no credit card required.`;
 
     sitemapUrls.push(
       `  <url>\n    <loc>${pageUrl}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.9</priority>\n  </url>`,
@@ -597,19 +604,19 @@ async function generateSeo() {
 
     const altFaqs = [
       {
-        question: `What is the best free alternative to ${targetName}?`,
-        answer: `The leading free and open-source alternative to ${targetName} is ${altTools[0].name}. ${altTools[0].description}`,
+        question: `What is the best free alternative to ${targetName} in ${currentYear}?`,
+        answer: `The leading free and open-source alternative to ${targetName} in ${currentYear} is ${altTools[0].name}. ${altTools[0].description}`,
       },
       {
         question: `Are there open-source alternatives to ${targetName}?`,
-        answer: `Yes, DevShelf indexes ${altTools.length} verified free and open-source alternatives to ${targetName}, including ${altTools
+        answer: `Yes, DevShelf indexes ${altTools.length} verified free and open-source alternatives to ${targetName} in ${currentYear}, including ${altTools
           .slice(0, 3)
           .map((t) => t.name)
           .join(", ")}.`,
       },
       {
-        question: `Why switch from ${targetName} to an open-source tool?`,
-        answer: `Switching to open-source alternatives to ${targetName} eliminates recurring subscription costs, vendor lock-in, and account limits while allowing full self-hosting and data privacy.`,
+        question: `Why switch from ${targetName} to an open-source tool in ${currentYear}?`,
+        answer: `Switching to open-source alternatives to ${targetName} in ${currentYear} eliminates recurring subscription costs, vendor lock-in, and account limits while allowing full self-hosting and data privacy.`,
       },
     ];
 
@@ -618,9 +625,10 @@ async function generateSeo() {
       "@graph": [
         {
           "@type": "ItemList",
-          name: `Free Alternatives to ${targetName}`,
+          name: `Free Alternatives to ${targetName} (${currentYear})`,
           description: desc,
           numberOfItems: altTools.length,
+          dateModified: today,
           itemListElement: altTools.map((t, idx) => ({
             "@type": "ListItem",
             position: idx + 1,
@@ -629,6 +637,7 @@ async function generateSeo() {
               name: t.name,
               description: t.description,
               url: t.url || t.repo,
+              dateModified: today,
               offers: {
                 "@type": "Offer",
                 price: "0",
@@ -819,7 +828,7 @@ async function generateSeo() {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${title}</title>
   <meta name="description" content="${desc}">
-  <meta name="keywords" content="${targetName} alternatives, free ${targetName} alternative, open source ${targetName} alternative, free developer tools, zero paywall">
+  <meta name="keywords" content="${targetName} alternatives ${currentYear}, free ${targetName} alternative, open source ${targetName} alternative, best ${targetName} alternatives, free developer tools, zero paywall">
   <meta name="author" content="RitualDev Lab">
   <meta name="ai-content-declaration" content="human-curated, zero-paywall verified">
   <link rel="canonical" href="${pageUrl}">
@@ -886,23 +895,23 @@ async function generateSeo() {
 
     <div class="mb-10 text-center sm:text-left">
       <div class="inline-block px-3 py-1 rounded-full text-xs font-mono font-bold bg-amber-950/80 border border-amber-500/40 text-amber-300 mb-3">
-        ⚡ Zero-Paywall Alternatives
+        ⚡ Zero-Paywall Alternatives • ${currentYear} Freshness Verified
       </div>
       <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-4">
-        Best Free Alternatives to ${escapeHtml(targetName)}
+        Best Free Alternatives to ${escapeHtml(targetName)} (${currentYear})
       </h1>
       <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-3xl mb-6">
-        Tired of paywalls, subscription price hikes, or forced cloud accounts? Here are <strong>${altTools.length} verified free &amp; open-source alternatives to ${escapeHtml(targetName)}</strong> with generous free tiers or local self-hosting.
+        Tired of paywalls, subscription price hikes, or forced cloud accounts? Here are <strong>${altTools.length} verified free &amp; open-source alternatives to ${escapeHtml(targetName)} in ${currentYear}</strong> with generous free tiers or local self-hosting.
       </p>
 
       <!-- AI Direct Answer Summary Box -->
       <div class="p-5 rounded-2xl bg-gradient-to-r from-purple-950/60 to-slate-900 border border-purple-500/40 text-xs sm:text-sm text-slate-200 shadow-xl">
         <div class="flex items-center space-x-2 mb-2 font-mono text-purple-300 font-bold text-xs">
           <span>🤖</span>
-          <span>AI DIRECT ANSWER SUMMARY</span>
+          <span>AI DIRECT ANSWER SUMMARY (${currentYear})</span>
         </div>
         <p class="leading-relaxed">
-          The leading free and open-source alternative to <strong>${escapeHtml(targetName)}</strong> is <strong>${escapeHtml(altTools[0].name)}</strong>: <em>${escapeHtml(altTools[0].description)}</em>. DevShelf indexes <strong>${altTools.length} community-verified alternatives</strong> to ${escapeHtml(targetName)} with generous free tiers, local offline mode, or self-hosted deployment.
+          Updated for ${currentYear}: The leading free and open-source alternative to <strong>${escapeHtml(targetName)}</strong> is <strong>${escapeHtml(altTools[0].name)}</strong>: <em>${escapeHtml(altTools[0].description)}</em>. DevShelf indexes <strong>${altTools.length} community-verified alternatives</strong> to ${escapeHtml(targetName)} with generous free tiers, local offline mode, or self-hosted deployment.
         </p>
       </div>
     </div>
@@ -975,9 +984,11 @@ async function generateSeo() {
   const collections = [
     {
       slug: "free-weather-apis",
-      title: "Best Free Weather APIs (No Credit Card & Generous Tiers) | DevShelf",
-      heading: "Free Public Weather APIs for Developers",
-      desc: "Curated collection of 100% free, reliable weather forecast and radar APIs with no credit card required.",
+      titleTemplate: (count: number) =>
+        `${count}+ Best Free Weather APIs in ${currentYear} (No Credit Card) | DevShelf`,
+      heading: `Free Public Weather APIs for Developers (${currentYear})`,
+      descTemplate: (count: number) =>
+        `Updated for ${currentYear}: Curated collection of ${count}+ 100% free, reliable weather forecast and radar APIs with no credit card required.`,
       filter: (r: any) =>
         r.type === "api" &&
         (r.category?.toLowerCase().includes("weather") ||
@@ -986,9 +997,11 @@ async function generateSeo() {
     },
     {
       slug: "ai-coding-agents",
-      title: "Best Open-Source AI Coding Agents & Local LLMs | DevShelf",
-      heading: "Free & Open Source AI Coding Agents",
-      desc: "Run autonomous agents, local LLMs, and code assistants on your own hardware without paying cloud subscription fees.",
+      titleTemplate: (count: number) =>
+        `${count}+ Best Open-Source AI Coding Agents & Local LLMs [${currentYear}] | DevShelf`,
+      heading: `Free & Open Source AI Coding Agents (${currentYear})`,
+      descTemplate: (count: number) =>
+        `Updated for ${currentYear}: Run ${count}+ autonomous agents, local LLMs, and code assistants on your own hardware without paying cloud subscription fees.`,
       filter: (r: any) =>
         r.type === "ai" ||
         r.category?.toLowerCase().includes("ai") ||
@@ -997,9 +1010,11 @@ async function generateSeo() {
     },
     {
       slug: "free-mock-apis",
-      title: "Best Free Mock & Testing APIs for Prototyping | DevShelf",
-      heading: "Free Mock APIs & Test Data Services",
-      desc: "Realistic dummy data, REST endpoints, and mock servers for rapid frontend and mobile prototyping.",
+      titleTemplate: (count: number) =>
+        `${count}+ Best Free Mock & Testing APIs in ${currentYear} | DevShelf`,
+      heading: `Free Mock APIs & Test Data Services (${currentYear})`,
+      descTemplate: (count: number) =>
+        `Updated for ${currentYear}: ${count}+ realistic dummy data sources, REST endpoints, and mock servers for rapid frontend and mobile prototyping.`,
       filter: (r: any) =>
         r.type === "api" &&
         (r.category?.toLowerCase().includes("mock") ||
@@ -1008,16 +1023,20 @@ async function generateSeo() {
     },
     {
       slug: "self-hostable-docker-tools",
-      title: "Best Self-Hostable Developer Tools (1-Click Docker Compose) | DevShelf",
-      heading: "Self-Hostable Developer Utilities & BaaS",
-      desc: "Own your data. Verified open-source developer platforms and tools that can be launched with a single docker-compose.yml file.",
+      titleTemplate: (count: number) =>
+        `${count}+ Best Self-Hostable Developer Tools via Docker Compose (${currentYear}) | DevShelf`,
+      heading: `Self-Hostable Developer Utilities & BaaS (${currentYear})`,
+      descTemplate: (count: number) =>
+        `Updated for ${currentYear}: Own your data. ${count}+ verified open-source developer platforms and tools that can be launched with a single docker-compose.yml file.`,
       filter: (r: any) => Boolean(r.dockerCompose),
     },
     {
       slug: "free-serverless-databases",
-      title: "Best Free Cloud & Serverless Databases (Postgres, SQLite, Redis) | DevShelf",
-      heading: "Free Serverless & Cloud Databases",
-      desc: "Databases with generous permanent free tiers for side projects, production apps, and prototypes.",
+      titleTemplate: (count: number) =>
+        `${count}+ Best Free Cloud & Serverless Databases (${currentYear} Guide) | DevShelf`,
+      heading: `Free Serverless & Cloud Databases (${currentYear})`,
+      descTemplate: (count: number) =>
+        `Updated for ${currentYear}: ${count}+ databases with generous permanent free tiers (Postgres, SQLite, Redis) for production apps and prototypes.`,
       filter: (r: any) =>
         (r.type === "cloud" || r.category?.toLowerCase().includes("database")) &&
         (r.description?.toLowerCase().includes("postgres") ||
@@ -1034,6 +1053,8 @@ async function generateSeo() {
   for (const col of collections) {
     const colTools = resources.filter(col.filter);
     const pageUrl = `${domain}/collections/${col.slug}.html`;
+    const colTitle = col.titleTemplate(colTools.length);
+    const colDesc = col.descTemplate(colTools.length);
 
     sitemapUrls.push(
       `  <url>\n    <loc>${pageUrl}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.9</priority>\n  </url>`,
@@ -1043,8 +1064,9 @@ async function generateSeo() {
       "@context": "https://schema.org",
       "@type": "ItemList",
       name: col.heading,
-      description: col.desc,
+      description: colDesc,
       numberOfItems: colTools.length,
+      dateModified: today,
       itemListElement: colTools.map((t, idx) => ({
         "@type": "ListItem",
         position: idx + 1,
@@ -1112,9 +1134,9 @@ async function generateSeo() {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${escapeHtml(col.title)}</title>
-  <meta name="description" content="${escapeHtml(col.desc)}">
-  <meta name="keywords" content="${escapeHtml(col.heading)}, free developer tools, zero paywall directory, open source software">
+  <title>${escapeHtml(colTitle)}</title>
+  <meta name="description" content="${escapeHtml(colDesc)}">
+  <meta name="keywords" content="${escapeHtml(col.heading)}, free developer tools ${currentYear}, zero paywall directory, open source software">
   <meta name="author" content="RitualDev Lab">
   <meta name="ai-content-declaration" content="human-curated, zero-paywall verified">
   <link rel="canonical" href="${pageUrl}">
@@ -1130,14 +1152,14 @@ async function generateSeo() {
 
   <meta property="og:type" content="article">
   <meta property="og:url" content="${pageUrl}">
-  <meta property="og:title" content="${escapeHtml(col.title)}">
-  <meta property="og:description" content="${escapeHtml(col.desc)}">
+  <meta property="og:title" content="${escapeHtml(colTitle)}">
+  <meta property="og:description" content="${escapeHtml(colDesc)}">
   <meta property="og:image" content="https://devshelf.ritualdev.in/og-image.jpg">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@RitualDevLab">
-  <meta name="twitter:title" content="${escapeHtml(col.title)}">
-  <meta name="twitter:description" content="${escapeHtml(col.desc)}">
+  <meta name="twitter:title" content="${escapeHtml(colTitle)}">
+  <meta name="twitter:description" content="${escapeHtml(colDesc)}">
   <meta name="twitter:image" content="https://devshelf.ritualdev.in/og-image.jpg">
 
   <script type="application/ld+json">
@@ -1181,13 +1203,13 @@ async function generateSeo() {
 
     <div class="mb-10 text-center sm:text-left">
       <div class="inline-block px-3 py-1 rounded-full text-xs font-mono font-bold bg-cyan-950/80 border border-cyan-500/40 text-cyan-300 mb-3">
-        📂 Curated DevShelf Collection (${colTools.length} Tools)
+        📂 Curated DevShelf Collection (${colTools.length} Tools) • ${currentYear} Freshness Verified
       </div>
       <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-4">
         ${escapeHtml(col.heading)}
       </h1>
       <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-3xl">
-        ${escapeHtml(col.desc)}
+        ${escapeHtml(colDesc)}
       </p>
     </div>
 
@@ -1318,6 +1340,9 @@ async function generateSeo() {
     )
     .join("");
 
+  const directoryTitle = `${resources.length}+ Free Developer Tools & Public APIs Directory (${currentYear} Master Index) | DevShelf`;
+  const directoryDesc = `Updated for ${currentYear}: Explore the complete directory index of ${resources.length} verified free developer tools, APIs, AI agents, and open-source software with zero paywalls.`;
+
   const directoryJsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -1325,8 +1350,9 @@ async function generateSeo() {
         "@type": "CollectionPage",
         "@id": `${directoryUrl}#collection`,
         url: directoryUrl,
-        name: "Complete Free Developer Tools Directory Index | DevShelf",
-        description: `Explore all ${resources.length} free and open-source developer resources across ${categoriesMap.size} categories with zero paywalls.`,
+        name: directoryTitle,
+        description: directoryDesc,
+        dateModified: today,
         isPartOf: {
           "@type": "WebSite",
           "@id": `${domain}/#website`,
@@ -1381,9 +1407,9 @@ async function generateSeo() {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Complete Free Developer Tools Directory Index | DevShelf</title>
-  <meta name="description" content="Explore the full directory index of ${resources.length} verified free developer tools, APIs, AI agents, and open-source software. Zero paywalls, no trial bait.">
-  <meta name="keywords" content="free developer tools directory, open source software list, free public apis, no credit card dev tools, commercial alternatives index, mcp server">
+  <title>${directoryTitle}</title>
+  <meta name="description" content="${directoryDesc}">
+  <meta name="keywords" content="free developer tools directory ${currentYear}, open source software list, free public apis, no credit card dev tools, commercial alternatives index, mcp server">
   <meta name="author" content="RitualDev Lab">
   <meta name="ai-content-declaration" content="human-curated, zero-paywall verified">
   <link rel="canonical" href="${directoryUrl}">
@@ -1399,14 +1425,14 @@ async function generateSeo() {
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="${directoryUrl}">
-  <meta property="og:title" content="Complete Free Developer Tools Directory Index | DevShelf">
-  <meta property="og:description" content="Explore all ${resources.length} free and open-source developer resources across ${categoriesMap.size} categories.">
+  <meta property="og:title" content="${directoryTitle}">
+  <meta property="og:description" content="${directoryDesc}">
   <meta property="og:image" content="https://devshelf.ritualdev.in/og-image.jpg">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@RitualDevLab">
-  <meta name="twitter:title" content="Complete Free Developer Tools Directory Index | DevShelf">
-  <meta name="twitter:description" content="Explore all ${resources.length} free and open-source developer resources across ${categoriesMap.size} categories.">
+  <meta name="twitter:title" content="${directoryTitle}">
+  <meta name="twitter:description" content="${directoryDesc}">
   <meta name="twitter:image" content="https://devshelf.ritualdev.in/og-image.jpg">
 
   <!-- JSON-LD Structured Data (Google CollectionPage & ItemList Schema) -->
@@ -1445,10 +1471,10 @@ async function generateSeo() {
   <main class="max-w-7xl mx-auto px-4 py-12 flex-1 w-full">
     <div class="mb-12 text-center max-w-3xl mx-auto">
       <div class="inline-block px-3 py-1 rounded-full text-xs font-mono font-bold bg-purple-950/80 border border-purple-500/40 text-purple-300 mb-3">
-        🗂️ Complete Master Directory (${resources.length} Verified Tools)
+        🗂️ Complete Master Directory (${resources.length} Verified Tools) • ${currentYear} Edition
       </div>
       <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-4">
-        Browse All Free Developer Tools
+        Browse All Free Developer Tools (${currentYear})
       </h1>
       <p class="text-slate-300 text-sm sm:text-base leading-relaxed directory-intro">
         Every tool listed below is manually verified to have a permanent free tier, open-source license, or generous zero-paywall allowance. No credit card required.

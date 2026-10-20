@@ -220,8 +220,8 @@ export function generateNewsletterHtml(data: NewsletterData, sponsorsData?: any)
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DevShelf Weekly — Curated Zero-Paywall Tools &amp; Public APIs Newsletter</title>
-  <meta name="description" content="Subscribe to DevShelf Weekly: 5 curated free developer tools, open-source alternatives, public APIs, and verified partner perks delivered every Monday. Zero spam.">
+  <title>DevShelf Weekly (2026) — Curated Zero-Paywall Tools &amp; Public APIs Newsletter</title>
+  <meta name="description" content="Subscribe to DevShelf Weekly in 2026: 5 curated free developer tools, open-source alternatives, public APIs, and verified partner perks delivered every Monday. Zero spam.">
   <link rel="canonical" href="${domain}/newsletter.html">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <meta name="author" content="RitualDev Lab">
@@ -229,7 +229,7 @@ export function generateNewsletterHtml(data: NewsletterData, sponsorsData?: any)
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="${domain}/newsletter.html">
-  <meta property="og:title" content="DevShelf Weekly — Curated Zero-Paywall Developer Newsletter">
+  <meta property="og:title" content="DevShelf Weekly (2026) — Curated Zero-Paywall Developer Newsletter">
   <meta property="og:description" content="Join 2,800+ developers discovering battle-tested open-source alternatives, public APIs, and free developer credits before they hit Hacker News.">
   <meta property="og:image" content="${domain}/og-image.jpg">
 
