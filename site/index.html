@@ -544,6 +544,33 @@
       </a>
     </div>
 
+    <!-- Community Launch Social Share Bar (Google Chrome & RankBrain Signals) -->
+    <div id="community-share-bar" class="max-w-2xl mx-auto mb-8 px-4 py-2 rounded-2xl bg-slate-900/90 border border-purple-500/30 shadow-lg shadow-purple-950/20 backdrop-blur-md flex flex-wrap items-center justify-between gap-3 text-xs hero-animate hero-animate-delay-4">
+      <div class="flex items-center space-x-2 text-slate-300">
+        <span class="text-sm">🚀</span>
+        <span class="text-white font-bold">Love DevShelf?</span>
+        <span class="hidden sm:inline text-slate-400">Share with fellow engineers:</span>
+      </div>
+      <div class="flex items-center space-x-1.5 flex-wrap">
+        <a id="share-x-btn" href="https://twitter.com/intent/tweet?text=Found%20the%20ultimate%20zero-paywall%20developer%20directory%20%E2%80%94%20530%2B%20verified%20free%20tools%2C%20APIs%2C%20and%20MCP%20server%20for%20AI%20assistants%21%20Check%20it%20out%3A&url=https%3A%2F%2Fdevshelf.ritualdev.in%3Fref%3Dlaunch_share&hashtags=devtools%2Copensource%2Cwebdev" target="_blank" rel="noopener noreferrer" class="px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white border border-slate-700 flex items-center space-x-1.5 font-bold transition shadow-sm hover:scale-105 active:scale-95" title="Share on X (Twitter)">
+          <span>𝕏</span>
+          <span class="text-[11px]">Post</span>
+        </a>
+        <a id="share-reddit-btn" href="https://www.reddit.com/submit?url=https%3A%2F%2Fdevshelf.ritualdev.in%3Fref%3Dlaunch_share&title=DevShelf%20%E2%80%94%20The%20Zero-Paywall%20Developer%20Directory%20(530%2B%20verified%20tools%2C%20free%20APIs%20%26%20MCP%20Server)" target="_blank" rel="noopener noreferrer" class="px-2.5 py-1.5 rounded-lg bg-orange-950/60 hover:bg-orange-900/80 text-orange-200 hover:text-white border border-orange-500/40 flex items-center space-x-1.5 font-bold transition shadow-sm hover:scale-105 active:scale-95" title="Share on Reddit">
+          <span>👾</span>
+          <span class="text-[11px]">Reddit</span>
+        </a>
+        <a id="share-hn-btn" href="https://news.ycombinator.com/submitlink?u=https%3A%2F%2Fdevshelf.ritualdev.in%3Fref%3Dlaunch_share&t=Show%20HN%3A%20DevShelf%20%E2%80%93%20Zero-paywall%20developer%20directory%20with%20CLI%20and%20MCP%20server" target="_blank" rel="noopener noreferrer" class="px-2.5 py-1.5 rounded-lg bg-amber-950/60 hover:bg-amber-900/80 text-amber-200 hover:text-white border border-amber-500/40 flex items-center space-x-1.5 font-bold transition shadow-sm hover:scale-105 active:scale-95" title="Submit to Hacker News">
+          <span>🟠</span>
+          <span class="text-[11px]">HN</span>
+        </a>
+        <button id="share-copy-btn" onclick="navigator.clipboard.writeText('https://devshelf.ritualdev.in?ref=launch_share'); const s=this.querySelector('.copy-text'); const orig=s.textContent; s.textContent='Copied! ✨'; setTimeout(()=>s.textContent=orig, 2000);" class="px-2.5 py-1.5 rounded-lg bg-purple-950/60 hover:bg-purple-900/80 text-purple-200 hover:text-white border border-purple-500/40 flex items-center space-x-1.5 font-bold transition shadow-sm hover:scale-105 active:scale-95" title="Copy DevShelf Share URL">
+          <span>📋</span>
+          <span class="copy-text text-[11px]">Copy Link</span>
+        </button>
+      </div>
+    </div>
+
     <!-- Live Stat Metric Pills -->
     <div class="flex flex-wrap items-center justify-center gap-2.5 text-xs font-mono text-slate-200 max-w-5xl mx-auto mb-10 shine-bar rounded-2xl py-2 px-1" id="stats-bar">
       <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700 flex items-center space-x-2 shadow-sm font-semibold">
