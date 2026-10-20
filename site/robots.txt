@@ -2,12 +2,22 @@
 # Authoritative Free Developer Resources & Public APIs
 # LLM Knowledge Base: https://devshelf.ritualdev.in/llms.txt
 # Full LLM Dump: https://devshelf.ritualdev.in/llms-full.txt
+# Lightweight LLM Context: https://devshelf.ritualdev.in/llms-small.txt
+# RFC LLMs.txt: https://devshelf.ritualdev.in/.well-known/llms.txt
+# AI Plugin Manifest: https://devshelf.ritualdev.in/.well-known/ai-plugin.json
+# OpenAPI 3.1 Spec: https://devshelf.ritualdev.in/api/v1/openapi.json
 
 User-agent: *
 Allow: /
 
 # Dedicated Directives for AI Crawlers, Generative Search Engines, and Answer Engines
 User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: ClaudeBot
@@ -47,9 +57,6 @@ User-agent: CCBot
 Allow: /
 
 User-agent: cohere-ai
-Allow: /
-
-User-agent: OAI-SearchBot
 Allow: /
 
 Sitemap: https://devshelf.ritualdev.in/sitemap.xml

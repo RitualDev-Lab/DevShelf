@@ -35,6 +35,9 @@
   <link rel="alternate" type="text/plain" href="llms.txt" title="DevShelf LLMs.txt Context for AI Agents">
   <link rel="alternate" type="text/markdown" href="llms.txt" title="DevShelf LLMs.txt Context for AI Agents">
   <link rel="alternate" type="text/markdown" href="llms-full.txt" title="DevShelf Full LLM Knowledge Base">
+  <link rel="alternate" type="text/plain" href=".well-known/llms.txt" title="DevShelf RFC LLMs.txt">
+  <link rel="alternate" type="text/plain" href="llms-small.txt" title="DevShelf Lightweight LLM Context">
+  <link rel="openapi" type="application/json" href="api/v1/openapi.json" title="DevShelf OpenAPI 3.1 Spec">
   <link rel="alternate" type="application/json" href="api/v1/tools.json" title="DevShelf Public REST API">
   <link rel="alternate" type="application/rss+xml" href="https://devshelf.ritualdev.in/feed.xml" title="DevShelf Weekly RSS Feed">
   <link rel="sitemap" type="application/xml" href="https://devshelf.ritualdev.in/sitemap.xml" title="DevShelf Sitemap">
@@ -1967,24 +1970,32 @@
 
       <div class="p-6 rounded-2xl bg-slate-900/70 border border-cyan-500/30">
         <div class="text-2xl mb-2">📄</div>
-        <h3 class="text-sm font-bold text-white mb-2">LLMs.txt &amp; LLMs-Full.txt</h3>
+        <h3 class="text-sm font-bold text-white mb-2">LLMs.txt &amp; AI Context</h3>
         <p class="text-xs text-slate-300 leading-relaxed mb-4">
-          Structured Markdown knowledge dumps following the emerging standard for RAG grounding, prompt injection, and AI answer engines.
+          Structured Markdown knowledge dumps following RFC standards for RAG grounding, prompt injection, and AI answer engines.
         </p>
-        <div class="flex items-center space-x-2">
-          <a href="llms.txt" class="text-xs font-mono font-bold text-cyan-300 hover:underline">/llms.txt →</a>
+        <div class="flex items-center space-x-2 flex-wrap gap-y-1">
+          <a href="llms.txt" class="text-xs font-mono font-bold text-cyan-300 hover:underline">/llms.txt</a>
           <span class="text-slate-600">•</span>
-          <a href="llms-full.txt" class="text-xs font-mono font-bold text-cyan-300 hover:underline">/llms-full.txt →</a>
+          <a href="llms-small.txt" class="text-xs font-mono font-bold text-cyan-300 hover:underline">/llms-small.txt</a>
+          <span class="text-slate-600">•</span>
+          <a href="llms-full.txt" class="text-xs font-mono font-bold text-cyan-300 hover:underline">/llms-full.txt</a>
         </div>
       </div>
 
       <div class="p-6 rounded-2xl bg-slate-900/70 border border-emerald-500/30">
         <div class="text-2xl mb-2">⚡</div>
-        <h3 class="text-sm font-bold text-white mb-2">Public REST API (v1)</h3>
+        <h3 class="text-sm font-bold text-white mb-2">REST API &amp; OpenAI Plugin</h3>
         <p class="text-xs text-slate-300 leading-relaxed mb-4">
-          Zero-rate-limit JSON endpoints for discovering resources, categories, live uptime health, and zero-paywall audits.
+          Zero-rate-limit JSON endpoints, OpenAPI 3.1 specification, and ChatGPT Custom GPT plugin manifest.
         </p>
-        <a href="api/v1/tools.json" target="_blank" rel="noreferrer" class="text-xs font-mono font-bold text-emerald-300 hover:underline">/api/v1/tools.json →</a>
+        <div class="flex items-center space-x-2 flex-wrap gap-y-1">
+          <a href="api/v1/tools.json" target="_blank" rel="noreferrer" class="text-xs font-mono font-bold text-emerald-300 hover:underline">tools.json</a>
+          <span class="text-slate-600">•</span>
+          <a href="api/v1/openapi.json" target="_blank" rel="noreferrer" class="text-xs font-mono font-bold text-emerald-300 hover:underline">openapi.json</a>
+          <span class="text-slate-600">•</span>
+          <a href=".well-known/ai-plugin.json" target="_blank" rel="noreferrer" class="text-xs font-mono font-bold text-emerald-300 hover:underline">ai-plugin.json</a>
+        </div>
       </div>
     </div>
   </section>

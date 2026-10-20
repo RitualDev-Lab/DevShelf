@@ -1,0 +1,104 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "DevShelf Open Developer Resource API",
+    "description": "Zero-paywall developer tools, public APIs, and open-source alternatives directory API.",
+    "version": "1.1.2",
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://devshelf.ritualdev.in",
+      "description": "Production DevShelf API"
+    }
+  ],
+  "paths": {
+    "/api/v1/tools.json": {
+      "get": {
+        "summary": "List all verified zero-paywall tools",
+        "description": "Returns the complete catalog of 537 verified free developer tools, public APIs, and open-source projects.",
+        "operationId": "getTools",
+        "responses": {
+          "200": {
+            "description": "Successful retrieval of catalog tools",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "totalCount": {
+                      "type": "integer"
+                    },
+                    "reposCount": {
+                      "type": "integer"
+                    },
+                    "resources": {
+                      "type": "array"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/categories.json": {
+      "get": {
+        "summary": "List all tool categories and counts",
+        "operationId": "getCategories",
+        "responses": {
+          "200": {
+            "description": "Categories summary",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/affiliates.json": {
+      "get": {
+        "summary": "List active partner perks and cloud credits",
+        "operationId": "getAffiliates",
+        "responses": {
+          "200": {
+            "description": "List of developer perks and discounts",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/newsletter.json": {
+      "get": {
+        "summary": "Get latest newsletter issue and archives",
+        "operationId": "getNewsletter",
+        "responses": {
+          "200": {
+            "description": "Newsletter issues",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
