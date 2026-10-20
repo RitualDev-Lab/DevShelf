@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 536 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 537 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -2525,6 +2525,15 @@
 - **URL**: https://github.com/testcontainers/testcontainers-java
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/testcontainers.html
 - **Description**: Java library that supports JUnit tests, providing lightweight throwaway instances of Docker databases.
+
+### Clockshift
+- **Category**: Testing & QA Reliability
+- **Pricing Model**: See official site for free access and limits
+- **License**: MIT
+- **Language**: JavaScript / Node.js and browser Intl
+- **URL**: https://github.com/brodyga45/clockshift-dst-check
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/clockshift.html
+- **Description**: Find missing or repeated local clock times in daily and weekly schedules, with CSV export and a weekday filter. Includes a browser UI and a dependency-free Node.js CLI; scheduler execution policy must be checked separately.
 
 ### Open-Meteo
 - **Category**: Weather & Climate

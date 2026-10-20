@@ -1,9 +1,9 @@
 {
   "version": "1.1.2",
-  "updatedAt": "2026-10-19T22:29:04.667Z",
+  "updatedAt": "2026-10-20T08:58:48.510Z",
   "slug": "testing",
   "name": "Testing & QA Automation",
-  "count": 62,
+  "count": 63,
   "items": [
     {
       "name": "AutoHeal-QA",
@@ -771,6 +771,17 @@
       "license": "MIT",
       "featured": true,
       "goodFirstIssues": "https://github.com/testcontainers/testcontainers-java/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "Clockshift",
+      "repo": "https://github.com/brodyga45/clockshift-dst-check",
+      "category": "Testing & QA Reliability",
+      "description": "Find missing or repeated local clock times in daily and weekly schedules, with CSV export and a weekday filter. Includes a browser UI and a dependency-free Node.js CLI; scheduler execution policy must be checked separately.",
+      "language": "JavaScript / Node.js and browser Intl",
+      "license": "MIT",
+      "featured": false,
       "type": "testing",
       "section": "Testing & QA Reliability"
     }

@@ -1,6 +1,6 @@
 {
   "version": "1.1.2",
-  "updatedAt": "2026-10-19T22:29:04.667Z",
+  "updatedAt": "2026-10-20T08:58:48.510Z",
   "totalCategories": 8,
   "categories": [
     {
@@ -30,7 +30,7 @@
     {
       "slug": "testing",
       "name": "Testing & QA Automation",
-      "count": 62,
+      "count": 63,
       "endpoint": "https://devshelf.ritualdev.in/api/v1/categories/testing.json"
     },
     {
