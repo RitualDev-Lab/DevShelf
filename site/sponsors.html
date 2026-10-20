@@ -222,8 +222,17 @@
               <label class="block text-xs font-mono font-bold uppercase tracking-wider text-slate-300 mb-1.5" for="sponsor-name">
                 Your Name / Handle / Org <span class="text-pink-400">*</span>
               </label>
-              <input type="text" id="sponsor-name" required placeholder="e.g. Alex Rivera or Acme Corp" class="w-full px-3.5 py-2.5 bg-slate-950 rounded-xl border border-slate-700/80 text-white text-sm focus:outline-none focus:border-purple-500">
+              <input type="text" id="sponsor-name" required placeholder="e.g. Divyanshu Jethi or Acme Corp" class="w-full px-3.5 py-2.5 bg-slate-950 rounded-xl border border-slate-700/80 text-white text-sm focus:outline-none focus:border-purple-500">
             </div>
+            <div>
+              <label class="block text-xs font-mono font-bold uppercase tracking-wider text-slate-300 mb-1.5" for="sponsor-email">
+                Your Email Address <span class="text-pink-400">*</span>
+              </label>
+              <input type="email" id="sponsor-email" required placeholder="divyanshu@example.com" class="w-full px-3.5 py-2.5 bg-slate-950 rounded-xl border border-slate-700/80 text-white text-sm focus:outline-none focus:border-purple-500">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
             <div>
               <label class="block text-xs font-mono font-bold uppercase tracking-wider text-slate-300 mb-1.5" for="sponsor-github">
                 GitHub Handle (Optional)
@@ -233,13 +242,12 @@
                 <input type="text" id="sponsor-github" placeholder="username" class="w-full pl-8 pr-3.5 py-2.5 bg-slate-950 rounded-xl border border-slate-700/80 text-white text-sm focus:outline-none focus:border-purple-500">
               </div>
             </div>
-          </div>
-
-          <div class="mb-4">
-            <label class="block text-xs font-mono font-bold uppercase tracking-wider text-slate-300 mb-1.5" for="sponsor-url">
-              Website or Social Profile (Optional)
-            </label>
-            <input type="url" id="sponsor-url" placeholder="https://example.com or https://x.com/yourhandle" class="w-full px-3.5 py-2.5 bg-slate-950 rounded-xl border border-slate-700/80 text-white text-sm focus:outline-none focus:border-purple-500">
+            <div>
+              <label class="block text-xs font-mono font-bold uppercase tracking-wider text-slate-300 mb-1.5" for="sponsor-url">
+                Website or Social Profile (Optional)
+              </label>
+              <input type="url" id="sponsor-url" placeholder="https://example.com or https://x.com/yourhandle" class="w-full px-3.5 py-2.5 bg-slate-950 rounded-xl border border-slate-700/80 text-white text-sm focus:outline-none focus:border-purple-500">
+            </div>
           </div>
 
           <!-- Sponsor Comment / Message -->
@@ -1278,11 +1286,29 @@
     // UI Elements
     const amountInput = document.getElementById('custom-amount-input');
     const sponsorNameInput = document.getElementById('sponsor-name');
+    const sponsorEmailInput = document.getElementById('sponsor-email');
     const sponsorGithubInput = document.getElementById('sponsor-github');
     const sponsorCommentInput = document.getElementById('sponsor-comment');
+    const billingEmailInput = document.getElementById('billing-email');
+    const billingCompanyInput = document.getElementById('billing-company');
+    const billingCountryInput = document.getElementById('billing-country');
+    const billingTaxIdInput = document.getElementById('billing-tax-id');
     const charCount = document.getElementById('char-count');
     const submitBtnText = document.getElementById('submit-btn-text');
     const currPrefix = document.getElementById('curr-prefix');
+
+    // Auto-sync primary email with corporate billing email if empty
+    if (sponsorEmailInput && billingEmailInput) {
+      sponsorEmailInput.addEventListener('input', () => {
+        if (!billingEmailInput.value || billingEmailInput.dataset.autoSynced === 'true') {
+          billingEmailInput.value = sponsorEmailInput.value;
+          billingEmailInput.dataset.autoSynced = 'true';
+        }
+      });
+      billingEmailInput.addEventListener('input', () => {
+        billingEmailInput.dataset.autoSynced = 'false';
+      });
+    }
 
     // Preview Elements
     const previewName = document.getElementById('preview-name');
@@ -1436,20 +1462,110 @@
       submitBtnText.textContent = `Proceed to Dodo Checkout (${isUSD ? '$' + currentAmount : '₹' + currentAmount})`;
     }
 
-    // Form Submission & Checkout Routing
+    // Helper: Split full name into firstName and lastName for Dodo checkout prefill
+    function splitFullName(fullName) {
+      const parts = (fullName || '').trim().split(/\s+/).filter(Boolean);
+      if (parts.length === 0) return { firstName: '', lastName: '' };
+      if (parts.length === 1) return { firstName: parts[0], lastName: '' };
+      const firstName = parts.slice(0, -1).join(' ');
+      const lastName = parts[parts.length - 1];
+      return { firstName, lastName };
+    }
+
+    // Helper: Resolve 2-letter ISO Country Code for Dodo prefill
+    function resolveCountryCode(countryStr, currency) {
+      if (countryStr) {
+        const c = countryStr.trim().toUpperCase();
+        if (c.length === 2) return c;
+        const map = {
+          'INDIA': 'IN',
+          'UNITED STATES': 'US',
+          'USA': 'US',
+          'UNITED KINGDOM': 'GB',
+          'UK': 'GB',
+          'GERMANY': 'DE',
+          'CANADA': 'CA',
+          'AUSTRALIA': 'AU',
+          'FRANCE': 'FR',
+          'SINGAPORE': 'SG',
+          'JAPAN': 'JP',
+          'NETHERLANDS': 'NL',
+          'BRAZIL': 'BR',
+          'BANGLADESH': 'BD'
+        };
+        if (map[c]) return map[c];
+      }
+      return currency === 'INR' ? 'IN' : 'US';
+    }
+
+    // Profile Persistence for Returning Patrons
+    function loadSavedProfile() {
+      try {
+        const raw = localStorage.getItem('devshelf_sponsor_profile');
+        if (raw) {
+          const p = JSON.parse(raw);
+          if (p.name && sponsorNameInput && !sponsorNameInput.value) sponsorNameInput.value = p.name;
+          if (p.email && sponsorEmailInput && !sponsorEmailInput.value) sponsorEmailInput.value = p.email;
+          if (p.github && sponsorGithubInput && !sponsorGithubInput.value) sponsorGithubInput.value = p.github;
+          if (p.url && document.getElementById('sponsor-url') && !document.getElementById('sponsor-url').value) {
+            document.getElementById('sponsor-url').value = p.url;
+          }
+          if (p.email && billingEmailInput && !billingEmailInput.value) {
+            billingEmailInput.value = p.email;
+          }
+        }
+      } catch (e) {}
+    }
+
+    function saveProfile(name, email, github, url) {
+      try {
+        localStorage.setItem('devshelf_sponsor_profile', JSON.stringify({ name, email, github, url }));
+      } catch (e) {}
+    }
+
+    // URL Query Parameter Auto-Prefill (e.g. ?name=...&email=...&amount=...)
+    function checkUrlPrefill() {
+      try {
+        const params = new URLSearchParams(window.location.search);
+        const name = params.get('name') || params.get('sponsor_name');
+        const email = params.get('email') || params.get('customer_email');
+        const github = params.get('github');
+        const url = params.get('url');
+        const amount = params.get('amount') || params.get('paymentAmount');
+        const currency = params.get('currency') || params.get('paymentCurrency');
+
+        if (name && sponsorNameInput) sponsorNameInput.value = name;
+        if (email && sponsorEmailInput) sponsorEmailInput.value = email;
+        if (email && billingEmailInput && !billingEmailInput.value) billingEmailInput.value = email;
+        if (github && sponsorGithubInput) sponsorGithubInput.value = github;
+        if (url && document.getElementById('sponsor-url')) document.getElementById('sponsor-url').value = url;
+        if (currency) setCurrency(currency.toUpperCase() === 'INR' ? 'INR' : 'USD');
+        if (amount) {
+          const num = parseFloat(amount);
+          if (!isNaN(num) && num > 0) {
+            currentAmount = num;
+            if (amountInput) amountInput.value = num;
+            updateActiveAmountButtons();
+          }
+        }
+      } catch (e) {}
+    }
+
+    // Form Submission & Seamless Dodo Checkout Routing
     function handleSponsorSubmit(e) {
       e.preventDefault();
-      const name = sponsorNameInput.value.trim();
-      const rawGithub = sponsorGithubInput.value.trim().replace(/^@/, '');
+      const name = (sponsorNameInput?.value || '').trim();
+      const email = (sponsorEmailInput?.value || billingEmailInput?.value || '').trim();
+      const rawGithub = (sponsorGithubInput?.value || '').trim().replace(/^@/, '');
       const cleanGithub = GITHUB_HANDLE_REGEX.test(rawGithub) ? rawGithub : '';
-      const url = document.getElementById('sponsor-url').value.trim();
-      const comment = sponsorCommentInput.value.trim();
+      const url = (document.getElementById('sponsor-url')?.value || '').trim();
+      const comment = (sponsorCommentInput?.value || '').trim();
       const isUSD = currentCurrency === 'USD';
       const usd = isUSD ? currentAmount : Math.round(currentAmount / 84);
       const inr = isUSD ? Math.round(currentAmount * 84) : currentAmount;
 
       const billingCompany = (document.getElementById('billing-company')?.value || '').trim();
-      const billingEmail = (document.getElementById('billing-email')?.value || '').trim();
+      const billingEmail = (billingEmailInput?.value || email).trim();
       const billingCountry = (document.getElementById('billing-country')?.value || '').trim();
       const billingTaxId = (document.getElementById('billing-tax-id')?.value || '').trim();
 
@@ -1459,7 +1575,17 @@
       const toolAlt = (document.getElementById('tool-alt')?.value || '').trim();
       const toolPitch = (document.getElementById('tool-pitch')?.value || '').trim();
 
-      if (!name) return;
+      if (!name) {
+        if (sponsorNameInput) sponsorNameInput.focus();
+        return;
+      }
+      if (!email) {
+        if (sponsorEmailInput) sponsorEmailInput.focus();
+        return;
+      }
+
+      // Persist patron profile locally for 1-click repeat support
+      saveProfile(name, email, cleanGithub, url);
 
       const safeAvatar = getSafeAvatarUrl(cleanGithub);
       const safeUrl = getSafeUrl(url) || (cleanGithub ? `https://github.com/${encodeURIComponent(cleanGithub)}` : '');
@@ -1467,6 +1593,7 @@
       const newEntry = {
         id: 'patron-' + Date.now(),
         name,
+        email,
         github: cleanGithub,
         avatar: safeAvatar,
         url: safeUrl,
@@ -1490,7 +1617,7 @@
       renderLeaderboard('all');
       renderComments();
 
-      // Open Dodo Checkout URL with automated return URL
+      // Construct automated return URL with all metadata preserved
       let returnUrl = 'https://devshelf.ritualdev.in/sponsors.html';
       try {
         const u = new URL(window.location.origin + window.location.pathname);
@@ -1498,6 +1625,7 @@
         u.searchParams.set('amount', String(currentAmount));
         u.searchParams.set('currency', currentCurrency);
         u.searchParams.set('sponsor_name', name);
+        if (email) u.searchParams.set('email', email);
         if (cleanGithub) u.searchParams.set('github', cleanGithub);
         if (safeUrl) u.searchParams.set('url', safeUrl);
         if (comment) u.searchParams.set('sponsor_comment', comment);
@@ -1517,22 +1645,100 @@
         console.warn('URL construct error:', err);
       }
 
-      const dodoParams = new URLSearchParams({
-        amount: String(currentAmount),
-        currency: currentCurrency,
-        sponsor_name: name,
-        sponsor_comment: comment,
-        product_type: 'digital',
-        shipping_required: 'false',
-        redirect_url: returnUrl
-      });
-      if (billingCompany) dodoParams.set('billing_company', billingCompany);
-      if (billingTaxId) dodoParams.set('billing_tax_id', billingTaxId);
-      if (toolName) dodoParams.set('tool_name', toolName);
-      if (toolUrl) dodoParams.set('tool_url', toolUrl);
-      if (toolCategory) dodoParams.set('tool_category', toolCategory);
-      if (toolAlt) dodoParams.set('tool_alt', toolAlt);
-      if (toolPitch) dodoParams.set('tool_pitch', toolPitch);
+      const { firstName, lastName } = splitFullName(name);
+      const countryCode = resolveCountryCode(billingCountry, currentCurrency);
+
+      const dodoParams = new URLSearchParams();
+
+      // 1. Customer Identification Prefill (Dodo checkout form direct & alias bindings)
+      dodoParams.set('fullName', name);
+      dodoParams.set('firstName', firstName);
+      if (lastName) dodoParams.set('lastName', lastName);
+      dodoParams.set('name', name);
+
+      if (email) {
+        dodoParams.set('email', email);
+        dodoParams.set('customer_email', email);
+      }
+      dodoParams.set('country', countryCode);
+
+      // 2. Amount & Currency Prefill (supports both paymentAmount & amount)
+      dodoParams.set('paymentAmount', String(currentAmount));
+      dodoParams.set('amount', String(currentAmount));
+      dodoParams.set('paymentCurrency', currentCurrency);
+      dodoParams.set('currency', currentCurrency);
+
+      // 3. Single-Page Experience & Zero Physical Shipping
+      dodoParams.set('singlePage', 'true');
+      dodoParams.set('product_type', 'digital');
+      dodoParams.set('shipping_required', 'false');
+      dodoParams.set('redirect_url', returnUrl);
+
+      // 4. Metadata Attributes (prefixed with metadata_ for Dodo webhooks & API records)
+      dodoParams.set('metadata_sponsorName', name);
+      dodoParams.set('metadata_sponsor_name', name);
+      if (email) {
+        dodoParams.set('metadata_email', email);
+        dodoParams.set('metadata_customer_email', email);
+      }
+      if (cleanGithub) {
+        dodoParams.set('metadata_github', cleanGithub);
+        dodoParams.set('github', cleanGithub);
+      }
+      if (safeUrl) {
+        dodoParams.set('metadata_url', safeUrl);
+        dodoParams.set('url', safeUrl);
+      }
+      if (comment) {
+        dodoParams.set('metadata_comment', comment);
+        dodoParams.set('sponsor_comment', comment);
+      }
+      dodoParams.set('metadata_product_type', 'digital');
+      dodoParams.set('metadata_shipping_required', 'false');
+
+      // 5. Corporate Tax & Billing Metadata
+      if (billingCompany) {
+        dodoParams.set('metadata_billingCompany', billingCompany);
+        dodoParams.set('metadata_billing_company', billingCompany);
+        dodoParams.set('billing_company', billingCompany);
+      }
+      if (billingTaxId) {
+        dodoParams.set('metadata_billingTaxId', billingTaxId);
+        dodoParams.set('metadata_billing_tax_id', billingTaxId);
+        dodoParams.set('billing_tax_id', billingTaxId);
+      }
+      if (billingCountry) {
+        dodoParams.set('metadata_billingCountry', billingCountry);
+        dodoParams.set('metadata_billing_country', billingCountry);
+        dodoParams.set('billing_country', billingCountry);
+      }
+
+      // 6. Developer Tool Promotion Metadata
+      if (toolName) {
+        dodoParams.set('metadata_toolName', toolName);
+        dodoParams.set('metadata_tool_name', toolName);
+        dodoParams.set('tool_name', toolName);
+      }
+      if (toolUrl) {
+        dodoParams.set('metadata_toolUrl', toolUrl);
+        dodoParams.set('metadata_tool_url', toolUrl);
+        dodoParams.set('tool_url', toolUrl);
+      }
+      if (toolCategory) {
+        dodoParams.set('metadata_toolCategory', toolCategory);
+        dodoParams.set('metadata_tool_category', toolCategory);
+        dodoParams.set('tool_category', toolCategory);
+      }
+      if (toolAlt) {
+        dodoParams.set('metadata_toolAlt', toolAlt);
+        dodoParams.set('metadata_tool_alt', toolAlt);
+        dodoParams.set('tool_alt', toolAlt);
+      }
+      if (toolPitch) {
+        dodoParams.set('metadata_toolPitch', toolPitch);
+        dodoParams.set('metadata_tool_pitch', toolPitch);
+        dodoParams.set('tool_pitch', toolPitch);
+      }
 
       const finalCheckoutUrl = `${DODO_BASE_URL}?${dodoParams.toString()}`;
       window.open(finalCheckoutUrl, '_blank', 'noopener,noreferrer');
@@ -2285,7 +2491,7 @@
         const paymentId = params.get('payment_id') || params.get('session_id') || `tx-${Date.now()}`;
 
         const billingCompany = (params.get('billing_company') || '').trim();
-        const billingEmail = (params.get('billing_email') || '').trim();
+        const billingEmail = (params.get('email') || params.get('customer_email') || params.get('billing_email') || '').trim();
         const billingCountry = (params.get('billing_country') || '').trim();
         const billingTaxId = (params.get('billing_tax_id') || '').trim();
 
@@ -2409,6 +2615,8 @@
     }
 
     // Initialize on load
+    loadSavedProfile();
+    checkUrlPrefill();
     updateActiveAmountButtons();
     updatePreview();
     renderLeaderboard('all');

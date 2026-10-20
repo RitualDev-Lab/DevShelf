@@ -251,3 +251,163 @@ test("Sponsors Static Badges Artifacts Verification", async () => {
     assert.ok(!content.includes("<script"), `${badgeFile} must not contain script tags`);
   }
 });
+
+function splitFullName(fullName: string) {
+  const parts = (fullName || "").trim().split(/\s+/).filter(Boolean);
+  if (parts.length === 0) return { firstName: "", lastName: "" };
+  if (parts.length === 1) return { firstName: parts[0], lastName: "" };
+  const firstName = parts.slice(0, -1).join(" ");
+  const lastName = parts[parts.length - 1];
+  return { firstName, lastName };
+}
+
+function resolveCountryCode(countryStr?: string, currency = "USD") {
+  if (countryStr) {
+    const c = countryStr.trim().toUpperCase();
+    if (c.length === 2) return c;
+    const map: Record<string, string> = {
+      INDIA: "IN",
+      "UNITED STATES": "US",
+      USA: "US",
+      "UNITED KINGDOM": "GB",
+      UK: "GB",
+      GERMANY: "DE",
+      CANADA: "CA",
+      AUSTRALIA: "AU",
+      FRANCE: "FR",
+      SINGAPORE: "SG",
+      JAPAN: "JP",
+      NETHERLANDS: "NL",
+      BRAZIL: "BR",
+      BANGLADESH: "BD",
+    };
+    if (map[c]) return map[c];
+  }
+  return currency.toUpperCase() === "INR" ? "IN" : "US";
+}
+
+interface DodoCheckoutBuildOptions {
+  name: string;
+  email: string;
+  amount: number;
+  currency?: string;
+  github?: string;
+  url?: string;
+  comment?: string;
+  billingCompany?: string;
+  billingCountry?: string;
+  billingTaxId?: string;
+  toolName?: string;
+  toolUrl?: string;
+  toolCategory?: string;
+  toolAlt?: string;
+  toolPitch?: string;
+  baseUrl?: string;
+  returnUrl?: string;
+}
+
+function buildDodoCheckoutUrl(opts: DodoCheckoutBuildOptions): string {
+  const baseUrl = opts.baseUrl || "https://checkout.dodopayments.com/buy/pdt_0NpjONGugY5QkrFDUaPva";
+  const currency = opts.currency || "USD";
+  const { firstName, lastName } = splitFullName(opts.name);
+  const country = resolveCountryCode(opts.billingCountry, currency);
+
+  const params = new URLSearchParams();
+  params.set("fullName", opts.name);
+  params.set("firstName", firstName);
+  if (lastName) params.set("lastName", lastName);
+  params.set("name", opts.name);
+
+  if (opts.email) {
+    params.set("email", opts.email);
+    params.set("customer_email", opts.email);
+  }
+  params.set("country", country);
+  params.set("paymentAmount", String(opts.amount));
+  params.set("amount", String(opts.amount));
+  params.set("paymentCurrency", currency);
+  params.set("currency", currency);
+  params.set("singlePage", "true");
+  params.set("product_type", "digital");
+  params.set("shipping_required", "false");
+
+  if (opts.returnUrl) params.set("redirect_url", opts.returnUrl);
+
+  params.set("metadata_sponsorName", opts.name);
+  params.set("metadata_sponsor_name", opts.name);
+  if (opts.email) {
+    params.set("metadata_email", opts.email);
+    params.set("metadata_customer_email", opts.email);
+  }
+  if (opts.github) {
+    params.set("metadata_github", opts.github);
+    params.set("github", opts.github);
+  }
+  if (opts.toolName) {
+    params.set("metadata_toolName", opts.toolName);
+    params.set("tool_name", opts.toolName);
+  }
+
+  return `${baseUrl}?${params.toString()}`;
+}
+
+test("Dodo Checkout URL Prefill - Customer and Payment Parameters", () => {
+  const checkoutUrl = buildDodoCheckoutUrl({
+    name: "Divyanshu Jethi",
+    email: "divyanshu@example.com",
+    amount: 5,
+    currency: "USD",
+    github: "divyanshu",
+    returnUrl: "https://devshelf.ritualdev.in/sponsors.html?status=success",
+  });
+
+  const parsed = new URL(checkoutUrl);
+  assert.equal(parsed.pathname, "/buy/pdt_0NpjONGugY5QkrFDUaPva");
+  assert.equal(parsed.searchParams.get("fullName"), "Divyanshu Jethi");
+  assert.equal(parsed.searchParams.get("firstName"), "Divyanshu");
+  assert.equal(parsed.searchParams.get("lastName"), "Jethi");
+  assert.equal(parsed.searchParams.get("name"), "Divyanshu Jethi");
+  assert.equal(parsed.searchParams.get("email"), "divyanshu@example.com");
+  assert.equal(parsed.searchParams.get("customer_email"), "divyanshu@example.com");
+  assert.equal(parsed.searchParams.get("paymentAmount"), "5");
+  assert.equal(parsed.searchParams.get("amount"), "5");
+  assert.equal(parsed.searchParams.get("paymentCurrency"), "USD");
+  assert.equal(parsed.searchParams.get("currency"), "USD");
+  assert.equal(parsed.searchParams.get("singlePage"), "true");
+  assert.equal(parsed.searchParams.get("country"), "US");
+  assert.equal(parsed.searchParams.get("metadata_sponsorName"), "Divyanshu Jethi");
+  assert.equal(parsed.searchParams.get("metadata_email"), "divyanshu@example.com");
+  assert.equal(parsed.searchParams.get("redirect_url"), "https://devshelf.ritualdev.in/sponsors.html?status=success");
+});
+
+test("Dodo Checkout URL Prefill - INR Currency and Country Mapping", () => {
+  const checkoutUrl = buildDodoCheckoutUrl({
+    name: "Alex",
+    email: "alex@ritualdev.in",
+    amount: 150,
+    currency: "INR",
+  });
+
+  const parsed = new URL(checkoutUrl);
+  assert.equal(parsed.searchParams.get("fullName"), "Alex");
+  assert.equal(parsed.searchParams.get("firstName"), "Alex");
+  assert.equal(parsed.searchParams.get("lastName"), null);
+  assert.equal(parsed.searchParams.get("paymentCurrency"), "INR");
+  assert.equal(parsed.searchParams.get("country"), "IN", "INR currency should default country to IN");
+  assert.equal(parsed.searchParams.get("singlePage"), "true");
+});
+
+test("Dodo Checkout URL Prefill - Tool Promotion Metadata", () => {
+  const checkoutUrl = buildDodoCheckoutUrl({
+    name: "RowSafe Team",
+    email: "founders@rowsafe.dev",
+    amount: 149,
+    currency: "USD",
+    toolName: "RowSafe",
+  });
+
+  const parsed = new URL(checkoutUrl);
+  assert.equal(parsed.searchParams.get("tool_name"), "RowSafe");
+  assert.equal(parsed.searchParams.get("metadata_toolName"), "RowSafe");
+  assert.equal(parsed.searchParams.get("singlePage"), "true");
+});
