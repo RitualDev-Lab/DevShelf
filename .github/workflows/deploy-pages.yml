@@ -52,3 +52,8 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Submit IndexNow for real-time search indexing
+        run: pnpm run indexnow
+        continue-on-error: true
+
