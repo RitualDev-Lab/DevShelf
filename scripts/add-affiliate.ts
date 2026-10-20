@@ -147,7 +147,11 @@ export async function addOrUpdateAffiliate(
   await fs.mkdir(DATA_DIR, { recursive: true });
   await fs.mkdir(GO_DIR, { recursive: true });
 
-  let rawData = { version: "1.0.0", updatedAt: new Date().toISOString(), partners: [] as AffiliatePartner[] };
+  let rawData = {
+    version: "1.0.0",
+    updatedAt: new Date().toISOString(),
+    partners: [] as AffiliatePartner[],
+  };
   try {
     const raw = await fs.readFile(AFFILIATES_JSON_PATH, "utf8");
     rawData = JSON.parse(raw);
@@ -165,15 +169,24 @@ export async function addOrUpdateAffiliate(
     toolName,
     url,
     vanityPath,
-    category: options.category || (existingIdx !== -1 ? rawData.partners[existingIdx].category : "cloud"),
-    perkTitle: options.perk?.trim() || (existingIdx !== -1 ? rawData.partners[existingIdx].perkTitle : "Developer Free Tier & Credits"),
+    category:
+      options.category || (existingIdx !== -1 ? rawData.partners[existingIdx].category : "cloud"),
+    perkTitle:
+      options.perk?.trim() ||
+      (existingIdx !== -1
+        ? rawData.partners[existingIdx].perkTitle
+        : "Developer Free Tier & Credits"),
     perkDescription:
       options.description?.trim() ||
       (existingIdx !== -1
         ? rawData.partners[existingIdx].perkDescription
         : `Claim exclusive developer credits and perpetual free tier allowances with ${toolName}.`),
-    ctaText: options.cta?.trim() || (existingIdx !== -1 ? rawData.partners[existingIdx].ctaText : "Claim Offer →"),
-    badge: options.badge?.trim() || (existingIdx !== -1 ? rawData.partners[existingIdx].badge : "🎁 Dev Perk"),
+    ctaText:
+      options.cta?.trim() ||
+      (existingIdx !== -1 ? rawData.partners[existingIdx].ctaText : "Claim Offer →"),
+    badge:
+      options.badge?.trim() ||
+      (existingIdx !== -1 ? rawData.partners[existingIdx].badge : "🎁 Dev Perk"),
     active: true,
   };
 
@@ -194,7 +207,11 @@ export async function addOrUpdateAffiliate(
   // 3. Write site/api/v1/affiliates.json
   const apiV1Dir = path.join(SITE_DIR, "api", "v1");
   await fs.mkdir(apiV1Dir, { recursive: true });
-  await fs.writeFile(path.join(apiV1Dir, "affiliates.json"), `${JSON.stringify(rawData, null, 2)}\n`, "utf8");
+  await fs.writeFile(
+    path.join(apiV1Dir, "affiliates.json"),
+    `${JSON.stringify(rawData, null, 2)}\n`,
+    "utf8",
+  );
 
   // 4. Synchronize site if not skipped
   if (!options.skipBuild) {
@@ -277,7 +294,9 @@ Examples:
     });
 
     console.log("\n=======================================================");
-    console.log(`🎉 SUCCESS: ${partner.toolName} Affiliate Partner ${isNew ? "Created" : "Updated"}!`);
+    console.log(
+      `🎉 SUCCESS: ${partner.toolName} Affiliate Partner ${isNew ? "Created" : "Updated"}!`,
+    );
     console.log("=======================================================");
     console.log(`• Destination URL:   ${partner.url}`);
     console.log(`• Outbound Redirect: devshelf.ritualdev.in${partner.vanityPath}`);

@@ -9,14 +9,7 @@ const ROOT_DIR = path.resolve(__dirname, "..");
 const SHELF_DIR = path.join(ROOT_DIR, "shelf");
 const DATA_DIR = path.join(ROOT_DIR, "data");
 
-export type ShelfCategory =
-  | "ai"
-  | "cli"
-  | "apis"
-  | "cloud"
-  | "testing"
-  | "boilerplates"
-  | "perks";
+export type ShelfCategory = "ai" | "cli" | "apis" | "cloud" | "testing" | "boilerplates" | "perks";
 
 export type SponsorTier = "starter" | "mcpPro" | "enterprise";
 
@@ -98,7 +91,10 @@ function normalizeUrl(u: string): string {
     const parsed = new URL(u);
     return `${parsed.hostname.replace(/^www\./, "").toLowerCase()}${parsed.pathname.replace(/\/$/, "").toLowerCase()}`;
   } catch {
-    return String(u || "").toLowerCase().trim().replace(/\/$/, "");
+    return String(u || "")
+      .toLowerCase()
+      .trim()
+      .replace(/\/$/, "");
   }
 }
 
@@ -109,9 +105,7 @@ function normalizeUrl(u: string): string {
  * 3. Appends/updates the sponsor ledger in data/sponsors.json with patron details & telemetry
  * 4. Triggers catalog & badge rebuild to maintain 100% sync
  */
-export async function activateSponsor(
-  options: ActivateSponsorOptions,
-): Promise<ActivationResult> {
+export async function activateSponsor(options: ActivateSponsorOptions): Promise<ActivationResult> {
   const toolName = (options.name || "").trim();
   const toolUrl = (options.url || "").trim();
 
@@ -122,18 +116,16 @@ export async function activateSponsor(
     throw new Error("Missing required option: --url <tool-url>");
   }
 
-  const category: ShelfCategory = options.category && CATEGORY_MAP[options.category]
-    ? options.category
-    : "cli";
-  const tier: SponsorTier = options.tier && TIER_MAP[options.tier]
-    ? options.tier
-    : "mcpPro";
+  const category: ShelfCategory =
+    options.category && CATEGORY_MAP[options.category] ? options.category : "cli";
+  const tier: SponsorTier = options.tier && TIER_MAP[options.tier] ? options.tier : "mcpPro";
 
   const categoryConfig = CATEGORY_MAP[category];
   const tierConfig = TIER_MAP[tier];
-  const amountUSD = typeof options.amount === "number" && options.amount > 0
-    ? options.amount
-    : tierConfig.defaultUSD;
+  const amountUSD =
+    typeof options.amount === "number" && options.amount > 0
+      ? options.amount
+      : tierConfig.defaultUSD;
 
   const targetNormUrl = normalizeUrl(toolUrl);
   const targetNormName = toolName.toLowerCase();
@@ -204,9 +196,8 @@ export async function activateSponsor(
     }
 
     const defaultPitch = `${toolName} - Verified zero-paywall developer tooling and AI context integration.`;
-    const pitch = options.pitch && options.pitch.trim().length >= 10
-      ? options.pitch.trim()
-      : defaultPitch;
+    const pitch =
+      options.pitch && options.pitch.trim().length >= 10 ? options.pitch.trim() : defaultPitch;
 
     if (category === "apis") {
       finalItem = {
@@ -322,25 +313,25 @@ export async function activateSponsor(
     rank: 1,
     name: patronName,
     github: cleanGithub || "ghost",
-    avatar: cleanGithub
-      ? `https://github.com/${cleanGithub}.png`
-      : "https://github.com/ghost.png",
+    avatar: cleanGithub ? `https://github.com/${cleanGithub}.png` : "https://github.com/ghost.png",
     url: toolUrl,
     amountUSD,
     amountINR: Math.round(amountUSD * 84),
     tier: tierConfig.patronTier,
     date: new Date().toISOString().split("T")[0],
-    comment: (options.comment || "").trim() ||
+    comment:
+      (options.comment || "").trim() ||
       `Sponsoring DevShelf to feature ${toolName} across MCP coding queries and developer dossiers.`,
     badgeUrl: `https://devshelf.ritualdev.in/api/v1/badges/${tierConfig.patronTier}.svg`,
     toolName,
   };
 
   const existingPatronIdx = Array.isArray(sponsorsData.patrons)
-    ? sponsorsData.patrons.findIndex((p: any) =>
-        p.id === patronId ||
-        (cleanGithub && p.github && p.github.toLowerCase() === cleanGithub.toLowerCase()) ||
-        p.name.toLowerCase() === patronName.toLowerCase()
+    ? sponsorsData.patrons.findIndex(
+        (p: any) =>
+          p.id === patronId ||
+          (cleanGithub && p.github && p.github.toLowerCase() === cleanGithub.toLowerCase()) ||
+          p.name.toLowerCase() === patronName.toLowerCase(),
       )
     : -1;
 
@@ -406,16 +397,8 @@ export async function activateSponsor(
   }
 
   // Write changes to disk
-  await fs.writeFile(
-    targetShelfPath,
-    `${JSON.stringify(foundShelfData, null, 2)}\n`,
-    "utf8",
-  );
-  await fs.writeFile(
-    sponsorsJsonPath,
-    `${JSON.stringify(sponsorsData, null, 2)}\n`,
-    "utf8",
-  );
+  await fs.writeFile(targetShelfPath, `${JSON.stringify(foundShelfData, null, 2)}\n`, "utf8");
+  await fs.writeFile(sponsorsJsonPath, `${JSON.stringify(sponsorsData, null, 2)}\n`, "utf8");
 
   // Synchronize site, README, counts, badges, and SEO pages
   if (!options.skipBuild) {
@@ -510,14 +493,20 @@ Examples:
     console.log("\n=======================================================");
     console.log(`🎉 SUCCESS: ${result.toolName} Activated as ${result.tier} Sponsor!`);
     console.log("=======================================================");
-    console.log(`• Target Shelf File:   shelf/${result.shelfFile} (${result.isNewTool ? "New Tool Created" : "Existing Tool Promoted"})`);
+    console.log(
+      `• Target Shelf File:   shelf/${result.shelfFile} (${result.isNewTool ? "New Tool Created" : "Existing Tool Promoted"})`,
+    );
     console.log(`• Featured Flag:       true (Tagged as: "${result.item.sponsorTier}")`);
     console.log(`• MCP AI Telemetry:    Injected into npx devshelf-mcp server recommendations`);
     console.log(`• Wall of Patrons:     Ranked in data/sponsors.json & site/sponsors.html`);
-    console.log(`• Dry-Run Mode:        ${result.dryRun ? "YES (No files modified)" : "NO (Files synchronized)"}`);
+    console.log(
+      `• Dry-Run Mode:        ${result.dryRun ? "YES (No files modified)" : "NO (Files synchronized)"}`,
+    );
     console.log("\nEmbeddable README Badge Snippet:");
     const handle = (result.patron.github as string) || "verified";
-    console.log(`[![DevShelf Sponsor](https://devshelf.ritualdev.in/api/v1/badges/${encodeURIComponent(handle)}.svg)](https://devshelf.ritualdev.in/sponsors.html)`);
+    console.log(
+      `[![DevShelf Sponsor](https://devshelf.ritualdev.in/api/v1/badges/${encodeURIComponent(handle)}.svg)](https://devshelf.ritualdev.in/sponsors.html)`,
+    );
     console.log("=======================================================\n");
   } catch (err) {
     console.error("❌ Activation failed:", err);

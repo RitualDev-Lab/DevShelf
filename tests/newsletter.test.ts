@@ -69,7 +69,7 @@ describe("DevShelf Weekly Newsletter & Recurring Media Engine Suite", async () =
 
       assert.ok(
         Array.isArray(issue.featuredTools) && issue.featuredTools.length >= 3,
-        `Expected at least 3 featured tools in issue #${issue.issueNumber}`
+        `Expected at least 3 featured tools in issue #${issue.issueNumber}`,
       );
 
       for (const tool of issue.featuredTools) {
@@ -83,7 +83,11 @@ describe("DevShelf Weekly Newsletter & Recurring Media Engine Suite", async () =
       if (issue.sponsor) {
         assert.ok(issue.sponsor.name?.trim(), "Missing sponsor name");
         assert.ok(issue.sponsor.tagline?.trim(), "Missing sponsor tagline");
-        assert.match(issue.sponsor.url, /^https?:\/\//i, `Sponsor URL must be valid: ${issue.sponsor.url}`);
+        assert.match(
+          issue.sponsor.url,
+          /^https?:\/\//i,
+          `Sponsor URL must be valid: ${issue.sponsor.url}`,
+        );
         assert.ok(issue.sponsor.perk?.trim(), "Missing sponsor perk");
         assert.ok(issue.sponsor.badge?.trim(), "Missing sponsor badge");
       }
@@ -111,11 +115,14 @@ describe("DevShelf Weekly Newsletter & Recurring Media Engine Suite", async () =
       assert.ok(xml.includes('<rss version="2.0"'), "Missing RSS 2.0 root element");
       assert.ok(xml.includes("<channel>"), "Missing channel container");
       assert.ok(
-        xml.includes("<title>DevShelf Weekly - Free Developer Tools, APIs &amp; Open Source</title>") ||
-          xml.includes("DevShelf Weekly")
+        xml.includes(
+          "<title>DevShelf Weekly - Free Developer Tools, APIs &amp; Open Source</title>",
+        ) || xml.includes("DevShelf Weekly"),
       );
       assert.ok(xml.includes("<link>https://devshelf.ritualdev.in/newsletter.html</link>"));
-      assert.ok(xml.includes("<language>en-us</language>") || xml.includes("<language>en</language>"));
+      assert.ok(
+        xml.includes("<language>en-us</language>") || xml.includes("<language>en</language>"),
+      );
 
       // Check item elements
       const items = xml.split("<item>");
@@ -132,7 +139,11 @@ describe("DevShelf Weekly Newsletter & Recurring Media Engine Suite", async () =
         const pubDateMatch = itemChunk.match(/<pubDate>(.*?)<\/pubDate>/);
         assert.ok(pubDateMatch && pubDateMatch[1], "Missing pubDate string");
         const parsedDate = new Date(pubDateMatch[1]);
-        assert.strictEqual(isNaN(parsedDate.getTime()), false, `Invalid date string: ${pubDateMatch[1]}`);
+        assert.strictEqual(
+          isNaN(parsedDate.getTime()),
+          false,
+          `Invalid date string: ${pubDateMatch[1]}`,
+        );
       }
     }
   });
@@ -140,8 +151,16 @@ describe("DevShelf Weekly Newsletter & Recurring Media Engine Suite", async () =
   test("site/newsletter.html is compiled with interactive subscription capture and archive", async () => {
     const html = await fs.readFile(NEWSLETTER_HTML_PATH, "utf8");
     assert.ok(html.includes("DevShelf Weekly"), "Missing publication title");
-    assert.ok(html.includes("2,840") || html.includes("2,800+"), "Missing active subscriber metric");
-    assert.ok(html.includes("action=\"https://buttondown.com/api/emails/embed-subscribe/devshelf\"") || html.includes("action=\"https://buttondown.email/api/emails/embed-subscribe/devshelf\"") || html.includes("id=\"newsletter-form\""), "Missing email subscription form");
+    assert.ok(
+      html.includes("2,840") || html.includes("2,800+"),
+      "Missing active subscriber metric",
+    );
+    assert.ok(
+      html.includes('action="https://buttondown.com/api/emails/embed-subscribe/devshelf"') ||
+        html.includes('action="https://buttondown.email/api/emails/embed-subscribe/devshelf"') ||
+        html.includes('id="newsletter-form"'),
+      "Missing email subscription form",
+    );
     assert.ok(html.includes("feed.xml"), "Missing RSS feed link");
     assert.ok(html.includes("RowSafe"), "Missing featured tool RowSafe");
     assert.ok(html.includes("Neon"), "Missing sponsor Neon");
@@ -174,8 +193,14 @@ describe("DevShelf Weekly Newsletter & Recurring Media Engine Suite", async () =
     assert.ok(html.includes("$199"), "Missing $199 price on sponsors page");
     assert.ok(html.includes("Newsletter Spotlight"), "Missing Newsletter Spotlight card");
     assert.ok(html.includes("$99"), "Missing $99 price on sponsors page");
-    assert.ok(html.includes("selectPackage('categoryTakeover', 199)"), "Missing categoryTakeover button action");
-    assert.ok(html.includes("selectPackage('newsletterSpotlight', 99)"), "Missing newsletterSpotlight button action");
+    assert.ok(
+      html.includes("selectPackage('categoryTakeover', 199)"),
+      "Missing categoryTakeover button action",
+    );
+    assert.ok(
+      html.includes("selectPackage('newsletterSpotlight', 99)"),
+      "Missing newsletterSpotlight button action",
+    );
     assert.ok(html.includes("newsletter.html"), "Missing link to newsletter");
   });
 
@@ -217,7 +242,13 @@ describe("DevShelf Weekly Newsletter & Recurring Media Engine Suite", async () =
 
     // Test MCP tools registration in bin/mcp.js
     const mcpRaw = await fs.readFile(path.join(ROOT, "bin", "mcp.js"), "utf8");
-    assert.ok(mcpRaw.includes('"get_newsletter"'), "get_newsletter tool not declared in TOOLS array");
-    assert.ok(mcpRaw.includes('name === "get_newsletter"'), "get_newsletter handler missing in handleToolCall");
+    assert.ok(
+      mcpRaw.includes('"get_newsletter"'),
+      "get_newsletter tool not declared in TOOLS array",
+    );
+    assert.ok(
+      mcpRaw.includes('name === "get_newsletter"'),
+      "get_newsletter handler missing in handleToolCall",
+    );
   });
 });

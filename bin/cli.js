@@ -806,8 +806,8 @@ async function main() {
             allIssues: nlData.issues,
           },
           null,
-          2
-        )
+          2,
+        ),
       );
       return;
     }
@@ -821,7 +821,7 @@ async function main() {
 
     if (latest.sponsor) {
       console.log(
-        `  ${c.amber}⚡ Issue Sponsor: ${c.bold}${latest.sponsor.name}${c.reset} ${c.gray}— ${latest.sponsor.tagline}${c.reset}`
+        `  ${c.amber}⚡ Issue Sponsor: ${c.bold}${latest.sponsor.name}${c.reset} ${c.gray}— ${latest.sponsor.tagline}${c.reset}`,
       );
       console.log(`     Perk: ${latest.sponsor.perk}`);
       console.log(`     URL:  ${c.underline}${c.blue}${latest.sponsor.url}${c.reset}\n`);
@@ -831,7 +831,7 @@ async function main() {
     (latest.featuredTools || []).slice(0, 5).forEach((tool, idx) => {
       const badge = tool.badge ? ` ${c.cyan}[${tool.badge}]${c.reset}` : "";
       console.log(
-        `   ${idx + 1}. ${c.bold}${tool.name}${c.reset}${badge} ${c.gray}(${tool.category})${c.reset}`
+        `   ${idx + 1}. ${c.bold}${tool.name}${c.reset}${badge} ${c.gray}(${tool.category})${c.reset}`,
       );
       console.log(`      ${tool.description}`);
       console.log(`      ${c.underline}${c.blue}${tool.url}${c.reset}`);
@@ -840,14 +840,14 @@ async function main() {
 
     if (latest.perkOfTheWeek) {
       console.log(
-        `  🎁 ${c.green}${c.bold}Perk of the Week:${c.reset} ${latest.perkOfTheWeek.title}`
+        `  🎁 ${c.green}${c.bold}Perk of the Week:${c.reset} ${latest.perkOfTheWeek.title}`,
       );
       console.log(`     ${latest.perkOfTheWeek.description}`);
       console.log(`     ${c.underline}${c.blue}${latest.perkOfTheWeek.url}${c.reset}\n`);
     }
 
     console.log(
-      `  ${c.gray}Active Subscribers: ${c.bold}${nlData.stats?.activeSubscribers?.toLocaleString() || "2,800+"}${c.reset} engineers`
+      `  ${c.gray}Active Subscribers: ${c.bold}${nlData.stats?.activeSubscribers?.toLocaleString() || "2,800+"}${c.reset} engineers`,
     );
     console.log(`  📡 W3C RSS Feed:    ${c.underline}${c.blue}${nlData.feedUrl}${c.reset}`);
     console.log(`  🌐 Web Archive:     ${c.underline}${c.blue}${nlData.website}${c.reset}\n`);

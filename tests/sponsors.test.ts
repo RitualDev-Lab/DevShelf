@@ -61,7 +61,9 @@ function generateDigitalInvoice(payload: InvoicePayload) {
     shippingCost: 0,
     billedTo: payload.billingCompany || payload.name || "Anonymous Patron",
     taxId: payload.billingTaxId || "Exempt (Digital Open-Source Grant)",
-    toolPlacement: payload.toolName ? `${payload.toolName} (${payload.toolCategory || "general"})` : undefined,
+    toolPlacement: payload.toolName
+      ? `${payload.toolName} (${payload.toolCategory || "general"})`
+      : undefined,
   };
 }
 

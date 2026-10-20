@@ -80,7 +80,9 @@ describe("DevShelf Affiliate Engine & Partner Registry Suite", async () => {
     const html = generateGoRedirectHtml(testPartner);
 
     assert.ok(
-      html.includes('<meta http-equiv="refresh" content="0; url=https://testcloud.io/?ref=devshelf">'),
+      html.includes(
+        '<meta http-equiv="refresh" content="0; url=https://testcloud.io/?ref=devshelf">',
+      ),
       "Must contain meta refresh tag pointing to destination URL",
     );
     assert.ok(
@@ -122,10 +124,7 @@ describe("DevShelf Affiliate Engine & Partner Registry Suite", async () => {
         content.includes('<meta name="robots" content="noindex, follow">'),
         `Missing noindex tag in ${partner.slug}.html`,
       );
-      assert.ok(
-        content.includes(partner.url),
-        `Missing destination link in ${partner.slug}.html`,
-      );
+      assert.ok(content.includes(partner.url), `Missing destination link in ${partner.slug}.html`);
     }
   });
 
@@ -154,7 +153,8 @@ describe("DevShelf Affiliate Engine & Partner Registry Suite", async () => {
         url: "https://vitest-demo.com/?aff=devshelf",
         slug: "vitest-demo-cloud",
         perk: "$50 Free Pipeline Credits",
-        description: "Run fast automated unit and integration tests with generous cloud concurrency.",
+        description:
+          "Run fast automated unit and integration tests with generous cloud concurrency.",
         cta: "Claim Test Pipeline →",
         badge: "⚡ $50 Free",
         skipBuild: true,
@@ -167,7 +167,7 @@ describe("DevShelf Affiliate Engine & Partner Registry Suite", async () => {
       const redirectPath = path.join(GO_DIR, "vitest-demo-cloud.html");
       const redirectContent = await fs.readFile(redirectPath, "utf8");
       assert.ok(redirectContent.includes("https://vitest-demo.com/?aff=devshelf"));
-      assert.ok(redirectContent.includes("rel=\"noopener noreferrer sponsored\""));
+      assert.ok(redirectContent.includes('rel="noopener noreferrer sponsored"'));
 
       // Update the same partner
       const updated = await addOrUpdateAffiliate({

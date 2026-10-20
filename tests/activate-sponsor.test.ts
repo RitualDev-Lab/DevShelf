@@ -4,19 +4,13 @@ import { activateSponsor } from "../scripts/activate-sponsor.js";
 
 describe("DevShelf Self-Serve Sponsor Activation Engine (Phase 3)", () => {
   test("throws an error when name or url is missing", async () => {
-    await assert.rejects(
-      async () => {
-        await activateSponsor({ name: "", url: "https://example.com" });
-      },
-      /Missing required option: --name/,
-    );
+    await assert.rejects(async () => {
+      await activateSponsor({ name: "", url: "https://example.com" });
+    }, /Missing required option: --name/);
 
-    await assert.rejects(
-      async () => {
-        await activateSponsor({ name: "TestTool", url: "" });
-      },
-      /Missing required option: --url/,
-    );
+    await assert.rejects(async () => {
+      await activateSponsor({ name: "TestTool", url: "" });
+    }, /Missing required option: --url/);
   });
 
   test("dry-run activation of existing tool marks featured and updates tier", async () => {
