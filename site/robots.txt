@@ -53,3 +53,4 @@ User-agent: OAI-SearchBot
 Allow: /
 
 Sitemap: https://devshelf.ritualdev.in/sitemap.xml
+Sitemap: https://devshelf.ritualdev.in/feed.xml

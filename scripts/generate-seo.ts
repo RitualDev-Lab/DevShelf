@@ -115,6 +115,9 @@ async function generateSeo() {
   const today = new Date().toISOString().split("T")[0];
   const sitemapUrls: string[] = [
     `  <url>\n    <loc>${domain}/</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>`,
+    `  <url>\n    <loc>${domain}/newsletter.html</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.9</priority>\n  </url>`,
+    `  <url>\n    <loc>${domain}/sponsors.html</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.85</priority>\n  </url>`,
+    `  <url>\n    <loc>${domain}/status.html</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.8</priority>\n  </url>`,
   ];
 
   console.log(
@@ -1682,6 +1685,7 @@ User-agent: OAI-SearchBot
 Allow: /
 
 Sitemap: https://devshelf.ritualdev.in/sitemap.xml
+Sitemap: https://devshelf.ritualdev.in/feed.xml
 `;
   await fs.writeFile(path.join(siteDir, "robots.txt"), robotsTxt, "utf8");
   console.log("✅ Generated site/robots.txt welcoming AI crawlers and pointing to live sitemap.");

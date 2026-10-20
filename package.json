@@ -52,6 +52,7 @@
     "validate": "tsx scripts/validate-shelf.ts",
     "validate:pr": "tsx scripts/validate-pr.ts",
     "validate:links": "node scripts/validate-links.js",
+    "indexnow": "tsx scripts/submit-indexnow.ts",
     "ai:optimize": "tsx scripts/ai-optimize-pr.ts",
     "check:links": "tsx scripts/check-links.ts",
     "benchmark": "tsx scripts/benchmark-performance.ts",

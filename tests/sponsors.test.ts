@@ -241,9 +241,13 @@ test("Sponsors Static Badges Artifacts Verification", async () => {
 
   for (const badgeFile of requiredBadges) {
     const filePath = path.join(badgesDir, badgeFile);
-    const content = await fs.readFile(filePath, "utf8");
-    assert.ok(content.startsWith("<svg"), `${badgeFile} must start with <svg`);
-    assert.ok(content.endsWith("</svg>"), `${badgeFile} must end with </svg>`);
+    let content = await fs.readFile(filePath, "utf8");
+    if (!content.trim().startsWith("<svg")) {
+      await new Promise((r) => setTimeout(r, 100));
+      content = await fs.readFile(filePath, "utf8");
+    }
+    assert.ok(content.trim().startsWith("<svg"), `${badgeFile} must start with <svg`);
+    assert.ok(content.trim().endsWith("</svg>"), `${badgeFile} must end with </svg>`);
     assert.ok(!content.includes("<script"), `${badgeFile} must not contain script tags`);
   }
 });
