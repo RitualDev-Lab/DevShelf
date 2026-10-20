@@ -5,6 +5,8 @@ import test from "node:test";
 import {
   buildStaticBadges,
   generateCardBadgeSvg,
+  generateDirectoryBadgeSvg,
+  generateFeaturedCardSvg,
   generatePillBadgeSvg,
 } from "../scripts/generate-badges.ts";
 
@@ -19,6 +21,25 @@ test("Badge Generator - Pill Badge Output", () => {
 
   const bronzePill = generatePillBadgeSvg({ tier: "bronze" });
   assert.ok(bronzePill.includes("⚡ Supporter"), "Should include Supporter tier text");
+});
+
+test("Badge Generator - Directory README Badges", () => {
+  const feat = generateDirectoryBadgeSvg("featured");
+  assert.ok(feat.includes("⭐ Featured"), "Should include Featured label");
+  assert.ok(feat.includes("📚 DevShelf"), "Should include DevShelf logo text");
+
+  const free = generateDirectoryBadgeSvg("verified-free");
+  assert.ok(free.includes("✓ Verified Free"), "Should include Verified Free label");
+
+  const zp = generateDirectoryBadgeSvg("zero-paywall");
+  assert.ok(zp.includes("💎 Zero Paywall"), "Should include Zero Paywall label");
+
+  const alt = generateDirectoryBadgeSvg("free-alternative", "Postman");
+  assert.ok(alt.includes("⚡ Free Postman Alt"), "Should include custom alternative label");
+
+  const card = generateFeaturedCardSvg("Bruno API Client");
+  assert.ok(card.includes("Bruno API Client"), "Should include custom tool name");
+  assert.ok(card.includes("devshelf.ritualdev.in"), "Should include backlink text");
 });
 
 test("Badge Generator - XML Sanitization", () => {
@@ -51,6 +72,11 @@ test("Badge Generator - Static Badges File Generation", async () => {
     "bronze.svg",
     "default.svg",
     "verified.svg",
+    "featured.svg",
+    "verified-free.svg",
+    "zero-paywall.svg",
+    "free-alternative.svg",
+    "featured-card.svg",
   ];
   for (const f of expectedFiles) {
     const stat = await fs.stat(path.join(badgesDir, f));

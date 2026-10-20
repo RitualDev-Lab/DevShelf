@@ -143,6 +143,89 @@ export function generateCardBadgeSvg(options: BadgeOptions): string {
 </svg>`;
 }
 
+export function generateDirectoryBadgeSvg(
+  type: "featured" | "verified-free" | "zero-paywall" | "free-alternative" = "featured",
+  customText?: string,
+): string {
+  let rightBg = "#7928ca";
+  let rightText = "⭐ Featured";
+  let borderColor = "rgba(168, 85, 247, 0.4)";
+  let totalWidth = 168;
+  const leftWidth = 78;
+  let rightWidth = 90;
+  let textX = 123;
+
+  if (type === "verified-free") {
+    rightBg = "#059669";
+    rightText = "✓ Verified Free";
+    borderColor = "rgba(16, 185, 129, 0.4)";
+    totalWidth = 186;
+    rightWidth = 108;
+    textX = 132;
+  } else if (type === "zero-paywall") {
+    rightBg = "#0284c7";
+    rightText = "💎 Zero Paywall";
+    borderColor = "rgba(14, 165, 233, 0.4)";
+    totalWidth = 194;
+    rightWidth = 116;
+    textX = 136;
+  } else if (type === "free-alternative") {
+    rightBg = "#d97706";
+    rightText = customText ? `⚡ Free ${customText} Alt` : "⚡ Free Alternative";
+    borderColor = "rgba(245, 158, 11, 0.4)";
+    const calcWidth = Math.max(120, rightText.length * 8 + 18);
+    rightWidth = calcWidth;
+    totalWidth = leftWidth + rightWidth;
+    textX = leftWidth + rightWidth / 2;
+  }
+
+  const safeLabel = escapeXml(rightText);
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${totalWidth}" height="24" viewBox="0 0 ${totalWidth} 24" role="img" aria-label="DevShelf: ${safeLabel}">
+  <defs>
+    <clipPath id="devshelf-${type}-clip">
+      <rect width="${totalWidth}" height="24" rx="5" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#devshelf-${type}-clip)">
+    <rect width="${leftWidth}" height="24" fill="#0f172a"/>
+    <rect x="${leftWidth}" width="${rightWidth}" height="24" fill="${rightBg}"/>
+    <rect width="${totalWidth}" height="24" fill="none" stroke="${borderColor}" stroke-width="1.5"/>
+  </g>
+  <g fill="#fff" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="11" font-weight="700">
+    <text x="39" y="16" fill="#e2e8f0">📚 DevShelf</text>
+    <text x="${textX}" y="16" fill="#ffffff">${safeLabel}</text>
+  </g>
+</svg>`;
+}
+
+export function generateFeaturedCardSvg(toolName = "Featured Open Source Project"): string {
+  const safeName = escapeXml(toolName);
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="380" height="92" viewBox="0 0 380 92" fill="none" role="img" aria-label="DevShelf Verified: ${safeName}">
+  <defs>
+    <linearGradient id="feat-card-bg" x1="0" y1="0" x2="380" y2="92" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#090d16"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="feat-card-border" x1="0" y1="0" x2="380" y2="92" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#a855f7" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#3b82f6" stop-opacity="0.5"/>
+    </linearGradient>
+  </defs>
+  <rect width="380" height="92" rx="14" fill="url(#feat-card-bg)"/>
+  <rect x="0.5" y="0.5" width="379" height="91" rx="13.5" stroke="url(#feat-card-border)"/>
+  <circle cx="46" cy="46" r="23" fill="#0f172a" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="46" y="53" font-size="20" text-anchor="middle">⭐</text>
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif">
+    <text x="82" y="34" fill="#ffffff" font-size="14" font-weight="700">${safeName}</text>
+    <text x="82" y="53" fill="#c084fc" font-size="11" font-weight="600">✓ Verified Free Tier • Zero-Paywall Index</text>
+    <text x="82" y="73" fill="#64748b" font-family="monospace" font-size="10">devshelf.ritualdev.in</text>
+  </g>
+  <rect x="290" y="16" width="74" height="20" rx="10" fill="#581c87" stroke="#a855f7" stroke-width="1"/>
+  <text x="327" y="30" fill="#f3e8ff" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="10" font-weight="700" text-anchor="middle">Featured</text>
+</svg>`;
+}
+
 export async function buildStaticBadges() {
   await fs.mkdir(BADGES_DIR, { recursive: true });
 
@@ -159,6 +242,33 @@ export async function buildStaticBadges() {
     await fs.writeFile(path.join(BADGES_DIR, `${t}.svg`), pill, "utf8");
     await fs.writeFile(path.join(BADGES_DIR, `${t}-card.svg`), card, "utf8");
   }
+
+  // Directory repository badges (for tools, libraries, and READMEs)
+  await fs.writeFile(
+    path.join(BADGES_DIR, "featured.svg"),
+    generateDirectoryBadgeSvg("featured"),
+    "utf8",
+  );
+  await fs.writeFile(
+    path.join(BADGES_DIR, "verified-free.svg"),
+    generateDirectoryBadgeSvg("verified-free"),
+    "utf8",
+  );
+  await fs.writeFile(
+    path.join(BADGES_DIR, "zero-paywall.svg"),
+    generateDirectoryBadgeSvg("zero-paywall"),
+    "utf8",
+  );
+  await fs.writeFile(
+    path.join(BADGES_DIR, "free-alternative.svg"),
+    generateDirectoryBadgeSvg("free-alternative"),
+    "utf8",
+  );
+  await fs.writeFile(
+    path.join(BADGES_DIR, "featured-card.svg"),
+    generateFeaturedCardSvg(),
+    "utf8",
+  );
 
   // Default badges
   const defaultPill = generatePillBadgeSvg({ tier: "bronze" });

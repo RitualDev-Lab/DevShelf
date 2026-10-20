@@ -174,35 +174,52 @@
       
       
       
-      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div class="p-5 rounded-xl bg-slate-950/70 border border-slate-800">
-          <div class="flex items-center justify-between mb-2">
-            <div class="flex items-center space-x-2">
-              <span class="text-xs font-bold text-purple-300">🏷️ DevShelf Directory Badge</span>
-            </div>
-            <button onclick="navigator.clipboard.writeText('[![Featured on DevShelf](https://img.shields.io/badge/DevShelf-Verified_Free-7928CA?style=flat-square&logo=googlechrome&logoColor=white)](https://devshelf.ritualdev.in/)'); alert('Copied DevShelf badge Markdown!');" class="px-2.5 py-1 text-xs font-bold rounded bg-purple-600 hover:bg-purple-500 text-white transition">
-              Copy
-            </button>
+      <div class="mt-8 p-6 rounded-2xl bg-gradient-to-b from-slate-950 to-slate-900 border border-slate-800">
+        <div class="flex items-center justify-between mb-4 flex-wrap gap-2">
+          <div class="flex items-center space-x-2">
+            <span class="text-base">🏷️</span>
+            <h3 class="text-sm font-bold text-white font-mono uppercase tracking-wider">Embed DevShelf Badge in Your GitHub README</h3>
           </div>
-          <div class="mb-2">
-            <img src="https://img.shields.io/badge/DevShelf-Verified_Free-7928CA?style=flat-square&logo=googlechrome&logoColor=white" alt="Featured on DevShelf" class="h-5" loading="lazy" decoding="async">
-          </div>
-          <input type="text" readonly value="[![Featured on DevShelf](https://img.shields.io/badge/DevShelf-Verified_Free-7928CA?style=flat-square&logo=googlechrome&logoColor=white)](https://devshelf.ritualdev.in/)" class="w-full text-xs font-mono bg-slate-900 px-3 py-1.5 rounded text-emerald-300 border border-slate-800 select-all">
+          <a href="../badges.html?tool=dateparser-kotlin&name=DateParser%20Kotlin" class="text-xs font-mono font-bold text-purple-400 hover:text-purple-300 transition">
+            🎨 Open Badge Studio &amp; HTML Embeds →
+          </a>
         </div>
-
-        <div class="p-5 rounded-xl bg-slate-950/70 border border-purple-900/40">
-          <div class="flex items-center justify-between mb-2">
-            <div class="flex items-center space-x-2">
-              <span class="text-xs font-bold text-cyan-300">🛡️ Secured by AgentShield Badge</span>
+        <p class="text-xs text-slate-400 mb-4 leading-relaxed">
+          Showcase to developers that <strong>DateParser Kotlin</strong> is verified zero-paywall with no credit card traps or hidden limits. Paste directly into your project's <code class="text-purple-300 font-mono">README.md</code>:
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <!-- Featured Badge -->
+          <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-purple-300 font-mono">Style 1: Featured on DevShelf</span>
+              <button onclick="navigator.clipboard.writeText('[![Featured on DevShelf](https://devshelf.ritualdev.in/api/v1/badges/featured.svg)](https://devshelf.ritualdev.in/tools/dateparser-kotlin.html)'); this.innerText = '✓ Copied!'; setTimeout(() => this.innerText = 'Copy', 2000);" class="px-2.5 py-1 text-xs font-bold font-mono rounded bg-purple-600 hover:bg-purple-500 text-white transition">
+                Copy
+              </button>
             </div>
-            <button onclick="navigator.clipboard.writeText('[![Secured by AgentShield](https://img.shields.io/badge/Secured%20by-AgentShield%20Zero--Leak-8b5cf6?logo=shield&logoColor=white&style=flat-square)](https://agentshield.ritualdev.in/)'); alert('Copied AgentShield badge Markdown!');" class="px-2.5 py-1 text-xs font-bold rounded bg-cyan-600 hover:bg-cyan-500 text-white transition">
-              Copy
-            </button>
+            <div class="mb-2">
+              <a href="https://devshelf.ritualdev.in/tools/dateparser-kotlin.html" target="_blank" rel="noopener noreferrer">
+                <img src="../api/v1/badges/featured.svg" alt="Featured on DevShelf" class="h-6 inline-block" loading="lazy">
+              </a>
+            </div>
+            <input type="text" readonly value="[![Featured on DevShelf](https://devshelf.ritualdev.in/api/v1/badges/featured.svg)](https://devshelf.ritualdev.in/tools/dateparser-kotlin.html)" class="w-full text-xs font-mono bg-slate-900 px-3 py-1.5 rounded text-emerald-300 border border-slate-800 select-all">
           </div>
-          <div class="mb-2">
-            <img src="https://img.shields.io/badge/Secured%20by-AgentShield%20Zero--Leak-8b5cf6?logo=shield&logoColor=white&style=flat-square" alt="Secured by AgentShield" class="h-5" loading="lazy" decoding="async">
+
+          <!-- Verified Free Badge -->
+          <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-emerald-300 font-mono">Style 2: Verified Free Tier</span>
+              <button onclick="navigator.clipboard.writeText('[![DevShelf Verified Free](https://devshelf.ritualdev.in/api/v1/badges/verified-free.svg)](https://devshelf.ritualdev.in/tools/dateparser-kotlin.html)'); this.innerText = '✓ Copied!'; setTimeout(() => this.innerText = 'Copy', 2000);" class="px-2.5 py-1 text-xs font-bold font-mono rounded bg-emerald-600 hover:bg-emerald-500 text-white transition">
+                Copy
+              </button>
+            </div>
+            <div class="mb-2">
+              <a href="https://devshelf.ritualdev.in/tools/dateparser-kotlin.html" target="_blank" rel="noopener noreferrer">
+                <img src="../api/v1/badges/verified-free.svg" alt="DevShelf Verified Free" class="h-6 inline-block" loading="lazy">
+              </a>
+            </div>
+            <input type="text" readonly value="[![DevShelf Verified Free](https://devshelf.ritualdev.in/api/v1/badges/verified-free.svg)](https://devshelf.ritualdev.in/tools/dateparser-kotlin.html)" class="w-full text-xs font-mono bg-slate-900 px-3 py-1.5 rounded text-emerald-300 border border-slate-800 select-all">
           </div>
-          <input type="text" readonly value="[![Secured by AgentShield](https://img.shields.io/badge/Secured%20by-AgentShield%20Zero--Leak-8b5cf6?logo=shield&logoColor=white&style=flat-square)](https://agentshield.ritualdev.in/)" class="w-full text-xs font-mono bg-slate-900 px-3 py-1.5 rounded text-cyan-300 border border-slate-800 select-all">
+          
         </div>
       </div>
       
