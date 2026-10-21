@@ -175,11 +175,11 @@ describe("DevShelf Weekly Newsletter & Recurring Media Engine Suite", async () =
     const { categoryTakeover, newsletterSpotlight } = data.sponsorPackages;
 
     assert.ok(categoryTakeover, "Missing categoryTakeover package");
-    assert.strictEqual(categoryTakeover.priceUSD, 79);
+    assert.strictEqual(categoryTakeover.priceUSD, 39);
     assert.strictEqual(categoryTakeover.billing, "monthly");
 
     assert.ok(newsletterSpotlight, "Missing newsletterSpotlight package");
-    assert.strictEqual(newsletterSpotlight.priceUSD, 39);
+    assert.strictEqual(newsletterSpotlight.priceUSD, 19);
     assert.strictEqual(newsletterSpotlight.billing, "per_issue");
 
     assert.ok(data.categorySponsors, "Missing categorySponsors registry");
@@ -190,15 +190,15 @@ describe("DevShelf Weekly Newsletter & Recurring Media Engine Suite", async () =
   test("site/sponsors.html contains Category Takeover and Newsletter Spotlight tiers", async () => {
     const html = await fs.readFile(SPONSORS_HTML_PATH, "utf8");
     assert.ok(html.includes("Category Takeover"), "Missing Category Takeover card");
-    assert.ok(html.includes("$79"), "Missing $79 price on sponsors page");
-    assert.ok(html.includes("Newsletter Spotlight"), "Missing Newsletter Spotlight card");
     assert.ok(html.includes("$39"), "Missing $39 price on sponsors page");
+    assert.ok(html.includes("Newsletter Spotlight"), "Missing Newsletter Spotlight card");
+    assert.ok(html.includes("$19"), "Missing $19 price on sponsors page");
     assert.ok(
-      html.includes("selectPackage('categoryTakeover', 79)"),
+      html.includes("selectPackage('categoryTakeover', 39)"),
       "Missing categoryTakeover button action",
     );
     assert.ok(
-      html.includes("selectPackage('newsletterSpotlight', 39)"),
+      html.includes("selectPackage('newsletterSpotlight', 19)"),
       "Missing newsletterSpotlight button action",
     );
     assert.ok(html.includes("newsletter.html"), "Missing link to newsletter");

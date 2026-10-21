@@ -59,17 +59,17 @@ const TIER_MAP: Record<
   }
 > = {
   starter: {
-    defaultUSD: 29,
+    defaultUSD: 9,
     patronTier: "silver",
     sponsorTierLabel: "Verified Sponsor ★ (Starter)",
   },
   mcpPro: {
-    defaultUSD: 99,
+    defaultUSD: 49,
     patronTier: "gold",
     sponsorTierLabel: "Verified Sponsor ★ (MCP Pro)",
   },
   enterprise: {
-    defaultUSD: 199,
+    defaultUSD: 79,
     patronTier: "enterprise",
     sponsorTierLabel: "Verified Sponsor ★ (Enterprise Partner)",
   },

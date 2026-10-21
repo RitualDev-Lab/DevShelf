@@ -320,14 +320,8 @@ export async function buildStaticBadges() {
     console.warn("Could not read data/sponsors.json, using defaults:", err);
   }
 
-  // Sample handle badges for default sponsors & patrons
+  // Badges for verified sponsors & patrons
   const samplePatrons = [
-    { handle: "cloudsec", name: "Sarah M. (@cloudsec)", tier: "gold" as const },
-    { handle: "alexk", name: "Alex K. (SuperFile Maintainer)", tier: "gold" as const },
-    { handle: "maboroshi", name: "Maboroshi / Terminal Tools", tier: "silver" as const },
-    { handle: "davidchen", name: "David Chen", tier: "silver" as const },
-    { handle: "eigenwise", name: "Eigenwise", tier: "silver" as const },
-    { handle: "ghost", name: "Community Backer", tier: "bronze" as const },
     ...patronsList,
   ];
 

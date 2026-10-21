@@ -737,36 +737,41 @@ async function main() {
     );
 
     const stats = sponsorsData.stats || {};
-    const totalPatrons = stats.totalPatrons || sponsorsData.patrons.length;
-    const poolUSD = stats.totalContributedUSD || 600;
-    const poolINR = stats.totalContributedINR || 50200;
+    const totalPatrons = stats.totalPatrons ?? (sponsorsData.patrons ? sponsorsData.patrons.length : 0);
+    const poolUSD = stats.totalContributedUSD ?? 0;
+    const poolINR = stats.totalContributedINR ?? 0;
 
     console.log(
       `  Total Patrons: ${c.bold}${c.purple}${totalPatrons}${c.reset}  │  Ledger Pool: ${c.bold}${c.green}$${poolUSD} USD${c.reset} (~₹${poolINR.toLocaleString()})\n`,
     );
 
-    sponsorsData.patrons.forEach((p, idx) => {
-      const rank = p.rank || idx + 1;
-      let medal = `#${rank}`;
-      if (rank === 1) medal = "🥇 #1";
-      else if (rank === 2) medal = "🥈 #2";
-      else if (rank === 3) medal = "🥉 #3";
+    if (!sponsorsData.patrons || sponsorsData.patrons.length === 0) {
+      console.log(`  ${c.purple}🏆 Founding Sponsor Slot #1 is OPEN!${c.reset}`);
+      console.log(`  ${c.dim}Radical transparency: No sponsors yet. Be the very first backer to claim the #1 spot on DevShelf.${c.reset}\n`);
+    } else {
+      sponsorsData.patrons.forEach((p, idx) => {
+        const rank = p.rank || idx + 1;
+        let medal = `#${rank}`;
+        if (rank === 1) medal = "🥇 #1";
+        else if (rank === 2) medal = "🥈 #2";
+        else if (rank === 3) medal = "🥉 #3";
 
-      let tierTag = `${c.purple}⚡ Supporter${c.reset}`;
-      if (p.tier === "gold") tierTag = `${c.amber}👑 Gold Patron${c.reset}`;
-      else if (p.tier === "silver") tierTag = `${c.cyan}🛡️ Silver Backer${c.reset}`;
+        let tierTag = `${c.purple}⚡ Supporter${c.reset}`;
+        if (p.tier === "gold") tierTag = `${c.amber}👑 Gold Patron${c.reset}`;
+        else if (p.tier === "silver") tierTag = `${c.cyan}🛡️ Silver Backer${c.reset}`;
 
-      const handleStr = p.github ? ` (@${p.github})` : "";
-      const amtStr = `$${p.amountUSD} USD`;
+        const handleStr = p.github ? ` (@${p.github})` : "";
+        const amtStr = `$${p.amountUSD} USD`;
 
-      console.log(
-        `  ${c.bold}${medal.padEnd(6)}${c.reset} ${c.bold}${p.name}${c.reset}${c.cyan}${handleStr}${c.reset}  ${tierTag}  ${c.green}${amtStr}${c.reset}`,
-      );
-      if (p.comment) {
-        console.log(`         ${c.dim}"${p.comment}"${c.reset}`);
-      }
-      console.log();
-    });
+        console.log(
+          `  ${c.bold}${medal.padEnd(6)}${c.reset} ${c.bold}${p.name}${c.reset}${c.cyan}${handleStr}${c.reset}  ${tierTag}  ${c.green}${amtStr}${c.reset}`,
+        );
+        if (p.comment) {
+          console.log(`         ${c.dim}"${p.comment}"${c.reset}`);
+        }
+        console.log();
+      });
+    }
 
     console.log(
       `  ${c.dim}ℹ️  Editorial Independence: Sponsoring does not bypass DevShelf zero-paywall audits or organic ranking.${c.reset}\n`,

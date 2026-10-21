@@ -90,33 +90,37 @@
   </div>
 
   <!-- Navigation Bar -->
-  <header class="border-b border-slate-800 bg-slate-950/95 backdrop-blur-xl sticky top-0 z-30">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-3">
+  <header class="border-b border-slate-800 bg-slate-950/95 backdrop-blur-xl sticky top-0 z-40 w-full">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-2 sm:gap-4">
       <!-- Brand Logo -->
-      <div class="flex items-center space-x-3 shrink-0">
+      <div class="flex items-center gap-2.5 shrink-0">
         <span class="text-2xl">📚</span>
         <a href="index.html" class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent hover:opacity-90 transition">DevShelf</a>
-        <span class="hidden sm:inline-block px-2.5 py-0.5 text-[10px] font-mono font-bold rounded-full bg-pink-900/50 text-pink-200 border border-pink-500/40 flex items-center gap-1">
-          <span class="pulse-heart text-xs">💖</span> Sponsors &amp; Patrons
+        <span class="hidden md:inline-flex items-center gap-1 px-2.5 py-0.5 text-[10px] font-mono font-bold rounded-full bg-pink-900/40 text-pink-200 border border-pink-500/30">
+          <span class="pulse-heart text-xs">💖</span> Sponsors
         </span>
       </div>
 
-      <!-- Links -->
-      <nav class="hidden md:flex items-center space-x-6 text-xs font-bold text-slate-200">
-        <a href="index.html" class="hover:text-purple-300 transition">← Back to Catalog</a>
-        <a href="index.html#spotlight" class="hover:text-purple-300 transition">🔥 Spotlight</a>
-        <a href="#sponsor-form" class="hover:text-pink-300 transition">💖 Make a Contribution</a>
-        <a href="#mcp-sponsors" class="hover:text-emerald-300 transition">⚡ Tool / MCP Sponsorship</a>
-        <a href="newsletter.html" class="hover:text-cyan-300 transition">📬 Newsletter</a>
-        <a href="#leaderboard" class="hover:text-amber-300 transition">🏆 Leaderboard</a>
-        <a href="#comments" class="hover:text-cyan-300 transition">💬 Wall of Love</a>
-        <a href="#faq" class="hover:text-slate-400 transition">❓ FAQ</a>
+      <!-- Desktop Clean Navigation -->
+      <nav class="hidden lg:flex items-center gap-5 text-xs font-bold text-slate-300">
+        <a href="index.html" class="hover:text-purple-300 transition whitespace-nowrap">← Catalog</a>
+        <a href="#mcp-sponsors" class="hover:text-emerald-300 transition whitespace-nowrap">⚡ Packages</a>
+        <a href="#sponsor-form" class="hover:text-pink-300 transition whitespace-nowrap">🚀 Intake Form</a>
+        <a href="newsletter.html" class="hover:text-cyan-300 transition whitespace-nowrap">📬 Newsletter</a>
+        <a href="#leaderboard" class="hover:text-amber-300 transition whitespace-nowrap">🌟 Community</a>
+        <a href="#faq" class="hover:text-slate-400 transition whitespace-nowrap">❓ FAQ</a>
       </nav>
 
-      <!-- Right Actions -->
-      <div class="flex items-center space-x-3">
-        <a href="https://github.com/RitualDev-Lab/DevShelf" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-1.5 px-3 py-1.5 text-xs font-bold rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 transition">
-          <span>⭐ Star DevShelf</span>
+      <!-- Right Actions & Mobile Quick Nav -->
+      <div class="flex items-center gap-2 shrink-0">
+        <a href="index.html" class="lg:hidden inline-flex items-center px-2.5 py-1 text-xs font-bold rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-300 transition">
+          ← Catalog
+        </a>
+        <a href="#sponsor-form" class="inline-flex items-center px-3 py-1.5 text-xs font-mono font-bold rounded-lg bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white transition shadow-sm">
+          <span>Book ($9+)</span>
+        </a>
+        <a href="https://github.com/RitualDev-Lab/DevShelf" target="_blank" rel="noreferrer" class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 transition">
+          <span>⭐ GitHub</span>
         </a>
       </div>
     </div>
@@ -142,20 +146,20 @@
       <!-- Key Metrics Counter -->
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 pt-6 border-t border-slate-800/80">
         <div class="p-3 bg-slate-900/60 rounded-xl border border-slate-800">
-          <div class="text-2xl font-extrabold text-purple-400">520+</div>
+          <div class="text-2xl font-extrabold text-purple-400">537</div>
           <div class="text-xs text-slate-400">Verified Free Tools</div>
         </div>
         <div class="p-3 bg-slate-900/60 rounded-xl border border-slate-800">
           <div class="text-2xl font-extrabold text-pink-400">100%</div>
-          <div class="text-xs text-slate-400">Community Supported</div>
+          <div class="text-xs text-slate-400">Zero-Paywall Audited</div>
         </div>
         <div class="p-3 bg-slate-900/60 rounded-xl border border-slate-800">
-          <div class="text-2xl font-extrabold text-cyan-400">₹10 / $1+</div>
-          <div class="text-xs text-slate-400">Custom Any-Amount</div>
+          <div class="text-2xl font-extrabold text-cyan-400">$9 / ₹750+</div>
+          <div class="text-xs text-slate-400">Indie-Friendly Tiers</div>
         </div>
         <div class="p-3 bg-slate-900/60 rounded-xl border border-slate-800">
-          <div class="text-2xl font-extrabold text-emerald-400">UPI &amp; Cards</div>
-          <div class="text-xs text-slate-400">Instant Worldwide Checkout</div>
+          <div class="text-2xl font-extrabold text-emerald-400">24 Hours</div>
+          <div class="text-xs text-slate-400">Editorial Review Guarantee</div>
         </div>
       </div>
     </div>
@@ -186,24 +190,24 @@
               Select or Enter Amount
             </label>
             <div class="grid grid-cols-2 sm:grid-cols-5 gap-2.5 mb-3">
-              <button type="button" class="amount-btn active p-2.5 rounded-xl border text-center transition bg-purple-950/60 border-purple-500/70 text-purple-200" data-usd="29" data-inr="2400">
-                <div class="text-base font-bold amount-label">$29</div>
-                <div class="text-[10px] text-slate-400 amount-sub">₹2,400 Starter</div>
+              <button type="button" class="amount-btn active p-2.5 rounded-xl border text-center transition bg-purple-950/60 border-purple-500/70 text-purple-200" data-usd="9" data-inr="750">
+                <div class="text-base font-bold amount-label">$9</div>
+                <div class="text-[10px] text-slate-400 amount-sub">₹750 Starter</div>
+              </button>
+              <button type="button" class="amount-btn p-2.5 rounded-xl border text-center transition bg-slate-950/80 border-slate-800 text-slate-300 hover:border-slate-700" data-usd="19" data-inr="1500">
+                <div class="text-base font-bold amount-label">$19</div>
+                <div class="text-[10px] text-slate-400 amount-sub">₹1,500 Digest</div>
               </button>
               <button type="button" class="amount-btn p-2.5 rounded-xl border text-center transition bg-slate-950/80 border-slate-800 text-slate-300 hover:border-slate-700" data-usd="39" data-inr="3200">
                 <div class="text-base font-bold amount-label">$39</div>
-                <div class="text-[10px] text-slate-400 amount-sub">₹3,200 Digest</div>
+                <div class="text-[10px] text-slate-400 amount-sub">₹3,200 Category</div>
               </button>
-              <button type="button" class="amount-btn p-2.5 rounded-xl border text-center transition bg-slate-950/80 border-slate-800 text-slate-300 hover:border-slate-700" data-usd="79" data-inr="6500">
+              <button type="button" class="amount-btn p-2.5 rounded-xl border text-center transition bg-slate-950/80 border-slate-800 text-slate-300 hover:border-slate-700" data-usd="49" data-inr="4100">
+                <div class="text-base font-bold amount-label">$49</div>
+                <div class="text-[10px] text-slate-400 amount-sub">₹4,100 MCP Pro</div>
+              </button>
+              <button type="button" class="amount-btn p-2.5 rounded-xl border text-center transition bg-slate-950/80 border-amber-500/40 text-amber-300 hover:border-amber-400" data-usd="79" data-inr="6500">
                 <div class="text-base font-bold amount-label">$79</div>
-                <div class="text-[10px] text-slate-400 amount-sub">₹6,500 Category</div>
-              </button>
-              <button type="button" class="amount-btn p-2.5 rounded-xl border text-center transition bg-slate-950/80 border-slate-800 text-slate-300 hover:border-slate-700" data-usd="99" data-inr="8200">
-                <div class="text-base font-bold amount-label">$99</div>
-                <div class="text-[10px] text-slate-400 amount-sub">₹8,200 MCP Pro</div>
-              </button>
-              <button type="button" class="amount-btn p-2.5 rounded-xl border text-center transition bg-slate-950/80 border-amber-500/40 text-amber-300 hover:border-amber-400" data-usd="199" data-inr="16500">
-                <div class="text-base font-bold amount-label">$199</div>
                 <div class="text-[10px] text-amber-300/80 amount-sub">👑 Enterprise</div>
               </button>
             </div>
@@ -211,8 +215,8 @@
             <!-- Custom Amount Direct Input -->
             <div class="relative">
               <span id="curr-prefix" class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 font-bold font-mono">$</span>
-              <input type="number" id="custom-amount-input" min="1" step="any" placeholder="Or enter custom amount (e.g. 29)" value="29" class="w-full pl-8 pr-4 py-2.5 bg-slate-950 rounded-xl border border-slate-700/80 text-white font-mono font-bold text-sm focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500">
-              <span class="absolute right-3.5 top-1/2 -translate-y-1/2 text-[11px] font-mono text-slate-500">Min: $1 / ₹10</span>
+              <input type="number" id="custom-amount-input" min="5" step="any" placeholder="Or enter custom amount (e.g. 9)" value="9" class="w-full pl-8 pr-4 py-2.5 bg-slate-950 rounded-xl border border-slate-700/80 text-white font-mono font-bold text-sm focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500">
+              <span class="absolute right-3.5 top-1/2 -translate-y-1/2 text-[11px] font-mono text-slate-500">Min: $5 / ₹400</span>
             </div>
           </div>
 
@@ -559,8 +563,8 @@
               </li>
             </ul>
           </div>
-          <button type="button" onclick="selectPackage('starter', 29)" class="w-full py-2.5 px-4 rounded-xl font-bold text-xs font-mono text-slate-200 hover:text-white bg-slate-800 hover:bg-slate-700 border border-slate-700 transition shadow-sm">
-            Book Starter ($29) →
+          <button type="button" onclick="selectPackage('starter', 9)" class="w-full py-2.5 px-4 rounded-xl font-bold text-xs font-mono text-slate-200 hover:text-white bg-slate-800 hover:bg-slate-700 border border-slate-700 transition shadow-sm">
+            Book Starter ($9) →
           </button>
         </div>
 
@@ -576,7 +580,7 @@
             <h3 class="text-lg font-bold text-white mb-1">Digest Spotlight</h3>
             <p class="text-xs text-purple-200/80 mb-4">Top sponsor slot on newsletter.html and syndicated across our W3C RSS developer feed.</p>
             <div class="flex items-baseline gap-1 mb-6">
-              <span class="text-3xl font-extrabold text-white font-mono">$39</span>
+              <span class="text-3xl font-extrabold text-white font-mono">$19</span>
               <span class="text-xs text-slate-400 font-mono">/ issue</span>
             </div>
             <ul class="space-y-2.5 text-xs text-slate-200 mb-6 font-sans">
@@ -602,8 +606,8 @@
               </li>
             </ul>
           </div>
-          <button type="button" onclick="selectPackage('newsletterSpotlight', 39)" class="w-full py-3 px-4 rounded-xl font-bold text-xs font-mono text-white bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-500 hover:to-purple-500 transition shadow-lg shadow-purple-600/30">
-            Book Digest ($39/issue) →
+          <button type="button" onclick="selectPackage('newsletterSpotlight', 19)" class="w-full py-3 px-4 rounded-xl font-bold text-xs font-mono text-white bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-500 hover:to-purple-500 transition shadow-lg shadow-purple-600/30">
+            Book Digest ($19/issue) →
           </button>
         </div>
 
@@ -616,7 +620,7 @@
             <h3 class="text-lg font-bold text-white mb-1">Category Spotlight</h3>
             <p class="text-xs text-slate-300 mb-4">Sticky banner across your chosen shelf category (AI Tools, CLI, Free Cloud, or APIs).</p>
             <div class="flex items-baseline gap-1 mb-6">
-              <span class="text-3xl font-extrabold text-cyan-400 font-mono">$79</span>
+              <span class="text-3xl font-extrabold text-cyan-400 font-mono">$39</span>
               <span class="text-xs text-slate-400 font-mono">/ month</span>
             </div>
             <ul class="space-y-2.5 text-xs text-slate-300 mb-6 font-sans">
@@ -642,8 +646,8 @@
               </li>
             </ul>
           </div>
-          <button type="button" onclick="selectPackage('categoryTakeover', 79)" class="w-full py-2.5 px-4 rounded-xl font-bold text-xs font-mono text-cyan-300 hover:text-white bg-slate-950 hover:bg-slate-900 border border-cyan-500/50 hover:border-cyan-400 transition shadow-sm">
-            Book Category ($79/mo) →
+          <button type="button" onclick="selectPackage('categoryTakeover', 39)" class="w-full py-2.5 px-4 rounded-xl font-bold text-xs font-mono text-cyan-300 hover:text-white bg-slate-950 hover:bg-slate-900 border border-cyan-500/50 hover:border-cyan-400 transition shadow-sm">
+            Book Category ($39/mo) →
           </button>
         </div>
 
@@ -656,7 +660,7 @@
             <h3 class="text-lg font-bold text-white mb-1">Enterprise Partner</h3>
             <p class="text-xs text-slate-400 mb-4">Top headline spotlight on homepage + priority AI agent context injection across Cursor &amp; Claude.</p>
             <div class="flex items-baseline gap-1 mb-6">
-              <span class="text-3xl font-extrabold text-amber-400 font-mono">$199</span>
+              <span class="text-3xl font-extrabold text-amber-400 font-mono">$79</span>
               <span class="text-xs text-slate-400 font-mono">/ month</span>
             </div>
             <ul class="space-y-2.5 text-xs text-slate-300 mb-6 font-sans">
@@ -682,8 +686,8 @@
               </li>
             </ul>
           </div>
-          <button type="button" onclick="selectPackage('enterprise', 199)" class="w-full py-2.5 px-4 rounded-xl font-bold text-xs font-mono text-amber-300 hover:text-white bg-slate-950 hover:bg-slate-900 border border-amber-500/50 hover:border-amber-400 transition shadow-sm">
-            Book Enterprise ($199/mo) →
+          <button type="button" onclick="selectPackage('enterprise', 79)" class="w-full py-2.5 px-4 rounded-xl font-bold text-xs font-mono text-amber-300 hover:text-white bg-slate-950 hover:bg-slate-900 border border-amber-500/50 hover:border-amber-400 transition shadow-sm">
+            Book Enterprise ($79/mo) →
           </button>
         </div>
 
@@ -733,10 +737,10 @@
           <span>Open Verified Sponsorship Slots:</span>
         </div>
         <div class="flex flex-wrap items-center gap-3 text-slate-300 text-[11px]">
-          <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-800"><strong class="text-emerald-400">● Available:</strong> Digest Issue #4 Header ($39)</span>
-          <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-800"><strong class="text-cyan-400">● Available:</strong> AI Tools Category ($79)</span>
-          <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-800"><strong class="text-purple-400">● Available:</strong> CLI Category ($79)</span>
-          <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-800"><strong class="text-amber-400">● Open:</strong> Directory Starter ($29)</span>
+          <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-800"><strong class="text-emerald-400">● Available:</strong> Digest Issue #4 Header ($19)</span>
+          <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-800"><strong class="text-cyan-400">● Available:</strong> AI Tools Category ($39)</span>
+          <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-800"><strong class="text-purple-400">● Available:</strong> CLI Category ($39)</span>
+          <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-800"><strong class="text-amber-400">● Open:</strong> Directory Starter ($9)</span>
         </div>
       </div>
 
@@ -1098,87 +1102,8 @@
     const DODO_PRODUCT_ID = 'pdt_0NpjONGugY5QkrFDUaPva';
     const DODO_BASE_URL = `https://checkout.dodopayments.com/buy/${DODO_PRODUCT_ID}`;
 
-    // Initial Community Seed Patrons with Real Feedback
-    const DEFAULT_PATRONS = [
-      {
-        id: 'patron-1',
-        rank: 1,
-        name: 'RitualDev Core Team',
-        github: 'RitualDev-Lab',
-        avatar: 'https://github.com/RitualDev-Lab.png',
-        url: 'https://github.com/RitualDev-Lab',
-        amountUSD: 250,
-        amountINR: 21000,
-        tier: 'gold',
-        date: '2026-10-15',
-        comment: 'Foundational grant to maintain zero-paywall API indexing, test pipelines, and continuous security audits for the developer community.'
-      },
-      {
-        id: 'patron-2',
-        rank: 2,
-        name: 'Dramex',
-        github: 'Dramex',
-        avatar: 'https://github.com/Dramex.png',
-        url: 'https://github.com/Dramex',
-        amountUSD: 150,
-        amountINR: 12500,
-        tier: 'gold',
-        date: '2026-10-14',
-        comment: 'Supporting open developer tools and secure AI CLI integrations like RowSafe! Keep innovating.'
-      },
-      {
-        id: 'patron-3',
-        rank: 3,
-        name: 'Sergiu Pogor',
-        github: 'SergiuPogor',
-        avatar: 'https://github.com/SergiuPogor.png',
-        url: 'https://github.com/SergiuPogor',
-        amountUSD: 100,
-        amountINR: 8400,
-        tier: 'gold',
-        date: '2026-10-15',
-        comment: 'Excited to contribute CurlShot to DevShelf. Transparency and free-tier clarity are exactly what the dev ecosystem needed.'
-      },
-      {
-        id: 'patron-4',
-        rank: 4,
-        name: 'Alox1d',
-        github: 'Alox1d',
-        avatar: 'https://github.com/Alox1d.png',
-        url: 'https://github.com/Alox1d',
-        amountUSD: 50,
-        amountINR: 4200,
-        tier: 'silver',
-        date: '2026-10-12',
-        comment: 'DevShelf is hands-down the best directory without annoying trial credit card traps.'
-      },
-      {
-        id: 'patron-5',
-        rank: 5,
-        name: 'Eigenwise',
-        github: 'Eigenwise',
-        avatar: 'https://github.com/Eigenwise.png',
-        url: 'https://github.com/Eigenwise',
-        amountUSD: 35,
-        amountINR: 2900,
-        tier: 'silver',
-        date: '2026-10-10',
-        comment: 'Toolshed maintainers are happy to stand behind this ecosystem!'
-      },
-      {
-        id: 'patron-6',
-        rank: 6,
-        name: 'Community Backer',
-        github: '',
-        avatar: 'https://github.com/ghost.png',
-        url: '',
-        amountUSD: 15,
-        amountINR: 150,
-        tier: 'bronze',
-        date: '2026-10-15',
-        comment: 'Thank you for keeping all these tools open, clean, and ad-free.'
-      }
-    ];
+    // Radical Transparency: Zero mock patrons. Ledger displays exclusively verified real backers.
+    const DEFAULT_PATRONS = [];
 
     const GITHUB_HANDLE_REGEX = /^[a-zA-Z0-9](?:[a-zA-Z0-9]|-(?=[a-zA-Z0-9])){0,38}$/;
 
@@ -1214,7 +1139,7 @@
     }
 
     let currentCurrency = 'USD'; // 'USD' or 'INR'
-    let currentAmount = 5;
+    let currentAmount = 9;
 
     let remotePatrons = [];
 
@@ -1580,7 +1505,7 @@
         url: safeUrl,
         amountUSD: usd,
         amountINR: inr,
-        tier: usd >= 199 ? 'enterprise' : usd >= 99 ? 'mcpPro' : usd >= 79 ? 'categoryTakeover' : usd >= 39 ? 'newsletterSpotlight' : 'starter',
+        tier: usd >= 79 ? 'enterprise' : usd >= 49 ? 'mcpPro' : usd >= 39 ? 'categoryTakeover' : usd >= 19 ? 'newsletterSpotlight' : 'starter',
         billingCompany,
         billingEmail,
         billingCountry,
@@ -1772,9 +1697,9 @@
       let patrons = getStoredPatrons();
 
       if (filter === 'enterprise') {
-        patrons = patrons.filter(p => p.amountUSD >= 250 || p.tier === 'enterprise');
+        patrons = patrons.filter(p => p.amountUSD >= 79 || p.tier === 'enterprise');
       } else if (filter === 'gold') {
-        patrons = patrons.filter(p => (p.amountUSD >= 100 && p.amountUSD < 250) && p.tier !== 'enterprise');
+        patrons = patrons.filter(p => (p.amountUSD >= 39 && p.amountUSD < 79) || p.tier === 'gold' || p.tier === 'categoryTakeover' || p.tier === 'mcpPro');
       } else if (filter === 'recent') {
         patrons = [...patrons].sort((a, b) => new Date(b.date) - new Date(a.date));
       } else {
@@ -1782,6 +1707,26 @@
       }
 
       container.replaceChildren();
+
+      if (patrons.length === 0) {
+        const emptyDiv = document.createElement('div');
+        emptyDiv.className = 'p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-purple-950/40 via-slate-900 to-slate-950 border border-purple-500/40 text-center relative overflow-hidden shadow-2xl';
+        emptyDiv.innerHTML = `
+          <div class="w-16 h-16 rounded-full bg-purple-900/40 border border-purple-500/50 flex items-center justify-center mx-auto mb-4 text-3xl">
+            🏆
+          </div>
+          <h4 class="text-xl sm:text-2xl font-extrabold text-white mb-2">Founding Sponsor Slot #1 is Open!</h4>
+          <p class="text-xs sm:text-sm text-slate-300 max-w-lg mx-auto mb-6 leading-relaxed">
+            Radical honesty: no paid sponsors have claimed this ledger yet. Be the very first developer tool or backer to claim the permanent #1 spotlight badge on DevShelf, our CLI, and GitHub README.
+          </p>
+          <a href="#sponsor-form" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-xs font-mono font-bold bg-gradient-to-r from-purple-600 via-pink-600 to-indigo-600 hover:from-purple-500 hover:to-pink-500 text-white transition shadow-lg shadow-purple-900/40">
+            <span>Claim #1 Founding Spot ($9+)</span>
+            <span>→</span>
+          </a>
+        `;
+        container.appendChild(emptyDiv);
+        return;
+      }
 
       patrons.forEach((patron, idx) => {
         const rank = idx + 1;
@@ -1800,26 +1745,30 @@
         }
 
         const isVerifiedPaid = patron.id && (String(patron.id).startsWith('verified-') || patron.isPaidSponsor === true);
-        const isEnterprise = patron.amountUSD >= 199 || patron.tier === 'enterprise';
+        const isEnterprise = patron.amountUSD >= 79 || patron.tier === 'enterprise';
 
         const tierLabel = isVerifiedPaid
           ? (isEnterprise
-            ? '👑 Enterprise Placement'
-            : patron.amountUSD >= 79
-              ? '👑 Category Sponsor'
+            ? '👑 Enterprise Partner'
+            : patron.amountUSD >= 49
+              ? '🤖 MCP Pro Partner'
               : patron.amountUSD >= 39
-                ? '📬 Digest Spotlight'
-                : '⚡ Verified Starter')
+                ? '🎯 Category Sponsor'
+                : patron.amountUSD >= 19
+                  ? '📬 Digest Spotlight'
+                  : '⚡ Verified Starter')
           : (patron.rank === 1 ? '👑 Founding Team' : '🛠️ Community Contributor');
 
         const tierClass = isVerifiedPaid
           ? (isEnterprise
             ? 'bg-gradient-to-r from-amber-500/20 to-purple-500/20 text-amber-300 border-amber-500/60 font-bold'
-            : patron.amountUSD >= 79
-              ? 'bg-cyan-950/80 text-cyan-300 border-cyan-500/40'
+            : patron.amountUSD >= 49
+              ? 'bg-indigo-950 text-indigo-300 border-indigo-500/40'
               : patron.amountUSD >= 39
-                ? 'bg-purple-950 text-purple-200 border-purple-500/40'
-                : 'bg-emerald-950 text-emerald-300 border-emerald-500/40')
+                ? 'bg-cyan-950/80 text-cyan-300 border-cyan-500/40'
+                : patron.amountUSD >= 19
+                  ? 'bg-pink-950 text-pink-200 border-pink-500/40'
+                  : 'bg-purple-950 text-purple-200 border-purple-500/40')
           : 'bg-slate-800 text-slate-300 border-slate-700';
 
         const row = document.createElement('div');
@@ -1948,6 +1897,18 @@
       const patrons = getStoredPatrons().filter(p => p.comment && p.comment.trim().length > 0);
 
       container.replaceChildren();
+
+      if (patrons.length === 0) {
+        const emptyMsg = document.createElement('div');
+        emptyMsg.className = 'col-span-full p-8 rounded-2xl bg-slate-900/50 border border-slate-800 text-center';
+        emptyMsg.innerHTML = `
+          <p class="text-xs sm:text-sm text-slate-400">
+            No public sponsor notes yet. When you submit your tool or sponsorship above, your note will appear here permanently!
+          </p>
+        `;
+        container.appendChild(emptyMsg);
+        return;
+      }
 
       patrons.forEach(p => {
         const card = document.createElement('div');
@@ -2311,16 +2272,16 @@
       celebPatronName.textContent = entry.name;
       celebAmount.textContent = `$${entry.amountUSD.toLocaleString()}`;
 
-      if (entry.tier === 'enterprise' || entry.amountUSD >= 199) {
+      if (entry.tier === 'enterprise' || entry.amountUSD >= 79) {
         celebTierBadge.textContent = '👑 Enterprise Placement';
         celebTierBadge.className = 'px-2.5 py-0.5 text-xs font-mono font-bold rounded-full bg-gradient-to-r from-amber-500/20 to-purple-500/20 text-amber-300 border border-amber-500/60 font-bold';
-      } else if (entry.tier === 'mcpPro' || entry.amountUSD >= 99) {
+      } else if (entry.tier === 'mcpPro' || entry.amountUSD >= 49) {
         celebTierBadge.textContent = '🤖 MCP Pro Partner';
         celebTierBadge.className = 'px-2.5 py-0.5 text-xs font-mono font-bold rounded-full bg-indigo-950 text-indigo-300 border border-indigo-500/40';
-      } else if (entry.tier === 'categoryTakeover' || entry.amountUSD >= 79) {
+      } else if (entry.tier === 'categoryTakeover' || entry.amountUSD >= 39) {
         celebTierBadge.textContent = '🎯 Category Spotlight';
         celebTierBadge.className = 'px-2.5 py-0.5 text-xs font-mono font-bold rounded-full bg-cyan-950 text-cyan-300 border border-cyan-500/40';
-      } else if (entry.tier === 'newsletterSpotlight' || entry.amountUSD >= 39) {
+      } else if (entry.tier === 'newsletterSpotlight' || entry.amountUSD >= 19) {
         celebTierBadge.textContent = '📬 Digest Spotlight';
         celebTierBadge.className = 'px-2.5 py-0.5 text-xs font-mono font-bold rounded-full bg-pink-950 text-pink-300 border border-pink-500/40';
       } else {
@@ -2547,9 +2508,9 @@
         sessionStorage.setItem(sessionKey, 'true');
 
         const isINR = currency === 'INR';
-        const usd = isINR ? (rawAmount > 0 ? Math.round(rawAmount / 84) : 29) : (rawAmount > 0 ? rawAmount : 29);
-        const inr = isINR ? (rawAmount > 0 ? rawAmount : 2400) : (rawAmount > 0 ? Math.round(rawAmount * 84) : 2400);
-        const tier = usd >= 199 ? 'enterprise' : usd >= 99 ? 'mcpPro' : usd >= 79 ? 'categoryTakeover' : usd >= 39 ? 'newsletterSpotlight' : 'starter';
+        const usd = isINR ? (rawAmount > 0 ? Math.round(rawAmount / 84) : 9) : (rawAmount > 0 ? rawAmount : 9);
+        const inr = isINR ? (rawAmount > 0 ? rawAmount : 750) : (rawAmount > 0 ? Math.round(rawAmount * 84) : 750);
+        const tier = usd >= 79 ? 'enterprise' : usd >= 49 ? 'mcpPro' : usd >= 39 ? 'categoryTakeover' : usd >= 19 ? 'newsletterSpotlight' : 'starter';
 
         const verifiedEntry = {
           id: 'verified-' + Date.now(),
@@ -2668,15 +2629,15 @@
         const customAmount = parseFloat(params.get('amount') || '');
         const validAmount = !isNaN(customAmount) && customAmount > 0 ? customAmount : null;
         if (tier === 'starter') {
-          selectPackage('starter', validAmount || 29);
+          selectPackage('starter', validAmount || 9);
         } else if (tier === 'newsletter-spotlight' || tier === 'newsletter') {
-          selectPackage('newsletterSpotlight', validAmount || 39);
+          selectPackage('newsletterSpotlight', validAmount || 19);
         } else if (tier === 'category-takeover' || tier === 'categorytakeover') {
-          selectPackage('categoryTakeover', validAmount || 79);
+          selectPackage('categoryTakeover', validAmount || 39);
         } else if (tier === 'mcp-pro' || tier === 'mcppro') {
-          selectPackage('mcpPro', validAmount || 99);
+          selectPackage('mcpPro', validAmount || 49);
         } else if (tier === 'enterprise') {
-          selectPackage('enterprise', validAmount || 199);
+          selectPackage('enterprise', validAmount || 79);
         }
       } catch (e) {
         // Ignore URL parsing errors

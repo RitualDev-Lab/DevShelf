@@ -242,16 +242,14 @@ describe("DevShelf CLI & TUI Suite", () => {
     assert.equal(res.status, 0);
     const parsed = JSON.parse(res.stdout);
     assert.ok(Array.isArray(parsed.patrons), "Should contain patrons array");
-    assert.ok(parsed.patrons.length >= 6, "Should contain at least 6 verified patrons");
-    assert.ok(parsed.stats?.totalContributedUSD >= 500, "Should report ledger pool >= $500");
+    assert.equal(typeof parsed.stats?.totalPatrons, "number");
   });
 
-  test("prints formatted patron table with sponsors command", () => {
+  test("prints formatted patron table or honest founding state with sponsors command", () => {
     const res = runCli("sponsors");
     assert.equal(res.status, 0);
     assert.match(res.stdout, /DevShelf Wall of Patrons/);
-    assert.match(res.stdout, /RitualDev Core Team/);
-    assert.match(res.stdout, /Gold Patron/);
+    assert.match(res.stdout, /Founding Sponsor|Gold Patron/);
     assert.match(res.stdout, /https:\/\/devshelf\.ritualdev\.in\/sponsors\.html/);
   });
 
@@ -267,10 +265,6 @@ describe("DevShelf CLI & TUI Suite", () => {
     assert.ok(parsed.result?.content?.[0]?.text);
     const payload = JSON.parse(parsed.result.content[0].text);
     assert.ok(Array.isArray(payload.patrons), "Should return patrons array");
-    assert.ok(
-      payload.patrons.every((p: any) => p.tier === "gold"),
-      "All patrons should be gold tier",
-    );
     assert.ok(payload.becomeSponsorUrl.includes("sponsors.html"));
   });
 
