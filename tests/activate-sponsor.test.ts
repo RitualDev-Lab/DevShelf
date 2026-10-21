@@ -32,7 +32,7 @@ describe("DevShelf Self-Serve Sponsor Activation Engine (Phase 3)", () => {
     assert.equal(result.item.featured, true);
     assert.match(String(result.item.sponsorTier), /Enterprise Partner/);
     assert.equal(result.patron.tier, "enterprise");
-    assert.equal(result.patron.amountUSD, 299);
+    assert.equal(result.patron.amountUSD, 199);
   });
 
   test("dry-run activation of new tool stages schema-compliant entry and patron", async () => {
@@ -45,7 +45,7 @@ describe("DevShelf Self-Serve Sponsor Activation Engine (Phase 3)", () => {
       alt: "Hyper, iTerm",
       patronName: "Terminal Labs",
       github: "test-org",
-      amount: 149,
+      amount: 99,
       dryRun: true,
       skipBuild: true,
     });
@@ -66,11 +66,11 @@ describe("DevShelf Self-Serve Sponsor Activation Engine (Phase 3)", () => {
     assert.equal(result.patron.name, "Terminal Labs");
     assert.equal(result.patron.github, "test-org");
     assert.equal(result.patron.tier, "gold");
-    assert.equal(result.patron.amountUSD, 149);
+    assert.equal(result.patron.amountUSD, 99);
     assert.ok(String(result.patron.badgeUrl).includes("gold.svg"));
   });
 
-  test("tier configuration defaults to starter ($49), mcpPro ($149), enterprise ($299)", async () => {
+  test("tier configuration defaults to starter ($29), mcpPro ($99), enterprise ($199)", async () => {
     const starterRes = await activateSponsor({
       name: "StarterTool",
       url: "https://example.com/starter",
@@ -78,7 +78,7 @@ describe("DevShelf Self-Serve Sponsor Activation Engine (Phase 3)", () => {
       dryRun: true,
       skipBuild: true,
     });
-    assert.equal(starterRes.patron.amountUSD, 49);
+    assert.equal(starterRes.patron.amountUSD, 29);
     assert.equal(starterRes.patron.tier, "silver");
 
     const mcpProRes = await activateSponsor({
@@ -88,7 +88,7 @@ describe("DevShelf Self-Serve Sponsor Activation Engine (Phase 3)", () => {
       dryRun: true,
       skipBuild: true,
     });
-    assert.equal(mcpProRes.patron.amountUSD, 149);
+    assert.equal(mcpProRes.patron.amountUSD, 99);
     assert.equal(mcpProRes.patron.tier, "gold");
 
     const entRes = await activateSponsor({
@@ -98,7 +98,7 @@ describe("DevShelf Self-Serve Sponsor Activation Engine (Phase 3)", () => {
       dryRun: true,
       skipBuild: true,
     });
-    assert.equal(entRes.patron.amountUSD, 299);
+    assert.equal(entRes.patron.amountUSD, 199);
     assert.equal(entRes.patron.tier, "enterprise");
   });
 });

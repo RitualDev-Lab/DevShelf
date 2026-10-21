@@ -99,24 +99,24 @@
     "starter": {
       "id": "pkg-starter",
       "name": "DevShelf Starter",
-      "priceUSD": 49,
-      "priceINR": 4100,
-      "billing": "monthly_or_onetime",
-      "tagline": "Catalog, CLI, and Web Spotlight Placement",
+      "priceUSD": 29,
+      "priceINR": 2400,
+      "billing": "permanent",
+      "tagline": "Permanent Verified Catalog & CLI Discovery",
       "features": [
         "Verified Tool Listing on devshelf.ritualdev.in directory",
-        "Indexed in DevShelf CLI (npx devshelf search) and VS Code Extension",
+        "Indexed in DevShelf CLI (npx devshelf search)",
         "Official 'Verified Free' Green Quality Badge",
         "Embeddable Shields / SVG Sponsor Badge for GitHub README",
-        "Direct traffic to your tool documentation & signup"
+        "Direct do-follow clickouts to your documentation & signup"
       ],
-      "checkoutUrl": "https://devshelf.ritualdev.in/sponsors.html?tier=starter&amount=49&currency=USD"
+      "checkoutUrl": "https://devshelf.ritualdev.in/sponsors.html?tier=starter&amount=29&currency=USD"
     },
     "mcpPro": {
       "id": "pkg-mcp-pro",
       "name": "DevShelf MCP Pro",
-      "priceUSD": 149,
-      "priceINR": 12500,
+      "priceUSD": 99,
+      "priceINR": 8200,
       "billing": "monthly",
       "tagline": "Top-Ranked AI Agent Recommendation across Cursor, Claude, Windsurf, Zed",
       "features": [
@@ -126,55 +126,55 @@
         "Direct context injection into AI developer sessions without hallucinations",
         "Zero-Paywall editorial audit and attestation badge"
       ],
-      "checkoutUrl": "https://devshelf.ritualdev.in/sponsors.html?tier=mcp-pro&amount=149&currency=USD"
+      "checkoutUrl": "https://devshelf.ritualdev.in/sponsors.html?tier=mcp-pro&amount=99&currency=USD"
     },
     "categoryTakeover": {
       "id": "pkg-category-takeover",
       "name": "Category Takeover Retainer",
-      "priceUSD": 199,
-      "priceINR": 16500,
+      "priceUSD": 79,
+      "priceINR": 6500,
       "billing": "monthly",
       "tagline": "Exclusive Top-of-Category Dominance across Cloud, AI, APIs, or CLI",
       "features": [
-        "100% exclusive sticky brand header across your chosen category and tool dossiers",
+        "100% exclusive sticky brand header across your chosen category shelf",
         "Featured recommendation across all alternative roundups in your category",
         "Top architectural recommendation in MCP & CLI recommend_stack queries",
-        "DevShelf Weekly newsletter category spotlight inclusion",
-        "Instant corporate tax-compliant invoice (GST / VAT)"
+        "DevShelf Weekly developer digest category spotlight inclusion",
+        "100% money-back guarantee if rejected during review"
       ],
-      "checkoutUrl": "https://devshelf.ritualdev.in/sponsors.html?tier=category-takeover&amount=199&currency=USD"
+      "checkoutUrl": "https://devshelf.ritualdev.in/sponsors.html?tier=category-takeover&amount=79&currency=USD"
     },
     "newsletterSpotlight": {
       "id": "pkg-newsletter-spotlight",
-      "name": "DevShelf Weekly Newsletter Spotlight",
-      "priceUSD": 99,
-      "priceINR": 8200,
+      "name": "Developer Digest Spotlight",
+      "priceUSD": 39,
+      "priceINR": 3200,
       "billing": "per_issue",
-      "tagline": "Reach 2,800+ Active Software Engineers, Founders & AI Builders",
+      "tagline": "Top Sponsor Banner & 140-char Pitch on newsletter.html & RSS feed.xml",
       "features": [
-        "Primary header sponsor banner & 100-word featured developer pitch",
+        "Primary header sponsor banner & 140-word featured developer pitch",
         "Permanent backlink & featured placement on devshelf.ritualdev.in/newsletter.html",
         "Included in W3C RSS 2.0 / Atom feed (devshelf.ritualdev.in/feed.xml)",
         "Direct lead clickouts with verified CTA link",
-        "Instant corporate invoice with GST / VAT details"
+        "24-hour review & confirmation preview before publication"
       ],
-      "checkoutUrl": "https://devshelf.ritualdev.in/sponsors.html?tier=newsletter-spotlight&amount=99&currency=USD"
+      "checkoutUrl": "https://devshelf.ritualdev.in/sponsors.html?tier=newsletter-spotlight&amount=39&currency=USD"
     },
     "enterprise": {
       "id": "pkg-enterprise",
       "name": "Enterprise & Agent Partner",
-      "priceUSD": 299,
-      "priceINR": 25000,
+      "priceUSD": 199,
+      "priceINR": 16500,
       "billing": "monthly",
-      "tagline": "Maximum Ecosystem Visibility + AgentShield Security Verification",
+      "tagline": "Maximum Ecosystem Visibility + Multi-Channel Agent Grounding",
       "features": [
         "Top-of-page Headline Spotlight on devshelf.ritualdev.in homepage",
-        "AgentShield zero-leak audit & cryptographic integrity digest",
-        "Monthly LLM query impression & clickout telemetry reporting",
+        "Full AI agent grounding in npx devshelf-mcp recommendations",
         "Permanent Wall of Patrons marquee entry with corporate logo & do-follow link",
-        "Instant corporate tax-compliant digital invoice (GST / VAT)"
+        "Priority placement across category directories and alternative roundups",
+        "Dedicated email & Slack support with RitualDev engineering team"
       ],
-      "checkoutUrl": "https://devshelf.ritualdev.in/sponsors.html?tier=enterprise&amount=299&currency=USD"
+      "checkoutUrl": "https://devshelf.ritualdev.in/sponsors.html?tier=enterprise&amount=199&currency=USD"
     }
   },
   "categorySponsors": {
@@ -190,7 +190,9 @@
     }
   },
   "telemetry": {
-    "monthlyMcpSessions": 5420,
+    "totalVerifiedTools": 537,
+    "openSourceRepos": 334,
+    "alternativeGuides": 146,
     "activeEditorClients": [
       "Cursor",
       "Claude Desktop",
@@ -198,7 +200,6 @@
       "Zed",
       "Antigravity"
     ],
-    "averageLatencyMs": 42,
     "topCategories": [
       "ai",
       "apis",
@@ -209,7 +210,12 @@
     "featuredSponsorTools": [
       "AgentShield"
     ],
-    "sponsorImpressionRate": "100% Guaranteed Context Grounding",
+    "distributionChannels": [
+      "Web",
+      "CLI (npx devshelf)",
+      "Model Context Protocol (npx devshelf-mcp)",
+      "RSS"
+    ],
     "zeroPaywallEnforced": true
   }
 }
