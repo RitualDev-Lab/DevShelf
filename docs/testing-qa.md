@@ -4,7 +4,7 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total Testing Tools](https://img.shields.io/badge/Testing_Tools-63_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total Testing Tools](https://img.shields.io/badge/Testing_Tools-64_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
 [API Mocking & Sandboxes](#api-mocking-sandboxes) • [API Testing & Debugging](#api-testing-debugging) • [Browser & E2E Testing](#browser-e2e-testing) • [Contract & Schema Testing](#contract-schema-testing) • [Performance & Load Testing](#performance-load-testing) • [Security & Vulnerability Scanners](#security-vulnerability-scanners) • [Test Data Generation](#test-data-generation) • [Testing & QA Reliability](#testing-qa-reliability) • [Unit & Integration Testing](#unit-integration-testing)
@@ -104,11 +104,12 @@
 | [**Mimesis**](https://github.com/lk-geimfari/mimesis) | `Python` | `MIT` | High-performance Python library for generating realistic synthetic data in a variety of locales. | [GitHub](https://github.com/lk-geimfari/mimesis) |
 | [**Bogus**](https://github.com/bchavez/Bogus) | `C#` | `MIT` | A simple and sane fake data generator for .NET languages, ported from Faker.js with fluent syntax. | [GitHub](https://github.com/bchavez/Bogus) |
 
-### <a id="testing-qa-reliability"></a>Testing & QA Reliability (1)
+### <a id="testing-qa-reliability"></a>Testing & QA Reliability (2)
 
 | Tool | Language | License | Description | Links |
 | :--- | :---: | :---: | :--- | :---: |
 | [**Clockshift**](https://github.com/brodyga45/clockshift-dst-check) | `JavaScript / Node.js and browser Intl` | `MIT` | Find missing or repeated local clock times in daily and weekly schedules, with CSV export and a weekday filter. Includes a browser UI and a dependency-free Node.js CLI; scheduler execution policy must be checked separately. | [GitHub](https://github.com/brodyga45/clockshift-dst-check) |
+| [**OutageFence by Slanta Cause**](https://github.com/jn6825rsr7-afk/outagefence) | `JavaScript / Node.js 22+, with no third-party runtime packages.` | `MIT — copyright 2026 Slanta Cause.` | OutageFence is a free, MIT-licensed local HTTP fault-injection CLI by Slanta Cause that checks whether synthetic sensitive values reach forbidden configured destinations when dependencies fail. It requires positive controls and exercised faults, then emits offline HTML, JSON, Markdown and JUnit... | [GitHub](https://github.com/jn6825rsr7-afk/outagefence) |
 
 ### <a id="unit-integration-testing"></a>Unit & Integration Testing (4)
 

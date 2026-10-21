@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 537 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 538 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -2534,6 +2534,15 @@
 - **URL**: https://github.com/brodyga45/clockshift-dst-check
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/clockshift.html
 - **Description**: Find missing or repeated local clock times in daily and weekly schedules, with CSV export and a weekday filter. Includes a browser UI and a dependency-free Node.js CLI; scheduler execution policy must be checked separately.
+
+### OutageFence by Slanta Cause
+- **Category**: Testing & QA Reliability
+- **Pricing Model**: See official site for free access and limits
+- **License**: MIT — copyright 2026 Slanta Cause.
+- **Language**: JavaScript / Node.js 22+, with no third-party runtime packages.
+- **URL**: https://github.com/jn6825rsr7-afk/outagefence
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/outagefence-by-slanta-cause.html
+- **Description**: OutageFence is a free, MIT-licensed local HTTP fault-injection CLI by Slanta Cause that checks whether synthetic sensitive values reach forbidden configured destinations when dependencies fail. It requires positive controls and exercised faults, then emits offline HTML, JSON, Markdown and JUnit...
 
 ### Open-Meteo
 - **Category**: Weather & Climate

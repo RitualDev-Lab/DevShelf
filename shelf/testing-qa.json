@@ -627,5 +627,14 @@
     "language": "JavaScript / Node.js and browser Intl",
     "license": "MIT",
     "featured": false
+  },
+  {
+    "name": "OutageFence by Slanta Cause",
+    "repo": "https://github.com/jn6825rsr7-afk/outagefence",
+    "category": "Testing & QA Reliability",
+    "description": "OutageFence is a free, MIT-licensed local HTTP fault-injection CLI by Slanta Cause that checks whether synthetic sensitive values reach forbidden configured destinations when dependencies fail. It requires positive controls and exercised faults, then emits offline HTML, JSON, Markdown and JUnit...",
+    "language": "JavaScript / Node.js 22+, with no third-party runtime packages.",
+    "license": "MIT — copyright 2026 Slanta Cause.",
+    "featured": false
   }
 ]

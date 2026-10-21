@@ -111,7 +111,12 @@
     "activeEditorClients": ["Cursor", "Claude Desktop", "Windsurf", "Zed", "Antigravity"],
     "topCategories": ["ai", "apis", "cloud", "cli", "testing"],
     "featuredSponsorTools": ["AgentShield"],
-    "distributionChannels": ["Web", "CLI (npx devshelf)", "Model Context Protocol (npx devshelf-mcp)", "RSS"],
+    "distributionChannels": [
+      "Web",
+      "CLI (npx devshelf)",
+      "Model Context Protocol (npx devshelf-mcp)",
+      "RSS"
+    ],
     "zeroPaywallEnforced": true
   }
 }

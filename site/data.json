@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-21T01:33:25.480Z",
-  "totalCount": 537,
-  "reposCount": 334,
+  "updatedAt": "2026-10-21T18:38:46.432Z",
+  "totalCount": 538,
+  "reposCount": 335,
   "facets": {
-    "repos": 334
+    "repos": 335
   },
   "counts": {
     "aiTools": 90,
     "cliTools": 119,
-    "testingQa": 63,
+    "testingQa": 64,
     "apis": 102,
     "freeCloud": 71,
     "perks": 30,
@@ -4137,6 +4137,17 @@
       "description": "Find missing or repeated local clock times in daily and weekly schedules, with CSV export and a weekday filter. Includes a browser UI and a dependency-free Node.js CLI; scheduler execution policy must be checked separately.",
       "language": "JavaScript / Node.js and browser Intl",
       "license": "MIT",
+      "featured": false,
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "OutageFence by Slanta Cause",
+      "repo": "https://github.com/jn6825rsr7-afk/outagefence",
+      "category": "Testing & QA Reliability",
+      "description": "OutageFence is a free, MIT-licensed local HTTP fault-injection CLI by Slanta Cause that checks whether synthetic sensitive values reach forbidden configured destinations when dependencies fail. It requires positive controls and exercised faults, then emits offline HTML, JSON, Markdown and JUnit...",
+      "language": "JavaScript / Node.js 22+, with no third-party runtime packages.",
+      "license": "MIT — copyright 2026 Slanta Cause.",
       "featured": false,
       "type": "testing",
       "section": "Testing & QA Reliability"
