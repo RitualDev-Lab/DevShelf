@@ -220,19 +220,38 @@
             </div>
           </div>
 
+          <!-- Active Package Selection Banner -->
+          <div id="active-package-banner" class="hidden mb-4 p-3 rounded-xl bg-purple-950/70 border border-purple-500/50 flex items-center justify-between shadow-lg shadow-purple-950/40">
+            <div class="flex items-center gap-2.5">
+              <span class="text-lg">📦</span>
+              <div>
+                <div class="text-xs font-mono font-bold text-white flex items-center gap-2">
+                  <span>Selected Package:</span>
+                  <span id="active-package-name" class="text-pink-300 font-bold">Starter ($9)</span>
+                </div>
+                <div class="text-[11px] text-purple-200">Tool Name and Tool URL are required to complete this reservation.</div>
+              </div>
+            </div>
+            <button type="button" onclick="clearSelectedPackage()" class="text-[11px] font-mono text-slate-300 hover:text-white px-2.5 py-1 rounded-lg bg-slate-900/90 border border-slate-700 hover:border-slate-500 transition flex items-center gap-1">
+              ✕ <span>Remove</span>
+            </button>
+          </div>
+
           <!-- Sponsor Identification -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
             <div>
               <label class="block text-xs font-mono font-bold uppercase tracking-wider text-slate-300 mb-1.5" for="sponsor-name">
                 Your Name / Handle / Org <span class="text-pink-400">*</span>
               </label>
-              <input type="text" id="sponsor-name" required placeholder="e.g. Divyanshu Jethi or Acme Corp" class="w-full px-3.5 py-2.5 bg-slate-950 rounded-xl border border-slate-700/80 text-white text-sm focus:outline-none focus:border-purple-500">
+              <input type="text" id="sponsor-name" required placeholder="e.g. Divyanshu Jethi or Acme Corp" class="w-full px-3.5 py-2.5 bg-slate-950 rounded-xl border border-slate-700/80 text-white text-sm focus:outline-none focus:border-purple-500 transition">
+              <div id="sponsor-name-error" class="hidden text-[11px] font-mono text-pink-400 mt-1.5 flex items-center gap-1"></div>
             </div>
             <div>
               <label class="block text-xs font-mono font-bold uppercase tracking-wider text-slate-300 mb-1.5" for="sponsor-email">
                 Your Email Address <span class="text-pink-400">*</span>
               </label>
-              <input type="email" id="sponsor-email" required placeholder="divyanshu@example.com" class="w-full px-3.5 py-2.5 bg-slate-950 rounded-xl border border-slate-700/80 text-white text-sm focus:outline-none focus:border-purple-500">
+              <input type="email" id="sponsor-email" required placeholder="divyanshu@example.com" class="w-full px-3.5 py-2.5 bg-slate-950 rounded-xl border border-slate-700/80 text-white text-sm focus:outline-none focus:border-purple-500 transition">
+              <div id="sponsor-email-error" class="hidden text-[11px] font-mono text-pink-400 mt-1.5 flex items-center gap-1"></div>
             </div>
           </div>
 
@@ -284,27 +303,30 @@
             <button type="button" id="toggle-tool-sponsor" class="w-full flex items-center justify-between text-left text-xs font-mono font-bold text-purple-200 hover:text-white transition">
               <span class="flex items-center gap-2">
                 <span class="text-base">🚀</span>
-                <span>Tool Promotion &amp; Editorial Reservation Intake</span>
+                <span>Promote Your Developer Tool or MCP Server</span>
+                <span class="text-[10px] font-sans font-normal text-purple-300 bg-purple-900/60 px-2 py-0.5 rounded-full border border-purple-500/30">Optional for pure backers</span>
               </span>
               <span id="tool-sponsor-arrow" class="text-purple-400 text-sm font-bold transition-transform">▲</span>
             </button>
             <p class="text-[11px] text-slate-400 mt-1 pl-6">
-              Details are emailed directly to RitualDev maintainers. Reviewed within 24 hours to verify zero-paywall compliance before going live.
+              Instant activation across 530+ directory dossiers &amp; <code class="text-purple-300 font-mono">npx devshelf-mcp</code> AI editor context. If booking a tool package, Tool Name &amp; Tool URL are required below.
             </p>
 
             <div id="tool-sponsor-fields" class="mt-3.5 pt-3.5 border-t border-purple-500/30 space-y-3">
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div>
                   <label class="block text-[11px] font-mono font-bold text-slate-300 mb-1" for="tool-name">
-                    Tool / Product Name <span class="text-pink-400">*</span>
+                    Tool / Product Name <span class="text-pink-400 font-bold">*</span> <span class="text-[10px] text-slate-400 font-normal font-sans">(Required for tool listings)</span>
                   </label>
-                  <input type="text" id="tool-name" placeholder="e.g. CurlShot, RowSafe, MyTool" class="w-full px-3 py-2 bg-slate-900 rounded-lg border border-slate-800 text-white text-xs font-mono focus:outline-none focus:border-purple-500">
+                  <input type="text" id="tool-name" placeholder="e.g. CurlShot, RowSafe, MyTool" class="w-full px-3 py-2 bg-slate-900 rounded-lg border border-slate-800 text-white text-xs font-mono focus:outline-none focus:border-purple-500 transition">
+                  <div id="tool-name-error" class="hidden text-[11px] font-mono text-pink-400 mt-1.5 flex items-center gap-1"></div>
                 </div>
                 <div>
                   <label class="block text-[11px] font-mono font-bold text-slate-300 mb-1" for="tool-url">
-                    Tool URL or GitHub Repo <span class="text-pink-400">*</span>
+                    Tool URL or GitHub Repo <span class="text-pink-400 font-bold">*</span> <span class="text-[10px] text-slate-400 font-normal font-sans">(Required for tool listings)</span>
                   </label>
-                  <input type="url" id="tool-url" placeholder="https://github.com/org/tool or https://mytool.dev" class="w-full px-3 py-2 bg-slate-900 rounded-lg border border-slate-800 text-white text-xs font-mono focus:outline-none focus:border-purple-500">
+                  <input type="url" id="tool-url" placeholder="https://github.com/org/tool or https://mytool.dev" class="w-full px-3 py-2 bg-slate-900 rounded-lg border border-slate-800 text-white text-xs font-mono focus:outline-none focus:border-purple-500 transition">
+                  <div id="tool-url-error" class="hidden text-[11px] font-mono text-pink-400 mt-1.5 flex items-center gap-1"></div>
                 </div>
               </div>
 
@@ -1224,6 +1246,61 @@
     const previewCommentText = document.getElementById('preview-comment-text');
 
     // Currency Switcher
+    let activePackageId = null;
+
+    const PACKAGE_DISPLAY_NAMES = {
+      starter: 'Starter ($9)',
+      newsletterSpotlight: 'Weekly Newsletter Spotlight ($19/issue)',
+      categoryTakeover: 'Category Takeover Retainer ($39/mo)',
+      mcpPro: 'MCP Pro AI Context ($49)',
+      enterprise: 'Enterprise Partner ($79/mo)'
+    };
+
+    function showFieldError(fieldId, errorMsg) {
+      const input = document.getElementById(fieldId);
+      const errorDiv = document.getElementById(`${fieldId}-error`);
+      if (input) {
+        input.classList.add('border-pink-500', 'focus:border-pink-500', 'ring-1', 'ring-pink-500/50');
+        input.classList.remove('border-slate-800', 'border-slate-700/80');
+      }
+      if (errorDiv) {
+        errorDiv.innerHTML = `<span class="text-xs">⚠️</span> <span>${errorMsg}</span>`;
+        errorDiv.classList.remove('hidden');
+      }
+    }
+
+    function clearFieldError(fieldId) {
+      const input = document.getElementById(fieldId);
+      const errorDiv = document.getElementById(`${fieldId}-error`);
+      if (input) {
+        input.classList.remove('border-pink-500', 'focus:border-pink-500', 'ring-1', 'ring-pink-500/50');
+        if (fieldId.startsWith('tool-')) {
+          input.classList.add('border-slate-800');
+        } else {
+          input.classList.add('border-slate-700/80');
+        }
+      }
+      if (errorDiv) {
+        errorDiv.classList.add('hidden');
+        errorDiv.innerHTML = '';
+      }
+    }
+
+    function clearSelectedPackage() {
+      activePackageId = null;
+      const banner = document.getElementById('active-package-banner');
+      if (banner) banner.classList.add('hidden');
+      clearFieldError('tool-name');
+      clearFieldError('tool-url');
+      updatePreview();
+    }
+
+    // Clear field errors dynamically on user input
+    ['sponsor-name', 'sponsor-email', 'tool-name', 'tool-url'].forEach(id => {
+      const elem = document.getElementById(id);
+      elem?.addEventListener('input', () => clearFieldError(id));
+    });
+
     document.getElementById('curr-usd').addEventListener('click', () => setCurrency('USD'));
     document.getElementById('curr-inr').addEventListener('click', () => setCurrency('INR'));
 
@@ -1236,14 +1313,14 @@
         usdBtn.className = 'px-2.5 py-1 rounded bg-purple-600 text-white transition';
         inrBtn.className = 'px-2.5 py-1 rounded text-slate-400 hover:text-white transition';
         currPrefix.textContent = '$';
-        amountInput.min = '1';
-        amountInput.placeholder = 'Or enter custom amount (e.g. 10)';
+        amountInput.min = '5';
+        amountInput.placeholder = 'Or enter custom amount (e.g. 9)';
       } else {
         inrBtn.className = 'px-2.5 py-1 rounded bg-purple-600 text-white transition';
         usdBtn.className = 'px-2.5 py-1 rounded text-slate-400 hover:text-white transition';
         currPrefix.textContent = '₹';
-        amountInput.min = '10';
-        amountInput.placeholder = 'Or enter custom amount (e.g. 100)';
+        amountInput.min = '400';
+        amountInput.placeholder = 'Or enter custom amount (e.g. 750)';
       }
       updateActiveAmountButtons();
       updatePreview();
@@ -1459,6 +1536,10 @@
     // Form Submission & Seamless Dodo Checkout Routing
     function handleSponsorSubmit(e) {
       e.preventDefault();
+
+      // Clear previous error indicators
+      ['sponsor-name', 'sponsor-email', 'tool-name', 'tool-url'].forEach(clearFieldError);
+
       const name = (sponsorNameInput?.value || '').trim();
       const email = (sponsorEmailInput?.value || billingEmailInput?.value || '').trim();
       const rawGithub = (sponsorGithubInput?.value || '').trim().replace(/^@/, '');
@@ -1475,18 +1556,79 @@
       const billingTaxId = (document.getElementById('billing-tax-id')?.value || '').trim();
 
       const toolName = (document.getElementById('tool-name')?.value || '').trim();
-      const toolUrl = (document.getElementById('tool-url')?.value || '').trim();
+      let toolUrl = (document.getElementById('tool-url')?.value || '').trim();
       const toolCategory = (document.getElementById('tool-category')?.value || 'cli').trim();
       const toolAlt = (document.getElementById('tool-alt')?.value || '').trim();
       const toolPitch = (document.getElementById('tool-pitch')?.value || '').trim();
       const toolNotes = (document.getElementById('tool-notes')?.value || '').trim();
 
+      let firstInvalidElem = null;
+
+      // 1. Validate Sponsor Name
       if (!name) {
-        if (sponsorNameInput) sponsorNameInput.focus();
-        return;
+        showFieldError('sponsor-name', 'Please enter your name, handle, or organization.');
+        firstInvalidElem = firstInvalidElem || sponsorNameInput;
       }
+
+      // 2. Validate Sponsor Email
       if (!email) {
-        if (sponsorEmailInput) sponsorEmailInput.focus();
+        showFieldError('sponsor-email', 'Please enter your email address for your receipt & confirmation.');
+        firstInvalidElem = firstInvalidElem || sponsorEmailInput;
+      } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        showFieldError('sponsor-email', 'Please enter a valid email address (e.g. dev@example.com).');
+        firstInvalidElem = firstInvalidElem || sponsorEmailInput;
+      }
+
+      // 3. Conditional Tool Validation
+      // If a package is active OR user provided any tool input, Tool Name & Tool URL are strictly required!
+      const isToolSubmission = Boolean(activePackageId || toolName || toolUrl || toolPitch || toolAlt || toolNotes);
+
+      if (isToolSubmission) {
+        // Expand tool section so user immediately sees fields and errors
+        const toolSponsorFields = document.getElementById('tool-sponsor-fields');
+        const toolSponsorArrow = document.getElementById('tool-sponsor-arrow');
+        if (toolSponsorFields && toolSponsorFields.classList.contains('hidden')) {
+          toolSponsorFields.classList.remove('hidden');
+          if (toolSponsorArrow) toolSponsorArrow.textContent = '▲';
+        }
+
+        const toolNameElem = document.getElementById('tool-name');
+        const toolUrlElem = document.getElementById('tool-url');
+
+        if (!toolName) {
+          showFieldError('tool-name', activePackageId ? 'Tool / Product Name is required to reserve this package.' : 'Please enter your Tool / Product Name.');
+          firstInvalidElem = firstInvalidElem || toolNameElem;
+        }
+
+        if (!toolUrl) {
+          showFieldError('tool-url', activePackageId ? 'Tool URL or GitHub Repo is required to reserve this package.' : 'Please enter your Tool URL or GitHub Repo.');
+          firstInvalidElem = firstInvalidElem || toolUrlElem;
+        } else {
+          // Normalize URL: auto-prefix https:// if omitted
+          if (!/^https?:\/\//i.test(toolUrl)) {
+            toolUrl = 'https://' + toolUrl;
+            if (toolUrlElem) toolUrlElem.value = toolUrl;
+          }
+          let validUrl = false;
+          try {
+            const parsed = new URL(toolUrl);
+            if (['http:', 'https:'].includes(parsed.protocol) && parsed.hostname && parsed.hostname.includes('.')) {
+              validUrl = true;
+            }
+          } catch (_) {
+            validUrl = false;
+          }
+          if (!validUrl) {
+            showFieldError('tool-url', 'Please enter a valid URL (e.g. https://github.com/org/tool or https://mytool.dev).');
+            firstInvalidElem = firstInvalidElem || toolUrlElem;
+          }
+        }
+      }
+
+      // 4. Block checkout if any validation failed
+      if (firstInvalidElem) {
+        firstInvalidElem.focus();
+        firstInvalidElem.scrollIntoView({ behavior: 'smooth', block: 'center' });
         return;
       }
 
@@ -2573,6 +2715,7 @@
 
     // Package selector for Developer Tools & MCP Sponsorship
     function selectPackage(pkgId, amountUsd) {
+      activePackageId = pkgId;
       setCurrency('USD');
       currentAmount = amountUsd;
       amountInput.value = amountUsd;
@@ -2580,6 +2723,14 @@
         b.className = 'amount-btn p-3 rounded-xl border text-center transition bg-slate-950/80 border-slate-800 text-slate-300 hover:border-slate-700';
       });
       updatePreview();
+
+      // Show active package banner
+      const banner = document.getElementById('active-package-banner');
+      const bannerName = document.getElementById('active-package-name');
+      if (banner && bannerName) {
+        bannerName.textContent = PACKAGE_DISPLAY_NAMES[pkgId] || `Custom Package ($${amountUsd})`;
+        banner.classList.remove('hidden');
+      }
 
       // Open tool sponsorship accordion
       const toolSponsorFields = document.getElementById('tool-sponsor-fields');

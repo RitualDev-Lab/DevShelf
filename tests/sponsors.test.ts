@@ -411,3 +411,166 @@ test("Dodo Checkout URL Prefill - Tool Promotion Metadata", () => {
   assert.equal(parsed.searchParams.get("metadata_toolName"), "RowSafe");
   assert.equal(parsed.searchParams.get("singlePage"), "true");
 });
+
+// Form Submission & Validation Engine (matching site/sponsors.html)
+interface SponsorValidationInput {
+  name: string;
+  email: string;
+  packageId?: string | null;
+  toolName?: string;
+  toolUrl?: string;
+  toolPitch?: string;
+  toolAlt?: string;
+  toolNotes?: string;
+}
+
+interface SponsorValidationResult {
+  isValid: boolean;
+  errors: Record<string, string>;
+  normalizedToolUrl?: string;
+}
+
+function validateSponsorSubmission(input: SponsorValidationInput): SponsorValidationResult {
+  const errors: Record<string, string> = {};
+  const name = (input.name || "").trim();
+  const email = (input.email || "").trim();
+  const packageId = (input.packageId || "").trim();
+  const toolName = (input.toolName || "").trim();
+  let toolUrl = (input.toolUrl || "").trim();
+  const toolPitch = (input.toolPitch || "").trim();
+  const toolAlt = (input.toolAlt || "").trim();
+  const toolNotes = (input.toolNotes || "").trim();
+
+  if (!name) {
+    errors.name = "Please enter your name, handle, or organization.";
+  }
+
+  if (!email) {
+    errors.email = "Please enter your email address for your receipt & confirmation.";
+  } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    errors.email = "Please enter a valid email address (e.g. dev@example.com).";
+  }
+
+  const isToolSubmission = Boolean(packageId || toolName || toolUrl || toolPitch || toolAlt || toolNotes);
+
+  if (isToolSubmission) {
+    if (!toolName) {
+      errors.toolName = packageId
+        ? "Tool / Product Name is required to reserve this package."
+        : "Please enter your Tool / Product Name.";
+    }
+
+    if (!toolUrl) {
+      errors.toolUrl = packageId
+        ? "Tool URL or GitHub Repo is required to reserve this package."
+        : "Please enter your Tool URL or GitHub Repo.";
+    } else {
+      if (!/^https?:\/\//i.test(toolUrl)) {
+        toolUrl = "https://" + toolUrl;
+      }
+      let validUrl = false;
+      try {
+        const parsed = new URL(toolUrl);
+        if (["http:", "https:"].includes(parsed.protocol) && parsed.hostname && parsed.hostname.includes(".")) {
+          validUrl = true;
+        }
+      } catch {
+        validUrl = false;
+      }
+      if (!validUrl) {
+        errors.toolUrl = "Please enter a valid URL (e.g. https://github.com/org/tool or https://mytool.dev).";
+      }
+    }
+  }
+
+  return {
+    isValid: Object.keys(errors).length === 0,
+    errors,
+    normalizedToolUrl: toolUrl,
+  };
+}
+
+test("Sponsors Form Validation - Pure Backer (No Tool) Allows Seamless Checkout", () => {
+  const result = validateSponsorSubmission({
+    name: "Alex Supporter",
+    email: "alex@example.com",
+  });
+
+  assert.equal(result.isValid, true, "Pure backer with name and email should be valid");
+  assert.equal(Object.keys(result.errors).length, 0);
+});
+
+test("Sponsors Form Validation - Rejects Empty Name or Invalid Email", () => {
+  const missingName = validateSponsorSubmission({
+    name: "",
+    email: "test@example.com",
+  });
+  assert.equal(missingName.isValid, false);
+  assert.ok(missingName.errors.name, "Should complain about missing name");
+
+  const invalidEmail = validateSponsorSubmission({
+    name: "Alex",
+    email: "not-an-email",
+  });
+  assert.equal(invalidEmail.isValid, false);
+  assert.ok(invalidEmail.errors.email, "Should complain about invalid email");
+});
+
+test("Sponsors Form Validation - Strict Tool Name & URL Validation for Tool Packages", () => {
+  // 1. When a package is selected, Tool Name & Tool URL must NOT be omitted
+  const missingBoth = validateSponsorSubmission({
+    name: "Founder",
+    email: "founder@tool.dev",
+    packageId: "starter",
+  });
+  assert.equal(missingBoth.isValid, false);
+  assert.equal(missingBoth.errors.toolName, "Tool / Product Name is required to reserve this package.");
+  assert.equal(missingBoth.errors.toolUrl, "Tool URL or GitHub Repo is required to reserve this package.");
+
+  // 2. Missing Tool URL when Tool Name is provided
+  const missingUrl = validateSponsorSubmission({
+    name: "Founder",
+    email: "founder@tool.dev",
+    packageId: "starter",
+    toolName: "AwesomeCLI",
+  });
+  assert.equal(missingUrl.isValid, false);
+  assert.equal(missingUrl.errors.toolUrl, "Tool URL or GitHub Repo is required to reserve this package.");
+
+  // 3. Invalid URL string
+  const badUrl = validateSponsorSubmission({
+    name: "Founder",
+    email: "founder@tool.dev",
+    packageId: "starter",
+    toolName: "AwesomeCLI",
+    toolUrl: "not_a_valid_url",
+  });
+  assert.equal(badUrl.isValid, false);
+  assert.match(badUrl.errors.toolUrl, /valid URL/);
+
+  // 4. Valid Tool URL auto-prefixes https:// if omitted
+  const validSubmission = validateSponsorSubmission({
+    name: "Founder",
+    email: "founder@tool.dev",
+    packageId: "newsletterSpotlight",
+    toolName: "AwesomeCLI",
+    toolUrl: "github.com/org/awesome-cli",
+  });
+  assert.equal(validSubmission.isValid, true);
+  assert.equal(validSubmission.normalizedToolUrl, "https://github.com/org/awesome-cli");
+});
+
+test("Sponsors HTML UI Structure - Contains Error Elements & Active Package Banner", async () => {
+  const sponsorsHtml = await fs.readFile(path.resolve("site/sponsors.html"), "utf-8");
+
+  assert.ok(sponsorsHtml.includes('id="active-package-banner"'), "Must contain active package banner container");
+  assert.ok(sponsorsHtml.includes('id="tool-name-error"'), "Must contain tool name inline error div");
+  assert.ok(sponsorsHtml.includes('id="tool-url-error"'), "Must contain tool url inline error div");
+  assert.ok(sponsorsHtml.includes('id="sponsor-name-error"'), "Must contain sponsor name inline error div");
+  assert.ok(sponsorsHtml.includes('id="sponsor-email-error"'), "Must contain sponsor email inline error div");
+  assert.ok(sponsorsHtml.includes('PACKAGE_DISPLAY_NAMES'), "Must define package display names dictionary");
+  assert.ok(sponsorsHtml.includes('showFieldError'), "Must define showFieldError UI helper");
+  assert.ok(sponsorsHtml.includes('clearFieldError'), "Must define clearFieldError UI helper");
+  assert.ok(sponsorsHtml.includes('clearSelectedPackage'), "Must define clearSelectedPackage UI helper");
+});
+
