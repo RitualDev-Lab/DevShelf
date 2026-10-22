@@ -4,20 +4,21 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total APIs](https://img.shields.io/badge/APIs-102_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total APIs](https://img.shields.io/badge/APIs-103_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
 [AI & Machine Learning](#ai-machine-learning) • [Animals & Fun](#animals-fun) • [Books & Literature](#books-literature) • [Development & Testing](#development-testing) • [Entertainment & Media](#entertainment-media) • [Finance & Crypto](#finance-crypto) • [Food & Health](#food-health) • [Games & Media](#games-media) • [Geocoding & IP](#geocoding-ip) • [Media & Images](#media-images) • [News & Media](#news-media) • [Other](#other) • [Science & Astronomy](#science-astronomy) • [Travel & Transit](#travel-transit) • [Weather & Climate](#weather-climate)
 
 ---
 
-### <a id="ai-machine-learning"></a>AI & Machine Learning (3)
+### <a id="ai-machine-learning"></a>AI & Machine Learning (4)
 
 | API & URL | Auth | Rate Limit | Description |
 | :--- | :---: | :---: | :--- |
 | [**GroqCloud Free Tier**](https://console.groq.com) | 🔑 Free Key | `30 req/min` | Ultra-low latency open-source LLM inference API (Llama 3.3, DeepSeek, Qwen) with a generous free developer tier. |
 | [**Hugging Face Serverless Inference**](https://huggingface.co/inference-api) | 🔑 Free Key | `Free monthly tier` | Instant serverless API access to 100,000+ open-source AI models across NLP, vision, and speech with free monthly quota. |
 | [**Caption-Pack API**](https://muse.ai/s/caption-pack-api-xfxt62ya0xcxlxhh) | 🟢 No Key | `5 req/hour (Playground)` | Deterministic social caption and hashtag generator API returning platform-ready JSON. Features a permanent keyless playground endpoint for developers and AI agents. |
+| [**QuelLLM**](https://quelllm.fr/api) | 🟢 No Key | `No numerical rate limit is published. Static, read-only JSON with no account, API key or card; consumers should cache responses.` | Read-only JSON catalog of self-hostable LLMs and GPU specifications, including model metadata, VRAM estimates and editorial rankings. Provides data for developer tools; does not run model inference. |
 
 ### <a id="animals-fun"></a>Animals & Fun (16)
 

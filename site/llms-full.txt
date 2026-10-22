@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 538 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 539 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -3361,6 +3361,14 @@ Current limits: https://arcmira.com/docs/usage-and-billing
 - **URL**: https://carejobs.now/data
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/carejobsnow-open-healthcare-jobs-and-pay-data.html
 - **Description**: Free, no-key JSON and CSV endpoints providing US healthcare open jobs and posted hourly pay by role and employer. Aggregated daily from 270+ employers' career sites, complete with OpenAPI 3.1 specifications.
+
+### QuelLLM
+- **Category**: AI & Machine Learning
+- **Pricing Model**: No numerical rate limit is published. Static, read-only JSON with no account, API key or card; consumers should cache responses.
+- **Auth**: No Key
+- **URL**: https://quelllm.fr/api
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/quelllm.html
+- **Description**: Read-only JSON catalog of self-hostable LLMs and GPU specifications, including model metadata, VRAM estimates and editorial rankings. Provides data for developer tools; does not run model inference.
 
 ### Supabase
 - **Category**: Databases & BaaS

@@ -1,6 +1,6 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-10-22T01:30:35.184Z",
-  "totalCount": 538,
+  "updatedAt": "2026-10-22T16:43:34.970Z",
+  "totalCount": 539,
   "reposCount": 335,
   "facets": {
     "repos": 335
@@ -9,7 +9,7 @@ window.DEVSHELF_DATA = {
     "aiTools": 90,
     "cliTools": 119,
     "testingQa": 64,
-    "apis": 102,
+    "apis": 103,
     "freeCloud": 71,
     "perks": 30,
     "boilerplates": 41,
@@ -5765,6 +5765,18 @@ window.DEVSHELF_DATA = {
       "auth": "No Key",
       "cors": "Yes",
       "rateLimit": "Unlimited (no key, read-only, cached static JSON)",
+      "https": true,
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "QuelLLM",
+      "url": "https://quelllm.fr/api",
+      "category": "AI & Machine Learning",
+      "description": "Read-only JSON catalog of self-hostable LLMs and GPU specifications, including model metadata, VRAM estimates and editorial rankings. Provides data for developer tools; does not run model inference.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "No numerical rate limit is published. Static, read-only JSON with no account, API key or card; consumers should cache responses.",
       "https": true,
       "type": "api",
       "section": "Free & Public APIs"
