@@ -1115,5 +1115,15 @@
     "cors": "Yes",
     "rateLimit": "Unlimited (no key, read-only, cached static JSON)",
     "https": true
+  },
+  {
+    "name": "QuelLLM",
+    "url": "https://quelllm.fr/api",
+    "category": "AI & Machine Learning",
+    "description": "Read-only JSON catalog of self-hostable LLMs and GPU specifications, including model metadata, VRAM estimates and editorial rankings. Provides data for developer tools; does not run model inference.",
+    "auth": "No Key",
+    "cors": "Yes",
+    "rateLimit": "No numerical rate limit is published. Static, read-only JSON with no account, API key or card; consumers should cache responses.",
+    "https": true
   }
 ]

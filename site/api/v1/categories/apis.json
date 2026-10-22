@@ -1,9 +1,9 @@
 {
   "version": "1.1.2",
-  "updatedAt": "2026-10-22T01:30:35.184Z",
+  "updatedAt": "2026-10-22T16:43:34.970Z",
   "slug": "apis",
   "name": "Free Public APIs",
-  "count": 102,
+  "count": 103,
   "items": [
     {
       "name": "Open-Meteo",
@@ -1618,6 +1618,18 @@
       "auth": "No Key",
       "cors": "Yes",
       "rateLimit": "Unlimited (no key, read-only, cached static JSON)",
+      "https": true,
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "QuelLLM",
+      "url": "https://quelllm.fr/api",
+      "category": "AI & Machine Learning",
+      "description": "Read-only JSON catalog of self-hostable LLMs and GPU specifications, including model metadata, VRAM estimates and editorial rankings. Provides data for developer tools; does not run model inference.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "No numerical rate limit is published. Static, read-only JSON with no account, API key or card; consumers should cache responses.",
       "https": true,
       "type": "api",
       "section": "Free & Public APIs"
