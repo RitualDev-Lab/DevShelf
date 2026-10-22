@@ -26,52 +26,28 @@ describe("DevShelf Step 5: AI Search Engine Domination (AEO / GEO) Suite", () =>
       "description_for_model must describe zero-paywall directory capabilities",
     );
     assert.strictEqual(manifest.auth.type, "none");
-    assert.strictEqual(
-      manifest.api.url,
-      "https://devshelf.ritualdev.in/api/v1/openapi.json",
-    );
+    assert.strictEqual(manifest.api.url, "https://devshelf.ritualdev.in/api/v1/openapi.json");
   });
 
   test("site/api/v1/openapi.json provides valid OpenAPI 3.1 specification for AI search engines", () => {
     const openapiPath = path.join(apiV1Dir, "openapi.json");
-    assert.strictEqual(
-      fs.existsSync(openapiPath),
-      true,
-      "openapi.json must exist in site/api/v1/",
-    );
+    assert.strictEqual(fs.existsSync(openapiPath), true, "openapi.json must exist in site/api/v1/");
 
     const spec = JSON.parse(fs.readFileSync(openapiPath, "utf8"));
     assert.strictEqual(spec.openapi, "3.1.0");
     assert.strictEqual(spec.info.title, "DevShelf Open Developer Resource API");
     assert.ok(spec.paths["/api/v1/tools.json"], "Must expose /api/v1/tools.json");
-    assert.ok(
-      spec.paths["/api/v1/categories.json"],
-      "Must expose /api/v1/categories.json",
-    );
-    assert.ok(
-      spec.paths["/api/v1/affiliates.json"],
-      "Must expose /api/v1/affiliates.json",
-    );
-    assert.ok(
-      spec.paths["/api/v1/newsletter.json"],
-      "Must expose /api/v1/newsletter.json",
-    );
+    assert.ok(spec.paths["/api/v1/categories.json"], "Must expose /api/v1/categories.json");
+    assert.ok(spec.paths["/api/v1/affiliates.json"], "Must expose /api/v1/affiliates.json");
+    assert.ok(spec.paths["/api/v1/newsletter.json"], "Must expose /api/v1/newsletter.json");
   });
 
   test("RFC-standard site/.well-known/llms.txt and site/llms-small.txt exist and provide concise LLM context", () => {
     const rfcPath = path.join(wellKnownDir, "llms.txt");
     const smallPath = path.join(siteDir, "llms-small.txt");
 
-    assert.strictEqual(
-      fs.existsSync(rfcPath),
-      true,
-      "RFC /.well-known/llms.txt must exist",
-    );
-    assert.strictEqual(
-      fs.existsSync(smallPath),
-      true,
-      "Lightweight llms-small.txt must exist",
-    );
+    assert.strictEqual(fs.existsSync(rfcPath), true, "RFC /.well-known/llms.txt must exist");
+    assert.strictEqual(fs.existsSync(smallPath), true, "Lightweight llms-small.txt must exist");
 
     const smallContent = fs.readFileSync(smallPath, "utf8");
     assert.match(
@@ -115,21 +91,9 @@ describe("DevShelf Step 5: AI Search Engine Domination (AEO / GEO) Suite", () =>
       );
     }
 
-    assert.match(
-      content,
-      /llms-small\.txt/,
-      "robots.txt must document llms-small.txt",
-    );
-    assert.match(
-      content,
-      /\.well-known\/llms\.txt/,
-      "robots.txt must document RFC llms.txt",
-    );
-    assert.match(
-      content,
-      /ai-plugin\.json/,
-      "robots.txt must document ChatGPT ai-plugin.json",
-    );
+    assert.match(content, /llms-small\.txt/, "robots.txt must document llms-small.txt");
+    assert.match(content, /\.well-known\/llms\.txt/, "robots.txt must document RFC llms.txt");
+    assert.match(content, /ai-plugin\.json/, "robots.txt must document ChatGPT ai-plugin.json");
   });
 
   test("Alternative pages contain Wikidata Knowledge Graph entity grounding and structured AEO direct answer blocks", () => {
@@ -148,16 +112,8 @@ describe("DevShelf Step 5: AI Search Engine Domination (AEO / GEO) Suite", () =>
       /data-aeo=["']direct-answer["']/,
       "Must include data-aeo direct-answer attribute for answer engines",
     );
-    assert.match(
-      html,
-      /Top Pick:/i,
-      "Must include structured verdict badge for Top Pick",
-    );
-    assert.match(
-      html,
-      /Zero Credit Card/i,
-      "Must include structured paywall check pill",
-    );
+    assert.match(html, /Top Pick:/i, "Must include structured verdict badge for Top Pick");
+    assert.match(html, /Zero Credit Card/i, "Must include structured paywall check pill");
     assert.match(
       html,
       /href=["']\.\.\/\.well-known\/llms\.txt["']/,
@@ -216,10 +172,6 @@ describe("DevShelf Step 5: AI Search Engine Domination (AEO / GEO) Suite", () =>
       /href=["']api\/v1\/openapi\.json["']/,
       "Homepage must link to openapi.json in head",
     );
-    assert.match(
-      html,
-      /ai-plugin\.json/,
-      "Homepage AEO section must link to ai-plugin.json",
-    );
+    assert.match(html, /ai-plugin\.json/, "Homepage AEO section must link to ai-plugin.json");
   });
 });

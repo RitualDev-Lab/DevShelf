@@ -264,11 +264,7 @@ export async function buildStaticBadges() {
     generateDirectoryBadgeSvg("free-alternative"),
     "utf8",
   );
-  await fs.writeFile(
-    path.join(BADGES_DIR, "featured-card.svg"),
-    generateFeaturedCardSvg(),
-    "utf8",
-  );
+  await fs.writeFile(path.join(BADGES_DIR, "featured-card.svg"), generateFeaturedCardSvg(), "utf8");
 
   // Default badges
   const defaultPill = generatePillBadgeSvg({ tier: "bronze" });
@@ -321,9 +317,7 @@ export async function buildStaticBadges() {
   }
 
   // Badges for verified sponsors & patrons
-  const samplePatrons = [
-    ...patronsList,
-  ];
+  const samplePatrons = [...patronsList];
 
   const processedHandles = new Set<string>();
   for (const p of samplePatrons) {

@@ -377,7 +377,10 @@ test("Dodo Checkout URL Prefill - Customer and Payment Parameters", () => {
   assert.equal(parsed.searchParams.get("country"), "US");
   assert.equal(parsed.searchParams.get("metadata_sponsorName"), "Divyanshu Jethi");
   assert.equal(parsed.searchParams.get("metadata_email"), "divyanshu@example.com");
-  assert.equal(parsed.searchParams.get("redirect_url"), "https://devshelf.ritualdev.in/sponsors.html?status=success");
+  assert.equal(
+    parsed.searchParams.get("redirect_url"),
+    "https://devshelf.ritualdev.in/sponsors.html?status=success",
+  );
 });
 
 test("Dodo Checkout URL Prefill - INR Currency and Country Mapping", () => {
@@ -393,7 +396,11 @@ test("Dodo Checkout URL Prefill - INR Currency and Country Mapping", () => {
   assert.equal(parsed.searchParams.get("firstName"), "Alex");
   assert.equal(parsed.searchParams.get("lastName"), null);
   assert.equal(parsed.searchParams.get("paymentCurrency"), "INR");
-  assert.equal(parsed.searchParams.get("country"), "IN", "INR currency should default country to IN");
+  assert.equal(
+    parsed.searchParams.get("country"),
+    "IN",
+    "INR currency should default country to IN",
+  );
   assert.equal(parsed.searchParams.get("singlePage"), "true");
 });
 
@@ -451,7 +458,9 @@ function validateSponsorSubmission(input: SponsorValidationInput): SponsorValida
     errors.email = "Please enter a valid email address (e.g. dev@example.com).";
   }
 
-  const isToolSubmission = Boolean(packageId || toolName || toolUrl || toolPitch || toolAlt || toolNotes);
+  const isToolSubmission = Boolean(
+    packageId || toolName || toolUrl || toolPitch || toolAlt || toolNotes,
+  );
 
   if (isToolSubmission) {
     if (!toolName) {
@@ -471,14 +480,19 @@ function validateSponsorSubmission(input: SponsorValidationInput): SponsorValida
       let validUrl = false;
       try {
         const parsed = new URL(toolUrl);
-        if (["http:", "https:"].includes(parsed.protocol) && parsed.hostname && parsed.hostname.includes(".")) {
+        if (
+          ["http:", "https:"].includes(parsed.protocol) &&
+          parsed.hostname &&
+          parsed.hostname.includes(".")
+        ) {
           validUrl = true;
         }
       } catch {
         validUrl = false;
       }
       if (!validUrl) {
-        errors.toolUrl = "Please enter a valid URL (e.g. https://github.com/org/tool or https://mytool.dev).";
+        errors.toolUrl =
+          "Please enter a valid URL (e.g. https://github.com/org/tool or https://mytool.dev).";
       }
     }
   }
@@ -524,8 +538,14 @@ test("Sponsors Form Validation - Strict Tool Name & URL Validation for Tool Pack
     packageId: "starter",
   });
   assert.equal(missingBoth.isValid, false);
-  assert.equal(missingBoth.errors.toolName, "Tool / Product Name is required to reserve this package.");
-  assert.equal(missingBoth.errors.toolUrl, "Tool URL or GitHub Repo is required to reserve this package.");
+  assert.equal(
+    missingBoth.errors.toolName,
+    "Tool / Product Name is required to reserve this package.",
+  );
+  assert.equal(
+    missingBoth.errors.toolUrl,
+    "Tool URL or GitHub Repo is required to reserve this package.",
+  );
 
   // 2. Missing Tool URL when Tool Name is provided
   const missingUrl = validateSponsorSubmission({
@@ -535,7 +555,10 @@ test("Sponsors Form Validation - Strict Tool Name & URL Validation for Tool Pack
     toolName: "AwesomeCLI",
   });
   assert.equal(missingUrl.isValid, false);
-  assert.equal(missingUrl.errors.toolUrl, "Tool URL or GitHub Repo is required to reserve this package.");
+  assert.equal(
+    missingUrl.errors.toolUrl,
+    "Tool URL or GitHub Repo is required to reserve this package.",
+  );
 
   // 3. Invalid URL string
   const badUrl = validateSponsorSubmission({
@@ -563,14 +586,31 @@ test("Sponsors Form Validation - Strict Tool Name & URL Validation for Tool Pack
 test("Sponsors HTML UI Structure - Contains Error Elements & Active Package Banner", async () => {
   const sponsorsHtml = await fs.readFile(path.resolve("site/sponsors.html"), "utf-8");
 
-  assert.ok(sponsorsHtml.includes('id="active-package-banner"'), "Must contain active package banner container");
-  assert.ok(sponsorsHtml.includes('id="tool-name-error"'), "Must contain tool name inline error div");
+  assert.ok(
+    sponsorsHtml.includes('id="active-package-banner"'),
+    "Must contain active package banner container",
+  );
+  assert.ok(
+    sponsorsHtml.includes('id="tool-name-error"'),
+    "Must contain tool name inline error div",
+  );
   assert.ok(sponsorsHtml.includes('id="tool-url-error"'), "Must contain tool url inline error div");
-  assert.ok(sponsorsHtml.includes('id="sponsor-name-error"'), "Must contain sponsor name inline error div");
-  assert.ok(sponsorsHtml.includes('id="sponsor-email-error"'), "Must contain sponsor email inline error div");
-  assert.ok(sponsorsHtml.includes('PACKAGE_DISPLAY_NAMES'), "Must define package display names dictionary");
-  assert.ok(sponsorsHtml.includes('showFieldError'), "Must define showFieldError UI helper");
-  assert.ok(sponsorsHtml.includes('clearFieldError'), "Must define clearFieldError UI helper");
-  assert.ok(sponsorsHtml.includes('clearSelectedPackage'), "Must define clearSelectedPackage UI helper");
+  assert.ok(
+    sponsorsHtml.includes('id="sponsor-name-error"'),
+    "Must contain sponsor name inline error div",
+  );
+  assert.ok(
+    sponsorsHtml.includes('id="sponsor-email-error"'),
+    "Must contain sponsor email inline error div",
+  );
+  assert.ok(
+    sponsorsHtml.includes("PACKAGE_DISPLAY_NAMES"),
+    "Must define package display names dictionary",
+  );
+  assert.ok(sponsorsHtml.includes("showFieldError"), "Must define showFieldError UI helper");
+  assert.ok(sponsorsHtml.includes("clearFieldError"), "Must define clearFieldError UI helper");
+  assert.ok(
+    sponsorsHtml.includes("clearSelectedPackage"),
+    "Must define clearSelectedPackage UI helper",
+  );
 });
-

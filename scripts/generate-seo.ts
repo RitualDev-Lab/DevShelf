@@ -194,8 +194,12 @@ async function generateSeo() {
       ? `${name} — Best Free ${alternativeTo} Alternative (${currentYear}) | DevShelf`
       : `${name} — Free ${category} & Open Source Tool (${currentYear}) | DevShelf`;
 
-    const cleanRawDesc = (item.description || "Zero-paywall developer tool curated on DevShelf.").trim().replace(/\.$/, "");
-    const pageMetaDesc = escapeHtml(`Verified in ${currentYear}: ${cleanRawDesc}. 100% free tier (${pricing}), zero paywall traps, and active maintenance.`);
+    const cleanRawDesc = (item.description || "Zero-paywall developer tool curated on DevShelf.")
+      .trim()
+      .replace(/\.$/, "");
+    const pageMetaDesc = escapeHtml(
+      `Verified in ${currentYear}: ${cleanRawDesc}. 100% free tier (${pricing}), zero paywall traps, and active maintenance.`,
+    );
 
     const metaKeywords = alternativeTo
       ? `${name}, free alternative to ${alternativeTo}, open source alternative to ${alternativeTo}, ${alternativeTo} alternative ${currentYear}, ${category}, developer tools`

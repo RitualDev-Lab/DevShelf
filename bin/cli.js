@@ -737,7 +737,8 @@ async function main() {
     );
 
     const stats = sponsorsData.stats || {};
-    const totalPatrons = stats.totalPatrons ?? (sponsorsData.patrons ? sponsorsData.patrons.length : 0);
+    const totalPatrons =
+      stats.totalPatrons ?? (sponsorsData.patrons ? sponsorsData.patrons.length : 0);
     const poolUSD = stats.totalContributedUSD ?? 0;
     const poolINR = stats.totalContributedINR ?? 0;
 
@@ -747,7 +748,9 @@ async function main() {
 
     if (!sponsorsData.patrons || sponsorsData.patrons.length === 0) {
       console.log(`  ${c.purple}🏆 Founding Sponsor Slot #1 is OPEN!${c.reset}`);
-      console.log(`  ${c.dim}Radical transparency: No sponsors yet. Be the very first backer to claim the #1 spot on DevShelf.${c.reset}\n`);
+      console.log(
+        `  ${c.dim}Radical transparency: No sponsors yet. Be the very first backer to claim the #1 spot on DevShelf.${c.reset}\n`,
+      );
     } else {
       sponsorsData.patrons.forEach((p, idx) => {
         const rank = p.rank || idx + 1;

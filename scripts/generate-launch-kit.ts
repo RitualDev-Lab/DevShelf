@@ -61,10 +61,7 @@ export async function generateLaunchKit(): Promise<{ filesWritten: string[] }> {
   };
 
   try {
-    const rawCounts = await fs.readFile(
-      path.join(DATA_DIR, "counts.json"),
-      "utf8",
-    );
+    const rawCounts = await fs.readFile(path.join(DATA_DIR, "counts.json"), "utf8");
     counts = JSON.parse(rawCounts);
   } catch {
     // fallback to defaults
@@ -87,10 +84,7 @@ export async function generateLaunchKit(): Promise<{ filesWritten: string[] }> {
   };
 
   try {
-    const rawCatalog = await fs.readFile(
-      path.join(SITE_DIR, "data.json"),
-      "utf8",
-    );
+    const rawCatalog = await fs.readFile(path.join(SITE_DIR, "data.json"), "utf8");
     catalog = JSON.parse(rawCatalog);
   } catch {
     // fallback
