@@ -1826,7 +1826,7 @@ ${topFeatured
   };
   await fs.writeFile(
     path.join(wellKnownDir, "ai-plugin.json"),
-    JSON.stringify(aiPluginManifest, null, 2),
+    `${JSON.stringify(aiPluginManifest, null, 2)}\n`,
     "utf8",
   );
   console.log("✅ Generated site/.well-known/ai-plugin.json ChatGPT plugin manifest.");
@@ -1933,7 +1933,7 @@ ${topFeatured
   };
   await fs.writeFile(
     path.join(apiV1Dir, "openapi.json"),
-    JSON.stringify(openApiSpec, null, 2),
+    `${JSON.stringify(openApiSpec, null, 2)}\n`,
     "utf8",
   );
   console.log("✅ Generated site/api/v1/openapi.json OpenAPI 3.1 specification.");
