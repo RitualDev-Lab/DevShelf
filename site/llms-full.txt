@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 539 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 540 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -1945,6 +1945,15 @@
 - **URL**: https://github.com/firzen/StoneSVN
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/stonesvn.html
 - **Description**: MIT-licensed SVN desktop client for Windows, macOS and Linux, developed from OrcaSVN. It helps developers switch working copies, review diffs, choose files/directories to commit and shelve selected text hunks through the locally installed SVN CLI.
+
+### vhr-bench
+- **Category**: CLI & Developer Productivity
+- **Pricing Model**: See official site for free access and limits
+- **License**: MIT
+- **Language**: Bash
+- **URL**: https://github.com/vpshostreview/vhr-vps-benchmark
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/vhr-bench.html
+- **Description**: Single MIT-licensed Bash script that benchmarks a Linux server in about a minute with sysbench CPU and memory tests and fio 4k random read and write IOPS. It asks before installing sysbench or fio and sends nothing anywhere unless you pass an upload token.
 
 ### AutoHeal-QA
 - **Category**: Browser & E2E Testing

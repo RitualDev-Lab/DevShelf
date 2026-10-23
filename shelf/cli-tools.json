@@ -1279,5 +1279,14 @@
     "language": "Rust, Vue 3, TypeScript, Tauri 2",
     "license": "MIT",
     "featured": false
+  },
+  {
+    "name": "vhr-bench",
+    "repo": "https://github.com/vpshostreview/vhr-vps-benchmark",
+    "category": "CLI & Developer Productivity",
+    "description": "Single MIT-licensed Bash script that benchmarks a Linux server in about a minute with sysbench CPU and memory tests and fio 4k random read and write IOPS. It asks before installing sysbench or fio and sends nothing anywhere unless you pass an upload token.",
+    "language": "Bash",
+    "license": "MIT",
+    "featured": false
   }
 ]

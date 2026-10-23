@@ -1,9 +1,9 @@
 {
   "version": "1.1.2",
-  "updatedAt": "2026-10-23T01:30:20.625Z",
+  "updatedAt": "2026-10-23T01:59:16.479Z",
   "slug": "cli",
   "name": "CLI & Developer Productivity",
-  "count": 119,
+  "count": 120,
   "items": [
     {
       "name": "GitWhisper",
@@ -1860,6 +1860,17 @@
       "category": "CLI & Developer Productivity",
       "description": "MIT-licensed SVN desktop client for Windows, macOS and Linux, developed from OrcaSVN. It helps developers switch working copies, review diffs, choose files/directories to commit and shelve selected text hunks through the locally installed SVN CLI.",
       "language": "Rust, Vue 3, TypeScript, Tauri 2",
+      "license": "MIT",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "vhr-bench",
+      "repo": "https://github.com/vpshostreview/vhr-vps-benchmark",
+      "category": "CLI & Developer Productivity",
+      "description": "Single MIT-licensed Bash script that benchmarks a Linux server in about a minute with sysbench CPU and memory tests and fio 4k random read and write IOPS. It asks before installing sysbench or fio and sends nothing anywhere unless you pass an upload token.",
+      "language": "Bash",
       "license": "MIT",
       "featured": false,
       "type": "cli",

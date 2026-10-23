@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-10-23T01:30:20.625Z",
-  "totalCount": 539,
-  "reposCount": 335,
+  "updatedAt": "2026-10-23T01:59:16.479Z",
+  "totalCount": 540,
+  "reposCount": 336,
   "facets": {
-    "repos": 335
+    "repos": 336
   },
   "counts": {
     "aiTools": 90,
-    "cliTools": 119,
+    "cliTools": 120,
     "testingQa": 64,
     "apis": 103,
     "freeCloud": 71,
@@ -3356,6 +3356,17 @@
       "category": "CLI & Developer Productivity",
       "description": "MIT-licensed SVN desktop client for Windows, macOS and Linux, developed from OrcaSVN. It helps developers switch working copies, review diffs, choose files/directories to commit and shelve selected text hunks through the locally installed SVN CLI.",
       "language": "Rust, Vue 3, TypeScript, Tauri 2",
+      "license": "MIT",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "vhr-bench",
+      "repo": "https://github.com/vpshostreview/vhr-vps-benchmark",
+      "category": "CLI & Developer Productivity",
+      "description": "Single MIT-licensed Bash script that benchmarks a Linux server in about a minute with sysbench CPU and memory tests and fio 4k random read and write IOPS. It asks before installing sysbench or fio and sends nothing anywhere unless you pass an upload token.",
+      "language": "Bash",
       "license": "MIT",
       "featured": false,
       "type": "cli",
