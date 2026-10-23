@@ -1,6 +1,6 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-10-23T01:57:33.316Z",
-  "totalCount": 539,
+  "updatedAt": "2026-10-23T17:07:47.073Z",
+  "totalCount": 540,
   "reposCount": 335,
   "facets": {
     "repos": 335
@@ -9,7 +9,7 @@ window.DEVSHELF_DATA = {
     "aiTools": 90,
     "cliTools": 119,
     "testingQa": 64,
-    "apis": 103,
+    "apis": 104,
     "freeCloud": 71,
     "perks": 30,
     "boilerplates": 41,
@@ -5777,6 +5777,18 @@ window.DEVSHELF_DATA = {
       "auth": "No Key",
       "cors": "Yes",
       "rateLimit": "No numerical rate limit is published. Static, read-only JSON with no account, API key or card; consumers should cache responses.",
+      "https": true,
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "unicum.gg",
+      "url": "https://unicum.gg/docs",
+      "category": "Entertainment & Media",
+      "description": "Free World of Tanks statistics API: player and clan profiles, WN7/WN8/WNX ratings, leaderboards, tank specifications, maps, tournaments and server population for the EU, NA and Asia servers. Open source, documented with an OpenAPI 3 spec (https://unicum.gg/api/openapi.json), and also exposed as...",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "No fixed quota, fair use. Every endpoint is free and keyless.",
       "https": true,
       "type": "api",
       "section": "Free & Public APIs"

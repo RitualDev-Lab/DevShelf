@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 539 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 540 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -3369,6 +3369,14 @@ Current limits: https://arcmira.com/docs/usage-and-billing
 - **URL**: https://quelllm.fr/api
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/quelllm.html
 - **Description**: Read-only JSON catalog of self-hostable LLMs and GPU specifications, including model metadata, VRAM estimates and editorial rankings. Provides data for developer tools; does not run model inference.
+
+### unicum.gg
+- **Category**: Entertainment & Media
+- **Pricing Model**: No fixed quota, fair use. Every endpoint is free and keyless.
+- **Auth**: No Key
+- **URL**: https://unicum.gg/docs
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/unicumgg.html
+- **Description**: Free World of Tanks statistics API: player and clan profiles, WN7/WN8/WNX ratings, leaderboards, tank specifications, maps, tournaments and server population for the EU, NA and Asia servers. Open source, documented with an OpenAPI 3 spec (https://unicum.gg/api/openapi.json), and also exposed as...
 
 ### Supabase
 - **Category**: Databases & BaaS
