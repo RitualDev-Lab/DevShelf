@@ -235,6 +235,7 @@ async function generateSeo() {
       "@graph": [
         {
           "@type": item.type === "api" ? "WebAPI" : "SoftwareApplication",
+          inLanguage: "en-US",
           name: item.name,
           description: item.description,
           applicationCategory: item.category,
@@ -262,6 +263,7 @@ async function generateSeo() {
         },
         {
           "@type": "FAQPage",
+          inLanguage: "en-US",
           mainEntity: faqs.map((f) => ({
             "@type": "Question",
             name: f.question,
@@ -477,6 +479,14 @@ async function generateSeo() {
   <meta name="description" content="${pageMetaDesc}">
   <meta name="keywords" content="${metaKeywords}">
   <link rel="canonical" href="${pageUrl}">
+  <!-- Global Multi-Region SEO & International Geo Signals -->
+  <link rel="alternate" hreflang="x-default" href="${pageUrl}">
+  <link rel="alternate" hreflang="en" href="${pageUrl}">
+  <link rel="alternate" hreflang="en-US" href="${pageUrl}">
+  <link rel="alternate" hreflang="en-GB" href="${pageUrl}">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="en_GB">
+  <meta name="geo.region" content="US;GB;CA;AU;IN;GLOBAL">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <meta name="author" content="RitualDev Lab">
   <meta name="ai-content-declaration" content="human-curated, zero-paywall verified">
@@ -733,6 +743,7 @@ async function generateSeo() {
       "@graph": [
         {
           "@type": "ItemList",
+          inLanguage: "en-US",
           name: `Free Alternatives to ${targetName} (${currentYear})`,
           description: desc,
           numberOfItems: altTools.length,
@@ -766,6 +777,7 @@ async function generateSeo() {
         },
         {
           "@type": "FAQPage",
+          inLanguage: "en-US",
           mainEntity: altFaqs.map((f) => ({
             "@type": "Question",
             name: f.question,
@@ -949,6 +961,14 @@ async function generateSeo() {
   <meta name="author" content="RitualDev Lab">
   <meta name="ai-content-declaration" content="human-curated, zero-paywall verified">
   <link rel="canonical" href="${pageUrl}">
+  <!-- Global Multi-Region SEO & International Geo Signals -->
+  <link rel="alternate" hreflang="x-default" href="${pageUrl}">
+  <link rel="alternate" hreflang="en" href="${pageUrl}">
+  <link rel="alternate" hreflang="en-US" href="${pageUrl}">
+  <link rel="alternate" hreflang="en-GB" href="${pageUrl}">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="en_GB">
+  <meta name="geo.region" content="US;GB;CA;AU;IN;GLOBAL">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <link rel="alternate" type="text/plain" href="../llms.txt" title="DevShelf LLMs.txt Context for AI Agents">
   <link rel="alternate" type="text/markdown" href="../llms.txt" title="DevShelf LLMs.txt Context for AI Agents">
@@ -1197,6 +1217,7 @@ async function generateSeo() {
     const jsonLd = {
       "@context": "https://schema.org",
       "@type": "ItemList",
+      inLanguage: "en-US",
       name: col.heading,
       description: colDesc,
       numberOfItems: colTools.length,
@@ -1274,6 +1295,14 @@ async function generateSeo() {
   <meta name="author" content="RitualDev Lab">
   <meta name="ai-content-declaration" content="human-curated, zero-paywall verified">
   <link rel="canonical" href="${pageUrl}">
+  <!-- Global Multi-Region SEO & International Geo Signals -->
+  <link rel="alternate" hreflang="x-default" href="${pageUrl}">
+  <link rel="alternate" hreflang="en" href="${pageUrl}">
+  <link rel="alternate" hreflang="en-US" href="${pageUrl}">
+  <link rel="alternate" hreflang="en-GB" href="${pageUrl}">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="en_GB">
+  <meta name="geo.region" content="US;GB;CA;AU;IN;GLOBAL">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <link rel="alternate" type="text/plain" href="../llms.txt" title="DevShelf LLMs.txt Context for AI Agents">
   <link rel="alternate" type="text/markdown" href="../llms.txt" title="DevShelf LLMs.txt Context for AI Agents">
@@ -1525,6 +1554,7 @@ async function generateSeo() {
       },
       {
         "@type": "ItemList",
+        inLanguage: "en-US",
         name: "DevShelf Categorized Developer Resources",
         numberOfItems: resources.length,
         itemListElement: Array.from(categoriesMap.entries())
@@ -1550,6 +1580,14 @@ async function generateSeo() {
   <meta name="author" content="RitualDev Lab">
   <meta name="ai-content-declaration" content="human-curated, zero-paywall verified">
   <link rel="canonical" href="${directoryUrl}">
+  <!-- Global Multi-Region SEO & International Geo Signals -->
+  <link rel="alternate" hreflang="x-default" href="${directoryUrl}">
+  <link rel="alternate" hreflang="en" href="${directoryUrl}">
+  <link rel="alternate" hreflang="en-US" href="${directoryUrl}">
+  <link rel="alternate" hreflang="en-GB" href="${directoryUrl}">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="en_GB">
+  <meta name="geo.region" content="US;GB;CA;AU;IN;GLOBAL">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <link rel="alternate" type="text/plain" href="llms.txt" title="DevShelf LLMs.txt Context for AI Agents">
   <link rel="alternate" type="text/markdown" href="llms.txt" title="DevShelf LLMs.txt Context for AI Agents">

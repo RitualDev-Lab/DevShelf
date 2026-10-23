@@ -15,7 +15,7 @@
 ---
 
 ## 🏷️ Short Description (260 characters max)
-> A curated directory of 538+ verified free developer tools, open-source repos, and APIs with zero credit-card paywalls. Includes automated CI health checks, a terminal CLI (`npx devshelf`), and native MCP server for Cursor & Claude.
+> A curated directory of 539+ verified free developer tools, open-source repos, and APIs with zero credit-card paywalls. Includes automated CI health checks, a terminal CLI (`npx devshelf`), and native MCP server for Cursor & Claude.
 
 ---
 
@@ -33,7 +33,7 @@ We built DevShelf to be the ultimate **Zero-Paywall Ecosystem**:
 Every single resource in our directory has a **genuine, permanent free tier or is 100% open-source**. No credit card required. No trial traps.
 
 ### 🌟 Key Highlights:
-1. **538+ Audited Tools:** Hand-curated across AI Agents, Free APIs, Testing/Mocking, Cloud DBs, and 1-Click Boilerplates.
+1. **539+ Audited Tools:** Hand-curated across AI Agents, Free APIs, Testing/Mocking, Cloud DBs, and 1-Click Boilerplates.
 2. **Continuous Automated Health Checks:** Every night, GitHub Actions pings all URLs and audits landing pages to ensure uptime and flag newly introduced paywalls.
 3. **Native Terminal CLI:** Run `npx devshelf search "sqlite"` or `npx devshelf random` right from your command line.
 4. **Native MCP Server:** Connect DevShelf to Claude Desktop, Cursor, and Windsurf via `npx devshelf-mcp` so your AI assistant can recommend verified free tools.
@@ -51,7 +51,7 @@ Thank you for your support! ❤️
 ---
 
 ## 🎨 Recommended Gallery Screenshots
-1. **Slide 1 (Hero):** DevShelf homepage with search bar and live count pills (538+ Resources).
+1. **Slide 1 (Hero):** DevShelf homepage with search bar and live count pills (539+ Resources).
 2. **Slide 2 (MCP in Action):** Cursor / Claude Desktop chatting with `npx devshelf-mcp` discovering free APIs.
 3. **Slide 3 (Terminal CLI):** Beautiful dark-mode terminal showing `npx devshelf search "vector db"`.
 4. **Slide 4 (Alternative Hubs):** Side-by-side comparison matrix of commercial SaaS vs open-source alternatives.
