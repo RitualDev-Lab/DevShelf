@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 540 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 542 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -1955,6 +1955,15 @@
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/vhr-bench.html
 - **Description**: Single MIT-licensed Bash script that benchmarks a Linux server in about a minute with sysbench CPU and memory tests and fio 4k random read and write IOPS. It asks before installing sysbench or fio and sends nothing anywhere unless you pass an upload token.
 
+### Flisk
+- **Category**: DevOps & Infrastructure
+- **Pricing Model**: See official site for free access and limits
+- **License**: MIT
+- **Language**: TypeScript
+- **URL**: https://github.com/flisk-sh/flisk
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/flisk.html
+- **Description**: Generate and run your whole tech stack without the setup pain. One command from empty folder to running stack.
+
 ### AutoHeal-QA
 - **Category**: Browser & E2E Testing
 - **Pricing Model**: See official site for free access and limits
@@ -3378,6 +3387,14 @@ Current limits: https://arcmira.com/docs/usage-and-billing
 - **URL**: https://quelllm.fr/api
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/quelllm.html
 - **Description**: Read-only JSON catalog of self-hostable LLMs and GPU specifications, including model metadata, VRAM estimates and editorial rankings. Provides data for developer tools; does not run model inference.
+
+### unicum.gg
+- **Category**: Entertainment & Media
+- **Pricing Model**: No fixed quota, fair use. Every endpoint is free and keyless.
+- **Auth**: No Key
+- **URL**: https://unicum.gg/docs
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/unicumgg.html
+- **Description**: Free World of Tanks statistics API: player and clan profiles, WN7/WN8/WNX ratings, leaderboards, tank specifications, maps, tournaments and server population for the EU, NA and Asia servers. Open source, documented with an OpenAPI 3 spec (https://unicum.gg/api/openapi.json), and also exposed as a community MCP server.
 
 ### Supabase
 - **Category**: Databases & BaaS

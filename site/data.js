@@ -1,15 +1,15 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-10-23T01:59:16.479Z",
-  "totalCount": 540,
-  "reposCount": 336,
+  "updatedAt": "2026-10-24T00:44:45.212Z",
+  "totalCount": 542,
+  "reposCount": 337,
   "facets": {
-    "repos": 336
+    "repos": 337
   },
   "counts": {
     "aiTools": 90,
-    "cliTools": 120,
+    "cliTools": 121,
     "testingQa": 64,
-    "apis": 103,
+    "apis": 104,
     "freeCloud": 71,
     "perks": 30,
     "boilerplates": 41,
@@ -3369,6 +3369,23 @@ window.DEVSHELF_DATA = {
       "language": "Bash",
       "license": "MIT",
       "featured": false,
+      "goodFirstIssues": "https://github.com/vpshostreview/vhr-vps-benchmark/issues",
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "Flisk",
+      "repo": "https://github.com/flisk-sh/flisk",
+      "category": "DevOps & Infrastructure",
+      "description": "Generate and run your whole tech stack without the setup pain. One command from empty folder to running stack.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "featured": false,
+      "statusTags": [
+        "No Card Required",
+        "100% Free"
+      ],
+      "goodFirstIssues": "https://github.com/flisk-sh/flisk/issues",
       "type": "cli",
       "section": "CLI & Productivity Tools"
     },
@@ -5788,6 +5805,18 @@ window.DEVSHELF_DATA = {
       "auth": "No Key",
       "cors": "Yes",
       "rateLimit": "No numerical rate limit is published. Static, read-only JSON with no account, API key or card; consumers should cache responses.",
+      "https": true,
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "unicum.gg",
+      "url": "https://unicum.gg/docs",
+      "category": "Entertainment & Media",
+      "description": "Free World of Tanks statistics API: player and clan profiles, WN7/WN8/WNX ratings, leaderboards, tank specifications, maps, tournaments and server population for the EU, NA and Asia servers. Open source, documented with an OpenAPI 3 spec (https://unicum.gg/api/openapi.json), and also exposed as a community MCP server.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "No fixed quota, fair use. Every endpoint is free and keyless.",
       "https": true,
       "type": "api",
       "section": "Free & Public APIs"

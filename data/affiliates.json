@@ -6,7 +6,7 @@
     {
       "slug": "digitalocean",
       "toolName": "DigitalOcean",
-      "url": "https://m.do.co/c/devshelf",
+      "url": "https://www.awin1.com/awclick.php?mid=123996&id=3132128",
       "vanityPath": "/go/digitalocean.html",
       "category": "cloud",
       "perkTitle": "$200 Free Cloud Credits (60 Days)",
@@ -30,13 +30,25 @@
     {
       "slug": "vultr",
       "toolName": "Vultr",
-      "url": "https://www.vultr.com/?ref=devshelf",
+      "url": "https://www.vultr.com/?ref=9930418",
       "vanityPath": "/go/vultr.html",
       "category": "cloud",
       "perkTitle": "$100 Free Cloud Credits",
       "perkDescription": "Global cloud compute, bare metal, and managed Kubernetes across 32 worldwide locations with instant credits.",
       "ctaText": "Claim $100 Credits →",
       "badge": "🎁 $100 Cloud Credit",
+      "active": true
+    },
+    {
+      "slug": "geekflare",
+      "toolName": "Geekflare",
+      "url": "https://www.awin1.com/awclick.php?mid=124982&id=3132128",
+      "vanityPath": "/go/geekflare.html",
+      "category": "ai",
+      "perkTitle": "Developer AI APIs & Web Data Extraction",
+      "perkDescription": "High-speed developer APIs for scraping, data extraction, and collaborative AI models.",
+      "ctaText": "Explore APIs →",
+      "badge": "⚡ Dev API Perks",
       "active": true
     },
     {

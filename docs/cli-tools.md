@@ -4,10 +4,10 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total CLI Tools](https://img.shields.io/badge/CLI_Tools-120_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total CLI Tools](https://img.shields.io/badge/CLI_Tools-121_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
-[Benchmarking & Performance](#benchmarking-performance) • [CLI & Developer Productivity](#cli-developer-productivity) • [Database & SQL](#database-sql) • [Dev Utilities & Libraries](#dev-utilities-libraries) • [Developer Tools](#developer-tools) • [DevOps & Containers](#devops-containers) • [Disk & Storage](#disk-storage) • [Git & Version Control](#git-version-control) • [GitHub Workflow & TUI](#github-workflow-tui) • [HTTP & Network](#http-network) • [OS & Hardware Utilities](#os-hardware-utilities) • [System & Process Monitoring](#system-process-monitoring) • [Terminal & Search](#terminal-search) • [Terminal & Shell](#terminal-shell) • [Terminal Navigation](#terminal-navigation)
+[Benchmarking & Performance](#benchmarking-performance) • [CLI & Developer Productivity](#cli-developer-productivity) • [Database & SQL](#database-sql) • [Dev Utilities & Libraries](#dev-utilities-libraries) • [Developer Tools](#developer-tools) • [DevOps & Containers](#devops-containers) • [DevOps & Infrastructure](#devops-infrastructure) • [Disk & Storage](#disk-storage) • [Git & Version Control](#git-version-control) • [GitHub Workflow & TUI](#github-workflow-tui) • [HTTP & Network](#http-network) • [OS & Hardware Utilities](#os-hardware-utilities) • [System & Process Monitoring](#system-process-monitoring) • [Terminal & Search](#terminal-search) • [Terminal & Shell](#terminal-shell) • [Terminal Navigation](#terminal-navigation)
 
 ---
 
@@ -86,6 +86,12 @@
 | [**minikube**](https://github.com/kubernetes/minikube) | `Go` | `Apache-2.0` | Run Kubernetes locally on Windows, macOS, and Linux with automated cluster provisioning. | [GitHub](https://github.com/kubernetes/minikube) |
 | [**kind**](https://github.com/kubernetes-sigs/kind) | `Go` | `Apache-2.0` | Kubernetes IN Docker: tool for running local Kubernetes clusters using Docker container nodes. | [GitHub](https://github.com/kubernetes-sigs/kind) |
 | [**ctop**](https://github.com/bcicen/ctop) | `Go` | `MIT` | Top-like interface for container metrics, real-time memory and CPU consumption for Docker and Kubernetes. | [GitHub](https://github.com/bcicen/ctop) |
+
+### <a id="devops-infrastructure"></a>DevOps & Infrastructure (1)
+
+| Tool | Language | License | Description | Links |
+| :--- | :---: | :---: | :--- | :---: |
+| [**Flisk**](https://github.com/flisk-sh/flisk) | `TypeScript` | `MIT` | Generate and run your whole tech stack without the setup pain. One command from empty folder to running stack. | [GitHub](https://github.com/flisk-sh/flisk) |
 
 ### <a id="disk-storage"></a>Disk & Storage (1)
 

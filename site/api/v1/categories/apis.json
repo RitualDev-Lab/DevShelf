@@ -1,9 +1,9 @@
 {
   "version": "1.1.2",
-  "updatedAt": "2026-10-23T01:59:16.479Z",
+  "updatedAt": "2026-10-24T00:44:45.212Z",
   "slug": "apis",
   "name": "Free Public APIs",
-  "count": 103,
+  "count": 104,
   "items": [
     {
       "name": "Open-Meteo",
@@ -1630,6 +1630,18 @@
       "auth": "No Key",
       "cors": "Yes",
       "rateLimit": "No numerical rate limit is published. Static, read-only JSON with no account, API key or card; consumers should cache responses.",
+      "https": true,
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "unicum.gg",
+      "url": "https://unicum.gg/docs",
+      "category": "Entertainment & Media",
+      "description": "Free World of Tanks statistics API: player and clan profiles, WN7/WN8/WNX ratings, leaderboards, tank specifications, maps, tournaments and server population for the EU, NA and Asia servers. Open source, documented with an OpenAPI 3 spec (https://unicum.gg/api/openapi.json), and also exposed as a community MCP server.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "No fixed quota, fair use. Every endpoint is free and keyless.",
       "https": true,
       "type": "api",
       "section": "Free & Public APIs"
