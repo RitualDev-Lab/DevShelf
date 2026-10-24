@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 542 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 543 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -3690,6 +3690,13 @@ Current limits: https://arcmira.com/docs/usage-and-billing
 - **URL**: https://glitch.com
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/glitch.html
 - **Description**: Friendly community and instant web development environment where anyone can build, remix, and host full-stack apps.
+
+### deed.page
+- **Category**: Cloud Hosting & PaaS
+- **Pricing Model**: Free plan: 25 sites, 25 MB per site, 60 publishes/hour, 10 retained versions, 1 custom domain
+- **URL**: https://deed.page
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/deedpage.html
+- **Description**: Static hosting built for AI agents and scripts: one HTTP PUT or the remote MCP server publishes an HTML file or folder to a permanent https://<slug>.deed.page URL, with no account or signup step.
 
 ### Aiven Free Tier
 - **Category**: Databases & BaaS

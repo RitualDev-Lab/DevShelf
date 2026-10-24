@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-24T02:04:55.740Z",
-  "totalCount": 542,
+  "updatedAt": "2026-10-24T16:19:38.664Z",
+  "totalCount": 543,
   "reposCount": 337,
   "facets": {
     "repos": 337
@@ -10,7 +10,7 @@
     "cliTools": 121,
     "testingQa": 64,
     "apis": 104,
-    "freeCloud": 71,
+    "freeCloud": 72,
     "perks": 30,
     "boilerplates": 41,
     "contributors": 21
@@ -6358,6 +6358,18 @@
       "statusTags": [
         "No Card Required",
         "CI Verified"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "deed.page",
+      "url": "https://deed.page",
+      "category": "Cloud Hosting & PaaS",
+      "description": "Static hosting built for AI agents and scripts: one HTTP PUT or the remote MCP server publishes an HTML file or folder to a permanent https://<slug>.deed.page URL, with no account or signup step.",
+      "freeTier": "Free plan: 25 sites, 25 MB per site, 60 publishes/hour, 10 retained versions, 1 custom domain",
+      "statusTags": [
+        "No Card Required"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"

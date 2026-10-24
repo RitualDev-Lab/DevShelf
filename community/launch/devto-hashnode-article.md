@@ -18,7 +18,7 @@ If you have tried signing up for a new developer tool recently, you have probabl
 
 Over the past decade, the developer software landscape has undergone a silent transformation. What used to be genuine free tiers designed to nurture grass-roots adoption have increasingly morphed into **trial traps**, **freemium bait**, and **vendor lock-in funnels**.
 
-Frustrated by this trend, our open-source team spent the last several months auditing over **542 developer tools, public APIs, AI agents, and cloud platforms**. 
+Frustrated by this trend, our open-source team spent the last several months auditing over **543 developer tools, public APIs, AI agents, and cloud platforms**. 
 
 We set out to answer one question:  
 *Can a developer still build, test, and ship production-grade software on a true $0 budget without entering a credit card?*
@@ -27,7 +27,7 @@ The answer is **yes** — but you need to know where to look.
 
 To solve this permanently, we built and open-sourced **[DevShelf](https://devshelf.ritualdev.in)**: a zero-paywall developer ecosystem with continuous automated health checks, a terminal CLI, and a native Model Context Protocol (MCP) server.
 
-Here is what we learned from auditing 542+ tools, along with the most valuable zero-paywall discoveries you can use today.
+Here is what we learned from auditing 543+ tools, along with the most valuable zero-paywall discoveries you can use today.
 
 ---
 
@@ -63,7 +63,7 @@ Need real data for your prototype without wading through 10-step enterprise API 
 - **[Mockoon](https://mockoon.com)**: The easiest way to design and run mock REST APIs locally in seconds.
 - **[WireMock](https://wiremock.org)**: Battle-tested API mocking with stateful behavior and fault injection.
 
-### 4. Free Cloud & Database Tiers (71 Platforms)
+### 4. Free Cloud & Database Tiers (72 Platforms)
 - **[Neon](https://neon.tech)**: Serverless Postgres with instant branching and generous free storage.
 - **[Turso](https://turso.tech)**: Edge-replicated SQLite powered by LibSQL.
 - **[PocketBase](https://pocketbase.io)**: 1-file backend with embedded SQLite, realtime subscriptions, and auth.

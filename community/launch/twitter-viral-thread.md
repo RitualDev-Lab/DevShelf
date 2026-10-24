@@ -68,14 +68,14 @@ SigNoz is an open-source, OpenTelemetry-native APM providing distributed tracing
 
 You don't even have to leave your code editor:
 - Run `npx devshelf search "vector db"` right in your shell.
-- Or plug `npx devshelf-mcp` into Cursor & Claude Code so your AI assistant queries 542+ verified free tools natively!
+- Or plug `npx devshelf-mcp` into Cursor & Claude Code so your AI assistant queries 543+ verified free tools natively!
 ```
 
 ### Tweet 8 (CTA & Link):
 ```text
 Every tool on DevShelf is audited daily with automated CI health checks. No credit cards. No trial traps.
 
-Explore all 542+ verified developer tools:
+Explore all 543+ verified developer tools:
 🔗 https://devshelf.ritualdev.in
 
 Star the repo & help reach 1,000 tools:

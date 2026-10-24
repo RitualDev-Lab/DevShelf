@@ -6,7 +6,7 @@
 
 ## 📌 Post 1: r/webdev (2.2M+ members)
 - **Flair:** `Project / Showcase` or `Resource`
-- **Title:** `Tired of fake "free tier" dev tools, so we curated 542+ zero-paywall tools, APIs, and boilerplates with automated health checks`
+- **Title:** `Tired of fake "free tier" dev tools, so we curated 543+ zero-paywall tools, APIs, and boilerplates with automated health checks`
 - **Post Body:**
 
 ```markdown
@@ -24,7 +24,7 @@ We decided to build an open-source, community-maintained directory called **DevS
 4. **Terminal CLI & AI MCP Server:** You can search tools directly in your terminal via `npx devshelf search <query>`, or plug `npx devshelf-mcp` into Cursor or Claude Code so your AI assistant knows real free APIs.
 5. **No tracking or cookies:** Clean static site, zero third-party tracking scripts.
 
-### Some of the 542+ resources indexed:
+### Some of the 543+ resources indexed:
 - **Free APIs:** Currency, Geocoding, IP, Weather, Mock Payment endpoints without CORS issues.
 - **Local AI:** Ollama, vLLM, AgentShield, LocalAI for running local models without OpenAI bills.
 - **Testing & Mocking:** LocalStack, WireMock, Mockoon, MSW, Playwright.
@@ -70,7 +70,7 @@ Let me know what self-hosted developer tools we're missing!
 
 ## 📌 Post 3: r/opensource (250k+ members)
 - **Flair:** `Project`
-- **Title:** `DevShelf: An open-source directory of 542+ free developer tools with zero telemetry and native MCP server`
+- **Title:** `DevShelf: An open-source directory of 543+ free developer tools with zero telemetry and native MCP server`
 - **Post Body:**
 
 ```markdown
@@ -79,7 +79,7 @@ Hello r/opensource!
 We built **DevShelf** (https://devshelf.ritualdev.in) to solve a growing problem: the commercialization and paywalling of developer tools.
 
 ### What is DevShelf?
-A 100% open-source, community-driven catalog of **542+ verified developer tools, free public APIs, AI agents, and 1-click boilerplates** that never require credit cards or trial commitments.
+A 100% open-source, community-driven catalog of **543+ verified developer tools, free public APIs, AI agents, and 1-click boilerplates** that never require credit cards or trial commitments.
 
 ### Open-Source Architecture:
 - The entire catalog lives in JSON schemas in the git repo.
@@ -109,7 +109,7 @@ When building side projects on a budget, SaaS bills for authentication, database
 To help myself and other makers bootstrap with $0 infrastructure costs, I built **DevShelf**:
 👉 https://devshelf.ritualdev.in
 
-It's a curated directory of **542+ developer resources** with permanent free tiers, no credit-card requirements, and zero trial traps.
+It's a curated directory of **543+ developer resources** with permanent free tiers, no credit-card requirements, and zero trial traps.
 
 ### Features:
 - Filter by: Free APIs, CLI Tools, AI Agents, Mocking/QA, 1-Click Boilerplates, and Free Cloud.
