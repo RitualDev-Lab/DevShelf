@@ -605,8 +605,11 @@ DevShelf is proudly open-source and built together with the global developer com
 | [@odykyi](https://github.com/odykyi) | [**Flisk**](https://github.com/flisk-sh/flisk) | DevOps & Infrastructure | ✅ Verified |
 | [@antoinekm](https://github.com/antoinekm) | [**unicum.gg**](https://unicum.gg/docs) | Entertainment & Media | ✅ Verified |
 | [@vpshostreview](https://github.com/vpshostreview) | [**vhr-bench**](https://github.com/vpshostreview/vhr-vps-benchmark) | CLI & Developer Productivity | ✅ Verified |
-| [@MGM-FALCON](https://github.com/MGM-FALCON) | [**Solaris Dev Shop**](https://github.com/MGM-FALCON/solaris-dev-shop) | Boilerplates & Starters | ✅ Verified |
+| [@MGM-FALCON](https://github.com/MGM-FALCON) | [**QuelLLM**](https://quelllm.com) | AI Agents & Local LLMs | ✅ Verified |
 | [@jn6825rsr7-afk](https://github.com/jn6825rsr7-afk) | [**ShipVela**](https://github.com/jn6825rsr7-afk/shipvela-publishing-plugin-and-skills) | AI Agents & Utilities | ✅ Verified |
+| [@brodyga45](https://github.com/brodyga45) | [**Clockshift**](https://github.com/brodyga45/clockshift) | CLI & Developer Productivity | ✅ Verified |
+| [@Shaisolaris](https://github.com/Shaisolaris) | [**Solaris Dev Shop**](https://github.com/Shaisolaris/solaris-dev-shop) | Boilerplates & Starters | ✅ Verified |
+| [@firzen](https://github.com/firzen) | [**StoneSVN**](https://github.com/firzen/StoneSVN) | CLI & Developer Productivity | ✅ Verified |
 
 </div>
 
