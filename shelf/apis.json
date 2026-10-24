@@ -1125,5 +1125,15 @@
     "cors": "Yes",
     "rateLimit": "No numerical rate limit is published. Static, read-only JSON with no account, API key or card; consumers should cache responses.",
     "https": true
+  },
+  {
+    "name": "unicum.gg",
+    "url": "https://unicum.gg/docs",
+    "category": "Entertainment & Media",
+    "description": "Free World of Tanks statistics API: player and clan profiles, WN7/WN8/WNX ratings, leaderboards, tank specifications, maps, tournaments and server population for the EU, NA and Asia servers. Open source, documented with an OpenAPI 3 spec (https://unicum.gg/api/openapi.json), and also exposed as a community MCP server.",
+    "auth": "No Key",
+    "cors": "Yes",
+    "rateLimit": "No fixed quota, fair use. Every endpoint is free and keyless.",
+    "https": true
   }
 ]

@@ -1593,15 +1593,24 @@
     "featured": false
   },
   {
+    "name": "vhr-bench",
+    "repo": "https://github.com/vpshostreview/vhr-vps-benchmark",
+    "category": "CLI & Developer Productivity",
+    "description": "Single MIT-licensed Bash script that benchmarks a Linux server in about a minute with sysbench CPU and memory tests and fio 4k random read and write IOPS. It asks before installing sysbench or fio and sends nothing anywhere unless you pass an upload token.",
+    "language": "Bash",
+    "license": "MIT",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/vpshostreview/vhr-vps-benchmark/issues"
+  },
+  {
     "name": "Flisk",
     "repo": "https://github.com/flisk-sh/flisk",
     "category": "DevOps & Infrastructure",
     "description": "Generate and run your whole tech stack without the setup pain. One command from empty folder to running stack.",
     "language": "TypeScript",
     "license": "MIT",
-    "statusTags": [
-      "No Card Required",
-      "100% Free"
-    ]
+    "featured": false,
+    "statusTags": ["No Card Required", "100% Free"],
+    "goodFirstIssues": "https://github.com/flisk-sh/flisk/issues"
   }
 ]

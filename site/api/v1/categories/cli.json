@@ -1,9 +1,9 @@
 {
   "version": "1.1.2",
-  "updatedAt": "2026-10-23T01:57:33.316Z",
+  "updatedAt": "2026-10-24T00:44:45.212Z",
   "slug": "cli",
   "name": "CLI & Developer Productivity",
-  "count": 119,
+  "count": 121,
   "items": [
     {
       "name": "GitWhisper",
@@ -1862,6 +1862,34 @@
       "language": "Rust, Vue 3, TypeScript, Tauri 2",
       "license": "MIT",
       "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "vhr-bench",
+      "repo": "https://github.com/vpshostreview/vhr-vps-benchmark",
+      "category": "CLI & Developer Productivity",
+      "description": "Single MIT-licensed Bash script that benchmarks a Linux server in about a minute with sysbench CPU and memory tests and fio 4k random read and write IOPS. It asks before installing sysbench or fio and sends nothing anywhere unless you pass an upload token.",
+      "language": "Bash",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/vpshostreview/vhr-vps-benchmark/issues",
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "Flisk",
+      "repo": "https://github.com/flisk-sh/flisk",
+      "category": "DevOps & Infrastructure",
+      "description": "Generate and run your whole tech stack without the setup pain. One command from empty folder to running stack.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "featured": false,
+      "statusTags": [
+        "No Card Required",
+        "100% Free"
+      ],
+      "goodFirstIssues": "https://github.com/flisk-sh/flisk/issues",
       "type": "cli",
       "section": "CLI & Productivity Tools"
     }
