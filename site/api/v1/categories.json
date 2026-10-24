@@ -1,6 +1,6 @@
 {
   "version": "1.1.2",
-  "updatedAt": "2026-10-23T01:57:33.316Z",
+  "updatedAt": "2026-10-24T00:17:14.249Z",
   "totalCategories": 8,
   "categories": [
     {
@@ -12,13 +12,13 @@
     {
       "slug": "cli",
       "name": "CLI & Developer Productivity",
-      "count": 119,
+      "count": 121,
       "endpoint": "https://devshelf.ritualdev.in/api/v1/categories/cli.json"
     },
     {
       "slug": "apis",
       "name": "Free Public APIs",
-      "count": 103,
+      "count": 104,
       "endpoint": "https://devshelf.ritualdev.in/api/v1/categories/apis.json"
     },
     {

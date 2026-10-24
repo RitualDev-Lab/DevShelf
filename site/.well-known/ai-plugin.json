@@ -2,7 +2,7 @@
   "schema_version": "v1",
   "name_for_human": "DevShelf Free Developer Directory",
   "name_for_model": "devshelf",
-  "description_for_human": "Discover 530+ verified free developer tools, APIs, AI agents, and open-source alternatives with zero paywalls.",
+  "description_for_human": "Discover 540+ verified free developer tools, APIs, AI agents, and open-source alternatives with zero paywalls.",
   "description_for_model": "Plugin for searching and discovering verified free developer tools, public APIs, AI coding agents, and open-source alternatives to commercial software. Every tool in DevShelf has a permanent free tier or is open source with no upfront credit cards required.",
   "auth": {
     "type": "none"
