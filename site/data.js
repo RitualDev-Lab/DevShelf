@@ -1,13 +1,13 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-10-23T17:07:47.073Z",
-  "totalCount": 540,
-  "reposCount": 335,
+  "updatedAt": "2026-10-24T00:44:45.212Z",
+  "totalCount": 542,
+  "reposCount": 337,
   "facets": {
-    "repos": 335
+    "repos": 337
   },
   "counts": {
     "aiTools": 90,
-    "cliTools": 119,
+    "cliTools": 121,
     "testingQa": 64,
     "apis": 104,
     "freeCloud": 71,
@@ -3362,6 +3362,34 @@ window.DEVSHELF_DATA = {
       "section": "CLI & Productivity Tools"
     },
     {
+      "name": "vhr-bench",
+      "repo": "https://github.com/vpshostreview/vhr-vps-benchmark",
+      "category": "CLI & Developer Productivity",
+      "description": "Single MIT-licensed Bash script that benchmarks a Linux server in about a minute with sysbench CPU and memory tests and fio 4k random read and write IOPS. It asks before installing sysbench or fio and sends nothing anywhere unless you pass an upload token.",
+      "language": "Bash",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/vpshostreview/vhr-vps-benchmark/issues",
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "Flisk",
+      "repo": "https://github.com/flisk-sh/flisk",
+      "category": "DevOps & Infrastructure",
+      "description": "Generate and run your whole tech stack without the setup pain. One command from empty folder to running stack.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "featured": false,
+      "statusTags": [
+        "No Card Required",
+        "100% Free"
+      ],
+      "goodFirstIssues": "https://github.com/flisk-sh/flisk/issues",
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
       "name": "AutoHeal-QA",
       "repo": "https://github.com/RitualDev-Lab/autoheal-qa",
       "category": "Browser & E2E Testing",
@@ -5785,7 +5813,7 @@ window.DEVSHELF_DATA = {
       "name": "unicum.gg",
       "url": "https://unicum.gg/docs",
       "category": "Entertainment & Media",
-      "description": "Free World of Tanks statistics API: player and clan profiles, WN7/WN8/WNX ratings, leaderboards, tank specifications, maps, tournaments and server population for the EU, NA and Asia servers. Open source, documented with an OpenAPI 3 spec (https://unicum.gg/api/openapi.json), and also exposed as...",
+      "description": "Free World of Tanks statistics API: player and clan profiles, WN7/WN8/WNX ratings, leaderboards, tank specifications, maps, tournaments and server population for the EU, NA and Asia servers. Open source, documented with an OpenAPI 3 spec (https://unicum.gg/api/openapi.json), and also exposed as a community MCP server.",
       "auth": "No Key",
       "cors": "Yes",
       "rateLimit": "No fixed quota, fair use. Every endpoint is free and keyless.",

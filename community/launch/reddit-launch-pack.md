@@ -6,7 +6,7 @@
 
 ## 📌 Post 1: r/webdev (2.2M+ members)
 - **Flair:** `Project / Showcase` or `Resource`
-- **Title:** `Tired of fake "free tier" dev tools, so we curated 539+ zero-paywall tools, APIs, and boilerplates with automated health checks`
+- **Title:** `Tired of fake "free tier" dev tools, so we curated 542+ zero-paywall tools, APIs, and boilerplates with automated health checks`
 - **Post Body:**
 
 ```markdown
@@ -24,7 +24,7 @@ We decided to build an open-source, community-maintained directory called **DevS
 4. **Terminal CLI & AI MCP Server:** You can search tools directly in your terminal via `npx devshelf search <query>`, or plug `npx devshelf-mcp` into Cursor or Claude Code so your AI assistant knows real free APIs.
 5. **No tracking or cookies:** Clean static site, zero third-party tracking scripts.
 
-### Some of the 539+ resources indexed:
+### Some of the 542+ resources indexed:
 - **Free APIs:** Currency, Geocoding, IP, Weather, Mock Payment endpoints without CORS issues.
 - **Local AI:** Ollama, vLLM, AgentShield, LocalAI for running local models without OpenAI bills.
 - **Testing & Mocking:** LocalStack, WireMock, Mockoon, MSW, Playwright.
@@ -40,7 +40,7 @@ Would love to hear your thoughts and suggestions for web dev tools we should add
 
 ## 📌 Post 2: r/selfhosted (350k+ members)
 - **Flair:** `Open Source` or `Tool`
-- **Title:** `We indexed 335+ open-source, self-hostable developer tools & stacks (with automated uptime & license auditing)`
+- **Title:** `We indexed 337+ open-source, self-hostable developer tools & stacks (with automated uptime & license auditing)`
 - **Post Body:**
 
 ```markdown
@@ -48,7 +48,7 @@ Hey r/selfhosted!
 
 If you prefer self-hosting your developer infrastructure rather than getting locked into proprietary SaaS pricing, you might like this:
 
-We built **DevShelf** (https://devshelf.ritualdev.in), an open-source directory that indexes **335+ self-hostable, open-source repositories and tools** for developers.
+We built **DevShelf** (https://devshelf.ritualdev.in), an open-source directory that indexes **337+ self-hostable, open-source repositories and tools** for developers.
 
 ### Highlights for self-hosters:
 - **Commercial SaaS Replacements:** We track direct open-source alternatives to:
@@ -70,7 +70,7 @@ Let me know what self-hosted developer tools we're missing!
 
 ## 📌 Post 3: r/opensource (250k+ members)
 - **Flair:** `Project`
-- **Title:** `DevShelf: An open-source directory of 539+ free developer tools with zero telemetry and native MCP server`
+- **Title:** `DevShelf: An open-source directory of 542+ free developer tools with zero telemetry and native MCP server`
 - **Post Body:**
 
 ```markdown
@@ -79,7 +79,7 @@ Hello r/opensource!
 We built **DevShelf** (https://devshelf.ritualdev.in) to solve a growing problem: the commercialization and paywalling of developer tools.
 
 ### What is DevShelf?
-A 100% open-source, community-driven catalog of **539+ verified developer tools, free public APIs, AI agents, and 1-click boilerplates** that never require credit cards or trial commitments.
+A 100% open-source, community-driven catalog of **542+ verified developer tools, free public APIs, AI agents, and 1-click boilerplates** that never require credit cards or trial commitments.
 
 ### Open-Source Architecture:
 - The entire catalog lives in JSON schemas in the git repo.
@@ -109,7 +109,7 @@ When building side projects on a budget, SaaS bills for authentication, database
 To help myself and other makers bootstrap with $0 infrastructure costs, I built **DevShelf**:
 👉 https://devshelf.ritualdev.in
 
-It's a curated directory of **539+ developer resources** with permanent free tiers, no credit-card requirements, and zero trial traps.
+It's a curated directory of **542+ developer resources** with permanent free tiers, no credit-card requirements, and zero trial traps.
 
 ### Features:
 - Filter by: Free APIs, CLI Tools, AI Agents, Mocking/QA, 1-Click Boilerplates, and Free Cloud.

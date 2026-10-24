@@ -90,7 +90,7 @@
 | API & URL | Auth | Rate Limit | Description |
 | :--- | :---: | :---: | :--- |
 | [**Arcmira: YouTube Transcript Search**](https://arcmira.com/docs) | 🔑 Free Key | `60 requests per minute per key; 1,000 included credits per month. First five search passages per request use zero credits. The Free plan withholds the newest 30 days and later result pages. No card required; Free is not a time-limited trial.  Current limits: https://arcmira.com/docs/usage-and-billing` | Search indexed YouTube transcripts by topic, with source links and timestamps. Retrieve captions and resolve people, channels and videos. Coverage is partial. A permanent Free tier is available; Premium transcripts and sponsor research use paid plans. |
-| [**unicum.gg**](https://unicum.gg/docs) | 🟢 No Key | `No fixed quota, fair use. Every endpoint is free and keyless.` | Free World of Tanks statistics API: player and clan profiles, WN7/WN8/WNX ratings, leaderboards, tank specifications, maps, tournaments and server population for the EU, NA and Asia servers. Open source, documented with an OpenAPI 3 spec (https://unicum.gg/api/openapi.json), and also exposed as... |
+| [**unicum.gg**](https://unicum.gg/docs) | 🟢 No Key | `No fixed quota, fair use. Every endpoint is free and keyless.` | Free World of Tanks statistics API: player and clan profiles, WN7/WN8/WNX ratings, leaderboards, tank specifications, maps, tournaments and server population for the EU, NA and Asia servers. Open source, documented with an OpenAPI 3 spec (https://unicum.gg/api/openapi.json), and also exposed as a community MCP server. |
 
 ### <a id="finance-crypto"></a>Finance & Crypto (6)
 
