@@ -2,7 +2,7 @@
   "version": "1.1.2",
   "docs": "https://devshelf.ritualdev.in/docs/api.html",
   "license": "https://github.com/RitualDev-Lab/DevShelf/blob/main/LICENSE",
-  "updatedAt": "2026-10-24T00:17:14.249Z",
+  "updatedAt": "2026-10-24T00:44:45.212Z",
   "totalCount": 542,
   "tools": [
     {
@@ -3358,6 +3358,7 @@
       "language": "Bash",
       "license": "MIT",
       "featured": false,
+      "goodFirstIssues": "https://github.com/vpshostreview/vhr-vps-benchmark/issues",
       "type": "cli",
       "section": "CLI & Productivity Tools"
     },
@@ -3373,6 +3374,7 @@
         "No Card Required",
         "100% Free"
       ],
+      "goodFirstIssues": "https://github.com/flisk-sh/flisk/issues",
       "type": "cli",
       "section": "CLI & Productivity Tools"
     },

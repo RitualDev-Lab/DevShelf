@@ -1287,7 +1287,8 @@
     "description": "Single MIT-licensed Bash script that benchmarks a Linux server in about a minute with sysbench CPU and memory tests and fio 4k random read and write IOPS. It asks before installing sysbench or fio and sends nothing anywhere unless you pass an upload token.",
     "language": "Bash",
     "license": "MIT",
-    "featured": false
+    "featured": false,
+    "goodFirstIssues": "https://github.com/vpshostreview/vhr-vps-benchmark/issues"
   },
   {
     "name": "Flisk",
@@ -1297,6 +1298,7 @@
     "language": "TypeScript",
     "license": "MIT",
     "featured": false,
-    "statusTags": ["No Card Required", "100% Free"]
+    "statusTags": ["No Card Required", "100% Free"],
+    "goodFirstIssues": "https://github.com/flisk-sh/flisk/issues"
   }
 ]

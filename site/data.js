@@ -1,5 +1,5 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-10-24T00:17:14.249Z",
+  "updatedAt": "2026-10-24T00:44:45.212Z",
   "totalCount": 542,
   "reposCount": 337,
   "facets": {
@@ -3369,6 +3369,7 @@ window.DEVSHELF_DATA = {
       "language": "Bash",
       "license": "MIT",
       "featured": false,
+      "goodFirstIssues": "https://github.com/vpshostreview/vhr-vps-benchmark/issues",
       "type": "cli",
       "section": "CLI & Productivity Tools"
     },
@@ -3384,6 +3385,7 @@ window.DEVSHELF_DATA = {
         "No Card Required",
         "100% Free"
       ],
+      "goodFirstIssues": "https://github.com/flisk-sh/flisk/issues",
       "type": "cli",
       "section": "CLI & Productivity Tools"
     },

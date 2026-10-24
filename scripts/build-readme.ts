@@ -894,6 +894,32 @@ DevShelf is powered by the open-source community! We provide tailored issue temp
 
 ---
 
+## 👥 Community Contributors
+
+DevShelf is proudly open-source and built together with the global developer community. Massive thanks to everyone who has submitted tools, reported broken links, or contributed to the directory!
+
+<div align="center">
+
+<a href="https://github.com/RitualDev-Lab/DevShelf/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=RitualDev-Lab/DevShelf" alt="DevShelf Contributors" width="800" />
+</a>
+
+<br><br>
+
+### 🌟 Recent Submissions & Hall of Contributors
+
+| Contributor | Submission | Category | Status |
+| :--- | :--- | :--- | :---: |
+| [@odykyi](https://github.com/odykyi) | [**Flisk**](https://github.com/flisk-sh/flisk) | DevOps & Infrastructure | ✅ Verified |
+| [@antoinekm](https://github.com/antoinekm) | [**unicum.gg**](https://unicum.gg/docs) | Entertainment & Media | ✅ Verified |
+| [@vpshostreview](https://github.com/vpshostreview) | [**vhr-bench**](https://github.com/vpshostreview/vhr-vps-benchmark) | CLI & Developer Productivity | ✅ Verified |
+| [@MGM-FALCON](https://github.com/MGM-FALCON) | [**Solaris Dev Shop**](https://github.com/MGM-FALCON/solaris-dev-shop) | Boilerplates & Starters | ✅ Verified |
+| [@jn6825rsr7-afk](https://github.com/jn6825rsr7-afk) | [**ShipVela**](https://github.com/jn6825rsr7-afk/shipvela-publishing-plugin-and-skills) | AI Agents & Utilities | ✅ Verified |
+
+</div>
+
+---
+
 ## 💖 Support DevShelf
 
 DevShelf is a 100% free and open-source community directory. If DevShelf saved you cloud expenses or helped discover useful tools, consider supporting server uptime and automated healthcheck infrastructure:
