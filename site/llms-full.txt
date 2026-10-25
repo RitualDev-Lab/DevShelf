@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 542 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 543 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -3395,6 +3395,14 @@ Current limits: https://arcmira.com/docs/usage-and-billing
 - **URL**: https://unicum.gg/docs
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/unicumgg.html
 - **Description**: Free World of Tanks statistics API: player and clan profiles, WN7/WN8/WNX ratings, leaderboards, tank specifications, maps, tournaments and server population for the EU, NA and Asia servers. Open source, documented with an OpenAPI 3 spec (https://unicum.gg/api/openapi.json), and also exposed as a community MCP server.
+
+### CreditUnions
+- **Category**: Finance & Crypto
+- **Pricing Model**: 300 requests per 60 seconds
+- **Auth**: No Key
+- **URL**: https://creditunions.fyi/developers
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/creditunions.html
+- **Description**: Directory of federally insured US credit unions from the NCUA register. Listings show charter, field of membership, assets and member count. Read-only JSON API, no key needed.
 
 ### Supabase
 - **Category**: Databases & BaaS

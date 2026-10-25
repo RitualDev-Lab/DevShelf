@@ -1135,5 +1135,15 @@
     "cors": "Yes",
     "rateLimit": "No fixed quota, fair use. Every endpoint is free and keyless.",
     "https": true
+  },
+  {
+    "name": "CreditUnions",
+    "url": "https://creditunions.fyi/developers",
+    "category": "Finance & Crypto",
+    "description": "Directory of federally insured US credit unions from the NCUA register. Listings show charter, field of membership, assets and member count. Read-only JSON API, no key needed.",
+    "auth": "No Key",
+    "cors": "Yes",
+    "rateLimit": "300 requests per 60 seconds",
+    "https": true
   }
 ]
