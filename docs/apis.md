@@ -4,14 +4,14 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total APIs](https://img.shields.io/badge/APIs-104_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total APIs](https://img.shields.io/badge/APIs-107_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
 [AI & Machine Learning](#ai-machine-learning) • [Animals & Fun](#animals-fun) • [Books & Literature](#books-literature) • [Development & Testing](#development-testing) • [Entertainment & Media](#entertainment-media) • [Finance & Crypto](#finance-crypto) • [Food & Health](#food-health) • [Games & Media](#games-media) • [Geocoding & IP](#geocoding-ip) • [Media & Images](#media-images) • [News & Media](#news-media) • [Other](#other) • [Science & Astronomy](#science-astronomy) • [Travel & Transit](#travel-transit) • [Weather & Climate](#weather-climate)
 
 ---
 
-### <a id="ai-machine-learning"></a>AI & Machine Learning (4)
+### <a id="ai-machine-learning"></a>AI & Machine Learning (5)
 
 | API & URL | Auth | Rate Limit | Description |
 | :--- | :---: | :---: | :--- |
@@ -19,6 +19,7 @@
 | [**Hugging Face Serverless Inference**](https://huggingface.co/inference-api) | 🔑 Free Key | `Free monthly tier` | Instant serverless API access to 100,000+ open-source AI models across NLP, vision, and speech with free monthly quota. |
 | [**Caption-Pack API**](https://muse.ai/s/caption-pack-api-xfxt62ya0xcxlxhh) | 🟢 No Key | `5 req/hour (Playground)` | Deterministic social caption and hashtag generator API returning platform-ready JSON. Features a permanent keyless playground endpoint for developers and AI agents. |
 | [**QuelLLM**](https://quelllm.fr/api) | 🟢 No Key | `No numerical rate limit is published. Static, read-only JSON with no account, API key or card; consumers should cache responses.` | Read-only JSON catalog of self-hostable LLMs and GPU specifications, including model metadata, VRAM estimates and editorial rankings. Provides data for developer tools; does not run model inference. |
+| [**AgentSandboxes**](https://agentsandboxes.fyi/developers) | 🟢 No Key | `300 requests per 60 seconds` | Directory of cloud sandbox providers for AI agents. Listings show isolation, cold start, persistence, GPU support and pricing with a cited source per fact. Read-only JSON API, no key needed. |
 
 ### <a id="animals-fun"></a>Animals & Fun (16)
 
@@ -92,7 +93,7 @@
 | [**Arcmira: YouTube Transcript Search**](https://arcmira.com/docs) | 🔑 Free Key | `60 requests per minute per key; 1,000 included credits per month. First five search passages per request use zero credits. The Free plan withholds the newest 30 days and later result pages. No card required; Free is not a time-limited trial.  Current limits: https://arcmira.com/docs/usage-and-billing` | Search indexed YouTube transcripts by topic, with source links and timestamps. Retrieve captions and resolve people, channels and videos. Coverage is partial. A permanent Free tier is available; Premium transcripts and sponsor research use paid plans. |
 | [**unicum.gg**](https://unicum.gg/docs) | 🟢 No Key | `No fixed quota, fair use. Every endpoint is free and keyless.` | Free World of Tanks statistics API: player and clan profiles, WN7/WN8/WNX ratings, leaderboards, tank specifications, maps, tournaments and server population for the EU, NA and Asia servers. Open source, documented with an OpenAPI 3 spec (https://unicum.gg/api/openapi.json), and also exposed as a community MCP server. |
 
-### <a id="finance-crypto"></a>Finance & Crypto (6)
+### <a id="finance-crypto"></a>Finance & Crypto (8)
 
 | API & URL | Auth | Rate Limit | Description |
 | :--- | :---: | :---: | :--- |
@@ -102,6 +103,8 @@
 | [**Binlist**](https://binlist.net) | 🟢 No Key | `10 req/min` | Public lookup service for bank identification numbers (BIN/IIN) returning card brand, scheme, and country. |
 | [**Coinpaprika API**](https://api.coinpaprika.com) | 🟢 No Key | `Unlimited` | Cryptocurrency market data API delivering real-time quotes, global volume, and token metadata without keys. |
 | [**CryptoCompare API**](https://min-api.cryptocompare.com) | 🔑 Free Key | `100,000 req/mo` | Enterprise-grade digital asset prices and OHLCV historical charting data with free developer tier. |
+| [**Agent Wallet Index**](https://agentwalletindex.fyi/developers) | 🟢 No Key | `300 requests per 60 seconds` | Directory of agent wallets, payment rails, card programs and key-management layers for AI agents. Listings show custody, fees, protocols and spend controls with cited sources. Read-only JSON API, no key needed. |
+| [**CreditUnions**](https://creditunions.fyi/developers) | 🟢 No Key | `300 requests per 60 seconds` | Directory of federally insured US credit unions from the NCUA register. Listings show charter, field of membership, assets and member count. Read-only JSON API, no key needed. |
 
 ### <a id="food-health"></a>Food & Health (3)
 

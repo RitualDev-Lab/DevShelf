@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-24T16:19:38.664Z",
-  "totalCount": 543,
+  "updatedAt": "2026-10-25T14:15:30.801Z",
+  "totalCount": 546,
   "reposCount": 337,
   "facets": {
     "repos": 337
@@ -9,7 +9,7 @@
     "aiTools": 90,
     "cliTools": 121,
     "testingQa": 64,
-    "apis": 104,
+    "apis": 107,
     "freeCloud": 72,
     "perks": 30,
     "boilerplates": 41,
@@ -5817,6 +5817,42 @@
       "auth": "No Key",
       "cors": "Yes",
       "rateLimit": "No fixed quota, fair use. Every endpoint is free and keyless.",
+      "https": true,
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "AgentSandboxes",
+      "url": "https://agentsandboxes.fyi/developers",
+      "category": "AI & Machine Learning",
+      "description": "Directory of cloud sandbox providers for AI agents. Listings show isolation, cold start, persistence, GPU support and pricing with a cited source per fact. Read-only JSON API, no key needed.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "300 requests per 60 seconds",
+      "https": true,
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Agent Wallet Index",
+      "url": "https://agentwalletindex.fyi/developers",
+      "category": "Finance & Crypto",
+      "description": "Directory of agent wallets, payment rails, card programs and key-management layers for AI agents. Listings show custody, fees, protocols and spend controls with cited sources. Read-only JSON API, no key needed.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "300 requests per 60 seconds",
+      "https": true,
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "CreditUnions",
+      "url": "https://creditunions.fyi/developers",
+      "category": "Finance & Crypto",
+      "description": "Directory of federally insured US credit unions from the NCUA register. Listings show charter, field of membership, assets and member count. Read-only JSON API, no key needed.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "300 requests per 60 seconds",
       "https": true,
       "type": "api",
       "section": "Free & Public APIs"
