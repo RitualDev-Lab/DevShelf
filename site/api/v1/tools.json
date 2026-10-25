@@ -2,8 +2,8 @@
   "version": "1.1.2",
   "docs": "https://devshelf.ritualdev.in/docs/api.html",
   "license": "https://github.com/RitualDev-Lab/DevShelf/blob/main/LICENSE",
-  "updatedAt": "2026-10-24T02:04:55.740Z",
-  "totalCount": 542,
+  "updatedAt": "2026-10-25T00:47:35.882Z",
+  "totalCount": 543,
   "tools": [
     {
       "name": "AgentShield",
@@ -5806,6 +5806,18 @@
       "auth": "No Key",
       "cors": "Yes",
       "rateLimit": "No fixed quota, fair use. Every endpoint is free and keyless.",
+      "https": true,
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Agent Wallet Index",
+      "url": "https://agentwalletindex.fyi/developers",
+      "category": "Finance & Crypto",
+      "description": "Directory of agent wallets, payment rails, card programs and key-management layers for AI agents. Listings show custody, fees, protocols and spend controls with cited sources. Read-only JSON API, no key needed.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "300 requests per 60 seconds",
       "https": true,
       "type": "api",
       "section": "Free & Public APIs"

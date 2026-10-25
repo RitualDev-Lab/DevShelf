@@ -4,7 +4,7 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total APIs](https://img.shields.io/badge/APIs-104_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total APIs](https://img.shields.io/badge/APIs-105_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
 [AI & Machine Learning](#ai-machine-learning) • [Animals & Fun](#animals-fun) • [Books & Literature](#books-literature) • [Development & Testing](#development-testing) • [Entertainment & Media](#entertainment-media) • [Finance & Crypto](#finance-crypto) • [Food & Health](#food-health) • [Games & Media](#games-media) • [Geocoding & IP](#geocoding-ip) • [Media & Images](#media-images) • [News & Media](#news-media) • [Other](#other) • [Science & Astronomy](#science-astronomy) • [Travel & Transit](#travel-transit) • [Weather & Climate](#weather-climate)
@@ -92,7 +92,7 @@
 | [**Arcmira: YouTube Transcript Search**](https://arcmira.com/docs) | 🔑 Free Key | `60 requests per minute per key; 1,000 included credits per month. First five search passages per request use zero credits. The Free plan withholds the newest 30 days and later result pages. No card required; Free is not a time-limited trial.  Current limits: https://arcmira.com/docs/usage-and-billing` | Search indexed YouTube transcripts by topic, with source links and timestamps. Retrieve captions and resolve people, channels and videos. Coverage is partial. A permanent Free tier is available; Premium transcripts and sponsor research use paid plans. |
 | [**unicum.gg**](https://unicum.gg/docs) | 🟢 No Key | `No fixed quota, fair use. Every endpoint is free and keyless.` | Free World of Tanks statistics API: player and clan profiles, WN7/WN8/WNX ratings, leaderboards, tank specifications, maps, tournaments and server population for the EU, NA and Asia servers. Open source, documented with an OpenAPI 3 spec (https://unicum.gg/api/openapi.json), and also exposed as a community MCP server. |
 
-### <a id="finance-crypto"></a>Finance & Crypto (6)
+### <a id="finance-crypto"></a>Finance & Crypto (7)
 
 | API & URL | Auth | Rate Limit | Description |
 | :--- | :---: | :---: | :--- |
@@ -102,6 +102,7 @@
 | [**Binlist**](https://binlist.net) | 🟢 No Key | `10 req/min` | Public lookup service for bank identification numbers (BIN/IIN) returning card brand, scheme, and country. |
 | [**Coinpaprika API**](https://api.coinpaprika.com) | 🟢 No Key | `Unlimited` | Cryptocurrency market data API delivering real-time quotes, global volume, and token metadata without keys. |
 | [**CryptoCompare API**](https://min-api.cryptocompare.com) | 🔑 Free Key | `100,000 req/mo` | Enterprise-grade digital asset prices and OHLCV historical charting data with free developer tier. |
+| [**Agent Wallet Index**](https://agentwalletindex.fyi/developers) | 🟢 No Key | `300 requests per 60 seconds` | Directory of agent wallets, payment rails, card programs and key-management layers for AI agents. Listings show custody, fees, protocols and spend controls with cited sources. Read-only JSON API, no key needed. |
 
 ### <a id="food-health"></a>Food & Health (3)
 

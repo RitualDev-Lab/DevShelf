@@ -1135,5 +1135,15 @@
     "cors": "Yes",
     "rateLimit": "No fixed quota, fair use. Every endpoint is free and keyless.",
     "https": true
+  },
+  {
+    "name": "Agent Wallet Index",
+    "url": "https://agentwalletindex.fyi/developers",
+    "category": "Finance & Crypto",
+    "description": "Directory of agent wallets, payment rails, card programs and key-management layers for AI agents. Listings show custody, fees, protocols and spend controls with cited sources. Read-only JSON API, no key needed.",
+    "auth": "No Key",
+    "cors": "Yes",
+    "rateLimit": "300 requests per 60 seconds",
+    "https": true
   }
 ]
