@@ -312,6 +312,14 @@
     "statusTags": ["No Card Required", "CI Verified"]
   },
   {
+    "name": "deed.page",
+    "url": "https://deed.page",
+    "category": "Cloud Hosting & PaaS",
+    "description": "Static hosting built for AI agents and scripts: one HTTP PUT or the remote MCP server publishes an HTML file or folder to a permanent https://<slug>.deed.page URL, with no account or signup step.",
+    "freeTier": "Free plan: 25 sites, 25 MB per site, 60 publishes/hour, 10 retained versions, 1 custom domain",
+    "statusTags": ["No Card Required"]
+  },
+  {
     "name": "Aiven Free Tier",
     "url": "https://aiven.io/free-plans",
     "category": "Databases & BaaS",
