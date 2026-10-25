@@ -871,7 +871,7 @@
       <!-- Live Badge Visual Container -->
       <div class="mb-4 text-center p-5 bg-slate-950/90 rounded-xl border border-slate-800 flex flex-col items-center justify-center min-h-[120px]">
         <div id="badge-svg-target" class="transition-transform hover:scale-105 duration-200">
-          <!-- Dynamic SVG injected safely via DOMParser -->
+          <!-- Dynamic SVG rendered safely via isolated Blob URL -->
         </div>
         <span class="mt-3 text-[10px] font-mono text-slate-500">Live SVG Preview (Scalable &amp; Retina Ready)</span>
       </div>
@@ -1198,12 +1198,29 @@
       }
     }
 
-    // Save New Sponsor
+    // Save New Sponsor (storing strictly non-sensitive public display data)
     function saveSponsor(entry) {
       try {
+        const safePublicEntry = {
+          id: entry.id || ('patron-' + Date.now()),
+          name: entry.name || 'Anonymous Supporter',
+          github: entry.github || '',
+          avatar: entry.avatar || '',
+          url: entry.url || '',
+          amountUSD: entry.amountUSD || 0,
+          amountINR: entry.amountINR || 0,
+          tier: entry.tier || 'starter',
+          toolName: entry.toolName || '',
+          toolUrl: entry.toolUrl || '',
+          toolCategory: entry.toolCategory || '',
+          toolAlt: entry.toolAlt || '',
+          toolPitch: entry.toolPitch || '',
+          date: entry.date || new Date().toISOString().split('T')[0],
+          comment: entry.comment || 'Proud supporter of zero-paywall developer tooling!'
+        };
         const stored = localStorage.getItem('devshelf_sponsors_v1');
         const list = stored ? JSON.parse(stored) : [];
-        list.unshift(entry);
+        list.unshift(safePublicEntry);
         localStorage.setItem('devshelf_sponsors_v1', JSON.stringify(list));
       } catch (e) {
         console.warn('Storage write error:', e);
@@ -1480,28 +1497,24 @@
       return currency === 'INR' ? 'IN' : 'US';
     }
 
-    // Profile Persistence for Returning Patrons
+    // Profile Persistence for Returning Patrons (non-sensitive display preferences only)
     function loadSavedProfile() {
       try {
         const raw = localStorage.getItem('devshelf_sponsor_profile');
         if (raw) {
           const p = JSON.parse(raw);
           if (p.name && sponsorNameInput && !sponsorNameInput.value) sponsorNameInput.value = p.name;
-          if (p.email && sponsorEmailInput && !sponsorEmailInput.value) sponsorEmailInput.value = p.email;
           if (p.github && sponsorGithubInput && !sponsorGithubInput.value) sponsorGithubInput.value = p.github;
           if (p.url && document.getElementById('sponsor-url') && !document.getElementById('sponsor-url').value) {
             document.getElementById('sponsor-url').value = p.url;
-          }
-          if (p.email && billingEmailInput && !billingEmailInput.value) {
-            billingEmailInput.value = p.email;
           }
         }
       } catch (e) {}
     }
 
-    function saveProfile(name, email, github, url) {
+    function saveProfile(name, github, url) {
       try {
-        localStorage.setItem('devshelf_sponsor_profile', JSON.stringify({ name, email, github, url }));
+        localStorage.setItem('devshelf_sponsor_profile', JSON.stringify({ name, github, url }));
       } catch (e) {}
     }
 
@@ -1632,8 +1645,8 @@
         return;
       }
 
-      // Persist patron profile locally for 1-click repeat support
-      saveProfile(name, email, cleanGithub, url);
+      // Persist patron profile locally for 1-click repeat support (display preferences only, no PII)
+      saveProfile(name, cleanGithub, url);
 
       const safeAvatar = getSafeAvatarUrl(cleanGithub);
       const safeUrl = getSafeUrl(url) || (cleanGithub ? `https://github.com/${encodeURIComponent(cleanGithub)}` : '');
@@ -2233,6 +2246,7 @@
     let currentBadgeData = { name: '', github: '', tier: 'gold', amountUSD: 100 };
     let currentBadgeStyle = 'pill';
     let currentBadgeTab = 'markdown';
+    let currentBadgeObjectUrl = null;
 
     function openBadgeModal(patronData) {
       currentBadgeData = patronData || {
@@ -2246,6 +2260,10 @@
     }
 
     function closeBadgeModal() {
+      if (currentBadgeObjectUrl) {
+        URL.revokeObjectURL(currentBadgeObjectUrl);
+        currentBadgeObjectUrl = null;
+      }
       badgeModal.classList.add('hidden');
     }
 
@@ -2291,12 +2309,21 @@
         ? generateClientPillSvg(tier)
         : generateClientCardSvg(name, tier);
 
+      if (currentBadgeObjectUrl) {
+        URL.revokeObjectURL(currentBadgeObjectUrl);
+        currentBadgeObjectUrl = null;
+      }
+
       try {
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(svgStr, 'image/svg+xml');
-        badgeSvgTarget.replaceChildren(doc.documentElement);
+        const blob = new Blob([svgStr], { type: 'image/svg+xml' });
+        currentBadgeObjectUrl = URL.createObjectURL(blob);
+        const img = document.createElement('img');
+        img.src = currentBadgeObjectUrl;
+        img.alt = 'DevShelf Sponsor Badge';
+        img.className = 'max-w-full h-auto drop-shadow-md select-none pointer-events-none';
+        badgeSvgTarget.replaceChildren(img);
       } catch (err) {
-        console.warn('SVG parse error:', err);
+        console.warn('SVG render error:', err);
       }
 
       updateBadgeModalCode();

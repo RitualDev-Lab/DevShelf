@@ -214,7 +214,7 @@
           <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800">
             <div class="flex items-center justify-between mb-2">
               <span class="text-xs font-bold text-purple-300 font-mono">Style 1: Featured on DevShelf</span>
-              <button onclick="navigator.clipboard.writeText('[![Featured on DevShelf](https://devshelf.ritualdev.in/api/v1/badges/featured.svg)](https://devshelf.ritualdev.in/tools/hugging-face-serverless-inference.html)'); this.innerText = '✓ Copied!'; setTimeout(() => this.innerText = 'Copy', 2000);" class="px-2.5 py-1 text-xs font-bold font-mono rounded bg-purple-600 hover:bg-purple-500 text-white transition">
+              <button onclick="navigator.clipboard.writeText(this.closest('div').parentElement.querySelector('input').value); this.innerText = '✓ Copied!'; setTimeout(() => this.innerText = 'Copy', 2000);" class="px-2.5 py-1 text-xs font-bold font-mono rounded bg-purple-600 hover:bg-purple-500 text-white transition">
                 Copy
               </button>
             </div>
@@ -230,7 +230,7 @@
           <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800">
             <div class="flex items-center justify-between mb-2">
               <span class="text-xs font-bold text-emerald-300 font-mono">Style 2: Verified Free Tier</span>
-              <button onclick="navigator.clipboard.writeText('[![DevShelf Verified Free](https://devshelf.ritualdev.in/api/v1/badges/verified-free.svg)](https://devshelf.ritualdev.in/tools/hugging-face-serverless-inference.html)'); this.innerText = '✓ Copied!'; setTimeout(() => this.innerText = 'Copy', 2000);" class="px-2.5 py-1 text-xs font-bold font-mono rounded bg-emerald-600 hover:bg-emerald-500 text-white transition">
+              <button onclick="navigator.clipboard.writeText(this.closest('div').parentElement.querySelector('input').value); this.innerText = '✓ Copied!'; setTimeout(() => this.innerText = 'Copy', 2000);" class="px-2.5 py-1 text-xs font-bold font-mono rounded bg-emerald-600 hover:bg-emerald-500 text-white transition">
                 Copy
               </button>
             </div>

@@ -317,7 +317,7 @@ async function generateSeo() {
           <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800">
             <div class="flex items-center justify-between mb-2">
               <span class="text-xs font-bold text-purple-300 font-mono">Style 1: Featured on DevShelf</span>
-              <button onclick="navigator.clipboard.writeText('${badgeFeaturedMd.replace(/'/g, "\\'")}'); this.innerText = '✓ Copied!'; setTimeout(() => this.innerText = 'Copy', 2000);" class="px-2.5 py-1 text-xs font-bold font-mono rounded bg-purple-600 hover:bg-purple-500 text-white transition">
+              <button onclick="navigator.clipboard.writeText(this.closest('div').parentElement.querySelector('input').value); this.innerText = '✓ Copied!'; setTimeout(() => this.innerText = 'Copy', 2000);" class="px-2.5 py-1 text-xs font-bold font-mono rounded bg-purple-600 hover:bg-purple-500 text-white transition">
                 Copy
               </button>
             </div>
@@ -333,7 +333,7 @@ async function generateSeo() {
           <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800">
             <div class="flex items-center justify-between mb-2">
               <span class="text-xs font-bold text-emerald-300 font-mono">Style 2: Verified Free Tier</span>
-              <button onclick="navigator.clipboard.writeText('${badgeVerifiedMd.replace(/'/g, "\\'")}'); this.innerText = '✓ Copied!'; setTimeout(() => this.innerText = 'Copy', 2000);" class="px-2.5 py-1 text-xs font-bold font-mono rounded bg-emerald-600 hover:bg-emerald-500 text-white transition">
+              <button onclick="navigator.clipboard.writeText(this.closest('div').parentElement.querySelector('input').value); this.innerText = '✓ Copied!'; setTimeout(() => this.innerText = 'Copy', 2000);" class="px-2.5 py-1 text-xs font-bold font-mono rounded bg-emerald-600 hover:bg-emerald-500 text-white transition">
                 Copy
               </button>
             </div>
@@ -351,7 +351,7 @@ async function generateSeo() {
           <div class="p-4 rounded-xl bg-slate-950/80 border border-amber-900/40 md:col-span-2">
             <div class="flex items-center justify-between mb-2">
               <span class="text-xs font-bold text-amber-300 font-mono">Style 3: Free Alternative to ${escapeHtml(item.alternativeTo)}</span>
-              <button onclick="navigator.clipboard.writeText('${badgeAltMd.replace(/'/g, "\\'")}'); this.innerText = '✓ Copied!'; setTimeout(() => this.innerText = 'Copy', 2000);" class="px-2.5 py-1 text-xs font-bold font-mono rounded bg-amber-600 hover:bg-amber-500 text-white transition">
+              <button onclick="navigator.clipboard.writeText(this.closest('div').parentElement.querySelector('input').value); this.innerText = '✓ Copied!'; setTimeout(() => this.innerText = 'Copy', 2000);" class="px-2.5 py-1 text-xs font-bold font-mono rounded bg-amber-600 hover:bg-amber-500 text-white transition">
                 Copy
               </button>
             </div>

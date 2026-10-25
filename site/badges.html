@@ -321,11 +321,25 @@
       let currentStyle = 'featured';
       let currentFormat = 'md';
 
-      // Check URL query parameters
+      function escapeHtml(str) {
+        return (str || '')
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;')
+          .replace(/'/g, '&#39;');
+      }
+
+      // Check URL query parameters with strict input sanitization
       const urlParams = new URLSearchParams(window.location.search);
-      const queryTool = urlParams.get('tool');
-      const queryName = urlParams.get('name');
-      const queryStyle = urlParams.get('style');
+      const rawTool = urlParams.get('tool') || '';
+      const rawName = urlParams.get('name') || '';
+      const rawStyle = urlParams.get('style') || '';
+
+      const queryTool = rawTool.replace(/[^a-zA-Z0-9_-]/g, '').slice(0, 80);
+      const queryName = rawName.replace(/[<>'"&]/g, '').slice(0, 100);
+      const validStyles = ['featured', 'verified-free', 'zero-paywall', 'free-alternative', 'featured-card', 'shields-flat'];
+      const queryStyle = validStyles.includes(rawStyle) ? rawStyle : null;
 
       if (queryTool) {
         toolSlugInput.value = queryTool;
@@ -341,12 +355,20 @@
       }
 
       function getCleanTargetUrl(rawSlug) {
-        const val = rawSlug.trim();
+        const val = (rawSlug || '').trim();
+        let slug = val;
         if (val.startsWith('http://') || val.startsWith('https://')) {
-          return val;
+          try {
+            const parsed = new URL(val);
+            const segments = parsed.pathname.split('/').filter(Boolean);
+            const last = segments[segments.length - 1] || '';
+            slug = last.replace(/\.html$/i, '');
+          } catch {
+            slug = '';
+          }
         }
-        const clean = val.toLowerCase().replace(/[^a-z0-9_-]/g, '-').replace(/^-+|-+$/g, '');
-        return `https://devshelf.ritualdev.in/tools/${clean || 'index'}.html`;
+        const clean = slug.toLowerCase().replace(/[^a-z0-9_-]/g, '-').replace(/^-+|-+$/g, '');
+        return clean ? `https://devshelf.ritualdev.in/tools/${clean}.html` : 'https://devshelf.ritualdev.in';
       }
 
       function getBadgeImageUrl(style) {
@@ -361,7 +383,8 @@
       }
 
       function updateAll() {
-        const name = toolNameInput.value.trim() || 'Developer Tool';
+        const rawName = toolNameInput.value.trim() || 'Developer Tool';
+        const name = rawName.slice(0, 100);
         const targetUrl = getCleanTargetUrl(toolSlugInput.value);
         const imgUrl = getBadgeImageUrl(currentStyle);
 
@@ -374,9 +397,9 @@
         if (currentFormat === 'md') {
           snippet = `[![Featured on DevShelf](${imgUrl})](${targetUrl})`;
         } else if (currentFormat === 'html') {
-          snippet = `<a href="${targetUrl}" target="_blank" rel="noopener noreferrer">\n  <img src="${imgUrl}" alt="${name} on DevShelf" />\n</a>`;
+          snippet = `<a href="${targetUrl}" target="_blank" rel="noopener noreferrer">\n  <img src="${imgUrl}" alt="${escapeHtml(name)} on DevShelf" />\n</a>`;
         } else if (currentFormat === 'rst') {
-          snippet = `.. image:: ${imgUrl}\n   :target: ${targetUrl}\n   :alt: ${name} on DevShelf`;
+          snippet = `.. image:: ${imgUrl}\n   :target: ${targetUrl}\n   :alt: ${name.replace(/"/g, '')} on DevShelf`;
         }
 
         codeOutput.textContent = snippet;
