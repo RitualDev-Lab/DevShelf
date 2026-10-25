@@ -1,6 +1,6 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-10-24T02:04:55.740Z",
-  "totalCount": 542,
+  "updatedAt": "2026-10-25T00:46:57.984Z",
+  "totalCount": 543,
   "reposCount": 337,
   "facets": {
     "repos": 337
@@ -9,7 +9,7 @@ window.DEVSHELF_DATA = {
     "aiTools": 90,
     "cliTools": 121,
     "testingQa": 64,
-    "apis": 104,
+    "apis": 105,
     "freeCloud": 71,
     "perks": 30,
     "boilerplates": 41,
@@ -5817,6 +5817,18 @@ window.DEVSHELF_DATA = {
       "auth": "No Key",
       "cors": "Yes",
       "rateLimit": "No fixed quota, fair use. Every endpoint is free and keyless.",
+      "https": true,
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "AgentSandboxes",
+      "url": "https://agentsandboxes.fyi/developers",
+      "category": "AI & Machine Learning",
+      "description": "Directory of cloud sandbox providers for AI agents. Listings show isolation, cold start, persistence, GPU support and pricing with a cited source per fact. Read-only JSON API, no key needed.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "300 requests per 60 seconds",
       "https": true,
       "type": "api",
       "section": "Free & Public APIs"

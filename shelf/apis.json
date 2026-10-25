@@ -1135,5 +1135,15 @@
     "cors": "Yes",
     "rateLimit": "No fixed quota, fair use. Every endpoint is free and keyless.",
     "https": true
+  },
+  {
+    "name": "AgentSandboxes",
+    "url": "https://agentsandboxes.fyi/developers",
+    "category": "AI & Machine Learning",
+    "description": "Directory of cloud sandbox providers for AI agents. Listings show isolation, cold start, persistence, GPU support and pricing with a cited source per fact. Read-only JSON API, no key needed.",
+    "auth": "No Key",
+    "cors": "Yes",
+    "rateLimit": "300 requests per 60 seconds",
+    "https": true
   }
 ]
