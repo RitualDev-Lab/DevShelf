@@ -525,6 +525,87 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
       </a><br />
       <sub>🪨 StoneSVN (PR #92)</sub>
     </td>
+    <td align="center" width="160">
+      <a href="https://github.com/brodyga45">
+        <img src="https://github.com/brodyga45.png" width="70" style="border-radius: 50%;" alt="brodyga45"/><br />
+        <sub><b>brodyga45</b></sub>
+      </a><br />
+      <sub>⏰ Clockshift (PR #95)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/jn6825rsr7-afk">
+        <img src="https://github.com/jn6825rsr7-afk.png" width="70" style="border-radius: 50%;" alt="jn6825rsr7-afk"/><br />
+        <sub><b>jn6825rsr7-afk</b></sub>
+      </a><br />
+      <sub>🚢 ShipVela (PR #97)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/MGM-FALCON">
+        <img src="https://github.com/MGM-FALCON.png" width="70" style="border-radius: 50%;" alt="MGM-FALCON"/><br />
+        <sub><b>MGM-FALCON</b></sub>
+      </a><br />
+      <sub>🤖 QuelLLM (PR #99)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/vpshostreview">
+        <img src="https://github.com/vpshostreview.png" width="70" style="border-radius: 50%;" alt="vpshostreview"/><br />
+        <sub><b>vpshostreview</b></sub>
+      </a><br />
+      <sub>📊 vhr-bench (PR #101)</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="160">
+      <a href="https://github.com/antoinekm">
+        <img src="https://github.com/antoinekm.png" width="70" style="border-radius: 50%;" alt="antoinekm"/><br />
+        <sub><b>antoinekm</b></sub>
+      </a><br />
+      <sub>🎮 unicum.gg (PR #103)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/odykyi">
+        <img src="https://github.com/odykyi.png" width="70" style="border-radius: 50%;" alt="odykyi"/><br />
+        <sub><b>odykyi</b></sub>
+      </a><br />
+      <sub>⚡ Flisk (PR #104)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/f-o-x11">
+        <img src="https://github.com/f-o-x11.png" width="70" style="border-radius: 50%;" alt="f-o-x11"/><br />
+        <sub><b>f-o-x11</b></sub>
+      </a><br />
+      <sub>☁️ deed.page (PR #105)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/pooriaarab">
+        <img src="https://github.com/pooriaarab.png" width="70" style="border-radius: 50%;" alt="pooriaarab"/><br />
+        <sub><b>pooriaarab</b></sub>
+      </a><br />
+      <sub>🤖 AgentSandboxes (#107)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/Jayant134">
+        <img src="https://github.com/Jayant134.png" width="70" style="border-radius: 50%;" alt="Jayant134"/><br />
+        <sub><b>Jayant134</b></sub>
+      </a><br />
+      <sub>🐶 Dog API (PR #85)</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="160">
+      <a href="https://github.com/majorpart">
+        <img src="https://github.com/majorpart.png" width="70" style="border-radius: 50%;" alt="majorpart"/><br />
+        <sub><b>majorpart</b></sub>
+      </a><br />
+      <sub>📸 Photo AI (PR #81)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/SolonaBot">
+        <img src="https://github.com/SolonaBot.png" width="70" style="border-radius: 50%;" alt="SolonaBot"/><br />
+        <sub><b>SolonaBot</b></sub>
+      </a><br />
+      <sub>🌐 agent-browser (PR #20)</sub>
+    </td>
   </tr>
 </table>
 
@@ -595,21 +676,6 @@ DevShelf is proudly open-source and built together with the global developer com
 <a href="https://github.com/RitualDev-Lab/DevShelf/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=RitualDev-Lab/DevShelf" alt="DevShelf Contributors" width="800" />
 </a>
-
-<br><br>
-
-### 🌟 Recent Submissions & Hall of Contributors
-
-| Contributor | Submission | Category | Status |
-| :--- | :--- | :--- | :---: |
-| [@odykyi](https://github.com/odykyi) | [**Flisk**](https://github.com/flisk-sh/flisk) | DevOps & Infrastructure | ✅ Verified |
-| [@antoinekm](https://github.com/antoinekm) | [**unicum.gg**](https://unicum.gg/docs) | Entertainment & Media | ✅ Verified |
-| [@vpshostreview](https://github.com/vpshostreview) | [**vhr-bench**](https://github.com/vpshostreview/vhr-vps-benchmark) | CLI & Developer Productivity | ✅ Verified |
-| [@MGM-FALCON](https://github.com/MGM-FALCON) | [**QuelLLM**](https://quelllm.com) | AI Agents & Local LLMs | ✅ Verified |
-| [@jn6825rsr7-afk](https://github.com/jn6825rsr7-afk) | [**ShipVela**](https://github.com/jn6825rsr7-afk/shipvela-publishing-plugin-and-skills) | AI Agents & Utilities | ✅ Verified |
-| [@brodyga45](https://github.com/brodyga45) | [**Clockshift**](https://github.com/brodyga45/clockshift) | CLI & Developer Productivity | ✅ Verified |
-| [@Shaisolaris](https://github.com/Shaisolaris) | [**Solaris Dev Shop**](https://github.com/Shaisolaris/solaris-dev-shop) | Boilerplates & Starters | ✅ Verified |
-| [@firzen](https://github.com/firzen) | [**StoneSVN**](https://github.com/firzen/StoneSVN) | CLI & Developer Productivity | ✅ Verified |
 
 </div>
 
