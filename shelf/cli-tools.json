@@ -1300,5 +1300,14 @@
     "featured": false,
     "statusTags": ["No Card Required", "100% Free"],
     "goodFirstIssues": "https://github.com/flisk-sh/flisk/issues"
+  },
+  {
+    "name": "Cloady MCP",
+    "repo": "https://github.com/Cloady/cloady-mcp",
+    "category": "CLI & Developer Productivity",
+    "description": "An open-source MCP server that lets compatible AI coding assistants deploy and manage Cloady applications and databases, inspect logs, and work with hosting resources through the Cloady API. The npm package runs locally over stdio and authenticates with the developer's Cloady API token.",
+    "language": "TypeScript, Node.js 20+, Model Context Protocol SDK; npm package `@cloady/mcp`.",
+    "license": "MIT",
+    "featured": false
   }
 ]

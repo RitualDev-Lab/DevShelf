@@ -4,7 +4,7 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total CLI Tools](https://img.shields.io/badge/CLI_Tools-121_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total CLI Tools](https://img.shields.io/badge/CLI_Tools-122_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
 [Benchmarking & Performance](#benchmarking-performance) • [CLI & Developer Productivity](#cli-developer-productivity) • [Database & SQL](#database-sql) • [Dev Utilities & Libraries](#dev-utilities-libraries) • [Developer Tools](#developer-tools) • [DevOps & Containers](#devops-containers) • [DevOps & Infrastructure](#devops-infrastructure) • [Disk & Storage](#disk-storage) • [Git & Version Control](#git-version-control) • [GitHub Workflow & TUI](#github-workflow-tui) • [HTTP & Network](#http-network) • [OS & Hardware Utilities](#os-hardware-utilities) • [System & Process Monitoring](#system-process-monitoring) • [Terminal & Search](#terminal-search) • [Terminal & Shell](#terminal-shell) • [Terminal Navigation](#terminal-navigation)
@@ -17,7 +17,7 @@
 | :--- | :---: | :---: | :--- | :---: |
 | [**hyperfine**](https://github.com/sharkdp/hyperfine) | `Rust` | `MIT / Apache-2.0` | Command-line benchmarking tool with statistical analysis, warmup runs, and parametric sweeps. | [GitHub](https://github.com/sharkdp/hyperfine) |
 
-### <a id="cli-developer-productivity"></a>CLI & Developer Productivity (11)
+### <a id="cli-developer-productivity"></a>CLI & Developer Productivity (12)
 
 | Tool | Language | License | Description | Links |
 | :--- | :---: | :---: | :--- | :---: |
@@ -32,6 +32,7 @@
 | [**Bubo**](https://github.com/mountainowl/bubo) | `Python` | `MIT` | Bubo is a self-hosted AI code reviewer for GitHub pull requests and GitLab merge requests. It runs with an operator-chosen LLM, posts evidence-backed inline findings, and provides auditable quality, governance, provenance, cost, and ROI data. | [GitHub](https://github.com/mountainowl/bubo) |
 | [**StoneSVN**](https://github.com/firzen/StoneSVN) | `Rust, Vue 3, TypeScript, Tauri 2` | `MIT` | MIT-licensed SVN desktop client for Windows, macOS and Linux, developed from OrcaSVN. It helps developers switch working copies, review diffs, choose files/directories to commit and shelve selected text hunks through the locally installed SVN CLI. | [GitHub](https://github.com/firzen/StoneSVN) |
 | [**vhr-bench**](https://github.com/vpshostreview/vhr-vps-benchmark) | `Bash` | `MIT` | Single MIT-licensed Bash script that benchmarks a Linux server in about a minute with sysbench CPU and memory tests and fio 4k random read and write IOPS. It asks before installing sysbench or fio and sends nothing anywhere unless you pass an upload token. | [GitHub](https://github.com/vpshostreview/vhr-vps-benchmark) |
+| [**Cloady MCP**](https://github.com/Cloady/cloady-mcp) | `TypeScript, Node.js 20+, Model Context Protocol SDK; npm package `@cloady/mcp`.` | `MIT` | An open-source MCP server that lets compatible AI coding assistants deploy and manage Cloady applications and databases, inspect logs, and work with hosting resources through the Cloady API. The npm package runs locally over stdio and authenticates with the developer's Cloady API token. | [GitHub](https://github.com/Cloady/cloady-mcp) |
 
 ### <a id="database-sql"></a>Database & SQL (7)
 
