@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 546 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 547 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -1963,6 +1963,15 @@
 - **URL**: https://github.com/flisk-sh/flisk
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/flisk.html
 - **Description**: Generate and run your whole tech stack without the setup pain. One command from empty folder to running stack.
+
+### Cloady MCP
+- **Category**: CLI & Developer Productivity
+- **Pricing Model**: See official site for free access and limits
+- **License**: MIT
+- **Language**: TypeScript, Node.js 20+, Model Context Protocol SDK; npm package `@cloady/mcp`.
+- **URL**: https://github.com/Cloady/cloady-mcp
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/cloady-mcp.html
+- **Description**: An open-source MCP server that lets compatible AI coding assistants deploy and manage Cloady applications and databases, inspect logs, and work with hosting resources through the Cloady API. The npm package runs locally over stdio and authenticates with the developer's Cloady API token.
 
 ### AutoHeal-QA
 - **Category**: Browser & E2E Testing

@@ -1,13 +1,13 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-10-25T23:42:37.459Z",
-  "totalCount": 546,
-  "reposCount": 337,
+  "updatedAt": "2026-10-26T19:42:52.290Z",
+  "totalCount": 547,
+  "reposCount": 338,
   "facets": {
-    "repos": 337
+    "repos": 338
   },
   "counts": {
     "aiTools": 90,
-    "cliTools": 121,
+    "cliTools": 122,
     "testingQa": 64,
     "apis": 107,
     "freeCloud": 72,
@@ -3386,6 +3386,17 @@ window.DEVSHELF_DATA = {
         "100% Free"
       ],
       "goodFirstIssues": "https://github.com/flisk-sh/flisk/issues",
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "Cloady MCP",
+      "repo": "https://github.com/Cloady/cloady-mcp",
+      "category": "CLI & Developer Productivity",
+      "description": "An open-source MCP server that lets compatible AI coding assistants deploy and manage Cloady applications and databases, inspect logs, and work with hosting resources through the Cloady API. The npm package runs locally over stdio and authenticates with the developer's Cloady API token.",
+      "language": "TypeScript, Node.js 20+, Model Context Protocol SDK; npm package `@cloady/mcp`.",
+      "license": "MIT",
+      "featured": false,
       "type": "cli",
       "section": "CLI & Productivity Tools"
     },
