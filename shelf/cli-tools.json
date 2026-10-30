@@ -1309,5 +1309,14 @@
     "language": "TypeScript, Node.js 20+, Model Context Protocol SDK; npm package `@cloady/mcp`.",
     "license": "MIT",
     "featured": false
+  },
+  {
+    "name": "Kilobat CLI",
+    "repo": "https://github.com/seifip/kilobat-cli",
+    "category": "CLI & Developer Productivity",
+    "description": "I built Kilobat CLI for macOS network monitoring and diagnostics, with an interactive terminal interface, JSON output and a local MCP server for agents. The GPL-licensed CLI is a separate project from the proprietary desktop app.",
+    "language": "Swift",
+    "license": "GPL-3.0-only",
+    "featured": false
   }
 ]
