@@ -636,5 +636,14 @@
     "language": "JavaScript / Node.js 22+, with no third-party runtime packages.",
     "license": "MIT — copyright 2026 Slanta Cause.",
     "featured": false
+  },
+  {
+    "name": "Oh My Android",
+    "repo": "https://github.com/ateymoori/oh-my-android",
+    "category": "Mobile & Device Testing",
+    "description": "Free macOS control panel for the Android Emulator and real phones: dark mode, font scale, RTL, TalkBack, network throttling, GPS mock and a Layout Inspector in dp. Built-in MCP server for AI agents.",
+    "language": "Swift",
+    "license": "MIT",
+    "featured": false
   }
 ]
