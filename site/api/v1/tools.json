@@ -2,8 +2,8 @@
   "version": "1.1.2",
   "docs": "https://devshelf.ritualdev.in/docs/api.html",
   "license": "https://github.com/RitualDev-Lab/DevShelf/blob/main/LICENSE",
-  "updatedAt": "2026-10-26T19:42:52.290Z",
-  "totalCount": 547,
+  "updatedAt": "2026-10-30T02:59:54.530Z",
+  "totalCount": 548,
   "tools": [
     {
       "name": "AgentShield",
@@ -5853,6 +5853,18 @@
       "auth": "No Key",
       "cors": "Yes",
       "rateLimit": "300 requests per 60 seconds",
+      "https": true,
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Pangolinfo Amazon Scraper API",
+      "url": "https://docs.pangolinfo.com/en-api-reference/amazonApi/submit",
+      "category": "Other",
+      "description": "Amazon product, search, category, seller, Best Sellers, and New Releases data in JSON, raw HTML, or Markdown.",
+      "auth": "Free API Key",
+      "cors": "Unknown",
+      "rateLimit": "60 free credits per month; JSON uses 1 credit per request and raw HTML/Markdown use 0.75 credits per request.",
       "https": true,
       "type": "api",
       "section": "Free & Public APIs"

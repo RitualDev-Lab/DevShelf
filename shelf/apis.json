@@ -1165,5 +1165,15 @@
     "cors": "Yes",
     "rateLimit": "300 requests per 60 seconds",
     "https": true
+  },
+  {
+    "name": "Pangolinfo Amazon Scraper API",
+    "url": "https://docs.pangolinfo.com/en-api-reference/amazonApi/submit",
+    "category": "Other",
+    "description": "Amazon product, search, category, seller, Best Sellers, and New Releases data in JSON, raw HTML, or Markdown.",
+    "auth": "Free API Key",
+    "cors": "Unknown",
+    "rateLimit": "60 free credits per month; JSON uses 1 credit per request and raw HTML/Markdown use 0.75 credits per request.",
+    "https": true
   }
 ]

@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 547 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 548 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -3428,6 +3428,14 @@ Current limits: https://arcmira.com/docs/usage-and-billing
 - **URL**: https://creditunions.fyi/developers
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/creditunions.html
 - **Description**: Directory of federally insured US credit unions from the NCUA register. Listings show charter, field of membership, assets and member count. Read-only JSON API, no key needed.
+
+### Pangolinfo Amazon Scraper API
+- **Category**: Other
+- **Pricing Model**: 60 free credits per month; JSON uses 1 credit per request and raw HTML/Markdown use 0.75 credits per request.
+- **Auth**: Free API Key
+- **URL**: https://docs.pangolinfo.com/en-api-reference/amazonApi/submit
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/pangolinfo-amazon-scraper-api.html
+- **Description**: Amazon product, search, category, seller, Best Sellers, and New Releases data in JSON, raw HTML, or Markdown.
 
 ### Supabase
 - **Category**: Databases & BaaS
