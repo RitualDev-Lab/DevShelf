@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 547 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 548 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -1972,6 +1972,15 @@
 - **URL**: https://github.com/Cloady/cloady-mcp
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/cloady-mcp.html
 - **Description**: An open-source MCP server that lets compatible AI coding assistants deploy and manage Cloady applications and databases, inspect logs, and work with hosting resources through the Cloady API. The npm package runs locally over stdio and authenticates with the developer's Cloady API token.
+
+### Kilobat CLI
+- **Category**: CLI & Developer Productivity
+- **Pricing Model**: See official site for free access and limits
+- **License**: GPL-3.0-only
+- **Language**: Swift
+- **URL**: https://github.com/seifip/kilobat-cli
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/kilobat-cli.html
+- **Description**: I built Kilobat CLI for macOS network monitoring and diagnostics, with an interactive terminal interface, JSON output and a local MCP server for agents. The GPL-licensed CLI is a separate project from the proprietary desktop app.
 
 ### AutoHeal-QA
 - **Category**: Browser & E2E Testing

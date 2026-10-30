@@ -1,9 +1,9 @@
 {
   "version": "1.1.2",
-  "updatedAt": "2026-10-26T19:42:52.290Z",
+  "updatedAt": "2026-10-30T11:07:36.129Z",
   "slug": "cli",
   "name": "CLI & Developer Productivity",
-  "count": 122,
+  "count": 123,
   "items": [
     {
       "name": "GitWhisper",
@@ -1900,6 +1900,17 @@
       "description": "An open-source MCP server that lets compatible AI coding assistants deploy and manage Cloady applications and databases, inspect logs, and work with hosting resources through the Cloady API. The npm package runs locally over stdio and authenticates with the developer's Cloady API token.",
       "language": "TypeScript, Node.js 20+, Model Context Protocol SDK; npm package `@cloady/mcp`.",
       "license": "MIT",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "Kilobat CLI",
+      "repo": "https://github.com/seifip/kilobat-cli",
+      "category": "CLI & Developer Productivity",
+      "description": "I built Kilobat CLI for macOS network monitoring and diagnostics, with an interactive terminal interface, JSON output and a local MCP server for agents. The GPL-licensed CLI is a separate project from the proprietary desktop app.",
+      "language": "Swift",
+      "license": "GPL-3.0-only",
       "featured": false,
       "type": "cli",
       "section": "CLI & Productivity Tools"
