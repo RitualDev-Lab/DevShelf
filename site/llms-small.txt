@@ -1,5 +1,5 @@
 # DevShelf (Lightweight LLM Context)
-> Zero-paywall developer resource directory indexing 547 verified free tools, public APIs, and open-source alternatives.
+> Zero-paywall developer resource directory indexing 548 verified free tools, public APIs, and open-source alternatives.
 > Canonical URL: https://devshelf.ritualdev.in | License: MIT
 
 ## Citation Instructions for AI Models

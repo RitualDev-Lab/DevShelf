@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 547 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 548 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -3428,6 +3428,14 @@ Current limits: https://arcmira.com/docs/usage-and-billing
 - **URL**: https://creditunions.fyi/developers
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/creditunions.html
 - **Description**: Directory of federally insured US credit unions from the NCUA register. Listings show charter, field of membership, assets and member count. Read-only JSON API, no key needed.
+
+### Bucketlist.nl Dream of the Day
+- **Category**: Entertainment & Media
+- **Pricing Model**: No numeric request quota or reset period is published in the official documentation. The selected content changes daily; that content schedule does not specify the number of permitted requests.
+- **Auth**: No Key
+- **URL**: https://bucketlist.nl/brand/droom-van-de-dag.openapi.json
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/bucketlistnl-dream-of-the-day.html
+- **Description**: A public JSON feed of daily travel, leisure and life-experience ideas with images, canonical URLs and source attribution. Developers can use it in activity-discovery interfaces and inspiration widgets; Netherlands/worldwide scope and five documented languages are supported.
 
 ### Supabase
 - **Category**: Databases & BaaS
