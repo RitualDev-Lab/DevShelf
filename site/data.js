@@ -1,6 +1,6 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-10-26T19:42:52.290Z",
-  "totalCount": 547,
+  "updatedAt": "2026-10-31T12:27:49.231Z",
+  "totalCount": 548,
   "reposCount": 338,
   "facets": {
     "repos": 338
@@ -9,7 +9,7 @@ window.DEVSHELF_DATA = {
     "aiTools": 90,
     "cliTools": 122,
     "testingQa": 64,
-    "apis": 107,
+    "apis": 108,
     "freeCloud": 72,
     "perks": 30,
     "boilerplates": 41,
@@ -5864,6 +5864,18 @@ window.DEVSHELF_DATA = {
       "auth": "No Key",
       "cors": "Yes",
       "rateLimit": "300 requests per 60 seconds",
+      "https": true,
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Bucketlist.nl Dream of the Day",
+      "url": "https://bucketlist.nl/brand/droom-van-de-dag.openapi.json",
+      "category": "Entertainment & Media",
+      "description": "A public JSON feed of daily travel, leisure and life-experience ideas with images, canonical URLs and source attribution. Developers can use it in activity-discovery interfaces and inspiration widgets; Netherlands/worldwide scope and five documented languages are supported.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "No numeric request quota or reset period is published in the official documentation. The selected content changes daily; that content schedule does not specify the number of permitted requests.",
       "https": true,
       "type": "api",
       "section": "Free & Public APIs"

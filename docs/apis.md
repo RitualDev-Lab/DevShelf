@@ -4,7 +4,7 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total APIs](https://img.shields.io/badge/APIs-107_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total APIs](https://img.shields.io/badge/APIs-108_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
 [AI & Machine Learning](#ai-machine-learning) • [Animals & Fun](#animals-fun) • [Books & Literature](#books-literature) • [Development & Testing](#development-testing) • [Entertainment & Media](#entertainment-media) • [Finance & Crypto](#finance-crypto) • [Food & Health](#food-health) • [Games & Media](#games-media) • [Geocoding & IP](#geocoding-ip) • [Media & Images](#media-images) • [News & Media](#news-media) • [Other](#other) • [Science & Astronomy](#science-astronomy) • [Travel & Transit](#travel-transit) • [Weather & Climate](#weather-climate)
@@ -86,12 +86,13 @@
 | [**Public APIs Index**](https://api.publicapis.org) | 🟢 No Key | `Unlimited` | Queryable directory of hundreds of free public APIs categorized by topic and authentication requirements. |
 | [**CurlShot**](https://curlshot.com/docs) | 🔑 Free Key | `100 screenshots/month (resets monthly), 10 requests/minute; failed renders and cache hits not counted` | Screenshot API: one GET request renders a URL, HTML, or Markdown to PNG, JPEG, WebP, PDF, or scrolling video (MP4/WebM/GIF), with full-page and element capture, device presets, dark mode, and ad/cookie-banner blocking. Free plan: 100 screenshots/month that resets monthly, no credit card. |
 
-### <a id="entertainment-media"></a>Entertainment & Media (2)
+### <a id="entertainment-media"></a>Entertainment & Media (3)
 
 | API & URL | Auth | Rate Limit | Description |
 | :--- | :---: | :---: | :--- |
 | [**Arcmira: YouTube Transcript Search**](https://arcmira.com/docs) | 🔑 Free Key | `60 requests per minute per key; 1,000 included credits per month. First five search passages per request use zero credits. The Free plan withholds the newest 30 days and later result pages. No card required; Free is not a time-limited trial.  Current limits: https://arcmira.com/docs/usage-and-billing` | Search indexed YouTube transcripts by topic, with source links and timestamps. Retrieve captions and resolve people, channels and videos. Coverage is partial. A permanent Free tier is available; Premium transcripts and sponsor research use paid plans. |
 | [**unicum.gg**](https://unicum.gg/docs) | 🟢 No Key | `No fixed quota, fair use. Every endpoint is free and keyless.` | Free World of Tanks statistics API: player and clan profiles, WN7/WN8/WNX ratings, leaderboards, tank specifications, maps, tournaments and server population for the EU, NA and Asia servers. Open source, documented with an OpenAPI 3 spec (https://unicum.gg/api/openapi.json), and also exposed as a community MCP server. |
+| [**Bucketlist.nl Dream of the Day**](https://bucketlist.nl/brand/droom-van-de-dag.openapi.json) | 🟢 No Key | `No numeric request quota or reset period is published in the official documentation. The selected content changes daily; that content schedule does not specify the number of permitted requests.` | A public JSON feed of daily travel, leisure and life-experience ideas with images, canonical URLs and source attribution. Developers can use it in activity-discovery interfaces and inspiration widgets; Netherlands/worldwide scope and five documented languages are supported. |
 
 ### <a id="finance-crypto"></a>Finance & Crypto (8)
 

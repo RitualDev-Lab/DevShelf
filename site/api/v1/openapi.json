@@ -19,7 +19,7 @@
     "/api/v1/tools.json": {
       "get": {
         "summary": "List all verified zero-paywall tools",
-        "description": "Returns the complete catalog of 547 verified free developer tools, public APIs, and open-source projects.",
+        "description": "Returns the complete catalog of 548 verified free developer tools, public APIs, and open-source projects.",
         "operationId": "getTools",
         "responses": {
           "200": {
