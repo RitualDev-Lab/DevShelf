@@ -658,7 +658,7 @@
   {
     "name": "VibeLocked LeakCheck",
     "repo": "https://vibelocked.com/leakcheck/",
-    "url": "https://vibelocked.com/leakcheck/",
+    "url": "https://vibelocked.com/leakcheck/?ref=devshelf",
     "category": "Security & Vulnerability Auditing",
     "description": "Read-only security scan for vibe-coded apps: leaked keys, open data, missing headers. Permanent free scan; Pro adds deploy watching from US$15/mo.",
     "language": "TypeScript, Next.js, Supabase",
