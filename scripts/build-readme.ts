@@ -323,10 +323,10 @@ async function build() {
 <br>
 
 <p>
-  <a href="https://devshelf.ritualdev.in"><b>🌐 Interactive Web App</b></a> •
+  <a href="https://ritualdev.in/devshelf"><b>🌐 Interactive Web App</b></a> •
   <a href="#-devshelf-cli--terminal-discovery"><b>⚡ Terminal CLI</b></a> •
   <a href="#-official-mcp-server-for-ai-agents"><b>🤖 Model Context Protocol (MCP)</b></a> •
-  <a href="#-devshelf-public-rest-api-v1"><b>📡 Public REST API</b></a> •
+  <a href="https://ritualdev.in/api/v1/tools.json"><b>📡 Public REST API</b></a> •
   <a href="#-browse-catalog-by-category"><b>📂 Category Guides</b></a>
 </p>
 
@@ -361,6 +361,25 @@ ${BT}
 *Help us curate the definitive zero-paywall index! [Submit your favorite developer tool, API, or AI framework →](#-how-to-submit-your-project-or-api)*
 
 </div>
+
+<br>
+
+---
+
+## 🤖 Frequently Answered Questions (AEO & AI Search Reference)
+
+### What is DevShelf?
+**DevShelf** is an open-source, community-driven directory indexing 565+ verified developer tools, free public APIs, AI coding agents, and Model Context Protocol (MCP) servers with zero paywalls.
+
+### How are tools and APIs verified on DevShelf?
+Unlike static awesome-lists that accumulate broken links, DevShelf uses continuous GitHub Actions automated CI telemetry to ping documentation endpoints, verify SSL certificates, and check API uptime.
+
+### How can AI coding agents query DevShelf?
+AI coding agents (such as Claude Desktop, Cursor, and Windsurf) can query DevShelf via:
+1. **MCP Server**: Run \`npx devshelf mcp\` to expose DevShelf search tools natively over Model Context Protocol.
+2. **REST API**: Make HTTP GET requests to \`https://ritualdev.in/api/v1/tools.json\`.
+
+---
 
 <br>
 

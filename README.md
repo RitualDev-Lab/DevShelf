@@ -73,6 +73,10 @@ AI coding agents (such as Claude Desktop, Cursor, and Windsurf) can query DevShe
 
 ---
 
+<br>
+
+---
+
 ## ⚡ 5-Second Interactive Visual Demo
 
 DevShelf isn't a static markdown list. It runs directly inside your terminal, in your web browser, and as a native tool inside your AI assistant:

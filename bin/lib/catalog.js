@@ -108,28 +108,45 @@ export function clearPersistentCache() {
  * @returns {Promise<any>}
  */
 export async function fetchLiveCatalog(timeoutMs = 4000, fetchFn = fetch) {
-  const res = await fetchFn("https://devshelf.ritualdev.in/data.json", {
-    signal: AbortSignal.timeout(timeoutMs),
-  });
+  const candidateUrls = [
+    "https://ritualdev.in/data.json",
+    "https://raw.githubusercontent.com/RitualDev-Lab/DevShelf/main/site/data.json",
+    "https://devshelf.ritualdev.in/data.json",
+  ];
 
-  if (!res.ok) {
-    throw new Error(
-      `Failed to fetch live catalog: HTTP ${res.status} ${res.statusText || ""}`.trim(),
-    );
+  let lastError = null;
+  for (const url of candidateUrls) {
+    try {
+      const res = await fetchFn(url, {
+        signal: AbortSignal.timeout(timeoutMs),
+      });
+
+      if (!res.ok) {
+        lastError = new Error(
+          `Failed to fetch live catalog: HTTP ${res.status} ${res.statusText || ""}`.trim(),
+        );
+        continue;
+      }
+
+      const data = await res.json();
+      if (!data || typeof data !== "object" || !Array.isArray(data.resources)) {
+        lastError = new Error(`Invalid catalog payload format received from ${url}`);
+        continue;
+      }
+
+      const now = new Date().toISOString();
+      data.catalogSource = "live";
+      data.catalogTimestamp = data.updatedAt || now;
+      data.fetchedAt = now;
+      data.cacheAgeHours = 0;
+      data.milestone = getMilestone(data.totalCount || data.resources.length);
+      return data;
+    } catch (err) {
+      lastError = err;
+    }
   }
 
-  const data = await res.json();
-  if (!data || typeof data !== "object" || !Array.isArray(data.resources)) {
-    throw new Error("Invalid catalog payload format received from remote CDN");
-  }
-
-  const now = new Date().toISOString();
-  data.catalogSource = "live";
-  data.catalogTimestamp = data.updatedAt || now;
-  data.fetchedAt = now;
-  data.cacheAgeHours = 0;
-  data.milestone = getMilestone(data.totalCount || data.resources.length);
-  return data;
+  throw lastError || new Error("Failed to fetch live catalog: All candidate endpoints unreachable");
 }
 
 /**
