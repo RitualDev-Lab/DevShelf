@@ -192,18 +192,16 @@ async function generateSeo() {
 
     const pageTitle = alternativeTo
       ? `${name} — Best Free ${alternativeTo} Alternative (${currentYear}) | DevShelf`
-      : `${name} — Free ${category} & Open Source Tool (${currentYear}) | DevShelf`;
+      : `${name} — ${category} (${currentYear}) | DevShelf`;
 
     const cleanRawDesc = (item.description || "Zero-paywall developer tool curated on DevShelf.")
       .trim()
       .replace(/\.$/, "");
-    const pageMetaDesc = escapeHtml(
-      `Verified in ${currentYear}: ${cleanRawDesc}. 100% free tier (${pricing}), zero paywall traps, and active maintenance.`,
-    );
+    const pageMetaDesc = escapeHtml(`${cleanRawDesc}. ${pricing}`);
 
     const metaKeywords = alternativeTo
-      ? `${name}, free alternative to ${alternativeTo}, open source alternative to ${alternativeTo}, ${alternativeTo} alternative ${currentYear}, ${category}, developer tools`
-      : `${name}, free developer tool, ${category}, open source tools ${currentYear}`;
+      ? `${name}, free alternative to ${alternativeTo}, ${alternativeTo} alternative ${currentYear}, ${category}, developer tools`
+      : `${name}, ${category}, developer tools`;
 
     sitemapUrls.push(
       `  <url>\n    <loc>${pageUrl}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>`,
@@ -217,8 +215,8 @@ async function generateSeo() {
       ...(alternativeTo
         ? [
             {
-              question: `Why choose ${name} as a free alternative to ${alternativeTo} in ${currentYear}?`,
-              answer: `${name} provides core developer capabilities comparable to ${alternativeTo} while prioritizing free access, open-source transparency, and avoiding proprietary subscription paywalls.`,
+              question: `What is ${item.name} an alternative to?`,
+              answer: `DevShelf lists ${item.name} as an alternative to ${item.alternativeTo}.`,
             },
           ]
         : []),
@@ -616,7 +614,7 @@ async function generateSeo() {
           <span>AI SEARCH SUMMARY &amp; VERIFICATION (${currentYear})</span>
         </div>
         <p class="leading-relaxed">
-          <strong>Is ${name} free to use?</strong> Yes. DevShelf verifies that <strong>${name}</strong> provides a genuine free tier or open-source license with no mandatory upfront credit card requirement. It is categorized under <em>${category}</em> and verified for developer utility in ${currentYear}.
+          <strong>Is ${name} free to use?</strong> ${freeTier}
         </p>
       </div>
 

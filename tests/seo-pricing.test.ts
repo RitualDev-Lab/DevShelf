@@ -53,6 +53,17 @@ test("generated pages preserve API allowances without inventing licenses or rati
     assert.match(page, /newest 30 days and later result pages/);
     assert.match(page, /Premium transcripts and sponsor research use paid plans/);
     assert.doesNotMatch(page, /100% Free|Free \/ FOSS|under the .* license/);
+    const title = page.match(/<title>([^<]+)<\/title>/)?.[1];
+    assert.ok(title);
+    assert.doesNotMatch(title, /open.source/i);
+    assert.ok(page.includes(`<meta property="og:title" content="${title}">`));
+    assert.ok(page.includes(`<meta name="twitter:title" content="${title}">`));
+    const keywords = page.match(/<meta name="keywords" content="([^"]+)"/)?.[1];
+    assert.ok(keywords);
+    assert.doesNotMatch(keywords, /open.source/i);
+    const summary = page.match(/data-aeo="direct-answer">([\s\S]*?)<\/p>/)?.[1];
+    assert.ok(summary);
+    assert.match(summary, /1,000 included credits per month/);
     const structured = JSON.parse(
       page.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)?.[1] || "{}",
     );
