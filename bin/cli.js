@@ -164,6 +164,7 @@ ${c.bold}USAGE:${c.reset}
   ${c.green}npx devshelf${c.reset}                                 Launch interactive Terminal User Interface (TUI)
   ${c.green}npx devshelf daily [--quiet]${c.reset}                 Print today's curated open-source discovery
   ${c.green}npx devshelf search <query> [options]${c.reset}        Fuzzy search tools, APIs, and AI agents
+  ${c.green}npx devshelf explain <name>${c.reset}                  Deep-dive tool explainer, install command & Docker
   ${c.green}npx devshelf contribute [query]${c.reset}              Find repos actively seeking help & starter tasks
   ${c.green}npx devshelf list [category]${c.reset}                 List items by category
   ${c.green}npx devshelf random${c.reset}                          Discover a random curated resource
@@ -253,6 +254,79 @@ function printItemCard(item, index) {
   if (url) {
     console.log(`  ${c.underline}${c.blue}${url}${c.reset}`);
   }
+}
+
+function printDeepExplainer(item) {
+  if (!item || typeof item !== "object") {
+    console.log(`\n  ${c.red}No catalog resource found.${c.reset}`);
+    return;
+  }
+  const slug = String(item.name || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+  const featured = item.featured ? ` ${c.amber}⭐ [Featured Partner]${c.reset}` : "";
+  const cat = `${c.dim}(${item.category || item.section || "Developer Tool"})${c.reset}`;
+  const url = getResourceUrl(item);
+
+  console.log(`\n  ${c.bold}${c.white}${item.name}${c.reset}${featured} ${cat}`);
+  console.log(`  ${c.gray}─────────────────────────────────────────────────────────────${c.reset}`);
+
+  if (item.alternativeTo) {
+    console.log(
+      `  ${c.purple}⚡ Open-Source Alternative to:${c.reset} ${c.bold}${item.alternativeTo}${c.reset}`,
+    );
+  }
+
+  if (item.description) {
+    console.log(`\n  ${c.cyan}💡 What It Does:${c.reset}`);
+    console.log(`  ${item.description}`);
+  }
+
+  if (Array.isArray(item.statusTags) && item.statusTags.length > 0) {
+    console.log(`\n  ${c.green}🛡️ Capabilities & Badges:${c.reset}`);
+    console.log(`  ${item.statusTags.map((t) => `${c.green}✓${c.reset} ${t}`).join("  ")}`);
+  }
+
+  const lang = (item.language || "").toLowerCase();
+  let installCmd = `npx ${slug}`;
+  if (lang.includes("go")) {
+    const repo = (item.repo || slug).replace("https://github.com/", "");
+    installCmd = `go install github.com/${repo}@latest`;
+  } else if (lang.includes("python")) {
+    installCmd = `pip install ${slug}`;
+  } else if (lang.includes("rust")) {
+    installCmd = `cargo install ${slug}`;
+  } else if (item.repo) {
+    const r = item.repo.startsWith("http") ? item.repo : `https://github.com/${item.repo}`;
+    installCmd = `git clone ${r}.git`;
+  }
+
+  console.log(`\n  ${c.amber}🚀 Quick Install & Run:${c.reset}`);
+  console.log(`    ${c.bold}$ ${installCmd}${c.reset}`);
+
+  if (item.dockerCompose) {
+    console.log(`\n  ${c.blue}🐳 Docker Compose (Self-Hostable):${c.reset}`);
+    const indented = item.dockerCompose
+      .split("\n")
+      .map((l) => `    ${l}`)
+      .join("\n");
+    console.log(`${c.gray}${indented}${c.reset}`);
+    console.log(`    ${c.dim}Run: docker compose up -d${c.reset}`);
+  }
+
+  console.log(`\n  ${c.cyan}📊 Specifications:${c.reset}`);
+  console.log(`    • License: ${item.license || "Open Source"}`);
+  console.log(`    • Free Tier: ${item.freeTier || "100% Free / OSS"}`);
+  console.log(`    • Authentication: ${item.auth || "None Required"}`);
+  if (item.rateLimit) console.log(`    • Rate Limits: ${item.rateLimit}`);
+
+  console.log(`\n  ${c.purple}🔗 Links & Web Directory:${c.reset}`);
+  if (url) console.log(`    • Official / Repository: ${c.underline}${c.blue}${url}${c.reset}`);
+  console.log(
+    `    • Web Permalink: ${c.underline}${c.cyan}https://ritualdev.in/devshelf#${slug}${c.reset}`,
+  );
+  console.log();
 }
 
 // Interactive TUI
@@ -954,6 +1028,34 @@ async function main() {
       const firstIssue = filtered[0].issues?.[0]?.url || filtered[0].repo;
       openUrl(firstIssue);
     }
+    return;
+  }
+
+  if (command === "explain" || command === "info" || command === "show") {
+    const targetName = cleanArgs.slice(1).join(" ").trim().toLowerCase();
+    if (!targetName) {
+      console.error(
+        `${c.red}Error:${c.reset} Please specify a tool name to explain. Example: devshelf explain ollama`,
+      );
+      process.exit(1);
+    }
+
+    const item =
+      resources.find((r) => r.name.toLowerCase() === targetName) ||
+      resources.find((r) => r.name.toLowerCase().includes(targetName));
+
+    if (!item) {
+      console.error(`${c.red}Error:${c.reset} Could not find resource matching "${targetName}"`);
+      process.exit(1);
+    }
+
+    if (isJson) {
+      console.log(JSON.stringify(item, null, 2));
+      return;
+    }
+
+    printHeader();
+    printDeepExplainer(item);
     return;
   }
 

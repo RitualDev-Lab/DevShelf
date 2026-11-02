@@ -92,7 +92,7 @@
 | Tool | Language | License | Description | Links |
 | :--- | :---: | :---: | :--- | :---: |
 | [**⭐ web-sec-auditor**](https://github.com/RitualDev-Lab/web-sec-auditor) | `TypeScript` | `MIT` | Unified DAST, SAST, secret hunter, and SCA vulnerability auditor for web apps and APIs. Emits OASIS SARIF v2.1.0 reports, executive HTML dashboards, and context-aware unified git diff auto-patches. | [GitHub](https://github.com/RitualDev-Lab/web-sec-auditor) |
-| [**VibeLocked LeakCheck**](https://vibelocked.com/leakcheck/) | `TypeScript, Next.js, Supabase` | `Proprietary, permanent free scan (no card required)` | Read-only security scan for vibe-coded apps: leaked keys, open data, missing headers. Permanent free scan; Pro adds deploy watching from US$15/mo. | [GitHub](https://vibelocked.com/leakcheck/) |
+| [**VibeLocked LeakCheck**](https://vibelocked.com/leakcheck) | `TypeScript, Next.js, Supabase` | `Proprietary, permanent free scan (no card required)` | Read-only security scan for vibe-coded apps: leaked keys, open data, missing headers. Permanent free scan; Pro adds deploy watching from US$15/mo. | [GitHub](https://vibelocked.com/leakcheck) |
 
 ### <a id="security-vulnerability-scanners"></a>Security & Vulnerability Scanners (10)
 

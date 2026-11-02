@@ -1,5 +1,5 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-11-01T15:10:11.711Z",
+  "updatedAt": "2026-11-02T20:37:37.853Z",
   "totalCount": 567,
   "reposCount": 357,
   "facets": {
@@ -4380,8 +4380,8 @@ window.DEVSHELF_DATA = {
     },
     {
       "name": "VibeLocked LeakCheck",
-      "repo": "https://vibelocked.com/leakcheck/",
-      "url": "https://vibelocked.com/leakcheck/",
+      "repo": "https://vibelocked.com/leakcheck",
+      "url": "https://vibelocked.com/leakcheck",
       "category": "Security & Vulnerability Auditing",
       "description": "Read-only security scan for vibe-coded apps: leaked keys, open data, missing headers. Permanent free scan; Pro adds deploy watching from US$15/mo.",
       "language": "TypeScript, Next.js, Supabase",
