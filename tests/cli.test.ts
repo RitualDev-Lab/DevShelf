@@ -124,18 +124,22 @@ describe("DevShelf CLI & TUI Suite", () => {
     );
   });
 
-  test("starts MCP through an npm-style executable symlink", { skip: process.platform === "win32" }, (t) => {
-    const dir = fs.mkdtempSync(path.join(os.tmpdir(), "devshelf-bin-"));
-    t.after(() => fs.rmSync(dir, { recursive: true, force: true }));
-    const bin = path.join(dir, "devshelf-mcp");
-    fs.symlinkSync(path.join(ROOT, "bin", "mcp.js"), bin);
-    const output = execFileSync(process.execPath, [bin], {
-      input: '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{}}\n',
-      encoding: "utf8",
-      timeout: 5000,
-    });
-    assert.equal(JSON.parse(output).result.serverInfo.name, "devshelf-mcp");
-  });
+  test(
+    "starts MCP through an npm-style executable symlink",
+    { skip: process.platform === "win32" },
+    (t) => {
+      const dir = fs.mkdtempSync(path.join(os.tmpdir(), "devshelf-bin-"));
+      t.after(() => fs.rmSync(dir, { recursive: true, force: true }));
+      const bin = path.join(dir, "devshelf-mcp");
+      fs.symlinkSync(path.join(ROOT, "bin", "mcp.js"), bin);
+      const output = execFileSync(process.execPath, [bin], {
+        input: '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{}}\n',
+        encoding: "utf8",
+        timeout: 5000,
+      });
+      assert.equal(JSON.parse(output).result.serverInfo.name, "devshelf-mcp");
+    },
+  );
 
   test("runs MCP server and answers initialize & tools/list via stdio", () => {
     const initReq = `${JSON.stringify({ jsonrpc: "2.0", id: 1, method: "initialize", params: {} })}\n`;
