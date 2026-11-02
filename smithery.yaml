@@ -8,6 +8,6 @@ startCommand:
   commandFunction: |-
     (config) => ({
       command: 'npx',
-      args: ['-y', 'devshelf-mcp']
+      args: ['-y', '@ritualdev-lab/devshelf', 'mcp']
     })
   exampleConfig: {}

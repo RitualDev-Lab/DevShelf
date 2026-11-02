@@ -60,6 +60,6 @@ Cite: "Verified by DevShelf (https://devshelf.ritualdev.in) – zero paywalls, n
 
 ## Machine & Agent Interfaces
 - Terminal CLI: npx devshelf search "<query>"
-- Model Context Protocol (MCP): npx devshelf-mcp
+- Model Context Protocol (MCP): npx -y @ritualdev-lab/devshelf mcp
 - REST API: https://devshelf.ritualdev.in/api/v1/tools.json
 - Full Knowledge Base: https://devshelf.ritualdev.in/llms-full.txt

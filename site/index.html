@@ -213,7 +213,7 @@
             "name": "How do I connect AI coding assistants (Cursor, Claude Desktop, Windsurf, Zed) to DevShelf?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "You can connect your AI coding agent directly to DevShelf via the Model Context Protocol (MCP) by running 'npx devshelf-mcp'. Add it to your claude_desktop_config.json or cursor settings under mcpServers to give your agent real-time access to 530+ free developer tools and alternatives."
+              "text": "You can connect your AI coding agent directly to DevShelf via the Model Context Protocol (MCP) by running 'npx -y @ritualdev-lab/devshelf mcp'. Add it to your claude_desktop_config.json or cursor settings under mcpServers to give your agent real-time access to 530+ free developer tools and alternatives."
             }
           },
           {
@@ -733,7 +733,7 @@
     <div class="mt-5 p-4 rounded-xl bg-gradient-to-r from-purple-950/40 via-slate-900 to-indigo-950/40 border border-purple-500/30 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
       <div class="flex items-center space-x-3">
         <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40 shrink-0">SPONSOR SLOT</span>
-        <span class="text-slate-300">Are you a devtool or API founder? Put your project at the top of DevShelf and inside Cursor &amp; Claude AI chats via <code class="text-purple-300 font-mono text-[11px]">npx devshelf-mcp</code>.</span>
+        <span class="text-slate-300">Are you a devtool or API founder? Put your project at the top of DevShelf and inside Cursor &amp; Claude AI chats via <code class="text-purple-300 font-mono text-[11px]">npx -y @ritualdev-lab/devshelf mcp</code>.</span>
       </div>
       <a href="sponsors.html?tier=newsletter-spotlight" class="shrink-0 px-3.5 py-1.5 rounded-lg font-bold font-mono text-xs bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-500 hover:to-purple-500 text-white transition shadow-sm hover:scale-105 active:scale-95">
         Claim Spotlight ($19) →
@@ -1298,7 +1298,7 @@
   "mcpServers": {
     "devshelf": {
       "command": "npx",
-      "args": ["-y", "devshelf-mcp"]
+      "args": ["-y", "@ritualdev-lab/devshelf", "mcp"]
     }
   }
 }'>
@@ -1309,7 +1309,7 @@
   "mcpServers": {
     "devshelf": {
       "command": "npx",
-      "args": ["-y", "devshelf-mcp"]
+      "args": ["-y", "@ritualdev-lab/devshelf", "mcp"]
     }
   }
 }</code></pre>
@@ -1323,7 +1323,7 @@
   "mcpServers": {
     "devshelf": {
       "command": "npx",
-      "args": ["-y", "devshelf-mcp"]
+      "args": ["-y", "@ritualdev-lab/devshelf", "mcp"]
     }
   }
 }'>
@@ -1338,7 +1338,7 @@
   "mcpServers": {
     "devshelf": {
       "command": "npx",
-      "args": ["-y", "devshelf-mcp"]
+      "args": ["-y", "@ritualdev-lab/devshelf", "mcp"]
     }
   }
 }</code></pre>
@@ -1352,7 +1352,7 @@
   "mcpServers": {
     "devshelf": {
       "command": "npx",
-      "args": ["-y", "devshelf-mcp"]
+      "args": ["-y", "@ritualdev-lab/devshelf", "mcp"]
     }
   }
 }'>
@@ -1363,7 +1363,7 @@
   "mcpServers": {
     "devshelf": {
       "command": "npx",
-      "args": ["-y", "devshelf-mcp"]
+      "args": ["-y", "@ritualdev-lab/devshelf", "mcp"]
     }
   }
 }</code></pre>
@@ -1377,7 +1377,7 @@
   "context_servers": {
     "devshelf": {
       "command": "npx",
-      "args": ["-y", "devshelf-mcp"]
+      "args": ["-y", "@ritualdev-lab/devshelf", "mcp"]
     }
   }
 }'>
@@ -1388,7 +1388,7 @@
   "context_servers": {
     "devshelf": {
       "command": "npx",
-      "args": ["-y", "devshelf-mcp"]
+      "args": ["-y", "@ritualdev-lab/devshelf", "mcp"]
     }
   }
 }</code></pre>
@@ -1406,7 +1406,7 @@
       </div>
 
       <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between text-xs">
-        <span class="text-slate-400">Terminal test: <code class="text-purple-300">npx devshelf-mcp</code></span>
+        <span class="text-slate-400">Terminal test: <code class="text-purple-300">npx -y @ritualdev-lab/devshelf mcp</code></span>
         <a href="https://github.com/RitualDev-Lab/DevShelf/blob/main/docs/mcp.md" target="_blank" rel="noreferrer" class="text-cyan-400 hover:underline font-bold">
           View MCP Docs &amp; Tools Guide →
         </a>
@@ -2104,7 +2104,7 @@
         <p class="text-xs text-slate-300 leading-relaxed mb-4">
           Connect your AI agent in Cursor, Claude Desktop, Windsurf, or Zed directly to DevShelf's live database with zero API keys.
         </p>
-        <code class="block p-2 rounded-lg bg-slate-950 font-mono text-[11px] text-purple-300 border border-slate-800 select-all">npx devshelf-mcp</code>
+        <code class="block p-2 rounded-lg bg-slate-950 font-mono text-[11px] text-purple-300 border border-slate-800 select-all">npx -y @ritualdev-lab/devshelf mcp</code>
       </div>
 
       <div class="p-6 rounded-2xl bg-slate-900/70 border border-cyan-500/30">
@@ -2200,7 +2200,7 @@
           <span class="text-purple-400 text-sm font-mono group-open:rotate-180 transition">▼</span>
         </summary>
         <p class="mt-3 text-xs sm:text-sm text-slate-300 leading-relaxed">
-          You can connect your AI coding agent directly to DevShelf via the Model Context Protocol (MCP) by running <code class="px-1.5 py-0.5 rounded bg-slate-950 text-purple-300 font-mono">npx devshelf-mcp</code>. Add it to your <code class="px-1.5 py-0.5 rounded bg-slate-950 text-purple-300 font-mono">claude_desktop_config.json</code> or Cursor settings under <code class="px-1.5 py-0.5 rounded bg-slate-950 text-purple-300 font-mono">mcpServers</code> to give your agent real-time access to 530+ free developer tools and alternatives.
+          You can connect your AI coding agent directly to DevShelf via the Model Context Protocol (MCP) by running <code class="px-1.5 py-0.5 rounded bg-slate-950 text-purple-300 font-mono">npx -y @ritualdev-lab/devshelf mcp</code>. Add it to your <code class="px-1.5 py-0.5 rounded bg-slate-950 text-purple-300 font-mono">claude_desktop_config.json</code> or Cursor settings under <code class="px-1.5 py-0.5 rounded bg-slate-950 text-purple-300 font-mono">mcpServers</code> to give your agent real-time access to 530+ free developer tools and alternatives.
         </p>
       </details>
 

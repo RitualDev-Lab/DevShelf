@@ -15,7 +15,7 @@ DevShelf provides an official, zero-dependency **Model Context Protocol (MCP)** 
 Run the server instantly via `npx` with zero local configuration:
 
 ```bash
-npx devshelf-mcp
+npx -y @ritualdev-lab/devshelf mcp
 # or
 npx devshelf mcp
 ```
@@ -58,7 +58,7 @@ In Cursor:
 3. Configure:
    - **Name**: `devshelf`
    - **Type**: `command`
-   - **Command**: `npx -y devshelf-mcp`
+   - **Command**: `npx -y @ritualdev-lab/devshelf mcp`
 
 Or create/edit `.cursor/mcp.json` in your workspace root:
 
@@ -67,7 +67,7 @@ Or create/edit `.cursor/mcp.json` in your workspace root:
   "mcpServers": {
     "devshelf": {
       "command": "npx",
-      "args": ["-y", "devshelf-mcp"]
+      "args": ["-y", "@ritualdev-lab/devshelf", "mcp"]
     }
   }
 }
@@ -88,7 +88,7 @@ Add DevShelf to your Claude Desktop configuration file:
   "mcpServers": {
     "devshelf": {
       "command": "npx",
-      "args": ["-y", "devshelf-mcp"]
+      "args": ["-y", "@ritualdev-lab/devshelf", "mcp"]
     }
   }
 }
@@ -107,7 +107,7 @@ Add to `~/.codeium/windsurf/mcp_config.json`:
   "mcpServers": {
     "devshelf": {
       "command": "npx",
-      "args": ["-y", "devshelf-mcp"]
+      "args": ["-y", "@ritualdev-lab/devshelf", "mcp"]
     }
   }
 }
@@ -124,7 +124,7 @@ Add to `~/.config/zed/settings.json`:
   "context_servers": {
     "devshelf": {
       "command": "npx",
-      "args": ["-y", "devshelf-mcp"]
+      "args": ["-y", "@ritualdev-lab/devshelf", "mcp"]
     }
   }
 }

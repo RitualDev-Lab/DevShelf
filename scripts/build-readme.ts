@@ -387,7 +387,7 @@ ${BT}text
 │     🔗 https://supabase.com                                                     │
 │                                                                                 │
 │ 🤖 Plug into AI Assistants (Claude Desktop, Cursor, Windsurf, Zed):             │
-│ $ npx devshelf-mcp                                                              │
+│ $ npx -y @ritualdev-lab/devshelf mcp                                            │
 └─────────────────────────────────────────────────────────────────────────────────┘
 ${BT}
 
@@ -402,7 +402,7 @@ Most developer resource lists (*public-apis*, *free-for-dev*) suffer from link r
 | **Endpoint Health** | 40%+ broken links & dead APIs sitting for years | 🛡️ **Automated CI Health Checks** ping every endpoint continuously |
 | **Trial-Bait Protection** | Riddled with "14-day trials" & bait-and-switch pricing | 🚫 **Strict Zero-Paywall Audit** &mdash; 100% free forever tiers or MIT/Apache FOSS |
 | **Developer Access** | Read-only markdown tables; constant browser tab flipping | ⚡ **Zero-Install CLI (${B}npx devshelf${B})** & fuzzy TUI right in your terminal |
-| **AI Agent Native** | None (manual copying and pasting into chat) | 🤖 **Official MCP Server (${B}npx devshelf-mcp${B})** for Claude, Cursor, & Zed |
+| **AI Agent Native** | None (manual copying and pasting into chat) | 🤖 **Official MCP Server (${B}npx -y @ritualdev-lab/devshelf mcp${B})** for Claude, Cursor, & Zed |
 | **Data Programmability** | Static markdown formatting | 📡 **Free CORS JSON REST API (${B}/api/v1/tools.json${B})** with no keys needed |
 | **Creator Backing** | Submissions sit unreviewed for months with zero recognition | 📢 **Social Amplification Guarantee** &mdash; merged tools get featured on X & LinkedIn |
 
@@ -441,7 +441,7 @@ ${BT}bash
 npx -y @smithery/cli install devshelf-mcp --client claude
 
 # Or run stdio server directly for Cursor, Claude Desktop, Windsurf, or Zed
-npx devshelf-mcp
+npx -y @ritualdev-lab/devshelf mcp
 ${BT}
 
 ### 1-Click Cursor Configuration (${B}.cursor/mcp.json${B})
@@ -450,7 +450,7 @@ ${BT}json
   "mcpServers": {
     "devshelf": {
       "command": "npx",
-      "args": ["-y", "devshelf-mcp"]
+      "args": ["-y", "@ritualdev-lab/devshelf", "mcp"]
     }
   }
 }
