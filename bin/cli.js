@@ -350,14 +350,15 @@ async function runInteractiveTui(data) {
   ${c.bold}Main Menu:${c.reset}
     ${c.purple}[1]${c.reset} 🔍 Search ${milestone} Tools, APIs & AI Agents
     ${c.purple}[2]${c.reset} 📂 Browse Categories
-    ${c.purple}[3]${c.reset} 🎲 Pick a Random Resource
-    ${c.purple}[4]${c.reset} 🤝 Contributor Matchmaker (Live Good First Issues)
-    ${c.purple}[5]${c.reset} 📊 Catalog Statistics
-    ${c.purple}[6]${c.reset} 🌐 Open Live Web Directory
+    ${c.purple}[3]${c.reset} 💡 Explain a Tool (Deep Breakdown & Docker Recipes)
+    ${c.purple}[4]${c.reset} 🎲 Pick a Random Resource
+    ${c.purple}[5]${c.reset} 🤝 Contributor Matchmaker (Live Good First Issues)
+    ${c.purple}[6]${c.reset} 📊 Catalog Statistics
+    ${c.purple}[7]${c.reset} 🌐 Open Live Web Directory
     ${c.purple}[0]${c.reset} 🚪 Exit
 `);
 
-    const choice = (await question(`  ${c.green}Select an option [0-6]:${c.reset} `)).trim();
+    const choice = (await question(`  ${c.green}Select an option [0-7]:${c.reset} `)).trim();
 
     if (choice === "0" || choice.toLowerCase() === "exit" || choice.toLowerCase() === "q") {
       console.log(`\n  ${c.purple}Happy hacking with DevShelf! ⭐${c.reset}\n`);
@@ -387,14 +388,23 @@ async function runInteractiveTui(data) {
       if (displayList.length > 0) {
         const itemChoice = (
           await question(
-            `\n  ${c.green}Enter number to open URL in browser (or press Enter to return):${c.reset} `,
+            `\n  ${c.green}Enter number to view deep explanation & install command (or press Enter to return):${c.reset} `,
           )
         ).trim();
         const selectedIndex = Number.parseInt(itemChoice, 10) - 1;
         if (!Number.isNaN(selectedIndex) && displayList[selectedIndex]) {
-          const targetUrl = getResourceUrl(displayList[selectedIndex]);
-          console.log(`  🚀 Opening ${targetUrl} in your default browser...`);
-          openUrl(targetUrl);
+          const selectedItem = displayList[selectedIndex];
+          printDeepExplainer(selectedItem);
+          const subAction = (
+            await question(`  ${c.cyan}[O] Open in Browser  [Enter] Continue:${c.reset} `)
+          )
+            .trim()
+            .toLowerCase();
+          if (subAction === "o" || subAction === "open") {
+            const targetUrl = getResourceUrl(selectedItem);
+            console.log(`  🚀 Opening ${targetUrl}...`);
+            openUrl(targetUrl);
+          }
           await question(`  ${c.gray}Press Enter to continue...${c.reset}`);
         }
       } else {
@@ -449,6 +459,39 @@ async function runInteractiveTui(data) {
         }
       }
     } else if (choice === "3") {
+      // Explain a tool
+      const toolQuery = (
+        await question(
+          `\n  ${c.cyan}Enter tool name to explain (e.g. ollama, agentshield, neon, bruno):${c.reset} `,
+        )
+      )
+        .trim()
+        .toLowerCase();
+      if (!toolQuery) continue;
+
+      const item =
+        resources.find((r) => r.name.toLowerCase() === toolQuery) ||
+        resources.find((r) => r.name.toLowerCase().includes(toolQuery));
+
+      if (!item) {
+        console.log(`\n  ${c.red}No tool matching "${toolQuery}" was found.${c.reset}`);
+        await question(`  ${c.gray}Press Enter to continue...${c.reset}`);
+        continue;
+      }
+
+      printDeepExplainer(item);
+      const subAction = (
+        await question(`  ${c.cyan}[O] Open in Browser  [Enter] Continue:${c.reset} `)
+      )
+        .trim()
+        .toLowerCase();
+      if (subAction === "o" || subAction === "open") {
+        const targetUrl = getResourceUrl(item);
+        console.log(`  🚀 Opening ${targetUrl}...`);
+        openUrl(targetUrl);
+      }
+      await question(`  ${c.gray}Press Enter to continue...${c.reset}`);
+    } else if (choice === "4") {
       // Random resource
       if (!resources || resources.length === 0) {
         console.log(`\n  ${c.red}No catalog items available.${c.reset}`);
@@ -466,7 +509,7 @@ async function runInteractiveTui(data) {
         openUrl(getResourceUrl(randomItem));
       }
       await question(`  ${c.gray}Press Enter to continue...${c.reset}`);
-    } else if (choice === "4") {
+    } else if (choice === "5") {
       // Contributor Matchmaker
       const mmData = await loadMatchmakerData();
       if (!mmData || !Array.isArray(mmData.projects)) {
@@ -519,7 +562,7 @@ async function runInteractiveTui(data) {
           await question(`  ${c.gray}Press Enter to continue...${c.reset}`);
         }
       }
-    } else if (choice === "5") {
+    } else if (choice === "6") {
       // Stats
       console.log(`\n  ${c.bold}📊 DevShelf Catalog Telemetry:${c.reset}`);
       console.log(
@@ -542,10 +585,10 @@ async function runInteractiveTui(data) {
         `  Audit Status:         ${c.green}🛡️ CI Health Audited (Zero Tracking Params)${c.reset}`,
       );
       await question(`\n  ${c.gray}Press Enter to continue...${c.reset}`);
-    } else if (choice === "6") {
+    } else if (choice === "7") {
       // Open web app
-      console.log("  🚀 Opening https://devshelf.ritualdev.in in your browser...");
-      openUrl("https://devshelf.ritualdev.in");
+      console.log("  🚀 Opening https://ritualdev.in/devshelf in your browser...");
+      openUrl("https://ritualdev.in/devshelf");
       await question(`  ${c.gray}Press Enter to continue...${c.reset}`);
     }
   }
@@ -1056,6 +1099,16 @@ async function main() {
 
     printHeader();
     printDeepExplainer(item);
+
+    if (shouldOpen) {
+      const slug = String(item.name || "")
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-|-$/g, "");
+      const targetUrl = `https://ritualdev.in/devshelf#${slug}`;
+      console.log(`  🚀 Opening ${item.name} (${targetUrl})...`);
+      openUrl(targetUrl);
+    }
     return;
   }
 

@@ -87,6 +87,31 @@ describe("DevShelf CLI & TUI Suite", () => {
     assert.ok(item.name && item.name.length > 0, "Random item must have a name");
   });
 
+  test("explains a tool with deep breakdown, alternative and install snippet", () => {
+    const res = runCli("explain ollama");
+    assert.equal(res.status, 0);
+    assert.match(res.stdout, /Ollama/);
+    assert.match(res.stdout, /Open-Source Alternative to/i);
+    assert.match(res.stdout, /Quick Install & Run/i);
+    assert.match(res.stdout, /Docker Compose/i);
+    assert.match(res.stdout, /https:\/\/ritualdev\.in\/devshelf#ollama/);
+  });
+
+  test("explains tool in structured JSON format with explain --json", () => {
+    const res = runCli("explain ollama --json");
+    assert.equal(res.status, 0);
+    const parsed = JSON.parse(res.stdout);
+    assert.equal(parsed.name, "Ollama");
+    assert.ok(parsed.description);
+    assert.ok(parsed.category);
+  });
+
+  test("returns error when explaining non-existent tool", () => {
+    const res = runCli("explain non_existent_dummy_tool_xyz_999");
+    assert.equal(res.status, 1);
+    assert.match(res.stderr, /Could not find resource matching/);
+  });
+
   test("returns active projects with contribute --json", () => {
     const res = runCli("contribute --json");
     assert.equal(res.status, 0);
