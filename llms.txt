@@ -1,0 +1,25 @@
+# DevShelf
+> The Zero-Paywall Open-Source Developer Directory & Model Context Protocol (MCP) Catalog
+
+DevShelf is a community-driven, open-source directory indexing 565+ verified developer tools, free APIs, AI coding agents, and Model Context Protocol (MCP) servers with zero paywalls.
+
+Website: https://ritualdev.in/devshelf/
+Repository: https://github.com/RitualDev-Lab/DevShelf
+License: MIT
+
+## Public REST API
+- Tools JSON: https://ritualdev.in/api/v1/tools.json
+- Categories JSON: https://ritualdev.in/api/v1/categories.json
+- OpenAPI Specification: https://ritualdev.in/api/v1/openapi.json
+
+## Quick Start CLI
+```bash
+# Search catalog directly from terminal
+npx devshelf search "postgres"
+
+# List verified free APIs
+npx devshelf list --category apis
+
+# Run as local MCP server for Claude Desktop / Cursor
+npx devshelf mcp
+```
