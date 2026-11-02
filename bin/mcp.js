@@ -417,6 +417,10 @@ const TOOLS = [
   },
 ];
 
+function getFreeAccess(item) {
+  return item.freeTier || item.rateLimit || "See official site for free access and limits";
+}
+
 async function handleToolCall(name, args) {
   const data = await getCatalog();
   const resources = data.resources || [];
@@ -470,8 +474,8 @@ async function handleToolCall(name, args) {
           name: m.name,
           category: m.category,
           url: m.url || m.repo,
-          license: m.license || "Free",
-          freeTier: m.freeTier || "100% Free",
+          license: m.license || "Not specified",
+          freeTier: getFreeAccess(m),
           ...(m.featured
             ? { featured: true, sponsorTier: m.sponsorTier || "Verified Sponsor ★" }
             : {}),
@@ -485,8 +489,8 @@ async function handleToolCall(name, args) {
       repo: m.repo || null,
       category: m.category,
       description: m.description,
-      license: m.license || "Free",
-      freeTier: m.freeTier || "Verified zero-paywall free tier",
+      license: m.license || "Not specified",
+      freeTier: getFreeAccess(m),
       auth: m.auth || null,
       alternativeTo: m.alternativeTo || null,
       ...(m.featured ? { featured: true, sponsorTier: m.sponsorTier || "Verified Sponsor ★" } : {}),
@@ -522,10 +526,10 @@ async function handleToolCall(name, args) {
       category: tool.category,
       description: tool.description,
       language: tool.language || null,
-      license: tool.license || "Free",
+      license: tool.license || "Not specified",
       auth: tool.auth || "No Key",
       rateLimit: tool.rateLimit || null,
-      freeTier: tool.freeTier || "Verified zero-paywall",
+      freeTier: getFreeAccess(tool),
       alternativeTo: tool.alternativeTo || null,
       statusTags: tool.statusTags || ["Verified Free"],
     };
@@ -547,8 +551,8 @@ async function handleToolCall(name, args) {
         alternatives: matches.map((m) => ({
           name: m.name,
           url: m.url || m.repo,
-          license: m.license || "FOSS",
-          freeTier: m.freeTier || "100% Free",
+          license: m.license || "Not specified",
+          freeTier: getFreeAccess(m),
         })),
       };
     }
@@ -562,8 +566,8 @@ async function handleToolCall(name, args) {
         url: m.url || m.repo,
         repo: m.repo || null,
         description: m.description,
-        license: m.license || "FOSS",
-        freeTier: m.freeTier || "100% Free Tier",
+        license: m.license || "Not specified",
+        freeTier: getFreeAccess(m),
       })),
     };
   }
@@ -659,8 +663,8 @@ async function handleToolCall(name, args) {
       repo: picked.repo || null,
       category: picked.category,
       description: picked.description,
-      freeTier: picked.freeTier || "Free",
-      license: picked.license || "Open Source",
+      freeTier: getFreeAccess(picked),
+      license: picked.license || "Not specified",
     };
   }
 
@@ -693,7 +697,7 @@ async function handleToolCall(name, args) {
       name: tool.name,
       repo: tool.repo || tool.url,
       category: tool.category,
-      license: tool.license || "Open Source",
+      license: tool.license || "Not specified",
       catalogDigest: identityDigest,
       verifiedCatalogEntry: true,
     };
