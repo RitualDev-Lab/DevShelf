@@ -1,5 +1,7 @@
 import assert from "node:assert/strict";
-import { execSync } from "node:child_process";
+import { execFileSync, execSync } from "node:child_process";
+import fs from "node:fs";
+import os from "node:os";
 import path from "node:path";
 import test, { describe } from "node:test";
 
@@ -121,6 +123,23 @@ describe("DevShelf CLI & TUI Suite", () => {
       "Should match Bruno as an alternative to Postman",
     );
   });
+
+  test(
+    "starts MCP through an npm-style executable symlink",
+    { skip: process.platform === "win32" },
+    (t) => {
+      const dir = fs.mkdtempSync(path.join(os.tmpdir(), "devshelf-bin-"));
+      t.after(() => fs.rmSync(dir, { recursive: true, force: true }));
+      const bin = path.join(dir, "devshelf-mcp");
+      fs.symlinkSync(path.join(ROOT, "bin", "mcp.js"), bin);
+      const output = execFileSync(process.execPath, [bin], {
+        input: '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{}}\n',
+        encoding: "utf8",
+        timeout: 5000,
+      });
+      assert.equal(JSON.parse(output).result.serverInfo.name, "devshelf-mcp");
+    },
+  );
 
   test("runs MCP server and answers initialize & tools/list via stdio", () => {
     const initReq = `${JSON.stringify({ jsonrpc: "2.0", id: 1, method: "initialize", params: {} })}\n`;

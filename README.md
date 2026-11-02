@@ -79,7 +79,7 @@ DevShelf isn't a static markdown list. It runs directly inside your terminal, in
 │     🔗 https://supabase.com                                                     │
 │                                                                                 │
 │ 🤖 Plug into AI Assistants (Claude Desktop, Cursor, Windsurf, Zed):             │
-│ $ npx devshelf-mcp                                                              │
+│ $ npx -y @ritualdev-lab/devshelf mcp                                            │
 └─────────────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -94,7 +94,7 @@ Most developer resource lists (*public-apis*, *free-for-dev*) suffer from link r
 | **Endpoint Health** | 40%+ broken links & dead APIs sitting for years | 🛡️ **Automated CI Health Checks** ping every endpoint continuously |
 | **Trial-Bait Protection** | Riddled with "14-day trials" & bait-and-switch pricing | 🚫 **Strict Zero-Paywall Audit** &mdash; 100% free forever tiers or MIT/Apache FOSS |
 | **Developer Access** | Read-only markdown tables; constant browser tab flipping | ⚡ **Zero-Install CLI (`npx devshelf`)** & fuzzy TUI right in your terminal |
-| **AI Agent Native** | None (manual copying and pasting into chat) | 🤖 **Official MCP Server (`npx devshelf-mcp`)** for Claude, Cursor, & Zed |
+| **AI Agent Native** | None (manual copying and pasting into chat) | 🤖 **Official MCP Server (`npx -y @ritualdev-lab/devshelf mcp`)** for Claude, Cursor, & Zed |
 | **Data Programmability** | Static markdown formatting | 📡 **Free CORS JSON REST API (`/api/v1/tools.json`)** with no keys needed |
 | **Creator Backing** | Submissions sit unreviewed for months with zero recognition | 📢 **Social Amplification Guarantee** &mdash; merged tools get featured on X & LinkedIn |
 
@@ -133,7 +133,7 @@ Turn your AI coding assistant into a free developer tool & API search engine! De
 npx -y @smithery/cli install devshelf-mcp --client claude
 
 # Or run stdio server directly for Cursor, Claude Desktop, Windsurf, or Zed
-npx devshelf-mcp
+npx -y @ritualdev-lab/devshelf mcp
 ```
 
 ### 1-Click Cursor Configuration (`.cursor/mcp.json`)
@@ -142,7 +142,7 @@ npx devshelf-mcp
   "mcpServers": {
     "devshelf": {
       "command": "npx",
-      "args": ["-y", "devshelf-mcp"]
+      "args": ["-y", "@ritualdev-lab/devshelf", "mcp"]
     }
   }
 }
