@@ -1,0 +1,9 @@
+{
+  "catalog_tools_count": 567,
+  "total_searches_run": 5000,
+  "throughput_qps": 2281,
+  "latency_p50_ms": 0.335,
+  "latency_p95_ms": 0.9584,
+  "latency_p99_ms": 1.9254,
+  "latency_avg_ms": 0.4355
+}

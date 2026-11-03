@@ -9,13 +9,16 @@
     "type": "git",
     "url": "git+https://github.com/RitualDev-Lab/DevShelf.git"
   },
-  "homepage": "https://devshelf.ritualdev.in",
+  "homepage": "https://ritualdev.in/devshelf/",
   "keywords": [
-    "developer-tools",
-    "free-apis",
+    "ai-agent-security",
     "mcp-server",
-    "model-context-protocol",
-    "ai-agents",
+    "sandbox",
+    "developer-tools",
+    "cursor-ide",
+    "windsurf-ai",
+    "llm-security",
+    "free-apis",
     "open-source",
     "cli"
   ],

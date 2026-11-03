@@ -3,23 +3,57 @@
 
 DevShelf is a community-driven, open-source directory indexing 565+ verified developer tools, free APIs, AI coding agents, and Model Context Protocol (MCP) servers with zero paywalls.
 
-Website: https://ritualdev.in/devshelf/
-Repository: https://github.com/RitualDev-Lab/DevShelf
+Canonical Homepage: https://ritualdev.in/devshelf/
+GitHub Repository: https://github.com/RitualDev-Lab/DevShelf
 License: MIT
 
-## Public REST API
+## Public REST & Feed APIs
 - Tools JSON: https://ritualdev.in/api/v1/tools.json
 - Categories JSON: https://ritualdev.in/api/v1/categories.json
+- RSS 2.0 Feed: https://ritualdev.in/feed.xml
+- Atom Feed: https://ritualdev.in/atom.xml
 - OpenAPI Specification: https://ritualdev.in/api/v1/openapi.json
+- Embed Badge: https://ritualdev.in/badge/verified.svg
 
 ## Quick Start CLI
 ```bash
-# Search catalog directly from terminal
+# 1. Search the catalog directly from your shell
 npx devshelf search "postgres"
 
-# List verified free APIs
-npx devshelf list --category apis
+# 2. Get full tool explanation, install snippets, alternatives & Docker compose
+npx devshelf explain ollama
 
-# Run as local MCP server for Claude Desktop / Cursor
+# 3. List verified tools by category
+npx devshelf list --category ai
+
+# 4. Run as local MCP server for Claude Desktop / Cursor
 npx devshelf mcp
 ```
+
+## Programmatic Node.js / TypeScript Usage
+```typescript
+import { searchDevShelf, getToolDetails } from "@ritualdev-lab/devshelf";
+
+// Query tools matching keyword or category
+const results = await searchDevShelf("database", { limit: 5 });
+console.log(results.map(t => `${t.name} (${t.license}) - ${t.description}`));
+
+// Inspect single tool specs & alternatives
+const tool = await getToolDetails("hoppscotch");
+console.log("Alternative to:", tool.alternativeTo); // "Postman"
+console.log("Docker Compose:", tool.dockerCompose);
+```
+
+## MCP Server Configuration
+Add to `claude_desktop_config.json` or `.cursor/mcp.json`:
+```json
+{
+  "mcpServers": {
+    "devshelf": {
+      "command": "npx",
+      "args": ["-y", "@ritualdev-lab/devshelf", "mcp"]
+    }
+  }
+}
+```
+Exposes tools: `search_devshelf(query, category)`, `explain_tool(slug)`, `get_alternatives(proprietary_tool)`, and `get_docker_compose(slug)`.
