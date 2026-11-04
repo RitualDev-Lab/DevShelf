@@ -64,8 +64,11 @@ module.exports = async function postMergeCelebration({ github, context }) {
   const toolName = addedItems.length > 0 ? addedItems[0].name : "your project";
   const slug = addedItems.length > 0 ? slugify(toolName) : "";
   const toolPageUrl = slug
-    ? `https://devshelf.ritualdev.in/tools/${slug}.html`
-    : "https://devshelf.ritualdev.in";
+    ? `https://ritualdev.in/tools/${slug}.html`
+    : "https://ritualdev.in/devshelf";
+
+  const sponsorCheckoutUrl = `https://checkout.dodopayments.com/buy/pdt_0NpjONGugY5QkrFDUaPva?quantity=1&redirect_url=${encodeURIComponent(`https://ritualdev.in/sponsors.html?tool=${slug}&success=true`)}`;
+  const sponsorPortalUrl = `https://ritualdev.in/sponsors.html?tool=${slug}&name=${encodeURIComponent(toolName)}`;
 
   const tweetText = encodeURIComponent(
     `Excited to share that ${toolName} is now officially featured on @RitualDevLab's DevShelf — the zero-paywall directory for verified free developer tools & APIs! 🚀\n\nCheck it out here: ${toolPageUrl}`,
@@ -78,29 +81,42 @@ module.exports = async function postMergeCelebration({ github, context }) {
     `Your submission of **${toolName}** has passed all schema, duplicate, and endpoint integrity audits and is now merged into \`main\`!`,
     "",
     "### 🌐 Permanent Live Listing",
-    "Your project has a dedicated, high-ranking SEO landing page with verified zero-paywall status:",
+    "Your project has a dedicated, high-ranking SEO landing page with verified zero-paywall status and machine-readable JSON-LD grounding:",
     `👉 **[View ${toolName} on DevShelf](${toolPageUrl})**`,
     "",
     "---",
     "",
-    '### 🏷️ Add the Official "Featured on DevShelf" Badge',
-    "Show your users and visitors that your project is community-verified and free of paywalls or tracking traps by embedding an official badge in your `README.md`:",
+    "### ⚡ Want 10x More Developer Discovery? Feature Your Tool",
+    `DevShelf reaches **thousands of technical founders, engineers, and AI developers** every week across the Web, CLI (\`devshelf search\`), and MCP agents.`,
     "",
-    "#### Style 1: Native DevShelf SVG (Recommended)",
-    `[![Featured on DevShelf](https://devshelf.ritualdev.in/api/v1/badges/featured.svg)](${toolPageUrl})`,
+    "As a verified contributor, unlock the **Featured Sponsor Tier ($49/mo)**:",
+    "- 📌 **Pinned Top Search Ranking**: Always appear first when developers search your category.",
+    "- 🎖️ **Gold 'Verified Sponsor' Badge**: Stand out with trust verification on web & CLI results.",
+    "- 📬 **DevShelf Digest Blast**: Featured highlight in our weekly newsletter and RSS feed.",
+    "",
+    `💳 **[Upgrade to Verified Sponsor via Dodo Payments ($49/mo)](${sponsorCheckoutUrl})**  `,
+    `*(Or view all patron tiers & invoice options on the [DevShelf Sponsor Portal](${sponsorPortalUrl}))*`,
+    "",
+    "---",
+    "",
+    '### 🏷️ Add the Official "DevShelf Verified" Backlink Badge',
+    "Show users that your project is community-verified with zero paywalls by adding an official badge to your `README.md`:",
+    "",
+    "#### Style 1: Verified Green Pill (Recommended)",
+    `[![DevShelf Verified](https://ritualdev.in/api/v1/badges/verified/${slug}.svg)](${toolPageUrl})`,
     "",
     "```markdown",
-    `[![Featured on DevShelf](https://devshelf.ritualdev.in/api/v1/badges/featured.svg)](${toolPageUrl})`,
+    `[![DevShelf Verified](https://ritualdev.in/api/v1/badges/verified/${slug}.svg)](${toolPageUrl})`,
     "```",
     "",
-    "#### Style 2: Flat Square Verified Free",
-    `[![Featured on DevShelf](https://devshelf.ritualdev.in/api/v1/badges/verified-free.svg)](${toolPageUrl})`,
+    "#### Style 2: Flat Shield Badge",
+    `[![Featured on DevShelf](https://ritualdev.in/api/v1/badges/featured.svg)](${toolPageUrl})`,
     "",
     "```markdown",
-    `[![Featured on DevShelf](https://devshelf.ritualdev.in/api/v1/badges/verified-free.svg)](${toolPageUrl})`,
+    `[![Featured on DevShelf](https://ritualdev.in/api/v1/badges/featured.svg)](${toolPageUrl})`,
     "```",
     "",
-    `🎨 **[Open the DevShelf README Badge Studio for HTML/RST embeds and card formats](https://devshelf.ritualdev.in/badges.html?tool=${slug}&name=${encodeURIComponent(toolName)})**`,
+    `🎨 **[Open README Badge Studio for HTML/RST and Rich Cards](https://ritualdev.in/badges.html?tool=${slug}&name=${encodeURIComponent(toolName)})**`,
     "",
     "---",
     "",
