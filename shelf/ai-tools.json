@@ -16,6 +16,16 @@
     ]
   },
   {
+    "name": "HOL Guard",
+    "repo": "https://github.com/hashgraph-online/hol-guard",
+    "category": "AI Agent Security & Defense",
+    "description": "Open-source policy and approval layer for AI coding agents that checks supported shell, file, package, and MCP actions before execution, with coverage limited by each agent's hooks.",
+    "language": "Python",
+    "license": "Apache-2.0",
+    "featured": false,
+    "statusTags": ["No Card Required"]
+  },
+  {
     "name": "Ollama",
     "repo": "https://github.com/ollama/ollama",
     "category": "Local AI & Inference",

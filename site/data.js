@@ -1,12 +1,12 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-11-02T20:37:37.853Z",
-  "totalCount": 567,
-  "reposCount": 357,
+  "updatedAt": "2026-11-04T20:23:15.551Z",
+  "totalCount": 568,
+  "reposCount": 358,
   "facets": {
-    "repos": 357
+    "repos": 358
   },
   "counts": {
-    "aiTools": 99,
+    "aiTools": 100,
     "cliTools": 128,
     "testingQa": 67,
     "apis": 108,
@@ -29,6 +29,20 @@ window.DEVSHELF_DATA = {
         "Zero-Leak Sandbox",
         "AI Agent Security",
         "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "HOL Guard",
+      "repo": "https://github.com/hashgraph-online/hol-guard",
+      "category": "AI Agent Security & Defense",
+      "description": "Open-source policy and approval layer for AI coding agents that checks supported shell, file, package, and MCP actions before execution, with coverage limited by each agent's hooks.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "statusTags": [
         "No Card Required"
       ],
       "type": "ai",
