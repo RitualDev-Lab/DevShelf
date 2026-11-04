@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 568 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 569 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -12,6 +12,15 @@
 - **URL**: https://github.com/RitualDev-Lab/AgentShield
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/agentshield.html
 - **Description**: Zero-leak secret interception, deterministic Shannon entropy tokenization, AST shell command sandbox, and CI/CD security gate for Claude Code, Cursor, and autonomous AI agents.
+
+### mcp-monetize
+- **Category**: AI Agents & MCP Servers
+- **Pricing Model**: See official site for free access and limits
+- **License**: MIT
+- **Language**: TypeScript
+- **URL**: https://github.com/RitualDev-Lab/mcp-monetize
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/mcp-monetize.html
+- **Description**: Drop-in billing, credit tracking, and paywall middleware for Model Context Protocol (MCP) servers with Dodo Payments & Stripe support.
 
 ### HOL Guard
 - **Category**: AI Agent Security & Defense

@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-04T20:23:15.551Z",
-  "totalCount": 568,
-  "reposCount": 358,
+  "updatedAt": "2026-11-04T20:56:05.774Z",
+  "totalCount": 569,
+  "reposCount": 359,
   "facets": {
-    "repos": 358
+    "repos": 359
   },
   "counts": {
-    "aiTools": 100,
+    "aiTools": 101,
     "cliTools": 128,
     "testingQa": 67,
     "apis": 108,
@@ -30,6 +30,21 @@
         "AI Agent Security",
         "100% Offline-Friendly",
         "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "mcp-monetize",
+      "repo": "https://github.com/RitualDev-Lab/mcp-monetize",
+      "category": "AI Agents & MCP Servers",
+      "description": "Drop-in billing, credit tracking, and paywall middleware for Model Context Protocol (MCP) servers with Dodo Payments & Stripe support.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "featured": true,
+      "statusTags": [
+        "No Card Required",
+        "Featured"
       ],
       "type": "ai",
       "section": "AI Agents & Local LLMs"
