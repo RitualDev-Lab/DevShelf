@@ -39,7 +39,7 @@ jobs:
         run: pnpm test
 
   build-and-attest:
-    name: Build & SLSA Provenance Attestation
+    name: Build, SLSA Provenance & SBOM
     needs: [test-matrix]
     runs-on: ubuntu-latest
     permissions:
@@ -71,19 +71,39 @@ jobs:
         with:
           subject-path: 'dist/**'
 
+      - name: Generate CycloneDX SBOM
+        uses: anchore/sbom-action@66cbf4bc1f1c0d2edc94016e65bc221b6bb0ad6c # v0.24.3
+        with:
+          path: ./
+          format: 'cyclonedx-json'
+          output-file: 'dist/devshelf-cyclonedx.sbom.json'
+          artifact-name: 'devshelf-cyclonedx.sbom.json'
+          upload-artifact: true
+          upload-release-assets: false
+
+      - name: Generate SPDX SBOM
+        uses: anchore/sbom-action@66cbf4bc1f1c0d2edc94016e65bc221b6bb0ad6c # v0.24.3
+        with:
+          path: ./
+          format: 'spdx-json'
+          output-file: 'dist/devshelf-spdx.sbom.json'
+          artifact-name: 'devshelf-spdx.sbom.json'
+          upload-artifact: true
+          upload-release-assets: false
+
       - name: Upload Build Artifacts
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.0
         with:
           name: dist-artifacts
           path: dist/
-          retention-days: 1
+          retention-days: 30
 
   dual-publish:
     name: Dual-Publish to npm & GitHub Packages
     needs: [build-and-attest]
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       packages: write
       id-token: write
       attestations: write
@@ -112,5 +132,16 @@ jobs:
           echo "@ritualdev-lab:registry=https://npm.pkg.github.com" > .npmrc
           echo "//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}" >> .npmrc
           npm publish --provenance=false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Attach SBOM Assets to GitHub Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@c062e08bd5328157348241fa0833b7d8b97943b7 # v2.0.8
+        with:
+          generate_release_notes: true
+          files: |
+            dist/devshelf-cyclonedx.sbom.json
+            dist/devshelf-spdx.sbom.json
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
