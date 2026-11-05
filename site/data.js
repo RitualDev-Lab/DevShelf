@@ -1,5 +1,5 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-11-05T19:33:16.878Z",
+  "updatedAt": "2026-11-05T22:42:34.047Z",
   "totalCount": 570,
   "reposCount": 359,
   "facets": {
@@ -1631,7 +1631,7 @@ window.DEVSHELF_DATA = {
     },
     {
       "name": "AI Image Cleaner",
-      "url": "https://ai-image-cleaner.com/tools/remove-person-from-photo-online-free/",
+      "url": "https://ai-image-cleaner.com/tools/remove-person-from-photo-online-free",
       "category": "AI & Machine Learning",
       "description": "Online AI inpainting tool to remove unwanted people, objects, watermarks, and clutter from photos with brush-mask editing.",
       "freeTier": "Free Forever (No Card Required, Guest & Daily Credits)",
