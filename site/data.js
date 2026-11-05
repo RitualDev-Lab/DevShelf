@@ -1,12 +1,12 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-11-02T20:37:37.853Z",
-  "totalCount": 567,
-  "reposCount": 357,
+  "updatedAt": "2026-11-05T19:33:16.878Z",
+  "totalCount": 570,
+  "reposCount": 359,
   "facets": {
-    "repos": 357
+    "repos": 359
   },
   "counts": {
-    "aiTools": 99,
+    "aiTools": 102,
     "cliTools": 128,
     "testingQa": 67,
     "apis": 108,
@@ -29,6 +29,35 @@ window.DEVSHELF_DATA = {
         "Zero-Leak Sandbox",
         "AI Agent Security",
         "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "mcp-monetize",
+      "repo": "https://github.com/RitualDev-Lab/mcp-monetize",
+      "category": "AI Agents & MCP Servers",
+      "description": "Drop-in billing, credit tracking, and paywall middleware for Model Context Protocol (MCP) servers with Dodo Payments & Stripe support.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "featured": true,
+      "statusTags": [
+        "No Card Required",
+        "Featured"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "HOL Guard",
+      "repo": "https://github.com/hashgraph-online/hol-guard",
+      "category": "AI Agent Security & Defense",
+      "description": "Open-source policy and approval layer for AI coding agents that checks supported shell, file, package, and MCP actions before execution, with coverage limited by each agent's hooks.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "featured": false,
+      "statusTags": [
         "No Card Required"
       ],
       "type": "ai",
@@ -1597,6 +1626,19 @@ window.DEVSHELF_DATA = {
       "language": "Python",
       "license": "MIT",
       "featured": false,
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "AI Image Cleaner",
+      "url": "https://ai-image-cleaner.com/tools/remove-person-from-photo-online-free/",
+      "category": "AI & Machine Learning",
+      "description": "Online AI inpainting tool to remove unwanted people, objects, watermarks, and clutter from photos with brush-mask editing.",
+      "freeTier": "Free Forever (No Card Required, Guest & Daily Credits)",
+      "statusTags": [
+        "No Card Required",
+        "Free Tier"
+      ],
       "type": "ai",
       "section": "AI Agents & Local LLMs"
     },

@@ -1,48 +1,63 @@
-# Security Policy
+# Security Policy & Vulnerability Disclosure
 
-The DevShelf maintainer team takes the security and integrity of our codebase, interactive web directory, and community submissions very seriously.
-
-## Supported Versions
-
-We actively maintain and provide security patches for the following versions:
-
-| Version | Supported          |
-| ------- | ------------------ |
-| 1.x.x   | :white_check_mark: |
-| < 1.0.0 | :x:                |
-
-## Reporting a Vulnerability
-
-If you discover a security vulnerability in DevShelf (including our automated scripts, GitHub Actions workflows, web application frontend, or dependency chain):
-
-1. **Do NOT open a public GitHub issue.** Public issues disclose potential attack vectors before a fix can be prepared.
-2. **Use GitHub Private Vulnerability Reporting**:
-   - Navigate to the **[Security tab](https://github.com/RitualDev-Lab/DevShelf/security)** on GitHub.
-   - Click **"Report a vulnerability"** to submit an advisory privately to the maintainers.
-3. **Alternative Direct Email**:
-   - If GitHub private reporting is unavailable, email our security team directly at:
-     **`security@ritualdev.com`**
-   - Please include:
-     - Description of the vulnerability and affected components.
-     - Proof of Concept (PoC) or reproduction steps.
-     - Potential impact on users or directory integrity.
-
-## Response SLA
-
-- **Initial Response**: Within 24-48 hours of receipt.
-- **Triage & Status Update**: Within 72 hours.
-- **Fix & Disclosure**: Coordinated disclosure after patch verification and deployment.
+RitualDev Studio takes the security of autonomous AI infrastructure, secret defense runtimes, and developer tooling with utmost seriousness.
 
 ---
 
-## Content & Malicious Resource Reporting Policy
+## 🛡️ Supported Versions
 
-DevShelf is a crowdsourced repository. We enforce strict policies to protect developers:
-- **Zero Tolerance for Malware / Phishing**: If any curated link or project distributes malware, spyware, unauthorized telemetry, or phishing pages, administrators will remove it immediately upon verification.
-- **Deceptive Paywalls & Bait-and-Switch**: Tools submitted as "100% Free" that secretly require payment or credit cards to use core features will be delisted.
-- **Reporting Inappropriate Content**:
-  - Anyone in the developer community can report problematic entries using our **[Content Report Template](https://github.com/RitualDev-Lab/DevShelf/issues/new?template=content_report.yml)**.
-  - Repository administrators actively review all incoming content reports.
+We actively provide security updates, regression patches, and zero-day mitigations for the following versions:
 
-Thank you for keeping the open-source community safe! 🛡️
+| Version | Supported | Minimum Engine | SLA Coverage |
+| :--- | :---: | :---: | :--- |
+| **0.2.x** | ✅ **Active** | Node.js >= 20.0.0 | **Critical & High: < 24 Hours** |
+| 0.1.x | ⚠️ End-of-Life | Node.js >= 18.0.0 | Upgrade to v0.2.x recommended |
 
+---
+
+## ⏱️ Guaranteed 24-Hour Response SLA
+
+We commit to the following response timeline for all reported vulnerabilities:
+- **Initial Triage & Acknowledgment**: **< 24 Hours** (guaranteed).
+- **Vulnerability Reproduction & Severity Assessment**: **< 48 Hours**.
+- **Security Advisory Drafting & Patch Release**: **< 72 Hours** for Critical/High CVEs.
+
+---
+
+## 🚨 Reporting a Vulnerability
+
+Please **DO NOT** create public GitHub issues or discussions for undisclosed security vulnerabilities.
+
+### Option 1: GitHub Private Security Advisory (Preferred)
+Submit a report privately via GitHub's Coordinated Vulnerability Disclosure:
+👉 **[Report a Security Advisory on GitHub](https://github.com/RitualDev-Lab/AgentShield/security/advisories/new)**
+
+### Option 2: Direct Security Team Dispatch
+Email our engineering response team:
+- **Email**: [`security@ritualdev.in`](mailto:security@ritualdev.in)
+- **Subject**: `[SECURITY VULNERABILITY] @ritualdev-lab/agentshield`
+- **PGP Encryption**: Available upon request.
+
+Please include:
+1. Proof-of-Concept (PoC) code or reproduction script.
+2. Attack vector taxonomy (e.g. CWE-77, ReDoS, Sandbox Bypass, Proc Environ Exfiltration).
+3. Impact assessment on host environment or client agent runtime.
+
+---
+
+## 🏛️ Safe Harbor Commitment
+
+RitualDev Studio will **never** pursue legal action against security researchers, ethical hackers, or academic teams who:
+- Act in good faith to identify vulnerabilities.
+- Provide us reasonable time to release a patch before public disclosure.
+- Avoid accessing, destroying, or exfiltrating user data or production environments.
+
+Researchers reporting verified vulnerabilities will be credited on our **[Security Hall of Fame](https://ritualdev.in/trust)**.
+
+---
+
+## 📜 Compliance & Audit Attestations
+
+For SOC 2 Type II, ISO 27001, and India DPDP Act 2023 compliance verification:
+- **Trust Portal**: [https://ritualdev.in/trust](https://ritualdev.in/trust)
+- **Interactive Playground**: [https://ritualdev.in/playground](https://ritualdev.in/playground)

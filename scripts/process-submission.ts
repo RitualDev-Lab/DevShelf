@@ -246,11 +246,22 @@ async function run() {
     item.https = cleanUrl.startsWith("https://");
   } else {
     // For tools and frameworks, supply repo or url
-    if (
-      cleanUrl.includes("github.com") ||
-      cleanUrl.includes("gitlab.com") ||
-      cleanUrl.includes("bitbucket.org")
-    ) {
+    let isRepoHost = false;
+    try {
+      const parsed = new URL(cleanUrl);
+      const host = parsed.hostname.toLowerCase();
+      isRepoHost =
+        host === "github.com" ||
+        host.endsWith(".github.com") ||
+        host === "gitlab.com" ||
+        host.endsWith(".gitlab.com") ||
+        host === "bitbucket.org" ||
+        host.endsWith(".bitbucket.org");
+    } catch {
+      isRepoHost = false;
+    }
+
+    if (isRepoHost) {
       item.repo = cleanUrl;
     } else {
       item.repo = cleanUrl;

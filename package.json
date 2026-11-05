@@ -3,19 +3,22 @@
   "version": "1.1.2",
   "private": false,
   "type": "module",
-  "description": "The open-source community directory for discovering 560+ developer tools, free APIs, AI agents, and open-source projects. Includes terminal CLI and MCP server.",
+  "description": "The open-source community directory for discovering 570+ developer tools, free APIs, AI agents, and open-source projects. Includes terminal CLI and MCP server.",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RitualDev-Lab/DevShelf.git"
   },
-  "homepage": "https://devshelf.ritualdev.in",
+  "homepage": "https://ritualdev.in/devshelf/",
   "keywords": [
-    "developer-tools",
-    "free-apis",
+    "ai-agent-security",
     "mcp-server",
-    "model-context-protocol",
-    "ai-agents",
+    "sandbox",
+    "developer-tools",
+    "cursor-ide",
+    "windsurf-ai",
+    "llm-security",
+    "free-apis",
     "open-source",
     "cli"
   ],
@@ -48,9 +51,9 @@
     "build:css": "tailwindcss -i site/input.css -o site/tailwind.min.css --minify",
     "generate:counts": "tsx scripts/generate-counts.ts",
     "launch:kit": "tsx scripts/generate-launch-kit.ts",
-    "build": "pnpm run build:css && tsx scripts/build-site.ts && tsx scripts/build-readme.ts && tsx scripts/generate-seo.ts && tsx scripts/generate-newsletter.ts && tsx scripts/generate-counts.ts && tsx scripts/generate-badges.ts && tsx scripts/generate-launch-kit.ts",
+    "build": "npm run build:css && tsx scripts/build-site.ts && tsx scripts/build-readme.ts && tsx scripts/generate-seo.ts && tsx scripts/generate-newsletter.ts && tsx scripts/generate-counts.ts && tsx scripts/generate-badges.ts && tsx scripts/generate-launch-kit.ts",
     "test": "tsx --test",
-    "prepublishOnly": "pnpm run build && pnpm test && npm pack --dry-run",
+    "prepublishOnly": "npm run build && npm test && npm pack --dry-run",
     "validate": "tsx scripts/validate-shelf.ts",
     "validate:pr": "tsx scripts/validate-pr.ts",
     "validate:links": "node scripts/validate-links.js",
@@ -69,10 +72,10 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
-    "@types/node": "^22.20.5",
+    "@types/node": "^26.6.6",
     "tailwindcss": "^3.4.19",
     "tsx": "^4.23.15",
-    "typescript": "^5.9.3"
+    "typescript": "^7.0.2"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.32.2",

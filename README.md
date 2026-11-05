@@ -34,7 +34,7 @@
 <table>
 <tr>
 <td align="center"><b>🌐 Free APIs</b><br><code>108</code></td>
-<td align="center"><b>🤖 AI & LLMs</b><br><code>99</code></td>
+<td align="center"><b>🤖 AI & LLMs</b><br><code>102</code></td>
 <td align="center"><b>⚡ CLI Tools</b><br><code>128</code></td>
 <td align="center"><b>🧪 Testing & QA</b><br><code>67</code></td>
 <td align="center"><b>☁️ Free Cloud</b><br><code>72</code></td>
@@ -47,7 +47,7 @@
 ### 🎯 The Race to 1,000 Verified Tools (Hacktoberfest Milestone)
 
 ```text
-[███████████░░░░░░░░░] 567 / 1,000 Tools Verified (57% • 433 to go!)
+[███████████░░░░░░░░░] 570 / 1,000 Tools Verified (57% • 430 to go!)
 ```
 
 *Help us curate the definitive zero-paywall index! [Submit your favorite developer tool, API, or AI framework →](#-how-to-submit-your-project-or-api)*
@@ -85,7 +85,7 @@ DevShelf isn't a static markdown list. It runs directly inside your terminal, in
 ┌─────────────────────────────────────────────────────────────────────────────────┐
 │ $ npx devshelf search "postgres"                                                │
 │                                                                                 │
-│ 📚 DevShelf CLI v1.1.0 — 567 Curated Tools (Live CI Audited)                    │
+│ 📚 DevShelf CLI v1.1.0 — 570 Curated Tools (Live CI Audited)                    │
 │                                                                                 │
 │ [1] Neon (Database / Serverless)                                                │
 │     Serverless Postgres with autoscaling, branching, and generous free tier.    │
@@ -179,7 +179,7 @@ Stay in flow without leaving your terminal. DevShelf includes an interactive fuz
 # Launch interactive Terminal UI (fuzzy search, category browsing, and 1-click open)
 npx devshelf
 
-# Instant search across all 560+ curated resources
+# Instant search across all 570+ curated resources
 npx devshelf search "postgres"
 npx devshelf search "auth" --open
 
@@ -200,12 +200,12 @@ npx devshelf stats
 
 ## 📂 Browse Catalog by Category
 
-Explore our curated collections of **567+ zero-paywall developer tools**, categorized into dedicated guides with subcategory indexing:
+Explore our curated collections of **570+ zero-paywall developer tools**, categorized into dedicated guides with subcategory indexing:
 
 | Category | Resources | Description & Subcategories | Guide |
 | :--- | :---: | :--- | :---: |
 | 🌐 **Free & Public APIs** | **108** | Weather, Finance, Mock/Dev APIs, Geocoding, AI/ML, Media, Entertainment | [**Browse APIs →**](docs/apis.md) |
-| 🤖 **AI Agents & Local LLMs** | **99** | Local LLM Runtimes, Autonomous Agents, Coding Assistants, Orchestration | [**Browse AI Tools →**](docs/ai-tools.md) |
+| 🤖 **AI Agents & Local LLMs** | **102** | Local LLM Runtimes, Autonomous Agents, Coding Assistants, Orchestration | [**Browse AI Tools →**](docs/ai-tools.md) |
 | ⚡ **CLI & Productivity Tools** | **128** | Terminal Utilities, Git Power Tools, Docker & DevOps, Benchmarking, DBs | [**Browse CLI Tools →**](docs/cli-tools.md) |
 | 🧪 **Testing & QA Reliability** | **67** | E2E Testing, Mock Servers, Contract Testing, Security Auditing, Performance | [**Browse Testing Tools →**](docs/testing-qa.md) |
 | ☁️ **Free Cloud & Developer Tiers** | **72** | Databases, Auth & Identity, Serverless Compute, Object Storage, Email, APM | [**Browse Cloud Tiers →**](docs/free-cloud.md) |
@@ -275,7 +275,7 @@ DevShelf is backed by a 100% free, CORS-enabled, static public REST API with zer
 
 | Endpoint | Method | Description |
 | :--- | :--- | :--- |
-| **[`/api/v1/tools.json`](https://devshelf.ritualdev.in/api/v1/tools.json)** | `GET` | All 560+ curated developer tools, APIs, and AI models |
+| **[`/api/v1/tools.json`](https://devshelf.ritualdev.in/api/v1/tools.json)** | `GET` | All 570+ curated developer tools, APIs, and AI models |
 | **[`/api/v1/stats.json`](https://devshelf.ritualdev.in/api/v1/stats.json)** | `GET` | Catalog telemetry, repo counts, and category breakdowns |
 | **[`/api/v1/categories.json`](https://devshelf.ritualdev.in/api/v1/categories.json)** | `GET` | Category listing and dedicated JSON endpoints |
 
@@ -285,7 +285,7 @@ DevShelf is backed by a 100% free, CORS-enabled, static public REST API with zer
 
 ## 🧩 IDE & Launcher Extensions
 
-Query and explore 560+ free developer tools directly within your workflow:
+Query and explore 570+ free developer tools directly within your workflow:
 
 - **[Raycast Extension](extensions/raycast/)** &mdash; Instant tool search & random gem picker from your desktop spotlight (`Cmd+Shift+B` to copy badges).
 - **[VS Code Extension](extensions/vscode/)** &mdash; Command Palette integration (`Ctrl+Shift+P` -> `DevShelf: Search`).
@@ -445,7 +445,7 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
         <img src="https://github.com/zealous1.png" width="70" style="border-radius: 50%;" alt="zealous1"/><br />
         <sub><b>zealous1</b></sub>
       </a><br />
-      <sub>🎬 Arcmira (PR #67)</sub>
+      <sub>🎬 Arcmira (PR #67, #124-#126)</sub>
     </td>
     <td align="center" width="160">
       <a href="https://github.com/jeshuadomingo-byte">
@@ -624,6 +624,50 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
         <sub><b>SolonaBot</b></sub>
       </a><br />
       <sub>🌐 agent-browser (PR #20)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/kantorcodes">
+        <img src="https://github.com/kantorcodes.png" width="70" style="border-radius: 50%;" alt="kantorcodes"/><br />
+        <sub><b>kantorcodes</b></sub>
+      </a><br />
+      <sub>🛡️ HOL Guard (PR #127)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/seifip">
+        <img src="https://github.com/seifip.png" width="70" style="border-radius: 50%;" alt="seifip"/><br />
+        <sub><b>seifip</b></sub>
+      </a><br />
+      <sub>⚡ Kilobat CLI (#118)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/georgii-ivanov">
+        <img src="https://github.com/georgii-ivanov.png" width="70" style="border-radius: 50%;" alt="georgii-ivanov"/><br />
+        <sub><b>georgii-ivanov</b></sub>
+      </a><br />
+      <sub>☁️ Cloady MCP (#113)</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="160">
+      <a href="https://github.com/karlaCastro00">
+        <img src="https://github.com/karlaCastro00.png" width="70" style="border-radius: 50%;" alt="karlaCastro00"/><br />
+        <sub><b>karlaCastro00</b></sub>
+      </a><br />
+      <sub>🔒 VibeLocked LeakCheck (#112)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/ateymoori">
+        <img src="https://github.com/ateymoori.png" width="70" style="border-radius: 50%;" alt="ateymoori"/><br />
+        <sub><b>ateymoori</b></sub>
+      </a><br />
+      <sub>📱 Oh My Android (#117)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/bucketlistnl">
+        <img src="https://github.com/bucketlistnl.png" width="70" style="border-radius: 50%;" alt="bucketlistnl"/><br />
+        <sub><b>bucketlistnl</b></sub>
+      </a><br />
+      <sub>✈️ Bucketlist.nl (#120)</sub>
     </td>
   </tr>
 </table>

@@ -2,6 +2,7 @@
 
 - **[🏠 Welcome & Architecture](Home)**
 - **[📂 Curated Categories](Curated-Categories)**
+- **[🛡️ Zero-Paywall Policy](Zero-Paywall-Policy)**
 - **[🛡️ Validation & Link Pipeline](Automated-Validation-Pipeline)**
 - **[🤝 Contributor Guide & Schema](Contributor-Guide-and-Workflows)**
 - **[⚡ Ecosystem Synergy](Ecosystem-Synergy)**
