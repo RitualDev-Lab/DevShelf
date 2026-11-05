@@ -70,7 +70,7 @@ jobs:
       - name: Post or Update PR Review Comment
         if: always() && steps.report.outputs.has_report == 'true'
         continue-on-error: true
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           script: |
             try {
