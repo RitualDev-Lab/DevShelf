@@ -4,10 +4,7 @@ on:
   issues:
     types: [opened]
 
-permissions:
-  contents: write
-  pull-requests: write
-  issues: write
+permissions: read-all
 
 jobs:
   process-submission:
@@ -20,12 +17,16 @@ jobs:
       startsWith(github.event.issue.title, '[API Submission]') ||
       contains(github.event.issue.title, 'Submission')
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Setup Node.js 22
-        uses: actions/setup-node@v7
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.0.0
         with:
           node-version: 22
 
@@ -90,7 +91,7 @@ jobs:
 
       - name: Post Confirmation Comment on Issue
         if: steps.create-pr.outputs.has_changes == 'true'
-        uses: actions/github-script@v9
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         with:
           script: |
             const postSubmissionComment = require('./scripts/post-submission-comment.cjs');
