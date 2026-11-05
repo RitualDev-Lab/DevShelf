@@ -1018,20 +1018,35 @@ function setupListeners() {
     render(true);
   });
 
-  // Keyboard Shortcuts ('/' to focus search, 'r' for random tool, 'Escape' to close modals / drawer / clear search)
+  // Keyboard Shortcuts ('/' to focus search, 'r' for random tool, 'j'/'k'/arrows for cards, 'Escape' to close)
+  let activeCardIndex = -1;
+
+  function updateCardFocus(cards, newIndex) {
+    if (cards.length === 0) return;
+    if (activeCardIndex >= 0 && activeCardIndex < cards.length) {
+      cards[activeCardIndex].classList.remove("ring-2", "ring-cyan-400", "shadow-cyan-500/50");
+    }
+    activeCardIndex = Math.max(0, Math.min(newIndex, cards.length - 1));
+    const target = cards[activeCardIndex];
+    if (target) {
+      target.classList.add("ring-2", "ring-cyan-400", "shadow-cyan-500/50");
+      target.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    }
+  }
+
   window.addEventListener("keydown", (e) => {
-    if (e.key === "/" && document.activeElement !== searchInput) {
+    const isInput = document.activeElement && ["INPUT", "TEXTAREA", "SELECT"].includes(document.activeElement.tagName);
+
+    if (e.key === "/" && !isInput) {
       e.preventDefault();
       searchInput?.focus();
       searchInput?.scrollIntoView({ behavior: "smooth", block: "center" });
+      return;
     }
-    if ((e.key === "r" || e.key === "R") && document.activeElement !== searchInput) {
-      const activeEl = document.activeElement;
-      const isInput = activeEl && ["INPUT", "TEXTAREA", "SELECT"].includes(activeEl.tagName);
-      if (!isInput && !e.ctrlKey && !e.metaKey && !e.altKey) {
-        e.preventDefault();
-        openRandomToolModal();
-      }
+    if ((e.key === "r" || e.key === "R") && !isInput && !e.ctrlKey && !e.metaKey && !e.altKey) {
+      e.preventDefault();
+      openRandomToolModal();
+      return;
     }
     if (e.key === "Escape") {
       closeMobileMenu();
@@ -1047,6 +1062,33 @@ function setupListeners() {
         clearBtn?.classList.add("hidden");
         render();
         searchInput.blur();
+      }
+      return;
+    }
+
+    // Vim-style ('j'/'k') and arrow-key card navigation
+    if (!isInput && !e.ctrlKey && !e.metaKey && !e.altKey) {
+      const cards = Array.from(document.querySelectorAll("#results-grid .glass-card"));
+      if (cards.length > 0) {
+        if (e.key === "j" || e.key === "ArrowDown") {
+          e.preventDefault();
+          updateCardFocus(cards, activeCardIndex + 1);
+        } else if (e.key === "k" || e.key === "ArrowUp") {
+          e.preventDefault();
+          updateCardFocus(cards, activeCardIndex - 1);
+        } else if (e.key === "Enter" && activeCardIndex >= 0 && activeCardIndex < cards.length) {
+          const link = cards[activeCardIndex].querySelector("h3 a");
+          if (link && link.href) {
+            e.preventDefault();
+            window.open(link.href, "_blank", "noopener,noreferrer");
+          }
+        } else if (e.key === "c" && activeCardIndex >= 0 && activeCardIndex < cards.length) {
+          const link = cards[activeCardIndex].querySelector("h3 a");
+          if (link && link.href) {
+            e.preventDefault();
+            copyToClipboard(link.href, "Copied card URL to clipboard!");
+          }
+        }
       }
     }
   });
