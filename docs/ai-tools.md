@@ -4,12 +4,18 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total AI Tools](https://img.shields.io/badge/AI_Tools-101_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total AI Tools](https://img.shields.io/badge/AI_Tools-102_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
-[AI Agent Security & Defense](#ai-agent-security-defense) • [AI Agents & Autonomous Coding](#ai-agents-autonomous-coding) • [AI Agents & Local LLMs](#ai-agents-local-llms) • [AI Agents & MCP Servers](#ai-agents-mcp-servers) • [AI Workflow & Orchestration](#ai-workflow-orchestration) • [Autonomous Coding & Agent Dev](#autonomous-coding-agent-dev) • [Local AI & Inference](#local-ai-inference) • [Web UI & Chat](#web-ui-chat)
+[AI & Machine Learning](#ai-machine-learning) • [AI Agent Security & Defense](#ai-agent-security-defense) • [AI Agents & Autonomous Coding](#ai-agents-autonomous-coding) • [AI Agents & Local LLMs](#ai-agents-local-llms) • [AI Agents & MCP Servers](#ai-agents-mcp-servers) • [AI Workflow & Orchestration](#ai-workflow-orchestration) • [Autonomous Coding & Agent Dev](#autonomous-coding-agent-dev) • [Local AI & Inference](#local-ai-inference) • [Web UI & Chat](#web-ui-chat)
 
 ---
+
+### <a id="ai-machine-learning"></a>AI & Machine Learning (1)
+
+| Tool | Language | License | Description | Links |
+| :--- | :---: | :---: | :--- | :---: |
+| [**AI Image Cleaner**](undefined) | `` | `` | Online AI inpainting tool to remove unwanted people, objects, watermarks, and clutter from photos with brush-mask editing. | [GitHub](undefined) |
 
 ### <a id="ai-agent-security-defense"></a>AI Agent Security & Defense (2)
 

@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-05T07:18:59.032Z",
-  "totalCount": 569,
+  "updatedAt": "2026-11-05T19:33:16.878Z",
+  "totalCount": 570,
   "reposCount": 359,
   "facets": {
     "repos": 359
   },
   "counts": {
-    "aiTools": 101,
+    "aiTools": 102,
     "cliTools": 128,
     "testingQa": 67,
     "apis": 108,
@@ -1626,6 +1626,19 @@
       "language": "Python",
       "license": "MIT",
       "featured": false,
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "AI Image Cleaner",
+      "url": "https://ai-image-cleaner.com/tools/remove-person-from-photo-online-free/",
+      "category": "AI & Machine Learning",
+      "description": "Online AI inpainting tool to remove unwanted people, objects, watermarks, and clutter from photos with brush-mask editing.",
+      "freeTier": "Free Forever (No Card Required, Guest & Daily Credits)",
+      "statusTags": [
+        "No Card Required",
+        "Free Tier"
+      ],
       "type": "ai",
       "section": "AI Agents & Local LLMs"
     },

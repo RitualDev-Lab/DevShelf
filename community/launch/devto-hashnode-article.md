@@ -18,7 +18,7 @@ If you have tried signing up for a new developer tool recently, you have probabl
 
 Over the past decade, the developer software landscape has undergone a silent transformation. What used to be genuine free tiers designed to nurture grass-roots adoption have increasingly morphed into **trial traps**, **freemium bait**, and **vendor lock-in funnels**.
 
-Frustrated by this trend, our open-source team spent the last several months auditing over **569 developer tools, public APIs, AI agents, and cloud platforms**. 
+Frustrated by this trend, our open-source team spent the last several months auditing over **570 developer tools, public APIs, AI agents, and cloud platforms**. 
 
 We set out to answer one question:  
 *Can a developer still build, test, and ship production-grade software on a true $0 budget without entering a credit card?*
@@ -27,7 +27,7 @@ The answer is **yes** — but you need to know where to look.
 
 To solve this permanently, we built and open-sourced **[DevShelf](https://devshelf.ritualdev.in)**: a zero-paywall developer ecosystem with continuous automated health checks, a terminal CLI, and a native Model Context Protocol (MCP) server.
 
-Here is what we learned from auditing 569+ tools, along with the most valuable zero-paywall discoveries you can use today.
+Here is what we learned from auditing 570+ tools, along with the most valuable zero-paywall discoveries you can use today.
 
 ---
 
@@ -45,7 +45,7 @@ Before adding any resource to DevShelf, it must pass five strict criteria:
 
 ## 💎 The Top Zero-Paywall Discoveries by Category
 
-### 1. AI Agents & Local LLMs (101 Tools)
+### 1. AI Agents & Local LLMs (102 Tools)
 Running LLMs in production can quickly run up thousands of dollars in token bills. These open-source tools let you develop and run AI locally with zero API costs:
 
 - **[Ollama](https://github.com/ollama/ollama)**: The gold standard for running Llama 3.3, Mistral, and Qwen locally on macOS, Linux, and Windows with a single command.

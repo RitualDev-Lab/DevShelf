@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 569 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 570 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -944,6 +944,13 @@
 - **URL**: https://github.com/microsoft/markitdown
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/markitdown.html
 - **Description**: Microsoft utility for converting multi-format documents (PDF, PowerPoint, Word, Excel, Images, Audio, HTML) into clean Markdown for indexing in AI agent pipelines, vector databases, and LLM contexts.
+
+### AI Image Cleaner
+- **Category**: AI & Machine Learning
+- **Pricing Model**: Free Forever (No Card Required, Guest & Daily Credits)
+- **URL**: https://ai-image-cleaner.com/tools/remove-person-from-photo-online-free/
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/ai-image-cleaner.html
+- **Description**: Online AI inpainting tool to remove unwanted people, objects, watermarks, and clutter from photos with brush-mask editing.
 
 ### GitWhisper
 - **Category**: Git & Version Control

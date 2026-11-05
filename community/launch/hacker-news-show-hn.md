@@ -11,7 +11,7 @@
 - **Title Option 2 (Problem-First):**  
   `Show HN: We got tired of 14-day trial traps, so we built a zero-paywall dev directory`
 - **Title Option 3 (Engineering / Utility):**  
-  `Show HN: DevShelf – 569+ verified free developer tools & APIs with CI health checks`
+  `Show HN: DevShelf – 570+ verified free developer tools & APIs with CI health checks`
 - **URL:** `https://devshelf.ritualdev.in`
 - **Source Code:** `https://github.com/RitualDev-Lab/DevShelf`
 
@@ -29,7 +29,7 @@ Like many of you, I got completely tired of modern SaaS "Free Tier" bait-and-swi
 2. It's actually a 14-day trial that self-destructs into a $50/mo bill.
 3. The project was abandoned 2 years ago and the endpoint 404s.
 
-So we built DevShelf: an open-source, community-curated directory of **569+ verified developer tools, free public APIs, AI agents, and boilerplates** that have **zero credit-card paywalls and permanent free plans**.
+So we built DevShelf: an open-source, community-curated directory of **570+ verified developer tools, free public APIs, AI agents, and boilerplates** that have **zero credit-card paywalls and permanent free plans**.
 
 ### 🛠️ What's Under the Hood:
 - **Continuous CI Health Checks:** Every night, GitHub Actions pings URLs to verify HTTP 200 uptime and scans landing pages with a trial-bait analyzer that flags hidden credit card gates and expiring trials.
@@ -45,7 +45,7 @@ So we built DevShelf: an open-source, community-curated directory of **569+ veri
 ### 📊 Real Catalog Scale Today:
 - **359** Open-Source GitHub Repositories
 - **108** Free Public APIs (Weather, AI, Finance, IP, Geocoding)
-- **101** AI Tools, Local LLM Runtimes & Inference Engines
+- **102** AI Tools, Local LLM Runtimes & Inference Engines
 - **128** CLI Utilities & Developer Productivity Tools
 - **72** Free Cloud, Hosting & Database Platforms
 - **67** Mocking, Load Testing & QA Frameworks
