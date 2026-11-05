@@ -1,8 +1,11 @@
-﻿blank_issues_enabled: false
+blank_issues_enabled: false
 contact_links:
-  - name: 💬 Community Discussions
-    url: https://github.com/RitualDev-Lab/DevShelf/discussions
-    about: Ask questions, share project ideas, or chat with fellow developers!
-  - name: 🌐 Live Web Directory
-    url: https://devshelf.ritualdev.in
-    about: Search and filter all curated developer tools, free APIs, and open-source projects!
+  - name: 💬 GitHub Discussions
+    url: https://github.com/RitualDev-Lab/AgentShield/discussions
+    about: Ask questions, discuss AI agent security architectures, share custom pattern recipes, and connect with the community.
+  - name: 🌐 Official Website & Documentation
+    url: https://agentshield.ritualdev.in/
+    about: Read interactive documentation, architectural guides, and benchmarks.
+  - name: 🤖 AI Search & Context Specifications
+    url: https://agentshield.ritualdev.in/llms.txt
+    about: High-level llms.txt standard specification for LLMs and autonomous agents.

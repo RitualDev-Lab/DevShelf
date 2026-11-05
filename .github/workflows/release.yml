@@ -1,72 +1,103 @@
-name: Release & Publish
+name: Release & Dual-Publish CI
 
 on:
   push:
     tags:
-      - "v*"
+      - 'v*'
   workflow_dispatch:
 
 permissions:
-  contents: write
-  packages: write
+  contents: read
 
 jobs:
-  release:
-    name: Build, Release & Publish
+  test-matrix:
+    name: Test Matrix (Node ${{ matrix.node-version }})
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version: [20, 22, 24]
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+      - uses: actions/checkout@v4
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
         with:
-          version: 9.15.4
+          node-version: ${{ matrix.node-version }}
 
-      - name: Setup Node.js
+      - name: Install dependencies
+        run: npm ci || npm install
+
+      - name: Run Test Suite
+        run: npm test
+
+  build-and-attest:
+    name: Build & SLSA Provenance Attestation
+    needs: [test-matrix]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+      attestations: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js 22
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: "pnpm"
-          registry-url: "https://registry.npmjs.org"
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: npm ci || npm install
 
-      - name: Run Test Suite
-        run: pnpm test
+      - name: Build Package
+        run: npm run build
 
-      - name: Build Web & Catalog Assets
-        run: pnpm run build
-
-      - name: Create GitHub Release
-        uses: softprops/action-gh-release@v2
+      - name: Generate SLSA Build Provenance Attestation
+        uses: actions/attest-build-provenance@v1
         with:
-          generate_release_notes: true
-          draft: false
-          prerelease: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          subject-path: 'dist/**'
 
-      - name: Publish to GitHub Packages
-        run: |
-          node -e '
-            const pkg = JSON.parse(require("fs").readFileSync("package.json", "utf8"));
-            pkg.name = "@ritualdev_lab/devshelf";
-            pkg.publishConfig = { registry: "https://npm.pkg.github.com" };
-            require("fs").writeFileSync("package.json", JSON.stringify(pkg, null, 2));
-          '
-          echo "@ritualdev_lab:registry=https://npm.pkg.github.com" > .npmrc
-          echo "//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}" >> .npmrc
-          npm publish
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Upload Build Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist-artifacts
+          path: dist/
+          retention-days: 1
 
-      - name: Publish to npm Registry
-        if: ${{ secrets.NPM_TOKEN != '' }}
-        run: pnpm publish --no-git-checks --access public
+  dual-publish:
+    name: Dual-Publish to npm & GitHub Packages
+    needs: [build-and-attest]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+      id-token: write
+      attestations: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Download Build Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: dist-artifacts
+          path: dist/
+
+      - name: Publish to public npm Registry with Sigstore Provenance
+        run: npm publish --access public --provenance
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Reconfigure for GitHub Packages
+        run: |
+          echo "@ritualdev-lab:registry=https://npm.pkg.github.com" > .npmrc
+          echo "//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}" >> .npmrc
+          npm publish --provenance=false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
