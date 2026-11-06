@@ -1,5 +1,21 @@
 [
   {
+    "name": "PromptShield",
+    "repo": "https://github.com/RitualDev-Lab/PromptShield",
+    "category": "AI Agent Security & Defense",
+    "description": "Enterprise in-browser AI Data Loss Prevention & prompt firewall extension stopping API credentials and PII from leaking to LLMs.",
+    "language": "TypeScript / WebAssembly",
+    "license": "Proprietary / Community",
+    "featured": true,
+    "goodFirstIssues": "https://github.com/RitualDev-Lab/PromptShield/issues",
+    "statusTags": [
+      "In-Browser DLP",
+      "AI Prompt Firewall",
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
+  },
+  {
     "name": "AgentShield",
     "repo": "https://github.com/RitualDev-Lab/AgentShield",
     "category": "AI Agent Security & Defense",

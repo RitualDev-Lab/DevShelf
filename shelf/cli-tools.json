@@ -1,5 +1,16 @@
 [
   {
+    "name": "FinePrint AI",
+    "repo": "https://github.com/RitualDev-Lab/FinePrintAI",
+    "category": "Developer Utilities",
+    "description": "In-memory legal contract, lease, and NDA scanner grading risk A-F with automated attorney-grade redline amendments.",
+    "language": "TypeScript / Python",
+    "license": "Proprietary / Community",
+    "featured": true,
+    "goodFirstIssues": "https://github.com/RitualDev-Lab/FinePrintAI/issues",
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+  },
+  {
     "name": "GitWhisper",
     "repo": "https://github.com/RitualDev-Lab/GitWhisper",
     "category": "Git & Version Control",

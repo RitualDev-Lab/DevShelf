@@ -1,5 +1,15 @@
 [
   {
+    "name": "MockForge AI",
+    "repo": "https://github.com/RitualDev-Lab/MockForge",
+    "category": "Browser & E2E Testing",
+    "description": "High-throughput relational mock database and seed data synthesizer with 100% foreign-key integrity using Kahn DAG & WebAssembly SQLite.",
+    "language": "TypeScript / WebAssembly",
+    "license": "Proprietary / Community",
+    "featured": true,
+    "goodFirstIssues": "https://github.com/RitualDev-Lab/MockForge/issues"
+  },
+  {
     "name": "AutoHeal-QA",
     "repo": "https://github.com/RitualDev-Lab/autoheal-qa",
     "category": "Browser & E2E Testing",

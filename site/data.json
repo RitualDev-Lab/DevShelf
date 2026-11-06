@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-11-05T22:42:34.047Z",
-  "totalCount": 570,
-  "reposCount": 359,
+  "updatedAt": "2026-11-06T22:41:45.960Z",
+  "totalCount": 573,
+  "reposCount": 362,
   "facets": {
-    "repos": 359
+    "repos": 362
   },
   "counts": {
-    "aiTools": 102,
-    "cliTools": 128,
-    "testingQa": 67,
+    "aiTools": 103,
+    "cliTools": 129,
+    "testingQa": 68,
     "apis": 108,
     "freeCloud": 72,
     "perks": 30,
@@ -16,6 +16,24 @@
     "contributors": 21
   },
   "resources": [
+    {
+      "name": "PromptShield",
+      "repo": "https://github.com/RitualDev-Lab/PromptShield",
+      "category": "AI Agent Security & Defense",
+      "description": "Enterprise in-browser AI Data Loss Prevention & prompt firewall extension stopping API credentials and PII from leaking to LLMs.",
+      "language": "TypeScript / WebAssembly",
+      "license": "Proprietary / Community",
+      "featured": true,
+      "goodFirstIssues": "https://github.com/RitualDev-Lab/PromptShield/issues",
+      "statusTags": [
+        "In-Browser DLP",
+        "AI Prompt Firewall",
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
     {
       "name": "AgentShield",
       "repo": "https://github.com/RitualDev-Lab/AgentShield",
@@ -1641,6 +1659,22 @@
       ],
       "type": "ai",
       "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "FinePrint AI",
+      "repo": "https://github.com/RitualDev-Lab/FinePrintAI",
+      "category": "Developer Utilities",
+      "description": "In-memory legal contract, lease, and NDA scanner grading risk A-F with automated attorney-grade redline amendments.",
+      "language": "TypeScript / Python",
+      "license": "Proprietary / Community",
+      "featured": true,
+      "goodFirstIssues": "https://github.com/RitualDev-Lab/FinePrintAI/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
     },
     {
       "name": "GitWhisper",
@@ -3606,6 +3640,18 @@
       "featured": false,
       "type": "cli",
       "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "MockForge AI",
+      "repo": "https://github.com/RitualDev-Lab/MockForge",
+      "category": "Browser & E2E Testing",
+      "description": "High-throughput relational mock database and seed data synthesizer with 100% foreign-key integrity using Kahn DAG & WebAssembly SQLite.",
+      "language": "TypeScript / WebAssembly",
+      "license": "Proprietary / Community",
+      "featured": true,
+      "goodFirstIssues": "https://github.com/RitualDev-Lab/MockForge/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
     },
     {
       "name": "AutoHeal-QA",
