@@ -1,10 +1,26 @@
 {
   "version": "1.1.2",
-  "updatedAt": "2026-11-05T22:42:34.047Z",
+  "updatedAt": "2026-11-06T22:41:45.960Z",
   "slug": "cli",
   "name": "CLI & Developer Productivity",
-  "count": 128,
+  "count": 129,
   "items": [
+    {
+      "name": "FinePrint AI",
+      "repo": "https://github.com/RitualDev-Lab/FinePrintAI",
+      "category": "Developer Utilities",
+      "description": "In-memory legal contract, lease, and NDA scanner grading risk A-F with automated attorney-grade redline amendments.",
+      "language": "TypeScript / Python",
+      "license": "Proprietary / Community",
+      "featured": true,
+      "goodFirstIssues": "https://github.com/RitualDev-Lab/FinePrintAI/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
     {
       "name": "GitWhisper",
       "repo": "https://github.com/RitualDev-Lab/GitWhisper",

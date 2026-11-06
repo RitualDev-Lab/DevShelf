@@ -1,10 +1,22 @@
 {
   "version": "1.1.2",
-  "updatedAt": "2026-11-05T22:42:34.047Z",
+  "updatedAt": "2026-11-06T22:41:45.960Z",
   "slug": "testing",
   "name": "Testing & QA Automation",
-  "count": 67,
+  "count": 68,
   "items": [
+    {
+      "name": "MockForge AI",
+      "repo": "https://github.com/RitualDev-Lab/MockForge",
+      "category": "Browser & E2E Testing",
+      "description": "High-throughput relational mock database and seed data synthesizer with 100% foreign-key integrity using Kahn DAG & WebAssembly SQLite.",
+      "language": "TypeScript / WebAssembly",
+      "license": "Proprietary / Community",
+      "featured": true,
+      "goodFirstIssues": "https://github.com/RitualDev-Lab/MockForge/issues",
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
     {
       "name": "AutoHeal-QA",
       "repo": "https://github.com/RitualDev-Lab/autoheal-qa",

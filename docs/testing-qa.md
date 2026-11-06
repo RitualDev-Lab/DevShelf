@@ -4,7 +4,7 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total Testing Tools](https://img.shields.io/badge/Testing_Tools-67_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total Testing Tools](https://img.shields.io/badge/Testing_Tools-68_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
 [API Mocking & Sandboxes](#api-mocking-sandboxes) • [API Testing & Debugging](#api-testing-debugging) • [Browser & E2E Testing](#browser-e2e-testing) • [Contract & Schema Testing](#contract-schema-testing) • [Mobile & Device Testing](#mobile-device-testing) • [Performance & Load Testing](#performance-load-testing) • [Security & Vulnerability Auditing](#security-vulnerability-auditing) • [Security & Vulnerability Scanners](#security-vulnerability-scanners) • [Test Data Generation](#test-data-generation) • [Testing & QA Reliability](#testing-qa-reliability) • [Unit & Integration Testing](#unit-integration-testing)
@@ -32,10 +32,11 @@
 | [**Newman**](https://github.com/postmanlabs/newman) | `JavaScript` | `Apache-2.0` | Postman's collection runner CLI allowing you to run and test Postman collections directly in CI/CD pipelines. | [GitHub](https://github.com/postmanlabs/newman) |
 | [**RestAssured**](https://github.com/rest-assured/rest-assured) | `Java` | `Apache-2.0` | Java DSL for easy testing of REST services, bringing the simplicity of dynamic languages into Java. | [GitHub](https://github.com/rest-assured/rest-assured) |
 
-### <a id="browser-e2e-testing"></a>Browser & E2E Testing (18)
+### <a id="browser-e2e-testing"></a>Browser & E2E Testing (19)
 
 | Tool | Language | License | Description | Links |
 | :--- | :---: | :---: | :--- | :---: |
+| [**⭐ MockForge AI**](https://github.com/RitualDev-Lab/MockForge) | `TypeScript / WebAssembly` | `Proprietary / Community` | High-throughput relational mock database and seed data synthesizer with 100% foreign-key integrity using Kahn DAG & WebAssembly SQLite. | [GitHub](https://github.com/RitualDev-Lab/MockForge) |
 | [**⭐ AutoHeal-QA**](https://github.com/RitualDev-Lab/autoheal-qa) | `TypeScript` | `MIT` | 100% Free & Local-first agentic self-healing E2E test runner for Playwright.  cloud cost with AST auto-patching and verification loop. | [GitHub](https://github.com/RitualDev-Lab/autoheal-qa) |
 | [**Agent QA**](https://github.com/vostride/agent-qa) | `TypeScript` | `FSL-1.1-ALv2` | Self-improving QA agent for natural-language web and mobile tests, with a local dashboard and CLI. | [GitHub](https://github.com/vostride/agent-qa) |
 | [**Playwright**](https://github.com/microsoft/playwright) | `TypeScript` | `Apache-2.0` | Fast and reliable end-to-end testing framework for modern web apps across Chromium, Firefox, and WebKit. | [GitHub](https://github.com/microsoft/playwright) |
