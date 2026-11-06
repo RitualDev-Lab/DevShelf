@@ -948,7 +948,7 @@
 ### AI Image Cleaner
 - **Category**: AI & Machine Learning
 - **Pricing Model**: Free Forever (No Card Required, Guest & Daily Credits)
-- **URL**: https://ai-image-cleaner.com/tools/remove-person-from-photo-online-free/
+- **URL**: https://ai-image-cleaner.com/tools/remove-person-from-photo-online-free
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/ai-image-cleaner.html
 - **Description**: Online AI inpainting tool to remove unwanted people, objects, watermarks, and clutter from photos with brush-mask editing.
 

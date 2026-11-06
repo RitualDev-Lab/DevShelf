@@ -1035,7 +1035,9 @@ function setupListeners() {
   }
 
   window.addEventListener("keydown", (e) => {
-    const isInput = document.activeElement && ["INPUT", "TEXTAREA", "SELECT"].includes(document.activeElement.tagName);
+    const isInput =
+      document.activeElement &&
+      ["INPUT", "TEXTAREA", "SELECT"].includes(document.activeElement.tagName);
 
     if (e.key === "/" && !isInput) {
       e.preventDefault();
