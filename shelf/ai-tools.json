@@ -39,10 +39,7 @@
     "language": "TypeScript",
     "license": "MIT",
     "featured": true,
-    "statusTags": [
-      "No Card Required",
-      "Featured"
-    ]
+    "statusTags": ["No Card Required", "Featured"]
   },
   {
     "name": "HOL Guard",
@@ -52,9 +49,7 @@
     "language": "Python",
     "license": "Apache-2.0",
     "featured": false,
-    "statusTags": [
-      "No Card Required"
-    ]
+    "statusTags": ["No Card Required"]
   },
   {
     "name": "Ollama",
@@ -65,11 +60,7 @@
     "license": "MIT",
     "featured": true,
     "goodFirstIssues": "https://github.com/ollama/ollama/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "Self-Hostable",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "Self-Hostable", "No Card Required"]
   },
   {
     "name": "Dify",
@@ -80,11 +71,7 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/langgenius/dify/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "Self-Hostable",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "Self-Hostable", "No Card Required"]
   },
   {
     "name": "vLLM",
@@ -95,11 +82,7 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/vllm-project/vllm/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "Self-Hostable",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "Self-Hostable", "No Card Required"]
   },
   {
     "name": "Open-WebUI",
@@ -110,11 +93,7 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/open-webui/open-webui/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "Self-Hostable",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "Self-Hostable", "No Card Required"]
   },
   {
     "name": "YYLO",
@@ -125,11 +104,7 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/yylo-dev/yylo/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "Self-Hostable",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "Self-Hostable", "No Card Required"]
   },
   {
     "name": "LocalAI",
@@ -140,11 +115,7 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/mudler/LocalAI/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "Self-Hostable",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "Self-Hostable", "No Card Required"]
   },
   {
     "name": "AnythingLLM",
@@ -155,11 +126,7 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/Mintplex-Labs/anything-llm/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "Self-Hostable",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "Self-Hostable", "No Card Required"]
   },
   {
     "name": "Flowise",
@@ -170,11 +137,7 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/FlowiseAI/Flowise/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "Self-Hostable",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "Self-Hostable", "No Card Required"]
   },
   {
     "name": "Langflow",
@@ -185,11 +148,7 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/langflow-ai/langflow/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "Self-Hostable",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "Self-Hostable", "No Card Required"]
   },
   {
     "name": "Jan",
@@ -200,11 +159,7 @@
     "license": "AGPL-3.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/janhq/jan/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "Self-Hostable",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "Self-Hostable", "No Card Required"]
   },
   {
     "name": "LibreChat",
@@ -215,11 +170,7 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/danny-avila/LibreChat/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "Self-Hostable",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "Self-Hostable", "No Card Required"]
   },
   {
     "name": "Fabric",
@@ -230,11 +181,7 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/danielmiessler/fabric/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "Self-Hostable",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "Self-Hostable", "No Card Required"]
   },
   {
     "name": "Aider",
@@ -245,11 +192,7 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/Aider-AI/aider/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "Self-Hostable",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "Self-Hostable", "No Card Required"]
   },
   {
     "name": "OpenHands",
@@ -260,11 +203,7 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/All-Hands-AI/OpenHands/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "Self-Hostable",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "Self-Hostable", "No Card Required"]
   },
   {
     "name": "Continue",
@@ -275,11 +214,7 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/continuedev/continue/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "Self-Hostable",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "Self-Hostable", "No Card Required"]
   },
   {
     "name": "llama.cpp",
@@ -290,11 +225,7 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/ggerganov/llama.cpp/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "Self-Hostable",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "Self-Hostable", "No Card Required"]
   },
   {
     "name": "LiteLLM",
@@ -305,10 +236,7 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/BerriAI/litellm/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "PrivateGPT",
@@ -319,10 +247,7 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/zylon-ai/private-gpt/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "GPT4All",
@@ -333,10 +258,7 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/nomic-ai/gpt4all/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "Tabby",
@@ -347,10 +269,7 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/TabbyML/tabby/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "Khoj",
@@ -361,10 +280,7 @@
     "license": "GPL-3.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/khoj-ai/khoj/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "LlamaIndex",
@@ -375,10 +291,7 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/run-llama/llama_index/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "LangChain",
@@ -389,10 +302,7 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/langchain-ai/langchain/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "Instructor",
@@ -403,10 +313,7 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/jxnl/instructor/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "MindsDB",
@@ -417,10 +324,7 @@
     "license": "GPL-3.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/mindsdb/mindsdb/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "Chroma",
@@ -431,10 +335,7 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/chroma-core/chroma/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "Qdrant",
@@ -445,10 +346,7 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/qdrant/qdrant/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "Milvus",
@@ -459,10 +357,7 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/milvus-io/milvus/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "Weaviate",
@@ -473,10 +368,7 @@
     "license": "BSD-3-Clause",
     "featured": false,
     "goodFirstIssues": "https://github.com/weaviate/weaviate/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "Bark",
@@ -487,10 +379,7 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/suno-ai/bark/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "Whisper.cpp",
@@ -501,10 +390,7 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/ggerganov/whisper.cpp/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "ComfyUI",
@@ -515,10 +401,7 @@
     "license": "GPL-3.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/comfyanonymous/ComfyUI/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "SearXNG",
@@ -529,10 +412,7 @@
     "license": "AGPL-3.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/searxng/searxng/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "RAGFlow",
@@ -543,10 +423,7 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/infiniflow/ragflow/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "Mem0",
@@ -557,10 +434,7 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/mem0ai/mem0/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "Open-Interpreter",
@@ -571,10 +445,7 @@
     "license": "AGPL-3.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/OpenInterpreter/open-interpreter/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "TGI (Text Generation Inference)",
@@ -585,10 +456,7 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/huggingface/text-generation-inference/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "SGLang",
@@ -599,10 +467,7 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/sgl-project/sglang/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "TensorRT-LLM",
@@ -613,10 +478,7 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/NVIDIA/TensorRT-LLM/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "ExLlamaV2",
@@ -627,10 +489,7 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/turboderp/exllamav2/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "llamafile",
@@ -641,10 +500,7 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/Mozilla-Ocho/llamafile/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "Aphrodite Engine",
@@ -655,10 +511,7 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/PygmalionAI/aphrodite-engine/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "AutoGPT",
@@ -669,10 +522,7 @@
     "license": "MIT",
     "featured": true,
     "goodFirstIssues": "https://github.com/Significant-Gravitas/AutoGPT/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "CrewAI",
@@ -683,10 +533,7 @@
     "license": "MIT",
     "featured": true,
     "goodFirstIssues": "https://github.com/crewAIInc/crewAI/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "AutoGen",
@@ -697,10 +544,7 @@
     "license": "CC-BY-4.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/microsoft/autogen/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "MetaGPT",
@@ -711,10 +555,7 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/geekan/MetaGPT/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "ChatDev",
@@ -725,10 +566,7 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/OpenBMB/ChatDev/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "SuperAGI",
@@ -739,10 +577,7 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/TransformerOptimus/SuperAGI/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "Unsloth",
@@ -753,10 +588,7 @@
     "license": "Apache-2.0",
     "featured": true,
     "goodFirstIssues": "https://github.com/unslothai/unsloth/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "Axolotl",
@@ -767,10 +599,7 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/axolotl-ai-cloud/axolotl/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "LLaMA-Factory",
@@ -781,10 +610,7 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/hiyouga/LLaMA-Factory/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "AutoAWQ",
@@ -795,10 +621,7 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/casper-hansen/AutoAWQ/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "AutoGPTQ",
@@ -809,10 +632,7 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/AutoGPTQ/AutoGPTQ/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "bitsandbytes",
@@ -823,10 +643,7 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/bitsandbytes-foundation/bitsandbytes/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "PEFT",
@@ -837,10 +654,7 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/huggingface/peft/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "TRL",
@@ -851,10 +665,7 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/huggingface/trl/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "Ragas",
@@ -865,10 +676,7 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/explodinggradients/ragas/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "DeepEval",
@@ -879,10 +687,7 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/confident-ai/deepeval/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "NeMo-Guardrails",
@@ -893,10 +698,7 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/NVIDIA/NeMo-Guardrails/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "Guidance",
@@ -907,10 +709,7 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/guidance-ai/guidance/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "Outlines",
@@ -921,10 +720,7 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/dottxt-ai/outlines/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "Promptfoo",
@@ -935,10 +731,7 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/promptfoo/promptfoo/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "Stable Diffusion WebUI",
@@ -949,10 +742,7 @@
     "license": "AGPL-3.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "InvokeAI",
@@ -963,10 +753,7 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/invoke-ai/InvokeAI/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "Fooocus",
@@ -977,10 +764,7 @@
     "license": "GPL-3.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/lllyasviel/Fooocus/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "LLaVA",
@@ -991,10 +775,7 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/haotian-liu/LLaVA/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "Segment Anything (SAM)",
@@ -1005,10 +786,7 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/facebookresearch/segment-anything/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "YOLOv8",
@@ -1019,10 +797,7 @@
     "license": "AGPL-3.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/ultralytics/ultralytics/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "PaddleOCR",
@@ -1033,10 +808,7 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/PaddlePaddle/PaddleOCR/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "Kokoro-TTS",
@@ -1047,10 +819,7 @@
     "license": "Apache-2.0",
     "featured": true,
     "goodFirstIssues": "https://github.com/hexgrad/kokoro/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "Piper TTS",
@@ -1061,10 +830,7 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/rhasspy/piper/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "ChatTTS",
@@ -1075,10 +841,7 @@
     "license": "CC-BY-NC-4.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/2noise/ChatTTS/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "Faster-Whisper",
@@ -1089,10 +852,7 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/SYSTRAN/faster-whisper/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "pgvector",
@@ -1103,10 +863,7 @@
     "license": "PostgreSQL",
     "featured": true,
     "goodFirstIssues": "https://github.com/pgvector/pgvector/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "Faiss",
@@ -1117,10 +874,7 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/facebookresearch/faiss/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "LanceDB",
@@ -1131,10 +885,7 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/lancedb/lancedb/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "Vespa",
@@ -1145,10 +896,7 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/vespa-engine/vespa/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "Annoy",
@@ -1159,10 +907,7 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/spotify/annoy/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "BabyAGI",
@@ -1173,10 +918,7 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/yoheinakajima/babyagi/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "OpenCodeInterpreter",
@@ -1187,10 +929,7 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/OpenCodeInterpreter/OpenCodeInterpreter/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "LMQL",
@@ -1201,10 +940,7 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/eth-sri/lmql/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "AutoRound",
@@ -1215,10 +951,7 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/intel/auto-round/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "SWE-agent",
@@ -1229,10 +962,7 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/princeton-nlp/SWE-agent/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "DSPy",
@@ -1243,10 +973,7 @@
     "license": "MIT",
     "featured": true,
     "goodFirstIssues": "https://github.com/stanfordnlp/dspy/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "FastChat",
@@ -1257,10 +984,7 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/lm-sys/FastChat/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "GPTCache",
@@ -1271,10 +995,7 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/zilliztech/gptcache/issues",
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "MCP Dubai",
@@ -1285,10 +1006,7 @@
     "language": "Python",
     "license": "MIT",
     "featured": false,
-    "statusTags": [
-      "100% Offline-Friendly",
-      "No Card Required"
-    ]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
     "name": "Eigenwise Toolshed",
@@ -1395,9 +1113,6 @@
     "category": "AI & Machine Learning",
     "description": "Online AI inpainting tool to remove unwanted people, objects, watermarks, and clutter from photos with brush-mask editing.",
     "freeTier": "Free Forever (No Card Required, Guest & Daily Credits)",
-    "statusTags": [
-      "No Card Required",
-      "Free Tier"
-    ]
+    "statusTags": ["No Card Required", "Free Tier"]
   }
 ]

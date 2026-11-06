@@ -675,9 +675,7 @@
     "license": "Proprietary, permanent free scan (no card required)",
     "auth": "No Key",
     "freeTier": "Permanent free read-only scan; no account or card required. Not a trial.",
-    "statusTags": [
-      "No Card Required"
-    ],
+    "statusTags": ["No Card Required"],
     "featured": false
   }
 ]
