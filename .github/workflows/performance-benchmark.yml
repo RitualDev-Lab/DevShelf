@@ -39,11 +39,18 @@ jobs:
         run: npx tsx scripts/benchmark-performance.ts
 
       - name: Commit Updated Latency Benchmarks
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "DevShelf Bot"
           git config --global user.email "bot@devshelf.local"
           git add shelf/ site/ README.md
           if ! git diff --cached --quiet; then
             git commit -m "chore(benchmark): update nightly latency metrics & performance warnings [skip ci]"
-            git push origin main
+            git push origin main || (
+              BRANCH="telemetry/benchmark-$(date +%Y%m%d%H%M)"
+              git checkout -b "$BRANCH"
+              git push origin "$BRANCH" --force
+              gh pr create --title "chore(benchmark): update nightly latency metrics" --body "Nightly benchmark updates by DevShelf Bot." --head "$BRANCH" --base main
+            )
           fi

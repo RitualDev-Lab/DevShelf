@@ -73,11 +73,18 @@ jobs:
         run: pnpm run issues:rot
 
       - name: Commit Fresh Uptime Telemetry and Maintained Shelf to Main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "DevShelf Bot"
           git config --global user.email "bot@devshelf.local"
           git add site/uptime.json shelf/
           if ! git diff --cached --quiet; then
             git commit -m "chore(telemetry): update 7-day uptime metrics & maintenance flags [skip ci]"
-            git push origin main
+            git push origin main || (
+              BRANCH="telemetry/uptime-$(date +%Y%m%d%H%M)"
+              git checkout -b "$BRANCH"
+              git push origin "$BRANCH" --force
+              gh pr create --title "chore(telemetry): update 7-day uptime metrics" --body "Automated telemetry update by DevShelf Bot." --head "$BRANCH" --base main
+            )
           fi

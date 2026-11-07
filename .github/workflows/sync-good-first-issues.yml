@@ -17,6 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pull-requests: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -41,13 +42,20 @@ jobs:
         run: npx tsx scripts/sync-good-first-issues.ts
 
       - name: Commit & Push Updated Matchmaker Data
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "DevShelf Bot"
           git config --global user.email "bot@devshelf.local"
           git add site/matchmaker.json
           if ! git diff-index --quiet HEAD; then
             git commit -m "chore(matchmaker): sync live good first issues [skip ci]"
-            git push origin main
+            git push origin main || (
+              BRANCH="telemetry/matchmaker-$(date +%Y%m%d%H%M)"
+              git checkout -b "$BRANCH"
+              git push origin "$BRANCH" --force
+              gh pr create --title "chore(matchmaker): sync live good first issues" --body "Matchmaker issue sync by DevShelf Bot." --head "$BRANCH" --base main
+            )
           else
             echo "No changes in matchmaker issues."
           fi
