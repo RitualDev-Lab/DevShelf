@@ -1,13 +1,13 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-11-06T22:41:45.960Z",
-  "totalCount": 573,
-  "reposCount": 362,
+  "updatedAt": "2026-11-07T13:35:55.031Z",
+  "totalCount": 574,
+  "reposCount": 363,
   "facets": {
-    "repos": 362
+    "repos": 363
   },
   "counts": {
     "aiTools": 103,
-    "cliTools": 129,
+    "cliTools": 130,
     "testingQa": 68,
     "apis": 108,
     "freeCloud": 72,
@@ -3637,6 +3637,18 @@ window.DEVSHELF_DATA = {
       "description": "Secure cloud sandboxing platform designed specifically for autonomous AI agents. Spawns isolated, microVM execution environments in milliseconds to run untrusted agent code, charts, and shell commands safely.",
       "language": "Python / TypeScript",
       "license": "Apache-2.0",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "Datacircle",
+      "category": "Other",
+      "description": "Find the best GTM APIs. We benchmark all the GTM APIs and we put the results on our website, datacircle.dev. Base URL https://api.datacircle.dev/v1.",
+      "repo": "https://api.datacircle.dev/v1/openapi.json",
+      "url": "https://api.datacircle.dev/v1/openapi.json",
+      "language": "TypeScript",
+      "license": "MIT",
       "featured": false,
       "type": "cli",
       "section": "CLI & Productivity Tools"

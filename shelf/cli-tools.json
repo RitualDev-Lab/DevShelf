@@ -1374,5 +1374,15 @@
     "language": "Python / TypeScript",
     "license": "Apache-2.0",
     "featured": false
+  },
+  {
+    "name": "Datacircle",
+    "category": "Other",
+    "description": "Find the best GTM APIs. We benchmark all the GTM APIs and we put the results on our website, datacircle.dev. Base URL https://api.datacircle.dev/v1.",
+    "repo": "https://api.datacircle.dev/v1/openapi.json",
+    "url": "https://api.datacircle.dev/v1/openapi.json",
+    "language": "TypeScript",
+    "license": "MIT",
+    "featured": false
   }
 ]

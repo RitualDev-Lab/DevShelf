@@ -4,10 +4,10 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total CLI Tools](https://img.shields.io/badge/CLI_Tools-129_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total CLI Tools](https://img.shields.io/badge/CLI_Tools-130_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
-[Automation & Browser Testing](#automation-browser-testing) • [Benchmarking & Performance](#benchmarking-performance) • [CLI & Developer Productivity](#cli-developer-productivity) • [Database & SQL](#database-sql) • [Dev Utilities & Libraries](#dev-utilities-libraries) • [Developer Toolkits & MCP](#developer-toolkits-mcp) • [Developer Tools](#developer-tools) • [Developer Utilities](#developer-utilities) • [DevOps & Containers](#devops-containers) • [DevOps & Infrastructure](#devops-infrastructure) • [Disk & Storage](#disk-storage) • [Git & Version Control](#git-version-control) • [GitHub Workflow & TUI](#github-workflow-tui) • [HTTP & Network](#http-network) • [OS & Hardware Utilities](#os-hardware-utilities) • [Sandboxing & Cloud Execution](#sandboxing-cloud-execution) • [System & Process Monitoring](#system-process-monitoring) • [Terminal & Search](#terminal-search) • [Terminal & Shell](#terminal-shell) • [Terminal Navigation](#terminal-navigation) • [Web Scraping & Crawling](#web-scraping-crawling)
+[Automation & Browser Testing](#automation-browser-testing) • [Benchmarking & Performance](#benchmarking-performance) • [CLI & Developer Productivity](#cli-developer-productivity) • [Database & SQL](#database-sql) • [Dev Utilities & Libraries](#dev-utilities-libraries) • [Developer Toolkits & MCP](#developer-toolkits-mcp) • [Developer Tools](#developer-tools) • [Developer Utilities](#developer-utilities) • [DevOps & Containers](#devops-containers) • [DevOps & Infrastructure](#devops-infrastructure) • [Disk & Storage](#disk-storage) • [Git & Version Control](#git-version-control) • [GitHub Workflow & TUI](#github-workflow-tui) • [HTTP & Network](#http-network) • [OS & Hardware Utilities](#os-hardware-utilities) • [Other](#other) • [Sandboxing & Cloud Execution](#sandboxing-cloud-execution) • [System & Process Monitoring](#system-process-monitoring) • [Terminal & Search](#terminal-search) • [Terminal & Shell](#terminal-shell) • [Terminal Navigation](#terminal-navigation) • [Web Scraping & Crawling](#web-scraping-crawling)
 
 ---
 
@@ -177,6 +177,12 @@
 | [**diskonaut**](https://github.com/imsnif/diskonaut) | `Rust` | `MIT` | Terminal visual disk space navigator that visually maps out filesystems to locate large directories. | [GitHub](https://github.com/imsnif/diskonaut) |
 | [**inxi**](https://github.com/smxi/inxi) | `Perl` | `GPL-3.0` | Full featured CLI system information tool designed for troubleshooting hardware and system configurations. | [GitHub](https://github.com/smxi/inxi) |
 | [**LeanFPS**](https://github.com/Jamailar/leanfps) | `Rust` | `MIT` | Open-source Windows performance utility built in Rust and egui. Features game detection, ETW FPS recording, safe tweak undo, and crash recovery without modifying game files. | [GitHub](https://github.com/Jamailar/leanfps) |
+
+### <a id="other"></a>Other (1)
+
+| Tool | Language | License | Description | Links |
+| :--- | :---: | :---: | :--- | :---: |
+| [**Datacircle**](https://api.datacircle.dev/v1/openapi.json) | `TypeScript` | `MIT` | Find the best GTM APIs. We benchmark all the GTM APIs and we put the results on our website, datacircle.dev. Base URL https://api.datacircle.dev/v1. | [GitHub](https://api.datacircle.dev/v1/openapi.json) |
 
 ### <a id="sandboxing-cloud-execution"></a>Sandboxing & Cloud Execution (1)
 

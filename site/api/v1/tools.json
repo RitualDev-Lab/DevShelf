@@ -2,8 +2,8 @@
   "version": "1.1.2",
   "docs": "https://devshelf.ritualdev.in/docs/api.html",
   "license": "https://github.com/RitualDev-Lab/DevShelf/blob/main/LICENSE",
-  "updatedAt": "2026-11-06T22:41:45.960Z",
-  "totalCount": 573,
+  "updatedAt": "2026-11-07T13:35:55.031Z",
+  "totalCount": 574,
   "tools": [
     {
       "name": "PromptShield",
@@ -3626,6 +3626,18 @@
       "description": "Secure cloud sandboxing platform designed specifically for autonomous AI agents. Spawns isolated, microVM execution environments in milliseconds to run untrusted agent code, charts, and shell commands safely.",
       "language": "Python / TypeScript",
       "license": "Apache-2.0",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "Datacircle",
+      "category": "Other",
+      "description": "Find the best GTM APIs. We benchmark all the GTM APIs and we put the results on our website, datacircle.dev. Base URL https://api.datacircle.dev/v1.",
+      "repo": "https://api.datacircle.dev/v1/openapi.json",
+      "url": "https://api.datacircle.dev/v1/openapi.json",
+      "language": "TypeScript",
+      "license": "MIT",
       "featured": false,
       "type": "cli",
       "section": "CLI & Productivity Tools"
