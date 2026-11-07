@@ -1175,5 +1175,16 @@
     "cors": "Yes",
     "rateLimit": "No numeric request quota or reset period is published in the official documentation. The selected content changes daily; that content schedule does not specify the number of permitted requests.",
     "https": true
+  },
+  {
+    "name": "Datacircle",
+    "url": "https://datacircle.dev",
+    "category": "Development & Testing",
+    "description": "Find the best GTM APIs. Benchmarking GTM APIs with published results at datacircle.dev. Base URL https://api.datacircle.dev/v1.",
+    "auth": "No Key",
+    "cors": "Yes",
+    "rateLimit": "60 calls/min",
+    "https": true,
+    "statusTags": ["CI Verified", "Rate-Limited"]
   }
 ]

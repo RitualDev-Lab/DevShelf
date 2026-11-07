@@ -1,6 +1,6 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-11-07T18:04:16.909Z",
-  "totalCount": 574,
+  "updatedAt": "2026-11-07T18:08:29.138Z",
+  "totalCount": 575,
   "reposCount": 363,
   "facets": {
     "repos": 363
@@ -9,7 +9,7 @@ window.DEVSHELF_DATA = {
     "aiTools": 103,
     "cliTools": 130,
     "testingQa": 68,
-    "apis": 108,
+    "apis": 109,
     "freeCloud": 72,
     "perks": 30,
     "boilerplates": 42,
@@ -6180,6 +6180,22 @@ window.DEVSHELF_DATA = {
       "cors": "Yes",
       "rateLimit": "No numeric request quota or reset period is published in the official documentation. The selected content changes daily; that content schedule does not specify the number of permitted requests.",
       "https": true,
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Datacircle",
+      "url": "https://datacircle.dev",
+      "category": "Development & Testing",
+      "description": "Find the best GTM APIs. Benchmarking GTM APIs with published results at datacircle.dev. Base URL https://api.datacircle.dev/v1.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "60 calls/min",
+      "https": true,
+      "statusTags": [
+        "CI Verified",
+        "Rate-Limited"
+      ],
       "type": "api",
       "section": "Free & Public APIs"
     },
