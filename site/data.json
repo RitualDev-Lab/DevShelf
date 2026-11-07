@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-07T13:35:55.031Z",
-  "totalCount": 574,
+  "updatedAt": "2026-11-07T18:08:29.138Z",
+  "totalCount": 575,
   "reposCount": 363,
   "facets": {
     "repos": 363
@@ -9,7 +9,7 @@
     "aiTools": 103,
     "cliTools": 130,
     "testingQa": 68,
-    "apis": 108,
+    "apis": 109,
     "freeCloud": 72,
     "perks": 30,
     "boilerplates": 42,
@@ -3642,12 +3642,11 @@
       "section": "CLI & Productivity Tools"
     },
     {
-      "name": "Datacircle",
-      "category": "Other",
-      "description": "Find the best GTM APIs. We benchmark all the GTM APIs and we put the results on our website, datacircle.dev. Base URL https://api.datacircle.dev/v1.",
-      "repo": "https://api.datacircle.dev/v1/openapi.json",
-      "url": "https://api.datacircle.dev/v1/openapi.json",
-      "language": "TypeScript",
+      "name": "Akii: SEO & AI Search Optimizer",
+      "category": "CLI & Developer Productivity",
+      "description": "A free Claude Code plugin that audits sites, checks links, plans content and creates JSON-LD. It runs in the Claude Code terminal on macOS and Linux.",
+      "repo": "https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer",
+      "language": "Claude Code plugin, Markdown skills and agents, Bash hooks, JSON manifests",
       "license": "MIT",
       "featured": false,
       "type": "cli",
@@ -6181,6 +6180,22 @@
       "cors": "Yes",
       "rateLimit": "No numeric request quota or reset period is published in the official documentation. The selected content changes daily; that content schedule does not specify the number of permitted requests.",
       "https": true,
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Datacircle",
+      "url": "https://datacircle.dev",
+      "category": "Development & Testing",
+      "description": "Find the best GTM APIs. Benchmarking GTM APIs with published results at datacircle.dev. Base URL https://api.datacircle.dev/v1.",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "60 calls/min",
+      "https": true,
+      "statusTags": [
+        "CI Verified",
+        "Rate-Limited"
+      ],
       "type": "api",
       "section": "Free & Public APIs"
     },

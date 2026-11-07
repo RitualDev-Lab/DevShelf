@@ -1376,12 +1376,11 @@
     "featured": false
   },
   {
-    "name": "Datacircle",
-    "category": "Other",
-    "description": "Find the best GTM APIs. We benchmark all the GTM APIs and we put the results on our website, datacircle.dev. Base URL https://api.datacircle.dev/v1.",
-    "repo": "https://api.datacircle.dev/v1/openapi.json",
-    "url": "https://api.datacircle.dev/v1/openapi.json",
-    "language": "TypeScript",
+    "name": "Akii: SEO & AI Search Optimizer",
+    "category": "CLI & Developer Productivity",
+    "description": "A free Claude Code plugin that audits sites, checks links, plans content and creates JSON-LD. It runs in the Claude Code terminal on macOS and Linux.",
+    "repo": "https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer",
+    "language": "Claude Code plugin, Markdown skills and agents, Bash hooks, JSON manifests",
     "license": "MIT",
     "featured": false
   }

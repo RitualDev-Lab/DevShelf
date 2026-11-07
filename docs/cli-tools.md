@@ -7,7 +7,7 @@
 [![Total CLI Tools](https://img.shields.io/badge/CLI_Tools-130_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
-[Automation & Browser Testing](#automation-browser-testing) • [Benchmarking & Performance](#benchmarking-performance) • [CLI & Developer Productivity](#cli-developer-productivity) • [Database & SQL](#database-sql) • [Dev Utilities & Libraries](#dev-utilities-libraries) • [Developer Toolkits & MCP](#developer-toolkits-mcp) • [Developer Tools](#developer-tools) • [Developer Utilities](#developer-utilities) • [DevOps & Containers](#devops-containers) • [DevOps & Infrastructure](#devops-infrastructure) • [Disk & Storage](#disk-storage) • [Git & Version Control](#git-version-control) • [GitHub Workflow & TUI](#github-workflow-tui) • [HTTP & Network](#http-network) • [OS & Hardware Utilities](#os-hardware-utilities) • [Other](#other) • [Sandboxing & Cloud Execution](#sandboxing-cloud-execution) • [System & Process Monitoring](#system-process-monitoring) • [Terminal & Search](#terminal-search) • [Terminal & Shell](#terminal-shell) • [Terminal Navigation](#terminal-navigation) • [Web Scraping & Crawling](#web-scraping-crawling)
+[Automation & Browser Testing](#automation-browser-testing) • [Benchmarking & Performance](#benchmarking-performance) • [CLI & Developer Productivity](#cli-developer-productivity) • [Database & SQL](#database-sql) • [Dev Utilities & Libraries](#dev-utilities-libraries) • [Developer Toolkits & MCP](#developer-toolkits-mcp) • [Developer Tools](#developer-tools) • [Developer Utilities](#developer-utilities) • [DevOps & Containers](#devops-containers) • [DevOps & Infrastructure](#devops-infrastructure) • [Disk & Storage](#disk-storage) • [Git & Version Control](#git-version-control) • [GitHub Workflow & TUI](#github-workflow-tui) • [HTTP & Network](#http-network) • [OS & Hardware Utilities](#os-hardware-utilities) • [Sandboxing & Cloud Execution](#sandboxing-cloud-execution) • [System & Process Monitoring](#system-process-monitoring) • [Terminal & Search](#terminal-search) • [Terminal & Shell](#terminal-shell) • [Terminal Navigation](#terminal-navigation) • [Web Scraping & Crawling](#web-scraping-crawling)
 
 ---
 
@@ -23,7 +23,7 @@
 | :--- | :---: | :---: | :--- | :---: |
 | [**hyperfine**](https://github.com/sharkdp/hyperfine) | `Rust` | `MIT / Apache-2.0` | Command-line benchmarking tool with statistical analysis, warmup runs, and parametric sweeps. | [GitHub](https://github.com/sharkdp/hyperfine) |
 
-### <a id="cli-developer-productivity"></a>CLI & Developer Productivity (13)
+### <a id="cli-developer-productivity"></a>CLI & Developer Productivity (14)
 
 | Tool | Language | License | Description | Links |
 | :--- | :---: | :---: | :--- | :---: |
@@ -40,6 +40,7 @@
 | [**vhr-bench**](https://github.com/vpshostreview/vhr-vps-benchmark) | `Bash` | `MIT` | Single MIT-licensed Bash script that benchmarks a Linux server in about a minute with sysbench CPU and memory tests and fio 4k random read and write IOPS. It asks before installing sysbench or fio and sends nothing anywhere unless you pass an upload token. | [GitHub](https://github.com/vpshostreview/vhr-vps-benchmark) |
 | [**Cloady MCP**](https://github.com/Cloady/cloady-mcp) | `TypeScript, Node.js 20+, Model Context Protocol SDK; npm package `@cloady/mcp`.` | `MIT` | An open-source MCP server that lets compatible AI coding assistants deploy and manage Cloady applications and databases, inspect logs, and work with hosting resources through the Cloady API. The npm package runs locally over stdio and authenticates with the developer's Cloady API token. | [GitHub](https://github.com/Cloady/cloady-mcp) |
 | [**Kilobat CLI**](https://github.com/seifip/kilobat-cli) | `Swift` | `GPL-3.0-only` | I built Kilobat CLI for macOS network monitoring and diagnostics, with an interactive terminal interface, JSON output and a local MCP server for agents. The GPL-licensed CLI is a separate project from the proprietary desktop app. | [GitHub](https://github.com/seifip/kilobat-cli) |
+| [**Akii: SEO & AI Search Optimizer**](https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer) | `Claude Code plugin, Markdown skills and agents, Bash hooks, JSON manifests` | `MIT` | A free Claude Code plugin that audits sites, checks links, plans content and creates JSON-LD. It runs in the Claude Code terminal on macOS and Linux. | [GitHub](https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer) |
 
 ### <a id="database-sql"></a>Database & SQL (7)
 
@@ -177,12 +178,6 @@
 | [**diskonaut**](https://github.com/imsnif/diskonaut) | `Rust` | `MIT` | Terminal visual disk space navigator that visually maps out filesystems to locate large directories. | [GitHub](https://github.com/imsnif/diskonaut) |
 | [**inxi**](https://github.com/smxi/inxi) | `Perl` | `GPL-3.0` | Full featured CLI system information tool designed for troubleshooting hardware and system configurations. | [GitHub](https://github.com/smxi/inxi) |
 | [**LeanFPS**](https://github.com/Jamailar/leanfps) | `Rust` | `MIT` | Open-source Windows performance utility built in Rust and egui. Features game detection, ETW FPS recording, safe tweak undo, and crash recovery without modifying game files. | [GitHub](https://github.com/Jamailar/leanfps) |
-
-### <a id="other"></a>Other (1)
-
-| Tool | Language | License | Description | Links |
-| :--- | :---: | :---: | :--- | :---: |
-| [**Datacircle**](https://api.datacircle.dev/v1/openapi.json) | `TypeScript` | `MIT` | Find the best GTM APIs. We benchmark all the GTM APIs and we put the results on our website, datacircle.dev. Base URL https://api.datacircle.dev/v1. | [GitHub](https://api.datacircle.dev/v1/openapi.json) |
 
 ### <a id="sandboxing-cloud-execution"></a>Sandboxing & Cloud Execution (1)
 

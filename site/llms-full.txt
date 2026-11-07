@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 574 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 575 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -2151,14 +2151,14 @@
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/e2b-code-interpreter.html
 - **Description**: Secure cloud sandboxing platform designed specifically for autonomous AI agents. Spawns isolated, microVM execution environments in milliseconds to run untrusted agent code, charts, and shell commands safely.
 
-### Datacircle
-- **Category**: Other
+### Akii: SEO & AI Search Optimizer
+- **Category**: CLI & Developer Productivity
 - **Pricing Model**: See official site for free access and limits
 - **License**: MIT
-- **Language**: TypeScript
-- **URL**: https://api.datacircle.dev/v1/openapi.json
-- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/datacircle.html
-- **Description**: Find the best GTM APIs. We benchmark all the GTM APIs and we put the results on our website, datacircle.dev. Base URL https://api.datacircle.dev/v1.
+- **Language**: Claude Code plugin, Markdown skills and agents, Bash hooks, JSON manifests
+- **URL**: https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/akii-seo-ai-search-optimizer.html
+- **Description**: A free Claude Code plugin that audits sites, checks links, plans content and creates JSON-LD. It runs in the Claude Code terminal on macOS and Linux.
 
 ### MockForge AI
 - **Category**: Browser & E2E Testing
@@ -3660,6 +3660,14 @@ Current limits: https://arcmira.com/docs/usage-and-billing
 - **URL**: https://bucketlist.nl/brand/droom-van-de-dag.openapi.json
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/bucketlistnl-dream-of-the-day.html
 - **Description**: A public JSON feed of daily travel, leisure and life-experience ideas with images, canonical URLs and source attribution. Developers can use it in activity-discovery interfaces and inspiration widgets; Netherlands/worldwide scope and five documented languages are supported.
+
+### Datacircle
+- **Category**: Development & Testing
+- **Pricing Model**: 60 calls/min
+- **Auth**: No Key
+- **URL**: https://datacircle.dev
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/datacircle.html
+- **Description**: Find the best GTM APIs. Benchmarking GTM APIs with published results at datacircle.dev. Base URL https://api.datacircle.dev/v1.
 
 ### Supabase
 - **Category**: Databases & BaaS

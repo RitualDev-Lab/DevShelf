@@ -54,12 +54,25 @@ function parseFormBody(body: string): Record<string, string> {
   return sections;
 }
 
-function resolveTargetFile(category: string, targetShelf = ""): string {
+function resolveTargetFile(
+  category: string,
+  targetShelf = "",
+  formData: Record<string, string> = {},
+): string {
   const combined = `${targetShelf} ${category}`.toLowerCase();
   if (combined.includes("testing") || combined.includes("qa")) {
     return "testing-qa.json";
   }
-  if (combined.includes("api") || combined.includes("rest") || combined.includes("graphql")) {
+  if (
+    combined.includes("api") ||
+    combined.includes("rest") ||
+    combined.includes("graphql") ||
+    Boolean(formData["api name"]) ||
+    Boolean(formData["api website or documentation url"]) ||
+    Boolean(formData["authentication required"]) ||
+    Boolean(formData["cors support (usable from browser)"]) ||
+    Boolean(formData["free tier rate limit"])
+  ) {
     return "apis.json";
   }
   if (combined.includes("cloud") || combined.includes("hosting") || combined.includes("database")) {
@@ -201,7 +214,7 @@ async function run() {
     );
   }
 
-  const targetFile = resolveTargetFile(category, targetShelf);
+  const targetFile = resolveTargetFile(category, targetShelf, formData);
   const filePath = path.join(shelfDir, targetFile);
   const rawContent = await fs.readFile(filePath, "utf8");
   const list: CatalogItem[] = JSON.parse(rawContent.replace(/^\uFEFF/, ""));
