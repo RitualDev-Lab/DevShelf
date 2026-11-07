@@ -35,7 +35,7 @@
 <tr>
 <td align="center"><b>🌐 Free APIs</b><br><code>108</code></td>
 <td align="center"><b>🤖 AI & LLMs</b><br><code>103</code></td>
-<td align="center"><b>⚡ CLI Tools</b><br><code>129</code></td>
+<td align="center"><b>⚡ CLI Tools</b><br><code>130</code></td>
 <td align="center"><b>🧪 Testing & QA</b><br><code>68</code></td>
 <td align="center"><b>☁️ Free Cloud</b><br><code>72</code></td>
 <td align="center"><b>🤝 Up for Grabs</b><br><code>21</code></td>
@@ -47,7 +47,7 @@
 ### 🎯 The Race to 1,000 Verified Tools (Hacktoberfest Milestone)
 
 ```text
-[███████████░░░░░░░░░] 573 / 1,000 Tools Verified (57% • 427 to go!)
+[███████████░░░░░░░░░] 574 / 1,000 Tools Verified (57% • 426 to go!)
 ```
 
 *Help us curate the definitive zero-paywall index! [Submit your favorite developer tool, API, or AI framework →](#-how-to-submit-your-project-or-api)*
@@ -85,7 +85,7 @@ DevShelf isn't a static markdown list. It runs directly inside your terminal, in
 ┌─────────────────────────────────────────────────────────────────────────────────┐
 │ $ npx devshelf search "postgres"                                                │
 │                                                                                 │
-│ 📚 DevShelf CLI v1.1.0 — 573 Curated Tools (Live CI Audited)                    │
+│ 📚 DevShelf CLI v1.1.0 — 574 Curated Tools (Live CI Audited)                    │
 │                                                                                 │
 │ [1] Neon (Database / Serverless)                                                │
 │     Serverless Postgres with autoscaling, branching, and generous free tier.    │
@@ -200,13 +200,13 @@ npx devshelf stats
 
 ## 📂 Browse Catalog by Category
 
-Explore our curated collections of **573+ zero-paywall developer tools**, categorized into dedicated guides with subcategory indexing:
+Explore our curated collections of **574+ zero-paywall developer tools**, categorized into dedicated guides with subcategory indexing:
 
 | Category | Resources | Description & Subcategories | Guide |
 | :--- | :---: | :--- | :---: |
 | 🌐 **Free & Public APIs** | **108** | Weather, Finance, Mock/Dev APIs, Geocoding, AI/ML, Media, Entertainment | [**Browse APIs →**](docs/apis.md) |
 | 🤖 **AI Agents & Local LLMs** | **103** | Local LLM Runtimes, Autonomous Agents, Coding Assistants, Orchestration | [**Browse AI Tools →**](docs/ai-tools.md) |
-| ⚡ **CLI & Productivity Tools** | **129** | Terminal Utilities, Git Power Tools, Docker & DevOps, Benchmarking, DBs | [**Browse CLI Tools →**](docs/cli-tools.md) |
+| ⚡ **CLI & Productivity Tools** | **130** | Terminal Utilities, Git Power Tools, Docker & DevOps, Benchmarking, DBs | [**Browse CLI Tools →**](docs/cli-tools.md) |
 | 🧪 **Testing & QA Reliability** | **68** | E2E Testing, Mock Servers, Contract Testing, Security Auditing, Performance | [**Browse Testing Tools →**](docs/testing-qa.md) |
 | ☁️ **Free Cloud & Developer Tiers** | **72** | Databases, Auth & Identity, Serverless Compute, Object Storage, Email, APM | [**Browse Cloud Tiers →**](docs/free-cloud.md) |
 | 🤝 **Contributors Wanted** | **21** | Active open-source repos with curated Good First Issues and starter tasks | [**Browse Projects →**](docs/contributors-wanted.md) |
