@@ -1,13 +1,13 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-11-06T22:41:45.960Z",
-  "totalCount": 573,
-  "reposCount": 362,
+  "updatedAt": "2026-11-07T18:00:55.355Z",
+  "totalCount": 574,
+  "reposCount": 363,
   "facets": {
-    "repos": 362
+    "repos": 363
   },
   "counts": {
     "aiTools": 103,
-    "cliTools": 129,
+    "cliTools": 130,
     "testingQa": 68,
     "apis": 108,
     "freeCloud": 72,
@@ -3637,6 +3637,17 @@ window.DEVSHELF_DATA = {
       "description": "Secure cloud sandboxing platform designed specifically for autonomous AI agents. Spawns isolated, microVM execution environments in milliseconds to run untrusted agent code, charts, and shell commands safely.",
       "language": "Python / TypeScript",
       "license": "Apache-2.0",
+      "featured": false,
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "Akii: SEO & AI Search Optimizer",
+      "category": "CLI & Developer Productivity",
+      "description": "A free Claude Code plugin that audits sites, checks links, plans content and creates JSON-LD. It runs in the Claude Code terminal on macOS and Linux.",
+      "repo": "https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer",
+      "language": "Claude Code plugin, Markdown skills and agents, Bash hooks, JSON manifests",
+      "license": "MIT",
       "featured": false,
       "type": "cli",
       "section": "CLI & Productivity Tools"
