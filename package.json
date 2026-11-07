@@ -48,6 +48,7 @@
   "scripts": {
     "devshelf": "node bin/cli.js",
     "mcp": "node bin/mcp.js",
+    "auto:categorize": "tsx scripts/auto-categorize.ts",
     "build:css": "tailwindcss -i site/input.css -o site/tailwind.min.css --minify",
     "generate:counts": "tsx scripts/generate-counts.ts",
     "launch:kit": "tsx scripts/generate-launch-kit.ts",
