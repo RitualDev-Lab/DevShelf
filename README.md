@@ -1,4 +1,4 @@
-<div align="center">
+﻿<div align="center">
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,19,24,30&height=200&section=header&text=📚%20DevShelf&fontSize=60&fontAlignY=35&desc=The%20Crowdsourced%20Zero-Paywall%20Developer%20Directory&descAlignY=55&descSize=18&fontColor=fff&animation=twinkling">
@@ -750,9 +750,16 @@ DevShelf is a 100% free and open-source community directory. If DevShelf saved y
 
 <div align="center">
 
-[![Sponsor on Dodo Payments](https://img.shields.io/badge/Sponsor-Dodo%20Payments-8b5cf6?style=for-the-badge&logo=shield&logoColor=white)](https://checkout.dodopayments.com/buy/pdt_0NpjONGugY5QkrFDUaPva)
+[![Sponsor on Dodo Payments](https://img.shields.io/badge/Sponsor_via_Dodo-Payments-8b5cf6?style=for-the-badge&logo=shield&logoColor=white)](https://checkout.dodopayments.com/buy/pdt_0NpjONGugY5QkrFDUaPva)
+[![Interactive Donation Portal](https://img.shields.io/badge/Donation_Portal-Cards%20%7C%20UPI%20%7C%20Apple%20Pay-ff5964?style=for-the-badge&logo=heart&logoColor=white)](https://ritualdev.in/donate)
+[![Self-Serve Sponsor Directory](https://img.shields.io/badge/DevShelf-Sponsor_Wall-10b981?style=for-the-badge&logo=sparkles&logoColor=white)](https://devshelf.ritualdev.in/sponsors.html)
+[![GitHub Sponsors](https://img.shields.io/badge/GitHub_Sponsors-RitualDev--Lab-ea4aaa?style=for-the-badge&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/RitualDev-Lab)
 
-[**💖 Sponsor via Dodo Payments**](https://checkout.dodopayments.com/buy/pdt_0NpjONGugY5QkrFDUaPva)
+<br/>
+
+[**⚡ 1-Click Dodo Payments Checkout**](https://checkout.dodopayments.com/buy/pdt_0NpjONGugY5QkrFDUaPva) &nbsp;•&nbsp; [**🎁 Custom Sponsor Form (USD & INR UPI)**](https://ritualdev.in/donate) &nbsp;•&nbsp; [**🏛️ Self-Serve Sponsor Wall & Perks**](https://devshelf.ritualdev.in/sponsors.html) &nbsp;•&nbsp; [**❤️ GitHub Sponsors**](https://github.com/sponsors/RitualDev-Lab)
+
+<sub>🔒 *Zero physical shipping required. Powered by Dodo Payments (Merchant of Record) with instant tax invoice and global payment methods (Cards, UPI, Apple Pay).*</sub>
 
 </div>
 
