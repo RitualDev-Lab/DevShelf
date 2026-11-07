@@ -1,6 +1,6 @@
 {
   "version": "1.1.2",
-  "updatedAt": "2026-11-06T22:41:45.960Z",
+  "updatedAt": "2026-11-07T01:40:43.627Z",
   "totalCategories": 8,
   "categories": [
     {
@@ -12,7 +12,7 @@
     {
       "slug": "cli",
       "name": "CLI & Developer Productivity",
-      "count": 129,
+      "count": 130,
       "endpoint": "https://devshelf.ritualdev.in/api/v1/categories/cli.json"
     },
     {
