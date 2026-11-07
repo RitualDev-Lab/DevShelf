@@ -127,7 +127,14 @@ jobs:
             echo "No changes produced."
           else
             git commit -m "feat(sponsor): activate $TOOL_NAME as $TIER verified sponsor ⚡"
-            git push origin main
+            git push origin main || (
+              BRANCH="sponsor/activate-${TOOL_NAME//[^a-zA-Z0-9]/-}-$GITHUB_RUN_ID"
+              git checkout -b "$BRANCH"
+              git push origin "$BRANCH"
+              gh pr create --title "feat(sponsor): activate $TOOL_NAME as $TIER verified sponsor ⚡" \
+                           --body "Automated sponsor onboarding via workflow dispatch." \
+                           --base main --head "$BRANCH"
+            )
           fi
 
       - name: Output Summary
