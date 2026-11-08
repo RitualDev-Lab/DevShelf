@@ -199,6 +199,44 @@ export function generateDirectoryBadgeSvg(
 </svg>`;
 }
 
+export function generateSecuredByAgentShieldSvg(): string {
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="186" height="28" viewBox="0 0 186 28" role="img" aria-label="Secured by AgentShield">
+  <defs>
+    <clipPath id="sec-agentshield-clip">
+      <rect width="186" height="28" rx="6" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#sec-agentshield-clip)">
+    <rect width="84" height="28" fill="#0f172a"/>
+    <rect x="84" width="102" height="28" fill="#059669"/>
+    <rect width="186" height="28" fill="none" stroke="rgba(16, 185, 129, 0.4)" stroke-width="2"/>
+  </g>
+  <g fill="#fff" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="11" font-weight="700">
+    <text x="42" y="18" fill="#e2e8f0">🛡️ AgentShield</text>
+    <text x="135" y="18" fill="#ffffff">🔒 Secured</text>
+  </g>
+</svg>`;
+}
+
+export function generateMonetizedWithMcpSvg(): string {
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="176" height="28" viewBox="0 0 176 28" role="img" aria-label="Monetized with MCP">
+  <defs>
+    <clipPath id="mon-mcp-clip">
+      <rect width="176" height="28" rx="6" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#mon-mcp-clip)">
+    <rect width="66" height="28" fill="#0f172a"/>
+    <rect x="66" width="110" height="28" fill="#7c3aed"/>
+    <rect width="176" height="28" fill="none" stroke="rgba(168, 85, 247, 0.4)" stroke-width="2"/>
+  </g>
+  <g fill="#fff" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="11" font-weight="700">
+    <text x="33" y="18" fill="#e2e8f0">⚡ MCP</text>
+    <text x="121" y="18" fill="#ffffff">💳 Monetized</text>
+  </g>
+</svg>`;
+}
+
 export function generateFeaturedCardSvg(toolName = "Featured Open Source Project"): string {
   const safeName = escapeXml(toolName);
   return `<svg xmlns="http://www.w3.org/2000/svg" width="380" height="92" viewBox="0 0 380 92" fill="none" role="img" aria-label="DevShelf Verified: ${safeName}">
@@ -328,6 +366,18 @@ export async function buildStaticBadges() {
     "utf8",
   );
   await fs.writeFile(path.join(BADGES_DIR, "featured-card.svg"), generateFeaturedCardSvg(), "utf8");
+
+  // Viral distribution loop badges
+  await fs.writeFile(
+    path.join(BADGES_DIR, "secured-by-agentshield.svg"),
+    generateSecuredByAgentShieldSvg(),
+    "utf8",
+  );
+  await fs.writeFile(
+    path.join(BADGES_DIR, "monetized-with-mcp.svg"),
+    generateMonetizedWithMcpSvg(),
+    "utf8",
+  );
 
   // Public Uptime & Verification Badges
   const defaultUptime = generateUptimeBadgeSvg();
