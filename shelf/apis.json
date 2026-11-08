@@ -349,7 +349,8 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "CI Verified"]
+    "statusTags": ["No Card Required", "CI Verified"],
+    "status": "Needs Maintenance"
   },
   {
     "name": "Agify.io",
@@ -437,7 +438,8 @@
     "cors": "Yes",
     "rateLimit": "10,000 req/mo",
     "https": true,
-    "statusTags": ["Rate-Limited", "CI Verified"]
+    "statusTags": ["Rate-Limited", "CI Verified"],
+    "status": "Needs Maintenance"
   },
   {
     "name": "Mocky.io",
@@ -448,7 +450,8 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "CI Verified"]
+    "statusTags": ["No Card Required", "CI Verified"],
+    "status": "Needs Maintenance"
   },
   {
     "name": "Beeceptor",
@@ -514,7 +517,8 @@
     "cors": "Yes",
     "rateLimit": "200 req/sec",
     "https": true,
-    "statusTags": ["No Card Required", "CI Verified"]
+    "statusTags": ["No Card Required", "CI Verified"],
+    "status": "Needs Maintenance"
   },
   {
     "name": "Wikidata SPARQL API",
@@ -569,7 +573,8 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "CI Verified"]
+    "statusTags": ["No Card Required", "CI Verified"],
+    "status": "Needs Maintenance"
   },
   {
     "name": "OpenSky Network API",
@@ -580,7 +585,8 @@
     "cors": "Yes",
     "rateLimit": "100 req/day",
     "https": true,
-    "statusTags": ["Rate-Limited", "CI Verified"]
+    "statusTags": ["Rate-Limited", "CI Verified"],
+    "status": "Needs Maintenance"
   },
   {
     "name": "TVMaze API",
@@ -602,7 +608,8 @@
     "cors": "Yes",
     "rateLimit": "50 req/sec",
     "https": true,
-    "statusTags": ["Rate-Limited", "CI Verified"]
+    "statusTags": ["Rate-Limited", "CI Verified"],
+    "status": "Needs Maintenance"
   },
   {
     "name": "AniList GraphQL API",
@@ -712,7 +719,8 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "CI Verified"]
+    "statusTags": ["No Card Required", "CI Verified"],
+    "status": "Needs Maintenance"
   },
   {
     "name": "FishWatch API",
@@ -811,7 +819,8 @@
     "cors": "Yes",
     "rateLimit": "100,000 req/mo",
     "https": true,
-    "statusTags": ["Rate-Limited", "CI Verified"]
+    "statusTags": ["Rate-Limited", "CI Verified"],
+    "status": "Needs Maintenance"
   },
   {
     "name": "Open-Meteo Air Quality",
@@ -910,7 +919,8 @@
     "cors": "Yes",
     "rateLimit": "1,000 req/day",
     "https": true,
-    "statusTags": ["Rate-Limited", "CI Verified"]
+    "statusTags": ["Rate-Limited", "CI Verified"],
+    "status": "Needs Maintenance"
   },
   {
     "name": "Agify API",
@@ -921,7 +931,8 @@
     "cors": "Yes",
     "rateLimit": "1,000 req/day",
     "https": true,
-    "statusTags": ["Rate-Limited", "CI Verified"]
+    "statusTags": ["Rate-Limited", "CI Verified"],
+    "status": "Needs Maintenance"
   },
   {
     "name": "Nationalize API",
@@ -932,7 +943,8 @@
     "cors": "Yes",
     "rateLimit": "1,000 req/day",
     "https": true,
-    "statusTags": ["Rate-Limited", "CI Verified"]
+    "statusTags": ["Rate-Limited", "CI Verified"],
+    "status": "Needs Maintenance"
   },
   {
     "name": "Public APIs Index",
@@ -943,7 +955,8 @@
     "cors": "Yes",
     "rateLimit": "Unlimited",
     "https": true,
-    "statusTags": ["No Card Required", "CI Verified"]
+    "statusTags": ["No Card Required", "CI Verified"],
+    "status": "Needs Maintenance"
   },
   {
     "name": "ipinfo.io Lite",
@@ -1124,7 +1137,8 @@
     "auth": "No Key",
     "cors": "Yes",
     "rateLimit": "No numerical rate limit is published. Static, read-only JSON with no account, API key or card; consumers should cache responses.",
-    "https": true
+    "https": true,
+    "status": "Needs Maintenance"
   },
   {
     "name": "unicum.gg",
@@ -1134,7 +1148,8 @@
     "auth": "No Key",
     "cors": "Yes",
     "rateLimit": "No fixed quota, fair use. Every endpoint is free and keyless.",
-    "https": true
+    "https": true,
+    "status": "Needs Maintenance"
   },
   {
     "name": "AgentSandboxes",

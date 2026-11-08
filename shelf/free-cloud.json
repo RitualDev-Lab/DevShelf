@@ -141,7 +141,8 @@
     "category": "Self-Hosted Cloud & PaaS",
     "description": "Extremely easy-to-use open-source app and database deployment platform with automated SSL and 1-click apps.",
     "freeTier": "100% Free & Open Source",
-    "statusTags": ["No Card Required", "CI Verified"]
+    "statusTags": ["No Card Required", "CI Verified"],
+    "status": "Needs Maintenance"
   },
   {
     "name": "Easypanel",
@@ -245,7 +246,8 @@
     "category": "Cloud Hosting & PaaS",
     "description": "Infrastructure platform where developers build, ship, and scale code without configuring servers.",
     "freeTier": "Free trial credit of $5 for new projects with zero setup",
-    "statusTags": ["Requires Credit Card to Verify", "CI Verified"]
+    "statusTags": ["Requires Credit Card to Verify", "CI Verified"],
+    "status": "Needs Maintenance"
   },
   {
     "name": "Oracle Cloud Always Free",
@@ -325,7 +327,8 @@
     "category": "Databases & BaaS",
     "description": "Managed cloud data platform offering permanent free tiers for PostgreSQL, MySQL, and OpenSearch.",
     "freeTier": "Free tier PostgreSQL / MySQL single-node with 1GB RAM and 5GB storage",
-    "statusTags": ["No Card Required", "CI Verified"]
+    "statusTags": ["No Card Required", "CI Verified"],
+    "status": "Needs Maintenance"
   },
   {
     "name": "MongoDB Atlas",
@@ -533,7 +536,8 @@
     "category": "Transactional Email",
     "description": "Developer-first email delivery platform offering inbound routing, SPF/DKIM verification, and logs.",
     "freeTier": "5,000 free emails for 1 month, then low pay-as-you-grow",
-    "statusTags": ["Requires Credit Card to Verify", "CI Verified"]
+    "statusTags": ["Requires Credit Card to Verify", "CI Verified"],
+    "status": "Needs Maintenance"
   },
   {
     "name": "Plausible Analytics Self-Hosted",
@@ -541,7 +545,8 @@
     "category": "Observability & Analytics",
     "description": "Lightweight and open-source Google Analytics alternative with zero cookies and full GDPR compliance.",
     "freeTier": "100% Free & Open Source AGPLv3 for self-hosters",
-    "statusTags": ["No Card Required", "CI Verified"]
+    "statusTags": ["No Card Required", "CI Verified"],
+    "status": "Needs Maintenance"
   },
   {
     "name": "Grafana OSS",

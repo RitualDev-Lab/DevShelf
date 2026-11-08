@@ -580,7 +580,8 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://code.blicky.net/yorhel/ncdu",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"],
+    "status": "Needs Maintenance"
   },
   {
     "name": "gdu",
@@ -1253,7 +1254,8 @@
     "description": "Free MIT skill library. A deterministic Python router assigns one accountable lead and, when needed, supporting specialist skills. It does not start agents, call a model, or require an account.",
     "language": "Python",
     "license": "MIT",
-    "featured": false
+    "featured": false,
+    "status": "Needs Maintenance"
   },
   {
     "name": "DateParser Kotlin",
