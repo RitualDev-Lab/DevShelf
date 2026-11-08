@@ -8,7 +8,10 @@
     "license": "Proprietary / Community",
     "featured": true,
     "goodFirstIssues": "https://github.com/RitualDev-Lab/FinePrintAI/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "GitWhisper",
@@ -19,7 +22,10 @@
     "license": "MIT",
     "featured": true,
     "goodFirstIssues": "https://github.com/RitualDev-Lab/GitWhisper/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "FlashLane",
@@ -30,7 +36,10 @@
     "license": "MIT",
     "featured": true,
     "goodFirstIssues": "https://github.com/RitualDev-Lab/FlashLane/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "lazygit",
@@ -41,7 +50,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/jesseduffield/lazygit/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "ripgrep",
@@ -52,7 +64,10 @@
     "license": "MIT / UNLICENSE",
     "featured": false,
     "goodFirstIssues": "https://github.com/BurntSushi/ripgrep/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "eza",
@@ -63,7 +78,10 @@
     "license": "EUPL-1.2",
     "featured": false,
     "goodFirstIssues": "https://github.com/eza-community/eza/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "fzf",
@@ -74,7 +92,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/junegunn/fzf/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "agent-browser",
@@ -85,7 +106,10 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/vercel-labs/agent-browser/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "bat",
@@ -96,7 +120,10 @@
     "license": "MIT / Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/sharkdp/bat/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "delta",
@@ -107,7 +134,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/dandavison/delta/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "hyperfine",
@@ -118,7 +148,10 @@
     "license": "MIT / Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/sharkdp/hyperfine/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "tldr",
@@ -129,7 +162,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/tldr-pages/tldr/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "dust",
@@ -140,7 +176,10 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/bootandy/dust/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "procs",
@@ -151,7 +190,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/dalance/procs/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "bottom",
@@ -162,7 +204,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/ClementTsang/bottom/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "curlie",
@@ -173,7 +218,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/rs/curlie/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "Starship",
@@ -184,7 +232,10 @@
     "license": "ISC",
     "featured": false,
     "goodFirstIssues": "https://github.com/starship/starship/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "zoxide",
@@ -195,7 +246,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/ajeetdsouza/zoxide/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "gh-dash",
@@ -206,7 +260,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/dlvhdr/gh-dash/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "HTTPie",
@@ -217,7 +274,10 @@
     "license": "BSD-3-Clause",
     "featured": false,
     "goodFirstIssues": "https://github.com/httpie/cli/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "fd",
@@ -228,7 +288,10 @@
     "license": "Apache-2.0 / MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/sharkdp/fd/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "btop",
@@ -239,7 +302,10 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/aristocratos/btop/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "k9s",
@@ -250,7 +316,10 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/derailed/k9s/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "act",
@@ -261,7 +330,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/nektos/act/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "duf",
@@ -272,7 +344,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/muesli/duf/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "tokei",
@@ -283,7 +358,10 @@
     "license": "MIT / Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/XAMPPRocky/tokei/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "xh",
@@ -294,7 +372,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/ducaale/xh/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "doggo",
@@ -305,7 +386,10 @@
     "license": "GPL-3.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/mr-karan/doggo/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "fx",
@@ -316,7 +400,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/antonmedv/fx/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "jless",
@@ -327,7 +414,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/PaulJuliusMartinez/jless/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "lazysql",
@@ -338,7 +428,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/jorgerojas26/lazysql/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "gum",
@@ -349,7 +442,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/charmbracelet/gum/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "vhs",
@@ -360,7 +456,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/charmbracelet/vhs/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "glow",
@@ -371,7 +470,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/charmbracelet/glow/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "dive",
@@ -382,7 +484,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/wagoodman/dive/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "lazydocker",
@@ -393,7 +498,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/jesseduffield/lazydocker/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "usql",
@@ -404,7 +512,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/xo/usql/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "gping",
@@ -415,7 +526,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/orf/gping/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "bandwhich",
@@ -426,7 +540,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/imsnif/bandwhich/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "choose",
@@ -437,7 +554,10 @@
     "license": "GPL-3.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/theryangeary/choose/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "sd",
@@ -448,7 +568,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/chmln/sd/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "mcfly",
@@ -459,7 +582,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/cantino/mcfly/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "yazi",
@@ -470,7 +596,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/sxyazi/yazi/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "helix",
@@ -481,7 +610,10 @@
     "license": "MPL-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/helix-editor/helix/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "zellij",
@@ -492,7 +624,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/zellij-org/zellij/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "nnn",
@@ -503,7 +638,10 @@
     "license": "BSD-2-Clause",
     "featured": false,
     "goodFirstIssues": "https://github.com/jarun/nnn/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "ranger",
@@ -514,7 +652,10 @@
     "license": "GPL-3.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/ranger/ranger/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "broot",
@@ -525,7 +666,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/Canop/broot/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "superfile",
@@ -536,7 +680,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/yorukot/superfile/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "htop",
@@ -547,7 +694,10 @@
     "license": "GPL-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/htop-dev/htop/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "glances",
@@ -558,7 +708,10 @@
     "license": "LGPL-3.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/nicolargo/glances/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "fastfetch",
@@ -569,7 +722,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/fastfetch-cli/fastfetch/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "ncdu",
@@ -580,7 +736,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://code.blicky.net/yorhel/ncdu",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"],
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ],
     "status": "Needs Maintenance"
   },
   {
@@ -592,7 +751,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/dundee/gdu/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "aria2",
@@ -603,7 +765,10 @@
     "license": "GPL-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/aria2/aria2/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "croc",
@@ -614,7 +779,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/schollz/croc/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "magic-wormhole",
@@ -625,7 +793,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/magic-wormhole/magic-wormhole/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "trippy",
@@ -636,7 +807,10 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/fujiapple852/trippy/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "mitmproxy",
@@ -647,7 +821,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/mitmproxy/mitmproxy/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "websocat",
@@ -658,7 +835,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/vi/websocat/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "grpcurl",
@@ -669,7 +849,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/fullstorydev/grpcurl/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "gh",
@@ -680,7 +863,10 @@
     "license": "MIT",
     "featured": true,
     "goodFirstIssues": "https://github.com/cli/cli/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "glab",
@@ -691,7 +877,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://gitlab.com/gitlab-org/cli/-/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "git-cliff",
@@ -702,7 +891,10 @@
     "license": "Apache-2.0 / MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/orhun/git-cliff/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "onefetch",
@@ -713,7 +905,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/o2sh/onefetch/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "gitleaks",
@@ -724,7 +919,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/gitleaks/gitleaks/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "trufflehog",
@@ -735,7 +933,10 @@
     "license": "AGPL-3.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/trufflesecurity/trufflehog/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "osv-scanner",
@@ -746,7 +947,10 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/google/osv-scanner/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "tmux",
@@ -757,7 +961,10 @@
     "license": "ISC",
     "featured": false,
     "goodFirstIssues": "https://github.com/tmux/tmux/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "atuin",
@@ -768,7 +975,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/atuinsh/atuin/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "thefuck",
@@ -779,7 +989,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/nvbn/thefuck/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "direnv",
@@ -790,7 +1003,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/direnv/direnv/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "mise",
@@ -801,7 +1017,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/jdx/mise/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "asdf-vm",
@@ -812,7 +1031,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/asdf-vm/asdf/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "pnpm",
@@ -823,7 +1045,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/pnpm/pnpm/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "bun",
@@ -834,7 +1059,10 @@
     "license": "MIT",
     "featured": true,
     "goodFirstIssues": "https://github.com/oven-sh/bun/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "deno",
@@ -845,7 +1073,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/denoland/deno/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "jq",
@@ -856,7 +1087,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/jqlang/jq/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "yq",
@@ -867,7 +1101,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/mikefarah/yq/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "miller",
@@ -878,7 +1115,10 @@
     "license": "BSD-2-Clause",
     "featured": false,
     "goodFirstIssues": "https://github.com/johnkerl/miller/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "csvkit",
@@ -889,7 +1129,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/wireservice/csvkit/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "pandoc",
@@ -900,7 +1143,10 @@
     "license": "GPL-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/jgm/pandoc/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "typos-cli",
@@ -911,7 +1157,10 @@
     "license": "Apache-2.0 / MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/crate-ci/typos/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "vale",
@@ -922,7 +1171,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/errata-ai/vale/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "RowSafe",
@@ -943,7 +1195,10 @@
     "license": "BSD-3-Clause",
     "featured": false,
     "goodFirstIssues": "https://github.com/dbcli/pgcli/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "mycli",
@@ -954,7 +1209,10 @@
     "license": "BSD-3-Clause",
     "featured": false,
     "goodFirstIssues": "https://github.com/dbcli/mycli/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "iredis",
@@ -965,7 +1223,10 @@
     "license": "BSD-3-Clause",
     "featured": false,
     "goodFirstIssues": "https://github.com/laixintao/iredis/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "litecli",
@@ -976,7 +1237,10 @@
     "license": "BSD-3-Clause",
     "featured": false,
     "goodFirstIssues": "https://github.com/dbcli/litecli/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "stern",
@@ -987,7 +1251,10 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/stern/stern/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "kubectx",
@@ -998,7 +1265,10 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/ahmetb/kubectx/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "helm",
@@ -1009,7 +1279,10 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/helm/helm/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "kustomize",
@@ -1020,7 +1293,10 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/kubernetes-sigs/kustomize/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "minikube",
@@ -1031,7 +1307,10 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/kubernetes/minikube/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "kind",
@@ -1042,7 +1321,10 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/kubernetes-sigs/kind/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "dasel",
@@ -1053,7 +1335,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/TomWright/dasel/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "zenith",
@@ -1064,7 +1349,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/bvaisvil/zenith/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "diskonaut",
@@ -1075,7 +1363,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/imsnif/diskonaut/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "ctop",
@@ -1086,7 +1377,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/bcicen/ctop/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "speedtest-cli",
@@ -1097,7 +1391,10 @@
     "license": "Apache-2.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/sivel/speedtest-cli/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "git-sizer",
@@ -1108,7 +1405,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/github/git-sizer/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "cz-cli",
@@ -1119,7 +1419,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/commitizen/cz-cli/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "volta",
@@ -1130,7 +1433,10 @@
     "license": "BSD-2-Clause",
     "featured": false,
     "goodFirstIssues": "https://github.com/volta-cli/volta/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "q",
@@ -1141,7 +1447,10 @@
     "license": "GPL-3.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/harelba/q/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "lf",
@@ -1152,7 +1461,10 @@
     "license": "MIT",
     "featured": false,
     "goodFirstIssues": "https://github.com/gokcehan/lf/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "inxi",
@@ -1163,7 +1475,10 @@
     "license": "GPL-3.0",
     "featured": false,
     "goodFirstIssues": "https://github.com/smxi/inxi/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": [
+      "100% Offline-Friendly",
+      "No Card Required"
+    ]
   },
   {
     "name": "Codex Quota Overlay",
@@ -1311,7 +1626,10 @@
     "language": "TypeScript",
     "license": "MIT",
     "featured": false,
-    "statusTags": ["No Card Required", "100% Free"],
+    "statusTags": [
+      "No Card Required",
+      "100% Free"
+    ],
     "goodFirstIssues": "https://github.com/flisk-sh/flisk/issues"
   },
   {

@@ -1,6 +1,6 @@
 {
   "version": "1.1.2",
-  "updatedAt": "2026-11-07T18:08:29.138Z",
+  "updatedAt": "2026-11-08T14:49:47.585Z",
   "slug": "ai",
   "name": "AI Agents & Local LLMs",
   "count": 103,
@@ -20,6 +20,7 @@
         "100% Offline-Friendly",
         "No Card Required"
       ],
+      "pypi": "https://pypi.org/project/promptshield-defense/",
       "type": "ai",
       "section": "AI Agents & Local LLMs"
     },
@@ -38,6 +39,7 @@
         "100% Offline-Friendly",
         "No Card Required"
       ],
+      "pypi": "https://pypi.org/project/agentshield-defense/",
       "type": "ai",
       "section": "AI Agents & Local LLMs"
     },
@@ -53,6 +55,7 @@
         "No Card Required",
         "Featured"
       ],
+      "pypi": "https://pypi.org/project/mcp-monetize/",
       "type": "ai",
       "section": "AI Agents & Local LLMs"
     },
@@ -1556,6 +1559,7 @@
       "language": "TypeScript",
       "license": "MIT",
       "featured": true,
+      "pypi": "https://pypi.org/project/dbshield-defense/",
       "type": "ai",
       "section": "AI Agents & Local LLMs"
     },

@@ -1,6 +1,6 @@
 {
   "version": "1.1.2",
-  "updatedAt": "2026-11-07T18:08:29.138Z",
+  "updatedAt": "2026-11-08T14:49:47.585Z",
   "slug": "cloud",
   "name": "Free Cloud & Databases",
   "count": 72,
@@ -252,6 +252,7 @@
         "No Card Required",
         "CI Verified"
       ],
+      "status": "Needs Maintenance",
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
     },
@@ -438,6 +439,7 @@
         "Requires Credit Card to Verify",
         "CI Verified"
       ],
+      "status": "Needs Maintenance",
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers",
       "alternativeTo": "Heroku"
@@ -568,6 +570,7 @@
         "No Card Required",
         "CI Verified"
       ],
+      "status": "Needs Maintenance",
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
     },
@@ -920,6 +923,7 @@
         "Requires Credit Card to Verify",
         "CI Verified"
       ],
+      "status": "Needs Maintenance",
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
     },
@@ -933,6 +937,7 @@
         "No Card Required",
         "CI Verified"
       ],
+      "status": "Needs Maintenance",
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers",
       "alternativeTo": "Google Analytics",

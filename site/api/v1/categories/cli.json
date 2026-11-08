@@ -1,6 +1,6 @@
 {
   "version": "1.1.2",
-  "updatedAt": "2026-11-07T18:08:29.138Z",
+  "updatedAt": "2026-11-08T14:49:47.585Z",
   "slug": "cli",
   "name": "CLI & Developer Productivity",
   "count": 130,
@@ -865,6 +865,7 @@
         "100% Offline-Friendly",
         "No Card Required"
       ],
+      "status": "Needs Maintenance",
       "type": "cli",
       "section": "CLI & Productivity Tools",
       "alternativeTo": "Disk Inventory X / DaisyDisk"
@@ -1834,6 +1835,7 @@
       "language": "Python",
       "license": "MIT",
       "featured": false,
+      "status": "Needs Maintenance",
       "type": "cli",
       "section": "CLI & Productivity Tools"
     },
