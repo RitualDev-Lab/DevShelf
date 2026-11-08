@@ -71,6 +71,18 @@ async function buildSiteData() {
     const digestSource = `${slug}:${tool.url || ""}:${tool.license || ""}:${tool.type || ""}`;
     const verificationDigest = crypto.createHash("sha256").update(digestSource).digest("hex");
 
+    let installCommand = tool.installCommand;
+    if (!installCommand && tool.url) {
+      try {
+        const parsedUrl = new URL(tool.url);
+        if (parsedUrl.hostname === "github.com" || parsedUrl.hostname.endsWith(".github.com")) {
+          installCommand = `git clone ${tool.url}`;
+        }
+      } catch {
+        // invalid URL string, skip default git clone command
+      }
+    }
+
     return {
       id: slug,
       name: tool.name,
@@ -91,9 +103,7 @@ async function buildSiteData() {
         verifiedAt: payload.updatedAt,
         verificationDigest,
       },
-      installCommand:
-        tool.installCommand ||
-        (tool.url?.includes("github.com") ? `git clone ${tool.url}` : undefined),
+      installCommand,
     };
   });
 
