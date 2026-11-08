@@ -1,6 +1,6 @@
 {
   "version": "1.1.2",
-  "updatedAt": "2026-11-07T18:08:29.138Z",
+  "updatedAt": "2026-11-08T14:49:47.585Z",
   "slug": "apis",
   "name": "Free Public APIs",
   "count": 109,
@@ -519,6 +519,7 @@
         "No Card Required",
         "CI Verified"
       ],
+      "status": "Needs Maintenance",
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -647,6 +648,7 @@
         "Rate-Limited",
         "CI Verified"
       ],
+      "status": "Needs Maintenance",
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -663,6 +665,7 @@
         "No Card Required",
         "CI Verified"
       ],
+      "status": "Needs Maintenance",
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -759,6 +762,7 @@
         "No Card Required",
         "CI Verified"
       ],
+      "status": "Needs Maintenance",
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -839,6 +843,7 @@
         "No Card Required",
         "CI Verified"
       ],
+      "status": "Needs Maintenance",
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -855,6 +860,7 @@
         "Rate-Limited",
         "CI Verified"
       ],
+      "status": "Needs Maintenance",
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -887,6 +893,7 @@
         "Rate-Limited",
         "CI Verified"
       ],
+      "status": "Needs Maintenance",
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -1047,6 +1054,7 @@
         "No Card Required",
         "CI Verified"
       ],
+      "status": "Needs Maintenance",
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -1191,6 +1199,7 @@
         "Rate-Limited",
         "CI Verified"
       ],
+      "status": "Needs Maintenance",
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -1335,6 +1344,7 @@
         "Rate-Limited",
         "CI Verified"
       ],
+      "status": "Needs Maintenance",
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -1351,6 +1361,7 @@
         "Rate-Limited",
         "CI Verified"
       ],
+      "status": "Needs Maintenance",
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -1367,6 +1378,7 @@
         "Rate-Limited",
         "CI Verified"
       ],
+      "status": "Needs Maintenance",
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -1383,6 +1395,7 @@
         "No Card Required",
         "CI Verified"
       ],
+      "status": "Needs Maintenance",
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -1631,6 +1644,7 @@
       "cors": "Yes",
       "rateLimit": "No numerical rate limit is published. Static, read-only JSON with no account, API key or card; consumers should cache responses.",
       "https": true,
+      "status": "Needs Maintenance",
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -1643,6 +1657,7 @@
       "cors": "Yes",
       "rateLimit": "No fixed quota, fair use. Every endpoint is free and keyless.",
       "https": true,
+      "status": "Needs Maintenance",
       "type": "api",
       "section": "Free & Public APIs"
     },

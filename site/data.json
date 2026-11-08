@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T18:08:29.138Z",
+  "updatedAt": "2026-11-08T14:49:47.585Z",
   "totalCount": 575,
   "reposCount": 363,
   "facets": {
@@ -31,6 +31,7 @@
         "100% Offline-Friendly",
         "No Card Required"
       ],
+      "pypi": "https://pypi.org/project/promptshield-defense/",
       "type": "ai",
       "section": "AI Agents & Local LLMs"
     },
@@ -49,6 +50,7 @@
         "100% Offline-Friendly",
         "No Card Required"
       ],
+      "pypi": "https://pypi.org/project/agentshield-defense/",
       "type": "ai",
       "section": "AI Agents & Local LLMs"
     },
@@ -64,6 +66,7 @@
         "No Card Required",
         "Featured"
       ],
+      "pypi": "https://pypi.org/project/mcp-monetize/",
       "type": "ai",
       "section": "AI Agents & Local LLMs"
     },
@@ -1567,6 +1570,7 @@
       "language": "TypeScript",
       "license": "MIT",
       "featured": true,
+      "pypi": "https://pypi.org/project/dbshield-defense/",
       "type": "ai",
       "section": "AI Agents & Local LLMs"
     },
@@ -2520,6 +2524,7 @@
         "100% Offline-Friendly",
         "No Card Required"
       ],
+      "status": "Needs Maintenance",
       "type": "cli",
       "section": "CLI & Productivity Tools",
       "alternativeTo": "Disk Inventory X / DaisyDisk"
@@ -3489,6 +3494,7 @@
       "language": "Python",
       "license": "MIT",
       "featured": false,
+      "status": "Needs Maintenance",
       "type": "cli",
       "section": "CLI & Productivity Tools"
     },
@@ -5008,6 +5014,7 @@
         "No Card Required",
         "CI Verified"
       ],
+      "status": "Needs Maintenance",
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -5136,6 +5143,7 @@
         "Rate-Limited",
         "CI Verified"
       ],
+      "status": "Needs Maintenance",
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -5152,6 +5160,7 @@
         "No Card Required",
         "CI Verified"
       ],
+      "status": "Needs Maintenance",
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -5248,6 +5257,7 @@
         "No Card Required",
         "CI Verified"
       ],
+      "status": "Needs Maintenance",
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -5328,6 +5338,7 @@
         "No Card Required",
         "CI Verified"
       ],
+      "status": "Needs Maintenance",
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -5344,6 +5355,7 @@
         "Rate-Limited",
         "CI Verified"
       ],
+      "status": "Needs Maintenance",
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -5376,6 +5388,7 @@
         "Rate-Limited",
         "CI Verified"
       ],
+      "status": "Needs Maintenance",
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -5536,6 +5549,7 @@
         "No Card Required",
         "CI Verified"
       ],
+      "status": "Needs Maintenance",
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -5680,6 +5694,7 @@
         "Rate-Limited",
         "CI Verified"
       ],
+      "status": "Needs Maintenance",
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -5824,6 +5839,7 @@
         "Rate-Limited",
         "CI Verified"
       ],
+      "status": "Needs Maintenance",
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -5840,6 +5856,7 @@
         "Rate-Limited",
         "CI Verified"
       ],
+      "status": "Needs Maintenance",
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -5856,6 +5873,7 @@
         "Rate-Limited",
         "CI Verified"
       ],
+      "status": "Needs Maintenance",
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -5872,6 +5890,7 @@
         "No Card Required",
         "CI Verified"
       ],
+      "status": "Needs Maintenance",
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -6120,6 +6139,7 @@
       "cors": "Yes",
       "rateLimit": "No numerical rate limit is published. Static, read-only JSON with no account, API key or card; consumers should cache responses.",
       "https": true,
+      "status": "Needs Maintenance",
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -6132,6 +6152,7 @@
       "cors": "Yes",
       "rateLimit": "No fixed quota, fair use. Every endpoint is free and keyless.",
       "https": true,
+      "status": "Needs Maintenance",
       "type": "api",
       "section": "Free & Public APIs"
     },
@@ -6446,6 +6467,7 @@
         "No Card Required",
         "CI Verified"
       ],
+      "status": "Needs Maintenance",
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
     },
@@ -6632,6 +6654,7 @@
         "Requires Credit Card to Verify",
         "CI Verified"
       ],
+      "status": "Needs Maintenance",
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers",
       "alternativeTo": "Heroku"
@@ -6762,6 +6785,7 @@
         "No Card Required",
         "CI Verified"
       ],
+      "status": "Needs Maintenance",
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
     },
@@ -7114,6 +7138,7 @@
         "Requires Credit Card to Verify",
         "CI Verified"
       ],
+      "status": "Needs Maintenance",
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
     },
@@ -7127,6 +7152,7 @@
         "No Card Required",
         "CI Verified"
       ],
+      "status": "Needs Maintenance",
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers",
       "alternativeTo": "Google Analytics",
@@ -7346,6 +7372,7 @@
       "description": "Free enterprise-grade CDN, DDoS protection, edge workers, and SSL certificate management for open-source initiatives.",
       "perkValue": "Free Enterprise Plan features & Edge bandwidth",
       "eligibility": "Non-profit or community-driven open-source projects with OSI-approved licenses",
+      "status": "Needs Maintenance",
       "type": "perks",
       "section": "Developer Discounts & Startup Perks"
     },
@@ -7356,6 +7383,7 @@
       "description": "Free 1Password Teams accounts for open-source project maintainers to securely share secrets and API tokens.",
       "perkValue": "Free 1Password Teams subscription",
       "eligibility": "Active open-source project maintainers with public GitHub repositories",
+      "status": "Needs Maintenance",
       "type": "perks",
       "section": "Developer Discounts & Startup Perks"
     },
@@ -7428,6 +7456,7 @@
       "description": "Up to $500 in Twilio communication API credits, sendgrid volume, and technical mentorship for early-stage software companies.",
       "perkValue": "Up to $500 in Twilio credits + SendGrid boosts",
       "eligibility": "Early-stage startups building customer communications",
+      "status": "Needs Maintenance",
       "type": "perks",
       "section": "Developer Discounts & Startup Perks"
     },
@@ -7468,6 +7497,7 @@
       "description": "Free localization and translation management platform for open-source software projects and global documentation.",
       "perkValue": "Free Crowdin Enterprise translation suite",
       "eligibility": "Non-commercial open-source projects with public repositories",
+      "status": "Needs Maintenance",
       "type": "perks",
       "section": "Developer Discounts & Startup Perks"
     },

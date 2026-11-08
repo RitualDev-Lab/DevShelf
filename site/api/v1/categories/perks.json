@@ -1,6 +1,6 @@
 {
   "version": "1.1.2",
-  "updatedAt": "2026-11-07T18:08:29.138Z",
+  "updatedAt": "2026-11-08T14:49:47.585Z",
   "slug": "perks",
   "name": "Developer Perks & Startup Credits",
   "count": 30,
@@ -163,6 +163,7 @@
       "description": "Free enterprise-grade CDN, DDoS protection, edge workers, and SSL certificate management for open-source initiatives.",
       "perkValue": "Free Enterprise Plan features & Edge bandwidth",
       "eligibility": "Non-profit or community-driven open-source projects with OSI-approved licenses",
+      "status": "Needs Maintenance",
       "type": "perks",
       "section": "Developer Discounts & Startup Perks"
     },
@@ -173,6 +174,7 @@
       "description": "Free 1Password Teams accounts for open-source project maintainers to securely share secrets and API tokens.",
       "perkValue": "Free 1Password Teams subscription",
       "eligibility": "Active open-source project maintainers with public GitHub repositories",
+      "status": "Needs Maintenance",
       "type": "perks",
       "section": "Developer Discounts & Startup Perks"
     },
@@ -245,6 +247,7 @@
       "description": "Up to $500 in Twilio communication API credits, sendgrid volume, and technical mentorship for early-stage software companies.",
       "perkValue": "Up to $500 in Twilio credits + SendGrid boosts",
       "eligibility": "Early-stage startups building customer communications",
+      "status": "Needs Maintenance",
       "type": "perks",
       "section": "Developer Discounts & Startup Perks"
     },
@@ -285,6 +288,7 @@
       "description": "Free localization and translation management platform for open-source software projects and global documentation.",
       "perkValue": "Free Crowdin Enterprise translation suite",
       "eligibility": "Non-commercial open-source projects with public repositories",
+      "status": "Needs Maintenance",
       "type": "perks",
       "section": "Developer Discounts & Startup Perks"
     },

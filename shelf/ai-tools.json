@@ -13,7 +13,8 @@
       "AI Prompt Firewall",
       "100% Offline-Friendly",
       "No Card Required"
-    ]
+    ],
+    "pypi": "https://pypi.org/project/promptshield-defense/"
   },
   {
     "name": "AgentShield",
@@ -29,7 +30,8 @@
       "AI Agent Security",
       "100% Offline-Friendly",
       "No Card Required"
-    ]
+    ],
+    "pypi": "https://pypi.org/project/agentshield-defense/"
   },
   {
     "name": "mcp-monetize",
@@ -39,7 +41,8 @@
     "language": "TypeScript",
     "license": "MIT",
     "featured": true,
-    "statusTags": ["No Card Required", "Featured"]
+    "statusTags": ["No Card Required", "Featured"],
+    "pypi": "https://pypi.org/project/mcp-monetize/"
   },
   {
     "name": "HOL Guard",
@@ -1042,7 +1045,8 @@
     "description": "Safety-first database guardrail and transaction-rollback sandboxing MCP server for AI coding agents. Intercepts unconstrained mutations, bulk deletes, lock escalations, and masks sensitive PII in real-time.",
     "language": "TypeScript",
     "license": "MIT",
-    "featured": true
+    "featured": true,
+    "pypi": "https://pypi.org/project/dbshield-defense/"
   },
   {
     "name": "Pydantic AI",
