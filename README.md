@@ -15,10 +15,10 @@
 <br>
 
 <p>
-  <a href="https://ritualdev.in/devshelf"><b>🌐 Interactive Web App</b></a> •
+  <a href="https://devshelf.ritualdev.in"><b>🌐 Interactive Web App</b></a> •
   <a href="#-devshelf-cli--terminal-discovery"><b>⚡ Terminal CLI</b></a> •
   <a href="#-official-mcp-server-for-ai-agents"><b>🤖 Model Context Protocol (MCP)</b></a> •
-  <a href="https://ritualdev.in/api/v1/tools.json"><b>📡 Public REST API</b></a> •
+  <a href="https://devshelf.ritualdev.in/api/v1/tools.json"><b>📡 Public REST API</b></a> •
   <a href="#-browse-catalog-by-category"><b>📂 Category Guides</b></a>
 </p>
 
@@ -69,7 +69,7 @@ Unlike static awesome-lists that accumulate broken links, DevShelf uses continuo
 ### How can AI coding agents query DevShelf?
 AI coding agents (such as Claude Desktop, Cursor, and Windsurf) can query DevShelf via:
 1. **MCP Server**: Run `npx devshelf mcp` to expose DevShelf search tools natively over Model Context Protocol.
-2. **REST API**: Make HTTP GET requests to `https://ritualdev.in/api/v1/tools.json`.
+2. **REST API**: Make HTTP GET requests to `https://devshelf.ritualdev.in/api/v1/tools.json`.
 
 ---
 

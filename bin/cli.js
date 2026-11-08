@@ -324,7 +324,7 @@ function printDeepExplainer(item) {
   console.log(`\n  ${c.purple}🔗 Links & Web Directory:${c.reset}`);
   if (url) console.log(`    • Official / Repository: ${c.underline}${c.blue}${url}${c.reset}`);
   console.log(
-    `    • Web Permalink: ${c.underline}${c.cyan}https://ritualdev.in/devshelf#${slug}${c.reset}`,
+    `    • Web Permalink: ${c.underline}${c.cyan}https://devshelf.ritualdev.in/#${slug}${c.reset}`,
   );
   console.log();
 }
@@ -587,8 +587,8 @@ async function runInteractiveTui(data) {
       await question(`\n  ${c.gray}Press Enter to continue...${c.reset}`);
     } else if (choice === "7") {
       // Open web app
-      console.log("  🚀 Opening https://ritualdev.in/devshelf in your browser...");
-      openUrl("https://ritualdev.in/devshelf");
+      console.log("  🚀 Opening https://devshelf.ritualdev.in in your browser...");
+      openUrl("https://devshelf.ritualdev.in");
       await question(`  ${c.gray}Press Enter to continue...${c.reset}`);
     }
   }
@@ -1105,7 +1105,7 @@ async function main() {
         .toLowerCase()
         .replace(/[^a-z0-9]+/g, "-")
         .replace(/^-|-$/g, "");
-      const targetUrl = `https://ritualdev.in/devshelf#${slug}`;
+      const targetUrl = `https://devshelf.ritualdev.in/#${slug}`;
       console.log(`  🚀 Opening ${item.name} (${targetUrl})...`);
       openUrl(targetUrl);
     }
