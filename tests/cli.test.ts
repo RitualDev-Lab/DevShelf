@@ -94,7 +94,7 @@ describe("DevShelf CLI & TUI Suite", () => {
     assert.match(res.stdout, /Open-Source Alternative to/i);
     assert.match(res.stdout, /Quick Install & Run/i);
     assert.match(res.stdout, /Docker Compose/i);
-    assert.match(res.stdout, /https:\/\/ritualdev\.in\/devshelf#ollama/);
+    assert.match(res.stdout, /https:\/\/devshelf\.ritualdev\.in\/#ollama/);
   });
 
   test("explains tool in structured JSON format with explain --json", () => {
