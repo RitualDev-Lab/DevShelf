@@ -91,7 +91,9 @@ async function buildSiteData() {
         verifiedAt: payload.updatedAt,
         verificationDigest,
       },
-      installCommand: tool.installCommand || (tool.url?.includes("github.com") ? `git clone ${tool.url}` : undefined),
+      installCommand:
+        tool.installCommand ||
+        (tool.url?.includes("github.com") ? `git clone ${tool.url}` : undefined),
     };
   });
 
