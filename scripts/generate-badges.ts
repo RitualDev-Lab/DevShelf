@@ -426,6 +426,16 @@ export async function buildStaticBadges() {
   const defaultCard = generateCardBadgeSvg({ tier: "gold", name: "DevShelf Verified Backer" });
   await fs.writeFile(path.join(BADGES_DIR, "default.svg"), defaultPill, "utf8");
   await fs.writeFile(path.join(BADGES_DIR, "verified.svg"), defaultCard, "utf8");
+  await fs.writeFile(
+    path.join(BADGES_DIR, "secured-by-agentshield.svg"),
+    generateSecuredByAgentShieldSvg(),
+    "utf8",
+  );
+  await fs.writeFile(
+    path.join(BADGES_DIR, "monetized-with-mcp.svg"),
+    generateMonetizedWithMcpSvg(),
+    "utf8",
+  );
 
   // Load canonical patrons ledger from data/sponsors.json
   const sponsorsDataPath = path.join(ROOT_DIR, "data", "sponsors.json");
