@@ -10,7 +10,7 @@ const __dirname = path.dirname(__filename);
 
 let cachedCatalog = null;
 
-export const DEFAULT_CACHE_TTL_MS = 24 * 60 * 60 * 1000; // 24 hours
+export const DEFAULT_CACHE_TTL_MS = 4 * 60 * 60 * 1000; // 4 hours auto-refresh TTL
 
 export function getMilestone(totalCount) {
   const count = Number(totalCount);
@@ -109,8 +109,8 @@ export function clearPersistentCache() {
  */
 export async function fetchLiveCatalog(timeoutMs = 4000, fetchFn = fetch) {
   const candidateUrls = [
-    "https://ritualdev.in/data.json",
     "https://raw.githubusercontent.com/RitualDev-Lab/DevShelf/main/site/data.json",
+    "https://ritualdev.in/data.json",
     "https://devshelf.ritualdev.in/data.json",
   ];
 
