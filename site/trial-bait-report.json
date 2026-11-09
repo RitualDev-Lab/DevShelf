@@ -1,6 +1,55 @@
 {
-  "generatedAt": "2026-09-27T17:39:04.381Z",
-  "totalScanned": 5,
-  "suspiciousCount": 0,
-  "findings": []
+  "generatedAt": "2026-11-09T12:42:11.515Z",
+  "totalScanned": 352,
+  "suspiciousCount": 2,
+  "findings": [
+    {
+      "name": "CockroachDB Serverless",
+      "category": "Databases & BaaS",
+      "url": "https://www.cockroachlabs.com/pricing",
+      "status": 200,
+      "analysis": {
+        "isSuspicious": true,
+        "confidence": "high",
+        "reasons": [
+          "Mandatory upfront credit card requirement detected",
+          "Time-limited trial detected without evidence of a permanent free plan"
+        ],
+        "matches": [
+          {
+            "rule": "credit_card_upfront",
+            "phrase": "requires a credit card",
+            "excerpt": "ard is required to try Standard; Mission Critical requires a credit card because it runs on dedicated infrastructure. What"
+          },
+          {
+            "rule": "trial_only_bait",
+            "phrase": "30-day free trial",
+            "excerpt": "y for what you use. New Cloud organizations get a 30-day free trial with $400 in credit. Get your cost estimate Copy"
+          }
+        ]
+      },
+      "checkedAt": "2026-11-09T12:41:56.594Z"
+    },
+    {
+      "name": "Maestro",
+      "category": "Browser & E2E Testing",
+      "url": "https://github.com/mobile-dev-inc/maestro",
+      "status": 200,
+      "analysis": {
+        "isSuspicious": true,
+        "confidence": "medium",
+        "reasons": [
+          "Time-limited trial detected without evidence of a permanent free plan"
+        ],
+        "matches": [
+          {
+            "rule": "trial_only_bait",
+            "phrase": "7-day trial",
+            "excerpt": "be found on the pricing page . 👉 Start your free 7-day trial Resources & Community 💬 Join the Slack Community"
+          }
+        ]
+      },
+      "checkedAt": "2026-11-09T12:42:07.691Z"
+    }
+  ]
 }
