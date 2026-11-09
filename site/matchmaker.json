@@ -1,20 +1,20 @@
 {
-  "updatedAt": "2026-09-27T17:42:49.880Z",
+  "updatedAt": "2026-11-09T14:31:55.922Z",
   "totalProjects": 21,
-  "totalOpenIssues": 40,
+  "totalOpenIssues": 21,
   "projects": [
     {
-      "name": "GitWhisper",
-      "repo": "https://github.com/RitualDev-Lab/GitWhisper",
+      "name": "Zed",
+      "repo": "https://github.com/zed-industries/zed",
       "category": "Developer Utilities & CLI",
-      "language": "TypeScript",
-      "seeking": "JetBrains IDE Plugin, Community Custom LLM Adapters, Documentation",
-      "description": "AI-assisted conventional commit generator grounded in staged index plumbing.",
+      "language": "Rust",
+      "seeking": "Language extensions, themes, cross-platform UI polish, keybindings, and starter bugs",
+      "description": "High-performance, multiplayer code editor written in Rust with built-in language intelligence and AI.",
       "openGoodFirstIssuesCount": 1,
       "issues": [
         {
-          "title": "Explore open issues & help wanted in GitWhisper",
-          "url": "https://github.com/RitualDev-Lab/GitWhisper/issues",
+          "title": "Explore open issues & help wanted in Zed",
+          "url": "https://github.com/zed-industries/zed/labels/good%20first%20issue",
           "labels": [
             "good first issue",
             "help wanted"
@@ -22,61 +22,29 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 1,
-      "forks": 0,
-      "pushedAt": "2026-09-16T01:35:24Z",
-      "lastActivityRelative": "11d ago",
+      "stars": 94562,
+      "forks": 11581,
+      "pushedAt": "2026-11-09T14:10:42Z",
+      "lastActivityRelative": "20m ago",
       "techStack": [
-        "ai-commits",
-        "conventional-commits",
-        "developer-tools",
-        "git-commit",
-        "git-productivity"
+        "gpui",
+        "rust-lang",
+        "text-editor",
+        "zed"
       ]
     },
     {
-      "name": "AutoHeal-QA",
-      "repo": "https://github.com/RitualDev-Lab/autoheal-qa",
-      "category": "Testing & QA Automation",
-      "language": "TypeScript",
-      "seeking": "Cypress Adapter, Additional Local Model Adapters, Visual UI Dashboard",
-      "description": "Zero-cloud-cost agentic self-healing E2E test runner for Playwright.",
-      "openGoodFirstIssuesCount": 1,
-      "issues": [
-        {
-          "title": "Explore open issues & help wanted in AutoHeal-QA",
-          "url": "https://github.com/RitualDev-Lab/autoheal-qa/issues",
-          "labels": [
-            "good first issue",
-            "help wanted"
-          ],
-          "difficulty": "Starter Task"
-        }
-      ],
-      "stars": 1,
-      "forks": 0,
-      "pushedAt": "2026-09-16T01:36:39Z",
-      "lastActivityRelative": "11d ago",
-      "techStack": [
-        "e2e-testing",
-        "ollama",
-        "playwright",
-        "qa-automation",
-        "self-healing-tests"
-      ]
-    },
-    {
-      "name": "FlashLane",
-      "repo": "https://github.com/RitualDev-Lab/FlashLane",
+      "name": "Biome",
+      "repo": "https://github.com/biomejs/biome",
       "category": "Developer Utilities & CLI",
-      "language": "TypeScript / Electron",
-      "seeking": "macOS diskutil runner, Linux block flashing, E2E ISO tests, Documentation",
-      "description": "Universal, high-speed bootable ISO/IMG USB writer with Rufus parity for Windows, macOS, and Linux.",
+      "language": "Rust",
+      "seeking": "New linter rules, parser optimizations, CSS support, documentation, and starter issues",
+      "description": "Fast formatter and linter for JavaScript, TypeScript, JSX, and JSON that aims to replace Prettier and ESLint.",
       "openGoodFirstIssuesCount": 1,
       "issues": [
         {
-          "title": "Explore open issues & help wanted in FlashLane",
-          "url": "https://github.com/RitualDev-Lab/FlashLane/issues",
+          "title": "Explore open issues & help wanted in Biome",
+          "url": "https://github.com/biomejs/biome/labels/good%20first%20issue",
           "labels": [
             "good first issue",
             "help wanted"
@@ -84,116 +52,59 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 1,
-      "forks": 0,
-      "pushedAt": "2026-09-16T01:34:33Z",
-      "lastActivityRelative": "11d ago",
+      "stars": 26068,
+      "forks": 1333,
+      "pushedAt": "2026-11-09T14:16:23Z",
+      "lastActivityRelative": "15m ago",
       "techStack": [
-        "bootable-usb",
-        "cross-platform",
-        "developer-tools",
-        "electron",
-        "etcher-alternative"
+        "css",
+        "formatter",
+        "javascript",
+        "json",
+        "jsx"
       ]
     },
     {
-      "name": "Bruno",
-      "repo": "https://github.com/usebruno/bruno",
+      "name": "Nushell",
+      "repo": "https://github.com/nushell/nushell",
       "category": "Developer Utilities & CLI",
-      "language": "JavaScript",
-      "seeking": "Collection runner plugins, translations, UI improvements, good first issues",
-      "description": "Fast, git-friendly open-source API client that stores collections in plain text.",
-      "openGoodFirstIssuesCount": 5,
+      "language": "Rust",
+      "seeking": "Shell builtins, plugin architecture, cross-platform completions, and bug fixes",
+      "description": "A modern shell powered by a structured data pipeline that treats output as typed tables rather than text.",
+      "openGoodFirstIssuesCount": 1,
       "issues": [
         {
-          "title": "[Monaco Editor] Alt+G / Option+G triggers \"Jump to Line\" instead of typing \"@\" on macOS (German layout)",
-          "url": "https://github.com/usebruno/bruno/issues/9114",
+          "title": "Explore open issues & help wanted in Nushell",
+          "url": "https://github.com/nushell/nushell/labels/good%20first%20issue",
           "labels": [
-            "bug",
             "good first issue",
-            "status-tracking"
+            "help wanted"
           ],
-          "comments": 4,
-          "difficulty": "Beginner Friendly",
-          "createdAt": "2026-08-29T10:16:48Z"
-        },
-        {
-          "title": "Make URLs clickable in console",
-          "url": "https://github.com/usebruno/bruno/issues/6275",
-          "labels": [
-            "enhancement",
-            "good first issue",
-            "module-qol",
-            "module-devtools",
-            "P3",
-            "status-tracking"
-          ],
-          "comments": 11,
-          "difficulty": "Beginner Friendly",
-          "createdAt": "2025-12-02T16:27:32Z"
-        },
-        {
-          "title": "UI Lag when using 1Password env file",
-          "url": "https://github.com/usebruno/bruno/issues/6057",
-          "labels": [
-            "bug",
-            "good first issue",
-            "status-tracking"
-          ],
-          "comments": 13,
-          "difficulty": "Beginner Friendly",
-          "createdAt": "2025-11-10T17:04:49Z"
-        },
-        {
-          "title": "Show Final Request Variables",
-          "url": "https://github.com/usebruno/bruno/issues/5456",
-          "labels": [
-            "enhancement",
-            "good first issue",
-            "help wanted",
-            "has-pr",
-            "status-tracking"
-          ],
-          "comments": 4,
-          "difficulty": "Beginner Friendly",
-          "createdAt": "2025-08-29T18:47:47Z"
-        },
-        {
-          "title": "📌 Feature Request: Add \"Pin to Top\" or \"Favorite Collection\" Feature for Better Collection Management",
-          "url": "https://github.com/usebruno/bruno/issues/4298",
-          "labels": [
-            "enhancement",
-            "good first issue"
-          ],
-          "comments": 2,
-          "difficulty": "Beginner Friendly",
-          "createdAt": "2025-03-21T06:15:14Z"
+          "difficulty": "Starter Task"
         }
       ],
-      "stars": 47225,
-      "forks": 2926,
-      "pushedAt": "2026-09-25T07:42:00Z",
-      "lastActivityRelative": "2d ago",
+      "stars": 41071,
+      "forks": 2348,
+      "pushedAt": "2026-11-08T00:07:25Z",
+      "lastActivityRelative": "yesterday",
       "techStack": [
-        "api-client",
-        "api-testing",
-        "automation",
-        "developer-tools",
-        "git"
+        "nushell",
+        "rust",
+        "shell"
       ]
     },
     {
-      "name": "agent-browser",
-      "repo": "https://github.com/vercel-labs/agent-browser",
-      "category": "AI & Agent Tools",
-      "language": "Rust / TypeScript",
-      "seeking": "Cross-platform terminal enhancements, playwright engine bindings, examples",
-      "description": "Open-source browser automation CLI for AI agents with fast Rust core and Node.js fallback.",
+      "name": "Infisical",
+      "repo": "https://github.com/Infisical/infisical",
+      "category": "Security & Identity",
+      "language": "TypeScript / Go",
+      "seeking": "CLI integrations, Kubernetes operator features, SDK clients, and documentation",
+      "description": "Open-source secret management platform to sync configuration and secrets across infrastructure, CI/CD, and teams.",
       "openGoodFirstIssuesCount": 1,
       "issues": [
         {
-          "title": "Explore open issues & help wanted in agent-browser",
-          "url": "https://github.com/vercel-labs/agent-browser/issues",
+          "title": "Explore open issues & help wanted in Infisical",
+          "url": "https://github.com/Infisical/infisical/labels/good%20first%20issue",
           "labels": [
             "good first issue",
             "help wanted"
@@ -201,23 +112,30 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 43263,
-      "forks": 2904,
-      "pushedAt": "2026-09-27T05:06:10Z",
-      "lastActivityRelative": "12h ago"
+      "stars": 30381,
+      "forks": 2416,
+      "pushedAt": "2026-11-09T14:24:49Z",
+      "lastActivityRelative": "6m ago",
+      "techStack": [
+        "acme",
+        "agents",
+        "ai-agents",
+        "certificate-management",
+        "devsecops"
+      ]
     },
     {
-      "name": "Aider",
-      "repo": "https://github.com/Aider-AI/aider",
-      "category": "AI & Agent Tools",
-      "language": "Python",
-      "seeking": "Local model benchmark adapters, terminal UX enhancements, documentation",
-      "description": "Terminal-based AI pair programming tool with git auto-commit integration.",
+      "name": "ast-grep",
+      "repo": "https://github.com/ast-grep/ast-grep",
+      "category": "Developer Utilities & CLI",
+      "language": "Rust",
+      "seeking": "Language parsers, rule templates, editor plugins, and starter issues",
+      "description": "Fast and polyglot code search, linting, and rewrite tool using abstract syntax tree pattern matching.",
       "openGoodFirstIssuesCount": 1,
       "issues": [
         {
-          "title": "Explore open issues & help wanted in Aider",
-          "url": "https://github.com/Aider-AI/aider/issues",
+          "title": "Explore open issues & help wanted in ast-grep",
+          "url": "https://github.com/ast-grep/ast-grep/labels/good%20first%20issue",
           "labels": [
             "good first issue",
             "help wanted"
@@ -225,111 +143,30 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 49216,
-      "forks": 5001,
-      "pushedAt": "2026-05-22T14:02:20Z",
-      "lastActivityRelative": "4mo ago",
+      "stars": 16515,
+      "forks": 496,
+      "pushedAt": "2026-11-09T05:37:27Z",
+      "lastActivityRelative": "8h ago",
       "techStack": [
-        "anthropic",
-        "chatgpt",
-        "claude-3",
-        "cli",
+        "ast",
+        "babel",
+        "codemod",
+        "codereview",
         "command-line"
       ]
     },
     {
-      "name": "OpenHands",
-      "repo": "https://github.com/All-Hands-AI/OpenHands",
-      "category": "AI & Agent Tools",
-      "language": "Python",
-      "seeking": "Docker sandbox runtime adapters, evaluation benchmarks, docs & translations",
-      "description": "Autonomous software development agent platform for solving GitHub issues.",
-      "openGoodFirstIssuesCount": 5,
-      "issues": [
-        {
-          "title": "[Bug]: File upload does not have an indication of progress",
-          "url": "https://github.com/OpenHands/OpenHands/issues/16430",
-          "labels": [
-            "bug",
-            "good first issue",
-            "frontend",
-            "agent-canvas",
-            "priority:medium",
-            "release-note-required"
-          ],
-          "comments": 6,
-          "difficulty": "Beginner Friendly",
-          "createdAt": "2026-08-08T11:40:21Z"
-        },
-        {
-          "title": "Consolidate the duplicate src/context/ and src/contexts/ directories",
-          "url": "https://github.com/OpenHands/OpenHands/issues/15532",
-          "labels": [
-            "enhancement",
-            "good first issue"
-          ],
-          "comments": 9,
-          "difficulty": "Beginner Friendly",
-          "createdAt": "2026-06-29T21:42:26Z"
-        },
-        {
-          "title": "Workspace file preview returns 401 Unauthorized on non-HTTPS non-loopback hosts",
-          "url": "https://github.com/OpenHands/OpenHands/issues/15567",
-          "labels": [
-            "bug",
-            "good first issue"
-          ],
-          "comments": 4,
-          "difficulty": "Beginner Friendly",
-          "createdAt": "2026-06-20T18:45:16Z"
-        },
-        {
-          "title": "Slash commands: parity with OpenHands CLI and a built-in /help",
-          "url": "https://github.com/OpenHands/OpenHands/issues/15583",
-          "labels": [
-            "enhancement",
-            "good first issue"
-          ],
-          "comments": 9,
-          "difficulty": "Beginner Friendly",
-          "createdAt": "2026-06-17T14:12:46Z"
-        },
-        {
-          "title": "Feature Request: Group Conversations by Backend, Container, and Workspace",
-          "url": "https://github.com/OpenHands/OpenHands/issues/15607",
-          "labels": [
-            "enhancement",
-            "good first issue"
-          ],
-          "comments": 4,
-          "difficulty": "Beginner Friendly",
-          "createdAt": "2026-06-14T11:26:47Z"
-        }
-      ],
-      "stars": 89296,
-      "forks": 11769,
-      "pushedAt": "2026-09-27T12:27:36Z",
-      "lastActivityRelative": "5h ago",
-      "techStack": [
-        "agent",
-        "artificial-intelligence",
-        "chatgpt",
-        "claude-ai",
-        "cli"
-      ]
-    },
-    {
-      "name": "Continue",
-      "repo": "https://github.com/continuedev/continue",
-      "category": "AI & Agent Tools",
-      "language": "TypeScript",
-      "seeking": "Provider integrations, prompt context templates, good first issues",
-      "description": "Leading open-source AI code assistant for VS Code and JetBrains.",
+      "name": "Cerbos",
+      "repo": "https://github.com/cerbos/cerbos",
+      "category": "Security & Identity",
+      "language": "Go",
+      "seeking": "SDK adapters, policy testing tools, docs, and starter tasks",
+      "description": "Scalable, open-source authorization policy engine for cloud applications and microservices.",
       "openGoodFirstIssuesCount": 1,
       "issues": [
         {
-          "title": "Explore open issues & help wanted in Continue",
-          "url": "https://github.com/continuedev/continue/issues",
+          "title": "Explore open issues & help wanted in Cerbos",
+          "url": "https://github.com/cerbos/cerbos/labels/good%20first%20issue",
           "labels": [
             "good first issue",
             "help wanted"
@@ -337,30 +174,61 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 36045,
-      "forks": 5430,
-      "pushedAt": "2026-09-27T10:04:04Z",
-      "lastActivityRelative": "7h ago",
+      "stars": 4652,
+      "forks": 217,
+      "pushedAt": "2026-11-09T10:28:24Z",
+      "lastActivityRelative": "4h ago",
       "techStack": [
-        "agent",
-        "ai",
-        "cli",
-        "developer-tools",
-        "open-source"
+        "abac",
+        "access-control",
+        "authorization",
+        "authz",
+        "authzen"
       ]
     },
     {
-      "name": "Starship",
-      "repo": "https://github.com/starship/starship",
+      "name": "Infracost",
+      "repo": "https://github.com/infracost/infracost",
+      "category": "DevOps & Cloud Tools",
+      "language": "Go",
+      "seeking": "Cloud resource mapping, pricing estimators, CLI features, and documentation",
+      "description": "Cloud cost estimates for Terraform in pull requests before deployment.",
+      "openGoodFirstIssuesCount": 1,
+      "issues": [
+        {
+          "title": "Explore open issues & help wanted in Infracost",
+          "url": "https://github.com/infracost/infracost/labels/good%20first%20issue",
+          "labels": [
+            "good first issue",
+            "help wanted"
+          ],
+          "difficulty": "Starter Task"
+        }
+      ],
+      "stars": 12615,
+      "forks": 701,
+      "pushedAt": "2026-11-03T11:23:30Z",
+      "lastActivityRelative": "6d ago",
+      "techStack": [
+        "aws",
+        "azure",
+        "cdk",
+        "cloud",
+        "cloud-cost-estimates"
+      ]
+    },
+    {
+      "name": "WezTerm",
+      "repo": "https://github.com/wez/wezterm",
       "category": "Developer Utilities & CLI",
-      "language": "Rust",
-      "seeking": "New module additions, shell integrations, localized docs, bug fixes",
-      "description": "Fast and customizable cross-shell prompt for any terminal.",
+      "language": "Rust / Lua",
+      "seeking": "Configuration presets, font rendering, platform fixes, and starter issues",
+      "description": "GPU-accelerated cross-platform terminal emulator and multiplexer implemented in Rust.",
       "openGoodFirstIssuesCount": 1,
       "issues": [
         {
-          "title": "Explore open issues & help wanted in Starship",
-          "url": "https://github.com/starship/starship/issues",
+          "title": "Explore open issues & help wanted in WezTerm",
+          "url": "https://github.com/wez/wezterm/labels/good%20first%20issue",
           "labels": [
             "good first issue",
             "help wanted"
@@ -368,16 +236,47 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 60067,
-      "forks": 2678,
-      "pushedAt": "2026-09-27T13:48:56Z",
-      "lastActivityRelative": "3h ago",
+      "stars": 29498,
+      "forks": 1858,
+      "pushedAt": "2026-11-08T02:56:04Z",
+      "lastActivityRelative": "yesterday",
       "techStack": [
-        "bash",
-        "fish",
-        "fish-prompt",
-        "fish-theme",
-        "oh-my-zsh"
+        "rust",
+        "serial",
+        "serial-port",
+        "terminal",
+        "terminal-emulator"
+      ]
+    },
+    {
+      "name": "Casbin",
+      "repo": "https://github.com/casbin/casbin",
+      "category": "Security & Identity",
+      "language": "Go",
+      "seeking": "Middleware adapters, documentation, database adapters, and starter bugs",
+      "description": "An authorization library that supports access control models like ACL, RBAC, ABAC in Go and other languages.",
+      "openGoodFirstIssuesCount": 1,
+      "issues": [
+        {
+          "title": "Explore open issues & help wanted in Casbin",
+          "url": "https://github.com/casbin/casbin/labels/good%20first%20issue",
+          "labels": [
+            "good first issue",
+            "help wanted"
+          ],
+          "difficulty": "Starter Task"
+        }
+      ],
+      "stars": 20490,
+      "forks": 1769,
+      "pushedAt": "2026-11-04T17:03:34Z",
+      "lastActivityRelative": "4d ago",
+      "techStack": [
+        "abac",
+        "access-control",
+        "acl",
+        "apache",
+        "auth"
       ]
     },
     {
@@ -399,8 +298,8 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 6816,
-      "forks": 228,
+      "stars": 6823,
+      "forks": 231,
       "pushedAt": "2025-09-24T14:59:31Z",
       "lastActivityRelative": "1y ago",
       "techStack": [
@@ -430,10 +329,10 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 6021,
-      "forks": 2430,
-      "pushedAt": "2026-09-25T13:27:44Z",
-      "lastActivityRelative": "2d ago",
+      "stars": 6037,
+      "forks": 2503,
+      "pushedAt": "2026-11-08T18:10:58Z",
+      "lastActivityRelative": "20h ago",
       "techStack": [
         "good-first-issue",
         "help-wanted",
@@ -461,10 +360,10 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 456342,
-      "forks": 47563,
-      "pushedAt": "2026-09-26T20:45:02Z",
-      "lastActivityRelative": "20h ago",
+      "stars": 458802,
+      "forks": 47852,
+      "pushedAt": "2026-11-09T13:25:32Z",
+      "lastActivityRelative": "1h ago",
       "techStack": [
         "careers",
         "certification",
@@ -480,70 +379,22 @@
       "language": "TypeScript",
       "seeking": "Canvas tools, export formats, accessibility improvements, and localization",
       "description": "Virtual whiteboard for sketching hand-drawn like diagrams with end-to-end encryption.",
-      "openGoodFirstIssuesCount": 5,
+      "openGoodFirstIssuesCount": 1,
       "issues": [
         {
-          "title": "Feature Request: Option to make laser drawings persistent (like iPad laser)",
-          "url": "https://github.com/excalidraw/excalidraw/issues/9884",
+          "title": "Explore open issues & help wanted in Excalidraw",
+          "url": "https://github.com/excalidraw/excalidraw/labels/good%20first%20issue",
           "labels": [
-            "enhancement",
-            "good first issue"
-          ],
-          "comments": 10,
-          "difficulty": "Beginner Friendly",
-          "createdAt": "2025-08-18T17:40:17Z"
-        },
-        {
-          "title": "Translation for Mongolian",
-          "url": "https://github.com/excalidraw/excalidraw/issues/9880",
-          "labels": [
-            "enhancement",
-            "help wanted",
             "good first issue",
-            "i18n"
+            "help wanted"
           ],
-          "comments": 6,
-          "difficulty": "Beginner Friendly",
-          "createdAt": "2025-08-18T09:34:05Z"
-        },
-        {
-          "title": "Allow to switch into different arrow types when using \"Tab\" switcher when bound to element/s or text",
-          "url": "https://github.com/excalidraw/excalidraw/issues/9656",
-          "labels": [
-            "enhancement",
-            "good first issue"
-          ],
-          "comments": 11,
-          "difficulty": "Beginner Friendly",
-          "createdAt": "2025-06-15T06:20:15Z"
-        },
-        {
-          "title": "canvas search results unstable",
-          "url": "https://github.com/excalidraw/excalidraw/issues/9503",
-          "labels": [
-            "good first issue"
-          ],
-          "comments": 11,
-          "difficulty": "Beginner Friendly",
-          "createdAt": "2025-05-10T10:59:42Z"
-        },
-        {
-          "title": "canceled arrows are persisted on remote client",
-          "url": "https://github.com/excalidraw/excalidraw/issues/9467",
-          "labels": [
-            "bug",
-            "good first issue",
-            "collaboration"
-          ],
-          "comments": 6,
-          "difficulty": "Beginner Friendly",
-          "createdAt": "2025-05-01T11:04:35Z"
+          "difficulty": "Starter Task"
         }
       ],
-      "stars": 133081,
-      "forks": 15493,
-      "pushedAt": "2026-09-27T17:39:05Z",
-      "lastActivityRelative": "3m ago",
+      "stars": 135387,
+      "forks": 16071,
+      "pushedAt": "2026-11-09T13:33:14Z",
+      "lastActivityRelative": "58m ago",
       "techStack": [
         "canvas",
         "collaboration",
@@ -571,10 +422,10 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 48682,
-      "forks": 15223,
-      "pushedAt": "2026-09-26T07:48:40Z",
-      "lastActivityRelative": "yesterday",
+      "stars": 49836,
+      "forks": 15585,
+      "pushedAt": "2026-11-03T21:35:09Z",
+      "lastActivityRelative": "5d ago",
       "techStack": [
         "next-auth",
         "nextjs",
@@ -602,10 +453,10 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 15219,
-      "forks": 3277,
-      "pushedAt": "2026-09-27T16:08:56Z",
-      "lastActivityRelative": "1h ago",
+      "stars": 15698,
+      "forks": 3460,
+      "pushedAt": "2026-11-09T14:06:03Z",
+      "lastActivityRelative": "25m ago",
       "techStack": [
         "digital-signature",
         "document-signing",
@@ -633,10 +484,10 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 57569,
-      "forks": 9318,
-      "pushedAt": "2026-09-27T17:22:12Z",
-      "lastActivityRelative": "20m ago",
+      "stars": 60683,
+      "forks": 10028,
+      "pushedAt": "2026-11-09T14:31:36Z",
+      "lastActivityRelative": "just now",
       "techStack": [
         "crm",
         "crm-system",
@@ -652,64 +503,22 @@
       "language": "JavaScript",
       "seeking": "Admin UI polish, theme adapters, starter bugs, and translation updates",
       "description": "Turn your audience into a business: open-source modern publishing and membership platform.",
-      "openGoodFirstIssuesCount": 4,
+      "openGoodFirstIssuesCount": 1,
       "issues": [
         {
-          "title": "Incorrect links from Top sources in analytics",
-          "url": "https://github.com/TryGhost/Ghost/issues/24607",
-          "labels": [
-            "bug",
-            "good first issue",
-            "community"
-          ],
-          "comments": 3,
-          "difficulty": "Beginner Friendly",
-          "createdAt": "2025-08-06T03:10:24Z"
-        },
-        {
-          "title": "Share profile image generation is broken for some avatars and cover images",
-          "url": "https://github.com/TryGhost/Ghost/issues/24600",
-          "labels": [
-            "bug",
-            "good first issue",
-            "community"
-          ],
-          "comments": 11,
-          "difficulty": "Beginner Friendly",
-          "createdAt": "2025-08-04T19:25:10Z"
-        },
-        {
-          "title": "🌐 i18n mega-issue",
-          "url": "https://github.com/TryGhost/Ghost/issues/23361",
+          "title": "Explore open issues & help wanted in Ghost",
+          "url": "https://github.com/TryGhost/Ghost/labels/good%20first%20issue",
           "labels": [
             "good first issue",
-            "help wanted",
-            "pinned",
-            "affects:i18n",
-            "community"
+            "help wanted"
           ],
-          "comments": 39,
-          "difficulty": "Beginner Friendly",
-          "createdAt": "2025-05-15T16:00:02Z"
-        },
-        {
-          "title": "a11y: `kg-toggle-card` not usable properly with a screenreader",
-          "url": "https://github.com/TryGhost/Ghost/issues/27462",
-          "labels": [
-            "affects:editor",
-            "good first issue",
-            "help wanted",
-            "community"
-          ],
-          "comments": 3,
-          "difficulty": "Beginner Friendly",
-          "createdAt": "2022-01-07T02:02:26Z"
+          "difficulty": "Starter Task"
         }
       ],
-      "stars": 55443,
-      "forks": 11990,
-      "pushedAt": "2026-09-27T07:26:32Z",
-      "lastActivityRelative": "10h ago",
+      "stars": 55718,
+      "forks": 12108,
+      "pushedAt": "2026-11-09T14:30:27Z",
+      "lastActivityRelative": "just now",
       "techStack": [
         "blogging",
         "cms",
@@ -725,80 +534,22 @@
       "language": "Ruby / Vue",
       "seeking": "Channel connectors, webhook handlers, UI polish, and documentation",
       "description": "Open-source customer engagement suite, alternative to Intercom and Zendesk.",
-      "openGoodFirstIssuesCount": 5,
+      "openGoodFirstIssuesCount": 1,
       "issues": [
         {
-          "title": "[CW-2693] feat: Auto-populate social media handles from Supported Channels",
-          "url": "https://github.com/chatwoot/chatwoot/issues/8214",
+          "title": "Explore open issues & help wanted in Chatwoot",
+          "url": "https://github.com/chatwoot/chatwoot/labels/good%20first%20issue",
           "labels": [
-            "Good first issue",
-            "feature-request",
-            "🏋️‍♂️ accepting-community-prs",
-            "📨 channel/telegram",
-            "💬 channel/whatsapp",
-            "😶‍🌫️ feature/custom-attributes",
-            "📷 channel/instagram",
-            "channel/line"
+            "good first issue",
+            "help wanted"
           ],
-          "comments": 4,
-          "difficulty": "Beginner Friendly",
-          "createdAt": "2023-10-26T02:01:09Z"
-        },
-        {
-          "title": "Feature Request to add chatwoot directly install in plesk apps",
-          "url": "https://github.com/chatwoot/chatwoot/issues/6911",
-          "labels": [
-            "Good first issue",
-            "feature-request",
-            "self-hosted",
-            "🏋️‍♂️ accepting-community-prs",
-            "⚙️ self-hosted/config"
-          ],
-          "comments": 6,
-          "difficulty": "Beginner Friendly",
-          "createdAt": "2023-04-17T01:21:21Z"
-        },
-        {
-          "title": "Option to disable the \"message delete\" button",
-          "url": "https://github.com/chatwoot/chatwoot/issues/5950",
-          "labels": [
-            "Good first issue",
-            "feature-request",
-            "🧄 feature/agent-ui"
-          ],
-          "comments": 10,
-          "difficulty": "Beginner Friendly",
-          "createdAt": "2022-11-25T14:57:41Z"
-        },
-        {
-          "title": "Disable session key `_chatwoot_session`",
-          "url": "https://github.com/chatwoot/chatwoot/issues/2683",
-          "labels": [
-            "Good first issue",
-            "chore",
-            "👩‍💻 development-chores"
-          ],
-          "comments": 3,
-          "difficulty": "Beginner Friendly",
-          "createdAt": "2021-07-22T03:29:32Z"
-        },
-        {
-          "title": "[CW-1797] chore: Add validations before saving Dialogflow credentials",
-          "url": "https://github.com/chatwoot/chatwoot/issues/2383",
-          "labels": [
-            "Good first issue",
-            "feature-request",
-            "🤖 integrations/dialogflow"
-          ],
-          "comments": 5,
-          "difficulty": "Beginner Friendly",
-          "createdAt": "2021-06-06T11:32:23Z"
+          "difficulty": "Starter Task"
         }
       ],
-      "stars": 37240,
-      "forks": 9049,
-      "pushedAt": "2026-09-26T09:56:10Z",
-      "lastActivityRelative": "yesterday",
+      "stars": 39450,
+      "forks": 9580,
+      "pushedAt": "2026-11-09T12:22:07Z",
+      "lastActivityRelative": "2h ago",
       "techStack": [
         "actioncable",
         "chat-widget",
@@ -826,10 +577,10 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 76959,
-      "forks": 6045,
-      "pushedAt": "2026-09-22T07:09:34Z",
-      "lastActivityRelative": "5d ago",
+      "stars": 78554,
+      "forks": 6224,
+      "pushedAt": "2026-11-02T23:40:52Z",
+      "lastActivityRelative": "6d ago",
       "techStack": [
         "blog",
         "confluence-alternative",
@@ -857,10 +608,10 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 73017,
-      "forks": 5310,
-      "pushedAt": "2026-09-27T14:51:50Z",
-      "lastActivityRelative": "2h ago",
+      "stars": 74383,
+      "forks": 5489,
+      "pushedAt": "2026-11-09T13:47:32Z",
+      "lastActivityRelative": "44m ago",
       "techStack": [
         "app",
         "crdt",
@@ -888,10 +639,10 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 24832,
-      "forks": 3307,
-      "pushedAt": "2026-09-27T05:05:20Z",
-      "lastActivityRelative": "12h ago",
+      "stars": 25144,
+      "forks": 3400,
+      "pushedAt": "2026-10-27T02:24:37Z",
+      "lastActivityRelative": "13d ago",
       "techStack": [
         "clickhouse",
         "mysql",
