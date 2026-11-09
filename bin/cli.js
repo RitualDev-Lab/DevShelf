@@ -143,9 +143,9 @@ function printMatchmakerProject(proj, index = null) {
 function getCliVersion() {
   try {
     const pkg = JSON.parse(fs.readFileSync(path.join(__dirname, "..", "package.json"), "utf8"));
-    return pkg.version || "1.1.1";
+    return pkg.version || "1.1.2";
   } catch {
-    return "1.1.1";
+    return "1.1.2";
   }
 }
 
