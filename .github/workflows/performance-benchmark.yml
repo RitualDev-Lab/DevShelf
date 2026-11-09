@@ -46,7 +46,7 @@ jobs:
           git config --global user.email "bot@devshelf.local"
           git add shelf/ site/ README.md
           if ! git diff --cached --quiet; then
-            git commit -m "chore(benchmark): update nightly latency metrics & performance warnings [skip ci]"
+            git commit -m "chore(benchmark): update nightly latency metrics & performance warnings"
             git push origin main || (
               BRANCH="telemetry/benchmark-$(date +%Y%m%d%H%M)"
               git checkout -b "$BRANCH"

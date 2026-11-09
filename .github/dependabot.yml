@@ -29,3 +29,8 @@ updates:
       - "security"
     commit-message:
       prefix: "chore(deps)"
+    ignore:
+      - dependency-name: "tailwindcss"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "@biomejs/biome"
+        update-types: ["version-update:semver-major"]
