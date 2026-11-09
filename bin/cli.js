@@ -86,8 +86,10 @@ function openUrl(url) {
 }
 
 // Load resources from local file or fetch remotely using shared loader
-async function loadData() {
-  return loadCatalog();
+async function loadData(options = {}) {
+  const cliArgs = process.argv.slice(2);
+  const shouldRefresh = cliArgs.includes("--refresh") || cliArgs.includes("-r");
+  return loadCatalog({ ...options, refresh: options.refresh || shouldRefresh });
 }
 
 async function loadMatchmakerData() {
@@ -143,9 +145,9 @@ function printMatchmakerProject(proj, index = null) {
 function getCliVersion() {
   try {
     const pkg = JSON.parse(fs.readFileSync(path.join(__dirname, "..", "package.json"), "utf8"));
-    return pkg.version || "1.1.1";
+    return pkg.version || "1.1.2";
   } catch {
-    return "1.1.1";
+    return "1.1.2";
   }
 }
 
