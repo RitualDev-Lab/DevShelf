@@ -13,19 +13,21 @@
       "perkDescription": "Get $200 in free cloud infrastructure credits to deploy Droplets, Kubernetes, and App Platform instances.",
       "ctaText": "Claim $200 Credits →",
       "badge": "🎁 $200 Dev Credit",
-      "active": true
+      "active": true,
+      "affiliateConfigured": true
     },
     {
       "slug": "hetzner",
       "toolName": "Hetzner Cloud",
-      "url": "https://hetzner.cloud/?ref=devshelf",
+      "url": "https://hetzner.cloud/",
       "vanityPath": "/go/hetzner.html",
       "category": "cloud",
       "perkTitle": "€20 Free Cloud Credits",
       "perkDescription": "High-performance European and US cloud instances starting at €3.79/mo. Claim €20 in free test credits.",
       "ctaText": "Claim €20 Credits →",
       "badge": "🎁 €20 Cloud Credit",
-      "active": true
+      "active": true,
+      "affiliateConfigured": false
     },
     {
       "slug": "vultr",
@@ -37,7 +39,8 @@
       "perkDescription": "Global cloud compute, bare metal, and managed Kubernetes across 32 worldwide locations with instant credits.",
       "ctaText": "Claim $100 Credits →",
       "badge": "🎁 $100 Cloud Credit",
-      "active": true
+      "active": true,
+      "affiliateConfigured": true
     },
     {
       "slug": "geekflare",
@@ -49,67 +52,73 @@
       "perkDescription": "High-speed developer APIs for scraping, data extraction, and collaborative AI models.",
       "ctaText": "Explore APIs →",
       "badge": "⚡ Dev API Perks",
-      "active": true
+      "active": true,
+      "affiliateConfigured": true
     },
     {
       "slug": "supabase",
       "toolName": "Supabase",
-      "url": "https://supabase.com/?ref=devshelf",
+      "url": "https://supabase.com/",
       "vanityPath": "/go/supabase.html",
       "category": "cloud",
       "perkTitle": "Generous Permanent Free Postgres Tier",
       "perkDescription": "Full Postgres database, authentication, instant REST/GraphQL APIs, and real-time subscriptions with 500MB storage.",
       "ctaText": "Launch Free Project →",
       "badge": "⚡ Verified Free Tier",
-      "active": true
+      "active": true,
+      "affiliateConfigured": false
     },
     {
       "slug": "neon",
       "toolName": "Neon",
-      "url": "https://neon.tech/?ref=devshelf",
+      "url": "https://neon.tech/",
       "vanityPath": "/go/neon.html",
       "category": "cloud",
       "perkTitle": "Serverless Postgres with Instant Branching",
       "perkDescription": "Autoscaling, database branching like Git, and zero cold starts with generous free tier allowances.",
       "ctaText": "Get Free Postgres →",
       "badge": "⚡ Free Serverless DB",
-      "active": true
+      "active": true,
+      "affiliateConfigured": false
     },
     {
       "slug": "railway",
       "toolName": "Railway",
-      "url": "https://railway.com/?ref=devshelf",
+      "url": "https://railway.com/",
       "vanityPath": "/go/railway.html",
       "category": "cloud",
       "perkTitle": "$5 Monthly Free Cloud & API Hosting",
       "perkDescription": "Instant git-push deployments for Node.js, Python, Docker, MCP servers, and Postgres.",
       "ctaText": "Deploy on Railway ->",
       "badge": "⚡ Cloud Free Tier",
-      "active": true
+      "active": true,
+      "affiliateConfigured": false
     },
     {
       "slug": "posthog",
       "toolName": "PostHog",
-      "url": "https://posthog.com/?ref=devshelf",
+      "url": "https://posthog.com/",
       "vanityPath": "/go/posthog.html",
       "category": "testing",
       "perkTitle": "1M Free Events + 5,000 Session Replays/mo",
       "perkDescription": "Open-source product analytics, feature flags, session replay, and LLM observability.",
       "ctaText": "Start Free on PostHog ->",
       "badge": "⚡ 1M Free Events",
-      "active": true
+      "active": true,
+      "affiliateConfigured": false
     },
     {
       "slug": "cloudflare",
       "toolName": "Cloudflare",
-      "url": "https://www.cloudflare.com/?ref=devshelf",
+      "url": "https://www.cloudflare.com/",
       "vanityPath": "/go/cloudflare.html",
       "category": "cloud",
       "perkTitle": "100,000 Free Daily Worker Invocations + Pages",
       "perkDescription": "Global edge workers, zero-egress R2 storage, D1 SQLite, and unlimited static sites.",
       "ctaText": "Launch on Cloudflare ->",
       "badge": "⚡ Free Edge Workers",
-      "active": true
+      "active": true,
+      "affiliateConfigured": false
     }
   ]
 }
