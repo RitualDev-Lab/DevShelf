@@ -1,6 +1,6 @@
 {
   "version": "1.1.2",
-  "updatedAt": "2026-11-08T15:57:11.443Z",
+  "updatedAt": "2026-11-10T11:17:51.960Z",
   "slug": "cli",
   "name": "CLI & Developer Productivity",
   "count": 130,
@@ -1996,6 +1996,13 @@
       "language": "Claude Code plugin, Markdown skills and agents, Bash hooks, JSON manifests",
       "license": "MIT",
       "featured": false,
+      "installNote": "To install the plugin, open Claude Code and run these as two separate commands:",
+      "installCommands": [
+        "/plugin marketplace add https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer",
+        "/plugin install akii-seo-ai-search-optimizer@akii"
+      ],
+      "installDocsUrl": "https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer#installation",
+      "installDocsLabel": "Official installation instructions",
       "type": "cli",
       "section": "CLI & Productivity Tools"
     }

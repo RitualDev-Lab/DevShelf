@@ -71,12 +71,20 @@ async function buildSiteData() {
     const digestSource = `${slug}:${tool.url || ""}:${tool.license || ""}:${tool.type || ""}`;
     const verificationDigest = crypto.createHash("sha256").update(digestSource).digest("hex");
 
-    let installCommand = tool.installCommand;
-    if (!installCommand && tool.url) {
+    const installCommands = Array.isArray(tool.installCommands)
+      ? tool.installCommands.filter(
+          (cmd: unknown) => typeof cmd === "string" && cmd.trim().length > 0,
+        )
+      : undefined;
+    let installCommand =
+      tool.installCommand ||
+      (installCommands && installCommands.length > 0 ? installCommands.join("\n") : undefined);
+    const repoOrUrl = tool.url || tool.repo;
+    if (!installCommand && repoOrUrl) {
       try {
-        const parsedUrl = new URL(tool.url);
+        const parsedUrl = new URL(repoOrUrl);
         if (parsedUrl.hostname === "github.com" || parsedUrl.hostname.endsWith(".github.com")) {
-          installCommand = `git clone ${tool.url}`;
+          installCommand = `git clone ${repoOrUrl}`;
         }
       } catch {
         // invalid URL string, skip default git clone command
@@ -104,6 +112,9 @@ async function buildSiteData() {
         verificationDigest,
       },
       installCommand,
+      ...(installCommands && installCommands.length > 0 ? { installCommands } : {}),
+      ...(tool.installNote ? { installNote: tool.installNote } : {}),
+      ...(tool.installDocsUrl ? { installDocsUrl: tool.installDocsUrl } : {}),
     };
   });
 

@@ -8,6 +8,7 @@ let activeMatchLang = "all";
 let matchmakerSearchQuery = "";
 const activeMatrixTags = new Set();
 let uptimeData = null;
+let affiliatePartners = [];
 const myStack = new Set();
 let activeStackTab = "env";
 const drawerState = {
@@ -40,6 +41,7 @@ function boot() {
   setupListeners();
   loadDataAndRender();
   loadUptimeData();
+  loadAffiliatesData();
   loadContributors();
   initComparator();
 
@@ -92,6 +94,46 @@ async function loadUptimeData() {
     console.info("Uptime telemetry loading deferred.", err);
   }
   return uptimeData;
+}
+
+async function loadAffiliatesData() {
+  if (affiliatePartners.length > 0) return affiliatePartners;
+  try {
+    const res = await fetch("api/v1/affiliates.json");
+    if (res.ok) {
+      const data = await res.json();
+      if (data && Array.isArray(data.partners)) {
+        affiliatePartners = data.partners.filter((p) => p.active);
+        if (allResources.length > 0) render();
+      }
+    }
+  } catch (err) {
+    console.info("Affiliate partner registry loading deferred.", err);
+  }
+  return affiliatePartners;
+}
+
+function findAffiliatePartner(item) {
+  if (!item || !item.name || affiliatePartners.length === 0) return null;
+  const nameLower = item.name.toLowerCase();
+  const itemSlug = slugify(item.name);
+  let itemHost = "";
+  try {
+    itemHost = new URL(item.url || item.repo || "").hostname.replace(/^www\./, "").toLowerCase();
+  } catch {}
+  return (
+    affiliatePartners.find((p) => {
+      const pSlug = (p.slug || "").toLowerCase();
+      const pName = (p.toolName || "").toLowerCase();
+      if (pSlug === nameLower || pName === nameLower || itemSlug === pSlug) return true;
+      if (pName && nameLower.includes(pName)) return true;
+      try {
+        const pHost = new URL(p.url).hostname.replace(/^www\./, "").toLowerCase();
+        if (itemHost && pHost && itemHost === pHost) return true;
+      } catch {}
+      return false;
+    }) || null
+  );
 }
 
 function applyData(data) {
@@ -2286,6 +2328,10 @@ function createCardHtml(item) {
   const isRepo = Boolean(item.repo);
   const isBoilerplate = item.type === "boilerplate";
   const targetUrl = item.deployUrl || item.repo || item.url || "#";
+  const partner = findAffiliatePartner(item);
+  const outboundUrl = partner && !isRepo && !isBoilerplate ? `go/${partner.slug}.html` : targetUrl;
+  const outboundRel =
+    partner && !isRepo && !isBoilerplate ? "noopener noreferrer sponsored" : "noreferrer";
   const displayRepoSlug = item.repo ? item.repo.replace(/^https?:\/\/github\.com\//, "") : "";
   const displayUrl = targetUrl.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "");
 
@@ -2391,8 +2437,8 @@ function createCardHtml(item) {
     }
   } else {
     primaryActionButtons = `
-      <a href="${targetUrl}" target="_blank" rel="noreferrer" class="w-full min-w-0 inline-flex items-center justify-center space-x-1.5 px-3.5 py-1.5 rounded-lg text-xs font-bold bg-cyan-600 hover:bg-cyan-500 text-white transition shadow-md shadow-cyan-600/25">
-        <span class="truncate">🌐 Visit Website →</span>
+      <a href="${outboundUrl}" target="_blank" rel="${outboundRel}" class="w-full min-w-0 inline-flex items-center justify-center space-x-1.5 px-3.5 py-1.5 rounded-lg text-xs font-bold bg-cyan-600 hover:bg-cyan-500 text-white transition shadow-md shadow-cyan-600/25">
+        <span class="truncate">${partner ? escapeHtml(partner.ctaText || "🎁 Claim Partner Perk →") : "🌐 Visit Website →"}</span>
       </a>
     `;
   }
@@ -2500,7 +2546,7 @@ function createCardHtml(item) {
           <div>
             <div class="flex items-center space-x-2 flex-wrap gap-y-1">
               <h3 class="text-base font-extrabold text-white group-hover:text-purple-300 transition line-clamp-1">
-                <a href="${targetUrl}" target="_blank" rel="noreferrer">${escapeHtml(item.name)}</a>
+                <a href="${outboundUrl}" target="_blank" rel="${outboundRel}">${escapeHtml(item.name)}</a>
               </h3>
               ${getHealthBarsHtml(item)}
               ${isFeatured}

@@ -19,6 +19,28 @@ function escapeHtml(str: string | undefined): string {
     .replace(/'/g, "&#039;");
 }
 
+function safeHttpUrl(url: unknown): string {
+  if (typeof url !== "string" || !url.trim()) return "";
+  try {
+    const parsed = new URL(url.trim());
+    return parsed.protocol === "http:" || parsed.protocol === "https:" ? parsed.toString() : "";
+  } catch {
+    return "";
+  }
+}
+
+function resolveInstallSteps(item: any): string[] {
+  if (Array.isArray(item.installCommands) && item.installCommands.length > 0) {
+    return item.installCommands.filter(
+      (cmd: unknown): cmd is string => typeof cmd === "string" && cmd.trim().length > 0,
+    );
+  }
+  if (typeof item.installCommand === "string" && item.installCommand.trim().length > 0) {
+    return [item.installCommand.trim()];
+  }
+  return [];
+}
+
 async function generateSeo() {
   const root = process.cwd();
   const siteDir = path.join(root, "site");
@@ -207,10 +229,40 @@ async function generateSeo() {
       `  <url>\n    <loc>${pageUrl}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>`,
     );
 
+    const installSteps = resolveInstallSteps(item);
+    const installNote = typeof item.installNote === "string" ? item.installNote.trim() : "";
+    const installDocsUrl = safeHttpUrl(item.installDocsUrl);
+    const installDocsLabel =
+      typeof item.installDocsLabel === "string" && item.installDocsLabel.trim()
+        ? item.installDocsLabel.trim()
+        : "Official installation instructions";
+    const isPaidSpotlight = Boolean(item.featured || item.sponsorTier);
+    const customFaqs: { question: string; answer: string }[] =
+      isPaidSpotlight && Array.isArray(item.customFaqs)
+        ? item.customFaqs.filter(
+            (f: any) =>
+              f &&
+              typeof f.question === "string" &&
+              f.question.trim().length > 0 &&
+              typeof f.answer === "string" &&
+              f.answer.trim().length > 0,
+          )
+        : [];
+    const setupFaqAnswer =
+      installSteps.length > 0
+        ? `${installNote ? `${installNote} ` : ""}${installSteps.join(" | ")}${installDocsUrl ? ` — ${installDocsLabel}: ${installDocsUrl}` : ""}`
+        : item.repo
+          ? `See the official repository (${item.repo}) for installation and usage instructions.`
+          : `Visit the official site (${targetUrl}) for setup details.`;
+
     const faqs = [
       {
         question: `What free access does ${item.name} offer in ${currentYear}?`,
         answer: `As verified in ${currentYear}, ${pricing}${item.license ? ` License: ${item.license}.` : ""}`,
+      },
+      {
+        question: `How do I install or run ${item.name}?`,
+        answer: setupFaqAnswer,
       },
       ...(alternativeTo
         ? [
@@ -226,6 +278,7 @@ async function generateSeo() {
           ? `Authentication requirement: ${item.auth}.`
           : "See the official site for authentication and access requirements.",
       },
+      ...customFaqs,
     ];
 
     const jsonLd = {
@@ -365,14 +418,63 @@ async function generateSeo() {
         </div>
       </div>`;
 
+    const quickInstallHtml =
+      installSteps.length > 0
+        ? `
+      <div class="mt-8 p-6 rounded-2xl bg-slate-950/90 border border-slate-800 space-y-3">
+        <div class="flex items-center justify-between flex-wrap gap-2">
+          <h3 class="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider">⚡ Quick Install &amp; Execution</h3>
+          ${
+            installDocsUrl
+              ? `<a href="${escapeHtml(installDocsUrl)}" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-purple-300 hover:text-purple-200 underline">${escapeHtml(installDocsLabel)} →</a>`
+              : ""
+          }
+        </div>
+        ${installNote ? `<p class="text-xs text-slate-300 leading-relaxed">${escapeHtml(installNote)}</p>` : ""}
+        <div class="space-y-2">
+          ${installSteps
+            .map(
+              (step) => `
+          <div class="p-3 rounded-xl bg-black/80 border border-slate-800 font-mono text-xs text-emerald-300 overflow-x-auto select-all">
+            ${escapeHtml(step)}
+          </div>`,
+            )
+            .join("")}
+        </div>
+      </div>`
+        : "";
+
+    const promoCtaUrl =
+      isPaidSpotlight && item.spotlightPromo ? safeHttpUrl(item.spotlightPromo.ctaUrl) : "";
+    const spotlightPromoHtml =
+      isPaidSpotlight && item.spotlightPromo
+        ? `
+      <div class="mt-8 p-5 rounded-2xl bg-gradient-to-r from-purple-950/60 via-slate-900 to-amber-950/40 border border-amber-500/40 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div class="space-y-1">
+          <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-amber-300">${escapeHtml(item.spotlightPromo.badge || "★ Paid Spotlight")}</span>
+          ${item.spotlightPromo.headline ? `<h3 class="text-sm font-bold text-white">${escapeHtml(item.spotlightPromo.headline)}</h3>` : ""}
+          ${item.spotlightPromo.summary ? `<p class="text-xs text-slate-300 leading-relaxed">${escapeHtml(item.spotlightPromo.summary)}</p>` : ""}
+        </div>
+        ${
+          promoCtaUrl
+            ? `<a href="${escapeHtml(promoCtaUrl)}" target="_blank" rel="noopener noreferrer sponsored" class="shrink-0 px-4 py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs font-mono transition">${escapeHtml(item.spotlightPromo.ctaLabel || "Explore Tool →")}</a>`
+            : ""
+        }
+      </div>`
+        : "";
+
     const creatorPromoHtml = `
       <div class="mt-8 p-4 rounded-xl bg-slate-950/80 border border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
         <div class="flex items-center space-x-2.5">
           <span class="text-base">🚀</span>
-          <span class="text-slate-300">Are you the creator of <strong>${escapeHtml(item.name)}</strong> or building a devtool in this category?</span>
+          <span class="text-slate-300">Maintainer of <strong>${escapeHtml(item.name)}</strong>? ${
+            isPaidSpotlight
+              ? "Active Featured / Paid Spotlight status unlocked."
+              : "Unlock custom promotional FAQs, highlighted install CTAs, and #1 category pinning."
+          }</span>
         </div>
-        <a href="../sponsors.html#mcp-sponsors" class="shrink-0 px-3 py-1.5 rounded-lg font-bold font-mono text-xs bg-purple-600/30 hover:bg-purple-600 border border-purple-500/50 text-purple-200 hover:text-white transition">
-          Feature in AI Chats ($49) →
+        <a href="https://ritualdev.in/partners" target="_blank" rel="noopener noreferrer" class="shrink-0 px-3 py-1.5 rounded-lg font-bold font-mono text-xs bg-purple-600/30 hover:bg-purple-600 border border-purple-500/50 text-purple-200 hover:text-white transition">
+          Launch Spotlight ($19–$49) →
         </a>
       </div>`;
 
@@ -635,6 +737,8 @@ async function generateSeo() {
 
       ${categorySponsorHtml}
       ${partnerPerkHtml}
+      ${spotlightPromoHtml}
+      ${quickInstallHtml}
       ${dockerSectionHtml}
       ${badgeSectionHtml}
       ${creatorPromoHtml}
