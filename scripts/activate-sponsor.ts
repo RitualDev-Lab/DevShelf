@@ -11,7 +11,16 @@ const DATA_DIR = path.join(ROOT_DIR, "data");
 
 export type ShelfCategory = "ai" | "cli" | "apis" | "cloud" | "testing" | "boilerplates" | "perks";
 
-export type SponsorTier = "starter" | "mcpPro" | "enterprise";
+export type SponsorTier =
+  | "starter"
+  | "mcpPro"
+  | "enterprise"
+  | "starter_9"
+  | "spotlight_19"
+  | "category_39"
+  | "leader_49"
+  | "combo_79"
+  | "custom";
 
 export interface ActivateSponsorOptions {
   name: string;
@@ -63,15 +72,45 @@ const TIER_MAP: Record<
     patronTier: "silver",
     sponsorTierLabel: "Verified Sponsor ★ (Starter)",
   },
+  starter_9: {
+    defaultUSD: 9,
+    patronTier: "silver",
+    sponsorTierLabel: "Verified Sponsor ★ (Starter)",
+  },
+  spotlight_19: {
+    defaultUSD: 19,
+    patronTier: "silver",
+    sponsorTierLabel: "Verified Sponsor ★ (Launch Spotlight)",
+  },
+  category_39: {
+    defaultUSD: 39,
+    patronTier: "gold",
+    sponsorTierLabel: "Verified Sponsor ★ (Category Exclusive)",
+  },
   mcpPro: {
     defaultUSD: 49,
     patronTier: "gold",
     sponsorTierLabel: "Verified Sponsor ★ (MCP Pro)",
   },
+  leader_49: {
+    defaultUSD: 49,
+    patronTier: "gold",
+    sponsorTierLabel: "Verified Sponsor ★ (Category Leader + MCP Pro)",
+  },
   enterprise: {
     defaultUSD: 79,
     patronTier: "enterprise",
     sponsorTierLabel: "Verified Sponsor ★ (Enterprise Partner)",
+  },
+  combo_79: {
+    defaultUSD: 79,
+    patronTier: "enterprise",
+    sponsorTierLabel: "Verified Sponsor ★ (Category Combo Pack)",
+  },
+  custom: {
+    defaultUSD: 25,
+    patronTier: "gold",
+    sponsorTierLabel: "Verified Sponsor ★ (Custom Sponsor)",
   },
 };
 

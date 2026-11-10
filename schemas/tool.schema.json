@@ -84,6 +84,54 @@
         "format": "uri",
         "pattern": "^https?://",
         "description": "Tracked redirect target URL if destination moved"
+      },
+      "installCommand": {
+        "type": "string",
+        "description": "Explicit single install command overriding fallback git clone"
+      },
+      "installCommands": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "Ordered multi-step install commands to run separately"
+      },
+      "installNote": {
+        "type": "string",
+        "description": "Short factual note accompanying explicit install commands"
+      },
+      "installDocsUrl": {
+        "type": "string",
+        "format": "uri",
+        "pattern": "^https?://",
+        "description": "Official installation documentation anchor URL"
+      },
+      "installDocsLabel": {
+        "type": "string",
+        "description": "Human-readable anchor label for official installation docs"
+      },
+      "customFaqs": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["question", "answer"],
+          "properties": {
+            "question": { "type": "string" },
+            "answer": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        "description": "Custom promotional FAQs unlocked on Paid Spotlight and Category Leader tiers"
+      },
+      "spotlightPromo": {
+        "type": "object",
+        "properties": {
+          "badge": { "type": "string" },
+          "headline": { "type": "string" },
+          "summary": { "type": "string" },
+          "ctaLabel": { "type": "string" },
+          "ctaUrl": { "type": "string", "format": "uri", "pattern": "^https?://" }
+        },
+        "additionalProperties": false,
+        "description": "Promotional spotlight callout unlocked on Paid Spotlight and Category Leader tiers"
       }
     },
     "additionalProperties": false
