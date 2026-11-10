@@ -266,56 +266,55 @@
 </head>
 <body class="bg-slate-950 text-slate-100 min-h-screen font-sans selection:bg-purple-600 selection:text-white relative overflow-x-hidden">
 
-  <!-- Ambient Background Glows + Floating Particles -->
+  <!-- Ambient Clean Gradient Backdrop (Matching ritualdev.in/devshelf) -->
   <div class="fixed inset-0 overflow-hidden pointer-events-none -z-10">
-    <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-purple-600/20 blur-[100px] rounded-full ambient-glow"></div>
-    <div class="absolute top-[500px] -left-32 w-[400px] h-[400px] bg-cyan-600/15 blur-[100px] rounded-full ambient-glow-delayed"></div>
-    <div class="particle particle-1"></div>
-    <div class="particle particle-2"></div>
-    <div class="particle particle-3"></div>
-    <div class="particle particle-4"></div>
-    <div class="particle particle-5"></div>
+    <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[900px] h-[360px] bg-purple-600/15 blur-[120px] rounded-full"></div>
+    <div class="absolute top-[520px] -left-32 w-[420px] h-[420px] bg-cyan-600/10 blur-[120px] rounded-full"></div>
   </div>
 
   <!-- Top Navigation Bar -->
-  <header class="border-b border-slate-800/80 bg-slate-950/90 backdrop-blur-xl sticky top-0 z-40 transition-colors">
+  <header class="border-b border-slate-800/80 bg-slate-950/95 backdrop-blur-xl sticky top-0 z-40 transition-colors">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-3">
       <!-- Brand Logo -->
       <div class="flex items-center space-x-2.5 shrink-0">
-        <span class="text-2xl">📚</span>
-        <a href="https://devshelf.ritualdev.in" class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent hover:opacity-90 transition whitespace-nowrap">DevShelf</a>
-        <span class="hidden sm:inline-block px-2 py-0.5 text-[10px] font-mono font-bold rounded-full bg-purple-900/50 text-purple-200 border border-purple-500/30 whitespace-nowrap">100% Free Tiers</span>
+        <a href="https://ritualdev.in/" class="text-xs font-mono text-slate-400 hover:text-cyan-300 transition hidden sm:inline">RitualDev Lab</a>
+        <span class="text-slate-700 hidden sm:inline">/</span>
+        <a href="https://devshelf.ritualdev.in" class="text-lg font-extrabold tracking-tight text-white hover:text-purple-300 transition whitespace-nowrap">DevShelf</a>
+        <span class="hidden sm:inline-block px-2 py-0.5 text-[10px] font-mono font-bold rounded-full bg-purple-500/10 text-purple-300 border border-purple-500/30 whitespace-nowrap">Zero Paywall</span>
       </div>
 
-      <!-- Desktop Navigation Links (Clean, curated & zero overflow) -->
-      <nav class="hidden lg:flex items-center space-x-1 xl:space-x-1.5 text-xs font-bold text-slate-300">
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center space-x-1 xl:space-x-1.5 text-xs font-mono font-semibold text-slate-300">
         <a href="#directory" class="px-2.5 py-1.5 rounded-lg hover:bg-slate-900 hover:text-white transition whitespace-nowrap">
-          📁 Directory
+          Directory
         </a>
         <a href="#spotlight" class="px-2.5 py-1.5 rounded-lg hover:bg-slate-900 hover:text-white transition whitespace-nowrap">
-          🔥 Spotlight
+          Spotlight
         </a>
-        <button id="nav-matchmaker-btn" class="px-2.5 py-1.5 rounded-lg hover:bg-slate-900 hover:text-emerald-300 transition whitespace-nowrap flex items-center gap-1 font-bold">
-          <span>🤝 Matchmaker</span>
+        <button id="nav-matchmaker-btn" class="px-2.5 py-1.5 rounded-lg hover:bg-slate-900 hover:text-emerald-300 transition whitespace-nowrap">
+          Matchmaker
         </button>
-        <button id="nav-stack-btn" class="px-2.5 py-1.5 rounded-lg hover:bg-slate-900 hover:text-cyan-300 transition whitespace-nowrap flex items-center gap-1 font-bold" title="Open My Stack Builder">
-          <span>🔀 Stack</span>
+        <button id="nav-stack-btn" class="px-2.5 py-1.5 rounded-lg hover:bg-slate-900 hover:text-cyan-300 transition whitespace-nowrap flex items-center gap-1" title="Open My Stack Builder">
+          <span>Stack</span>
           <span id="nav-stack-badge" class="hidden px-1.5 py-0.2 bg-cyan-400 text-slate-950 rounded-full text-[10px] font-extrabold">0</span>
         </button>
-        <button id="nav-compare-btn" class="px-2.5 py-1.5 rounded-lg hover:bg-slate-900 hover:text-amber-300 transition whitespace-nowrap flex items-center gap-1 font-bold" title="Open Free-Tier Tool Comparator">
-          <span>⚖️ Compare</span>
+        <button id="nav-compare-btn" class="px-2.5 py-1.5 rounded-lg hover:bg-slate-900 hover:text-amber-300 transition whitespace-nowrap" title="Open Free-Tier Tool Comparator">
+          Compare
         </button>
-        <a href="playground.html" class="px-2.5 py-1.5 rounded-lg hover:bg-slate-900 text-amber-300 hover:text-amber-200 transition whitespace-nowrap flex items-center gap-1 font-bold" title="Open Interactive Web Playground">
-          <span>⚡ Playground</span>
+        <a href="playground.html" class="px-2.5 py-1.5 rounded-lg hover:bg-slate-900 text-slate-300 hover:text-white transition whitespace-nowrap" title="Open Interactive Web Playground">
+          Playground
         </a>
-        <a href="sponsors.html" class="px-2.5 py-1.5 rounded-lg hover:bg-pink-950/40 text-pink-300 hover:text-pink-200 border border-pink-500/20 hover:border-pink-500/40 transition whitespace-nowrap flex items-center gap-1 font-bold">
-          <span>💖 Sponsors</span>
+        <a href="https://ritualdev.in/devshelf/" class="px-2.5 py-1.5 rounded-lg hover:bg-slate-900 text-cyan-300 hover:text-white transition whitespace-nowrap">
+          App View
+        </a>
+        <a href="https://ritualdev.in/partners" class="px-2.5 py-1.5 rounded-lg hover:bg-emerald-950/50 text-emerald-300 hover:text-white transition whitespace-nowrap">
+          Partners
         </a>
 
         <!-- More & Ecosystem Dropdown -->
         <div class="relative group">
-          <button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg hover:bg-slate-900 text-slate-300 hover:text-white transition whitespace-nowrap font-bold" aria-haspopup="true" aria-expanded="false">
-            <span>✨ More</span>
+          <button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg hover:bg-slate-900 text-slate-300 hover:text-white transition whitespace-nowrap" aria-haspopup="true" aria-expanded="false">
+            <span>More</span>
             <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-white transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
             </svg>
@@ -407,36 +406,20 @@
       <!-- Right Actions Container (Focused & Responsive) -->
       <div class="flex items-center space-x-2 shrink-0">
         <!-- Connect to Cursor / Claude (MCP) Button -->
-        <button id="open-mcp-modal-btn" class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold rounded-lg bg-gradient-to-r from-purple-900/60 to-indigo-900/60 hover:from-purple-800/80 hover:to-indigo-800/80 border border-purple-400/50 text-purple-200 hover:text-white transition hover:scale-105 active:scale-95 shadow-sm shadow-purple-500/20 whitespace-nowrap" title="Connect to Cursor, Claude Desktop, Windsurf, Zed">
-          <span>🤖</span>
-          <span class="hidden xl:inline">Connect to AI (MCP)</span>
+        <button id="open-mcp-modal-btn" class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-mono font-bold rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 hover:text-white transition whitespace-nowrap" title="Connect to Cursor, Claude Desktop, Windsurf, Zed">
+          <span class="hidden xl:inline">Connect AI (MCP)</span>
           <span class="xl:hidden">MCP</span>
         </button>
 
         <!-- Promote Your Tool CTA -->
-        <a href="sponsors.html" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 text-xs font-bold rounded-lg bg-gradient-to-r from-emerald-600/30 to-teal-600/30 hover:from-emerald-600/50 hover:to-teal-600/50 border border-emerald-400/60 text-emerald-200 hover:text-white transition hover:scale-105 active:scale-95 shadow-sm shadow-emerald-500/20 whitespace-nowrap" title="Promote Your Developer Tool ($9+)">
-          <span class="text-xs">⚡</span>
-          <span>Promote ($9+)</span>
+        <a href="https://ritualdev.in/partners" class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-mono font-bold rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white transition shadow-lg shadow-purple-600/20 whitespace-nowrap" title="Feature Your Developer Tool ($9+)">
+          <span>Feature Tool ($9+)</span>
         </a>
 
         <!-- Submit Tool Button -->
-        <button id="nav-wizard-btn" class="liquid-metal-btn liquid-metal-btn-sm group" title="Submit a Free Developer Tool">
-          <div class="liquid-metal-frame">
-            <canvas class="liquid-metal-canvas" data-tint="#38bdf8" data-back="#090d16" data-speed="0.5" data-distortion="0.18" data-repetition="4.0"></canvas>
-          </div>
-          <div class="liquid-metal-glow"></div>
-          <div class="liquid-metal-inner liquid-metal-inner-sm">
-            <span class="liquid-metal-icon-pill liquid-metal-icon-pill-sm">
-              <span class="text-xs">➕</span>
-            </span>
-            <span class="liquid-metal-text text-xs whitespace-nowrap">Submit Tool</span>
-          </div>
+        <button id="nav-wizard-btn" class="px-3 py-1.5 text-xs font-mono font-bold rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 hover:text-white transition whitespace-nowrap" title="Submit a Free Developer Tool">
+          + Submit Tool
         </button>
-
-        <!-- GitHub Star Button (Visible on extra-wide screens) -->
-        <a href="https://github.com/RitualDev-Lab/DevShelf" target="_blank" rel="noreferrer" class="hidden 2xl:inline-flex items-center space-x-1 px-2.5 py-1.5 text-xs font-bold rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 transition hover:scale-105 active:scale-95 whitespace-nowrap" title="Star on GitHub">
-          <span>⭐ Star</span>
-        </a>
 
         <!-- Mobile & Tablet Hamburger Button -->
         <button id="mobile-menu-toggle-btn" class="lg:hidden p-2 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-300 hover:text-white transition focus:outline-none focus:ring-2 focus:ring-purple-500" aria-label="Toggle Navigation Menu">
@@ -525,239 +508,107 @@
   </header>
 
 
-  <!-- Hero Section -->
-  <section class="max-w-6xl mx-auto px-4 sm:px-6 pt-12 pb-6 text-center">
-    
-    <!-- Hacktoberfest 2026 Live Banner -->
-    <div>
-      <a href="https://github.com/RitualDev-Lab/DevShelf/blob/main/HACKTOBERFEST.md" target="_blank" rel="noreferrer" class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-gradient-to-r from-orange-500/20 via-amber-500/20 to-orange-500/20 border border-orange-500/50 text-orange-200 text-xs font-bold mb-3 shadow-md hover:scale-105 transition">
-        <span>🎃 Hacktoberfest 2026 Active</span>
-        <span class="text-orange-400">•</span>
-        <span class="text-amber-300 font-semibold underline">Claim Starter Issues &amp; Guides →</span>
-      </a>
-    </div>
-
-    <!-- Custom URL / Uptime Pill -->
-    <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-slate-900 border border-purple-500/50 text-purple-200 text-xs font-semibold mb-6 shadow-md hero-animate hero-animate-delay-1">
-      <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
-      <span class="font-mono font-bold text-white">devshelf.ritualdev.in</span>
-      <span class="text-purple-400">•</span>
-      <span class="text-slate-300">Verified Free Developer Resources</span>
-    </div>
-
-    <!-- Main Headline -->
-    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-5 leading-tight hero-animate hero-animate-delay-2">
-      The Zero-Paywall Ecosystem <br />
-      <span class="bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">Curated for Developers</span>
-    </h1>
-
-    <p class="text-base sm:text-lg text-slate-200 max-w-3xl mx-auto mb-6 leading-relaxed font-normal hero-animate hero-animate-delay-3">
-      Discover hand-curated developer tools, open-source GitHub repositories, verified free public APIs, 1-click cloud boilerplates, and startup sponsorships with zero credit-card paywalls. Continuous automated health monitoring.
-    </p>
-
-    <!-- CTAs -->
-    <div class="flex items-center justify-center flex-wrap gap-3 mb-8 text-xs font-bold hero-animate hero-animate-delay-4">
-      <a href="#directory" class="liquid-metal-btn group" title="Explore Curated Developer Tools">
-        <div class="liquid-metal-frame">
-          <canvas class="liquid-metal-canvas" data-tint="#c084fc" data-back="#030712" data-speed="0.6" data-distortion="0.22" data-repetition="3.5"></canvas>
-        </div>
-        <div class="liquid-metal-glow"></div>
-        <div class="liquid-metal-inner">
-          <span class="liquid-metal-icon-pill">
-            <span class="text-sm">✨</span>
-          </span>
-          <span class="liquid-metal-text text-xs sm:text-sm">Explore <span id="hero-total-count">570+</span> Curated Resources</span>
-          <span class="liquid-metal-arrow text-cyan-400">↓</span>
-        </div>
-      </a>
-      <button id="hero-mcp-btn" class="inline-flex items-center space-x-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-purple-600/30 via-indigo-600/30 to-cyan-600/30 hover:from-purple-600/50 hover:to-cyan-600/50 border border-purple-400/70 text-white font-bold transition shadow-lg shadow-purple-500/25 hover:scale-105 active:scale-95" title="Connect DevShelf to Cursor, Claude Desktop, Windsurf, Zed">
-        <span class="text-base">🤖</span>
-        <span>Connect to Cursor &amp; Claude (MCP)</span>
-      </button>
-      <button id="hero-random-btn" class="inline-flex items-center space-x-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-amber-500/20 via-orange-500/20 to-amber-500/20 hover:from-amber-500/30 hover:to-orange-500/30 border border-amber-500/50 text-amber-200 font-bold transition shadow-md shadow-amber-500/10 hover:scale-105 active:scale-95" title="Discover a Random Tool (Shortcut: r)">
-        <span>🎲 Surprise Me (Random Tool)</span>
-      </button>
-      <button id="hero-matchmaker-btn" class="inline-flex items-center space-x-2 px-4 py-2.5 rounded-xl bg-emerald-950/80 hover:bg-emerald-900 border border-emerald-500/60 text-emerald-200 font-bold transition shadow-md shadow-emerald-500/20">
-        <span>🤝 Contributor Matchmaker</span>
-      </button>
-      <button id="hero-wizard-btn" class="inline-flex items-center space-x-2 px-4 py-2.5 rounded-xl bg-purple-950/80 hover:bg-purple-900 border border-purple-500/60 text-purple-200 font-bold transition shadow-md shadow-purple-500/20">
-        <span>✨ Contribution Wizard</span>
-      </button>
-      <button id="hero-badge-btn" class="inline-flex items-center space-x-1.5 px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-purple-500/60 text-purple-200 font-bold transition">
-        <span>🎖️ Get Badge</span>
-      </button>
-      <a href="sponsors.html" class="inline-flex items-center space-x-1.5 px-4 py-2.5 rounded-xl bg-gradient-to-r from-emerald-950/90 to-teal-950/90 hover:from-emerald-900 hover:to-teal-900 border border-emerald-500/60 text-emerald-200 font-bold transition shadow-md shadow-emerald-500/20 hover:scale-105 active:scale-95" title="Promote Your Tool to 5,000+ Engineers & AI Agents">
-        <span>⚡ Promote Your Tool &amp; MCP Spotlight ($9+) →</span>
-      </a>
-    </div>
-
-    <!-- Community Launch Social Share Bar (Google Chrome & RankBrain Signals) -->
-    <div id="community-share-bar" class="max-w-2xl mx-auto mb-8 px-4 py-2 rounded-2xl bg-slate-900/90 border border-purple-500/30 shadow-lg shadow-purple-950/20 backdrop-blur-md flex flex-wrap items-center justify-between gap-3 text-xs hero-animate hero-animate-delay-4">
-      <div class="flex items-center space-x-2 text-slate-300">
-        <span class="text-sm">🚀</span>
-        <span class="text-white font-bold">Love DevShelf?</span>
-        <span class="hidden sm:inline text-slate-400">Share with fellow engineers:</span>
-      </div>
-      <div class="flex items-center space-x-1.5 flex-wrap">
-        <a id="share-x-btn" href="https://twitter.com/intent/tweet?text=Found%20the%20ultimate%20zero-paywall%20developer%20directory%20%E2%80%94%20530%2B%20verified%20free%20tools%2C%20APIs%2C%20and%20MCP%20server%20for%20AI%20assistants%21%20Check%20it%20out%3A&url=https%3A%2F%2Fdevshelf.ritualdev.in%3Fref%3Dlaunch_share&hashtags=devtools%2Copensource%2Cwebdev" target="_blank" rel="noopener noreferrer" class="px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white border border-slate-700 flex items-center space-x-1.5 font-bold transition shadow-sm hover:scale-105 active:scale-95" title="Share on X (Twitter)">
-          <span>𝕏</span>
-          <span class="text-[11px]">Post</span>
-        </a>
-        <a id="share-reddit-btn" href="https://www.reddit.com/submit?url=https%3A%2F%2Fdevshelf.ritualdev.in%3Fref%3Dlaunch_share&title=DevShelf%20%E2%80%94%20The%20Zero-Paywall%20Developer%20Directory%20(530%2B%20verified%20tools%2C%20free%20APIs%20%26%20MCP%20Server)" target="_blank" rel="noopener noreferrer" class="px-2.5 py-1.5 rounded-lg bg-orange-950/60 hover:bg-orange-900/80 text-orange-200 hover:text-white border border-orange-500/40 flex items-center space-x-1.5 font-bold transition shadow-sm hover:scale-105 active:scale-95" title="Share on Reddit">
-          <span>👾</span>
-          <span class="text-[11px]">Reddit</span>
-        </a>
-        <a id="share-hn-btn" href="https://news.ycombinator.com/submitlink?u=https%3A%2F%2Fdevshelf.ritualdev.in%3Fref%3Dlaunch_share&t=Show%20HN%3A%20DevShelf%20%E2%80%93%20Zero-paywall%20developer%20directory%20with%20CLI%20and%20MCP%20server" target="_blank" rel="noopener noreferrer" class="px-2.5 py-1.5 rounded-lg bg-amber-950/60 hover:bg-amber-900/80 text-amber-200 hover:text-white border border-amber-500/40 flex items-center space-x-1.5 font-bold transition shadow-sm hover:scale-105 active:scale-95" title="Submit to Hacker News">
-          <span>🟠</span>
-          <span class="text-[11px]">HN</span>
-        </a>
-        <button id="share-copy-btn" onclick="navigator.clipboard.writeText('https://devshelf.ritualdev.in?ref=launch_share'); const s=this.querySelector('.copy-text'); const orig=s.textContent; s.textContent='Copied! ✨'; setTimeout(()=>s.textContent=orig, 2000);" class="px-2.5 py-1.5 rounded-lg bg-purple-950/60 hover:bg-purple-900/80 text-purple-200 hover:text-white border border-purple-500/40 flex items-center space-x-1.5 font-bold transition shadow-sm hover:scale-105 active:scale-95" title="Copy DevShelf Share URL">
-          <span>📋</span>
-          <span class="copy-text text-[11px]">Copy Link</span>
-        </button>
-      </div>
-    </div>
-
-    <!-- Live Stat Metric Pills -->
-    <div class="flex flex-wrap items-center justify-center gap-2.5 text-xs font-mono text-slate-200 max-w-5xl mx-auto mb-10 shine-bar rounded-2xl py-2 px-1" id="stats-bar">
-      <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700 flex items-center space-x-2 shadow-sm font-semibold">
-        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-        <span id="stat-total" class="font-bold text-white">575 Resources</span>
-      </div>
-      <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700">
-        <span class="text-purple-300 font-bold" id="stat-repos">363</span> GitHub Repos
-      </div>
-      <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700">
-        <span class="text-orange-300 font-bold" id="stat-boilerplates">42</span> 1-Click Deploys
-      </div>
-      <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700">
-        <span class="text-cyan-300 font-bold" id="stat-apis">109</span> Free APIs
-      </div>
-      <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700">
-        <span class="text-purple-300 font-bold" id="stat-ai">103</span> AI Tools
-      </div>
-      <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700">
-        <span class="text-amber-300 font-bold" id="stat-cli">130</span> CLI Tools
-      </div>
-      <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700">
-        <span class="text-rose-300 font-bold" id="stat-testing">68</span> Testing & QA
-      </div>
-      <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700">
-        <span class="text-sky-300 font-bold" id="stat-cloud">72</span> Free Cloud
-      </div>
-      <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700">
-        <span class="text-pink-300 font-bold" id="stat-perks">30</span> Perks
-      </div>
-      <div class="px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700 text-emerald-300 font-bold">
-        <span>🛡️ Automated Health Checks</span>
-      </div>
-    </div>
-
-    <!-- Live Progress Tracker: The Race to 1,000 Tools -->
-    <div class="max-w-2xl mx-auto mb-8 p-4 rounded-2xl bg-slate-900/90 border border-purple-500/40 shadow-xl shadow-purple-950/30 text-left">
-      <div class="flex items-center justify-between mb-2 flex-wrap gap-2">
-        <div class="flex items-center space-x-2">
-          <span class="text-base">🎯</span>
-          <span class="text-xs sm:text-sm font-extrabold text-white">The Race to 1,000 Verified Tools</span>
-          <span class="text-[10px] font-mono font-bold px-2 py-0.5 rounded-full bg-orange-500/20 text-orange-300 border border-orange-500/30">Hacktoberfest Milestone</span>
-        </div>
-        <div class="text-xs font-mono font-bold text-purple-300" id="progress-percent-label">57% Complete</div>
-      </div>
-      <div class="w-full bg-slate-950 rounded-full h-3.5 p-0.5 border border-slate-800 overflow-hidden mb-2">
-        <div id="milestone-progress-bar" class="h-full rounded-full bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-400 transition-all duration-1000 shadow-sm" style="width: 57%;"></div>
-      </div>
-      <div class="flex items-center justify-between text-[11px] font-mono text-slate-400 flex-wrap gap-1">
-        <span class="text-slate-200">
-          <code id="progress-ascii-bar" class="text-purple-300 font-bold hidden sm:inline">[████████████░░░░░░░░]</code>
-          <strong id="progress-count-label" class="text-emerald-300">575</strong> / 1,000 Tools Verified (<span id="progress-remaining-label" class="text-amber-300">425 to go!</span>)
-        </span>
-        <a href="https://github.com/RitualDev-Lab/DevShelf#how-to-submit-a-tool" target="_blank" rel="noreferrer" class="text-cyan-400 hover:text-cyan-300 font-bold transition hover:underline">
-          Help reach 1,000 +Submit Tool →
-        </a>
-      </div>
-    </div>
-
-    <!-- DevShelf Weekly Newsletter Subscription Card -->
-    <div class="max-w-4xl mx-auto mb-10 p-5 sm:p-6 rounded-2xl bg-gradient-to-r from-purple-950/70 via-slate-900 to-indigo-950/70 border border-purple-500/40 shadow-2xl relative overflow-hidden">
-      <div class="absolute -right-12 -top-12 w-48 h-48 bg-purple-600/15 rounded-full blur-2xl pointer-events-none"></div>
-      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-        <div class="text-left max-w-xl">
-          <div class="flex items-center space-x-2 mb-2 font-mono text-purple-300 font-bold text-xs">
-            <span>📬</span>
-            <span>DEVSHELF WEEKLY NEWSLETTER</span>
-            <span class="px-2 py-0.5 rounded-full text-[10px] bg-emerald-950 text-emerald-300 border border-emerald-500/40">2,800+ Devs</span>
+  <!-- Compact Modern Header Banner (Matching ritualdev.in/devshelf Layout) -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-4">
+    <div class="border-b border-slate-800 pb-8">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+        <div class="space-y-2">
+          <div class="flex flex-wrap items-center gap-2.5">
+            <h1 id="hero-headline" class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">DevShelf</h1>
+            <span class="px-2.5 py-0.5 rounded-full bg-purple-500/10 text-purple-300 border border-purple-500/40 text-xs font-mono font-bold">
+              <span id="hero-total-count">570+</span> Verified Tools
+            </span>
+            <span class="px-2.5 py-0.5 rounded-full bg-cyan-500/10 text-cyan-300 border border-cyan-500/30 text-xs font-mono">
+              Zero Paywall
+            </span>
           </div>
-          <h3 class="text-lg sm:text-xl font-extrabold text-white mb-1.5">
-            5 Curated Zero-Paywall Tools Every Monday
-          </h3>
-          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
-            Discover verified open-source alternatives, public APIs, and developer perks before they hit Hacker News. 100% spam-free, one-click unsubscribe.
+          <p id="hero-description" class="text-slate-400 text-sm sm:text-base font-mono max-w-2xl">
+            The Community Directory for 575+ Open-Source Developer Tools, Free APIs &amp; MCP Servers — no credit-card traps.
           </p>
         </div>
-        <form onsubmit="event.preventDefault(); const em = this.querySelector('input').value; if(em){ localStorage.setItem('devshelf_subscriber', em); this.innerHTML = '<div class=\'p-3 rounded-xl bg-emerald-950/80 border border-emerald-500/50 text-emerald-300 font-mono text-xs text-center font-bold\'>🎉 Subscribed! Welcome aboard.</div>'; }" class="w-full md:w-auto shrink-0 space-y-2">
-          <div class="flex items-center gap-2">
-            <input type="email" required placeholder="developer@acme.com" class="px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-xs text-white placeholder-slate-500 font-mono focus:outline-none focus:border-purple-400 w-full sm:w-64">
-            <button type="submit" class="px-4 py-2.5 rounded-xl text-xs font-bold font-mono text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 transition shadow-lg shadow-purple-600/30 whitespace-nowrap">
-              Subscribe Free →
-            </button>
-          </div>
-          <div class="flex items-center justify-between text-[11px] font-mono text-slate-400">
-            <a href="newsletter.html" class="hover:text-purple-300 transition underline">Read past issues</a>
-            <span class="text-slate-600">•</span>
-            <a href="feed.xml" class="text-orange-400 hover:underline">RSS Feed (feed.xml)</a>
-          </div>
-        </form>
+
+        <div class="flex flex-wrap items-center gap-2.5 text-xs font-mono">
+          <a href="https://ritualdev.in/devshelf/" class="px-3.5 py-2 rounded-xl bg-slate-900 border border-slate-700 hover:border-cyan-400 text-cyan-300 hover:text-white transition">
+            ritualdev.in/devshelf →
+          </a>
+          <button id="hero-badge-btn" class="px-3.5 py-2 rounded-xl bg-slate-900 border border-slate-700 hover:border-slate-500 text-slate-300 hover:text-white transition">
+            Embed Badge
+          </button>
+          <button id="hero-mcp-btn" class="px-3.5 py-2 rounded-xl bg-slate-900 border border-purple-500/40 hover:border-purple-400 text-purple-200 hover:text-white transition">
+            Connect MCP
+          </button>
+          <button id="hero-random-btn" class="px-3.5 py-2 rounded-xl bg-slate-900 border border-slate-700 hover:border-amber-400 text-amber-200 hover:text-white transition">
+            Random Tool
+          </button>
+          <button id="hero-matchmaker-btn" class="hidden sm:inline-flex px-3.5 py-2 rounded-xl bg-slate-900 border border-slate-700 hover:border-emerald-400 text-emerald-300 hover:text-white transition">
+            Matchmaker
+          </button>
+          <button id="hero-wizard-btn" class="hidden sm:inline-flex px-3.5 py-2 rounded-xl bg-slate-900 border border-slate-700 hover:border-purple-400 text-slate-200 hover:text-white transition">
+            + Submit Tool
+          </button>
+          <a href="https://ritualdev.in/partners" class="px-4 py-2 rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-bold transition shadow-lg shadow-purple-600/20">
+            Feature Your Tool ($9+)
+          </a>
+        </div>
+      </div>
+
+      <!-- Compact Live Stat Pills -->
+      <div class="flex flex-wrap items-center gap-2 text-[11px] font-mono text-slate-300 mt-5" id="stats-bar">
+        <div class="px-3 py-1 rounded-full bg-slate-900 border border-slate-800 flex items-center gap-1.5">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+          <span id="stat-total" class="font-bold text-white">575 Resources</span>
+        </div>
+        <div class="px-3 py-1 rounded-full bg-slate-900 border border-slate-800">
+          <span class="text-purple-300 font-bold" id="stat-repos">363</span> GitHub Repos
+        </div>
+        <div class="px-3 py-1 rounded-full bg-slate-900 border border-slate-800">
+          <span class="text-orange-300 font-bold" id="stat-boilerplates">42</span> Boilerplates
+        </div>
+        <div class="px-3 py-1 rounded-full bg-slate-900 border border-slate-800">
+          <span class="text-cyan-300 font-bold" id="stat-apis">109</span> Free APIs
+        </div>
+        <div class="px-3 py-1 rounded-full bg-slate-900 border border-slate-800">
+          <span class="text-purple-300 font-bold" id="stat-ai">103</span> AI Tools
+        </div>
+        <div class="px-3 py-1 rounded-full bg-slate-900 border border-slate-800">
+          <span class="text-amber-300 font-bold" id="stat-cli">130</span> CLI Tools
+        </div>
+        <div class="px-3 py-1 rounded-full bg-slate-900 border border-slate-800">
+          <span class="text-rose-300 font-bold" id="stat-testing">68</span> Testing &amp; QA
+        </div>
+        <div class="px-3 py-1 rounded-full bg-slate-900 border border-slate-800">
+          <span class="text-sky-300 font-bold" id="stat-cloud">72</span> Free Cloud
+        </div>
+        <div class="px-3 py-1 rounded-full bg-slate-900 border border-slate-800">
+          <span class="text-pink-300 font-bold" id="stat-perks">30</span> Perks
+        </div>
       </div>
     </div>
-  </section>
 
-  <!-- Spotlight Section -->
-  <section id="spotlight" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-10">
-    <div class="flex items-center justify-between mb-4">
+    <!-- Clean Feature Your Tool Sponsor CTA Banner (Matching ritualdev.in/devshelf) -->
+    <div class="mt-6 p-5 sm:p-6 rounded-3xl border border-purple-500/30 bg-gradient-to-r from-purple-950/30 via-slate-900/70 to-purple-950/20 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
       <div>
-        <h2 class="text-xl font-extrabold text-white flex items-center space-x-2">
-          <span>🔥 Weekly Spotlight & Top Repos</span>
-          <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30 font-mono">Editor's Choice</span>
+        <div class="flex items-center gap-2 mb-1">
+          <span class="px-2.5 py-0.5 rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/40 text-[11px] font-mono font-bold">
+            ★ Feature Your Developer Tool
+          </span>
+          <span class="text-xs font-mono text-slate-400">Instant activation across 575+ web dossiers &amp; npx devshelf-mcp AI sessions</span>
+        </div>
+        <h2 class="text-base sm:text-lg font-bold text-white">
+          Starter ($9), Launch Spotlight + Custom FAQs ($19), Category Combo Pack ($79/mo) &amp; Custom Sponsor
         </h2>
-        <p class="text-xs text-slate-300">Featured developer tools and active open-source projects this week</p>
+        <p class="text-xs text-slate-400 font-mono mt-0.5">
+          Automated Dodo Payments webhook activation → verified sponsor badge, category #1 pin, and GST/VAT tax invoice.
+        </p>
       </div>
-      <a href="#directory" class="text-xs font-bold text-purple-400 hover:text-purple-300 transition hidden sm:inline-block">View all resources →</a>
-    </div>
-
-    <!-- Spotlight Cards Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" id="spotlight-grid">
-      <!-- Injected dynamically via app.js -->
-    </div>
-
-    <!-- B2B Sponsor Spotlight Booking Callout -->
-    <div class="mt-5 p-4 rounded-xl bg-gradient-to-r from-purple-950/40 via-slate-900 to-indigo-950/40 border border-purple-500/30 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
-      <div class="flex items-center space-x-3">
-        <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40 shrink-0">SPONSOR SLOT</span>
-        <span class="text-slate-300">Are you a devtool or API founder? Put your project at the top of DevShelf and inside Cursor &amp; Claude AI chats via <code class="text-purple-300 font-mono text-[11px]">npx -y @ritualdev-lab/devshelf mcp</code>.</span>
+      <div class="flex flex-wrap items-center gap-2 shrink-0">
+        <a href="sponsors.html" class="px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 text-xs font-mono font-bold transition">
+          How Sponsors Work
+        </a>
+        <a href="https://ritualdev.in/partners" class="px-5 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-xs font-mono font-bold transition shadow-lg shadow-purple-600/30">
+          Feature Your Tool ($9+) →
+        </a>
       </div>
-      <a href="sponsors.html?tier=newsletter-spotlight" class="shrink-0 px-3.5 py-1.5 rounded-lg font-bold font-mono text-xs bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-500 hover:to-purple-500 text-white transition shadow-sm hover:scale-105 active:scale-95">
-        Claim Spotlight ($19) →
-      </a>
-    </div>
-  </section>
-
-  <!-- Social Amplification Banner -->
-  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-    <div class="p-6 rounded-2xl bg-gradient-to-r from-purple-950/80 via-slate-900 to-cyan-950/80 border border-purple-500/40 backdrop-blur flex flex-col md:flex-row items-center justify-between gap-4 shadow-xl">
-      <div class="flex items-center space-x-4">
-        <div class="p-3 bg-purple-600/30 border border-purple-500/40 rounded-xl text-purple-200 shrink-0 text-2xl">
-          📢
-        </div>
-        <div>
-          <h3 class="text-base font-bold text-white">The DevShelf Social Amplification Guarantee</h3>
-          <p class="text-xs text-slate-200 leading-relaxed max-w-2xl mt-0.5">
-            When your open-source tool or public API is submitted and merged, we give your project a dedicated spotlight post on <b>X (Twitter)</b> and <b>LinkedIn</b> via RitualDev Lab to put your launch in front of thousands of active engineers!
-          </p>
-        </div>
-      </div>
-      <a href="https://github.com/RitualDev-Lab/DevShelf/issues/new/choose" target="_blank" rel="noreferrer" class="shrink-0 px-4 py-2.5 rounded-xl text-xs font-bold bg-white text-slate-950 hover:bg-slate-200 transition shadow">
-        Submit Your Project →
-      </a>
     </div>
   </section>
 
@@ -942,6 +793,62 @@
       <p class="text-xs text-slate-300 mb-4 max-w-sm mx-auto">Try searching for other keywords, selecting another category, or resetting filters.</p>
       <button id="reset-filters-btn" class="px-4 py-2 text-xs font-bold rounded-xl bg-purple-600 hover:bg-purple-500 text-white transition">Reset All Filters</button>
     </div>
+
+    <!-- Spotlight & Milestone Cards (Placed Cleanly Below Directory Grid) -->
+    <section id="spotlight" class="pt-14 pb-6 space-y-6 border-t border-slate-800/80 mt-12">
+      <div class="flex items-center justify-between">
+        <div>
+          <h2 class="text-lg font-bold text-white flex items-center space-x-2">
+            <span>Weekly Spotlight &amp; Top Repos</span>
+            <span class="text-xs font-mono font-bold px-2.5 py-0.5 rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/30">Featured</span>
+          </h2>
+          <p class="text-xs text-slate-400">Featured developer tools and sponsored open-source projects</p>
+        </div>
+        <a href="https://ritualdev.in/partners" class="text-xs font-mono font-bold text-purple-400 hover:text-purple-300 transition">All Partner Plans →</a>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" id="spotlight-grid"></div>
+    </section>
+
+    <section class="py-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 text-left flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs sm:text-sm font-bold text-white">The Race to 1,000 Verified Tools</span>
+            <div class="text-xs font-mono font-bold text-purple-300" id="progress-percent-label">57% Complete</div>
+          </div>
+          <div class="w-full bg-slate-950 rounded-full h-3 p-0.5 border border-slate-800 overflow-hidden mb-2">
+            <div id="milestone-progress-bar" class="h-full rounded-full bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-400 transition-all duration-1000 shadow-sm" style="width: 57%;"></div>
+          </div>
+        </div>
+        <div class="flex items-center justify-between text-[11px] font-mono text-slate-400 flex-wrap gap-1">
+          <span class="text-slate-200">
+            <code id="progress-ascii-bar" class="text-purple-300 font-bold hidden sm:inline">[████████████░░░░░░░░]</code>
+            <strong id="progress-count-label" class="text-emerald-300">575</strong> / 1,000 Verified (<span id="progress-remaining-label" class="text-amber-300">425 to go!</span>)
+          </span>
+          <a href="https://github.com/RitualDev-Lab/DevShelf#how-to-submit-a-tool" target="_blank" rel="noreferrer" class="text-cyan-400 hover:underline">+ Submit Tool →</a>
+        </div>
+      </div>
+
+      <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 flex flex-col justify-between gap-3">
+        <div>
+          <span class="text-[11px] font-mono text-purple-300 font-bold uppercase">Weekly Zero-Paywall Digest</span>
+          <h3 class="text-sm font-bold text-white">5 Curated Free Developer Tools Every Monday</h3>
+        </div>
+        <form onsubmit="event.preventDefault(); const em = this.querySelector('input').value; if(em){ localStorage.setItem('devshelf_subscriber', em); this.innerHTML = '<div class=\'p-2.5 rounded-xl bg-emerald-950/80 border border-emerald-500/50 text-emerald-300 font-mono text-xs text-center font-bold\'>Subscribed! Welcome aboard.</div>'; }" class="flex items-center gap-2">
+          <input type="email" required placeholder="developer@acme.com" class="px-3.5 py-2 rounded-xl bg-slate-950 border border-slate-700 text-xs text-white placeholder-slate-500 font-mono focus:outline-none focus:border-purple-400 flex-1">
+          <button type="submit" class="px-4 py-2 rounded-xl text-xs font-bold font-mono text-white bg-purple-600 hover:bg-purple-500 transition whitespace-nowrap">Subscribe →</button>
+        </form>
+        <div id="community-share-bar" class="pt-2 border-t border-slate-800/80 flex items-center justify-between flex-wrap gap-2 text-[11px] font-mono text-slate-400">
+          <span>Share DevShelf:</span>
+          <div class="flex items-center gap-1.5">
+            <a id="share-x-btn" href="https://twitter.com/intent/tweet?text=DevShelf%20Zero-Paywall%20Developer%20Directory&url=https%3A%2F%2Fdevshelf.ritualdev.in%3Fref%3Dlaunch_share" target="_blank" rel="noopener noreferrer" class="px-2 py-1 rounded bg-slate-950 border border-slate-800 text-slate-300 hover:text-white">X</a>
+            <a id="share-reddit-btn" href="https://www.reddit.com/submit?url=https%3A%2F%2Fdevshelf.ritualdev.in%3Fref%3Dlaunch_share&title=DevShelf" target="_blank" rel="noopener noreferrer" class="px-2 py-1 rounded bg-slate-950 border border-slate-800 text-slate-300 hover:text-white">Reddit</a>
+            <a id="share-hn-btn" href="https://news.ycombinator.com/submitlink?u=https%3A%2F%2Fdevshelf.ritualdev.in%3Fref%3Dlaunch_share&t=Show%20HN%3A%20DevShelf" target="_blank" rel="noopener noreferrer" class="px-2 py-1 rounded bg-slate-950 border border-slate-800 text-slate-300 hover:text-white">HN</a>
+            <button id="share-copy-btn" type="button" onclick="navigator.clipboard.writeText('https://devshelf.ritualdev.in?ref=launch_share'); this.textContent='Copied!'; setTimeout(()=>this.textContent='Copy',1500);" class="px-2 py-1 rounded bg-slate-950 border border-slate-800 text-purple-300 hover:text-white">Copy</button>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- Team & Contributors Showcase -->
