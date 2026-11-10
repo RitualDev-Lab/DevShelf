@@ -81,7 +81,12 @@
         "@id": "https://devshelf.ritualdev.in/#organization",
         "name": "RitualDev Lab",
         "url": "https://ritualdev.in",
-        "logo": "https://devshelf.ritualdev.in/favicon.svg",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://devshelf.ritualdev.in/ritualdev-logo.png",
+          "width": 384,
+          "height": 384
+        },
         "sameAs": [
           "https://github.com/RitualDev-Lab",
           "https://twitter.com/RitualDevLab"
@@ -277,7 +282,10 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-3">
       <!-- Brand Logo -->
       <div class="flex items-center space-x-2.5 shrink-0">
-        <a href="https://ritualdev.in/" class="text-xs font-mono text-slate-400 hover:text-cyan-300 transition hidden sm:inline">RitualDev Lab</a>
+        <a href="https://ritualdev.in/" class="flex items-center gap-2 text-xs font-mono text-slate-400 hover:text-cyan-300 transition hidden sm:inline-flex">
+          <img src="ritualdev-logo.png" alt="RitualDev Lab" width="22" height="22" class="w-5 h-5 rounded bg-white p-0.5 object-contain">
+          <span>RitualDev Lab</span>
+        </a>
         <span class="text-slate-700 hidden sm:inline">/</span>
         <a href="https://devshelf.ritualdev.in" class="text-lg font-extrabold tracking-tight text-white hover:text-purple-300 transition whitespace-nowrap">DevShelf</a>
         <span class="hidden sm:inline-block px-2 py-0.5 text-[10px] font-mono font-bold rounded-full bg-purple-500/10 text-purple-300 border border-purple-500/30 whitespace-nowrap">Zero Paywall</span>
