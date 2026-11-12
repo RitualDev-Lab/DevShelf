@@ -1,5 +1,5 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-11-08T15:57:11.443Z",
+  "updatedAt": "2026-11-10T11:55:53.542Z",
   "totalCount": 575,
   "reposCount": 363,
   "facets": {
@@ -3655,6 +3655,13 @@ window.DEVSHELF_DATA = {
       "language": "Claude Code plugin, Markdown skills and agents, Bash hooks, JSON manifests",
       "license": "MIT",
       "featured": false,
+      "installNote": "To install the plugin, open Claude Code and run these as two separate commands:",
+      "installCommands": [
+        "/plugin marketplace add https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer",
+        "/plugin install akii-seo-ai-search-optimizer@akii"
+      ],
+      "installDocsUrl": "https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer#installation",
+      "installDocsLabel": "Official installation instructions",
       "type": "cli",
       "section": "CLI & Productivity Tools"
     },

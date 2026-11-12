@@ -1384,6 +1384,13 @@
     "repo": "https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer",
     "language": "Claude Code plugin, Markdown skills and agents, Bash hooks, JSON manifests",
     "license": "MIT",
-    "featured": false
+    "featured": false,
+    "installNote": "To install the plugin, open Claude Code and run these as two separate commands:",
+    "installCommands": [
+      "/plugin marketplace add https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer",
+      "/plugin install akii-seo-ai-search-optimizer@akii"
+    ],
+    "installDocsUrl": "https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer#installation",
+    "installDocsLabel": "Official installation instructions"
   }
 ]

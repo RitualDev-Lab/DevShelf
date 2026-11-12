@@ -128,38 +128,45 @@
 
   <!-- Hero Section -->
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
-    <div class="text-center max-w-3xl mx-auto mb-16">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-950/70 border border-pink-500/40 text-pink-300 text-xs font-bold font-mono mb-4">
-        <span>✨ ZERO-PAYWALL OPEN SOURCE INITIATIVE</span>
+    <div class="text-center max-w-3xl mx-auto mb-10">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/70 border border-emerald-500/40 text-emerald-300 text-xs font-bold font-mono mb-4">
+        <span>⚡ FEATURE YOUR DEVELOPER TOOL</span>
       </div>
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6">
-        Support Open Source.<br/>
-        <span class="bg-gradient-to-r from-pink-400 via-purple-300 to-cyan-400 bg-clip-text text-transparent">
-          Join the Wall of Patrons.
-        </span>
+      <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white mb-4">
+        DevShelf Partner Spotlights &amp; Sponsors
       </h1>
-      <p class="text-base sm:text-lg text-slate-300 leading-relaxed">
-        RitualDev Lab builds local-first developer tools and AI security frameworks with zero marketing traps and no hidden subscriptions.
-        Every contribution directly funds our test infrastructure, continuous security scans, and open catalog indexing.
+      <p class="text-sm sm:text-base text-emerald-300 font-mono font-bold mb-3">
+        Instant activation across 575+ web dossiers &amp; <code class="px-1.5 py-0.5 rounded bg-emerald-950/60 border border-emerald-500/30">npx devshelf-mcp</code> AI sessions.
       </p>
+      <p class="text-sm text-slate-300 leading-relaxed mb-6">
+        Supports every paid package ($9 Starter, $19 Launch Spotlight, $39/mo Category Exclusive, $49/mo MCP Pro, $79/mo Category Combo Pack, and flexible Custom Sponsors).
+      </p>
+      <a href="https://ritualdev.in/partners" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs font-mono transition shadow-lg shadow-emerald-500/20">
+        <span>Open Full Partners Storefront &amp; Combo Picker (ritualdev.in/partners) →</span>
+      </a>
+    </div>
 
-      <!-- Key Metrics Counter -->
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 pt-6 border-t border-slate-800/80">
-        <div class="p-3 bg-slate-900/60 rounded-xl border border-slate-800">
-          <div class="text-2xl font-extrabold text-purple-400">537</div>
-          <div class="text-xs text-slate-400">Verified Free Tools</div>
+    <!-- How Sponsorship Works (3 Automated Steps) -->
+    <div id="sponsor-workflow" class="mb-12 p-6 rounded-2xl bg-slate-900/90 border border-emerald-500/30 shadow-xl">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-4 mb-5 border-b border-slate-800">
+        <div>
+          <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-emerald-400">Transparent Fulfillment Pipeline</span>
+          <h2 class="text-lg sm:text-xl font-bold text-white">What Happens After You Pay? (3 Automated Steps)</h2>
         </div>
-        <div class="p-3 bg-slate-900/60 rounded-xl border border-slate-800">
-          <div class="text-2xl font-extrabold text-pink-400">100%</div>
-          <div class="text-xs text-slate-400">Zero-Paywall Audited</div>
+        <span class="text-xs font-mono text-slate-400">Zero manual guesswork • 100% Refund Guarantee</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+        <div class="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-1.5">
+          <div class="font-mono font-bold text-sky-400">1. Order &amp; Metadata Registered</div>
+          <p class="text-slate-300 leading-relaxed">Submitting this form sends your tool URL, category, pitch, and chosen tier to <code class="text-slate-200">POST ritualdev.in/api/partner-order</code> (with Slack/Discord alert) before opening Dodo Checkout.</p>
         </div>
-        <div class="p-3 bg-slate-900/60 rounded-xl border border-slate-800">
-          <div class="text-2xl font-extrabold text-cyan-400">$9 / ₹750+</div>
-          <div class="text-xs text-slate-400">Indie-Friendly Tiers</div>
+        <div class="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-1.5">
+          <div class="font-mono font-bold text-emerald-400">2. Webhook Dispatches GitHub Activation</div>
+          <p class="text-slate-300 leading-relaxed">As soon as Card, Apple Pay, Google Pay, or UPI settles, Dodo sends a signed webhook to <code class="text-slate-200">ritualdev.in/api/webhooks/dodo</code> which automatically triggers <code class="text-emerald-300">activate-sponsor.yml</code>.</p>
         </div>
-        <div class="p-3 bg-slate-900/60 rounded-xl border border-slate-800">
-          <div class="text-2xl font-extrabold text-emerald-400">24 Hours</div>
-          <div class="text-xs text-slate-400">Editorial Review Guarantee</div>
+        <div class="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-1.5">
+          <div class="font-mono font-bold text-purple-300">3. Featured Live + Tax Invoice Sent</div>
+          <p class="text-slate-300 leading-relaxed">Your tool gets tagged <code class="text-amber-300">★ Verified Sponsor</code> across all 575+ dossiers, <code class="text-purple-300">npx devshelf-mcp</code>, custom FAQs/CTAs, and Dodo emails your GST/VAT tax receipt automatically.</p>
         </div>
       </div>
     </div>
@@ -559,7 +566,7 @@
             <h3 class="text-lg font-bold text-white mb-1">DevShelf Starter</h3>
             <p class="text-xs text-slate-400 mb-4">Permanent listing for indie dev tools, new CLI utilities, and open developer APIs seeking discovery.</p>
             <div class="flex items-baseline gap-1 mb-6">
-              <span class="text-3xl font-extrabold text-white font-mono">$29</span>
+              <span class="text-3xl font-extrabold text-white font-mono">$9</span>
               <span class="text-xs text-slate-400 font-mono">permanent</span>
             </div>
             <ul class="space-y-2.5 text-xs text-slate-300 mb-6 font-sans">
@@ -673,14 +680,14 @@
           </button>
         </div>
 
-        <!-- Tier 4: Enterprise Partner -->
+        <!-- Tier 4: Category Combo Pack / Enterprise Partner -->
         <div class="bg-slate-900/90 rounded-2xl border border-amber-500/40 p-6 flex flex-col justify-between hover:border-amber-400 transition">
           <div>
             <div class="inline-block px-2.5 py-0.5 text-[10px] font-mono font-bold rounded-full bg-amber-950 text-amber-300 border border-amber-500/40 mb-3">
-              ⚡ Multi-Channel Takeover
+              ⚡ Category Combo Pack (3 Shelves)
             </div>
-            <h3 class="text-lg font-bold text-white mb-1">Enterprise Partner</h3>
-            <p class="text-xs text-slate-400 mb-4">Top headline spotlight on homepage + priority AI agent context injection across Cursor &amp; Claude.</p>
+            <h3 class="text-lg font-bold text-white mb-1">Category Combo / Enterprise</h3>
+            <p class="text-xs text-slate-400 mb-4">Up to 3 categories + Top Homepage Headline Spotlight + priority AI agent context injection across Cursor &amp; Claude.</p>
             <div class="flex items-baseline gap-1 mb-6">
               <span class="text-3xl font-extrabold text-amber-400 font-mono">$79</span>
               <span class="text-xs text-slate-400 font-mono">/ month</span>
@@ -1111,9 +1118,9 @@
       </div>
       <div class="flex items-center space-x-6 text-slate-400">
         <a href="index.html" class="hover:text-purple-300 transition">DevShelf Catalog</a>
-        <a href="https://agentshield.ritualdev.in" class="hover:text-purple-300 transition">AgentShield</a>
-        <a href="https://skillprism.ritualdev.in" class="hover:text-purple-300 transition">SkillPrism</a>
-        <a href="https://mcp.ritualdev.in" class="hover:text-purple-300 transition">MCP Builder Kit</a>
+        <a href="https://ritualdev.in/agentshield" class="hover:text-purple-300 transition">AgentShield</a>
+        <a href="https://ritualdev.in/skillprism" class="hover:text-purple-300 transition">SkillPrism</a>
+        <a href="https://ritualdev.in/mcp-builder" class="hover:text-purple-300 transition">MCP Builder Kit</a>
       </div>
     </div>
   </footer>
@@ -1679,7 +1686,39 @@
       renderLeaderboard('all');
       renderComments();
 
-      // Automated background intake dispatch to RitualDev maintainers via FormSubmit.co
+      // Register partner order & trigger Slack/Discord alert on RitualDev Cloudflare Function
+      try {
+        const resolvedTierId =
+          activePackageId === 'starter' || usd === 9
+            ? 'starter_9'
+            : activePackageId === 'newsletterSpotlight' || usd === 19
+              ? 'spotlight_19'
+              : activePackageId === 'categoryTakeover' || usd === 39
+                ? 'category_39'
+                : activePackageId === 'mcpPro' || usd === 49
+                  ? 'leader_49'
+                  : activePackageId === 'enterprise' || usd === 79
+                    ? 'combo_79'
+                    : 'custom';
+        fetch('https://ritualdev.in/api/partner-order', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            toolName: toolName || name,
+            toolUrl: toolUrl || safeUrl || 'https://devshelf.ritualdev.in/sponsors.html',
+            category: toolCategory || 'cli',
+            contactEmail: email,
+            tier: resolvedTierId,
+            customAmountUsd: resolvedTierId === 'custom' ? usd : undefined,
+            sponsorHandle: cleanGithub || '',
+            tagline: toolPitch || comment || toolNotes || ''
+          })
+        }).catch(err => console.warn('Partner order webhook notice:', err));
+      } catch (err) {
+        console.warn('Partner order dispatch error:', err);
+      }
+
+      // Automated background intake backup dispatch via FormSubmit.co
       try {
         fetch('https://formsubmit.co/ajax/hello@ritualdev.in', {
           method: 'POST',
