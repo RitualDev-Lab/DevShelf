@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 575 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 576 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -960,6 +960,15 @@
 - **URL**: https://ai-image-cleaner.com/tools/remove-person-from-photo-online-free
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/ai-image-cleaner.html
 - **Description**: Online AI inpainting tool to remove unwanted people, objects, watermarks, and clutter from photos with brush-mask editing.
+
+### easi.run
+- **Category**: ai-tools
+- **Pricing Model**: Free self-hosted software. Hosting and external agent/model costs are separate.
+- **License**: AGPL-3.0-only
+- **Language**: Linux, Chrome, MCP, REST
+- **URL**: https://easi.run
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/easirun.html
+- **Description**: Self-hosted Chrome for external AI agents via MCP/REST, with live viewing and human handoff for login, 2FA or approvals.
 
 ### FinePrint AI
 - **Category**: Developer Utilities

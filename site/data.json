@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-10T11:55:53.542Z",
-  "totalCount": 575,
-  "reposCount": 363,
+  "updatedAt": "2026-11-12T21:34:14.831Z",
+  "totalCount": 576,
+  "reposCount": 364,
   "facets": {
-    "repos": 363
+    "repos": 364
   },
   "counts": {
-    "aiTools": 103,
+    "aiTools": 104,
     "cliTools": 130,
     "testingQa": 68,
     "apis": 109,
@@ -1660,6 +1660,23 @@
       "statusTags": [
         "No Card Required",
         "Free Tier"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "easi.run",
+      "category": "ai-tools",
+      "description": "Self-hosted Chrome for external AI agents via MCP/REST, with live viewing and human handoff for login, 2FA or approvals.",
+      "repo": "https://easi.run",
+      "url": "https://easi.run",
+      "language": "Linux, Chrome, MCP, REST",
+      "license": "AGPL-3.0-only",
+      "featured": false,
+      "freeTier": "Free self-hosted software. Hosting and external agent/model costs are separate.",
+      "statusTags": [
+        "Self-Hostable",
+        "No Card Required"
       ],
       "type": "ai",
       "section": "AI Agents & Local LLMs"
