@@ -4,10 +4,10 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total AI Tools](https://img.shields.io/badge/AI_Tools-103_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total AI Tools](https://img.shields.io/badge/AI_Tools-104_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
-[AI & Machine Learning](#ai-machine-learning) • [AI Agent Security & Defense](#ai-agent-security-defense) • [AI Agents & Autonomous Coding](#ai-agents-autonomous-coding) • [AI Agents & Local LLMs](#ai-agents-local-llms) • [AI Agents & MCP Servers](#ai-agents-mcp-servers) • [AI Workflow & Orchestration](#ai-workflow-orchestration) • [Autonomous Coding & Agent Dev](#autonomous-coding-agent-dev) • [Local AI & Inference](#local-ai-inference) • [Web UI & Chat](#web-ui-chat)
+[AI & Machine Learning](#ai-machine-learning) • [AI Agent Security & Defense](#ai-agent-security-defense) • [AI Agents & Autonomous Coding](#ai-agents-autonomous-coding) • [AI Agents & Local LLMs](#ai-agents-local-llms) • [AI Agents & MCP Servers](#ai-agents-mcp-servers) • [AI Workflow & Orchestration](#ai-workflow-orchestration) • [ai-tools](#ai-tools) • [Autonomous Coding & Agent Dev](#autonomous-coding-agent-dev) • [Local AI & Inference](#local-ai-inference) • [Web UI & Chat](#web-ui-chat)
 
 ---
 
@@ -79,6 +79,12 @@
 | [**Promptfoo**](https://github.com/promptfoo/promptfoo) | `TypeScript` | `MIT` | Test your prompts, agents, and RAGs against red-teaming attacks, prompt injections, and regression suites. | [GitHub](https://github.com/promptfoo/promptfoo) |
 | [**LMQL**](https://github.com/eth-sri/lmql) | `Python` | `Apache-2.0` | A query language for programming Large Language Models with typed output constraints and distribution control. | [GitHub](https://github.com/eth-sri/lmql) |
 | [**⭐ DSPy**](https://github.com/stanfordnlp/dspy) | `Python` | `MIT` | Stanford framework for programming—rather than prompting—foundation models with automatic prompt optimization. | [GitHub](https://github.com/stanfordnlp/dspy) |
+
+### <a id="ai-tools"></a>ai-tools (1)
+
+| Tool | Language | License | Description | Links |
+| :--- | :---: | :---: | :--- | :---: |
+| [**easi.run**](https://easi.run) | `Linux, Chrome, MCP, REST` | `AGPL-3.0-only` | Self-hosted Chrome for external AI agents via MCP/REST, with live viewing and human handoff for login, 2FA or approvals. | [GitHub](https://easi.run) |
 
 ### <a id="autonomous-coding-agent-dev"></a>Autonomous Coding & Agent Dev (11)
 
