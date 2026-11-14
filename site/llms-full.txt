@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 576 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 577 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -3582,13 +3582,13 @@
 
 ### Arcmira: YouTube Transcript Search
 - **Category**: Entertainment & Media
-- **Pricing Model**: 60 requests per minute per key; 1,000 included credits per month. First five search passages per request use zero credits. The Free plan withholds the newest 30 days and later result pages. No card required; Free is not a time-limited trial.
+- **Pricing Model**: 60 requests per minute per key; 1,000 included credits per month. First five search passages per request use zero credits. The Free plan withholds the newest 30 days and later result pages. No card required; Free is not a time-limited trial. Premium transcripts and sponsor research use paid plans.
 
 Current limits: https://arcmira.com/docs/usage-and-billing
 - **Auth**: Free API Key
 - **URL**: https://arcmira.com/docs
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/arcmira-youtube-transcript-search.html
-- **Description**: Search indexed YouTube transcripts by topic, with source links and timestamps. Retrieve captions and resolve people, channels and videos. Coverage is partial. A permanent Free tier is available; Premium transcripts and sponsor research use paid plans.
+- **Description**: YouTube transcript search and monitoring for your AI. Arcmira understands YouTube and podcasts like it watched them: the exact quote, often who said it, the full transcript and sponsors.
 
 ### Caption-Pack API
 - **Category**: AI & Machine Learning
@@ -3677,6 +3677,16 @@ Current limits: https://arcmira.com/docs/usage-and-billing
 - **URL**: https://datacircle.dev
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/datacircle.html
 - **Description**: Find the best GTM APIs. Benchmarking GTM APIs with published results at datacircle.dev. Base URL https://api.datacircle.dev/v1.
+
+### 链小知区块链 (Lianxiaozhi)
+- **Category**: Finance & Crypto
+- **Pricing Model**: A fixed request quota is not published in the documentation reviewed. The API is currently free and anonymous; respect Cache-Control, ETag and Retry-After. This is not a claim of unlimited usage.
+- **Auth**: No Key
+- **URL**: https://lianxiaozhi.com/agent
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/-lianxiaozhi.html
+- **Description**: Read-only JSON access to Chinese-language blockchain news summaries, knowledge cards and tool guides. Useful for research dashboards or assistants that need source-linked Chinese context, rather than trade execution or price predictions.
+
+Public documentation: https://lianxiaozhi.com/agent...
 
 ### Supabase
 - **Category**: Databases & BaaS

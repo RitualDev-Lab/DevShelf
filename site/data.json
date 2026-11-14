@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-12T21:34:14.831Z",
-  "totalCount": 576,
+  "updatedAt": "2026-11-14T02:58:31.531Z",
+  "totalCount": 577,
   "reposCount": 364,
   "facets": {
     "repos": 364
@@ -9,7 +9,7 @@
     "aiTools": 104,
     "cliTools": 130,
     "testingQa": 68,
-    "apis": 109,
+    "apis": 110,
     "freeCloud": 72,
     "perks": 30,
     "boilerplates": 42,
@@ -6241,6 +6241,18 @@
         "CI Verified",
         "Rate-Limited"
       ],
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "链小知区块链 (Lianxiaozhi)",
+      "category": "Finance & Crypto",
+      "description": "Read-only JSON access to Chinese-language blockchain news summaries, knowledge cards and tool guides. Useful for research dashboards or assistants that need source-linked Chinese context, rather than trade execution or price predictions.\n\nPublic documentation: https://lianxiaozhi.com/agent...",
+      "url": "https://lianxiaozhi.com/agent",
+      "auth": "No Key",
+      "cors": "Yes",
+      "rateLimit": "A fixed request quota is not published in the documentation reviewed. The API is currently free and anonymous; respect Cache-Control, ETag and Retry-After. This is not a claim of unlimited usage.",
+      "https": true,
       "type": "api",
       "section": "Free & Public APIs"
     },
