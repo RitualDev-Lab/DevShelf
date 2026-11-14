@@ -603,9 +603,12 @@ async function generateSeo() {
   <link rel="help" href="../llms.txt">
 
   <!-- Favicon -->
+  <link rel="shortcut icon" href="../favicon.ico">
   <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="../favicon-48x48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
   <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-  <link rel="alternate icon" href="../favicon.ico">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -1084,7 +1087,11 @@ async function generateSeo() {
   <link rel="alternate" type="application/json" href="../api/v1/tools.json" title="DevShelf Public REST API">
   <link rel="help" href="../llms.txt">
 
+  <link rel="shortcut icon" href="../favicon.ico">
   <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="../favicon-48x48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
   <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 
   <meta property="og:type" content="article">
@@ -1418,7 +1425,11 @@ async function generateSeo() {
   <link rel="alternate" type="application/json" href="../api/v1/tools.json" title="DevShelf Public REST API">
   <link rel="help" href="../llms.txt">
 
+  <link rel="shortcut icon" href="../favicon.ico">
   <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="../favicon-48x48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
   <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 
   <meta property="og:type" content="article">
@@ -1703,7 +1714,11 @@ async function generateSeo() {
   <link rel="alternate" type="application/json" href="api/v1/tools.json" title="DevShelf Public REST API">
   <link rel="help" href="llms.txt">
 
+  <link rel="shortcut icon" href="favicon.ico">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
   <meta property="og:type" content="website">
