@@ -4,7 +4,7 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total APIs](https://img.shields.io/badge/APIs-109_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total APIs](https://img.shields.io/badge/APIs-110_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
 [AI & Machine Learning](#ai-machine-learning) • [Animals & Fun](#animals-fun) • [Books & Literature](#books-literature) • [Development & Testing](#development-testing) • [Entertainment & Media](#entertainment-media) • [Finance & Crypto](#finance-crypto) • [Food & Health](#food-health) • [Games & Media](#games-media) • [Geocoding & IP](#geocoding-ip) • [Media & Images](#media-images) • [News & Media](#news-media) • [Other](#other) • [Science & Astronomy](#science-astronomy) • [Travel & Transit](#travel-transit) • [Weather & Climate](#weather-climate)
@@ -91,11 +91,11 @@
 
 | API & URL | Auth | Rate Limit | Description |
 | :--- | :---: | :---: | :--- |
-| [**Arcmira: YouTube Transcript Search**](https://arcmira.com/docs) | 🔑 Free Key | `60 requests per minute per key; 1,000 included credits per month. First five search passages per request use zero credits. The Free plan withholds the newest 30 days and later result pages. No card required; Free is not a time-limited trial.  Current limits: https://arcmira.com/docs/usage-and-billing` | Search indexed YouTube transcripts by topic, with source links and timestamps. Retrieve captions and resolve people, channels and videos. Coverage is partial. A permanent Free tier is available; Premium transcripts and sponsor research use paid plans. |
+| [**Arcmira: YouTube Transcript Search**](https://arcmira.com/docs) | 🔑 Free Key | `60 requests per minute per key; 1,000 included credits per month. First five search passages per request use zero credits. The Free plan withholds the newest 30 days and later result pages. No card required; Free is not a time-limited trial. Premium transcripts and sponsor research use paid plans.  Current limits: https://arcmira.com/docs/usage-and-billing` | YouTube transcript search and monitoring for your AI. Arcmira understands YouTube and podcasts like it watched them: the exact quote, often who said it, the full transcript and sponsors. |
 | [**unicum.gg**](https://unicum.gg/docs) | 🟢 No Key | `No fixed quota, fair use. Every endpoint is free and keyless.` | Free World of Tanks statistics API: player/clan profiles, WN7/WN8/WNX ratings, leaderboards, tank specs, maps, tournaments and server population for EU, NA and Asia. Open source with OpenAPI 3 spec (https://unicum.gg/api/openapi.json) and community MCP server. |
 | [**Bucketlist.nl Dream of the Day**](https://bucketlist.nl/brand/droom-van-de-dag.openapi.json) | 🟢 No Key | `No numeric request quota or reset period is published in the official documentation. The selected content changes daily; that content schedule does not specify the number of permitted requests.` | A public JSON feed of daily travel, leisure and life-experience ideas with images, canonical URLs and source attribution. Developers can use it in activity-discovery interfaces and inspiration widgets; Netherlands/worldwide scope and five documented languages are supported. |
 
-### <a id="finance-crypto"></a>Finance & Crypto (8)
+### <a id="finance-crypto"></a>Finance & Crypto (9)
 
 | API & URL | Auth | Rate Limit | Description |
 | :--- | :---: | :---: | :--- |
@@ -107,6 +107,7 @@
 | [**CryptoCompare API**](https://min-api.cryptocompare.com) | 🔑 Free Key | `100,000 req/mo` | Enterprise-grade digital asset prices and OHLCV historical charting data with free developer tier. |
 | [**Agent Wallet Index**](https://agentwalletindex.fyi/developers) | 🟢 No Key | `300 requests per 60 seconds` | Directory of agent wallets, payment rails, card programs and key-management layers for AI agents. Listings show custody, fees, protocols and spend controls with cited sources. Read-only JSON API, no key needed. |
 | [**CreditUnions**](https://creditunions.fyi/developers) | 🟢 No Key | `300 requests per 60 seconds` | Directory of federally insured US credit unions from the NCUA register. Listings show charter, field of membership, assets and member count. Read-only JSON API, no key needed. |
+| [**链小知区块链 (Lianxiaozhi)**](https://lianxiaozhi.com/agent) | 🟢 No Key | `A fixed request quota is not published in the documentation reviewed. The API is currently free and anonymous; respect Cache-Control, ETag and Retry-After. This is not a claim of unlimited usage.` | Read-only JSON access to Chinese-language blockchain news summaries, knowledge cards and tool guides. Useful for research dashboards or assistants that need source-linked Chinese context, rather than trade execution or price predictions.  Public documentation: https://lianxiaozhi.com/agent... |
 
 ### <a id="food-health"></a>Food & Health (3)
 

@@ -1201,5 +1201,15 @@
     "rateLimit": "60 calls/min",
     "https": true,
     "statusTags": ["CI Verified", "Rate-Limited"]
+  },
+  {
+    "name": "链小知区块链 (Lianxiaozhi)",
+    "category": "Finance & Crypto",
+    "description": "Read-only JSON access to Chinese-language blockchain news summaries, knowledge cards and tool guides. Useful for research dashboards or assistants that need source-linked Chinese context, rather than trade execution or price predictions.\n\nPublic documentation: https://lianxiaozhi.com/agent...",
+    "url": "https://lianxiaozhi.com/agent",
+    "auth": "No Key",
+    "cors": "Yes",
+    "rateLimit": "A fixed request quota is not published in the documentation reviewed. The API is currently free and anonymous; respect Cache-Control, ETag and Retry-After. This is not a claim of unlimited usage.",
+    "https": true
   }
 ]
