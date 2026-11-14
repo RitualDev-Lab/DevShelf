@@ -26,6 +26,11 @@
     "access": "public"
   },
   "packageManager": "pnpm@9.15.4",
+  "pnpm": {
+    "overrides": {
+      "@hono/node-server": ">=2.1.8"
+    }
+  },
   "bin": {
     "devshelf": "bin/cli.js",
     "devshelf-mcp": "bin/mcp.js",

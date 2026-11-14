@@ -6,7 +6,8 @@ function slugify(text: string): string {
   return text
     .toLowerCase()
     .replace(/[^\w\s-]/g, "")
-    .replace(/\s+/g, "-");
+    .replace(/\s+/g, "-")
+    .replace(/^-+|-+$/g, "") || "tool";
 }
 
 function escapeHtml(str: string | undefined): string {
