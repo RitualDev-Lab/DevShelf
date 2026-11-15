@@ -33,7 +33,7 @@
 
 <table>
 <tr>
-<td align="center"><b>🌐 Free APIs</b><br><code>110</code></td>
+<td align="center"><b>🌐 Free APIs</b><br><code>111</code></td>
 <td align="center"><b>🤖 AI & LLMs</b><br><code>104</code></td>
 <td align="center"><b>⚡ CLI Tools</b><br><code>130</code></td>
 <td align="center"><b>🧪 Testing & QA</b><br><code>68</code></td>
@@ -47,7 +47,7 @@
 ### 🎯 The Race to 1,000 Verified Tools (Hacktoberfest Milestone)
 
 ```text
-[████████████░░░░░░░░] 577 / 1,000 Tools Verified (58% • 423 to go!)
+[████████████░░░░░░░░] 578 / 1,000 Tools Verified (58% • 422 to go!)
 ```
 
 *Help us curate the definitive zero-paywall index! [Submit your favorite developer tool, API, or AI framework →](#-how-to-submit-your-project-or-api)*
@@ -85,7 +85,7 @@ DevShelf isn't a static markdown list. It runs directly inside your terminal, in
 ┌─────────────────────────────────────────────────────────────────────────────────┐
 │ $ npx devshelf search "postgres"                                                │
 │                                                                                 │
-│ 📚 DevShelf CLI v1.1.0 — 577 Curated Tools (Live CI Audited)                    │
+│ 📚 DevShelf CLI v1.1.0 — 578 Curated Tools (Live CI Audited)                    │
 │                                                                                 │
 │ [1] Neon (Database / Serverless)                                                │
 │     Serverless Postgres with autoscaling, branching, and generous free tier.    │
@@ -200,11 +200,11 @@ npx devshelf stats
 
 ## 📂 Browse Catalog by Category
 
-Explore our curated collections of **577+ zero-paywall developer tools**, categorized into dedicated guides with subcategory indexing:
+Explore our curated collections of **578+ zero-paywall developer tools**, categorized into dedicated guides with subcategory indexing:
 
 | Category | Resources | Description & Subcategories | Guide |
 | :--- | :---: | :--- | :---: |
-| 🌐 **Free & Public APIs** | **110** | Weather, Finance, Mock/Dev APIs, Geocoding, AI/ML, Media, Entertainment | [**Browse APIs →**](docs/apis.md) |
+| 🌐 **Free & Public APIs** | **111** | Weather, Finance, Mock/Dev APIs, Geocoding, AI/ML, Media, Entertainment | [**Browse APIs →**](docs/apis.md) |
 | 🤖 **AI Agents & Local LLMs** | **104** | Local LLM Runtimes, Autonomous Agents, Coding Assistants, Orchestration | [**Browse AI Tools →**](docs/ai-tools.md) |
 | ⚡ **CLI & Productivity Tools** | **130** | Terminal Utilities, Git Power Tools, Docker & DevOps, Benchmarking, DBs | [**Browse CLI Tools →**](docs/cli-tools.md) |
 | 🧪 **Testing & QA Reliability** | **68** | E2E Testing, Mock Servers, Contract Testing, Security Auditing, Performance | [**Browse Testing Tools →**](docs/testing-qa.md) |
@@ -682,6 +682,15 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
         <sub><b>27105198-cell</b></sub>
       </a><br />
       <sub>🔗 链小知区块链 (PR #181)</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="160">
+      <a href="https://github.com/Antcolombo">
+        <img src="https://github.com/Antcolombo.png" width="70" style="border-radius: 50%;" alt="Antcolombo"/><br />
+        <sub><b>Antcolombo</b></sub>
+      </a><br />
+      <sub>📈 Beliefstate API (#186)</sub>
     </td>
   </tr>
 </table>

@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 577 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 578 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -3683,10 +3683,18 @@ Current limits: https://arcmira.com/docs/usage-and-billing
 - **Pricing Model**: A fixed request quota is not published in the documentation reviewed. The API is currently free and anonymous; respect Cache-Control, ETag and Retry-After. This is not a claim of unlimited usage.
 - **Auth**: No Key
 - **URL**: https://lianxiaozhi.com/agent
-- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/-lianxiaozhi.html
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/lianxiaozhi.html
 - **Description**: Read-only JSON access to Chinese-language blockchain news summaries, knowledge cards and tool guides. Useful for research dashboards or assistants that need source-linked Chinese context, rather than trade execution or price predictions.
 
 Public documentation: https://lianxiaozhi.com/agent...
+
+### BeliefState Company Coverage API
+- **Category**: Finance & Crypto
+- **Pricing Model**: A fixed quota is not published. The coverage request is free and keyless.
+- **Auth**: No Key
+- **URL**: https://beliefstate.ai/about#investor-thesis-coverage
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/beliefstate-company-coverage-api.html
+- **Description**: Public JSON listing the stocks with released BeliefState investor research, including ticker symbols, coverage counts, and observation dates. Developers can check which companies are covered before requesting research. The submitted API is the free coverage endpoint. Detailed research is...
 
 ### Supabase
 - **Category**: Databases & BaaS
