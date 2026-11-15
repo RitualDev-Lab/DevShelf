@@ -64,11 +64,15 @@ module.exports = async function postMergeCelebration({ github, context }) {
   const toolName = addedItems.length > 0 ? addedItems[0].name : "your project";
   const slug = addedItems.length > 0 ? slugify(toolName) : "";
   const toolPageUrl = slug
-    ? `https://ritualdev.in/tools/${slug}.html`
+    ? `https://ritualdev.in/devshelf/${slug}`
     : "https://ritualdev.in/devshelf";
+  const devshelfSiteUrl = slug
+    ? `https://devshelf.ritualdev.in/tools/${slug}.html`
+    : "https://devshelf.ritualdev.in";
 
-  const sponsorCheckoutUrl = `https://checkout.dodopayments.com/buy/pdt_0NpjONGugY5QkrFDUaPva?quantity=1&redirect_url=${encodeURIComponent(`https://ritualdev.in/sponsors.html?tool=${slug}&success=true`)}`;
-  const sponsorPortalUrl = `https://ritualdev.in/sponsors.html?tool=${slug}&name=${encodeURIComponent(toolName)}`;
+  const spotlightCheckoutUrl = `https://checkout.dodopayments.com/buy/pdt_0NpjONGugY5QkrFDUaPva?quantity=1&paymentAmount=19&amount=19&paymentCurrency=USD&currency=USD&metadata_tier=spotlight_19&metadata_toolName=${encodeURIComponent(toolName)}&redirect_url=${encodeURIComponent(`https://ritualdev.in/partners/?success=true&tier=spotlight_19&tool=${slug}`)}`;
+  const categoryLeaderCheckoutUrl = `https://checkout.dodopayments.com/buy/pdt_0NpjONGugY5QkrFDUaPva?quantity=1&paymentAmount=49&amount=49&paymentCurrency=USD&currency=USD&metadata_tier=leader_49&metadata_toolName=${encodeURIComponent(toolName)}&redirect_url=${encodeURIComponent(`https://ritualdev.in/partners/?success=true&tier=leader_49&tool=${slug}`)}`;
+  const partnerPortalUrl = `https://ritualdev.in/partners/?tool=${slug}&name=${encodeURIComponent(toolName)}`;
 
   const tweetText = encodeURIComponent(
     `Excited to share that ${toolName} is now officially featured on @RitualDevLab's DevShelf — the zero-paywall directory for verified free developer tools & APIs! 🚀\n\nCheck it out here: ${toolPageUrl}`,
@@ -82,20 +86,18 @@ module.exports = async function postMergeCelebration({ github, context }) {
     "",
     "### 🌐 Permanent Live Listing",
     "Your project has a dedicated, high-ranking SEO landing page with verified zero-paywall status and machine-readable JSON-LD grounding:",
-    `👉 **[View ${toolName} on DevShelf](${toolPageUrl})**`,
+    `👉 **[View ${toolName} on RitualDev Hub](${toolPageUrl})** • **[View on DevShelf Standalone](${devshelfSiteUrl})**`,
     "",
     "---",
     "",
     "### ⚡ Want 10x More Developer Discovery? Feature Your Tool",
     `DevShelf reaches **thousands of technical founders, engineers, and AI developers** every week across the Web, CLI (\`devshelf search\`), and MCP agents.`,
     "",
-    "As a verified contributor, unlock the **Featured Sponsor Tier ($49/mo)**:",
-    "- 📌 **Pinned Top Search Ranking**: Always appear first when developers search your category.",
-    "- 🎖️ **Gold 'Verified Sponsor' Badge**: Stand out with trust verification on web & CLI results.",
-    "- 📬 **DevShelf Digest Blast**: Featured highlight in our weekly newsletter and RSS feed.",
+    "As a verified contributor, unlock exclusive partner boost tiers:",
+    `- 🚀 **[Launch Spotlight ($19 one-time)](${spotlightCheckoutUrl})**: 30-day homepage & category boost, custom FAQ integration, and featured newsletter placement.`,
+    `- 👑 **[Category Leader ($49/mo)](${categoryLeaderCheckoutUrl})**: Pinned #1 in your category, Gold Verified Sponsor Badge, and MCP registry priority injection.`,
     "",
-    `💳 **[Upgrade to Verified Sponsor via Dodo Payments ($49/mo)](${sponsorCheckoutUrl})**  `,
-    `*(Or view all patron tiers & invoice options on the [DevShelf Sponsor Portal](${sponsorPortalUrl}))*`,
+    `*(Or view all custom sponsorship packages and instant tax invoices on the [DevShelf Partner Portal](${partnerPortalUrl}))*`,
     "",
     "---",
     "",
@@ -103,20 +105,20 @@ module.exports = async function postMergeCelebration({ github, context }) {
     "Show users that your project is community-verified with zero paywalls by adding an official badge to your `README.md`:",
     "",
     "#### Style 1: Verified Green Pill (Recommended)",
-    `[![DevShelf Verified](https://ritualdev.in/api/v1/badges/verified/${slug}.svg)](${toolPageUrl})`,
+    `[![DevShelf Verified](https://ritualdev.in/badge/${slug}.svg)](${toolPageUrl})`,
     "",
     "```markdown",
-    `[![DevShelf Verified](https://ritualdev.in/api/v1/badges/verified/${slug}.svg)](${toolPageUrl})`,
+    `[![DevShelf Verified](https://ritualdev.in/badge/${slug}.svg)](${toolPageUrl})`,
     "```",
     "",
     "#### Style 2: Flat Shield Badge",
-    `[![Featured on DevShelf](https://ritualdev.in/api/v1/badges/featured.svg)](${toolPageUrl})`,
+    `[![Featured on DevShelf](https://ritualdev.in/badge/${slug}.svg)](${toolPageUrl})`,
     "",
     "```markdown",
-    `[![Featured on DevShelf](https://ritualdev.in/api/v1/badges/featured.svg)](${toolPageUrl})`,
+    `[![Featured on DevShelf](https://ritualdev.in/badge/${slug}.svg)](${toolPageUrl})`,
     "```",
     "",
-    `🎨 **[Open README Badge Studio for HTML/RST and Rich Cards](https://ritualdev.in/badges.html?tool=${slug}&name=${encodeURIComponent(toolName)})**`,
+    `🎨 **[View Partner Portal & Verified Badges](${partnerPortalUrl})**`,
     "",
     "---",
     "",
