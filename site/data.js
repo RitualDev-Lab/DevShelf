@@ -1,6 +1,6 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-11-14T02:58:31.531Z",
-  "totalCount": 577,
+  "updatedAt": "2026-11-15T00:49:38.193Z",
+  "totalCount": 578,
   "reposCount": 364,
   "facets": {
     "repos": 364
@@ -9,7 +9,7 @@ window.DEVSHELF_DATA = {
     "aiTools": 104,
     "cliTools": 130,
     "testingQa": 68,
-    "apis": 110,
+    "apis": 111,
     "freeCloud": 72,
     "perks": 30,
     "boilerplates": 42,
@@ -6252,6 +6252,18 @@ window.DEVSHELF_DATA = {
       "auth": "No Key",
       "cors": "Yes",
       "rateLimit": "A fixed request quota is not published in the documentation reviewed. The API is currently free and anonymous; respect Cache-Control, ETag and Retry-After. This is not a claim of unlimited usage.",
+      "https": true,
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "BeliefState Company Coverage API",
+      "category": "Finance & Crypto",
+      "description": "Public JSON listing the stocks with released BeliefState investor research, including ticker symbols, coverage counts, and observation dates. Developers can check which companies are covered before requesting research. The submitted API is the free coverage endpoint. Detailed research is...",
+      "url": "https://beliefstate.ai/about#investor-thesis-coverage",
+      "auth": "No Key",
+      "cors": "No. The GET did not return an Access-Control-Allow-Origin header for the DevShelf origin. It works from servers and command-line clients.",
+      "rateLimit": "A fixed quota is not published. The coverage request is free and keyless.",
       "https": true,
       "type": "api",
       "section": "Free & Public APIs"
