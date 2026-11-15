@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 578 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 579 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -969,6 +969,15 @@
 - **URL**: https://easi.run
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/easirun.html
 - **Description**: Self-hosted Chrome for external AI agents via MCP/REST, with live viewing and human handoff for login, 2FA or approvals.
+
+### npmscan
+- **Category**: AI Agent Security & Defense
+- **Pricing Model**: See official site for free access and limits
+- **License**: MIT
+- **Language**: TypeScript
+- **URL**: https://npmscan.com/api/mcp
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/npmscan.html
+- **Description**: Free remote MCP server and agent skills that check npm packages before an AI coding agent installs them: known vulnerabilities, malware, typosquats, maintainer changes, provenance and install scripts. No API key.
 
 ### FinePrint AI
 - **Category**: Developer Utilities

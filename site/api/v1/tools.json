@@ -2,8 +2,8 @@
   "version": "1.1.2",
   "docs": "https://devshelf.ritualdev.in/docs/api.html",
   "license": "https://github.com/RitualDev-Lab/DevShelf/blob/main/LICENSE",
-  "updatedAt": "2026-11-15T00:49:38.193Z",
-  "totalCount": 578,
+  "updatedAt": "2026-11-15T00:52:45.226Z",
+  "totalCount": 579,
   "tools": [
     {
       "name": "PromptShield",
@@ -1666,6 +1666,22 @@
       "statusTags": [
         "Self-Hostable",
         "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "npmscan",
+      "repo": "https://github.com/salemalem/npmscan-mcp-plugin",
+      "url": "https://npmscan.com/api/mcp",
+      "category": "AI Agent Security & Defense",
+      "description": "Free remote MCP server and agent skills that check npm packages before an AI coding agent installs them: known vulnerabilities, malware, typosquats, maintainer changes, provenance and install scripts. No API key.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "featured": false,
+      "statusTags": [
+        "No Card Required",
+        "Rate-Limited"
       ],
       "type": "ai",
       "section": "AI Agents & Local LLMs"
