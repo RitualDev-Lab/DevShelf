@@ -669,6 +669,29 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
       </a><br />
       <sub>✈️ Bucketlist.nl (#120)</sub>
     </td>
+    <td align="center" width="160">
+      <a href="https://github.com/julianosig">
+        <img src="https://github.com/julianosig.png" width="70" style="border-radius: 50%;" alt="julianosig"/><br />
+        <sub><b>julianosig</b></sub>
+      </a><br />
+      <sub>⚡ EasiRun (PR #177)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/27105198-cell">
+        <img src="https://github.com/27105198-cell.png" width="70" style="border-radius: 50%;" alt="27105198-cell"/><br />
+        <sub><b>27105198-cell</b></sub>
+      </a><br />
+      <sub>🔗 链小知区块链 (PR #181)</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="160">
+      <a href="https://github.com/Antcolombo">
+        <img src="https://github.com/Antcolombo.png" width="70" style="border-radius: 50%;" alt="Antcolombo"/><br />
+        <sub><b>Antcolombo</b></sub>
+      </a><br />
+      <sub>📈 Beliefstate API (#186)</sub>
+    </td>
   </tr>
 </table>
 
