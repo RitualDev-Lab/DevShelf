@@ -4,7 +4,7 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total CLI Tools](https://img.shields.io/badge/CLI_Tools-130_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total CLI Tools](https://img.shields.io/badge/CLI_Tools-128_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
 [Automation & Browser Testing](#automation-browser-testing) • [Benchmarking & Performance](#benchmarking-performance) • [CLI & Developer Productivity](#cli-developer-productivity) • [Database & SQL](#database-sql) • [Dev Utilities & Libraries](#dev-utilities-libraries) • [Developer Toolkits & MCP](#developer-toolkits-mcp) • [Developer Tools](#developer-tools) • [Developer Utilities](#developer-utilities) • [DevOps & Containers](#devops-containers) • [DevOps & Infrastructure](#devops-infrastructure) • [Disk & Storage](#disk-storage) • [Git & Version Control](#git-version-control) • [GitHub Workflow & TUI](#github-workflow-tui) • [HTTP & Network](#http-network) • [OS & Hardware Utilities](#os-hardware-utilities) • [Sandboxing & Cloud Execution](#sandboxing-cloud-execution) • [System & Process Monitoring](#system-process-monitoring) • [Terminal & Search](#terminal-search) • [Terminal & Shell](#terminal-shell) • [Terminal Navigation](#terminal-navigation) • [Web Scraping & Crawling](#web-scraping-crawling)
@@ -121,11 +121,10 @@
 | :--- | :---: | :---: | :--- | :---: |
 | [**dust**](https://github.com/bootandy/dust) | `Rust` | `Apache-2.0` | A more intuitive version of du in Rust providing instant visual disk usage breakdown in terminal. | [GitHub](https://github.com/bootandy/dust) |
 
-### <a id="git-version-control"></a>Git & Version Control (11)
+### <a id="git-version-control"></a>Git & Version Control (10)
 
 | Tool | Language | License | Description | Links |
 | :--- | :---: | :---: | :--- | :---: |
-| [**⭐ GitWhisper**](https://github.com/RitualDev-Lab/GitWhisper) | `TypeScript` | `MIT` | Local-first & privacy-hardened AI Git commit intelligence with Conventional Commits, AST secret redaction, atomic hunk splitting, and 1-click VS Code extension. | [GitHub](https://github.com/RitualDev-Lab/GitWhisper) |
 | [**lazygit**](https://github.com/jesseduffield/lazygit) | `Go` | `MIT` | Simple, fast terminal UI for git commands with interactive rebasing and visual diff navigation. | [GitHub](https://github.com/jesseduffield/lazygit) |
 | [**delta**](https://github.com/dandavison/delta) | `Rust` | `MIT` | A syntax-highlighting pager for git, diff, and grep output with side-by-side views and line numbers. | [GitHub](https://github.com/dandavison/delta) |
 | [**⭐ gh**](https://github.com/cli/cli) | `Go` | `MIT` | GitHub's official command line tool to manage pull requests, issues, releases, and repository workflows. | [GitHub](https://github.com/cli/cli) |
@@ -162,11 +161,10 @@
 | [**grpcurl**](https://github.com/fullstorydev/grpcurl) | `Go` | `MIT` | Like cURL, but for gRPC: command-line tool that lets you interact with gRPC servers via reflection. | [GitHub](https://github.com/fullstorydev/grpcurl) |
 | [**speedtest-cli**](https://github.com/sivel/speedtest-cli) | `Python` | `Apache-2.0` | Command line interface for testing internet bandwidth using speedtest.net servers without flash/browser. | [GitHub](https://github.com/sivel/speedtest-cli) |
 
-### <a id="os-hardware-utilities"></a>OS & Hardware Utilities (12)
+### <a id="os-hardware-utilities"></a>OS & Hardware Utilities (11)
 
 | Tool | Language | License | Description | Links |
 | :--- | :---: | :---: | :--- | :---: |
-| [**⭐ FlashLane**](https://github.com/RitualDev-Lab/FlashLane) | `TypeScript / Electron` | `MIT` | Universal, high-speed bootable ISO/IMG USB writer with Rufus parity for Windows, macOS, and Linux. Streaming 4MB chunks, MBR/GPT, BIOS/UEFI, and simulation mode. | [GitHub](https://github.com/RitualDev-Lab/FlashLane) |
 | [**btop**](https://github.com/aristocratos/btop) | `C++` | `Apache-2.0` | Resource monitor that shows usage and stats for processor, memory, disks, network, and processes with responsive graphs. | [GitHub](https://github.com/aristocratos/btop) |
 | [**duf**](https://github.com/muesli/duf) | `Go` | `MIT` | Disk Usage/Free utility, a colorful and user-friendly modern replacement for df. | [GitHub](https://github.com/muesli/duf) |
 | [**htop**](https://github.com/htop-dev/htop) | `C` | `GPL-2.0` | Interactive cross-platform process viewer with colorful meters and process tree view. | [GitHub](https://github.com/htop-dev/htop) |

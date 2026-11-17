@@ -1,14 +1,14 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-11-15T00:52:45.226Z",
-  "totalCount": 579,
-  "reposCount": 365,
+  "updatedAt": "2026-11-17T20:56:09.189Z",
+  "totalCount": 576,
+  "reposCount": 362,
   "facets": {
-    "repos": 365
+    "repos": 362
   },
   "counts": {
     "aiTools": 105,
-    "cliTools": 130,
-    "testingQa": 68,
+    "cliTools": 128,
+    "testingQa": 67,
     "apis": 111,
     "freeCloud": 72,
     "perks": 30,
@@ -1706,38 +1706,6 @@ window.DEVSHELF_DATA = {
       "license": "Proprietary / Community",
       "featured": true,
       "goodFirstIssues": "https://github.com/RitualDev-Lab/FinePrintAI/issues",
-      "statusTags": [
-        "100% Offline-Friendly",
-        "No Card Required"
-      ],
-      "type": "cli",
-      "section": "CLI & Productivity Tools"
-    },
-    {
-      "name": "GitWhisper",
-      "repo": "https://github.com/RitualDev-Lab/GitWhisper",
-      "category": "Git & Version Control",
-      "description": "Local-first & privacy-hardened AI Git commit intelligence with Conventional Commits, AST secret redaction, atomic hunk splitting, and 1-click VS Code extension.",
-      "language": "TypeScript",
-      "license": "MIT",
-      "featured": true,
-      "goodFirstIssues": "https://github.com/RitualDev-Lab/GitWhisper/issues",
-      "statusTags": [
-        "100% Offline-Friendly",
-        "No Card Required"
-      ],
-      "type": "cli",
-      "section": "CLI & Productivity Tools"
-    },
-    {
-      "name": "FlashLane",
-      "repo": "https://github.com/RitualDev-Lab/FlashLane",
-      "category": "OS & Hardware Utilities",
-      "description": "Universal, high-speed bootable ISO/IMG USB writer with Rufus parity for Windows, macOS, and Linux. Streaming 4MB chunks, MBR/GPT, BIOS/UEFI, and simulation mode.",
-      "language": "TypeScript / Electron",
-      "license": "MIT",
-      "featured": true,
-      "goodFirstIssues": "https://github.com/RitualDev-Lab/FlashLane/issues",
       "statusTags": [
         "100% Offline-Friendly",
         "No Card Required"
@@ -3707,18 +3675,6 @@ window.DEVSHELF_DATA = {
       "license": "Proprietary / Community",
       "featured": true,
       "goodFirstIssues": "https://github.com/RitualDev-Lab/MockForge/issues",
-      "type": "testing",
-      "section": "Testing & QA Reliability"
-    },
-    {
-      "name": "AutoHeal-QA",
-      "repo": "https://github.com/RitualDev-Lab/autoheal-qa",
-      "category": "Browser & E2E Testing",
-      "description": "100% Free & Local-first agentic self-healing E2E test runner for Playwright.  cloud cost with AST auto-patching and verification loop.",
-      "language": "TypeScript",
-      "license": "MIT",
-      "featured": true,
-      "goodFirstIssues": "https://github.com/RitualDev-Lab/autoheal-qa/issues",
       "type": "testing",
       "section": "Testing & QA Reliability"
     },
