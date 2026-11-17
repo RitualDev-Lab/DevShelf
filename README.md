@@ -803,3 +803,12 @@ Distributed under the **MIT License**. See [LICENSE](LICENSE) for more informati
 <sub>⭐ If DevShelf saved you time, consider giving this repo a star — it helps other developers discover these resources!</sub>
 
 </div>
+
+---
+
+## 🛡️ Community & Governance
+- [Code of Conduct](CODE_OF_CONDUCT.md)
+- [Contributing Guidelines](CONTRIBUTING.md)
+- [Security Policy](SECURITY.md)
+- [Accessibility Statement](ACCESSIBILITY.md)
+- [License](LICENSE)
