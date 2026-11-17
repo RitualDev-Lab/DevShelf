@@ -314,14 +314,7 @@ function renderSpotlight() {
   const spotlightContainer = document.getElementById("spotlight-grid");
   if (!spotlightContainer || allResources.length === 0) return;
 
-  const spotlightNames = [
-    "AgentShield",
-    "DBShield",
-    "SkillPrism",
-    "Ollama",
-    "Bruno",
-    "PocketBase",
-  ];
+  const spotlightNames = ["AgentShield", "DBShield", "SkillPrism", "Ollama", "Bruno", "PocketBase"];
   const featured = allResources
     .filter((r) => spotlightNames.includes(r.name) || r.featured)
     .slice(0, 6);
