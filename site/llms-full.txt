@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 579 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 576 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -987,24 +987,6 @@
 - **URL**: https://github.com/RitualDev-Lab/FinePrintAI
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/fineprint-ai.html
 - **Description**: In-memory legal contract, lease, and NDA scanner grading risk A-F with automated attorney-grade redline amendments.
-
-### GitWhisper
-- **Category**: Git & Version Control
-- **Pricing Model**: See official site for free access and limits
-- **License**: MIT
-- **Language**: TypeScript
-- **URL**: https://github.com/RitualDev-Lab/GitWhisper
-- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/gitwhisper.html
-- **Description**: Local-first & privacy-hardened AI Git commit intelligence with Conventional Commits, AST secret redaction, atomic hunk splitting, and 1-click VS Code extension.
-
-### FlashLane
-- **Category**: OS & Hardware Utilities
-- **Pricing Model**: See official site for free access and limits
-- **License**: MIT
-- **Language**: TypeScript / Electron
-- **URL**: https://github.com/RitualDev-Lab/FlashLane
-- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/flashlane.html
-- **Description**: Universal, high-speed bootable ISO/IMG USB writer with Rufus parity for Windows, macOS, and Linux. Streaming 4MB chunks, MBR/GPT, BIOS/UEFI, and simulation mode.
 
 ### lazygit
 - **Category**: Git & Version Control
@@ -2186,15 +2168,6 @@
 - **URL**: https://github.com/RitualDev-Lab/MockForge
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/mockforge-ai.html
 - **Description**: High-throughput relational mock database and seed data synthesizer with 100% foreign-key integrity using Kahn DAG & WebAssembly SQLite.
-
-### AutoHeal-QA
-- **Category**: Browser & E2E Testing
-- **Pricing Model**: See official site for free access and limits
-- **License**: MIT
-- **Language**: TypeScript
-- **URL**: https://github.com/RitualDev-Lab/autoheal-qa
-- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/autoheal-qa.html
-- **Description**: 100% Free & Local-first agentic self-healing E2E test runner for Playwright.  cloud cost with AST auto-patching and verification loop.
 
 ### Agent QA
 - **Category**: Browser & E2E Testing

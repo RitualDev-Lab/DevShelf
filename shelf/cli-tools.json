@@ -11,28 +11,6 @@
     "statusTags": ["100% Offline-Friendly", "No Card Required"]
   },
   {
-    "name": "GitWhisper",
-    "repo": "https://github.com/RitualDev-Lab/GitWhisper",
-    "category": "Git & Version Control",
-    "description": "Local-first & privacy-hardened AI Git commit intelligence with Conventional Commits, AST secret redaction, atomic hunk splitting, and 1-click VS Code extension.",
-    "language": "TypeScript",
-    "license": "MIT",
-    "featured": true,
-    "goodFirstIssues": "https://github.com/RitualDev-Lab/GitWhisper/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
-  },
-  {
-    "name": "FlashLane",
-    "repo": "https://github.com/RitualDev-Lab/FlashLane",
-    "category": "OS & Hardware Utilities",
-    "description": "Universal, high-speed bootable ISO/IMG USB writer with Rufus parity for Windows, macOS, and Linux. Streaming 4MB chunks, MBR/GPT, BIOS/UEFI, and simulation mode.",
-    "language": "TypeScript / Electron",
-    "license": "MIT",
-    "featured": true,
-    "goodFirstIssues": "https://github.com/RitualDev-Lab/FlashLane/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
-  },
-  {
     "name": "lazygit",
     "repo": "https://github.com/jesseduffield/lazygit",
     "category": "Git & Version Control",

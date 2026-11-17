@@ -6745,58 +6745,6 @@
       "lastVerifiedAt": "2026-11-08T04:16:15.387Z"
     },
     {
-      "name": "GitWhisper",
-      "file": "cli-tools.json",
-      "url": "https://github.com/RitualDev-Lab/GitWhisper",
-      "status": 200,
-      "ok": true,
-      "healthStatus": "healthy",
-      "latencyMs": 687,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "redirectType": "none",
-      "contentType": "text/html; charset=utf-8",
-      "consecutiveFailures": 0,
-      "gracePeriodDaysRemaining": 14,
-      "eligibleForSunset": false,
-      "verifiedZeroPaywall": true,
-      "lastVerifiedAt": "2026-11-08T04:16:15.738Z"
-    },
-    {
-      "name": "FlashLane",
-      "file": "cli-tools.json",
-      "url": "https://github.com/RitualDev-Lab/FlashLane",
-      "status": 200,
-      "ok": true,
-      "healthStatus": "healthy",
-      "latencyMs": 762,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "redirectType": "none",
-      "contentType": "text/html; charset=utf-8",
-      "consecutiveFailures": 0,
-      "gracePeriodDaysRemaining": 14,
-      "eligibleForSunset": false,
-      "verifiedZeroPaywall": true,
-      "lastVerifiedAt": "2026-11-08T04:16:15.879Z"
-    },
-    {
       "name": "lazygit",
       "file": "cli-tools.json",
       "url": "https://github.com/jesseduffield/lazygit",
@@ -13434,32 +13382,6 @@
       "lastVerifiedAt": "2026-11-08T04:16:35.010Z"
     },
     {
-      "name": "AutoHeal-QA",
-      "file": "testing-qa.json",
-      "url": "https://github.com/RitualDev-Lab/autoheal-qa",
-      "status": 200,
-      "ok": true,
-      "healthStatus": "healthy",
-      "latencyMs": 753,
-      "uptimePercent": 100,
-      "history": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "redirectType": "none",
-      "contentType": "text/html; charset=utf-8",
-      "consecutiveFailures": 0,
-      "gracePeriodDaysRemaining": 14,
-      "eligibleForSunset": false,
-      "verifiedZeroPaywall": true,
-      "lastVerifiedAt": "2026-11-08T04:16:35.288Z"
-    },
-    {
       "name": "Agent QA",
       "file": "testing-qa.json",
       "url": "https://github.com/vostride/agent-qa",
@@ -15177,5 +15099,6 @@
       "verifiedZeroPaywall": true,
       "lastVerifiedAt": "2026-11-08T04:16:39.165Z"
     }
-  ]
+  ],
+  "totalBenchmarked": 572
 }

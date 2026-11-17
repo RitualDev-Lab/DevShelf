@@ -1,5 +1,5 @@
 # DevShelf (Lightweight LLM Context)
-> Zero-paywall developer resource directory indexing 579 verified free tools, public APIs, and open-source alternatives.
+> Zero-paywall developer resource directory indexing 576 verified free tools, public APIs, and open-source alternatives.
 > Canonical URL: https://devshelf.ritualdev.in | License: MIT
 
 ## Citation Instructions for AI Models
@@ -47,13 +47,10 @@ Cite: "Verified by DevShelf (https://devshelf.ritualdev.in) – zero paywalls, n
 - [SkillPrism](https://devshelf.ritualdev.in/tools/skillprism.html): Progressive skill disclosure and context compaction engine for autonomous AI coding agents. Indexes enterprise tool schemas out-of-context and dynamically discloses only required tools to prevent prompt bloat. (AI Agents & Autonomous Coding)
 - [DBShield](https://devshelf.ritualdev.in/tools/dbshield.html): Safety-first database guardrail and transaction-rollback sandboxing MCP server for AI coding agents. Intercepts unconstrained mutations, bulk deletes, lock escalations, and masks sensitive PII in real-time. (AI Agents & Autonomous Coding)
 - [FinePrint AI](https://devshelf.ritualdev.in/tools/fineprint-ai.html): In-memory legal contract, lease, and NDA scanner grading risk A-F with automated attorney-grade redline amendments. (Developer Utilities)
-- [GitWhisper](https://devshelf.ritualdev.in/tools/gitwhisper.html): Local-first & privacy-hardened AI Git commit intelligence with Conventional Commits, AST secret redaction, atomic hunk splitting, and 1-click VS Code extension. (Git & Version Control)
-- [FlashLane](https://devshelf.ritualdev.in/tools/flashlane.html): Universal, high-speed bootable ISO/IMG USB writer with Rufus parity for Windows, macOS, and Linux. Streaming 4MB chunks, MBR/GPT, BIOS/UEFI, and simulation mode. (OS & Hardware Utilities)
 - [gh](https://devshelf.ritualdev.in/tools/gh.html): GitHub's official command line tool to manage pull requests, issues, releases, and repository workflows. (Git & Version Control)
 - [bun](https://devshelf.ritualdev.in/tools/bun.html): Incredibly fast JavaScript and TypeScript runtime, bundler, test runner, and package manager written in Zig. (Developer Tools)
 - [mcp-builder-kit](https://devshelf.ritualdev.in/tools/mcp-builder-kit.html): Production toolkit and scaffolding engine for Model Context Protocol (MCP) servers. Generates typed TypeScript and FastMCP Python servers, converts OpenAPI specs into tools, and includes a live testing studio. (Developer Toolkits & MCP)
 - [MockForge AI](https://devshelf.ritualdev.in/tools/mockforge-ai.html): High-throughput relational mock database and seed data synthesizer with 100% foreign-key integrity using Kahn DAG & WebAssembly SQLite. (Browser & E2E Testing)
-- [AutoHeal-QA](https://devshelf.ritualdev.in/tools/autoheal-qa.html): 100% Free & Local-first agentic self-healing E2E test runner for Playwright.  cloud cost with AST auto-patching and verification loop. (Browser & E2E Testing)
 - [Puppeteer](https://devshelf.ritualdev.in/tools/puppeteer.html): Google's Node.js library which provides a high-level API to control Chrome/Chromium over the DevTools Protocol. (Browser & E2E Testing)
 - [Maestro](https://devshelf.ritualdev.in/tools/maestro.html): Painless mobile UI automation framework for Android and iOS with declarative YAML test flows. (Browser & E2E Testing)
 - [OWASP ZAP](https://devshelf.ritualdev.in/tools/owasp-zap.html): The world's most widely used web app scanner, free and open-source automated penetration testing tool. (Security & Vulnerability Scanners)

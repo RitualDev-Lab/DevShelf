@@ -315,9 +315,9 @@ function renderSpotlight() {
   if (!spotlightContainer || allResources.length === 0) return;
 
   const spotlightNames = [
-    "GitWhisper",
-    "FlashLane",
-    "AutoHeal-QA",
+    "AgentShield",
+    "DBShield",
+    "SkillPrism",
     "Ollama",
     "Bruno",
     "PocketBase",

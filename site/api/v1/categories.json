@@ -1,6 +1,6 @@
 {
   "version": "1.1.2",
-  "updatedAt": "2026-11-15T00:52:45.226Z",
+  "updatedAt": "2026-11-17T20:56:09.189Z",
   "totalCategories": 8,
   "categories": [
     {
@@ -12,7 +12,7 @@
     {
       "slug": "cli",
       "name": "CLI & Developer Productivity",
-      "count": 130,
+      "count": 128,
       "endpoint": "https://devshelf.ritualdev.in/api/v1/categories/cli.json"
     },
     {
@@ -30,7 +30,7 @@
     {
       "slug": "testing",
       "name": "Testing & QA Automation",
-      "count": 68,
+      "count": 67,
       "endpoint": "https://devshelf.ritualdev.in/api/v1/categories/testing.json"
     },
     {

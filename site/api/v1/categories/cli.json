@@ -1,9 +1,9 @@
 {
   "version": "1.1.2",
-  "updatedAt": "2026-11-15T00:52:45.226Z",
+  "updatedAt": "2026-11-17T20:56:09.189Z",
   "slug": "cli",
   "name": "CLI & Developer Productivity",
-  "count": 130,
+  "count": 128,
   "items": [
     {
       "name": "FinePrint AI",
@@ -14,38 +14,6 @@
       "license": "Proprietary / Community",
       "featured": true,
       "goodFirstIssues": "https://github.com/RitualDev-Lab/FinePrintAI/issues",
-      "statusTags": [
-        "100% Offline-Friendly",
-        "No Card Required"
-      ],
-      "type": "cli",
-      "section": "CLI & Productivity Tools"
-    },
-    {
-      "name": "GitWhisper",
-      "repo": "https://github.com/RitualDev-Lab/GitWhisper",
-      "category": "Git & Version Control",
-      "description": "Local-first & privacy-hardened AI Git commit intelligence with Conventional Commits, AST secret redaction, atomic hunk splitting, and 1-click VS Code extension.",
-      "language": "TypeScript",
-      "license": "MIT",
-      "featured": true,
-      "goodFirstIssues": "https://github.com/RitualDev-Lab/GitWhisper/issues",
-      "statusTags": [
-        "100% Offline-Friendly",
-        "No Card Required"
-      ],
-      "type": "cli",
-      "section": "CLI & Productivity Tools"
-    },
-    {
-      "name": "FlashLane",
-      "repo": "https://github.com/RitualDev-Lab/FlashLane",
-      "category": "OS & Hardware Utilities",
-      "description": "Universal, high-speed bootable ISO/IMG USB writer with Rufus parity for Windows, macOS, and Linux. Streaming 4MB chunks, MBR/GPT, BIOS/UEFI, and simulation mode.",
-      "language": "TypeScript / Electron",
-      "license": "MIT",
-      "featured": true,
-      "goodFirstIssues": "https://github.com/RitualDev-Lab/FlashLane/issues",
       "statusTags": [
         "100% Offline-Friendly",
         "No Card Required"

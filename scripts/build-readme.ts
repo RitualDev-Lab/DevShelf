@@ -529,9 +529,9 @@ Explore our curated collections of **${totalItems}+ zero-paywall developer tools
 
 | Project | Category | Highlights | Links |
 | :--- | :--- | :--- | :---: |
-| **GitWhisper** | Git & Version Control | Local-first AI Git commit intelligence with Conventional Commits, AST secret redaction & atomic hunk splitting. | [GitHub](https://github.com/RitualDev-Lab/GitWhisper) |
-| **FlashLane** | OS & Hardware Utilities | Universal high-speed bootable ISO/IMG USB writer with Rufus parity for Windows, macOS, & Linux. | [GitHub](https://github.com/RitualDev-Lab/FlashLane) |
-| **AutoHeal-QA** | E2E Testing & Playwright | 100% Free & Local-first agentic self-healing E2E test runner for Playwright with zero cloud costs. | [GitHub](https://github.com/RitualDev-Lab/autoheal-qa) |
+| **AgentShield** | AI Agent Security | Sub-0.10ms Linux eBPF/Landlock kernel sandbox & zero-leak secret redactor for autonomous coding agents. | [GitHub](https://github.com/RitualDev-Lab/AgentShield) |
+| **DBShield** | Database Guardrails | Wire-level SQL proxy with lock-free dry-run rollbacks, PII masking, and Slack/Teams human approval gates. | [GitHub](https://github.com/RitualDev-Lab/DBShield) |
+| **SkillPrism** | AI Context & FinOps | JIT semantic MCP tool compaction stacked with prompt caching for 98%+ prompt token reduction. | [GitHub](https://github.com/RitualDev-Lab/SkillPrism) |
 | **Ollama** | Local AI & Inference | Run Llama 3.3, Mistral, Qwen, and custom models locally with a simple CLI and REST API. | [GitHub](https://github.com/ollama/ollama) |
 | **Bruno** | API Testing & Exploration | Fast, git-friendly open-source API client storing collections directly in your repo in plain text. | [GitHub](https://github.com/usebruno/bruno) |
 | **PocketBase** | Databases & BaaS | Open-source backend in 1 single binary file with embedded SQLite, realtime subscriptions, and auth. | [Website](https://pocketbase.io) |

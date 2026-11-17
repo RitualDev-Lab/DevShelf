@@ -35,8 +35,8 @@
 <tr>
 <td align="center"><b>🌐 Free APIs</b><br><code>111</code></td>
 <td align="center"><b>🤖 AI & LLMs</b><br><code>105</code></td>
-<td align="center"><b>⚡ CLI Tools</b><br><code>130</code></td>
-<td align="center"><b>🧪 Testing & QA</b><br><code>68</code></td>
+<td align="center"><b>⚡ CLI Tools</b><br><code>128</code></td>
+<td align="center"><b>🧪 Testing & QA</b><br><code>67</code></td>
 <td align="center"><b>☁️ Free Cloud</b><br><code>72</code></td>
 <td align="center"><b>🤝 Up for Grabs</b><br><code>21</code></td>
 <td align="center"><b>🎁 Dev Perks</b><br><code>30</code></td>
@@ -47,7 +47,7 @@
 ### 🎯 The Race to 1,000 Verified Tools (Hacktoberfest Milestone)
 
 ```text
-[████████████░░░░░░░░] 579 / 1,000 Tools Verified (58% • 421 to go!)
+[████████████░░░░░░░░] 576 / 1,000 Tools Verified (58% • 424 to go!)
 ```
 
 *Help us curate the definitive zero-paywall index! [Submit your favorite developer tool, API, or AI framework →](#-how-to-submit-your-project-or-api)*
@@ -85,7 +85,7 @@ DevShelf isn't a static markdown list. It runs directly inside your terminal, in
 ┌─────────────────────────────────────────────────────────────────────────────────┐
 │ $ npx devshelf search "postgres"                                                │
 │                                                                                 │
-│ 📚 DevShelf CLI v1.1.0 — 579 Curated Tools (Live CI Audited)                    │
+│ 📚 DevShelf CLI v1.1.0 — 576 Curated Tools (Live CI Audited)                    │
 │                                                                                 │
 │ [1] Neon (Database / Serverless)                                                │
 │     Serverless Postgres with autoscaling, branching, and generous free tier.    │
@@ -200,14 +200,14 @@ npx devshelf stats
 
 ## 📂 Browse Catalog by Category
 
-Explore our curated collections of **579+ zero-paywall developer tools**, categorized into dedicated guides with subcategory indexing:
+Explore our curated collections of **576+ zero-paywall developer tools**, categorized into dedicated guides with subcategory indexing:
 
 | Category | Resources | Description & Subcategories | Guide |
 | :--- | :---: | :--- | :---: |
 | 🌐 **Free & Public APIs** | **111** | Weather, Finance, Mock/Dev APIs, Geocoding, AI/ML, Media, Entertainment | [**Browse APIs →**](docs/apis.md) |
 | 🤖 **AI Agents & Local LLMs** | **105** | Local LLM Runtimes, Autonomous Agents, Coding Assistants, Orchestration | [**Browse AI Tools →**](docs/ai-tools.md) |
-| ⚡ **CLI & Productivity Tools** | **130** | Terminal Utilities, Git Power Tools, Docker & DevOps, Benchmarking, DBs | [**Browse CLI Tools →**](docs/cli-tools.md) |
-| 🧪 **Testing & QA Reliability** | **68** | E2E Testing, Mock Servers, Contract Testing, Security Auditing, Performance | [**Browse Testing Tools →**](docs/testing-qa.md) |
+| ⚡ **CLI & Productivity Tools** | **128** | Terminal Utilities, Git Power Tools, Docker & DevOps, Benchmarking, DBs | [**Browse CLI Tools →**](docs/cli-tools.md) |
+| 🧪 **Testing & QA Reliability** | **67** | E2E Testing, Mock Servers, Contract Testing, Security Auditing, Performance | [**Browse Testing Tools →**](docs/testing-qa.md) |
 | ☁️ **Free Cloud & Developer Tiers** | **72** | Databases, Auth & Identity, Serverless Compute, Object Storage, Email, APM | [**Browse Cloud Tiers →**](docs/free-cloud.md) |
 | 🤝 **Contributors Wanted** | **21** | Active open-source repos with curated Good First Issues and starter tasks | [**Browse Projects →**](docs/contributors-wanted.md) |
 | 🎁 **Developer Discounts & Perks** | **30** | Cloud credits, free IDE licenses, student packs, open-source sponsorships | [**Browse Perks →**](docs/perks.md) |
@@ -221,9 +221,9 @@ Explore our curated collections of **579+ zero-paywall developer tools**, catego
 
 | Project | Category | Highlights | Links |
 | :--- | :--- | :--- | :---: |
-| **GitWhisper** | Git & Version Control | Local-first AI Git commit intelligence with Conventional Commits, AST secret redaction & atomic hunk splitting. | [GitHub](https://github.com/RitualDev-Lab/GitWhisper) |
-| **FlashLane** | OS & Hardware Utilities | Universal high-speed bootable ISO/IMG USB writer with Rufus parity for Windows, macOS, & Linux. | [GitHub](https://github.com/RitualDev-Lab/FlashLane) |
-| **AutoHeal-QA** | E2E Testing & Playwright | 100% Free & Local-first agentic self-healing E2E test runner for Playwright with zero cloud costs. | [GitHub](https://github.com/RitualDev-Lab/autoheal-qa) |
+| **AgentShield** | AI Agent Security | Sub-0.10ms Linux eBPF/Landlock kernel sandbox & zero-leak secret redactor for autonomous coding agents. | [GitHub](https://github.com/RitualDev-Lab/AgentShield) |
+| **DBShield** | Database Guardrails | Wire-level SQL proxy with lock-free dry-run rollbacks, PII masking, and Slack/Teams human approval gates. | [GitHub](https://github.com/RitualDev-Lab/DBShield) |
+| **SkillPrism** | AI Context & FinOps | JIT semantic MCP tool compaction stacked with prompt caching for 98%+ prompt token reduction. | [GitHub](https://github.com/RitualDev-Lab/SkillPrism) |
 | **Ollama** | Local AI & Inference | Run Llama 3.3, Mistral, Qwen, and custom models locally with a simple CLI and REST API. | [GitHub](https://github.com/ollama/ollama) |
 | **Bruno** | API Testing & Exploration | Fast, git-friendly open-source API client storing collections directly in your repo in plain text. | [GitHub](https://github.com/usebruno/bruno) |
 | **PocketBase** | Databases & BaaS | Open-source backend in 1 single binary file with embedded SQLite, realtime subscriptions, and auth. | [Website](https://pocketbase.io) |
@@ -803,28 +803,3 @@ Distributed under the **MIT License**. See [LICENSE](LICENSE) for more informati
 <sub>⭐ If DevShelf saved you time, consider giving this repo a star — it helps other developers discover these resources!</sub>
 
 </div>
-
----
-
----
-
-## 💖 Sponsor & Support
-
-If you find this project valuable, consider supporting our open-source development:
-
-[![Sponsor on Dodo Payments](https://img.shields.io/badge/Sponsor_via_Dodo-Payments-8b5cf6?style=for-the-badge&logo=shield&logoColor=white)](https://checkout.dodopayments.com/buy/pdt_0NpjONGugY5QkrFDUaPva)
-[![Interactive Donation Portal](https://img.shields.io/badge/Donation_Portal-Cards%20%7C%20UPI%20%7C%20Apple%20Pay-ff5964?style=for-the-badge&logo=heart&logoColor=white)](https://ritualdev.in/donate)
-[![GitHub Sponsors](https://img.shields.io/badge/GitHub_Sponsors-RitualDev--Lab-ea4aaa?style=for-the-badge&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/RitualDev-Lab)
-
-- [**⚡ 1-Click Dodo Payments Checkout**](https://checkout.dodopayments.com/buy/pdt_0NpjONGugY5QkrFDUaPva)
-- [**🎁 Interactive Donation Portal**](https://ritualdev.in/donate)
-- [**❤️ GitHub Sponsors**](https://github.com/sponsors/RitualDev-Lab)
-
----
-
-## 🛡️ Community & Governance
-- [Code of Conduct](CODE_OF_CONDUCT.md)
-- [Contributing Guidelines](CONTRIBUTING.md)
-- [Security Policy](SECURITY.md)
-- [Accessibility Statement](ACCESSIBILITY.md)
-- [License](LICENSE)

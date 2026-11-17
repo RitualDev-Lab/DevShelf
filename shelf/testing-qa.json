@@ -10,16 +10,6 @@
     "goodFirstIssues": "https://github.com/RitualDev-Lab/MockForge/issues"
   },
   {
-    "name": "AutoHeal-QA",
-    "repo": "https://github.com/RitualDev-Lab/autoheal-qa",
-    "category": "Browser & E2E Testing",
-    "description": "100% Free & Local-first agentic self-healing E2E test runner for Playwright.  cloud cost with AST auto-patching and verification loop.",
-    "language": "TypeScript",
-    "license": "MIT",
-    "featured": true,
-    "goodFirstIssues": "https://github.com/RitualDev-Lab/autoheal-qa/issues"
-  },
-  {
     "name": "Agent QA",
     "repo": "https://github.com/vostride/agent-qa",
     "category": "Browser & E2E Testing",
