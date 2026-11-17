@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T14:31:55.922Z",
+  "updatedAt": "2026-11-16T14:07:33.897Z",
   "totalProjects": 21,
   "totalOpenIssues": 21,
   "projects": [
@@ -22,10 +22,10 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 94562,
-      "forks": 11581,
-      "pushedAt": "2026-11-09T14:10:42Z",
-      "lastActivityRelative": "20m ago",
+      "stars": 95140,
+      "forks": 11729,
+      "pushedAt": "2026-11-16T14:03:31Z",
+      "lastActivityRelative": "3m ago",
       "techStack": [
         "gpui",
         "rust-lang",
@@ -52,10 +52,10 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 26068,
-      "forks": 1333,
-      "pushedAt": "2026-11-09T14:16:23Z",
-      "lastActivityRelative": "15m ago",
+      "stars": 26112,
+      "forks": 1393,
+      "pushedAt": "2026-11-16T13:59:09Z",
+      "lastActivityRelative": "8m ago",
       "techStack": [
         "css",
         "formatter",
@@ -83,10 +83,10 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 41071,
-      "forks": 2348,
-      "pushedAt": "2026-11-08T00:07:25Z",
-      "lastActivityRelative": "yesterday",
+      "stars": 41023,
+      "forks": 2353,
+      "pushedAt": "2026-11-16T13:28:25Z",
+      "lastActivityRelative": "38m ago",
       "techStack": [
         "nushell",
         "rust",
@@ -112,10 +112,10 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 30381,
-      "forks": 2416,
-      "pushedAt": "2026-11-09T14:24:49Z",
-      "lastActivityRelative": "6m ago",
+      "stars": 30534,
+      "forks": 2430,
+      "pushedAt": "2026-11-16T13:49:25Z",
+      "lastActivityRelative": "17m ago",
       "techStack": [
         "acme",
         "agents",
@@ -143,9 +143,9 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 16515,
-      "forks": 496,
-      "pushedAt": "2026-11-09T05:37:27Z",
+      "stars": 16597,
+      "forks": 504,
+      "pushedAt": "2026-11-16T05:30:33Z",
       "lastActivityRelative": "8h ago",
       "techStack": [
         "ast",
@@ -174,10 +174,10 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 4652,
-      "forks": 217,
-      "pushedAt": "2026-11-09T10:28:24Z",
-      "lastActivityRelative": "4h ago",
+      "stars": 4661,
+      "forks": 218,
+      "pushedAt": "2026-11-16T08:49:22Z",
+      "lastActivityRelative": "5h ago",
       "techStack": [
         "abac",
         "access-control",
@@ -205,10 +205,10 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 12615,
+      "stars": 12621,
       "forks": 701,
-      "pushedAt": "2026-11-03T11:23:30Z",
-      "lastActivityRelative": "6d ago",
+      "pushedAt": "2026-11-16T09:07:02Z",
+      "lastActivityRelative": "5h ago",
       "techStack": [
         "aws",
         "azure",
@@ -236,10 +236,10 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 29498,
-      "forks": 1858,
-      "pushedAt": "2026-11-08T02:56:04Z",
-      "lastActivityRelative": "yesterday",
+      "stars": 29571,
+      "forks": 1877,
+      "pushedAt": "2026-11-14T11:12:31Z",
+      "lastActivityRelative": "2d ago",
       "techStack": [
         "rust",
         "serial",
@@ -267,10 +267,10 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 20490,
+      "stars": 20500,
       "forks": 1769,
-      "pushedAt": "2026-11-04T17:03:34Z",
-      "lastActivityRelative": "4d ago",
+      "pushedAt": "2026-11-15T06:41:27Z",
+      "lastActivityRelative": "yesterday",
       "techStack": [
         "abac",
         "access-control",
@@ -298,7 +298,7 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 6823,
+      "stars": 6826,
       "forks": 231,
       "pushedAt": "2025-09-24T14:59:31Z",
       "lastActivityRelative": "1y ago",
@@ -329,10 +329,10 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 6037,
-      "forks": 2503,
-      "pushedAt": "2026-11-08T18:10:58Z",
-      "lastActivityRelative": "20h ago",
+      "stars": 6036,
+      "forks": 2523,
+      "pushedAt": "2026-11-16T13:41:39Z",
+      "lastActivityRelative": "25m ago",
       "techStack": [
         "good-first-issue",
         "help-wanted",
@@ -360,10 +360,10 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 458802,
-      "forks": 47852,
-      "pushedAt": "2026-11-09T13:25:32Z",
-      "lastActivityRelative": "1h ago",
+      "stars": 459198,
+      "forks": 47470,
+      "pushedAt": "2026-11-16T10:58:09Z",
+      "lastActivityRelative": "3h ago",
       "techStack": [
         "careers",
         "certification",
@@ -391,10 +391,10 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 135387,
-      "forks": 16071,
-      "pushedAt": "2026-11-09T13:33:14Z",
-      "lastActivityRelative": "58m ago",
+      "stars": 135784,
+      "forks": 16188,
+      "pushedAt": "2026-11-16T12:19:01Z",
+      "lastActivityRelative": "1h ago",
       "techStack": [
         "canvas",
         "collaboration",
@@ -422,10 +422,10 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 49836,
-      "forks": 15585,
-      "pushedAt": "2026-11-03T21:35:09Z",
-      "lastActivityRelative": "5d ago",
+      "stars": 50087,
+      "forks": 15652,
+      "pushedAt": "2026-11-13T19:35:07Z",
+      "lastActivityRelative": "2d ago",
       "techStack": [
         "next-auth",
         "nextjs",
@@ -453,10 +453,10 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 15698,
-      "forks": 3460,
-      "pushedAt": "2026-11-09T14:06:03Z",
-      "lastActivityRelative": "25m ago",
+      "stars": 15775,
+      "forks": 3484,
+      "pushedAt": "2026-11-16T12:17:14Z",
+      "lastActivityRelative": "1h ago",
       "techStack": [
         "digital-signature",
         "document-signing",
@@ -484,9 +484,9 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 60683,
-      "forks": 10028,
-      "pushedAt": "2026-11-09T14:31:36Z",
+      "stars": 60989,
+      "forks": 10104,
+      "pushedAt": "2026-11-16T14:07:24Z",
       "lastActivityRelative": "just now",
       "techStack": [
         "crm",
@@ -515,9 +515,9 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 55718,
-      "forks": 12108,
-      "pushedAt": "2026-11-09T14:30:27Z",
+      "stars": 55833,
+      "forks": 12139,
+      "pushedAt": "2026-11-16T14:06:16Z",
       "lastActivityRelative": "just now",
       "techStack": [
         "blogging",
@@ -546,10 +546,10 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 39450,
-      "forks": 9580,
-      "pushedAt": "2026-11-09T12:22:07Z",
-      "lastActivityRelative": "2h ago",
+      "stars": 39973,
+      "forks": 9729,
+      "pushedAt": "2026-11-16T14:01:28Z",
+      "lastActivityRelative": "6m ago",
       "techStack": [
         "actioncable",
         "chat-widget",
@@ -577,10 +577,10 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 78554,
-      "forks": 6224,
-      "pushedAt": "2026-11-02T23:40:52Z",
-      "lastActivityRelative": "6d ago",
+      "stars": 79013,
+      "forks": 6303,
+      "pushedAt": "2026-11-15T11:08:51Z",
+      "lastActivityRelative": "yesterday",
       "techStack": [
         "blog",
         "confluence-alternative",
@@ -608,10 +608,10 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 74383,
-      "forks": 5489,
-      "pushedAt": "2026-11-09T13:47:32Z",
-      "lastActivityRelative": "44m ago",
+      "stars": 74577,
+      "forks": 5528,
+      "pushedAt": "2026-11-16T14:03:26Z",
+      "lastActivityRelative": "4m ago",
       "techStack": [
         "app",
         "crdt",
@@ -639,10 +639,10 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 25144,
-      "forks": 3400,
+      "stars": 25178,
+      "forks": 3409,
       "pushedAt": "2026-10-27T02:24:37Z",
-      "lastActivityRelative": "13d ago",
+      "lastActivityRelative": "20d ago",
       "techStack": [
         "clickhouse",
         "mysql",
