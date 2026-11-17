@@ -25,8 +25,8 @@ import {
   refreshCatalog,
   searchCatalog,
 } from "./lib/catalog.js";
-import { loadSponsors } from "./lib/sponsors.js";
 import { loadNewsletter } from "./lib/newsletter.js";
+import { loadSponsors } from "./lib/sponsors.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -167,6 +167,9 @@ ${c.bold}USAGE:${c.reset}
   ${c.green}npx devshelf daily [--quiet]${c.reset}                 Print today's curated open-source discovery
   ${c.green}npx devshelf search <query> [options]${c.reset}        Fuzzy search tools, APIs, and AI agents
   ${c.green}npx devshelf explain <name>${c.reset}                  Deep-dive tool explainer, install command & Docker
+  ${c.green}npx devshelf install <tool-slug>${c.reset}               1-Click install MCP server into Claude, Cursor & Windsurf
+  ${c.green}npx devshelf uninstall <tool-slug>${c.reset}             Remove MCP server from client configurations
+  ${c.green}npx devshelf mcp:list${c.reset}                         List installed MCP servers across AI coding clients
   ${c.green}npx devshelf contribute [query]${c.reset}              Find repos actively seeking help & starter tasks
   ${c.green}npx devshelf list [category]${c.reset}                 List items by category
   ${c.green}npx devshelf random${c.reset}                          Discover a random curated resource
@@ -184,6 +187,9 @@ ${c.bold}OPTIONS:${c.reset}
   ${c.cyan}-t, --tag <tag>${c.reset}                            Filter by semantic tag (e.g. "No Card Required", "mcp")
   ${c.cyan}--free-tier-storage, --storage <size>${c.reset}     Filter by free-tier storage threshold (e.g. "500mb", "1gb")
   ${c.cyan}-c, --category <cat>${c.reset}                       Filter by category (e.g. "ai", "apis", "database")
+  ${c.cyan}--target <clients>${c.reset}                          Target specific clients: claude, cursor, windsurf
+  ${c.cyan}--workspace, -w${c.reset}                            Write Cursor config to local .cursor/mcp.json
+  ${c.cyan}--dry-run${c.reset}                                  Preview configuration changes without writing
   ${c.cyan}-q, --quiet${c.reset}                                  Ultra-compact output for .zshrc / .bashrc execution
   ${c.cyan}--json${c.reset}                                       Output raw JSON results for piping
   ${c.cyan}--open${c.reset}                                       Open first result in browser
@@ -192,6 +198,9 @@ ${c.bold}OPTIONS:${c.reset}
 
 ${c.bold}EXAMPLES:${c.reset}
   ${c.gray}$${c.reset} npx devshelf search "postgres" --free-tier-storage 500mb
+  ${c.gray}$${c.reset} npx devshelf install filesystem
+  ${c.gray}$${c.reset} npx devshelf install sqlite --target claude,cursor
+  ${c.gray}$${c.reset} npx devshelf mcp:list
   ${c.gray}$${c.reset} npx devshelf search "agent" --tag "mcp"
   ${c.gray}$${c.reset} npx devshelf search "postman"
   ${c.gray}$${c.reset} npx devshelf daily --quiet
@@ -638,7 +647,15 @@ async function main() {
     const a = args[i];
     if (a.startsWith("-")) {
       if (
-        ["-t", "--tag", "--free-tier-storage", "--storage", "-c", "--category"].includes(a) &&
+        [
+          "-t",
+          "--tag",
+          "--free-tier-storage",
+          "--storage",
+          "-c",
+          "--category",
+          "--target",
+        ].includes(a) &&
         i + 1 < args.length &&
         !args[i + 1].startsWith("-")
       ) {
@@ -1278,6 +1295,156 @@ async function main() {
   if (command === "mcp") {
     const { startMcpServer } = await import("./mcp.js");
     startMcpServer();
+    return;
+  }
+
+  if (command === "install" || command === "add") {
+    const toolSlug = cleanArgs[1];
+    const targetOption = getOption("--target");
+    const dryRun = args.includes("--dry-run");
+    const workspace = args.includes("--workspace") || args.includes("-w");
+
+    const { installMcpServer, VERIFIED_MCP_REGISTRY } = await import("./lib/mcp-installer.js");
+
+    if (!toolSlug) {
+      printHeader();
+      console.log(`\n  ${c.bold}⚡ 1-Click MCP Registry Installer${c.reset}`);
+      console.log(
+        `  ${c.gray}Writes verified MCP server configs directly into Claude Desktop, Cursor & Windsurf.${c.reset}\n`,
+      );
+      console.log(
+        `  ${c.amber}Usage:${c.reset} ${c.green}npx devshelf install <tool-slug> [options]${c.reset}\n`,
+      );
+      console.log(`  ${c.cyan}Popular Verified MCP Tools:${c.reset}`);
+      for (const [slug, meta] of Object.entries(VERIFIED_MCP_REGISTRY)) {
+        console.log(
+          `    • ${c.bold}${c.green}${slug.padEnd(16)}${c.reset} ${c.gray}${meta.description}${c.reset}`,
+        );
+      }
+      console.log(
+        `\n  ${c.gray}Options: --target claude,cursor,windsurf | --workspace | --dry-run${c.reset}\n`,
+      );
+      return;
+    }
+
+    const result = installMcpServer(toolSlug, {
+      target: targetOption,
+      dryRun,
+      workspace,
+    });
+
+    if (isJson) {
+      console.log(JSON.stringify(result, null, 2));
+      return;
+    }
+
+    printHeader();
+    console.log(`\n  ${c.bold}⚡ 1-Click MCP Registry Installer${c.reset}`);
+    console.log(
+      `  Configuring: ${c.bold}${c.green}${result.definition.name}${c.reset} (${c.cyan}${result.definition.serverKey}${c.reset})`,
+    );
+    console.log(
+      `  Command:     ${c.gray}${result.definition.config.command} ${result.definition.config.args.join(" ")}${c.reset}\n`,
+    );
+
+    for (const res of result.results) {
+      const clientLabel =
+        res.client === "claude"
+          ? "Claude Desktop"
+          : res.client === "cursor"
+            ? "Cursor"
+            : "Windsurf";
+      if (res.success) {
+        const actionLabel =
+          res.action === "dry-run"
+            ? "[dry-run]"
+            : res.action === "updated"
+              ? "Updated"
+              : "Installed";
+        console.log(
+          `  ${c.green}✔${c.reset} ${c.bold}${clientLabel.padEnd(16)}${c.reset} ${c.green}${actionLabel}${c.reset} → ${c.gray}${res.path}${c.reset}`,
+        );
+      } else {
+        console.log(
+          `  ${c.red}✖${c.reset} ${c.bold}${clientLabel.padEnd(16)}${c.reset} ${c.red}Failed${c.reset} (${res.error})`,
+        );
+      }
+    }
+
+    console.log(
+      `\n  ${c.purple}✨ Done! Restart your AI client (Claude, Cursor, or Windsurf) to activate.${c.reset}\n`,
+    );
+    return;
+  }
+
+  if (command === "uninstall" || command === "remove") {
+    const toolSlug = cleanArgs[1];
+    if (!toolSlug) {
+      console.error(
+        `${c.red}Error:${c.reset} Please specify tool slug to uninstall. Example: npx devshelf uninstall filesystem`,
+      );
+      process.exit(1);
+    }
+    const { uninstallMcpServer } = await import("./lib/mcp-installer.js");
+    const targetOption = getOption("--target");
+    const workspace = args.includes("--workspace") || args.includes("-w");
+    const res = uninstallMcpServer(toolSlug, { target: targetOption, workspace });
+
+    if (isJson) {
+      console.log(JSON.stringify(res, null, 2));
+      return;
+    }
+
+    printHeader();
+    console.log(
+      `\n  ${c.bold}🗑️  MCP Server Uninstaller${c.reset}: ${c.amber}${toolSlug}${c.reset}\n`,
+    );
+    for (const r of res.results) {
+      const clientLabel =
+        r.client === "claude" ? "Claude Desktop" : r.client === "cursor" ? "Cursor" : "Windsurf";
+      if (r.action === "removed") {
+        console.log(
+          `  ${c.green}✔${c.reset} ${c.bold}${clientLabel.padEnd(16)}${c.reset} Removed from ${c.gray}${r.path}${c.reset}`,
+        );
+      } else {
+        console.log(
+          `  ${c.gray}•${c.reset} ${c.bold}${clientLabel.padEnd(16)}${c.reset} Not found in ${c.gray}${r.path}${c.reset}`,
+        );
+      }
+    }
+    console.log(`\n  ${c.green}✨ Uninstallation complete.${c.reset}\n`);
+    return;
+  }
+
+  if (command === "mcp:list" || command === "mcp:installed") {
+    const { listInstalledMcpServers } = await import("./lib/mcp-installer.js");
+    const workspace = args.includes("--workspace") || args.includes("-w");
+    const installed = listInstalledMcpServers({ workspace });
+
+    if (isJson) {
+      console.log(JSON.stringify(installed, null, 2));
+      return;
+    }
+
+    printHeader();
+    console.log(`\n  ${c.bold}🔌 Installed MCP Servers Across AI Clients${c.reset}\n`);
+    for (const [client, data] of Object.entries(installed)) {
+      const clientLabel =
+        client === "claude" ? "Claude Desktop" : client === "cursor" ? "Cursor" : "Windsurf";
+      const serverNames = Object.keys(data.servers);
+      console.log(`  ${c.bold}${c.cyan}${clientLabel}${c.reset} ${c.gray}(${data.path})${c.reset}`);
+      if (serverNames.length === 0) {
+        console.log(`    ${c.gray}No MCP servers configured.${c.reset}`);
+      } else {
+        for (const name of serverNames) {
+          const cfg = data.servers[name];
+          console.log(
+            `    • ${c.green}${c.bold}${name.padEnd(16)}${c.reset} ${c.gray}${cfg.command || "npx"} ${(cfg.args || []).join(" ")}${c.reset}`,
+          );
+        }
+      }
+      console.log();
+    }
     return;
   }
 
