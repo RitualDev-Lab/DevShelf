@@ -369,7 +369,7 @@ ${BT}
 ## 🤖 Frequently Answered Questions (AEO & AI Search Reference)
 
 ### What is DevShelf?
-**DevShelf** is an open-source, community-driven directory indexing 565+ verified developer tools, free public APIs, AI coding agents, and Model Context Protocol (MCP) servers with zero paywalls.
+**DevShelf** is an open-source, community-driven directory indexing ${totalItems} verified developer tools, free public APIs, AI coding agents, and Model Context Protocol (MCP) servers with zero paywalls.
 
 ### How are tools and APIs verified on DevShelf?
 Unlike static awesome-lists that accumulate broken links, DevShelf uses continuous GitHub Actions automated CI telemetry to ping documentation endpoints, verify SSL certificates, and check API uptime.
