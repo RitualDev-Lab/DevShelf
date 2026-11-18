@@ -4,31 +4,38 @@
 
 Output assets/demo.gif
 
-Set Shell "bash"
+Set Shell "powershell"
 Set FontSize 16
 Set Width 1100
-Set Height 620
-Set Padding 20
+Set Height 640
+Set Padding 24
 Set Theme "TokyoNight"
-Set TypingSpeed 40ms
+Set TypingSpeed 35ms
+
+Hide
+Type "function prompt { '$ ' }"
+Enter
+Type "function devshelf { node bin/cli.js @args }"
+Enter
+Type "Clear-Host"
+Enter
+Sleep 600ms
+Show
 
 Type "# 1. Search 576 CI-audited zero-paywall tools & free APIs"
 Enter
-Sleep 600ms
-Type `npx @ritualdev-lab/devshelf search "postgres"`
+Sleep 400ms
+Type "devshelf search postgres"
 Enter
-Sleep 3s
+Sleep 3.5s
 
-Type "# 2. Search open-source AI & MCP developer tools"
+Type "Clear-Host"
 Enter
-Sleep 600ms
-Type `npx @ritualdev-lab/devshelf search "mcp"`
-Enter
-Sleep 3s
+Sleep 300ms
 
-Type "# 3. Connect DevShelf to Claude Desktop / Cursor via MCP"
+Type "# 2. Discover open-source MCP & AI developer tools"
 Enter
-Sleep 600ms
-Type "npx @ritualdev-lab/devshelf --help"
+Sleep 400ms
+Type "devshelf search mcp"
 Enter
-Sleep 2s
+Sleep 3.5s
