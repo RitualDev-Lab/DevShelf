@@ -1223,7 +1223,10 @@
     "description": "Open-source Windows performance utility built in Rust and egui. Features game detection, ETW FPS recording, safe tweak undo, and crash recovery without modifying game files.",
     "language": "Rust",
     "license": "MIT",
-    "featured": false
+    "featured": false,
+    "nativeBinary": true,
+    "codeSigned": false,
+    "securityWarning": "[UNVERIFIED BINARY - UNSIGNED]"
   },
   {
     "name": "Solaris Dev Shop",
