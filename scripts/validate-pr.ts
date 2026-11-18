@@ -1,6 +1,7 @@
 import { execSync } from "node:child_process";
 import fs from "node:fs/promises";
 import path from "node:path";
+import { evaluateBinaryTrustPolicy } from "./binary-trust-policy.js";
 
 interface ResourceItem {
   name: string;
@@ -262,6 +263,17 @@ async function runPrValidation() {
             issue: "Description contains placeholder or incomplete text.",
           });
         }
+      }
+
+      // 3b. Native OS Binary Code-Signing Guard (SEC-06)
+      const binaryTrust = evaluateBinaryTrustPolicy(item);
+      for (const binaryErr of binaryTrust.errors) {
+        errors.push({
+          file,
+          item: itemName,
+          field: "codeSigned",
+          issue: binaryErr,
+        });
       }
 
       // 4. In-file duplicate check

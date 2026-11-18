@@ -1,5 +1,5 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-11-17T20:56:09.189Z",
+  "updatedAt": "2026-11-18T03:35:19.339Z",
   "totalCount": 576,
   "reposCount": 362,
   "facets": {
@@ -3484,6 +3484,9 @@ window.DEVSHELF_DATA = {
       "language": "Rust",
       "license": "MIT",
       "featured": false,
+      "nativeBinary": true,
+      "codeSigned": false,
+      "securityWarning": "[UNVERIFIED BINARY - UNSIGNED]",
       "type": "cli",
       "section": "CLI & Productivity Tools"
     },
