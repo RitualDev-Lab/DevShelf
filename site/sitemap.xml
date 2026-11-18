@@ -661,6 +661,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://devshelf.ritualdev.in/tools/cloudgpu-mcp.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://devshelf.ritualdev.in/tools/fineprint-ai.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>

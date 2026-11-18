@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 576 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 577 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -978,6 +978,15 @@
 - **URL**: https://npmscan.com/api/mcp
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/npmscan.html
 - **Description**: Free remote MCP server and agent skills that check npm packages before an AI coding agent installs them: known vulnerabilities, malware, typosquats, maintainer changes, provenance and install scripts. No API key.
+
+### CloudGPU MCP
+- **Category**: AI Agents & Local LLMs
+- **Pricing Model**: See official site for free access and limits
+- **License**: MIT
+- **Language**: JavaScript
+- **URL**: https://github.com/cloudgpu-app/cloudgpu-mcp
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/cloudgpu-mcp.html
+- **Description**: CloudGPU MCP connects MCP-capable clients to CloudGPU for GPU rental and model API workflows. GPU rental and model API usage are paid based on usage.
 
 ### FinePrint AI
 - **Category**: Developer Utilities
