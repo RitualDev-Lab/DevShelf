@@ -32,7 +32,11 @@ $ npx @ritualdev-lab/devshelf search "postgres"
     https://supabase.com
 ```
 
-> Want to record a fresh 15-second terminal GIF? Run [`vhs assets/demo.tape`](assets/demo.tape) with [Charm VHS](https://github.com/charmbracelet/vhs).
+<p align="center">
+  <img src="assets/demo.gif" alt="DevShelf Live Terminal Demo" width="820" />
+</p>
+
+> Recorded with [Charm VHS](https://github.com/charmbracelet/vhs) from [`assets/demo.tape`](assets/demo.tape).
 
 ### Built an open-source CLI, API, or MCP server? Add it in a 5-line JSON PR
 
