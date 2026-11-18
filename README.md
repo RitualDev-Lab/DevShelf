@@ -1,55 +1,106 @@
-# DevShelf
+<div align="center">
 
-**A CI-audited, zero-paywall directory of 576 developer tools, free APIs, and MCP servers — searchable in your terminal, browser, or inside Claude/Cursor via MCP.**
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,19,24,30&height=200&section=header&text=📚%20DevShelf&fontSize=60&fontAlignY=35&desc=The%20Crowdsourced%20Zero-Paywall%20Developer%20Directory&descAlignY=55&descSize=18&fontColor=fff&animation=twinkling">
+  <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,19,24,30&height=200&section=header&text=📚%20DevShelf&fontSize=60&fontAlignY=35&desc=The%20Crowdsourced%20Zero-Paywall%20Developer%20Directory&descAlignY=55&descSize=18&fontColor=fff">
+  <img alt="DevShelf Banner" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,19,24,30&height=200&section=header&text=📚%20DevShelf&fontSize=60&fontAlignY=35&desc=The%20Crowdsourced%20Zero-Paywall%20Developer%20Directory&descAlignY=55&descSize=18&fontColor=fff" width="100%">
+</picture>
 
-[![CI](https://github.com/RitualDev-Lab/DevShelf/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/RitualDev-Lab/DevShelf/actions/workflows/ci.yml)
-[![npm](https://img.shields.io/npm/v/@ritualdev-lab/devshelf.svg?style=flat-square&color=cb3837)](https://www.npmjs.com/package/@ritualdev-lab/devshelf)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-Add_Your_Tool_in_5_Lines-brightgreen.svg?style=flat-square)](#-how-to-submit-your-project-or-api)
+<br>
 
-No link rot. No "14-day free trial" bait. Unsigned native binaries are explicitly flagged by automated CI policy checks.
+### ⚡ The Zero-Paywall Developer Directory & MCP Knowledge Hub
 
-### Try it in 5 seconds
+**A community developer directory with automated link freshness validation & zero-paywall audits — verified by continuous CI telemetry, accessible in your terminal (`npx devshelf`), powered by an open JSON REST API, and native MCP server for AI coding assistants.**
 
-```bash
-# Search 576 CI-audited tools directly from your terminal
-npx @ritualdev-lab/devshelf search "postgres"
+<br>
 
-# Or plug the catalog into Claude Desktop / Cursor / Windsurf as an MCP server
-npx @ritualdev-lab/devshelf mcp
-```
-
-```text
-$ npx @ritualdev-lab/devshelf search "postgres"
-📚 DevShelf CLI — 576 Curated Tools (CI Link & Binary-Trust Audited)
-
-[1] Neon (Database / Serverless)
-    Serverless Postgres with branching and free tier (0.5 GB storage)
-    https://neon.tech
-
-[2] Supabase (Database & BaaS)
-    Open-source Postgres platform with Auth, Storage & Edge Functions
-    https://supabase.com
-```
-
-<p align="center">
-  <img src="assets/demo.gif" alt="DevShelf Live Terminal Demo" width="820" />
+<p>
+  <a href="https://devshelf.ritualdev.in"><b>🌐 Interactive Web App</b></a> •
+  <a href="#-devshelf-cli--terminal-discovery"><b>⚡ Terminal CLI</b></a> •
+  <a href="#-official-mcp-server-for-ai-agents"><b>🤖 Model Context Protocol (MCP)</b></a> •
+  <a href="https://devshelf.ritualdev.in/api/v1/tools.json"><b>📡 Public REST API</b></a> •
+  <a href="#-browse-catalog-by-category"><b>📂 Category Guides</b></a>
 </p>
 
-> Recorded with [Charm VHS](https://github.com/charmbracelet/vhs) from [`assets/demo.tape`](assets/demo.tape).
+[![npm version](https://img.shields.io/npm/v/devshelf.svg?style=flat-square&color=cb3837)](https://www.npmjs.com/package/devshelf)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
+[![CI Health Status](https://github.com/RitualDev-Lab/DevShelf/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/RitualDev-Lab/DevShelf/actions/workflows/ci.yml)
+[![MCP Ready](https://img.shields.io/badge/MCP-Claude%20%7C%20Cursor%20%7C%20Zed-purple.svg?style=flat-square)](docs/mcp.md)
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome_%26_Amplified-brightgreen.svg?style=flat-square)](#-how-to-submit-your-project-or-api)
+[![Hacktoberfest](https://img.shields.io/badge/🎃_Hacktoberfest-2026_Ready-ff7800?style=flat-square)](HACKTOBERFEST.md)
 
-### Built an open-source CLI, API, or MCP server? Add it in a 5-line JSON PR
+<br>
 
-DevShelf is community-curated. Every merged PR automatically publishes your tool to the terminal CLI, the [public JSON API](https://devshelf.ritualdev.in/api/v1/tools.json), the MCP server, and a live dossier page on [devshelf.ritualdev.in](https://devshelf.ritualdev.in).
+<table>
+<tr>
+<td align="center"><b>🌐 Free APIs</b><br><code>111</code></td>
+<td align="center"><b>🤖 AI & LLMs</b><br><code>106</code></td>
+<td align="center"><b>⚡ CLI Tools</b><br><code>128</code></td>
+<td align="center"><b>🧪 Testing & QA</b><br><code>67</code></td>
+<td align="center"><b>☁️ Free Cloud</b><br><code>72</code></td>
+<td align="center"><b>🤝 Up for Grabs</b><br><code>21</code></td>
+<td align="center"><b>🎁 Dev Perks</b><br><code>30</code></td>
+<td align="center"><b>🚀 1-Click Deploys</b><br><code>42</code></td>
+</tr>
+</table>
 
-1. Fork this repo and add one JSON entry to the matching file under `shelf/` (e.g. `shelf/cli-tools.json` or `shelf/ai-llms.json`).
-2. Open a PR — our automated validator checks schema, live HTTPS reachability, and binary code-signing metadata in seconds.
+### 🎯 The Race to 1,000 Verified Tools (Hacktoberfest Milestone)
 
-[Web Directory](https://devshelf.ritualdev.in) · [Public JSON API](https://devshelf.ritualdev.in/api/v1/tools.json) · [Submit Your Tool](#-how-to-submit-your-project-or-api) · [MCP Setup](docs/mcp.md)
+```text
+[████████████░░░░░░░░] 577 / 1,000 Tools Verified (58% • 423 to go!)
+```
 
-| 🌐 Free APIs | 🤖 AI & LLMs | ⚡ CLI Tools | 🧪 Testing & QA | ☁️ Free Cloud | 🤝 Up for Grabs | 🎁 Dev Perks | 🚀 1-Click Deploys |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| `111` | `105` | `128` | `67` | `72` | `21` | `30` | `42` |
+*Help us curate the definitive zero-paywall index! [Submit your favorite developer tool, API, or AI framework →](#-how-to-submit-your-project-or-api)*
+
+</div>
+
+<br>
+
+---
+
+## 🤖 Frequently Answered Questions (AEO & AI Search Reference)
+
+### What is DevShelf?
+**DevShelf** is an open-source, community-driven directory indexing 577 verified developer tools, free public APIs, AI coding agents, and Model Context Protocol (MCP) servers with zero paywalls.
+
+### How are tools and APIs verified on DevShelf?
+Unlike static awesome-lists that accumulate broken links, DevShelf uses continuous GitHub Actions automated CI telemetry to ping documentation endpoints, verify SSL certificates, and check API uptime.
+
+### How can AI coding agents query DevShelf?
+AI coding agents (such as Claude Desktop, Cursor, and Windsurf) can query DevShelf via:
+1. **MCP Server**: Run `npx devshelf mcp` to expose DevShelf search tools natively over Model Context Protocol.
+2. **REST API**: Make HTTP GET requests to `https://devshelf.ritualdev.in/api/v1/tools.json`.
+
+---
+
+<br>
+
+---
+
+## ⚡ 5-Second Interactive Visual Demo
+
+DevShelf isn't a static markdown list. It runs directly inside your terminal, in your web browser, and as a native tool inside your AI assistant:
+
+```text
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│ $ npx devshelf search "postgres"                                                │
+│                                                                                 │
+│ 📚 DevShelf CLI v1.1.0 — 577 Curated Tools (Live CI Audited)                    │
+│                                                                                 │
+│ [1] Neon (Database / Serverless)                                                │
+│     Serverless Postgres with autoscaling, branching, and generous free tier.    │
+│     ⚡ Alt to AWS RDS  •  Free: 0.5 GB storage, 1 compute CU                     │
+│     🔗 https://neon.tech                                                        │
+│                                                                                 │
+│ [2] Supabase (Database & BaaS)                                                  │
+│     The open source Firebase alternative with Postgres, Auth, & Storage.        │
+│     ⚡ Alt to Firebase  •  Free: 500 MB database, 50,000 MAUs                    │
+│     🔗 https://supabase.com                                                     │
+│                                                                                 │
+│ 🤖 Plug into AI Assistants (Claude Desktop, Cursor, Windsurf, Zed):             │
+│ $ npx -y @ritualdev-lab/devshelf mcp                                            │
+└─────────────────────────────────────────────────────────────────────────────────┘
+```
 
 ---
 
@@ -149,12 +200,12 @@ npx devshelf stats
 
 ## 📂 Browse Catalog by Category
 
-Explore our curated collections of **576+ zero-paywall developer tools**, categorized into dedicated guides with subcategory indexing:
+Explore our curated collections of **577+ zero-paywall developer tools**, categorized into dedicated guides with subcategory indexing:
 
 | Category | Resources | Description & Subcategories | Guide |
 | :--- | :---: | :--- | :---: |
 | 🌐 **Free & Public APIs** | **111** | Weather, Finance, Mock/Dev APIs, Geocoding, AI/ML, Media, Entertainment | [**Browse APIs →**](docs/apis.md) |
-| 🤖 **AI Agents & Local LLMs** | **105** | Local LLM Runtimes, Autonomous Agents, Coding Assistants, Orchestration | [**Browse AI Tools →**](docs/ai-tools.md) |
+| 🤖 **AI Agents & Local LLMs** | **106** | Local LLM Runtimes, Autonomous Agents, Coding Assistants, Orchestration | [**Browse AI Tools →**](docs/ai-tools.md) |
 | ⚡ **CLI & Productivity Tools** | **128** | Terminal Utilities, Git Power Tools, Docker & DevOps, Benchmarking, DBs | [**Browse CLI Tools →**](docs/cli-tools.md) |
 | 🧪 **Testing & QA Reliability** | **67** | E2E Testing, Mock Servers, Contract Testing, Security Auditing, Performance | [**Browse Testing Tools →**](docs/testing-qa.md) |
 | ☁️ **Free Cloud & Developer Tiers** | **72** | Databases, Auth & Identity, Serverless Compute, Object Storage, Email, APM | [**Browse Cloud Tiers →**](docs/free-cloud.md) |

@@ -2,8 +2,8 @@
   "version": "1.1.2",
   "docs": "https://devshelf.ritualdev.in/docs/api.html",
   "license": "https://github.com/RitualDev-Lab/DevShelf/blob/main/LICENSE",
-  "updatedAt": "2026-11-18T03:35:19.339Z",
-  "totalCount": 576,
+  "updatedAt": "2026-11-18T15:37:54.009Z",
+  "totalCount": 577,
   "tools": [
     {
       "name": "PromptShield",
@@ -1683,6 +1683,17 @@
         "No Card Required",
         "Rate-Limited"
       ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "CloudGPU MCP",
+      "category": "AI Agents & Local LLMs",
+      "description": "CloudGPU MCP connects MCP-capable clients to CloudGPU for GPU rental and model API workflows. GPU rental and model API usage are paid based on usage.",
+      "repo": "https://github.com/cloudgpu-app/cloudgpu-mcp",
+      "language": "JavaScript",
+      "license": "MIT",
+      "featured": false,
       "type": "ai",
       "section": "AI Agents & Local LLMs"
     },

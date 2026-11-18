@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-18T03:35:19.339Z",
-  "totalCount": 576,
-  "reposCount": 362,
+  "updatedAt": "2026-11-18T15:37:54.009Z",
+  "totalCount": 577,
+  "reposCount": 363,
   "facets": {
-    "repos": 362
+    "repos": 363
   },
   "counts": {
-    "aiTools": 105,
+    "aiTools": 106,
     "cliTools": 128,
     "testingQa": 67,
     "apis": 111,
@@ -1694,6 +1694,17 @@
         "No Card Required",
         "Rate-Limited"
       ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "CloudGPU MCP",
+      "category": "AI Agents & Local LLMs",
+      "description": "CloudGPU MCP connects MCP-capable clients to CloudGPU for GPU rental and model API workflows. GPU rental and model API usage are paid based on usage.",
+      "repo": "https://github.com/cloudgpu-app/cloudgpu-mcp",
+      "language": "JavaScript",
+      "license": "MIT",
+      "featured": false,
       "type": "ai",
       "section": "AI Agents & Local LLMs"
     },

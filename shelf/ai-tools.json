@@ -1141,5 +1141,14 @@
     "license": "MIT",
     "featured": false,
     "statusTags": ["No Card Required", "Rate-Limited"]
+  },
+  {
+    "name": "CloudGPU MCP",
+    "category": "AI Agents & Local LLMs",
+    "description": "CloudGPU MCP connects MCP-capable clients to CloudGPU for GPU rental and model API workflows. GPU rental and model API usage are paid based on usage.",
+    "repo": "https://github.com/cloudgpu-app/cloudgpu-mcp",
+    "language": "JavaScript",
+    "license": "MIT",
+    "featured": false
   }
 ]
