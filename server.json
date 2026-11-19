@@ -1,0 +1,23 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.RitualDev-Lab/devshelf",
+  "title": "DevShelf Developer Directory & Tool Discovery MCP Server",
+  "description": "Discover 570+ developer tools, free APIs, AI agents, and open-source libraries.",
+  "version": "1.1.3",
+  "status": "active",
+  "repository": {
+    "url": "https://github.com/RitualDev-Lab/DevShelf",
+    "source": "github"
+  },
+  "website": "https://devshelf.ritualdev.in",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@ritualdev-lab/devshelf",
+      "version": "1.1.3",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
