@@ -10,13 +10,13 @@
  */
 
 import fs from "node:fs";
-import http from "node:http";
 import path from "node:path";
 import readline from "node:readline";
 import { fileURLToPath } from "node:url";
 import { loadCatalog } from "./lib/catalog.js";
 import { loadSponsors } from "./lib/sponsors.js";
 import { loadNewsletter } from "./lib/newsletter.js";
+import { startStreamableHttpServer as startHttpServer } from "./lib/http-server.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -460,10 +460,11 @@ async function handleToolCall(name, args) {
       return searchTarget.includes(q);
     });
 
+    // Organic relevance sorting (exact name match > prefix match > keyword match)
     matches.sort((a, b) => {
-      const aFeat = a.featured ? 1 : 0;
-      const bFeat = b.featured ? 1 : 0;
-      return bFeat - aFeat;
+      const aExact = a.name.toLowerCase() === q ? 2 : a.name.toLowerCase().startsWith(q) ? 1 : 0;
+      const bExact = b.name.toLowerCase() === q ? 2 : b.name.toLowerCase().startsWith(q) ? 1 : 0;
+      return bExact - aExact;
     });
 
     if (args.compact) {
@@ -616,14 +617,17 @@ async function handleToolCall(name, args) {
       return {
         toolName: tool.name,
         url: tool.url || tool.repo,
-        status: 200,
-        reachable: true,
-        latencyMs: 85,
-        uptimePercent: 100,
-        healthStatus: "healthy",
-        verifiedZeroPaywall: true,
-        lastVerifiedAt: uptimeData?.lastChecked || new Date().toISOString(),
-        source: "DevShelf Verified Catalog Registry",
+        status: null,
+        reachable: null,
+        latencyMs: null,
+        uptimePercent: null,
+        healthStatus: "unmonitored",
+        monitored: false,
+        verifiedZeroPaywall: Boolean(tool.freeTier || tool.license),
+        lastVerifiedAt: null,
+        message:
+          "No live telemetry endpoint data recorded for this catalog tool. Health has not been dynamically pinged.",
+        source: "DevShelf Catalog",
       };
     }
 
@@ -699,6 +703,7 @@ async function handleToolCall(name, args) {
       category: tool.category,
       license: tool.license || "Not specified",
       catalogDigest: identityDigest,
+      catalogEntryPresent: true,
       verifiedCatalogEntry: true,
     };
 
@@ -750,8 +755,8 @@ async function handleToolCall(name, args) {
         description: item.description,
         sponsorTier: item.name.toLowerCase().includes("agentshield")
           ? "Enterprise Security Sponsor"
-          : "Verified Sponsor ★",
-        badges: item.statusTags || ["Verified Free"],
+          : "Community Sponsor ★",
+        badges: item.statusTags || ["Free Tier / Open Source"],
       })),
     };
   }
@@ -803,10 +808,11 @@ async function handleToolCall(name, args) {
     return {
       serverName: "devshelf-mcp",
       monetizationModel: "Self-Serve Open Source Tool Sponsorship",
-      guarantee: "100% Zero-Paywall Verification Agreement (Strict No-Trial-Trap Policy)",
+      guarantee:
+        "Strict Editorial Independence: Sponsoring does not alter search rank or bypass zero-paywall criteria",
       metrics: {
-        monthlyAgentSessions: sponsorsData?.telemetry?.monthlyMcpSessions || 5420,
-        averageLatencyMs: sponsorsData?.telemetry?.averageLatencyMs || 42,
+        monthlyAgentSessions: sponsorsData?.telemetry?.monthlyMcpSessions ?? null,
+        averageLatencyMs: sponsorsData?.telemetry?.averageLatencyMs ?? null,
         activeEditors: sponsorsData?.telemetry?.activeEditorClients || [
           "Cursor",
           "Claude Desktop",
@@ -829,9 +835,9 @@ async function handleToolCall(name, args) {
           priceUSD: 49,
           billing: "monthly or one-time",
           perks: [
-            "Verified Catalog Listing across Web & CLI",
+            "Catalog Listing across Web & CLI",
             "Embeddable Shields / SVG Badges",
-            "10,000+ monthly developer visibility",
+            "Community developer visibility",
           ],
         },
         mcpPro: {
@@ -839,20 +845,20 @@ async function handleToolCall(name, args) {
           priceUSD: 149,
           billing: "monthly",
           perks: [
-            "Top-ranked AI recommendation in Cursor, Claude Desktop, Windsurf, Zed",
-            "Transparent '★ Verified Sponsor' badge in agent JSON returns",
-            "Priority inclusion in recommend_stack architectural suggestions",
-            "Zero-paywall compliance badge verification",
+            "Transparent '★ Community Sponsor' badge in web catalog",
+            "Featured showcase in community newsletter and sponsor directory",
+            "Zero-paywall compliance review",
+            "Editorial neutrality: all algorithmic tool rankings remain 100% organic",
           ],
         },
-        enterpriseSecurity: {
+        enterprise: {
           name: "Enterprise & Agent Partner",
           priceUSD: 299,
           billing: "monthly",
           perks: [
-            "Top headline spotlight placement on Homepage",
-            "AgentShield zero-leak audit & cryptographic integrity digest",
-            "Monthly LLM query impression and clickout telemetry report",
+            "Headline spotlight placement on Homepage sponsor section",
+            "Independent security review digest",
+            "Community newsletter sponsorship acknowledgement",
             "Instant corporate digital tax invoice with GST/VAT compliance",
           ],
         },
@@ -1018,7 +1024,7 @@ export async function startMcpServer() {
     catalog?.milestone ||
     (catalog?.totalCount ? `${Math.floor(catalog.totalCount / 10) * 10}+` : "550+");
   process.stderr.write(
-    `🚀 [DevShelf MCP Server] Running on stdio transport (${milestone} verified tools ready).\n`,
+    `🚀 [DevShelf MCP Server] Running on stdio transport (${milestone} tools ready).\n`,
   );
 }
 
@@ -1034,149 +1040,13 @@ export async function startStreamableHttpServer(port = 8080) {
     (catalog?.totalCount ? `${Math.floor(catalog.totalCount / 10) * 10}+` : "550+");
   const pkg = JSON.parse(fs.readFileSync(path.join(__dirname, "..", "package.json"), "utf8"));
 
-  const server = http.createServer(async (req, res) => {
-    // Enable CORS for web-based MCP clients
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
-    res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization, x-mcp-version");
-
-    if (req.method === "OPTIONS") {
-      res.writeHead(204);
-      res.end();
-      return;
-    }
-
-    const host = req.headers.host || `localhost:${port}`;
-    const url = new URL(req.url, `http://${host}`);
-
-    if (url.pathname === "/health" || url.pathname === "/ping") {
-      res.writeHead(200, { "Content-Type": "application/json" });
-      res.end(
-        JSON.stringify({
-          status: "healthy",
-          name: "devshelf-mcp",
-          version: pkg.version,
-          protocolVersion: "2024-11-05",
-          transports: ["stdio", "streamable-http", "sse"],
-          verifiedTools: catalog?.totalCount || 550,
-          milestone,
-        }),
-      );
-      return;
-    }
-
-    if (req.method === "GET" && (url.pathname === "/sse" || url.pathname === "/events")) {
-      res.writeHead(200, {
-        "Content-Type": "text/event-stream",
-        "Cache-Control": "no-cache",
-        Connection: "keep-alive",
-      });
-      res.write(`event: endpoint\ndata: ${url.origin}/mcp\n\n`);
-      const keepAlive = setInterval(() => {
-        res.write(": keep-alive\n\n");
-      }, 15000);
-      req.on("close", () => clearInterval(keepAlive));
-      return;
-    }
-
-    // Streamable HTTP JSON-RPC endpoint (POST /mcp or POST /)
-    if (
-      req.method === "POST" &&
-      (url.pathname === "/mcp" || url.pathname === "/" || url.pathname === "/message")
-    ) {
-      let body = "";
-      req.on("data", (chunk) => {
-        body += chunk;
-      });
-      req.on("end", async () => {
-        try {
-          const rpcReq = JSON.parse(body);
-          const { id, method, params } = rpcReq;
-
-          if (method === "initialize") {
-            res.writeHead(200, { "Content-Type": "application/json" });
-            res.end(
-              JSON.stringify({
-                jsonrpc: "2.0",
-                id,
-                result: {
-                  protocolVersion: "2024-11-05",
-                  serverInfo: { name: "devshelf-mcp", version: pkg.version },
-                  capabilities: { tools: {} },
-                },
-              }),
-            );
-            return;
-          }
-
-          if (method === "notifications/initialized") {
-            res.writeHead(204);
-            res.end();
-            return;
-          }
-
-          if (method === "ping") {
-            res.writeHead(200, { "Content-Type": "application/json" });
-            res.end(JSON.stringify({ jsonrpc: "2.0", id, result: {} }));
-            return;
-          }
-
-          if (method === "tools/list") {
-            res.writeHead(200, { "Content-Type": "application/json" });
-            res.end(JSON.stringify({ jsonrpc: "2.0", id, result: { tools: TOOLS } }));
-            return;
-          }
-
-          if (method === "tools/call") {
-            const toolName = params?.name;
-            const toolArgs = params?.arguments || {};
-            const output = await handleToolCall(toolName, toolArgs);
-            res.writeHead(200, { "Content-Type": "application/json" });
-            res.end(
-              JSON.stringify({
-                jsonrpc: "2.0",
-                id,
-                result: {
-                  content: [{ type: "text", text: JSON.stringify(output, null, 2) }],
-                },
-              }),
-            );
-            return;
-          }
-
-          res.writeHead(404, { "Content-Type": "application/json" });
-          res.end(
-            JSON.stringify({
-              jsonrpc: "2.0",
-              id,
-              error: { code: -32601, message: `Method not found: ${method}` },
-            }),
-          );
-        } catch (err) {
-          res.writeHead(500, { "Content-Type": "application/json" });
-          res.end(
-            JSON.stringify({
-              jsonrpc: "2.0",
-              id: null,
-              error: { code: -32700, message: `Internal error: ${err.message}` },
-            }),
-          );
-        }
-      });
-      return;
-    }
-
-    res.writeHead(404, { "Content-Type": "text/plain" });
-    res.end("DevShelf MCP Server - Supported Endpoints: /mcp (POST), /sse (GET), /health (GET)\n");
-  });
-
-  return new Promise((resolve) => {
-    server.listen(port, () => {
-      process.stderr.write(
-        `🚀 [DevShelf MCP Server] Running on Streamable HTTP transport at http://localhost:${port}/mcp (${milestone} verified tools ready).\n`,
-      );
-      resolve(server);
-    });
+  return startHttpServer({
+    port,
+    pkg,
+    milestone,
+    tools: TOOLS,
+    handleToolCall,
+    getCatalog,
   });
 }
 
