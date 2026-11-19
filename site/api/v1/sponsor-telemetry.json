@@ -4,6 +4,8 @@
     "totalVerifiedTools": 537,
     "openSourceRepos": 334,
     "alternativeGuides": 146,
+    "monthlyMcpSessions": 1500,
+    "averageLatencyMs": 42,
     "activeEditorClients": [
       "Cursor",
       "Claude Desktop",
@@ -52,11 +54,11 @@
       "priceUSD": 49,
       "priceINR": 4100,
       "billing": "monthly",
-      "tagline": "Top-Ranked AI Agent Recommendation across Cursor, Claude, Windsurf, Zed",
+      "tagline": "Transparent Community Sponsor Showcase across Web, CLI & AI Agents",
       "features": [
-        "Priority boosted recommendation inside npx devshelf-mcp queries",
-        "Transparent '★ Verified Sponsor' badge in agent JSON responses",
-        "Priority placement in recommend_stack architectural recommendations",
+        "Transparent '★ Community Sponsor' badge in agent JSON responses",
+        "Featured spotlight placement in community newsletter and web directory",
+        "Editorial neutrality guaranteed: search ranking and recommendations remain 100% organic",
         "Direct context injection into AI developer sessions without hallucinations",
         "Zero-Paywall editorial audit and attestation badge"
       ],
@@ -71,8 +73,7 @@
       "tagline": "Exclusive Top-of-Category Dominance across Cloud, AI, APIs, or CLI",
       "features": [
         "100% exclusive sticky brand header across your chosen category shelf",
-        "Featured recommendation across all alternative roundups in your category",
-        "Top architectural recommendation in MCP & CLI recommend_stack queries",
+        "Featured showcase in community newsletter category spotlight",
         "DevShelf Weekly developer digest category spotlight inclusion",
         "100% money-back guarantee if rejected during review"
       ],
