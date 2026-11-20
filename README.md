@@ -1,6 +1,6 @@
 # DevShelf
 
-**A CI-audited, zero-paywall directory of 577 developer tools, free APIs, and MCP servers — searchable in your terminal, browser, or inside Claude/Cursor via MCP.**
+**A CI-audited, zero-paywall directory of 578 developer tools, free APIs, and MCP servers — searchable in your terminal, browser, or inside Claude/Cursor via MCP.**
 
 [![CI](https://github.com/RitualDev-Lab/DevShelf/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/RitualDev-Lab/DevShelf/actions/workflows/ci.yml)
 [![npm](https://img.shields.io/npm/v/@ritualdev-lab/devshelf.svg?style=flat-square&color=cb3837)](https://www.npmjs.com/package/@ritualdev-lab/devshelf)
@@ -12,7 +12,7 @@ No link rot. No "14-day free trial" bait. Unsigned native binaries are explicitl
 ### Try it in 5 seconds
 
 ```bash
-# Search 577 CI-audited tools directly from your terminal
+# Search 578 CI-audited tools directly from your terminal
 npx @ritualdev-lab/devshelf search "postgres"
 
 # Or plug the catalog into Claude Desktop / Cursor / Windsurf as an MCP server
@@ -21,7 +21,7 @@ npx @ritualdev-lab/devshelf mcp
 
 ```text
 $ npx @ritualdev-lab/devshelf search "postgres"
-📚 DevShelf CLI — 577 Curated Tools (CI Link & Binary-Trust Audited)
+📚 DevShelf CLI — 578 Curated Tools (CI Link & Binary-Trust Audited)
 
 [1] Neon (Database / Serverless)
     Serverless Postgres with branching and free tier (0.5 GB storage)
@@ -49,7 +49,7 @@ DevShelf is community-curated. Every merged PR automatically publishes your tool
 
 | 🌐 Free APIs | 🤖 AI & LLMs | ⚡ CLI Tools | 🧪 Testing & QA | ☁️ Free Cloud | 🤝 Up for Grabs | 🎁 Dev Perks | 🚀 1-Click Deploys |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| `111` | `106` | `128` | `67` | `72` | `21` | `30` | `42` |
+| `111` | `107` | `128` | `67` | `72` | `21` | `30` | `42` |
 
 ---
 
@@ -149,12 +149,12 @@ npx devshelf stats
 
 ## 📂 Browse Catalog by Category
 
-Explore our curated collections of **577+ zero-paywall developer tools**, categorized into dedicated guides with subcategory indexing:
+Explore our curated collections of **578+ zero-paywall developer tools**, categorized into dedicated guides with subcategory indexing:
 
 | Category | Resources | Description & Subcategories | Guide |
 | :--- | :---: | :--- | :---: |
 | 🌐 **Free & Public APIs** | **111** | Weather, Finance, Mock/Dev APIs, Geocoding, AI/ML, Media, Entertainment | [**Browse APIs →**](docs/apis.md) |
-| 🤖 **AI Agents & Local LLMs** | **106** | Local LLM Runtimes, Autonomous Agents, Coding Assistants, Orchestration | [**Browse AI Tools →**](docs/ai-tools.md) |
+| 🤖 **AI Agents & Local LLMs** | **107** | Local LLM Runtimes, Autonomous Agents, Coding Assistants, Orchestration | [**Browse AI Tools →**](docs/ai-tools.md) |
 | ⚡ **CLI & Productivity Tools** | **128** | Terminal Utilities, Git Power Tools, Docker & DevOps, Benchmarking, DBs | [**Browse CLI Tools →**](docs/cli-tools.md) |
 | 🧪 **Testing & QA Reliability** | **67** | E2E Testing, Mock Servers, Contract Testing, Security Auditing, Performance | [**Browse Testing Tools →**](docs/testing-qa.md) |
 | ☁️ **Free Cloud & Developer Tiers** | **72** | Databases, Auth & Identity, Serverless Compute, Object Storage, Email, APM | [**Browse Cloud Tiers →**](docs/free-cloud.md) |

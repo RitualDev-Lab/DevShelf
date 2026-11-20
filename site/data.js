@@ -1,12 +1,12 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-11-19T18:15:20.095Z",
-  "totalCount": 577,
-  "reposCount": 363,
+  "updatedAt": "2026-11-20T12:04:00.521Z",
+  "totalCount": 578,
+  "reposCount": 364,
   "facets": {
-    "repos": 363
+    "repos": 364
   },
   "counts": {
-    "aiTools": 106,
+    "aiTools": 107,
     "cliTools": 128,
     "testingQa": 67,
     "apis": 111,
@@ -1704,6 +1704,17 @@ window.DEVSHELF_DATA = {
       "repo": "https://github.com/cloudgpu-app/cloudgpu-mcp",
       "language": "JavaScript",
       "license": "MIT",
+      "featured": false,
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Open Agent API",
+      "category": "AI Agents & Local LLMs",
+      "description": "Open Agent API is a self-hosted gateway that lets existing apps and scripts call configured coding agents through an OpenAI-compatible API. Its source quickstart runs an offline sample without a model-provider key; real coding agents use their own accounts and quotas.",
+      "repo": "https://github.com/jiangxingfan1-coder/Open-Agent-API",
+      "language": "TypeScript",
+      "license": "Apache-2.0",
       "featured": false,
       "type": "ai",
       "section": "AI Agents & Local LLMs"

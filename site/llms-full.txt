@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 577 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 578 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -987,6 +987,15 @@
 - **URL**: https://github.com/cloudgpu-app/cloudgpu-mcp
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/cloudgpu-mcp.html
 - **Description**: CloudGPU MCP connects MCP-capable clients to CloudGPU for GPU rental and model API workflows. GPU rental and model API usage are paid based on usage.
+
+### Open Agent API
+- **Category**: AI Agents & Local LLMs
+- **Pricing Model**: See official site for free access and limits
+- **License**: Apache-2.0
+- **Language**: TypeScript
+- **URL**: https://github.com/jiangxingfan1-coder/Open-Agent-API
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/open-agent-api.html
+- **Description**: Open Agent API is a self-hosted gateway that lets existing apps and scripts call configured coding agents through an OpenAI-compatible API. Its source quickstart runs an offline sample without a model-provider key; real coding agents use their own accounts and quotas.
 
 ### FinePrint AI
 - **Category**: Developer Utilities
