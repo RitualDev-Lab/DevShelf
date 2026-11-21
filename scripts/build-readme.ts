@@ -120,7 +120,9 @@ async function build() {
       md += "| :--- | :---: | :---: | :--- | :---: |\n";
       for (const tool of items) {
         const feat = tool.featured ? "⭐ " : "";
-        const affiliated = (tool as any).firstParty ? " <br/><sub>*(RitualDev Affiliated)*</sub>" : "";
+        const affiliated = (tool as any).firstParty
+          ? " <br/><sub>*(RitualDev Affiliated)*</sub>"
+          : "";
         md += `| [**${feat}${escapeMarkdown(tool.name)}**](${tool.repo})${affiliated} | ${B}${escapeMarkdown(tool.language)}${B} | ${B}${escapeMarkdown(tool.license)}${B} | ${escapeMarkdown(tool.description)} | [GitHub](${tool.repo}) |\n`;
       }
       md += "\n";
@@ -149,7 +151,9 @@ async function build() {
       md += "| :--- | :---: | :---: | :--- | :---: |\n";
       for (const tool of items) {
         const feat = tool.featured ? "⭐ " : "";
-        const affiliated = (tool as any).firstParty ? " <br/><sub>*(RitualDev Affiliated)*</sub>" : "";
+        const affiliated = (tool as any).firstParty
+          ? " <br/><sub>*(RitualDev Affiliated)*</sub>"
+          : "";
         md += `| [**${feat}${escapeMarkdown(tool.name)}**](${tool.repo})${affiliated} | ${B}${escapeMarkdown(tool.language)}${B} | ${B}${escapeMarkdown(tool.license)}${B} | ${escapeMarkdown(tool.description)} | [GitHub](${tool.repo}) |\n`;
       }
       md += "\n";
@@ -178,7 +182,9 @@ async function build() {
       md += "| :--- | :---: | :---: | :--- | :---: |\n";
       for (const tool of items) {
         const feat = tool.featured ? "⭐ " : "";
-        const affiliated = (tool as any).firstParty ? " <br/><sub>*(RitualDev Affiliated)*</sub>" : "";
+        const affiliated = (tool as any).firstParty
+          ? " <br/><sub>*(RitualDev Affiliated)*</sub>"
+          : "";
         md += `| [**${feat}${escapeMarkdown(tool.name)}**](${tool.repo})${affiliated} | ${B}${escapeMarkdown(tool.language)}${B} | ${B}${escapeMarkdown(tool.license)}${B} | ${escapeMarkdown(tool.description)} | [GitHub](${tool.repo}) |\n`;
       }
       md += "\n";

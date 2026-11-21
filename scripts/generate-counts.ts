@@ -247,9 +247,18 @@ async function generateCounts() {
         let pageHtml = await fs.readFile(pagePath, "utf8");
         pageHtml = pageHtml.replace(/Discover \d+\+ verified/g, `Discover ${milestone} verified`);
         pageHtml = pageHtml.replace(/indexing \d+\+ verified/g, `indexing ${milestone} verified`);
-        pageHtml = pageHtml.replace(/Directory Index \(\d+\+ Tools\)/g, `Directory Index (${milestone} Tools)`);
-        pageHtml = pageHtml.replace(/across \d+\+ web dossiers/g, `across ${milestone} web dossiers`);
-        pageHtml = pageHtml.replace(/Directory for \d+\+ Open-Source/g, `Directory for ${milestone} Open-Source`);
+        pageHtml = pageHtml.replace(
+          /Directory Index \(\d+\+ Tools\)/g,
+          `Directory Index (${milestone} Tools)`,
+        );
+        pageHtml = pageHtml.replace(
+          /across \d+\+ web dossiers/g,
+          `across ${milestone} web dossiers`,
+        );
+        pageHtml = pageHtml.replace(
+          /Directory for \d+\+ Open-Source/g,
+          `Directory for ${milestone} Open-Source`,
+        );
         await fs.writeFile(pagePath, pageHtml, "utf8");
       }
     }
