@@ -36,7 +36,7 @@
 
 | Tool | Language | License | Description | Links |
 | :--- | :---: | :---: | :--- | :---: |
-| [**⭐ MockForge AI**](https://github.com/RitualDev-Lab/MockForge) | `TypeScript / WebAssembly` | `Proprietary / Community` | High-throughput relational mock database and seed data synthesizer with 100% foreign-key integrity using Kahn DAG & WebAssembly SQLite. | [GitHub](https://github.com/RitualDev-Lab/MockForge) |
+| [**⭐ MockForge AI**](https://github.com/RitualDev-Lab/MockForge) <br/><sub>*(RitualDev Affiliated)*</sub> | `TypeScript / WebAssembly` | `Proprietary / Community` | High-throughput relational mock database and seed data synthesizer with 100% foreign-key integrity using Kahn DAG & WebAssembly SQLite. | [GitHub](https://github.com/RitualDev-Lab/MockForge) |
 | [**Agent QA**](https://github.com/vostride/agent-qa) | `TypeScript` | `FSL-1.1-ALv2` | Self-improving QA agent for natural-language web and mobile tests, with a local dashboard and CLI. | [GitHub](https://github.com/vostride/agent-qa) |
 | [**Playwright**](https://github.com/microsoft/playwright) | `TypeScript` | `Apache-2.0` | Fast and reliable end-to-end testing framework for modern web apps across Chromium, Firefox, and WebKit. | [GitHub](https://github.com/microsoft/playwright) |
 | [**Cypress**](https://github.com/cypress-io/cypress) | `JavaScript / TypeScript` | `MIT` | Fast, easy, and reliable end-to-end testing framework for anything that runs in a web browser. | [GitHub](https://github.com/cypress-io/cypress) |
@@ -91,7 +91,7 @@
 
 | Tool | Language | License | Description | Links |
 | :--- | :---: | :---: | :--- | :---: |
-| [**⭐ web-sec-auditor**](https://github.com/RitualDev-Lab/web-sec-auditor) | `TypeScript` | `MIT` | Unified DAST, SAST, secret hunter, and SCA vulnerability auditor for web apps and APIs. Emits OASIS SARIF v2.1.0 reports, executive HTML dashboards, and context-aware unified git diff auto-patches. | [GitHub](https://github.com/RitualDev-Lab/web-sec-auditor) |
+| [**⭐ web-sec-auditor**](https://github.com/RitualDev-Lab/web-sec-auditor) <br/><sub>*(RitualDev Affiliated)*</sub> | `TypeScript` | `MIT` | Unified DAST, SAST, secret hunter, and SCA vulnerability auditor for web apps and APIs. Emits OASIS SARIF v2.1.0 reports, executive HTML dashboards, and context-aware unified git diff auto-patches. | [GitHub](https://github.com/RitualDev-Lab/web-sec-auditor) |
 | [**VibeLocked LeakCheck**](https://vibelocked.com/leakcheck) | `TypeScript, Next.js, Supabase` | `Proprietary, permanent free scan (no card required)` | Read-only security scan for vibe-coded apps: leaked keys, open data, missing headers. Permanent free scan; Pro adds deploy watching from US$15/mo. | [GitHub](https://vibelocked.com/leakcheck) |
 
 ### <a id="security-vulnerability-scanners"></a>Security & Vulnerability Scanners (10)

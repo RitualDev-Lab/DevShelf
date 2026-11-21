@@ -173,7 +173,7 @@ async function generateCounts() {
       `<code id="progress-ascii-bar" class="text-purple-300 font-bold hidden sm:inline">${asciiBar}</code>`,
     );
 
-    // Uniform replacement of legacy 500+ / 520+ text in hero/footer/metadata
+    // Uniform replacement of legacy 500+ / 520+ / 530+ / 575+ text in hero/footer/metadata
     indexHtml = indexHtml.replace(
       /Curated from \d+\+ verified zero-paywall resources/g,
       `Curated from ${milestone} verified zero-paywall resources`,
@@ -195,9 +195,65 @@ async function generateCounts() {
       /indexing \d+\+ verified free developer tools/g,
       `indexing ${milestone} verified free developer tools`,
     );
+    indexHtml = indexHtml.replace(
+      /Discover \d+\+ verified free developer tools/g,
+      `Discover ${milestone} verified free developer tools`,
+    );
+    indexHtml = indexHtml.replace(
+      /DevShelf — \d+\+ free developer tools/g,
+      `DevShelf — ${milestone} free developer tools`,
+    );
+    indexHtml = indexHtml.replace(
+      /directory of \d+\+ verified free developer tools/g,
+      `directory of ${milestone} verified free developer tools`,
+    );
+    indexHtml = indexHtml.replace(
+      /repository of \d+\+ verified free developer tools/g,
+      `repository of ${milestone} verified free developer tools`,
+    );
+    indexHtml = indexHtml.replace(
+      /directory indexing \d+\+ developer tools/g,
+      `directory indexing ${milestone} developer tools`,
+    );
+    indexHtml = indexHtml.replace(
+      /Daily \d+\+ API health telemetry/g,
+      `Daily ${milestone} API health telemetry`,
+    );
+    indexHtml = indexHtml.replace(
+      /The Community Directory for \d+\+ Open-Source Developer Tools/g,
+      `The Community Directory for ${milestone} Open-Source Developer Tools`,
+    );
+    indexHtml = indexHtml.replace(
+      /Instant activation across \d+\+ web dossiers/g,
+      `Instant activation across ${milestone} web dossiers`,
+    );
+    indexHtml = indexHtml.replace(
+      /All \d+\+ curated developer tools/g,
+      `All ${milestone} curated developer tools`,
+    );
+    indexHtml = indexHtml.replace(
+      /Query and explore \d+\+ free developer tools/g,
+      `Query and explore ${milestone} free developer tools`,
+    );
 
     await fs.writeFile(indexPath, indexHtml, "utf8");
     console.log("✅ Updated site/index.html metrics & unified count claims.");
+
+    // Update other site pages (directory.html, sponsors.html, newsletter.html)
+    const otherPages = ["directory.html", "sponsors.html", "newsletter.html"];
+    for (const pageName of otherPages) {
+      const pagePath = path.join(siteDir, pageName);
+      if (await fileExists(pagePath)) {
+        let pageHtml = await fs.readFile(pagePath, "utf8");
+        pageHtml = pageHtml.replace(/Discover \d+\+ verified/g, `Discover ${milestone} verified`);
+        pageHtml = pageHtml.replace(/indexing \d+\+ verified/g, `indexing ${milestone} verified`);
+        pageHtml = pageHtml.replace(/Directory Index \(\d+\+ Tools\)/g, `Directory Index (${milestone} Tools)`);
+        pageHtml = pageHtml.replace(/across \d+\+ web dossiers/g, `across ${milestone} web dossiers`);
+        pageHtml = pageHtml.replace(/Directory for \d+\+ Open-Source/g, `Directory for ${milestone} Open-Source`);
+        await fs.writeFile(pagePath, pageHtml, "utf8");
+      }
+    }
+    console.log("✅ Updated ancillary site pages with synchronized milestone claims.");
   }
 }
 

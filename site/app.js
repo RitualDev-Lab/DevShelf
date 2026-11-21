@@ -2332,6 +2332,10 @@ function createCardHtml(item) {
     ? `<span class="px-2 py-0.5 text-[10px] font-bold rounded-full bg-amber-500/20 text-amber-200 border border-amber-500/40 font-mono">⭐ Featured</span>`
     : "";
 
+  const isFirstParty = item.firstParty
+    ? `<span class="px-2 py-0.5 text-[10px] font-bold rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 font-mono" title="RitualDev Studio First-Party / Affiliated Tool">🏛️ RitualDev Affiliated</span>`
+    : "";
+
   const isSeeking =
     item.contributorsWanted || item.seeking
       ? `<span class="px-2 py-0.5 text-[10px] font-bold rounded-full bg-emerald-500/20 text-emerald-200 border border-emerald-500/40 font-mono">🤝 Up for Grabs</span>`
@@ -2543,6 +2547,7 @@ function createCardHtml(item) {
               </h3>
               ${getHealthBarsHtml(item)}
               ${isFeatured}
+              ${isFirstParty}
               ${isSeeking}
             </div>
             ${

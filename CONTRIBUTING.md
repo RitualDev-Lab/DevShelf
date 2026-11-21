@@ -86,6 +86,7 @@ To preserve high quality for the developer community:
 * **Genuine Free Tier or 100% FOSS**: Tools must be open-source or have a genuine, non-expiring free tier (no "14-day free trial that requires a credit card").
 * **Active & Maintained**: The tool/API must be actively maintained and currently functioning.
 * **Working Endpoints**: All URLs must return HTTP 200 or authentic documentation.
+* **Native Binary Code Signing (SEC-06)**: Pre-compiled executables (`.exe`, `.dmg`, `.msi`, kernel utilities) must adhere to our [Binary Trust Policy](docs/BINARY_TRUST_POLICY.md) with Authenticode or Apple Notarization attestation to receive Verified/Featured badges.
 * **No Spam / Scams**: Affiliate links, referral tracking codes, crypto coins/NFT promotions, and SEO link farms are strictly forbidden and will result in an immediate block.
 * **Neutral, Objective Descriptions**: Avoid hyperbole such as *"the best tool in the universe"* or *"revolutionary AI disruption"*. State what it does plainly.
 

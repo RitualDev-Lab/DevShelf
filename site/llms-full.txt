@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 578 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 587 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -996,6 +996,51 @@
 - **URL**: https://github.com/jiangxingfan1-coder/Open-Agent-API
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/open-agent-api.html
 - **Description**: Open Agent API is a self-hosted gateway that lets existing apps and scripts call configured coding agents through an OpenAI-compatible API. Its source quickstart runs an offline sample without a model-provider key; real coding agents use their own accounts and quotas.
+
+### GitHub MCP Server
+- **Category**: AI Coding & MCP
+- **Pricing Model**: See official site for free access and limits
+- **License**: MIT
+- **Language**: TypeScript
+- **URL**: https://github.com/modelcontextprotocol/servers
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/github-mcp-server.html
+- **Description**: Official Model Context Protocol server providing GitHub issue management, PR reviews, repository searches, and commit inspections for AI coding agents.
+
+### Postgres MCP Server
+- **Category**: AI Coding & MCP
+- **Pricing Model**: See official site for free access and limits
+- **License**: MIT
+- **Language**: TypeScript
+- **URL**: https://github.com/modelcontextprotocol/servers/tree/main/src/postgres
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/postgres-mcp-server.html
+- **Description**: Official Model Context Protocol server providing read-only PostgreSQL schema inspection and parameterized query execution for AI assistants.
+
+### Playwright MCP Server
+- **Category**: AI Coding & MCP
+- **Pricing Model**: See official site for free access and limits
+- **License**: MIT
+- **Language**: TypeScript
+- **URL**: https://github.com/executeautomation/mcp-playwright
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/playwright-mcp-server.html
+- **Description**: Headless browser automation and web interaction MCP server powered by Playwright for AI agents.
+
+### SQLite MCP Server
+- **Category**: AI Coding & MCP
+- **Pricing Model**: See official site for free access and limits
+- **License**: MIT
+- **Language**: Python
+- **URL**: https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/sqlite-mcp-server.html
+- **Description**: Official local SQLite database introspection, query, and table schema inspection Model Context Protocol server.
+
+### Fetch MCP Server
+- **Category**: AI Coding & MCP
+- **Pricing Model**: See official site for free access and limits
+- **License**: MIT
+- **Language**: Python
+- **URL**: https://github.com/modelcontextprotocol/servers/tree/main/src/fetch
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/fetch-mcp-server.html
+- **Description**: Official web content retrieval and markdown conversion MCP server for LLMs and autonomous agents.
 
 ### FinePrint AI
 - **Category**: Developer Utilities
@@ -2177,6 +2222,42 @@
 - **URL**: https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/akii-seo-ai-search-optimizer.html
 - **Description**: A free Claude Code plugin that audits sites, checks links, plans content and creates JSON-LD. It runs in the Claude Code terminal on macOS and Linux.
+
+### uv
+- **Category**: Package Management & Runtimes
+- **Pricing Model**: See official site for free access and limits
+- **License**: Apache-2.0 / MIT
+- **Language**: Rust
+- **URL**: https://github.com/astral-sh/uv
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/uv.html
+- **Description**: Extremely fast Python package installer and resolver written in Rust, 10-100x faster than pip.
+
+### DuckDB
+- **Category**: Database & SQL
+- **Pricing Model**: See official site for free access and limits
+- **License**: MIT
+- **Language**: C++
+- **URL**: https://github.com/duckdb/duckdb
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/duckdb.html
+- **Description**: High-performance analytical in-process SQL database management system designed for fast OLAP queries.
+
+### just
+- **Category**: Build & Task Automation
+- **Pricing Model**: See official site for free access and limits
+- **License**: CC0-1.0
+- **Language**: Rust
+- **URL**: https://github.com/casey/just
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/just.html
+- **Description**: Handy, modern command runner to save and run project-specific recipes without make syntax quirks.
+
+### difftastic
+- **Category**: Git & Version Control
+- **Pricing Model**: See official site for free access and limits
+- **License**: MIT
+- **Language**: Rust
+- **URL**: https://github.com/Wilfred/difftastic
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/difftastic.html
+- **Description**: Syntax-aware diff tool that compares files based on their syntax tree using tree-sitter rather than line-by-line.
 
 ### MockForge AI
 - **Category**: Browser & E2E Testing

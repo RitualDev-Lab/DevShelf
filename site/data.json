@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-11-20T12:04:00.521Z",
-  "totalCount": 578,
-  "reposCount": 364,
+  "updatedAt": "2026-11-21T06:46:57.509Z",
+  "totalCount": 587,
+  "reposCount": 373,
   "facets": {
-    "repos": 364
+    "repos": 373
   },
   "counts": {
-    "aiTools": 107,
-    "cliTools": 128,
+    "aiTools": 112,
+    "cliTools": 132,
     "testingQa": 67,
     "apis": 111,
     "freeCloud": 72,
@@ -32,6 +32,8 @@
         "No Card Required"
       ],
       "pypi": "https://pypi.org/project/promptshield-defense/",
+      "firstParty": true,
+      "editorialNote": "RitualDev Studio First-Party / Affiliated Project",
       "type": "ai",
       "section": "AI Agents & Local LLMs"
     },
@@ -51,6 +53,8 @@
         "No Card Required"
       ],
       "pypi": "https://pypi.org/project/agentshield-defense/",
+      "firstParty": true,
+      "editorialNote": "RitualDev Studio First-Party / Affiliated Project",
       "type": "ai",
       "section": "AI Agents & Local LLMs"
     },
@@ -67,6 +71,8 @@
         "Featured"
       ],
       "pypi": "https://pypi.org/project/mcp-monetize/",
+      "firstParty": true,
+      "editorialNote": "RitualDev Studio First-Party / Affiliated Project",
       "type": "ai",
       "section": "AI Agents & Local LLMs"
     },
@@ -1559,6 +1565,8 @@
       "language": "TypeScript",
       "license": "Apache-2.0",
       "featured": true,
+      "firstParty": true,
+      "editorialNote": "RitualDev Studio First-Party / Affiliated Project",
       "type": "ai",
       "section": "AI Agents & Local LLMs"
     },
@@ -1571,6 +1579,8 @@
       "license": "MIT",
       "featured": true,
       "pypi": "https://pypi.org/project/dbshield-defense/",
+      "firstParty": true,
+      "editorialNote": "RitualDev Studio First-Party / Affiliated Project",
       "type": "ai",
       "section": "AI Agents & Local LLMs"
     },
@@ -1720,6 +1730,86 @@
       "section": "AI Agents & Local LLMs"
     },
     {
+      "name": "GitHub MCP Server",
+      "repo": "https://github.com/modelcontextprotocol/servers",
+      "category": "AI Coding & MCP",
+      "description": "Official Model Context Protocol server providing GitHub issue management, PR reviews, repository searches, and commit inspections for AI coding agents.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "featured": true,
+      "goodFirstIssues": "https://github.com/modelcontextprotocol/servers/issues",
+      "statusTags": [
+        "No Card Required",
+        "Official Standard"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Postgres MCP Server",
+      "repo": "https://github.com/modelcontextprotocol/servers",
+      "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/postgres",
+      "category": "AI Coding & MCP",
+      "description": "Official Model Context Protocol server providing read-only PostgreSQL schema inspection and parameterized query execution for AI assistants.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "featured": true,
+      "statusTags": [
+        "No Card Required",
+        "Official Standard"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Playwright MCP Server",
+      "repo": "https://github.com/executeautomation/mcp-playwright",
+      "category": "AI Coding & MCP",
+      "description": "Headless browser automation and web interaction MCP server powered by Playwright for AI agents.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "featured": true,
+      "goodFirstIssues": "https://github.com/executeautomation/mcp-playwright/issues",
+      "statusTags": [
+        "No Card Required",
+        "Browser Automation"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "SQLite MCP Server",
+      "repo": "https://github.com/modelcontextprotocol/servers",
+      "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite",
+      "category": "AI Coding & MCP",
+      "description": "Official local SQLite database introspection, query, and table schema inspection Model Context Protocol server.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Fetch MCP Server",
+      "repo": "https://github.com/modelcontextprotocol/servers",
+      "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/fetch",
+      "category": "AI Coding & MCP",
+      "description": "Official web content retrieval and markdown conversion MCP server for LLMs and autonomous agents.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "statusTags": [
+        "No Card Required",
+        "Official Standard"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
       "name": "FinePrint AI",
       "repo": "https://github.com/RitualDev-Lab/FinePrintAI",
       "category": "Developer Utilities",
@@ -1732,6 +1822,8 @@
         "100% Offline-Friendly",
         "No Card Required"
       ],
+      "firstParty": true,
+      "editorialNote": "RitualDev Studio First-Party / Affiliated Project",
       "type": "cli",
       "section": "CLI & Productivity Tools"
     },
@@ -3626,6 +3718,8 @@
       "language": "TypeScript",
       "license": "Apache-2.0",
       "featured": true,
+      "firstParty": true,
+      "editorialNote": "RitualDev Studio First-Party / Affiliated Project",
       "type": "cli",
       "section": "CLI & Productivity Tools"
     },
@@ -3692,6 +3786,70 @@
       "section": "CLI & Productivity Tools"
     },
     {
+      "name": "uv",
+      "repo": "https://github.com/astral-sh/uv",
+      "category": "Package Management & Runtimes",
+      "description": "Extremely fast Python package installer and resolver written in Rust, 10-100x faster than pip.",
+      "language": "Rust",
+      "license": "Apache-2.0 / MIT",
+      "featured": true,
+      "goodFirstIssues": "https://github.com/astral-sh/uv/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "DuckDB",
+      "repo": "https://github.com/duckdb/duckdb",
+      "category": "Database & SQL",
+      "description": "High-performance analytical in-process SQL database management system designed for fast OLAP queries.",
+      "language": "C++",
+      "license": "MIT",
+      "featured": true,
+      "goodFirstIssues": "https://github.com/duckdb/duckdb/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "just",
+      "repo": "https://github.com/casey/just",
+      "category": "Build & Task Automation",
+      "description": "Handy, modern command runner to save and run project-specific recipes without make syntax quirks.",
+      "language": "Rust",
+      "license": "CC0-1.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/casey/just/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "difftastic",
+      "repo": "https://github.com/Wilfred/difftastic",
+      "category": "Git & Version Control",
+      "description": "Syntax-aware diff tool that compares files based on their syntax tree using tree-sitter rather than line-by-line.",
+      "language": "Rust",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/Wilfred/difftastic/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
       "name": "MockForge AI",
       "repo": "https://github.com/RitualDev-Lab/MockForge",
       "category": "Browser & E2E Testing",
@@ -3700,6 +3858,8 @@
       "license": "Proprietary / Community",
       "featured": true,
       "goodFirstIssues": "https://github.com/RitualDev-Lab/MockForge/issues",
+      "firstParty": true,
+      "editorialNote": "RitualDev Studio First-Party / Affiliated Project",
       "type": "testing",
       "section": "Testing & QA Reliability"
     },
@@ -4501,6 +4661,8 @@
       "language": "TypeScript",
       "license": "MIT",
       "featured": true,
+      "firstParty": true,
+      "editorialNote": "RitualDev Studio First-Party / Affiliated Project",
       "type": "testing",
       "section": "Testing & QA Reliability"
     },

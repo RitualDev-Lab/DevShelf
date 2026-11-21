@@ -4,10 +4,10 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total CLI Tools](https://img.shields.io/badge/CLI_Tools-128_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total CLI Tools](https://img.shields.io/badge/CLI_Tools-132_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
-[Automation & Browser Testing](#automation-browser-testing) • [Benchmarking & Performance](#benchmarking-performance) • [CLI & Developer Productivity](#cli-developer-productivity) • [Database & SQL](#database-sql) • [Dev Utilities & Libraries](#dev-utilities-libraries) • [Developer Toolkits & MCP](#developer-toolkits-mcp) • [Developer Tools](#developer-tools) • [Developer Utilities](#developer-utilities) • [DevOps & Containers](#devops-containers) • [DevOps & Infrastructure](#devops-infrastructure) • [Disk & Storage](#disk-storage) • [Git & Version Control](#git-version-control) • [GitHub Workflow & TUI](#github-workflow-tui) • [HTTP & Network](#http-network) • [OS & Hardware Utilities](#os-hardware-utilities) • [Sandboxing & Cloud Execution](#sandboxing-cloud-execution) • [System & Process Monitoring](#system-process-monitoring) • [Terminal & Search](#terminal-search) • [Terminal & Shell](#terminal-shell) • [Terminal Navigation](#terminal-navigation) • [Web Scraping & Crawling](#web-scraping-crawling)
+[Automation & Browser Testing](#automation-browser-testing) • [Benchmarking & Performance](#benchmarking-performance) • [Build & Task Automation](#build-task-automation) • [CLI & Developer Productivity](#cli-developer-productivity) • [Database & SQL](#database-sql) • [Dev Utilities & Libraries](#dev-utilities-libraries) • [Developer Toolkits & MCP](#developer-toolkits-mcp) • [Developer Tools](#developer-tools) • [Developer Utilities](#developer-utilities) • [DevOps & Containers](#devops-containers) • [DevOps & Infrastructure](#devops-infrastructure) • [Disk & Storage](#disk-storage) • [Git & Version Control](#git-version-control) • [GitHub Workflow & TUI](#github-workflow-tui) • [HTTP & Network](#http-network) • [OS & Hardware Utilities](#os-hardware-utilities) • [Package Management & Runtimes](#package-management-runtimes) • [Sandboxing & Cloud Execution](#sandboxing-cloud-execution) • [System & Process Monitoring](#system-process-monitoring) • [Terminal & Search](#terminal-search) • [Terminal & Shell](#terminal-shell) • [Terminal Navigation](#terminal-navigation) • [Web Scraping & Crawling](#web-scraping-crawling)
 
 ---
 
@@ -22,6 +22,12 @@
 | Tool | Language | License | Description | Links |
 | :--- | :---: | :---: | :--- | :---: |
 | [**hyperfine**](https://github.com/sharkdp/hyperfine) | `Rust` | `MIT / Apache-2.0` | Command-line benchmarking tool with statistical analysis, warmup runs, and parametric sweeps. | [GitHub](https://github.com/sharkdp/hyperfine) |
+
+### <a id="build-task-automation"></a>Build & Task Automation (1)
+
+| Tool | Language | License | Description | Links |
+| :--- | :---: | :---: | :--- | :---: |
+| [**just**](https://github.com/casey/just) | `Rust` | `CC0-1.0` | Handy, modern command runner to save and run project-specific recipes without make syntax quirks. | [GitHub](https://github.com/casey/just) |
 
 ### <a id="cli-developer-productivity"></a>CLI & Developer Productivity (14)
 
@@ -42,7 +48,7 @@
 | [**Kilobat CLI**](https://github.com/seifip/kilobat-cli) | `Swift` | `GPL-3.0-only` | I built Kilobat CLI for macOS network monitoring and diagnostics, with an interactive terminal interface, JSON output and a local MCP server for agents. The GPL-licensed CLI is a separate project from the proprietary desktop app. | [GitHub](https://github.com/seifip/kilobat-cli) |
 | [**Akii: SEO & AI Search Optimizer**](https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer) | `Claude Code plugin, Markdown skills and agents, Bash hooks, JSON manifests` | `MIT` | A free Claude Code plugin that audits sites, checks links, plans content and creates JSON-LD. It runs in the Claude Code terminal on macOS and Linux. | [GitHub](https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer) |
 
-### <a id="database-sql"></a>Database & SQL (7)
+### <a id="database-sql"></a>Database & SQL (8)
 
 | Tool | Language | License | Description | Links |
 | :--- | :---: | :---: | :--- | :---: |
@@ -53,6 +59,7 @@
 | [**mycli**](https://github.com/dbcli/mycli) | `Python` | `BSD-3-Clause` | A terminal client for MySQL, MariaDB, and Percona with auto-completion and syntax highlighting. | [GitHub](https://github.com/dbcli/mycli) |
 | [**iredis**](https://github.com/laixintao/iredis) | `Python` | `BSD-3-Clause` | A terminal client for Redis with auto-completion and syntax highlighting, command suggestions, and hints. | [GitHub](https://github.com/laixintao/iredis) |
 | [**litecli**](https://github.com/dbcli/litecli) | `Python` | `BSD-3-Clause` | CLI for SQLite databases with auto-completion and syntax highlighting. | [GitHub](https://github.com/dbcli/litecli) |
+| [**⭐ DuckDB**](https://github.com/duckdb/duckdb) | `C++` | `MIT` | High-performance analytical in-process SQL database management system designed for fast OLAP queries. | [GitHub](https://github.com/duckdb/duckdb) |
 
 ### <a id="dev-utilities-libraries"></a>Dev Utilities & Libraries (3)
 
@@ -66,7 +73,7 @@
 
 | Tool | Language | License | Description | Links |
 | :--- | :---: | :---: | :--- | :---: |
-| [**⭐ mcp-builder-kit**](https://github.com/RitualDev-Lab/mcp-builder-kit) | `TypeScript` | `Apache-2.0` | Production toolkit and scaffolding engine for Model Context Protocol (MCP) servers. Generates typed TypeScript and FastMCP Python servers, converts OpenAPI specs into tools, and includes a live testing studio. | [GitHub](https://github.com/RitualDev-Lab/mcp-builder-kit) |
+| [**⭐ mcp-builder-kit**](https://github.com/RitualDev-Lab/mcp-builder-kit) <br/><sub>*(RitualDev Affiliated)*</sub> | `TypeScript` | `Apache-2.0` | Production toolkit and scaffolding engine for Model Context Protocol (MCP) servers. Generates typed TypeScript and FastMCP Python servers, converts OpenAPI specs into tools, and includes a live testing studio. | [GitHub](https://github.com/RitualDev-Lab/mcp-builder-kit) |
 | [**FastMCP**](https://github.com/jlowin/fastmcp) | `Python` | `Apache-2.0` | High-level, idiomatic Python framework for building Model Context Protocol servers. Features fast decorator-based tool definitions, automatic Pydantic schema validation, and stdio/SSE transport support. | [GitHub](https://github.com/jlowin/fastmcp) |
 
 ### <a id="developer-tools"></a>Developer Tools (12)
@@ -90,7 +97,7 @@
 
 | Tool | Language | License | Description | Links |
 | :--- | :---: | :---: | :--- | :---: |
-| [**⭐ FinePrint AI**](https://github.com/RitualDev-Lab/FinePrintAI) | `TypeScript / Python` | `Proprietary / Community` | In-memory legal contract, lease, and NDA scanner grading risk A-F with automated attorney-grade redline amendments. | [GitHub](https://github.com/RitualDev-Lab/FinePrintAI) |
+| [**⭐ FinePrint AI**](https://github.com/RitualDev-Lab/FinePrintAI) <br/><sub>*(RitualDev Affiliated)*</sub> | `TypeScript / Python` | `Proprietary / Community` | In-memory legal contract, lease, and NDA scanner grading risk A-F with automated attorney-grade redline amendments. | [GitHub](https://github.com/RitualDev-Lab/FinePrintAI) |
 
 ### <a id="devops-containers"></a>DevOps & Containers (12)
 
@@ -121,7 +128,7 @@
 | :--- | :---: | :---: | :--- | :---: |
 | [**dust**](https://github.com/bootandy/dust) | `Rust` | `Apache-2.0` | A more intuitive version of du in Rust providing instant visual disk usage breakdown in terminal. | [GitHub](https://github.com/bootandy/dust) |
 
-### <a id="git-version-control"></a>Git & Version Control (10)
+### <a id="git-version-control"></a>Git & Version Control (11)
 
 | Tool | Language | License | Description | Links |
 | :--- | :---: | :---: | :--- | :---: |
@@ -135,6 +142,7 @@
 | [**trufflehog**](https://github.com/trufflesecurity/trufflehog) | `Go` | `AGPL-3.0` | Find leaked credentials and secrets across git commit history, filesystems, and S3 buckets. | [GitHub](https://github.com/trufflesecurity/trufflehog) |
 | [**git-sizer**](https://github.com/github/git-sizer) | `Go` | `MIT` | Compute various size metrics for a Git repository to detect large files, bloated commits, or excessive branches. | [GitHub](https://github.com/github/git-sizer) |
 | [**cz-cli**](https://github.com/commitizen/cz-cli) | `JavaScript` | `MIT` | The commitizen command line utility that prompts developers for conventional commit messages. | [GitHub](https://github.com/commitizen/cz-cli) |
+| [**difftastic**](https://github.com/Wilfred/difftastic) | `Rust` | `MIT` | Syntax-aware diff tool that compares files based on their syntax tree using tree-sitter rather than line-by-line. | [GitHub](https://github.com/Wilfred/difftastic) |
 
 ### <a id="github-workflow-tui"></a>GitHub Workflow & TUI (1)
 
@@ -176,6 +184,12 @@
 | [**diskonaut**](https://github.com/imsnif/diskonaut) | `Rust` | `MIT` | Terminal visual disk space navigator that visually maps out filesystems to locate large directories. | [GitHub](https://github.com/imsnif/diskonaut) |
 | [**inxi**](https://github.com/smxi/inxi) | `Perl` | `GPL-3.0` | Full featured CLI system information tool designed for troubleshooting hardware and system configurations. | [GitHub](https://github.com/smxi/inxi) |
 | [**LeanFPS**](https://github.com/Jamailar/leanfps) | `Rust` | `MIT` | Open-source Windows performance utility built in Rust and egui. Features game detection, ETW FPS recording, safe tweak undo, and crash recovery without modifying game files. | [GitHub](https://github.com/Jamailar/leanfps) |
+
+### <a id="package-management-runtimes"></a>Package Management & Runtimes (1)
+
+| Tool | Language | License | Description | Links |
+| :--- | :---: | :---: | :--- | :---: |
+| [**⭐ uv**](https://github.com/astral-sh/uv) | `Rust` | `Apache-2.0 / MIT` | Extremely fast Python package installer and resolver written in Rust, 10-100x faster than pip. | [GitHub](https://github.com/astral-sh/uv) |
 
 ### <a id="sandboxing-cloud-execution"></a>Sandboxing & Cloud Execution (1)
 

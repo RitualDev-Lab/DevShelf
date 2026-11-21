@@ -120,7 +120,8 @@ async function build() {
       md += "| :--- | :---: | :---: | :--- | :---: |\n";
       for (const tool of items) {
         const feat = tool.featured ? "⭐ " : "";
-        md += `| [**${feat}${escapeMarkdown(tool.name)}**](${tool.repo}) | ${B}${escapeMarkdown(tool.language)}${B} | ${B}${escapeMarkdown(tool.license)}${B} | ${escapeMarkdown(tool.description)} | [GitHub](${tool.repo}) |\n`;
+        const affiliated = (tool as any).firstParty ? " <br/><sub>*(RitualDev Affiliated)*</sub>" : "";
+        md += `| [**${feat}${escapeMarkdown(tool.name)}**](${tool.repo})${affiliated} | ${B}${escapeMarkdown(tool.language)}${B} | ${B}${escapeMarkdown(tool.license)}${B} | ${escapeMarkdown(tool.description)} | [GitHub](${tool.repo}) |\n`;
       }
       md += "\n";
     }
@@ -148,7 +149,8 @@ async function build() {
       md += "| :--- | :---: | :---: | :--- | :---: |\n";
       for (const tool of items) {
         const feat = tool.featured ? "⭐ " : "";
-        md += `| [**${feat}${escapeMarkdown(tool.name)}**](${tool.repo}) | ${B}${escapeMarkdown(tool.language)}${B} | ${B}${escapeMarkdown(tool.license)}${B} | ${escapeMarkdown(tool.description)} | [GitHub](${tool.repo}) |\n`;
+        const affiliated = (tool as any).firstParty ? " <br/><sub>*(RitualDev Affiliated)*</sub>" : "";
+        md += `| [**${feat}${escapeMarkdown(tool.name)}**](${tool.repo})${affiliated} | ${B}${escapeMarkdown(tool.language)}${B} | ${B}${escapeMarkdown(tool.license)}${B} | ${escapeMarkdown(tool.description)} | [GitHub](${tool.repo}) |\n`;
       }
       md += "\n";
     }
@@ -176,7 +178,8 @@ async function build() {
       md += "| :--- | :---: | :---: | :--- | :---: |\n";
       for (const tool of items) {
         const feat = tool.featured ? "⭐ " : "";
-        md += `| [**${feat}${escapeMarkdown(tool.name)}**](${tool.repo}) | ${B}${escapeMarkdown(tool.language)}${B} | ${B}${escapeMarkdown(tool.license)}${B} | ${escapeMarkdown(tool.description)} | [GitHub](${tool.repo}) |\n`;
+        const affiliated = (tool as any).firstParty ? " <br/><sub>*(RitualDev Affiliated)*</sub>" : "";
+        md += `| [**${feat}${escapeMarkdown(tool.name)}**](${tool.repo})${affiliated} | ${B}${escapeMarkdown(tool.language)}${B} | ${B}${escapeMarkdown(tool.license)}${B} | ${escapeMarkdown(tool.description)} | [GitHub](${tool.repo}) |\n`;
       }
       md += "\n";
     }
@@ -989,6 +992,7 @@ DevShelf is powered by the open-source community! We provide tailored issue temp
 ## 🛡️ Quality Guidelines
 - **No Paywalled "Free Trials"**: APIs and tools must have a permanent free tier or be 100% open-source.
 - **Active Projects**: Repositories must have a README, an open-source license, and be publicly accessible.
+- **Native Binary Security (SEC-06)**: Pre-compiled executables (${B}.exe${B}, ${B}.dmg${B}, ${B}.msi${B}) must satisfy our [Binary Trust Policy](docs/BINARY_TRUST_POLICY.md) (Authenticode / Apple Notarization) to receive Verified/Featured badges.
 - **Zero Spam**: Crypto schemes, affiliate spam, and deceptive links will be permanently rejected.
 
 ---
