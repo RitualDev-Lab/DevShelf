@@ -1,66 +1,117 @@
-﻿name: 🚀 Submit an Open Source Project / Tool
-description: Add your open source tool, CLI, or library to DevShelf
-title: \"[Submit Project]: <Project Name>\"
-labels: [\"submission\", \"project\"]
+﻿name: "🚀 Submit a Developer Tool, API, or MCP Server"
+description: "Submit a 100% free or open-source tool to DevShelf without writing Git code"
+title: "[Submit Tool]: <Tool Name>"
+labels: ["submission", "tool"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for submitting your open-source project to **DevShelf**!
-        Please ensure your repository is **public** and has a valid open-source license.
+        ### 🌟 Welcome to the DevShelf No-Code Submission Wizard!
+        
+        Fill out this form to submit your open-source tool, free public API, CLI utility, or MCP server.
+        Our automated GitHub Actions bot will validate your URLs, verify the JSON schema, and **automatically open a pull request on your behalf** with you credited as co-author.
+
   - type: input
     id: name
     attributes:
-      label: Project Name
+      label: Tool or Project Name
       placeholder: e.g. GitWhisper
     validations:
       required: true
+
   - type: input
     id: repo
     attributes:
-      label: GitHub Repository URL
+      label: GitHub / GitLab Repository URL
       placeholder: https://github.com/your-username/your-repo
     validations:
       required: true
-  - type: dropdown
-    id: category
+
+  - type: input
+    id: website
     attributes:
-      label: Category
+      label: Project Website or Documentation URL
+      placeholder: https://your-tool.dev (leave blank if same as repository)
+    validations:
+      required: false
+
+  - type: dropdown
+    id: target_shelf
+    attributes:
+      label: Target Shelf Category
+      description: Choose which DevShelf directory category this resource belongs to.
       options:
-        - AI Agents & Local LLMs
-        - CLI & Developer Productivity
-        - Testing & QA Reliability
-        - Dev Utilities & Libraries
-        - Other
+        - "cli-tools.json (Terminal, CLI & Developer Utilities)"
+        - "ai-tools.json (AI Agents, Local LLMs & MCP Servers)"
+        - "apis.json (Free Public APIs & REST/GraphQL Endpoints)"
+        - "testing-qa.json (Testing, Mocking & Reliability Frameworks)"
+        - "free-cloud.json (Cloud Databases, BaaS & Serverless Free Tiers)"
+        - "contributors-wanted.json (FOSS Projects Seeking Contributors)"
+        - "perks.json (Verified Student, Startup & Maintainer Deals)"
+        - "boilerplates.json (Production Starters & Boilerplates)"
     validations:
       required: true
+
+  - type: input
+    id: category
+    attributes:
+      label: Subcategory or Tagline
+      placeholder: e.g. AI Agent Security, Benchmarking, Database CLI
+    validations:
+      required: true
+
   - type: textarea
     id: description
     attributes:
       label: Short Description (1-2 sentences)
-      placeholder: What does it do and why should developers use it?
+      placeholder: Objective description explaining what the tool does and why developers need it (10-300 characters).
     validations:
       required: true
+
   - type: input
     id: language
     attributes:
-      label: Primary Language / Stack
-      placeholder: e.g. TypeScript, Rust, Python, Go
+      label: Primary Programming Language / Runtime
+      placeholder: e.g. TypeScript, Rust, Go, Python, C++
     validations:
       required: true
+
   - type: input
     id: license
     attributes:
       label: Open Source License
-      placeholder: e.g. MIT, Apache-2.0
+      placeholder: e.g. MIT, Apache-2.0, BSD-3-Clause, GPL-3.0
     validations:
       required: true
-  - type: checkboxes
-    id: terms
+
+  - type: dropdown
+    id: native_binary
     attributes:
-      label: Verification
+      label: Native OS Executable Distribution (SEC-06)
+      description: Does this tool distribute pre-compiled native binaries (.exe, .msi, .dmg, kernel utilities)?
       options:
-        - label: This repository is 100% open source and public.
+        - "No (Script, CLI package, or Web-based)"
+        - "Yes (Windows .exe / macOS .dmg - Code Signed)"
+        - "Yes (Windows .exe / macOS .dmg - Unsigned)"
+    validations:
+      required: true
+
+  - type: input
+    id: tags
+    attributes:
+      label: Search Tags (comma-separated)
+      placeholder: e.g. mcp, security, rust, terminal, agent
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: zero_paywall_compliance
+    attributes:
+      label: DevShelf Zero-Paywall Community Pledge
+      options:
+        - label: This tool has a permanent free tier or is 100% open-source (no deceptive 14-day trials requiring credit cards).
           required: true
-        - label: This is not spam, crypto scam, or affiliate promotion.
+        - label: This repository is active, publicly accessible, and contains documentation.
+          required: true
+        - label: This is not spam, crypto/NFT pump, or affiliate link linkfarm.
           required: true

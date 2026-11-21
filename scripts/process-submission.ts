@@ -1,5 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
+import { evaluateBinaryTrustPolicy } from "./binary-trust-policy.js";
+import { findDuplicatesInCatalog, normalizeCanonicalUrl } from "./fuzzy-duplicate-detector.js";
 
 interface CatalogItem {
   name: string;
@@ -14,6 +16,9 @@ interface CatalogItem {
   rateLimit?: string;
   freeTier?: string;
   statusTags?: string[];
+  tags?: string[];
+  nativeBinary?: boolean;
+  codeSigned?: boolean;
   featured?: boolean;
   https?: boolean;
   [key: string]: unknown;
@@ -60,42 +65,61 @@ function resolveTargetFile(
   formData: Record<string, string> = {},
 ): string {
   const combined = `${targetShelf} ${category}`.toLowerCase();
-  if (combined.includes("testing") || combined.includes("qa")) {
-    return "testing-qa.json";
-  }
+
   if (
-    combined.includes("api") ||
-    combined.includes("rest") ||
-    combined.includes("graphql") ||
-    Boolean(formData["api name"]) ||
-    Boolean(formData["api website or documentation url"]) ||
-    Boolean(formData["authentication required"]) ||
-    Boolean(formData["cors support (usable from browser)"]) ||
-    Boolean(formData["free tier rate limit"])
+    combined.includes("cli-tools") ||
+    combined.includes("terminal") ||
+    combined.includes("cli utility")
   ) {
-    return "apis.json";
-  }
-  if (combined.includes("cloud") || combined.includes("hosting") || combined.includes("database")) {
-    return "free-cloud.json";
+    return "cli-tools.json";
   }
   if (
-    combined.includes("ai") ||
-    combined.includes("llm") ||
-    combined.includes("agent") ||
-    combined.includes("gpt")
+    combined.includes("ai-tools") ||
+    combined.includes("mcp") ||
+    combined.includes("local llm") ||
+    combined.includes("ai agent")
   ) {
     return "ai-tools.json";
   }
-  if (combined.includes("perk") || combined.includes("discount") || combined.includes("student")) {
+  if (
+    combined.includes("apis.json") ||
+    combined.includes("public api") ||
+    combined.includes("rest") ||
+    combined.includes("graphql") ||
+    Boolean(formData["api name"]) ||
+    Boolean(formData["api website or documentation url"])
+  ) {
+    return "apis.json";
+  }
+  if (combined.includes("testing-qa") || combined.includes("testing") || combined.includes("qa")) {
+    return "testing-qa.json";
+  }
+  if (
+    combined.includes("free-cloud") ||
+    combined.includes("cloud") ||
+    combined.includes("hosting") ||
+    combined.includes("database")
+  ) {
+    return "free-cloud.json";
+  }
+  if (
+    combined.includes("contributors-wanted") ||
+    combined.includes("contributor") ||
+    combined.includes("matchmaker")
+  ) {
+    return "contributors-wanted.json";
+  }
+  if (combined.includes("perks") || combined.includes("discount") || combined.includes("deal")) {
     return "perks.json";
   }
   if (
+    combined.includes("boilerplates") ||
     combined.includes("boilerplate") ||
-    combined.includes("starter") ||
-    combined.includes("template")
+    combined.includes("starter")
   ) {
     return "boilerplates.json";
   }
+
   return "cli-tools.json";
 }
 
@@ -138,12 +162,13 @@ async function run() {
   const root = process.cwd();
   const shelfDir = path.join(root, "shelf");
 
-  // Check if issue has a pre-validated JSON block
+  // Check if issue has a pre-validated JSON block or issue form
   const embedded = extractEmbeddedJson(issueBody);
   const formData = parseFormBody(issueBody);
 
   const name = (
     (embedded?.name as string) ||
+    formData["tool or project name"] ||
     formData["resource name"] ||
     formData["project name"] ||
     formData["tool name"] ||
@@ -152,32 +177,37 @@ async function run() {
     ""
   ).trim();
 
-  const rawUrl = (
-    (embedded?.url as string) ||
+  const rawRepo = (
     (embedded?.repo as string) ||
-    formData["website / repo"] ||
-    formData.website ||
+    formData["github / gitlab repository url"] ||
     formData["github repository url"] ||
     formData["repository url"] ||
-    formData["api website or documentation url"] ||
     formData["repo url"] ||
-    formData.url ||
     formData.repo ||
-    formData["github url"] ||
     ""
   ).trim();
 
-  const cleanUrl = rawUrl
-    .replace(/^-\s*website:\s*/i, "")
-    .replace(/^-\s*repo:\s*/i, "")
-    .trim()
-    .replace(/\/+$/, "");
+  const rawWebsite = (
+    (embedded?.url as string) ||
+    formData["project website or documentation url"] ||
+    formData["website / repo"] ||
+    formData.website ||
+    formData["api website or documentation url"] ||
+    formData.url ||
+    ""
+  ).trim();
+
+  const cleanRepo = rawRepo ? normalizeCanonicalUrl(rawRepo.replace(/^-\s*repo:\s*/i, "")) : "";
+  const cleanWebsite = rawWebsite
+    ? normalizeCanonicalUrl(rawWebsite.replace(/^-\s*website:\s*/i, ""))
+    : "";
+  const primaryUrl = cleanWebsite || cleanRepo;
 
   let description = (
     (embedded?.description as string) ||
-    formData.description ||
     formData["short description (1-2 sentences)"] ||
     formData["short description"] ||
+    formData.description ||
     ""
   ).trim();
 
@@ -187,31 +217,30 @@ async function run() {
 
   const category = (
     (embedded?.category as string) ||
+    formData["subcategory or tagline"] ||
     formData.category ||
-    formData["target shelf"] ||
-    formData.shelf ||
     "CLI & Developer Productivity"
   ).trim();
 
   const targetShelf = (
+    formData["target shelf category"] ||
     formData["target shelf"] ||
     (embedded?.section as string) ||
     formData.shelf ||
     ""
   ).trim();
 
-  if (!name || !cleanUrl || !description) {
+  if (!name || (!cleanRepo && !cleanWebsite) || !description) {
     throw new Error(
-      `Missing required fields for submission. Extracted name='${name}', url='${cleanUrl}', description length=${description.length}`,
+      `Missing required fields for submission: extracted name='${name}', repo='${cleanRepo}', website='${cleanWebsite}', descLen=${description.length}`,
     );
   }
 
   // Reachability check
-  const isLive = await verifyUrl(cleanUrl);
+  const checkUrl = cleanWebsite || cleanRepo;
+  const isLive = await verifyUrl(checkUrl);
   if (!isLive) {
-    console.warn(
-      `⚠️ Warning: URL did not respond to automated probe, continuing submission: ${cleanUrl}`,
-    );
+    console.warn(`⚠️ Warning: URL did not respond with 2xx/3xx/4xx: ${checkUrl}`);
   }
 
   const targetFile = resolveTargetFile(category, targetShelf, formData);
@@ -219,16 +248,10 @@ async function run() {
   const rawContent = await fs.readFile(filePath, "utf8");
   const list: CatalogItem[] = JSON.parse(rawContent.replace(/^\uFEFF/, ""));
 
-  // Check duplicate
-  const isDuplicate = list.some(
-    (item) =>
-      item.name.toLowerCase() === name.toLowerCase() ||
-      (item.url && item.url.toLowerCase().replace(/\/+$/, "") === cleanUrl.toLowerCase()) ||
-      (item.repo && item.repo.toLowerCase().replace(/\/+$/, "") === cleanUrl.toLowerCase()),
-  );
-
-  if (isDuplicate) {
-    console.log(`Resource '${name}' or URL '${cleanUrl}' is already listed in ${targetFile}.`);
+  // Duplicate Inspection across target shelf
+  const dupResult = findDuplicatesInCatalog({ name, url: cleanWebsite, repo: cleanRepo }, list);
+  if (dupResult.isDuplicate) {
+    console.log(`⚠️ Duplicate detected: ${dupResult.reason}`);
     return;
   }
 
@@ -240,7 +263,7 @@ async function run() {
   };
 
   if (isApiShelf) {
-    item.url = cleanUrl;
+    item.url = cleanWebsite || cleanRepo;
     item.auth =
       (embedded?.auth as string) ||
       formData["authentication required"] ||
@@ -256,49 +279,51 @@ async function run() {
       formData["free tier rate limit"] ||
       formData.rateLimit ||
       "Unlimited";
-    item.https = cleanUrl.startsWith("https://");
+    item.https = (cleanWebsite || cleanRepo).startsWith("https://");
   } else {
-    // For tools and frameworks, supply repo or url
-    let isRepoHost = false;
-    try {
-      const parsed = new URL(cleanUrl);
-      const host = parsed.hostname.toLowerCase();
-      isRepoHost =
-        host === "github.com" ||
-        host.endsWith(".github.com") ||
-        host === "gitlab.com" ||
-        host.endsWith(".gitlab.com") ||
-        host === "bitbucket.org" ||
-        host.endsWith(".bitbucket.org");
-    } catch {
-      isRepoHost = false;
-    }
-
-    if (isRepoHost) {
-      item.repo = cleanUrl;
-    } else {
-      item.repo = cleanUrl;
-      item.url = cleanUrl;
+    item.repo = cleanRepo || cleanWebsite;
+    if (cleanWebsite && cleanWebsite !== cleanRepo) {
+      item.url = cleanWebsite;
     }
     item.language =
       (embedded?.language as string) ||
+      formData["primary programming language / runtime"] ||
       formData["primary language / stack"] ||
       formData.language ||
-      formData.stack ||
       "TypeScript";
     item.license =
       (embedded?.license as string) || formData["open source license"] || formData.license || "MIT";
-    item.featured = Boolean(embedded?.featured ?? false);
+    item.featured = false;
   }
 
-  if (embedded?.freeTier || formData["free tier"]) {
-    item.freeTier = (embedded?.freeTier as string) || formData["free tier"];
+  // Native binary SEC-06 flag
+  const nativeBinaryAnswer = (
+    formData["native os executable distribution (sec-06)"] ||
+    formData["native binary"] ||
+    ""
+  ).toLowerCase();
+
+  if (nativeBinaryAnswer.includes("yes")) {
+    item.nativeBinary = true;
+    item.codeSigned = nativeBinaryAnswer.includes("code signed");
   }
 
-  if (Array.isArray(embedded?.statusTags)) {
-    item.statusTags = embedded.statusTags as string[];
-  } else if (formData["status tags"]) {
-    item.statusTags = formData["status tags"].split(",").map((t) => t.trim());
+  // Tags
+  const rawTags =
+    (embedded?.tags as string[]) ||
+    (formData["search tags (comma-separated)"] || formData.tags || "")
+      .split(",")
+      .map((t) => t.trim().toLowerCase())
+      .filter(Boolean);
+
+  if (Array.isArray(rawTags) && rawTags.length > 0) {
+    item.tags = [...new Set(rawTags)];
+  }
+
+  // Binary trust evaluation
+  const evalResult = evaluateBinaryTrustPolicy(item);
+  if (!evalResult.allowedVerifiedBadge && item.nativeBinary && !item.codeSigned) {
+    item.statusTags = ["[UNVERIFIED BINARY - UNSIGNED]"];
   }
 
   list.push(item);
