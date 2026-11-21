@@ -3515,20 +3515,20 @@ function toggleBookmark(name) {
 
 function updateBookmarkButtons(name) {
   const isSaved = myBookmarks.has(name);
-  const safeName =
-    typeof CSS !== "undefined" && CSS.escape ? CSS.escape(name) : name.replace(/"/g, '\\"');
-  const btns = document.querySelectorAll(`.bookmark-btn[data-bookmark-name="${safeName}"]`);
+  const btns = document.querySelectorAll(".bookmark-btn");
   for (const btn of btns) {
-    if (isSaved) {
-      btn.className =
-        "bookmark-btn inline-flex items-center space-x-1 px-2 py-1 rounded-md text-[11px] font-semibold bg-amber-500/20 text-amber-300 border-amber-500/50 transition border shadow-sm";
-      btn.innerHTML = "<span>★ Saved</span>";
-      btn.title = "Remove from Saved Tools";
-    } else {
-      btn.className =
-        "bookmark-btn inline-flex items-center space-x-1 px-2 py-1 rounded-md text-[11px] font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-amber-300 border-slate-700 transition border shadow-sm";
-      btn.innerHTML = "<span>☆ Save</span>";
-      btn.title = "Save / Bookmark Tool (localStorage)";
+    if (btn.dataset.bookmarkName === name) {
+      if (isSaved) {
+        btn.className =
+          "bookmark-btn inline-flex items-center space-x-1 px-2 py-1 rounded-md text-[11px] font-semibold bg-amber-500/20 text-amber-300 border-amber-500/50 transition border shadow-sm";
+        btn.innerHTML = "<span>★ Saved</span>";
+        btn.title = "Remove from Saved Tools";
+      } else {
+        btn.className =
+          "bookmark-btn inline-flex items-center space-x-1 px-2 py-1 rounded-md text-[11px] font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-amber-300 border-slate-700 transition border shadow-sm";
+        btn.innerHTML = "<span>☆ Save</span>";
+        btn.title = "Save / Bookmark Tool (localStorage)";
+      }
     }
   }
 }
@@ -4094,20 +4094,20 @@ function toggleCompareItem(name) {
 
 function updateCompareButtons(name) {
   const inComp = myCompareList.includes(name);
-  const safeName =
-    typeof CSS !== "undefined" && CSS.escape ? CSS.escape(name) : name.replace(/"/g, '\\"');
-  const btns = document.querySelectorAll(`.compare-toggle-btn[data-compare-name="${safeName}"]`);
+  const btns = document.querySelectorAll(".compare-toggle-btn");
   for (const btn of btns) {
-    if (inComp) {
-      btn.className =
-        "compare-toggle-btn inline-flex items-center space-x-1 px-2 py-1 rounded-md text-[11px] font-semibold bg-amber-500 text-slate-950 font-bold border-amber-400 transition border shadow-sm";
-      btn.innerHTML = "<span>✓ Compare</span>";
-      btn.title = "Remove from Comparison";
-    } else {
-      btn.className =
-        "compare-toggle-btn inline-flex items-center space-x-1 px-2 py-1 rounded-md text-[11px] font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border-slate-700 transition border shadow-sm";
-      btn.innerHTML = "<span>⚖️ Compare</span>";
-      btn.title = "Compare Side-by-Side (2 to 4 tools)";
+    if (btn.dataset.compareName === name) {
+      if (inComp) {
+        btn.className =
+          "compare-toggle-btn inline-flex items-center space-x-1 px-2 py-1 rounded-md text-[11px] font-semibold bg-amber-500 text-slate-950 font-bold border-amber-400 transition border shadow-sm";
+        btn.innerHTML = "<span>✓ Compare</span>";
+        btn.title = "Remove from Comparison";
+      } else {
+        btn.className =
+          "compare-toggle-btn inline-flex items-center space-x-1 px-2 py-1 rounded-md text-[11px] font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border-slate-700 transition border shadow-sm";
+        btn.innerHTML = "<span>⚖️ Compare</span>";
+        btn.title = "Compare Side-by-Side (2 to 4 tools)";
+      }
     }
   }
 }

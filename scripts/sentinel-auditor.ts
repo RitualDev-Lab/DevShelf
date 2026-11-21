@@ -64,8 +64,8 @@ export function evaluateLicenseDrift(
 
 export function evaluatePaywallPageContent(html: string): { violated: boolean; details?: string } {
   const clean = html
-    .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, " ")
-    .replace(/<style\b[^<]*(?:(?!<\/style>)<[^<]*)*<\/style>/gi, " ")
+    .replace(/<script\b[^>]*>[\s\S]*?<\/script\s*>/gi, " ")
+    .replace(/<style\b[^>]*>[\s\S]*?<\/style\s*>/gi, " ")
     .replace(/<[^>]+>/g, " ");
 
   if (PAYWALL_TRAP_REGEX.test(clean)) {
@@ -123,11 +123,31 @@ export async function runSentinelAudit(options: { limit?: number; dryRun?: boole
       const targetRepo = item.repo;
 
       // 1. GitHub API Check (Archived status & License Drift)
-      if (targetRepo && targetRepo.includes("github.com/")) {
-        const repoSlugMatch = targetRepo.match(/github\.com\/([^/]+)\/([^/]+)/);
-        if (repoSlugMatch) {
-          const owner = repoSlugMatch[1];
-          const repo = repoSlugMatch[2].replace(/\.git$/i, "").replace(/\/+$/, "");
+      if (targetRepo) {
+        let isGitHub = false;
+        let owner = "";
+        let repo = "";
+        try {
+          const parsedRepoUrl = new URL(targetRepo);
+          if (
+            parsedRepoUrl.hostname === "github.com" ||
+            parsedRepoUrl.hostname === "www.github.com"
+          ) {
+            const segments = parsedRepoUrl.pathname
+              .replace(/^\/+/, "")
+              .replace(/\/+$/, "")
+              .split("/");
+            if (segments.length >= 2) {
+              isGitHub = true;
+              owner = segments[0];
+              repo = segments[1].replace(/\.git$/i, "");
+            }
+          }
+        } catch {
+          // Ignore invalid URL formatting
+        }
+
+        if (isGitHub && owner && repo) {
           const apiUrl = `https://api.github.com/repos/${owner}/${repo}`;
 
           try {
