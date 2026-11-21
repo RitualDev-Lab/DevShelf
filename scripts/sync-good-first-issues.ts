@@ -24,6 +24,9 @@ export interface MatchmakerProject {
   pushedAt?: string;
   lastActivityRelative?: string;
   openGoodFirstIssuesCount: number;
+  staleWarning?: boolean;
+  daysInactive?: number;
+  staleReason?: string;
   issues: MatchmakerIssue[];
 }
 
@@ -53,10 +56,30 @@ export function formatRelativeTime(isoDate: string): string {
   return `${Math.floor(diffMonth / 12)}y ago`;
 }
 
+export function evaluateStaleStatus(pushedAt?: string): {
+  isStale: boolean;
+  daysInactive: number;
+  reason?: string;
+} {
+  if (!pushedAt) return { isStale: false, daysInactive: 0 };
+  const diffMs = Date.now() - new Date(pushedAt).getTime();
+  if (Number.isNaN(diffMs)) return { isStale: false, daysInactive: 0 };
+  const days = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+  if (days > 180) {
+    return {
+      isStale: true,
+      daysInactive: days,
+      reason: `Repository inactive for ${days} days (>6 months)`,
+    };
+  }
+  return { isStale: false, daysInactive: days };
+}
+
 export async function syncGoodFirstIssues() {
   const root = process.cwd();
   const shelfDir = path.join(root, "shelf");
   const siteDir = path.join(root, "site");
+  const apiDir = path.join(siteDir, "api", "v1");
 
   // Try to get GitHub token from env or git credential helper
   let token = process.env.GITHUB_TOKEN || "";
@@ -107,46 +130,117 @@ export async function syncGoodFirstIssues() {
     };
 
     if (repoSlug) {
-      try {
-        // 1. Fetch Repository Details (stars, forks, pushed_at, topics)
-        const repoUrl = `https://api.github.com/repos/${repoSlug}`;
-        const repoRes = await fetch(repoUrl, {
-          headers,
-          signal: AbortSignal.timeout(6000),
-        });
+      const [owner, name] = repoSlug.split("/");
+      let fetchedViaGraphQL = false;
 
-        if (repoRes.ok) {
-          const repoJson = (await repoRes.json()) as any;
-          projectData.stars = repoJson.stargazers_count ?? 0;
-          projectData.forks = repoJson.forks_count ?? 0;
-          projectData.pushedAt = repoJson.pushed_at;
-          projectData.lastActivityRelative = formatRelativeTime(repoJson.pushed_at);
-          if (Array.isArray(repoJson.topics) && repoJson.topics.length > 0) {
-            projectData.techStack = repoJson.topics.slice(0, 5);
+      // 1. Try GitHub GraphQL API if token is available
+      if (token && owner && name) {
+        try {
+          const gqlQuery = `
+            query($owner: String!, $name: String!) {
+              repository(owner: $owner, name: $name) {
+                stargazerCount
+                forkCount
+                pushedAt
+                issues(states: OPEN, labels: ["good first issue"], first: 5, orderBy: {field: CREATED_AT, direction: DESC}) {
+                  totalCount
+                  nodes {
+                    title
+                    url
+                    createdAt
+                    comments { totalCount }
+                    labels(first: 5) { nodes { name } }
+                  }
+                }
+              }
+            }
+          `;
+
+          const gqlRes = await fetch("https://api.github.com/graphql", {
+            method: "POST",
+            headers,
+            body: JSON.stringify({ query: gqlQuery, variables: { owner, name } }),
+            signal: AbortSignal.timeout(6000),
+          });
+
+          if (gqlRes.ok) {
+            const gqlData = (await gqlRes.json()) as any;
+            const r = gqlData.data?.repository;
+            if (r) {
+              projectData.stars = r.stargazerCount;
+              projectData.forks = r.forkCount;
+              projectData.pushedAt = r.pushedAt;
+              projectData.lastActivityRelative = formatRelativeTime(r.pushedAt);
+              const staleEval = evaluateStaleStatus(r.pushedAt);
+              projectData.staleWarning = staleEval.isStale;
+              projectData.daysInactive = staleEval.daysInactive;
+              if (staleEval.reason) projectData.staleReason = staleEval.reason;
+
+              projectData.openGoodFirstIssuesCount = r.issues?.totalCount || 0;
+              if (Array.isArray(r.issues?.nodes)) {
+                projectData.issues = r.issues.nodes.map((n: any) => ({
+                  title: n.title,
+                  url: n.url,
+                  createdAt: n.createdAt,
+                  comments: n.comments?.totalCount || 0,
+                  labels: (n.labels?.nodes || []).map((l: any) => l.name),
+                  difficulty: "Beginner Friendly",
+                }));
+              }
+              fetchedViaGraphQL = true;
+            }
           }
+        } catch {
+          // GraphQL failed, fallback to REST
         }
+      }
 
-        // 2. Fetch Open "Good First Issues"
-        const apiUrl = `https://api.github.com/repos/${repoSlug}/issues?labels=good%20first%20issue&state=open&per_page=5`;
-        const res = await fetch(apiUrl, {
-          headers,
-          signal: AbortSignal.timeout(6000),
-        });
+      // 2. Fallback to REST API if GraphQL not used or failed
+      if (!fetchedViaGraphQL) {
+        try {
+          const repoUrl = `https://api.github.com/repos/${repoSlug}`;
+          const repoRes = await fetch(repoUrl, {
+            headers,
+            signal: AbortSignal.timeout(6000),
+          });
 
-        if (res.ok) {
-          const rawIssues = (await res.json()) as any[];
-          projectData.issues = rawIssues.map((iss) => ({
-            title: iss.title,
-            url: iss.html_url,
-            labels: (iss.labels || []).map((l: any) => l.name),
-            comments: iss.comments || 0,
-            difficulty: "Beginner Friendly",
-            createdAt: iss.created_at,
-          }));
-          projectData.openGoodFirstIssuesCount = rawIssues.length;
+          if (repoRes.ok) {
+            const repoJson = (await repoRes.json()) as any;
+            projectData.stars = repoJson.stargazers_count ?? 0;
+            projectData.forks = repoJson.forks_count ?? 0;
+            projectData.pushedAt = repoJson.pushed_at;
+            projectData.lastActivityRelative = formatRelativeTime(repoJson.pushed_at);
+            const staleEval = evaluateStaleStatus(repoJson.pushed_at);
+            projectData.staleWarning = staleEval.isStale;
+            projectData.daysInactive = staleEval.daysInactive;
+            if (staleEval.reason) projectData.staleReason = staleEval.reason;
+
+            if (Array.isArray(repoJson.topics) && repoJson.topics.length > 0) {
+              projectData.techStack = repoJson.topics.slice(0, 5);
+            }
+          }
+
+          const apiUrl = `https://api.github.com/repos/${repoSlug}/issues?labels=good%20first%20issue&state=open&per_page=5`;
+          const res = await fetch(apiUrl, {
+            headers,
+            signal: AbortSignal.timeout(6000),
+          });
+
+          if (res.ok) {
+            const rawIssues = (await res.json()) as any[];
+            projectData.issues = rawIssues.map((iss) => ({
+              title: iss.title,
+              url: iss.html_url,
+              labels: (iss.labels || []).map((l: any) => l.name),
+              comments: iss.comments || 0,
+              difficulty: "Beginner Friendly",
+              createdAt: iss.created_at,
+            }));
+            projectData.openGoodFirstIssuesCount = rawIssues.length;
+          }
+        } catch (_err) {
+          // Fallback to project issues link if API hits rate limit or times out
         }
-      } catch (_err) {
-        // Fallback to project issues link if API hits rate limit or times out
       }
     }
 
@@ -168,6 +262,8 @@ export async function syncGoodFirstIssues() {
     updatedAt: new Date().toISOString(),
     totalProjects: matchmakerProjects.length,
     totalOpenIssues: matchmakerProjects.reduce((acc, p) => acc + p.issues.length, 0),
+    activeProjects: matchmakerProjects.filter((p) => !p.staleWarning).length,
+    staleProjects: matchmakerProjects.filter((p) => p.staleWarning).length,
     projects: matchmakerProjects,
   };
 
@@ -177,8 +273,15 @@ export async function syncGoodFirstIssues() {
     "utf8",
   );
 
+  await fs.mkdir(apiDir, { recursive: true });
+  await fs.writeFile(
+    path.join(apiDir, "matchmaker.json"),
+    `${JSON.stringify(outputPayload, null, 2)}\n`,
+    "utf8",
+  );
+
   console.log(
-    `✅ [Matchmaker] Wrote site/matchmaker.json with ${matchmakerProjects.length} projects and ${outputPayload.totalOpenIssues} issues!`,
+    `✅ [Matchmaker] Wrote site/matchmaker.json & API with ${matchmakerProjects.length} projects (${outputPayload.activeProjects} active, ${outputPayload.staleProjects} stale warnings)!`,
   );
 }
 

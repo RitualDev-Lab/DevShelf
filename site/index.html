@@ -305,6 +305,14 @@
         <button id="nav-matchmaker-btn" class="px-2.5 py-1.5 rounded-lg hover:bg-slate-900 hover:text-emerald-300 transition whitespace-nowrap">
           Matchmaker
         </button>
+        <button id="nav-bookmarks-btn" class="px-2.5 py-1.5 rounded-lg hover:bg-slate-900 hover:text-amber-300 transition whitespace-nowrap flex items-center gap-1" title="Saved Bookmarks (localStorage)">
+          <span class="text-amber-400">★</span>
+          <span>Saved</span>
+          <span id="nav-bookmarks-badge" class="hidden px-1.5 py-0.2 bg-amber-400 text-slate-950 rounded-full text-[10px] font-extrabold">0</span>
+        </button>
+        <button id="nav-mcp-btn" class="px-2.5 py-1.5 rounded-lg hover:bg-slate-900 hover:text-purple-300 transition whitespace-nowrap flex items-center gap-1" title="1-Click MCP Config Generator">
+          <span>🤖 MCP</span>
+        </button>
         <button id="nav-stack-btn" class="px-2.5 py-1.5 rounded-lg hover:bg-slate-900 hover:text-cyan-300 transition whitespace-nowrap flex items-center gap-1" title="Open My Stack Builder">
           <span>Stack</span>
           <span id="nav-stack-badge" class="hidden px-1.5 py-0.2 bg-cyan-400 text-slate-950 rounded-full text-[10px] font-extrabold">0</span>
@@ -690,6 +698,14 @@
           <span>⚡ [Offline-Friendly]</span>
           <span class="matrix-count px-1.5 py-0.5 rounded-md text-[10px] bg-slate-800 text-slate-300 font-mono" id="matrix-count-offline">0</span>
         </button>
+        <button data-matrixtag="mcp" class="matrix-btn px-3 py-1.5 rounded-xl bg-slate-900/90 border border-purple-500/40 text-purple-200 hover:border-purple-400 flex items-center space-x-1.5 transition">
+          <span>🤖 [MCP Servers]</span>
+          <span class="matrix-count px-1.5 py-0.5 rounded-md text-[10px] bg-purple-950 text-purple-300 font-mono" id="matrix-count-mcp">0</span>
+        </button>
+        <button data-matrixtag="saved" class="matrix-btn px-3 py-1.5 rounded-xl bg-slate-900/90 border border-amber-500/40 text-amber-200 hover:border-amber-400 flex items-center space-x-1.5 transition">
+          <span>⭐ [My Saved]</span>
+          <span class="matrix-count px-1.5 py-0.5 rounded-md text-[10px] bg-amber-950 text-amber-300 font-mono" id="matrix-count-saved">0</span>
+        </button>
         <button id="clear-matrix-btn" class="hidden px-2.5 py-1.5 rounded-xl bg-rose-950/80 hover:bg-rose-900 border border-rose-500/50 text-rose-200 text-xs font-bold transition">
           ✕ Clear Matrix
         </button>
@@ -701,6 +717,14 @@
       <button data-category="all" class="category-pill active px-3.5 py-2 rounded-xl transition flex items-center space-x-1.5">
         <span>All Items</span>
         <span class="px-1.5 py-0.5 rounded-full text-[10px] bg-purple-900 text-purple-200 font-mono" id="pill-count-all">…</span>
+      </button>
+      <button data-category="saved" class="category-pill px-3.5 py-2 rounded-xl transition flex items-center space-x-1.5 text-amber-300 border border-amber-500/40 hover:bg-amber-950/40">
+        <span>⭐ Saved</span>
+        <span class="px-1.5 py-0.5 rounded-full text-[10px] bg-amber-950 text-amber-300 font-mono" id="pill-count-saved">0</span>
+      </button>
+      <button data-category="mcp" class="category-pill px-3.5 py-2 rounded-xl transition flex items-center space-x-1.5 text-purple-300 border border-purple-500/40 hover:bg-purple-950/40">
+        <span>🤖 MCP Servers</span>
+        <span class="px-1.5 py-0.5 rounded-full text-[10px] bg-purple-950 text-purple-300 font-mono" id="pill-count-mcp">0</span>
       </button>
       <button data-category="repo" class="category-pill px-3.5 py-2 rounded-xl transition flex items-center space-x-1.5">
         <span>🐙 GitHub Repos</span>
@@ -1727,9 +1751,21 @@
       </div>
 
       <!-- Tabs -->
+      <!-- Preset Blueprints Bar -->
+      <div class="px-1 py-2.5 border-b border-slate-800 flex flex-wrap items-center gap-1.5 text-xs">
+        <span class="text-slate-400 font-mono text-[11px] mr-1">⚡ Presets:</span>
+        <button class="stack-preset-btn px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-cyan-300 border border-slate-700 transition" data-preset="saas">Zero-Cost SaaS Starter</button>
+        <button class="stack-preset-btn px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-purple-300 border border-slate-700 transition" data-preset="ai">Local-First AI Agent Stack</button>
+        <button class="stack-preset-btn px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-amber-300 border border-slate-700 transition" data-preset="fullstack">Full-Stack TypeScript FOSS</button>
+        <button class="stack-preset-btn px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-emerald-300 border border-slate-700 transition" data-preset="rust">Rust Systems Dev</button>
+      </div>
+
+      <!-- Tabs -->
       <div class="flex items-center gap-1.5 pt-4 pb-2 border-b border-slate-800 text-xs font-bold overflow-x-auto">
         <button data-stacktab="env" class="stack-tab active px-3 py-1.5 rounded-lg font-mono">📄 .env.example</button>
         <button data-stacktab="docker" class="stack-tab px-3 py-1.5 rounded-lg font-mono">🐳 docker-compose.yml</button>
+        <button data-stacktab="script" class="stack-tab px-3 py-1.5 rounded-lg font-mono">🚀 setup-stack.sh</button>
+        <button data-stacktab="mcp" class="stack-tab px-3 py-1.5 rounded-lg font-mono">🤖 .cursor/mcp.json</button>
         <button data-stacktab="markdown" class="stack-tab px-3 py-1.5 rounded-lg font-mono">📝 README Markdown</button>
         <button data-stacktab="json" class="stack-tab px-3 py-1.5 rounded-lg font-mono">{ } JSON Blueprint</button>
       </div>
@@ -1755,6 +1791,142 @@
       </div>
     </div>
   </div>
+
+  <!-- 1-Click MCP Config Generator Modal -->
+  <div id="mcp-modal" class="fixed inset-0 z-50 bg-slate-950/85 backdrop-blur-md hidden items-center justify-center p-4">
+    <div class="bg-slate-900 border border-purple-500/50 rounded-3xl max-w-3xl w-full p-6 shadow-2xl relative max-h-[90vh] flex flex-col animate-fadeIn">
+      <!-- Modal Header -->
+      <div class="flex items-center justify-between pb-4 border-b border-slate-800">
+        <div class="flex items-center space-x-2.5">
+          <span class="text-2xl p-2 rounded-2xl bg-purple-500/20 border border-purple-500/40">🤖</span>
+          <div>
+            <h3 class="text-lg font-extrabold text-white flex items-center space-x-2">
+              <span>1-Click MCP Config Generator</span>
+              <span class="px-2 py-0.5 text-[10px] font-mono rounded bg-purple-950 text-purple-300 border border-purple-500/40 font-bold">Multi-Assistant</span>
+            </h3>
+            <p class="text-xs text-slate-400">Select curated MCP servers to generate merged configuration for Cursor, Claude, Windsurf, or Zed.</p>
+          </div>
+        </div>
+        <button id="close-mcp-modal-btn" class="text-slate-400 hover:text-white text-lg p-1.5 rounded-lg hover:bg-slate-800 transition">✕</button>
+      </div>
+
+      <!-- Assistant Client Selector Tabs -->
+      <div class="flex items-center gap-1.5 pt-3 pb-2 border-b border-slate-800 text-xs font-bold overflow-x-auto">
+        <button data-mcpclient="cursor" class="mcp-client-tab active px-3 py-1.5 rounded-lg font-mono bg-purple-600 text-white">Cursor (.cursor/mcp.json)</button>
+        <button data-mcpclient="claude" class="mcp-client-tab px-3 py-1.5 rounded-lg font-mono bg-slate-800 text-slate-300 hover:text-white">Claude Desktop</button>
+        <button data-mcpclient="windsurf" class="mcp-client-tab px-3 py-1.5 rounded-lg font-mono bg-slate-800 text-slate-300 hover:text-white">Windsurf</button>
+        <button data-mcpclient="zed" class="mcp-client-tab px-3 py-1.5 rounded-lg font-mono bg-slate-800 text-slate-300 hover:text-white">Zed</button>
+        <button data-mcpclient="stdio" class="mcp-client-tab px-3 py-1.5 rounded-lg font-mono bg-slate-800 text-slate-300 hover:text-white">Generic Stdio</button>
+      </div>
+
+      <!-- Two-Column Body: Server Selector & JSON Output -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-4 flex-1 overflow-y-auto">
+        <!-- Server Checklist Column -->
+        <div class="space-y-2 flex flex-col min-h-0">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-mono font-bold text-slate-300">Curated MCP Servers:</span>
+            <div class="space-x-2 text-[11px] font-mono">
+              <button id="select-all-mcp-btn" class="text-purple-400 hover:text-purple-300">Select All</button>
+              <button id="clear-all-mcp-btn" class="text-slate-400 hover:text-slate-300">Clear</button>
+            </div>
+          </div>
+          <div id="mcp-servers-checklist" class="space-y-1.5 overflow-y-auto max-h-[300px] pr-1">
+            <!-- Dynamically populated via JS -->
+          </div>
+        </div>
+
+        <!-- Generated JSON Preview Column -->
+        <div class="flex flex-col min-h-0">
+          <div class="flex items-center justify-between mb-1.5">
+            <span id="mcp-target-path" class="text-[11px] font-mono text-slate-400">Target: .cursor/mcp.json</span>
+            <span id="mcp-selected-count" class="text-[10px] font-mono text-purple-300">0 servers selected</span>
+          </div>
+          <pre id="mcp-config-preview" class="flex-1 bg-slate-950 border border-slate-800 rounded-xl p-3 text-[11px] font-mono text-slate-200 overflow-x-auto whitespace-pre min-h-[220px] max-h-[300px]"></pre>
+        </div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="flex items-center justify-between gap-3 pt-3 border-t border-slate-800 flex-wrap">
+        <a id="mcp-guide-link" href="docs/mcp.md" target="_blank" class="text-xs text-purple-400 hover:underline font-mono">📖 Read Full MCP Guide →</a>
+        <div class="flex items-center space-x-2">
+          <button id="download-mcp-config-btn" class="px-3.5 py-2 text-xs font-bold rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition flex items-center space-x-1">
+            <span>💾 Download JSON</span>
+          </button>
+          <button id="copy-mcp-config-btn" class="px-4 py-2 text-xs font-bold rounded-xl bg-purple-600 hover:bg-purple-500 text-white transition shadow-md shadow-purple-600/30 flex items-center space-x-1">
+            <span>📋 Copy Config</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Saved Tools / Bookmarks Modal -->
+  <div id="bookmarks-modal" class="fixed inset-0 z-50 bg-slate-950/85 backdrop-blur-md hidden items-center justify-center p-4">
+    <div class="bg-slate-900 border border-amber-500/50 rounded-3xl max-w-2xl w-full p-6 shadow-2xl relative max-h-[90vh] flex flex-col animate-fadeIn">
+      <!-- Modal Header -->
+      <div class="flex items-center justify-between pb-4 border-b border-slate-800">
+        <div class="flex items-center space-x-2.5">
+          <span class="text-2xl p-2 rounded-2xl bg-amber-500/20 border border-amber-500/40">⭐</span>
+          <div>
+            <h3 class="text-lg font-extrabold text-white flex items-center space-x-2">
+              <span>Saved Developer Tools</span>
+              <span id="bookmarks-count-badge" class="px-2 py-0.5 text-[10px] font-mono rounded bg-amber-950 text-amber-300 border border-amber-500/40 font-bold">0 saved</span>
+            </h3>
+            <p class="text-xs text-slate-400">Stored 100% locally in your browser with zero cookies or tracking.</p>
+          </div>
+        </div>
+        <button id="close-bookmarks-modal-btn" class="text-slate-400 hover:text-white text-lg p-1.5 rounded-lg hover:bg-slate-800 transition">✕</button>
+      </div>
+
+      <!-- Action Toolbar -->
+      <div class="flex items-center justify-between gap-2 py-3 border-b border-slate-800 flex-wrap">
+        <div class="flex items-center space-x-1.5">
+          <button id="bookmarks-add-stack-btn" class="px-3 py-1.5 text-xs font-bold rounded-xl bg-cyan-950 hover:bg-cyan-900 text-cyan-300 border border-cyan-500/40 transition">
+            🔀 Add All to Stack
+          </button>
+          <button id="bookmarks-clear-btn" class="px-2.5 py-1.5 text-xs font-semibold text-rose-400 hover:text-rose-300 transition">
+            Clear All
+          </button>
+        </div>
+        <div class="flex items-center space-x-2">
+          <input type="file" id="bookmarks-import-file" class="hidden" accept=".json">
+          <button id="bookmarks-import-btn" class="px-3 py-1.5 text-xs font-bold rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition">
+            📥 Import JSON
+          </button>
+          <button id="bookmarks-export-btn" class="px-3 py-1.5 text-xs font-bold rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-300 border border-amber-500/40 transition">
+            📤 Export JSON
+          </button>
+        </div>
+      </div>
+
+      <!-- Bookmarked Items List -->
+      <div id="bookmarks-list-container" class="flex-1 overflow-y-auto py-4 space-y-2 max-h-[360px]">
+        <!-- Injected via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Sticky Compare Dock -->
+  <aside id="compare-dock" class="fixed bottom-6 right-6 z-40 bg-slate-900/95 backdrop-blur-xl border border-amber-500/50 rounded-2xl p-3 sm:p-4 shadow-2xl shadow-amber-950/70 hidden transition-all duration-300 max-w-md">
+    <div class="flex items-center justify-between gap-3">
+      <div class="flex items-center space-x-2">
+        <span class="text-xl">⚖️</span>
+        <div>
+          <div class="text-xs font-extrabold text-white flex items-center space-x-1.5">
+            <span>Compare Matrix</span>
+            <span id="compare-count-badge" class="px-1.5 py-0.2 text-[10px] font-mono font-bold rounded bg-amber-950 text-amber-300 border border-amber-500/40">0/4</span>
+          </div>
+          <p class="text-[10px] text-slate-400">Select 2 to 4 tools to compare side-by-side</p>
+        </div>
+      </div>
+      <div class="flex items-center space-x-1.5">
+        <button id="clear-compare-dock-btn" class="px-2 py-1 text-[11px] font-semibold text-slate-400 hover:text-white transition">Clear</button>
+        <button id="launch-compare-btn" class="px-3.5 py-1.5 text-xs font-bold rounded-xl bg-amber-600 hover:bg-amber-500 text-white transition shadow-md shadow-amber-600/30">
+          Compare →
+        </button>
+      </div>
+    </div>
+  </aside>
 
   <!-- Floating Toast Notification -->
   <div id="toast" class="fixed bottom-6 right-6 px-4 py-3 rounded-xl bg-slate-900 text-white text-xs font-bold shadow-2xl border border-purple-500 flex items-center space-x-2 translate-y-20 opacity-0 transition-all duration-300 pointer-events-none z-50">
@@ -2239,24 +2411,36 @@
         </button>
       </div>
 
-      <!-- Selectors Bar -->
-      <div class="p-5 grid grid-cols-1 md:grid-cols-2 gap-4 border-b border-slate-800 bg-slate-950/30">
+      <!-- Selectors Bar (Up to 4 Tools) -->
+      <div class="p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 border-b border-slate-800 bg-slate-950/30">
         <div>
-          <label for="compare-select-a" class="block text-xs font-mono text-purple-300 font-bold mb-1.5">Tool A (Left):</label>
-          <select id="compare-select-a" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-purple-500">
+          <label for="compare-select-1" class="block text-[11px] font-mono text-purple-300 font-bold mb-1">Tool #1:</label>
+          <select id="compare-select-1" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-2.5 py-1.5 text-xs text-white focus:outline-none focus:border-purple-500">
             <!-- Populated via JS -->
           </select>
         </div>
         <div>
-          <label for="compare-select-b" class="block text-xs font-mono text-cyan-300 font-bold mb-1.5">Tool B (Right):</label>
-          <select id="compare-select-b" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-cyan-500">
+          <label for="compare-select-2" class="block text-[11px] font-mono text-cyan-300 font-bold mb-1">Tool #2:</label>
+          <select id="compare-select-2" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-2.5 py-1.5 text-xs text-white focus:outline-none focus:border-cyan-500">
+            <!-- Populated via JS -->
+          </select>
+        </div>
+        <div>
+          <label for="compare-select-3" class="block text-[11px] font-mono text-amber-300 font-bold mb-1">Tool #3 (Optional):</label>
+          <select id="compare-select-3" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-2.5 py-1.5 text-xs text-white focus:outline-none focus:border-amber-500">
+            <!-- Populated via JS -->
+          </select>
+        </div>
+        <div>
+          <label for="compare-select-4" class="block text-[11px] font-mono text-emerald-300 font-bold mb-1">Tool #4 (Optional):</label>
+          <select id="compare-select-4" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-2.5 py-1.5 text-xs text-white focus:outline-none focus:border-emerald-500">
             <!-- Populated via JS -->
           </select>
         </div>
       </div>
 
       <!-- Split Screen Comparison Grid -->
-      <div id="compare-results-container" class="p-6 overflow-y-auto grid grid-cols-1 md:grid-cols-2 gap-6 divide-y md:divide-y-0 md:divide-x divide-slate-800">
+      <div id="compare-results-container" class="p-5 overflow-y-auto overflow-x-auto min-h-[350px]">
         <!-- Rendered via JS -->
       </div>
     </div>

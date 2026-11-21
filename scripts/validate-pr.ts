@@ -2,6 +2,11 @@ import { execSync } from "node:child_process";
 import fs from "node:fs/promises";
 import path from "node:path";
 import { evaluateBinaryTrustPolicy } from "./binary-trust-policy.js";
+import {
+  findDuplicatesInCatalog,
+  fuzzyStringSimilarity,
+  normalizeCanonicalUrl,
+} from "./fuzzy-duplicate-detector.js";
 
 interface ResourceItem {
   name: string;
@@ -32,7 +37,9 @@ interface DuplicateMatch {
   existingItem: string;
   existingFile: string;
   existingUrl: string;
-  matchType: "exact_name" | "exact_url" | "same_domain";
+  matchType: "exact_name" | "exact_url" | "same_domain" | "fuzzy_name" | "canonical_url";
+  similarity?: number;
+  reason?: string;
 }
 
 function normalizeUrl(rawUrl: string): { normalized: string; domain: string } {
@@ -71,9 +78,13 @@ function isValidUrl(rawUrl: string): boolean {
 async function loadExistingRegistry(shelfDir: string): Promise<{
   allExisting: Map<string, { file: string; item: ResourceItem }>;
   domainIndex: Map<string, { file: string; item: ResourceItem }>;
+  canonicalUrlIndex: Map<string, { file: string; item: ResourceItem }>;
+  itemList: Array<{ file: string; item: ResourceItem }>;
 }> {
   const allExisting = new Map<string, { file: string; item: ResourceItem }>();
   const domainIndex = new Map<string, { file: string; item: ResourceItem }>();
+  const canonicalUrlIndex = new Map<string, { file: string; item: ResourceItem }>();
+  const itemList: Array<{ file: string; item: ResourceItem }> = [];
 
   const files = await fs.readdir(shelfDir);
   for (const file of files) {
@@ -85,12 +96,25 @@ async function loadExistingRegistry(shelfDir: string): Promise<{
       const content = await fs.readFile(path.join(shelfDir, file), "utf8");
       const items: ResourceItem[] = JSON.parse(content.replace(/^\uFEFF/, ""));
       for (const item of items) {
-        allExisting.set(item.name.toLowerCase().trim(), { file, item });
+        const lower = item.name.toLowerCase().trim();
+        allExisting.set(lower, { file, item });
+        itemList.push({ file, item });
+
         const targetUrl = item.url || item.repo;
         if (targetUrl) {
           const { domain } = normalizeUrl(targetUrl);
           if (domain && !["github.com", "gitlab.com", "bitbucket.org"].includes(domain)) {
             domainIndex.set(domain, { file, item });
+          }
+          const canon = normalizeCanonicalUrl(targetUrl);
+          if (canon) {
+            canonicalUrlIndex.set(canon, { file, item });
+          }
+        }
+        if (item.repo) {
+          const canonRepo = normalizeCanonicalUrl(item.repo);
+          if (canonRepo) {
+            canonicalUrlIndex.set(canonRepo, { file, item });
           }
         }
       }
@@ -99,7 +123,7 @@ async function loadExistingRegistry(shelfDir: string): Promise<{
     }
   }
 
-  return { allExisting, domainIndex };
+  return { allExisting, domainIndex, canonicalUrlIndex, itemList };
 }
 
 function getChangedShelfFiles(shelfDir: string): string[] {
@@ -136,7 +160,8 @@ async function runPrValidation() {
 
   console.log("🔍 [DevShelf PR Validator] Initializing schema & duplicate inspection...\n");
 
-  const { allExisting, domainIndex } = await loadExistingRegistry(shelfDir);
+  const { allExisting, domainIndex, canonicalUrlIndex, itemList } =
+    await loadExistingRegistry(shelfDir);
   const changedFiles = getChangedShelfFiles(shelfDir);
 
   if (process.env.GITHUB_BASE_REF && changedFiles.length === 0) {
@@ -293,6 +318,27 @@ async function runPrValidation() {
       if (file !== "contributors-wanted.json" && targetUrl) {
         const { domain } = normalizeUrl(targetUrl);
 
+        // Check canonical repository/URL collision (strips .git, trailing slash, protocol variants)
+        const canonTarget = normalizeCanonicalUrl(targetUrl);
+        if (canonTarget) {
+          const existingByCanon = canonicalUrlIndex.get(canonTarget);
+          if (
+            existingByCanon &&
+            existingByCanon.file !== file &&
+            existingByCanon.item.name.toLowerCase() !== lowerName
+          ) {
+            duplicates.push({
+              newItem: itemName,
+              newUrl: targetUrl,
+              existingItem: existingByCanon.item.name,
+              existingFile: existingByCanon.file,
+              existingUrl: existingByCanon.item.url || existingByCanon.item.repo || "",
+              matchType: "canonical_url",
+              reason: `Normalized URL '${canonTarget}' matches existing tool '${existingByCanon.item.name}'`,
+            });
+          }
+        }
+
         // Check if another resource already exists with this exact name in a DIFFERENT file
         const existingByName = allExisting.get(lowerName);
         if (existingByName && existingByName.file !== file) {
@@ -304,6 +350,26 @@ async function runPrValidation() {
             existingUrl: existingByName.item.url || existingByName.item.repo || "",
             matchType: "exact_name",
           });
+        }
+
+        // Fuzzy Name Similarity check across other shelf files
+        for (const existing of itemList) {
+          if (existing.file !== file && existing.item.name.toLowerCase() !== lowerName) {
+            const sim = fuzzyStringSimilarity(lowerName, existing.item.name.toLowerCase());
+            if (sim >= 0.92 && Math.abs(lowerName.length - existing.item.name.length) <= 2) {
+              duplicates.push({
+                newItem: itemName,
+                newUrl: targetUrl,
+                existingItem: existing.item.name,
+                existingFile: existing.file,
+                existingUrl: existing.item.url || existing.item.repo || "",
+                matchType: "fuzzy_name",
+                similarity: sim,
+                reason: `Fuzzy name similarity ${Math.round(sim * 100)}% with '${existing.item.name}' in ${existing.file}`,
+              });
+              break;
+            }
+          }
         }
 
         // Check domain collision (excluding github/gitlab and developer perks which grant credits for existing platforms)

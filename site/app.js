@@ -11,6 +11,16 @@ let uptimeData = null;
 let affiliatePartners = [];
 const myStack = new Set();
 let activeStackTab = "env";
+const myBookmarks = new Set();
+let myCompareList = [];
+let activeMcpClient = "cursor";
+const selectedMcpServers = new Set([
+  "DevShelf Community MCP",
+  "GitHub MCP Server",
+  "Postgres MCP Server",
+  "SQLite MCP Server",
+  "Playwright MCP Server",
+]);
 const drawerState = {
   currentItem: null,
   activeTab: "curl",
@@ -166,6 +176,7 @@ function applyData(data) {
   updateStatsAndPills(data);
   updateMatrixCounts();
   loadStackFromStorageAndUrl();
+  loadBookmarksFromStorage();
   renderSpotlight();
   render();
 }
@@ -197,7 +208,31 @@ function updateMatrixCounts() {
   setElText("matrix-count-offline", counts.offline);
 }
 
+function isMcpTool(item) {
+  if (!item) return false;
+  const name = (item.name || "").toLowerCase();
+  const desc = (item.description || "").toLowerCase();
+  const cat = (item.category || item.section || "").toLowerCase();
+  const tags = Array.isArray(item.tags) ? item.tags.join(" ").toLowerCase() : "";
+  const sTags = Array.isArray(item.statusTags) ? item.statusTags.join(" ").toLowerCase() : "";
+  return (
+    name.includes("mcp") ||
+    desc.includes("mcp") ||
+    desc.includes("model context protocol") ||
+    cat.includes("mcp") ||
+    tags.includes("mcp") ||
+    sTags.includes("mcp") ||
+    item.mcp === true
+  );
+}
+
 function matchesMatrixTag(item, tag) {
+  if (tag === "mcp") {
+    return isMcpTool(item);
+  }
+  if (tag === "saved") {
+    return isBookmarked(item.name);
+  }
   if (tag === "alternatives") {
     return Boolean(item.alternativeTo);
   }
@@ -279,6 +314,16 @@ function updateStatsAndPills(data) {
   setElText("pill-count-cloud", cloudCount);
   setElText("pill-count-perks", perksCount);
   setElText("pill-count-contributors", contributorsCount);
+  setElText("pill-count-saved", myBookmarks.size);
+  setElText("matrix-count-saved", myBookmarks.size);
+  const mcpTotalCount = allResources.filter(isMcpTool).length;
+  setElText("pill-count-mcp", mcpTotalCount);
+  setElText("matrix-count-mcp", mcpTotalCount);
+  const navBmkBadge = document.getElementById("nav-bookmarks-badge");
+  if (navBmkBadge) {
+    navBmkBadge.textContent = myBookmarks.size;
+    navBmkBadge.classList.toggle("hidden", myBookmarks.size === 0);
+  }
 
   // Hero CTA count
   setElText("hero-total-count", total);
@@ -748,6 +793,136 @@ function setupListeners() {
       return;
     }
 
+    // 9f-1. Bookmark Toggle Button
+    const bookmarkBtn = e.target.closest(".bookmark-btn");
+    if (bookmarkBtn) {
+      e.preventDefault();
+      const bName = bookmarkBtn.dataset.bookmarkName;
+      if (bName) toggleBookmark(bName);
+      return;
+    }
+
+    // 9f-2. Compare Toggle Button on card
+    const compToggleBtn = e.target.closest(".compare-toggle-btn");
+    if (compToggleBtn) {
+      e.preventDefault();
+      const cName = compToggleBtn.dataset.compareName;
+      if (cName) toggleCompareItem(cName);
+      return;
+    }
+
+    // 9f-3. Nav Bookmarks Modal Open
+    if (e.target.closest("#nav-bookmarks-btn")) {
+      e.preventDefault();
+      openBookmarksModal();
+      return;
+    }
+
+    // 9f-4. Close Bookmarks Modal
+    if (e.target.closest("#close-bookmarks-modal-btn") || e.target.id === "bookmarks-modal") {
+      e.preventDefault();
+      closeBookmarksModal();
+      return;
+    }
+
+    // 9f-5. Bookmarks Actions
+    if (e.target.closest("#bookmarks-clear-btn")) {
+      e.preventDefault();
+      clearAllBookmarks();
+      return;
+    }
+    if (e.target.closest("#bookmarks-add-stack-btn")) {
+      e.preventDefault();
+      addAllBookmarksToStack();
+      return;
+    }
+    if (e.target.closest("#bookmarks-export-btn")) {
+      e.preventDefault();
+      exportBookmarksJson();
+      return;
+    }
+    if (e.target.closest("#bookmarks-import-btn")) {
+      e.preventDefault();
+      document.getElementById("bookmarks-import-file")?.click();
+      return;
+    }
+
+    // 9f-6. Nav MCP Modal Open
+    if (e.target.closest("#nav-mcp-btn")) {
+      e.preventDefault();
+      openMcpModal();
+      return;
+    }
+
+    // 9f-7. Close MCP Modal
+    if (e.target.closest("#close-mcp-modal-btn") || e.target.id === "mcp-modal") {
+      e.preventDefault();
+      closeMcpModal();
+      return;
+    }
+
+    // 9f-8. MCP Modal Actions
+    if (e.target.closest("#select-all-mcp-btn")) {
+      e.preventDefault();
+      selectAllMcpServers();
+      return;
+    }
+    if (e.target.closest("#clear-all-mcp-btn")) {
+      e.preventDefault();
+      clearAllMcpServers();
+      return;
+    }
+    if (e.target.closest("#copy-mcp-config-btn")) {
+      e.preventDefault();
+      copyMcpConfig();
+      return;
+    }
+    if (e.target.closest("#download-mcp-config-btn")) {
+      e.preventDefault();
+      downloadMcpConfig();
+      return;
+    }
+
+    // 9f-9. MCP Client Tabs
+    const mcpTab = e.target.closest(".mcp-client-tab");
+    if (mcpTab) {
+      e.preventDefault();
+      const client = mcpTab.dataset.mcpclient;
+      if (client) setMcpClient(client);
+      return;
+    }
+
+    // 9f-10. MCP Server Checkbox Change
+    const mcpCheck = e.target.closest(".mcp-server-checkbox");
+    if (mcpCheck) {
+      const serverName = mcpCheck.dataset.mcpName;
+      if (mcpCheck.checked) selectedMcpServers.add(serverName);
+      else selectedMcpServers.delete(serverName);
+      renderMcpConfig();
+      return;
+    }
+
+    // 9f-11. Stack Presets
+    const stackPresetBtn = e.target.closest(".stack-preset-btn");
+    if (stackPresetBtn) {
+      e.preventDefault();
+      const pKey = stackPresetBtn.dataset.preset;
+      if (pKey) applyStackPreset(pKey);
+      return;
+    }
+
+    // 9f-12. Compare Dock Actions
+    if (e.target.closest("#launch-compare-btn")) {
+      e.preventDefault();
+      launchComparisonModal();
+      return;
+    }
+    if (e.target.closest("#clear-compare-dock-btn")) {
+      e.preventDefault();
+      clearCompareList();
+      return;
+    }
+
     // 9g. Stack Toggle Button
     const stackToggleBtn = e.target.closest(".stack-toggle-btn");
     if (stackToggleBtn) {
@@ -1129,26 +1304,6 @@ function setupListeners() {
       }
     }
   });
-}
-
-function openMcpModal() {
-  const modal = document.getElementById("mcp-modal");
-  if (modal) {
-    modal.classList.remove("hidden");
-    modal.classList.add("show");
-    modal.style.display = "flex";
-    document.body.classList.add("overflow-hidden");
-  }
-}
-
-function closeMcpModal() {
-  const modal = document.getElementById("mcp-modal");
-  if (modal) {
-    modal.classList.remove("show");
-    modal.classList.add("hidden");
-    modal.style.display = "none";
-    document.body.classList.remove("overflow-hidden");
-  }
 }
 
 function openBadgeModal() {
@@ -2099,6 +2254,10 @@ function render(resetToFirstPage = false) {
     let matchesCategory = true;
     if (activeCategory === "all") {
       matchesCategory = true;
+    } else if (activeCategory === "saved") {
+      matchesCategory = isBookmarked(item.name);
+    } else if (activeCategory === "mcp") {
+      matchesCategory = isMcpTool(item);
     } else if (activeCategory === "repo") {
       matchesCategory = Boolean(item.repo);
     } else if (activeCategory === "boilerplate") {
@@ -2453,6 +2612,20 @@ function createCardHtml(item) {
     </button>
   `;
 
+  const isSaved = isBookmarked(item.name);
+  const bookmarkActionBtn = `
+    <button data-bookmark-name="${escapeHtml(item.name)}" class="bookmark-btn inline-flex items-center space-x-1 px-2 py-1 rounded-md text-[11px] font-semibold ${isSaved ? "bg-amber-500/20 text-amber-300 border-amber-500/50" : "bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-amber-300 border-slate-700"} transition border shadow-sm" title="${isSaved ? "Remove from Saved Tools" : "Save / Bookmark Tool (localStorage)"}">
+      <span>${isSaved ? "★ Saved" : "☆ Save"}</span>
+    </button>
+  `;
+
+  const inCompare = isItemInCompare(item.name);
+  const compareActionBtn = `
+    <button data-compare-name="${escapeHtml(item.name)}" class="compare-toggle-btn inline-flex items-center space-x-1 px-2 py-1 rounded-md text-[11px] font-semibold ${inCompare ? "bg-amber-500 text-slate-950 font-bold border-amber-400" : "bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border-slate-700"} transition border shadow-sm" title="${inCompare ? "Remove from Comparison" : "Compare Side-by-Side (2 to 4 tools)"}">
+      <span>${inCompare ? "✓ Compare" : "⚖️ Compare"}</span>
+    </button>
+  `;
+
   const repoMatch = (item.repo || "").match(/github\.com\/([^/]+)\/([^/]+)/);
   let githubDevBtn = "";
   let stackblitzBtn = "";
@@ -2600,6 +2773,8 @@ function createCardHtml(item) {
               ${dockerActionBtn}
               ${matchmakerActionBtn}
               ${stackActionBtn}
+              ${compareActionBtn}
+              ${bookmarkActionBtn}
               ${playgroundActionBtn}
               ${snippetActionBtn}
               ${badgeActionBtn}
@@ -2873,12 +3048,16 @@ function downloadStackArtifact() {
   const filenames = {
     env: ".env.example",
     docker: "docker-compose.yml",
+    script: "setup-stack.sh",
+    mcp: "mcp.json",
     markdown: "TECH_STACK.md",
     json: "devshelf-stack.json",
   };
   const mimes = {
     env: "text/plain",
     docker: "text/yaml",
+    script: "text/x-sh",
+    mcp: "application/json",
     markdown: "text/markdown",
     json: "application/json",
   };
@@ -2921,6 +3100,10 @@ function renderStackExport() {
     contentEl.textContent = generateStackEnv(items);
   } else if (activeStackTab === "docker") {
     contentEl.textContent = generateStackDocker(items);
+  } else if (activeStackTab === "script") {
+    contentEl.textContent = generateStackInstallScript(items);
+  } else if (activeStackTab === "mcp") {
+    contentEl.textContent = generateStackMcpConfig(items);
   } else if (activeStackTab === "markdown") {
     contentEl.textContent = generateStackMarkdown(items);
   } else if (activeStackTab === "json") {
@@ -3288,16 +3471,683 @@ function escapeHtml(str) {
   );
 }
 
+// ── Saved / Bookmarked Tools Engine (localStorage & Zero-Cookie) ───
+
+function loadBookmarksFromStorage() {
+  try {
+    const raw = localStorage.getItem("devshelf_bookmarks");
+    if (raw) {
+      const arr = JSON.parse(raw);
+      if (Array.isArray(arr)) {
+        myBookmarks.clear();
+        for (const item of arr) myBookmarks.add(item);
+      }
+    }
+  } catch (_e) {}
+  updateBookmarksUi();
+}
+
+function saveBookmarksToStorage() {
+  try {
+    localStorage.setItem("devshelf_bookmarks", JSON.stringify([...myBookmarks]));
+  } catch (_e) {}
+  updateBookmarksUi();
+}
+
+function isBookmarked(name) {
+  return myBookmarks.has(name);
+}
+
+function toggleBookmark(name) {
+  if (myBookmarks.has(name)) {
+    myBookmarks.delete(name);
+    showToast(`Removed ${name} from saved bookmarks`);
+  } else {
+    myBookmarks.add(name);
+    showToast(`Saved ${name} to your local bookmarks! ⭐`);
+  }
+  saveBookmarksToStorage();
+  updateBookmarkButtons(name);
+  if (activeCategory === "saved") {
+    render();
+  }
+}
+
+function updateBookmarkButtons(name) {
+  const isSaved = myBookmarks.has(name);
+  const safeName =
+    typeof CSS !== "undefined" && CSS.escape ? CSS.escape(name) : name.replace(/"/g, '\\"');
+  const btns = document.querySelectorAll(`.bookmark-btn[data-bookmark-name="${safeName}"]`);
+  for (const btn of btns) {
+    if (isSaved) {
+      btn.className =
+        "bookmark-btn inline-flex items-center space-x-1 px-2 py-1 rounded-md text-[11px] font-semibold bg-amber-500/20 text-amber-300 border-amber-500/50 transition border shadow-sm";
+      btn.innerHTML = "<span>★ Saved</span>";
+      btn.title = "Remove from Saved Tools";
+    } else {
+      btn.className =
+        "bookmark-btn inline-flex items-center space-x-1 px-2 py-1 rounded-md text-[11px] font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-amber-300 border-slate-700 transition border shadow-sm";
+      btn.innerHTML = "<span>☆ Save</span>";
+      btn.title = "Save / Bookmark Tool (localStorage)";
+    }
+  }
+}
+
+function updateBookmarksUi() {
+  const count = myBookmarks.size;
+  setElText("pill-count-saved", count);
+  setElText("matrix-count-saved", count);
+  setElText("bookmarks-count-badge", `${count} saved`);
+  const navBadge = document.getElementById("nav-bookmarks-badge");
+  if (navBadge) {
+    navBadge.textContent = count;
+    navBadge.classList.toggle("hidden", count === 0);
+  }
+}
+
+function openBookmarksModal() {
+  const modal = document.getElementById("bookmarks-modal");
+  if (!modal) return;
+  renderBookmarksList();
+  modal.classList.remove("hidden");
+  modal.classList.add("flex");
+  document.body.classList.add("overflow-hidden");
+}
+
+function closeBookmarksModal() {
+  const modal = document.getElementById("bookmarks-modal");
+  if (!modal) return;
+  modal.classList.add("hidden");
+  modal.classList.remove("flex");
+  document.body.classList.remove("overflow-hidden");
+}
+
+function renderBookmarksList() {
+  const container = document.getElementById("bookmarks-list-container");
+  if (!container) return;
+
+  const items = [...myBookmarks]
+    .map((name) => allResources.find((r) => r.name === name))
+    .filter(Boolean);
+
+  if (items.length === 0) {
+    container.innerHTML = `
+      <div class="text-center py-10 px-4 text-slate-400 font-mono text-xs">
+        <span class="text-3xl block mb-2">⭐</span>
+        <p class="font-bold text-white mb-1">No bookmarked tools yet!</p>
+        <p>Click "☆ Save" on any card in the catalog to pin tools locally across sessions.</p>
+      </div>
+    `;
+    return;
+  }
+
+  container.innerHTML = items
+    .map(
+      (item) => `
+      <div class="flex items-center justify-between p-3 rounded-2xl bg-slate-950/80 border border-slate-800 hover:border-amber-500/40 transition gap-3">
+        <div class="min-w-0">
+          <div class="flex items-center space-x-2">
+            <h4 class="text-xs font-bold text-white truncate">${escapeHtml(item.name)}</h4>
+            <span class="px-1.5 py-0.2 rounded text-[10px] font-mono bg-slate-800 text-slate-300 border border-slate-700">
+              ${escapeHtml(item.category || item.section || "Tool")}
+            </span>
+          </div>
+          <p class="text-[11px] text-slate-400 truncate mt-0.5">${escapeHtml(item.description)}</p>
+        </div>
+        <div class="flex items-center space-x-1.5 shrink-0">
+          <button data-stack-name="${escapeHtml(item.name)}" class="stack-toggle-btn px-2 py-1 text-[10px] font-bold rounded-lg ${isItemInStack(item.name) ? "bg-cyan-500 text-slate-950" : "bg-slate-800 text-cyan-300 border border-slate-700 hover:bg-slate-700"} transition">
+            ${isItemInStack(item.name) ? "✓ In Stack" : "🔀 +Stack"}
+          </button>
+          <a href="${escapeHtml(item.url || item.repo)}" target="_blank" rel="noopener noreferrer" class="px-2 py-1 text-[10px] font-bold rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition">
+            ↗
+          </a>
+          <button data-bookmark-name="${escapeHtml(item.name)}" class="bookmark-btn text-rose-400 hover:text-rose-300 font-bold px-1.5 py-0.5 text-xs">
+            ✕
+          </button>
+        </div>
+      </div>
+    `,
+    )
+    .join("");
+}
+
+function exportBookmarksJson() {
+  if (myBookmarks.size === 0) {
+    showToast("No bookmarks to export!");
+    return;
+  }
+  const items = [...myBookmarks]
+    .map((name) => allResources.find((r) => r.name === name))
+    .filter(Boolean);
+
+  const payload = {
+    exportedAt: new Date().toISOString(),
+    generator: "DevShelf Bookmarks Exporter",
+    count: items.length,
+    bookmarks: items.map((i) => ({
+      name: i.name,
+      category: i.category || i.section,
+      url: i.url || i.repo,
+      license: i.license || null,
+      freeTier: i.freeTier || i.freeTierCost || "Verified Free",
+    })),
+  };
+
+  const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "devshelf-bookmarks.json";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+  showToast("Exported bookmarks JSON! 📥");
+}
+
+function importBookmarksJson(file) {
+  const reader = new FileReader();
+  reader.onload = (e) => {
+    try {
+      const data = JSON.parse(e.target.result);
+      let count = 0;
+      if (Array.isArray(data.bookmarks)) {
+        for (const b of data.bookmarks) {
+          if (b.name) {
+            myBookmarks.add(b.name);
+            count++;
+          }
+        }
+      } else if (Array.isArray(data)) {
+        for (const name of data) {
+          if (typeof name === "string") {
+            myBookmarks.add(name);
+            count++;
+          }
+        }
+      }
+      saveBookmarksToStorage();
+      renderBookmarksList();
+      render();
+      showToast(`Imported ${count} bookmarks successfully! ⭐`);
+    } catch (_err) {
+      showToast("Invalid JSON bookmarks file.");
+    }
+  };
+  reader.readAsText(file);
+}
+
+function addAllBookmarksToStack() {
+  let count = 0;
+  for (const name of myBookmarks) {
+    if (!myStack.has(name)) {
+      myStack.add(name);
+      count++;
+    }
+  }
+  saveStackToStorage();
+  updateStackUi();
+  render();
+  renderBookmarksList();
+  showToast(`Added ${count} bookmarked tools to your Stack! 🔀`);
+}
+
+function clearAllBookmarks() {
+  myBookmarks.clear();
+  saveBookmarksToStorage();
+  renderBookmarksList();
+  render();
+  showToast("Cleared all local bookmarks.");
+}
+
+// Attach file input listener for bookmark import
+document.addEventListener("DOMContentLoaded", () => {
+  const fileInput = document.getElementById("bookmarks-import-file");
+  if (fileInput) {
+    fileInput.addEventListener("change", (e) => {
+      const file = e.target.files?.[0];
+      if (file) importBookmarksJson(file);
+    });
+  }
+});
+
+// ── 1-Click MCP Config Generator Engine ───────────────────────────
+
+const CURATED_MCP_SERVERS = [
+  {
+    name: "DevShelf Community MCP",
+    slug: "devshelf",
+    category: "Developer Tools & APIs",
+    description:
+      "Official DevShelf stdio server for AI coding assistants to discover 580+ tools & free APIs",
+    command: "npx",
+    args: ["-y", "@ritualdev-lab/devshelf", "mcp"],
+    env: {},
+  },
+  {
+    name: "GitHub MCP Server",
+    slug: "github",
+    category: "Git & Issues",
+    description:
+      "Inspect repositories, file issues, read pull requests and git trees via GitHub APIs",
+    command: "npx",
+    args: ["-y", "@modelcontextprotocol/server-github"],
+    env: { GITHUB_PERSONAL_ACCESS_TOKEN: "<YOUR_GITHUB_PAT>" },
+  },
+  {
+    name: "Postgres MCP Server",
+    slug: "postgres",
+    category: "Database & SQL",
+    description: "Read-only schema introspection and query execution against PostgreSQL databases",
+    command: "npx",
+    args: [
+      "-y",
+      "@modelcontextprotocol/server-postgres",
+      "postgresql://user:password@localhost:5432/mydb",
+    ],
+    env: {},
+  },
+  {
+    name: "SQLite MCP Server",
+    slug: "sqlite",
+    category: "Database & SQL",
+    description: "Direct local database inspection, schema analysis and full-text search",
+    command: "uvx",
+    args: ["mcp-server-sqlite", "--db-path", "./local.db"],
+    env: {},
+  },
+  {
+    name: "Playwright MCP Server",
+    slug: "playwright",
+    category: "Testing & Automation",
+    description: "Headless browser automation, visual screenshots, and live web page inspection",
+    command: "npx",
+    args: ["-y", "@executeautomation/playwright-mcp-server"],
+    env: {},
+  },
+  {
+    name: "Fetch MCP Server",
+    slug: "fetch",
+    category: "Web Scraping",
+    description: "Converts live web page contents and APIs into clean Markdown for AI context",
+    command: "uvx",
+    args: ["mcp-server-fetch"],
+    env: {},
+  },
+  {
+    name: "AgentShield",
+    slug: "agentshield",
+    category: "AI Agent Security",
+    description:
+      "Sub-0.10ms Linux eBPF/Landlock kernel sandbox & zero-leak secret redactor for coding agents",
+    command: "npx",
+    args: ["-y", "@ritualdev-lab/agentshield"],
+    env: {},
+  },
+  {
+    name: "PromptShield",
+    slug: "promptshield",
+    category: "AI Security & Redaction",
+    description: "Real-time prompt injection detector and secret scrubber for LLM workflows",
+    command: "npx",
+    args: ["-y", "@ritualdev-lab/promptshield"],
+    env: {},
+  },
+];
+
+function openMcpModal() {
+  const modal = document.getElementById("mcp-modal");
+  if (!modal) return;
+  renderMcpChecklist();
+  renderMcpConfig();
+  modal.classList.remove("hidden");
+  modal.classList.add("flex");
+  document.body.classList.add("overflow-hidden");
+}
+
+function closeMcpModal() {
+  const modal = document.getElementById("mcp-modal");
+  if (!modal) return;
+  modal.classList.add("hidden");
+  modal.classList.remove("flex");
+  document.body.classList.remove("overflow-hidden");
+}
+
+function setMcpClient(client) {
+  activeMcpClient = client;
+  const tabs = document.querySelectorAll(".mcp-client-tab");
+  for (const t of tabs) {
+    const isAct = t.dataset.mcpclient === client;
+    t.classList.toggle("active", isAct);
+    t.classList.toggle("bg-purple-600", isAct);
+    t.classList.toggle("text-white", isAct);
+    t.classList.toggle("bg-slate-800", !isAct);
+    t.classList.toggle("text-slate-300", !isAct);
+  }
+  renderMcpConfig();
+}
+
+function renderMcpChecklist() {
+  const checklist = document.getElementById("mcp-servers-checklist");
+  if (!checklist) return;
+
+  checklist.innerHTML = CURATED_MCP_SERVERS.map((srv) => {
+    const isChecked = selectedMcpServers.has(srv.name);
+    return `
+      <label class="flex items-start space-x-2.5 p-2 rounded-xl bg-slate-950/70 border ${isChecked ? "border-purple-500/50 bg-purple-950/20" : "border-slate-800"} hover:border-purple-500/40 cursor-pointer transition text-xs">
+        <input type="checkbox" data-mcp-name="${escapeHtml(srv.name)}" class="mcp-server-checkbox mt-0.5 rounded border-slate-700 text-purple-600 focus:ring-purple-500" ${isChecked ? "checked" : ""}>
+        <div class="min-w-0">
+          <div class="flex items-center space-x-1.5">
+            <span class="font-bold text-white truncate">${escapeHtml(srv.name)}</span>
+            <span class="text-[10px] font-mono px-1 py-0.2 rounded bg-slate-800 text-purple-300">${srv.command}</span>
+          </div>
+          <p class="text-[11px] text-slate-400 mt-0.5 leading-snug">${escapeHtml(srv.description)}</p>
+        </div>
+      </label>
+    `;
+  }).join("");
+}
+
+function renderMcpConfig() {
+  const previewEl = document.getElementById("mcp-config-preview");
+  const countEl = document.getElementById("mcp-selected-count");
+  const targetPathEl = document.getElementById("mcp-target-path");
+  if (!previewEl) return;
+
+  const activeServers = CURATED_MCP_SERVERS.filter((s) => selectedMcpServers.has(s.name));
+  if (countEl) countEl.textContent = `${activeServers.length} servers selected`;
+
+  const targetPaths = {
+    cursor: "Target: .cursor/mcp.json",
+    claude: "Target: ~/Library/Application Support/Claude/claude_desktop_config.json",
+    windsurf: "Target: ~/.codeium/windsurf/mcp_config.json",
+    zed: "Target: ~/.config/zed/settings.json (context_servers)",
+    stdio: "Target: Stdio Orchestration Config",
+  };
+  if (targetPathEl) targetPathEl.textContent = targetPaths[activeMcpClient] || "Target: MCP Config";
+
+  if (activeServers.length === 0) {
+    previewEl.textContent =
+      "// No MCP servers selected.\n// Check one or more servers on the left to generate configuration.";
+    return;
+  }
+
+  let formatted = "";
+
+  if (
+    activeMcpClient === "cursor" ||
+    activeMcpClient === "claude" ||
+    activeMcpClient === "windsurf"
+  ) {
+    const mcpServers = {};
+    for (const s of activeServers) {
+      mcpServers[s.slug] = {
+        command: s.command,
+        args: s.args,
+        ...(Object.keys(s.env).length > 0 ? { env: s.env } : {}),
+      };
+    }
+    formatted = JSON.stringify({ mcpServers }, null, 2);
+  } else if (activeMcpClient === "zed") {
+    const contextServers = {};
+    for (const s of activeServers) {
+      contextServers[s.slug] = {
+        command: {
+          path: s.command,
+          args: s.args,
+          ...(Object.keys(s.env).length > 0 ? { env: s.env } : {}),
+        },
+      };
+    }
+    formatted = JSON.stringify({ context_servers: contextServers }, null, 2);
+  } else {
+    formatted = JSON.stringify(
+      {
+        version: "1.0.0",
+        servers: activeServers.map((s) => ({
+          name: s.name,
+          slug: s.slug,
+          command: s.command,
+          args: s.args,
+          env: s.env,
+        })),
+      },
+      null,
+      2,
+    );
+  }
+
+  previewEl.textContent = formatted;
+}
+
+function selectAllMcpServers() {
+  for (const s of CURATED_MCP_SERVERS) selectedMcpServers.add(s.name);
+  renderMcpChecklist();
+  renderMcpConfig();
+}
+
+function clearAllMcpServers() {
+  selectedMcpServers.clear();
+  renderMcpChecklist();
+  renderMcpConfig();
+}
+
+function copyMcpConfig() {
+  const previewEl = document.getElementById("mcp-config-preview");
+  if (previewEl?.textContent) {
+    copyToClipboard(previewEl.textContent, "MCP configuration copied to clipboard! 📋");
+  }
+}
+
+function downloadMcpConfig() {
+  const previewEl = document.getElementById("mcp-config-preview");
+  if (!previewEl?.textContent) return;
+
+  const filenames = {
+    cursor: "mcp.json",
+    claude: "claude_desktop_config.json",
+    windsurf: "mcp_config.json",
+    zed: "zed_mcp_settings.json",
+    stdio: "mcp_servers.json",
+  };
+
+  const filename = filenames[activeMcpClient] || "mcp.json";
+  const blob = new Blob([previewEl.textContent], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+  showToast(`Downloaded ${filename} 💾`);
+}
+
+// ── Stack Blueprints & Extended Exporter Engine ───────────────────
+
+const STACK_PRESETS = {
+  saas: {
+    name: "Zero-Cost SaaS Starter",
+    tools: ["Supabase", "Resend", "Clerk", "Vercel"],
+  },
+  ai: {
+    name: "Local-First AI Agent Stack",
+    tools: ["Ollama", "AgentShield", "SQLite MCP Server", "Playwright MCP Server"],
+  },
+  fullstack: {
+    name: "Full-Stack TypeScript FOSS",
+    tools: ["Hono", "Drizzle ORM", "Biome", "Vitest"],
+  },
+  rust: {
+    name: "Rust Systems Dev",
+    tools: ["uv", "just", "difftastic", "tokei"],
+  },
+};
+
+function applyStackPreset(presetKey) {
+  const preset = STACK_PRESETS[presetKey];
+  if (!preset) return;
+
+  myStack.clear();
+  for (const tName of preset.tools) {
+    const match = allResources.find(
+      (r) =>
+        r.name.toLowerCase() === tName.toLowerCase() ||
+        r.name.toLowerCase().includes(tName.toLowerCase()),
+    );
+    if (match) {
+      myStack.add(match.name);
+    } else {
+      myStack.add(tName);
+    }
+  }
+
+  saveStackToStorage();
+  updateStackUi();
+  renderStackExport();
+  render();
+  showToast(`Loaded "${preset.name}" blueprint! 🔀`);
+}
+
+function generateStackInstallScript(items) {
+  const lines = [
+    "#!/usr/bin/env bash",
+    "# ==============================================================================",
+    "# DevShelf Automated Stack Bootstrap & Install Script (setup-stack.sh)",
+    "# Generated by DevShelf (https://devshelf.ritualdev.in)",
+    `# Stack Tools: ${items.map((i) => i.name).join(", ")}`,
+    "# ==============================================================================",
+    "set -euo pipefail",
+    "",
+    'echo "🚀 Bootstrapping your DevShelf Zero-Cost Tech Stack..."',
+    "",
+  ];
+
+  for (const item of items) {
+    lines.push(`# --- ${item.name} (${item.category || item.section || "Tool"}) ---`);
+    if (item.dockerCompose) {
+      lines.push(`# Docker image available: ${item.dockerCompose}`);
+      lines.push(`docker pull ${item.dockerCompose.split(" ")[0]} || true`);
+    } else if (item.language === "Rust") {
+      lines.push(`# Rust binary - install via cargo or package manager:`);
+      lines.push(`cargo install ${item.name.toLowerCase().replace(/\s+/g, "-")} || true`);
+    } else if (item.repo) {
+      lines.push(`git clone ${item.repo.replace(/\/+$/, "")}.git || true`);
+    } else if (item.url) {
+      lines.push(`echo "Visit documentation: ${item.url}"`);
+    }
+    lines.push("");
+  }
+
+  lines.push('echo "🎉 Stack bootstrap complete! Happy hacking with DevShelf."');
+  return lines.join("\n");
+}
+
+function generateStackMcpConfig(items) {
+  const mcpTools = items.filter(isMcpTool);
+  const mcpServers = {};
+
+  if (mcpTools.length === 0) {
+    mcpServers["devshelf"] = {
+      command: "npx",
+      args: ["-y", "@ritualdev-lab/devshelf", "mcp"],
+    };
+  } else {
+    for (const item of mcpTools) {
+      const slug = item.name
+        .toLowerCase()
+        .replace(/[^a-z0-9]/g, "-")
+        .replace(/-+/g, "-");
+      mcpServers[slug] = {
+        command: "npx",
+        args: ["-y", `@ritualdev-lab/${slug}`],
+      };
+    }
+  }
+
+  return JSON.stringify({ mcpServers }, null, 2);
+}
+
 /* ── Interactive Stack & Tool Comparator (VS feature) ───────── */
+
+function isItemInCompare(name) {
+  return myCompareList.includes(name);
+}
+
+function toggleCompareItem(name) {
+  const idx = myCompareList.indexOf(name);
+  if (idx >= 0) {
+    myCompareList.splice(idx, 1);
+    showToast(`Removed ${name} from comparison`);
+  } else {
+    if (myCompareList.length >= 4) {
+      showToast("Maximum 4 tools can be compared side-by-side!");
+      return;
+    }
+    myCompareList.push(name);
+    showToast(`Added ${name} to comparison matrix! (${myCompareList.length}/4) ⚖️`);
+  }
+  updateCompareDockUi();
+  updateCompareButtons(name);
+}
+
+function updateCompareButtons(name) {
+  const inComp = myCompareList.includes(name);
+  const safeName =
+    typeof CSS !== "undefined" && CSS.escape ? CSS.escape(name) : name.replace(/"/g, '\\"');
+  const btns = document.querySelectorAll(`.compare-toggle-btn[data-compare-name="${safeName}"]`);
+  for (const btn of btns) {
+    if (inComp) {
+      btn.className =
+        "compare-toggle-btn inline-flex items-center space-x-1 px-2 py-1 rounded-md text-[11px] font-semibold bg-amber-500 text-slate-950 font-bold border-amber-400 transition border shadow-sm";
+      btn.innerHTML = "<span>✓ Compare</span>";
+      btn.title = "Remove from Comparison";
+    } else {
+      btn.className =
+        "compare-toggle-btn inline-flex items-center space-x-1 px-2 py-1 rounded-md text-[11px] font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border-slate-700 transition border shadow-sm";
+      btn.innerHTML = "<span>⚖️ Compare</span>";
+      btn.title = "Compare Side-by-Side (2 to 4 tools)";
+    }
+  }
+}
+
+function updateCompareDockUi() {
+  const dock = document.getElementById("compare-dock");
+  const countBadge = document.getElementById("compare-count-badge");
+  if (!dock) return;
+
+  if (myCompareList.length > 0) {
+    dock.classList.remove("hidden");
+    if (countBadge) countBadge.textContent = `${myCompareList.length}/4`;
+  } else {
+    dock.classList.add("hidden");
+  }
+}
+
+function clearCompareList() {
+  const prev = [...myCompareList];
+  myCompareList = [];
+  updateCompareDockUi();
+  for (const n of prev) updateCompareButtons(n);
+  showToast("Cleared comparison selection.");
+}
+
+function launchComparisonModal() {
+  const navCompareBtn = document.getElementById("nav-compare-btn");
+  if (navCompareBtn) navCompareBtn.click();
+}
 
 function initComparator() {
   const compareModal = document.getElementById("compare-modal");
   const navCompareBtn = document.getElementById("nav-compare-btn");
   const closeCompareBtn = document.getElementById("close-compare-modal-btn");
-  const selectA = document.getElementById("compare-select-a");
-  const selectB = document.getElementById("compare-select-b");
+  const select1 = document.getElementById("compare-select-1");
+  const select2 = document.getElementById("compare-select-2");
+  const select3 = document.getElementById("compare-select-3");
+  const select4 = document.getElementById("compare-select-4");
 
-  if (!compareModal || !selectA || !selectB) return;
+  if (!compareModal || !select1 || !select2) return;
 
   // Populate options
   const sorted = [...allResources].sort((a, b) => a.name.localeCompare(b.name));
@@ -3308,83 +4158,126 @@ function initComparator() {
     )
     .join("");
 
-  selectA.innerHTML = optionsHtml;
-  selectB.innerHTML = optionsHtml;
+  const optionalOptionsHtml = '<option value="">(None - Select Tool)</option>' + optionsHtml;
 
-  // Set default matchup (Supabase vs PocketBase)
+  select1.innerHTML = optionsHtml;
+  select2.innerHTML = optionsHtml;
+  if (select3) select3.innerHTML = optionalOptionsHtml;
+  if (select4) select4.innerHTML = optionalOptionsHtml;
+
+  // Set initial selections from myCompareList or defaults
   const defaultA = sorted.find((i) => i.name.toLowerCase().includes("supabase")) || sorted[0];
   const defaultB = sorted.find((i) => i.name.toLowerCase().includes("pocketbase")) || sorted[1];
 
-  if (defaultA) selectA.value = defaultA.name;
-  if (defaultB) selectB.value = defaultB.name;
+  select1.value = myCompareList[0] || (defaultA ? defaultA.name : "");
+  select2.value = myCompareList[1] || (defaultB ? defaultB.name : "");
+  if (select3) select3.value = myCompareList[2] || "";
+  if (select4) select4.value = myCompareList[3] || "";
 
   function renderComparison() {
-    const itemA = allResources.find((i) => i.name === selectA.value) || defaultA;
-    const itemB = allResources.find((i) => i.name === selectB.value) || defaultB;
+    const selectedNames = [select1.value, select2.value, select3?.value, select4?.value].filter(
+      Boolean,
+    );
+
+    const items = selectedNames
+      .map((name) => allResources.find((i) => i.name === name))
+      .filter(Boolean);
+
     const container = document.getElementById("compare-results-container");
-    if (!container || !itemA || !itemB) return;
+    if (!container || items.length === 0) return;
 
-    function renderColumn(item, colorClass, borderClass) {
-      return `
-        <div class="space-y-4 pt-4 md:pt-0">
-          <div class="flex items-center justify-between">
-            <h3 class="text-base font-extrabold text-white flex items-center space-x-2">
-              <span class="${colorClass}">${escapeHtml(item.name)}</span>
-            </h3>
-            <span class="px-2 py-0.5 text-[10px] font-mono rounded bg-slate-800 text-slate-300 border border-slate-700">
-              ${escapeHtml(item.category || item.section || "Dev Tool")}
-            </span>
-          </div>
-
-          <p class="text-xs text-slate-300 leading-relaxed min-h-[40px]">
-            ${escapeHtml(item.description)}
-          </p>
-
-          <div class="p-3.5 rounded-xl bg-slate-950 border ${borderClass} space-y-2">
-            <div class="text-[10px] font-mono uppercase tracking-wider text-slate-400 font-bold">
-              ⚡ Free Tier Allowance & Limits:
-            </div>
-            <div class="text-xs font-bold text-emerald-400">
-              ${escapeHtml(item.freeTierCost || "100% Free Open Source")}
-            </div>
-            ${item.perkValue ? `<div class="text-[11px] text-pink-300">🎁 Perk: ${escapeHtml(item.perkValue)}</div>` : ""}
-          </div>
-
-          <div class="grid grid-cols-2 gap-2 text-xs font-mono">
-            <div class="p-2.5 rounded-lg bg-slate-950/80 border border-slate-800">
-              <span class="text-[10px] text-slate-500 block">License / Open Source:</span>
-              <span class="text-slate-200 font-bold">${item.repo ? "✅ Open Source" : "Verified Free Tier"}</span>
-            </div>
-            <div class="p-2.5 rounded-lg bg-slate-950/80 border border-slate-800">
-              <span class="text-[10px] text-slate-500 block">Language / Platform:</span>
-              <span class="text-slate-200 font-bold">${escapeHtml(item.language || item.platform || "Multi-Platform")}</span>
-            </div>
-          </div>
-
-          ${
-            item.dockerCompose
-              ? `
-          <div class="p-2.5 rounded-lg bg-slate-950/80 border border-slate-800 text-xs font-mono">
-            <span class="text-[10px] text-cyan-400 block mb-1">🐳 1-Click Docker Image:</span>
-            <code class="text-[11px] text-slate-300 break-all select-all">${escapeHtml(item.dockerCompose)}</code>
-          </div>
-          `
-              : ""
-          }
-
-          <div class="pt-2">
-            <a href="${escapeHtml(item.url || item.repo)}" target="_blank" rel="noopener noreferrer" class="w-full py-2 px-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs flex items-center justify-center space-x-1.5 transition border border-slate-700 hover:border-slate-600">
-              <span>Visit Official Site</span>
-              <span>↗</span>
-            </a>
-          </div>
-        </div>
-      `;
-    }
+    const colWidth =
+      items.length === 2
+        ? "grid-cols-1 md:grid-cols-2"
+        : items.length === 3
+          ? "grid-cols-1 md:grid-cols-3"
+          : "grid-cols-1 md:grid-cols-2 lg:grid-cols-4";
+    const colors = [
+      "text-purple-400 border-purple-500/40",
+      "text-cyan-400 border-cyan-500/40",
+      "text-amber-400 border-amber-500/40",
+      "text-emerald-400 border-emerald-500/40",
+    ];
 
     container.innerHTML = `
-      ${renderColumn(itemA, "text-purple-400", "border-purple-500/30")}
-      ${renderColumn(itemB, "text-cyan-400", "border-cyan-500/30 md:pl-6")}
+      <div class="grid ${colWidth} gap-4">
+        ${items
+          .map((item, idx) => {
+            const colorPair = colors[idx % colors.length].split(" ");
+            const textColor = colorPair[0];
+            const borderColor = colorPair[1];
+            const isOffline = (item.statusTags || []).some((t) =>
+              t.toLowerCase().includes("offline"),
+            );
+            const isFoss = Boolean(
+              item.repo && !item.license?.toLowerCase().includes("proprietary"),
+            );
+            const isSigned = item.codeSigned === true;
+
+            return `
+            <div class="p-4 rounded-2xl bg-slate-950/80 border ${borderColor} flex flex-col justify-between space-y-4">
+              <div class="space-y-3">
+                <div class="flex items-center justify-between">
+                  <h3 class="text-sm font-extrabold text-white flex items-center space-x-1.5 truncate">
+                    <span class="${textColor}">${escapeHtml(item.name)}</span>
+                  </h3>
+                  <span class="px-2 py-0.5 text-[10px] font-mono rounded bg-slate-800 text-slate-300 border border-slate-700">
+                    ${escapeHtml(item.category || item.section || "Tool")}
+                  </span>
+                </div>
+
+                <p class="text-xs text-slate-300 leading-relaxed min-h-[48px]">
+                  ${escapeHtml(item.description)}
+                </p>
+
+                <div class="p-3 rounded-xl bg-slate-900 border border-slate-800 space-y-1.5 text-xs font-mono">
+                  <div class="text-[10px] uppercase tracking-wider text-slate-400 font-bold">
+                    ⚡ Free Tier & Limits:
+                  </div>
+                  <div class="font-bold text-emerald-400">
+                    ${escapeHtml(item.freeTierCost || item.freeTier || "100% Free Open Source")}
+                  </div>
+                  ${item.rateLimit ? `<div class="text-[11px] text-slate-400">Rate Limit: ${escapeHtml(item.rateLimit)}</div>` : ""}
+                </div>
+
+                <div class="space-y-1.5 text-[11px] font-mono">
+                  <div class="flex items-center justify-between p-2 rounded-lg bg-slate-900/60 border border-slate-800/80">
+                    <span class="text-slate-400">License:</span>
+                    <span class="font-bold text-slate-200">${escapeHtml(item.license || (isFoss ? "Open Source" : "Free Plan"))}</span>
+                  </div>
+                  <div class="flex items-center justify-between p-2 rounded-lg bg-slate-900/60 border border-slate-800/80">
+                    <span class="text-slate-400">Offline Execution:</span>
+                    <span class="font-bold ${isOffline ? "text-emerald-400" : "text-slate-300"}">${isOffline ? "⚡ 100% Offline" : "☁️ Cloud / API"}</span>
+                  </div>
+                  <div class="flex items-center justify-between p-2 rounded-lg bg-slate-900/60 border border-slate-800/80">
+                    <span class="text-slate-400">Security Attestation:</span>
+                    <span class="font-bold ${isSigned ? "text-emerald-400" : "text-slate-300"}">${isSigned ? "🛡️ SEC-06 Signed" : item.firstParty ? "🏛️ RitualDev FOSS" : "Community Verified"}</span>
+                  </div>
+                  ${
+                    item.dockerCompose
+                      ? `
+                  <div class="p-2 rounded-lg bg-slate-900/60 border border-slate-800/80">
+                    <span class="text-[10px] text-cyan-400 block mb-0.5">🐳 Docker Image:</span>
+                    <code class="text-[10px] text-slate-300 break-all select-all">${escapeHtml(item.dockerCompose)}</code>
+                  </div>`
+                      : ""
+                  }
+                </div>
+              </div>
+
+              <div class="pt-2 flex items-center space-x-2">
+                <button data-stack-name="${escapeHtml(item.name)}" class="stack-toggle-btn flex-1 py-1.5 px-2 rounded-xl text-xs font-bold ${isItemInStack(item.name) ? "bg-cyan-500 text-slate-950" : "bg-slate-800 text-cyan-300 border border-slate-700"} transition text-center">
+                  ${isItemInStack(item.name) ? "✓ In Stack" : "🔀 +Stack"}
+                </button>
+                <a href="${escapeHtml(item.url || item.repo)}" target="_blank" rel="noopener noreferrer" class="py-1.5 px-3 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs transition text-center shadow">
+                  ↗
+                </a>
+              </div>
+            </div>
+          `;
+          })
+          .join("")}
+      </div>
     `;
   }
 
@@ -3407,8 +4300,10 @@ function initComparator() {
     if (e.target === compareModal) closeModal();
   });
 
-  selectA.addEventListener("change", renderComparison);
-  selectB.addEventListener("change", renderComparison);
+  select1.addEventListener("change", renderComparison);
+  select2.addEventListener("change", renderComparison);
+  if (select3) select3.addEventListener("change", renderComparison);
+  if (select4) select4.addEventListener("change", renderComparison);
 
   // Preset matchup buttons
   document.querySelectorAll(".compare-preset-btn").forEach((btn) => {
@@ -3417,8 +4312,10 @@ function initComparator() {
       const b = btn.getAttribute("data-b");
       const matchA = allResources.find((i) => i.name.toLowerCase().includes(a.toLowerCase()));
       const matchB = allResources.find((i) => i.name.toLowerCase().includes(b.toLowerCase()));
-      if (matchA) selectA.value = matchA.name;
-      if (matchB) selectB.value = matchB.name;
+      if (matchA) select1.value = matchA.name;
+      if (matchB) select2.value = matchB.name;
+      if (select3) select3.value = "";
+      if (select4) select4.value = "";
       renderComparison();
     });
   });
