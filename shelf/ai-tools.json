@@ -1150,5 +1150,14 @@
     "language": "JavaScript",
     "license": "MIT",
     "featured": false
+  },
+  {
+    "name": "Open Agent API",
+    "category": "AI Agents & Local LLMs",
+    "description": "Open Agent API is a self-hosted gateway that lets existing apps and scripts call configured coding agents through an OpenAI-compatible API. Its source quickstart runs an offline sample without a model-provider key; real coding agents use their own accounts and quotas.",
+    "repo": "https://github.com/jiangxingfan1-coder/Open-Agent-API",
+    "language": "TypeScript",
+    "license": "Apache-2.0",
+    "featured": false
   }
 ]

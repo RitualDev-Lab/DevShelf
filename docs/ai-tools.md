@@ -4,7 +4,7 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total AI Tools](https://img.shields.io/badge/AI_Tools-106_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total AI Tools](https://img.shields.io/badge/AI_Tools-107_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
 [AI & Machine Learning](#ai-machine-learning) • [AI Agent Security & Defense](#ai-agent-security-defense) • [AI Agents & Autonomous Coding](#ai-agents-autonomous-coding) • [AI Agents & Local LLMs](#ai-agents-local-llms) • [AI Agents & MCP Servers](#ai-agents-mcp-servers) • [AI Workflow & Orchestration](#ai-workflow-orchestration) • [ai-tools](#ai-tools) • [Autonomous Coding & Agent Dev](#autonomous-coding-agent-dev) • [Local AI & Inference](#local-ai-inference) • [Web UI & Chat](#web-ui-chat)
@@ -40,13 +40,14 @@
 | [**Docling**](https://github.com/DS4SD/docling) | `Python` | `MIT` | Efficient open-source document parser that converts complex PDF, DOCX, and PPTX documents into structured Markdown and JSON with native table extraction, formula recognition, and LLM-ready chunking. | [GitHub](https://github.com/DS4SD/docling) |
 | [**MarkItDown**](https://github.com/microsoft/markitdown) | `Python` | `MIT` | Microsoft utility for converting multi-format documents (PDF, PowerPoint, Word, Excel, Images, Audio, HTML) into clean Markdown for indexing in AI agent pipelines, vector databases, and LLM contexts. | [GitHub](https://github.com/microsoft/markitdown) |
 
-### <a id="ai-agents-local-llms"></a>AI Agents & Local LLMs (3)
+### <a id="ai-agents-local-llms"></a>AI Agents & Local LLMs (4)
 
 | Tool | Language | License | Description | Links |
 | :--- | :---: | :---: | :--- | :---: |
 | [**Eigenwise Toolshed**](https://github.com/Eigenwise/eigenwise-toolshed) | `JavaScript / Node.js, Claude Code plugins` | `MIT` | Free, MIT-licensed plugins for Claude Code covering codebase maps, project rules, coding-work orchestration, capability discovery, model routing, and local observability. Developers can install individual modular plugins. | [GitHub](https://github.com/Eigenwise/eigenwise-toolshed) |
 | [**Tale**](https://github.com/tale-project/tale) | `TypeScript / Bun` | `MIT` | Open-source project workspace for teams and AI agents, with task delegation, persistent sandbox workspaces, and deliverable review. Self-hosting uses separately configured model-provider credentials. | [GitHub](https://github.com/tale-project/tale) |
 | [**CloudGPU MCP**](https://github.com/cloudgpu-app/cloudgpu-mcp) | `JavaScript` | `MIT` | CloudGPU MCP connects MCP-capable clients to CloudGPU for GPU rental and model API workflows. GPU rental and model API usage are paid based on usage. | [GitHub](https://github.com/cloudgpu-app/cloudgpu-mcp) |
+| [**Open Agent API**](https://github.com/jiangxingfan1-coder/Open-Agent-API) | `TypeScript` | `Apache-2.0` | Open Agent API is a self-hosted gateway that lets existing apps and scripts call configured coding agents through an OpenAI-compatible API. Its source quickstart runs an offline sample without a model-provider key; real coding agents use their own accounts and quotas. | [GitHub](https://github.com/jiangxingfan1-coder/Open-Agent-API) |
 
 ### <a id="ai-agents-mcp-servers"></a>AI Agents & MCP Servers (2)
 
