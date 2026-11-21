@@ -63,10 +63,7 @@ export function evaluateLicenseDrift(
 }
 
 export function evaluatePaywallPageContent(html: string): { violated: boolean; details?: string } {
-  const clean = html
-    .replace(/<script\b[^>]*>[\s\S]*?<\/script\s*>/gi, " ")
-    .replace(/<style\b[^>]*>[\s\S]*?<\/style\s*>/gi, " ")
-    .replace(/<[^>]+>/g, " ");
+  const clean = html.replace(/<[^>]*>/g, " ");
 
   if (PAYWALL_TRAP_REGEX.test(clean)) {
     return {
