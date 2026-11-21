@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 587 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 588 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -1041,6 +1041,15 @@
 - **URL**: https://github.com/modelcontextprotocol/servers/tree/main/src/fetch
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/fetch-mcp-server.html
 - **Description**: Official web content retrieval and markdown conversion MCP server for LLMs and autonomous agents.
+
+### OSTUM Desktop
+- **Category**: Offline Windows assistant for documents and meeting notes
+- **Pricing Model**: See official site for free access and limits
+- **License**: MIT
+- **Language**: C# / WPF / .NET Framework 4.8
+- **URL**: https://ranis2023.github.io/ostum-desktop/en
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/ostum-desktop.html
+- **Description**: Run Qwen and Whisper on a Windows PC, review meeting notes against timestamped quotes, and compare Excel workbooks by key. Chat is free. The optional Pro workspace unlocks after a one-time Telegram subscription check.
 
 ### FinePrint AI
 - **Category**: Developer Utilities

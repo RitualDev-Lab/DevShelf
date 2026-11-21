@@ -1224,5 +1224,19 @@
     "license": "MIT",
     "featured": false,
     "statusTags": ["No Card Required", "Official Standard"]
+  },
+  {
+    "name": "OSTUM Desktop",
+    "category": "Offline Windows assistant for documents and meeting notes",
+    "description": "Run Qwen and Whisper on a Windows PC, review meeting notes against timestamped quotes, and compare Excel workbooks by key. Chat is free. The optional Pro workspace unlocks after a one-time Telegram subscription check.",
+    "repo": "https://github.com/ranis2023/ostum-desktop",
+    "url": "https://ranis2023.github.io/ostum-desktop/en",
+    "language": "C# / WPF / .NET Framework 4.8",
+    "license": "MIT",
+    "featured": false,
+    "nativeBinary": true,
+    "codeSigned": false,
+    "tags": ["windows", "local-llm", "whisper", "gguf", "excel"],
+    "statusTags": ["[UNVERIFIED BINARY - UNSIGNED]"]
   }
 ]
