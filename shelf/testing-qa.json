@@ -7,7 +7,9 @@
     "language": "TypeScript / WebAssembly",
     "license": "Proprietary / Community",
     "featured": true,
-    "goodFirstIssues": "https://github.com/RitualDev-Lab/MockForge/issues"
+    "goodFirstIssues": "https://github.com/RitualDev-Lab/MockForge/issues",
+    "firstParty": true,
+    "editorialNote": "RitualDev Studio First-Party / Affiliated Project"
   },
   {
     "name": "Agent QA",
@@ -653,7 +655,9 @@
     "description": "Unified DAST, SAST, secret hunter, and SCA vulnerability auditor for web apps and APIs. Emits OASIS SARIF v2.1.0 reports, executive HTML dashboards, and context-aware unified git diff auto-patches.",
     "language": "TypeScript",
     "license": "MIT",
-    "featured": true
+    "featured": true,
+    "firstParty": true,
+    "editorialNote": "RitualDev Studio First-Party / Affiliated Project"
   },
   {
     "name": "VibeLocked LeakCheck",

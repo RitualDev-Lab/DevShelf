@@ -14,7 +14,9 @@
       "100% Offline-Friendly",
       "No Card Required"
     ],
-    "pypi": "https://pypi.org/project/promptshield-defense/"
+    "pypi": "https://pypi.org/project/promptshield-defense/",
+    "firstParty": true,
+    "editorialNote": "RitualDev Studio First-Party / Affiliated Project"
   },
   {
     "name": "AgentShield",
@@ -31,7 +33,9 @@
       "100% Offline-Friendly",
       "No Card Required"
     ],
-    "pypi": "https://pypi.org/project/agentshield-defense/"
+    "pypi": "https://pypi.org/project/agentshield-defense/",
+    "firstParty": true,
+    "editorialNote": "RitualDev Studio First-Party / Affiliated Project"
   },
   {
     "name": "mcp-monetize",
@@ -42,7 +46,9 @@
     "license": "MIT",
     "featured": true,
     "statusTags": ["No Card Required", "Featured"],
-    "pypi": "https://pypi.org/project/mcp-monetize/"
+    "pypi": "https://pypi.org/project/mcp-monetize/",
+    "firstParty": true,
+    "editorialNote": "RitualDev Studio First-Party / Affiliated Project"
   },
   {
     "name": "HOL Guard",
@@ -1036,7 +1042,9 @@
     "description": "Progressive skill disclosure and context compaction engine for autonomous AI coding agents. Indexes enterprise tool schemas out-of-context and dynamically discloses only required tools to prevent prompt bloat.",
     "language": "TypeScript",
     "license": "Apache-2.0",
-    "featured": true
+    "featured": true,
+    "firstParty": true,
+    "editorialNote": "RitualDev Studio First-Party / Affiliated Project"
   },
   {
     "name": "DBShield",
@@ -1046,7 +1054,9 @@
     "language": "TypeScript",
     "license": "MIT",
     "featured": true,
-    "pypi": "https://pypi.org/project/dbshield-defense/"
+    "pypi": "https://pypi.org/project/dbshield-defense/",
+    "firstParty": true,
+    "editorialNote": "RitualDev Studio First-Party / Affiliated Project"
   },
   {
     "name": "Pydantic AI",
@@ -1159,5 +1169,60 @@
     "language": "TypeScript",
     "license": "Apache-2.0",
     "featured": false
+  },
+  {
+    "name": "GitHub MCP Server",
+    "repo": "https://github.com/modelcontextprotocol/servers",
+    "category": "AI Coding & MCP",
+    "description": "Official Model Context Protocol server providing GitHub issue management, PR reviews, repository searches, and commit inspections for AI coding agents.",
+    "language": "TypeScript",
+    "license": "MIT",
+    "featured": true,
+    "goodFirstIssues": "https://github.com/modelcontextprotocol/servers/issues",
+    "statusTags": ["No Card Required", "Official Standard"]
+  },
+  {
+    "name": "Postgres MCP Server",
+    "repo": "https://github.com/modelcontextprotocol/servers",
+    "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/postgres",
+    "category": "AI Coding & MCP",
+    "description": "Official Model Context Protocol server providing read-only PostgreSQL schema inspection and parameterized query execution for AI assistants.",
+    "language": "TypeScript",
+    "license": "MIT",
+    "featured": true,
+    "statusTags": ["No Card Required", "Official Standard"]
+  },
+  {
+    "name": "Playwright MCP Server",
+    "repo": "https://github.com/executeautomation/mcp-playwright",
+    "category": "AI Coding & MCP",
+    "description": "Headless browser automation and web interaction MCP server powered by Playwright for AI agents.",
+    "language": "TypeScript",
+    "license": "MIT",
+    "featured": true,
+    "goodFirstIssues": "https://github.com/executeautomation/mcp-playwright/issues",
+    "statusTags": ["No Card Required", "Browser Automation"]
+  },
+  {
+    "name": "SQLite MCP Server",
+    "repo": "https://github.com/modelcontextprotocol/servers",
+    "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite",
+    "category": "AI Coding & MCP",
+    "description": "Official local SQLite database introspection, query, and table schema inspection Model Context Protocol server.",
+    "language": "Python",
+    "license": "MIT",
+    "featured": false,
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+  },
+  {
+    "name": "Fetch MCP Server",
+    "repo": "https://github.com/modelcontextprotocol/servers",
+    "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/fetch",
+    "category": "AI Coding & MCP",
+    "description": "Official web content retrieval and markdown conversion MCP server for LLMs and autonomous agents.",
+    "language": "Python",
+    "license": "MIT",
+    "featured": false,
+    "statusTags": ["No Card Required", "Official Standard"]
   }
 ]

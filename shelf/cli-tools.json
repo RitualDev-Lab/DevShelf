@@ -8,7 +8,9 @@
     "license": "Proprietary / Community",
     "featured": true,
     "goodFirstIssues": "https://github.com/RitualDev-Lab/FinePrintAI/issues",
-    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+    "statusTags": ["100% Offline-Friendly", "No Card Required"],
+    "firstParty": true,
+    "editorialNote": "RitualDev Studio First-Party / Affiliated Project"
   },
   {
     "name": "lazygit",
@@ -1320,7 +1322,9 @@
     "description": "Production toolkit and scaffolding engine for Model Context Protocol (MCP) servers. Generates typed TypeScript and FastMCP Python servers, converts OpenAPI specs into tools, and includes a live testing studio.",
     "language": "TypeScript",
     "license": "Apache-2.0",
-    "featured": true
+    "featured": true,
+    "firstParty": true,
+    "editorialNote": "RitualDev Studio First-Party / Affiliated Project"
   },
   {
     "name": "FastMCP",
@@ -1373,5 +1377,49 @@
     ],
     "installDocsUrl": "https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer#installation",
     "installDocsLabel": "Official installation instructions"
+  },
+  {
+    "name": "uv",
+    "repo": "https://github.com/astral-sh/uv",
+    "category": "Package Management & Runtimes",
+    "description": "Extremely fast Python package installer and resolver written in Rust, 10-100x faster than pip.",
+    "language": "Rust",
+    "license": "Apache-2.0 / MIT",
+    "featured": true,
+    "goodFirstIssues": "https://github.com/astral-sh/uv/issues",
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+  },
+  {
+    "name": "DuckDB",
+    "repo": "https://github.com/duckdb/duckdb",
+    "category": "Database & SQL",
+    "description": "High-performance analytical in-process SQL database management system designed for fast OLAP queries.",
+    "language": "C++",
+    "license": "MIT",
+    "featured": true,
+    "goodFirstIssues": "https://github.com/duckdb/duckdb/issues",
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+  },
+  {
+    "name": "just",
+    "repo": "https://github.com/casey/just",
+    "category": "Build & Task Automation",
+    "description": "Handy, modern command runner to save and run project-specific recipes without make syntax quirks.",
+    "language": "Rust",
+    "license": "CC0-1.0",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/casey/just/issues",
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
+  },
+  {
+    "name": "difftastic",
+    "repo": "https://github.com/Wilfred/difftastic",
+    "category": "Git & Version Control",
+    "description": "Syntax-aware diff tool that compares files based on their syntax tree using tree-sitter rather than line-by-line.",
+    "language": "Rust",
+    "license": "MIT",
+    "featured": false,
+    "goodFirstIssues": "https://github.com/Wilfred/difftastic/issues",
+    "statusTags": ["100% Offline-Friendly", "No Card Required"]
   }
 ]

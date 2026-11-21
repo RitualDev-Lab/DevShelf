@@ -41,6 +41,14 @@
         "type": "boolean",
         "description": "Whether this tool is highlighted in weekly spotlights"
       },
+      "firstParty": {
+        "type": "boolean",
+        "description": "Whether this tool was authored, incubated, or is directly maintained by RitualDev Studio"
+      },
+      "editorialNote": {
+        "type": "string",
+        "description": "Transparent editorial independence disclosure for first-party or affiliated projects"
+      },
       "sponsorTier": {
         "type": "string",
         "description": "Optional verified sponsor tier metadata"

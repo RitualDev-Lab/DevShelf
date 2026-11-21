@@ -236,10 +236,11 @@ function printItemCard(item, index) {
   }
   const prefix = index !== undefined ? `${c.purple}[${index + 1}]${c.reset} ` : "";
   const name = `${c.bold}${c.white}${item.name || "Unknown Tool"}${c.reset}`;
+  const affiliated = item.firstParty ? ` ${c.cyan}[RitualDev Affiliated]${c.reset}` : "";
   const cat = `${c.dim}(${item.category || item.section || "Tool"})${c.reset}`;
   const url = getResourceUrl(item);
 
-  console.log(`\n  ${prefix}${name} ${cat}`);
+  console.log(`\n  ${prefix}${name}${affiliated} ${cat}`);
   if (item.alternativeTo) {
     console.log(
       `  ${c.purple}⚡ Alternative to:${c.reset} ${c.bold}${item.alternativeTo}${c.reset}`,

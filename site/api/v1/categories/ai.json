@@ -1,9 +1,9 @@
 {
   "version": "1.1.3",
-  "updatedAt": "2026-11-20T12:04:00.521Z",
+  "updatedAt": "2026-11-21T06:51:36.527Z",
   "slug": "ai",
   "name": "AI Agents & Local LLMs",
-  "count": 107,
+  "count": 112,
   "items": [
     {
       "name": "PromptShield",
@@ -21,6 +21,8 @@
         "No Card Required"
       ],
       "pypi": "https://pypi.org/project/promptshield-defense/",
+      "firstParty": true,
+      "editorialNote": "RitualDev Studio First-Party / Affiliated Project",
       "type": "ai",
       "section": "AI Agents & Local LLMs"
     },
@@ -40,6 +42,8 @@
         "No Card Required"
       ],
       "pypi": "https://pypi.org/project/agentshield-defense/",
+      "firstParty": true,
+      "editorialNote": "RitualDev Studio First-Party / Affiliated Project",
       "type": "ai",
       "section": "AI Agents & Local LLMs"
     },
@@ -56,6 +60,8 @@
         "Featured"
       ],
       "pypi": "https://pypi.org/project/mcp-monetize/",
+      "firstParty": true,
+      "editorialNote": "RitualDev Studio First-Party / Affiliated Project",
       "type": "ai",
       "section": "AI Agents & Local LLMs"
     },
@@ -1548,6 +1554,8 @@
       "language": "TypeScript",
       "license": "Apache-2.0",
       "featured": true,
+      "firstParty": true,
+      "editorialNote": "RitualDev Studio First-Party / Affiliated Project",
       "type": "ai",
       "section": "AI Agents & Local LLMs"
     },
@@ -1560,6 +1568,8 @@
       "license": "MIT",
       "featured": true,
       "pypi": "https://pypi.org/project/dbshield-defense/",
+      "firstParty": true,
+      "editorialNote": "RitualDev Studio First-Party / Affiliated Project",
       "type": "ai",
       "section": "AI Agents & Local LLMs"
     },
@@ -1705,6 +1715,86 @@
       "language": "TypeScript",
       "license": "Apache-2.0",
       "featured": false,
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "GitHub MCP Server",
+      "repo": "https://github.com/modelcontextprotocol/servers",
+      "category": "AI Coding & MCP",
+      "description": "Official Model Context Protocol server providing GitHub issue management, PR reviews, repository searches, and commit inspections for AI coding agents.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "featured": true,
+      "goodFirstIssues": "https://github.com/modelcontextprotocol/servers/issues",
+      "statusTags": [
+        "No Card Required",
+        "Official Standard"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Postgres MCP Server",
+      "repo": "https://github.com/modelcontextprotocol/servers",
+      "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/postgres",
+      "category": "AI Coding & MCP",
+      "description": "Official Model Context Protocol server providing read-only PostgreSQL schema inspection and parameterized query execution for AI assistants.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "featured": true,
+      "statusTags": [
+        "No Card Required",
+        "Official Standard"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Playwright MCP Server",
+      "repo": "https://github.com/executeautomation/mcp-playwright",
+      "category": "AI Coding & MCP",
+      "description": "Headless browser automation and web interaction MCP server powered by Playwright for AI agents.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "featured": true,
+      "goodFirstIssues": "https://github.com/executeautomation/mcp-playwright/issues",
+      "statusTags": [
+        "No Card Required",
+        "Browser Automation"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "SQLite MCP Server",
+      "repo": "https://github.com/modelcontextprotocol/servers",
+      "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite",
+      "category": "AI Coding & MCP",
+      "description": "Official local SQLite database introspection, query, and table schema inspection Model Context Protocol server.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Fetch MCP Server",
+      "repo": "https://github.com/modelcontextprotocol/servers",
+      "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/fetch",
+      "category": "AI Coding & MCP",
+      "description": "Official web content retrieval and markdown conversion MCP server for LLMs and autonomous agents.",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "statusTags": [
+        "No Card Required",
+        "Official Standard"
+      ],
       "type": "ai",
       "section": "AI Agents & Local LLMs"
     }

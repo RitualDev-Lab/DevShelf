@@ -1,9 +1,9 @@
 {
   "version": "1.1.3",
-  "updatedAt": "2026-11-20T12:04:00.521Z",
+  "updatedAt": "2026-11-21T06:51:36.527Z",
   "slug": "cli",
   "name": "CLI & Developer Productivity",
-  "count": 128,
+  "count": 132,
   "items": [
     {
       "name": "FinePrint AI",
@@ -18,6 +18,8 @@
         "100% Offline-Friendly",
         "No Card Required"
       ],
+      "firstParty": true,
+      "editorialNote": "RitualDev Studio First-Party / Affiliated Project",
       "type": "cli",
       "section": "CLI & Productivity Tools"
     },
@@ -1912,6 +1914,8 @@
       "language": "TypeScript",
       "license": "Apache-2.0",
       "featured": true,
+      "firstParty": true,
+      "editorialNote": "RitualDev Studio First-Party / Affiliated Project",
       "type": "cli",
       "section": "CLI & Productivity Tools"
     },
@@ -1974,6 +1978,70 @@
       ],
       "installDocsUrl": "https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer#installation",
       "installDocsLabel": "Official installation instructions",
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "uv",
+      "repo": "https://github.com/astral-sh/uv",
+      "category": "Package Management & Runtimes",
+      "description": "Extremely fast Python package installer and resolver written in Rust, 10-100x faster than pip.",
+      "language": "Rust",
+      "license": "Apache-2.0 / MIT",
+      "featured": true,
+      "goodFirstIssues": "https://github.com/astral-sh/uv/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "DuckDB",
+      "repo": "https://github.com/duckdb/duckdb",
+      "category": "Database & SQL",
+      "description": "High-performance analytical in-process SQL database management system designed for fast OLAP queries.",
+      "language": "C++",
+      "license": "MIT",
+      "featured": true,
+      "goodFirstIssues": "https://github.com/duckdb/duckdb/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "just",
+      "repo": "https://github.com/casey/just",
+      "category": "Build & Task Automation",
+      "description": "Handy, modern command runner to save and run project-specific recipes without make syntax quirks.",
+      "language": "Rust",
+      "license": "CC0-1.0",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/casey/just/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "difftastic",
+      "repo": "https://github.com/Wilfred/difftastic",
+      "category": "Git & Version Control",
+      "description": "Syntax-aware diff tool that compares files based on their syntax tree using tree-sitter rather than line-by-line.",
+      "language": "Rust",
+      "license": "MIT",
+      "featured": false,
+      "goodFirstIssues": "https://github.com/Wilfred/difftastic/issues",
+      "statusTags": [
+        "100% Offline-Friendly",
+        "No Card Required"
+      ],
       "type": "cli",
       "section": "CLI & Productivity Tools"
     }

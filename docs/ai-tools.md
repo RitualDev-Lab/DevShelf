@@ -4,10 +4,10 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total AI Tools](https://img.shields.io/badge/AI_Tools-107_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total AI Tools](https://img.shields.io/badge/AI_Tools-112_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
-[AI & Machine Learning](#ai-machine-learning) • [AI Agent Security & Defense](#ai-agent-security-defense) • [AI Agents & Autonomous Coding](#ai-agents-autonomous-coding) • [AI Agents & Local LLMs](#ai-agents-local-llms) • [AI Agents & MCP Servers](#ai-agents-mcp-servers) • [AI Workflow & Orchestration](#ai-workflow-orchestration) • [ai-tools](#ai-tools) • [Autonomous Coding & Agent Dev](#autonomous-coding-agent-dev) • [Local AI & Inference](#local-ai-inference) • [Web UI & Chat](#web-ui-chat)
+[AI & Machine Learning](#ai-machine-learning) • [AI Agent Security & Defense](#ai-agent-security-defense) • [AI Agents & Autonomous Coding](#ai-agents-autonomous-coding) • [AI Agents & Local LLMs](#ai-agents-local-llms) • [AI Agents & MCP Servers](#ai-agents-mcp-servers) • [AI Coding & MCP](#ai-coding-mcp) • [AI Workflow & Orchestration](#ai-workflow-orchestration) • [ai-tools](#ai-tools) • [Autonomous Coding & Agent Dev](#autonomous-coding-agent-dev) • [Local AI & Inference](#local-ai-inference) • [Web UI & Chat](#web-ui-chat)
 
 ---
 
@@ -21,8 +21,8 @@
 
 | Tool | Language | License | Description | Links |
 | :--- | :---: | :---: | :--- | :---: |
-| [**⭐ PromptShield**](https://github.com/RitualDev-Lab/PromptShield) | `TypeScript / WebAssembly` | `Proprietary / Community` | Enterprise in-browser AI Data Loss Prevention & prompt firewall extension stopping API credentials and PII from leaking to LLMs. | [GitHub](https://github.com/RitualDev-Lab/PromptShield) |
-| [**⭐ AgentShield**](https://github.com/RitualDev-Lab/AgentShield) | `TypeScript / Node.js` | `Apache-2.0` | Zero-leak secret interception, deterministic Shannon entropy tokenization, AST shell command sandbox, and CI/CD security gate for Claude Code, Cursor, and autonomous AI agents. | [GitHub](https://github.com/RitualDev-Lab/AgentShield) |
+| [**⭐ PromptShield**](https://github.com/RitualDev-Lab/PromptShield) <br/><sub>*(RitualDev Affiliated)*</sub> | `TypeScript / WebAssembly` | `Proprietary / Community` | Enterprise in-browser AI Data Loss Prevention & prompt firewall extension stopping API credentials and PII from leaking to LLMs. | [GitHub](https://github.com/RitualDev-Lab/PromptShield) |
+| [**⭐ AgentShield**](https://github.com/RitualDev-Lab/AgentShield) <br/><sub>*(RitualDev Affiliated)*</sub> | `TypeScript / Node.js` | `Apache-2.0` | Zero-leak secret interception, deterministic Shannon entropy tokenization, AST shell command sandbox, and CI/CD security gate for Claude Code, Cursor, and autonomous AI agents. | [GitHub](https://github.com/RitualDev-Lab/AgentShield) |
 | [**HOL Guard**](https://github.com/hashgraph-online/hol-guard) | `Python` | `Apache-2.0` | Open-source policy and approval layer for AI coding agents that checks supported shell, file, package, and MCP actions before execution, with coverage limited by each agent's hooks. | [GitHub](https://github.com/hashgraph-online/hol-guard) |
 | [**npmscan**](https://github.com/salemalem/npmscan-mcp-plugin) | `TypeScript` | `MIT` | Free remote MCP server and agent skills that check npm packages before an AI coding agent installs them: known vulnerabilities, malware, typosquats, maintainer changes, provenance and install scripts. No API key. | [GitHub](https://github.com/salemalem/npmscan-mcp-plugin) |
 
@@ -30,8 +30,8 @@
 
 | Tool | Language | License | Description | Links |
 | :--- | :---: | :---: | :--- | :---: |
-| [**⭐ SkillPrism**](https://github.com/RitualDev-Lab/SkillPrism) | `TypeScript` | `Apache-2.0` | Progressive skill disclosure and context compaction engine for autonomous AI coding agents. Indexes enterprise tool schemas out-of-context and dynamically discloses only required tools to prevent prompt bloat. | [GitHub](https://github.com/RitualDev-Lab/SkillPrism) |
-| [**⭐ DBShield**](https://github.com/RitualDev-Lab/DBShield) | `TypeScript` | `MIT` | Safety-first database guardrail and transaction-rollback sandboxing MCP server for AI coding agents. Intercepts unconstrained mutations, bulk deletes, lock escalations, and masks sensitive PII in real-time. | [GitHub](https://github.com/RitualDev-Lab/DBShield) |
+| [**⭐ SkillPrism**](https://github.com/RitualDev-Lab/SkillPrism) <br/><sub>*(RitualDev Affiliated)*</sub> | `TypeScript` | `Apache-2.0` | Progressive skill disclosure and context compaction engine for autonomous AI coding agents. Indexes enterprise tool schemas out-of-context and dynamically discloses only required tools to prevent prompt bloat. | [GitHub](https://github.com/RitualDev-Lab/SkillPrism) |
+| [**⭐ DBShield**](https://github.com/RitualDev-Lab/DBShield) <br/><sub>*(RitualDev Affiliated)*</sub> | `TypeScript` | `MIT` | Safety-first database guardrail and transaction-rollback sandboxing MCP server for AI coding agents. Intercepts unconstrained mutations, bulk deletes, lock escalations, and masks sensitive PII in real-time. | [GitHub](https://github.com/RitualDev-Lab/DBShield) |
 | [**Pydantic AI**](https://github.com/pydantic/pydantic-ai) | `Python` | `MIT` | Production-grade generative AI agent framework built by the Pydantic team. Provides type-safe validation, structured response generation, dependency injection, and stream inspection for LLM applications. | [GitHub](https://github.com/pydantic/pydantic-ai) |
 | [**LangGraph**](https://github.com/langchain-ai/langgraph) | `Python / TypeScript` | `MIT` | Multi-agent orchestration library for building stateful, cyclic AI agent workflows with LangChain. Supports long-term human-in-the-loop memory, streaming step-by-step state recovery, and fault-tolerant graphs. | [GitHub](https://github.com/langchain-ai/langgraph) |
 | [**Browser Use**](https://github.com/browser-use/browser-use) | `Python` | `MIT` | Open-source web automation library connecting LLMs to live browser sessions. Allows autonomous agents to navigate web apps, extract deep elements, click buttons, solve captchas, and automate online workflows. | [GitHub](https://github.com/browser-use/browser-use) |
@@ -53,8 +53,18 @@
 
 | Tool | Language | License | Description | Links |
 | :--- | :---: | :---: | :--- | :---: |
-| [**⭐ mcp-monetize**](https://github.com/RitualDev-Lab/mcp-monetize) | `TypeScript` | `MIT` | Drop-in billing, credit tracking, and paywall middleware for Model Context Protocol (MCP) servers with Dodo Payments & Stripe support. | [GitHub](https://github.com/RitualDev-Lab/mcp-monetize) |
+| [**⭐ mcp-monetize**](https://github.com/RitualDev-Lab/mcp-monetize) <br/><sub>*(RitualDev Affiliated)*</sub> | `TypeScript` | `MIT` | Drop-in billing, credit tracking, and paywall middleware for Model Context Protocol (MCP) servers with Dodo Payments & Stripe support. | [GitHub](https://github.com/RitualDev-Lab/mcp-monetize) |
 | [**MCP Dubai**](https://github.com/mahdi-salmanzade/MCP-Dubai) | `Python` | `MIT` | Open-source MCP server connecting AI assistants to Dubai and UAE public APIs — real estate, transport, statistics, education, health, and business data via Dubai Pulse, RTA, DLD, KHDA, and DHA. Runs locally over stdio. | [GitHub](https://github.com/mahdi-salmanzade/MCP-Dubai) |
+
+### <a id="ai-coding-mcp"></a>AI Coding & MCP (5)
+
+| Tool | Language | License | Description | Links |
+| :--- | :---: | :---: | :--- | :---: |
+| [**⭐ GitHub MCP Server**](https://github.com/modelcontextprotocol/servers) | `TypeScript` | `MIT` | Official Model Context Protocol server providing GitHub issue management, PR reviews, repository searches, and commit inspections for AI coding agents. | [GitHub](https://github.com/modelcontextprotocol/servers) |
+| [**⭐ Postgres MCP Server**](https://github.com/modelcontextprotocol/servers) | `TypeScript` | `MIT` | Official Model Context Protocol server providing read-only PostgreSQL schema inspection and parameterized query execution for AI assistants. | [GitHub](https://github.com/modelcontextprotocol/servers) |
+| [**⭐ Playwright MCP Server**](https://github.com/executeautomation/mcp-playwright) | `TypeScript` | `MIT` | Headless browser automation and web interaction MCP server powered by Playwright for AI agents. | [GitHub](https://github.com/executeautomation/mcp-playwright) |
+| [**SQLite MCP Server**](https://github.com/modelcontextprotocol/servers) | `Python` | `MIT` | Official local SQLite database introspection, query, and table schema inspection Model Context Protocol server. | [GitHub](https://github.com/modelcontextprotocol/servers) |
+| [**Fetch MCP Server**](https://github.com/modelcontextprotocol/servers) | `Python` | `MIT` | Official web content retrieval and markdown conversion MCP server for LLMs and autonomous agents. | [GitHub](https://github.com/modelcontextprotocol/servers) |
 
 ### <a id="ai-workflow-orchestration"></a>AI Workflow & Orchestration (22)
 
