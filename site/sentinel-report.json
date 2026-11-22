@@ -1,0 +1,248 @@
+{
+  "timestamp": "2026-11-22T10:33:36.188Z",
+  "totalScanned": 587,
+  "healthyCount": 557,
+  "flaggedCount": 30,
+  "flags": [
+    {
+      "name": "Flowise",
+      "file": "ai-tools.json",
+      "url": "https://github.com/FlowiseAI/Flowise",
+      "issueType": "ARCHIVED_REPO",
+      "severity": "warning",
+      "details": "Repository 'FlowiseAI/Flowise' has been marked archived by its maintainer."
+    },
+    {
+      "name": "TGI (Text Generation Inference)",
+      "file": "ai-tools.json",
+      "url": "https://github.com/huggingface/text-generation-inference",
+      "issueType": "ARCHIVED_REPO",
+      "severity": "warning",
+      "details": "Repository 'huggingface/text-generation-inference' has been marked archived by its maintainer."
+    },
+    {
+      "name": "AutoGen",
+      "file": "ai-tools.json",
+      "url": "https://github.com/microsoft/autogen",
+      "issueType": "ARCHIVED_REPO",
+      "severity": "warning",
+      "details": "Repository 'microsoft/autogen' has been marked archived by its maintainer."
+    },
+    {
+      "name": "AutoAWQ",
+      "file": "ai-tools.json",
+      "url": "https://github.com/casper-hansen/AutoAWQ",
+      "issueType": "ARCHIVED_REPO",
+      "severity": "warning",
+      "details": "Repository 'casper-hansen/AutoAWQ' has been marked archived by its maintainer."
+    },
+    {
+      "name": "AutoGPTQ",
+      "file": "ai-tools.json",
+      "url": "https://github.com/AutoGPTQ/AutoGPTQ",
+      "issueType": "ARCHIVED_REPO",
+      "severity": "warning",
+      "details": "Repository 'AutoGPTQ/AutoGPTQ' has been marked archived by its maintainer."
+    },
+    {
+      "name": "Piper TTS",
+      "file": "ai-tools.json",
+      "url": "https://github.com/rhasspy/piper",
+      "issueType": "ARCHIVED_REPO",
+      "severity": "warning",
+      "details": "Repository 'rhasspy/piper' has been marked archived by its maintainer."
+    },
+    {
+      "name": "Postgres MCP Server",
+      "file": "ai-tools.json",
+      "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/postgres",
+      "issueType": "HTTP_DEAD",
+      "severity": "critical",
+      "details": "Endpoint returned HTTP error code 404."
+    },
+    {
+      "name": "SQLite MCP Server",
+      "file": "ai-tools.json",
+      "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite",
+      "issueType": "HTTP_DEAD",
+      "severity": "critical",
+      "details": "Endpoint returned HTTP error code 404."
+    },
+    {
+      "name": "RoboHash",
+      "file": "apis.json",
+      "url": "https://robohash.org",
+      "issueType": "HTTP_DEAD",
+      "severity": "warning",
+      "details": "Endpoint returned HTTP error code 405."
+    },
+    {
+      "name": "Wikipedia REST API",
+      "file": "apis.json",
+      "url": "https://en.wikipedia.org/api/rest_v1",
+      "issueType": "HTTP_DEAD",
+      "severity": "critical",
+      "details": "Endpoint returned HTTP error code 404."
+    },
+    {
+      "name": "OpenSky Network API",
+      "file": "apis.json",
+      "url": "https://opensky-network.org/apidoc",
+      "issueType": "HTTP_DEAD",
+      "severity": "critical",
+      "details": "Endpoint returned HTTP error code 404."
+    },
+    {
+      "name": "Cataas (Cat as a service)",
+      "file": "apis.json",
+      "url": "https://cataas.com",
+      "issueType": "HTTP_DEAD",
+      "severity": "critical",
+      "details": "Endpoint returned HTTP error code 404."
+    },
+    {
+      "name": "CryptoCompare API",
+      "file": "apis.json",
+      "url": "https://min-api.cryptocompare.com",
+      "issueType": "HTTP_DEAD",
+      "severity": "warning",
+      "details": "Endpoint returned HTTP error code 401."
+    },
+    {
+      "name": "Genderize API",
+      "file": "apis.json",
+      "url": "https://api.genderize.io",
+      "issueType": "HTTP_DEAD",
+      "severity": "warning",
+      "details": "Endpoint returned HTTP error code 422."
+    },
+    {
+      "name": "Agify API",
+      "file": "apis.json",
+      "url": "https://api.agify.io",
+      "issueType": "HTTP_DEAD",
+      "severity": "warning",
+      "details": "Endpoint returned HTTP error code 422."
+    },
+    {
+      "name": "Nationalize API",
+      "file": "apis.json",
+      "url": "https://api.nationalize.io",
+      "issueType": "HTTP_DEAD",
+      "severity": "warning",
+      "details": "Endpoint returned HTTP error code 422."
+    },
+    {
+      "name": "PocketBase 1-Click Backend",
+      "file": "boilerplates.json",
+      "url": "https://github.com/pocketbase/pocketbase",
+      "issueType": "ARCHIVED_REPO",
+      "severity": "warning",
+      "details": "Repository 'pocketbase/pocketbase' has been marked archived by its maintainer."
+    },
+    {
+      "name": "Remix Indie Stack",
+      "file": "boilerplates.json",
+      "url": "https://github.com/remix-run/indie-stack",
+      "issueType": "ARCHIVED_REPO",
+      "severity": "warning",
+      "details": "Repository 'remix-run/indie-stack' has been marked archived by its maintainer."
+    },
+    {
+      "name": "speedtest-cli",
+      "file": "cli-tools.json",
+      "url": "https://github.com/sivel/speedtest-cli",
+      "issueType": "ARCHIVED_REPO",
+      "severity": "warning",
+      "details": "Repository 'sivel/speedtest-cli' has been marked archived by its maintainer."
+    },
+    {
+      "name": "inxi",
+      "file": "cli-tools.json",
+      "url": "https://github.com/smxi/inxi",
+      "issueType": "ARCHIVED_REPO",
+      "severity": "warning",
+      "details": "Repository 'smxi/inxi' has been marked archived by its maintainer."
+    },
+    {
+      "name": "Solaris Dev Shop",
+      "file": "cli-tools.json",
+      "url": "https://github.com/Shaisolaris/solaris-dev-shop",
+      "issueType": "HTTP_DEAD",
+      "severity": "critical",
+      "details": "GitHub repository returned HTTP 404 (Not Found or made private)."
+    },
+    {
+      "name": "Solaris Dev Shop",
+      "file": "cli-tools.json",
+      "url": "https://github.com/Shaisolaris/solaris-dev-shop",
+      "issueType": "HTTP_DEAD",
+      "severity": "critical",
+      "details": "Endpoint returned HTTP error code 404."
+    },
+    {
+      "name": "Aiven Free Tier",
+      "file": "free-cloud.json",
+      "url": "https://aiven.io/free-plans",
+      "issueType": "HTTP_DEAD",
+      "severity": "critical",
+      "details": "Endpoint returned HTTP error code 404."
+    },
+    {
+      "name": "Plausible Analytics Self-Hosted",
+      "file": "free-cloud.json",
+      "url": "https://plausible.io/self-hosted",
+      "issueType": "HTTP_DEAD",
+      "severity": "critical",
+      "details": "Endpoint returned HTTP error code 404."
+    },
+    {
+      "name": "Cloudflare for Open Source",
+      "file": "perks.json",
+      "url": "https://www.cloudflare.com/open-source-sponsorship",
+      "issueType": "HTTP_DEAD",
+      "severity": "critical",
+      "details": "Endpoint returned HTTP error code 404."
+    },
+    {
+      "name": "1Password for Open Source",
+      "file": "perks.json",
+      "url": "https://github.com/1Password/op-connect-playbook",
+      "issueType": "HTTP_DEAD",
+      "severity": "critical",
+      "details": "Endpoint returned HTTP error code 404."
+    },
+    {
+      "name": "Twilio Startups Program",
+      "file": "perks.json",
+      "url": "https://www.twilio.com/en-us/startups",
+      "issueType": "HTTP_DEAD",
+      "severity": "critical",
+      "details": "Endpoint returned HTTP error code 404."
+    },
+    {
+      "name": "Crowdin for Open Source",
+      "file": "perks.json",
+      "url": "https://crowdin.com/page/open-source-project-setup",
+      "issueType": "HTTP_DEAD",
+      "severity": "critical",
+      "details": "Endpoint returned HTTP error code 404."
+    },
+    {
+      "name": "Dredd",
+      "file": "testing-qa.json",
+      "url": "https://github.com/apiaryio/dredd",
+      "issueType": "ARCHIVED_REPO",
+      "severity": "warning",
+      "details": "Repository 'apiaryio/dredd' has been marked archived by its maintainer."
+    },
+    {
+      "name": "Lost-Pixel",
+      "file": "testing-qa.json",
+      "url": "https://github.com/lost-pixel/lost-pixel",
+      "issueType": "ARCHIVED_REPO",
+      "severity": "warning",
+      "details": "Repository 'lost-pixel/lost-pixel' has been marked archived by its maintainer."
+    }
+  ]
+}
