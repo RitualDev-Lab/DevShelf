@@ -62,7 +62,7 @@ jobs:
           if [ -f site/sentinel-report.json ]; then
             git add site/sentinel-report.json
             if ! git diff --cached --quiet; then
-              git commit -m "chore(sentinel): update weekly health, license & paywall audit report [skip ci]"
+              git commit -m "chore(sentinel): update weekly health, license & paywall audit report"
               git push origin main || (
                 BRANCH="telemetry/sentinel-$(date +%Y%m%d%H%M)"
                 git checkout -b "$BRANCH"
