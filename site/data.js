@@ -1,13 +1,13 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-11-22T04:56:39.180Z",
-  "totalCount": 587,
-  "reposCount": 374,
+  "updatedAt": "2026-11-22T12:15:15.901Z",
+  "totalCount": 588,
+  "reposCount": 375,
   "facets": {
-    "repos": 374
+    "repos": 375
   },
   "counts": {
     "aiTools": 113,
-    "cliTools": 132,
+    "cliTools": 133,
     "testingQa": 67,
     "apis": 110,
     "freeCloud": 72,
@@ -3869,6 +3869,24 @@ window.DEVSHELF_DATA = {
       "statusTags": [
         "100% Offline-Friendly",
         "No Card Required"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "Wix to Notion Reference Connector",
+      "category": "Wix and Notion workflow reference",
+      "description": "MIT Python CLI reference for mapping Wix enquiry payloads into Notion, with durable-queue recovery and a synthetic local demo. Live-provider delivery is unverified; server-side configuration is required.",
+      "repo": "https://github.com/dragonacademy4/wix-notion-reference",
+      "language": "Python 3.11+; Linux/macOS (POSIX locking)",
+      "license": "MIT",
+      "featured": false,
+      "tags": [
+        "wix",
+        "notion",
+        "python",
+        "workflow",
+        "reference"
       ],
       "type": "cli",
       "section": "CLI & Productivity Tools"
