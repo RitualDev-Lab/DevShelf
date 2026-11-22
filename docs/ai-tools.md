@@ -4,10 +4,10 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total AI Tools](https://img.shields.io/badge/AI_Tools-112_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total AI Tools](https://img.shields.io/badge/AI_Tools-113_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
-[AI & Machine Learning](#ai-machine-learning) • [AI Agent Security & Defense](#ai-agent-security-defense) • [AI Agents & Autonomous Coding](#ai-agents-autonomous-coding) • [AI Agents & Local LLMs](#ai-agents-local-llms) • [AI Agents & MCP Servers](#ai-agents-mcp-servers) • [AI Coding & MCP](#ai-coding-mcp) • [AI Workflow & Orchestration](#ai-workflow-orchestration) • [ai-tools](#ai-tools) • [Autonomous Coding & Agent Dev](#autonomous-coding-agent-dev) • [Local AI & Inference](#local-ai-inference) • [Web UI & Chat](#web-ui-chat)
+[AI & Machine Learning](#ai-machine-learning) • [AI Agent Security & Defense](#ai-agent-security-defense) • [AI Agents & Autonomous Coding](#ai-agents-autonomous-coding) • [AI Agents & Local LLMs](#ai-agents-local-llms) • [AI Agents & MCP Servers](#ai-agents-mcp-servers) • [AI Coding & MCP](#ai-coding-mcp) • [AI Workflow & Orchestration](#ai-workflow-orchestration) • [ai-tools](#ai-tools) • [Autonomous Coding & Agent Dev](#autonomous-coding-agent-dev) • [Local AI & Inference](#local-ai-inference) • [Offline Windows assistant for documents and meeting notes](#offline-windows-assistant-for-documents-and-meeting-notes) • [Web UI & Chat](#web-ui-chat)
 
 ---
 
@@ -170,6 +170,12 @@
 | [**AutoRound**](https://github.com/intel/auto-round) | `Python` | `Apache-2.0` | Intel's advanced weight-only quantization algorithm for low-bit LLM optimization without accuracy degradation. | [GitHub](https://github.com/intel/auto-round) |
 | [**FastChat**](https://github.com/lm-sys/FastChat) | `Python` | `Apache-2.0` | An open platform for training, serving, and evaluating LLM-based chatbots, the core engine behind LMSYS Chatbot Arena. | [GitHub](https://github.com/lm-sys/FastChat) |
 | [**GPTCache**](https://github.com/zilliztech/gptcache) | `Python` | `MIT` | Semantic cache for LLM queries to cut costs and speed up response time up to 10x using vector similarity. | [GitHub](https://github.com/zilliztech/gptcache) |
+
+### <a id="offline-windows-assistant-for-documents-and-meeting-notes"></a>Offline Windows assistant for documents and meeting notes (1)
+
+| Tool | Language | License | Description | Links |
+| :--- | :---: | :---: | :--- | :---: |
+| [**OSTUM Desktop**](https://github.com/ranis2023/ostum-desktop) | `C# / WPF / .NET Framework 4.8` | `MIT` | Run Qwen and Whisper on a Windows PC, review meeting notes against timestamped quotes, and compare Excel workbooks by key. Chat is free. The optional Pro workspace unlocks after a one-time Telegram subscription check. | [GitHub](https://github.com/ranis2023/ostum-desktop) |
 
 ### <a id="web-ui-chat"></a>Web UI & Chat (2)
 

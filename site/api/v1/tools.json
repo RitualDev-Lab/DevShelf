@@ -2,8 +2,8 @@
   "version": "1.1.3",
   "docs": "https://devshelf.ritualdev.in/docs/api.html",
   "license": "https://github.com/RitualDev-Lab/DevShelf/blob/main/LICENSE",
-  "updatedAt": "2026-11-21T18:16:20.473Z",
-  "totalCount": 587,
+  "updatedAt": "2026-11-21T22:08:19.985Z",
+  "totalCount": 588,
   "tools": [
     {
       "name": "PromptShield",
@@ -1794,6 +1794,30 @@
       "statusTags": [
         "No Card Required",
         "Official Standard"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "OSTUM Desktop",
+      "category": "Offline Windows assistant for documents and meeting notes",
+      "description": "Run Qwen and Whisper on a Windows PC, review meeting notes against timestamped quotes, and compare Excel workbooks by key. Chat is free. The optional Pro workspace unlocks after a one-time Telegram subscription check.",
+      "repo": "https://github.com/ranis2023/ostum-desktop",
+      "url": "https://ranis2023.github.io/ostum-desktop/en",
+      "language": "C# / WPF / .NET Framework 4.8",
+      "license": "MIT",
+      "featured": false,
+      "nativeBinary": true,
+      "codeSigned": false,
+      "tags": [
+        "windows",
+        "local-llm",
+        "whisper",
+        "gguf",
+        "excel"
+      ],
+      "statusTags": [
+        "[UNVERIFIED BINARY - UNSIGNED]"
       ],
       "type": "ai",
       "section": "AI Agents & Local LLMs"
