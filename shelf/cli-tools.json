@@ -1421,5 +1421,15 @@
     "featured": false,
     "goodFirstIssues": "https://github.com/Wilfred/difftastic/issues",
     "statusTags": ["100% Offline-Friendly", "No Card Required"]
+  },
+  {
+    "name": "Wix to Notion Reference Connector",
+    "category": "Wix and Notion workflow reference",
+    "description": "MIT Python CLI reference for mapping Wix enquiry payloads into Notion, with durable-queue recovery and a synthetic local demo. Live-provider delivery is unverified; server-side configuration is required.",
+    "repo": "https://github.com/dragonacademy4/wix-notion-reference",
+    "language": "Python 3.11+; Linux/macOS (POSIX locking)",
+    "license": "MIT",
+    "featured": false,
+    "tags": ["wix", "notion", "python", "workflow", "reference"]
   }
 ]

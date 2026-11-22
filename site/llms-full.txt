@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 587 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 588 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -2267,6 +2267,15 @@
 - **URL**: https://github.com/Wilfred/difftastic
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/difftastic.html
 - **Description**: Syntax-aware diff tool that compares files based on their syntax tree using tree-sitter rather than line-by-line.
+
+### Wix to Notion Reference Connector
+- **Category**: Wix and Notion workflow reference
+- **Pricing Model**: See official site for free access and limits
+- **License**: MIT
+- **Language**: Python 3.11+; Linux/macOS (POSIX locking)
+- **URL**: https://github.com/dragonacademy4/wix-notion-reference
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/wix-to-notion-reference-connector.html
+- **Description**: MIT Python CLI reference for mapping Wix enquiry payloads into Notion, with durable-queue recovery and a synthetic local demo. Live-provider delivery is unverified; server-side configuration is required.
 
 ### MockForge AI
 - **Category**: Browser & E2E Testing
