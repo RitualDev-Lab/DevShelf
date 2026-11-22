@@ -4,7 +4,7 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total APIs](https://img.shields.io/badge/APIs-111_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total APIs](https://img.shields.io/badge/APIs-110_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
 [AI & Machine Learning](#ai-machine-learning) • [Animals & Fun](#animals-fun) • [Books & Literature](#books-literature) • [Development & Testing](#development-testing) • [Entertainment & Media](#entertainment-media) • [Finance & Crypto](#finance-crypto) • [Food & Health](#food-health) • [Games & Media](#games-media) • [Geocoding & IP](#geocoding-ip) • [Media & Images](#media-images) • [News & Media](#news-media) • [Other](#other) • [Science & Astronomy](#science-astronomy) • [Travel & Transit](#travel-transit) • [Weather & Climate](#weather-climate)
@@ -56,7 +56,7 @@
 | [**Open Library Covers API**](https://openlibrary.org/dev/docs/api/covers) | 🟢 No Key | `Unlimited` | Retrieve book cover images and author portraits using ISBN, OCLC, LCCN, or OLID identifiers. |
 | [**Free Dictionary**](https://dictionaryapi.dev) | 🟢 No Key | `Unlimited` | Free developer-friendly English vocabulary API providing word origins, examples, and synonyms. |
 
-### <a id="development-testing"></a>Development & Testing (26)
+### <a id="development-testing"></a>Development & Testing (25)
 
 | API & URL | Auth | Rate Limit | Description |
 | :--- | :---: | :---: | :--- |
@@ -64,7 +64,6 @@
 | [**ReqRes**](https://reqres.in) | 🟢 No Key | `Unlimited` | A hosted REST-API ready to respond to your AJAX requests with simulated realistic user and auth data. |
 | [**DummyJSON**](https://dummyjson.com) | 🟢 No Key | `Unlimited` | Free dummy REST API with products, carts, users, posts, comments, auth, and image placeholder endpoints. |
 | [**Universities List API**](https://github.com/Hipo/university-domains-list) | 🟢 No Key | `Unlimited` | Public directory and queryable dataset of over 9,000 accredited universities and domains worldwide. |
-| [**CountAPI**](https://countapi.xyz) | 🟢 No Key | `Unlimited` | Free, persistent key-value counter API to track page views, hits, and downloads without creating a database. |
 | [**Agify.io**](https://agify.io) | 🟢 No Key | `1,000 req/day` | Predict someone's age from their first name based on international census records and demographic modeling. |
 | [**Genderize.io**](https://genderize.io) | 🟢 No Key | `1,000 req/day` | Predict gender from first name with international probability scores and database of over 100M profiles. |
 | [**Nationalize.io**](https://nationalize.io) | 🟢 No Key | `1,000 req/day` | Estimate nationality and origin country probabilities from given names using statistical country data. |

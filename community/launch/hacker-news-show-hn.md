@@ -43,9 +43,9 @@ So we built DevShelf: an open-source, community-curated directory of **587+ veri
 - **Maintainer Badge Engine:** Developers who submit their open-source tools get dynamic SVG verification badges for their READMEs (https://devshelf.ritualdev.in/badges.html).
 
 ### 📊 Real Catalog Scale Today:
-- **373** Open-Source GitHub Repositories
-- **111** Free Public APIs (Weather, AI, Finance, IP, Geocoding)
-- **112** AI Tools, Local LLM Runtimes & Inference Engines
+- **374** Open-Source GitHub Repositories
+- **110** Free Public APIs (Weather, AI, Finance, IP, Geocoding)
+- **113** AI Tools, Local LLM Runtimes & Inference Engines
 - **132** CLI Utilities & Developer Productivity Tools
 - **72** Free Cloud, Hosting & Database Platforms
 - **67** Mocking, Load Testing & QA Frameworks

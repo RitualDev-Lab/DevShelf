@@ -45,7 +45,7 @@ Before adding any resource to DevShelf, it must pass five strict criteria:
 
 ## 💎 The Top Zero-Paywall Discoveries by Category
 
-### 1. AI Agents & Local LLMs (112 Tools)
+### 1. AI Agents & Local LLMs (113 Tools)
 Running LLMs in production can quickly run up thousands of dollars in token bills. These open-source tools let you develop and run AI locally with zero API costs:
 
 - **[Ollama](https://github.com/ollama/ollama)**: The gold standard for running Llama 3.3, Mistral, and Qwen locally on macOS, Linux, and Windows with a single command.
@@ -53,7 +53,7 @@ Running LLMs in production can quickly run up thousands of dollars in token bill
 - **[AgentShield](https://github.com/RitualDev-Lab/AgentShield)**: Zero-leak secret interception, entropy tokenization, and command sandboxing for Claude Code and Cursor agents.
 - **[LocalAI](https://github.com/mudler/LocalAI)**: Drop-in REST API replacement for OpenAI that runs completely offline on consumer CPU hardware.
 
-### 2. Free Public APIs (111 Endpoints)
+### 2. Free Public APIs (110 Endpoints)
 Need real data for your prototype without wading through 10-step enterprise API key approvals?
 - **Public APIs without Auth**: Weather, exchange rates, geocoding, and mock banking endpoints that return instant JSON without registration.
 - **CORS-Friendly**: All tested directly from browser `fetch()` without blocking security headers.
