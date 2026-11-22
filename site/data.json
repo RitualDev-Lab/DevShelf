@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-21T22:08:19.985Z",
-  "totalCount": 588,
+  "updatedAt": "2026-11-22T04:56:39.180Z",
+  "totalCount": 587,
   "reposCount": 374,
   "facets": {
     "repos": 374
@@ -9,7 +9,7 @@
     "aiTools": 113,
     "cliTools": 132,
     "testingQa": 67,
-    "apis": 111,
+    "apis": 110,
     "freeCloud": 72,
     "perks": 30,
     "boilerplates": 42,
@@ -5205,23 +5205,6 @@
         "No Card Required",
         "CI Verified"
       ],
-      "type": "api",
-      "section": "Free & Public APIs"
-    },
-    {
-      "name": "CountAPI",
-      "url": "https://countapi.xyz",
-      "category": "Development & Testing",
-      "description": "Free, persistent key-value counter API to track page views, hits, and downloads without creating a database.",
-      "auth": "No Key",
-      "cors": "Yes",
-      "rateLimit": "Unlimited",
-      "https": true,
-      "statusTags": [
-        "No Card Required",
-        "CI Verified"
-      ],
-      "status": "Needs Maintenance",
       "type": "api",
       "section": "Free & Public APIs"
     },
