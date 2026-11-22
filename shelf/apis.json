@@ -341,18 +341,6 @@
     "statusTags": ["No Card Required", "CI Verified"]
   },
   {
-    "name": "CountAPI",
-    "url": "https://countapi.xyz",
-    "category": "Development & Testing",
-    "description": "Free, persistent key-value counter API to track page views, hits, and downloads without creating a database.",
-    "auth": "No Key",
-    "cors": "Yes",
-    "rateLimit": "Unlimited",
-    "https": true,
-    "statusTags": ["No Card Required", "CI Verified"],
-    "status": "Needs Maintenance"
-  },
-  {
     "name": "Agify.io",
     "url": "https://agify.io",
     "category": "Development & Testing",

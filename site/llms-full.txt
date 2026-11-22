@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 588 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 587 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -3141,14 +3141,6 @@
 - **URL**: https://bored-api.appbrewery.com
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/bored-api.html
 - **Description**: REST API that returns curated activity recommendations when you are bored, filterable by price and participants.
-
-### CountAPI
-- **Category**: Development & Testing
-- **Pricing Model**: Unlimited
-- **Auth**: No Key
-- **URL**: https://countapi.xyz
-- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/countapi.html
-- **Description**: Free, persistent key-value counter API to track page views, hits, and downloads without creating a database.
 
 ### Agify.io
 - **Category**: Development & Testing

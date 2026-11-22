@@ -57,7 +57,7 @@ jobs:
             git config --global user.email "bot@devshelf.local"
             
             git checkout -b "$BRANCH_NAME"
-            git add shelf/ README.md site/
+            git add shelf/ README.md docs/ site/ data/ package.json
             git commit -m "$PR_TITLE"
             git push origin "$BRANCH_NAME" --force
             

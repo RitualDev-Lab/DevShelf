@@ -40,7 +40,7 @@ Would love to hear your thoughts and suggestions for web dev tools we should add
 
 ## 📌 Post 2: r/selfhosted (350k+ members)
 - **Flair:** `Open Source` or `Tool`
-- **Title:** `We indexed 373+ open-source, self-hostable developer tools & stacks (with automated uptime & license auditing)`
+- **Title:** `We indexed 374+ open-source, self-hostable developer tools & stacks (with automated uptime & license auditing)`
 - **Post Body:**
 
 ```markdown
@@ -48,7 +48,7 @@ Hey r/selfhosted!
 
 If you prefer self-hosting your developer infrastructure rather than getting locked into proprietary SaaS pricing, you might like this:
 
-We built **DevShelf** (https://devshelf.ritualdev.in), an open-source directory that indexes **373+ self-hostable, open-source repositories and tools** for developers.
+We built **DevShelf** (https://devshelf.ritualdev.in), an open-source directory that indexes **374+ self-hostable, open-source repositories and tools** for developers.
 
 ### Highlights for self-hosters:
 - **Commercial SaaS Replacements:** We track direct open-source alternatives to:
