@@ -1,13 +1,13 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-11-23T06:34:42.977Z",
-  "totalCount": 590,
-  "reposCount": 377,
+  "updatedAt": "2026-11-23T06:39:21.118Z",
+  "totalCount": 591,
+  "reposCount": 378,
   "facets": {
-    "repos": 377
+    "repos": 378
   },
   "counts": {
     "aiTools": 114,
-    "cliTools": 134,
+    "cliTools": 135,
     "testingQa": 67,
     "apis": 110,
     "freeCloud": 72,
@@ -3924,6 +3924,29 @@ window.DEVSHELF_DATA = {
       "installNote": "Website build for Apple Silicon on macOS 14.2 or later.",
       "installDocsUrl": "https://nexusshell.app/en/",
       "installDocsLabel": "Nexus Shell downloads and edition details",
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "BrandShield",
+      "category": "Free Domain, RDAP, USPTO Trademark & Typosquatting CLI",
+      "description": "100% free, zero-paywall CLI and web tool that checks domain availability across 78+ TLDs via IANA RDAP, scans USPTO trademarks, verifies social/package handles, and detects 28-variant typosquatting domains.",
+      "repo": "https://github.com/zcoldwater/brandshield-cli",
+      "url": "https://brand-checker.appwrite.network",
+      "language": "JavaScript",
+      "license": "MIT",
+      "featured": false,
+      "tags": [
+        "domain",
+        "rdap",
+        "dns",
+        "trademark",
+        "typosquatting",
+        "cli",
+        "osint",
+        "security",
+        "free"
+      ],
       "type": "cli",
       "section": "CLI & Productivity Tools"
     },

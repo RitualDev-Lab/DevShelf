@@ -1519,6 +1519,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://devshelf.ritualdev.in/tools/brandshield.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://devshelf.ritualdev.in/tools/mockforge-ai.html</loc>
     <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>

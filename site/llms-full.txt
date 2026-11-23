@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 590 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 591 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -2294,6 +2294,15 @@
 - **URL**: https://github.com/viewer12/Nexus-Shell-Releases
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/nexus-shell.html
 - **Description**: Native SSH workspace for managing Linux servers from Mac, iPhone and iPad. Basic Mac SSH is free for personal, non-commercial use. Pro adds SFTP, Docker management and server monitoring on Mac.
+
+### BrandShield
+- **Category**: Free Domain, RDAP, USPTO Trademark & Typosquatting CLI
+- **Pricing Model**: See official site for free access and limits
+- **License**: MIT
+- **Language**: JavaScript
+- **URL**: https://brand-checker.appwrite.network
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/brandshield.html
+- **Description**: 100% free, zero-paywall CLI and web tool that checks domain availability across 78+ TLDs via IANA RDAP, scans USPTO trademarks, verifies social/package handles, and detects 28-variant typosquatting domains.
 
 ### MockForge AI
 - **Category**: Browser & E2E Testing
