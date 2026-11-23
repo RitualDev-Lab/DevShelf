@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 591 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 592 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -2303,6 +2303,15 @@
 - **URL**: https://brand-checker.appwrite.network
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/brandshield.html
 - **Description**: 100% free, zero-paywall CLI and web tool that checks domain availability across 78+ TLDs via IANA RDAP, scans USPTO trademarks, verifies social/package handles, and detects 28-variant typosquatting domains.
+
+### Qorx CLI
+- **Category**: Local source-code retrieval
+- **Pricing Model**: See official site for free access and limits
+- **License**: AGPL-3.0-only
+- **Language**: Rust
+- **URL**: https://github.com/bbrainfuckk/qorx/blob/main/docs/install.md
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/qorx-cli.html
+- **Description**: Qorx builds a local index of a workspace and returns matching source lines with filenames and line numbers. Developers can use the Rust CLI to inspect a small evidence pack before passing code to an AI tool.
 
 ### MockForge AI
 - **Category**: Browser & E2E Testing

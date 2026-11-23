@@ -4,10 +4,10 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total CLI Tools](https://img.shields.io/badge/CLI_Tools-135_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total CLI Tools](https://img.shields.io/badge/CLI_Tools-136_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
-[Automation & Browser Testing](#automation-browser-testing) • [Benchmarking & Performance](#benchmarking-performance) • [Build & Task Automation](#build-task-automation) • [CLI & Developer Productivity](#cli-developer-productivity) • [Database & SQL](#database-sql) • [Dev Utilities & Libraries](#dev-utilities-libraries) • [Developer Toolkits & MCP](#developer-toolkits-mcp) • [Developer Tools](#developer-tools) • [Developer Utilities](#developer-utilities) • [DevOps & Containers](#devops-containers) • [DevOps & Infrastructure](#devops-infrastructure) • [Disk & Storage](#disk-storage) • [Free Domain, RDAP, USPTO Trademark & Typosquatting CLI](#free-domain-rdap-uspto-trademark-typosquatting-cli) • [Git & Version Control](#git-version-control) • [GitHub Workflow & TUI](#github-workflow-tui) • [HTTP & Network](#http-network) • [OS & Hardware Utilities](#os-hardware-utilities) • [Package Management & Runtimes](#package-management-runtimes) • [Sandboxing & Cloud Execution](#sandboxing-cloud-execution) • [System & Process Monitoring](#system-process-monitoring) • [Terminal & Search](#terminal-search) • [Terminal & Shell](#terminal-shell) • [Terminal Navigation](#terminal-navigation) • [Web Scraping & Crawling](#web-scraping-crawling) • [Wix and Notion workflow reference](#wix-and-notion-workflow-reference)
+[Automation & Browser Testing](#automation-browser-testing) • [Benchmarking & Performance](#benchmarking-performance) • [Build & Task Automation](#build-task-automation) • [CLI & Developer Productivity](#cli-developer-productivity) • [Database & SQL](#database-sql) • [Dev Utilities & Libraries](#dev-utilities-libraries) • [Developer Toolkits & MCP](#developer-toolkits-mcp) • [Developer Tools](#developer-tools) • [Developer Utilities](#developer-utilities) • [DevOps & Containers](#devops-containers) • [DevOps & Infrastructure](#devops-infrastructure) • [Disk & Storage](#disk-storage) • [Free Domain, RDAP, USPTO Trademark & Typosquatting CLI](#free-domain-rdap-uspto-trademark-typosquatting-cli) • [Git & Version Control](#git-version-control) • [GitHub Workflow & TUI](#github-workflow-tui) • [HTTP & Network](#http-network) • [Local source-code retrieval](#local-source-code-retrieval) • [OS & Hardware Utilities](#os-hardware-utilities) • [Package Management & Runtimes](#package-management-runtimes) • [Sandboxing & Cloud Execution](#sandboxing-cloud-execution) • [System & Process Monitoring](#system-process-monitoring) • [Terminal & Search](#terminal-search) • [Terminal & Shell](#terminal-shell) • [Terminal Navigation](#terminal-navigation) • [Web Scraping & Crawling](#web-scraping-crawling) • [Wix and Notion workflow reference](#wix-and-notion-workflow-reference)
 
 ---
 
@@ -175,6 +175,12 @@
 | [**websocat**](https://github.com/vi/websocat) | `Rust` | `MIT` | Command-line client for WebSockets, like netcat or curl for ws:// and wss:// endpoints. | [GitHub](https://github.com/vi/websocat) |
 | [**grpcurl**](https://github.com/fullstorydev/grpcurl) | `Go` | `MIT` | Like cURL, but for gRPC: command-line tool that lets you interact with gRPC servers via reflection. | [GitHub](https://github.com/fullstorydev/grpcurl) |
 | [**speedtest-cli**](https://github.com/sivel/speedtest-cli) | `Python` | `Apache-2.0` | Command line interface for testing internet bandwidth using speedtest.net servers without flash/browser. | [GitHub](https://github.com/sivel/speedtest-cli) |
+
+### <a id="local-source-code-retrieval"></a>Local source-code retrieval (1)
+
+| Tool | Language | License | Description | Links |
+| :--- | :---: | :---: | :--- | :---: |
+| [**Qorx CLI**](https://github.com/bbrainfuckk/qorx) | `Rust` | `AGPL-3.0-only` | Qorx builds a local index of a workspace and returns matching source lines with filenames and line numbers. Developers can use the Rust CLI to inspect a small evidence pack before passing code to an AI tool. | [GitHub](https://github.com/bbrainfuckk/qorx) |
 
 ### <a id="os-hardware-utilities"></a>OS & Hardware Utilities (11)
 
