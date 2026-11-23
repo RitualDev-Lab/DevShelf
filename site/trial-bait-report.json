@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-16T12:33:29.234Z",
-  "totalScanned": 356,
+  "generatedAt": "2026-11-23T14:15:43.847Z",
+  "totalScanned": 363,
   "suspiciousCount": 2,
   "findings": [
     {
@@ -28,7 +28,7 @@
           }
         ]
       },
-      "checkedAt": "2026-11-16T12:33:15.596Z"
+      "checkedAt": "2026-11-23T14:15:24.004Z"
     },
     {
       "name": "Maestro",
@@ -38,7 +38,9 @@
       "analysis": {
         "isSuspicious": true,
         "confidence": "medium",
-        "reasons": ["Time-limited trial detected without evidence of a permanent free plan"],
+        "reasons": [
+          "Time-limited trial detected without evidence of a permanent free plan"
+        ],
         "matches": [
           {
             "rule": "trial_only_bait",
@@ -47,7 +49,7 @@
           }
         ]
       },
-      "checkedAt": "2026-11-16T12:33:25.784Z"
+      "checkedAt": "2026-11-23T14:15:39.255Z"
     }
   ]
 }
