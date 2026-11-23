@@ -1,9 +1,9 @@
 {
   "version": "1.1.3",
-  "updatedAt": "2026-11-23T06:34:42.977Z",
+  "updatedAt": "2026-11-23T06:39:21.118Z",
   "slug": "cli",
   "name": "CLI & Developer Productivity",
-  "count": 134,
+  "count": 135,
   "items": [
     {
       "name": "FinePrint AI",
@@ -2077,6 +2077,29 @@
       "installNote": "Website build for Apple Silicon on macOS 14.2 or later.",
       "installDocsUrl": "https://nexusshell.app/en/",
       "installDocsLabel": "Nexus Shell downloads and edition details",
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "BrandShield",
+      "category": "Free Domain, RDAP, USPTO Trademark & Typosquatting CLI",
+      "description": "100% free, zero-paywall CLI and web tool that checks domain availability across 78+ TLDs via IANA RDAP, scans USPTO trademarks, verifies social/package handles, and detects 28-variant typosquatting domains.",
+      "repo": "https://github.com/zcoldwater/brandshield-cli",
+      "url": "https://brand-checker.appwrite.network",
+      "language": "JavaScript",
+      "license": "MIT",
+      "featured": false,
+      "tags": [
+        "domain",
+        "rdap",
+        "dns",
+        "trademark",
+        "typosquatting",
+        "cli",
+        "osint",
+        "security",
+        "free"
+      ],
       "type": "cli",
       "section": "CLI & Productivity Tools"
     }
