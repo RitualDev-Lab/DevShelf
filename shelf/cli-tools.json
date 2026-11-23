@@ -1481,5 +1481,16 @@
     "codeSigned": false,
     "tags": ["rust", "cli", "code search"],
     "statusTags": ["[UNVERIFIED BINARY - UNSIGNED]"]
+  },
+  {
+    "name": "WebDecoy Node SDK",
+    "category": "TypeScript library for testing local bot-detection rules",
+    "description": "This MIT-licensed SDK lets Node.js developers test local tripwires and rate limits without an API key. The repository includes a runnable Express playground and examples for comparing rule decisions in monitor and enforce modes.",
+    "repo": "https://github.com/webdecoy/node",
+    "url": "https://webdecoy.com/product/sdks",
+    "language": "TypeScript / Node.js",
+    "license": "MIT",
+    "featured": false,
+    "tags": ["nodejs", "typescript", "middleware", "bot-detection", "express"]
   }
 ]

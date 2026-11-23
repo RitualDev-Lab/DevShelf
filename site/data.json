@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-11-23T15:04:56.308Z",
-  "totalCount": 592,
-  "reposCount": 379,
+  "updatedAt": "2026-11-23T18:49:27.920Z",
+  "totalCount": 593,
+  "reposCount": 380,
   "facets": {
-    "repos": 379
+    "repos": 380
   },
   "counts": {
     "aiTools": 114,
-    "cliTools": 136,
+    "cliTools": 137,
     "testingQa": 67,
     "apis": 110,
     "freeCloud": 72,
@@ -3968,6 +3968,25 @@
       ],
       "statusTags": [
         "[UNVERIFIED BINARY - UNSIGNED]"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "WebDecoy Node SDK",
+      "category": "TypeScript library for testing local bot-detection rules",
+      "description": "This MIT-licensed SDK lets Node.js developers test local tripwires and rate limits without an API key. The repository includes a runnable Express playground and examples for comparing rule decisions in monitor and enforce modes.",
+      "repo": "https://github.com/webdecoy/node",
+      "url": "https://webdecoy.com/product/sdks",
+      "language": "TypeScript / Node.js",
+      "license": "MIT",
+      "featured": false,
+      "tags": [
+        "nodejs",
+        "typescript",
+        "middleware",
+        "bot-detection",
+        "express"
       ],
       "type": "cli",
       "section": "CLI & Productivity Tools"
