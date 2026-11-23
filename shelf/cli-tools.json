@@ -1467,5 +1467,19 @@
       "security",
       "free"
     ]
+  },
+  {
+    "name": "Qorx CLI",
+    "category": "Local source-code retrieval",
+    "description": "Qorx builds a local index of a workspace and returns matching source lines with filenames and line numbers. Developers can use the Rust CLI to inspect a small evidence pack before passing code to an AI tool.",
+    "repo": "https://github.com/bbrainfuckk/qorx",
+    "url": "https://github.com/bbrainfuckk/qorx/blob/main/docs/install.md",
+    "language": "Rust",
+    "license": "AGPL-3.0-only",
+    "featured": false,
+    "nativeBinary": true,
+    "codeSigned": false,
+    "tags": ["rust", "cli", "code search"],
+    "statusTags": ["[UNVERIFIED BINARY - UNSIGNED]"]
   }
 ]
