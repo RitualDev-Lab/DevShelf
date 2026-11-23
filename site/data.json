@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-22T12:15:15.901Z",
-  "totalCount": 588,
-  "reposCount": 375,
+  "updatedAt": "2026-11-23T03:27:27.042Z",
+  "totalCount": 589,
+  "reposCount": 376,
   "facets": {
-    "repos": 375
+    "repos": 376
   },
   "counts": {
-    "aiTools": 113,
+    "aiTools": 114,
     "cliTools": 133,
     "testingQa": 67,
     "apis": 110,
@@ -1829,6 +1829,25 @@
       ],
       "statusTags": [
         "[UNVERIFIED BINARY - UNSIGNED]"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Selvedge",
+      "category": "Decision memory for coding agents",
+      "description": "A local stdio MCP server and Python CLI for storing explicitly recorded project decisions, rationale, and rejected approaches in SQLite. Coding agents can retrieve those records across sessions.",
+      "repo": "https://github.com/masondelan/selvedge",
+      "url": "https://selvedge.sh",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "tags": [
+        "mcp",
+        "python",
+        "sqlite",
+        "decision-memory",
+        "coding-agents"
       ],
       "type": "ai",
       "section": "AI Agents & Local LLMs"

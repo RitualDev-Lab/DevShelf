@@ -4,10 +4,10 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total AI Tools](https://img.shields.io/badge/AI_Tools-113_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total AI Tools](https://img.shields.io/badge/AI_Tools-114_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
-[AI & Machine Learning](#ai-machine-learning) • [AI Agent Security & Defense](#ai-agent-security-defense) • [AI Agents & Autonomous Coding](#ai-agents-autonomous-coding) • [AI Agents & Local LLMs](#ai-agents-local-llms) • [AI Agents & MCP Servers](#ai-agents-mcp-servers) • [AI Coding & MCP](#ai-coding-mcp) • [AI Workflow & Orchestration](#ai-workflow-orchestration) • [ai-tools](#ai-tools) • [Autonomous Coding & Agent Dev](#autonomous-coding-agent-dev) • [Local AI & Inference](#local-ai-inference) • [Offline Windows assistant for documents and meeting notes](#offline-windows-assistant-for-documents-and-meeting-notes) • [Web UI & Chat](#web-ui-chat)
+[AI & Machine Learning](#ai-machine-learning) • [AI Agent Security & Defense](#ai-agent-security-defense) • [AI Agents & Autonomous Coding](#ai-agents-autonomous-coding) • [AI Agents & Local LLMs](#ai-agents-local-llms) • [AI Agents & MCP Servers](#ai-agents-mcp-servers) • [AI Coding & MCP](#ai-coding-mcp) • [AI Workflow & Orchestration](#ai-workflow-orchestration) • [ai-tools](#ai-tools) • [Autonomous Coding & Agent Dev](#autonomous-coding-agent-dev) • [Decision memory for coding agents](#decision-memory-for-coding-agents) • [Local AI & Inference](#local-ai-inference) • [Offline Windows assistant for documents and meeting notes](#offline-windows-assistant-for-documents-and-meeting-notes) • [Web UI & Chat](#web-ui-chat)
 
 ---
 
@@ -114,6 +114,12 @@
 | [**BabyAGI**](https://github.com/yoheinakajima/babyagi) | `Python` | `MIT` | Pioneering AI-powered task management and autonomous agent execution system that builds on task completion loops. | [GitHub](https://github.com/yoheinakajima/babyagi) |
 | [**OpenCodeInterpreter**](https://github.com/OpenCodeInterpreter/OpenCodeInterpreter) | `Python` | `Apache-2.0` | Open-source code generation system integrating dynamic execution feedback and compiler outputs for iterative code refinement. | [GitHub](https://github.com/OpenCodeInterpreter/OpenCodeInterpreter) |
 | [**SWE-agent**](https://github.com/princeton-nlp/SWE-agent) | `Python` | `MIT` | Autonomous software engineering agent that turns LM models into autonomous agents solving GitHub issues. | [GitHub](https://github.com/princeton-nlp/SWE-agent) |
+
+### <a id="decision-memory-for-coding-agents"></a>Decision memory for coding agents (1)
+
+| Tool | Language | License | Description | Links |
+| :--- | :---: | :---: | :--- | :---: |
+| [**Selvedge**](https://github.com/masondelan/selvedge) | `Python` | `MIT` | A local stdio MCP server and Python CLI for storing explicitly recorded project decisions, rationale, and rejected approaches in SQLite. Coding agents can retrieve those records across sessions. | [GitHub](https://github.com/masondelan/selvedge) |
 
 ### <a id="local-ai-inference"></a>Local AI & Inference (51)
 

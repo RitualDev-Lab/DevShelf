@@ -1238,5 +1238,16 @@
     "codeSigned": false,
     "tags": ["windows", "local-llm", "whisper", "gguf", "excel"],
     "statusTags": ["[UNVERIFIED BINARY - UNSIGNED]"]
+  },
+  {
+    "name": "Selvedge",
+    "category": "Decision memory for coding agents",
+    "description": "A local stdio MCP server and Python CLI for storing explicitly recorded project decisions, rationale, and rejected approaches in SQLite. Coding agents can retrieve those records across sessions.",
+    "repo": "https://github.com/masondelan/selvedge",
+    "url": "https://selvedge.sh",
+    "language": "Python",
+    "license": "MIT",
+    "featured": false,
+    "tags": ["mcp", "python", "sqlite", "decision-memory", "coding-agents"]
   }
 ]

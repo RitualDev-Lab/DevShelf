@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 588 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 589 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -1050,6 +1050,15 @@
 - **URL**: https://ranis2023.github.io/ostum-desktop/en
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/ostum-desktop.html
 - **Description**: Run Qwen and Whisper on a Windows PC, review meeting notes against timestamped quotes, and compare Excel workbooks by key. Chat is free. The optional Pro workspace unlocks after a one-time Telegram subscription check.
+
+### Selvedge
+- **Category**: Decision memory for coding agents
+- **Pricing Model**: See official site for free access and limits
+- **License**: MIT
+- **Language**: Python
+- **URL**: https://selvedge.sh
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/selvedge.html
+- **Description**: A local stdio MCP server and Python CLI for storing explicitly recorded project decisions, rationale, and rejected approaches in SQLite. Coding agents can retrieve those records across sessions.
 
 ### FinePrint AI
 - **Category**: Developer Utilities

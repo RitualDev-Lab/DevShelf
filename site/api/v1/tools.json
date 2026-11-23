@@ -2,8 +2,8 @@
   "version": "1.1.3",
   "docs": "https://devshelf.ritualdev.in/docs/api.html",
   "license": "https://github.com/RitualDev-Lab/DevShelf/blob/main/LICENSE",
-  "updatedAt": "2026-11-22T12:15:15.901Z",
-  "totalCount": 588,
+  "updatedAt": "2026-11-23T03:27:27.042Z",
+  "totalCount": 589,
   "tools": [
     {
       "name": "PromptShield",
@@ -1818,6 +1818,25 @@
       ],
       "statusTags": [
         "[UNVERIFIED BINARY - UNSIGNED]"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Selvedge",
+      "category": "Decision memory for coding agents",
+      "description": "A local stdio MCP server and Python CLI for storing explicitly recorded project decisions, rationale, and rejected approaches in SQLite. Coding agents can retrieve those records across sessions.",
+      "repo": "https://github.com/masondelan/selvedge",
+      "url": "https://selvedge.sh",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "tags": [
+        "mcp",
+        "python",
+        "sqlite",
+        "decision-memory",
+        "coding-agents"
       ],
       "type": "ai",
       "section": "AI Agents & Local LLMs"
