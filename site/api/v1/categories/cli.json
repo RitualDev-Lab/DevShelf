@@ -1,9 +1,9 @@
 {
   "version": "1.1.3",
-  "updatedAt": "2026-11-23T03:27:27.042Z",
+  "updatedAt": "2026-11-23T06:34:42.977Z",
   "slug": "cli",
   "name": "CLI & Developer Productivity",
-  "count": 133,
+  "count": 134,
   "items": [
     {
       "name": "FinePrint AI",
@@ -2060,6 +2060,23 @@
         "workflow",
         "reference"
       ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "Nexus Shell",
+      "repo": "https://github.com/viewer12/Nexus-Shell-Releases",
+      "category": "DevOps & Infrastructure",
+      "description": "Native SSH workspace for managing Linux servers from Mac, iPhone and iPad. Basic Mac SSH is free for personal, non-commercial use. Pro adds SFTP, Docker management and server monitoring on Mac.",
+      "language": "Swift",
+      "license": "Proprietary",
+      "nativeBinary": true,
+      "codeSigned": true,
+      "freeTierLimits": "Basic SSH on the Mac website build is available for personal, non-commercial use. Pro features and commercial use require a license.",
+      "installCommand": "brew install --cask viewer12/tap/nexus-shell",
+      "installNote": "Website build for Apple Silicon on macOS 14.2 or later.",
+      "installDocsUrl": "https://nexusshell.app/en/",
+      "installDocsLabel": "Nexus Shell downloads and edition details",
       "type": "cli",
       "section": "CLI & Productivity Tools"
     }
