@@ -4,7 +4,7 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total CLI Tools](https://img.shields.io/badge/CLI_Tools-133_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total CLI Tools](https://img.shields.io/badge/CLI_Tools-134_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
 [Automation & Browser Testing](#automation-browser-testing) • [Benchmarking & Performance](#benchmarking-performance) • [Build & Task Automation](#build-task-automation) • [CLI & Developer Productivity](#cli-developer-productivity) • [Database & SQL](#database-sql) • [Dev Utilities & Libraries](#dev-utilities-libraries) • [Developer Toolkits & MCP](#developer-toolkits-mcp) • [Developer Tools](#developer-tools) • [Developer Utilities](#developer-utilities) • [DevOps & Containers](#devops-containers) • [DevOps & Infrastructure](#devops-infrastructure) • [Disk & Storage](#disk-storage) • [Git & Version Control](#git-version-control) • [GitHub Workflow & TUI](#github-workflow-tui) • [HTTP & Network](#http-network) • [OS & Hardware Utilities](#os-hardware-utilities) • [Package Management & Runtimes](#package-management-runtimes) • [Sandboxing & Cloud Execution](#sandboxing-cloud-execution) • [System & Process Monitoring](#system-process-monitoring) • [Terminal & Search](#terminal-search) • [Terminal & Shell](#terminal-shell) • [Terminal Navigation](#terminal-navigation) • [Web Scraping & Crawling](#web-scraping-crawling) • [Wix and Notion workflow reference](#wix-and-notion-workflow-reference)
@@ -116,11 +116,12 @@
 | [**kind**](https://github.com/kubernetes-sigs/kind) | `Go` | `Apache-2.0` | Kubernetes IN Docker: tool for running local Kubernetes clusters using Docker container nodes. | [GitHub](https://github.com/kubernetes-sigs/kind) |
 | [**ctop**](https://github.com/bcicen/ctop) | `Go` | `MIT` | Top-like interface for container metrics, real-time memory and CPU consumption for Docker and Kubernetes. | [GitHub](https://github.com/bcicen/ctop) |
 
-### <a id="devops-infrastructure"></a>DevOps & Infrastructure (1)
+### <a id="devops-infrastructure"></a>DevOps & Infrastructure (2)
 
 | Tool | Language | License | Description | Links |
 | :--- | :---: | :---: | :--- | :---: |
 | [**Flisk**](https://github.com/flisk-sh/flisk) | `TypeScript` | `MIT` | Generate and run your whole tech stack without the setup pain. One command from empty folder to running stack. | [GitHub](https://github.com/flisk-sh/flisk) |
+| [**Nexus Shell**](https://github.com/viewer12/Nexus-Shell-Releases) | `Swift` | `Proprietary` | Native SSH workspace for managing Linux servers from Mac, iPhone and iPad. Basic Mac SSH is free for personal, non-commercial use. Pro adds SFTP, Docker management and server monitoring on Mac. | [GitHub](https://github.com/viewer12/Nexus-Shell-Releases) |
 
 ### <a id="disk-storage"></a>Disk & Storage (1)
 
