@@ -648,6 +648,73 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
       </a><br />
       <sub>🛡️ npmscan (PR #188)</sub>
     </td>
+    <td align="center" width="160">
+      <a href="https://github.com/cloudgpuapp">
+        <img src="https://github.com/cloudgpuapp.png" width="70" style="border-radius: 50%;" alt="cloudgpuapp"/><br />
+        <sub><b>cloudgpuapp</b></sub>
+      </a><br />
+      <sub>☁️ CloudGPU MCP (#213)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/jiangxingfan1-coder">
+        <img src="https://github.com/jiangxingfan1-coder.png" width="70" style="border-radius: 50%;" alt="jiangxingfan1-coder"/><br />
+        <sub><b>jiangxingfan1-coder</b></sub>
+      </a><br />
+      <sub>🤖 Open Agent API (#221)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/Ranis2023">
+        <img src="https://github.com/Ranis2023.png" width="70" style="border-radius: 50%;" alt="Ranis2023"/><br />
+        <sub><b>Ranis2023</b></sub>
+      </a><br />
+      <sub>🖥️ OSTUM Desktop (#227)</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="160">
+      <a href="https://github.com/dragonacademy4">
+        <img src="https://github.com/dragonacademy4.png" width="70" style="border-radius: 50%;" alt="dragonacademy4"/><br />
+        <sub><b>dragonacademy4</b></sub>
+      </a><br />
+      <sub>📓 Wix to Notion (#232)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/viewer12">
+        <img src="https://github.com/viewer12.png" width="70" style="border-radius: 50%;" alt="viewer12"/><br />
+        <sub><b>viewer12</b></sub>
+      </a><br />
+      <sub>🐚 Nexus Shell (PR #235)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/masondelan">
+        <img src="https://github.com/masondelan.png" width="70" style="border-radius: 50%;" alt="masondelan"/><br />
+        <sub><b>masondelan</b></sub>
+      </a><br />
+      <sub>🧵 Selvedge (#236)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/zColdWater">
+        <img src="https://github.com/zColdWater.png" width="70" style="border-radius: 50%;" alt="zColdWater"/><br />
+        <sub><b>zColdWater</b></sub>
+      </a><br />
+      <sub>🛡️ BrandShield (#238)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/bbrainfuckk">
+        <img src="https://github.com/bbrainfuckk.png" width="70" style="border-radius: 50%;" alt="bbrainfuckk"/><br />
+        <sub><b>bbrainfuckk</b></sub>
+      </a><br />
+      <sub>⚡ Qorx CLI (PR #246)</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="160">
+      <a href="https://github.com/cport1">
+        <img src="https://github.com/cport1.png" width="70" style="border-radius: 50%;" alt="cport1"/><br />
+        <sub><b>cport1</b></sub>
+      </a><br />
+      <sub>🪤 WebDecoy Node SDK (PR #249)</sub>
+    </td>
   </tr>
 </table>
 
