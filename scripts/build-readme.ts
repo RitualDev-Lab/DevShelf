@@ -1045,6 +1045,15 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
       <sub>🤖 Transformer.gg (PR #256)</sub>
     </td>
   </tr>
+  <tr>
+    <td align="center" width="160">
+      <a href="https://github.com/laotoutou">
+        <img src="https://github.com/laotoutou.png" width="70" style="border-radius: 50%;" alt="laotoutou"/><br />
+        <sub><b>laotoutou</b></sub>
+      </a><br />
+      <sub>🌐 Cloudbrowser API (PR #260)</sub>
+    </td>
+  </tr>
 </table>
 
 <div align="center">
