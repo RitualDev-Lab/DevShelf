@@ -38,9 +38,7 @@
       "analysis": {
         "isSuspicious": true,
         "confidence": "medium",
-        "reasons": [
-          "Time-limited trial detected without evidence of a permanent free plan"
-        ],
+        "reasons": ["Time-limited trial detected without evidence of a permanent free plan"],
         "matches": [
           {
             "rule": "trial_only_bait",
