@@ -1260,5 +1260,16 @@
     "license": "MIT",
     "featured": false,
     "tags": ["mcp", "ai-agents", "cli", "creator-economy", "marketing"]
+  },
+  {
+    "name": "LocalRAG-Kit",
+    "category": "AI Development & Local Retrieval",
+    "description": "Offline, privacy-first local RAG engine and embedding pipeline for autonomous AI coding agents without third-party API dependencies or cloud leakage.",
+    "repo": "https://github.com/RitualDev-Lab/localrag-kit",
+    "url": "https://github.com/RitualDev-Lab/localrag-kit",
+    "language": "Python",
+    "license": "MIT",
+    "featured": false,
+    "tags": ["rag", "embeddings", "privacy", "local-ai", "ai-agents"]
   }
 ]

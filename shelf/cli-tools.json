@@ -1503,5 +1503,27 @@
     "license": "AGPL-3.0",
     "featured": false,
     "tags": ["cli", "screen-recording", "video", "developer-utilities"]
+  },
+  {
+    "name": "Poly Cloud Remote Cache",
+    "category": "Build Tools & Monorepo Caching",
+    "description": "High-throughput remote artifact caching and distributed task cache service for Poly polyglot monorepos with content-addressable storage and multi-tier quotas.",
+    "repo": "https://github.com/RitualDev-Lab/poly-cloud-api",
+    "url": "https://github.com/RitualDev-Lab/poly-cloud-api",
+    "language": "TypeScript / Node.js",
+    "license": "MIT",
+    "featured": false,
+    "tags": ["monorepo", "remote-cache", "build-system", "cli", "caching"]
+  },
+  {
+    "name": "FlashLane",
+    "category": "OS Utilities & System Flashing",
+    "description": "Universal high-speed bootable ISO and IMG USB writer with native Rust engine, verify checksums, and built-in PXE network boot server.",
+    "repo": "https://github.com/RitualDev-Lab/FlashLane",
+    "url": "https://github.com/RitualDev-Lab/FlashLane",
+    "language": "TypeScript / Rust",
+    "license": "MIT",
+    "featured": false,
+    "tags": ["usb-flasher", "bootable-usb", "system-utility", "iso-writer", "cross-platform"]
   }
 ]
