@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 593 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 594 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -4370,6 +4370,15 @@ Public documentation: https://lianxiaozhi.com/agent...
 - **URL**: https://www.dragonflydb.io
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/dragonfly.html
 - **Description**: A modern, highly performant replacement for Redis and Memcached with 25x throughput and multi-threaded core.
+
+### SiteWatcher
+- **Category**: Observability & Analytics
+- **Pricing Model**: See official site for free access and limits
+- **License**: MIT
+- **Language**: Python
+- **URL**: https://github.com/nikkurkov/sitewatcher
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/sitewatcher.html
+- **Description**: SiteWatcher is a self-hosted website monitor for uptime, response times, TLS certificates, and domain expiry, with public status pages. I'm the project maintainer.
 
 ### JetBrains Free Open Source License
 - **Category**: Developer Tools & IDEs

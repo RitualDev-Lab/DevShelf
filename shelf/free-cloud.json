@@ -579,5 +579,16 @@
     "description": "A modern, highly performant replacement for Redis and Memcached with 25x throughput and multi-threaded core.",
     "freeTier": "100% Free & Open Source BSL",
     "statusTags": ["No Card Required", "CI Verified"]
+  },
+  {
+    "name": "SiteWatcher",
+    "category": "Observability & Analytics",
+    "description": "SiteWatcher is a self-hosted website monitor for uptime, response times, TLS certificates, and domain expiry, with public status pages. I'm the project maintainer.",
+    "repo": "https://github.com/nikkurkov/sitewatcher",
+    "url": "https://github.com/nikkurkov/sitewatcher",
+    "language": "Python",
+    "license": "MIT",
+    "featured": false,
+    "tags": ["uptime monitoring", "self-hosted", "status page"]
   }
 ]
