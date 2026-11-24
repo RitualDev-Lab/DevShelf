@@ -1,13 +1,13 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-11-23T18:49:27.920Z",
-  "totalCount": 593,
-  "reposCount": 380,
+  "updatedAt": "2026-11-24T02:11:35.917Z",
+  "totalCount": 594,
+  "reposCount": 381,
   "facets": {
-    "repos": 380
+    "repos": 381
   },
   "counts": {
     "aiTools": 114,
-    "cliTools": 137,
+    "cliTools": 138,
     "testingQa": 67,
     "apis": 110,
     "freeCloud": 72,
@@ -3987,6 +3987,24 @@ window.DEVSHELF_DATA = {
         "middleware",
         "bot-detection",
         "express"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "Vertov CLI",
+      "category": "Screen recordings from the terminal",
+      "description": "A zero-dependency Node CLI for Vertov. List screen recordings, copy their share links, or open the browser recorder. It works with the AGPL self-hosted server or the hosted service and authenticates with a workspace API key.",
+      "repo": "https://github.com/ankurmans/vertov-screen-recorder",
+      "url": "https://github.com/ankurmans/vertov-screen-recorder/tree/main/cli",
+      "language": "JavaScript (Node.js 18+)",
+      "license": "AGPL-3.0",
+      "featured": false,
+      "tags": [
+        "cli",
+        "screen-recording",
+        "video",
+        "developer-utilities"
       ],
       "type": "cli",
       "section": "CLI & Productivity Tools"

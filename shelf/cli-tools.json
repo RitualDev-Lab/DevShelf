@@ -1492,5 +1492,16 @@
     "license": "MIT",
     "featured": false,
     "tags": ["nodejs", "typescript", "middleware", "bot-detection", "express"]
+  },
+  {
+    "name": "Vertov CLI",
+    "category": "Screen recordings from the terminal",
+    "description": "A zero-dependency Node CLI for Vertov. List screen recordings, copy their share links, or open the browser recorder. It works with the AGPL self-hosted server or the hosted service and authenticates with a workspace API key.",
+    "repo": "https://github.com/ankurmans/vertov-screen-recorder",
+    "url": "https://github.com/ankurmans/vertov-screen-recorder/tree/main/cli",
+    "language": "JavaScript (Node.js 18+)",
+    "license": "AGPL-3.0",
+    "featured": false,
+    "tags": ["cli", "screen-recording", "video", "developer-utilities"]
   }
 ]
