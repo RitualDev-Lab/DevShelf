@@ -1,13 +1,13 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-11-24T10:23:32.064Z",
-  "totalCount": 597,
-  "reposCount": 383,
+  "updatedAt": "2026-11-24T17:52:21.383Z",
+  "totalCount": 600,
+  "reposCount": 386,
   "facets": {
-    "repos": 383
+    "repos": 386
   },
   "counts": {
-    "aiTools": 115,
-    "cliTools": 138,
+    "aiTools": 116,
+    "cliTools": 140,
     "testingQa": 67,
     "apis": 111,
     "freeCloud": 73,
@@ -1867,6 +1867,25 @@ window.DEVSHELF_DATA = {
         "cli",
         "creator-economy",
         "marketing"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "LocalRAG-Kit",
+      "category": "AI Development & Local Retrieval",
+      "description": "Offline, privacy-first local RAG engine and embedding pipeline for autonomous AI coding agents without third-party API dependencies or cloud leakage.",
+      "repo": "https://github.com/RitualDev-Lab/localrag-kit",
+      "url": "https://github.com/RitualDev-Lab/localrag-kit",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "tags": [
+        "rag",
+        "embeddings",
+        "privacy",
+        "local-ai",
+        "ai-agents"
       ],
       "type": "ai",
       "section": "AI Agents & Local LLMs"
@@ -4024,6 +4043,44 @@ window.DEVSHELF_DATA = {
         "screen-recording",
         "video",
         "developer-utilities"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "Poly Cloud Remote Cache",
+      "category": "Build Tools & Monorepo Caching",
+      "description": "High-throughput remote artifact caching and distributed task cache service for Poly polyglot monorepos with content-addressable storage and multi-tier quotas.",
+      "repo": "https://github.com/RitualDev-Lab/poly-cloud-api",
+      "url": "https://github.com/RitualDev-Lab/poly-cloud-api",
+      "language": "TypeScript / Node.js",
+      "license": "MIT",
+      "featured": false,
+      "tags": [
+        "monorepo",
+        "remote-cache",
+        "build-system",
+        "cli",
+        "caching"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "FlashLane",
+      "category": "OS Utilities & System Flashing",
+      "description": "Universal high-speed bootable ISO and IMG USB writer with native Rust engine, verify checksums, and built-in PXE network boot server.",
+      "repo": "https://github.com/RitualDev-Lab/FlashLane",
+      "url": "https://github.com/RitualDev-Lab/FlashLane",
+      "language": "TypeScript / Rust",
+      "license": "MIT",
+      "featured": false,
+      "tags": [
+        "usb-flasher",
+        "bootable-usb",
+        "system-utility",
+        "iso-writer",
+        "cross-platform"
       ],
       "type": "cli",
       "section": "CLI & Productivity Tools"

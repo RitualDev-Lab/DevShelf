@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 597 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 600 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -1068,6 +1068,15 @@
 - **URL**: https://transformer.gg
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/transformergg.html
 - **Description**: MCP server, CLI and REST API for booking sponsored posts from X creators. Free to join, with free creator rate lookups and free offer sending; creators keep 80%.
+
+### LocalRAG-Kit
+- **Category**: AI Development & Local Retrieval
+- **Pricing Model**: See official site for free access and limits
+- **License**: MIT
+- **Language**: Python
+- **URL**: https://github.com/RitualDev-Lab/localrag-kit
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/localrag-kit.html
+- **Description**: Offline, privacy-first local RAG engine and embedding pipeline for autonomous AI coding agents without third-party API dependencies or cloud leakage.
 
 ### FinePrint AI
 - **Category**: Developer Utilities
@@ -2339,6 +2348,24 @@
 - **URL**: https://github.com/ankurmans/vertov-screen-recorder/tree/main/cli
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/vertov-cli.html
 - **Description**: A zero-dependency Node CLI for Vertov. List screen recordings, copy their share links, or open the browser recorder. It works with the AGPL self-hosted server or the hosted service and authenticates with a workspace API key.
+
+### Poly Cloud Remote Cache
+- **Category**: Build Tools & Monorepo Caching
+- **Pricing Model**: See official site for free access and limits
+- **License**: MIT
+- **Language**: TypeScript / Node.js
+- **URL**: https://github.com/RitualDev-Lab/poly-cloud-api
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/poly-cloud-remote-cache.html
+- **Description**: High-throughput remote artifact caching and distributed task cache service for Poly polyglot monorepos with content-addressable storage and multi-tier quotas.
+
+### FlashLane
+- **Category**: OS Utilities & System Flashing
+- **Pricing Model**: See official site for free access and limits
+- **License**: MIT
+- **Language**: TypeScript / Rust
+- **URL**: https://github.com/RitualDev-Lab/FlashLane
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/flashlane.html
+- **Description**: Universal high-speed bootable ISO and IMG USB writer with native Rust engine, verify checksums, and built-in PXE network boot server.
 
 ### MockForge AI
 - **Category**: Browser & E2E Testing
