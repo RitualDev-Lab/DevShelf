@@ -1023,6 +1023,27 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
       </a><br />
       <sub>🪤 WebDecoy Node SDK (PR #249)</sub>
     </td>
+    <td align="center" width="160">
+      <a href="https://github.com/NikKurkov">
+        <img src="https://github.com/NikKurkov.png" width="70" style="border-radius: 50%;" alt="NikKurkov"/><br />
+        <sub><b>NikKurkov</b></sub>
+      </a><br />
+      <sub>👁️ SiteWatcher (PR #252)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/ankurmans">
+        <img src="https://github.com/ankurmans.png" width="70" style="border-radius: 50%;" alt="ankurmans"/><br />
+        <sub><b>ankurmans</b></sub>
+      </a><br />
+      <sub>🎬 Vertov CLI (PR #254)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/jonoringer">
+        <img src="https://github.com/jonoringer.png" width="70" style="border-radius: 50%;" alt="jonoringer"/><br />
+        <sub><b>jonoringer</b></sub>
+      </a><br />
+      <sub>🤖 Transformer.gg (PR #256)</sub>
+    </td>
   </tr>
 </table>
 
