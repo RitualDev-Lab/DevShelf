@@ -1,16 +1,16 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-11-23T18:49:27.920Z",
-  "totalCount": 593,
-  "reposCount": 380,
+  "updatedAt": "2026-11-24T00:12:47.331Z",
+  "totalCount": 594,
+  "reposCount": 381,
   "facets": {
-    "repos": 380
+    "repos": 381
   },
   "counts": {
     "aiTools": 114,
     "cliTools": 137,
     "testingQa": 67,
     "apis": 110,
-    "freeCloud": 72,
+    "freeCloud": 73,
     "perks": 30,
     "boilerplates": 42,
     "contributors": 21
@@ -7542,6 +7542,23 @@ window.DEVSHELF_DATA = {
       "statusTags": [
         "No Card Required",
         "CI Verified"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "SiteWatcher",
+      "category": "Observability & Analytics",
+      "description": "SiteWatcher is a self-hosted website monitor for uptime, response times, TLS certificates, and domain expiry, with public status pages. I'm the project maintainer.",
+      "repo": "https://github.com/nikkurkov/sitewatcher",
+      "url": "_no response_",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "tags": [
+        "uptime monitoring",
+        "self-hosted",
+        "status page"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
