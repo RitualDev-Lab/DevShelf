@@ -4,7 +4,7 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total Free Cloud](https://img.shields.io/badge/Free_Cloud-72_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total Free Cloud](https://img.shields.io/badge/Free_Cloud-73_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
 [Authentication & Security](#authentication-security) • [Cloud Hosting & PaaS](#cloud-hosting-paas) • [Databases & BaaS](#databases-baas) • [Messaging & Queues](#messaging-queues) • [Observability & Analytics](#observability-analytics) • [Search & Discovery](#search-discovery) • [Self-Hosted Cloud & PaaS](#self-hosted-cloud-paas) • [Storage & Buckets](#storage-buckets) • [Transactional Email](#transactional-email)
@@ -76,7 +76,7 @@
 | [**Eclipse Mosquitto**](https://mosquitto.org) | `100% Free & Open Source EPL-2.0` | Lightweight open-source message broker that implements the MQTT protocol versions 5.0, 3.1.1 and 3.1. | [Explore](https://mosquitto.org) |
 | [**EMQX**](https://www.emqx.com/en) | `100% Free Open Source Community Edition; Free cloud tier` | The world's most scalable open-source MQTT platform for connected IoT, automotive, and industrial devices. | [Explore](https://www.emqx.com/en) |
 
-### <a id="observability-analytics"></a>Observability & Analytics (7)
+### <a id="observability-analytics"></a>Observability & Analytics (8)
 
 | Service | Free Tier Allowance | Description | Links |
 | :--- | :--- | :--- | :---: |
@@ -87,6 +87,7 @@
 | [**Grafana OSS**](https://grafana.com/oss/grafana) | `100% Free & Open Source AGPLv3 self-hosted` | The open and composable observability and data visualization platform with rich dashboards and alerts. | [Explore](https://grafana.com/oss/grafana) |
 | [**Prometheus**](https://prometheus.io) | `100% Free & Open Source Apache-2.0` | An open-source monitoring system with a dimensional data model, flexible query language, and alerting. | [Explore](https://prometheus.io) |
 | [**Uptime Kuma**](https://github.com/louislam/uptime-kuma) | `100% Free & Open Source MIT` | Self-hosted monitoring tool like Uptime Robot with modern dashboard and notifications across 90+ services. | [Explore](https://github.com/louislam/uptime-kuma) |
+| [**SiteWatcher**](https://github.com/nikkurkov/sitewatcher) | `` | SiteWatcher is a self-hosted website monitor for uptime, response times, TLS certificates, and domain expiry, with public status pages. I'm the project maintainer. | [Explore](https://github.com/nikkurkov/sitewatcher) |
 
 ### <a id="search-discovery"></a>Search & Discovery (2)
 
