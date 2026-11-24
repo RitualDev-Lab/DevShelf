@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-11-24T02:11:35.917Z",
-  "totalCount": 594,
-  "reposCount": 381,
+  "updatedAt": "2026-11-24T06:31:26.979Z",
+  "totalCount": 595,
+  "reposCount": 382,
   "facets": {
-    "repos": 381
+    "repos": 382
   },
   "counts": {
     "aiTools": 114,
     "cliTools": 138,
     "testingQa": 67,
     "apis": 110,
-    "freeCloud": 72,
+    "freeCloud": 73,
     "perks": 30,
     "boilerplates": 42,
     "contributors": 21
@@ -7560,6 +7560,23 @@
       "statusTags": [
         "No Card Required",
         "CI Verified"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "SiteWatcher",
+      "category": "Observability & Analytics",
+      "description": "SiteWatcher is a self-hosted website monitor for uptime, response times, TLS certificates, and domain expiry, with public status pages. I'm the project maintainer.",
+      "repo": "https://github.com/nikkurkov/sitewatcher",
+      "url": "https://github.com/nikkurkov/sitewatcher",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "tags": [
+        "uptime monitoring",
+        "self-hosted",
+        "status page"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"
