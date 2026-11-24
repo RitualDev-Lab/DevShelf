@@ -1,16 +1,16 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-11-24T02:58:05.569Z",
-  "totalCount": 594,
-  "reposCount": 381,
+  "updatedAt": "2026-11-24T06:35:11.112Z",
+  "totalCount": 596,
+  "reposCount": 383,
   "facets": {
-    "repos": 381
+    "repos": 383
   },
   "counts": {
     "aiTools": 115,
-    "cliTools": 137,
+    "cliTools": 138,
     "testingQa": 67,
     "apis": 110,
-    "freeCloud": 72,
+    "freeCloud": 73,
     "perks": 30,
     "boilerplates": 42,
     "contributors": 21
@@ -4011,6 +4011,24 @@ window.DEVSHELF_DATA = {
       "section": "CLI & Productivity Tools"
     },
     {
+      "name": "Vertov CLI",
+      "category": "Screen recordings from the terminal",
+      "description": "A zero-dependency Node CLI for Vertov. List screen recordings, copy their share links, or open the browser recorder. It works with the AGPL self-hosted server or the hosted service and authenticates with a workspace API key.",
+      "repo": "https://github.com/ankurmans/vertov-screen-recorder",
+      "url": "https://github.com/ankurmans/vertov-screen-recorder/tree/main/cli",
+      "language": "JavaScript (Node.js 18+)",
+      "license": "AGPL-3.0",
+      "featured": false,
+      "tags": [
+        "cli",
+        "screen-recording",
+        "video",
+        "developer-utilities"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
       "name": "MockForge AI",
       "repo": "https://github.com/RitualDev-Lab/MockForge",
       "category": "Browser & E2E Testing",
@@ -7561,6 +7579,23 @@ window.DEVSHELF_DATA = {
       "statusTags": [
         "No Card Required",
         "CI Verified"
+      ],
+      "type": "cloud",
+      "section": "Free Cloud & Developer Tiers"
+    },
+    {
+      "name": "SiteWatcher",
+      "category": "Observability & Analytics",
+      "description": "SiteWatcher is a self-hosted website monitor for uptime, response times, TLS certificates, and domain expiry, with public status pages. I'm the project maintainer.",
+      "repo": "https://github.com/nikkurkov/sitewatcher",
+      "url": "https://github.com/nikkurkov/sitewatcher",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "tags": [
+        "uptime monitoring",
+        "self-hosted",
+        "status page"
       ],
       "type": "cloud",
       "section": "Free Cloud & Developer Tiers"

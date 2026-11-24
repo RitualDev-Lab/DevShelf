@@ -1543,6 +1543,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://devshelf.ritualdev.in/tools/vertov-cli.html</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://devshelf.ritualdev.in/tools/mockforge-ai.html</loc>
     <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
@@ -3032,6 +3038,12 @@
   </url>
   <url>
     <loc>https://devshelf.ritualdev.in/tools/dragonfly.html</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devshelf.ritualdev.in/tools/sitewatcher.html</loc>
     <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
