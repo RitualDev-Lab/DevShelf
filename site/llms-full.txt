@@ -4376,7 +4376,7 @@ Public documentation: https://lianxiaozhi.com/agent...
 - **Pricing Model**: See official site for free access and limits
 - **License**: MIT
 - **Language**: Python
-- **URL**: _no response_
+- **URL**: https://github.com/nikkurkov/sitewatcher
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/sitewatcher.html
 - **Description**: SiteWatcher is a self-hosted website monitor for uptime, response times, TLS certificates, and domain expiry, with public status pages. I'm the project maintainer.
 

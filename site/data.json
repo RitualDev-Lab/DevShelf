@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T00:12:47.331Z",
+  "updatedAt": "2026-11-24T06:27:07.281Z",
   "totalCount": 594,
   "reposCount": 381,
   "facets": {
@@ -7551,7 +7551,7 @@
       "category": "Observability & Analytics",
       "description": "SiteWatcher is a self-hosted website monitor for uptime, response times, TLS certificates, and domain expiry, with public status pages. I'm the project maintainer.",
       "repo": "https://github.com/nikkurkov/sitewatcher",
-      "url": "_no response_",
+      "url": "https://github.com/nikkurkov/sitewatcher",
       "language": "Python",
       "license": "MIT",
       "featured": false,

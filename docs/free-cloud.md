@@ -87,7 +87,7 @@
 | [**Grafana OSS**](https://grafana.com/oss/grafana) | `100% Free & Open Source AGPLv3 self-hosted` | The open and composable observability and data visualization platform with rich dashboards and alerts. | [Explore](https://grafana.com/oss/grafana) |
 | [**Prometheus**](https://prometheus.io) | `100% Free & Open Source Apache-2.0` | An open-source monitoring system with a dimensional data model, flexible query language, and alerting. | [Explore](https://prometheus.io) |
 | [**Uptime Kuma**](https://github.com/louislam/uptime-kuma) | `100% Free & Open Source MIT` | Self-hosted monitoring tool like Uptime Robot with modern dashboard and notifications across 90+ services. | [Explore](https://github.com/louislam/uptime-kuma) |
-| [**SiteWatcher**](_no response_) | `` | SiteWatcher is a self-hosted website monitor for uptime, response times, TLS certificates, and domain expiry, with public status pages. I'm the project maintainer. | [Explore](_no response_) |
+| [**SiteWatcher**](https://github.com/nikkurkov/sitewatcher) | `` | SiteWatcher is a self-hosted website monitor for uptime, response times, TLS certificates, and domain expiry, with public status pages. I'm the project maintainer. | [Explore](https://github.com/nikkurkov/sitewatcher) |
 
 ### <a id="search-discovery"></a>Search & Discovery (2)
 
