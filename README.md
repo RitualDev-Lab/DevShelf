@@ -1,6 +1,6 @@
 # DevShelf
 
-**A CI-audited, zero-paywall directory of 595 developer tools, free APIs, and MCP servers — searchable in your terminal, browser, or inside Claude/Cursor via MCP.**
+**A CI-audited, zero-paywall directory of 596 developer tools, free APIs, and MCP servers — searchable in your terminal, browser, or inside Claude/Cursor via MCP.**
 
 [![CI](https://github.com/RitualDev-Lab/DevShelf/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/RitualDev-Lab/DevShelf/actions/workflows/ci.yml)
 [![npm](https://img.shields.io/npm/v/@ritualdev-lab/devshelf.svg?style=flat-square&color=cb3837)](https://www.npmjs.com/package/@ritualdev-lab/devshelf)
@@ -12,7 +12,7 @@ No link rot. No "14-day free trial" bait. Unsigned native binaries are explicitl
 ### Try it in 5 seconds
 
 ```bash
-# Search 595 CI-audited tools directly from your terminal
+# Search 596 CI-audited tools directly from your terminal
 npx @ritualdev-lab/devshelf search "postgres"
 
 # Or plug the catalog into Claude Desktop / Cursor / Windsurf as an MCP server
@@ -21,7 +21,7 @@ npx @ritualdev-lab/devshelf mcp
 
 ```text
 $ npx @ritualdev-lab/devshelf search "postgres"
-📚 DevShelf CLI — 595 Curated Tools (CI Link & Binary-Trust Audited)
+📚 DevShelf CLI — 596 Curated Tools (CI Link & Binary-Trust Audited)
 
 [1] Neon (Database / Serverless)
     Serverless Postgres with branching and free tier (0.5 GB storage)
@@ -49,7 +49,7 @@ DevShelf is community-curated. Every merged PR automatically publishes your tool
 
 | 🌐 Free APIs | 🤖 AI & LLMs | ⚡ CLI Tools | 🧪 Testing & QA | ☁️ Free Cloud | 🤝 Up for Grabs | 🎁 Dev Perks | 🚀 1-Click Deploys |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| `110` | `114` | `138` | `67` | `73` | `21` | `30` | `42` |
+| `110` | `115` | `138` | `67` | `73` | `21` | `30` | `42` |
 
 ---
 
@@ -149,12 +149,12 @@ npx devshelf stats
 
 ## 📂 Browse Catalog by Category
 
-Explore our curated collections of **595+ zero-paywall developer tools**, categorized into dedicated guides with subcategory indexing:
+Explore our curated collections of **596+ zero-paywall developer tools**, categorized into dedicated guides with subcategory indexing:
 
 | Category | Resources | Description & Subcategories | Guide |
 | :--- | :---: | :--- | :---: |
 | 🌐 **Free & Public APIs** | **110** | Weather, Finance, Mock/Dev APIs, Geocoding, AI/ML, Media, Entertainment | [**Browse APIs →**](docs/apis.md) |
-| 🤖 **AI Agents & Local LLMs** | **114** | Local LLM Runtimes, Autonomous Agents, Coding Assistants, Orchestration | [**Browse AI Tools →**](docs/ai-tools.md) |
+| 🤖 **AI Agents & Local LLMs** | **115** | Local LLM Runtimes, Autonomous Agents, Coding Assistants, Orchestration | [**Browse AI Tools →**](docs/ai-tools.md) |
 | ⚡ **CLI & Productivity Tools** | **138** | Terminal Utilities, Git Power Tools, Docker & DevOps, Benchmarking, DBs | [**Browse CLI Tools →**](docs/cli-tools.md) |
 | 🧪 **Testing & QA Reliability** | **67** | E2E Testing, Mock Servers, Contract Testing, Security Auditing, Performance | [**Browse Testing Tools →**](docs/testing-qa.md) |
 | ☁️ **Free Cloud & Developer Tiers** | **73** | Databases, Auth & Identity, Serverless Compute, Object Storage, Email, APM | [**Browse Cloud Tiers →**](docs/free-cloud.md) |
@@ -714,6 +714,27 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
         <sub><b>cport1</b></sub>
       </a><br />
       <sub>🪤 WebDecoy Node SDK (PR #249)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/NikKurkov">
+        <img src="https://github.com/NikKurkov.png" width="70" style="border-radius: 50%;" alt="NikKurkov"/><br />
+        <sub><b>NikKurkov</b></sub>
+      </a><br />
+      <sub>👁️ SiteWatcher (PR #252)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/ankurmans">
+        <img src="https://github.com/ankurmans.png" width="70" style="border-radius: 50%;" alt="ankurmans"/><br />
+        <sub><b>ankurmans</b></sub>
+      </a><br />
+      <sub>🎬 Vertov CLI (PR #254)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/jonoringer">
+        <img src="https://github.com/jonoringer.png" width="70" style="border-radius: 50%;" alt="jonoringer"/><br />
+        <sub><b>jonoringer</b></sub>
+      </a><br />
+      <sub>🤖 Transformer.gg (PR #256)</sub>
     </td>
   </tr>
 </table>
