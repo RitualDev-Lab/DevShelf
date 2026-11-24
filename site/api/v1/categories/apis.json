@@ -1,9 +1,9 @@
 {
   "version": "1.1.3",
-  "updatedAt": "2026-11-24T06:35:11.112Z",
+  "updatedAt": "2026-11-24T10:23:32.064Z",
   "slug": "apis",
   "name": "Free Public APIs",
-  "count": 110,
+  "count": 111,
   "items": [
     {
       "name": "Open-Meteo",
@@ -1728,6 +1728,18 @@
       "auth": "No Key",
       "cors": "No. The GET did not return an Access-Control-Allow-Origin header for the DevShelf origin. It works from servers and command-line clients.",
       "rateLimit": "A fixed quota is not published. The coverage request is free and keyless.",
+      "https": true,
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Cloudbrowser REST API",
+      "category": "Development & Testing",
+      "description": "The REST API gives developers a persistent hosted Chrome browser for browser automation. It manages creation, pause and resume, and copies of paused browser profiles. Automation clients connect over CDP; teammates can inspect the browser in a permission-controlled Live View.\n\nThis updates #122....",
+      "url": "https://cloudbrowser.tv/docs/api",
+      "auth": "Free API Key",
+      "cors": "Unknown",
+      "rateLimit": "1 browser-hour per UTC calendar month, with 1 running browser at a time. Reaching that limit pauses the browser until the allowance resets or the user upgrades. There is no Free-plan overage charge.",
       "https": true,
       "type": "api",
       "section": "Free & Public APIs"

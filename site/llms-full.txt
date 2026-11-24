@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 596 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 597 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -3849,6 +3849,16 @@ Public documentation: https://lianxiaozhi.com/agent...
 - **URL**: https://beliefstate.ai/about#investor-thesis-coverage
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/beliefstate-company-coverage-api.html
 - **Description**: Public JSON listing the stocks with released BeliefState investor research, including ticker symbols, coverage counts, and observation dates. Developers can check which companies are covered before requesting research. The submitted API is the free coverage endpoint. Detailed research is...
+
+### Cloudbrowser REST API
+- **Category**: Development & Testing
+- **Pricing Model**: 1 browser-hour per UTC calendar month, with 1 running browser at a time. Reaching that limit pauses the browser until the allowance resets or the user upgrades. There is no Free-plan overage charge.
+- **Auth**: Free API Key
+- **URL**: https://cloudbrowser.tv/docs/api
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/cloudbrowser-rest-api.html
+- **Description**: The REST API gives developers a persistent hosted Chrome browser for browser automation. It manages creation, pause and resume, and copies of paused browser profiles. Automation clients connect over CDP; teammates can inspect the browser in a permission-controlled Live View.
+
+This updates #122....
 
 ### Supabase
 - **Category**: Databases & BaaS
