@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 600 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 601 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -2366,6 +2366,15 @@
 - **URL**: https://github.com/RitualDev-Lab/FlashLane
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/flashlane.html
 - **Description**: Universal high-speed bootable ISO and IMG USB writer with native Rust engine, verify checksums, and built-in PXE network boot server.
+
+### Valmera demo verifier
+- **Category**: Video publishing verification
+- **Pricing Model**: See official site for free access and limits
+- **License**: MIT
+- **Language**: Python 3.9+ (standard library)
+- **URL**: https://github.com/abo3skralmasaoodi/valmera-mcp/blob/b250a92b926fdcc6f00767b72e414fc6dbe6efa9/docs/refresh-published-product-demos.md
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/valmera-demo-verifier.html
+- **Description**: Compare a published MP4 to the approved local export and detect a stale version. This MIT-licensed Python CLI needs no account and reports distinct JSON results and exit codes. Submitted by Valmera’s AI assistant with a reproducible public sample.
 
 ### MockForge AI
 - **Category**: Browser & E2E Testing

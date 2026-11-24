@@ -4,10 +4,10 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total CLI Tools](https://img.shields.io/badge/CLI_Tools-140_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total CLI Tools](https://img.shields.io/badge/CLI_Tools-141_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
-[Automation & Browser Testing](#automation-browser-testing) • [Benchmarking & Performance](#benchmarking-performance) • [Build & Task Automation](#build-task-automation) • [Build Tools & Monorepo Caching](#build-tools-monorepo-caching) • [CLI & Developer Productivity](#cli-developer-productivity) • [Database & SQL](#database-sql) • [Dev Utilities & Libraries](#dev-utilities-libraries) • [Developer Toolkits & MCP](#developer-toolkits-mcp) • [Developer Tools](#developer-tools) • [Developer Utilities](#developer-utilities) • [DevOps & Containers](#devops-containers) • [DevOps & Infrastructure](#devops-infrastructure) • [Disk & Storage](#disk-storage) • [Free Domain, RDAP, USPTO Trademark & Typosquatting CLI](#free-domain-rdap-uspto-trademark-typosquatting-cli) • [Git & Version Control](#git-version-control) • [GitHub Workflow & TUI](#github-workflow-tui) • [HTTP & Network](#http-network) • [Local source-code retrieval](#local-source-code-retrieval) • [OS & Hardware Utilities](#os-hardware-utilities) • [OS Utilities & System Flashing](#os-utilities-system-flashing) • [Package Management & Runtimes](#package-management-runtimes) • [Sandboxing & Cloud Execution](#sandboxing-cloud-execution) • [Screen recordings from the terminal](#screen-recordings-from-the-terminal) • [System & Process Monitoring](#system-process-monitoring) • [Terminal & Search](#terminal-search) • [Terminal & Shell](#terminal-shell) • [Terminal Navigation](#terminal-navigation) • [TypeScript library for testing local bot-detection rules](#typescript-library-for-testing-local-bot-detection-rules) • [Web Scraping & Crawling](#web-scraping-crawling) • [Wix and Notion workflow reference](#wix-and-notion-workflow-reference)
+[Automation & Browser Testing](#automation-browser-testing) • [Benchmarking & Performance](#benchmarking-performance) • [Build & Task Automation](#build-task-automation) • [Build Tools & Monorepo Caching](#build-tools-monorepo-caching) • [CLI & Developer Productivity](#cli-developer-productivity) • [Database & SQL](#database-sql) • [Dev Utilities & Libraries](#dev-utilities-libraries) • [Developer Toolkits & MCP](#developer-toolkits-mcp) • [Developer Tools](#developer-tools) • [Developer Utilities](#developer-utilities) • [DevOps & Containers](#devops-containers) • [DevOps & Infrastructure](#devops-infrastructure) • [Disk & Storage](#disk-storage) • [Free Domain, RDAP, USPTO Trademark & Typosquatting CLI](#free-domain-rdap-uspto-trademark-typosquatting-cli) • [Git & Version Control](#git-version-control) • [GitHub Workflow & TUI](#github-workflow-tui) • [HTTP & Network](#http-network) • [Local source-code retrieval](#local-source-code-retrieval) • [OS & Hardware Utilities](#os-hardware-utilities) • [OS Utilities & System Flashing](#os-utilities-system-flashing) • [Package Management & Runtimes](#package-management-runtimes) • [Sandboxing & Cloud Execution](#sandboxing-cloud-execution) • [Screen recordings from the terminal](#screen-recordings-from-the-terminal) • [System & Process Monitoring](#system-process-monitoring) • [Terminal & Search](#terminal-search) • [Terminal & Shell](#terminal-shell) • [Terminal Navigation](#terminal-navigation) • [TypeScript library for testing local bot-detection rules](#typescript-library-for-testing-local-bot-detection-rules) • [Video publishing verification](#video-publishing-verification) • [Web Scraping & Crawling](#web-scraping-crawling) • [Wix and Notion workflow reference](#wix-and-notion-workflow-reference)
 
 ---
 
@@ -288,6 +288,12 @@
 | Tool | Language | License | Description | Links |
 | :--- | :---: | :---: | :--- | :---: |
 | [**WebDecoy Node SDK**](https://github.com/webdecoy/node) | `TypeScript / Node.js` | `MIT` | This MIT-licensed SDK lets Node.js developers test local tripwires and rate limits without an API key. The repository includes a runnable Express playground and examples for comparing rule decisions in monitor and enforce modes. | [GitHub](https://github.com/webdecoy/node) |
+
+### <a id="video-publishing-verification"></a>Video publishing verification (1)
+
+| Tool | Language | License | Description | Links |
+| :--- | :---: | :---: | :--- | :---: |
+| [**Valmera demo verifier**](https://github.com/abo3skralmasaoodi/valmera-mcp) | `Python 3.9+ (standard library)` | `MIT` | Compare a published MP4 to the approved local export and detect a stale version. This MIT-licensed Python CLI needs no account and reports distinct JSON results and exit codes. Submitted by Valmera’s AI assistant with a reproducible public sample. | [GitHub](https://github.com/abo3skralmasaoodi/valmera-mcp) |
 
 ### <a id="web-scraping-crawling"></a>Web Scraping & Crawling (1)
 

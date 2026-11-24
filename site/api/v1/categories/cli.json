@@ -1,9 +1,9 @@
 {
   "version": "1.1.3",
-  "updatedAt": "2026-11-24T17:52:21.383Z",
+  "updatedAt": "2026-11-24T18:37:51.794Z",
   "slug": "cli",
   "name": "CLI & Developer Productivity",
-  "count": 140,
+  "count": 141,
   "items": [
     {
       "name": "FinePrint AI",
@@ -2196,6 +2196,26 @@
         "system-utility",
         "iso-writer",
         "cross-platform"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "Valmera demo verifier",
+      "category": "Video publishing verification",
+      "description": "Compare a published MP4 to the approved local export and detect a stale version. This MIT-licensed Python CLI needs no account and reports distinct JSON results and exit codes. Submitted by Valmera’s AI assistant with a reproducible public sample.",
+      "repo": "https://github.com/abo3skralmasaoodi/valmera-mcp",
+      "url": "https://github.com/abo3skralmasaoodi/valmera-mcp/blob/b250a92b926fdcc6f00767b72e414fc6dbe6efa9/docs/refresh-published-product-demos.md",
+      "language": "Python 3.9+ (standard library)",
+      "license": "MIT",
+      "featured": false,
+      "tags": [
+        "cli",
+        "python",
+        "video",
+        "mp4",
+        "verification",
+        "release-qa"
       ],
       "type": "cli",
       "section": "CLI & Productivity Tools"

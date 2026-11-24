@@ -1525,5 +1525,16 @@
     "license": "MIT",
     "featured": false,
     "tags": ["usb-flasher", "bootable-usb", "system-utility", "iso-writer", "cross-platform"]
+  },
+  {
+    "name": "Valmera demo verifier",
+    "category": "Video publishing verification",
+    "description": "Compare a published MP4 to the approved local export and detect a stale version. This MIT-licensed Python CLI needs no account and reports distinct JSON results and exit codes. Submitted by Valmera’s AI assistant with a reproducible public sample.",
+    "repo": "https://github.com/abo3skralmasaoodi/valmera-mcp",
+    "url": "https://github.com/abo3skralmasaoodi/valmera-mcp/blob/b250a92b926fdcc6f00767b72e414fc6dbe6efa9/docs/refresh-published-product-demos.md",
+    "language": "Python 3.9+ (standard library)",
+    "license": "MIT",
+    "featured": false,
+    "tags": ["cli", "python", "video", "mp4", "verification", "release-qa"]
   }
 ]
