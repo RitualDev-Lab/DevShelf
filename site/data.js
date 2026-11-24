@@ -1,12 +1,12 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-11-24T06:31:26.979Z",
-  "totalCount": 595,
-  "reposCount": 382,
+  "updatedAt": "2026-11-24T06:35:11.112Z",
+  "totalCount": 596,
+  "reposCount": 383,
   "facets": {
-    "repos": 382
+    "repos": 383
   },
   "counts": {
-    "aiTools": 114,
+    "aiTools": 115,
     "cliTools": 138,
     "testingQa": 67,
     "apis": 110,
@@ -1848,6 +1848,25 @@ window.DEVSHELF_DATA = {
         "sqlite",
         "decision-memory",
         "coding-agents"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Transformer.gg",
+      "category": "MCP Server & CLI for X Creator Sponsorships",
+      "description": "MCP server, CLI and REST API for booking sponsored posts from X creators. Free to join, with free creator rate lookups and free offer sending; creators keep 80%.",
+      "repo": "https://github.com/nbv-appfactory/transformer-mcp",
+      "url": "https://transformer.gg",
+      "language": "JavaScript / Node.js",
+      "license": "MIT",
+      "featured": false,
+      "tags": [
+        "mcp",
+        "ai-agents",
+        "cli",
+        "creator-economy",
+        "marketing"
       ],
       "type": "ai",
       "section": "AI Agents & Local LLMs"

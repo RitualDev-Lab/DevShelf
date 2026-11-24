@@ -2,8 +2,8 @@
   "version": "1.1.3",
   "docs": "https://devshelf.ritualdev.in/docs/api.html",
   "license": "https://github.com/RitualDev-Lab/DevShelf/blob/main/LICENSE",
-  "updatedAt": "2026-11-24T06:31:26.979Z",
-  "totalCount": 595,
+  "updatedAt": "2026-11-24T06:35:11.112Z",
+  "totalCount": 596,
   "tools": [
     {
       "name": "PromptShield",
@@ -1837,6 +1837,25 @@
         "sqlite",
         "decision-memory",
         "coding-agents"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "Transformer.gg",
+      "category": "MCP Server & CLI for X Creator Sponsorships",
+      "description": "MCP server, CLI and REST API for booking sponsored posts from X creators. Free to join, with free creator rate lookups and free offer sending; creators keep 80%.",
+      "repo": "https://github.com/nbv-appfactory/transformer-mcp",
+      "url": "https://transformer.gg",
+      "language": "JavaScript / Node.js",
+      "license": "MIT",
+      "featured": false,
+      "tags": [
+        "mcp",
+        "ai-agents",
+        "cli",
+        "creator-economy",
+        "marketing"
       ],
       "type": "ai",
       "section": "AI Agents & Local LLMs"

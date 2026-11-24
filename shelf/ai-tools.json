@@ -1249,5 +1249,16 @@
     "license": "MIT",
     "featured": false,
     "tags": ["mcp", "python", "sqlite", "decision-memory", "coding-agents"]
+  },
+  {
+    "name": "Transformer.gg",
+    "category": "MCP Server & CLI for X Creator Sponsorships",
+    "description": "MCP server, CLI and REST API for booking sponsored posts from X creators. Free to join, with free creator rate lookups and free offer sending; creators keep 80%.",
+    "repo": "https://github.com/nbv-appfactory/transformer-mcp",
+    "url": "https://transformer.gg",
+    "language": "JavaScript / Node.js",
+    "license": "MIT",
+    "featured": false,
+    "tags": ["mcp", "ai-agents", "cli", "creator-economy", "marketing"]
   }
 ]
