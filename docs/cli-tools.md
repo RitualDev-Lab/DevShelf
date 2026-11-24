@@ -4,10 +4,10 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total CLI Tools](https://img.shields.io/badge/CLI_Tools-135_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total CLI Tools](https://img.shields.io/badge/CLI_Tools-138_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
-[Automation & Browser Testing](#automation-browser-testing) • [Benchmarking & Performance](#benchmarking-performance) • [Build & Task Automation](#build-task-automation) • [CLI & Developer Productivity](#cli-developer-productivity) • [Database & SQL](#database-sql) • [Dev Utilities & Libraries](#dev-utilities-libraries) • [Developer Toolkits & MCP](#developer-toolkits-mcp) • [Developer Tools](#developer-tools) • [Developer Utilities](#developer-utilities) • [DevOps & Containers](#devops-containers) • [DevOps & Infrastructure](#devops-infrastructure) • [Disk & Storage](#disk-storage) • [Free Domain, RDAP, USPTO Trademark & Typosquatting CLI](#free-domain-rdap-uspto-trademark-typosquatting-cli) • [Git & Version Control](#git-version-control) • [GitHub Workflow & TUI](#github-workflow-tui) • [HTTP & Network](#http-network) • [OS & Hardware Utilities](#os-hardware-utilities) • [Package Management & Runtimes](#package-management-runtimes) • [Sandboxing & Cloud Execution](#sandboxing-cloud-execution) • [System & Process Monitoring](#system-process-monitoring) • [Terminal & Search](#terminal-search) • [Terminal & Shell](#terminal-shell) • [Terminal Navigation](#terminal-navigation) • [Web Scraping & Crawling](#web-scraping-crawling) • [Wix and Notion workflow reference](#wix-and-notion-workflow-reference)
+[Automation & Browser Testing](#automation-browser-testing) • [Benchmarking & Performance](#benchmarking-performance) • [Build & Task Automation](#build-task-automation) • [CLI & Developer Productivity](#cli-developer-productivity) • [Database & SQL](#database-sql) • [Dev Utilities & Libraries](#dev-utilities-libraries) • [Developer Toolkits & MCP](#developer-toolkits-mcp) • [Developer Tools](#developer-tools) • [Developer Utilities](#developer-utilities) • [DevOps & Containers](#devops-containers) • [DevOps & Infrastructure](#devops-infrastructure) • [Disk & Storage](#disk-storage) • [Free Domain, RDAP, USPTO Trademark & Typosquatting CLI](#free-domain-rdap-uspto-trademark-typosquatting-cli) • [Git & Version Control](#git-version-control) • [GitHub Workflow & TUI](#github-workflow-tui) • [HTTP & Network](#http-network) • [Local source-code retrieval](#local-source-code-retrieval) • [OS & Hardware Utilities](#os-hardware-utilities) • [Package Management & Runtimes](#package-management-runtimes) • [Sandboxing & Cloud Execution](#sandboxing-cloud-execution) • [Screen recordings from the terminal](#screen-recordings-from-the-terminal) • [System & Process Monitoring](#system-process-monitoring) • [Terminal & Search](#terminal-search) • [Terminal & Shell](#terminal-shell) • [Terminal Navigation](#terminal-navigation) • [TypeScript library for testing local bot-detection rules](#typescript-library-for-testing-local-bot-detection-rules) • [Web Scraping & Crawling](#web-scraping-crawling) • [Wix and Notion workflow reference](#wix-and-notion-workflow-reference)
 
 ---
 
@@ -176,6 +176,12 @@
 | [**grpcurl**](https://github.com/fullstorydev/grpcurl) | `Go` | `MIT` | Like cURL, but for gRPC: command-line tool that lets you interact with gRPC servers via reflection. | [GitHub](https://github.com/fullstorydev/grpcurl) |
 | [**speedtest-cli**](https://github.com/sivel/speedtest-cli) | `Python` | `Apache-2.0` | Command line interface for testing internet bandwidth using speedtest.net servers without flash/browser. | [GitHub](https://github.com/sivel/speedtest-cli) |
 
+### <a id="local-source-code-retrieval"></a>Local source-code retrieval (1)
+
+| Tool | Language | License | Description | Links |
+| :--- | :---: | :---: | :--- | :---: |
+| [**Qorx CLI**](https://github.com/bbrainfuckk/qorx) | `Rust` | `AGPL-3.0-only` | Qorx builds a local index of a workspace and returns matching source lines with filenames and line numbers. Developers can use the Rust CLI to inspect a small evidence pack before passing code to an AI tool. | [GitHub](https://github.com/bbrainfuckk/qorx) |
+
 ### <a id="os-hardware-utilities"></a>OS & Hardware Utilities (11)
 
 | Tool | Language | License | Description | Links |
@@ -203,6 +209,12 @@
 | Tool | Language | License | Description | Links |
 | :--- | :---: | :---: | :--- | :---: |
 | [**E2B Code Interpreter**](https://github.com/e2b-dev/E2B) | `Python / TypeScript` | `Apache-2.0` | Secure cloud sandboxing platform designed specifically for autonomous AI agents. Spawns isolated, microVM execution environments in milliseconds to run untrusted agent code, charts, and shell commands safely. | [GitHub](https://github.com/e2b-dev/E2B) |
+
+### <a id="screen-recordings-from-the-terminal"></a>Screen recordings from the terminal (1)
+
+| Tool | Language | License | Description | Links |
+| :--- | :---: | :---: | :--- | :---: |
+| [**Vertov CLI**](https://github.com/ankurmans/vertov-screen-recorder) | `JavaScript (Node.js 18+)` | `AGPL-3.0` | A zero-dependency Node CLI for Vertov. List screen recordings, copy their share links, or open the browser recorder. It works with the AGPL self-hosted server or the hosted service and authenticates with a workspace API key. | [GitHub](https://github.com/ankurmans/vertov-screen-recorder) |
 
 ### <a id="system-process-monitoring"></a>System & Process Monitoring (2)
 
@@ -258,6 +270,12 @@
 | Tool | Language | License | Description | Links |
 | :--- | :---: | :---: | :--- | :---: |
 | [**zoxide**](https://github.com/ajeetdsouza/zoxide) | `Rust` | `MIT` | Smarter cd command inspired by z and autojump: learns your navigation habits to jump to directories in fewer keystrokes. | [GitHub](https://github.com/ajeetdsouza/zoxide) |
+
+### <a id="typescript-library-for-testing-local-bot-detection-rules"></a>TypeScript library for testing local bot-detection rules (1)
+
+| Tool | Language | License | Description | Links |
+| :--- | :---: | :---: | :--- | :---: |
+| [**WebDecoy Node SDK**](https://github.com/webdecoy/node) | `TypeScript / Node.js` | `MIT` | This MIT-licensed SDK lets Node.js developers test local tripwires and rate limits without an API key. The repository includes a runnable Express playground and examples for comparing rule decisions in monitor and enforce modes. | [GitHub](https://github.com/webdecoy/node) |
 
 ### <a id="web-scraping-crawling"></a>Web Scraping & Crawling (1)
 

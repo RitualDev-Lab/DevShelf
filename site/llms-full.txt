@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 591 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 595 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -2304,6 +2304,33 @@
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/brandshield.html
 - **Description**: 100% free, zero-paywall CLI and web tool that checks domain availability across 78+ TLDs via IANA RDAP, scans USPTO trademarks, verifies social/package handles, and detects 28-variant typosquatting domains.
 
+### Qorx CLI
+- **Category**: Local source-code retrieval
+- **Pricing Model**: See official site for free access and limits
+- **License**: AGPL-3.0-only
+- **Language**: Rust
+- **URL**: https://github.com/bbrainfuckk/qorx/blob/main/docs/install.md
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/qorx-cli.html
+- **Description**: Qorx builds a local index of a workspace and returns matching source lines with filenames and line numbers. Developers can use the Rust CLI to inspect a small evidence pack before passing code to an AI tool.
+
+### WebDecoy Node SDK
+- **Category**: TypeScript library for testing local bot-detection rules
+- **Pricing Model**: See official site for free access and limits
+- **License**: MIT
+- **Language**: TypeScript / Node.js
+- **URL**: https://webdecoy.com/product/sdks
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/webdecoy-node-sdk.html
+- **Description**: This MIT-licensed SDK lets Node.js developers test local tripwires and rate limits without an API key. The repository includes a runnable Express playground and examples for comparing rule decisions in monitor and enforce modes.
+
+### Vertov CLI
+- **Category**: Screen recordings from the terminal
+- **Pricing Model**: See official site for free access and limits
+- **License**: AGPL-3.0
+- **Language**: JavaScript (Node.js 18+)
+- **URL**: https://github.com/ankurmans/vertov-screen-recorder/tree/main/cli
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/vertov-cli.html
+- **Description**: A zero-dependency Node CLI for Vertov. List screen recordings, copy their share links, or open the browser recorder. It works with the AGPL self-hosted server or the hosted service and authenticates with a workspace API key.
+
 ### MockForge AI
 - **Category**: Browser & E2E Testing
 - **Pricing Model**: See official site for free access and limits
@@ -4352,6 +4379,15 @@ Public documentation: https://lianxiaozhi.com/agent...
 - **URL**: https://www.dragonflydb.io
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/dragonfly.html
 - **Description**: A modern, highly performant replacement for Redis and Memcached with 25x throughput and multi-threaded core.
+
+### SiteWatcher
+- **Category**: Observability & Analytics
+- **Pricing Model**: See official site for free access and limits
+- **License**: MIT
+- **Language**: Python
+- **URL**: https://github.com/nikkurkov/sitewatcher
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/sitewatcher.html
+- **Description**: SiteWatcher is a self-hosted website monitor for uptime, response times, TLS certificates, and domain expiry, with public status pages. I'm the project maintainer.
 
 ### JetBrains Free Open Source License
 - **Category**: Developer Tools & IDEs
