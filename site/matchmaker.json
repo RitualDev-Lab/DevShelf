@@ -1,7 +1,9 @@
 {
-  "updatedAt": "2026-11-16T14:07:33.897Z",
+  "updatedAt": "2026-11-23T16:40:25.658Z",
   "totalProjects": 21,
-  "totalOpenIssues": 21,
+  "totalOpenIssues": 35,
+  "activeProjects": 20,
+  "staleProjects": 1,
   "projects": [
     {
       "name": "Zed",
@@ -22,16 +24,12 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 95140,
-      "forks": 11729,
-      "pushedAt": "2026-11-16T14:03:31Z",
-      "lastActivityRelative": "3m ago",
-      "techStack": [
-        "gpui",
-        "rust-lang",
-        "text-editor",
-        "zed"
-      ]
+      "stars": 95563,
+      "forks": 11819,
+      "pushedAt": "2026-11-23T16:38:51Z",
+      "lastActivityRelative": "just now",
+      "staleWarning": false,
+      "daysInactive": 0
     },
     {
       "name": "Biome",
@@ -52,17 +50,12 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 26112,
-      "forks": 1393,
-      "pushedAt": "2026-11-16T13:59:09Z",
+      "stars": 26185,
+      "forks": 1460,
+      "pushedAt": "2026-11-23T16:31:43Z",
       "lastActivityRelative": "8m ago",
-      "techStack": [
-        "css",
-        "formatter",
-        "javascript",
-        "json",
-        "jsx"
-      ]
+      "staleWarning": false,
+      "daysInactive": 0
     },
     {
       "name": "Nushell",
@@ -71,27 +64,39 @@
       "language": "Rust",
       "seeking": "Shell builtins, plugin architecture, cross-platform completions, and bug fixes",
       "description": "A modern shell powered by a structured data pipeline that treats output as typed tables rather than text.",
-      "openGoodFirstIssuesCount": 1,
+      "openGoodFirstIssuesCount": 2,
       "issues": [
         {
-          "title": "Explore open issues & help wanted in Nushell",
-          "url": "https://github.com/nushell/nushell/labels/good%20first%20issue",
+          "title": "`uniq-by` should take arguments of type `cell-path` or `closure`",
+          "url": "https://github.com/nushell/nushell/issues/14278",
+          "createdAt": "2024-11-07T07:25:58Z",
+          "comments": 3,
           "labels": [
+            "category:enhancement",
             "good first issue",
-            "help wanted"
+            "status:needs-triage"
           ],
-          "difficulty": "Starter Task"
+          "difficulty": "Beginner Friendly"
+        },
+        {
+          "title": "Change error message to recommend using the spread operator when passing a list to rm",
+          "url": "https://github.com/nushell/nushell/issues/13755",
+          "createdAt": "2024-09-02T11:47:34Z",
+          "comments": 3,
+          "labels": [
+            "category:enhancement",
+            "good first issue",
+            "status:needs-triage"
+          ],
+          "difficulty": "Beginner Friendly"
         }
       ],
-      "stars": 41023,
-      "forks": 2353,
-      "pushedAt": "2026-11-16T13:28:25Z",
-      "lastActivityRelative": "38m ago",
-      "techStack": [
-        "nushell",
-        "rust",
-        "shell"
-      ]
+      "stars": 41078,
+      "forks": 2366,
+      "pushedAt": "2026-11-23T16:35:07Z",
+      "lastActivityRelative": "5m ago",
+      "staleWarning": false,
+      "daysInactive": 0
     },
     {
       "name": "Infisical",
@@ -100,29 +105,65 @@
       "language": "TypeScript / Go",
       "seeking": "CLI integrations, Kubernetes operator features, SDK clients, and documentation",
       "description": "Open-source secret management platform to sync configuration and secrets across infrastructure, CI/CD, and teams.",
-      "openGoodFirstIssuesCount": 1,
+      "openGoodFirstIssuesCount": 13,
       "issues": [
         {
-          "title": "Explore open issues & help wanted in Infisical",
-          "url": "https://github.com/Infisical/infisical/labels/good%20first%20issue",
+          "title": "how do you set a longer timeout on infisical login?",
+          "url": "https://github.com/Infisical/infisical/issues/2909",
+          "createdAt": "2024-12-21T18:06:55Z",
+          "comments": 12,
           "labels": [
-            "good first issue",
-            "help wanted"
+            "good first issue"
           ],
-          "difficulty": "Starter Task"
+          "difficulty": "Beginner Friendly"
+        },
+        {
+          "title": "Delete secrets event is not being logged correctly",
+          "url": "https://github.com/Infisical/infisical/issues/2752",
+          "createdAt": "2024-11-19T00:56:40Z",
+          "comments": 9,
+          "labels": [
+            "good first issue"
+          ],
+          "difficulty": "Beginner Friendly"
+        },
+        {
+          "title": "Pass in values from flags as template values to export --template mechanism",
+          "url": "https://github.com/Infisical/infisical/issues/2246",
+          "createdAt": "2024-08-06T14:02:08Z",
+          "comments": 10,
+          "labels": [
+            "good first issue"
+          ],
+          "difficulty": "Beginner Friendly"
+        },
+        {
+          "title": "Ability to disable machine identities",
+          "url": "https://github.com/Infisical/infisical/issues/2240",
+          "createdAt": "2024-08-06T01:19:20Z",
+          "comments": 2,
+          "labels": [
+            "good first issue"
+          ],
+          "difficulty": "Beginner Friendly"
+        },
+        {
+          "title": "Automatically validate the email verification code (no need to press <ENTER>)",
+          "url": "https://github.com/Infisical/infisical/issues/1582",
+          "createdAt": "2024-03-17T19:35:22Z",
+          "comments": 20,
+          "labels": [
+            "good first issue"
+          ],
+          "difficulty": "Beginner Friendly"
         }
       ],
-      "stars": 30534,
-      "forks": 2430,
-      "pushedAt": "2026-11-16T13:49:25Z",
-      "lastActivityRelative": "17m ago",
-      "techStack": [
-        "acme",
-        "agents",
-        "ai-agents",
-        "certificate-management",
-        "devsecops"
-      ]
+      "stars": 30707,
+      "forks": 2444,
+      "pushedAt": "2026-11-23T16:24:30Z",
+      "lastActivityRelative": "15m ago",
+      "staleWarning": false,
+      "daysInactive": 0
     },
     {
       "name": "ast-grep",
@@ -143,17 +184,12 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 16597,
-      "forks": 504,
-      "pushedAt": "2026-11-16T05:30:33Z",
-      "lastActivityRelative": "8h ago",
-      "techStack": [
-        "ast",
-        "babel",
-        "codemod",
-        "codereview",
-        "command-line"
-      ]
+      "stars": 16670,
+      "forks": 506,
+      "pushedAt": "2026-11-23T09:45:37Z",
+      "lastActivityRelative": "6h ago",
+      "staleWarning": false,
+      "daysInactive": 0
     },
     {
       "name": "Cerbos",
@@ -174,17 +210,12 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 4661,
-      "forks": 218,
-      "pushedAt": "2026-11-16T08:49:22Z",
-      "lastActivityRelative": "5h ago",
-      "techStack": [
-        "abac",
-        "access-control",
-        "authorization",
-        "authz",
-        "authzen"
-      ]
+      "stars": 4668,
+      "forks": 220,
+      "pushedAt": "2026-11-23T10:21:15Z",
+      "lastActivityRelative": "6h ago",
+      "staleWarning": false,
+      "daysInactive": 0
     },
     {
       "name": "Infracost",
@@ -205,17 +236,12 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 12621,
-      "forks": 701,
-      "pushedAt": "2026-11-16T09:07:02Z",
-      "lastActivityRelative": "5h ago",
-      "techStack": [
-        "aws",
-        "azure",
-        "cdk",
-        "cloud",
-        "cloud-cost-estimates"
-      ]
+      "stars": 12631,
+      "forks": 703,
+      "pushedAt": "2026-11-23T14:29:31Z",
+      "lastActivityRelative": "2h ago",
+      "staleWarning": false,
+      "daysInactive": 0
     },
     {
       "name": "WezTerm",
@@ -227,26 +253,25 @@
       "openGoodFirstIssuesCount": 1,
       "issues": [
         {
-          "title": "Explore open issues & help wanted in WezTerm",
-          "url": "https://github.com/wez/wezterm/labels/good%20first%20issue",
+          "title": "Bottom tab bar design",
+          "url": "https://github.com/wezterm/wezterm/issues/6739",
+          "createdAt": "2025-02-28T18:36:34Z",
+          "comments": 3,
           "labels": [
+            "enhancement",
             "good first issue",
-            "help wanted"
+            "PR welcome!",
+            "T: ui"
           ],
-          "difficulty": "Starter Task"
+          "difficulty": "Beginner Friendly"
         }
       ],
-      "stars": 29571,
-      "forks": 1877,
-      "pushedAt": "2026-11-14T11:12:31Z",
-      "lastActivityRelative": "2d ago",
-      "techStack": [
-        "rust",
-        "serial",
-        "serial-port",
-        "terminal",
-        "terminal-emulator"
-      ]
+      "stars": 29667,
+      "forks": 1895,
+      "pushedAt": "2026-11-23T13:18:31Z",
+      "lastActivityRelative": "3h ago",
+      "staleWarning": false,
+      "daysInactive": 0
     },
     {
       "name": "Casbin",
@@ -267,17 +292,12 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 20500,
-      "forks": 1769,
-      "pushedAt": "2026-11-15T06:41:27Z",
-      "lastActivityRelative": "yesterday",
-      "techStack": [
-        "abac",
-        "access-control",
-        "acl",
-        "apache",
-        "auth"
-      ]
+      "stars": 20509,
+      "forks": 1777,
+      "pushedAt": "2026-11-21T16:28:17Z",
+      "lastActivityRelative": "2d ago",
+      "staleWarning": false,
+      "daysInactive": 2
     },
     {
       "name": "Open Source Ideas",
@@ -298,17 +318,13 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 6826,
+      "stars": 6823,
       "forks": 231,
       "pushedAt": "2025-09-24T14:59:31Z",
       "lastActivityRelative": "1y ago",
-      "techStack": [
-        "community",
-        "hacktoberfest",
-        "ideas",
-        "open-source",
-        "open-source-community"
-      ]
+      "staleWarning": true,
+      "daysInactive": 425,
+      "staleReason": "Repository inactive for 425 days (>6 months)"
     },
     {
       "name": "Up-For-Grabs",
@@ -329,17 +345,12 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 6036,
-      "forks": 2523,
-      "pushedAt": "2026-11-16T13:41:39Z",
-      "lastActivityRelative": "25m ago",
-      "techStack": [
-        "good-first-issue",
-        "help-wanted",
-        "javascript",
-        "ruby",
-        "up-for-grabs"
-      ]
+      "stars": 6041,
+      "forks": 2548,
+      "pushedAt": "2026-11-23T13:55:36Z",
+      "lastActivityRelative": "2h ago",
+      "staleWarning": false,
+      "daysInactive": 0
     },
     {
       "name": "freeCodeCamp",
@@ -360,17 +371,12 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 459198,
-      "forks": 47470,
-      "pushedAt": "2026-11-16T10:58:09Z",
-      "lastActivityRelative": "3h ago",
-      "techStack": [
-        "careers",
-        "certification",
-        "community",
-        "curriculum",
-        "d3"
-      ]
+      "stars": 459533,
+      "forks": 47411,
+      "pushedAt": "2026-11-23T15:11:56Z",
+      "lastActivityRelative": "1h ago",
+      "staleWarning": false,
+      "daysInactive": 0
     },
     {
       "name": "Excalidraw",
@@ -379,29 +385,70 @@
       "language": "TypeScript",
       "seeking": "Canvas tools, export formats, accessibility improvements, and localization",
       "description": "Virtual whiteboard for sketching hand-drawn like diagrams with end-to-end encryption.",
-      "openGoodFirstIssuesCount": 1,
+      "openGoodFirstIssuesCount": 25,
       "issues": [
         {
-          "title": "Explore open issues & help wanted in Excalidraw",
-          "url": "https://github.com/excalidraw/excalidraw/labels/good%20first%20issue",
+          "title": "Feature Request: Option to make laser drawings persistent (like iPad laser)",
+          "url": "https://github.com/excalidraw/excalidraw/issues/9884",
+          "createdAt": "2025-08-18T17:40:17Z",
+          "comments": 11,
           "labels": [
-            "good first issue",
-            "help wanted"
+            "enhancement",
+            "good first issue"
           ],
-          "difficulty": "Starter Task"
+          "difficulty": "Beginner Friendly"
+        },
+        {
+          "title": "Translation for Mongolian",
+          "url": "https://github.com/excalidraw/excalidraw/issues/9880",
+          "createdAt": "2025-08-18T09:34:05Z",
+          "comments": 6,
+          "labels": [
+            "enhancement",
+            "help wanted",
+            "good first issue",
+            "i18n"
+          ],
+          "difficulty": "Beginner Friendly"
+        },
+        {
+          "title": "Allow to switch into different arrow types when using \"Tab\" switcher when bound to element/s or text",
+          "url": "https://github.com/excalidraw/excalidraw/issues/9656",
+          "createdAt": "2025-06-15T06:20:15Z",
+          "comments": 11,
+          "labels": [
+            "enhancement",
+            "good first issue"
+          ],
+          "difficulty": "Beginner Friendly"
+        },
+        {
+          "title": "canvas search results unstable",
+          "url": "https://github.com/excalidraw/excalidraw/issues/9503",
+          "createdAt": "2025-05-10T10:59:42Z",
+          "comments": 11,
+          "labels": [
+            "good first issue"
+          ],
+          "difficulty": "Beginner Friendly"
+        },
+        {
+          "title": "Refactor point types ` { x, y }` to the proper unified point type in `@excalidraw/math`",
+          "url": "https://github.com/excalidraw/excalidraw/issues/9297",
+          "createdAt": "2025-03-24T14:10:41Z",
+          "comments": 18,
+          "labels": [
+            "good first issue"
+          ],
+          "difficulty": "Beginner Friendly"
         }
       ],
-      "stars": 135784,
-      "forks": 16188,
-      "pushedAt": "2026-11-16T12:19:01Z",
-      "lastActivityRelative": "1h ago",
-      "techStack": [
-        "canvas",
-        "collaboration",
-        "diagrams",
-        "drawing",
-        "hacktoberfest"
-      ]
+      "stars": 136178,
+      "forks": 16261,
+      "pushedAt": "2026-11-23T15:46:31Z",
+      "lastActivityRelative": "53m ago",
+      "staleWarning": false,
+      "daysInactive": 0
     },
     {
       "name": "Cal.com",
@@ -422,17 +469,12 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 50087,
-      "forks": 15652,
+      "stars": 50341,
+      "forks": 15738,
       "pushedAt": "2026-11-13T19:35:07Z",
-      "lastActivityRelative": "2d ago",
-      "techStack": [
-        "next-auth",
-        "nextjs",
-        "open-source",
-        "postgresql",
-        "prisma"
-      ]
+      "lastActivityRelative": "9d ago",
+      "staleWarning": false,
+      "daysInactive": 9
     },
     {
       "name": "Documenso",
@@ -453,17 +495,12 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 15775,
-      "forks": 3484,
-      "pushedAt": "2026-11-16T12:17:14Z",
-      "lastActivityRelative": "1h ago",
-      "techStack": [
-        "digital-signature",
-        "document-signing",
-        "docusign-alternative",
-        "e-signature",
-        "esign"
-      ]
+      "stars": 15881,
+      "forks": 3532,
+      "pushedAt": "2026-11-23T09:36:24Z",
+      "lastActivityRelative": "7h ago",
+      "staleWarning": false,
+      "daysInactive": 0
     },
     {
       "name": "Twenty",
@@ -484,17 +521,12 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 60989,
-      "forks": 10104,
-      "pushedAt": "2026-11-16T14:07:24Z",
+      "stars": 61368,
+      "forks": 10155,
+      "pushedAt": "2026-11-23T16:40:03Z",
       "lastActivityRelative": "just now",
-      "techStack": [
-        "crm",
-        "crm-system",
-        "customer",
-        "good-first-issue",
-        "graphql"
-      ]
+      "staleWarning": false,
+      "daysInactive": 0
     },
     {
       "name": "Ghost",
@@ -503,29 +535,41 @@
       "language": "JavaScript",
       "seeking": "Admin UI polish, theme adapters, starter bugs, and translation updates",
       "description": "Turn your audience into a business: open-source modern publishing and membership platform.",
-      "openGoodFirstIssuesCount": 1,
+      "openGoodFirstIssuesCount": 2,
       "issues": [
         {
-          "title": "Explore open issues & help wanted in Ghost",
-          "url": "https://github.com/TryGhost/Ghost/labels/good%20first%20issue",
+          "title": "Share profile image generation is broken for some avatars and cover images",
+          "url": "https://github.com/TryGhost/Ghost/issues/24600",
+          "createdAt": "2025-08-04T19:25:10Z",
+          "comments": 11,
+          "labels": [
+            "bug",
+            "good first issue",
+            "community"
+          ],
+          "difficulty": "Beginner Friendly"
+        },
+        {
+          "title": "🌐 i18n mega-issue",
+          "url": "https://github.com/TryGhost/Ghost/issues/23361",
+          "createdAt": "2025-05-15T16:00:02Z",
+          "comments": 40,
           "labels": [
             "good first issue",
-            "help wanted"
+            "help wanted",
+            "pinned",
+            "affects:i18n",
+            "community"
           ],
-          "difficulty": "Starter Task"
+          "difficulty": "Beginner Friendly"
         }
       ],
-      "stars": 55833,
-      "forks": 12139,
-      "pushedAt": "2026-11-16T14:06:16Z",
-      "lastActivityRelative": "just now",
-      "techStack": [
-        "blogging",
-        "cms",
-        "ghost",
-        "javascript",
-        "journalism"
-      ]
+      "stars": 55884,
+      "forks": 12076,
+      "pushedAt": "2026-11-23T16:27:16Z",
+      "lastActivityRelative": "13m ago",
+      "staleWarning": false,
+      "daysInactive": 0
     },
     {
       "name": "Chatwoot",
@@ -534,29 +578,81 @@
       "language": "Ruby / Vue",
       "seeking": "Channel connectors, webhook handlers, UI polish, and documentation",
       "description": "Open-source customer engagement suite, alternative to Intercom and Zendesk.",
-      "openGoodFirstIssuesCount": 1,
+      "openGoodFirstIssuesCount": 8,
       "issues": [
         {
-          "title": "Explore open issues & help wanted in Chatwoot",
-          "url": "https://github.com/chatwoot/chatwoot/labels/good%20first%20issue",
+          "title": "[CW-2693] feat: Auto-populate social media handles from Supported Channels",
+          "url": "https://github.com/chatwoot/chatwoot/issues/8214",
+          "createdAt": "2023-10-26T02:01:09Z",
+          "comments": 4,
           "labels": [
-            "good first issue",
-            "help wanted"
+            "Good first issue",
+            "feature-request",
+            "🏋️‍♂️ accepting-community-prs",
+            "📨 channel/telegram",
+            "💬 channel/whatsapp"
           ],
-          "difficulty": "Starter Task"
+          "difficulty": "Beginner Friendly"
+        },
+        {
+          "title": "Feature Request to add chatwoot directly install in plesk apps",
+          "url": "https://github.com/chatwoot/chatwoot/issues/6911",
+          "createdAt": "2023-04-17T01:21:21Z",
+          "comments": 7,
+          "labels": [
+            "Good first issue",
+            "feature-request",
+            "self-hosted",
+            "🏋️‍♂️ accepting-community-prs",
+            "⚙️ self-hosted/config"
+          ],
+          "difficulty": "Beginner Friendly"
+        },
+        {
+          "title": "Option to disable the \"message delete\" button",
+          "url": "https://github.com/chatwoot/chatwoot/issues/5950",
+          "createdAt": "2022-11-25T14:57:41Z",
+          "comments": 11,
+          "labels": [
+            "Good first issue",
+            "feature-request",
+            "🧄 feature/agent-ui"
+          ],
+          "difficulty": "Beginner Friendly"
+        },
+        {
+          "title": "[CW-1797] chore: Add validations before saving Dialogflow credentials",
+          "url": "https://github.com/chatwoot/chatwoot/issues/2383",
+          "createdAt": "2021-06-06T11:32:23Z",
+          "comments": 5,
+          "labels": [
+            "Good first issue",
+            "feature-request",
+            "🤖 integrations/dialogflow"
+          ],
+          "difficulty": "Beginner Friendly"
+        },
+        {
+          "title": "Email continuity / ActionMailbox with Postal server",
+          "url": "https://github.com/chatwoot/chatwoot/issues/1959",
+          "createdAt": "2021-03-21T11:28:39Z",
+          "comments": 8,
+          "labels": [
+            "documentation",
+            "Good first issue",
+            "feature-request",
+            "📮 channel/email",
+            "📨 self-hosted/smtp-mailer-config"
+          ],
+          "difficulty": "Beginner Friendly"
         }
       ],
-      "stars": 39973,
-      "forks": 9729,
-      "pushedAt": "2026-11-16T14:01:28Z",
-      "lastActivityRelative": "6m ago",
-      "techStack": [
-        "actioncable",
-        "chat-widget",
-        "conversation",
-        "customer-support",
-        "dashboard"
-      ]
+      "stars": 40418,
+      "forks": 9838,
+      "pushedAt": "2026-11-23T16:23:54Z",
+      "lastActivityRelative": "16m ago",
+      "staleWarning": false,
+      "daysInactive": 0
     },
     {
       "name": "AppFlowy",
@@ -577,17 +673,12 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 79013,
-      "forks": 6303,
+      "stars": 79427,
+      "forks": 6352,
       "pushedAt": "2026-11-15T11:08:51Z",
-      "lastActivityRelative": "yesterday",
-      "techStack": [
-        "blog",
-        "confluence-alternative",
-        "content-management",
-        "content-services",
-        "documentation"
-      ]
+      "lastActivityRelative": "8d ago",
+      "staleWarning": false,
+      "daysInactive": 8
     },
     {
       "name": "Affine",
@@ -608,17 +699,12 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 74577,
-      "forks": 5528,
-      "pushedAt": "2026-11-16T14:03:26Z",
-      "lastActivityRelative": "4m ago",
-      "techStack": [
-        "app",
-        "crdt",
-        "editor",
-        "electron",
-        "knowledge-base"
-      ]
+      "stars": 77211,
+      "forks": 5657,
+      "pushedAt": "2026-11-23T16:39:12Z",
+      "lastActivityRelative": "just now",
+      "staleWarning": false,
+      "daysInactive": 0
     },
     {
       "name": "Dub.co",
@@ -639,17 +725,12 @@
           "difficulty": "Starter Task"
         }
       ],
-      "stars": 25178,
-      "forks": 3409,
+      "stars": 25218,
+      "forks": 3410,
       "pushedAt": "2026-10-27T02:24:37Z",
-      "lastActivityRelative": "20d ago",
-      "techStack": [
-        "clickhouse",
-        "mysql",
-        "nextjs",
-        "open-source",
-        "planetscale"
-      ]
+      "lastActivityRelative": "27d ago",
+      "staleWarning": false,
+      "daysInactive": 27
     }
   ]
 }
