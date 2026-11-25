@@ -671,5 +671,16 @@
     "freeTier": "Permanent free read-only scan; no account or card required. Not a trial.",
     "statusTags": ["No Card Required"],
     "featured": false
+  },
+  {
+    "name": "Treseko Community",
+    "category": "Self-hosted QA test management",
+    "description": "Self-hosted test management for teams to organize test cases, suites, manual and API executions, evidence, and reports. Treseko Community is open source under AGPL-3.0-or-later.",
+    "repo": "https://github.com/treseko/treseko-platform",
+    "url": "https://treseko.com",
+    "language": "Python (FastAPI), TypeScript",
+    "license": "AGPL-3.0-or-later",
+    "featured": false,
+    "tags": ["testing", "qa", "test management", "self-hosted", "open source", "api testing"]
   }
 ]

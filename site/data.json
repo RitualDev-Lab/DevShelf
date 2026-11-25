@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-11-24T17:52:21.383Z",
-  "totalCount": 600,
-  "reposCount": 386,
+  "updatedAt": "2026-11-25T11:16:40.963Z",
+  "totalCount": 601,
+  "reposCount": 387,
   "facets": {
-    "repos": 386
+    "repos": 387
   },
   "counts": {
     "aiTools": 116,
     "cliTools": 140,
-    "testingQa": 67,
+    "testingQa": 68,
     "apis": 111,
     "freeCloud": 73,
     "perks": 30,
@@ -4916,6 +4916,26 @@
         "No Card Required"
       ],
       "featured": false,
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "Treseko Community",
+      "category": "Self-hosted QA test management",
+      "description": "Self-hosted test management for teams to organize test cases, suites, manual and API executions, evidence, and reports. Treseko Community is open source under AGPL-3.0-or-later.",
+      "repo": "https://github.com/treseko/treseko-platform",
+      "url": "https://treseko.com",
+      "language": "Python (FastAPI), TypeScript",
+      "license": "AGPL-3.0-or-later",
+      "featured": false,
+      "tags": [
+        "testing",
+        "qa",
+        "test management",
+        "self-hosted",
+        "open source",
+        "api testing"
+      ],
       "type": "testing",
       "section": "Testing & QA Reliability"
     },
