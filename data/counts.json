@@ -1,17 +1,17 @@
 {
-  "totalCount": 601,
+  "totalCount": 602,
   "milestone": "600+",
-  "exactCount": 601,
+  "exactCount": 602,
   "shelfCounts": {
     "ai-tools.json": 116,
     "apis.json": 111,
     "boilerplates.json": 42,
-    "cli-tools.json": 140,
+    "cli-tools.json": 141,
     "contributors-wanted.json": 21,
     "free-cloud.json": 73,
     "perks.json": 30,
     "testing-qa.json": 68
   },
-  "reposCount": 387,
-  "updatedAt": "2026-11-25T11:16:45.015Z"
+  "reposCount": 388,
+  "updatedAt": "2026-11-25T11:19:36.928Z"
 }

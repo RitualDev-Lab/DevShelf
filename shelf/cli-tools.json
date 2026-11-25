@@ -1525,5 +1525,16 @@
     "license": "MIT",
     "featured": false,
     "tags": ["usb-flasher", "bootable-usb", "system-utility", "iso-writer", "cross-platform"]
+  },
+  {
+    "name": "FCaptcha",
+    "category": "Self-hosted CAPTCHA verification for web developers",
+    "description": "FCaptcha is an MIT-licensed verifier for web forms. The Docker install and runnable Next.js, Hono, FastAPI, and Supabase examples show how to verify a form token on a developer-controlled backend.",
+    "repo": "https://github.com/webdecoy/fcaptcha",
+    "url": "https://docs.webdecoy.com/fcaptcha",
+    "language": "Go, JavaScript / Node.js",
+    "license": "MIT",
+    "featured": false,
+    "tags": ["captcha", "self-hosted", "docker", "developer-tools"]
   }
 ]

@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-11-25T11:16:40.963Z",
-  "totalCount": 601,
-  "reposCount": 387,
+  "updatedAt": "2026-11-25T11:19:32.457Z",
+  "totalCount": 602,
+  "reposCount": 388,
   "facets": {
-    "repos": 387
+    "repos": 388
   },
   "counts": {
     "aiTools": 116,
-    "cliTools": 140,
+    "cliTools": 141,
     "testingQa": 68,
     "apis": 111,
     "freeCloud": 73,
@@ -4081,6 +4081,24 @@
         "system-utility",
         "iso-writer",
         "cross-platform"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "FCaptcha",
+      "category": "Self-hosted CAPTCHA verification for web developers",
+      "description": "FCaptcha is an MIT-licensed verifier for web forms. The Docker install and runnable Next.js, Hono, FastAPI, and Supabase examples show how to verify a form token on a developer-controlled backend.",
+      "repo": "https://github.com/webdecoy/fcaptcha",
+      "url": "https://docs.webdecoy.com/fcaptcha",
+      "language": "Go, JavaScript / Node.js",
+      "license": "MIT",
+      "featured": false,
+      "tags": [
+        "captcha",
+        "self-hosted",
+        "docker",
+        "developer-tools"
       ],
       "type": "cli",
       "section": "CLI & Productivity Tools"
