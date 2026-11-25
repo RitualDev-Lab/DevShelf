@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/RitualDev-Lab/DevShelf.git"
   },
+  "bugs": {
+    "url": "https://github.com/RitualDev-Lab/DevShelf/issues"
+  },
   "homepage": "https://devshelf.ritualdev.in",
   "keywords": [
     "ai-agent-security",
@@ -18,9 +21,11 @@
     "developer-tools",
     "cursor-ide",
     "windsurf-ai",
+    "claude-desktop",
     "llm-security",
     "free-apis",
     "open-source",
+    "devtools-directory",
     "cli"
   ],
   "publishConfig": {
