@@ -1,9 +1,9 @@
 {
   "version": "1.1.3",
-  "updatedAt": "2026-11-25T11:16:40.963Z",
+  "updatedAt": "2026-11-25T11:19:32.457Z",
   "slug": "cli",
   "name": "CLI & Developer Productivity",
-  "count": 140,
+  "count": 141,
   "items": [
     {
       "name": "FinePrint AI",
@@ -2196,6 +2196,24 @@
         "system-utility",
         "iso-writer",
         "cross-platform"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "FCaptcha",
+      "category": "Self-hosted CAPTCHA verification for web developers",
+      "description": "FCaptcha is an MIT-licensed verifier for web forms. The Docker install and runnable Next.js, Hono, FastAPI, and Supabase examples show how to verify a form token on a developer-controlled backend.",
+      "repo": "https://github.com/webdecoy/fcaptcha",
+      "url": "https://docs.webdecoy.com/fcaptcha",
+      "language": "Go, JavaScript / Node.js",
+      "license": "MIT",
+      "featured": false,
+      "tags": [
+        "captcha",
+        "self-hosted",
+        "docker",
+        "developer-tools"
       ],
       "type": "cli",
       "section": "CLI & Productivity Tools"

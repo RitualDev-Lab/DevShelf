@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 601 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 602 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -2366,6 +2366,15 @@
 - **URL**: https://github.com/RitualDev-Lab/FlashLane
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/flashlane.html
 - **Description**: Universal high-speed bootable ISO and IMG USB writer with native Rust engine, verify checksums, and built-in PXE network boot server.
+
+### FCaptcha
+- **Category**: Self-hosted CAPTCHA verification for web developers
+- **Pricing Model**: See official site for free access and limits
+- **License**: MIT
+- **Language**: Go, JavaScript / Node.js
+- **URL**: https://docs.webdecoy.com/fcaptcha
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/fcaptcha.html
+- **Description**: FCaptcha is an MIT-licensed verifier for web forms. The Docker install and runnable Next.js, Hono, FastAPI, and Supabase examples show how to verify a form token on a developer-controlled backend.
 
 ### MockForge AI
 - **Category**: Browser & E2E Testing
