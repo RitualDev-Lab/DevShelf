@@ -4,10 +4,10 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total Testing Tools](https://img.shields.io/badge/Testing_Tools-67_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total Testing Tools](https://img.shields.io/badge/Testing_Tools-68_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
-[API Mocking & Sandboxes](#api-mocking-sandboxes) • [API Testing & Debugging](#api-testing-debugging) • [Browser & E2E Testing](#browser-e2e-testing) • [Contract & Schema Testing](#contract-schema-testing) • [Mobile & Device Testing](#mobile-device-testing) • [Performance & Load Testing](#performance-load-testing) • [Security & Vulnerability Auditing](#security-vulnerability-auditing) • [Security & Vulnerability Scanners](#security-vulnerability-scanners) • [Test Data Generation](#test-data-generation) • [Testing & QA Reliability](#testing-qa-reliability) • [Unit & Integration Testing](#unit-integration-testing)
+[API Mocking & Sandboxes](#api-mocking-sandboxes) • [API Testing & Debugging](#api-testing-debugging) • [Browser & E2E Testing](#browser-e2e-testing) • [Contract & Schema Testing](#contract-schema-testing) • [Mobile & Device Testing](#mobile-device-testing) • [Performance & Load Testing](#performance-load-testing) • [Security & Vulnerability Auditing](#security-vulnerability-auditing) • [Security & Vulnerability Scanners](#security-vulnerability-scanners) • [Self-hosted QA test management](#self-hosted-qa-test-management) • [Test Data Generation](#test-data-generation) • [Testing & QA Reliability](#testing-qa-reliability) • [Unit & Integration Testing](#unit-integration-testing)
 
 ---
 
@@ -108,6 +108,12 @@
 | [**Safety-CLI**](https://github.com/pyupio/safety) | `Python` | `MIT` | Checks Python dependencies against known security vulnerabilities from CVE databases. | [GitHub](https://github.com/pyupio/safety) |
 | [**⭐ OWASP ZAP**](https://github.com/zaproxy/zaproxy) | `Java` | `Apache-2.0` | The world's most widely used web app scanner, free and open-source automated penetration testing tool. | [GitHub](https://github.com/zaproxy/zaproxy) |
 | [**⭐ Nuclei**](https://github.com/projectdiscovery/nuclei) | `Go` | `MIT` | Fast and customizable vulnerability scanner based on simple YAML-based templates from ProjectDiscovery. | [GitHub](https://github.com/projectdiscovery/nuclei) |
+
+### <a id="self-hosted-qa-test-management"></a>Self-hosted QA test management (1)
+
+| Tool | Language | License | Description | Links |
+| :--- | :---: | :---: | :--- | :---: |
+| [**Treseko Community**](https://github.com/treseko/treseko-platform) | `Python (FastAPI), TypeScript` | `AGPL-3.0-or-later` | Self-hosted test management for teams to organize test cases, suites, manual and API executions, evidence, and reports. Treseko Community is open source under AGPL-3.0-or-later. | [GitHub](https://github.com/treseko/treseko-platform) |
 
 ### <a id="test-data-generation"></a>Test Data Generation (3)
 

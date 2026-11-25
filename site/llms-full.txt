@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 600 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 601 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -2992,6 +2992,15 @@
 - **URL**: https://vibelocked.com/leakcheck
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/vibelocked-leakcheck.html
 - **Description**: Read-only security scan for vibe-coded apps: leaked keys, open data, missing headers. Permanent free scan; Pro adds deploy watching from US$15/mo.
+
+### Treseko Community
+- **Category**: Self-hosted QA test management
+- **Pricing Model**: See official site for free access and limits
+- **License**: AGPL-3.0-or-later
+- **Language**: Python (FastAPI), TypeScript
+- **URL**: https://treseko.com
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/treseko-community.html
+- **Description**: Self-hosted test management for teams to organize test cases, suites, manual and API executions, evidence, and reports. Treseko Community is open source under AGPL-3.0-or-later.
 
 ### Open-Meteo
 - **Category**: Weather & Climate
