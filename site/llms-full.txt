@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 606 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 607 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -2393,6 +2393,15 @@
 - **URL**: https://agenterm.net
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/agenterm.html
 - **Description**: A self-hostable MCP server for temporary remote terminal troubleshooting with an existing AI agent. The target user runs one invitation command to download and start the Rust CLI, approves access, and can see commands and output or disconnect.
+
+### TheoremOS
+- **Category**: Lean 4 verification and research replay
+- **Pricing Model**: See official site for free access and limits
+- **License**: AGPL-3.0-only
+- **Language**: TypeScript / Bun
+- **URL**: https://github.com/huggingmath/theorem-os/blob/main/readme_en.md
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/theoremos.html
+- **Description**: TheoremOS is a Linux CLI and workbench for reviewing mathematical proof attempts and checking each original statement with Lean 4. Its preset replay runs a failed candidate and a repair on the same pinned Lean toolchain without a model key.
 
 ### MockForge AI
 - **Category**: Browser & E2E Testing

@@ -1,13 +1,13 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-11-26T10:57:33.639Z",
-  "totalCount": 606,
-  "reposCount": 390,
+  "updatedAt": "2026-11-26T17:11:52.135Z",
+  "totalCount": 607,
+  "reposCount": 391,
   "facets": {
-    "repos": 390
+    "repos": 391
   },
   "counts": {
     "aiTools": 117,
-    "cliTools": 142,
+    "cliTools": 143,
     "testingQa": 68,
     "apis": 113,
     "freeCloud": 73,
@@ -4142,6 +4142,24 @@ window.DEVSHELF_DATA = {
       ],
       "statusTags": [
         "[UNVERIFIED BINARY - UNSIGNED]"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "TheoremOS",
+      "category": "Lean 4 verification and research replay",
+      "description": "TheoremOS is a Linux CLI and workbench for reviewing mathematical proof attempts and checking each original statement with Lean 4. Its preset replay runs a failed candidate and a repair on the same pinned Lean toolchain without a model key.",
+      "repo": "https://github.com/huggingmath/theorem-os",
+      "url": "https://github.com/huggingmath/theorem-os/blob/main/readme_en.md",
+      "language": "TypeScript / Bun",
+      "license": "AGPL-3.0-only",
+      "featured": false,
+      "tags": [
+        "lean4",
+        "formal-verification",
+        "reproducibility",
+        "theorem-proving"
       ],
       "type": "cli",
       "section": "CLI & Productivity Tools"

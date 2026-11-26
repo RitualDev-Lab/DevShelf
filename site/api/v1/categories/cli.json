@@ -1,9 +1,9 @@
 {
   "version": "1.1.3",
-  "updatedAt": "2026-11-26T10:57:33.639Z",
+  "updatedAt": "2026-11-26T17:11:52.135Z",
   "slug": "cli",
   "name": "CLI & Developer Productivity",
-  "count": 142,
+  "count": 143,
   "items": [
     {
       "name": "FinePrint AI",
@@ -2239,6 +2239,24 @@
       ],
       "statusTags": [
         "[UNVERIFIED BINARY - UNSIGNED]"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "TheoremOS",
+      "category": "Lean 4 verification and research replay",
+      "description": "TheoremOS is a Linux CLI and workbench for reviewing mathematical proof attempts and checking each original statement with Lean 4. Its preset replay runs a failed candidate and a repair on the same pinned Lean toolchain without a model key.",
+      "repo": "https://github.com/huggingmath/theorem-os",
+      "url": "https://github.com/huggingmath/theorem-os/blob/main/readme_en.md",
+      "language": "TypeScript / Bun",
+      "license": "AGPL-3.0-only",
+      "featured": false,
+      "tags": [
+        "lean4",
+        "formal-verification",
+        "reproducibility",
+        "theorem-proving"
       ],
       "type": "cli",
       "section": "CLI & Productivity Tools"
