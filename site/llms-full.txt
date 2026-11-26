@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 604 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 605 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -2384,6 +2384,15 @@
 - **URL**: https://docs.webdecoy.com/fcaptcha
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/fcaptcha.html
 - **Description**: FCaptcha is an MIT-licensed verifier for web forms. The Docker install and runnable Next.js, Hono, FastAPI, and Supabase examples show how to verify a form token on a developer-controlled backend.
+
+### Agenterm
+- **Category**: Remote Terminal MCP
+- **Pricing Model**: See official site for free access and limits
+- **License**: Apache-2.0
+- **Language**: Go server, Rust CLI
+- **URL**: https://agenterm.net
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/agenterm.html
+- **Description**: A self-hostable MCP server for temporary remote terminal troubleshooting with an existing AI agent. The target user runs one invitation command to download and start the Rust CLI, approves access, and can see commands and output or disconnect.
 
 ### MockForge AI
 - **Category**: Browser & E2E Testing
