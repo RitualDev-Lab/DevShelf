@@ -4,7 +4,7 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total APIs](https://img.shields.io/badge/APIs-112_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total APIs](https://img.shields.io/badge/APIs-113_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
 [AI & Machine Learning](#ai-machine-learning) • [Animals & Fun](#animals-fun) • [Books & Literature](#books-literature) • [Development & Testing](#development-testing) • [Entertainment & Media](#entertainment-media) • [Finance & Crypto](#finance-crypto) • [Food & Health](#food-health) • [Games & Media](#games-media) • [Geocoding & IP](#geocoding-ip) • [Media & Images](#media-images) • [News & Media](#news-media) • [Other](#other) • [Science & Astronomy](#science-astronomy) • [Travel & Transit](#travel-transit) • [Weather & Climate](#weather-climate)
@@ -96,7 +96,7 @@
 | [**unicum.gg**](https://unicum.gg/docs) | 🟢 No Key | `No fixed quota, fair use. Every endpoint is free and keyless.` | Free World of Tanks statistics API: player/clan profiles, WN7/WN8/WNX ratings, leaderboards, tank specs, maps, tournaments and server population for EU, NA and Asia. Open source with OpenAPI 3 spec (https://unicum.gg/api/openapi.json) and community MCP server. |
 | [**Bucketlist.nl Dream of the Day**](https://bucketlist.nl/brand/droom-van-de-dag.openapi.json) | 🟢 No Key | `No numeric request quota or reset period is published in the official documentation. The selected content changes daily; that content schedule does not specify the number of permitted requests.` | A public JSON feed of daily travel, leisure and life-experience ideas with images, canonical URLs and source attribution. Developers can use it in activity-discovery interfaces and inspiration widgets; Netherlands/worldwide scope and five documented languages are supported. |
 
-### <a id="finance-crypto"></a>Finance & Crypto (10)
+### <a id="finance-crypto"></a>Finance & Crypto (11)
 
 | API & URL | Auth | Rate Limit | Description |
 | :--- | :---: | :---: | :--- |
@@ -110,6 +110,7 @@
 | [**CreditUnions**](https://creditunions.fyi/developers) | 🟢 No Key | `300 requests per 60 seconds` | Directory of federally insured US credit unions from the NCUA register. Listings show charter, field of membership, assets and member count. Read-only JSON API, no key needed. |
 | [**链小知区块链 (Lianxiaozhi)**](https://lianxiaozhi.com/agent) | 🟢 No Key | `A fixed request quota is not published in the documentation reviewed. The API is currently free and anonymous; respect Cache-Control, ETag and Retry-After. This is not a claim of unlimited usage.` | Read-only JSON access to Chinese-language blockchain news summaries, knowledge cards and tool guides. Useful for research dashboards or assistants that need source-linked Chinese context, rather than trade execution or price predictions.  Public documentation: https://lianxiaozhi.com/agent... |
 | [**BeliefState Company Coverage API**](https://beliefstate.ai/about#investor-thesis-coverage) | 🟢 No Key | `A fixed quota is not published. The coverage request is free and keyless.` | Public JSON listing the stocks with released BeliefState investor research, including ticker symbols, coverage counts, and observation dates. Developers can check which companies are covered before requesting research. The submitted API is the free coverage endpoint. Detailed research is... |
+| [**MacroDial Public Knowledge API**](https://macrodial.org/ai-resources) | 🟢 No Key | `No published fixed quota` | Free anonymous macro knowledge endpoints for product, methodology, module, and factor definitions. Submitted by MacroDial Team. |
 
 ### <a id="food-health"></a>Food & Health (3)
 

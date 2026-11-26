@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 605 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 606 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -3930,6 +3930,14 @@ This updates #122....
 - **URL**: https://anansi-haven.anansidata.workers.dev
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/anansi-haven-hosted-remote-mcp-server.html
 - **Description**: A hosted remote MCP server (JSON-RPC over HTTP POST at https://anansi-haven.anansidata.workers.dev/mcp) for AI agents. Its free read-only tools (time zones, units, math, text, JSON Schema, hashes, web metadata, prop-firm rules lookup) work on the first call with no key, and its find_tools...
+
+### MacroDial Public Knowledge API
+- **Category**: Finance & Crypto
+- **Pricing Model**: No published fixed quota
+- **Auth**: No Key
+- **URL**: https://macrodial.org/ai-resources
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/macrodial-public-knowledge-api.html
+- **Description**: Free anonymous macro knowledge endpoints for product, methodology, module, and factor definitions. Submitted by MacroDial Team.
 
 ### Supabase
 - **Category**: Databases & BaaS
