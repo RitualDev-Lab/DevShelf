@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-11-26T10:53:33.248Z",
-  "totalCount": 604,
-  "reposCount": 389,
+  "updatedAt": "2026-11-26T10:55:29.470Z",
+  "totalCount": 605,
+  "reposCount": 390,
   "facets": {
-    "repos": 389
+    "repos": 390
   },
   "counts": {
     "aiTools": 117,
-    "cliTools": 141,
+    "cliTools": 142,
     "testingQa": 68,
     "apis": 112,
     "freeCloud": 73,
@@ -4117,6 +4117,31 @@
         "self-hosted",
         "docker",
         "developer-tools"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "Agenterm",
+      "category": "Remote Terminal MCP",
+      "description": "A self-hostable MCP server for temporary remote terminal troubleshooting with an existing AI agent. The target user runs one invitation command to download and start the Rust CLI, approves access, and can see commands and output or disconnect.",
+      "repo": "https://github.com/heming9/agenterm",
+      "url": "https://agenterm.net",
+      "language": "Go server, Rust CLI",
+      "license": "Apache-2.0",
+      "featured": false,
+      "nativeBinary": true,
+      "codeSigned": false,
+      "tags": [
+        "mcp",
+        "remote-terminal",
+        "self-hosted",
+        "troubleshooting",
+        "rust",
+        "go"
+      ],
+      "statusTags": [
+        "[UNVERIFIED BINARY - UNSIGNED]"
       ],
       "type": "cli",
       "section": "CLI & Productivity Tools"

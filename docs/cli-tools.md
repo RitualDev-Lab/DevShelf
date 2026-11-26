@@ -4,10 +4,10 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total CLI Tools](https://img.shields.io/badge/CLI_Tools-141_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total CLI Tools](https://img.shields.io/badge/CLI_Tools-142_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
-[Automation & Browser Testing](#automation-browser-testing) • [Benchmarking & Performance](#benchmarking-performance) • [Build & Task Automation](#build-task-automation) • [Build Tools & Monorepo Caching](#build-tools-monorepo-caching) • [CLI & Developer Productivity](#cli-developer-productivity) • [Database & SQL](#database-sql) • [Dev Utilities & Libraries](#dev-utilities-libraries) • [Developer Toolkits & MCP](#developer-toolkits-mcp) • [Developer Tools](#developer-tools) • [Developer Utilities](#developer-utilities) • [DevOps & Containers](#devops-containers) • [DevOps & Infrastructure](#devops-infrastructure) • [Disk & Storage](#disk-storage) • [Free Domain, RDAP, USPTO Trademark & Typosquatting CLI](#free-domain-rdap-uspto-trademark-typosquatting-cli) • [Git & Version Control](#git-version-control) • [GitHub Workflow & TUI](#github-workflow-tui) • [HTTP & Network](#http-network) • [Local source-code retrieval](#local-source-code-retrieval) • [OS & Hardware Utilities](#os-hardware-utilities) • [OS Utilities & System Flashing](#os-utilities-system-flashing) • [Package Management & Runtimes](#package-management-runtimes) • [Sandboxing & Cloud Execution](#sandboxing-cloud-execution) • [Screen recordings from the terminal](#screen-recordings-from-the-terminal) • [Self-hosted CAPTCHA verification for web developers](#self-hosted-captcha-verification-for-web-developers) • [System & Process Monitoring](#system-process-monitoring) • [Terminal & Search](#terminal-search) • [Terminal & Shell](#terminal-shell) • [Terminal Navigation](#terminal-navigation) • [TypeScript library for testing local bot-detection rules](#typescript-library-for-testing-local-bot-detection-rules) • [Web Scraping & Crawling](#web-scraping-crawling) • [Wix and Notion workflow reference](#wix-and-notion-workflow-reference)
+[Automation & Browser Testing](#automation-browser-testing) • [Benchmarking & Performance](#benchmarking-performance) • [Build & Task Automation](#build-task-automation) • [Build Tools & Monorepo Caching](#build-tools-monorepo-caching) • [CLI & Developer Productivity](#cli-developer-productivity) • [Database & SQL](#database-sql) • [Dev Utilities & Libraries](#dev-utilities-libraries) • [Developer Toolkits & MCP](#developer-toolkits-mcp) • [Developer Tools](#developer-tools) • [Developer Utilities](#developer-utilities) • [DevOps & Containers](#devops-containers) • [DevOps & Infrastructure](#devops-infrastructure) • [Disk & Storage](#disk-storage) • [Free Domain, RDAP, USPTO Trademark & Typosquatting CLI](#free-domain-rdap-uspto-trademark-typosquatting-cli) • [Git & Version Control](#git-version-control) • [GitHub Workflow & TUI](#github-workflow-tui) • [HTTP & Network](#http-network) • [Local source-code retrieval](#local-source-code-retrieval) • [OS & Hardware Utilities](#os-hardware-utilities) • [OS Utilities & System Flashing](#os-utilities-system-flashing) • [Package Management & Runtimes](#package-management-runtimes) • [Remote Terminal MCP](#remote-terminal-mcp) • [Sandboxing & Cloud Execution](#sandboxing-cloud-execution) • [Screen recordings from the terminal](#screen-recordings-from-the-terminal) • [Self-hosted CAPTCHA verification for web developers](#self-hosted-captcha-verification-for-web-developers) • [System & Process Monitoring](#system-process-monitoring) • [Terminal & Search](#terminal-search) • [Terminal & Shell](#terminal-shell) • [Terminal Navigation](#terminal-navigation) • [TypeScript library for testing local bot-detection rules](#typescript-library-for-testing-local-bot-detection-rules) • [Web Scraping & Crawling](#web-scraping-crawling) • [Wix and Notion workflow reference](#wix-and-notion-workflow-reference)
 
 ---
 
@@ -215,6 +215,12 @@
 | Tool | Language | License | Description | Links |
 | :--- | :---: | :---: | :--- | :---: |
 | [**⭐ uv**](https://github.com/astral-sh/uv) | `Rust` | `Apache-2.0 / MIT` | Extremely fast Python package installer and resolver written in Rust, 10-100x faster than pip. | [GitHub](https://github.com/astral-sh/uv) |
+
+### <a id="remote-terminal-mcp"></a>Remote Terminal MCP (1)
+
+| Tool | Language | License | Description | Links |
+| :--- | :---: | :---: | :--- | :---: |
+| [**Agenterm**](https://github.com/heming9/agenterm) | `Go server, Rust CLI` | `Apache-2.0` | A self-hostable MCP server for temporary remote terminal troubleshooting with an existing AI agent. The target user runs one invitation command to download and start the Rust CLI, approves access, and can see commands and output or disconnect. | [GitHub](https://github.com/heming9/agenterm) |
 
 ### <a id="sandboxing-cloud-execution"></a>Sandboxing & Cloud Execution (1)
 
