@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 602 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 603 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -3904,6 +3904,14 @@ Public documentation: https://lianxiaozhi.com/agent...
 - **Description**: The REST API gives developers a persistent hosted Chrome browser for browser automation. It manages creation, pause and resume, and copies of paused browser profiles. Automation clients connect over CDP; teammates can inspect the browser in a permission-controlled Live View.
 
 This updates #122....
+
+### Anansi Haven (hosted remote MCP server)
+- **Category**: AI & Machine Learning
+- **Pricing Model**: No published limit for the free tools (no key needed); intended for agent/server-side use
+- **Auth**: No Key
+- **URL**: https://anansi-haven.anansidata.workers.dev
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/anansi-haven-hosted-remote-mcp-server.html
+- **Description**: A hosted remote MCP server (JSON-RPC over HTTP POST at https://anansi-haven.anansidata.workers.dev/mcp) for AI agents. Its free read-only tools (time zones, units, math, text, JSON Schema, hashes, web metadata, prop-firm rules lookup) work on the first call with no key, and its find_tools...
 
 ### Supabase
 - **Category**: Databases & BaaS
