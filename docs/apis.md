@@ -4,14 +4,14 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total APIs](https://img.shields.io/badge/APIs-111_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total APIs](https://img.shields.io/badge/APIs-112_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
 [AI & Machine Learning](#ai-machine-learning) • [Animals & Fun](#animals-fun) • [Books & Literature](#books-literature) • [Development & Testing](#development-testing) • [Entertainment & Media](#entertainment-media) • [Finance & Crypto](#finance-crypto) • [Food & Health](#food-health) • [Games & Media](#games-media) • [Geocoding & IP](#geocoding-ip) • [Media & Images](#media-images) • [News & Media](#news-media) • [Other](#other) • [Science & Astronomy](#science-astronomy) • [Travel & Transit](#travel-transit) • [Weather & Climate](#weather-climate)
 
 ---
 
-### <a id="ai-machine-learning"></a>AI & Machine Learning (5)
+### <a id="ai-machine-learning"></a>AI & Machine Learning (6)
 
 | API & URL | Auth | Rate Limit | Description |
 | :--- | :---: | :---: | :--- |
@@ -20,6 +20,7 @@
 | [**Caption-Pack API**](https://muse.ai/s/caption-pack-api-xfxt62ya0xcxlxhh) | 🟢 No Key | `5 req/hour (Playground)` | Deterministic social caption and hashtag generator API returning platform-ready JSON. Features a permanent keyless playground endpoint for developers and AI agents. |
 | [**QuelLLM**](https://quelllm.fr/api) | 🟢 No Key | `No numerical rate limit is published. Static, read-only JSON with no account, API key or card; consumers should cache responses.` | Read-only JSON catalog of self-hostable LLMs and GPU specifications, including model metadata, VRAM estimates and editorial rankings. Provides data for developer tools; does not run model inference. |
 | [**AgentSandboxes**](https://agentsandboxes.fyi/developers) | 🟢 No Key | `300 requests per 60 seconds` | Directory of cloud sandbox providers for AI agents. Listings show isolation, cold start, persistence, GPU support and pricing with a cited source per fact. Read-only JSON API, no key needed. |
+| [**Anansi Haven (hosted remote MCP server)**](https://anansi-haven.anansidata.workers.dev) | 🟢 No Key | `No published limit for the free tools (no key needed); intended for agent/server-side use` | A hosted remote MCP server (JSON-RPC over HTTP POST at https://anansi-haven.anansidata.workers.dev/mcp) for AI agents. Its free read-only tools (time zones, units, math, text, JSON Schema, hashes, web metadata, prop-firm rules lookup) work on the first call with no key, and its find_tools... |
 
 ### <a id="animals-fun"></a>Animals & Fun (16)
 

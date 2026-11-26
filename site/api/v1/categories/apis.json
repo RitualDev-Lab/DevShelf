@@ -1,9 +1,9 @@
 {
   "version": "1.1.3",
-  "updatedAt": "2026-11-25T11:19:32.457Z",
+  "updatedAt": "2026-11-26T10:51:21.935Z",
   "slug": "apis",
   "name": "Free Public APIs",
-  "count": 111,
+  "count": 112,
   "items": [
     {
       "name": "Open-Meteo",
@@ -1740,6 +1740,18 @@
       "auth": "Free API Key",
       "cors": "Unknown",
       "rateLimit": "1 browser-hour per UTC calendar month, with 1 running browser at a time. Reaching that limit pauses the browser until the allowance resets or the user upgrades. There is no Free-plan overage charge.",
+      "https": true,
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "Anansi Haven (hosted remote MCP server)",
+      "category": "AI & Machine Learning",
+      "description": "A hosted remote MCP server (JSON-RPC over HTTP POST at https://anansi-haven.anansidata.workers.dev/mcp) for AI agents. Its free read-only tools (time zones, units, math, text, JSON Schema, hashes, web metadata, prop-firm rules lookup) work on the first call with no key, and its find_tools...",
+      "url": "https://anansi-haven.anansidata.workers.dev",
+      "auth": "No Key",
+      "cors": "No",
+      "rateLimit": "No published limit for the free tools (no key needed); intended for agent/server-side use",
       "https": true,
       "type": "api",
       "section": "Free & Public APIs"
