@@ -1271,5 +1271,16 @@
     "license": "MIT",
     "featured": false,
     "tags": ["rag", "embeddings", "privacy", "local-ai", "ai-agents"]
+  },
+  {
+    "name": "SmarToken MCP",
+    "category": "MCP server for model discovery and API access",
+    "description": "Local MCP server for model discovery and chat via SmarToken. Model listing is free without a key; chat requires a user-supplied prepaid key and may incur usage charges.",
+    "repo": "https://github.com/liuxiyun/smartoken-mcp",
+    "url": "https://thesmartoken.com",
+    "language": "Python",
+    "license": "MIT",
+    "featured": false,
+    "tags": ["mcp", "python", "model discovery", "api gateway"]
   }
 ]

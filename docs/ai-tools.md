@@ -4,10 +4,10 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total AI Tools](https://img.shields.io/badge/AI_Tools-116_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total AI Tools](https://img.shields.io/badge/AI_Tools-117_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
-[AI & Machine Learning](#ai-machine-learning) • [AI Agent Security & Defense](#ai-agent-security-defense) • [AI Agents & Autonomous Coding](#ai-agents-autonomous-coding) • [AI Agents & Local LLMs](#ai-agents-local-llms) • [AI Agents & MCP Servers](#ai-agents-mcp-servers) • [AI Coding & MCP](#ai-coding-mcp) • [AI Development & Local Retrieval](#ai-development-local-retrieval) • [AI Workflow & Orchestration](#ai-workflow-orchestration) • [ai-tools](#ai-tools) • [Autonomous Coding & Agent Dev](#autonomous-coding-agent-dev) • [Decision memory for coding agents](#decision-memory-for-coding-agents) • [Local AI & Inference](#local-ai-inference) • [MCP Server & CLI for X Creator Sponsorships](#mcp-server-cli-for-x-creator-sponsorships) • [Offline Windows assistant for documents and meeting notes](#offline-windows-assistant-for-documents-and-meeting-notes) • [Web UI & Chat](#web-ui-chat)
+[AI & Machine Learning](#ai-machine-learning) • [AI Agent Security & Defense](#ai-agent-security-defense) • [AI Agents & Autonomous Coding](#ai-agents-autonomous-coding) • [AI Agents & Local LLMs](#ai-agents-local-llms) • [AI Agents & MCP Servers](#ai-agents-mcp-servers) • [AI Coding & MCP](#ai-coding-mcp) • [AI Development & Local Retrieval](#ai-development-local-retrieval) • [AI Workflow & Orchestration](#ai-workflow-orchestration) • [ai-tools](#ai-tools) • [Autonomous Coding & Agent Dev](#autonomous-coding-agent-dev) • [Decision memory for coding agents](#decision-memory-for-coding-agents) • [Local AI & Inference](#local-ai-inference) • [MCP Server & CLI for X Creator Sponsorships](#mcp-server-cli-for-x-creator-sponsorships) • [MCP server for model discovery and API access](#mcp-server-for-model-discovery-and-api-access) • [Offline Windows assistant for documents and meeting notes](#offline-windows-assistant-for-documents-and-meeting-notes) • [Web UI & Chat](#web-ui-chat)
 
 ---
 
@@ -188,6 +188,12 @@
 | Tool | Language | License | Description | Links |
 | :--- | :---: | :---: | :--- | :---: |
 | [**Transformer.gg**](https://github.com/nbv-appfactory/transformer-mcp) | `JavaScript / Node.js` | `MIT` | MCP server, CLI and REST API for booking sponsored posts from X creators. Free to join, with free creator rate lookups and free offer sending; creators keep 80%. | [GitHub](https://github.com/nbv-appfactory/transformer-mcp) |
+
+### <a id="mcp-server-for-model-discovery-and-api-access"></a>MCP server for model discovery and API access (1)
+
+| Tool | Language | License | Description | Links |
+| :--- | :---: | :---: | :--- | :---: |
+| [**SmarToken MCP**](https://github.com/liuxiyun/smartoken-mcp) | `Python` | `MIT` | Local MCP server for model discovery and chat via SmarToken. Model listing is free without a key; chat requires a user-supplied prepaid key and may incur usage charges. | [GitHub](https://github.com/liuxiyun/smartoken-mcp) |
 
 ### <a id="offline-windows-assistant-for-documents-and-meeting-notes"></a>Offline Windows assistant for documents and meeting notes (1)
 

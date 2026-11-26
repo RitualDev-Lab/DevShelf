@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-26T10:51:21.935Z",
-  "totalCount": 603,
-  "reposCount": 388,
+  "updatedAt": "2026-11-26T10:53:33.248Z",
+  "totalCount": 604,
+  "reposCount": 389,
   "facets": {
-    "repos": 388
+    "repos": 389
   },
   "counts": {
-    "aiTools": 116,
+    "aiTools": 117,
     "cliTools": 141,
     "testingQa": 68,
     "apis": 112,
@@ -1886,6 +1886,24 @@
         "privacy",
         "local-ai",
         "ai-agents"
+      ],
+      "type": "ai",
+      "section": "AI Agents & Local LLMs"
+    },
+    {
+      "name": "SmarToken MCP",
+      "category": "MCP server for model discovery and API access",
+      "description": "Local MCP server for model discovery and chat via SmarToken. Model listing is free without a key; chat requires a user-supplied prepaid key and may incur usage charges.",
+      "repo": "https://github.com/liuxiyun/smartoken-mcp",
+      "url": "https://thesmartoken.com",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "tags": [
+        "mcp",
+        "python",
+        "model discovery",
+        "api gateway"
       ],
       "type": "ai",
       "section": "AI Agents & Local LLMs"

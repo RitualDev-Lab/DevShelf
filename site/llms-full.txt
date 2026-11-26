@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 603 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 604 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -1077,6 +1077,15 @@
 - **URL**: https://github.com/RitualDev-Lab/localrag-kit
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/localrag-kit.html
 - **Description**: Offline, privacy-first local RAG engine and embedding pipeline for autonomous AI coding agents without third-party API dependencies or cloud leakage.
+
+### SmarToken MCP
+- **Category**: MCP server for model discovery and API access
+- **Pricing Model**: See official site for free access and limits
+- **License**: MIT
+- **Language**: Python
+- **URL**: https://thesmartoken.com
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/smartoken-mcp.html
+- **Description**: Local MCP server for model discovery and chat via SmarToken. Model listing is free without a key; chat requires a user-supplied prepaid key and may incur usage charges.
 
 ### FinePrint AI
 - **Category**: Developer Utilities
