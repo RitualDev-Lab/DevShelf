@@ -1550,5 +1550,16 @@
     "codeSigned": false,
     "tags": ["mcp", "remote-terminal", "self-hosted", "troubleshooting", "rust", "go"],
     "statusTags": ["[UNVERIFIED BINARY - UNSIGNED]"]
+  },
+  {
+    "name": "TheoremOS",
+    "category": "Lean 4 verification and research replay",
+    "description": "TheoremOS is a Linux CLI and workbench for reviewing mathematical proof attempts and checking each original statement with Lean 4. Its preset replay runs a failed candidate and a repair on the same pinned Lean toolchain without a model key.",
+    "repo": "https://github.com/huggingmath/theorem-os",
+    "url": "https://github.com/huggingmath/theorem-os/blob/main/readme_en.md",
+    "language": "TypeScript / Bun",
+    "license": "AGPL-3.0-only",
+    "featured": false,
+    "tags": ["lean4", "formal-verification", "reproducibility", "theorem-proving"]
   }
 ]
