@@ -1,6 +1,6 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-11-26T10:55:29.470Z",
-  "totalCount": 605,
+  "updatedAt": "2026-11-26T10:57:33.639Z",
+  "totalCount": 606,
   "reposCount": 390,
   "facets": {
     "repos": 390
@@ -9,7 +9,7 @@ window.DEVSHELF_DATA = {
     "aiTools": 117,
     "cliTools": 142,
     "testingQa": 68,
-    "apis": 112,
+    "apis": 113,
     "freeCloud": 73,
     "perks": 30,
     "boilerplates": 42,
@@ -6747,6 +6747,18 @@ window.DEVSHELF_DATA = {
       "auth": "No Key",
       "cors": "No",
       "rateLimit": "No published limit for the free tools (no key needed); intended for agent/server-side use",
+      "https": true,
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "MacroDial Public Knowledge API",
+      "category": "Finance & Crypto",
+      "description": "Free anonymous macro knowledge endpoints for product, methodology, module, and factor definitions. Submitted by MacroDial Team.",
+      "url": "https://macrodial.org/ai-resources",
+      "auth": "No Key",
+      "cors": "Unknown",
+      "rateLimit": "No published fixed quota",
       "https": true,
       "type": "api",
       "section": "Free & Public APIs"

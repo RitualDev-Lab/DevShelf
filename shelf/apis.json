@@ -1229,5 +1229,15 @@
     "cors": "No",
     "rateLimit": "No published limit for the free tools (no key needed); intended for agent/server-side use",
     "https": true
+  },
+  {
+    "name": "MacroDial Public Knowledge API",
+    "category": "Finance & Crypto",
+    "description": "Free anonymous macro knowledge endpoints for product, methodology, module, and factor definitions. Submitted by MacroDial Team.",
+    "url": "https://macrodial.org/ai-resources",
+    "auth": "No Key",
+    "cors": "Unknown",
+    "rateLimit": "No published fixed quota",
+    "https": true
   }
 ]
