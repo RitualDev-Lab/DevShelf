@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 610 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 611 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -2411,6 +2411,15 @@
 - **URL**: https://github.com/abhinavm27/migration-redirect-guard
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/migration-redirect-guard.html
 - **Description**: Dependency-free Node.js CLI that checks explicit old-to-new URL mappings, records redirect paths as JSON, and fails CI when destinations differ. Includes a GitHub Actions workflow for migration checks.
+
+### EverythingConnect
+- **Category**: Local agent tool gateway
+- **Pricing Model**: See official site for free access and limits
+- **License**: Apache-2.0
+- **Language**: TypeScript / Node.js
+- **URL**: https://everythingconnect.pages.dev
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/everythingconnect.html
+- **Description**: Local tool gateway exposing ConnectIR definitions through CLI, MCP, ACP and OpenAPI, with dry runs and receipts. Native installers are published; the macOS build script uses ad-hoc signing and notarization is not established.
 
 ### MockForge AI
 - **Category**: Browser & E2E Testing

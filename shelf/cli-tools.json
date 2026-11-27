@@ -1571,5 +1571,19 @@
     "license": "MIT",
     "featured": false,
     "tags": ["redirects", "website-migration", "cli", "testing", "github-actions"]
+  },
+  {
+    "name": "EverythingConnect",
+    "category": "Local agent tool gateway",
+    "description": "Local tool gateway exposing ConnectIR definitions through CLI, MCP, ACP and OpenAPI, with dry runs and receipts. Native installers are published; the macOS build script uses ad-hoc signing and notarization is not established.",
+    "repo": "https://github.com/jiangxingfan1-coder/everythingconnect",
+    "url": "https://everythingconnect.pages.dev",
+    "language": "TypeScript / Node.js",
+    "license": "Apache-2.0",
+    "featured": false,
+    "nativeBinary": true,
+    "codeSigned": false,
+    "tags": ["mcp", "cli", "acp", "openapi", "local-tools"],
+    "statusTags": ["[UNVERIFIED BINARY - UNSIGNED]"]
   }
 ]

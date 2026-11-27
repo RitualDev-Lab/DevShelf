@@ -1,13 +1,13 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-11-27T18:33:56.682Z",
-  "totalCount": 610,
-  "reposCount": 394,
+  "updatedAt": "2026-11-27T18:36:42.321Z",
+  "totalCount": 611,
+  "reposCount": 395,
   "facets": {
-    "repos": 394
+    "repos": 395
   },
   "counts": {
     "aiTools": 117,
-    "cliTools": 144,
+    "cliTools": 145,
     "testingQa": 68,
     "apis": 114,
     "freeCloud": 73,
@@ -4178,6 +4178,30 @@ window.DEVSHELF_DATA = {
         "cli",
         "testing",
         "github-actions"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "EverythingConnect",
+      "category": "Local agent tool gateway",
+      "description": "Local tool gateway exposing ConnectIR definitions through CLI, MCP, ACP and OpenAPI, with dry runs and receipts. Native installers are published; the macOS build script uses ad-hoc signing and notarization is not established.",
+      "repo": "https://github.com/jiangxingfan1-coder/everythingconnect",
+      "url": "https://everythingconnect.pages.dev",
+      "language": "TypeScript / Node.js",
+      "license": "Apache-2.0",
+      "featured": false,
+      "nativeBinary": true,
+      "codeSigned": false,
+      "tags": [
+        "mcp",
+        "cli",
+        "acp",
+        "openapi",
+        "local-tools"
+      ],
+      "statusTags": [
+        "[UNVERIFIED BINARY - UNSIGNED]"
       ],
       "type": "cli",
       "section": "CLI & Productivity Tools"
