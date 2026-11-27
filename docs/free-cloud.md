@@ -4,7 +4,7 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total Free Cloud](https://img.shields.io/badge/Free_Cloud-73_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total Free Cloud](https://img.shields.io/badge/Free_Cloud-74_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
 [Authentication & Security](#authentication-security) • [Cloud Hosting & PaaS](#cloud-hosting-paas) • [Databases & BaaS](#databases-baas) • [Messaging & Queues](#messaging-queues) • [Observability & Analytics](#observability-analytics) • [Search & Discovery](#search-discovery) • [Self-Hosted Cloud & PaaS](#self-hosted-cloud-paas) • [Storage & Buckets](#storage-buckets) • [Transactional Email](#transactional-email)
@@ -29,7 +29,7 @@
 | [**Casdoor**](https://casdoor.org) | `100% Free & Open Source Apache-2.0` | UI-first open-source Identity and Access Management (IAM) / Single-Sign-On (SSO) platform with web UI. | [Explore](https://casdoor.org) |
 | [**Ory Kratos**](https://www.ory.sh/kratos) | `100% Free & Open Source Apache-2.0` | Cloud-native user management system and identity provider implementing login, registration, MFA, and social auth. | [Explore](https://www.ory.sh/kratos) |
 
-### <a id="cloud-hosting-paas"></a>Cloud Hosting & PaaS (14)
+### <a id="cloud-hosting-paas"></a>Cloud Hosting & PaaS (15)
 
 | Service | Free Tier Allowance | Description | Links |
 | :--- | :--- | :--- | :---: |
@@ -47,6 +47,7 @@
 | [**GitLab Pages**](https://docs.gitlab.com/ee/user/project/pages) | `100% Free with custom domain support and Let's Encrypt SSL` | Publish static websites directly from any repository on GitLab with integrated CI/CD pipelines. | [Explore](https://docs.gitlab.com/ee/user/project/pages) |
 | [**Glitch**](https://glitch.com) | `Free public hosting with auto-sleep after inactivity` | Friendly community and instant web development environment where anyone can build, remix, and host full-stack apps. | [Explore](https://glitch.com) |
 | [**deed.page**](https://deed.page) | `Free plan: 25 sites, 25 MB per site, 60 publishes/hour, 10 retained versions, 1 custom domain` | Static hosting built for AI agents and scripts: one HTTP PUT or the remote MCP server publishes an HTML file or folder to a permanent https://<slug>.deed.page URL, with no account or signup step. | [Explore](https://deed.page) |
+| [**Sandscale**](https://sandscale.dev) | `Free plan: 100 awake vCPU-hours/month, 3 boxes at once, 5 GB storage, one workspace` | Firecracker microVM sandboxes, workspaces and build hosts for AI coding agents, with a remote MCP server, per-tool allow/ask/deny policy and an audit log. | [Explore](https://sandscale.dev) |
 
 ### <a id="databases-baas"></a>Databases & BaaS (15)
 

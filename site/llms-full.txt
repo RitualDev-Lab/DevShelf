@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 611 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 612 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -4275,6 +4275,13 @@ This updates #122....
 - **URL**: https://deed.page
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/deedpage.html
 - **Description**: Static hosting built for AI agents and scripts: one HTTP PUT or the remote MCP server publishes an HTML file or folder to a permanent https://<slug>.deed.page URL, with no account or signup step.
+
+### Sandscale
+- **Category**: Cloud Hosting & PaaS
+- **Pricing Model**: Free plan: 100 awake vCPU-hours/month, 3 boxes at once, 5 GB storage, one workspace
+- **URL**: https://sandscale.dev
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/sandscale.html
+- **Description**: Firecracker microVM sandboxes, workspaces and build hosts for AI coding agents, with a remote MCP server, per-tool allow/ask/deny policy and an audit log.
 
 ### Aiven Free Tier
 - **Category**: Databases & BaaS

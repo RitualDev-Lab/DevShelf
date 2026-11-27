@@ -322,6 +322,14 @@
     "statusTags": ["No Card Required"]
   },
   {
+    "name": "Sandscale",
+    "url": "https://sandscale.dev",
+    "category": "Cloud Hosting & PaaS",
+    "description": "Firecracker microVM sandboxes, workspaces and build hosts for AI coding agents, with a remote MCP server, per-tool allow/ask/deny policy and an audit log.",
+    "freeTier": "Free plan: 100 awake vCPU-hours/month, 3 boxes at once, 5 GB storage, one workspace",
+    "statusTags": []
+  },
+  {
     "name": "Aiven Free Tier",
     "url": "https://aiven.io/free-plans",
     "category": "Databases & BaaS",
