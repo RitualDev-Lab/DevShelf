@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-11-26T17:11:52.135Z",
-  "totalCount": 607,
-  "reposCount": 391,
+  "updatedAt": "2026-11-27T05:49:24.888Z",
+  "totalCount": 608,
+  "reposCount": 392,
   "facets": {
-    "repos": 391
+    "repos": 392
   },
   "counts": {
     "aiTools": 117,
-    "cliTools": 143,
+    "cliTools": 144,
     "testingQa": 68,
     "apis": 113,
     "freeCloud": 73,
@@ -4160,6 +4160,24 @@
         "formal-verification",
         "reproducibility",
         "theorem-proving"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "Migration Redirect Guard",
+      "category": "Website migration redirect validation",
+      "description": "Dependency-free Node.js CLI that checks explicit old-to-new URL mappings, records redirect paths as JSON, and fails CI when destinations differ. Includes a GitHub Actions workflow for migration checks.",
+      "repo": "https://github.com/abhinavm27/migration-redirect-guard",
+      "language": "JavaScript / Node.js 22+",
+      "license": "MIT",
+      "featured": false,
+      "tags": [
+        "redirects",
+        "website-migration",
+        "cli",
+        "testing",
+        "github-actions"
       ],
       "type": "cli",
       "section": "CLI & Productivity Tools"

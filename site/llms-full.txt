@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 607 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 608 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -2402,6 +2402,15 @@
 - **URL**: https://github.com/huggingmath/theorem-os/blob/main/readme_en.md
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/theoremos.html
 - **Description**: TheoremOS is a Linux CLI and workbench for reviewing mathematical proof attempts and checking each original statement with Lean 4. Its preset replay runs a failed candidate and a repair on the same pinned Lean toolchain without a model key.
+
+### Migration Redirect Guard
+- **Category**: Website migration redirect validation
+- **Pricing Model**: See official site for free access and limits
+- **License**: MIT
+- **Language**: JavaScript / Node.js 22+
+- **URL**: https://github.com/abhinavm27/migration-redirect-guard
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/migration-redirect-guard.html
+- **Description**: Dependency-free Node.js CLI that checks explicit old-to-new URL mappings, records redirect paths as JSON, and fails CI when destinations differ. Includes a GitHub Actions workflow for migration checks.
 
 ### MockForge AI
 - **Category**: Browser & E2E Testing
