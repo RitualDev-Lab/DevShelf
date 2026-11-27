@@ -4,10 +4,10 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total APIs](https://img.shields.io/badge/APIs-113_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total APIs](https://img.shields.io/badge/APIs-114_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
-[AI & Machine Learning](#ai-machine-learning) • [Animals & Fun](#animals-fun) • [Books & Literature](#books-literature) • [Development & Testing](#development-testing) • [Entertainment & Media](#entertainment-media) • [Finance & Crypto](#finance-crypto) • [Food & Health](#food-health) • [Games & Media](#games-media) • [Geocoding & IP](#geocoding-ip) • [Media & Images](#media-images) • [News & Media](#news-media) • [Other](#other) • [Science & Astronomy](#science-astronomy) • [Travel & Transit](#travel-transit) • [Weather & Climate](#weather-climate)
+[AI & Machine Learning](#ai-machine-learning) • [Animals & Fun](#animals-fun) • [Books & Literature](#books-literature) • [Development & Testing](#development-testing) • [Email verification and verified work-email search](#email-verification-and-verified-work-email-search) • [Entertainment & Media](#entertainment-media) • [Finance & Crypto](#finance-crypto) • [Food & Health](#food-health) • [Games & Media](#games-media) • [Geocoding & IP](#geocoding-ip) • [Media & Images](#media-images) • [News & Media](#news-media) • [Other](#other) • [Science & Astronomy](#science-astronomy) • [Travel & Transit](#travel-transit) • [Weather & Climate](#weather-climate)
 
 ---
 
@@ -87,6 +87,12 @@
 | [**CurlShot**](https://curlshot.com/docs) | 🔑 Free Key | `100 screenshots/month (resets monthly), 10 requests/minute; failed renders and cache hits not counted` | Screenshot API: one GET request renders a URL, HTML, or Markdown to PNG, JPEG, WebP, PDF, or scrolling video (MP4/WebM/GIF), with full-page and element capture, device presets, dark mode, and ad/cookie-banner blocking. Free plan: 100 screenshots/month that resets monthly, no credit card. |
 | [**Datacircle**](https://datacircle.dev) | 🟢 No Key | `60 calls/min` | Find the best GTM APIs. Benchmarking GTM APIs with published results at datacircle.dev. Base URL https://api.datacircle.dev/v1. |
 | [**Cloudbrowser REST API**](https://cloudbrowser.tv/docs/api) | 🔑 Free Key | `1 browser-hour per UTC calendar month, with 1 running browser at a time. Reaching that limit pauses the browser until the allowance resets or the user upgrades. There is no Free-plan overage charge.` | The REST API gives developers a persistent hosted Chrome browser for browser automation. It manages creation, pause and resume, and copies of paused browser profiles. Automation clients connect over CDP; teammates can inspect the browser in a permission-controlled Live View.  This updates #122.... |
+
+### <a id="email-verification-and-verified-work-email-search"></a>Email verification and verified work-email search (1)
+
+| API & URL | Auth | Rate Limit | Description |
+| :--- | :---: | :---: | :--- |
+| [**FairValid Customer API and MCP Integration**](https://fairvalid.com/help/api) | 🔑 Free Key | `300 shared free credits/month` | MIT integration and workflow skills for FairValid email verification and FairMatch via hosted HTTP API/MCP. Requires free account sign-in; 300 shared free credits monthly. |
 
 ### <a id="entertainment-media"></a>Entertainment & Media (3)
 

@@ -1,15 +1,15 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-11-27T09:57:46.233Z",
-  "totalCount": 609,
-  "reposCount": 393,
+  "updatedAt": "2026-11-27T10:00:32.299Z",
+  "totalCount": 610,
+  "reposCount": 394,
   "facets": {
-    "repos": 393
+    "repos": 394
   },
   "counts": {
     "aiTools": 117,
     "cliTools": 144,
     "testingQa": 68,
-    "apis": 113,
+    "apis": 114,
     "freeCloud": 73,
     "perks": 30,
     "boilerplates": 42,
@@ -6796,6 +6796,26 @@ window.DEVSHELF_DATA = {
       "cors": "Unknown",
       "rateLimit": "No published fixed quota",
       "https": true,
+      "type": "api",
+      "section": "Free & Public APIs"
+    },
+    {
+      "name": "FairValid Customer API and MCP Integration",
+      "category": "Email verification and verified work-email search",
+      "description": "MIT integration and workflow skills for FairValid email verification and FairMatch via hosted HTTP API/MCP. Requires free account sign-in; 300 shared free credits monthly.",
+      "url": "https://fairvalid.com/help/api",
+      "repo": "https://github.com/moonlitnayeem/fairvalid-ai",
+      "auth": "Free API Key",
+      "cors": "Yes",
+      "rateLimit": "300 shared free credits/month",
+      "https": true,
+      "tags": [
+        "email-verification",
+        "csv",
+        "mcp",
+        "api",
+        "freemium"
+      ],
       "type": "api",
       "section": "Free & Public APIs"
     },

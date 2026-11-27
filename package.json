@@ -4,7 +4,7 @@
   "mcpName": "io.github.RitualDev-Lab/devshelf",
   "private": false,
   "type": "module",
-  "description": "The open-source community directory for discovering 600+ developer tools, free APIs, AI agents, and open-source projects. Includes terminal CLI and MCP server.",
+  "description": "The open-source community directory for discovering 610+ developer tools, free APIs, AI agents, and open-source projects. Includes terminal CLI and MCP server.",
   "license": "MIT",
   "repository": {
     "type": "git",
