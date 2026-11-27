@@ -1561,5 +1561,15 @@
     "license": "AGPL-3.0-only",
     "featured": false,
     "tags": ["lean4", "formal-verification", "reproducibility", "theorem-proving"]
+  },
+  {
+    "name": "Migration Redirect Guard",
+    "category": "Website migration redirect validation",
+    "description": "Dependency-free Node.js CLI that checks explicit old-to-new URL mappings, records redirect paths as JSON, and fails CI when destinations differ. Includes a GitHub Actions workflow for migration checks.",
+    "repo": "https://github.com/abhinavm27/migration-redirect-guard",
+    "language": "JavaScript / Node.js 22+",
+    "license": "MIT",
+    "featured": false,
+    "tags": ["redirects", "website-migration", "cli", "testing", "github-actions"]
   }
 ]

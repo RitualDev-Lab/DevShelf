@@ -1,9 +1,9 @@
 {
   "version": "1.1.3",
-  "updatedAt": "2026-11-26T17:11:52.135Z",
+  "updatedAt": "2026-11-27T05:49:24.888Z",
   "slug": "cli",
   "name": "CLI & Developer Productivity",
-  "count": 143,
+  "count": 144,
   "items": [
     {
       "name": "FinePrint AI",
@@ -2257,6 +2257,24 @@
         "formal-verification",
         "reproducibility",
         "theorem-proving"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "Migration Redirect Guard",
+      "category": "Website migration redirect validation",
+      "description": "Dependency-free Node.js CLI that checks explicit old-to-new URL mappings, records redirect paths as JSON, and fails CI when destinations differ. Includes a GitHub Actions workflow for migration checks.",
+      "repo": "https://github.com/abhinavm27/migration-redirect-guard",
+      "language": "JavaScript / Node.js 22+",
+      "license": "MIT",
+      "featured": false,
+      "tags": [
+        "redirects",
+        "website-migration",
+        "cli",
+        "testing",
+        "github-actions"
       ],
       "type": "cli",
       "section": "CLI & Productivity Tools"
