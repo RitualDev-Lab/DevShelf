@@ -1,13 +1,13 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-11-27T18:56:10.422Z",
-  "totalCount": 612,
-  "reposCount": 395,
+  "updatedAt": "2026-11-27T23:55:40.077Z",
+  "totalCount": 613,
+  "reposCount": 396,
   "facets": {
-    "repos": 395
+    "repos": 396
   },
   "counts": {
     "aiTools": 117,
-    "cliTools": 145,
+    "cliTools": 146,
     "testingQa": 68,
     "apis": 114,
     "freeCloud": 74,
@@ -4202,6 +4202,24 @@ window.DEVSHELF_DATA = {
       ],
       "statusTags": [
         "[UNVERIFIED BINARY - UNSIGNED]"
+      ],
+      "type": "cli",
+      "section": "CLI & Productivity Tools"
+    },
+    {
+      "name": "TokenDefrag",
+      "category": "Coding-agent context and token measurement",
+      "description": "Estimates potential context-token savings from local Claude Code and OpenCode sessions. Shadow mode measures live requests without rewriting them or reducing the actual bill.",
+      "repo": "https://github.com/yuseferi/token-defrag",
+      "language": "Go",
+      "license": "MIT",
+      "featured": false,
+      "tags": [
+        "cli",
+        "claude-code",
+        "opencode",
+        "token-usage",
+        "cost-estimation"
       ],
       "type": "cli",
       "section": "CLI & Productivity Tools"
