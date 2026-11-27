@@ -1053,6 +1053,94 @@ DevShelf is initiated by the team at [RitualDev Lab](https://github.com/RitualDe
       </a><br />
       <sub>🌐 Cloudbrowser API (PR #260)</sub>
     </td>
+    <td align="center" width="160">
+      <a href="https://github.com/akii-technologies">
+        <img src="https://github.com/akii-technologies.png" width="70" style="border-radius: 50%;" alt="akii-technologies"/><br />
+        <sub><b>akii-technologies</b></sub>
+      </a><br />
+      <sub>🔍 Akii SEO Optimizer (PR #146)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/waynehamadi">
+        <img src="https://github.com/waynehamadi.png" width="70" style="border-radius: 50%;" alt="waynehamadi"/><br />
+        <sub><b>waynehamadi</b></sub>
+      </a><br />
+      <sub>📊 Datacircle (PR #150)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/Codificadito">
+        <img src="https://github.com/Codificadito.png" width="70" style="border-radius: 50%;" alt="Codificadito"/><br />
+        <sub><b>Codificadito</b></sub>
+      </a><br />
+      <sub>🤖 Treseko Community (PR #272)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/suicuLsi">
+        <img src="https://github.com/suicuLsi.png" width="70" style="border-radius: 50%;" alt="suicuLsi"/><br />
+        <sub><b>suicuLsi</b></sub>
+      </a><br />
+      <sub>🌐 MacroDial API (PR #279)</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="160">
+      <a href="https://github.com/Heming9">
+        <img src="https://github.com/Heming9.png" width="70" style="border-radius: 50%;" alt="Heming9"/><br />
+        <sub><b>Heming9</b></sub>
+      </a><br />
+      <sub>🖥️ Agenterm (PR #281)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/LiuXiyun">
+        <img src="https://github.com/LiuXiyun.png" width="70" style="border-radius: 50%;" alt="LiuXiyun"/><br />
+        <sub><b>LiuXiyun</b></sub>
+      </a><br />
+      <sub>🧠 SmarToken MCP (PR #283)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/kburrus64-max">
+        <img src="https://github.com/kburrus64-max.png" width="70" style="border-radius: 50%;" alt="kburrus64-max"/><br />
+        <sub><b>kburrus64-max</b></sub>
+      </a><br />
+      <sub>🔌 Anansi Haven MCP (PR #285)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/LikC1606">
+        <img src="https://github.com/LikC1606.png" width="70" style="border-radius: 50%;" alt="LikC1606"/><br />
+        <sub><b>LikC1606</b></sub>
+      </a><br />
+      <sub>🔬 TheoremOS (PR #288)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/abhinavm27">
+        <img src="https://github.com/abhinavm27.png" width="70" style="border-radius: 50%;" alt="abhinavm27"/><br />
+        <sub><b>abhinavm27</b></sub>
+      </a><br />
+      <sub>🔀 Migration Guard (PR #290)</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="160">
+      <a href="https://github.com/piotrpasierbek">
+        <img src="https://github.com/piotrpasierbek.png" width="70" style="border-radius: 50%;" alt="piotrpasierbek"/><br />
+        <sub><b>piotrpasierbek</b></sub>
+      </a><br />
+      <sub>⌚ Open Wearables (PR #292)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/djmoonlitse-gif">
+        <img src="https://github.com/djmoonlitse-gif.png" width="70" style="border-radius: 50%;" alt="djmoonlitse-gif"/><br />
+        <sub><b>djmoonlitse-gif</b></sub>
+      </a><br />
+      <sub>✉️ FairValid API (PR #294)</sub>
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/sanjay-senthilkumar01">
+        <img src="https://github.com/sanjay-senthilkumar01.png" width="70" style="border-radius: 50%;" alt="sanjay-senthilkumar01"/><br />
+        <sub><b>sanjay-senthilkumar01</b></sub>
+      </a><br />
+      <sub>☁️ Sandscale (PR #300)</sub>
+    </td>
   </tr>
 </table>
 
