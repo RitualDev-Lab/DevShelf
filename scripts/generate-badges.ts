@@ -264,13 +264,13 @@ export function generateFeaturedCardSvg(toolName = "Featured Open Source Project
 </svg>`;
 }
 
-export function generateUptimeBadgeSvg(toolName = "DevShelf", uptimePercent = "99.9%"): string {
+export function generateUptimeBadgeSvg(toolName = "DevShelf", uptimePercent?: string): string {
   const safeName = escapeXml(toolName);
-  const safeUptime = escapeXml(uptimePercent);
+  const safeUptime = uptimePercent ? escapeXml(uptimePercent) : undefined;
   const leftText = "DevShelf";
-  const rightText = `${safeUptime} Uptime | CI Verified`;
+  const rightText = safeUptime ? `${safeUptime} Uptime | CI Verified` : "Active | CI Verified";
   const leftWidth = 76;
-  const rightWidth = 146;
+  const rightWidth = safeUptime ? 146 : 124;
   const totalWidth = leftWidth + rightWidth;
   const textX = leftWidth + rightWidth / 2;
 
@@ -403,9 +403,10 @@ export async function buildStaticBadges() {
             .replace(/-+/g, "-")
             .replace(/^-|-$/g, "");
           if (slug) {
+            const measuredUptime = typeof item.uptime === "string" ? item.uptime : undefined;
             await fs.writeFile(
               path.join(BADGES_DIR, "uptime", `${slug}.svg`),
-              generateUptimeBadgeSvg(item.name, "99.9%"),
+              generateUptimeBadgeSvg(item.name, measuredUptime),
               "utf8",
             );
             await fs.writeFile(

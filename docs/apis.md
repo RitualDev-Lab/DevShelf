@@ -92,7 +92,7 @@
 
 | API & URL | Auth | Rate Limit | Description |
 | :--- | :---: | :---: | :--- |
-| [**FairValid Customer API and MCP Integration**](https://fairvalid.com/help/api) | 🔑 Free Key | `300 shared free credits/month` | MIT integration and workflow skills for FairValid email verification and FairMatch via hosted HTTP API/MCP. Requires free account sign-in; 300 shared free credits monthly. |
+| [**FairValid Customer API and MCP Integration**](https://fairvalid.com/help/api) | 🔑 Free Key | `Account credits and service limits apply; 300 shared free credits monthly` | MIT integration/skills for FairValid email verification and FairMatch via its proprietary hosted API/MCP. Account and credits required; 300 shared free credits monthly, optional purchases. |
 
 ### <a id="entertainment-media"></a>Entertainment & Media (3)
 

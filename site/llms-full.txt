@@ -3959,11 +3959,11 @@ This updates #122....
 
 ### FairValid Customer API and MCP Integration
 - **Category**: Email verification and verified work-email search
-- **Pricing Model**: 300 shared free credits/month
-- **Auth**: Free API Key
+- **Pricing Model**: Account credits and service limits apply; 300 shared free credits monthly
+- **Auth**: API Key
 - **URL**: https://fairvalid.com/help/api
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/fairvalid-customer-api-and-mcp-integration.html
-- **Description**: MIT integration and workflow skills for FairValid email verification and FairMatch via hosted HTTP API/MCP. Requires free account sign-in; 300 shared free credits monthly.
+- **Description**: MIT integration/skills for FairValid email verification and FairMatch via its proprietary hosted API/MCP. Account and credits required; 300 shared free credits monthly, optional purchases.
 
 ### Supabase
 - **Category**: Databases & BaaS
