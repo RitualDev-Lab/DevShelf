@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 608 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 609 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -5279,3 +5279,12 @@ This updates #122....
 - **URL**: https://github.com/dubinc/dub
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/dubco.html
 - **Description**: Open-source link management infrastructure for modern marketing teams with custom domains and analytics.
+
+### Open Wearables
+- **Category**: Open-Source SaaS & Web Apps
+- **Pricing Model**: See official site for free access and limits
+- **License**: MIT
+- **Language**: Python
+- **URL**: https://openwearables.io
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/open-wearables.html
+- **Description**: Self-hosted platform that brings wearable health data into a shared model and API for developers building health and fitness products. The MIT-licensed core runs in infrastructure the team controls.

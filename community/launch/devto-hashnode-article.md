@@ -18,7 +18,7 @@ If you have tried signing up for a new developer tool recently, you have probabl
 
 Over the past decade, the developer software landscape has undergone a silent transformation. What used to be genuine free tiers designed to nurture grass-roots adoption have increasingly morphed into **trial traps**, **freemium bait**, and **vendor lock-in funnels**.
 
-Frustrated by this trend, our open-source team spent the last several months auditing over **606 developer tools, public APIs, AI agents, and cloud platforms**. 
+Frustrated by this trend, our open-source team spent the last several months auditing over **609 developer tools, public APIs, AI agents, and cloud platforms**. 
 
 We set out to answer one question:  
 *Can a developer still build, test, and ship production-grade software on a true $0 budget without entering a credit card?*
@@ -27,7 +27,7 @@ The answer is **yes** — but you need to know where to look.
 
 To solve this permanently, we built and open-sourced **[DevShelf](https://devshelf.ritualdev.in)**: a zero-paywall developer ecosystem with continuous automated health checks, a terminal CLI, and a native Model Context Protocol (MCP) server.
 
-Here is what we learned from auditing 606+ tools, along with the most valuable zero-paywall discoveries you can use today.
+Here is what we learned from auditing 609+ tools, along with the most valuable zero-paywall discoveries you can use today.
 
 ---
 

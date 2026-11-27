@@ -189,5 +189,18 @@
     "seeking": "Analytics widgets, API client SDKs, documentation, and starter features",
     "goodFirstIssues": "https://github.com/dubinc/dub/labels/good%20first%20issue",
     "language": "TypeScript"
+  },
+  {
+    "name": "Open Wearables",
+    "repo": "https://github.com/the-momentum/open-wearables",
+    "url": "https://openwearables.io",
+    "category": "Open-Source SaaS & Web Apps",
+    "description": "Self-hosted platform that brings wearable health data into a shared model and API for developers building health and fitness products. The MIT-licensed core runs in infrastructure the team controls.",
+    "seeking": "Python SDK, provider support, and sync performance work",
+    "goodFirstIssues": "https://github.com/the-momentum/open-wearables/issues?q=is%3Aissue%20is%3Aopen%20label%3A%22good%20first%20issue%22",
+    "language": "Python",
+    "license": "MIT",
+    "featured": false,
+    "tags": ["wearables", "self-hosted", "health-data", "open-source", "python"]
   }
 ]

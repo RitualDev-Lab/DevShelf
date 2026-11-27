@@ -3679,6 +3679,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://devshelf.ritualdev.in/tools/open-wearables.html</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://devshelf.ritualdev.in/alternatives/github-copilot.html</loc>
     <lastmod>2026-11-27</lastmod>
     <changefreq>weekly</changefreq>
