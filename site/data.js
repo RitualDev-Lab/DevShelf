@@ -1,9 +1,9 @@
 window.DEVSHELF_DATA = {
-  "updatedAt": "2026-11-27T05:49:24.888Z",
-  "totalCount": 608,
-  "reposCount": 392,
+  "updatedAt": "2026-11-27T09:57:46.233Z",
+  "totalCount": 609,
+  "reposCount": 393,
   "facets": {
-    "repos": 392
+    "repos": 393
   },
   "counts": {
     "aiTools": 117,
@@ -13,7 +13,7 @@ window.DEVSHELF_DATA = {
     "freeCloud": 73,
     "perks": 30,
     "boilerplates": 42,
-    "contributors": 21
+    "contributors": 22
   },
   "resources": [
     {
@@ -9093,6 +9093,27 @@ window.DEVSHELF_DATA = {
       "seeking": "Analytics widgets, API client SDKs, documentation, and starter features",
       "goodFirstIssues": "https://github.com/dubinc/dub/labels/good%20first%20issue",
       "language": "TypeScript",
+      "type": "contributors",
+      "section": "Contributors Wanted"
+    },
+    {
+      "name": "Open Wearables",
+      "repo": "https://github.com/the-momentum/open-wearables",
+      "url": "https://openwearables.io",
+      "category": "Open-Source SaaS & Web Apps",
+      "description": "Self-hosted platform that brings wearable health data into a shared model and API for developers building health and fitness products. The MIT-licensed core runs in infrastructure the team controls.",
+      "seeking": "Python SDK, provider support, and sync performance work",
+      "goodFirstIssues": "https://github.com/the-momentum/open-wearables/issues?q=is%3Aissue%20is%3Aopen%20label%3A%22good%20first%20issue%22",
+      "language": "Python",
+      "license": "MIT",
+      "featured": false,
+      "tags": [
+        "wearables",
+        "self-hosted",
+        "health-data",
+        "open-source",
+        "python"
+      ],
       "type": "contributors",
       "section": "Contributors Wanted"
     }

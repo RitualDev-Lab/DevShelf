@@ -4,7 +4,7 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Open Projects](https://img.shields.io/badge/Projects-21_Seeking_Contributors-brightgreen?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Open Projects](https://img.shields.io/badge/Projects-22_Seeking_Contributors-brightgreen?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
 [Community & Education](#community-education) • [Developer Utilities & CLI](#developer-utilities-cli) • [DevOps & Cloud Tools](#devops-cloud-tools) • [Marketing & Analytics](#marketing-analytics) • [Open Source Discovery](#open-source-discovery) • [Open-Source SaaS & Web Apps](#open-source-saas-web-apps) • [Productivity & Design](#productivity-design) • [Productivity & Notes](#productivity-notes) • [Security & Identity](#security-identity)
@@ -46,7 +46,7 @@
 | [**Open Source Ideas**](https://github.com/open-source-ideas/ideas) | `Community / Markdown` | Project proposals, feature ideation, starter contributors, documentation | [Browse Issues](https://github.com/open-source-ideas/ideas/issues) | [GitHub](https://github.com/open-source-ideas/ideas) |
 | [**Up-For-Grabs**](https://github.com/up-for-grabs/up-for-grabs.net) | `Ruby / JavaScript` | Site enhancements, new project definitions, triage, Jekyll improvements | [Browse Issues](https://github.com/up-for-grabs/up-for-grabs.net/issues) | [GitHub](https://github.com/up-for-grabs/up-for-grabs.net) |
 
-### <a id="open-source-saas-web-apps"></a>Open-Source SaaS & Web Apps (5)
+### <a id="open-source-saas-web-apps"></a>Open-Source SaaS & Web Apps (6)
 
 | Project | Language | Seeking Contributions For | Good First Issues | Repo |
 | :--- | :---: | :--- | :---: | :---: |
@@ -55,6 +55,7 @@
 | [**Twenty**](https://github.com/twentyhq/twenty) | `TypeScript` | Frontend components, data import/export adapters, and API endpoints | [Browse Issues](https://github.com/twentyhq/twenty/labels/good%20first%20issue) | [GitHub](https://github.com/twentyhq/twenty) |
 | [**Ghost**](https://github.com/TryGhost/Ghost) | `JavaScript` | Admin UI polish, theme adapters, starter bugs, and translation updates | [Browse Issues](https://github.com/TryGhost/Ghost/labels/good%20first%20issue) | [GitHub](https://github.com/TryGhost/Ghost) |
 | [**Chatwoot**](https://github.com/chatwoot/chatwoot) | `Ruby / Vue` | Channel connectors, webhook handlers, UI polish, and documentation | [Browse Issues](https://github.com/chatwoot/chatwoot/labels/good%20first%20issue) | [GitHub](https://github.com/chatwoot/chatwoot) |
+| [**Open Wearables**](https://github.com/the-momentum/open-wearables) | `Python` | Python SDK, provider support, and sync performance work | [Browse Issues](https://github.com/the-momentum/open-wearables/issues?q=is%3Aissue%20is%3Aopen%20label%3A%22good%20first%20issue%22) | [GitHub](https://github.com/the-momentum/open-wearables) |
 
 ### <a id="productivity-design"></a>Productivity & Design (1)
 
