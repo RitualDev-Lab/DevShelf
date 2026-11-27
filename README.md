@@ -1,6 +1,6 @@
 # DevShelf
 
-**A CI-audited, zero-paywall directory of 609 developer tools, free APIs, and MCP servers — searchable in your terminal, browser, or inside Claude/Cursor via MCP.**
+**A CI-audited, zero-paywall directory of 610 developer tools, free APIs, and MCP servers — searchable in your terminal, browser, or inside Claude/Cursor via MCP.**
 
 [![CI](https://github.com/RitualDev-Lab/DevShelf/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/RitualDev-Lab/DevShelf/actions/workflows/ci.yml)
 [![npm](https://img.shields.io/npm/v/@ritualdev-lab/devshelf.svg?style=flat-square&color=cb3837)](https://www.npmjs.com/package/@ritualdev-lab/devshelf)
@@ -12,7 +12,7 @@ No link rot. No "14-day free trial" bait. Unsigned native binaries are explicitl
 ### Try it in 5 seconds
 
 ```bash
-# Search 609 CI-audited tools directly from your terminal
+# Search 610 CI-audited tools directly from your terminal
 npx @ritualdev-lab/devshelf search "postgres"
 
 # Or plug the catalog into Claude Desktop / Cursor / Windsurf as an MCP server
@@ -21,7 +21,7 @@ npx @ritualdev-lab/devshelf mcp
 
 ```text
 $ npx @ritualdev-lab/devshelf search "postgres"
-📚 DevShelf CLI — 609 Curated Tools (CI Link & Binary-Trust Audited)
+📚 DevShelf CLI — 610 Curated Tools (CI Link & Binary-Trust Audited)
 
 [1] Neon (Database / Serverless)
     Serverless Postgres with branching and free tier (0.5 GB storage)
@@ -49,7 +49,7 @@ DevShelf is community-curated. Every merged PR automatically publishes your tool
 
 | 🌐 Free APIs | 🤖 AI & LLMs | ⚡ CLI Tools | 🧪 Testing & QA | ☁️ Free Cloud | 🤝 Up for Grabs | 🎁 Dev Perks | 🚀 1-Click Deploys |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| `113` | `117` | `144` | `68` | `73` | `22` | `30` | `42` |
+| `114` | `117` | `144` | `68` | `73` | `22` | `30` | `42` |
 
 ---
 
@@ -128,7 +128,7 @@ Stay in flow without leaving your terminal. DevShelf includes an interactive fuz
 # Launch interactive Terminal UI (fuzzy search, category browsing, and 1-click open)
 npx devshelf
 
-# Instant search across all 600+ curated resources
+# Instant search across all 610+ curated resources
 npx devshelf search "postgres"
 npx devshelf search "auth" --open
 
@@ -149,11 +149,11 @@ npx devshelf stats
 
 ## 📂 Browse Catalog by Category
 
-Explore our curated collections of **609+ zero-paywall developer tools**, categorized into dedicated guides with subcategory indexing:
+Explore our curated collections of **610+ zero-paywall developer tools**, categorized into dedicated guides with subcategory indexing:
 
 | Category | Resources | Description & Subcategories | Guide |
 | :--- | :---: | :--- | :---: |
-| 🌐 **Free & Public APIs** | **113** | Weather, Finance, Mock/Dev APIs, Geocoding, AI/ML, Media, Entertainment | [**Browse APIs →**](docs/apis.md) |
+| 🌐 **Free & Public APIs** | **114** | Weather, Finance, Mock/Dev APIs, Geocoding, AI/ML, Media, Entertainment | [**Browse APIs →**](docs/apis.md) |
 | 🤖 **AI Agents & Local LLMs** | **117** | Local LLM Runtimes, Autonomous Agents, Coding Assistants, Orchestration | [**Browse AI Tools →**](docs/ai-tools.md) |
 | ⚡ **CLI & Productivity Tools** | **144** | Terminal Utilities, Git Power Tools, Docker & DevOps, Benchmarking, DBs | [**Browse CLI Tools →**](docs/cli-tools.md) |
 | 🧪 **Testing & QA Reliability** | **68** | E2E Testing, Mock Servers, Contract Testing, Security Auditing, Performance | [**Browse Testing Tools →**](docs/testing-qa.md) |
@@ -224,7 +224,7 @@ DevShelf is backed by a 100% free, CORS-enabled, static public REST API with zer
 
 | Endpoint | Method | Description |
 | :--- | :--- | :--- |
-| **[`/api/v1/tools.json`](https://devshelf.ritualdev.in/api/v1/tools.json)** | `GET` | All 600+ curated developer tools, APIs, and AI models |
+| **[`/api/v1/tools.json`](https://devshelf.ritualdev.in/api/v1/tools.json)** | `GET` | All 610+ curated developer tools, APIs, and AI models |
 | **[`/api/v1/stats.json`](https://devshelf.ritualdev.in/api/v1/stats.json)** | `GET` | Catalog telemetry, repo counts, and category breakdowns |
 | **[`/api/v1/categories.json`](https://devshelf.ritualdev.in/api/v1/categories.json)** | `GET` | Category listing and dedicated JSON endpoints |
 
@@ -234,7 +234,7 @@ DevShelf is backed by a 100% free, CORS-enabled, static public REST API with zer
 
 ## 🧩 IDE & Launcher Extensions
 
-Query and explore 600+ free developer tools directly within your workflow:
+Query and explore 610+ free developer tools directly within your workflow:
 
 - **[Raycast Extension](extensions/raycast/)** &mdash; Instant tool search & random gem picker from your desktop spotlight (`Cmd+Shift+B` to copy badges).
 - **[VS Code Extension](extensions/vscode/)** &mdash; Command Palette integration (`Ctrl+Shift+P` -> `DevShelf: Search`).

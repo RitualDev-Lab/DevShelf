@@ -1239,5 +1239,17 @@
     "cors": "Unknown",
     "rateLimit": "No published fixed quota",
     "https": true
+  },
+  {
+    "name": "FairValid Customer API and MCP Integration",
+    "category": "Email verification and verified work-email search",
+    "description": "MIT integration and workflow skills for FairValid email verification and FairMatch via hosted HTTP API/MCP. Requires free account sign-in; 300 shared free credits monthly.",
+    "url": "https://fairvalid.com/help/api",
+    "repo": "https://github.com/moonlitnayeem/fairvalid-ai",
+    "auth": "Free API Key",
+    "cors": "Yes",
+    "rateLimit": "300 shared free credits/month",
+    "https": true,
+    "tags": ["email-verification", "csv", "mcp", "api", "freemium"]
   }
 ]

@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 609 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 610 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -3956,6 +3956,14 @@ This updates #122....
 - **URL**: https://macrodial.org/ai-resources
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/macrodial-public-knowledge-api.html
 - **Description**: Free anonymous macro knowledge endpoints for product, methodology, module, and factor definitions. Submitted by MacroDial Team.
+
+### FairValid Customer API and MCP Integration
+- **Category**: Email verification and verified work-email search
+- **Pricing Model**: 300 shared free credits/month
+- **Auth**: Free API Key
+- **URL**: https://fairvalid.com/help/api
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/fairvalid-customer-api-and-mcp-integration.html
+- **Description**: MIT integration and workflow skills for FairValid email verification and FairMatch via hosted HTTP API/MCP. Requires free account sign-in; 300 shared free credits monthly.
 
 ### Supabase
 - **Category**: Databases & BaaS
