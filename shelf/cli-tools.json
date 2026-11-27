@@ -1585,5 +1585,15 @@
     "codeSigned": false,
     "tags": ["mcp", "cli", "acp", "openapi", "local-tools"],
     "statusTags": ["[UNVERIFIED BINARY - UNSIGNED]"]
+  },
+  {
+    "name": "TokenDefrag",
+    "category": "Coding-agent context and token measurement",
+    "description": "Estimates potential context-token savings from local Claude Code and OpenCode sessions. Shadow mode measures live requests without rewriting them or reducing the actual bill.",
+    "repo": "https://github.com/yuseferi/token-defrag",
+    "language": "Go",
+    "license": "MIT",
+    "featured": false,
+    "tags": ["cli", "claude-code", "opencode", "token-usage", "cost-estimation"]
   }
 ]

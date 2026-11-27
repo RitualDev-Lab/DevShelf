@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 612 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 613 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -2420,6 +2420,15 @@
 - **URL**: https://everythingconnect.pages.dev
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/everythingconnect.html
 - **Description**: Local tool gateway exposing ConnectIR definitions through CLI, MCP, ACP and OpenAPI, with dry runs and receipts. Native installers are published; the macOS build script uses ad-hoc signing and notarization is not established.
+
+### TokenDefrag
+- **Category**: Coding-agent context and token measurement
+- **Pricing Model**: See official site for free access and limits
+- **License**: MIT
+- **Language**: Go
+- **URL**: https://github.com/yuseferi/token-defrag
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/tokendefrag.html
+- **Description**: Estimates potential context-token savings from local Claude Code and OpenCode sessions. Shadow mode measures live requests without rewriting them or reducing the actual bill.
 
 ### MockForge AI
 - **Category**: Browser & E2E Testing
