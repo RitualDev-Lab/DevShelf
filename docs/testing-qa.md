@@ -4,10 +4,10 @@
 
 [← Back to Main Directory](../README.md) • [🌐 Live Search App](https://devshelf.ritualdev.in) • [➕ Submit New Resource](../README.md#-how-to-submit-your-project-or-api)
 
-[![Total Testing Tools](https://img.shields.io/badge/Testing_Tools-68_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
+[![Total Testing Tools](https://img.shields.io/badge/Testing_Tools-69_Curated-blueviolet?style=for-the-badge)](https://devshelf.ritualdev.in)
 
 **Jump to Subcategory:**
-[API Mocking & Sandboxes](#api-mocking-sandboxes) • [API Testing & Debugging](#api-testing-debugging) • [Browser & E2E Testing](#browser-e2e-testing) • [Contract & Schema Testing](#contract-schema-testing) • [Mobile & Device Testing](#mobile-device-testing) • [Performance & Load Testing](#performance-load-testing) • [Security & Vulnerability Auditing](#security-vulnerability-auditing) • [Security & Vulnerability Scanners](#security-vulnerability-scanners) • [Self-hosted QA test management](#self-hosted-qa-test-management) • [Test Data Generation](#test-data-generation) • [Testing & QA Reliability](#testing-qa-reliability) • [Unit & Integration Testing](#unit-integration-testing)
+[API Mocking & Sandboxes](#api-mocking-sandboxes) • [API Testing & Debugging](#api-testing-debugging) • [Browser & E2E Testing](#browser-e2e-testing) • [Contract & Schema Testing](#contract-schema-testing) • [Mobile & Device Testing](#mobile-device-testing) • [Mobile release QA](#mobile-release-qa) • [Performance & Load Testing](#performance-load-testing) • [Security & Vulnerability Auditing](#security-vulnerability-auditing) • [Security & Vulnerability Scanners](#security-vulnerability-scanners) • [Self-hosted QA test management](#self-hosted-qa-test-management) • [Test Data Generation](#test-data-generation) • [Testing & QA Reliability](#testing-qa-reliability) • [Unit & Integration Testing](#unit-integration-testing)
 
 ---
 
@@ -70,6 +70,12 @@
 | Tool | Language | License | Description | Links |
 | :--- | :---: | :---: | :--- | :---: |
 | [**Oh My Android**](https://github.com/ateymoori/oh-my-android) | `Swift` | `MIT` | Free macOS control panel for the Android Emulator and real phones: dark mode, font scale, RTL, TalkBack, network throttling, GPS mock and a Layout Inspector in dp. Built-in MCP server for AI agents. | [GitHub](https://github.com/ateymoori/oh-my-android) |
+
+### <a id="mobile-release-qa"></a>Mobile release QA (1)
+
+| Tool | Language | License | Description | Links |
+| :--- | :---: | :---: | :--- | :---: |
+| [**ShipWren mobile config checker**](https://github.com/mclamee/shipwren-checker) | `JavaScript (browser)` | `MIT` | Checks Expo, iOS and Android config files for issues such as missing foreground-service permissions and vague permission prompts. Runs in the browser or offline without uploading files; findings need confirmation in the built app. | [GitHub](https://github.com/mclamee/shipwren-checker) |
 
 ### <a id="performance-load-testing"></a>Performance & Load Testing (11)
 

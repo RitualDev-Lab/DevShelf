@@ -2,8 +2,8 @@
   "version": "1.1.3",
   "docs": "https://devshelf.ritualdev.in/docs/api.html",
   "license": "https://github.com/RitualDev-Lab/DevShelf/blob/main/LICENSE",
-  "updatedAt": "2026-11-27T18:56:10.422Z",
-  "totalCount": 612,
+  "updatedAt": "2026-11-28T17:33:59.769Z",
+  "totalCount": 613,
   "tools": [
     {
       "name": "PromptShield",
@@ -5045,6 +5045,26 @@
         "self-hosted",
         "open source",
         "api testing"
+      ],
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "ShipWren mobile config checker",
+      "category": "Mobile release QA",
+      "description": "Checks Expo, iOS and Android config files for issues such as missing foreground-service permissions and vague permission prompts. Runs in the browser or offline without uploading files; findings need confirmation in the built app.",
+      "repo": "https://github.com/mclamee/shipwren-checker",
+      "url": "https://shipwren.dev",
+      "language": "JavaScript (browser)",
+      "license": "MIT",
+      "featured": false,
+      "tags": [
+        "expo",
+        "ios",
+        "android",
+        "mobile",
+        "release",
+        "testing"
       ],
       "type": "testing",
       "section": "Testing & QA Reliability"

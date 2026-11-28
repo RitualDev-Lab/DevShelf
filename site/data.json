@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-11-27T18:56:10.422Z",
-  "totalCount": 612,
-  "reposCount": 395,
+  "updatedAt": "2026-11-28T17:33:59.769Z",
+  "totalCount": 613,
+  "reposCount": 396,
   "facets": {
-    "repos": 395
+    "repos": 396
   },
   "counts": {
     "aiTools": 117,
     "cliTools": 145,
-    "testingQa": 68,
+    "testingQa": 69,
     "apis": 114,
     "freeCloud": 74,
     "perks": 30,
@@ -5056,6 +5056,26 @@
         "self-hosted",
         "open source",
         "api testing"
+      ],
+      "type": "testing",
+      "section": "Testing & QA Reliability"
+    },
+    {
+      "name": "ShipWren mobile config checker",
+      "category": "Mobile release QA",
+      "description": "Checks Expo, iOS and Android config files for issues such as missing foreground-service permissions and vague permission prompts. Runs in the browser or offline without uploading files; findings need confirmation in the built app.",
+      "repo": "https://github.com/mclamee/shipwren-checker",
+      "url": "https://shipwren.dev",
+      "language": "JavaScript (browser)",
+      "license": "MIT",
+      "featured": false,
+      "tags": [
+        "expo",
+        "ios",
+        "android",
+        "mobile",
+        "release",
+        "testing"
       ],
       "type": "testing",
       "section": "Testing & QA Reliability"
