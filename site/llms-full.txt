@@ -1,6 +1,6 @@
 # DevShelf - Complete Free Developer Tools Knowledge Base (Full Catalog)
 
-> Complete metadata dump of all 612 free and open-source developer tools indexed on DevShelf.
+> Complete metadata dump of all 613 free and open-source developer tools indexed on DevShelf.
 > Authoritative Source: https://devshelf.ritualdev.in
 > License: MIT
 
@@ -3055,6 +3055,15 @@
 - **URL**: https://treseko.com
 - **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/treseko-community.html
 - **Description**: Self-hosted test management for teams to organize test cases, suites, manual and API executions, evidence, and reports. Treseko Community is open source under AGPL-3.0-or-later.
+
+### ShipWren mobile config checker
+- **Category**: Mobile release QA
+- **Pricing Model**: See official site for free access and limits
+- **License**: MIT
+- **Language**: JavaScript (browser)
+- **URL**: https://shipwren.dev
+- **DevShelf Dossier**: https://devshelf.ritualdev.in/tools/shipwren-mobile-config-checker.html
+- **Description**: Checks Expo, iOS and Android config files for issues such as missing foreground-service permissions and vague permission prompts. Runs in the browser or offline without uploading files; findings need confirmation in the built app.
 
 ### Open-Meteo
 - **Category**: Weather & Climate
